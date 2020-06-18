@@ -4,11 +4,11 @@ import { navigate } from "gatsby"
 
 const PrivateRoute = ({ component: Component, isLoggedIn, location, ...rest }) => {
 
-  if (!isLoggedIn && location.pathname !== `/auth`) {
-    navigate("/auth")
+  if (!isLoggedIn && location.pathname !== `/a/login`) {
+    navigate("/a/login")
     return null
-  }
+  }  
 
-  return <Component {...rest} />
+  return <Component location={location} {...rest} />
 }
 export default PrivateRoute

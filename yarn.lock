@@ -912,6 +912,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.10.2":
+  version "7.10.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.2.tgz#d103f21f2602497d38348a32e008637d506db839"
+  integrity sha512-6sF3uQw2ivImfVIl62RZ7MXhO2tap69WeWK57vAaimT6AZbE4FbqjdEJIN1UqoD6wI6B+1n9UiagafH1sxjOtg==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/standalone@^7.9.6":
   version "7.9.6"
   resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.9.6.tgz#7a5f82c6fa29959b12f708213be6de8ec0b79338"
@@ -7225,11 +7232,11 @@ gatsby-page-utils@^0.2.3:
     micromatch "^3.1.10"
 
 gatsby-plugin-create-client-paths@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-create-client-paths/-/gatsby-plugin-create-client-paths-2.3.1.tgz#4a276f02468f01bcf33cff8e56d11f803a1c8f54"
-  integrity sha512-r8Sa4q0bF3wdjUfkX+jjTg4WYvoIzOqinX14X16i3BN9ThWt9ASy5IRqtaEu/ECI8gBJvwT9KNqJBs9jS9xQTw==
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-create-client-paths/-/gatsby-plugin-create-client-paths-2.3.4.tgz#f036e39bf5611f87067951d426c7730a60da6cd2"
+  integrity sha512-eoNOwAEzKY0bALVkZNut1E+VXwHY8WWx5ox9cSwFxpofvTXU2nHbOx1ba+w3eXXwEJIqdnXZtG7gHhAjmelAAw==
   dependencies:
-    "@babel/runtime" "^7.9.6"
+    "@babel/runtime" "^7.10.2"
 
 gatsby-plugin-disqus@^1.1.4:
   version "1.1.4"
@@ -15168,6 +15175,11 @@ sax@>=0.6.0, sax@~1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
+schedule-lite@^1.0.14:
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.14.tgz#52147b9952e757657220d977512c6d8040832956"
+  integrity sha512-ygVpCozdN1GLmMcnASgyfRF285D6XkceqEbpX81ZA4ZhleV9RzysMPP+g2tB1nRXn17XGKzFUvLQr9IMQVRTTQ==
+
 scheduler@^0.15.0:
   version "0.15.0"
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.15.0.tgz#6bfcf80ff850b280fed4aeecc6513bc0b4f17f8e"
@@ -16382,10 +16394,10 @@ sudo-prompt@^8.2.0:
   resolved "https://registry.yarnpkg.com/sudo-prompt/-/sudo-prompt-8.2.5.tgz#cc5ef3769a134bb94b24a631cc09628d4d53603e"
   integrity sha512-rlBo3HU/1zAJUrkY6jNxDOC9eVYliG6nS4JA8u8KAshITd07tafMc/Br7xQwCSseXwJ2iCcHCE8SNWX3q8Z+kw==
 
-summit-schedule-app@^1.0.18:
-  version "1.0.18"
-  resolved "https://registry.yarnpkg.com/summit-schedule-app/-/summit-schedule-app-1.0.18.tgz#cd83f90c0281ebc4378e3c9a85c4f1219538cb9d"
-  integrity sha512-ne+4DCB+v10RS1qwRD47IkHG39YdyNsBEvh3yGcpm4q6GiQxNoKcthZGSlCcnQIhzIN7jqfVEfu1oQ8XQMR8Pg==
+summit-schedule-app@^1.0.19:
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/summit-schedule-app/-/summit-schedule-app-1.0.19.tgz#d5c9b6854f64bc518e98669ffd88b13b24456af0"
+  integrity sha512-2mNLRAmBeNIRm5R9BSg2XNNA0k/8YAOuvH0KOvBppS/Csrval1feeevqJa+8LE4F0EjapsHYyfTv1BbMbDDEQw==
   dependencies:
     "@babel/core" "^7.5.5"
     "@babel/plugin-proposal-class-properties" "^7.8.3"

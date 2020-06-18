@@ -37,10 +37,6 @@ export default class
     let postLogOutUri = window.location.origin + '/auth/logout';
     let backUrl = URI(window.location.href).pathname();
 
-
-    let detailUrl = '/a/member/orders/detail';
-    if (backUrl === detailUrl) backUrl = '/a/member/orders';
-
     // store nonce to check it later
     window.localStorage.setItem('post_logout_state', state);
     window.localStorage.setItem('post_logout_back_uri', backUrl);
@@ -66,12 +62,15 @@ export default class
   }
 
   render() {
-    let {isLoggedUser} = this.props;  
+    let { isLoggedUser } = this.props;
 
     if (isLoggedUser) {
       return (
 
         <div className="logout-button">
+          <span onClick={() => { this.props.clearState(); }}>
+            Clear State |&nbsp;
+          </span>                    
           <span className="dropdown-item" onClick={() => { this.initLogOut(); }}>
             Logout
           </span>

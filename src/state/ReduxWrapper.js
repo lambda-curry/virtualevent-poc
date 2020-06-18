@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import { loggedUserReducer } from 'openstack-uicore-foundation/lib/reducers';
 import eventReducer from './event-reducer'
+import summitReducer from './summit-reducer'
 
 import thunk from 'redux-thunk';
 import { persistStore, persistCombineReducers } from 'redux-persist'
@@ -20,7 +21,8 @@ const config = {
 
 const persistedReducers = persistCombineReducers(config, {
   loggedUserState: loggedUserReducer,
-  eventState: eventReducer
+  eventState: eventReducer,
+  summitState: summitReducer
 });
 
 const composeEnhancers = typeof window === 'object' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : compose;

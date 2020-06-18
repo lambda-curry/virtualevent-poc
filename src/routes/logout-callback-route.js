@@ -39,7 +39,7 @@ class LogOutCallbackRoute extends React.Component {
             return (<p>Invalid State</p>);
 
         doLogout();
-        backUrl ? navigate(backUrl) : navigate("/auth");
+        backUrl ? navigate(backUrl) : navigate("/a/login");
         return null;
     }
 }

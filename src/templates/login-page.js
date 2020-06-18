@@ -10,11 +10,11 @@ import LoginButton from '../components/LoginButton'
 
 import { navigate } from "gatsby"
 
-export const LoginPageTemplate = ({ title, content, contentComponent, loggedUserState }) => {
+export const LoginPageTemplate = ({ title, location, content, contentComponent, loggedUserState }) => {
   const PageContent = contentComponent || Content
 
   if (loggedUserState.isLoggedUser) {
-    navigate('/auth/event?id=106');
+    navigate('/a/')
   }
 
   return (
@@ -30,7 +30,7 @@ LoginPageTemplate.propTypes = {
   contentComponent: PropTypes.func,
 }
 
-const LoginPage = ({ data, loggedUserState }) => {
+const LoginPage = ({ data, loggedUserState, location }) => {
   if (data) {
     const { markdownRemark: post } = data
 
@@ -41,15 +41,19 @@ const LoginPage = ({ data, loggedUserState }) => {
           title={post.frontmatter.title}
           content={post.html}
           loggedUserState={loggedUserState}
+          location={location}
         />
       </Layout>
     )
   } else {
     return (
-      <LoginPageTemplate
-        contentComponent={HTMLContent}
-        loggedUserState={loggedUserState}
-      />
+      <Layout>
+        <LoginPageTemplate
+          contentComponent={HTMLContent}
+          loggedUserState={loggedUserState}
+          location={location}
+        />
+      </Layout>
     )
   }
 }

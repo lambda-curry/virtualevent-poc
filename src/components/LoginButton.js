@@ -6,7 +6,7 @@ import { doLogin } from "openstack-uicore-foundation/lib/methods";
 const LoginButton = class extends React.Component {
 
   getBackURL() {
-    let defaultLocation = '/auth/event?id=106';
+    let defaultLocation = '/a/';
     let url      = URI(window.location.href);
     let location = url.pathname();
     if (location === '/') location = defaultLocation
@@ -32,7 +32,7 @@ const LoginButton = class extends React.Component {
           <button className="btn btn-lg btn-primary btn-block" onClick={() => this.onClickLogin()}>Sign in</button>
           <br /><br />
           <h4>Request access</h4>
-            Get access to virtual event. Register <a href="https://idp.dev.fnopen.com/auth/register">here</a>
+          Get access to virtual event. Register <a href="https://idp.dev.fnopen.com/auth/register">here</a>
         </div>
       </div>
     )
@@ -40,6 +40,3 @@ const LoginButton = class extends React.Component {
 }
 
 export default LoginButton
-
-
-

@@ -32,32 +32,15 @@ export const GET_EVENT_DATA = 'GET_EVENT_DATA';
 export const TOGGLE_DARKMODE = 'TOGGLE_DARKMODE';
 
 
-export const toggleDarkMode = isDarkMode => ({
-  type: TOGGLE_DARKMODE, isDarkMode
-});
-
-
-export const getEventBySlug = (slug) => (dispatch, getState) => {
-  dispatch(startLoading());
-
-  return getRequest(
-    dispatch(startLoading()),
-    dispatch(GET_EVENT_DATA),
-    `${window.EVENT_API_BASE_URL}/api/public/v1/summits/${window.EVENT_SUMMIT_ID}/events/${slug}/published?expand=rsvp_template%2C+type%2C+track%2C+location%2C+location.venue%2C+location.floor%2C+speakers%2C+moderator%2C+sponsors%2C+groups%2C+feedback`,    
-    authErrorHandler,
-  )()(dispatch).then((payload) => {
-    dispatch(stopLoading())
-  }).catch(e => {
-    dispatch(stopLoading());
-    return (e);
-  });    
+export const handleResetReducers = () => (dispatch, getState) => {
+  dispatch(createAction(LOGOUT_USER)({}));
 }
 
-export function getEventBySlug2(slug) {
-  
+export function getEventBySlug(slug) {
+
   let url = `${window.EVENT_API_BASE_URL}/api/public/v1/summits/${window.EVENT_SUMMIT_ID}/events/${slug}/published?expand=rsvp_template%2C+type%2C+track%2C+location%2C+location.venue%2C+location.floor%2C+speakers%2C+moderator%2C+sponsors%2C+groups%2C+feedback%2C+summit`;
-  
-  return function (dispatch) { 
+
+  return function (dispatch) {
     axios.get(url)
       .then((response) => dispatch({
         type: GET_EVENT_DATA,

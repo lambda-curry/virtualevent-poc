@@ -15,26 +15,25 @@ const DisqusComponent = class extends React.Component {
   }
 
   getToken = async () => {
-    fetch(`https://idp.dev.fnopen.com/api/v1/sso/disqus/fnvirtual-poc/profile?access_token=${this.props.accessToken}`)
+    fetch(`${typeof window === 'object' ? window.IDP_BASE_URL : process.env.GATSBY_IDP_BASE_URL}/api/v1/sso/disqus/fnvirtual-poc/profile?access_token=${this.props.accessToken}`)
       .then(response => response.json())
       .then(json => {
-        console.log(json);
         this.setState({ auth: json.auth, public_key: json.public_key })
       })
   }
 
   render() {
 
-    const { title } = this.props;
+    const { event } = this.props;
 
     let disqusConfig = {
-      url: window.location,
-      identifier: `${window.location.pathname}${window.location.search}`,
-      title: title,
+      url: window.location.href,
+      identifier: `${event.id}`,
+      title: event.title,
       remoteAuthS3: this.state.auth,
       apiKey: this.state.public_key,
     }
-    
+
     if (!disqusConfig.remoteAuthS3 && !disqusConfig.apiKey) {
       return null;
     } else {
