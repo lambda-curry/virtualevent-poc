@@ -3,13 +3,12 @@ import PropTypes from 'prop-types'
 import { graphql, navigate } from 'gatsby'
 import { connect } from 'react-redux'
 import Layout from '../components/Layout'
-import LiveEventWidget from 'live-event-widget/dist'
 
 import { getSummitData } from '../actions/summit-actions'
-
 import Loadable from "@loadable/component"
 
 const ScheduleLiteClientSide = Loadable(() => import('../components/ScheduleLiteComponent'))
+const LiveEventWidgetClientSide = Loadable(() => import('live-event-widget/dist'))
 
 
 export const HomePageTemplate = class extends React.Component {
@@ -46,10 +45,10 @@ export const HomePageTemplate = class extends React.Component {
               <ScheduleLiteClientSide accessToken={loggedUser.accessToken} eventClick={(ev) => this.onEventChange(ev)} />
             </div>
             <div>
-              <LiveEventWidget
+              <LiveEventWidgetClientSide
                   summitId={summit.id}
-                  apiBaseUrl={process.env.GATSBY_SUMMIT_API_BASE_URL}
-                  marketingApiBaseUrl={process.env.GATSBY_MARKETING_API_BASE_URL}
+                  apiBaseUrl={`${typeof window === 'object' ? window.SUMMIT_API_BASE_URL : process.env.GATSBY_SUMMIT_API_BASE_URL}`}
+                  marketingApiBaseUrl={`${typeof window === 'object' ? window.MARKETING_API_BASE_URL : process.env.GATSBY_MARKETING_API_BASE_URL}`}
               />
             </div>
           </div>
