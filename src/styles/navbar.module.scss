@@ -1,0 +1,18 @@
+@import "bulma/sass/utilities/_all.sass";
+@import "bulma/sass/elements/button.sass";
+@import "bulma/sass/components/navbar";
+
+.navbar-item {
+  img {
+    max-height: 4rem;
+  }
+}
+
+
+.navbar-brand {
+  min-height: 6.25rem;
+}
+
+.navbar-burger {
+  height: auto;
+}

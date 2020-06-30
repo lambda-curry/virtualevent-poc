@@ -1,10 +1,8 @@
 import React from 'react'
-import T from 'i18n-react/dist/i18n-react'
 import URI from 'urijs';
 
-
 export default class
-  AuthButton extends React.Component {
+  LogoutButton extends React.Component {
 
   constructor(props) {
     super(props);
@@ -62,18 +60,18 @@ export default class
   }
 
   render() {
-    let { isLoggedUser } = this.props;
+    let { isLoggedUser, styles } = this.props;
 
     if (isLoggedUser) {
       return (
 
-        <div className="logout-button">
-          <span onClick={() => { this.props.clearState(); }}>
-            Clear State |&nbsp;
-          </span>                    
-          <span className="dropdown-item" onClick={() => { this.initLogOut(); }}>
-            Logout
-          </span>
+        <div className={styles.buttons}>
+          <a className={`${styles.button}`} onClick={() => { this.props.clearState(); }}>
+            <strong>Clear State</strong>
+          </a>
+          <a className={`${styles.button} ${styles.isInfo}`} onClick={() => { this.initLogOut(); }}>
+            <strong>Logout</strong>
+          </a>
         </div>
       );
     } else {

@@ -1,0 +1,16 @@
+@charset "utf-8";
+// If need, change your variables before importing Bulma
+
+$footer-color: #fff;
+$footer-background-color: #26b;
+$footer-padding: 1rem;
+
+// $title-color: #ff0000;
+// @import "~bulma/bulma.sass";
+@import "bulma/sass/utilities/_all.sass";
+@import "bulma/sass/base/_all.sass";
+@import "bulma/sass/elements/_all.sass";
+@import "bulma/sass/form/_all.sass";
+@import "bulma/sass/grid/_all.sass";
+@import "bulma/sass/helpers/_all.sass";
+@import "bulma/sass/layout/_all.sass";

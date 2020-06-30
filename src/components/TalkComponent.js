@@ -47,8 +47,8 @@ const TalkComponent = class extends React.Component {
     const { event: { start_date, end_date, speakers, title, description }, event, noStream, summit: { time_zone_id } } = this.props;
 
     return (
-      <div className="talk__row" style={noStream ? { padding: '20px 40px' } : null}>
-        <div className="talk__row--left">
+      <div className="columns px-5 py-5">
+        <div className="column is-three-quarters">
           <span className="talk__date">{this.formatEventDate(start_date, end_date, time_zone_id)} {this.formatEventLocation(event)}</span>
           <h1>
             <b>{title}</b>
@@ -59,17 +59,15 @@ const TalkComponent = class extends React.Component {
             <br /><br />
             <div className="talk__description" dangerouslySetInnerHTML={{ __html: description }} />
           </div>
-        </div>
-        {event.meeting_url &&
-          <div className="talk__row--right">
-            <div className="talk__"></div>
-            <div className="talk__join-button">
-              <a href={event.meeting_url} target="_blank">
+          <br />
+          {event.meeting_url &&
+            <a href={event.meeting_url} target="_blank" style={{ textDecoration: 'none' }}>
+              <div className="button is-info is-uppercase" style={{ fontSize: '1.15em' }}>
                 join zoom to take the mic !
-              </a>
-            </div>
-          </div>
-        }
+              </div>
+            </a>
+          }
+        </div>
       </div>
     )
   }

@@ -21,7 +21,7 @@ const ScheduleComponent = class extends React.Component {
           <summit-schedule
             summit_id="16"
             api_access_token=""
-            api_url={typeof window === 'object' ? window.EVENT_API_BASE_URL : process.env.GATSBY_EVENT_API_BASE_URL}
+            api_url={typeof window === 'object' ? window.SUMMIT_API_BASE_URL : process.env.GATSBY_SUMMIT_API_BASE_URL}
             schedule_base={typeof window === 'object' ? window.location.pathname : `/${base}`}
             schedule_url={typeof window === 'object' ? window.location.origin : `localhost/${base}`}
             login_url="login-url-not-set"

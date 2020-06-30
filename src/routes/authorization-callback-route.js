@@ -18,6 +18,8 @@ import { connect } from 'react-redux';
 import { AbstractAuthorizationCallbackRoute } from "openstack-uicore-foundation/lib/components";
 import { getUserInfo } from "openstack-uicore-foundation/lib/methods";
 
+import { customErrorHandler } from '../utils/customErrorHandler';
+
 class AuthorizationCallbackRoute extends AbstractAuthorizationCallbackRoute {
 
     constructor(props){
@@ -29,7 +31,7 @@ class AuthorizationCallbackRoute extends AbstractAuthorizationCallbackRoute {
     }
 
     _callback(backUrl) {
-        this.props.getUserInfo(backUrl, history);
+        this.props.getUserInfo(backUrl, history, customErrorHandler);
     }
 
     _redirect2Error(error){

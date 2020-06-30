@@ -5,41 +5,34 @@ const RocketChatComponent = class extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { auth: '', loggedIn: false, displayChat: false, postMessageData: null };
-    this.getToken = this.getToken.bind(this);
+    this.state = { displayChat: false, postMessageData: null };
   }
 
   componentDidMount() {
-    this.getToken();    
+    const { rocketChatSSO: { authToken } } = this.props;
+
+    this.setState(prevState => {
+      let postMessageData = Object.assign({}, prevState.postMessageData);
+      postMessageData.externalCommand = 'login-with-token';
+      postMessageData.token = authToken
+      return { postMessageData };
+    });
   }
 
   onReady = () => {
-    setTimeout(function() { 
+    const { rocketChatSSO: { authToken } } = this.props;
+
+    setTimeout(function () {
       const el = document.getElementById('rocket-chat');
       if (el) {
         el.contentWindow.postMessage({
           externalCommand: 'login-with-token',
-          token: this.state.auth
+          token: authToken
         }, '*');
       }
     }.bind(this), 1000)
-  };
 
-  getToken = async () => {
-    fetch(`${typeof window === 'object' ? window.IDP_BASE_URL : process.env.GATSBY_IDP_BASE_URL}/api/v1/sso/rocket-chat/fnvirtual-poc/profile?access_token=${this.props.accessToken}`)
-      .then(response => response.json())
-      .then(json => {
-        this.setState({ auth: json.authToken })
-      })
-      .then(() => {
-        this.setState(prevState => {
-          let postMessageData = Object.assign({}, prevState.postMessageData);
-          postMessageData.externalCommand = 'login-with-token';
-          postMessageData.token = this.state.auth;
-          return { postMessageData };
-        })
-      }).then(() => this.setState({ loggedIn: true }))
-  }
+  };
 
   render() {
 
@@ -56,7 +49,7 @@ const RocketChatComponent = class extends React.Component {
     }
 
     if (!postMessageData) {
-      return null 
+      return null
     } else {
       if (embedded) {
         return (
@@ -65,8 +58,8 @@ const RocketChatComponent = class extends React.Component {
               <img src={displayChat ? '/img/close.svg' : '/img/chat.svg'} width="30px" />
             </div>
             <IframeComm
-                attributes={iframeConfig}
-                handleReady={this.onReady}
+              attributes={iframeConfig}
+              handleReady={this.onReady}
             />
           </div>
         )
@@ -74,8 +67,8 @@ const RocketChatComponent = class extends React.Component {
         return (
           <div className="rocket-chat">
             <IframeComm
-                attributes={iframeConfig}
-                handleReady={this.onReady}
+              attributes={iframeConfig}
+              handleReady={this.onReady}
             />
           </div>
         )

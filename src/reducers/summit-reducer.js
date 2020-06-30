@@ -1,13 +1,13 @@
 import { START_LOADING, STOP_LOADING, LOGOUT_USER } from "openstack-uicore-foundation/lib/actions";
 
-import { GET_EVENT_DATA } from './event-actions'
+import { GET_SUMMIT_DATA } from '../actions/summit-actions'
 
 const DEFAULT_STATE = {
   loading: false,
-  event: {},
+  summit: {},
 }
 
-const eventReducer = (state = DEFAULT_STATE, action) => {
+const summitReducer = (state = DEFAULT_STATE, action) => {
   const { type, payload } = action
 
   switch (type) {
@@ -19,8 +19,9 @@ const eventReducer = (state = DEFAULT_STATE, action) => {
     case STOP_LOADING:
       return { ...state, loading: false };
       break;
-    case GET_EVENT_DATA:      
-      return { ...state, loading: false, event: payload };
+    case GET_SUMMIT_DATA:
+      const summit = payload.response;
+      return { ...state, loading: false, summit: summit };
       break;
     default:
       return state;
@@ -28,4 +29,4 @@ const eventReducer = (state = DEFAULT_STATE, action) => {
   }
 }
 
-export default eventReducer
+export default summitReducer

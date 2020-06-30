@@ -3,6 +3,9 @@ import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
 import logo from '../img/logo.svg'
 
+import styles from '../styles/navbar.module.scss';
+import LogoutButton from './LogoutButton';
+
 const Navbar = class extends React.Component {
   constructor(props) {
     super(props)
@@ -23,70 +26,46 @@ const Navbar = class extends React.Component {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: 'is-active',
-            })
+            navBarActiveClass: `${styles.isActive}`,
+          })
           : this.setState({
-              navBarActiveClass: '',
-            })
+            navBarActiveClass: '',
+          })
       }
     )
   }
 
   render() {
+
+    let { isLoggedUser, clearState, logo } = this.props;
+
     return (
-      <nav
-        className="navbar is-transparent"
-        role="navigation"
-        aria-label="main-navigation"
-      >
-        <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-            </Link>
-            {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-            >
-              <span />
-              <span />
-              <span />
-            </div>
+      <nav className={`${styles.navbar} ${styles.isBlack}`} role="navigation" aria-label="main navigation">
+        <div className={styles.navbarBrand}>
+          <Link to="/a/" className={styles.navbarItem}>
+            { logo && 
+            <img src={logo} alt="Show Logo" />
+            }
+          </Link>
+
+          <a role="button" className={`${styles.navbarBurger} ${styles.burger} ${this.state.navBarActiveClass}`}
+            aria-label="menu" aria-expanded="false" data-target="navbarBasicExample"
+            onClick={() => this.toggleHamburger()}>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbarBasicExample" className={`${styles.navbarMenu} ${styles.isBlack} ${this.state.navBarActiveClass}`}>
+          <div className={styles.navbarStart}>
+            {/* <Link to="/a/" className={styles.navbarItem}>
+              Home
+            </Link> */}
           </div>
-          <div
-            id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
-          >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
-              </Link>
-              <Link className="navbar-item" to="/products">
-                Products
-              </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link>
-            </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
+          <div className={styles.navbarEnd}>
+            <div className={styles.navbarItem}>
+              <LogoutButton styles={styles} isLoggedUser={isLoggedUser} clearState={clearState} />
             </div>
           </div>
         </div>

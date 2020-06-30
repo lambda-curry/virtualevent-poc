@@ -2,9 +2,11 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
-// import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
+
+// import "../styles/all.scss"
+import "../styles/bulma.scss"
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
@@ -33,8 +35,8 @@ const TemplateWrapper = ({ children }) => {
         />
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
       </Helmet>
-      <Header />
-      <div>{children}</div>
+      <Header />      
+      <div id="content-wrapper">{children}</div>
       <Footer />
     </div>
   )
