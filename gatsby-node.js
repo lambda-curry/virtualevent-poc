@@ -193,20 +193,25 @@ exports.createPages = ({ actions, graphql }) => {
   })
 }
 
-exports.onCreateWebpackConfig = ({ loaders, actions, plugins }) => {
-  actions.setWebpackConfig({
-    plugins: [
-      plugins.define({
-        'global.GENTLY': false
-      })
-    ],
-    // module: {
-    //   rules: [
-    //     {
-    //       test: /openstack-uicore-foundation/,
-    //       use: loaders.null(),
-    //     },
-    //   ],
-    // },
-  })
+exports.onCreateWebpackConfig = ({ stage, loaders, actions, plugins }) => {
+  if (stage === "build-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /openstack-uicore-foundation/,
+            use: loaders.null(),
+          },
+        ],
+      },
+    })
+  } else {
+    actions.setWebpackConfig({
+      plugins: [
+        plugins.define({
+          'global.GENTLY': false,
+        }),
+      ],
+    })
+  }
 }

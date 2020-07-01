@@ -70,13 +70,15 @@ export const EventPageTemplate = class extends React.Component {
           }
           <section className="section px-0 py-0">
             <div className="columns is-gapless">
-              <div className="column is-three-quarters px-0 py-0">
-                {event.streaming_url ?
-                  <VideoComponent url={event.streaming_url} />
-                  :
+              {event.streaming_url ?
+                <div className="column is-three-quarters px-0 py-0">
+                  <VideoComponent url={event.streaming_url} />                  
+                </div>
+                :
+                <div className="column is-three-quarters px-0 py-0 is-hidden-mobile">                  
                   <TalkComponent event={event} summit={summit} noStream={true} />
-                }
-              </div>
+                </div>
+              }
               <div className="column is-hidden-tablet">
                 <TalkComponent event={event} summit={summit} noStream={true} />
               </div>
