@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Nunito Sans', sans-serif !important;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -22,19 +22,15 @@ header div.current-user {
   color: #fff;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  background: none repeat scroll 0 0 #26b;
-  color: #fff;
-  height: 44px;
-  text-align: center;
+footer {  
+  color: #fff;    
   width: 100%;
   padding-top: 12px;
 }
 
 #content-wrapper {
   padding-bottom: 3rem;
+  min-height: 75vh;
 }
 
 div.login-form {
@@ -113,19 +109,6 @@ div.content {
     }
   }
 
-  &__docs {
-    border: 1px silver solid;
-    height: 420px;
-
-    &--title {
-      width: 100%;
-      padding: 10px;
-      font-weight: bold;
-      font-size: 20px;
-      border-bottom: 1px silver solid;
-    }
-  }
-
   &__etherpad {}
 }
 
@@ -134,7 +117,8 @@ div.content {
 }
 
 .sponsor-container img {
-  max-width: 100%;
+  padding-top: 1em;
+  width: 100%;
 }
 
 .schedule-container {

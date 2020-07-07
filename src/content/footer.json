@@ -1,0 +1,80 @@
+{
+  "logo": {
+    "display": true,
+    "src": ""
+  },
+  "columns": [
+    {
+      "title": "The Event",
+      "items": [
+        {
+          "title": "All Projects",
+          "link": ""
+        },
+        {
+          "title": "Host a project",
+          "link": ""
+        },
+        {
+          "title": "Services",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "title": "The Vision",
+      "items": [
+        {
+          "title": "About",
+          "link": ""
+        },
+        {
+          "title": "Supporters",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "title": "Membership",
+      "items": [
+        {
+          "title": "Corporate members",
+          "link": ""
+        },
+        {
+          "title": "Join us",
+          "link": ""
+        },
+        {
+          "title": "Services",
+          "link": ""
+        }
+      ]
+    }
+  ],
+  "social": {
+    "title": "Follow Us",
+    "networks": [
+      {
+        "icon": "fa-facebook",
+        "display": true,
+        "link": ""
+      },
+      {
+        "icon": "fa-twitter",
+        "display": true,
+        "link": ""
+      },
+      {
+        "icon": "fa-linkedin",
+        "display": true,
+        "link": ""
+      },
+      {
+        "icon": "fa-google-plus",
+        "display": true,
+        "link": ""
+      }
+    ]
+  }
+}

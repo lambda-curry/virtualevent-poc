@@ -1,13 +1,26 @@
 @charset "utf-8";
-// If need, change your variables before importing Bulma
+@import "bulma/sass/utilities/_all.sass";
 
-$footer-color: #fff;
-$footer-background-color: #26b;
-$footer-padding: 1rem;
+// If need, change your variables before importing Bulma
+$palette: (
+  primary:           #00cec4,
+  primary-dark:      #1eaaa3,
+  secondary:         #6d6e71,
+  secondary-dark:    #f1f2f2,
+  text-dark:         #006d68,
+  text-light:        #ffffff,
+  highlight:         #ff5e32
+);
+
+$footer-background-color: map-get($palette, secondary);
+$footer-color: map-get($palette, text-ligth);
+$footer-padding: 2rem;
+
+$font-family-base: 'Nunito Sans', sans-serif;
+$family-sans-serif: 'Nunito Sans', sans-serif;
 
 // $title-color: #ff0000;
-// @import "~bulma/bulma.sass";
-@import "bulma/sass/utilities/_all.sass";
+// @import "bulma/bulma.sass";
 @import "bulma/sass/base/_all.sass";
 @import "bulma/sass/elements/_all.sass";
 @import "bulma/sass/form/_all.sass";

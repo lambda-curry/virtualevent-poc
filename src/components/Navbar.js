@@ -1,10 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
 import logo from '../img/logo.svg'
 
+import UserNavbar from './UserNavbar';
 import styles from '../styles/navbar.module.scss';
-import LogoutButton from './LogoutButton';
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -40,36 +39,51 @@ const Navbar = class extends React.Component {
     let { isLoggedUser, clearState, logo } = this.props;
 
     return (
-      <nav className={`${styles.navbar} ${styles.isBlack}`} role="navigation" aria-label="main navigation">
-        <div className={styles.navbarBrand}>
-          <Link to="/a/" className={styles.navbarItem}>
-            { logo && 
-            <img src={logo} alt="Show Logo" />
-            }
-          </Link>
+      <React.Fragment>
+        <nav className={`${styles.navbar}`} role="navigation" aria-label="main navigation">
+          <div className={styles.navbarBrand}>
+            <Link to="/a/" className={styles.navbarItem}>
+              {logo &&
+                <img src={logo} alt="Show Logo" />
+              }
+            </Link>
 
-          <a role="button" className={`${styles.navbarBurger} ${styles.burger} ${this.state.navBarActiveClass}`}
-            aria-label="menu" aria-expanded="false" data-target="navbarBasicExample"
-            onClick={() => this.toggleHamburger()}>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
+            <a role="button" className={`${styles.navbarBurger} ${styles.burger} ${this.state.navBarActiveClass}`}
+              aria-label="menu" aria-expanded="false" data-target="navbarBasicExample"
+              onClick={() => this.toggleHamburger()}>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
 
-        <div id="navbarBasicExample" className={`${styles.navbarMenu} ${styles.isBlack} ${this.state.navBarActiveClass}`}>
-          <div className={styles.navbarStart}>
-            {/* <Link to="/a/" className={styles.navbarItem}>
+          <div id="navbarBasicExample" className={`${styles.navbarMenu} ${this.state.navBarActiveClass}`}>
+            <div className={styles.navbarStart}>
+              {/* <Link to="/a/" className={styles.navbarItem}>
               Home
             </Link> */}
-          </div>
-          <div className={styles.navbarEnd}>
-            <div className={styles.navbarItem}>
-              <LogoutButton styles={styles} isLoggedUser={isLoggedUser} clearState={clearState} />
+            </div>
+            <div className={styles.navbarEnd}>
+              <div className={styles.navbarItem}>
+                <span>About the event</span>
+              </div>
+              <div className={styles.navbarItem}>
+                <span>Who we are</span>
+              </div>
+              <div className={styles.navbarItem}>
+                <span>Past events</span>
+              </div>
+              <div className={styles.navbarItem}>
+                <span>Contact</span>
+              </div>
+              <div className={styles.navbarItem}>
+                <span>Help</span>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+        <UserNavbar isLoggedUser={isLoggedUser} clearState={clearState} />
+      </React.Fragment>
     )
   }
 }

@@ -1,21 +1,59 @@
 html,
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
+label {
+  font-weight: 300;
+}
+
+#container {
+  min-height: 100vh;
+  position: relative;
+}
+
+header div.current-user {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  color: #fff;
+}
+
 footer {
   position: absolute;
   bottom: 0;
-  background: none repeat scroll 0 0 #26b !important;
+  background: none repeat scroll 0 0 #26b;
   color: #fff;
   height: 44px;
+  text-align: center;
   width: 100%;
-  padding: 0.6rem 0 0 !important;
+  padding-top: 12px;
 }
 
+#content-wrapper {
+  padding-bottom: 3rem;
+}
+
+div.login-form {
+  display: block;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+  margin-bottom: 20px;
+  min-height: 20px;
+  padding: 19px;
+  margin: 50px auto;
+  width: 380px;
+}
+
+div.content {
+  padding: 30px;
+  padding-bottom: 54px;
+}
 
 .video-row {
   display: flex;
@@ -33,24 +71,6 @@ footer {
 }
 
 .talk {
-  padding: 20px 40px;
-
-  &__row {
-    display: flex;
-    padding: 10px 0;
-
-    &--left {
-      width: 75%;
-      padding-right: 10px;
-    }
-
-    &--right {
-      display: flex;
-      flex-direction: column;
-      width: 25%;
-      padding-left: 10px;
-    }
-  }
 
   &__date {
     font-weight: bold;
@@ -82,56 +102,27 @@ footer {
     text-transform: uppercase;
     border-radius: 5px;
     cursor: pointer;
+    align-items: flex-end;
+  }
 
-    a {
+  a {
+    color: white;
+
+    &:hover {
       color: white;
-
-      &:hover {
-        color: white;
-      }
     }
-  }
-
-  &__docs {
-    border: 1px silver solid;
-    height: 420px;
-
-    &--title {
-      width: 100%;
-      padding: 10px;
-      font-weight: bold;
-      font-size: 20px;
-      border-bottom: 1px silver solid;
-    }
-  }
+  }  
 
   &__etherpad {}
 }
 
-.schedule {
-  padding: 20px 40px;
-
-  &__row {
-    display: flex;
-    padding: 10px 0;
-
-    &--left {
-      width: 75%;
-      padding-right: 10px;
-    }
-
-    &--right {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-      width: 25%;
-      padding-left: 10px;
-    }
-  }
+.disqus-container {
+  padding: 0 15px;
 }
 
 .sponsor-container img {
-  max-width: 100%;
+  padding-top: 1em;
+  width: 100%;
 }
 
 .schedule-container {
@@ -147,7 +138,7 @@ footer {
   color: #fff;
   font-weight: bold;
   cursor: pointer;
-  padding-right: 20px;
+  padding-right: 15px;
 }
 
 .rocket-chat {
@@ -161,6 +152,7 @@ footer {
 
   &--full {
     margin-top: 33px;
+    padding: 0 15px;
   }
 
   &--button {
@@ -186,5 +178,34 @@ footer {
       filter: invert(1);
       justify-content: center;
     }
+  }
+}
+
+.custom-video-modal {
+  position: absolute !important;
+  top: auto !important;
+  left: auto !important;
+  bottom: 0;
+  right: 0;
+  margin: 2rem;
+  width: 25% !important;
+  height: 25% !important;
+  background: rgba(0, 0, 0, 0.8) !important;  
+}
+
+@media (max-width: 768px) {
+  div.login-form {
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .disqus-container {
+    position: absolute;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }

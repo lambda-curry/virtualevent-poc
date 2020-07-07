@@ -1,0 +1,53 @@
+.docs-container {
+  border: 1px #f1f2f2 solid;
+
+  .title {
+    width: 100%;
+    padding: 1rem 1rem 0.5rem;
+    font-weight: bold;
+    font-size: 20px;    
+  }
+
+  .document-column {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .docs-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  span {
+    font-size: 14px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: #333;
+  }
+
+  i {
+    font-size: 2.5rem;
+  }
+
+  hr:first-of-type {
+    margin: 0 auto 0.5rem;
+  }
+
+  hr {
+    border-top: 1px solid #f1f2f2;
+    margin: 0.5rem auto 0.5rem;
+    width: 94%;
+  }
+
+  hr:last-of-type {
+    visibility: hidden;
+    margin: 0.5rem auto 0;
+  }
+}

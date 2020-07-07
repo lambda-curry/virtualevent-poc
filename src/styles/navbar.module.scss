@@ -2,7 +2,21 @@
 @import "bulma/sass/elements/button.sass";
 @import "bulma/sass/components/navbar";
 
+.navbar {
+  background-color: #6d6e71;
+  min-height: 7.25rem;
+  .navbar-brand {
+    padding-left: 1rem;
+  }
+  .navbar-end {
+    padding-right: 15px;
+  }
+}
+
 .navbar-item {
+  color: #ffffff;
+  font-weight: 300;
+
   img {
     max-height: 4rem;
   }
@@ -15,4 +29,27 @@
 
 .navbar-burger {
   height: auto;
+}
+
+.user-navbar {
+  background-color: #616266;
+  min-height: 4.25rem;
+  .navbar-start {
+    padding-left: 15px;
+  }
+  .navbar-end {
+    padding-right: 5px;
+  }
+  .lobby-button {
+    padding: 0 60px;    
+    margin-left: 5px;
+  }
+  .user-burger {
+    display: block;
+    color: #ffffff;
+  }
+  .user-icon {
+    color: #ffffff;
+    padding-left: 10px;
+  }
 }

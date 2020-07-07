@@ -25,7 +25,7 @@ const Header = ({ isLoggedUser, summit, handleResetReducers }) => (
                 data.summit.logo
                 :
                 null
-          } />
+          } />          
       </header>
     )}
   />
