@@ -9,9 +9,7 @@ import 'schedule-lite/dist/index.css';
 const ScheduleComponent = class extends React.Component {
 
   expiredToken(err) {
-
-    console.log(err);
-
+    
     let currentLocation = window.location.pathname;
 
     return navigate('/a/expired', {

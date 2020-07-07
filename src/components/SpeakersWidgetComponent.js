@@ -8,15 +8,30 @@ import 'speakers-widget/dist/index.css';
 
 const SpeakersWidgetComponent = class extends React.Component {
 
+  expiredToken(err) {
+    
+    let currentLocation = window.location.pathname;
+
+    return navigate('/a/expired', {
+      state: {
+        backUrl: currentLocation,
+      },
+    });
+  }
+
   render() {
+
+    const { accessToken } = this.props;
 
     const widgetProps = {
       apiBaseUrl: `${typeof window === 'object' ? window.SUMMIT_API_BASE_URL : process.env.GATSBY_SUMMIT_API_BASE_URL}`,
       marketingApiBaseUrl: `${typeof window === 'object' ? window.MARKETING_API_BASE_URL : process.env.GATSBY_MARKETING_API_BASE_URL}`,
       summitId: parseInt(typeof window === 'object' ? window.SUMMIT_ID : process.env.GATSBY_GATSBY_SUMMIT_ID),
-      title: "Today's Speakers",
+      accessToken: accessToken,
       speakerCount: 3,
-      bigPics: true
+      bigPics: true,
+      speakerIds: [1, 187, 190],
+      onAuthError: (err, res) => this.expiredToken(err),
     };
 
     return (

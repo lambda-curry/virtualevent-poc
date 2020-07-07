@@ -55,14 +55,13 @@ export const HomePageTemplate = class extends React.Component {
                 apiBaseUrl={`${typeof window === 'object' ? window.SUMMIT_API_BASE_URL : process.env.GATSBY_SUMMIT_API_BASE_URL}`}
                 marketingApiBaseUrl={`${typeof window === 'object' ? window.MARKETING_API_BASE_URL : process.env.GATSBY_MARKETING_API_BASE_URL}`}
               />
-              <br />
-              {/*
-            <SpeakersWidgetClientSide
-              summitId={summit.id}
-              apiBaseUrl={`${typeof window === 'object' ? window.SUMMIT_API_BASE_URL : process.env.GATSBY_SUMMIT_API_BASE_URL}`}
-              marketingApiBaseUrl={`${typeof window === 'object' ? window.MARKETING_API_BASE_URL : process.env.GATSBY_MARKETING_API_BASE_URL}`}
-            />
-            */}
+              
+              <SpeakersWidgetClientSide
+                accessToken={loggedUser.accessToken}
+                summitId={summit.id}
+                apiBaseUrl={`${typeof window === 'object' ? window.SUMMIT_API_BASE_URL : process.env.GATSBY_SUMMIT_API_BASE_URL}`}
+                marketingApiBaseUrl={`${typeof window === 'object' ? window.MARKETING_API_BASE_URL : process.env.GATSBY_MARKETING_API_BASE_URL}`}
+              />
             </div>
             <div className="column is-one-quarter pb-6">
               <h2><b>My Info</b></h2>
