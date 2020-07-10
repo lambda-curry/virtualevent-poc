@@ -14,18 +14,14 @@ const eventReducer = (state = DEFAULT_STATE, action) => {
     case LOGOUT_USER:
       return DEFAULT_STATE;
     case START_LOADING:
-      return { ...state, loading: true };
-      break;
+      return { ...state, loading: true };      
     case STOP_LOADING:
-      return { ...state, loading: false };
-      break;
+      return { ...state, loading: false };      
     case GET_EVENT_DATA:
       const event = payload.response;
-      return { ...state, loading: false, event: event };
-      break;
+      return { ...state, loading: false, event: event };      
     default:
-      return state;
-      break;
+      return state;      
   }
 }
 

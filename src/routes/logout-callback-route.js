@@ -16,13 +16,13 @@ import { navigate } from "gatsby"
 
 class LogOutCallbackRoute extends React.Component {
 
-    constructor(props){
-        super(props);
-        // control variable to avoid double api call
-    }
-    componentWillMount() {
+    // constructor(props){
+    //     super(props);
+    //     // control variable to avoid double api call
+    // }
+    // componentWillMount() {
 
-    }
+    // }
 
     render() {
         console.log('render logout route')
@@ -31,13 +31,12 @@ class LogOutCallbackRoute extends React.Component {
         console.log(`retrieved state ${storedState}`);
         let backUrl = window.localStorage.getItem('post_logout_back_uri');
         window.localStorage.removeItem('post_logout_back_uri');
-        let { doLogout, location, history } = this.props;
+        let { doLogout, location } = this.props;
         let query = URI.parseQuery(location.search);
         if(!query.hasOwnProperty("state"))
             return (<p>Invalid Method</p>);
-        if(query["state"] != storedState)
+        if(query["state"] !== storedState)
             return (<p>Invalid State</p>);
-
         doLogout();
         backUrl ? navigate(backUrl) : navigate("/a/login");
         return null;

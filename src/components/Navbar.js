@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/logo.svg'
 
 import UserNavbar from './UserNavbar';
 import styles from '../styles/navbar.module.scss';

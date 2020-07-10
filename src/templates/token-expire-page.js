@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import Layout from '../components/Layout'
 
 import URI from "urijs";
 import { handleResetReducers } from '../actions/event-actions'
@@ -23,7 +22,7 @@ export const TokenExpirePageTemplate = class extends React.Component {
     let query = url.search(true);
     let fragment = url.fragment();
     let backUrl = query.hasOwnProperty('BackUrl') ? query['BackUrl'] : previousLocation;
-    if (fragment != null && fragment != '') {
+    if (fragment !== null && fragment !== '') {
       backUrl += `#${fragment}`;
     }
     setTimeout(() => {

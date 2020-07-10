@@ -6,6 +6,7 @@ const
         width="100%"
         height="420"
         src={props.etherpad_link}
+        title='Etherpad'
       />
     </div>
   )

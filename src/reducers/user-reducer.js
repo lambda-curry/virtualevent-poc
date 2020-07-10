@@ -15,22 +15,17 @@ const userReducer = (state = DEFAULT_STATE, action) => {
     case LOGOUT_USER:
       return DEFAULT_STATE;
     case START_LOADING:
-      return { ...state, loading: true };
-      break;
+      return { ...state, loading: true };      
     case STOP_LOADING:
-      return { ...state, loading: false };
-      break;
+      return { ...state, loading: false };      
     case GET_DISQUS_SSO:      
       const disqus = payload.response;
-      return { ...state, loading: false, disqusSSO: disqus };
-      break;
+      return { ...state, loading: false, disqusSSO: disqus };      
     case GET_ROCKETCHAT_SSO:      
       const rocket = payload.response;
-      return { ...state, loading: false, rocketChatSSO: rocket };
-      break;
+      return { ...state, loading: false, rocketChatSSO: rocket };      
     default:
-      return state;
-      break;
+      return state;      
   }
 }
 

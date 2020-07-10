@@ -3,18 +3,16 @@ import React from 'react'
 import LobbyHero from '../content/hero-banner.json'
 import styles from '../styles/lobby-hero.module.scss'
 
-console.log(LobbyHero.image);
-
-const LobbyHeroComponent = ({ }) => (  
-  <section class="hero">
+const LobbyHeroComponent = () => (  
+  <section className="hero">
     <div className={`${styles.heroColumns} columns`}>
       <div className={`${styles.leftColumn} column is-6 is-black`}>
-        <div class={`${styles.heroContainer} hero-body`}>
-          <div class="container">
-            <h1 class="title">
+        <div className={`${styles.heroContainer} hero-body`}>
+          <div className="container">
+            <h1 className="title">
               {LobbyHero.title}
             </h1>
-            <h2 class="subtitle">
+            <h2 className="subtitle">
               {LobbyHero.subTitle}
             </h2>
           </div>

@@ -5,8 +5,6 @@ import Header from '../components/Header'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 
-import { safePrefix } from '../utils/safePrefix';
-
 // import "../styles/all.scss"
 // import "../styles/palette.scss"
 import "../styles/bulma.scss"

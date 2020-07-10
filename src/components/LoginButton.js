@@ -13,7 +13,7 @@ const LoginButton = class extends React.Component {
     let query    = url.search(true);
     let fragment = url.fragment();
     let backUrl  = query.hasOwnProperty('BackUrl') ? query['BackUrl'] : location;
-    if(fragment != null && fragment != ''){
+    if(fragment !== null && fragment !== ''){
         backUrl += `#${fragment}`;
     }
     return backUrl;

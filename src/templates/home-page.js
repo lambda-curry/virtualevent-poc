@@ -1,17 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql, navigate } from 'gatsby'
+import { navigate } from 'gatsby'
 import { connect } from 'react-redux'
 
 import Layout from '../components/Layout'
+
 import LobbyHeroComponent from '../components/LobbyHeroComponent'
+import ClockComponent from '../components/ClockComponent'
+import SidebarAdvertise from '../components/SidebarAdvertiseComponent'
+import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
+import LiveEventWidgetComponent from '../components/LiveEventWidgetComponent'
+import SpeakersWidgetComponent from '../components/SpeakersWidgetComponent'
 
 import { getSummitData } from '../actions/summit-actions'
-import Loadable from "@loadable/component"
-
-const ScheduleLiteClientSide = Loadable(() => import('../components/ScheduleLiteComponent'))
-const LiveEventWidgetClientSide = Loadable(() => import('../components/LiveEventWidgetComponent'))
-const SpeakersWidgetClientSide = Loadable(() => import('../components/SpeakersWidgetComponent'))
 
 export const HomePageTemplate = class extends React.Component {
 
@@ -35,7 +36,7 @@ export const HomePageTemplate = class extends React.Component {
 
   render() {
 
-    const { loggedUser, summit } = this.props;
+    const { loggedUser, summit, now } = this.props;
 
     return (
       <React.Fragment>
@@ -44,31 +45,26 @@ export const HomePageTemplate = class extends React.Component {
           <div className="columns">
             <div className="column is-one-quarter">
               <h2><b>Community</b></h2>
-              <div className="sponsor-container">
-                <img src="/img/intel.png" alt="sponsor" />
-              </div>
+              <SidebarAdvertise section='lobby' />
             </div>
             <div className="column is-half">
-              <h2><b>Today's Sessions</b></h2>
-              <LiveEventWidgetClientSide
-                summitId={summit.id}
-                apiBaseUrl={`${typeof window === 'object' ? window.SUMMIT_API_BASE_URL : process.env.GATSBY_SUMMIT_API_BASE_URL}`}
-                marketingApiBaseUrl={`${typeof window === 'object' ? window.MARKETING_API_BASE_URL : process.env.GATSBY_MARKETING_API_BASE_URL}`}
-              />
-              
-              <SpeakersWidgetClientSide
+              <LiveEventWidgetComponent summitId={summit.id} />
+              <SpeakersWidgetComponent
                 accessToken={loggedUser.accessToken}
                 summitId={summit.id}
-                apiBaseUrl={`${typeof window === 'object' ? window.SUMMIT_API_BASE_URL : process.env.GATSBY_SUMMIT_API_BASE_URL}`}
-                marketingApiBaseUrl={`${typeof window === 'object' ? window.MARKETING_API_BASE_URL : process.env.GATSBY_MARKETING_API_BASE_URL}`}
+                now={now}
               />
             </div>
             <div className="column is-one-quarter pb-6">
               <h2><b>My Info</b></h2>
-              <ScheduleLiteClientSide accessToken={loggedUser.accessToken} eventClick={(ev) => this.onEventChange(ev)} />
+              <ScheduleLiteComponent
+                accessToken={loggedUser.accessToken}
+                eventClick={(ev) => this.onEventChange(ev)}
+              />
             </div>
           </div>
         </div>
+        <ClockComponent summit={summit} now={now} />
       </React.Fragment>
     )
   }
@@ -81,7 +77,7 @@ HomePageTemplate.propTypes = {
   getSummitData: PropTypes.func,
 }
 
-const HomePage = ({ loggedUser, location, summit, getSummitData }) => {
+const HomePage = ({ loggedUser, location, summit, getSummitData, now }) => {
 
   return (
     <Layout>
@@ -89,6 +85,7 @@ const HomePage = ({ loggedUser, location, summit, getSummitData }) => {
         loggedUser={loggedUser}
         location={location}
         summit={summit}
+        now={now}
         getSummitData={getSummitData}
       />
     </Layout>
@@ -104,7 +101,8 @@ HomePage.propTypes = {
 
 const mapStateToProps = ({ loggedUserState, summitState }) => ({
   loggedUser: loggedUserState,
-  summit: summitState.summit
+  summit: summitState.summit,
+  now: summitState.nowUtc,
 })
 
 export default connect(mapStateToProps,

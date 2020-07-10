@@ -1,11 +1,11 @@
 import { navigate } from "gatsby";
 
-import { createAction, stopLoading } from "openstack-uicore-foundation/lib/methods";
-import { LOGOUT_USER } from "openstack-uicore-foundation/lib/actions";
+import { stopLoading } from "openstack-uicore-foundation/lib/methods";
+// import { LOGOUT_USER } from "openstack-uicore-foundation/lib/actions";
 
 export const customErrorHandler = (err, res) => (dispatch, state) => {
   let code = err.status;
-  let msg = '';
+  // let msg = '';
   dispatch(stopLoading());
   switch (code) {
     // case 403:
@@ -23,7 +23,7 @@ export const customErrorHandler = (err, res) => (dispatch, state) => {
       if (!clearing_session_state) {
         window.clearing_session_state = true;
         console.log('authErrorHandler 401 - re login');
-        navigate('/a/expired', {
+        navigate('/auth/expired', {
           state: {
             backUrl: currentLocation,
           },

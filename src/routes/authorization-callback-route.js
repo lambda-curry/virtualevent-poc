@@ -13,7 +13,7 @@
 
 import history from '../history.js'
 import React from 'react'
-import { Route, Redirect } from 'react-router-dom';
+import { Redirect } from '@reach/router'
 import { connect } from 'react-redux';
 import { AbstractAuthorizationCallbackRoute } from "openstack-uicore-foundation/lib/components";
 import { getUserInfo } from "openstack-uicore-foundation/lib/methods";

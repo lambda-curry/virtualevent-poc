@@ -2,23 +2,18 @@ import React from "react"
 import { Router, Location } from "@reach/router"
 import { connect } from 'react-redux'
 
-import Layout from "../components/Layout"
 import LoginPage from "../templates/login-page"
 import HomePage from "../templates/home-page"
 import EventPage from "../templates/event-page"
-import TokenExpirePage from "../templates/token-expire-page"
 
-import Loadable from "@loadable/component"
-
-const LoadablePrivateRoute = Loadable(() => import('../routes/PrivateRoute'))
+import PrivateRoute from "../routes/PrivateRoute"
 
 const App = ({ isLoggedUser }) => (
   <Location>
     {({ location }) => (
       <Router basepath="/a" >
-        <LoadablePrivateRoute path="/" component={HomePage} isLoggedIn={isLoggedUser} location={location} />
-        <LoadablePrivateRoute path="/event/:eventId" component={EventPage} isLoggedIn={isLoggedUser} location={location} />
-        <TokenExpirePage path="/expired" location={location} />
+        <PrivateRoute path="/" component={HomePage} isLoggedIn={isLoggedUser} location={location} />
+        <PrivateRoute path="/event/:eventId" component={EventPage} isLoggedIn={isLoggedUser} location={location} />
         <LoginPage path="/login" location={location} />
       </Router>
     )}

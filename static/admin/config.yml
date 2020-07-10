@@ -1,6 +1,7 @@
 backend:
-  name: git-gateway
+  name: github
   branch: master
+  repo: fntechgit/virtualevent-poc
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
@@ -12,6 +13,23 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "configurations"
+    label: "Configurations"
+    editor:
+      preview: false
+    files:
+      - file: "src/content/ads.json"
+        label: "Sponsor Ads"
+        name: "ads"
+        fields:
+          - {label: "Sponsor Ads", name: "ads", widget: list, fields: [
+              {label: "Section", name: "section", widget: string},
+              {label: "Ads", name: "ads", widget: list, fields: [
+                {label: "Image", name: "image", widget: image},
+                {label: "Text", name: "text", widget: string},
+                {label: "Specific Event", name: "id", widget: string, required: false}
+              ]}
+            ]}
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"

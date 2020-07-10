@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { Link, StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 import { handleResetReducers } from '../actions/event-actions'
 import Navbar from './Navbar'
 

@@ -1,25 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql, navigate } from 'gatsby'
+import { navigate } from 'gatsby'
 import { connect } from 'react-redux'
 import Layout from '../components/Layout'
 import { createBrowserHistory } from 'history'
-import Content, { HTMLContent } from '../components/Content'
 
 import DisqusComponent from '../components/DisqusComponent'
 import Etherpad from '../components/Etherpad'
-import RocketChatComponent from '../components/RocketChat'
+import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
+// import RocketChatComponent from '../components/RocketChat'
 import VideoComponent from '../components/VideoComponent'
 import TalkComponent from '../components/TalkComponent'
 import DocumentsComponent from '../components/DocumentsComponent'
+import SidebarAdvertise from '../components/SidebarAdvertiseComponent'
 
 import { getEventBySlug } from '../actions/event-actions'
 import { getDisqusSSO, getRocketChatSSO } from '../actions/user-actions'
 
-import Loadable from "@loadable/component"
 import { AttendanceTracker } from "openstack-uicore-foundation/lib/components";
-
-const ScheduleLiteClientSide = Loadable(() => import('../components/ScheduleLiteComponent'))
 
 export const EventPageTemplate = class extends React.Component {
 
@@ -119,13 +117,11 @@ export const EventPageTemplate = class extends React.Component {
           <section className="section px-4 py-6">
             <div className="columns">
               <div className="column is-one-quarter pb-6">
-                <div className="sponsor-container">
-                  <img src="/img/intel.png" alt="sponsor" />
-                </div>
+                <SidebarAdvertise section='event' id={event.id} />
               </div>
               <div className="column is-two-quarters pb-6">
                 {/* <div className="rocket-container"> */}
-                <ScheduleLiteClientSide accessToken={loggedUser.accessToken} eventClick={(ev) => this.onEventChange(ev)} />
+                <ScheduleLiteComponent accessToken={loggedUser.accessToken} eventClick={(ev) => this.onEventChange(ev)} />
                 {/* <RocketChatComponent rocketChatSSO={user.rocketChatSSO} embedded={false} /> */}
                 {/* </div> */}
               </div>
@@ -142,14 +138,12 @@ export const EventPageTemplate = class extends React.Component {
               {/* <div className="rocket-container"> */}
               <span>Event not found</span>
               <br />
-              <ScheduleLiteClientSide accessToken={loggedUser.accessToken} eventClick={(ev) => this.onEventChange(ev)} />
+              <ScheduleLiteComponent accessToken={loggedUser.accessToken} eventClick={(ev) => this.onEventChange(ev)} />
               {/*   <RocketChatComponent accessToken={loggedUser.accessToken} embedded={false} /> */}
               {/* </div> */}
             </div>
             <div className="column is-one-quarter has-text-centered pb-6">
-              <div className="sponsor-container">
-                <img src="/img/intel.png" alt="sponsor" />
-              </div>
+              <SidebarAdvertise section='event' id={event.id} />
             </div>
           </div>
         </section >
@@ -160,7 +154,7 @@ export const EventPageTemplate = class extends React.Component {
 
 EventPageTemplate.propTypes = {
   loggedUser: PropTypes.object,
-  // event: PropTypes.object,
+  event: PropTypes.object,
   user: PropTypes.object,
   eventId: PropTypes.string,
   getEventBySlug: PropTypes.func,
@@ -170,7 +164,6 @@ EventPageTemplate.propTypes = {
 
 const EventPage = (
   {
-    data,
     loggedUser,
     summit,
     event,
@@ -183,44 +176,24 @@ const EventPage = (
   }
 ) => {
 
-  if (data) {
-    const { event } = data
-    return (
-      <Layout>
-        <EventPageTemplate
-          loggedUser={loggedUser}
-          event={event}
-          summit={summit}
-          eventId={eventId}
-          location={location}
-          user={user}
-          getEventBySlug={getEventBySlug}
-          getDisqusSSO={getDisqusSSO}
-          getRocketChatSSO={getRocketChatSSO}
-        />
-      </Layout>
-    )
-  } else {
-    return (
-      <Layout>
-        <EventPageTemplate
-          loggedUser={loggedUser}
-          event={event}
-          summit={summit}
-          eventId={eventId}
-          location={location}
-          user={user}
-          getEventBySlug={getEventBySlug}
-          getDisqusSSO={getDisqusSSO}
-          getRocketChatSSO={getRocketChatSSO}
-        />
-      </Layout>
-    )
-  }
+  return (
+    <Layout>
+      <EventPageTemplate
+        loggedUser={loggedUser}
+        event={event}
+        summit={summit}
+        eventId={eventId}
+        location={location}
+        user={user}
+        getEventBySlug={getEventBySlug}
+        getDisqusSSO={getDisqusSSO}
+        getRocketChatSSO={getRocketChatSSO}
+      />
+    </Layout>
+  )
 }
 
 EventPage.propTypes = {
-  data: PropTypes.object,
   loggedUser: PropTypes.object,
   location: PropTypes.object,
   event: PropTypes.object,
@@ -231,22 +204,6 @@ EventPage.propTypes = {
   getDisqusSSO: PropTypes.func,
   getRocketChatSSO: PropTypes.func
 }
-
-// export const eventPageQuery = graphql`
-//   query EventPage($id: String!) {
-//     event(id: { eq: $id }) {
-//       title
-//       description
-//       attending_media      
-//       end_date
-//       etherpad_link
-//       meeting_url
-//       start_date
-//       streaming_url
-//       timezone
-//     }
-//   }
-// `
 
 const mapStateToProps = ({ loggedUserState, eventState, summitState, userState }) => ({
   loggedUser: loggedUserState,

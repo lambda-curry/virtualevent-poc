@@ -21,7 +21,7 @@ const Footer = ({ summit }) => (
         <div className="columns">
           <div className="column is-one-fifth">
             {footerContent.logo.display &&
-              <img src={summit && summit.logo ?
+              <img alt="logo" src={summit && summit.logo ?
                 summit.logo
                 :
                 data.summit && data.summit.logo ?

@@ -42,7 +42,7 @@ const DocumentsComponent = ({ materials }) => {
                         <i className={`fa ${material.class_name === 'PresentationVideo' ? 'fa-video-camera' : 'fa-link'} icon is-large`}></i>
                       </div>
                       <div className="column is 8">
-                        <a href={material.class_name === 'PresentationVideo' ? `https://www.youtube.com/watch?v=${material.youtube_id}` : material.link} target="_blank">
+                        <a href={material.class_name === 'PresentationVideo' ? `https://www.youtube.com/watch?v=${material.youtube_id}` : material.link} target="_blank" rel="noreferrer">
                           <span><b>{material.name}</b></span>
                         </a>
                       </div>

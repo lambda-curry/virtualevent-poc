@@ -4,10 +4,6 @@ import { DiscussionEmbed } from 'disqus-react';
 
 const DisqusComponent = class extends React.Component {
 
-  constructor(props) {
-    super(props);    
-  }
-
   render() {
 
     const { event, disqusSSO } = this.props;

@@ -51,7 +51,6 @@ exports.createPages = ({ actions, graphql }) => {
               slug
             }
             frontmatter {
-              tags
               templateKey
             }
           }
@@ -70,7 +69,6 @@ exports.createPages = ({ actions, graphql }) => {
       const id = edge.node.id
       createPage({
         path: edge.node.fields.slug,
-        tags: edge.node.frontmatter.tags,
         component: path.resolve(
           `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
         ),
@@ -212,25 +210,14 @@ exports.createPages = ({ actions, graphql }) => {
   })
 }
 
-exports.onCreateWebpackConfig = ({ stage, loaders, actions, plugins }) => {
-  if (stage === "build-html") {
-    actions.setWebpackConfig({
-      module: {
-        rules: [
-          {
-            test: /openstack-uicore-foundation/,
-            use: loaders.null(),
-          },
-        ],
-      },
-    })
-  } else {
-    actions.setWebpackConfig({
-      plugins: [
-        plugins.define({
-          'global.GENTLY': false,
-        }),
-      ],
-    })
-  }
+exports.onCreateWebpackConfig = ({ actions, plugins }) => {
+  actions.setWebpackConfig({
+    // canvas is a jsdom external dependency
+    externals: ['canvas'],
+    plugins: [
+      plugins.define({
+        'global.GENTLY': false,
+      })
+    ]
+  })
 }

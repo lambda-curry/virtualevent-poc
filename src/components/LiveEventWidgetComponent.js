@@ -1,6 +1,7 @@
-import React, { Component } from "react"
+import React from "react"
 import { Helmet } from 'react-helmet'
-import { navigate } from "gatsby";
+
+import envVariables from '../utils/envVariables';
 
 // these two libraries are client-side only
 import LiveEventWidget from 'live-event-widget/dist';
@@ -11,9 +12,9 @@ const LiveEventWidgetComponent = class extends React.Component {
   render() {
 
     const widgetProps = {
-      apiBaseUrl: `${typeof window === 'object' ? window.SUMMIT_API_BASE_URL : process.env.GATSBY_SUMMIT_API_BASE_URL}`,
-      marketingApiBaseUrl: `${typeof window === 'object' ? window.MARKETING_API_BASE_URL : process.env.GATSBY_MARKETING_API_BASE_URL}`,
-      summitId: parseInt(typeof window === 'object' ? window.SUMMIT_ID : process.env.GATSBY_GATSBY_SUMMIT_ID),
+      apiBaseUrl: envVariables.SUMMIT_API_BASE_URL,
+      marketingApiBaseUrl: envVariables.MARKETING_API_BASE_URL,
+      summitId: parseInt(envVariables.SUMMIT_ID),
     };
 
     return (

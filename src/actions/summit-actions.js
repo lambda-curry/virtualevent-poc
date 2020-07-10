@@ -1,18 +1,14 @@
-import axios from 'axios';
-
-import { authErrorHandler } from "openstack-uicore-foundation/lib/methods";
 import {
-    getRequest,
-    createAction,
-    stopLoading,
-    startLoading,
-    showMessage,
-    showSuccessMessage,
+  getRequest,
+  createAction,
+  stopLoading,
+  startLoading,
 } from 'openstack-uicore-foundation/lib/methods';
 
 import { customErrorHandler } from '../utils/customErrorHandler';
 
-export const GET_SUMMIT_DATA = 'GET_SUMMIT_DATA';
+export const GET_SUMMIT_DATA  = 'GET_SUMMIT_DATA';
+export const UPDATE_CLOCK     = 'UPDATE_CLOCK';
 
 export const getSummitData = () => (dispatch, getState) => {
 
@@ -31,3 +27,7 @@ export const getSummitData = () => (dispatch, getState) => {
     return (e);
   });
 }
+
+export const updateClock = (timestamp) => (dispatch) => {
+  dispatch(createAction(UPDATE_CLOCK)({ timestamp }));
+};

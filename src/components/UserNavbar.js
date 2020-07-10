@@ -52,9 +52,9 @@ const UserNavbar = class extends React.Component {
               <span aria-hidden="true"></span>
             </a>
             <div className={styles.navbarItem}>
-              <a className={`${styles.button} ${styles.isLarge} ${styles.lobbyButton}`} onClick={() => { this.props.clearState(); }}>
+              <Link className={`${styles.button} ${styles.isLarge} ${styles.lobbyButton}`} to="/a/">
                 <strong>Lobby</strong>
-              </a>
+              </Link>
             </div>
           </div>
           <div className={styles.navbarEnd}>
