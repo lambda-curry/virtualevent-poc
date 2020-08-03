@@ -1,8 +1,8 @@
 {
   "heroBanner": {
-    "title": "YOCO Summit",
-    "date": "May 20-22, 2021",
-    "subTitle": "Live from San Jose, CA",
+    "title": "ALL HANDS MEETING",
+    "date": "AUGUST 17, 2020",
+    "subTitle": "9AM-12PM (PST)",
     "images": [
       {
         "image": "/img/flavor_wheel.jpg"
@@ -15,11 +15,11 @@
   },
   "sponsors": [
     {
-      "image": "/img/marketing/ad_landing_hp.jpg",
+      "image": "/img/fntech-all-hands-reg-ad1.png",
       "size": "simple"
     },
     {
-      "image": "/img/marketing/ad_landing_spotify.jpg",
+      "image": "/img/fntech-all-hands-reg-ad2.png",
       "size": "simple"
     },
     {
