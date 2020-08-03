@@ -24,7 +24,7 @@ exports.onPreBootstrap = async () => {
     return colorObject;
   }).catch(e => console.log('ERROR: ', e));
 
-  fs.writeFileSync('src/gatsby-plugin-theme-ui/index.js', `export default ${JSON.stringify(colours).replace(/"([^"]+)":/g, '$1:')}`, 'utf8', function (err) {
+  fs.writeFileSync('src/content/colors.js', `export default ${JSON.stringify(colours).replace(/"([^"]+)":/g, '$1:')}`, 'utf8', function (err) {
     if (err) throw err;
     console.log('Saved!');
   });

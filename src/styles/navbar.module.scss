@@ -3,7 +3,7 @@
 @import "bulma/sass/components/navbar";
 
 .navbar {
-  background-color: #6d6e71;
+  background-color: var(--color_primary);
   min-height: 7.25rem;
 
   .navbar-brand {
@@ -19,30 +19,30 @@
   }
 
   .user-icon {
-    color: #ffffff;
+    color: var(--color_text_light);
     padding-left: 10px;
   }
 
   .navbar-menu {
     .navbar-item {
-      color: #ffffff;
+      color: var(--color_text_light);
       font-weight: 300;
 
       .link {
-        color: #ffffff;
+        color: var(--color_text_light);
 
         &:hover {
-          color: #ffffff;
+          color: var(--color_text_light);
           text-decoration: none;
         }
 
         &:active {
-          color: #ffffff;
+          color: var(--color_text_light);
           text-decoration: underline;
         }
 
         &:visited {
-          color: #ffffff;
+          color: var(--color_text_light);
         }
       }
     }
@@ -79,11 +79,11 @@
 
   .user-burger {
     display: block;
-    color: #ffffff;
+    color: var(--color_text_light);
   }
 
   .user-icon {
-    color: #ffffff;
+    color: var(--color_text_light);
     padding-left: 10px;
   }
 }
@@ -91,24 +91,24 @@
 @media (max-width: 1023px) {
   .navbar {
     .navbar-burger {
-      color: #ffffff;
+      color: var(--color_text_light);
     }
 
     .navbar-menu {
       .navbar-item {
         .link {
-          color: #6d6e71;
+          color: var(--color_primary);
 
           &:hover {
-            color: #6d6e71;
+            color: var(--color_primary);
           }
 
           &:active {
-            color: #6d6e71;
+            color: var(--color_primary);
           }
 
           &:visited {
-            color: #6d6e71;
+            color: var(--color_primary);
           }
         }
       }
@@ -119,7 +119,7 @@
       }
 
       .user-icon {
-        color: #6d6e71;
+        color: var(--color_primary);
         padding-bottom: 5px;
       }
     }

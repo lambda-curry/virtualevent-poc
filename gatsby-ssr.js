@@ -19,4 +19,4 @@ global.window.matchMedia = function() {
 }
 
 global.Blob = Blob
-global.XMLHttpRequest = XMLHttpRequest;
+global.XMLHttpRequest = XMLHttpRequest

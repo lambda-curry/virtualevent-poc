@@ -6,6 +6,10 @@ body {
   height: 100%;
 }
 
+html[data-body-class='no-js'] {
+  display: none;
+}
+
 label {
   font-weight: 300;
 }
@@ -53,7 +57,7 @@ div.content {
 
 div.title {
   font-weight: 700 !important;  
-  color: #333333 !important;
+  color: var(--color_text_dark) !important;
   font-family: 'Nunito Sans', sans-serif;
 }
 

@@ -3,13 +3,13 @@
 
 // If need, change your variables before importing Bulma
 $palette: (
-  primary:           #00cec4,
+  primary:           var(--color_secondary_contrast),
   primary-dark:      #1eaaa3,
-  secondary:         #6d6e71,
-  secondary-dark:    #f1f2f2,
+  secondary:         var(--color_primary),
+  secondary-dark:    var(--color_primary_contrast),
   text-dark:         #006d68,
-  text-light:        #ffffff,
-  highlight:         #ff5e32
+  text-light:        var(--color_text_light),
+  highlight:         var(--color_secondary_contrast)
 );
 
 $footer-background-color: map-get($palette, secondary);

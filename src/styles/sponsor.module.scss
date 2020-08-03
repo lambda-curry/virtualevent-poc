@@ -40,7 +40,8 @@
 
   .button {
     width: 100%;
-    background-color: #1ea9a2;
-    color: #fff;    
+    background-color: var(--color_secondary);
+    color: var(--color_text_light);
+    border: 0px;
   }
 }

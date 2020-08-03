@@ -5,14 +5,14 @@
 }
 
 div.column:first-of-type {
-  background-color: #ff5a32;
+  background-color: var(--color_secondary_contrast);
 }
 
 .hero-columns {
 
   .left-column {
     width: 70%;
-    background-color: #ff5a32;
+    background-color: var(--color_secondary_contrast);
     transform: skew(-25deg);
     margin-left: -10%;
     z-index: 3;
@@ -26,7 +26,7 @@ div.column:first-of-type {
 
   .mid-column {
     width: 5%;
-    background-color: #00cec4;
+    background-color: var(--color_secondary);
     transform: skew(-25deg);
     margin-left: -2%;
     z-index: 2;
@@ -120,7 +120,7 @@ div.column:first-of-type {
         }
         &:hover,
         &:active {
-          border-color: #fff;          
+          border-color: #fff;
         }
         &:focus {
           border-color: #fff;
@@ -153,7 +153,7 @@ div.column:first-of-type {
   .hero-marketing-columns {
 
     .left-column {
-      background-color: #ff5a32;
+      background-color: var(--color_secondary_contrast);
       z-index: 3;
       min-height: 100%;
     }
