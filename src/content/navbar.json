@@ -6,6 +6,11 @@
       "display": true
     },
     {
+      "title": "Schedule",
+      "link": "/a/schedule",
+      "display": true
+    },
+    {
       "title": "About the event",
       "link": "/about-event",
       "display": true

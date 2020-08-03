@@ -4,6 +4,7 @@ import { navigate } from 'gatsby'
 import { connect } from 'react-redux'
 
 import Layout from '../components/Layout'
+import withOrchestra from "../utils/widgetOrchestra";
 
 import LobbyHeroComponent from '../components/LobbyHeroComponent'
 import AdvertiseComponent from '../components/AdvertiseComponent'
@@ -38,7 +39,7 @@ export const HomePageTemplate = class extends React.Component {
 
   render() {
 
-    const { loggedUser, user, summit } = this.props;
+    const { loggedUser, user, summit, addWidgetRef, updateWidgets } = this.props;
 
     return (
       <React.Fragment>
@@ -58,7 +59,9 @@ export const HomePageTemplate = class extends React.Component {
                 onEventClick={(ev) => this.onEventChange(ev)}
                 landscape={false}
                 yourSchedule={false}
-                showNav={false}                                          
+                showNav={false}
+                onRef={addWidgetRef}
+                updateCallback={updateWidgets}
               />
               <SpeakersWidgetComponent
                 accessToken={loggedUser.accessToken}
@@ -81,6 +84,8 @@ export const HomePageTemplate = class extends React.Component {
                 landscape={true}
                 yourSchedule={true}                
                 showNav={true}
+                onRef={addWidgetRef}
+                updateCallback={updateWidgets}
               />
               <AdvertiseComponent section='lobby' column="right"/>
               <SponsorComponent tier='gold'/>
@@ -91,7 +96,9 @@ export const HomePageTemplate = class extends React.Component {
       </React.Fragment>
     )
   }
-}
+};
+
+const OrchestedTemplate = withOrchestra(HomePageTemplate);
 
 const HomePage = (
   {
@@ -106,7 +113,7 @@ const HomePage = (
 
   return (
     <Layout>
-      <HomePageTemplate
+      <OrchestedTemplate
         loggedUser={loggedUser}
         summit={summit}
         user={user}
