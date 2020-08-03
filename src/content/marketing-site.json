@@ -1,0 +1,42 @@
+{
+  "heroBanner": {
+    "title": "YOCO Summit",
+    "date": "May 20-22, 2021",
+    "subTitle": "Live from San Jose, CA",
+    "images": [
+      {
+        "image": "/img/flavor_wheel.jpg"
+      }
+    ]
+  },
+  "leftColumn": {
+    "schedule": true,
+    "disqus": false
+  },
+  "sponsors": [
+    {
+      "image": "/img/marketing/ad_landing_hp.jpg",
+      "size": "simple"
+    },
+    {
+      "image": "/img/marketing/ad_landing_spotify.jpg",
+      "size": "simple"
+    },
+    {
+      "image": "/img/marketing/ad_landing_huawei.jpg",
+      "size": "double"
+    },
+    {
+      "image": "/img/marketing/ad_landing_intel.jpg",
+      "size": "simple"
+    },
+    {
+      "image": "/img/marketing/ad_landing_allianz.jpg",
+      "size": "simple"
+    },
+    {
+      "image": "/img/marketing/ad_landing_redhat.jpg",
+      "size": "double"
+    }
+  ]
+}

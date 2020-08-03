@@ -11,44 +11,41 @@
  * limitations under the License.
  **/
 
-import history from '../history.js'
 import React from 'react'
-import { Redirect } from '@reach/router'
+import URI from "urijs"
+import { Redirect, navigate } from '@reach/router'
 import { connect } from 'react-redux';
 import { AbstractAuthorizationCallbackRoute } from "openstack-uicore-foundation/lib/components";
-import { getUserInfo } from "openstack-uicore-foundation/lib/methods";
+import { getUserProfile } from '../actions/user-actions'
 
-import { customErrorHandler } from '../utils/customErrorHandler';
+import envVariables from '../utils/envVariables'
 
 class AuthorizationCallbackRoute extends AbstractAuthorizationCallbackRoute {
 
-    constructor(props){
-        if (typeof window !== 'undefined') {
-            super(process.env.GATSBY_IDP_BASE_URL, process.env.GATSBY_OAUTH2_CLIENT_ID, props);
-        } else {
-            super(window.IDP_BASE_URL, window.OAUTH2_CLIENT_ID, props);
-        }
-    }
+  constructor(props) {
+    super(envVariables.IDP_BASE_URL, envVariables.OAUTH2_CLIENT_ID, props);
+  }
 
-    _callback(backUrl) {
-        this.props.getUserInfo(backUrl, history, customErrorHandler);
-    }
+  _callback(backUrl) {
+    this.props.getUserProfile();
+    navigate(URI.decode(backUrl));
+  }
 
-    _redirect2Error(error){
-        return (
-            <div render={ props => {
-                return <Redirect to={`/error?error=${error}`} />
-            }} />
-        )
-    }
+  _redirect2Error(error) {
+    return (
+      <div render={props => {
+        return <Redirect to={`/error?error=${error}`} />
+      }} />
+    )
+  }
 }
 
 const mapStateToProps = ({ loggedUserState }) => ({
   accessToken: loggedUserState.accessToken,
-  idToken:  loggedUserState.idToken,
+  idToken: loggedUserState.idToken,
   sessionState: loggedUserState.sessionState,
 })
 
-export default connect(mapStateToProps,{
-  getUserInfo
+export default connect(mapStateToProps, {
+  getUserProfile
 })(AuthorizationCallbackRoute)

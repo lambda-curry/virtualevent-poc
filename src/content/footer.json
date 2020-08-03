@@ -1,80 +1,94 @@
 {
-  "logo": {
-    "display": true,
-    "src": ""
-  },
   "columns": [
     {
       "title": "The Event",
+      "display": true,
       "items": [
         {
           "title": "All Projects",
-          "link": ""
+          "link": "#"
         },
         {
           "title": "Host a project",
-          "link": ""
+          "link": "#"
         },
         {
           "title": "Services",
-          "link": ""
+          "link": "#"
         }
       ]
     },
     {
       "title": "The Vision",
+      "display": true,
       "items": [
         {
           "title": "About",
-          "link": ""
+          "link": "#"
         },
         {
           "title": "Supporters",
-          "link": ""
+          "link": "#"
         }
       ]
     },
     {
       "title": "Membership",
+      "display": true,
       "items": [
         {
           "title": "Corporate members",
-          "link": ""
+          "link": "#"
         },
         {
           "title": "Join us",
-          "link": ""
+          "link": "#"
         },
         {
           "title": "Services",
-          "link": ""
+          "link": "#"
         }
       ]
     }
   ],
   "social": {
     "title": "Follow Us",
+    "display": true,
     "networks": [
       {
         "icon": "fa-facebook",
-        "display": true,
-        "link": ""
+        "link": "#",
+        "display": true
       },
       {
         "icon": "fa-twitter",
-        "display": true,
-        "link": ""
+        "link": "#",
+        "display": true
       },
       {
         "icon": "fa-linkedin",
-        "display": true,
-        "link": ""
+        "link": "#",
+        "display": true
       },
       {
         "icon": "fa-google-plus",
-        "display": true,
-        "link": ""
+        "link": "#",
+        "display": true
       }
     ]
-  }
+  },
+  "legal": [
+    {
+      "title": "Privacy Policy",
+      "link": "#"
+    },
+    {
+      "title": "Legals",
+      "link": "#"
+    },
+    {
+      "title": "Disclaimer",
+      "link": "#"
+    }
+  ]
 }

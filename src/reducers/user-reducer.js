@@ -1,11 +1,12 @@
 import { START_LOADING, STOP_LOADING, LOGOUT_USER } from "openstack-uicore-foundation/lib/actions";
 
-import { GET_DISQUS_SSO, GET_ROCKETCHAT_SSO } from '../actions/user-actions'
+import { GET_DISQUS_SSO, GET_ROCKETCHAT_SSO, GET_USER_PROFILE } from '../actions/user-actions'
 
 const DEFAULT_STATE = {
   loading: false,
   disqusSSO: {},
   rocketChatSSO: {},
+  userProfile: {},
 }
 
 const userReducer = (state = DEFAULT_STATE, action) => {
@@ -17,7 +18,9 @@ const userReducer = (state = DEFAULT_STATE, action) => {
     case START_LOADING:
       return { ...state, loading: true };      
     case STOP_LOADING:
-      return { ...state, loading: false };      
+      return { ...state, loading: false };
+    case GET_USER_PROFILE:
+      return { ...state, userProfile: payload.response}
     case GET_DISQUS_SSO:      
       const disqus = payload.response;
       return { ...state, loading: false, disqusSSO: disqus };      

@@ -1,10 +1,9 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { StaticQuery, graphql } from "gatsby"
-import { handleResetReducers } from '../actions/event-actions'
 import Navbar from './Navbar'
 
-const Header = ({ isLoggedUser, summit, handleResetReducers }) => (
+const Header = ({ isLoggedUser, summit}) => (
 
   <StaticQuery
     query={graphql`
@@ -16,7 +15,7 @@ const Header = ({ isLoggedUser, summit, handleResetReducers }) => (
       `}
     render={data => (
       <header>
-        <Navbar isLoggedUser={isLoggedUser} clearState={handleResetReducers}
+        <Navbar isLoggedUser={isLoggedUser}
           logo={
             summit && summit.logo ?
               summit.logo
@@ -36,4 +35,4 @@ const mapStateToProps = ({ loggedUserState, summitState }) => ({
   summit: summitState.summit
 })
 
-export default connect(mapStateToProps, { handleResetReducers })(Header)
+export default connect(mapStateToProps)(Header)

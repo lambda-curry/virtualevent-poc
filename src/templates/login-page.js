@@ -7,15 +7,16 @@ import LoginButton from '../components/LoginButton'
 
 import { navigate } from "gatsby"
 
-export const LoginPageTemplate = ({ loggedUserState }) => {
+export const LoginPageTemplate = ({ loggedUserState, location }) => {
 
   if (loggedUserState.isLoggedUser) {
-    navigate('/a/')
+    navigate('/a/');
+    return null
   }
 
   return (
     <React.Fragment>
-      <LoginButton />
+      <LoginButton location={location}/>
     </React.Fragment>
   )
 }

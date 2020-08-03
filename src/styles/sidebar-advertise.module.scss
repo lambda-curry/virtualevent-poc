@@ -1,11 +1,21 @@
+.link {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .button {
   align-self: center;
   border-radius: 3px;
-  bottom: 5rem;  
-  width: 80%;
+  bottom: 5rem;
+  width: 100%;
 }
 
 .sponsor-container {
   display: flex;
   flex-direction: column;
+}
+
+.sponsor-container img {
+  padding-bottom: 1em;
+  width: 100%;
 }

@@ -1,0 +1,64 @@
+{
+  "sponsors": {
+    "gold": {
+      "sponsors": [
+        {
+          "name": "flow",
+          "image": "/img/Yoco-Sponsor-Ads-Medium-Flow.png"
+        },
+        {
+          "name": "tilted",
+          "image": "/img/Yoco-Sponsor-Ads-Medium-Tilted.png"
+        },
+        {
+          "name": "treva",
+          "image": "/img/Yoco-Sponsor-Ads-Medium-Treva.png"
+        }
+      ],
+      "button": {
+        "text": "View all",
+        "link": ""
+      }
+    },
+    "silver": {
+      "sponsors": [
+        {
+          "name": "apex",
+          "image": "/img/Logo-Top-Tier-Apex.png"
+        },
+        {
+          "name": "carbon",
+          "image": "/img/Logo-Top-Tier-Carbon.png"
+        },
+        {
+          "name": "Flightpath",
+          "image": "/img/Logo-Top-Tier-Flightpath.png"
+        },
+        {
+          "name": "FNTECH",
+          "image": "/img/Logo-Top-Tier-FNTECH.png"
+        },
+        {
+          "name": "Gamehub",
+          "image": "/img/Logo-Top-Tier-Gamehub.png"
+        },
+        {
+          "name": "Mobility",
+          "image": "/img/Logo-Top-Tier-Mobility.png"
+        },
+        {
+          "name": "OpenTech",
+          "image": "/img/Logo-Top-Tier-OpenTech.png"
+        },
+        {
+          "name": "Sycamore",
+          "image": "/img/Logo-Top-Tier-Sycamore.png"
+        }
+      ],
+      "button": {
+        "text": "View all",
+        "link": "#"
+      }
+    }
+  }
+}

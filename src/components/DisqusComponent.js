@@ -1,17 +1,16 @@
 import React from 'react'
-//import { Disqus } from 'gatsby-plugin-disqus'
 import { DiscussionEmbed } from 'disqus-react';
 
 const DisqusComponent = class extends React.Component {
 
   render() {
 
-    const { event, disqusSSO } = this.props;
+    const { disqusSSO, title, style, summit, event } = this.props;
 
     let disqusConfig = {
       url: window.location.href,
-      identifier: `${event.id}`,
-      title: event.title,
+      identifier: `${event ? `summit/${summit.id}/event/${event.id}` : `summit/${summit.id}/lobby`}`,
+      title: event ? event.title : summit.name,
       remoteAuthS3: disqusSSO.auth,
       apiKey: disqusSSO.public_key,
     }
@@ -20,8 +19,8 @@ const DisqusComponent = class extends React.Component {
       return null;
     } else {
       return (
-        <div className="disqus-container">
-          <h3>Join the conversation</h3>
+        <div className={style ? '' : 'disqus-container'} style={style}>
+          <h3>{title}</h3>
           <DiscussionEmbed
             shortname='fnvirtual-poc'
             config={disqusConfig}

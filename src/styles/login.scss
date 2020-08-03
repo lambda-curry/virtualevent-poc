@@ -22,8 +22,8 @@ header div.current-user {
   color: #fff;
 }
 
-footer {  
-  color: #fff;    
+footer {
+  color: #fff;
   width: 100%;
   padding-top: 12px;
 }
@@ -51,6 +51,16 @@ div.content {
   padding-bottom: 54px;
 }
 
+div.title {
+  font-weight: 700 !important;
+  color: #333333 !important;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
 .video-row {
   display: flex;
 }
@@ -64,6 +74,60 @@ div.content {
     justify-content: center;
     align-content: center;
   }
+}
+
+#marketing-slider {
+  .slick-track {
+    height: 350px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0px 0px;
+  grid-template-areas: "grid-item-1 grid-item-2""grid-item-3 grid-item-4""grid-item-3 grid-item-6""grid-item-5 grid-item-6";
+  grid-auto-rows: 1fr;
+  height: 100%;
+
+  div[class^="grid-item"] {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .grid-item-1 {
+    grid-area: grid-item-1;
+  }
+
+  .grid-item-2 {
+    grid-area: grid-item-2;
+  }
+
+  .grid-item-3 {
+    grid-area: grid-item-3;
+  }
+
+  .grid-item-4 {
+    grid-area: grid-item-4;
+  }
+
+  .grid-item-5 {
+    grid-area: grid-item-5;
+  }
+
+  .grid-item-6 {
+    grid-area: grid-item-6;
+  }
+}
+
+.grid::before {
+  content: '';
+  width: 0;
+  padding-bottom: 100%;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
 }
 
 .talk {
@@ -112,13 +176,23 @@ div.content {
   &__etherpad {}
 }
 
-.disqus-container {
-  padding: 0 15px;
+.outerWrapper___lGus2 {
+  .widget-title {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 33px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
 }
 
-.sponsor-container img {
-  padding-top: 1em;
-  width: 100%;
+.speakers-widget {
+  margin-bottom: 15px;
+}
+
+.disqus-container {
+  padding: 0 15px;
 }
 
 .schedule-container {
@@ -186,12 +260,30 @@ div.content {
   margin: 2rem;
   width: 25% !important;
   height: 25% !important;
-  background: rgba(0, 0, 0, 0.8) !important;  
+  background: rgba(0, 0, 0, 0.8) !important;
 }
 
 @media (max-width: 768px) {
   div.login-form {
     width: auto;
+  }
+
+  #marketing-columns {
+    margin-bottom: 4rem;
+  }
+
+  #marketing-slider {
+    .slick-track {
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 978px) {
+  #marketing-slider {
+    .slick-track {
+      height: 520px;
+    }
   }
 }
 

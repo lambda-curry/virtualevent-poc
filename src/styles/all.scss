@@ -1,9 +1,13 @@
 html,
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif !important;
   margin: 0;
   padding: 0;
   height: 100%;
+}
+
+html[data-body-class='no-js'] {
+  display: none;
 }
 
 label {
@@ -22,19 +26,15 @@ header div.current-user {
   color: #fff;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
-  background: none repeat scroll 0 0 #26b;
-  color: #fff;
-  height: 44px;
-  text-align: center;
+footer {  
+  color: #fff;    
   width: 100%;
   padding-top: 12px;
 }
 
 #content-wrapper {
   padding-bottom: 3rem;
+  min-height: 75vh;
 }
 
 div.login-form {
@@ -55,6 +55,16 @@ div.content {
   padding-bottom: 54px;
 }
 
+div.title {
+  font-weight: 700 !important;  
+  color: var(--color_text_dark) !important;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
 .video-row {
   display: flex;
 }
@@ -67,6 +77,38 @@ div.content {
     display: grid;
     justify-content: center;
     align-content: center;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0px 0px;
+  grid-template-areas: "grid-item-1 grid-item-2""grid-item-3 grid-item-4""grid-item-3 grid-item-6""grid-item-5 grid-item-6";
+
+  .grid-item-1 {
+    grid-area: grid-item-1;
+  }
+
+  .grid-item-2 {
+    grid-area: grid-item-2;
+  }
+
+  .grid-item-3 {
+    grid-area: grid-item-3;
+  }
+
+  .grid-item-4 {
+    grid-area: grid-item-4;
+  }
+
+  .grid-item-5 {
+    grid-area: grid-item-5;
+  }
+
+  .grid-item-6 {
+    grid-area: grid-item-6;
   }
 }
 
@@ -111,18 +153,20 @@ div.content {
     &:hover {
       color: white;
     }
-  }  
+  }
 
   &__etherpad {}
 }
 
-.disqus-container {
-  padding: 0 15px;
+.widget-title {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  line-height: 33px !important;
+  font-size: 30px !important;
 }
 
-.sponsor-container img {
-  padding-top: 1em;
-  width: 100%;
+.disqus-container {
+  padding: 0 15px;
 }
 
 .schedule-container {

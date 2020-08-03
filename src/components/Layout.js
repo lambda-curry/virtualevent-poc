@@ -9,7 +9,7 @@ import { withPrefix } from 'gatsby'
 // import "../styles/palette.scss"
 import "../styles/bulma.scss"
 
-const TemplateWrapper = ({ children }) => {
+const TemplateWrapper = ({ children, marketing }) => {
   const { title, description } = useSiteMetadata()
   return (
     <div id="container">
@@ -35,10 +35,11 @@ const TemplateWrapper = ({ children }) => {
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
       </Helmet>
       <Header />
       <div id="content-wrapper">{children}</div>
-      <Footer />
+      <Footer marketing={marketing} />
     </div>
   )
 }

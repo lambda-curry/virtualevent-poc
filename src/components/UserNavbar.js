@@ -35,7 +35,7 @@ const UserNavbar = class extends React.Component {
 
   render() {
 
-    let { isLoggedUser, clearState } = this.props;
+    let { isLoggedUser } = this.props;
 
     return (
       <nav className={`${styles.navbar} ${styles.userNavbar}`} role="navigation" aria-label="main navigation">
@@ -59,7 +59,7 @@ const UserNavbar = class extends React.Component {
           </div>
           <div className={styles.navbarEnd}>
             <div className={styles.navbarItem}>
-              <LogoutButton styles={styles} isLoggedUser={isLoggedUser} clearState={clearState} />
+              <LogoutButton styles={styles} isLoggedUser={isLoggedUser} />
             </div>
           </div>
         </div>

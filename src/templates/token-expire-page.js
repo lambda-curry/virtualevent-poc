@@ -17,18 +17,12 @@ export const TokenExpirePageTemplate = class extends React.Component {
   redirectToLogin() {
     const { location, handleResetReducers } = this.props;
 
-    let previousLocation = location.state?.backUrl ? location.state.backUrl : '/a/'
-    let url = URI(window.location.href);
-    let query = url.search(true);
-    let fragment = url.fragment();
-    let backUrl = query.hasOwnProperty('BackUrl') ? query['BackUrl'] : previousLocation;
-    if (fragment !== null && fragment !== '') {
-      backUrl += `#${fragment}`;
-    }
+    let previousLocation = location.state?.backUrl ? location.state.backUrl : '/a/';    
+    let backUrl = URI.encode(previousLocation);
     setTimeout(() => {
       handleResetReducers();
       doLogin(backUrl);
-    }, 5000);
+    }, 3000);
   }
 
   render() {
@@ -40,7 +34,8 @@ export const TokenExpirePageTemplate = class extends React.Component {
         <div className="columns">
           <div className="column is-three-quarters">
             <div className="rocket-container">
-              <h3>Your session has timed out. You will be redirected to the login page</h3>
+              <h3>Your session has timed out.</h3>
+              <h3>You will be redirected to the login page.</h3>
             </div>
           </div>
         </div>

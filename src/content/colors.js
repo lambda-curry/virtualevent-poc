@@ -1,0 +1,1 @@
+export default {colors:{color_primary:"#6d6e71",color_primary_contrast:"#f1f2f2",color_secondary:"#00CEC4",color_secondary_contrast:"#ff5e32",color_text_dark:"#333333",color_text_light:"#ffffff"}}

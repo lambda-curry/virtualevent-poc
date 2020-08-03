@@ -11,20 +11,35 @@ const myEnv = require("dotenv").config({
 
 exports.onPreBootstrap = async () => {
 
+  let marketingData;
+
   const colours = await axios.get(
     `${process.env.GATSBY_MARKETING_API_BASE_URL}/api/public/v1/config-values/all/shows/${process.env.GATSBY_SUMMIT_ID}`
   ).then((response) => {
-    let colorObject = { colors: {}}
+    marketingData = response.data.data;
+    let colorObject = { colors: {} }
     response.data.data.map((color) => {
-      colorObject.colors[color.key] = color.value;
-    })    
+      if (color.key.startsWith('color_')) colorObject.colors[color.key] = color.value;
+    })
     return colorObject;
   }).catch(e => console.log('ERROR: ', e));
 
-  fs.writeFileSync('src/gatsby-plugin-theme-ui/index.js', `export default ${JSON.stringify(colours).replace(/"([^"]+)":/g, '$1:')}`, 'utf8', function (err) {
+  fs.writeFileSync('src/content/colors.js', `export default ${JSON.stringify(colours).replace(/"([^"]+)":/g, '$1:')}`, 'utf8', function (err) {
     if (err) throw err;
     console.log('Saved!');
   });
+
+  let heroBanner = JSON.parse(fs.readFileSync('src/content/hero-banner.json'));
+
+  marketingData.map((item) => {    
+    if (item.key.startsWith('hero_')) heroBanner[item.key] = item.value;
+  });
+
+  fs.writeFileSync('src/content/hero-banner.json', JSON.stringify(heroBanner), 'utf8', function (err) {
+    if (err) throw err;
+    console.log('Saved!');
+  });
+  
 }
 
 // makes Summit logo optional for graphql queries
@@ -36,49 +51,6 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
   `
   createTypes(typeDefs)
-}
-
-exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions
-
-  return graphql(`
-    {
-      allMarkdownRemark(limit: 1000) {
-        edges {
-          node {
-            id
-            fields {
-              slug
-            }
-            frontmatter {
-              templateKey
-            }
-          }
-        }
-      }
-    }
-  `).then((result) => {
-    if (result.errors) {
-      result.errors.forEach((e) => console.error(e.toString()))
-      return Promise.reject(result.errors)
-    }
-
-    const posts = result.data.allMarkdownRemark.edges
-
-    posts.forEach((edge) => {
-      const id = edge.node.id
-      createPage({
-        path: edge.node.fields.slug,
-        component: path.resolve(
-          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
-        ),
-        // additional data can be passed via context
-        context: {
-          id,
-        },
-      })
-    })
-  })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
@@ -207,16 +179,60 @@ exports.createPages = ({ actions, graphql }) => {
         },
       })
     })
+
+    return graphql(`
+    {
+      allMarkdownRemark(limit: 1000) {
+        edges {
+          node {
+            id
+            fields {
+              slug
+            }
+            frontmatter {
+              templateKey
+            }
+          }
+        }
+      }
+    }
+  `).then((result) => {
+      if (result.errors) {
+        result.errors.forEach((e) => console.error(e.toString()))
+        return Promise.reject(result.errors)
+      }
+
+      const posts = result.data.allMarkdownRemark.edges
+
+      posts.forEach((edge) => {
+        const id = edge.node.id
+        if (edge.node.fields.slug.match(/custom-pages/)) {
+          edge.node.fields.slug = edge.node.fields.slug.replace('/custom-pages/', '/');
+        }
+        createPage({
+          path: edge.node.fields.slug,
+          component: path.resolve(
+            `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
+          ),
+          // additional data can be passed via context
+          context: {
+            id,
+          },
+        })
+      })
+    })
+
   })
 }
 
-exports.onCreateWebpackConfig = ({ actions, plugins }) => {
+exports.onCreateWebpackConfig = ({ actions, plugins, loaders }) => {
   actions.setWebpackConfig({
     // canvas is a jsdom external dependency
     externals: ['canvas'],
     plugins: [
       plugins.define({
         'global.GENTLY': false,
+        'global.BLOB': false
       })
     ]
   })

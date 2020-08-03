@@ -3,28 +3,57 @@
 @import "bulma/sass/components/navbar";
 
 .navbar {
-  background-color: #6d6e71;
+  background-color: var(--color_primary);
   min-height: 7.25rem;
+
   .navbar-brand {
     padding-left: 1rem;
+
+    img {
+      max-height: 4rem;
+    }
   }
+
   .navbar-end {
     padding-right: 15px;
   }
-}
 
-.navbar-item {
-  color: #ffffff;
-  font-weight: 300;
+  .user-icon {
+    color: var(--color_text_light);
+    padding-left: 10px;
+  }
 
-  img {
-    max-height: 4rem;
+  .navbar-menu {
+    .navbar-item {
+      color: var(--color_text_light);
+      font-weight: 300;
+
+      .link {
+        color: var(--color_text_light);
+
+        &:hover {
+          color: var(--color_text_light);
+          text-decoration: none;
+        }
+
+        &:active {
+          color: var(--color_text_light);
+          text-decoration: underline;
+        }
+
+        &:visited {
+          color: var(--color_text_light);
+        }
+      }
+    }
   }
 }
 
 
+
+
 .navbar-brand {
-  min-height: 6.25rem;
+  min-height: 7.25rem;
 }
 
 .navbar-burger {
@@ -34,22 +63,65 @@
 .user-navbar {
   background-color: #616266;
   min-height: 4.25rem;
+
   .navbar-start {
     padding-left: 15px;
   }
+
   .navbar-end {
     padding-right: 5px;
   }
+
   .lobby-button {
-    padding: 0 60px;    
+    padding: 0 60px;
     margin-left: 5px;
   }
+
   .user-burger {
     display: block;
-    color: #ffffff;
+    color: var(--color_text_light);
   }
+
   .user-icon {
-    color: #ffffff;
+    color: var(--color_text_light);
     padding-left: 10px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .navbar {
+    .navbar-burger {
+      color: var(--color_text_light);
+    }
+
+    .navbar-menu {
+      .navbar-item {
+        .link {
+          color: var(--color_primary);
+
+          &:hover {
+            color: var(--color_primary);
+          }
+
+          &:active {
+            color: var(--color_primary);
+          }
+
+          &:visited {
+            color: var(--color_primary);
+          }
+        }
+      }
+
+      .buttons {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .user-icon {
+        color: var(--color_primary);
+        padding-bottom: 5px;
+      }
+    }
   }
 }

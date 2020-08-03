@@ -19,66 +19,114 @@ collections:
       preview: false
     files:
       - file: "src/content/ads.json"
-        label: "Sponsor Ads"
+        label: "Advertisement"
         name: "ads"
         fields:
-          - {label: "Sponsor Ads", name: "ads", widget: list, fields: [
-              {label: "Section", name: "section", widget: string},
-              {label: "Ads", name: "ads", widget: list, fields: [
-                {label: "Image", name: "image", widget: image},
-                {label: "Text", name: "text", widget: string},
-                {label: "Specific Event", name: "id", widget: string, required: false}
+          - {label: "Ads", name: "ads", widget: list, fields: [
+              {label: "Page", name: "section", widget: string},
+              {label: "Columns", name: "columns", widget: list, fields: [
+                {label: "Column", name: "column", widget: select, options: [
+                  { label: "Left", value: "left" },
+                  { label: "Center", value: "center" },
+                  { label: "Right", value: "right" },
+                ]},
+                {label: "Ads", name: "columnAds", widget: list, required: false, fields: [
+                  {label: "Image", name: "image", widget: image},
+                  {label: "Button", name: button, widget: object, required: false, fields: [
+                    {label: "Text", name: "text", widget: string, required: false},
+                    {label: "Link", name: "link", widget: string, required: false}
+                  ]},
+                  {label: "Specific Event?", name: "id", widget: string, required: false}
+                ]}
+              ]},
+            ]}
+      - file: "src/content/sponsor.json"
+        label: "Sponsors"
+        name: "sponsor"
+        fields:
+          - {label: "Sponsors", name: "sponsors", widget: object, fields: [
+              {label: "Gold Tier", name: "gold", widget: object, fields: [
+                {label: "Sponsors", name: "sponsors", widget: list, fields: [
+                  {label: "Name", name: "name", widget: string },
+                  {label: "Image", name: "image", widget: image }
+                ]},
+                {label: "Button", name: button, widget: object, fields: [
+                  {label: "Text", name: "text", widget: string, required: false},
+                  {label: "Link", name: "link", widget: string, required: false}
+                ]}
+              ]},
+              {label: "Silver Tier", name: "silver", widget: object, fields: [
+                {label: "Sponsors", name: "sponsors", widget: list, fields: [
+                  {label: "Name", name: "name", widget: string },
+                  {label: "Image", name: "image", widget: image }
+                ]},
+                {label: "Button", name: button, widget: object, fields: [
+                  {label: "Text", name: "text", widget: string, required: false},
+                  {label: "Link", name: "link", widget: string, required: false}
+                ]}
+              ]},
+            ]}
+      - file: "src/content/navbar.json"
+        label: "Navbar"
+        name: "navbar"
+        fields:
+          - {label: "Navbar", name: "items", widget: list, fields: [
+              {label: "Title", name: "title", widget: string},
+              {label: "Link", name: "link", widget: string},
+              {label: "Display", name: "display", widget: boolean, required: false},
+            ]}
+      - file: "src/content/footer.json"
+        label: "Footer"
+        name: "footer"
+        fields:
+          - {label: "Columns", name: "columns", widget: list, fields: [
+              {label: "Title", name: "title", widget: string},
+              {label: "Display", name: "display", widget: boolean, required: false},
+              {label: "Items", name: "items", widget: list, fields: [
+                {label: "Title", name: "title", widget: string},
+                {label: "Link", name: "link", widget: string},         
               ]}
             ]}
-  - name: "blog"
-    label: "Blog"
-    folder: "src/pages/blog"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Description", name: "description", widget: "text"}
-      - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
-      - {label: "Featured Image", name: "featuredimage", widget: image}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
-
+          - {label: "Social", name: "social", widget: object, fields: [
+              {label: "Title", name: "title", widget: string},
+              {label: "Display", name: "display", widget: boolean, required: false},
+              {label: "Networks", name: "networks", widget: list, fields: [
+                {label: "Icon", name: "icon", widget: string},
+                {label: "Link", name: "link", widget: string},
+                {label: "Display", name: "display", widget: boolean, required: false},
+              ]}
+            ]}
+  - name: "marketing"
+    label: "Marketing Site"
+    editor:
+      preview: false
+    files:
+      - file: "src/content/marketing-site.json"
+        name: "marketingSite"
+        label: "Marketing Site"
+        fields:
+          - {label: "Hero Banner", name: "heroBanner", widget: "object", fields: [
+              {label: "Title", name: "title", widget: string},
+              {label: "Date", name: "date", widget: string, required: false},
+              {label: "Sub Title", name: "subTitle", widget: string, required: false},
+              {label: "Images", name: "images", widget: list, fields: [
+                {label: "Image", name: "image", widget: image}
+              ]},
+            ]}
+          - {label: "Widgets", name: "leftColumn", widget: object, fields: [
+              {label: "Schedule", name: "schedule", widget: boolean, required: false},
+              {label: "Disqus", name: "disqus", widget: boolean, required: false},
+            ]}
+          - {label: "Sponsors", name: "sponsors", widget: list, fields: [
+              {label: "Image", name: "image", widget: image},
+              {label: "Size", name: "size", widget: hidden}
+            ]}
   - name: "pages"
     label: "Pages"
-    files:
-      - file: "src/pages/index.md"
-        label: "Landing Page"
-        name: "index"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, name: subheading, widget: string}
-          - {label: Mainpitch, name: mainpitch, widget: object, fields: [{label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}]}
-          - {label: Description, name: description, widget: string}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
-      - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Body", name: "body", widget: "markdown"}
-      - file: "src/pages/products/index.md"
-        label: "Products Page"
-        name: "products"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "product-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Description, name: description, widget: string}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
-          - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
-          - {label: Full_image, name: full_image, widget: image}
-          - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
+    folder: "src/pages/custom-pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "custom-page"}
+      - {label: Title, name: title, widget: string}
+      - {label: "Body", name: body, widget: markdown}
