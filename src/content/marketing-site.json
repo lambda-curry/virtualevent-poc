@@ -5,13 +5,13 @@
     "subTitle": "9AM-12PM (PST)",
     "images": [
       {
-        "image": "/img/flavor_wheel.jpg"
+        "image": "/img/carousel-1.png"
       }
     ]
   },
   "leftColumn": {
-    "schedule": true,
-    "disqus": false
+    "schedule": false,
+    "disqus": true
   },
   "sponsors": [
     {
@@ -23,19 +23,19 @@
       "size": "simple"
     },
     {
-      "image": "/img/marketing/ad_landing_huawei.jpg",
+      "image": "/img/fntech-all-hands-reg-ad1.png",
       "size": "double"
     },
     {
-      "image": "/img/marketing/ad_landing_intel.jpg",
+      "image": "/img/fntech-all-hands-reg-ad2.png",
       "size": "simple"
     },
     {
-      "image": "/img/marketing/ad_landing_allianz.jpg",
+      "image": "/img/fntech-all-hands-reg-ad2.png",
       "size": "simple"
     },
     {
-      "image": "/img/marketing/ad_landing_redhat.jpg",
+      "image": "/img/fntech-all-hands-reg-ad1.png",
       "size": "double"
     }
   ]
