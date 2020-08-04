@@ -15175,10 +15175,10 @@ saxes@^5.0.0:
   dependencies:
     xmlchars "^2.2.0"
 
-schedule-lite@^1.0.33:
-  version "1.0.33"
-  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.33.tgz#56b7d55f70249ca94a2574760d3c4171e7f493ef"
-  integrity sha512-fjK8d74AuqWUi1G9ZGEUpa/2JWw2aDG1MDlQYsN3nDDUtkbWitMdzav+JjTD9t6+5vMwOh3SnCItmlg94Zk8Xw==
+schedule-lite@^1.0.34:
+  version "1.0.34"
+  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.34.tgz#e3ee041a012286f6f535cbe6866edabd7031d57d"
+  integrity sha512-XDkJQpDCaHiglwVQSRKmZYqgYtq5XsOvld1WUC6wCC20nanuWZ9q6MZrmlQkHGNv0pG8MqAavAU2NG5djAodDg==
 
 scheduler@^0.18.0:
   version "0.18.0"
@@ -15506,10 +15506,10 @@ signal-exit@^3.0.0, signal-exit@^3.0.2, signal-exit@^3.0.3:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.3.tgz#a1410c2edd8f077b08b4e253c8eacfcaf057461c"
   integrity sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==
 
-simple-chat-widget@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/simple-chat-widget/-/simple-chat-widget-1.0.4.tgz#29b6ad61ed415e566b1d4cc591658d2e7c8f15ac"
-  integrity sha512-NAf5l7UoOKCims6pKsf7Uuy+2V9rvssfxtow5dCtO6abSC3YReyxO0woWFarun7OM1n49diiRMshMgmf5MSg7A==
+simple-chat-widget@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/simple-chat-widget/-/simple-chat-widget-1.0.9.tgz#e51c212c51488896e2deb3c808f55c76203650de"
+  integrity sha512-6DdoI2arAckmc6Mjh0JmJZhUAXnXINqf6/PSUW6bFugEw7Ivv42q73h1pca1gsyWa4+Q2PeMKVmMSdFgS38pBA==
 
 simple-concat@^1.0.0:
   version "1.0.0"
