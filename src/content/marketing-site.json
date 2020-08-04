@@ -6,10 +6,10 @@
     "buttons": {
       "registerButton": {
         "text": "Register now",
-        "display": true
+        "display": false
       },
       "loginButton": {
-        "text": "Log in",
+        "text": "Log in or Create an FNid",
         "display": true
       }
     },
