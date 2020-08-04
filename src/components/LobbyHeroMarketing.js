@@ -9,6 +9,7 @@ import styles from '../styles/lobby-hero.module.scss'
 import envVariables from '../utils/envVariables'
 
 const sliderSettings = {
+  autoplay: true,
   dots: false,
   infinite: true,
   speed: 500,

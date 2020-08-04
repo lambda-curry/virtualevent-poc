@@ -15,19 +15,15 @@ const DisqusComponent = class extends React.Component {
       apiKey: disqusSSO.public_key,
     }
 
-    if (!disqusConfig.remoteAuthS3 && !disqusConfig.apiKey) {
-      return null;
-    } else {
-      return (
-        <div className={style ? '' : 'disqus-container'} style={style}>
-          <h3>{title}</h3>
-          <DiscussionEmbed
-            shortname='fnvirtual-poc'
-            config={disqusConfig}
-          />
-        </div>
-      )
-    }
+    return (
+      <div className={style ? '' : 'disqus-container'} style={style}>
+        <h3>{title}</h3>
+        <DiscussionEmbed
+          shortname='fnvirtual-poc'
+          config={disqusConfig}
+        />
+      </div>
+    )
   }
 
 }
