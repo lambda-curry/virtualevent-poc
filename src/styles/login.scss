@@ -82,6 +82,19 @@ h2 {
   }
 }
 
+.marketing-images {
+  display: flex;
+  flex-wrap: wrap;
+  .marketing-img{
+    flex: 0 0 50%;
+    img {
+      object-fit: cover;
+      width: 100%;
+      object-position: center;
+    }
+  }
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

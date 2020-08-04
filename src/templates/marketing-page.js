@@ -51,14 +51,25 @@ export const MarketingPageTemplate = class extends React.Component {
               }
             </div>
             <div className="column is-half px-0">
-
-              <div className="grid">
-                {MarketingSite.sponsors.map((item, index) => {
-                  return (
-                    <div className={`grid-item-${index + 1}`} style={{ backgroundImage: `url(${item.image})` }} key={index} />
-                  )
-                })}
-              </div>
+              {MarketingSite.sponsors.length < 6 ?
+                <div className="marketing-images">
+                  {MarketingSite.sponsors.map((item, index) => {
+                    return (
+                      <div className={`marketing-img`} key={index}>
+                        <img src={item.image} />
+                      </div>
+                    )
+                  })}
+                </div> 
+                :
+                <div className="grid">
+                  {MarketingSite.sponsors.map((item, index) => {
+                    return (
+                      <div className={`grid-item-${index + 1}`} style={{ backgroundImage: `url(${item.image})` }} key={index} />
+                    )
+                  })}
+                </div>
+              }
             </div>
           </div>
           <PageContent content={content} />
