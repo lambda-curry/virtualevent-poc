@@ -1,5 +1,5 @@
 import ReduxWrapper from "./src/state/ReduxWrapper"
-import Colors from './src/content/colors.js'
+import Colors from './src/content/colors.json'
 
 export const wrapRootElement = ReduxWrapper
 

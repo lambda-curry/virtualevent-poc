@@ -37,7 +37,8 @@ const onClickLogin = () => {
 const LobbyHeroMarketing = ({ ...props }) => (
   <section className={styles.heroMarketing}>
     <div className={`${styles.heroMarketingColumns} columns is-gapless`}>
-      <div className={`${styles.leftColumn} column is-6 is-black`}>
+      <div className={`${styles.leftColumn} column is-6 is-black`} 
+        style={{backgroundImage: MarketingSite.heroBanner.background ? `url(${MarketingSite.heroBanner.background})`: ''}}>
         <div className={`${styles.heroMarketingContainer} hero-body`}>
           <div className="container">
             <h1 className="title">
@@ -49,18 +50,22 @@ const LobbyHeroMarketing = ({ ...props }) => (
               {MarketingSite.heroBanner.subTitle}
             </h2>
             <div className={styles.heroButtons}>
-              <a className={styles.link} href={`${envVariables.REGISTRATION_BASE_URL}/a/${props.summit.slug}/registration/start`} target="_blank" rel="noreferrer">
-                <button className={`${styles.button} button is-large`}>
-                  <i className={`fa fa-2x fa-edit icon is-large`}></i>
-                  <b>Register now</b>
-                </button>
-              </a>
-              <a className={styles.link}>
-                <button className={`${styles.button} button is-large`} onClick={() => onClickLogin()}>
-                  <i className={`fa fa-2x fa-sign-in icon is-large`}></i>
-                  <b>Log in</b>
-                </button>
-              </a>
+              {MarketingSite.heroBanner.buttons.registerButton.display &&
+                <a className={styles.link} href={`${envVariables.REGISTRATION_BASE_URL}/a/${props.summit.slug}/registration/start`} target="_blank" rel="noreferrer">
+                  <button className={`${styles.button} button is-large`}>
+                    <i className={`fa fa-2x fa-edit icon is-large`}></i>
+                    <b>{MarketingSite.heroBanner.buttons.registerButton.text}</b>
+                  </button>
+                </a>
+              }
+              {MarketingSite.heroBanner.buttons.loginButton.display &&
+                <a className={styles.link}>
+                  <button className={`${styles.button} button is-large`} onClick={() => onClickLogin()}>
+                    <i className={`fa fa-2x fa-sign-in icon is-large`}></i>
+                    <b>{MarketingSite.heroBanner.buttons.loginButton.text}</b>
+                  </button>
+                </a>
+              }
             </div>
           </div>
         </div>
@@ -74,7 +79,7 @@ const LobbyHeroMarketing = ({ ...props }) => (
                 </div>
               </div>
             )
-          })}          
+          })}
         </Slider>
       </div>
     </div>

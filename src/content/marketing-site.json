@@ -1,8 +1,19 @@
 {
   "heroBanner": {
-    "title": "ALL HANDS MEETING",
-    "date": "AUGUST 17, 2020",
-    "subTitle": "9AM-12PM (PST)",
+    "title": "YOCO Summit",
+    "date": "May 20-22, 2021",
+    "subTitle": "Live from San Jose, CA",
+    "buttons": {
+      "registerButton": {
+        "text": "Register now",
+        "display": true
+      },
+      "loginButton": {
+        "text": "Log in",
+        "display": true
+      }
+    },
+    "background": "",
     "images": [
       {
         "image": "/img/carousel-1.png"

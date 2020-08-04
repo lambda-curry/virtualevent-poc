@@ -109,6 +109,17 @@ collections:
               {label: "Title", name: "title", widget: string},
               {label: "Date", name: "date", widget: string, required: false},
               {label: "Sub Title", name: "subTitle", widget: string, required: false},
+              {label: "Buttons", name: "buttons", widget: object, fields: [
+                {label: "Register Button", name: "registerButton", widget: object, fields: [
+                  {label: "Text", name: "text", widget: string},
+                  {label: "Display", name: "display", widget: boolean, required: false},
+                ]},
+                {label: "Login Button", name: "loginButton", widget: object, fields: [
+                  {label: "Text", name: "text", widget: string},
+                  {label: "Display", name: "display", widget: boolean, required: false},
+                ]}                
+              ]},
+              {label: "Background Image", name: "background", widget: image, required: false},
               {label: "Images", name: "images", widget: list, fields: [
                 {label: "Image", name: "image", widget: image}
               ]},

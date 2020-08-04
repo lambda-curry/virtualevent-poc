@@ -24,14 +24,14 @@ exports.onPreBootstrap = async () => {
     return colorObject;
   }).catch(e => console.log('ERROR: ', e));
 
-  fs.writeFileSync('src/content/colors.js', `export default ${JSON.stringify(colours).replace(/"([^"]+)":/g, '$1:')}`, 'utf8', function (err) {
+  fs.writeFileSync('src/content/colors.json', JSON.stringify(colours), 'utf8', function (err) {
     if (err) throw err;
     console.log('Saved!');
   });
 
   let heroBanner = JSON.parse(fs.readFileSync('src/content/hero-banner.json'));
 
-  marketingData.map((item) => {    
+  marketingData.map((item) => {
     if (item.key.startsWith('hero_')) heroBanner[item.key] = item.value;
   });
 
@@ -39,7 +39,7 @@ exports.onPreBootstrap = async () => {
     if (err) throw err;
     console.log('Saved!');
   });
-  
+
 }
 
 // makes Summit logo optional for graphql queries
