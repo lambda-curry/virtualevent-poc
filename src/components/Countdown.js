@@ -48,7 +48,7 @@ class Countdown extends React.Component {
     const { summit } = this.props;
     const { timestamp } = this.state;
 
-    if (!timestamp || !summit) return null;
+    if (!timestamp || !summit.start_date || !summit.time_zone_id) return null;
 
     let summitDate = epochToMomentTimeZone(summit.start_date, summit.time_zone_id)
     let nowFormatted = epochToMomentTimeZone(timestamp, summit.time_zone_id)
