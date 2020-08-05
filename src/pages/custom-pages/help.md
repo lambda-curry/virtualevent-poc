@@ -1,6 +1,5 @@
 ---
 templateKey: custom-page
-title: 'Help'
+title: Help
 ---
-
-Text more and more text
+Please e-mail support@fntech.com should you need assistance.
