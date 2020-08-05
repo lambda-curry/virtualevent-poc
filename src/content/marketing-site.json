@@ -16,10 +16,19 @@
     "background": "/img/fntech-all-hands-reg-header-text.png",
     "images": [
       {
-        "image": "/img/carousel-1.png"
+        "image": "/img/01_os-crew_dark-blue.png"
       },
       {
-        "image": "/img/flavor_wheel.jpg"
+        "image": "/img/02_bob-jer_chad_med-blue.png"
+      },
+      {
+        "image": "/img/03_crew-at-stack-city-austin_teal.png"
+      },
+      {
+        "image": "/img/04_women-of-f8.png"
+      },
+      {
+        "image": "/img/05_keynote-ad-hoc-2.png"
       }
     ]
   },
@@ -35,6 +44,12 @@
     {
       "image": "/img/fntech-all-hands-reg-ad2.png",
       "size": "simple"
+    },
+    {
+      "image": "/img/kelly-nick_replacement.png"
+    },
+    {
+      "image": "/img/jer-with-clipboard_v2.png"
     }
   ]
 }
