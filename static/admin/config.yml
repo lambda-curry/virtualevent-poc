@@ -107,8 +107,10 @@ collections:
         fields:
           - {label: "Hero Banner", name: "heroBanner", widget: "object", fields: [
               {label: "Title", name: "title", widget: string},
-              {label: "Date", name: "date", widget: string, required: false},
               {label: "Sub Title", name: "subTitle", widget: string, required: false},
+              {label: "Date", name: "date", widget: string, required: false},
+              {label: "Date Layout", name: "dateLayout", widget: boolean, required: false},
+              {label: "Time", name: "time", widget: string, required: false},
               {label: "Buttons", name: "buttons", widget: object, fields: [
                 {label: "Register Button", name: "registerButton", widget: object, fields: [
                   {label: "Text", name: "text", widget: string},

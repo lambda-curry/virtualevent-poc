@@ -44,12 +44,14 @@ const LobbyHeroMarketing = ({ ...props }) => (
           <div className="container">
             <h1 className="title">
               {MarketingSite.heroBanner.title}
-              <br />
-              {MarketingSite.heroBanner.date}
             </h1>
             <h2 className="subtitle">
               {MarketingSite.heroBanner.subTitle}
             </h2>
+            <div className={styles.date} style={{backgroundColor: MarketingSite.heroBanner.dateLayout ? 'var(--color_secondary)' : ''}}>
+              <div>{MarketingSite.heroBanner.date}</div>
+            </div>
+            <h4>{MarketingSite.heroBanner.time}</h4>
             <div className={styles.heroButtons}>
               {MarketingSite.heroBanner.buttons.registerButton.display &&
                 <a className={styles.link} href={`${envVariables.REGISTRATION_BASE_URL}/a/${props.summit.slug}/registration/start`} target="_blank" rel="noreferrer">

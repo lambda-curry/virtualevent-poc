@@ -1,8 +1,10 @@
 {
   "heroBanner": {
-    "title": "ALL HANDS MEETING",
+    "title": "ALL HANDS",
+    "subTitle": "MEETING",
     "date": "AUGUST 17, 2020",
-    "subTitle": "9AM-12PM (PST)",
+    "time": "9AM-12PM (PST)",
+    "dateLayout": true,
     "buttons": {
       "registerButton": {
         "text": "Register now",
