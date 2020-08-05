@@ -8,6 +8,7 @@ import LobbyHeroMarketing from '../components/LobbyHeroMarketing'
 import ScheduleLiteComponent from "../components/ScheduleLiteComponent"
 import DisqusComponent from '../components/DisqusComponent'
 import ClockComponent from '../components/ClockComponent'
+import Countdown from '../components/Countdown'
 import Content, { HTMLContent } from '../components/Content'
 import envVariables from '../utils/envVariables';
 
@@ -31,7 +32,7 @@ export const MarketingPageTemplate = class extends React.Component {
   }
 
   render() {
-    let { content, contentComponent, user, summit, loggedUser, isLoggedUser, marketingNow } = this.props;
+    let { content, contentComponent, user, summit, loggedUser, isLoggedUser, marketingNow, nowUtc } = this.props;
 
     const PageContent = contentComponent || Content
 
@@ -42,6 +43,7 @@ export const MarketingPageTemplate = class extends React.Component {
         <React.Fragment>
           <ClockComponent summit={summit} />
           <LobbyHeroMarketing summit={summit} />
+          <Countdown now={nowUtc} summit={summit} />
           <div className="columns" id="marketing-columns">
             <div className="column is-half px-6 py-6">
               {MarketingSite.leftColumn.schedule &&
@@ -95,7 +97,7 @@ MarketingPageTemplate.propTypes = {
   isLoggedUser: PropTypes.bool,
 }
 
-const MarketingPage = ({ data, user, summit, marketingNow, loggedUser, isLoggedUser, getSummitData, getTimeNow, getDisqusSSO }) => {
+const MarketingPage = ({ data, user, summit, marketingNow, nowUtc, loggedUser, isLoggedUser, getSummitData, getTimeNow, getDisqusSSO }) => {
   const { frontmatter, html } = data.markdownRemark
 
   return (
@@ -107,6 +109,7 @@ const MarketingPage = ({ data, user, summit, marketingNow, loggedUser, isLoggedU
         summit={summit}
         loggedUser={loggedUser}
         marketingNow={marketingNow}
+        nowUtc={nowUtc}
         isLoggedUser={isLoggedUser}
         getSummitData={getSummitData}
         getTimeNow={getTimeNow}
@@ -135,6 +138,7 @@ const mapStateToProps = ({ userState, summitState, loggedUserState }) => ({
   isLoggedUser: loggedUserState.isLoggedUser,
   loggedUser: loggedUserState,
   marketingNow: summitState.marketingNow,
+  nowUtc: summitState.nowUtc,
   user: userState,
   summit: summitState.summit,
 })
