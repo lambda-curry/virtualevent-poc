@@ -9,6 +9,8 @@ import { customErrorHandler } from '../utils/customErrorHandler';
 
 export const GET_SUMMIT_DATA  = 'GET_SUMMIT_DATA';
 export const UPDATE_CLOCK     = 'UPDATE_CLOCK';
+export const GET_TIME_NOW     = 'GET_TIME_NOW';
+export const TIME_NOW         = 'TIME_NOW';
 
 export const getSummitData = () => (dispatch, getState) => {
 
@@ -27,6 +29,24 @@ export const getSummitData = () => (dispatch, getState) => {
     return (e);
   });
 }
+
+export const getTimeNow = () => (dispatch) => {
+
+  return getRequest(
+    dispatch(startLoading()),
+    createAction(GET_TIME_NOW),
+    `https://timeintervalsince1970.appspot.com/`,
+    customErrorHandler
+  )({})(dispatch).then((response) => {
+    const payload = response.response;
+    dispatch(stopLoading());
+    dispatch(createAction(TIME_NOW)({ payload }));
+  }
+  ).catch(e => {
+    dispatch(stopLoading());
+    return (e);
+  });
+};
 
 export const updateClock = (timestamp) => (dispatch) => {
   dispatch(createAction(UPDATE_CLOCK)({ timestamp }));

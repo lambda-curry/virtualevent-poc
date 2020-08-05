@@ -19,7 +19,7 @@ const SchedulePage = ({summit, loggedUser}) => {
             showNav={true}
             showFilters={true}
             eventCount={100}
-            eventClick={ev => navigate(`/a/event/${ev}`)}
+            onEventClick={ev => navigate(`/a/event/${ev}`)}
         />
       </div>
     </Layout>

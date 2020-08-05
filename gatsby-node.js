@@ -40,6 +40,16 @@ exports.onPreBootstrap = async () => {
     console.log('Saved!');
   });
 
+  let disqusSettings = JSON.parse(fs.readFileSync('src/content/disqus-settings.json'));
+
+  marketingData.map((item) => {    
+    if (item.key.startsWith('disqus_')) disqusSettings[item.key] = item.value;
+  });
+
+  fs.writeFileSync('src/content/disqus-settings.json', JSON.stringify(disqusSettings), 'utf8', function (err) {
+    if (err) throw err;
+    console.log('Saved!');
+  });
 }
 
 // makes Summit logo optional for graphql queries

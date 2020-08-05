@@ -21,7 +21,7 @@ const ScheduleComponent = class extends React.Component {
       roomBaseUrl: "/a/rooms",
       summitId: parseInt(envVariables.SUMMIT_ID),
       updateCallback: ev => console.log('event updated', ev),
-      onEventClick: ev => this.props.eventClick(ev),
+      onEventClick: ev => this.props.onEventClick(ev),
       onAuthError: (err, res) => expiredToken(err),
       onRef: ref => this.child = ref,
     };

@@ -7,12 +7,13 @@ import Layout from '../components/Layout'
 import LobbyHeroMarketing from '../components/LobbyHeroMarketing'
 import ScheduleLiteComponent from "../components/ScheduleLiteComponent"
 import DisqusComponent from '../components/DisqusComponent'
+import ClockComponent from '../components/ClockComponent'
 import Content, { HTMLContent } from '../components/Content'
 import envVariables from '../utils/envVariables';
 
 import MarketingSite from '../content/marketing-site.json'
 
-import { getSummitData } from '../actions/summit-actions'
+import { getSummitData, getTimeNow } from '../actions/summit-actions'
 import { getDisqusSSO } from '../actions/user-actions'
 
 export const MarketingPageTemplate = class extends React.Component {
@@ -22,31 +23,33 @@ export const MarketingPageTemplate = class extends React.Component {
 
   componentWillMount() {
     this.props.getSummitData();
+    this.props.getTimeNow();
   }
 
   render() {
-    let { content, contentComponent, user, summit, isLoggedUser } = this.props;
+    let { content, contentComponent, user, summit, loggedUser, isLoggedUser, marketingNow } = this.props;
 
     const PageContent = contentComponent || Content
 
-    if (isLoggedUser) {
+    if (isLoggedUser && summit.start_date < marketingNow) {
       return <Redirect noThrow to="/a/" />
     } else {
       return (
         <React.Fragment>
+          <ClockComponent summit={summit} />
           <LobbyHeroMarketing summit={summit} />
           <div className="columns" id="marketing-columns">
             <div className="column is-half px-6 py-6">
               {MarketingSite.leftColumn.schedule &&
                 <React.Fragment>
                   <h2 style={{ fontWeight: 'bold' }}>Full Event Schedule</h2>
-                  <ScheduleLiteComponent accessToken={false} landscape={true} eventCount={10} />
+                  <ScheduleLiteComponent accessToken={loggedUser.accessToken} landscape={true} eventCount={10} />
                 </React.Fragment>
               }
               {MarketingSite.leftColumn.disqus &&
                 <React.Fragment>
                   <h2 style={{ fontWeight: 'bold' }}>Join the conversation</h2>
-                  <DisqusComponent disqusSSO={user?.disqusSSO} summit={envVariables.SUMMIT_ID} style={{ position: 'static' }} />
+                  <DisqusComponent page="marketing-site" disqusSSO={user?.disqusSSO} summit={envVariables.SUMMIT_ID} style={{ position: 'static' }} />
                 </React.Fragment>
               }
             </div>
@@ -60,7 +63,7 @@ export const MarketingPageTemplate = class extends React.Component {
                       </div>
                     )
                   })}
-                </div> 
+                </div>
                 :
                 <div className="grid">
                   {MarketingSite.sponsors.map((item, index) => {
@@ -88,7 +91,7 @@ MarketingPageTemplate.propTypes = {
   isLoggedUser: PropTypes.bool,
 }
 
-const MarketingPage = ({ data, user, summit, isLoggedUser, getSummitData, getDisqusSSO }) => {
+const MarketingPage = ({ data, user, summit, marketingNow, loggedUser, isLoggedUser, getSummitData, getTimeNow, getDisqusSSO }) => {
   const { frontmatter, html } = data.markdownRemark
 
   return (
@@ -98,8 +101,11 @@ const MarketingPage = ({ data, user, summit, isLoggedUser, getSummitData, getDis
         content={html}
         user={user}
         summit={summit}
+        loggedUser={loggedUser}
+        marketingNow={marketingNow}
         isLoggedUser={isLoggedUser}
         getSummitData={getSummitData}
+        getTimeNow={getTimeNow}
         getDisqusSSO={getDisqusSSO}
       />
     </Layout>
@@ -114,19 +120,24 @@ MarketingPage.propTypes = {
   }),
   user: PropTypes.object,
   summit: PropTypes.object,
+  loggedUser: PropTypes.object,
   isLoggedUser: PropTypes.bool,
+  marketingNow: PropTypes.string,
   getSummitData: PropTypes.func,
   getDisqusSSO: PropTypes.func,
 }
 
 const mapStateToProps = ({ userState, summitState, loggedUserState }) => ({
   isLoggedUser: loggedUserState.isLoggedUser,
+  loggedUser: loggedUserState,
+  marketingNow: summitState.marketingNow,
   user: userState,
   summit: summitState.summit,
 })
 
 export default connect(mapStateToProps, {
   getSummitData,
+  getTimeNow,
   getDisqusSSO
 })(MarketingPage)
 
