@@ -22,8 +22,12 @@ export const MarketingPageTemplate = class extends React.Component {
   }
 
   componentWillMount() {
+    let { isLoggedUser } = this.props;
+
     this.props.getSummitData();
     this.props.getTimeNow();
+
+    if (isLoggedUser) { this.props.getDisqusSSO(); }
   }
 
   render() {
