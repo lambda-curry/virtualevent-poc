@@ -42,7 +42,8 @@ export const MarketingPageTemplate = class extends React.Component {
       return (
         <React.Fragment>
           <LobbyHeroMarketing summit={summit} />
-          {//marketingNow && summit && <Countdown now={marketingNow} summit={summit} />}
+          {//marketingNow && summit && <Countdown now={marketingNow} summit={summit} />
+          }
           <div className="columns" id="marketing-columns">
             <div className="column is-half px-6 py-6">
               {MarketingSite.leftColumn.schedule &&
