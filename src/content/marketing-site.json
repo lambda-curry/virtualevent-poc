@@ -40,6 +40,9 @@
   },
   "sponsors": [
     {
+      "image": "/img/jer-with-clipboard_v2.png"
+    },
+    {
       "image": "/img/fntech-all-hands-reg-ad1.png",
       "size": "simple"
     },
@@ -49,9 +52,6 @@
     },
     {
       "image": "/img/kelly-nick_replacement.png"
-    },
-    {
-      "image": "/img/jer-with-clipboard_v2.png"
     }
   ]
 }
