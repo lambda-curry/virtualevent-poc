@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Redirect } from '@reach/router'
 import { connect } from 'react-redux'
+import Masonry from 'react-masonry-css'
 import Layout from '../components/Layout'
 import LobbyHeroMarketing from '../components/LobbyHeroMarketing'
 import ScheduleLiteComponent from "../components/ScheduleLiteComponent"
@@ -41,7 +42,8 @@ export const MarketingPageTemplate = class extends React.Component {
       return (
         <React.Fragment>
           <LobbyHeroMarketing summit={summit} />
-          <Countdown now={marketingNow} summit={summit} />
+          {//marketingNow && summit && <Countdown now={marketingNow} summit={summit} />
+          }
           <div className="columns" id="marketing-columns">
             <div className="column is-half px-6 py-6">
               {MarketingSite.leftColumn.schedule &&
@@ -58,25 +60,18 @@ export const MarketingPageTemplate = class extends React.Component {
               }
             </div>
             <div className="column is-half px-0">
-              {MarketingSite.sponsors.length < 6 ?
-                <div className="marketing-images">
-                  {MarketingSite.sponsors.map((item, index) => {
-                    return (
-                      <div className={`marketing-img`} key={index}>
-                        <img src={item.image} />
-                      </div>
-                    )
-                  })}
-                </div>
-                :
-                <div className="grid">
-                  {MarketingSite.sponsors.map((item, index) => {
-                    return (
-                      <div className={`grid-item-${index + 1}`} style={{ backgroundImage: `url(${item.image})` }} key={index} />
-                    )
-                  })}
-                </div>
-              }
+              <Masonry
+                breakpointCols={2}
+                className="my-masonry-grid"
+                columnClassName="my-masonry-grid_column">
+                {MarketingSite.sponsors.map((item, index) => {
+                  return (
+                    <div key={index}>
+                      <img src={item.image} />
+                    </div>
+                  )
+                })}
+              </Masonry>
             </div>
           </div>
           <PageContent content={content} />

@@ -22,6 +22,7 @@
       & div:first-of-type {
         background-color: darken($color: #00CEC4, $amount: 20%);
       }
+
       & div:nth-of-type(2) {
         background-color: darken($color: #00CEC4, $amount: 10%);
       }
@@ -40,7 +41,24 @@
           font-size: 42px;
           line-height: 40px;
         }
-      }      
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .countdown {
+    height: 300px;
+    .countdown-columns {
+      height: 100%;
+  
+      .left-column {
+        height: 50%;
+      }
+  
+      .right-column {
+        height: 50%;
+      }
     }
   }
 }

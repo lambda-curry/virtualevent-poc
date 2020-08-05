@@ -37,7 +37,7 @@ class Countdown extends React.Component {
 
   componentWillUnmount() {
     clearInterval(this.interval);
-  }  
+  }
 
   tick = () => {
     const { timestamp } = this.state;
