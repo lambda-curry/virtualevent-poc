@@ -2,7 +2,6 @@ import React from 'react'
 import { connect } from 'react-redux'
 import Layout from '../components/Layout'
 
-import '../styles/login.scss'
 import LoginButton from '../components/LoginButton'
 
 import { navigate } from "gatsby"

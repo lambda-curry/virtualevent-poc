@@ -1,3 +1,5 @@
+@import './colors.scss';
+
 .gold-container {
   display: flex;
   flex-direction: column;
@@ -40,8 +42,8 @@
 
   .button {
     width: 100%;
-    background-color: var(--color_secondary);
-    color: var(--color_text_light);
+    background-color: $color_secondary;
+    color: $color_text_light;
     border: 0px;
   }
 }

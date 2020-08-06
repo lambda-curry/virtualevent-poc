@@ -29,6 +29,14 @@ exports.onPreBootstrap = async () => {
     console.log('Saved!');
   });
 
+  let sassColors = '';
+  Object.keys(colours.colors).forEach(e => sassColors += `$${e} : ${colours.colors[e]};\n`);
+
+  fs.writeFileSync('src/styles/colors.scss', sassColors, 'utf8', function (err) {
+    if (err) throw err;
+    console.log('Saved!');
+  });
+
   let heroBanner = JSON.parse(fs.readFileSync('src/content/hero-banner.json'));
 
   marketingData.map((item) => {
@@ -42,7 +50,7 @@ exports.onPreBootstrap = async () => {
 
   let disqusSettings = JSON.parse(fs.readFileSync('src/content/disqus-settings.json'));
 
-  marketingData.map((item) => {    
+  marketingData.map((item) => {
     if (item.key.startsWith('disqus_')) disqusSettings[item.key] = item.value;
   });
 
@@ -139,58 +147,8 @@ exports.sourceNodes = async ({
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
+
   return graphql(`
-    {
-      allEvent(limit: 1000) {
-        edges {
-          node {
-            id
-            event_id
-            attending_media
-            description
-            end_date
-            etherpad_link
-            meeting_url
-            start_date
-            streaming_url
-            title
-          }
-        }
-      }
-    }
-  `).then((result) => {
-    if (result.errors) {
-      result.errors.forEach((e) => console.error(e.toString()))
-      return Promise.reject(result.errors)
-    }
-
-    const events = result.data.allEvent.edges
-
-    events.forEach((edge) => {
-      const { id, attending_media, description, end_date, etherpad_link,
-        meeting_url, start_date, streaming_url, title } = edge.node
-      createPage({
-        path: `/a/event/${edge.node.event_id}`,
-        matchPath: "/a/event/:eventId",
-        component: path.resolve(
-          `src/templates/event-page.js`
-        ),
-        // additional data can be passed via context
-        context: {
-          id,
-          attending_media,
-          description,
-          end_date,
-          etherpad_link,
-          meeting_url,
-          start_date,
-          streaming_url,
-          title,
-        },
-      })
-    })
-
-    return graphql(`
     {
       allMarkdownRemark(limit: 1000) {
         edges {
@@ -207,31 +165,29 @@ exports.createPages = ({ actions, graphql }) => {
       }
     }
   `).then((result) => {
-      if (result.errors) {
-        result.errors.forEach((e) => console.error(e.toString()))
-        return Promise.reject(result.errors)
+    if (result.errors) {
+      result.errors.forEach((e) => console.error(e.toString()))
+      return Promise.reject(result.errors)
+    }
+
+    const posts = result.data.allMarkdownRemark.edges
+
+    posts.forEach((edge) => {
+      const id = edge.node.id
+      if (edge.node.fields.slug.match(/custom-pages/)) {
+        edge.node.fields.slug = edge.node.fields.slug.replace('/custom-pages/', '/');
       }
-
-      const posts = result.data.allMarkdownRemark.edges
-
-      posts.forEach((edge) => {
-        const id = edge.node.id
-        if (edge.node.fields.slug.match(/custom-pages/)) {
-          edge.node.fields.slug = edge.node.fields.slug.replace('/custom-pages/', '/');
-        }
-        createPage({
-          path: edge.node.fields.slug,
-          component: path.resolve(
-            `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
-          ),
-          // additional data can be passed via context
-          context: {
-            id,
-          },
-        })
+      createPage({
+        path: edge.node.fields.slug,
+        component: path.resolve(
+          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
+        ),
+        // additional data can be passed via context
+        context: {
+          id,
+        },
       })
     })
-
   })
 }
 

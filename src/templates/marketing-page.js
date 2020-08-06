@@ -10,7 +10,8 @@ import ScheduleLiteComponent from "../components/ScheduleLiteComponent"
 import DisqusComponent from '../components/DisqusComponent'
 import Countdown from '../components/Countdown'
 import Content, { HTMLContent } from '../components/Content'
-import envVariables from '../utils/envVariables';
+
+import '../styles/style.scss'
 
 import MarketingSite from '../content/marketing-site.json'
 
@@ -54,7 +55,7 @@ export const MarketingPageTemplate = class extends React.Component {
               {MarketingSite.leftColumn.disqus &&
                 <React.Fragment>
                   <h2 style={{ fontWeight: 'bold' }}>Join the conversation</h2>
-                  <DisqusComponent page="marketing-site" disqusSSO={user?.disqusSSO} summit={envVariables.SUMMIT_ID} style={{ position: 'static' }} />
+                  <DisqusComponent page="marketing-site" disqusSSO={user?.disqusSSO} summit={summit} style={{ position: 'static' }} />
                 </React.Fragment>
               }
             </div>

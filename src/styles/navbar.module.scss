@@ -2,8 +2,10 @@
 @import "bulma/sass/elements/button.sass";
 @import "bulma/sass/components/navbar";
 
+@import './colors.scss';
+
 .navbar {
-  background-color: var(--color_primary);
+  background-color: $color_primary;
   min-height: 7.25rem;
 
   .navbar-brand {
@@ -19,30 +21,30 @@
   }
 
   .user-icon {
-    color: var(--color_text_light);
+    color: $color_text_light;
     padding-left: 10px;
   }
 
   .navbar-menu {
     .navbar-item {
-      color: var(--color_text_light);
+      color: $color_text_light;
       font-weight: 300;
 
       .link {
-        color: var(--color_text_light);
+        color: $color_text_light;
 
         &:hover {
-          color: var(--color_text_light);
+          color: $color_text_light;
           text-decoration: none;
         }
 
         &:active {
-          color: var(--color_text_light);
+          color: $color_text_light;
           text-decoration: underline;
         }
 
         &:visited {
-          color: var(--color_text_light);
+          color: $color_text_light;
         }
       }
     }
@@ -79,11 +81,11 @@
 
   .user-burger {
     display: block;
-    color: var(--color_text_light);
+    color: $color_text_light;
   }
 
   .user-icon {
-    color: var(--color_text_light);
+    color: $color_text_light;
     padding-left: 10px;
   }
 }
@@ -91,24 +93,24 @@
 @media (max-width: 1023px) {
   .navbar {
     .navbar-burger {
-      color: var(--color_text_light);
+      color: $color_text_light;
     }
 
     .navbar-menu {
       .navbar-item {
         .link {
-          color: var(--color_primary);
+          color: $color_primary;
 
           &:hover {
-            color: var(--color_primary);
+            color: $color_primary;
           }
 
           &:active {
-            color: var(--color_primary);
+            color: $color_primary;
           }
 
           &:visited {
-            color: var(--color_primary);
+            color: $color_primary;
           }
         }
       }
@@ -119,7 +121,7 @@
       }
 
       .user-icon {
-        color: var(--color_primary);
+        color: $color_primary;
         padding-bottom: 5px;
       }
     }
