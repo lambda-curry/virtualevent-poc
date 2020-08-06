@@ -23,7 +23,7 @@
     {
       "title": "Help",
       "link": "/help",
-      "display": true
+      "display": false
     }
   ]
 }
