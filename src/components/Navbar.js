@@ -1,11 +1,11 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import UserNavbar from './UserNavbar';
 import styles from '../styles/navbar.module.scss';
 
 import LogoutButton from './LogoutButton';
 
+import Link from './Link'
 import Content from '../content/navbar.json'
 
 const Navbar = class extends React.Component {

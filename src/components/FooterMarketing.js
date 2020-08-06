@@ -1,9 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { StaticQuery, graphql, Link } from "gatsby"
 
 import footerContent from '../content/footer.json';
-
+import Link from './Link'
 import styles from '../styles/footer.module.scss';
 
 const FooterMarketing = () => (
