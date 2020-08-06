@@ -21,16 +21,6 @@
       "display": true
     },
     {
-      "title": "Past events",
-      "link": "/past-events",
-      "display": true
-    },
-    {
-      "title": "Contact",
-      "link": "/contact",
-      "display": true
-    },
-    {
       "title": "Help",
       "link": "/help",
       "display": true
