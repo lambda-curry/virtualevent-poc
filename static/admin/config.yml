@@ -87,6 +87,9 @@ collections:
                 {label: "Link", name: "link", widget: string},         
               ]}
             ]}
+          - {label: "Logo", name: "logo", widget: object, fields: [
+              {label: "Display", name: "display", widget: boolean, required: false},
+            ]}
           - {label: "Social", name: "social", widget: object, fields: [
               {label: "Title", name: "title", widget: string},
               {label: "Display", name: "display", widget: boolean, required: false},

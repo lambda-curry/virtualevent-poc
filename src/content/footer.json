@@ -51,6 +51,9 @@
       ]
     }
   ],
+  "logo": {
+    "display": false
+  },
   "social": {
     "title": "Follow Us",
     "display": false,

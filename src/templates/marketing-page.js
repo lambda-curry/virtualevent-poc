@@ -45,7 +45,7 @@ export const MarketingPageTemplate = class extends React.Component {
           <LobbyHeroMarketing summit={summit} />
           { marketingNow && summit && <Countdown now={marketingNow} summit={summit} /> }
           <div className="columns" id="marketing-columns">
-            <div className="column is-half px-6 py-6">
+            <div className="column is-half px-6 pt-6 pb-0" style={{ position: 'relative' }}>
               {MarketingSite.leftColumn.schedule &&
                 <React.Fragment>
                   <h2 style={{ fontWeight: 'bold' }}>Full Event Schedule</h2>
@@ -55,11 +55,11 @@ export const MarketingPageTemplate = class extends React.Component {
               {MarketingSite.leftColumn.disqus &&
                 <React.Fragment>
                   <h2 style={{ fontWeight: 'bold' }}>Join the conversation</h2>
-                  <DisqusComponent page="marketing-site" disqusSSO={user?.disqusSSO} summit={summit} style={{ position: 'static' }} />
+                  <DisqusComponent page="marketing-site" disqusSSO={user?.disqusSSO} summit={summit} />
                 </React.Fragment>
               }
             </div>
-            <div className="column is-half px-0">
+            <div className="column is-half px-0 pb-0">
               <Masonry
                 breakpointCols={2}
                 className="my-masonry-grid"

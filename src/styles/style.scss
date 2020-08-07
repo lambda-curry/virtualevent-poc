@@ -30,7 +30,7 @@ footer {
 
 #content-wrapper {
   padding-bottom: 3rem;
-  min-height: 75vh;
+  min-height: 89vh;
 }
 
 div.login-form {
@@ -83,19 +83,25 @@ h2 {
 }
 
 .my-masonry-grid {
-  display: -webkit-box; /* Not needed if autoprefixing */
-  display: -ms-flexbox; /* Not needed if autoprefixing */
-  display: flex;  
+  display: -webkit-box;
+  /* Not needed if autoprefixing */
+  display: -ms-flexbox;
+  /* Not needed if autoprefixing */
+  display: flex;
   width: auto;
 }
+
 .my-masonry-grid_column {
-  padding-left: 0px; /* gutter size */
+  padding-left: 0px;
+  /* gutter size */
   background-clip: padding-box;
 }
- 
+
 /* Style your items */
-.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */  
+.my-masonry-grid_column>div {
+  /* change div to reference your elements you put in <Masonry> */
   margin-bottom: 0px;
+
   img {
     width: 100%;
   }
@@ -266,5 +272,15 @@ h2 {
     bottom: 0;
     left: 0;
     right: 0;
+
+    &-marketing {
+      position: absolute;
+      overflow-y: auto;
+      top: 95px;
+      right: 0;
+      left: 20px;
+      bottom: 0;
+      padding-right: 20px;
+    }
   }
 }
