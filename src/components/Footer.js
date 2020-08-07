@@ -31,14 +31,14 @@ const Footer = ({ summit, marketing }) => {
                 <React.Fragment>
                   <div className={`${styles.footerColummns} columns`}>
                     <div className="column is-one-quarter">
-                      <!-- <img alt="logo" src={summit && summit.logo ?
+                      <img alt="logo" src={summit && summit.logo ?
                         summit.logo
                         :
                         data.summit && data.summit.logo ?
                           data.summit.logo
                           :
                           null
-                      } style={{ marginTop: '10px' }} /> -->
+                      } style={{ marginTop: '10px' }} />
                     </div>
                     {footerContent.social.display &&
                       <div className="column is-one-quarter is-offset-half">
