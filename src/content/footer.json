@@ -2,7 +2,7 @@
   "columns": [
     {
       "title": "The Event",
-      "display": true,
+      "display": false,
       "items": [
         {
           "title": "All Projects",
@@ -20,7 +20,7 @@
     },
     {
       "title": "The Vision",
-      "display": true,
+      "display": false,
       "items": [
         {
           "title": "About",
@@ -34,7 +34,7 @@
     },
     {
       "title": "Membership",
-      "display": true,
+      "display": false,
       "items": [
         {
           "title": "Corporate members",
@@ -53,27 +53,27 @@
   ],
   "social": {
     "title": "Follow Us",
-    "display": true,
+    "display": false,
     "networks": [
       {
         "icon": "fa-facebook",
         "link": "#",
-        "display": true
+        "display": false
       },
       {
         "icon": "fa-twitter",
         "link": "#",
-        "display": true
+        "display": false
       },
       {
         "icon": "fa-linkedin",
         "link": "#",
-        "display": true
+        "display": false
       },
       {
         "icon": "fa-google-plus",
         "link": "#",
-        "display": true
+        "display": false
       }
     ]
   },
