@@ -18,19 +18,19 @@
     "background": "/img/fntech-all-hands-reg-header-text.png",
     "images": [
       {
-        "image": "/img/01_os-crew_dark-blue.png"
+        "image": "/img/01_os-crew_dark-blue.jpg"
       },
       {
-        "image": "/img/02_bob-jer_chad_med-blue.png"
+        "image": "/img/02_bob-jer_chad_med-blue-new.jpg"
       },
       {
-        "image": "/img/03_crew-at-stack-city-austin_teal.png"
+        "image": "/img/03_crew-at-stack-city-austin_teal-new.jpg"
       },
       {
-        "image": "/img/04_women-of-f8.png"
+        "image": "/img/04_women-of-f8-new.jpg"
       },
       {
-        "image": "/img/05_keynote-ad-hoc-2.png"
+        "image": "/img/05_keynote-ad-hoc-2-new.jpg"
       }
     ]
   },
@@ -40,7 +40,7 @@
   },
   "sponsors": [
     {
-      "image": "/img/kelly-nick_replacement.png"
+      "image": "/img/kelly-nick_replacement-new.jpg"
     },
     {
       "image": "/img/fntech-all-hands-reg-ad1-square.png",
@@ -51,7 +51,7 @@
       "size": "simple"
     },
     {
-      "image": "/img/jer-with-clipboard_v2.png"
+      "image": "/img/jer-with-clipboard_v2-new.jpg"
     }
   ]
 }
