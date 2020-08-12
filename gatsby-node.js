@@ -102,6 +102,13 @@ exports.sourceNodes = async ({
   ).then((response) => response.data.data)
     .catch(e => console.log('ERROR: ', e));
 
+  const summitObject = { summit }
+
+  fs.writeFileSync('src/content/summit.json', JSON.stringify(summitObject), 'utf8', function (err) {
+    if (err) throw err;
+    console.log('Saved!');
+  });
+
   const nodeContent = JSON.stringify(summit)
 
   const nodeMeta = {

@@ -14,8 +14,9 @@ import Content, { HTMLContent } from '../components/Content'
 import '../styles/style.scss'
 
 import MarketingSite from '../content/marketing-site.json'
+import SummitObject from '../content/summit.json'
 
-import { getSummitData, getTimeNow } from '../actions/summit-actions'
+import { getTimeNow } from '../actions/summit-actions'
 import { getDisqusSSO } from '../actions/user-actions'
 
 export const MarketingPageTemplate = class extends React.Component {
@@ -26,58 +27,54 @@ export const MarketingPageTemplate = class extends React.Component {
   componentWillMount() {
     let { isLoggedUser } = this.props;
 
-    this.props.getSummitData();
     this.props.getTimeNow();
 
     if (isLoggedUser) { this.props.getDisqusSSO(); }
   }
 
   render() {
-    let { content, contentComponent, user, summit, loggedUser, isLoggedUser, marketingNow } = this.props;
+    let { content, contentComponent, user, loggedUser, isLoggedUser, marketingNow } = this.props;
+    let { summit } = SummitObject;
 
     const PageContent = contentComponent || Content
 
-    if (isLoggedUser && summit.start_date < marketingNow) {
-      return <Redirect noThrow to="/a/" />
-    } else {
-      return (
-        <React.Fragment>
-          <LobbyHeroMarketing summit={summit} />
-          { marketingNow && summit && <Countdown now={marketingNow} summit={summit} /> }
-          <div className="columns" id="marketing-columns">
-            <div className="column is-half px-6 pt-6 pb-0" style={{ position: 'relative' }}>
-              {MarketingSite.leftColumn.schedule &&
-                <React.Fragment>
-                  <h2 style={{ fontWeight: 'bold' }}>Full Event Schedule</h2>
-                  <ScheduleLiteComponent accessToken={loggedUser.accessToken} landscape={true} eventCount={10} />
-                </React.Fragment>
-              }
-              {MarketingSite.leftColumn.disqus &&
-                <React.Fragment>
-                  <h2 style={{ fontWeight: 'bold' }}>Join the conversation</h2>
-                  <DisqusComponent page="marketing-site" disqusSSO={user?.disqusSSO} summit={summit} />
-                </React.Fragment>
-              }
-            </div>
-            <div className="column is-half px-0 pb-0">
-              <Masonry
-                breakpointCols={2}
-                className="my-masonry-grid"
-                columnClassName="my-masonry-grid_column">
-                {MarketingSite.sponsors.map((item, index) => {
-                  return (
-                    <div key={index}>
-                      <img src={item.image} />
-                    </div>
-                  )
-                })}
-              </Masonry>
-            </div>
+    return (
+      <React.Fragment>
+        <LobbyHeroMarketing summit={summit} />
+        {marketingNow && summit && <Countdown now={marketingNow} summit={summit} />}
+        <div className="columns" id="marketing-columns">
+          <div className="column is-half px-6 pt-6 pb-0" style={{ position: 'relative' }}>
+            {MarketingSite.leftColumn.schedule &&
+              <React.Fragment>
+                <h2 style={{ fontWeight: 'bold' }}>Full Event Schedule</h2>
+                <ScheduleLiteComponent accessToken={loggedUser.accessToken} landscape={true} eventCount={10} />
+              </React.Fragment>
+            }
+            {MarketingSite.leftColumn.disqus &&
+              <React.Fragment>
+                <h2 style={{ fontWeight: 'bold' }}>Join the conversation</h2>
+                <DisqusComponent page="marketing-site" disqusSSO={user?.disqusSSO} summit={summit} />
+              </React.Fragment>
+            }
           </div>
-          <PageContent content={content} />
-        </React.Fragment>
-      )
-    }
+          <div className="column is-half px-0 pb-0">
+            <Masonry
+              breakpointCols={2}
+              className="my-masonry-grid"
+              columnClassName="my-masonry-grid_column">
+              {MarketingSite.sponsors.map((item, index) => {
+                return (
+                  <div key={index}>
+                    <img src={item.image} />
+                  </div>
+                )
+              })}
+            </Masonry>
+          </div>
+        </div>
+        <PageContent content={content} />
+      </React.Fragment>
+    )
   }
 
 }
@@ -86,11 +83,10 @@ MarketingPageTemplate.propTypes = {
   content: PropTypes.string,
   contentComponent: PropTypes.func,
   user: PropTypes.object,
-  summit: PropTypes.object,
   isLoggedUser: PropTypes.bool,
 }
 
-const MarketingPage = ({ data, user, summit, marketingNow, loggedUser, isLoggedUser, getSummitData, getTimeNow, getDisqusSSO }) => {
+const MarketingPage = ({ data, user, marketingNow, loggedUser, isLoggedUser, getTimeNow, getDisqusSSO }) => {
   const { frontmatter, html } = data.markdownRemark
 
   return (
@@ -99,11 +95,9 @@ const MarketingPage = ({ data, user, summit, marketingNow, loggedUser, isLoggedU
         contentComponent={HTMLContent}
         content={html}
         user={user}
-        summit={summit}
         loggedUser={loggedUser}
         marketingNow={marketingNow}
         isLoggedUser={isLoggedUser}
-        getSummitData={getSummitData}
         getTimeNow={getTimeNow}
         getDisqusSSO={getDisqusSSO}
       />
@@ -118,7 +112,6 @@ MarketingPage.propTypes = {
     }),
   }),
   user: PropTypes.object,
-  summit: PropTypes.object,
   loggedUser: PropTypes.object,
   isLoggedUser: PropTypes.bool,
   getSummitData: PropTypes.func,
@@ -130,11 +123,9 @@ const mapStateToProps = ({ userState, summitState, loggedUserState }) => ({
   loggedUser: loggedUserState,
   marketingNow: summitState.marketingNow,
   user: userState,
-  summit: summitState.summit,
 })
 
 export default connect(mapStateToProps, {
-  getSummitData,
   getTimeNow,
   getDisqusSSO
 })(MarketingPage)
@@ -149,4 +140,3 @@ export const marketingPageQuery = graphql`
     }
   }
 `
-

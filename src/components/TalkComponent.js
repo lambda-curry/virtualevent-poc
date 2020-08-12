@@ -46,15 +46,34 @@ const TalkComponent = class extends React.Component {
     const { event: { start_date, end_date, speakers, title, description }, event, summit: { time_zone_id } } = this.props;
 
     return (
-      <div className="columns px-5 py-5">
+      <div className="columns px-5 py-5 talk">
         <div className="column is-three-quarters">
           <span className="talk__date">{this.formatEventDate(start_date, end_date, time_zone_id)} {this.formatEventLocation(event)}</span>
           <h1>
             <b>{title}</b>
           </h1>
           <div className="talk__speaker">
-            <img alt="Speaker" />
-            <span className="talk__speaker--name">{this.formatSpeakers(speakers)}</span>
+            {speakers && speakers?.length === 0 ?
+              null
+              :
+              speakers?.length < 3 ?
+                speakers.map((s, index) => {
+                  return (
+                    <div className="talk__speaker-container" key={index}>
+                      <img src={s.pic} alt={`${s.first_name} ${s.last_name}`} />
+                      <div>
+                        {`${s.first_name} ${s.last_name}`}
+                        <br />
+                        <b>{s.title}</b>
+                      </div>
+                    </div>
+                  )
+                })
+                :
+                <span className="talk__speaker--name">
+                  {this.formatSpeakers(speakers)}
+                </span>
+            }
             <br /><br />
             <div className="talk__description" dangerouslySetInnerHTML={{ __html: description }} />
           </div>

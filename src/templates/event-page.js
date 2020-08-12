@@ -4,6 +4,7 @@ import { navigate } from 'gatsby'
 import { connect } from 'react-redux'
 
 import envVariables from '../utils/envVariables';
+import SummitObject from '../content/summit.json'
 
 import Layout from '../components/Layout'
 
@@ -54,7 +55,8 @@ export const EventPageTemplate = class extends React.Component {
 
   render() {
 
-    const { loggedUser, summit, event, user } = this.props;
+    const { loggedUser, event, user } = this.props;
+    let { summit } = SummitObject;
 
     if (event) {
       return (
@@ -82,7 +84,7 @@ export const EventPageTemplate = class extends React.Component {
               <div className="column is-hidden-tablet">
                 <TalkComponent event={event} summit={summit} noStream={true} />
               </div>
-              <div className="column" style={{ position: 'relative' }}>
+              <div className="column" style={{ position: 'relative', borderBottom: '1px solid #d3d3d3' }}>
                 <DisqusComponent disqusSSO={user.disqusSSO} event={event} summit={summit} title="Join the conversation" />
               </div>
             </div>
@@ -148,7 +150,6 @@ export const EventPageTemplate = class extends React.Component {
 const EventPage = (
   {
     loggedUser,
-    summit,
     event,
     eventId,
     user,
@@ -162,7 +163,6 @@ const EventPage = (
     <Layout>
       <EventPageTemplate
         loggedUser={loggedUser}
-        summit={summit}
         event={event}
         eventId={eventId}
         user={user}
@@ -176,7 +176,6 @@ const EventPage = (
 
 EventPage.propTypes = {
   loggedUser: PropTypes.object,
-  summit: PropTypes.object,
   event: PropTypes.object,
   eventId: PropTypes.string,
   user: PropTypes.object,
@@ -187,7 +186,6 @@ EventPage.propTypes = {
 
 EventPageTemplate.propTypes = {
   loggedUser: PropTypes.object,
-  summit: PropTypes.object,
   event: PropTypes.object,
   eventId: PropTypes.string,
   user: PropTypes.object,
@@ -199,14 +197,12 @@ EventPageTemplate.propTypes = {
 const mapStateToProps = (
   {
     loggedUserState,
-    summitState,
     eventState,
     userState
   }
 ) => ({
 
   loggedUser: loggedUserState,
-  summit: summitState.summit,
   event: eventState.event,
   user: userState,
 })

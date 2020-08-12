@@ -5,17 +5,20 @@ import Header from '../components/Header'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 
+import SummitObject from '../content/summit.json'
+
 // import "../styles/all.scss"
 // import "../styles/palette.scss"
 import "../styles/bulma.scss"
 
 const TemplateWrapper = ({ children, marketing }) => {
   const { title, description } = useSiteMetadata()
+  const { summit } = SummitObject;
   return (
     <div id="container">
       <Helmet>
         <html lang="en" />
-        <title>{title}</title>
+        <title>{`${summit.name} - ${title}`}</title>
         <meta name="description" content={description} />
 
         <link

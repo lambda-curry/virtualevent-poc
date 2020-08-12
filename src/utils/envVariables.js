@@ -5,7 +5,8 @@ const envVariables = {
   OAUTH2_CLIENT_ID: typeof window === 'object' ? window.OAUTH2_CLIENT_ID : process.env.GATSBY_OAUTH2_CLIENT_ID,
   SCOPES: typeof window === 'object' ? window.SCOPES : process.env.GATSBY_SCOPES,
   MARKETING_API_BASE_URL: typeof window === 'object' ? window.MARKETING_API_BASE_URL : process.env.GATSBY_MARKETING_API_BASE_URL,
-  REGISTRATION_BASE_URL: typeof window === 'object' ? window.REGISTRATION_BASE_URL : process.env.GATSBY_REGISTRATION_BASE_URL
+  REGISTRATION_BASE_URL: typeof window === 'object' ? window.REGISTRATION_BASE_URL : process.env.GATSBY_REGISTRATION_BASE_URL,
+  AUTHZ_USER_GROUPS: typeof window === 'object' ? window.AUTHZ_USER_GROUPS : process.env.GATSBY_AUTHZ_USER_GROUPS
 }
 
 export default envVariables;

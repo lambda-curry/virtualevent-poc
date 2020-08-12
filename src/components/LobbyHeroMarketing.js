@@ -54,7 +54,7 @@ const LobbyHeroMarketing = ({ ...props }) => (
             <h4>{MarketingSite.heroBanner.time}</h4>
             <div className={styles.heroButtons}>
               {MarketingSite.heroBanner.buttons.registerButton.display &&
-                <a className={styles.link} href={`${envVariables.REGISTRATION_BASE_URL}/a/${props.summit.slug}/registration/start`} target="_blank" rel="noreferrer">
+                <a className={styles.link} href={`${envVariables.REGISTRATION_BASE_URL}/a/${props.summit.slug}/`} target="_blank" rel="noreferrer">
                   <button className={`${styles.button} button is-large`}>
                     <i className={`fa fa-2x fa-edit icon is-large`}></i>
                     <b>{MarketingSite.heroBanner.buttons.registerButton.text}</b>

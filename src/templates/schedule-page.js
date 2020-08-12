@@ -4,9 +4,11 @@ import { navigate } from 'gatsby'
 import { connect } from 'react-redux'
 import Layout from '../components/Layout'
 import ScheduleLiteComponent from "../components/ScheduleLiteComponent";
+import SummitObject from '../content/summit.json'
 
+const SchedulePage = ({loggedUser}) => {
 
-const SchedulePage = ({summit, loggedUser}) => {
+  let { summit } = SummitObject;
 
   return (
     <Layout>
@@ -30,9 +32,8 @@ SchedulePage.propTypes = {
   location: PropTypes.object,
 }
 
-const mapStateToProps = ({ loggedUserState, summitState, userState }) => ({
+const mapStateToProps = ({ loggedUserState, userState }) => ({
   loggedUser: loggedUserState,
-  summit: summitState.summit,
   user: userState,
 });
 

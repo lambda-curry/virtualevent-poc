@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Virtual Event POC',
-    description: 'POC for virtual events',
+    title: 'Virtual Event',
+    description: 'Virtual event',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

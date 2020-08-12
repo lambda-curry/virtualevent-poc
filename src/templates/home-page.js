@@ -6,6 +6,8 @@ import { connect } from 'react-redux'
 import Layout from '../components/Layout'
 import withOrchestra from "../utils/widgetOrchestra";
 
+import SummitObject from '../content/summit.json'
+
 import LobbyHeroComponent from '../components/LobbyHeroComponent'
 import AdvertiseComponent from '../components/AdvertiseComponent'
 import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
@@ -15,7 +17,6 @@ import SpeakersWidgetComponent from '../components/SpeakersWidgetComponent'
 import SponsorComponent from '../components/SponsorComponent'
 import SimpleChatWidgetComponent from '../components/SimpleChatWidgetComponent'
 
-import { getSummitData } from '../actions/summit-actions'
 import { getDisqusSSO, getUserProfile } from '../actions/user-actions'
 
 export const HomePageTemplate = class extends React.Component {
@@ -23,10 +24,6 @@ export const HomePageTemplate = class extends React.Component {
   constructor(props) {
     super(props);
     this.onEventChange = this.onEventChange.bind(this);
-  }
-
-  componentWillMount() {
-    this.props.getSummitData();
   }
 
   componentDidMount() {
@@ -38,8 +35,8 @@ export const HomePageTemplate = class extends React.Component {
   }
 
   render() {
-
-    const { loggedUser, user, summit, addWidgetRef, updateWidgets } = this.props;
+    const { loggedUser, user, addWidgetRef, updateWidgets } = this.props;
+    let { summit } = SummitObject;
 
     return (
       <React.Fragment>
@@ -53,7 +50,7 @@ export const HomePageTemplate = class extends React.Component {
             </div>            
             <div className="column is-half">
               <LiveEventWidgetComponent />
-              <DisqusComponent page="lobby" disqusSSO={user.disqusSSO} summit={summit} title="Conversations" style={{ position: 'static' }} />
+              <DisqusComponent page="lobby" disqusSSO={user.disqusSSO} summit={summit} title="Public conversation" style={{ position: 'static' }} />
               <ScheduleLiteComponent
                 accessToken={loggedUser.accessToken}
                 onEventClick={(ev) => this.onEventChange(ev)}
@@ -76,7 +73,7 @@ export const HomePageTemplate = class extends React.Component {
               <AdvertiseComponent section='lobby' column="center"/>
             </div>
             <div className="column is-one-quarter pb-6">
-              <SimpleChatWidgetComponent accessToken={loggedUser.accessToken} />
+              <SimpleChatWidgetComponent accessToken={loggedUser.accessToken} title="Private Chat" />
               <h2><b>My Schedule</b></h2>
               <ScheduleLiteComponent
                 accessToken={loggedUser.accessToken}
@@ -103,9 +100,7 @@ const OrchestedTemplate = withOrchestra(HomePageTemplate);
 const HomePage = (
   {
     loggedUser,
-    summit,
     user,
-    getSummitData,
     getUserProfile,
     getDisqusSSO
   }
@@ -115,9 +110,7 @@ const HomePage = (
     <Layout>
       <OrchestedTemplate
         loggedUser={loggedUser}
-        summit={summit}
         user={user}
-        getSummitData={getSummitData}
         getUserProfile={getUserProfile}
         getDisqusSSO={getDisqusSSO}
       />
@@ -126,32 +119,26 @@ const HomePage = (
 }
 
 HomePage.propTypes = {
-  summit: PropTypes.object,
   loggedUser: PropTypes.object,
   user: PropTypes.object,
-  getSummitData: PropTypes.func,
   getUserProfile: PropTypes.func,
   getDisqusSSO: PropTypes.func,
 }
 
 HomePageTemplate.propTypes = {
   loggedUser: PropTypes.object,
-  summit: PropTypes.object,
   user: PropTypes.object,
-  getSummitData: PropTypes.func,
   getUserProfile: PropTypes.func,
   getDisqusSSO: PropTypes.func,
 }
 
-const mapStateToProps = ({ loggedUserState, userState, summitState }) => ({
+const mapStateToProps = ({ loggedUserState, userState }) => ({
   loggedUser: loggedUserState,
-  summit: summitState.summit,
   user: userState,
 })
 
 export default connect(mapStateToProps,
   {
-    getSummitData,
     getDisqusSSO,
     getUserProfile
   }
