@@ -28,9 +28,9 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, user, startD
 
   const isAuthorized = authorizedUser(user.groups);
 
-  const ticketPurchased = user.summit_tickets?.includes(envVariables.SUMMIT_ID);
+  const ticketPurchased = user.summit_tickets?.length > 0;
 
-  if (!ticketPurchased && !isAuthorized) {
+  if (!isAuthorized && !ticketPurchased) {
     navigate('/authz/ticket', {
       state: {
         error: 'no-ticket'
@@ -39,7 +39,7 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, user, startD
     return null
   }
 
-  if (!(startDate < marketingNow) && !isAuthorized) {
+  if (!isAuthorized && !(startDate < marketingNow)) {
     setTimeout(() => {
       navigate('/')
     }, 3000);
