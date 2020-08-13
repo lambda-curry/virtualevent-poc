@@ -5,7 +5,7 @@ import { navigate } from 'gatsby'
 import envVariables from '../utils/envVariables'
 
 import SummitObject from '../content/summit.json'
-import FullscreenMessageComponent from '../components/FullscreenMessageComponent'
+import HeroComponent from '../components/HeroComponent'
 
 export const TicketErrorPageTemplate = class extends React.Component {
 
@@ -81,7 +81,7 @@ export const TicketErrorPageTemplate = class extends React.Component {
     if (error) {
       this.redirect();
       return (
-        <FullscreenMessageComponent
+        <HeroComponent
           title={this.getErrorMessage()}
           subtitle={this.getRedirectMessage()}
         />

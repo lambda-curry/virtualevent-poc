@@ -4,7 +4,7 @@ import { GET_SUMMIT_DATA, UPDATE_CLOCK, TIME_NOW } from '../actions/summit-actio
 
 const DEFAULT_STATE = {
   loading: false,
-  summit: {},
+  summit: null,
   nowUtc: null,
   marketingNow: null,
 }

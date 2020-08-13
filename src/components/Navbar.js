@@ -8,6 +8,8 @@ import LogoutButton from './LogoutButton';
 import Link from './Link'
 import Content from '../content/navbar.json'
 
+import SummitObject from '../content/summit.json'
+
 const Navbar = class extends React.Component {
   constructor(props) {
     super(props)
@@ -40,6 +42,7 @@ const Navbar = class extends React.Component {
   render() {
 
     let { isLoggedUser, logo } = this.props;
+    let { summit } = SummitObject
 
     return (
       <React.Fragment>
@@ -47,7 +50,7 @@ const Navbar = class extends React.Component {
           <div className={styles.navbarBrand}>
             <Link to={isLoggedUser ? '/a/' : '/'} className={styles.navbarItem}>
               {logo &&
-                <img src={logo} alt="Show Logo" />
+                <img src={logo} alt={summit.name} />
               }
             </Link>
 

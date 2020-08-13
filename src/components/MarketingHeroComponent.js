@@ -35,7 +35,7 @@ const onClickLogin = () => {
   doLogin(getBackURL());
 }
 
-const LobbyHeroMarketing = ({ ...props }) => (
+const MarketingHeroComponent = ({ ...props }) => (
   <section className={styles.heroMarketing}>
     <div className={`${styles.heroMarketingColumns} columns is-gapless`}>
       <div className={`${styles.leftColumn} column is-6 is-black`} 
@@ -90,4 +90,4 @@ const LobbyHeroMarketing = ({ ...props }) => (
 
 )
 
-export default LobbyHeroMarketing
+export default MarketingHeroComponent

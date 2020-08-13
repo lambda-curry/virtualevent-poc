@@ -2,12 +2,13 @@
 
 .docs-container {
   border: 1px $color_primary_contrast solid;
+  color: $color_text_dark;
 
   .title {
     width: 100%;
     padding: 1rem 1rem 0.5rem;
     font-weight: bold;
-    font-size: 20px;    
+    font-size: 20px;
   }
 
   .document-column {

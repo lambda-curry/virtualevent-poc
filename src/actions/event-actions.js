@@ -11,7 +11,8 @@ import { customErrorHandler } from '../utils/customErrorHandler';
 
 import { LOGOUT_USER } from "openstack-uicore-foundation/lib/actions";
 
-export const GET_EVENT_DATA = 'GET_EVENT_DATA';
+export const GET_EVENT_DATA         = 'GET_EVENT_DATA';
+export const GET_EVENT_DATA_ERROR   = 'GET_EVENT_DATA_ERROR';
 
 export const handleResetReducers = () => (dispatch, getState) => {
   dispatch(createAction(LOGOUT_USER)({}));
@@ -31,6 +32,7 @@ export const getEventBySlug = (slug) => (dispatch, getState) => {
   }
   ).catch(e => {
     dispatch(stopLoading());
+    dispatch(createAction(GET_EVENT_DATA_ERROR)({}))
     return (e);
   });
 }

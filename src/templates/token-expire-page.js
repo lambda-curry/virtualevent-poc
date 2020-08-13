@@ -6,7 +6,7 @@ import URI from "urijs";
 import { handleResetReducers } from '../actions/event-actions'
 import { doLogin } from "openstack-uicore-foundation/lib/methods";
 
-import FullscreenMessageComponent from '../components/FullscreenMessageComponent'
+import HeroComponent from '../components/HeroComponent'
 
 export const TokenExpirePageTemplate = class extends React.Component {
 
@@ -30,7 +30,7 @@ export const TokenExpirePageTemplate = class extends React.Component {
   render() {
     this.redirectToLogin();
     return (
-      <FullscreenMessageComponent
+      <HeroComponent
         title="Checking credentials..."
       />
     )

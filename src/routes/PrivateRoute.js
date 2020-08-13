@@ -4,7 +4,7 @@ import { navigate } from "gatsby"
 import envVariables from '../utils/envVariables';
 import authorizedUser from '../utils/authorizedGroups';
 
-import FullscreenMessageComponent from '../components/FullscreenMessageComponent'
+import HeroComponent from '../components/HeroComponent'
 import { OPSessionChecker } from "openstack-uicore-foundation/lib/components";
 
 const PrivateRoute = ({ component: Component, isLoggedIn, location, user, startDate, marketingNow, ...rest }) => {
@@ -20,7 +20,7 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, user, startD
 
   if (!user || !user.groups) { 
     return (
-      <FullscreenMessageComponent
+      <HeroComponent
         title="Checking credentials..."
       />
     )
@@ -44,7 +44,7 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, user, startD
       navigate('/')
     }, 3000);
     return (
-      <FullscreenMessageComponent
+      <HeroComponent
         title="Its not yet show time!"
       />
     )

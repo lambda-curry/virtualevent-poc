@@ -1,5 +1,5 @@
 import React from "react"
-
+import HeroComponent from '../components/HeroComponent'
 import { epochToMomentTimeZone } from "openstack-uicore-foundation/lib/methods";
 
 const TalkComponent = class extends React.Component {
@@ -43,49 +43,61 @@ const TalkComponent = class extends React.Component {
 
   render() {
 
-    const { event: { start_date, end_date, speakers, title, description }, event, summit: { time_zone_id } } = this.props;
+    const { event: { class_name, start_date, end_date, speakers, title, description }, event, summit: { time_zone_id } } = this.props;
 
     return (
-      <div className="columns px-5 py-5 talk">
-        <div className="column is-three-quarters">
-          <span className="talk__date">{this.formatEventDate(start_date, end_date, time_zone_id)} {this.formatEventLocation(event)}</span>
-          <h1>
-            <b>{title}</b>
-          </h1>
-          <div className="talk__speaker">
-            {speakers && speakers?.length === 0 ?
-              null
-              :
-              speakers?.length < 3 ?
-                speakers.map((s, index) => {
-                  return (
-                    <div className="talk__speaker-container" key={index}>
-                      <img src={s.pic} alt={`${s.first_name} ${s.last_name}`} />
-                      <div>
-                        {`${s.first_name} ${s.last_name}`}
-                        <br />
-                        <b>{s.title}</b>
-                      </div>
-                    </div>
-                  )
-                })
+      <div className={`columns talk ${class_name !== 'Presentation' || !event.streaming_url ? 'px-3 py-3' : 'px-5 py-5'}`}>
+        {class_name !== 'Presentation' || !event.streaming_url ?
+          <HeroComponent
+            title={title}
+            subtitle={
+              class_name !== 'Presentation' ?
+                'Next session will start soon...'
                 :
-                <span className="talk__speaker--name">
-                  {this.formatSpeakers(speakers)}
-                </span>
+                !event.streaming_url ?
+                  `This session will be available on ${epochToMomentTimeZone(start_date, time_zone_id).format('MMMM Do')}`
+                  :
+                  ''
             }
-            <br /><br />
-            <div className="talk__description" dangerouslySetInnerHTML={{ __html: description }} />
+            event={true}
+          />
+          :
+          <div className="column is-full">
+            <span className="talk__date">{this.formatEventDate(start_date, end_date, time_zone_id)} {this.formatEventLocation(event)}</span>
+            <h1>
+              <b>{title}</b>
+            </h1>
+            <div className="talk__speaker">
+              {speakers && speakers?.length === 0 ?
+                null
+                :
+                speakers?.length < 10 ?
+                  <div className="columns is-multiline is-mobile">
+                    {speakers.map((s, index) => {
+                      return (
+                        <div className="column is-one-third-desktop is-half-mobile talk__speaker-container" key={index}>
+                          <img src={s.pic} />
+                          <div>
+                            {`${s.first_name} ${s.last_name}`}
+                            <br />
+                            <b>{s.title}</b>
+                          </div>
+                        </div>
+                      )
+                    })
+                    }
+                  </div>
+                  :
+                  <span className="talk__speaker--name">
+                    {this.formatSpeakers(speakers)}
+                  </span>
+              }
+              <br />
+              <div className="talk__description" dangerouslySetInnerHTML={{ __html: description }} />
+            </div>
+            <br />
           </div>
-          <br />
-          {event.meeting_url &&
-            <a href={event.meeting_url} target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}>
-              <div className="button is-info is-uppercase" style={{ fontSize: '1.15em' }}>
-                join zoom to take the mic !
-              </div>
-            </a>
-          }
-        </div>
+        }
       </div>
     )
   }

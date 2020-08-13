@@ -25,9 +25,12 @@
     padding-left: 10px;
   }
 
+  .navbar-item {
+    color: $color_text_light;
+  }
+
   .navbar-menu {
     .navbar-item {
-      color: $color_text_light;
       font-weight: 300;
 
       .link {

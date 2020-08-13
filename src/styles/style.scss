@@ -1,3 +1,5 @@
+@import './colors.scss';
+
 html,
 body {
   font-family: 'Nunito Sans', sans-serif !important;
@@ -33,7 +35,7 @@ footer {
 
 #content-wrapper {
   padding-bottom: 3rem;
-  min-height: 89vh;
+  min-height: 71vh;
 }
 
 div.login-form {
@@ -112,6 +114,17 @@ h2 {
 
 .talk {
 
+  &__break {
+    background-color: $color_secondary;
+    min-height: 65vh !important;
+    width: 100%;
+    padding: 0 3rem;
+    h1, h2 {
+      color: $color_text_light;
+      font-size: 42px;
+    }
+  }
+
   h1 {
     font-size: 40px;
   }
@@ -126,13 +139,16 @@ h2 {
     &--name {
       text-transform: capitalize;
     }
+
     &-container {
       display: inline-flex;
+
       img {
         height: 40px;
         width: 40px;
         border-radius: 5px;
       }
+
       div {
         padding-left: 5px;
       }
@@ -161,15 +177,34 @@ h2 {
     align-items: flex-end;
   }
 
-  a {
-    color: white;
+  &__etherpad {}
+}
 
-    &:hover {
-      color: white;
-    }
+.join-zoom-container {
+  align-items: center;
+  background-color: $color_secondary;
+  color: $color_text_light;
+  display: flex;  
+  height: 110px;
+  justify-content: space-around;
+  padding: 0 3rem;
+
+  span {
+    font-size: 40px;
+    font-weight: bold;
   }
 
-  &__etherpad {}
+  a:hover.zoom-link,
+  a:visited.zoom-link {
+    text-decoration: none;
+  }
+
+  button {
+    font-size: 22px;
+    padding-left: 4em;
+    padding-right: 4em;
+    text-transform: uppercase;
+  }
 }
 
 .outerWrapper___lGus2 {
@@ -273,12 +308,45 @@ h2 {
       height: auto;
     }
   }
+
+  .talk {
+
+    &__break {
+      height: auto;
+    }
+  }
+
+  .join-zoom-container {
+    flex-direction: column;
+    height: 100px;
+    span {
+      font-size: 18px;
+    }
+    button {
+      padding-left: 2em;
+      padding-right: 2em;
+      font-size: 16px;
+    }
+  }  
 }
 
 @media (max-width: 978px) {
   #marketing-slider {
     .slick-track {
       height: 520px;
+    }
+  }
+}
+
+@media (max-width: 1430px) {
+  .join-zoom-container {
+    span {
+      font-size: 22px;
+    }
+    button {
+      padding-left: 3em;
+      padding-right: 3em;
+      font-size: 18px;
     }
   }
 }

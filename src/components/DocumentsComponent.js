@@ -1,9 +1,17 @@
 import React from 'react'
 import styles from '../styles/documents.module.scss'
 
-const DocumentsComponent = ({ materials }) => {
+const DocumentsComponent = ({ event }) => {
 
-  let sortedMaterials = [...materials].sort((a, b) => {
+  const getMaterials = (event) => {
+    let materials = [];
+    if (event.links?.length > 0) materials = [...materials, ...event.links]
+    if (event.videos?.length > 0) materials = [...materials, ...event.videos]
+    if (event.slides?.length > 0) materials = [...materials, ...event.slides]
+    return materials;
+  }
+
+  let sortedMaterials = [...getMaterials(event)].sort((a, b) => {
     if (a.order > b.order) {
       return 1;
     } else if (a.order < b.order) {
@@ -13,14 +21,13 @@ const DocumentsComponent = ({ materials }) => {
     }
   });
 
-  if (materials.length > 0) {
+  if (sortedMaterials.length > 0) {
     return (
-      <div className="column is-one-quarter">
-        <div className={`${styles.docsContainer}`} style={{marginTop: '1em'}}>
+      <div className="column is-one-quarters">
+        <div className={`${styles.docsContainer}`} style={{ marginTop: '1em' }}>
           <div className={styles.title}>Documents</div>
           <hr />
-          {sortedMaterials.length > 0 &&
-            sortedMaterials.map((material, index) => {
+          {sortedMaterials.map((material, index) => {
               return (
                 <React.Fragment>
                   {material.class_name === 'PresentationSlide' ?
@@ -57,8 +64,8 @@ const DocumentsComponent = ({ materials }) => {
       </div>
     )
   } else {
-    return <div className="column is-one-quarter"></div>;
+    return null;
   }
 }
 
-  export default DocumentsComponent;
+export default DocumentsComponent;

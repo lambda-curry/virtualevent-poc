@@ -5,7 +5,7 @@ import { Redirect } from '@reach/router'
 import { connect } from 'react-redux'
 import Masonry from 'react-masonry-css'
 import Layout from '../components/Layout'
-import LobbyHeroMarketing from '../components/LobbyHeroMarketing'
+import MarketingHeroComponent from '../components/MarketingHeroComponent'
 import ScheduleLiteComponent from "../components/ScheduleLiteComponent"
 import DisqusComponent from '../components/DisqusComponent'
 import Countdown from '../components/Countdown'
@@ -40,7 +40,7 @@ export const MarketingPageTemplate = class extends React.Component {
 
     return (
       <React.Fragment>
-        <LobbyHeroMarketing summit={summit} />
+        <MarketingHeroComponent summit={summit} />
         {marketingNow && summit && <Countdown now={marketingNow} summit={summit} />}
         <div className="columns" id="marketing-columns">
           <div className="column is-half px-6 pt-6 pb-0" style={{ position: 'relative' }}>
