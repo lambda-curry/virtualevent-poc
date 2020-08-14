@@ -14,7 +14,7 @@ const TalkComponent = class extends React.Component {
 
   formatEventDate(start_date, end_date, timezone) {
     if (!start_date || !end_date || !timezone) return;
-    const date = epochToMomentTimeZone(start_date, timezone).format('dddd, MMMM Do')
+    const date = epochToMomentTimeZone(start_date, timezone).format('dddd, MMMM D')
     const startTime = epochToMomentTimeZone(start_date, timezone).format('h:mm a');
     const endTime = epochToMomentTimeZone(end_date, timezone).format('h:mm a');
     const dateNice = `${date}, ${startTime} - ${endTime}`;
