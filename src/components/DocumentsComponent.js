@@ -25,7 +25,7 @@ const DocumentsComponent = ({ event }) => {
     return (
       <div className="column is-one-quarter">
         <div className={`${styles.docsContainer}`} style={{ marginTop: '1em' }}>
-          <div className={styles.title}>Documents</div>
+          <div className={`navbar-brand ${styles.title}`}>Documents</div>
           <hr />
           {sortedMaterials.map((material, index) => {
               return (
