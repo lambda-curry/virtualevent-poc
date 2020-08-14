@@ -3,6 +3,8 @@
 .docs-container {
   border: 1px $color_primary_contrast solid;
   color: $color_text_dark;
+  display: flex;
+  flex-direction: column;
 
   .title {
     width: 100%;
