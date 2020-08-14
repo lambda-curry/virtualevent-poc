@@ -54,7 +54,7 @@ const DisqusComponent = class extends React.Component {
     return identifier;
   }
 
-  getTitle () {
+  getTitle() {
     const { summit, event, page } = this.props;
     let suffix = '';
     if (event) {
@@ -62,7 +62,7 @@ const DisqusComponent = class extends React.Component {
       let trackExcludes = DisqusSettings.disqus_exclude_tracks ? DisqusSettings.disqus_exclude_tracks : [];
       if (event.track && event.track.id && (threadsBy === 'track' || trackExcludes.includes(event.track.id))) {
         suffix += ' - '
-        suffix +=  event.track.name;
+        suffix += event.track.name;
       } else if (threadsBy === 'summit') {
       } else {
         suffix += ` - ${event.title}`
@@ -77,7 +77,7 @@ const DisqusComponent = class extends React.Component {
           break;
         default:
           break;
-      } 
+      }
     }
     return `${summit.name}${suffix}`;
   }
@@ -96,7 +96,7 @@ const DisqusComponent = class extends React.Component {
 
     return (
       <div className={style ? '' : page === 'marketing-site' ? 'disqus-container-marketing' : 'disqus-container'} style={style}>
-        <h3>{title}</h3>
+        <span className="navbar-brand title" style={{paddingLeft: '0px'}}>{title}</span>
         <DiscussionEmbed
           shortname='fnvirtual-poc'
           config={disqusConfig}

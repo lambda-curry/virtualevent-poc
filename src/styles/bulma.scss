@@ -9,6 +9,10 @@ $footer-background-color: $color-primary;
 $footer-color: $color-text-light;
 $footer-padding: 2rem;
 
+.navbar-brand {
+  font-size: 19px !important;
+}
+
 @import "bulma/sass/base/_all.sass";
 @import "bulma/sass/elements/_all.sass";
 @import "bulma/sass/form/_all.sass";

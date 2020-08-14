@@ -36,7 +36,7 @@ const DocumentsComponent = ({ event }) => {
                         <i className={`fa fa-file-o icon is-large`}></i>
                       </div>
                       <div className={`column is-6 ${styles.documentName}`}>
-                        <span><b>{material.name}</b></span>
+                        <span>{material.name}</span>
                       </div>
                       <div className="column is-2 has-text-right">
                         <a target="_blank" rel="noreferrer" href={material.link}><i className="fa fa-download icon is-large"></i></a>
@@ -50,7 +50,7 @@ const DocumentsComponent = ({ event }) => {
                       </div>
                       <div className="column is-8">
                         <a target="_blank" rel="noreferrer" href={material.class_name === 'PresentationVideo' ? `https://www.youtube.com/watch?v=${material.youtube_id}` : material.link}>
-                          <span><b>{material.name}</b></span>
+                          <span>{material.name}</span>
                         </a>
                       </div>
                       <div className="column is-1"></div>
