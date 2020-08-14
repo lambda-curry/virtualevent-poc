@@ -14,7 +14,7 @@ const SimpleChatWidgetComponent = class extends React.Component {
 
     const widgetProps = {
         streamApiKey: "29gtgpyz5hht",
-        apiBaseUrl: "https://idp.dev.fnopen.com",
+        apiBaseUrl: envVariables.IDP_BASE_URL,
         accessToken: accessToken,
         forumSlug: "fnvirtual-poc",
         onAuthError: (err, res) => console.log(err),

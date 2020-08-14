@@ -10,13 +10,12 @@ import Layout from '../components/Layout'
 
 import DisqusComponent from '../components/DisqusComponent'
 import Etherpad from '../components/Etherpad'
-import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
 import SimpleChatWidgetComponent from '../components/SimpleChatWidgetComponent'
 import VideoComponent from '../components/VideoComponent'
 import TalkComponent from '../components/TalkComponent'
-import AdvertiseComponent from '../components/AdvertiseComponent'
 import DocumentsComponent from '../components/DocumentsComponent'
 import EventHeroComponent from '../components/EventHeroComponent'
+import HeroComponent from '../components/HeroComponent'
 
 import { getEventBySlug } from '../actions/event-actions'
 import { getDisqusSSO } from '../actions/user-actions'
@@ -50,7 +49,7 @@ export const EventPageTemplate = class extends React.Component {
     let { summit } = SummitObject;
 
     if (loading) {
-      return null
+      return <HeroComponent title="Loading event" />
     } else {
       if (event) {
         return (
@@ -118,9 +117,8 @@ export const EventPageTemplate = class extends React.Component {
             }
           </>
         )
-      } else {
-        navigate('/a/schedule/')
-        return null
+      } else {        
+        return <HeroComponent title="Loading event" />
       }
     }
   }

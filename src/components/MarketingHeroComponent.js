@@ -38,8 +38,8 @@ const onClickLogin = () => {
 const MarketingHeroComponent = ({ ...props }) => (
   <section className={styles.heroMarketing}>
     <div className={`${styles.heroMarketingColumns} columns is-gapless`}>
-      <div className={`${styles.leftColumn} column is-6 is-black`} 
-        style={{backgroundImage: MarketingSite.heroBanner.background ? `url(${MarketingSite.heroBanner.background})`: ''}}>
+      <div className={`${styles.leftColumn} column is-6 is-black`}
+        style={{ backgroundImage: MarketingSite.heroBanner.background ? `url(${MarketingSite.heroBanner.background})` : '' }}>
         <div className={`${styles.heroMarketingContainer} hero-body`}>
           <div className="container">
             <h1 className="title">
@@ -48,12 +48,20 @@ const MarketingHeroComponent = ({ ...props }) => (
             <h2 className="subtitle">
               {MarketingSite.heroBanner.subTitle}
             </h2>
-            <div className={styles.date} style={{backgroundColor: MarketingSite.heroBanner.dateLayout ? 'var(--color_secondary)' : ''}}>
+            <div className={styles.date} style={{ backgroundColor: MarketingSite.heroBanner.dateLayout ? 'var(--color_secondary)' : '' }}>
               <div>{MarketingSite.heroBanner.date}</div>
             </div>
             <h4>{MarketingSite.heroBanner.time}</h4>
             <div className={styles.heroButtons}>
-              {MarketingSite.heroBanner.buttons.registerButton.display &&
+              {props.summit.start_date < props.now && props.isLoggedUser &&
+                <a className={styles.link} href={`${envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/'}`} target="_blank" rel="noreferrer">
+                  <button className={`${styles.button} button is-large`}>
+                    <i className={`fa fa-2x fa-sign-in icon is-large`}></i>
+                    <b>Enter</b>
+                  </button>
+                </a>
+              }
+              {props.summit.start_date > props.now && MarketingSite.heroBanner.buttons.registerButton.display &&
                 <a className={styles.link} href={`${envVariables.REGISTRATION_BASE_URL}/a/${props.summit.slug}/`} target="_blank" rel="noreferrer">
                   <button className={`${styles.button} button is-large`}>
                     <i className={`fa fa-2x fa-edit icon is-large`}></i>
@@ -61,7 +69,7 @@ const MarketingHeroComponent = ({ ...props }) => (
                   </button>
                 </a>
               }
-              {MarketingSite.heroBanner.buttons.loginButton.display &&
+              {props.summit.start_date > props.now && MarketingSite.heroBanner.buttons.loginButton.display &&
                 <a className={styles.link}>
                   <button className={`${styles.button} button is-large`} onClick={() => onClickLogin()}>
                     <i className={`fa fa-2x fa-sign-in icon is-large`}></i>

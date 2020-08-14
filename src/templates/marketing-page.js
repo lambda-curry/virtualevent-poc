@@ -40,7 +40,7 @@ export const MarketingPageTemplate = class extends React.Component {
 
     return (
       <React.Fragment>
-        <MarketingHeroComponent summit={summit} />
+        <MarketingHeroComponent summit={summit} isLoggedUser={isLoggedUser} now={marketingNow}/>
         {marketingNow && summit && <Countdown now={marketingNow} summit={summit} />}
         <div className="columns" id="marketing-columns">
           <div className="column is-half px-6 pt-6 pb-0" style={{ position: 'relative' }}>
