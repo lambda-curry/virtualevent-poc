@@ -1,13 +1,15 @@
 import React from 'react'
 import URI from "urijs"
 
-import { doLogin } from "openstack-uicore-foundation/lib/methods";
+import { doLogin } from 'openstack-uicore-foundation/lib/methods'
+
+import envVariables from '../utils/envVariables'
 
 const LoginButton = class extends React.Component {
 
   getBackURL() {
     let { location } = this.props;
-    let defaultLocation = '/a/';
+    let defaultLocation = envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/';
     let backUrl = location.state?.backUrl ? location.state.backUrl : defaultLocation;    
     return URI.encode(backUrl);
   }

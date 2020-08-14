@@ -10,6 +10,8 @@ import Content from '../content/navbar.json'
 
 import SummitObject from '../content/summit.json'
 
+import envVariables from '../utils/envVariables'
+
 const Navbar = class extends React.Component {
   constructor(props) {
     super(props)
@@ -42,13 +44,15 @@ const Navbar = class extends React.Component {
   render() {
 
     let { isLoggedUser, logo } = this.props;
-    let { summit } = SummitObject
 
+    let { summit } = SummitObject
+    let defaultPath = envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/';
+    
     return (
       <React.Fragment>
         <nav className={`${styles.navbar}`} role="navigation" aria-label="main navigation">
           <div className={styles.navbarBrand}>
-            <Link to={isLoggedUser ? '/a/' : '/'} className={styles.navbarItem}>
+            <Link to={isLoggedUser ? defaultPath : '/'} className={styles.navbarItem}>
               {logo &&
                 <img src={logo} alt={summit.name} />
               }

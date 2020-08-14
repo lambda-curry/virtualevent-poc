@@ -1,15 +1,17 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import Layout from '../components/Layout'
+import { navigate } from "gatsby"
 
+import Layout from '../components/Layout'
 import LoginButton from '../components/LoginButton'
 
-import { navigate } from "gatsby"
+import envVariables from '../utils/envVariables'
 
 export const LoginPageTemplate = ({ loggedUserState, location }) => {
 
   if (loggedUserState.isLoggedUser) {
-    navigate('/a/');
+    let defaultPath = envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/';
+    navigate(defaultPath);
     return null
   }
 

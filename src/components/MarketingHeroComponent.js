@@ -18,7 +18,7 @@ const sliderSettings = {
 };
 
 const getBackURL = () => {
-  let defaultLocation = '/a/';
+  let defaultLocation = envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/';
   let url = URI(window.location.href);
   let location = url.pathname();
   if (location === '/') location = defaultLocation

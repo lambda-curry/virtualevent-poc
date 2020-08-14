@@ -4,6 +4,8 @@ import { Link } from 'gatsby'
 import styles from '../styles/navbar.module.scss';
 import LogoutButton from './LogoutButton';
 
+import envVariables from '../utils/envVariables'
+
 const UserNavbar = class extends React.Component {
   constructor(props) {
     super(props)
@@ -37,6 +39,8 @@ const UserNavbar = class extends React.Component {
 
     let { isLoggedUser } = this.props;
 
+    let defaultPath = envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/';
+
     return (
       <nav className={`${styles.navbar} ${styles.userNavbar}`} role="navigation" aria-label="main navigation">
         <div className={styles.navbarBrand}>
@@ -52,7 +56,7 @@ const UserNavbar = class extends React.Component {
               <span aria-hidden="true"></span>
             </a>
             <div className={styles.navbarItem}>
-              <Link className={`${styles.button} ${styles.isLarge} ${styles.lobbyButton}`} to="/a/">
+              <Link className={`${styles.button} ${styles.isLarge} ${styles.lobbyButton}`} to={defaultPath}>
                 <strong>Lobby</strong>
               </Link>
             </div>

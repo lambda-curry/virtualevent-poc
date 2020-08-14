@@ -11,6 +11,7 @@ window.SCOPES = process.env.GATSBY_SCOPES;
 window.MARKETING_API_BASE_URL = process.env.GATSBY_MARKETING_API_BASE_URL;
 window.REGISTRATION_BASE_URL = process.env.GATSBY_REGISTRATION_BASE_URL;
 window.AUTHZ_USER_GROUPS = process.env.GATSBY_AUTHZ_USER_GROUPS;
+window.AUTHORIZED_DEFAULT_PATH = process.env.GATSBY_AUTHORIZED_DEFAULT_PATH;
 
 export const onClientEntry = () => {
   // var set at document level
