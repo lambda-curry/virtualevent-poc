@@ -13,10 +13,10 @@ const SimpleChatWidgetComponent = class extends React.Component {
       const { accessToken } = this.props;
 
     const widgetProps = {
-        streamApiKey: "29gtgpyz5hht",
+        streamApiKey: envVariables.STREAM_IO_API_KEY,
         apiBaseUrl: envVariables.IDP_BASE_URL,
         accessToken: accessToken,
-        forumSlug: "fnvirtual-poc",
+        forumSlug: envVariables.STREAM_IO_SSO_SLUG,
         onAuthError: (err, res) => console.log(err),
         openDir: "left",
     };
