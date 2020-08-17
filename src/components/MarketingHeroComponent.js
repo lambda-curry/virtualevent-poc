@@ -83,7 +83,7 @@ class MarketingHeroComponent extends React.Component {
                 </div>
                 <h4>{MarketingSite.heroBanner.time}</h4>
                 <div className={styles.heroButtons}>
-                  {summit.start_date - 900 < timestamp && isLoggedUser ?
+                  {summit.start_date - 300 < timestamp && isLoggedUser ?
                     <a className={styles.link} href={`${envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/'}`} target="_blank" rel="noreferrer">
                       <button className={`${styles.button} button is-large`}>
                         <i className={`fa fa-2x fa-sign-in icon is-large`}></i>
