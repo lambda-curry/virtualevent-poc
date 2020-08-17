@@ -39,7 +39,7 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, user, startD
     return null
   }
 
-  if (!isAuthorized && !(startDate < marketingNow + 900)) {
+  if (!isAuthorized && !(startDate < marketingNow + 300)) {
     setTimeout(() => {
       navigate('/')
     }, 3000);
