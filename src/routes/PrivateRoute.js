@@ -18,7 +18,7 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, user, startD
     return null
   }
 
-  if (!user || !user.groups) { 
+  if (!user || !user.groups) {
     return (
       <HeroComponent
         title="Checking credentials..."
@@ -39,7 +39,7 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, user, startD
     return null
   }
 
-  if (!isAuthorized && !(startDate < marketingNow)) {
+  if (!isAuthorized && !(startDate < marketingNow + 900)) {
     setTimeout(() => {
       navigate('/')
     }, 3000);
