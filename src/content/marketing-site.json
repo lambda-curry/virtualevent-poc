@@ -1,8 +1,8 @@
 {
   "heroBanner": {
-    "title": "YOCO QA Summit",
-    "subTitle": "Coming Soon!",
-    "date": "AUG 16, 4:30PM (PDT) – AUG 30, 2020",
+    "title": "YOCO Virtual Summit",
+    "subTitle": "Your Company, Now Virtual!",
+    "date": "AUG 24, 8:00AM (PDT) – forever",
     "time": "",
     "dateLayout": false,
     "buttons": {
@@ -23,8 +23,8 @@
     ]
   },
   "leftColumn": {
-    "schedule": false,
-    "disqus": true
+    "schedule": true,
+    "disqus": false
   },
   "sponsors": [
     {
