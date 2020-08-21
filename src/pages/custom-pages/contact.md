@@ -1,6 +1,7 @@
 ---
 templateKey: custom-page
-title: 'Contact'
+title: Contact
 ---
+YOU DECIDE!
 
-Text more and more text
+This can be your company contact info, the event group, a combination (like your info and your brand partners or top sponsors), or a totally different set of details that you’d like linked to your top navigation. Flexibility is what we’re all about!
