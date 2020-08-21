@@ -7,20 +7,26 @@
           "column": "left",
           "columnAds": [
             {
-              "image": "/img/yoco-sponsor-ads-large-insurtion-vert.png",
+              "image": "/img/yoco-sponsor-ads-medium-treva.png",
               "button": {
                 "text": "",
-                "link": ""
+                "link": "/virtual-booth/"
               },
               "id": null
             },
             {
-              "image": "/img/ad_subscribe.png",
+              "image": "/img/yoco-sponsor-ads-medium-flightpath.png",
               "button": {
                 "text": "Subscribe",
-                "link": "#"
+                "link": "/virtual-booth/"
               },
               "id": null
+            },
+            {
+              "image": "/img/yoco-sponsor-ads-medium-topographic.png",
+              "button": {
+                "link": "/virtual-booth/"
+              }
             }
           ]
         },
