@@ -64,10 +64,10 @@
           "column": "left",
           "columnAds": [
             {
-              "image": "/img/intel.png",
+              "image": "/img/yoco-sponsor-ads-medium-flow.png",
               "button": {
                 "text": "Learn more",
-                "link": "#"
+                "link": "/virtual-booth/"
               },
               "id": null
             }
