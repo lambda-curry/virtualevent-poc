@@ -6,15 +6,15 @@
       "items": [
         {
           "title": "All Projects",
-          "link": "#"
+          "link": "https://yoco.fnvirtual.app/footer-content/"
         },
         {
           "title": "Host a project",
-          "link": "#"
+          "link": "https://yoco.fnvirtual.app/footer-content/"
         },
         {
           "title": "Services",
-          "link": "#"
+          "link": "https://yoco.fnvirtual.app/footer-content/"
         }
       ]
     },
@@ -24,11 +24,11 @@
       "items": [
         {
           "title": "About",
-          "link": "#"
+          "link": "https://yoco.fnvirtual.app/footer-content/"
         },
         {
           "title": "Supporters",
-          "link": "#"
+          "link": "https://yoco.fnvirtual.app/footer-content/"
         }
       ]
     },
@@ -38,15 +38,15 @@
       "items": [
         {
           "title": "Corporate members",
-          "link": "#"
+          "link": "https://yoco.fnvirtual.app/footer-content/"
         },
         {
           "title": "Join us",
-          "link": "#"
+          "link": "https://yoco.fnvirtual.app/footer-content/"
         },
         {
           "title": "Services",
-          "link": "#"
+          "link": "https://yoco.fnvirtual.app/footer-content/"
         }
       ]
     }
@@ -60,22 +60,17 @@
     "networks": [
       {
         "icon": "fa-facebook",
-        "link": "#",
+        "link": "https://yoco.fnvirtual.app/footer-content/",
         "display": true
       },
       {
         "icon": "fa-twitter",
-        "link": "#",
+        "link": "https://yoco.fnvirtual.app/footer-content/",
         "display": true
       },
       {
         "icon": "fa-linkedin",
-        "link": "#",
-        "display": true
-      },
-      {
-        "icon": "fa-google-plus",
-        "link": "#",
+        "link": "https://yoco.fnvirtual.app/footer-content/",
         "display": true
       }
     ]
