@@ -9,7 +9,8 @@ const envVariables = {
   AUTHZ_USER_GROUPS: typeof window === 'object' ? window.AUTHZ_USER_GROUPS : process.env.GATSBY_AUTHZ_USER_GROUPS,
   AUTHORIZED_DEFAULT_PATH: typeof window === 'object' ? window.AUTHORIZED_DEFAULT_PATH : process.env.GATSBY_AUTHORIZED_DEFAULT_PATH,
   STREAM_IO_API_KEY: typeof window === 'object' ? window.STREAM_IO_API_KEY : process.env.GATSBY_STREAM_IO_API_KEY,
-  STREAM_IO_SSO_SLUG: typeof window === 'object' ? window.STREAM_IO_SSO_SLUG : process.env.GATSBY_STREAM_IO_SSO_SLUG
+  STREAM_IO_SSO_SLUG: typeof window === 'object' ? window.STREAM_IO_SSO_SLUG : process.env.GATSBY_STREAM_IO_SSO_SLUG,
+  MUX_ENV_KEY: typeof window === 'object' ? window.MUX_ENV_KEY : process.env.GATSBY_MUX_ENV_KEY
 }
 
 export default envVariables;

@@ -14,6 +14,7 @@ window.AUTHZ_USER_GROUPS = process.env.GATSBY_AUTHZ_USER_GROUPS;
 window.AUTHORIZED_DEFAULT_PATH = process.env.GATSBY_AUTHORIZED_DEFAULT_PATH;
 window.STREAM_IO_API_KEY = process.env.GATSBY_STREAM_IO_API_KEY;
 window.STREAM_IO_SSO_SLUG = process.env.GATSBY_STREAM_IO_SSO_SLUG;
+window.MUX_ENV_KEY = process.env.GATSBY_MUX_ENV_KEY;
 
 export const onClientEntry = () => {
   // var set at document level
