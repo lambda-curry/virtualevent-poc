@@ -23,36 +23,36 @@
     "silver": {
       "sponsors": [
         {
-          "name": "apex",
-          "image": "/img/Logo-Top-Tier-Apex.png"
+          "name": "System Squared",
+          "image": "/img/logo-middle-tier-systemsquared.png"
         },
         {
-          "name": "carbon",
-          "image": "/img/Logo-Top-Tier-Carbon.png"
+          "name": "GameHub",
+          "image": "/img/logo-top-tier-gamehub.png"
         },
         {
-          "name": "Flightpath",
-          "image": "/img/Logo-Top-Tier-Flightpath.png"
+          "name": "Hyved",
+          "image": "/img/logo-middle-tier-hyved.png"
+        },
+        {
+          "name": "Hughston",
+          "image": "/img/logo-middle-tier-hughston.png"
+        },
+        {
+          "name": "Curtin",
+          "image": "/img/logo-middle-tier-curtin.png"
         },
         {
           "name": "FNTECH",
-          "image": "/img/Logo-Top-Tier-FNTECH.png"
+          "image": "/img/logo-top-tier-fntech.png"
         },
         {
-          "name": "Gamehub",
-          "image": "/img/Logo-Top-Tier-Gamehub.png"
-        },
-        {
-          "name": "Mobility",
-          "image": "/img/Logo-Top-Tier-Mobility.png"
+          "name": "Seeing Eye",
+          "image": "/img/logo-middle-tier-seeingeye.png"
         },
         {
           "name": "OpenTech",
-          "image": "/img/Logo-Top-Tier-OpenTech.png"
-        },
-        {
-          "name": "Sycamore",
-          "image": "/img/Logo-Top-Tier-Sycamore.png"
+          "image": "/img/logo-top-tier-opentech.png"
         }
       ],
       "button": {
