@@ -36,16 +36,16 @@
       "size": "simple"
     },
     {
+      "image": "/img/yoco-sponsor-ads-large-mobility-vert-new.png",
+      "size": "simple"
+    },
+    {
       "image": "/img/yoco-sponsor-ads-large-apex-vert.png",
       "size": "double"
     },
     {
       "image": "/img/yoco-sponsor-ads-medium-treva.png",
       "size": "double"
-    },
-    {
-      "image": "/img/yoco-sponsor-ads-large-mobility-vert-new.png",
-      "size": "simple"
     }
   ]
 }
