@@ -84,7 +84,7 @@ const DisqusComponent = class extends React.Component {
 
   render() {
 
-    const { title, style, disqusSSO, page } = this.props;
+    const { title, style, className, disqusSSO, page } = this.props;
 
     let disqusConfig = {
       url: window.location.href,
@@ -95,7 +95,7 @@ const DisqusComponent = class extends React.Component {
     }
 
     return (
-      <div className={style ? '' : page === 'marketing-site' ? 'disqus-container-marketing' : 'disqus-container'} style={style}>
+      <div className={className ? className : style ? '' : page === 'marketing-site' ? 'disqus-container-marketing' : 'disqus-container'} style={style}>
         <span className="navbar-brand title" style={{paddingLeft: '0px'}}>{title}</span>
         <DiscussionEmbed
           shortname='fnvirtual-poc'

@@ -23,4 +23,8 @@ const ClockComponent = class extends React.Component {
   }
 }
 
-export default connect(null, { updateClock })(ClockComponent);
+const mapStateToProps = ({ summitState }) => ({  
+  now: summitState.nowUtc,
+})
+
+export default connect(mapStateToProps, { updateClock })(ClockComponent);

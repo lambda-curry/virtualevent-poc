@@ -5,12 +5,18 @@ import {
   startLoading,
 } from 'openstack-uicore-foundation/lib/methods';
 
-import { customErrorHandler } from '../utils/customErrorHandler';
+import SummitObject from '../content/summit.json';
 
-export const GET_SUMMIT_DATA  = 'GET_SUMMIT_DATA';
-export const UPDATE_CLOCK     = 'UPDATE_CLOCK';
-export const GET_TIME_NOW     = 'GET_TIME_NOW';
-export const TIME_NOW         = 'TIME_NOW';
+import { customErrorHandler } from '../utils/customErrorHandler';
+import { PHASES, getSummitPhase } from '../utils/phasesUtils';
+
+export const GET_SUMMIT_DATA = 'GET_SUMMIT_DATA';
+export const SUMMIT_PHASE_AFTER = 'SUMMIT_PHASE_AFTER'
+export const SUMMIT_PHASE_DURING = 'SUMMIT_PHASE_DURING'
+export const SUMMIT_PHASE_BEFORE = 'SUMMIT_PHASE_BEFORE'
+export const UPDATE_CLOCK = 'UPDATE_CLOCK';
+export const GET_TIME_NOW = 'GET_TIME_NOW';
+export const TIME_NOW = 'TIME_NOW';
 
 export const getSummitData = () => (dispatch, getState) => {
 
@@ -40,7 +46,7 @@ export const getTimeNow = () => (dispatch) => {
   )({})(dispatch).then((response) => {
     const payload = response.response;
     dispatch(stopLoading());
-    dispatch(createAction(TIME_NOW)(payload));
+    dispatch(createAction(UPDATE_CLOCK)(payload));
   }
   ).catch(e => {
     dispatch(stopLoading());
@@ -48,6 +54,28 @@ export const getTimeNow = () => (dispatch) => {
   });
 };
 
-export const updateClock = (timestamp) => (dispatch) => {
+export const updateClock = (timestamp) => (dispatch, getState) => {
+
+  const { summitState: { nowUtc, summit_phase } } = getState();
+
+  if (nowUtc) {
+    const phase = getSummitPhase(SummitObject, nowUtc, summit_phase);
+    if (summit_phase !== phase) {
+      switch (phase) {
+        case PHASES.BEFORE:
+          dispatch(createAction(SUMMIT_PHASE_BEFORE)(PHASES.BEFORE))
+          break;
+        case PHASES.DURING:
+          dispatch(createAction(SUMMIT_PHASE_DURING)(PHASES.DURING))
+          break;
+        case PHASES.AFTER:
+          dispatch(createAction(SUMMIT_PHASE_AFTER)(PHASES.AFTER))
+          break;
+        default:
+          break;
+      }
+    }
+  }
+
   dispatch(createAction(UPDATE_CLOCK)({ timestamp }));
 };

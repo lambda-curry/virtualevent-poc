@@ -4,14 +4,12 @@ import { navigate } from "gatsby"
 import envVariables from '../utils/envVariables';
 import authorizedUser from '../utils/authorizedGroups';
 
-import MarketingSite from '../content/marketing-site.json'
+import { PHASES } from '../utils/phasesUtils'
 
 import HeroComponent from '../components/HeroComponent'
 import { OPSessionChecker } from "openstack-uicore-foundation/lib/components";
 
-const PrivateRoute = ({ component: Component, isLoggedIn, location, user, startDate, marketingNow, ...rest }) => {
-
-  const deltaSummit = MarketingSite.summit_delta_start_time ? MarketingSite.summit_delta_start_time : 0;
+const PrivateRoute = ({ component: Component, isLoggedIn, location, user, summit_phase, ...rest }) => {
 
   if (!isLoggedIn && location.pathname !== `/`) {
     navigate('/', {
@@ -43,7 +41,7 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, user, startD
     return null
   }
 
-  if (!isAuthorized && !(startDate < marketingNow + deltaSummit)) {
+  if (!isAuthorized && summit_phase === PHASES.BEFORE) {
     setTimeout(() => {
       navigate('/')
     }, 3000);

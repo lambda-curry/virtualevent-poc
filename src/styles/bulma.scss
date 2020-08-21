@@ -2,16 +2,12 @@
 @import "bulma/sass/utilities/_all.sass";
 @import './colors.scss';
 
-$font-family-base: 'Open Sans', sans-serif;
-$family-sans-serif: 'Open Sans', sans-serif;
+$font-family-base: 'Nunito Sans', sans-serif;
+$family-sans-serif: 'Nunito Sans', sans-serif;
 
 $footer-background-color: $color-primary;
 $footer-color: $color-text-light;
 $footer-padding: 2rem;
-
-.navbar-brand {
-  font-size: 19px !important;
-}
 
 @import "bulma/sass/base/_all.sass";
 @import "bulma/sass/elements/_all.sass";

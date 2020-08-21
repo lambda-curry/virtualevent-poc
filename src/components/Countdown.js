@@ -12,46 +12,26 @@
  **/
 
 import React from 'react';
-import moment from "moment-timezone";
+import { connect } from "react-redux";
 
+import moment from "moment-timezone";
 import { epochToMomentTimeZone } from "openstack-uicore-foundation/lib/methods";
 
 import styles from '../styles/countdown.module.scss'
 
-
 class Countdown extends React.Component {
 
   constructor(props) {
-    super(props);
-    this.interval = null;
-    this.state = {
-      timestamp: 0
-    }
-  }
-
-  componentDidMount() {
-    const { now } = this.props;
-    this.setState({ timestamp: now });
-    this.interval = setInterval(this.tick, 1000);
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.interval);
-  }
-
-  tick = () => {
-    const { timestamp } = this.state;
-    this.setState({ timestamp: timestamp + 1 })
-  };
+    super(props);    
+  }  
 
   render() {
-    const { summit } = this.props;
-    const { timestamp } = this.state;
+    const { summit, now } = this.props;
 
-    if (!timestamp || !summit.start_date || !summit.time_zone_id) return null;
+    if (!now || !summit.start_date || !summit.time_zone_id) return null;
 
     let summitDate = epochToMomentTimeZone(summit.start_date, summit.time_zone_id)
-    let nowFormatted = epochToMomentTimeZone(timestamp, summit.time_zone_id)
+    let nowFormatted = epochToMomentTimeZone(now, summit.time_zone_id)
 
     let diff = moment.duration(summitDate.diff(nowFormatted));
     let days = parseInt(diff.asDays());
@@ -88,4 +68,8 @@ class Countdown extends React.Component {
 
 }
 
-export default Countdown;
+const mapStateToProps = ({ summitState }) => ({  
+  now: summitState.nowUtc,
+})
+
+export default connect(mapStateToProps, null)(Countdown);

@@ -45,12 +45,20 @@ export const HomePageTemplate = class extends React.Component {
           <div className="columns">
             <div className="column is-one-quarter">
               <h2><b>Community</b></h2>
-              <AdvertiseComponent section='lobby' column="left"/>
-              <SponsorComponent tier='silver'/>
-            </div>            
+              <SponsorComponent tier='gold' />
+              <SponsorComponent tier='silver' />
+              <AdvertiseComponent section='lobby' column="left" style={{ marginTop: '2em' }} />
+            </div>
             <div className="column is-half">
+              <h2><b>Today's Sessions</b></h2>
               <LiveEventWidgetComponent />
-              <DisqusComponent page="lobby" disqusSSO={user.disqusSSO} summit={summit} title="Public conversation" style={{ position: 'static' }} />
+              <DisqusComponent
+                page="lobby"
+                disqusSSO={user.disqusSSO}
+                summit={summit}
+                className="disqus-container-home"
+                title="Public conversation"
+              />
               <ScheduleLiteComponent
                 accessToken={loggedUser.accessToken}
                 onEventClick={(ev) => this.onEventChange(ev)}
@@ -59,6 +67,7 @@ export const HomePageTemplate = class extends React.Component {
                 showNav={false}
                 onRef={addWidgetRef}
                 updateCallback={updateWidgets}
+                title="Up Next"
               />
               <SpeakersWidgetComponent
                 accessToken={loggedUser.accessToken}
@@ -70,22 +79,21 @@ export const HomePageTemplate = class extends React.Component {
                 title="Featured Speakers"
                 bigPics={false}
               />
-              <AdvertiseComponent section='lobby' column="center"/>
+              <AdvertiseComponent section='lobby' column="center" />
             </div>
             <div className="column is-one-quarter pb-6">
+              <h2><b>My Info</b></h2>
               <SimpleChatWidgetComponent accessToken={loggedUser.accessToken} title="Private Chat" />
-              <h2><b>My Schedule</b></h2>
               <ScheduleLiteComponent
                 accessToken={loggedUser.accessToken}
                 onEventClick={(ev) => this.onEventChange(ev)}
                 landscape={true}
-                yourSchedule={true}                
+                yourSchedule={true}
                 showNav={true}
                 onRef={addWidgetRef}
                 updateCallback={updateWidgets}
               />
-              <AdvertiseComponent section='lobby' column="right"/>
-              <SponsorComponent tier='gold'/>
+              <AdvertiseComponent section='lobby' column="right" />
             </div>
           </div>
         </div>

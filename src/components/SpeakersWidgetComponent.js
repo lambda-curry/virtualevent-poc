@@ -15,7 +15,10 @@ const SpeakersWidgetComponent = class extends React.Component {
 
   render() {
 
-    const { accessToken, title, bigPics, now, summit } = this.props;
+    const { accessToken, title, bigPics, summit } = this.props;
+
+    const now = new Date()  
+    const secondsSinceEpoch = Math.round(now.getTime() / 1000)  
 
     const widgetProps = {
       apiBaseUrl: envVariables.SUMMIT_API_BASE_URL,
@@ -25,7 +28,7 @@ const SpeakersWidgetComponent = class extends React.Component {
       title,
       bigPics,
       title: title,
-      date: parseInt(now, 10),
+      date: secondsSinceEpoch,
       // speakerIds: [1, 187, 190],
       onAuthError: (err, res) => expiredToken(err),
     };
@@ -37,7 +40,7 @@ const SpeakersWidgetComponent = class extends React.Component {
         </Helmet>
         <div>
           <ClockComponent summit={summit} />
-          {now && <SpeakersWidget {...widgetProps} />}
+          <SpeakersWidget {...widgetProps} />
         </div>
       </>
     )
@@ -45,8 +48,7 @@ const SpeakersWidgetComponent = class extends React.Component {
 }
 
 const mapStateToProps = ({ summitState }) => ({
-  summit: summitState.summit,
-  now: summitState.nowUtc,
+  summit: summitState.summit
 })
 
 

@@ -12,16 +12,13 @@ import SummitObject from '../content/summit.json'
 import PrivateRoute from '../routes/PrivateRoute'
 import PublicRoute from "../routes/PublicRoute"
 
-const App = ({ isLoggedUser, user, marketingNow }) => {
-
-  const { summit: { start_date } } = SummitObject
-  
+const App = ({ isLoggedUser, user, summit_phase }) => {  
   return (
     <Location>
       {({ location }) => (
         <Router basepath="/a" >
-          <PrivateRoute path="/" startDate={start_date} marketingNow={marketingNow} component={HomePage} isLoggedIn={isLoggedUser} user={user} location={location} />
-          <PrivateRoute path="/event/:eventId" startDate={start_date} marketingNow={marketingNow} component={EventPage} isLoggedIn={isLoggedUser} user={user} location={location} />
+          <PrivateRoute path="/" summit_phase={summit_phase} component={HomePage} isLoggedIn={isLoggedUser} user={user} location={location} />
+          <PrivateRoute path="/event/:eventId" summit_phase={summit_phase} component={EventPage} isLoggedIn={isLoggedUser} user={user} location={location} />
           <PublicRoute path="/schedule" component={SchedulePage} location={location} />
           <LoginPage path="/login" location={location} />
         </Router>
@@ -32,7 +29,7 @@ const App = ({ isLoggedUser, user, marketingNow }) => {
 
 const mapStateToProps = ({ loggedUserState, userState, summitState }) => ({
   isLoggedUser: loggedUserState.isLoggedUser,
-  marketingNow: summitState.marketingNow,
+  summit_phase: summitState.summit_phase,
   user: userState.userProfile
 })
 

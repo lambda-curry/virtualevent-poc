@@ -20,6 +20,7 @@ const SchedulePage = ({loggedUser}) => {
             landscape={true}
             showNav={true}
             showFilters={true}
+            showAllEvents={true}
             eventCount={100}
             onEventClick={ev => navigate(`/a/event/${ev}`)}
         />

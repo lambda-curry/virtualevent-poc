@@ -15,7 +15,7 @@ const LiveEventWidgetComponent = class extends React.Component {
       apiBaseUrl: envVariables.SUMMIT_API_BASE_URL,
       marketingApiBaseUrl: envVariables.MARKETING_API_BASE_URL,
       summitId: parseInt(envVariables.SUMMIT_ID),
-      title: "Today's Sessions",
+      title: "",
     };
 
     return (

@@ -15180,10 +15180,10 @@ saxes@^5.0.0:
   dependencies:
     xmlchars "^2.2.0"
 
-schedule-lite@^1.0.37:
-  version "1.0.37"
-  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.37.tgz#d8bdcab11524862653e053f12bdbf0c7a653147d"
-  integrity sha512-9okQA1bue/MwNxuU7CKKVO8pJ5YFrY3ZqzhzLSTaLEuWj3LmjbSKvJI1ebkLFtsZVIXm1UkyAz/hPt4+7KZtBg==
+schedule-lite@^1.0.40:
+  version "1.0.40"
+  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.40.tgz#3d89ffab885738ded0482329813cc18dd6a3278b"
+  integrity sha512-d3EejWG+DLJlwBajJQN3yz0+zUdt5LWxpdsivOkSbXvhH74hhIVxLpPWqbG9n9+Yc/id04BFn9f+6iFVObtVXQ==
 
 scheduler@^0.18.0:
   version "0.18.0"
@@ -15511,10 +15511,10 @@ signal-exit@^3.0.0, signal-exit@^3.0.2, signal-exit@^3.0.3:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.3.tgz#a1410c2edd8f077b08b4e253c8eacfcaf057461c"
   integrity sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==
 
-simple-chat-widget@^1.0.14:
-  version "1.0.14"
-  resolved "https://registry.yarnpkg.com/simple-chat-widget/-/simple-chat-widget-1.0.14.tgz#a6b06f90339ecbeef7ec91fd8de5b1b5f4e4c782"
-  integrity sha512-oU6M/Qa4Z9XvKgt/3qTuzAgyxQqU79tvlVUUTDizhKzsggMoOwKrXdWmuDpGzv55nyaQwGzSvKV7iJHrekzccw==
+simple-chat-widget@^1.0.19:
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/simple-chat-widget/-/simple-chat-widget-1.0.19.tgz#5593e6a4e548debc1f8f1d96fb9f77d111a87128"
+  integrity sha512-SsiC4mTdIuWqxv4JdCE9hmSuZ0dMvBA/dsIqXYcLuYLUGzDaMwfBnUoPmEJD6yC/g0edduaywpuwpsBABk/Ylg==
 
 simple-concat@^1.0.0:
   version "1.0.0"
@@ -16040,10 +16040,10 @@ stream-browserify@^2.0.1:
     inherits "~2.0.1"
     readable-stream "^2.0.2"
 
-stream-chat-react@^2.0.3:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/stream-chat-react/-/stream-chat-react-2.1.1.tgz#de309a564a571975352cd0f26a4423ad91eb464d"
-  integrity sha512-1LRKDlmyx41w8vQeZVHKFNEfe9gQ8gcNQ/980SIKTaGEx9nZruCuPXqJxBKKdtudxVbdapSo8kfOBI17tL9twg==
+stream-chat-react@^2.2.1:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/stream-chat-react/-/stream-chat-react-2.2.2.tgz#a9a1c00da54729ff48945043df6001aaf213b861"
+  integrity sha512-KgB/VQjnGgbBF/Bq65cy2w6EdmOEngTa79yIzc1+VHwn75x0+K/c5ITjexglx7bUoYkSTi7ny1r8YzlX108INw==
   dependencies:
     "@braintree/sanitize-url" "4.0.0"
     custom-event "^1.0.1"
@@ -16066,14 +16066,14 @@ stream-chat-react@^2.0.3:
     react-player "^2.5.0"
     react-textarea-autosize "^8.2.0"
     seamless-immutable "^7.1.4"
-    stream-chat "^1.13.0"
+    stream-chat "^1.14.1"
     textarea-caret "^3.1.0"
     uuid "^7.0.3"
 
-stream-chat@^1.13.0:
-  version "1.13.2"
-  resolved "https://registry.yarnpkg.com/stream-chat/-/stream-chat-1.13.2.tgz#d158e5f35dc75915772d0466d43969f874f53ac9"
-  integrity sha512-taVAAzjHeHGQjwml8wqbPBaiErJCcVtiMSa9iUgq75hiPssQ2fJlsMzAw+0IiCx8w/s8gUcVBxdqOIhHb8X02A==
+stream-chat@^1.14.1:
+  version "1.14.1"
+  resolved "https://registry.yarnpkg.com/stream-chat/-/stream-chat-1.14.1.tgz#c2e7786e6865647902cf81a43adfa48ff8ae12ba"
+  integrity sha512-1WeTpNqXhDmuOo5QGixBXGASjZYoGbMZIFZ83MzfgsJh0rMoGIR5Hwx+P/qtAffwlSktXxf7+6GKidgSEYcQRw==
   dependencies:
     "@babel/runtime" "^7.3.1"
     "@types/seamless-immutable" "7.1.12"
@@ -17708,6 +17708,11 @@ videojs-font@3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/videojs-font/-/videojs-font-3.2.0.tgz#212c9d3f4e4ec3fa7345167d64316add35e92232"
   integrity sha512-g8vHMKK2/JGorSfqAZQUmYYNnXmfec4MLhwtEFS+mMs2IDY398GLysy6BH6K+aS1KMNu/xWZ8Sue/X/mdQPliA==
+
+videojs-mux@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/videojs-mux/-/videojs-mux-3.1.0.tgz#f669ee9fdb9c08e821d878a0f09ff5dc36505887"
+  integrity sha512-OHaXSZlkLUcDTeV2QeyxIE08TgKRRIFDGvbyNDJhBLSIkfcz1zF0qfjvrtDh2ooqGC/HXtYCXi3r8iHD1d5i8Q==
 
 videojs-vtt.js@^0.15.2:
   version "0.15.2"
