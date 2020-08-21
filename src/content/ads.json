@@ -7,23 +7,7 @@
           "column": "left",
           "columnAds": [
             {
-              "image": "/img/yoco-sponsor-ads-medium-treva.png",
-              "button": {
-                "text": "",
-                "link": "/virtual-booth/"
-              },
-              "id": null
-            },
-            {
-              "image": "/img/yoco-sponsor-ads-medium-flightpath.png",
-              "button": {
-                "text": "Subscribe",
-                "link": "/virtual-booth/"
-              },
-              "id": null
-            },
-            {
-              "image": "/img/yoco-sponsor-ads-medium-topographic.png",
+              "image": "/img/yoco-sponsor-ads-medium-tilted.png",
               "button": {
                 "link": "/virtual-booth/"
               }
