@@ -99,6 +99,10 @@ collections:
                 {label: "Display", name: "display", widget: boolean, required: false},
               ]}
             ]}
+          - {label: "Legal", name: "legal", widget: list, fields: [
+              {label: "Title", name: "title", widget: string},
+              {label: "Link", name: "link", widget: string},         
+            ]}
   - name: "marketing"
     label: "Marketing Site"
     editor:
@@ -134,7 +138,7 @@ collections:
               {label: "Disqus", name: "disqus", widget: boolean, required: false},
             ]}
           - {label: "Sponsors", name: "sponsors", widget: list, fields: [
-              {label: "Image", name: "image", widget: image},
+              {label: "Image", name: "image", widget: image, required: false},
               {label: "Size", name: "size", widget: hidden}
             ]}
   - name: "pages"

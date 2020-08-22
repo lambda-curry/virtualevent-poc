@@ -59,11 +59,15 @@ export const MarketingPageTemplate = class extends React.Component {
               className="my-masonry-grid"
               columnClassName="my-masonry-grid_column">
               {MarketingSite.sponsors.map((item, index) => {
-                return (
-                  <div key={index}>
-                    <img src={item.image} />
-                  </div>
-                )
+                if(item.image) {
+                  return (
+                    <div key={index}>
+                      <img src={item.image} />
+                    </div>
+                  )
+                } else {
+                  return null
+                }                
               })}
             </Masonry>
           </div>

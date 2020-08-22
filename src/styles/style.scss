@@ -235,7 +235,6 @@ h2 {
 
 .disqus-container-home {
   padding: 0 15px;
-  margin-bottom: 5px;
   position: static;
   border: 1px solid #eee;
   overflow-y: auto;
@@ -254,6 +253,7 @@ h2 {
 .schedule-container {
   display: flex;
   flex-direction: column;
+  margin-top: 15px;
 
   span.navbar-brand {
     padding: 15px 15px 0px 0px;
