@@ -1,6 +1,6 @@
 {
-  "name": "virtualevent-poc",
-  "description": "Virtual Event POC",
+  "name": "virtualevent",
+  "description": "Virtual Event",
   "version": "1.0.0",
   "author": "Tipit LLC",
   "dependencies": {

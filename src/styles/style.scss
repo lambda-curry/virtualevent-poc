@@ -241,13 +241,22 @@ h2 {
   overflow-x: hidden;
   max-height: 1500px;
 
-  >span {        
+  >span {
     border-bottom: 1px solid #eee;
     padding-left: 15px !important;
     margin-right: -15px;
     margin-left: -15px;
     width: 110%;
   }
+}
+
+.schedule-container-home {  
+  margin-top: 15px;
+  position: static;  
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 10px;
+  max-height: 1500px;
 }
 
 .schedule-container {
@@ -402,6 +411,22 @@ h2 {
       left: 20px;
       bottom: 0;
       padding-right: 20px;
+    }
+  }
+
+  .schedule-container {
+    &-marketing {
+      display: flex;
+      flex-direction: column;
+      margin-top: 15px;
+      position: absolute;
+      overflow-y: auto;
+      top: 95px;
+      right: 0;
+      left: 20px;
+      bottom: 0;
+      padding-right: 20px;
+      padding-bottom: 30px;
     }
   }
 }
