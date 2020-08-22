@@ -405,3 +405,11 @@ h2 {
     }
   }
 }
+
+@media (min-width: 1921px) {
+  .talk {
+    &__break {
+      min-height: 100vh !important;
+    }
+  }
+}

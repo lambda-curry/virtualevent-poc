@@ -24,7 +24,7 @@ const LiveEventWidgetComponent = class extends React.Component {
           <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/1.0.2/awesome-bootstrap-checkbox.min.css" />
         </Helmet>
         <div>
-          <LiveEventWidget {...widgetProps} />
+          <LiveEventWidget {...widgetProps} {...this.props} />
         </div>
       </>
     )

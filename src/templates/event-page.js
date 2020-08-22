@@ -24,11 +24,6 @@ import { AttendanceTracker } from "openstack-uicore-foundation/lib/components";
 
 export const EventPageTemplate = class extends React.Component {
 
-  constructor(props) {
-    super(props);
-    this.onEventChange = this.onEventChange.bind(this);
-  }
-
   componentWillMount() {
     const { eventId } = this.props;
     this.props.getEventBySlug(eventId);
@@ -38,13 +33,7 @@ export const EventPageTemplate = class extends React.Component {
     this.props.getDisqusSSO();
   }
 
-  onEventChange(ev) {
-    navigate(`/a/event/${ev}`);
-    this.props.getEventBySlug(ev);
-  }
-
   render() {
-
     const { loggedUser, event, user, loading } = this.props;
     let { summit } = SummitObject;
 

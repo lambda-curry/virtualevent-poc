@@ -22,7 +22,7 @@ const SchedulePage = ({loggedUser}) => {
             showFilters={true}
             showAllEvents={true}
             eventCount={100}
-            onEventClick={ev => navigate(`/a/event/${ev}`)}
+            onEventClick={ev => navigate(`/a/event/${ev.id}`)}
         />
       </div>
     </Layout>

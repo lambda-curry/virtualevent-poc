@@ -31,7 +31,7 @@ export const HomePageTemplate = class extends React.Component {
   }
 
   onEventChange(ev) {
-    navigate(`/a/event/${ev}`);
+    navigate(`/a/event/${ev.id}`);
   }
 
   onViewAllEventsClick() {
@@ -55,7 +55,9 @@ export const HomePageTemplate = class extends React.Component {
             </div>
             <div className="column is-half">
               <h2><b>Today's Sessions</b></h2>
-              <LiveEventWidgetComponent />
+              <LiveEventWidgetComponent
+                onEventClick={(ev) => this.onEventChange(ev)}
+              />
               <DisqusComponent
                 page="lobby"
                 disqusSSO={user.disqusSSO}
