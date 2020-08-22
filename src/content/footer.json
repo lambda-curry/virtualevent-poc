@@ -6,15 +6,15 @@
       "items": [
         {
           "title": "All Projects",
-          "link": "https://yoco.fnvirtual.app/footer-content/"
+          "link": "/footer-content/"
         },
         {
           "title": "Host a project",
-          "link": "https://yoco.fnvirtual.app/footer-content/"
+          "link": "/footer-content/"
         },
         {
           "title": "Services",
-          "link": "https://yoco.fnvirtual.app/footer-content/"
+          "link": "/footer-content/"
         }
       ]
     },
@@ -24,11 +24,11 @@
       "items": [
         {
           "title": "About",
-          "link": "https://yoco.fnvirtual.app/footer-content/"
+          "link": "/footer-content/"
         },
         {
           "title": "Supporters",
-          "link": "https://yoco.fnvirtual.app/footer-content/"
+          "link": "/footer-content/"
         }
       ]
     },
@@ -38,15 +38,15 @@
       "items": [
         {
           "title": "Corporate members",
-          "link": "https://yoco.fnvirtual.app/footer-content/"
+          "link": "/footer-content/"
         },
         {
           "title": "Join us",
-          "link": "https://yoco.fnvirtual.app/footer-content/"
+          "link": "/footer-content/"
         },
         {
           "title": "Services",
-          "link": "https://yoco.fnvirtual.app/footer-content/"
+          "link": "p/footer-content/"
         }
       ]
     }
@@ -60,17 +60,17 @@
     "networks": [
       {
         "icon": "fa-facebook",
-        "link": "https://yoco.fnvirtual.app/footer-content/",
+        "link": "/footer-content/",
         "display": true
       },
       {
         "icon": "fa-twitter",
-        "link": "https://yoco.fnvirtual.app/footer-content/",
+        "link": "/footer-content/",
         "display": true
       },
       {
         "icon": "fa-linkedin",
-        "link": "https://yoco.fnvirtual.app/footer-content/",
+        "link": "/footer-content/",
         "display": true
       }
     ]
@@ -78,15 +78,15 @@
   "legal": [
     {
       "title": "Privacy Policy",
-      "link": "#"
+      "link": "/footer-content/"
     },
     {
       "title": "Legals",
-      "link": "#"
+      "link": "/footer-content/"
     },
     {
       "title": "Disclaimer",
-      "link": "#"
+      "link": "/footer-content/"
     }
   ]
 }
