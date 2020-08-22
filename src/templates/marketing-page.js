@@ -43,7 +43,12 @@ export const MarketingPageTemplate = class extends React.Component {
             {MarketingSite.leftColumn.schedule &&
               <React.Fragment>
                 <h2 style={{ fontWeight: 'bold' }}>Full Event Schedule</h2>
-                <ScheduleLiteComponent accessToken={loggedUser.accessToken} landscape={true} eventCount={10} />
+                <ScheduleLiteComponent
+                  accessToken={loggedUser.accessToken}
+                  landscape={true}
+                  showAllEvents={true}
+                  eventCount={100}
+                />
               </React.Fragment>
             }
             {MarketingSite.leftColumn.disqus &&
