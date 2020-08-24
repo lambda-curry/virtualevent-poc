@@ -5,7 +5,7 @@ import CMS from 'netlify-cms-app'
 import IndexPagePreview from './preview-templates/IndexPagePreview'
 import CustomPagePreview from './preview-templates/CustomPagePreview'
 import MarketingPagePreview from './preview-templates/MarketingPagePreview'
-import VirtualBoothPagePreview from './preview-templates/VirtualBoothPage'
+import VirtualBoothPagePreview from './preview-templates/VirtualBoothPagePreview'
 
 // CMS.registerMediaLibrary(uploadcare)
 // CMS.registerMediaLibrary(cloudinary)

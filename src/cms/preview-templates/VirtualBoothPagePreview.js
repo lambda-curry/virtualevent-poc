@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { CustomPageTemplate } from '../../templates/custom-page'
+import { VirtualBoothPageTemplate } from '../../templates/virtual-booth-page'
 
 const VirtualBoothPagePreview = ({ entry, getAsset, widgetFor }) => {
   return (
-    <CustomPageTemplate
+    <VirtualBoothPageTemplate
       title={entry.getIn(['data', 'title'])}
       intro={entry.getIn(['data', 'intro'])}
       columns={entry.getIn(['data', 'columns'])}
