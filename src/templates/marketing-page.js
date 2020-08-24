@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import { graphql, navigate } from 'gatsby'
 import { Redirect } from '@reach/router'
 import { connect } from 'react-redux'
 import Masonry from 'react-masonry-css'
