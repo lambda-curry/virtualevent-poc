@@ -34,6 +34,11 @@
       "title": "Help",
       "link": "/help",
       "display": true
+    },
+    {
+      "title": "My Profile",
+      "link": "https://idp.fntech.com/accounts/user/profile",
+      "display": true
     }
   ]
 }
