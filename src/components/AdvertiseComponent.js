@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Link from '../components/Link'
+
 import styles from '../styles/advertise.module.scss'
 
 import Content from '../content/ads.json'
@@ -15,16 +17,20 @@ const AdvertiseComponent = ({ section, column, id }) => {
           ad.id ?
             ad.id === id ?
               column === 'center' ?
-                <div>Centro</div>
+                null
                 :
                 <div className={`${styles.sponsorContainer} sponsor-container`} key={index}>
-                  <img src={ad.image} alt="sponsor" />
+                  {!ad.button.text && ad.button.link &&
+                    <Link to={ad.button.link}>
+                      <img src={ad.image} alt="sponsor" />
+                    </Link>
+                  }
                   {ad.button.text && ad.button.link &&
-                    <a className={styles.link} href={ad.button.link}>
+                    <Link className={styles.link} to={ad.button.link}>
                       <button className={`${styles.button} button is-large`}>
                         <b>{ad.button.text}</b>
                       </button>
-                    </a>
+                    </Link>
                   }
                 </div>
               :
@@ -46,13 +52,20 @@ const AdvertiseComponent = ({ section, column, id }) => {
               </div>
               :
               <div className={`${styles.sponsorContainer} sponsor-container`} key={index}>
-                <img src={ad.image} alt="sponsor" />
+                {!ad.button.text && ad.button.link &&
+                  <Link to={ad.button.link}>
+                    <img src={ad.image} alt="sponsor" />
+                  </Link>
+                }
                 {ad.button.text && ad.button.link &&
-                  <a className={styles.link} href={ad.button.link}>
-                    <button className={`${styles.button} button is-large`}>
-                      <b>{ad.button.text}</b>
-                    </button>
-                  </a>
+                  <React.Fragment>
+                    <img src={ad.image} alt="sponsor" />
+                    <Link className={styles.link} to={ad.button.link}>
+                      <button className={`${styles.button} button is-large`}>
+                        <b>{ad.button.text}</b>
+                      </button>
+                    </Link>
+                  </React.Fragment>
                 }
               </div>
         )
