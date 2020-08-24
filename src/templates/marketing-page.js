@@ -46,6 +46,7 @@ export const MarketingPageTemplate = class extends React.Component {
                 <ScheduleLiteComponent
                   page="marketing-site"
                   accessToken={loggedUser.accessToken}
+                  onEventClick={ev => navigate(`/a/event/${ev.id}`)}
                   landscape={true}
                   showAllEvents={true}
                   eventCount={100}
