@@ -16,6 +16,7 @@ import TalkComponent from '../components/TalkComponent'
 import DocumentsComponent from '../components/DocumentsComponent'
 import EventHeroComponent from '../components/EventHeroComponent'
 import HeroComponent from '../components/HeroComponent'
+import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
 
 import { getEventBySlug } from '../actions/event-actions'
 import { getDisqusSSO } from '../actions/user-actions'
@@ -41,6 +42,15 @@ export const EventPageTemplate = class extends React.Component {
     this.props.getEventBySlug(eventId);
   }
 
+  onEventChange(ev) {
+    this.setState({ eventStarted: false });
+    window.location.href = `/a/event/${ev.id}`;
+  }
+
+  onViewAllEventsClick() {
+    navigate('/a/schedule')
+  }
+
   componentDidMount() {
     this.props.getDisqusSSO();
     const now = new Date();
@@ -63,7 +73,8 @@ export const EventPageTemplate = class extends React.Component {
 
   shouldComponentUpdate(nextProps, nextState) {
     if (this.props.loading !== nextProps.loading) return true;
-    if (this.props.event?.id !== nextProps.event?.id) return true;    
+    if (this.props.eventId !== nextProps.eventId) return true;
+    if (this.props.event?.id !== nextProps.event?.id) return true;
     if (this.state.eventStarted !== nextState.eventStarted) return true;
     return false
   }
@@ -76,7 +87,7 @@ export const EventPageTemplate = class extends React.Component {
     if (loading) {
       return <HeroComponent title="Loading event" />
     } else {
-      if (event) {        
+      if (event) {
         return (
           <>
             {/* <EventHeroComponent /> */}
@@ -136,6 +147,18 @@ export const EventPageTemplate = class extends React.Component {
                   }
                   <div className="column is-one-quarter" style={{ marginLeft: 'auto' }}>
                     <SimpleChatWidgetComponent accessToken={loggedUser.accessToken} />
+                  </div>
+                  <div className="column is-three-quarters">
+                    <ScheduleLiteComponent
+                      accessToken={loggedUser.accessToken}
+                      onEventClick={(ev) => this.onEventChange(ev)}
+                      onViewAllEventsClick={() => this.onViewAllEventsClick()}
+                      landscape={true}
+                      yourSchedule={false}
+                      showNav={false}
+                      eventCount={3}
+                      title={"Up Next"}
+                    />
                   </div>
                 </div>
               </section>
