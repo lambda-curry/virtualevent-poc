@@ -36,6 +36,7 @@
 .link {
   margin-top: 2rem;
   width: 100%;
+
   &:hover {
     text-decoration: none;
   }
@@ -45,5 +46,30 @@
     background-color: $color_secondary;
     color: $color_text_light;
     border: 0px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .gold-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    span {
+      display: block;
+      width: 100%;
+    }
+
+    img {
+      flex: 0 1 49%;
+    }
+  }
+
+  .silver-container {
+    justify-content: flex-start;
+    .image-box {      
+      flex: 0 1 32%;
+      margin-right: 8px;
+    }
   }
 }

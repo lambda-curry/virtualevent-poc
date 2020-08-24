@@ -155,6 +155,30 @@ collections:
               {label: "Image", name: "image", widget: image, required: false},
               {label: "Size", name: "size", widget: hidden}
             ]}
+  - name: "virtualBooth"
+    label: "Virtual Booth"
+    files: 
+      - file: "src/pages/virtual-booth.md"
+        name: "virtualBoothPage"
+        label: "Virtual Booth Page"      
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "virtual-booth-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - {label: Columns, name: columns, widget: object, fields: [
+              {label: Left Column, name: leftColumn, widget: object, fields: [
+                {label: Title, name: title, widget: string},
+                {label: Content, name: content, widget: text},
+                {label: Image, name: image, widget: image}
+              ]},
+              {label: Right Column, name: rightColumn, widget: object, fields: [
+                {label: Title, name: title, widget: string},
+                {label: Content, name: content, widget: text},
+                {label: Image, name: image, widget: image}
+              ]}
+            ]}
+          - {label: End Text, name: endText, widget: markdown}
+          - {label: "Body", name: body, widget: markdown}
   - name: "pages"
     label: "Pages"
     folder: "src/pages/custom-pages"

@@ -43,7 +43,7 @@ export const EventPageTemplate = class extends React.Component {
       if (event) {
         return (
           <>
-            <EventHeroComponent />
+            {/* <EventHeroComponent /> */}
             {event.id &&
               <AttendanceTracker
                 key={event.id}

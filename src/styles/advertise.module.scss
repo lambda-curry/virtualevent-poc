@@ -14,7 +14,7 @@
 
 .sponsor-container-center {
   margin-top: 3rem;
-  height: 250px;  
+  height: 250px;
   background-color: $color_secondary_contrast;
   display: flex;
 
@@ -64,4 +64,12 @@
 .sponsor-container img {
   padding-top: 2em;
   width: 100%;
+}
+
+@media (min-width: 1921px) {
+  .sponsor-container {
+    width: 50%;
+    display: inline-flex;
+    padding-right: 10px;
+  }
 }
