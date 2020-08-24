@@ -98,6 +98,7 @@ export const HomePageTemplate = class extends React.Component {
               <ScheduleLiteComponent
                 accessToken={loggedUser.accessToken}
                 onEventClick={(ev) => this.onEventChange(ev)}
+                onViewAllEventsClick={() => this.onViewAllEventsClick()}
                 title='My Schedule'
                 landscape={true}
                 yourSchedule={true}
