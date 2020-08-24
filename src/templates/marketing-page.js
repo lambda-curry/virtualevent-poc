@@ -92,7 +92,7 @@ MarketingPageTemplate.propTypes = {
   isLoggedUser: PropTypes.bool,
 }
 
-const MarketingPage = ({ data, user, loggedUser, isLoggedUser, getTimeNow, getDisqusSSO }) => {
+const MarketingPage = ({ data, user, loggedUser, isLoggedUser, getDisqusSSO }) => {
   const { frontmatter, html } = data.markdownRemark
 
   return (
@@ -103,7 +103,6 @@ const MarketingPage = ({ data, user, loggedUser, isLoggedUser, getTimeNow, getDi
         user={user}
         loggedUser={loggedUser}
         isLoggedUser={isLoggedUser}
-        getTimeNow={getTimeNow}
         getDisqusSSO={getDisqusSSO}
       />
     </Layout>
@@ -143,4 +142,3 @@ export const marketingPageQuery = graphql`
     }
   }
 `
-

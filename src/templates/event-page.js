@@ -24,23 +24,59 @@ import { AttendanceTracker } from "openstack-uicore-foundation/lib/components";
 
 export const EventPageTemplate = class extends React.Component {
 
+  constructor(props) {
+    super(props);
+
+    this.interval = null;
+    this.state = {
+      timestamp: 0,
+      eventStarted: false,
+    }
+  }
+
   componentWillMount() {
     const { eventId } = this.props;
+    this.setState({ eventStarted: false });
+    clearInterval(this.interval);
     this.props.getEventBySlug(eventId);
   }
 
   componentDidMount() {
     this.props.getDisqusSSO();
+    const now = new Date();
+    const secondsSinceEpoch = Math.round(now.getTime() / 1000);
+    this.setState({ timestamp: secondsSinceEpoch });
+    this.interval = setInterval(this.tick, 1000);
+  }
+
+  tick = () => {
+    const { timestamp } = this.state;
+    const { event } = this.props;
+    const now = new Date();
+    const secondsSinceEpoch = Math.round(now.getTime() / 1000);
+    this.setState({ timestamp: secondsSinceEpoch }, () => {
+      if (event.start_date && this.state.timestamp > event?.start_date) {
+        this.setState({ eventStarted: true });
+      }
+    })
+  };
+
+  shouldComponentUpdate(nextProps, nextState) {
+    if (this.props.loading !== nextProps.loading) return true;
+    if (this.props.event?.id !== nextProps.event?.id) return true;    
+    if (this.state.eventStarted !== nextState.eventStarted) return true;
+    return false
   }
 
   render() {
     const { loggedUser, event, user, loading } = this.props;
+    const { eventStarted } = this.state;
     let { summit } = SummitObject;
 
     if (loading) {
       return <HeroComponent title="Loading event" />
     } else {
-      if (event) {
+      if (event) {        
         return (
           <>
             {/* <EventHeroComponent /> */}
@@ -53,9 +89,9 @@ export const EventPageTemplate = class extends React.Component {
                 accessToken={loggedUser.accessToken}
               />
             }
-            <section className="section px-0 py-0" style={{ marginBottom: event.class_name !== 'Presentation' || !event.streaming_url ? '-3rem' : '' }}>
+            <section className="section px-0 py-0" style={{ marginBottom: event.class_name !== 'Presentation' || !eventStarted || !event.streaming_url ? '-3rem' : '' }}>
               <div className="columns is-gapless">
-                {event.streaming_url ?
+                {eventStarted && event.streaming_url ?
                   <div className="column is-three-quarters px-0 py-0">
                     <VideoComponent url={event.streaming_url} />
                     {event.meeting_url &&
@@ -75,22 +111,22 @@ export const EventPageTemplate = class extends React.Component {
                   </div>
                   :
                   <div className="column is-three-quarters px-0 py-0 is-hidden-mobile">
-                    <TalkComponent event={event} summit={summit} noStream={true} />
+                    <TalkComponent eventStarted={eventStarted} event={event} summit={summit} noStream={true} />
                   </div>
                 }
                 <div className="column is-hidden-tablet">
-                  <TalkComponent event={event} summit={summit} noStream={true} />
+                  <TalkComponent eventStarted={eventStarted} event={event} summit={summit} noStream={true} />
                 </div>
                 <div className="column" style={{ position: 'relative', borderBottom: '1px solid #d3d3d3' }}>
                   <DisqusComponent disqusSSO={user.disqusSSO} event={event} summit={summit} title="Public Conversation" />
                 </div>
               </div>
             </section>
-            {event.streaming_url &&
+            {eventStarted && event.streaming_url &&
               <section className="section px-0 pt-5 pb-0">
                 <div className="columns mx-0 my-0 is-multiline">
                   <div className="column px-0 py-0 is-three-quarters is-hidden-mobile">
-                    <TalkComponent event={event} summit={summit} noStream={true} />
+                    <TalkComponent eventStarted={eventStarted} event={event} summit={summit} noStream={true} />
                   </div>
                   <DocumentsComponent event={event} />
                   {event.etherpad_link &&
@@ -106,7 +142,7 @@ export const EventPageTemplate = class extends React.Component {
             }
           </>
         )
-      } else {        
+      } else {
         return <HeroComponent title="Loading event" />
       }
     }
@@ -165,7 +201,8 @@ const mapStateToProps = (
     loggedUserState,
     loading,
     eventState,
-    userState
+    userState,
+    summitState
   }
 ) => ({
 

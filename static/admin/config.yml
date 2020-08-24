@@ -48,7 +48,8 @@ collections:
               {label: "Gold Tier", name: "gold", widget: object, fields: [
                 {label: "Sponsors", name: "sponsors", widget: list, fields: [
                   {label: "Name", name: "name", widget: string },
-                  {label: "Image", name: "image", widget: image }
+                  {label: "Image", name: "image", widget: image },
+                  {label: "Link", name: "link", widget: string },
                 ]},
                 {label: "Button", name: button, widget: object, fields: [
                   {label: "Text", name: "text", widget: string, required: false},
@@ -58,7 +59,8 @@ collections:
               {label: "Silver Tier", name: "silver", widget: object, fields: [
                 {label: "Sponsors", name: "sponsors", widget: list, fields: [
                   {label: "Name", name: "name", widget: string },
-                  {label: "Image", name: "image", widget: image }
+                  {label: "Image", name: "image", widget: image },
+                  {label: "Link", name: "link", widget: string },
                 ]},
                 {label: "Button", name: button, widget: object, fields: [
                   {label: "Text", name: "text", widget: string, required: false},

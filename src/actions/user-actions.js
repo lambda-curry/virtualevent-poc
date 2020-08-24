@@ -16,18 +16,14 @@ export const getDisqusSSO = () => (dispatch, getState) => {
 
   let { loggedUserState: { accessToken } } = getState();
 
-  dispatch(startLoading());
-
   return getRequest(
-    dispatch(startLoading()),
+    null,
     createAction(GET_DISQUS_SSO),
     `${window.IDP_BASE_URL}/api/v1/sso/disqus/fnvirtual-poc/profile?access_token=${accessToken}`,
     customErrorHandler
   )({})(dispatch).then(() => {
-    dispatch(stopLoading());
   }
   ).catch(e => {
-    dispatch(stopLoading());
     return (e);
   });
 }
