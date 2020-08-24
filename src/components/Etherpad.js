@@ -7,7 +7,7 @@ const
       <div className={props.className}>
         <iframe
           width="100%"
-          height="420"
+          height="500"
           src={`${cleanUrl}${etherpadSettings}`}
           title='Etherpad'
         />
