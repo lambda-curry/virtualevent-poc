@@ -24,7 +24,7 @@
             {
               "image": "/img/yoco-sponsor-ads-large-carbonclean-vert.png",
               "button": {
-                "text": "Learn more",
+                "text": "",
                 "link": "/virtual-booth/"
               },
               "id": null
@@ -32,7 +32,7 @@
             {
               "image": "/img/ad_subscribe.png",
               "button": {
-                "text": "",
+                "text": "Learn More",
                 "link": "/virtual-booth/"
               },
               "id": null
