@@ -155,9 +155,11 @@ export const EventPageTemplate = class extends React.Component {
                       onViewAllEventsClick={() => this.onViewAllEventsClick()}
                       landscape={true}
                       yourSchedule={false}
+                      showFilters={false}
                       showNav={false}
+                      trackId={event.track ? event.track.id : null}
                       eventCount={3}
-                      title={"Up Next"}
+                      title={event.track ? `Up Next on ${event.track.name}` : 'Up Next'}
                     />
                   </div>
                 </div>

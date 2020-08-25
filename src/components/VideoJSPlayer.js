@@ -31,7 +31,7 @@ class VideoJSPlayer extends React.Component {
           overrideNative: !videojs.browser.IS_SAFARI,
         },
       },
-      //plugins: plugins,
+      plugins: plugins,
       ...this.props,
     };
     this.player = videojs(this.videoNode, options, function onPlayerReady() {
