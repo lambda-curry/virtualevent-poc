@@ -1,6 +1,6 @@
 ---
 templateKey: custom-page
-title: Part Events
+title: Past Events
 ---
 <p>In May of 2020, OCP held its first ever all-virtual event, the 2020 OCP Virtual Summit and Future Technologies Symposium. <a title="2020 OCP Virtual Summit and Future Technologies Symposium report" alt="2020 OCP Virtual Summit and Future Technologies Symposium report" href="https://www.opencompute.org/blog/2020-ocp-virtual-summit-by-the-numbers" target="_blank" rel="noopener">Click here</a> to review the post-event data report.</p>
 <p>We are blown away by the turnout and the commitment of our Sponsors and the entire OCP Community. Thank you for making this event so special. Despite not being able to meet face to face, it was a hit!</p>
