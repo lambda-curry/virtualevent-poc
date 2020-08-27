@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Clock } from 'openstack-uicore-foundation/lib/components';
-import { updateClock } from "../actions/summit-actions";
+import { updateClock } from "../actions/clock-actions";
 
 const ClockComponent = class extends React.Component {
 
@@ -23,8 +23,8 @@ const ClockComponent = class extends React.Component {
   }
 }
 
-const mapStateToProps = ({ summitState }) => ({  
-  now: summitState.nowUtc,
+const mapStateToProps = ({ clockState }) => ({  
+  now: clockState.nowUtc,
 })
 
 export default connect(mapStateToProps, { updateClock })(ClockComponent);

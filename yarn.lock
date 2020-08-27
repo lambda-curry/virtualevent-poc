@@ -12193,10 +12193,10 @@ open@^6.4.0:
   dependencies:
     is-wsl "^1.1.0"
 
-openstack-uicore-foundation@^2.0.57:
-  version "2.0.57"
-  resolved "https://registry.yarnpkg.com/openstack-uicore-foundation/-/openstack-uicore-foundation-2.0.57.tgz#1e66f017ad5b4d74e5e2ea24bc57a69b34105404"
-  integrity sha512-H83/rp6kPe1+KbxzlLVQYP/NR1Qi9pz6f61uOiFB8/I/BE1Y/5vm6E1/wXatk2o5I4Pxe8I49FHB96OyH2kGcg==
+openstack-uicore-foundation@^2.0.61:
+  version "2.0.61"
+  resolved "https://registry.yarnpkg.com/openstack-uicore-foundation/-/openstack-uicore-foundation-2.0.61.tgz#7295799929370154e100b1dbc24c9bc16c8803fd"
+  integrity sha512-vpoA73dhepveZcF1ggO0fs2vTgXULXjSHeQocuoTQyYe7Xl9O6Yb4IwPnmhVGTPLdjjT5Opwi/8PPvp1VB6WBQ==
 
 opentracing@^0.14.4:
   version "0.14.4"
