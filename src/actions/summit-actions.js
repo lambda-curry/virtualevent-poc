@@ -53,29 +53,3 @@ export const getTimeNow = () => (dispatch) => {
     return (e);
   });
 };
-
-export const updateClock = (timestamp) => (dispatch, getState) => {
-
-  const { summitState: { nowUtc, summit_phase } } = getState();
-
-  if (nowUtc) {
-    const phase = getSummitPhase(SummitObject, nowUtc, summit_phase);
-    if (summit_phase !== phase) {
-      switch (phase) {
-        case PHASES.BEFORE:
-          dispatch(createAction(SUMMIT_PHASE_BEFORE)(PHASES.BEFORE))
-          break;
-        case PHASES.DURING:
-          dispatch(createAction(SUMMIT_PHASE_DURING)(PHASES.DURING))
-          break;
-        case PHASES.AFTER:
-          dispatch(createAction(SUMMIT_PHASE_AFTER)(PHASES.AFTER))
-          break;
-        default:
-          break;
-      }
-    }
-  }
-
-  dispatch(createAction(UPDATE_CLOCK)({ timestamp }));
-};

@@ -26,17 +26,10 @@ class MarketingHeroComponent extends React.Component {
   }
 
   getBackURL = () => {
+    let { location } = this.props;    
     let defaultLocation = envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/';
-    let url = URI(window.location.href);
-    let location = url.pathname();
-    if (location === '/') location = defaultLocation
-    let query = url.search(true);
-    let fragment = url.fragment();
-    let backUrl = query.hasOwnProperty('BackUrl') ? query['BackUrl'] : location;
-    if (fragment !== null && fragment !== '') {
-      backUrl += `#${fragment}`;
-    }
-    return backUrl;
+    let backUrl = location.state?.backUrl ? location.state.backUrl : defaultLocation;    
+    return URI.encode(backUrl);    
   }
 
   onClickLogin = () => {
