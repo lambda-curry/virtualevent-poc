@@ -3,12 +3,12 @@
     "title": "OCP TECH WEEK",
     "subTitle": "A VIRTUAL EVENT",
     "date": "November 9–10 & 12–13, 2020",
-    "time": "Registration opens August 24!",
+    "time": "",
     "dateLayout": true,
     "buttons": {
       "registerButton": {
-        "text": "Register now",
-        "display": false
+        "text": "Register now open",
+        "display": true
       },
       "loginButton": {
         "text": "Log in",
