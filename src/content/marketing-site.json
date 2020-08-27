@@ -15,8 +15,12 @@
         "display": false
       }
     },
-    "background": "/img/2020-ocp-tech-week-marketing-header-blank.png",
-    "images": []
+    "background": "/img/2020-ocp-tech-week-marketing-header-blank-left.png",
+    "images": [
+      {
+        "image": "/img/2020-ocp-tech-week-marketing-header-blank-right.png"
+      }
+    ]
   },
   "leftColumn": {
     "schedule": true,
