@@ -29,10 +29,9 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, user, summit
   }
 
   const isAuthorized = authorizedUser(user.groups);
+  const hasTicket = user.summit_tickets?.length > 0;
 
-  const ticketPurchased = user.summit_tickets?.length > 0;
-
-  if (!isAuthorized && !ticketPurchased) {
+  if (!isAuthorized && !hasTicket) {
     navigate('/authz/ticket', {
       state: {
         error: 'no-ticket'
