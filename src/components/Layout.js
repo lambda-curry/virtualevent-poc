@@ -28,11 +28,10 @@ const TemplateWrapper = ({ children, marketing, user, getTimeNow, getUserProfile
 
   const onFocus = useCallback(() => {
     clearInterval(interval.current);
-    if (!hasTicket && seconds > 20) {
+    if (!hasTicket) {
       getUserProfile();
-    } else if (seconds > 60) {
-      getTimeNow();
     }
+    getTimeNow();
     setSeconds(0);
   }, [seconds]);
 

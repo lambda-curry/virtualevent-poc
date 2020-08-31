@@ -1,6 +1,13 @@
 import React from "react"
+import { navigate } from "gatsby"
 
-const HeroComponent = ({ title, subtitle, event }) => {
+const HeroComponent = ({ title, subtitle, event, redirectTo }) => {
+
+  if (redirectTo) {
+    setTimeout(() => {
+      navigate(`${redirectTo}`)
+    }, 3000);
+  }
 
   return (
     <section className={`hero is-fullheight ${event ? 'talk__break' : ''}`}>

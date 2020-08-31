@@ -29,6 +29,11 @@ export const EventPageTemplate = class extends React.Component {
 
   constructor(props) {
     super(props);
+
+    this.state = {
+      firstRender: true
+    }
+
     this.onEventChange = this.onEventChange.bind(this);
     this.onViewAllEventsClick = this.onViewAllEventsClick.bind(this);
   }
@@ -36,6 +41,10 @@ export const EventPageTemplate = class extends React.Component {
   componentWillMount() {
     this.props.getDisqusSSO();
     this.props.getEventBySlug(this.props.eventId);
+  }
+
+  componentDidMount() {
+    this.setState({ firstRender: false })
   }
 
   onEventChange(ev) {
@@ -66,9 +75,14 @@ export const EventPageTemplate = class extends React.Component {
 
   render() {
     const { loggedUser, event, eventsPhases, user, loading } = this.props;
+    const { firstRender } = this.state; 
     let { summit } = SummitObject;
     let currentEvent = eventsPhases.find(e => e.id === event?.id);
-    let eventStarted = currentEvent && currentEvent.phase !== null ? currentEvent.phase : null;
+    let eventStarted = currentEvent && currentEvent.phase !== null ? currentEvent.phase : null;    
+
+    if(!firstRender && !loading && !event) {
+      return <HeroComponent title="Event not found" redirectTo="/a/schedule"/>
+    }
 
     if (loading || eventStarted === null) {
       return <HeroComponent title="Loading event" />
@@ -77,15 +91,6 @@ export const EventPageTemplate = class extends React.Component {
         return (
           <>
             {/* <EventHeroComponent /> */}
-            {event.id &&
-              <AttendanceTracker
-                key={event.id}
-                eventId={event.id}
-                summitId={summit.id}
-                apiBaseUrl={envVariables.SUMMIT_API_BASE_URL}
-                accessToken={loggedUser.accessToken}
-              />
-            }
             <section className="section px-0 py-0" style={{ marginBottom: event.class_name !== 'Presentation' || eventStarted < PHASES.DURING || !event.streaming_url ? '-3rem' : '' }}>
               <div className="columns is-gapless">
                 {eventStarted >= PHASES.DURING && event.streaming_url ?
@@ -175,6 +180,15 @@ const EventPage = (
 
   return (
     <Layout>
+      {event && event.id &&
+      <AttendanceTracker
+          key={`att-tracker-${event.id}`}
+          eventId={event.id}
+          summitId={SummitObject.summit.id}
+          apiBaseUrl={envVariables.SUMMIT_API_BASE_URL}
+          accessToken={loggedUser.accessToken}
+      />
+      }
       <EventPageTemplate
         loggedUser={loggedUser}
         event={event}
