@@ -8,7 +8,6 @@ import {
 import SummitObject from '../content/summit.json';
 
 import { customErrorHandler } from '../utils/customErrorHandler';
-import { PHASES, getSummitPhase } from '../utils/phasesUtils';
 
 export const GET_SUMMIT_DATA = 'GET_SUMMIT_DATA';
 export const SUMMIT_PHASE_AFTER = 'SUMMIT_PHASE_AFTER'
@@ -35,21 +34,3 @@ export const getSummitData = () => (dispatch, getState) => {
     return (e);
   });
 }
-
-export const getTimeNow = () => (dispatch) => {
-
-  return getRequest(
-    dispatch(startLoading()),
-    createAction(GET_TIME_NOW),
-    `https://timeintervalsince1970.appspot.com/`,
-    customErrorHandler
-  )({})(dispatch).then((response) => {
-    const payload = response.response;
-    dispatch(stopLoading());
-    dispatch(createAction(UPDATE_CLOCK)(payload));
-  }
-  ).catch(e => {
-    dispatch(stopLoading());
-    return (e);
-  });
-};

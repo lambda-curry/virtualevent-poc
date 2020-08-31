@@ -30,7 +30,7 @@ const App = ({ isLoggedUser, user, summit_phase }) => {
 const mapStateToProps = ({ loggedUserState, userState, summitState }) => ({
   isLoggedUser: loggedUserState.isLoggedUser,
   summit_phase: summitState.summit_phase,
-  user: userState.userProfile
+  user: userState
 })
 
 export default connect(mapStateToProps)(App)

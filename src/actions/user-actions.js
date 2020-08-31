@@ -11,6 +11,8 @@ export const GET_DISQUS_SSO         = 'GET_DISQUS_SSO';
 export const GET_ROCKETCHAT_SSO     = 'GET_ROCKETCHAT_SSO';
 export const GET_USER_PROFILE       = 'GET_USER_PROFILE';
 export const REQUEST_USER_PROFILE   = 'REQUEST_USER_PROFILE';
+export const START_LOADING_PROFILE  = 'START_LOADING_PROFILE';
+export const STOP_LOADING_PROFILE   = 'STOP_LOADING_PROFILE';
 
 export const getDisqusSSO = () => (dispatch, getState) => {
 
@@ -55,17 +57,15 @@ export const getUserProfile = () => (dispatch, getState) => {
 
   if (!accessToken) return Promise.resolve();
 
-  dispatch(startLoading());
-
   let params = {
       access_token : accessToken,      
       expand: 'groups,summit_tickets'
   };
 
   return getRequest(
-      createAction(REQUEST_USER_PROFILE),
+      createAction(START_LOADING_PROFILE),
       createAction(GET_USER_PROFILE),
       `${window.SUMMIT_API_BASE_URL}/api/v1/summits/${window.SUMMIT_ID}/members/me`,
       customErrorHandler
-  )(params)(dispatch).then(() => dispatch(stopLoading()));
+  )(params)(dispatch).then(() => dispatch(dispatch(createAction(STOP_LOADING_PROFILE))));
 };

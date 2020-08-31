@@ -1,5 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react'
-import { connect } from "react-redux";
+import React, { useCallback, useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
@@ -8,39 +7,25 @@ import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 
 import SummitObject from '../content/summit.json'
-import { getTimeNow } from "../actions/clock-actions";
-import { getUserProfile } from "../actions/user-actions";
 
 // import "../styles/all.scss"
 // import "../styles/palette.scss"
 import "../styles/bulma.scss"
 
-const TemplateWrapper = ({ children, marketing, user, getTimeNow, getUserProfile }) => {
+const TemplateWrapper = ({ children, marketing }) => {
 
   const { title, description } = useSiteMetadata();
   const { summit } = SummitObject;
 
-  const [seconds, setSeconds] = useState(0);
-
-  let interval = useRef(null);
-
-  const hasTicket = user.summit_tickets?.length > 0;
+  const [isFocus, setIsFocus] = useState(true);
 
   const onFocus = useCallback(() => {
-    clearInterval(interval.current);
-    if (!hasTicket) {
-      getUserProfile();
-    }
-    getTimeNow();
-    setSeconds(0);
-  }, [seconds]);
+    setIsFocus(true);
+  });
 
   const onBlur = useCallback(() => {
-    interval.current = setInterval(
-      () => setSeconds((prevSeconds) => prevSeconds + 1),
-      1000
-    );
-  }, []);
+    setIsFocus(false);
+  });
 
   useEffect(() => {
     window.addEventListener("focus", onFocus);
@@ -79,19 +64,11 @@ const TemplateWrapper = ({ children, marketing, user, getTimeNow, getUserProfile
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
       </Helmet>
       <Header />
-      <ClockComponent summit={summit} />
+      <ClockComponent summit={summit} display={isFocus} />
       <div id="content-wrapper">{children}</div>
       <Footer marketing={marketing} />
     </div>
   )
 }
 
-const mapStateToProps = (
-  {
-    userState,
-  }
-) => ({
-  user: userState.userProfile,
-})
-
-export default connect(mapStateToProps, { getTimeNow, getUserProfile })(TemplateWrapper);
+export default TemplateWrapper;
