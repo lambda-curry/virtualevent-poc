@@ -21,25 +21,6 @@ export const UPDATE_CLOCK = 'UPDATE_CLOCK';
 export const GET_TIME_NOW = 'GET_TIME_NOW';
 export const TIME_NOW = 'TIME_NOW';
 
-
-export const getTimeNow = () => (dispatch) => {
-
-  return getRequest(
-    dispatch(startLoading()),
-    createAction(GET_TIME_NOW),
-    `https://timeintervalsince1970.appspot.com/`,
-    customErrorHandler
-  )({})(dispatch).then((response) => {
-    const payload = response.response;
-    dispatch(stopLoading());
-    dispatch(createAction(UPDATE_CLOCK)(payload));
-  }
-  ).catch(e => {
-    dispatch(stopLoading());
-    return (e);
-  });
-};
-
 export const updateClock = (timestamp) => (dispatch, getState) => {
 
   dispatch(createAction(UPDATE_CLOCK)({ timestamp }));
