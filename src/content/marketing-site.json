@@ -8,11 +8,11 @@
     "buttons": {
       "registerButton": {
         "text": "Register now",
-        "display": false
+        "display": true
       },
       "loginButton": {
         "text": "Log in",
-        "display": false
+        "display": true
       }
     },
     "background": "",
@@ -28,19 +28,24 @@
   },
   "sponsors": [
     {
-      "image": "/img/ocp-tech-week-marketing-ad1-square.png",
+      "image": "/img/yoco-sponsor-ads-large-wherehol-vert.png",
       "size": "simple"
     },
     {
-      "image": "/img/ocp-tech-week-marketing-ad3-portrait.png",
+      "image": "/img/yoco-sponsor-ads-medium-tilted.png",
       "size": "simple"
     },
     {
-      "image": "/img/ocp-tech-week-marketing-ad4-portrait.png",
+      "image": "/img/yoco-sponsor-ads-large-mobility-vert-new.png",
       "size": "simple"
     },
     {
-      "image": "/img/ocp-tech-week-marketing-ad2-square.png",
+      "image": "/img/yoco-sponsor-ads-large-apex-vert.png",
+      "size": "double"
+    },
+    {},
+    {
+      "image": "/img/yoco-sponsor-ads-medium-treva.png",
       "size": "double"
     }
   ]

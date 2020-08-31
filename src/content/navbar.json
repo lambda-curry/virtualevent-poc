@@ -6,23 +6,18 @@
       "display": true
     },
     {
-      "title": "About the event",
-      "link": "/about-event",
-      "display": true
-    },
-    {
-      "title": "Registration",
-      "link": "/registration",
-      "display": true
-    },
-    {
       "title": "Schedule",
       "link": "/a/schedule",
       "display": true
     },
     {
-      "title": "Sponsorship",
-      "link": "/sponsorship",
+      "title": "About the event",
+      "link": "/about-event",
+      "display": true
+    },
+    {
+      "title": "Who we are",
+      "link": "/who-we-are",
       "display": true
     },
     {
