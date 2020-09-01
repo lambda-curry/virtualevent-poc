@@ -140,7 +140,7 @@ div.column:first-of-type {
         .date {
           margin-top: 3rem;
           font-size: 3rem;
-          padding: 5px 20px;
+          padding: 10px 20px 5px 20px;
           color: $color_text_light;
           background-color: $color_secondary;
           border-radius: 50px;
@@ -151,11 +151,13 @@ div.column:first-of-type {
     h1 {
       font-size: 7rem;
       font-weight: bold;
+      margin-bottom: 0px;
     }
 
     h2 {
       font-size: 4rem;
       font-weight: bold;
+      margin-top: 0px;
     }
 
 
