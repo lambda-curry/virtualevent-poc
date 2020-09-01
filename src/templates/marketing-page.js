@@ -35,21 +35,22 @@ export const MarketingPageTemplate = class extends React.Component {
 
     let scheduleProps = {}
     if (MarketingSite.leftColumn.schedule &&
-        isLoggedUser && summit_phase !== PHASES.BEFORE) {
-      scheduleProps = { ...scheduleProps,
+      isLoggedUser && summit_phase !== PHASES.BEFORE) {
+      scheduleProps = {
+        ...scheduleProps,
         onEventClick: (ev) => navigate(`/a/event/${ev.id}`),
       }
     }
 
     return (
       <React.Fragment>
-        <OCPHeroComponent summit={summit} isLoggedUser={isLoggedUser} location={location}/>
+        <OCPHeroComponent summit={summit} isLoggedUser={isLoggedUser} location={location} />
         {summit && <Countdown summit={summit} />}
         <div className="columns" id="marketing-columns">
-          <div className="column is-half px-6 pt-6 pb-0" style={{ position: 'relative' }}>
-            {MarketingSite.leftColumn.schedule &&
+          <div className="column is-half px-6 pt-6 pb-3" style={{ position: 'relative' }}>
+            {MarketingSite.leftColumn.schedule.display &&
               <React.Fragment>
-                <h2 style={{ fontWeight: 'bold' }}>Full Event Schedule</h2>
+                <h2><b>{MarketingSite.leftColumn.schedule.title}</b></h2>
                 <ScheduleLiteComponent
                   {...scheduleProps}
                   page="marketing-site"
@@ -60,20 +61,27 @@ export const MarketingPageTemplate = class extends React.Component {
                 />
               </React.Fragment>
             }
-            {MarketingSite.leftColumn.disqus &&
+            {MarketingSite.leftColumn.disqus.display &&
               <React.Fragment>
-                <h2 style={{ fontWeight: 'bold' }}>Join the conversation</h2>
+                <h2><b>{MarketingSite.leftColumn.disqus.title}</b></h2>
                 <DisqusComponent page="marketing-site" disqusSSO={user?.disqusSSO} summit={summit} />
               </React.Fragment>
             }
+            {MarketingSite.leftColumn.image.display &&
+              <React.Fragment>
+                <h2><b>{MarketingSite.leftColumn.image.title}</b></h2>
+                <br />
+                <img src={MarketingSite.leftColumn.image.src} />
+              </React.Fragment>
+            }
           </div>
-          <div className="column is-half px-0 pb-0">
+          <div className="column is-half px-0 pb-3">
             <Masonry
               breakpointCols={2}
               className="my-masonry-grid"
               columnClassName="my-masonry-grid_column">
               {MarketingSite.sponsors.map((item, index) => {
-                if(item.image) {
+                if (item.image) {
                   return (
                     <div key={index}>
                       <img src={item.image} />
@@ -81,7 +89,7 @@ export const MarketingPageTemplate = class extends React.Component {
                   )
                 } else {
                   return null
-                }                
+                }
               })}
             </Masonry>
           </div>
