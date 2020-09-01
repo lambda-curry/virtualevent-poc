@@ -150,8 +150,19 @@ collections:
               ]},
             ]}
           - {label: "Widgets", name: "leftColumn", widget: object, fields: [
-              {label: "Schedule", name: "schedule", widget: boolean, required: false},
-              {label: "Disqus", name: "disqus", widget: boolean, required: false},
+              {label: "Schedule", name: "schedule", widget: object, fields: [
+                {label: "Display", name: "display", widget: boolean, required: false},
+                {label: "Title", name: "title", widget: string, required: false},
+              ]},
+              {label: "Disqus", name: "disqus", widget: object, fields: [
+                {label: "Display", name: "display", widget: boolean, required: false},
+                {label: "Title", name: "title", widget: string, required: false},
+              ]},
+              {label: "Image", name: "image", widget: object, fields: [
+                {label: "Display", name: "display", widget: boolean, required: false},
+                {label: "Title", name: "title", widget: string, required: false},
+                {label: "Image", name: "src", widget: image, required: false},
+              ]},
             ]}
           - {label: "Sponsors", name: "sponsors", widget: list, fields: [
               {label: "Image", name: "image", widget: image, required: false},

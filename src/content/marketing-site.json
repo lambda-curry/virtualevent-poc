@@ -23,8 +23,19 @@
     ]
   },
   "leftColumn": {
-    "schedule": true,
-    "disqus": false
+    "schedule": {
+      "display": false,
+      "title": "Full Event Schedule"
+    },
+    "disqus": {
+      "display": false,
+      "title": "Join the conversation"
+    },
+    "image": {
+      "display": true,
+      "title": "Image",
+      "src": "/img/ocp-tech-week-marketing-ad1-square.png"
+    }
   },
   "sponsors": [
     {
