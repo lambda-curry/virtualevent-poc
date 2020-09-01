@@ -12,7 +12,7 @@
     padding-left: 1rem;
 
     img {
-      max-height: 4rem;
+      max-height: 5rem;
     }
   }
 
@@ -35,15 +35,18 @@
 
       .link {
         color: $color_text_light;
+        border-bottom: 1px solid $color_secondary_contrast;
+        text-decoration: none;
 
         &:hover {
           color: $color_text_light;
+          border-bottom-width: 2px;
           text-decoration: none;
         }
 
         &:active {
           color: $color_text_light;
-          text-decoration: underline;
+          text-decoration: none;
         }
 
         &:visited {
