@@ -62,6 +62,33 @@ div.login-form {
 div.content {
   padding: 30px;
   padding-bottom: 54px;
+  min-height: 48vh;
+  h2 {
+    border-bottom: 2px solid $color_secondary_contrast;
+    display: inline-block;
+  }
+
+  p, ul {
+    font-size: 16px;
+  }
+
+  a {
+    font-size: 16px;
+    color: $color_secondary_contrast;    
+  }
+
+  a.button {
+    font-size: 2rem;
+    border-radius: 10px;
+    &.is-blue {
+      color: $color_text_light;
+      background-color: $color_secondary;
+    }
+    &.is-green {
+      color: $color_text_light;
+      background-color: $color_secondary_contrast;
+    }
+  }
 }
 
 div.title {

@@ -20,7 +20,7 @@ const onClickLogin = () => {
   doLogin(getBackURL());
 }
 
-const OCPHeroComponent = ({ summit, summit_phase, isLoggedUser }) => (
+const OCPHeroComponent = ({ summit, summit_phase, isLoggedUser, location }) => (
   <section className={`${styles.ocpHero}`}>
     <div className={`${styles.ocpHeroColumns} columns`} style={{ backgroundImage: `url(${HeroContent.heroBanner.background})` }}>
       <div className={`${styles.ocpLeftColumn} column is-6 px-0 py-0`}>
@@ -35,35 +35,37 @@ const OCPHeroComponent = ({ summit, summit_phase, isLoggedUser }) => (
             <span className={`${styles.date}`}>
               {HeroContent.heroBanner.date}
             </span>
-            <div className={styles.heroButtons}>
-              {summit_phase >= PHASES.DURING && isLoggedUser ?
-                <a className={styles.link} href={`${envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/'}`} target="_blank" rel="noreferrer">
-                  <button className={`${styles.button} button is-large`}>
-                    <i className={`fa fa-2x fa-sign-in icon is-large`}></i>
-                    <b>Enter</b>
-                  </button>
-                </a>
-                :
-                <React.Fragment>
-                  {HeroContent.heroBanner.buttons.registerButton.display &&
-                    <a className={styles.link} href={`${envVariables.REGISTRATION_BASE_URL}/a/${summit.slug}/`} target="_blank" rel="noreferrer">
-                      <button className={`${styles.button} button is-large`}>
-                        <i className={`fa fa-2x fa-edit icon is-large`}></i>
-                        <b>{HeroContent.heroBanner.buttons.registerButton.text}</b>
-                      </button>
-                    </a>
-                  }
-                  {HeroContent.heroBanner.buttons.loginButton.display &&
-                    <a className={styles.link}>
-                      <button className={`${styles.button} button is-large`} onClick={() => onClickLogin()}>
-                        <i className={`fa fa-2x fa-sign-in icon is-large`}></i>
-                        <b>{HeroContent.heroBanner.buttons.loginButton.text}</b>
-                      </button>
-                    </a>
-                  }
-                </React.Fragment>
-              }
-            </div>
+            {location && location.pathname === '/' &&
+              <div className={styles.heroButtons}>
+                {summit_phase >= PHASES.DURING && isLoggedUser ?
+                  <a className={styles.link} href={`${envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/'}`} target="_blank" rel="noreferrer">
+                    <button className={`${styles.button} button is-large`}>
+                      <i className={`fa fa-2x fa-sign-in icon is-large`}></i>
+                      <b>Enter</b>
+                    </button>
+                  </a>
+                  :
+                  <React.Fragment>
+                    {HeroContent.heroBanner.buttons.registerButton.display &&
+                      <a className={styles.link} href={`${envVariables.REGISTRATION_BASE_URL}/a/${summit.slug}/`} target="_blank" rel="noreferrer">
+                        <button className={`${styles.button} button is-large`}>
+                          <i className={`fa fa-2x fa-edit icon is-large`}></i>
+                          <b>{HeroContent.heroBanner.buttons.registerButton.text}</b>
+                        </button>
+                      </a>
+                    }
+                    {HeroContent.heroBanner.buttons.loginButton.display &&
+                      <a className={styles.link}>
+                        <button className={`${styles.button} button is-large`} onClick={() => onClickLogin()}>
+                          <i className={`fa fa-2x fa-sign-in icon is-large`}></i>
+                          <b>{HeroContent.heroBanner.buttons.loginButton.text}</b>
+                        </button>
+                      </a>
+                    }
+                  </React.Fragment>
+                }
+              </div>
+            }
           </div>
         </div>
       </div>

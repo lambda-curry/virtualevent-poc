@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import OCPHeroComponent from '../components/OCPHeroComponent'
 import Content, { HTMLContent } from '../components/Content'
 
 export const CustomPageTemplate = ({
@@ -12,7 +13,7 @@ export const CustomPageTemplate = ({
   const PageContent = contentComponent || Content
 
   return (
-    <div className="content">
+    <div className="content">      
       <h2>{title}</h2>
       <PageContent content={content} />
     </div>
@@ -30,6 +31,7 @@ const CustomPage = ({ data }) => {
 
   return (
     <Layout>
+      <OCPHeroComponent/>
       <CustomPageTemplate
         contentComponent={HTMLContent}
         title={frontmatter.title}
