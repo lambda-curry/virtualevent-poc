@@ -108,8 +108,12 @@ div.content {
   min-height: 48vh;
 
   h2 {
-    border-bottom: 2px solid $color_secondary_contrast;
     display: inline-block;
+    font-family: 'FranklinGothicURW-Med';
+    font-weight: 400;
+    text-transform: uppercase;
+    border-bottom: 2px solid $color_secondary_contrast;
+    margin-bottom: 3rem;
   }
 
   p,
