@@ -12,7 +12,7 @@
       },
       "loginButton": {
         "text": "Log in",
-        "display": false
+        "display": true
       }
     },
     "background": "/img/2020-ocp-tech-week-marketing-header-blank-left.png",
