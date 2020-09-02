@@ -45,7 +45,6 @@ export const HomePageTemplate = class extends React.Component {
 
     return (
       <React.Fragment>
-        <OCPHeroComponent />
         <div className="px-5 py-5 mb-6">
           <div className="columns">
             <div className="column is-one-quarter">
