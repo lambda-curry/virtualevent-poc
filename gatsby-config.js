@@ -43,7 +43,7 @@ module.exports = {
           google: [
             {
               family: 'Nunito',
-              variants: ['300'],
+              variants: ['300', '700'],
               fontDisplay: 'swap',
               strategy: 'selfHosted'
             },
