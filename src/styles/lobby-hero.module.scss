@@ -128,18 +128,21 @@ div.column:first-of-type {
     .ocp-left-column {
       .ocp-hero-container {
         .title {
+          font-family: 'FranklinGothicURW-Dem';
           color: $color_text_light;
+          margin-top: 3rem;
         }
 
         .subtitle {
+          font-family: 'FranklinGothicURW-Med';
           color: $color_secondary;
           letter-spacing: 4px;
-          margin-bottom: 3rem;
+          margin-bottom: 4.4rem;
         }
 
         .date {
-          margin-top: 3rem;
-          font-size: 3rem;
+          font-family: 'FranklinGothicURW-Med';
+          font-size: 2.5rem;
           padding: 10px 20px 5px 20px;
           color: $color_text_light;
           background-color: $color_secondary;
@@ -149,14 +152,13 @@ div.column:first-of-type {
     }
 
     h1 {
-      font-size: 7rem;
-      font-weight: bold;
+      font-size: 6.75rem;
+      line-height: 1;
       margin-bottom: 0px;
     }
 
     h2 {
-      font-size: 4rem;
-      font-weight: bold;
+      font-size: 3rem;
       margin-top: 0px;
     }
 
