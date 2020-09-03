@@ -1,0 +1,25 @@
+.is-vertical {
+  flex-direction: column;  
+}
+
+.hero-image {
+  height: 80vh;
+}
+
+.hero-data {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  .title {
+    font-size: 72px;
+  }
+  .subtitle {
+    font-size: 60px;
+  }
+  .date {
+    font-size: 48px;
+  }
+  .countdown {
+    align-self: flex-start;
+  }
+}

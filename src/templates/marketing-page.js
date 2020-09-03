@@ -19,6 +19,8 @@ import SummitObject from '../content/summit.json'
 
 import { getDisqusSSO } from '../actions/user-actions'
 
+import styles from "../styles/marketing.module.scss"
+
 export const MarketingPageTemplate = class extends React.Component {
 
   componentWillMount() {
@@ -35,59 +37,113 @@ export const MarketingPageTemplate = class extends React.Component {
 
     let scheduleProps = {}
     if (MarketingSite.leftColumn.schedule &&
-        isLoggedUser && summit_phase !== PHASES.BEFORE) {
-      scheduleProps = { ...scheduleProps,
+      isLoggedUser && summit_phase !== PHASES.BEFORE) {
+      scheduleProps = {
+        ...scheduleProps,
         onEventClick: (ev) => navigate(`/a/event/${ev.id}`),
       }
     }
 
     return (
-      <React.Fragment>
-        <MarketingHeroComponent summit={summit} isLoggedUser={isLoggedUser} location={location}/>
-        {summit && <Countdown summit={summit} />}
-        <div className="columns" id="marketing-columns">
-          <div className="column is-half px-6 pt-6 pb-0" style={{ position: 'relative' }}>
-            {MarketingSite.leftColumn.schedule &&
-              <React.Fragment>
-                <h2 style={{ fontWeight: 'bold' }}>Full Event Schedule</h2>
-                <ScheduleLiteComponent
-                  {...scheduleProps}
-                  page="marketing-site"
-                  accessToken={loggedUser.accessToken}
-                  landscape={true}
-                  showAllEvents={true}
-                  eventCount={100}
-                />
-              </React.Fragment>
-            }
-            {MarketingSite.leftColumn.disqus &&
-              <React.Fragment>
-                <h2 style={{ fontWeight: 'bold' }}>Join the conversation</h2>
-                <DisqusComponent page="marketing-site" disqusSSO={user?.disqusSSO} summit={summit} />
-              </React.Fragment>
-            }
-          </div>
-          <div className="column is-half px-0 pb-0">
-            <Masonry
-              breakpointCols={2}
-              className="my-masonry-grid"
-              columnClassName="my-masonry-grid_column">
-              {MarketingSite.sponsors.map((item, index) => {
-                if(item.image) {
-                  return (
-                    <div key={index}>
-                      <img src={item.image} />
-                    </div>
-                  )
-                } else {
-                  return null
-                }                
-              })}
-            </Masonry>
+      <div className="columns" id="marketing-columns">
+        <div className="column is-half" >
+          <div className={`columns ${styles.isVertical}`}>
+            <div className={`column is-full px-6 py-6 ${styles.heroImage}`} >
+              Imagen de nintendo
+            </div>
+            <div className={`column is-full px-6 py-6`} >
+              {MarketingSite.leftColumn.schedule &&
+                <React.Fragment>
+                  <h2 style={{ fontWeight: 'bold' }}>Full Event Schedule</h2>
+                  <ScheduleLiteComponent
+                    {...scheduleProps}
+                    page="marketing-site"
+                    accessToken={loggedUser.accessToken}
+                    landscape={true}
+                    showAllEvents={true}
+                    eventCount={100}
+                  />
+                </React.Fragment>
+              }
+              {MarketingSite.leftColumn.disqus &&
+                <React.Fragment>
+                  <h2 style={{ fontWeight: 'bold' }}>Join the conversation</h2>
+                  <DisqusComponent page="marketing-site" disqusSSO={user?.disqusSSO} summit={summit} />
+                </React.Fragment>
+              }
+            </div>
           </div>
         </div>
-        <PageContent content={content} />
-      </React.Fragment>
+        <div className="column is-half" >
+          <div className={`columns ${styles.isVertical}`}>
+            <div className={`column is-full px-0 pb-0 ${styles.heroData}`} >
+              <div className="container">
+                <h1 className={`${styles.title}`}>
+                  {MarketingSite.heroBanner.title}
+                </h1>
+                <h2 className={`${styles.subtitle}`}>
+                  {MarketingSite.heroBanner.subTitle}
+                </h2>
+                <div className={styles.date} style={{ backgroundColor: MarketingSite.heroBanner.dateLayout ? 'var(--color_secondary)' : '' }}>
+                  <div>{MarketingSite.heroBanner.date}</div>
+                </div>
+                <h4>{MarketingSite.heroBanner.time}</h4>
+                {/* <div className={styles.heroButtons}>
+                  {summit_phase >= PHASES.DURING && isLoggedUser ?
+                    <a className={styles.link} href={`${envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/'}`} target="_blank" rel="noreferrer">
+                      <button className={`${styles.button} button is-large`}>
+                        <i className={`fa fa-2x fa-sign-in icon is-large`}></i>
+                        <b>Enter</b>
+                      </button>
+                    </a>
+                    :
+                    <React.Fragment>
+                      {MarketingSite.heroBanner.buttons.registerButton.display &&
+                        <a className={styles.link} href={`${envVariables.REGISTRATION_BASE_URL}/a/${summit.slug}/`} target="_blank" rel="noreferrer">
+                          <button className={`${styles.button} button is-large`}>
+                            <i className={`fa fa-2x fa-edit icon is-large`}></i>
+                            <b>{MarketingSite.heroBanner.buttons.registerButton.text}</b>
+                          </button>
+                        </a>
+                      }
+                      {MarketingSite.heroBanner.buttons.loginButton.display &&
+                        <a className={styles.link}>
+                          <button className={`${styles.button} button is-large`} onClick={() => this.onClickLogin()}>
+                            <i className={`fa fa-2x fa-sign-in icon is-large`}></i>
+                            <b>{MarketingSite.heroBanner.buttons.loginButton.text}</b>
+                          </button>
+                        </a>
+                      }
+                    </React.Fragment>
+                  }
+                </div> */}
+              </div>
+              <div className={`${styles.countdown}`}>
+                Countdown
+                {summit && <Countdown summit={summit} />}
+              </div>
+            </div>
+            <div className={`column is-full px-0 pb-5`} >
+              <Masonry
+                breakpointCols={2}
+                className={`my-masonry-grid ${styles.masonry}`}
+                columnClassName={`my-masonry-grid_column ${styles.column}`}>
+                {MarketingSite.sponsors.map((item, index) => {
+                  if (item.image) {
+                    return (
+                      <div key={index}>
+                        <img src={item.image} />
+                      </div>
+                    )
+                  } else {
+                    return null
+                  }
+                })}
+              </Masonry>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 }
