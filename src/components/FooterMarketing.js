@@ -6,9 +6,15 @@ import Link from './Link'
 import styles from '../styles/footer.module.scss';
 
 const FooterMarketing = () => (
-
-
   <div className={styles.footerMarketing}>
+    <div className={styles.socialNetworks}>
+      {footerContent.social.networks.map((net, index) => (
+        net.display &&
+        <a href={net.link} className={styles.link} key={index}>
+          <i className={`fa icon is-large ${net.icon}`}></i>
+        </a>
+      ))}
+    </div>
     <div className={styles.legalItems}>
       {footerContent.legal.map((item, index) => {
         return (
@@ -19,17 +25,8 @@ const FooterMarketing = () => (
           </Link>
         )
       })}
-    </div>
-    <div className={styles.socialNetworks}>
-      {footerContent.social.networks.map((net, index) => (
-        net.display &&
-        <a href={net.link} className={styles.link} key={index}>
-          <i className={`fa icon is-large ${net.icon}`}></i>
-        </a>
-      ))}
-    </div>    
+    </div>   
   </div>
-
 )
 
 export default FooterMarketing
