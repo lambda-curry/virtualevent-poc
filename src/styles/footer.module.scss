@@ -81,11 +81,11 @@
   }
 
   a>i {
-    margin-right: 1rem;
+    margin-left: 1rem;
   }
 
-  a:last-child>i {
-    margin-right: 0;
+  a:first-child>i {
+    margin-left: 0;
   }
 
   a:hover.link,
@@ -95,16 +95,16 @@
   }
 
   .social-networks {
-    margin-left: auto;
+    margin-right: auto;
   }
 
   .legal-items {
-    margin-right: auto;
+    margin-left: auto;
   }
 
   .legal-item {
     text-transform: uppercase;
-    margin-right: 3rem;
+    margin-left: 3rem;
     font-size: 13px;
   }
 }
@@ -116,7 +116,7 @@
 
     .social-networks {
       margin-bottom: 1rem;
-      margin-left: 0;
+      margin-right: 0;
     }
 
     .legal-items {
@@ -125,7 +125,7 @@
     }
 
     .legal-item {
-      margin-right: 1rem;
+      margin-left: 1rem;
     }
   }
 }
@@ -135,7 +135,7 @@
     flex-direction: column;
     align-items: center;
     .copyright {
-      margin-left: 0;
+      margin-right: 0;
     }
   }
 }
