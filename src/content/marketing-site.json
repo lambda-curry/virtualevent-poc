@@ -7,7 +7,7 @@
     "dateLayout": true,
     "buttons": {
       "registerButton": {
-        "text": "Registration now open",
+        "text": "Register now",
         "display": true
       },
       "loginButton": {
