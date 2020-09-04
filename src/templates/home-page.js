@@ -19,6 +19,7 @@ import SponsorComponent from '../components/SponsorComponent'
 import SimpleChatWidgetComponent from '../components/SimpleChatWidgetComponent'
 
 import { getDisqusSSO, getUserProfile } from '../actions/user-actions'
+import { getScheduleEvents } from '../actions/schedule-actions'
 
 export const HomePageTemplate = class extends React.Component {
 
@@ -29,6 +30,7 @@ export const HomePageTemplate = class extends React.Component {
 
   componentDidMount() {
     this.props.getDisqusSSO();
+    this.props.getScheduleEvents();
   }
 
   onEventChange(ev) {
@@ -124,7 +126,8 @@ const HomePage = (
     loggedUser,
     user,
     getUserProfile,
-    getDisqusSSO
+    getDisqusSSO,
+    getScheduleEvents
   }
 ) => {
 
@@ -135,6 +138,7 @@ const HomePage = (
         user={user}
         getUserProfile={getUserProfile}
         getDisqusSSO={getDisqusSSO}
+        getScheduleEvents={getScheduleEvents}
       />
     </Layout>
   )
@@ -156,12 +160,13 @@ HomePageTemplate.propTypes = {
 
 const mapStateToProps = ({ loggedUserState, userState }) => ({
   loggedUser: loggedUserState,
-  user: userState,
+  user: userState
 })
 
 export default connect(mapStateToProps,
   {
     getDisqusSSO,
-    getUserProfile
+    getUserProfile,
+    getScheduleEvents
   }
 )(HomePage);

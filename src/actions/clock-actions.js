@@ -9,6 +9,9 @@ import SummitObject from '../content/summit.json';
 
 import { customErrorHandler } from '../utils/customErrorHandler';
 import { PHASES, getSummitPhase, getEventPhase } from '../utils/phasesUtils';
+import { getNextEvent } from '../utils/schedule';
+
+import { SET_NEXT_EVENT } from './schedule-actions';
 
 export const SUMMIT_PHASE_AFTER = 'SUMMIT_PHASE_AFTER'
 export const SUMMIT_PHASE_DURING = 'SUMMIT_PHASE_DURING'
@@ -26,6 +29,7 @@ export const updateClock = (timestamp) => (dispatch, getState) => {
   dispatch(createAction(UPDATE_CLOCK)({ timestamp }));
   dispatch(updateSummitPhase());
   dispatch(updateEventsPhase());
+  dispatch(checkNextEvent());
 };
 
 export const updateSummitPhase = () => (dispatch, getState) => {
@@ -88,4 +92,15 @@ export const updateEventsPhase = () => (dispatch, getState) => {
       }
     }
   })
+}
+
+export const checkNextEvent = () => (dispatch, getState) => {
+
+  const { scheduleState: { schedule, nextEvent }, clockState: { nowUtc } } = getState();
+
+  if (schedule && nowUtc) {
+    let newNextEvent = getNextEvent(schedule, nowUtc);
+    if (newNextEvent !== nextEvent) dispatch(createAction(SET_NEXT_EVENT)(newNextEvent))
+  }
+
 }
