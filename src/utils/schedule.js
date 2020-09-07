@@ -29,21 +29,23 @@ export const sortEvents = (events) => {
 
 export const getNextEvent = (schedule, now) => {
 
-  const day = schedule.reduce((prev, curr) => {
-    if (curr > now) {
-      return (Math.abs(curr.date - now) < Math.abs(prev.date - now) ? curr : prev);
-    } else {
-      return prev
-    };
-  });
+  let formattedNow = moment.unix(now).format('MM/DD/YYYY');
 
-  return day.events.reduce((prev, curr) => {
-    if (curr > now) {
+  const day = schedule.find(day => day.date === formattedNow);
+
+  const event = day.events.reduce((prev, curr) => {
+    if (curr.start_date > now) {
       return (Math.abs(curr.start_date - now) < Math.abs(prev.start_date - now) ? curr : prev);
     } else {
       return prev
     };
   });
+
+  if (event.start_date > now) {
+    return event;
+  } else {
+    return null;
+  }
 }
 
 export const getNextEventByTrack = () => {
