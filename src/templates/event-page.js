@@ -74,14 +74,14 @@ export const EventPageTemplate = class extends React.Component {
   }
 
   render() {
-    const { loggedUser, event, eventsPhases, user, loading } = this.props;
-    const { firstRender } = this.state; 
+    const { loggedUser, event, eventsPhases, user, loading, nextEvent } = this.props;
+    const { firstRender } = this.state;
     let { summit } = SummitObject;
     let currentEvent = eventsPhases.find(e => e.id === event?.id);
-    let eventStarted = currentEvent && currentEvent.phase !== null ? currentEvent.phase : null;    
+    let eventStarted = currentEvent && currentEvent.phase !== null ? currentEvent.phase : null;
 
-    if(!firstRender && !loading && !event) {
-      return <HeroComponent title="Event not found" redirectTo="/a/schedule"/>
+    if (!firstRender && !loading && !event) {
+      return <HeroComponent title="Event not found" redirectTo="/a/schedule" />
     }
 
     if (loading || eventStarted === null) {
@@ -95,7 +95,7 @@ export const EventPageTemplate = class extends React.Component {
               <div className="columns is-gapless">
                 {eventStarted >= PHASES.DURING && event.streaming_url ?
                   <div className="column is-three-quarters px-0 py-0">
-                    <VideoComponent url={event.streaming_url} />
+                    <VideoComponent url={event.streaming_url} nextEvent={nextEvent} />
                     {event.meeting_url &&
                       <div className="join-zoom-container">
                         <span>
@@ -172,6 +172,7 @@ const EventPage = (
     event,
     eventId,
     user,
+    nextEvent,
     eventsPhases,
     getEventBySlug,
     getDisqusSSO
@@ -181,13 +182,13 @@ const EventPage = (
   return (
     <Layout>
       {event && event.id &&
-      <AttendanceTracker
+        <AttendanceTracker
           key={`att-tracker-${event.id}`}
           eventId={event.id}
           summitId={SummitObject.summit.id}
           apiBaseUrl={envVariables.SUMMIT_API_BASE_URL}
           accessToken={loggedUser.accessToken}
-      />
+        />
       }
       <EventPageTemplate
         loggedUser={loggedUser}
@@ -195,6 +196,7 @@ const EventPage = (
         loading={loading}
         eventId={eventId}
         user={user}
+        nextEvent={nextEvent}
         eventsPhases={eventsPhases}
         getEventBySlug={getEventBySlug}
         getDisqusSSO={getDisqusSSO}
@@ -209,6 +211,7 @@ EventPage.propTypes = {
   event: PropTypes.object,
   eventId: PropTypes.string,
   user: PropTypes.object,
+  nextEvent: PropTypes.object,
   eventsPhases: PropTypes.array,
   getEventBySlug: PropTypes.func,
   getDisqusSSO: PropTypes.func,
@@ -220,6 +223,7 @@ EventPageTemplate.propTypes = {
   loading: PropTypes.bool,
   eventId: PropTypes.string,
   user: PropTypes.object,
+  nextEvent: PropTypes.object,
   eventsPhases: PropTypes.array,
   getEventBySlug: PropTypes.func,
   getDisqusSSO: PropTypes.func,
@@ -231,6 +235,7 @@ const mapStateToProps = (
     eventState,
     userState,
     clockState,
+    scheduleState
   }
 ) => ({
 
@@ -238,6 +243,7 @@ const mapStateToProps = (
   loading: eventState.loading,
   event: eventState.event,
   eventsPhases: clockState.events_phases,
+  nextEvent: scheduleState.nextEvent,
   user: userState,
 })
 
