@@ -146,7 +146,8 @@ collections:
               ]},
               {label: "Background Image", name: "background", widget: image, required: false},
               {label: "Images", name: "images", widget: list, fields: [
-                {label: "Image", name: "image", widget: image}
+                {label: "Image", name: "image", widget: image},
+                {label: "Link", name: "link", widget: string}
               ]},
             ]}
           - {label: "Widgets", name: "leftColumn", widget: object, fields: [

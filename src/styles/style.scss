@@ -456,6 +456,12 @@ h2 {
       font-size: 16px;
     }
   }
+  #marketing-columns {
+    .column:last-child {
+      padding-top: 0px;
+      border: 1px solid $color_secondary_contrast;      
+    }
+  }
 }
 
 @media (max-width: 978px) {
@@ -514,7 +520,7 @@ h2 {
       padding-right: 20px;
       padding-bottom: 30px;
     }
-  }
+  }  
 }
 
 @media (min-width: 1921px) {

@@ -8,6 +8,7 @@ import OCPHeroComponent from '../components/OCPHeroComponent'
 import ScheduleLiteComponent from "../components/ScheduleLiteComponent"
 import DisqusComponent from '../components/DisqusComponent'
 import Countdown from '../components/Countdown'
+import Link from '../components/Link'
 import Content, { HTMLContent } from '../components/Content'
 
 import '../styles/style.scss'
@@ -84,7 +85,13 @@ export const MarketingPageTemplate = class extends React.Component {
                 if (item.image) {
                   return (
                     <div key={index}>
-                      <img src={item.image} />
+                      {item.link ?
+                        <Link to={item.link} target="_blank">
+                          <img src={item.image} />
+                        </Link>
+                        :
+                        <img src={item.image} />
+                      }
                     </div>
                   )
                 } else {

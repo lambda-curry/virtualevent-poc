@@ -40,19 +40,19 @@
   "sponsors": [
     {
       "image": "/img/ocp-tech-week-marketing-ad1-square.png",
-      "size": "simple"
+      "link": ""
     },
     {
       "image": "/img/ocp-tech-week-marketing-ad3-portrait.png",
-      "size": "simple"
+      "link": ""
     },
     {
       "image": "/img/ocp-tech-week-marketing-ad4-portrait.png",
-      "size": "simple"
+      "link": ""
     },
     {
       "image": "/img/ocp-tech-week-marketing-ad2-square.png",
-      "size": "double"
+      "link": ""
     }
   ]
 }
