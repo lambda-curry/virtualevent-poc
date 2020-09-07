@@ -24,7 +24,7 @@
   },
   "leftColumn": {
     "schedule": {
-      "display": false,
+      "display": true,
       "title": "Full Event Schedule"
     },
     "disqus": {
@@ -32,7 +32,7 @@
       "title": "Join the conversation"
     },
     "image": {
-      "display": true,
+      "display": false,
       "title": "",
       "src": "/img/ocp20tw-schedule-overview-short.png"
     }

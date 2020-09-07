@@ -167,7 +167,7 @@ collections:
             ]}
           - {label: "Sponsors", name: "sponsors", widget: list, fields: [
               {label: "Image", name: "image", widget: image, required: false},
-              {label: "Size", name: "size", widget: hidden}
+              {label: "Link", name: "link", widget: string, required: false}
             ]}
   - name: "virtualBooth"
     label: "Virtual Booth"

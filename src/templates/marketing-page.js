@@ -86,7 +86,7 @@ export const MarketingPageTemplate = class extends React.Component {
                   return (
                     <div key={index}>
                       {item.link ?
-                        <Link to={item.link} target="_blank">
+                        <Link to={item.link}>
                           <img src={item.image} />
                         </Link>
                         :
