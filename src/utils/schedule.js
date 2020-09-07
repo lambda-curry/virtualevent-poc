@@ -30,22 +30,33 @@ export const sortEvents = (events) => {
 export const getNextEvent = (schedule, now) => {
 
   let formattedNow = moment.unix(now).format('MM/DD/YYYY');
+  let day;
 
-  const day = schedule.find(day => day.date === formattedNow);
+  if (formattedNow < schedule[0].date) {
+    day = schedule[0];
+  } else {
+    day = schedule.find(day => day.date === formattedNow);
+  }
 
-  const event = day.events.reduce((prev, curr) => {
-    if (curr.start_date > now) {
-      return (Math.abs(curr.start_date - now) < Math.abs(prev.start_date - now) ? curr : prev);
+  if (day) {
+    const event = day.events.reduce((prev, curr) => {
+      if (curr.start_date > now) {
+        return (Math.abs(curr.start_date - now) < Math.abs(prev.start_date - now) ? curr : prev);
+      } else {
+        return prev
+      };
+    });
+
+    if (event.start_date > now) {
+      return event;
     } else {
-      return prev
-    };
-  });
-
-  if (event.start_date > now) {
-    return event;
+      return null;
+    }
   } else {
     return null;
   }
+
+
 }
 
 export const getNextEventByTrack = () => {
