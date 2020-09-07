@@ -47,9 +47,9 @@ export const MarketingPageTemplate = class extends React.Component {
         {summit && <Countdown summit={summit} />}
         <div className="columns" id="marketing-columns">
           <div className="column is-half px-6 pt-6 pb-0" style={{ position: 'relative' }}>
-            {MarketingSite.leftColumn.schedule &&
+            {MarketingSite.leftColumn.schedule.display &&
               <React.Fragment>
-                <h2 style={{ fontWeight: 'bold' }}>Full Event Schedule</h2>
+                <h2><b>{MarketingSite.leftColumn.schedule.title}</b></h2>
                 <ScheduleLiteComponent
                   {...scheduleProps}
                   page="marketing-site"
@@ -60,10 +60,17 @@ export const MarketingPageTemplate = class extends React.Component {
                 />
               </React.Fragment>
             }
-            {MarketingSite.leftColumn.disqus &&
+            {MarketingSite.leftColumn.disqus.display &&
               <React.Fragment>
-                <h2 style={{ fontWeight: 'bold' }}>Join the conversation</h2>
+                <h2><b>{MarketingSite.leftColumn.disqus.title}</b></h2>                            
                 <DisqusComponent page="marketing-site" disqusSSO={user?.disqusSSO} summit={summit} />
+              </React.Fragment>
+            }
+            {MarketingSite.leftColumn.image.display &&
+              <React.Fragment>
+                <h2><b>{MarketingSite.leftColumn.image.title}</b></h2>
+                <br />
+                <img src={MarketingSite.leftColumn.image.src} />
               </React.Fragment>
             }
           </div>
@@ -76,7 +83,13 @@ export const MarketingPageTemplate = class extends React.Component {
                 if(item.image) {
                   return (
                     <div key={index}>
-                      <img src={item.image} />
+                      {item.link ?
+                        <Link to={item.link}>
+                          <img src={item.image} />
+                        </Link>
+                        :
+                        <img src={item.image} />
+                      }
                     </div>
                   )
                 } else {

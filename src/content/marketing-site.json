@@ -23,8 +23,19 @@
     ]
   },
   "leftColumn": {
-    "schedule": true,
-    "disqus": false
+    "schedule": {
+      "display": true,
+      "title": "Full Event Schedule"
+    },
+    "disqus": {
+      "display": false,
+      "title": "Join the conversation"
+    },
+    "image": {
+      "display": false,
+      "title": "Image",
+      "src": "/img/yoco-sponsor-ads-large-wherehol-vert.png"
+    }
   },
   "sponsors": [
     {
