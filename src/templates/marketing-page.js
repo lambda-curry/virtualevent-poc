@@ -8,6 +8,7 @@ import MarketingHeroComponent from '../components/MarketingHeroComponent'
 import ScheduleLiteComponent from "../components/ScheduleLiteComponent"
 import DisqusComponent from '../components/DisqusComponent'
 import Countdown from '../components/Countdown'
+import Link from '../components/Link'
 import Content, { HTMLContent } from '../components/Content'
 
 import '../styles/style.scss'
