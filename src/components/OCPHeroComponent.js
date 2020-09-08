@@ -53,7 +53,7 @@ const OCPHeroComponent = ({ location, isLoggedUser, summit, summit_phase }) => (
                       </button>
                     </a>
                   }
-                  {HeroContent.heroBanner.buttons.loginButton.display &&
+                  {HeroContent.heroBanner.buttons.loginButton.display && !isLoggedUser &&
                     <a className={styles.link}>
                       <button className={`${styles.button} button is-large`} onClick={() => onClickLogin(location)}>
                         <i className={`fa fa-2x fa-sign-in icon is-large`}></i>
