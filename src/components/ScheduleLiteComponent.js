@@ -16,12 +16,13 @@ const ScheduleComponent = class extends React.Component {
       apiBaseUrl: envVariables.SUMMIT_API_BASE_URL,
       marketingApiBaseUrl: envVariables.MARKETING_API_BASE_URL,
       eventBaseUrl: "/a/event",
-      trackBaseUrl: "/a/tracks",
-      speakerBaseUrl: "/a/speakers",
-      roomBaseUrl: "/a/rooms",
+      //trackBaseUrl: "/a/tracks",
+      //speakerBaseUrl: "/a/speakers",
+      //roomBaseUrl: "/a/rooms",
       summitId: parseInt(envVariables.SUMMIT_ID),
       onAuthError: (err, res) => expiredToken(err),
       onRef: ref => this.child = ref,
+      showDetails: false,
     };
 
     const { className } = this.props;
