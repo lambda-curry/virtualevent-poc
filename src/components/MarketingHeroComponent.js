@@ -75,7 +75,7 @@ class MarketingHeroComponent extends React.Component {
                           </button>
                         </a>
                       }
-                      {MarketingSite.heroBanner.buttons.loginButton.display &&
+                      {MarketingSite.heroBanner.buttons.loginButton.display && !isLoggedUser &&
                         <a className={styles.link}>
                           <button className={`${styles.button} button is-large`} onClick={() => this.onClickLogin()}>
                             <i className={`fa fa-2x fa-sign-in icon is-large`}></i>
