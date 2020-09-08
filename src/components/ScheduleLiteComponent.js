@@ -22,7 +22,6 @@ const ScheduleComponent = class extends React.Component {
       summitId: parseInt(envVariables.SUMMIT_ID),
       onAuthError: (err, res) => expiredToken(err),
       onRef: ref => this.child = ref,
-      showDetails: false,
     };
 
     const { className } = this.props;
