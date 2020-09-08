@@ -57,6 +57,7 @@ export const MarketingPageTemplate = class extends React.Component {
                   page="marketing-site"
                   accessToken={loggedUser.accessToken}
                   landscape={true}
+                  showNav={true}
                   showAllEvents={true}
                   eventCount={100}
                 />
