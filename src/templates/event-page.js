@@ -14,7 +14,7 @@ import SimpleChatWidgetComponent from '../components/SimpleChatWidgetComponent'
 import VideoComponent from '../components/VideoComponent'
 import TalkComponent from '../components/TalkComponent'
 import DocumentsComponent from '../components/DocumentsComponent'
-import EventHeroComponent from '../components/EventHeroComponent'
+import NextEventComponent from '../components/NextEventComponent'
 import HeroComponent from '../components/HeroComponent'
 import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
 
@@ -90,7 +90,7 @@ export const EventPageTemplate = class extends React.Component {
       if (event) {
         return (
           <>
-            {/* <EventHeroComponent /> */}
+            {nextEvent && <NextEventComponent nextEvent={nextEvent} summit={summit} />}
             <section className="section px-0 py-0" style={{ marginBottom: event.class_name !== 'Presentation' || eventStarted < PHASES.DURING || !event.streaming_url ? '-3rem' : '' }}>
               <div className="columns is-gapless">
                 {eventStarted >= PHASES.DURING && event.streaming_url ?
