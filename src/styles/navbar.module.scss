@@ -10,6 +10,8 @@
 
   .navbar-brand {
     padding-left: 1rem;
+    width: 50%;
+    background-color: red;
 
     img {
       max-height: 4rem;
@@ -21,33 +23,34 @@
   }
 
   .user-icon {
-    color: $color_text_light;
+    color: red;
     padding-left: 10px;
   }
 
   .navbar-item {
-    color: $color_text_light;
+    color: red;
   }
 
   .navbar-menu {
+    background-color: $color_text_light;
     .navbar-item {
       font-weight: 300;
 
       .link {
-        color: $color_text_light;
+        color: red;
 
         &:hover {
-          color: $color_text_light;
+          color: red;
           text-decoration: none;
         }
 
         &:active {
-          color: $color_text_light;
+          color: red;
           text-decoration: underline;
         }
 
         &:visited {
-          color: $color_text_light;
+          color: red;
         }
       }
     }
@@ -84,17 +87,22 @@
 
   .user-burger {
     display: block;
-    color: $color_text_light;
+    color: red;
   }
 
   .user-icon {
-    color: $color_text_light;
+    color: red;
     padding-left: 10px;
   }
 }
 
 @media (max-width: 1023px) {
   .navbar {
+
+    .navbar-brand {
+      width: auto;
+    }
+    
     .navbar-burger {
       color: $color_text_light;
     }

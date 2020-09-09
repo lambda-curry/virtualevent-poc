@@ -51,7 +51,7 @@ export const MarketingPageTemplate = class extends React.Component {
             <div className={`column is-full px-6 py-6 ${styles.heroImage}`} >
               Imagen de nintendo
             </div>
-            <div className={`column is-full px-6 py-6`} >
+            <div className={`column is-full px-6 py-6 ${styles.heroWidgets}`} >
               {MarketingSite.leftColumn.schedule &&
                 <React.Fragment>
                   <h2 style={{ fontWeight: 'bold' }}>Full Event Schedule</h2>
@@ -123,7 +123,7 @@ export const MarketingPageTemplate = class extends React.Component {
                 {summit && <Countdown summit={summit} />}
               </div>
             </div>
-            <div className={`column is-full px-0 pb-5`} >
+            <div className={`column is-full px-0 pb-5 ${styles.heroMasonry}`} >
               <Masonry
                 breakpointCols={2}
                 className={`my-masonry-grid ${styles.masonry}`}

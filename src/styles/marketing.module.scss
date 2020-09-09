@@ -1,15 +1,23 @@
+@import './colors.scss';
+
 .is-vertical {
   flex-direction: column;  
 }
 
 .hero-image {
-  height: 80vh;
+  height: 60vh;
+}
+
+.hero-widgets {
+  overflow: hidden;
 }
 
 .hero-data {
   height: 50vh;
   display: flex;
   flex-direction: column;
+  background-color: $color_text_light;
+  color: red;
   .title {
     font-size: 72px;
   }
@@ -22,4 +30,8 @@
   .countdown {
     align-self: flex-start;
   }
+}
+
+.hero-masonry {
+  
 }
