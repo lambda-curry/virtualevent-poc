@@ -1,8 +1,8 @@
 @import './colors.scss';
 
 .countdown {
-  height: 150px;
-  background-color: $color_secondary;
+  height: 100px;
+  background-color: black;
   color: $color_text_light;
 
   .countdown-columns {
@@ -21,20 +21,21 @@
       justify-content: space-evenly;
       align-items: center;
 
-      & div:first-of-type {
-        background-color: darken($color: $color_secondary, $amount: 20%);
-      }
+      // & div:first-of-type {
+      //   background-color: darken($color: $color_secondary, $amount: 20%);
+      // }
 
-      & div:nth-of-type(2) {
-        background-color: darken($color: $color_secondary, $amount: 10%);
-      }
+      // & div:nth-of-type(2) {
+      //   background-color: darken($color: $color_secondary, $amount: 10%);
+      // }
 
       div {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex: 0 0 33.33%;
         height: 100%;
         text-align: center;
+        align-items: center;
         justify-content: center;
         text-transform: uppercase;
         font-weight: bold;

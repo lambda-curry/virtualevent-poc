@@ -22,8 +22,8 @@ import styles from '../styles/countdown.module.scss'
 class Countdown extends React.Component {
 
   constructor(props) {
-    super(props);    
-  }  
+    super(props);
+  }
 
   render() {
     const { summit, now } = this.props;
@@ -40,36 +40,36 @@ class Countdown extends React.Component {
     let minutes = parseInt(diff.asMinutes()); //122360 minutes,but it gives total minutes in given miliseconds which is not expacted.
     minutes = minutes - (days * 24 * 60 + hours * 60);
 
-    if (diff.asMilliseconds() > 0) {
-      return (
-        <div className={styles.countdown}>
-          <div className={`${styles.countdownColumns} columns is-gapless`}>
-            <div className={`${styles.leftColumn} column is-6 is-black`}>
-              <div>Event Kickoff</div>
+    // if (diff.asMilliseconds() > 0) {
+    return (
+      <div className={styles.countdown}>
+        <div className={`${styles.countdownColumns} columns is-gapless`}>
+          <div className={`${styles.leftColumn} column is-6 is-black`}>
+            <div>Event Kickoff</div>
+          </div>
+          <div className={`${styles.rightColumn} column is-6 is-black`}>
+            <div>
+              <span className={styles.days}>{days}</span> Days
             </div>
-            <div className={`${styles.rightColumn} column is-6 is-black`}>
-              <div>
-                <span className={styles.days}>{days}</span> Days
+            <div>
+              <span className={styles.hours}>{hours}</span> Hours
             </div>
-              <div>
-                <span className={styles.hours}>{hours}</span> Hours
-            </div>
-              <div>
-                <span className={styles.minutes}>{minutes}</span> Minutes
-            </div>
+            <div>
+              <span className={styles.minutes}>{minutes}</span> Minutes
             </div>
           </div>
         </div>
-      )
-    } else {
-      return null
-    }
+      </div>
+    )
+    // } else {
+    //   return null
+    // }
   }
 
 }
 
-const mapStateToProps = ({ summitState }) => ({  
-  now: summitState.nowUtc,
+const mapStateToProps = ({ clockState }) => ({
+  now: clockState.nowUtc,
 })
 
 export default connect(mapStateToProps, null)(Countdown);

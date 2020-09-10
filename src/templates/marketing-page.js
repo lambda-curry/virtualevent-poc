@@ -14,6 +14,7 @@ import Content, { HTMLContent } from '../components/Content'
 import '../styles/style.scss'
 
 import { PHASES } from '../utils/phasesUtils'
+import envVariables from '../utils/envVariables'
 
 import MarketingSite from '../content/marketing-site.json'
 import SummitObject from '../content/summit.json'
@@ -103,7 +104,7 @@ export const MarketingPageTemplate = class extends React.Component {
                   <div>{MarketingSite.heroBanner.date}</div>
                 </div>
                 <h4>{MarketingSite.heroBanner.time}</h4>
-                {/* <div className={styles.heroButtons}>
+                <div className={styles.heroButtons}>
                   {summit_phase >= PHASES.DURING && isLoggedUser ?
                     <a className={styles.link} href={`${envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/'}`} target="_blank" rel="noreferrer">
                       <button className={`${styles.button} button is-large`}>
@@ -131,10 +132,9 @@ export const MarketingPageTemplate = class extends React.Component {
                       }
                     </React.Fragment>
                   }
-                </div> */}
+                </div>
               </div>
-              <div className={`${styles.countdown}`}>
-                Countdown
+              <div>                
                 {summit && <Countdown summit={summit} />}
               </div>
             </div>

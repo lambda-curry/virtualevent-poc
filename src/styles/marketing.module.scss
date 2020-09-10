@@ -1,7 +1,7 @@
 @import './colors.scss';
 
 .is-vertical {
-  flex-direction: column;  
+  flex-direction: column;
 }
 
 .hero-image {
@@ -18,17 +18,61 @@
   flex-direction: column;
   background-color: $color_text_light;
   color: red;
+
   .title {
     font-size: 72px;
   }
+
   .subtitle {
     font-size: 60px;
   }
+
   .date {
     font-size: 48px;
   }
-  .countdown {
-    align-self: flex-start;
+
+  .link {
+    padding-right: 10px;
+
+    .button {
+      background-color: red;
+      color: #fff;
+      height: 5rem;
+      width: 20rem;
+
+      i {
+        color: #fff;
+        height: 1em;
+        width: 2.5em;
+        margin-right: auto;
+        font-size: 1.8em;
+      }
+
+      b {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+      }
+
+      &:hover,
+      &:active {
+        border-color: #fff;
+      }
+
+      &:focus {
+        border-color: #fff;
+        box-shadow: none;
+      }
+    }
+
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+
+  .hero-buttons {
+    margin-top: 2.5rem;
   }
 }
 
