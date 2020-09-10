@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { graphql, navigate } from 'gatsby'
+import URI from "urijs";
 import Masonry from 'react-masonry-css'
 import Slider from "react-slick";
 import Layout from '../components/Layout'
@@ -10,6 +11,8 @@ import ScheduleLiteComponent from "../components/ScheduleLiteComponent"
 import DisqusComponent from '../components/DisqusComponent'
 import Countdown from '../components/Countdown'
 import Content, { HTMLContent } from '../components/Content'
+
+import { doLogin } from "openstack-uicore-foundation/lib/methods";
 
 import '../styles/style.scss'
 
@@ -43,6 +46,17 @@ export const MarketingPageTemplate = class extends React.Component {
     if (MarketingSite.leftColumn.disqus && this.props.isLoggedUser) {
       this.props.getDisqusSSO();
     }
+  }
+
+  getBackURL = () => {
+    let { location } = this.props;    
+    let defaultLocation = envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/';
+    let backUrl = location.state?.backUrl ? location.state.backUrl : defaultLocation;    
+    return URI.encode(backUrl);    
+  }
+
+  onClickLogin = () => {
+    doLogin(this.getBackURL());
   }
 
   render() {

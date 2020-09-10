@@ -236,6 +236,10 @@ h2 {
 
 .disqus-container {
   padding: 0 15px;
+
+  &-keynote {
+    padding: 0 20px;
+  }
 }
 
 .disqus-container-home {
@@ -415,6 +419,12 @@ h2 {
       right: 0;
       left: 20px;
       bottom: 0;
+      padding-right: 20px;
+    }
+
+    &-keynote {
+      position: relative;
+      overflow-y: auto;
       padding-right: 20px;
     }
   }

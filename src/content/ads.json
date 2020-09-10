@@ -66,6 +66,48 @@
           "columnAds": []
         }
       ]
+    },
+    {
+      "section": "keynote",
+      "columns": [
+        {
+          "column": "right",
+          "columnAds": [
+            {
+              "image": "/img/yoco-sponsor-ads-medium-flow.png",
+              "button": {
+                "text": "Learn more",
+                "link": "/virtual-booth/"
+              },
+              "id": null
+            },
+            {
+              "image": "/img/yoco-sponsor-ads-medium-flow.png",
+              "button": {
+                "text": "Learn more",
+                "link": "/virtual-booth/"
+              },
+              "id": null
+            },
+            {
+              "image": "/img/yoco-sponsor-ads-medium-flow.png",
+              "button": {
+                "text": "Learn more",
+                "link": "/virtual-booth/"
+              },
+              "id": null
+            }
+          ]
+        },
+        {
+          "column": "center",
+          "columnAds": []
+        },
+        {
+          "column": "left",
+          "columnAds": []
+        }
+      ]
     }
   ]
 }
