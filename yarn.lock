@@ -12205,10 +12205,10 @@ open@^6.4.0:
   dependencies:
     is-wsl "^1.1.0"
 
-openstack-uicore-foundation@^2.0.63:
-  version "2.0.63"
-  resolved "https://registry.yarnpkg.com/openstack-uicore-foundation/-/openstack-uicore-foundation-2.0.63.tgz#e18c771342eb78f4b3c84535af9b1f81fd06e325"
-  integrity sha512-xOJLo9SgfaQvNO+XReJT91E4EV0W+srvOn8x8+YQPX9r1wmMUd2euTsy1WA3JKorLwf98WvecETpy77O5KXJHQ==
+openstack-uicore-foundation@^2.0.64:
+  version "2.0.64"
+  resolved "https://registry.yarnpkg.com/openstack-uicore-foundation/-/openstack-uicore-foundation-2.0.64.tgz#7f99e06545c027443e662b60f2eb4c128f7889e0"
+  integrity sha512-m8MCddxNWyVpm+io6YBaY4NT2SxOxmj+I3Fvc5eFv1VlZkBVQfHQX85hvyxcMgbhv018sOmeB5B5JmqRJZUwEQ==
 
 opentracing@^0.14.4:
   version "0.14.4"
@@ -15308,10 +15308,10 @@ saxes@^5.0.0:
   dependencies:
     xmlchars "^2.2.0"
 
-schedule-lite@^1.0.51:
-  version "1.0.51"
-  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.51.tgz#ccacf3194fb0023190d54e0ba992831e43f07759"
-  integrity sha512-REbRSvH3oDW1zdDtsi3q/CqxBG+NyeZr27bbW3E8OSo7D4ectJtsPaucCI0aOfv/TbtAEj7qVrlg2dGbMdVLJA==
+schedule-lite@^1.0.52:
+  version "1.0.52"
+  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.52.tgz#b3feb594ab91534525314ea118fc86eb69ab5dda"
+  integrity sha512-o5GDiJmPaTeWxUI2jiARqpbMqPm8eOhVUulHLb+yT4gxtKj/bjFmWeWpaAW0bIiSnmssKgICmxeAMcwUO5T22w==
 
 scheduler@^0.18.0:
   version "0.18.0"
