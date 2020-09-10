@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { graphql, navigate } from 'gatsby'
 import Masonry from 'react-masonry-css'
+import Slider from "react-slick";
 import Layout from '../components/Layout'
 import MarketingHeroComponent from '../components/MarketingHeroComponent'
 import ScheduleLiteComponent from "../components/ScheduleLiteComponent"
@@ -22,6 +23,20 @@ import { getDisqusSSO } from '../actions/user-actions'
 import styles from "../styles/marketing.module.scss"
 
 export const MarketingPageTemplate = class extends React.Component {
+
+  constructor(props) {
+    super(props);
+
+    const sliderSettings = {
+      autoplay: true,
+      arrows: false,
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
+  }
 
   componentWillMount() {
     if (MarketingSite.leftColumn.disqus && this.props.isLoggedUser) {
@@ -123,7 +138,7 @@ export const MarketingPageTemplate = class extends React.Component {
                 {summit && <Countdown summit={summit} />}
               </div>
             </div>
-            <div className={`column is-full px-0 pb-5 ${styles.heroMasonry}`} >
+            <div className={`column is-full px-0 pt-0 pb-5 ${styles.heroMasonry}`} >
               <Masonry
                 breakpointCols={2}
                 className={`my-masonry-grid ${styles.masonry}`}
@@ -135,8 +150,19 @@ export const MarketingPageTemplate = class extends React.Component {
                         <img src={item.image} />
                       </div>
                     )
-                  } else {
-                    return null
+                  } else if (item.images) {
+                    return (
+                      <Slider {...this.sliderSettings}>
+                        {item.images.map((img, index) => {
+                          return (
+                            <div key={index}>
+                              <div className={styles.imageSlider} style={{ backgroundImage: `url(${img.image})` }}>
+                              </div>
+                            </div>
+                          )
+                        })}
+                      </Slider>
+                    )
                   }
                 })}
               </Masonry>

@@ -13,12 +13,12 @@ export default class
   }
 
   render() {
-    let { isLoggedUser, styles } = this.props;
+    let { isLoggedUser, styles, marketing } = this.props;
 
     if (isLoggedUser) {
       return (
 
-        <div className={styles.buttons}>
+        <div className={`${styles.buttons} ${marketing ? styles.buttonsHalfColor : ``}`}>
           {/* <a className={`${styles.userIcon}`}>
             <i className="fa fa-exclamation-circle icon is-medium" style={{fontSize: '1.5rem'}} />
           </a>

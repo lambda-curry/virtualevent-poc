@@ -29,18 +29,31 @@
   "sponsors": [
     {
       "image": "/img/yoco-sponsor-ads-large-wherehol-vert.png",
-      "size": "simple"
+      "link": ""
     },
     {
-      "image": "/img/yoco-sponsor-ads-medium-tilted.png",
-      "size": "simple"
-    },            
+      "images": [
+        {
+          "image": "/img/yoco-sponsor-ads-medium-tilted.png",
+          "link": ""
+        },
+        {
+          "image": "/img/yoco-sponsor-ads-medium-treva.png",
+          "link": ""
+        },
+        {
+          "image": "/img/yoco-sponsor-ads-medium-tilted.png",
+          "link": ""
+        }
+      ]
+    },
     {
       "image": "/img/yoco-sponsor-ads-medium-treva.png",
-      "size": "double"
-    },{
+      "link": ""
+    },
+    {
       "image": "/img/yoco-sponsor-ads-large-apex-vert.png",
-      "size": "double"
+      "link": ""
     }
   ]
 }

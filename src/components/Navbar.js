@@ -43,15 +43,17 @@ const Navbar = class extends React.Component {
 
   render() {
 
-    let { isLoggedUser, logo } = this.props;
+    let { isLoggedUser, logo, marketing } = this.props;
 
     let { summit } = SummitObject
     let defaultPath = envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/';
-    
+
+    console.log('is marketing', marketing)
+
     return (
       <React.Fragment>
         <nav className={`${styles.navbar}`} role="navigation" aria-label="main navigation">
-          <div className={styles.navbarBrand}>
+          <div className={`${styles.navbarBrand} ${marketing ? `${styles.navbarBrandHalfColor}` : ``}`}>
             <Link to={isLoggedUser ? defaultPath : '/'} className={styles.navbarItem}>
               {logo &&
                 <img src={logo} alt={summit.name} />
@@ -67,7 +69,7 @@ const Navbar = class extends React.Component {
             </a>
           </div>
 
-          <div id="navbarBasicExample" className={`${styles.navbarMenu} ${this.state.navBarActiveClass}`}>
+          <div id="navbarBasicExample" className={`${styles.navbarMenu} ${marketing ? `${styles.navbarMenuHalfColor}` : ``} ${this.state.navBarActiveClass}`}>
             <div className={styles.navbarStart}>
               {/* <Link to="/a/" className={styles.navbarItem}>
               Home
@@ -80,15 +82,15 @@ const Navbar = class extends React.Component {
                 } else {
                   return (
                     item.display &&
-                    <div className={styles.navbarItem} key={index}>
-                      <Link to={item.link} className={styles.link}>
+                    <div className={`${styles.navbarItem} ${marketing ? `${styles.navbarItemHalfColor}` : ``}`} key={index}>
+                      <Link to={item.link} className={`${styles.link} ${marketing ? `${styles.linkHalfColor}`:``}`}>
                         <span>{item.title}</span>
                       </Link>
                     </div>
                   )
                 }
               })}
-              <LogoutButton styles={styles} isLoggedUser={isLoggedUser} />
+              <LogoutButton styles={styles} marketing={marketing} isLoggedUser={isLoggedUser} />
             </div>
           </div>
         </nav>

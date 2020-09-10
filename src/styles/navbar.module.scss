@@ -10,8 +10,11 @@
 
   .navbar-brand {
     padding-left: 1rem;
-    width: 50%;
-    background-color: red;
+
+    &--half-color {
+      width: 50%;
+      background-color: red;
+    }
 
     img {
       max-height: 4rem;
@@ -23,33 +26,59 @@
   }
 
   .user-icon {
-    color: red;
     padding-left: 10px;
+    color: $color_text_light;
   }
 
+
+
   .navbar-item {
-    color: red;
+    color: $color_text_light;
+
+    &--half-color {
+      color: red;
+    }
   }
 
   .navbar-menu {
-    background-color: $color_text_light;
+    &--half-color {
+      background-color: $color_text_light;
+    }
+
     .navbar-item {
       font-weight: 300;
 
       .link {
-        color: red;
+        color: $color_text_light;
 
         &:hover {
-          color: red;
           text-decoration: none;
+          color: $color_text_light;
         }
 
         &:active {
-          color: red;
           text-decoration: underline;
+          color: $color_text_light;
         }
 
         &:visited {
+          color: $color_text_light;
+        }
+
+        &--half-color {
+
+          &:hover,
+          &:active,
+          &:visited {
+            color: red;
+          }
+        }
+      }
+    }
+
+    .buttons {
+      &--half-color {
+        .user-icon {
           color: red;
         }
       }
@@ -87,12 +116,16 @@
 
   .user-burger {
     display: block;
-    color: red;
+    color: $color_text_light;
+
+    &--half-color {
+      color: red;
+    }
   }
 
   .user-icon {
-    color: red;
     padding-left: 10px;
+    color: $color_text_light;
   }
 }
 
@@ -100,9 +133,11 @@
   .navbar {
 
     .navbar-brand {
-      width: auto;
+      &--half-color {
+        width: auto;
+      }
     }
-    
+
     .navbar-burger {
       color: $color_text_light;
     }
