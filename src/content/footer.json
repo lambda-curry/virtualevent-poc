@@ -49,20 +49,6 @@
           "link": "p/footer-content/"
         }
       ]
-    },
-    {
-      "title": "Test Column",
-      "display": true,
-      "items": [
-        {
-          "title": "Test Column Item 1",
-          "link": "/footer-content/"
-        },
-        {
-          "title": "Test Column Item 2",
-          "link": "/footer-content/"
-        }
-      ]
     }
   ],
   "logo": {
