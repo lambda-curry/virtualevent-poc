@@ -13,7 +13,7 @@
 
     &--half-color {
       width: 50%;
-      background-color: #e20012;
+      background-color: $color_primary;
     }
 
     img {
@@ -145,18 +145,18 @@
     .navbar-menu {
       .navbar-item {
         .link {
-          color: $color_primary;
+          color: $color_text_dark;
 
           &:hover {
-            color: $color_primary;
+            color: $color_text_dark;
           }
 
           &:active {
-            color: $color_primary;
+            color: $color_text_dark;
           }
 
           &:visited {
-            color: $color_primary;
+            color: $color_text_dark;
           }
         }
       }
