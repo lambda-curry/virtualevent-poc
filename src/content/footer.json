@@ -34,7 +34,7 @@
     },
     {
       "title": "Membership",
-      "display": false,
+      "display": true,
       "items": [
         {
           "title": "Corporate members",
@@ -46,6 +46,20 @@
         },
         {
           "title": "Services",
+          "link": "p/footer-content/"
+        }
+      ]
+    },
+    {
+      "title": "Test Column",
+      "display": true,
+      "items": [
+        {
+          "title": "Test Column Item 1",
+          "link": "/footer-content/"
+        },
+        {
+          "title": "Test Column Item 2",
           "link": "/footer-content/"
         }
       ]
@@ -76,11 +90,6 @@
       {
         "icon": "fa-youtube",
         "link": "https://www.youtube.com/user/OpenComputeProject",
-        "display": true
-      },
-      {
-        "link": "/footer-content/",
-        "icon": "TEST",
         "display": true
       }
     ]
