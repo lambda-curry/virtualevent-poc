@@ -34,7 +34,7 @@
     },
     {
       "title": "Membership",
-      "display": false,
+      "display": true,
       "items": [
         {
           "title": "Corporate members",
@@ -46,7 +46,7 @@
         },
         {
           "title": "Services",
-          "link": "/footer-content/"
+          "link": "p/footer-content/"
         }
       ]
     }
@@ -76,11 +76,6 @@
       {
         "icon": "fa-youtube",
         "link": "https://www.youtube.com/user/OpenComputeProject",
-        "display": true
-      },
-      {
-        "link": "/footer-content/",
-        "icon": "TEST",
         "display": true
       }
     ]
