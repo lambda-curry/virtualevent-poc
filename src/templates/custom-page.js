@@ -33,7 +33,7 @@ const CustomPage = ({ data, location, summit_phase, isLoggedUser }) => {
   let { summit } = SummitObject;
 
   return (
-    <Layout>
+    <Layout marketing={true}>
       <OCPHeroComponent
         summit={summit}
         summit_phase={summit_phase}

@@ -179,7 +179,7 @@ const EventPage = (
 ) => {
 
   return (
-    <Layout>
+    <Layout marketing={true}>
       {event && event.id &&
       <AttendanceTracker
           key={`att-tracker-${event.id}`}

@@ -21,7 +21,7 @@ const SchedulePage = ({summit_phase, isLoggedUser, loggedUser}) => {
   }
 
   return (
-    <Layout>
+    <Layout marketing={true}>
       <div className="container">
         <h1>Schedule</h1>
         <hr/>

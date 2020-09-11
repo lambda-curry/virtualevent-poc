@@ -61,7 +61,7 @@ const VirtualBoothPage = ({ data }) => {
   const { frontmatter, html } = data.markdownRemark
 
   return (
-    <Layout>
+    <Layout marketing={true}>
       <VirtualBoothPageTemplate
         contentComponent={HTMLContent}
         title={frontmatter.title}

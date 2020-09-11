@@ -128,7 +128,7 @@ const HomePage = (
 ) => {
 
   return (
-    <Layout>
+    <Layout marketing={true}>
       <OrchestedTemplate
         loggedUser={loggedUser}
         user={user}
