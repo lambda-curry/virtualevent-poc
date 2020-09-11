@@ -1,39 +1,14 @@
 {
   "items": [
     {
-      "title": "Lobby",
+      "title": "NOA Service Desk",
       "link": "/a/",
       "display": true
     },
     {
-      "title": "Schedule",
+      "title": "Tech Support",
       "link": "/a/schedule",
       "display": true
-    },
-    {
-      "title": "About the event",
-      "link": "/about-event",
-      "display": true
-    },
-    {
-      "title": "Who we are",
-      "link": "/who-we-are",
-      "display": true
-    },
-    {
-      "title": "Past events",
-      "link": "/past-events",
-      "display": true
-    },
-    {
-      "title": "Contact",
-      "link": "/contact",
-      "display": true
-    },
-    {
-      "title": "Help",
-      "link": "/help",
-      "display": true
-    }
+    }    
   ]
 }

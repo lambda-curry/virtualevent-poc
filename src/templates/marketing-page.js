@@ -49,10 +49,10 @@ export const MarketingPageTemplate = class extends React.Component {
   }
 
   getBackURL = () => {
-    let { location } = this.props;    
+    let { location } = this.props;
     let defaultLocation = envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/';
-    let backUrl = location.state?.backUrl ? location.state.backUrl : defaultLocation;    
-    return URI.encode(backUrl);    
+    let backUrl = location.state?.backUrl ? location.state.backUrl : defaultLocation;
+    return URI.encode(backUrl);
   }
 
   onClickLogin = () => {
@@ -78,27 +78,35 @@ export const MarketingPageTemplate = class extends React.Component {
       <div className="columns" id="marketing-columns">
         <div className="column is-half" >
           <div className={`columns ${styles.isVertical}`}>
-            <div className={`column is-full px-6 py-6 ${styles.heroImage}`} >
-              Imagen de nintendo
+            <div className={`column is-full px-6 pt-3 pb-0 ${styles.heroImage}`} >
+              <img src="/img/NinSMAC20_Marketing_Header_Mario.png" />
             </div>
-            <div className={`column is-full px-6 py-6 ${styles.heroWidgets}`} >
-              {MarketingSite.leftColumn.schedule &&
+            <div className={`column is-full px-6 pt-0 pb-6 ${styles.heroWidgets}`} >
+              {MarketingSite.leftColumn.schedule.display &&
                 <React.Fragment>
-                  <h2 style={{ fontWeight: 'bold' }}>Full Event Schedule</h2>
+                  <h2><b>{MarketingSite.leftColumn.schedule.title}</b></h2>
                   <ScheduleLiteComponent
                     {...scheduleProps}
                     page="marketing-site"
                     accessToken={loggedUser.accessToken}
                     landscape={true}
+                    showNav={true}
                     showAllEvents={true}
                     eventCount={100}
                   />
                 </React.Fragment>
               }
-              {MarketingSite.leftColumn.disqus &&
+              {MarketingSite.leftColumn.disqus.display &&
                 <React.Fragment>
-                  <h2 style={{ fontWeight: 'bold' }}>Join the conversation</h2>
+                  <h2><b>{MarketingSite.leftColumn.disqus.title}</b></h2>
                   <DisqusComponent page="marketing-site" disqusSSO={user?.disqusSSO} summit={summit} />
+                </React.Fragment>
+              }
+              {MarketingSite.leftColumn.image.display &&
+                <React.Fragment>
+                  <h2><b>{MarketingSite.leftColumn.image.title}</b></h2>
+                  <br />
+                  <img src={MarketingSite.leftColumn.image.src} />
                 </React.Fragment>
               }
             </div>
@@ -148,7 +156,7 @@ export const MarketingPageTemplate = class extends React.Component {
                   }
                 </div>
               </div>
-              <div>                
+              <div>
                 {summit && <Countdown summit={summit} />}
               </div>
             </div>
@@ -158,13 +166,13 @@ export const MarketingPageTemplate = class extends React.Component {
                 className={`my-masonry-grid ${styles.masonry}`}
                 columnClassName={`my-masonry-grid_column ${styles.column}`}>
                 {MarketingSite.sponsors.map((item, index) => {
-                  if (item.image) {
+                  if (item.images.length === 1) {
                     return (
                       <div key={index}>
-                        <img src={item.image} />
+                        <img src={item.images[0].image} />
                       </div>
                     )
-                  } else if (item.images) {
+                  } else if (item.images.length > 1) {
                     return (
                       <Slider {...this.sliderSettings}>
                         {item.images.map((img, index) => {
