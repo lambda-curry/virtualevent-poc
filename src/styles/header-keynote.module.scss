@@ -1,0 +1,18 @@
+@import './colors.scss';
+
+.body {
+  display: flex;    
+  height: 80px;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+}
+
+.buttons {
+  button:first-of-type {
+    margin-right: 10px;
+    background-color: $color_secondary_contrast;
+  };
+}

@@ -9,12 +9,9 @@ import SummitObject from '../content/summit.json'
 import Layout from '../components/Layout'
 
 import DisqusComponent from '../components/DisqusComponent'
-import Etherpad from '../components/Etherpad'
-import SimpleChatWidgetComponent from '../components/SimpleChatWidgetComponent'
 import VideoComponent from '../components/VideoComponent'
 import TalkComponent from '../components/TalkComponent'
-import DocumentsComponent from '../components/DocumentsComponent'
-import EventHeroComponent from '../components/EventHeroComponent'
+import HeaderKeynote from '../components/HeaderKeynote'
 import HeroComponent from '../components/HeroComponent'
 import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
 import AdvertiseComponent from '../components/AdvertiseComponent'
@@ -91,7 +88,7 @@ export const KeynotePageTemplate = class extends React.Component {
       if (event) {
         return (
           <>
-            {/* <EventHeroComponent /> */}
+            <HeaderKeynote event={event} />
             <section className="section px-0 py-0" style={{ marginBottom: event.class_name !== 'Presentation' || eventStarted < PHASES.DURING || !event.streaming_url ? '-3rem' : '' }}>
               <div className="columns is-gapless">
                 {eventStarted >= PHASES.DURING && event.streaming_url ?
