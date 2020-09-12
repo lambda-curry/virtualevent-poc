@@ -17,6 +17,13 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        path: `${__dirname}/static/fonts`,
+        name: 'fonts',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         path: `${__dirname}/src/pages`,
         name: 'pages',
       },
@@ -27,21 +34,6 @@ module.exports = {
         path: `${__dirname}/src/img`,
         name: 'images',
       },
-    },
-    {
-      resolve: 'gatsby-plugin-webfonts',
-      options: {
-        fonts: {
-          google: [
-            {
-              family: 'Nunito',
-              variants: ['300', '700'],
-              fontDisplay: 'swap',
-              strategy: 'selfHosted'
-            },
-          ],
-        },
-      }
     },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
