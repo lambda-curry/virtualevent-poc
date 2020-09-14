@@ -2,7 +2,7 @@
   "heroBanner": {
     "title": "NOA Sales & Marketing Annual Conference",
     "subTitle": "",
-    "date": "September 22 –24, 2020",
+    "date": "September 22–24, 2020",
     "time": "",
     "dateLayout": false,
     "buttons": {
@@ -34,7 +34,7 @@
     "image": {
       "display": true,
       "title": "",
-      "src": "/img/NinSMAC20_Marketing_Schedule_Day1.png"
+      "src": "/img/ninsmac20_marketing_schedule_all-days.png"
     }
   },
   "sponsors": [
