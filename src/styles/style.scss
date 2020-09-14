@@ -173,7 +173,7 @@ h2 {
 
 #marketing-columns {
   background-color: #e20012;
-  background-image: url('/img/NinSMAC20_Marketing_Header_Background.png');
+  background-image: url('/img/NinSMAC20_Marketing_Header_Background-Wide.png');
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: contain;
@@ -183,6 +183,14 @@ h2 {
 #marketing-slider {
   .slick-track {
     height: 350px;
+  }
+}
+
+.slick-arrow {
+  z-index: 1;
+
+  &::before {
+    color: $color_primary;
   }
 }
 

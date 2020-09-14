@@ -30,16 +30,6 @@ export const MarketingPageTemplate = class extends React.Component {
 
   constructor(props) {
     super(props);
-
-    const sliderSettings = {
-      autoplay: true,
-      arrows: false,
-      dots: false,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
   }
 
   componentWillMount() {
@@ -73,6 +63,16 @@ export const MarketingPageTemplate = class extends React.Component {
         onEventClick: (ev) => navigate(`/a/event/${ev.id}`),
       }
     }
+
+    const sliderSettings = {
+      autoplay: true,
+      arrows: true,
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
 
     return (
       <div className="columns" id="marketing-columns">
@@ -180,7 +180,7 @@ export const MarketingPageTemplate = class extends React.Component {
                     )
                   } else if (item.images.length > 1) {
                     return (
-                      <Slider {...this.sliderSettings}>
+                      <Slider {...sliderSettings}>
                         {item.images.map((img, index) => {
                           return (
                             <div className={styles.imageSlider} key={index}>
