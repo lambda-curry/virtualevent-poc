@@ -154,8 +154,11 @@ collections:
               {label: "Disqus", name: "disqus", widget: boolean, required: false},
             ]}
           - {label: "Sponsors", name: "sponsors", widget: list, fields: [
-              {label: "Image", name: "image", widget: image, required: false},
-              {label: "Size", name: "size", widget: hidden}
+              {label: "Name", name: title, widget: hidden},
+              {label: "Images", name: "images", widget: list, fields: [
+                {label: "Image", name: "image", widget: image, required: false},
+                {label: "Link", name: "link", widget: string, required: false}
+              ]}              
             ]}
   - name: "virtualBooth"
     label: "Virtual Booth"
