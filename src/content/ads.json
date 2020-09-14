@@ -74,25 +74,25 @@
           "column": "right",
           "columnAds": [
             {
-              "image": "/img/yoco-sponsor-ads-medium-flow.png",
+              "image": "/img/NinSMAC20_Lobby_WKSHOP_DAY1_WIP.png",
               "button": {
-                "text": "Learn more",
+                "text": "",
                 "link": "/virtual-booth/"
               },
               "id": null
             },
             {
-              "image": "/img/yoco-sponsor-ads-medium-flow.png",
+              "image": "/img/NinSMAC20_Lobby_SalesPreso_DAY1_WIP.png",
               "button": {
-                "text": "Learn more",
+                "text": "",
                 "link": "/virtual-booth/"
               },
               "id": null
             },
             {
-              "image": "/img/yoco-sponsor-ads-medium-flow.png",
+              "image": "/img/NinSMAC20_Lobby_Photo_DAY1_WIP_V3.png",
               "button": {
-                "text": "Learn more",
+                "text": "",
                 "link": "/virtual-booth/"
               },
               "id": null
