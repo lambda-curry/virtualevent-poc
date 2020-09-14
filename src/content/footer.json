@@ -78,15 +78,15 @@
   "legal": [
     {
       "title": "Privacy Policy",
-      "link": "/footer-content/"
+      "link": "/policy/"
     },
     {
       "title": "Cookie Policy",
-      "link": "/footer-content/"
+      "link": "/cookies/"
     },
     {
       "title": "California Privacy Rights Statement",
-      "link": "/footer-content/"
+      "link": "/california-privacy-rights-statement/"
     }
   ]
 }

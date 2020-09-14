@@ -32,7 +32,7 @@
 
 .legals-bar {
   color: $color_text_light;
-  background-color: #9d080c;
+  background-color: $color_secondary;
   padding: 1rem 2rem;
   display: flex;
 
@@ -125,7 +125,7 @@
     }
 
     .legal-item {
-      margin-right: 1rem;
+      margin-right: 1.75rem;
     }
   }
 }
