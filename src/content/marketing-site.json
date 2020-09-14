@@ -15,7 +15,7 @@
         "display": true
       }
     },
-    "background": "",
+    "background": "/img/logo.svg",
     "images": [
       {
         "image": "/img/flavor_wheel.jpg"
