@@ -84,7 +84,9 @@ export const MarketingPageTemplate = class extends React.Component {
             <div className={`column is-full px-6 pt-0 pb-6 ${styles.heroWidgets}`} >
               {MarketingSite.leftColumn.schedule.display &&
                 <React.Fragment>
-                  <h2><b>{MarketingSite.leftColumn.schedule.title}</b></h2>
+                  {MarketingSite.leftColumn.schedule.title && 
+                    <h2><b>{MarketingSite.leftColumn.schedule.title}</b></h2>
+                  }
                   <ScheduleLiteComponent
                     {...scheduleProps}
                     page="marketing-site"
@@ -98,13 +100,17 @@ export const MarketingPageTemplate = class extends React.Component {
               }
               {MarketingSite.leftColumn.disqus.display &&
                 <React.Fragment>
-                  <h2><b>{MarketingSite.leftColumn.disqus.title}</b></h2>
+                  {MarketingSite.leftColumn.disqus.title && 
+                    <h2><b>{MarketingSite.leftColumn.disqus.title}</b></h2>
+                  }
                   <DisqusComponent page="marketing-site" disqusSSO={user?.disqusSSO} summit={summit} />
                 </React.Fragment>
               }
               {MarketingSite.leftColumn.image.display &&
                 <React.Fragment>
-                  <h2><b>{MarketingSite.leftColumn.image.title}</b></h2>
+                  {MarketingSite.leftColumn.image.title && 
+                    <h2><b>{MarketingSite.leftColumn.image.title}</b></h2>
+                  }
                   <br />
                   <img src={MarketingSite.leftColumn.image.src} />
                 </React.Fragment>
@@ -115,7 +121,7 @@ export const MarketingPageTemplate = class extends React.Component {
         <div className="column is-half" >
           <div className={`columns ${styles.isVertical}`}>
             <div className={`column is-full px-0 pb-0 ${styles.heroData}`} >
-              <div className="container">
+              <div className="px-6 pb-6">
                 <h1 className={`${styles.title}`}>
                   {MarketingSite.heroBanner.title}
                 </h1>
@@ -168,7 +174,7 @@ export const MarketingPageTemplate = class extends React.Component {
                 {MarketingSite.sponsors.map((item, index) => {
                   if (item.images.length === 1) {
                     return (
-                      <div key={index}>
+                      <div className={'single'} key={index}>
                         <img src={item.images[0].image} />
                       </div>
                     )
@@ -177,9 +183,8 @@ export const MarketingPageTemplate = class extends React.Component {
                       <Slider {...this.sliderSettings}>
                         {item.images.map((img, index) => {
                           return (
-                            <div key={index}>
-                              <div className={styles.imageSlider} style={{ backgroundImage: `url(${img.image})` }}>
-                              </div>
+                            <div className={styles.imageSlider} key={index}>
+                              <img src={img.image} />
                             </div>
                           )
                         })}

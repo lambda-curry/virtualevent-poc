@@ -5,16 +5,13 @@
 }
 
 .hero-image {
-  height: 150vh;
 }
 
 .hero-widgets {
   overflow: hidden;
-  height: 80vh;
 }
 
 .hero-data {
-  height: 60vh;
   display: flex;
   flex-direction: column;
   background-color: $color_text_light;
@@ -22,6 +19,7 @@
 
   .title {
     font-size: 72px;
+    font-family: 'AvantGardeGothicITCW02Dm'
   }
 
   .subtitle {
@@ -80,16 +78,53 @@
 .hero-masonry {
 
   img {
-    height: 50vh;
     object-fit: cover;
+    height: 50vh;
   }
 
   .image-slider {
-    height: 120vh;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     min-height: 100%;
     overflow: hidden;
+
+    img {
+      height: 100vh;
+    }
+  }
+}
+
+
+@media (max-width: 978px) {
+  .hero-data {
+    .title {
+      font-size: 60px;
+    }
+
+    .subtitle {
+      font-size: 48px;
+    }
+
+    .date {
+      font-size: 36px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-data {
+    .title {
+      font-size: 48px;
+    }
+
+    .subtitle {
+      font-size: 36px;
+    }
+
+    .date {
+      font-size: 24px;
+    }
   }
 }

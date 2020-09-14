@@ -49,13 +49,13 @@ class Countdown extends React.Component {
           </div>
           <div className={`${styles.rightColumn} column is-6 is-black`}>
             <div>
-              <span className={styles.days}>{days}</span> Days
+              <span className={styles.days}>{days}</span> {days === 1 ? 'Day' : 'Days' }
             </div>
             <div>
-              <span className={styles.hours}>{hours}</span> Hours
+              <span className={styles.hours}>{hours}</span> Hr
             </div>
             <div>
-              <span className={styles.minutes}>{minutes}</span> Minutes
+              <span className={styles.minutes}>{minutes}</span> Min
             </div>
           </div>
         </div>
