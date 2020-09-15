@@ -23,9 +23,7 @@ title: FAQ
 
 * SMAC 2020 is scheduled for Tuesday, September 22nd thru Thursday, September 24th.
 
-  ![SMAC 2020 Schedule](/img/nosmac-sched.png "SMAC 2020 Schedule")
-
-
+  ![SMAC 2020 Schedule](/img/nosmac-sched-sm.png "SMAC 2020 Schedule")
 
 #### My co-worker can’t attend and has asked me to attend in their place
 
