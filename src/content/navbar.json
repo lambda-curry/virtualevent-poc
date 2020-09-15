@@ -9,6 +9,11 @@
       "title": "Tech Support",
       "link": "/",
       "display": true
-    }    
+    },
+    {
+      "title": "FAQ",
+      "link": "/faq/",
+      "display": true
+    }
   ]
 }
