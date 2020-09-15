@@ -10,6 +10,7 @@ import MarketingHeroComponent from '../components/MarketingHeroComponent'
 import ScheduleLiteComponent from "../components/ScheduleLiteComponent"
 import DisqusComponent from '../components/DisqusComponent'
 import Countdown from '../components/Countdown'
+import Link from '../components/Link'
 import Content, { HTMLContent } from '../components/Content'
 
 import { doLogin } from "openstack-uicore-foundation/lib/methods";
@@ -175,7 +176,13 @@ export const MarketingPageTemplate = class extends React.Component {
                   if (item.images.length === 1) {
                     return (
                       <div className={'single'} key={index}>
-                        <img src={item.images[0].image} />
+                        {item.images[0].link ?
+                          <Link to={item.images[0].link}>
+                            <img src={item.images[0].image} />
+                          </Link>
+                          :
+                          <img src={item.images[0].image} />
+                        }
                       </div>
                     )
                   } else if (item.images.length > 1) {
@@ -184,7 +191,13 @@ export const MarketingPageTemplate = class extends React.Component {
                         {item.images.map((img, index) => {
                           return (
                             <div className={styles.imageSlider} key={index}>
-                              <img src={img.image} />
+                              {img.link ?
+                                <Link to={img.link}>
+                                  <img src={img.image} />
+                                </Link>
+                                :
+                                <img src={img.image} />
+                              }
                             </div>
                           )
                         })}
