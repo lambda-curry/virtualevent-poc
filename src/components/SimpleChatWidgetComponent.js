@@ -19,7 +19,10 @@ const SimpleChatWidgetComponent = class extends React.Component {
         forumSlug: envVariables.STREAM_IO_SSO_SLUG,
         onAuthError: (err, res) => console.log(err),
         openDir: "left",
-        title: "Private Chat"
+        title: "Private Chat",
+        showHelp: true,
+        showQA: true,
+        hideUsers: false,
     };
 
     return (
@@ -28,7 +31,7 @@ const SimpleChatWidgetComponent = class extends React.Component {
           <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/1.0.2/awesome-bootstrap-checkbox.min.css" />
         </Helmet>
         <div style={{height: 500}}>
-          <SimpleChatWidget {...widgetProps} />
+          <SimpleChatWidget {...widgetProps} {...this.props} />
         </div>
       </>
     )
