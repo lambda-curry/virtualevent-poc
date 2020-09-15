@@ -53,7 +53,7 @@
                 "text": "Learn more",
                 "link": "/virtual-booth/"
               },
-              "id": null
+              "id": "875"
             }
           ]
         },
@@ -61,7 +61,8 @@
           "column": "center",
           "columnAds": [
             {
-              "image": "/img/Logo-Top-Tier-Apex.png"
+              "image": "/img/Logo-Top-Tier-Apex.png",
+              "id": "875"
             }
           ]
         },
@@ -69,7 +70,8 @@
           "column": "right",
           "columnAds": [
             {
-              "image": "/img/ad_Ericsson.png"
+              "image": "/img/ad_Ericsson.png",
+              "id": "875"
             }
           ]
         }
