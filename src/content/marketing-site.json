@@ -42,23 +42,23 @@
       "title": "Top Left",
       "images": [
         {
-          "image": "/img/marketing/TopLeft/SMAC2019-Image1.png",
+          "image": "/img/smac2019-image1.jpg",
           "link": ""
         },
         {
-          "image": "/img/marketing/TopLeft/SMAC2019-Image2.png",
+          "image": "/img/smac2019-image2.jpg",
           "link": ""
         },
         {
-          "image": "/img/marketing/TopLeft/SMAC2019-Image3.png",
+          "image": "/img/smac2019-image3.jpg",
           "link": ""
         },
         {
-          "image": "/img/marketing/TopLeft/SMAC2019-Image4.png",
+          "image": "/img/smac2019-image4.jpg",
           "link": ""
         },
         {
-          "image": "/img/marketing/TopLeft/SMAC2019-Image5.png",
+          "image": "/img/smac2019-image5.jpg",
           "link": ""
         }
       ]
@@ -67,7 +67,7 @@
       "title": "Top Right",
       "images": [
         {
-          "image": "/img/marketing/TopRight/DSC_6173_Carlyn_LeDuc_edit.jpg",
+          "image": "/img/dsc_6173_carlyn_leduc_edit.jpg",
           "link": ""
         }
       ]
@@ -76,7 +76,7 @@
       "title": "Bottom Left",
       "images": [
         {
-          "image": "/img/marketing/BottomLeft/Breakout_SMAC2019_06_edit.jpg",
+          "image": "/img/breakout_smac2019_06_tpt.jpg",
           "link": ""
         }
       ]
@@ -85,12 +85,18 @@
       "title": "Bottom Right",
       "images": [
         {
-          "image": "/img/marketing/BottomRight/LuckyStrike_SMAC2019_05_Edit.jpg",
+          "image": "/img/ninsmac20_marketing_bottom_right_1.jpg",
           "link": ""
         },
         {
-          "image": "/img/marketing/BottomRight/LuckyStrike_SMAC2019_05_Edit.jpg",
+          "image": "/img/ninsmac20_marketing_bottom_right_2.jpg",
           "link": ""
+        },
+        {
+          "image": "/img/ninsmac20_marketing_bottom_right_3.jpg"
+        },
+        {
+          "image": "/img/ninsmac20_marketing_bottom_right_4.jpg"
         }
       ]
     }
