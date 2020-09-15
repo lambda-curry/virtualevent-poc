@@ -105,12 +105,12 @@ export const MarketingPageTemplate = class extends React.Component {
               </React.Fragment>
             }
             {MarketingSite.leftColumn.disqus.display &&
-              <React.Fragment>
+              <div className={styles.disqusBackground}>
                 {MarketingSite.leftColumn.disqus.title &&
                   <h2><b>{MarketingSite.leftColumn.disqus.title}</b></h2>
                 }
                 <DisqusComponent page="marketing-site" disqusSSO={user?.disqusSSO} summit={summit} />
-              </React.Fragment>
+              </div>
             }
           </div>
           <div className={`column is-half px-0 pt-0 pb-5 ${styles.heroMasonry}`} >

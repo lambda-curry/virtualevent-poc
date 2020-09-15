@@ -4,11 +4,19 @@
   flex-direction: column;
 }
 
-.hero-image {
-}
+.hero-image {}
 
 .hero-widgets {
   overflow: hidden;
+
+  .disqus-background {
+    background-color: $color_text_light;
+    margin: 0 -6rem;
+    padding: 2rem 6rem;
+    color: $color_text_dark;
+    position: relative;
+    height: 100%;
+  }
 }
 
 .hero-data {

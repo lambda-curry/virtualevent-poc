@@ -454,7 +454,7 @@ h2 {
   }
 
   #marketing-columns {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
 
   #marketing-slider {
@@ -518,9 +518,10 @@ h2 {
     right: 0;
 
     &-marketing {
-      position: relative;
-      overflow-y: auto;      
-      padding-right: 20px;
+      position: absolute;
+      overflow-y: auto;
+      width: 100%;      
+      padding-right: 110px;
     }
 
     &-keynote {
