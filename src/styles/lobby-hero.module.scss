@@ -62,10 +62,32 @@ div.column:first-of-type {
 }
 
 .nmi-hero {
+  position: relative;  
+  overflow: hidden;
+  height: 500px;
+  .nmi-hero-video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .nmi-hero-columns {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .nmi-hero-container {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    padding: 6rem 12rem;
+  }
   .nmi-link {
-    display: inline-block;
-    width: 297px;
-    height: 93px;
+    display: inline-flex;
+    width: 160px;
+    height: 60px;    
+    background-size: contain;
+    background-repeat: no-repeat;
     background-image: url('/img/AC-SMAC20_Marketing_log-in-button_enabled_trans_bkgd.png');
   }
   .nmi-link:hover {
@@ -374,5 +396,10 @@ div.column:first-of-type {
         min-height: 150px;
       }
     }
+  }
+
+  .nmi-hero {
+    position: relative;  
+    height: auto;
   }
 }

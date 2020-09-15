@@ -20,26 +20,19 @@ const onClickLogin = (location) => {
 }
 
 const NMIHeroComponent = ({ location, isLoggedUser, summit, summit_phase }) => (
-  <section className={`${styles.nmiHero}`}>
+  <section className={`${styles.nmiHero} py-0 px-0`}>
+    <video className={`${styles.nmiHeroVideo} is-hidden-mobile`} preload="auto" autoPlay loop muted="muted" volume="0">
+      <source src="img/Milky_Way_Galaxy.mp4" type="video/mp4" />
+    </video>
+    <div className="is-hidden-tablet">
+      <img src="img/AC-SMAC20_Marketing_Header-Mobile.png" />
+    </div>
     <div className={`${styles.nmiHeroColumns} columns`} style={{ backgroundImage: `url(${HeroContent.heroBanner.background})` }}>
       <div className={`column is-full px-0 py-0`}>
         <div className={`${styles.nmiHeroContainer} hero-body`}>
-          <div className="container">
-            <h1 className={`${styles.title}`}>
-              {HeroContent.heroBanner.title}
-            </h1>
-            <h2 className={`${styles.subtitle}`}>
-              {HeroContent.heroBanner.subTitle}
-            </h2>
-            <span className={`${styles.date}`}>
-              {HeroContent.heroBanner.date}
-            </span>
-            <div className>
-              {HeroContent.heroBanner.buttons.loginButton.display &&
-                <a className={styles.nmiLink} onClick={() => onClickLogin(location)}></a>
-              }
-            </div>
-          </div>
+          {HeroContent.heroBanner.buttons.loginButton.display &&
+            <a className={styles.nmiLink} onClick={() => onClickLogin(location)}></a>
+          }
         </div>
       </div>
     </div>
