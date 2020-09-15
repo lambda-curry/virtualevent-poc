@@ -67,7 +67,11 @@
         },
         {
           "column": "right",
-          "columnAds": []
+          "columnAds": [
+            {
+              "image": "/img/ad_Ericsson.png"
+            }
+          ]
         }
       ]
     }
