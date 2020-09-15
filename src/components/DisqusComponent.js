@@ -96,7 +96,7 @@ const DisqusComponent = class extends React.Component {
 
     return (
       <div className={className ? className : style ? '' : page === 'marketing-site' ? 'disqus-container-marketing' : page === 'keynote' ? 'disqus-container-keynote' : 'disqus-container'} style={style}>
-        <span className="navbar-brand title" style={{ paddingLeft: '0px' }}>{title}</span>
+        {title && <span className="navbar-brand title" style={{ paddingLeft: '0px' }}>{title}</span>}
         <DiscussionEmbed
           shortname='fnvirtual-poc'
           config={disqusConfig}

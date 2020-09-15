@@ -6,7 +6,7 @@ import URI from "urijs";
 import Masonry from 'react-masonry-css'
 import Slider from "react-slick";
 import Layout from '../components/Layout'
-import MarketingHeroComponent from '../components/MarketingHeroComponent'
+import NMIHeroComponent from '../components/NMIHeroComponent'
 import ScheduleLiteComponent from "../components/ScheduleLiteComponent"
 import DisqusComponent from '../components/DisqusComponent'
 import Countdown from '../components/Countdown'
@@ -75,128 +75,75 @@ export const MarketingPageTemplate = class extends React.Component {
     };
 
     return (
-      <div className="columns" id="marketing-columns">
-        <div className="column is-half" >
-          <div className={`columns ${styles.isVertical}`}>
-            <div className={`column is-full px-6 pt-3 pb-0 ${styles.heroImage}`} >
-              <img src="/img/NinSMAC20_Marketing_Header_Mario.png" />
-            </div>
-            <div className={`column is-full px-6 pt-0 pb-6 ${styles.heroWidgets}`} >
-              {MarketingSite.leftColumn.schedule.display &&
-                <React.Fragment>
-                  {MarketingSite.leftColumn.schedule.title && 
-                    <h2><b>{MarketingSite.leftColumn.schedule.title}</b></h2>
-                  }
-                  <ScheduleLiteComponent
-                    {...scheduleProps}
-                    page="marketing-site"
-                    accessToken={loggedUser.accessToken}
-                    landscape={true}
-                    showNav={true}
-                    showAllEvents={true}
-                    eventCount={100}
-                  />
-                </React.Fragment>
-              }
-              {MarketingSite.leftColumn.disqus.display &&
-                <React.Fragment>
-                  {MarketingSite.leftColumn.disqus.title && 
-                    <h2><b>{MarketingSite.leftColumn.disqus.title}</b></h2>
-                  }
-                  <DisqusComponent page="marketing-site" disqusSSO={user?.disqusSSO} summit={summit} />
-                </React.Fragment>
-              }
-              {MarketingSite.leftColumn.image.display &&
-                <React.Fragment>
-                  {MarketingSite.leftColumn.image.title && 
-                    <h2><b>{MarketingSite.leftColumn.image.title}</b></h2>
-                  }
-                  <br />
-                  <img src={MarketingSite.leftColumn.image.src} />
-                </React.Fragment>
-              }
-            </div>
+      <React.Fragment>
+        <NMIHeroComponent summit={summit} isLoggedUser={isLoggedUser} location={location} />
+        <div className="columns" id="marketing-columns">
+          <div className={`column is-half px-6 pt-6 pb-3 ${styles.heroWidgets}`} style={{ position: 'relative' }}>
+            {MarketingSite.leftColumn.schedule.display &&
+              <React.Fragment>
+                {MarketingSite.leftColumn.schedule.title &&
+                  <h2><b>{MarketingSite.leftColumn.schedule.title}</b></h2>
+                }
+                <ScheduleLiteComponent
+                  {...scheduleProps}
+                  page="marketing-site"
+                  accessToken={loggedUser.accessToken}
+                  landscape={true}
+                  showNav={true}
+                  showAllEvents={true}
+                  eventCount={100}
+                />
+              </React.Fragment>
+            }
+            {MarketingSite.leftColumn.image.display &&
+              <React.Fragment>
+                {MarketingSite.leftColumn.image.title &&
+                  <h2><b>{MarketingSite.leftColumn.image.title}</b></h2>
+                }
+                <br />
+                <img src={MarketingSite.leftColumn.image.src} />
+              </React.Fragment>
+            }
+            {MarketingSite.leftColumn.disqus.display &&
+              <React.Fragment>
+                {MarketingSite.leftColumn.disqus.title &&
+                  <h2><b>{MarketingSite.leftColumn.disqus.title}</b></h2>
+                }
+                <DisqusComponent page="marketing-site" disqusSSO={user?.disqusSSO} summit={summit} />
+              </React.Fragment>
+            }
+          </div>
+          <div className={`column is-half px-0 pt-0 pb-5 ${styles.heroMasonry}`} >
+            <Countdown summit={summit} />
+            <Masonry
+              breakpointCols={2}
+              className={`my-masonry-grid ${styles.masonry}`}
+              columnClassName={`my-masonry-grid_column ${styles.column}`}>
+              {MarketingSite.sponsors.map((item, index) => {
+                if (item.images.length === 1) {
+                  return (
+                    <div className={'single'} key={index}>
+                      <img src={item.images[0].image} />
+                    </div>
+                  )
+                } else if (item.images.length > 1) {
+                  return (
+                    <Slider {...sliderSettings}>
+                      {item.images.map((img, index) => {
+                        return (
+                          <div className={styles.imageSlider} key={index}>
+                            <img src={img.image} />
+                          </div>
+                        )
+                      })}
+                    </Slider>
+                  )
+                }
+              })}
+            </Masonry>
           </div>
         </div>
-        <div className="column is-half" >
-          <div className={`columns ${styles.isVertical}`}>
-            <div className={`column is-full px-0 pb-0 ${styles.heroData}`} >
-              <div className="px-6 pb-6">
-                <h1 className={`${styles.title}`}>
-                  {MarketingSite.heroBanner.title}
-                </h1>
-                <h2 className={`${styles.subtitle}`}>
-                  {MarketingSite.heroBanner.subTitle}
-                </h2>
-                <div className={styles.date} style={{ backgroundColor: MarketingSite.heroBanner.dateLayout ? 'var(--color_secondary)' : '' }}>
-                  <div>{MarketingSite.heroBanner.date}</div>
-                </div>
-                <h4>{MarketingSite.heroBanner.time}</h4>
-                <div className={styles.heroButtons}>
-                  {summit_phase >= PHASES.DURING && isLoggedUser ?
-                    <a className={styles.link} href={`${envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/'}`} target="_blank" rel="noreferrer">
-                      <button className={`${styles.button} button is-large`}>
-                        <i className={`fa fa-2x fa-sign-in icon is-large`}></i>
-                        <b>Enter</b>
-                      </button>
-                    </a>
-                    :
-                    <React.Fragment>
-                      {MarketingSite.heroBanner.buttons.registerButton.display &&
-                        <a className={styles.link} href={`${envVariables.REGISTRATION_BASE_URL}/a/${summit.slug}/`} target="_blank" rel="noreferrer">
-                          <button className={`${styles.button} button is-large`}>
-                            <i className={`fa fa-2x fa-edit icon is-large`}></i>
-                            <b>{MarketingSite.heroBanner.buttons.registerButton.text}</b>
-                          </button>
-                        </a>
-                      }
-                      {MarketingSite.heroBanner.buttons.loginButton.display &&
-                        <a className={styles.link}>
-                          <button className={`${styles.button} button is-large`} onClick={() => this.onClickLogin()}>
-                            <i className={`fa fa-2x fa-sign-in icon is-large`}></i>
-                            <b>{MarketingSite.heroBanner.buttons.loginButton.text}</b>
-                          </button>
-                        </a>
-                      }
-                    </React.Fragment>
-                  }
-                </div>
-              </div>
-              <div>
-                {summit && <Countdown summit={summit} />}
-              </div>
-            </div>
-            <div className={`column is-full px-0 pt-0 pb-5 ${styles.heroMasonry}`} >
-              <Masonry
-                breakpointCols={2}
-                className={`my-masonry-grid ${styles.masonry}`}
-                columnClassName={`my-masonry-grid_column ${styles.column}`}>
-                {MarketingSite.sponsors.map((item, index) => {
-                  if (item.images.length === 1) {
-                    return (
-                      <div className={'single'} key={index}>
-                        <img src={item.images[0].image} />
-                      </div>
-                    )
-                  } else if (item.images.length > 1) {
-                    return (
-                      <Slider {...sliderSettings}>
-                        {item.images.map((img, index) => {
-                          return (
-                            <div className={styles.imageSlider} key={index}>
-                              <img src={img.image} />
-                            </div>
-                          )
-                        })}
-                      </Slider>
-                    )
-                  }
-                })}
-              </Masonry>
-            </div>
-          </div>
-        </div>
-      </div>
+      </React.Fragment>
     )
   }
 }

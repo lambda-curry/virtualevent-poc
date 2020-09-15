@@ -28,13 +28,13 @@
       "title": "Full Event Schedule"
     },
     "disqus": {
-      "display": false,
+      "display": true,
       "title": "Join the conversation"
     },
     "image": {
       "display": true,
       "title": "",
-      "src": "/img/NinSMAC20_Marketing_Schedule_Day1.png"
+      "src": "/img/AC-SMAC20_Marketing_Event_Logo_Transparent.png"
     }
   },
   "sponsors": [
@@ -42,23 +42,7 @@
       "title": "Top Left",
       "images": [
         {
-          "image": "/img/marketing/TopLeft/SMAC2019-Image1.png",
-          "link": ""
-        },
-        {
-          "image": "/img/marketing/TopLeft/SMAC2019-Image2.png",
-          "link": ""
-        },
-        {
-          "image": "/img/marketing/TopLeft/SMAC2019-Image3.png",
-          "link": ""
-        },
-        {
-          "image": "/img/marketing/TopLeft/SMAC2019-Image4.png",
-          "link": ""
-        },
-        {
-          "image": "/img/marketing/TopLeft/SMAC2019-Image5.png",
+          "image": "/img/AC-SMAC20_Marketing_Ad-Top-Left.png",
           "link": ""
         }
       ]
@@ -67,7 +51,44 @@
       "title": "Top Right",
       "images": [
         {
-          "image": "/img/marketing/TopRight/DSC_6173_Carlyn_LeDuc_edit.jpg",
+          "image": "/img/1_award-nominees.png",
+          "link": ""
+        },
+        {
+          "image": "/img/2_award-nominees.png",
+          "link": ""
+        },
+        {
+          "image": "/img/3_award-nominees.png",
+          "link": ""
+        },
+        {
+          "image": "/img/4_award-nominees.png",
+          "link": ""
+        },
+        {
+          "image": "/img/5_award-nominees.png",
+          "link": ""
+        },
+        {
+          "image": "/img/6_award-nominees.png",
+          "link": ""
+        },
+        {
+          "image": "/img/7_award-nominees.png",
+          "link": ""
+        },
+        {
+          "image": "/img/8_award-nominees.png",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "title": "Middle Left",
+      "images": [
+        {
+          "image": "/img/AC-SMAC20_Marketing_Ad-Middle-Left.png",
           "link": ""
         }
       ]
@@ -76,7 +97,7 @@
       "title": "Bottom Left",
       "images": [
         {
-          "image": "/img/marketing/BottomLeft/Breakout_SMAC2019_06_edit.jpg",
+          "image": "/img/AC-SMAC20_Marketing_Ad-Bottom-Right.png",
           "link": ""
         }
       ]
@@ -85,11 +106,7 @@
       "title": "Bottom Right",
       "images": [
         {
-          "image": "/img/marketing/BottomRight/LuckyStrike_SMAC2019_05_Edit.jpg",
-          "link": ""
-        },
-        {
-          "image": "/img/marketing/BottomRight/LuckyStrike_SMAC2019_05_Edit.jpg",
+          "image": "/img/AC-SMAC20_Marketing_Ad-Bottom-Left.png",
           "link": ""
         }
       ]
