@@ -15,10 +15,10 @@
         "display": true
       }
     },
-    "background": "/img/logo.svg",
+    "background": "",
     "images": [
       {
-        "image": "/img/flavor_wheel.jpg"
+        "image": "/img/logo.svg"
       }
     ]
   },
