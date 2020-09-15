@@ -61,6 +61,21 @@ div.column:first-of-type {
   }
 }
 
+.nmi-hero {
+  .nmi-link {
+    display: inline-block;
+    width: 297px;
+    height: 93px;
+    background-image: url('/img/AC-SMAC20_Marketing_log-in-button_enabled.png');
+  }
+  .nmi-link:hover {
+    background-image: url('/img/AC-SMAC20_Marketing_log-in-button_hover.png');
+  }
+  .nmi-link:visited {
+    background-image: url('/img/AC-SMAC20_Marketing_log-in-button_pressed.png');
+  }
+}
+
 @media (max-width: 768px) {
   .hero-columns {
     .left-column {
