@@ -59,7 +59,11 @@
         },
         {
           "column": "center",
-          "columnAds": []
+          "columnAds": [
+            {
+              "image": "/img/Logo-Top-Tier-Apex.png"
+            }
+          ]
         },
         {
           "column": "right",
