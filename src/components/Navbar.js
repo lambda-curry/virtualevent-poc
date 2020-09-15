@@ -48,7 +48,7 @@ const Navbar = class extends React.Component {
     let { summit } = SummitObject
     let defaultPath = envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/';
 
-    console.log('is marketing', marketing)
+    console.log(logo)
 
     return (
       <React.Fragment>

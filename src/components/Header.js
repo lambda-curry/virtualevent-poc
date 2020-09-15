@@ -12,7 +12,7 @@ const Header = ({ isLoggedUser, marketing }) => (
         SummitObject.summit.logo ?
           SummitObject.summit.logo
           :
-          '/img/NinSMAC20_Nav Logo.png'
+          '/img/Nintendo.svg'
       } />
   </header>
 )
