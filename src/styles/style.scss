@@ -209,6 +209,9 @@ h2 {
   background-clip: padding-box;
   .slick-slider {
     margin-bottom: -4px;
+    + div {
+      margin-top: 4px;
+    }
   }
 }
 
