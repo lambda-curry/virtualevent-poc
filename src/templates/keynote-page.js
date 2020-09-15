@@ -125,19 +125,7 @@ export const KeynotePageTemplate = class extends React.Component {
             <section className="section px-0 pt-5 pb-0">
               <div className="columns mt-5">
                 <div className="column px-0 pt-5 pb-0 is-three-quarters">
-                  <DisqusComponent disqusSSO={user.disqusSSO} page='keynote' event={event} summit={summit} title="Public Conversations" />
-                  <ScheduleLiteComponent
-                    accessToken={loggedUser.accessToken}
-                    onEventClick={(ev) => this.onEventChange(ev)}
-                    onViewAllEventsClick={() => this.onViewAllEventsClick()}
-                    landscape={true}
-                    yourSchedule={false}
-                    showFilters={false}
-                    showNav={false}
-                    trackId={event.track ? event.track.id : null}
-                    eventCount={3}
-                    title={event.track ? `Up Next on ${event.track.name}` : 'Up Next'}
-                  />
+                  <DisqusComponent disqusSSO={user.disqusSSO} page='keynote' event={event} summit={summit} title="Public Conversations" />                  
                 </div>
                 <div className="column px-5 pt-5 pb-0 is-one-quarter">
                   <AdvertiseComponent section='keynote' column="right" style={{ marginTop: '2em' }} />
