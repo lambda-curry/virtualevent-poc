@@ -10,9 +10,9 @@ const Header = ({ isLoggedUser, marketing }) => (
     <Navbar marketing={marketing} isLoggedUser={isLoggedUser}
       logo={
         SummitObject.summit.logo ?
-          SummitObject.summit.logo
+          '/img/Nintendo.svg'
           :
-          '/img/NinSMAC20_Nav Logo.png'
+          SummitObject.summit.logo
       } />
   </header>
 )
