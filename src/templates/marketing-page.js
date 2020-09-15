@@ -79,8 +79,8 @@ export const MarketingPageTemplate = class extends React.Component {
       <div className="columns" id="marketing-columns">
         <div className="column is-half" >
           <div className={`columns ${styles.isVertical}`}>
-            <div className={`column is-full px-6 pt-3 pb-0 ${styles.heroImage}`} >
-              <img src="/img/NinSMAC20_Marketing_Header_Mario.png" />
+            <div className={`column is-full ${styles.heroImage}`} >
+              <img src="/img/NinSMAC20_Marketing_Header_Mario_TPT.png" />
             </div>
             <div className={`column is-full px-6 pt-0 pb-6 ${styles.heroWidgets}`} >
               {MarketingSite.leftColumn.schedule.display &&
