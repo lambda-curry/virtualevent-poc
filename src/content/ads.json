@@ -74,29 +74,13 @@
           "column": "right",
           "columnAds": [
             {
-              "image": "/img/NinSMAC20_Lobby_WKSHOP_DAY1_WIP.png",
+              "image": "/img/AC-SMAC20_Lobby_Party-Link.png",
               "button": {
                 "text": "",
                 "link": "/virtual-booth/"
               },
               "id": null
-            },
-            {
-              "image": "/img/NinSMAC20_Lobby_SalesPreso_DAY1_WIP.png",
-              "button": {
-                "text": "",
-                "link": "/virtual-booth/"
-              },
-              "id": null
-            },
-            {
-              "image": "/img/NinSMAC20_Lobby_Photo_DAY1_WIP_V3.png",
-              "button": {
-                "text": "",
-                "link": "/virtual-booth/"
-              },
-              "id": null
-            }
+            }            
           ]
         },
         {
