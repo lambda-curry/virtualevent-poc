@@ -10,6 +10,7 @@ import NMIHeroComponent from '../components/NMIHeroComponent'
 import ScheduleLiteComponent from "../components/ScheduleLiteComponent"
 import DisqusComponent from '../components/DisqusComponent'
 import Countdown from '../components/Countdown'
+import Link from '../components/Link'
 import Content, { HTMLContent } from '../components/Content'
 
 import { doLogin } from "openstack-uicore-foundation/lib/methods";
@@ -120,26 +121,38 @@ export const MarketingPageTemplate = class extends React.Component {
               className={`my-masonry-grid ${styles.masonry}`}
               columnClassName={`my-masonry-grid_column ${styles.column}`}>
               {MarketingSite.sponsors.map((item, index) => {
-                if (item.images.length === 1) {
-                  return (
-                    <div className={'single'} key={index}>
-                      <img src={item.images[0].image} />
-                    </div>
-                  )
-                } else if (item.images.length > 1) {
-                  return (
-                    <Slider {...sliderSettings}>
-                      {item.images.map((img, index) => {
-                        return (
-                          <div className={styles.imageSlider} key={index}>
-                            <img src={img.image} />
-                          </div>
-                        )
-                      })}
-                    </Slider>
-                  )
-                }
-              })}
+                  if (item.images.length === 1) {
+                    return (
+                      <div className={'single'} key={index}>
+                        {item.images[0].link ?
+                          <Link to={item.images[0].link}>
+                            <img src={item.images[0].image} />
+                          </Link>
+                          :
+                          <img src={item.images[0].image} />
+                        }
+                      </div>
+                    )
+                  } else if (item.images.length > 1) {
+                    return (
+                      <Slider {...sliderSettings}>
+                        {item.images.map((img, index) => {
+                          return (
+                            <div className={styles.imageSlider} key={index}>
+                              {img.link ?
+                                <Link to={img.link}>
+                                  <img src={img.image} />
+                                </Link>
+                                :
+                                <img src={img.image} />
+                              }
+                            </div>
+                          )
+                        })}
+                      </Slider>
+                    )
+                  }
+                })}
             </Masonry>
           </div>
         </div>
