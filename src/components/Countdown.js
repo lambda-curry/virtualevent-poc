@@ -40,7 +40,7 @@ class Countdown extends React.Component {
     let minutes = parseInt(diff.asMinutes()); //122360 minutes,but it gives total minutes in given miliseconds which is not expacted.
     minutes = minutes - (days * 24 * 60 + hours * 60);
 
-    // if (diff.asMilliseconds() > 0) {
+    if (diff.asMilliseconds() > 0) {
     return (
       <div className={styles.countdown}>
         <div className={`${styles.countdownColumns} columns is-gapless`}>
@@ -61,9 +61,9 @@ class Countdown extends React.Component {
         </div>
       </div>
     )
-    // } else {
-    //   return null
-    // }
+    } else {
+      return null
+    }
   }
 
 }
