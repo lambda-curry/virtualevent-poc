@@ -2,12 +2,12 @@
   "items": [
     {
       "title": "NOA Service Desk",
-      "link": "/",
+      "link": "/noa-service-desk/",
       "display": true
     },
     {
       "title": "Tech Support",
-      "link": "/",
+      "link": "/tech-support/",
       "display": true
     },
     {
