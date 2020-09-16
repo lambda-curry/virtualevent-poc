@@ -16,7 +16,7 @@ const SchedulePage = ({summit_phase, isLoggedUser, loggedUser}) => {
   let scheduleProps = {}
   if (isLoggedUser && summit_phase !== PHASES.BEFORE) {
     scheduleProps = { ...scheduleProps,
-      onEventClick: (ev) => navigate(`/a/event/${ev.id}`),
+      onEventClick: (ev) => navigate(`/a/keynote/${ev.id}`),
     }
   }
 

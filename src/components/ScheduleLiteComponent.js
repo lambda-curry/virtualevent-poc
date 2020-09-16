@@ -15,7 +15,7 @@ const ScheduleComponent = class extends React.Component {
     const scheduleProps = {
       apiBaseUrl: envVariables.SUMMIT_API_BASE_URL,
       marketingApiBaseUrl: envVariables.MARKETING_API_BASE_URL,
-      eventBaseUrl: "/a/event",
+      eventBaseUrl: "/a/keynote",
       trackBaseUrl: "/a/tracks",
       speakerBaseUrl: "/a/speakers",
       roomBaseUrl: "/a/rooms",

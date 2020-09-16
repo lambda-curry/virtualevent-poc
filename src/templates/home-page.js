@@ -32,7 +32,7 @@ export const HomePageTemplate = class extends React.Component {
   }
 
   onEventChange(ev) {
-    navigate(`/a/event/${ev.id}`);
+    navigate(`/a/keynote/${ev.id}`);
   }
 
   onViewAllEventsClick() {
