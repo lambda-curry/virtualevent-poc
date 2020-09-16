@@ -1,6 +1,6 @@
 backend:
   name: github
-  branch: prod-nintendo-smac
+  branch: prod-nmi-awards
   repo: fntechgit/virtualevent-poc
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
