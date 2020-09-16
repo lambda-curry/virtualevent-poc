@@ -48,8 +48,6 @@ const Navbar = class extends React.Component {
     let { summit } = SummitObject
     let defaultPath = envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/';
 
-    console.log(logo)
-
     return (
       <React.Fragment>
         <nav className={`${styles.navbar}`} role="navigation" aria-label="main navigation">

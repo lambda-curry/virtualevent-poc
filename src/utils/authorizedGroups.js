@@ -4,8 +4,6 @@ let authorizedGroups = envVariables.AUTHZ_USER_GROUPS;
     authorizedGroups = authorizedGroups && authorizedGroups !== '' ? authorizedGroups.split(' ') : [];
 
 const isAuthorizedUser = (groups) => {
-  console.log(authorizedGroups)
-  console.log(groups)
   return groups ? groups.some(group => authorizedGroups.includes(group.code)) : false;
 }
 
