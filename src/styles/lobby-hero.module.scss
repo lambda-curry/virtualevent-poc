@@ -404,7 +404,13 @@ div.column:first-of-type {
   }
 
   .nmi-hero {
-    position: relative;  
-    height: auto;
+    position: relative;
+    max-height: 1650px;
+    .nmi-column {
+      height: 100%;
+      .nmi-hero-container {
+        padding: 6rem 4rem;
+      }
+    }
   }
 }

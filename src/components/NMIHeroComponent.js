@@ -28,7 +28,7 @@ const NMIHeroComponent = ({ location, isLoggedUser, summit, summit_phase }) => (
       <img src="img/AC-SMAC20_Marketing_Header-Mobile.png" />
     </div>
     <div className={`${styles.nmiHeroColumns} columns`} style={{ backgroundImage: `url(${HeroContent.heroBanner.background})` }}>
-      <div className={`column is-full px-0 py-0`}>
+      <div className={`${styles.nmiColumn} column is-full px-0 py-0`}>
         <div className={`${styles.nmiHeroContainer} hero-body`}>
           {HeroContent.heroBanner.buttons.loginButton.display &&
             <a className={styles.nmiLink} onClick={() => onClickLogin(location)}></a>
