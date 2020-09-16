@@ -64,9 +64,10 @@ div.column:first-of-type {
 .nmi-hero {
   position: relative;  
   overflow: hidden;
-  height: 500px;
+  max-height: 810px;
   .nmi-hero-video {
     object-fit: cover;
+    max-height: 810px;
     height: 100%;
     width: 100%;
   }

@@ -22,7 +22,7 @@ const onClickLogin = (location) => {
 const NMIHeroComponent = ({ location, isLoggedUser, summit, summit_phase }) => (
   <section className={`${styles.nmiHero} py-0 px-0`}>
     <video className={`${styles.nmiHeroVideo} is-hidden-mobile`} preload="auto" autoPlay loop muted="muted" volume="0">
-      <source src="img/Milky_Way_Galaxy.mp4" type="video/mp4" />
+      <source src="img/nmi-awards-header-1440.mp4" type="video/mp4" />
     </video>
     <div className="is-hidden-tablet">
       <img src="img/AC-SMAC20_Marketing_Header-Mobile.png" />
