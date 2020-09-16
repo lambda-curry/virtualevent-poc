@@ -1,14 +1,14 @@
 {
   "heroBanner": {
-    "title": "Bloomreach Connect Virtual 2020",
+    "title": "Bloomreach Connect Global Online Virtual 2020",
     "subTitle": "Now Live!",
     "date": "virtual • pacific time zone",
     "time": "",
     "dateLayout": false,
     "buttons": {
       "registerButton": {
-        "text": "Register now",
-        "display": true
+        "text": "Log in FNid",
+        "display": false
       },
       "loginButton": {
         "text": "Log in FNid",
@@ -32,9 +32,9 @@
       "title": "Join the conversation"
     },
     "image": {
-      "display": true,
+      "display": false,
       "title": "Image",
-      "src": "/img/yoco-sponsor-ads-large-wherehol-vert.png"
+      "src": "/img/connectgallery-herobanner.jpeg"
     }
   },
   "sponsors": [
