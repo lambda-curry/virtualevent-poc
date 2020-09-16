@@ -14,6 +14,9 @@ import { OPSessionChecker } from "openstack-uicore-foundation/lib/components";
 
 const PrivateRoute = ({ component: Component, isLoggedIn, location, user: { loading, userProfile }, summit_phase, getUserProfile, ...rest }) => {
 
+  console.log('user profile', userProfile
+  )
+
   const [isAuthorized, setIsAuthorized] = useState(null);
   const [hasTicket, setHasTicket] = useState(null);
 

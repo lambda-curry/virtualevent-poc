@@ -50,7 +50,7 @@ export const EventPageTemplate = class extends React.Component {
   onEventChange(ev) {
     const { eventId } = this.props;
     if (eventId !== `${ev.id}`) {
-      navigate(`/a/event/${ev.id}`);
+      navigate(`/a/keynote/${ev.id}`);
     }
   }
 

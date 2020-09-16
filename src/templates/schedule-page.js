@@ -16,7 +16,7 @@ const SchedulePage = ({summit_phase, isLoggedUser, loggedUser}) => {
   let scheduleProps = {}
   if (isLoggedUser && summit_phase !== PHASES.BEFORE) {
     scheduleProps = { ...scheduleProps,
-      onEventClick: (ev) => navigate(`/a/event/${ev.id}`),
+      onEventClick: (ev) => navigate(`/a/keynote/${ev.id}`),
     }
   }
 
@@ -33,6 +33,7 @@ const SchedulePage = ({summit_phase, isLoggedUser, loggedUser}) => {
           showFilters={true}
           showAllEvents={true}
           eventCount={100}
+          showDetails={true}
         />
       </div>
     </Layout>
