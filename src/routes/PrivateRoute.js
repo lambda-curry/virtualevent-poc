@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { navigate } from "gatsby"
 
 import envVariables from '../utils/envVariables';
-import isAuthorizedUser from '../utils/authorizedGroups';
+import { isAuthorizedUser, isAuthorizedBadge } from '../utils/authorizedGroups';
 
 import { PHASES } from '../utils/phasesUtils'
 
@@ -19,11 +19,11 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, user: { load
 
   useEffect(() => {
     if (userProfile === null || (isAuthorized === false && hasTicket === false)) {
-      getUserProfile();      
-    } else if (userProfile !== null) {      
+      getUserProfile();
+    } else if (userProfile !== null) {
       setIsAuthorized(() => isAuthorizedUser(userProfile.groups));
       setHasTicket(() => userProfile.summit_tickets?.length > 0)
-    }    
+    }
   }, [userProfile]);
 
   if (!isLoggedIn && location.pathname !== `/`) {
@@ -62,6 +62,17 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, user: { load
       />
     )
   }
+
+  // if (eventId && !isAuthorizedBadge(eventId)) {
+  //   setTimeout(() => {
+  //     navigate('/')
+  //   }, 3000);
+  //   return (
+  //     <HeroComponent
+  //       title="You are not authorized to view this session!"
+  //     />
+  //   )
+  // }
 
   const clientId = envVariables.OAUTH2_CLIENT_ID;
   const idpBaseUrl = envVariables.IDP_BASE_URL;
