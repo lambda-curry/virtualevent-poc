@@ -3,7 +3,7 @@ import envVariables from '../utils/envVariables';
 let authorizedGroups = envVariables.AUTHZ_USER_GROUPS;
     authorizedGroups = authorizedGroups && authorizedGroups !== '' ? authorizedGroups.split(' ') : [];
 
-let authorizedSessionPerBadge = process.env.GATSBY_AUTHZ_SESSION_BADGE;
+let authorizedSessionPerBadge = envVariables.GATSBY_AUTHZ_SESSION_BADGE;
     authorizedSessionPerBadge = authorizedSessionPerBadge.split('|').map((session => {
       let id = session.split(':')[0];      
       let values = session.split(':')[1].split(',');
