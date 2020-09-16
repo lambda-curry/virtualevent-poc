@@ -60,7 +60,7 @@ export const MarketingPageTemplate = class extends React.Component {
       isLoggedUser && summit_phase !== PHASES.BEFORE) {
       scheduleProps = {
         ...scheduleProps,
-        onEventClick: (ev) => navigate(`/a/event/${ev.id}`),
+        onEventClick: (ev) => navigate(`/a/keynote/${ev.id}`),
       }
     }
 

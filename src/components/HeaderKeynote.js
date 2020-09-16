@@ -41,7 +41,7 @@ class HeaderKeynote extends React.Component {
     const { redirect, display, minutesLeft } = this.state;
     const { event, nextEvent } = this.props;
     if (nextEvent && redirect && minutesLeft === 0) {
-      navigate(`/a/event/${nextEvent.id}`);
+      navigate(`/a/keynote/${nextEvent.id}`);
       return null;
     } else if (nextEvent && display && minutesLeft < 15) {
       return (
