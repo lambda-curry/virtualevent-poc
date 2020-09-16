@@ -5,7 +5,7 @@ title: FAQ
 #### I never received my SMAC Ticket email?
 
 * Please check your junk folder for an email that will come from registration@fntech.com.
-* If you still do not see an email, please email the SMAC Committee (email hyperlink: SMACCommittee@noa.nintendo.com) to confirm your attendance.
+* If you still do not see an email, please email the [SMAC Committee](mailto:SMACCommittee@noa.nintendo.com) to confirm your attendance.
 
 #### I never received my Welcome Kit
 
