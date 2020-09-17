@@ -63,16 +63,16 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, eventId, use
     )
   }
 
-  // if (eventId && !isAuthorizedBadge(eventId, null)) {
-  //   setTimeout(() => {
-  //     navigate('/')
-  //   }, 3000);
-  //   return (
-  //     <HeroComponent
-  //       title="You are not authorized to view this session!"
-  //     />
-  //   )
-  // }
+  if (eventId && !isAuthorizedBadge(eventId, userProfile.summit_tickets)) {    
+    setTimeout(() => {
+      navigate(location.state.previousUrl ? location.state.previousUrl : '/')
+    }, 3000);
+    return (
+      <HeroComponent
+        title="You are not authorized to view this session!"
+      />
+    )
+  }
 
   const clientId = envVariables.OAUTH2_CLIENT_ID;
   const idpBaseUrl = envVariables.IDP_BASE_URL;

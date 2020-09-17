@@ -16,10 +16,23 @@ export const isAuthorizedUser = (groups) => {
   return groups ? groups.some(group => authorizedGroups.includes(group.code)) : false;
 }
 
-export const isAuthorizedBadge = (session, badge) => {
+export const isAuthorizedBadge = (session, summit_tickets) => {
+  
+  let badges = [];
+
+  summit_tickets.map(t => {
+    t.badge.features.map(feature => {
+      if (!badges.some(e => e === feature.id)) {
+        badges.push(feature.id);
+      }
+    })
+  });
+
   const authzSession = authorizedSessionPerBadge.find(s => s.sessionId === session) 
   if (authzSession) {
-      return authzSession.authorizedBadges.includes(badge);
+      return authzSession.authorizedBadges.some(b => {        
+        return badges.includes(parseInt(b))
+      });
   } else {
     return true;
   }  
