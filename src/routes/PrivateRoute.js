@@ -63,7 +63,7 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, eventId, use
     )
   }
 
-  // if (eventId && !isAuthorizedBadge(eventId)) {
+  // if (eventId && !isAuthorizedBadge(eventId, null)) {
   //   setTimeout(() => {
   //     navigate('/')
   //   }, 3000);
@@ -81,7 +81,7 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, eventId, use
     return (
       <>
         <OPSessionChecker clientId={clientId} idpBaseUrl={idpBaseUrl} />
-        <Component location={location} {...rest} />
+        <Component location={location} eventId={eventId} {...rest} />
       </>
     );
   } else {
