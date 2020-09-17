@@ -65,6 +65,7 @@ div.column:first-of-type {
   position: relative;  
   overflow: hidden;
   max-height: 810px;
+  background-color: $color_secondary_contrast;
   background-image: url('/img/nmi-awards-header-alt.jpg');
   background-position: center;
   background-size: cover;

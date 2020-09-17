@@ -67,10 +67,11 @@ export const MarketingPageTemplate = class extends React.Component {
 
     const sliderSettings = {
       autoplay: true,
-      arrows: true,
+      autoplaySpeed: 5000,
+      arrows: false,
       dots: false,
       infinite: true,
-      speed: 500,
+      speed: 1000,
       slidesToShow: 1,
       slidesToScroll: 1
     };
@@ -79,7 +80,7 @@ export const MarketingPageTemplate = class extends React.Component {
       <React.Fragment>
         <NMIHeroComponent summit={summit} isLoggedUser={isLoggedUser} location={location} />
         <div className="columns" id="marketing-columns">
-          <div className={`column is-half px-6 pt-6 pb-3 ${styles.heroWidgets}`} style={{ position: 'relative' }}>
+          <div className={`column is-half ${styles.heroWidgets}`} style={{ position: 'relative' }}>
             {MarketingSite.leftColumn.schedule.display &&
               <React.Fragment>
                 {MarketingSite.leftColumn.schedule.title &&
@@ -121,38 +122,38 @@ export const MarketingPageTemplate = class extends React.Component {
               className={`my-masonry-grid ${styles.masonry}`}
               columnClassName={`my-masonry-grid_column ${styles.column}`}>
               {MarketingSite.sponsors.map((item, index) => {
-                  if (item.images.length === 1) {
-                    return (
-                      <div className={'single'} key={index}>
-                        {item.images[0].link ?
-                          <Link to={item.images[0].link}>
-                            <img src={item.images[0].image} />
-                          </Link>
-                          :
+                if (item.images.length === 1) {
+                  return (
+                    <div className={'single'} key={index}>
+                      {item.images[0].link ?
+                        <Link to={item.images[0].link}>
                           <img src={item.images[0].image} />
-                        }
-                      </div>
-                    )
-                  } else if (item.images.length > 1) {
-                    return (
-                      <Slider {...sliderSettings}>
-                        {item.images.map((img, index) => {
-                          return (
-                            <div className={styles.imageSlider} key={index}>
-                              {img.link ?
-                                <Link to={img.link}>
-                                  <img src={img.image} />
-                                </Link>
-                                :
+                        </Link>
+                        :
+                        <img src={item.images[0].image} />
+                      }
+                    </div>
+                  )
+                } else if (item.images.length > 1) {
+                  return (
+                    <Slider {...sliderSettings}>
+                      {item.images.map((img, index) => {
+                        return (
+                          <div className={styles.imageSlider} key={index}>
+                            {img.link ?
+                              <Link to={img.link}>
                                 <img src={img.image} />
-                              }
-                            </div>
-                          )
-                        })}
-                      </Slider>
-                    )
-                  }
-                })}
+                              </Link>
+                              :
+                              <img src={img.image} />
+                            }
+                          </div>
+                        )
+                      })}
+                    </Slider>
+                  )
+                }
+              })}
             </Masonry>
           </div>
         </div>

@@ -7,15 +7,19 @@
 .hero-image {}
 
 .hero-widgets {
+  padding: 3rem 3rem 0.75rem;  
   overflow: hidden;
 
   .disqus-background {
-    background-color: $color_text_light;
+    background-color: $color_primary_contrast;
     margin: 0 -6rem;
-    padding: 2rem 6rem;
+    padding: 0rem 0rem 0rem 6rem;
     color: $color_text_dark;
-    position: relative;
-    height: 100%;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 }
 
@@ -87,11 +91,11 @@
 
   img {
     object-fit: cover;
-    height: 50vh;
+    height: auto;
   }
 
   .image-slider {
-    height: 100vh;
+    height: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -99,7 +103,8 @@
     overflow: hidden;
 
     img {
-      height: 100vh;
+      height: auto;
+      object-fit: cover;
     }
   }
 }
@@ -133,6 +138,20 @@
 
     .date {
       font-size: 24px;
+    }
+  }
+  .hero-widgets {
+    padding: 0;
+    img {
+      padding: 3rem 3rem 0;
+    }
+    .disqus-background {      
+      margin: 0;
+      padding: 2rem 6rem;            
+      max-height: 700px;
+      position: relative;      
+      overflow-y: auto;
+      overflow-x: hidden;
     }
   }
 }
