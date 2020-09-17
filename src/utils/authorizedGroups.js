@@ -3,7 +3,10 @@ import envVariables from '../utils/envVariables';
 let authorizedGroups = envVariables.AUTHZ_USER_GROUPS;
     authorizedGroups = authorizedGroups && authorizedGroups !== '' ? authorizedGroups.split(' ') : [];
 
+    
 let authorizedSessionPerBadge = envVariables.AUTHZ_SESSION_BADGE;
+    console.log('debug', envVariables.AUTHZ_SESSION_BADGE)
+    console.log('debug', authorizedSessionPerBadge)
     authorizedSessionPerBadge = authorizedSessionPerBadge.split('|').map((session => {
       let id = session.split(':')[0];      
       let values = session.split(':')[1].split(',');
