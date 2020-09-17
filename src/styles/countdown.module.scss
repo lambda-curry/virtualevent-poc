@@ -54,18 +54,49 @@
   }
 }
 
+@media (max-width: 1080px) {
+  .countdown {
+    .countdown-columns {
+      .left-column {
+        font-size: 26px;
+      }
+      .right-column {
+        div {
+          font-size: 13px;
+          margin-top: 10px;
+
+          span {
+            font-size: 26px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
 @media (max-width: 768px) {
   .countdown {
-    height: 135px;
+    height: 120px;
+
     .countdown-columns {
       height: 100%;
-  
+
       .left-column {
         height: 50%;
+        font-size: 32px;
       }
-  
+
       .right-column {
         height: 50%;
+        div {
+          font-size: 15px;
+          margin-top: 10px;
+
+          span {
+            font-size: 32px;
+          }
+        }
       }
     }
   }
