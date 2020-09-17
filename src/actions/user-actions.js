@@ -59,7 +59,7 @@ export const getUserProfile = () => (dispatch, getState) => {
 
   let params = {
       access_token : accessToken,      
-      expand: 'groups,summit_tickets'
+      expand: 'groups,summit_tickets,summit_tickets.badge,summit_tickets.badge.features,summit_tickets.badge.type'
   };
 
   return getRequest(
