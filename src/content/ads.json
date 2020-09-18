@@ -93,18 +93,27 @@
               "image": "/img/NinSMAC20_Lobby_Photo_DAY1_WIP_V3.png",
               "button": {
                 "text": "",
-                "link": "/a/keynote/879/"
+                "link": "https://mosaicme.in/smac"
               },
               "id": null
             }
           ]
         },
         {
-          "column": "center",
-          "columnAds": []
-        },
-        {
           "column": "left",
+          "columnAds": [
+            {
+              "image": "/img/NinSMAC20_Lobby_Schedule_DAY1_WIP_V4.png",
+              "button": {
+                "text": "",
+                "link": ""
+              },
+              "id": null
+            }
+          ]
+        },        
+        {
+          "column": "center",
           "columnAds": []
         }
       ]
