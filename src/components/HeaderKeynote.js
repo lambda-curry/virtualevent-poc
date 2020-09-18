@@ -68,7 +68,7 @@ class HeaderKeynote extends React.Component {
             <div className={'column is-12'}>
               <div className={`${styles.body} hero-body`}>
                 <span>
-                  <b>{event.title}</b>
+                  <b>2020 nmi awards celebration</b>
                 </span>
               </div>
             </div>

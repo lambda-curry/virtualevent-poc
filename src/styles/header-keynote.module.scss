@@ -2,12 +2,20 @@
 
 .body {
   display: flex;    
-  height: 80px;
+  height: 60px;
   align-items: center;
-  padding: 2rem 1.5rem;
+  padding: 0.5rem 2.5rem;
   background-color: black;
   color: white;
-  font-size: 24px;
+  span {
+    font-size: 46px;
+    line-height: 46px;
+    display: inline-block;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .buttons {
