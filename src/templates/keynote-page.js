@@ -33,7 +33,6 @@ export const KeynotePageTemplate = class extends React.Component {
     }
 
     this.onEventChange = this.onEventChange.bind(this);
-    this.onViewAllEventsClick = this.onViewAllEventsClick.bind(this);
   }
 
   componentWillMount() {
@@ -50,10 +49,6 @@ export const KeynotePageTemplate = class extends React.Component {
     if (eventId !== `${ev.id}`) {
       navigate(`/a/keynote/${ev.id}`);
     }
-  }
-
-  onViewAllEventsClick() {
-    navigate('/a/schedule')
   }
 
   componentWillReceiveProps(nextProps) {
@@ -79,7 +74,7 @@ export const KeynotePageTemplate = class extends React.Component {
     let eventStarted = currentEvent && currentEvent.phase !== null ? currentEvent.phase : null;
 
     if (!firstRender && !loading && !event) {
-      return <HeroComponent title="Event not found" redirectTo="/a/schedule" />
+      return <HeroComponent title="Event not found" redirectTo={`${envVariables.AUTHORIZED_DEFAULT_PATH}`} />
     }
 
     if (loading || eventStarted === null) {
@@ -114,12 +109,6 @@ export const KeynotePageTemplate = class extends React.Component {
                     <TalkComponent eventStarted={eventStarted} event={event} summit={summit} noStream={true} />
                   </div>
                 }
-                {/* <div className="column is-hidden-tablet">
-                  <TalkComponent eventStarted={eventStarted} event={event} summit={summit} noStream={true} />
-                </div>
-                <div className="column" style={{ position: 'relative', borderBottom: '1px solid #d3d3d3' }}>
-                  <DisqusComponent disqusSSO={user.disqusSSO} event={event} summit={summit} title="Public Conversation" />
-                </div> */}
               </div>
             </section>
             <section className="section px-0 pt-5 pb-0">
