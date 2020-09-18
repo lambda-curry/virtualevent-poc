@@ -13,12 +13,12 @@ title: FAQ
 
 #### I forgot my FNid login/password
 
-* Please visit [noasmac2020.fnvirtual.app](noasmac2020.fnvirtual.app). 
+* Please visit noasmac2020.fnvirtual.app. 
 * Select “Log in” and choose “Forgot Password?” in the FNid screen. Follow the process to receive your password.   
 * An email will be sent to the invited guest with a link to reset your password.
-* Please return to [noasmac2020.fnvirtual.app](noasmac2020.fnvirtual.app), select “Log in” and use your email and updated passcode. 
+* Please return to noasmac2020.fnvirtual.app, select “Log in” and use your email and updated passcode. 
 * If your email is not found, please verify you are using the correct email or email the [SMAC Committee](mailto:SMACCommittee@noa.nintendo.com) to confirm your attendance.  
-* If you are still unable to reset your passcode after confirming your attendance with the SMAC Committee, please email [support@fntech.com](support@fntech.com) for assistance. 
+* If you are still unable to reset your passcode after confirming your attendance with the SMAC Committee, please email [support@fntech.com](mailto:support@fntech.com)[](support@fntech.com) for assistance. 
 
 #### What dates/times are SMAC 2020?
 
