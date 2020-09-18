@@ -13,9 +13,9 @@ exports.onPreBootstrap = async () => {
 
   let marketingData;
 
-  let params = {    
+  let params = {
     per_page: 100,
-};
+  };
 
   const colours = await axios.get(
     `${process.env.GATSBY_MARKETING_API_BASE_URL}/api/public/v1/config-values/all/shows/${process.env.GATSBY_SUMMIT_ID}`, { params }

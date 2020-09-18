@@ -15,6 +15,7 @@ const Link = ({ children, to, activeClassName, partiallyActive, ...other }) => {
         to={to}
         activeClassName={activeClassName}
         partiallyActive={partiallyActive}
+        state={{ previousUrl: window.location.pathname }}
         {...other}
       >
         {children}

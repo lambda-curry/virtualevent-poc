@@ -6,7 +6,7 @@ import styles from '../styles/advertise.module.scss'
 
 import Content from '../content/ads.json'
 
-const AdvertiseComponent = ({ section, column, id }) => {
+const AdvertiseComponent = ({ section, column, id, className }) => {
 
   const sectionAds = Content.ads.find(ad => ad.section === section).columns.find(c => c.column === column).columnAds;
 
@@ -26,18 +26,24 @@ const AdvertiseComponent = ({ section, column, id }) => {
                     </Link>
                   }
                   {ad.button.text && ad.button.link &&
-                    <Link className={styles.link} to={ad.button.link}>
-                      <button className={`${styles.button} button is-large`}>
-                        <b>{ad.button.text}</b>
-                      </button>
-                    </Link>
+                    <React.Fragment>
+                      <img src={ad.image} alt="sponsor" />
+                      <Link className={styles.link} to={ad.button.link}>
+                        <button className={`${styles.button} button is-large`}>
+                          <b>{ad.button.text}</b>
+                        </button>
+                      </Link>
+                    </React.Fragment>
+                  }
+                  {!ad.button.text && !ad.button.link &&
+                    <img src={ad.image} alt="sponsor" />
                   }
                 </div>
               :
               null
             :
             column === 'center' ?
-              <div className={`${styles.sponsorContainerCenter}`} key={index}>
+              <div className={`${styles.sponsorContainerCenter} ${className}`} key={index}>
                 <div className={styles.containerText}>
                   <span className={styles.adText} style={ad.image ? { textAlign: 'left' } : null}>
                     <b>Upload your picture and participate with the #yocovirtualsummit</b>
@@ -51,7 +57,7 @@ const AdvertiseComponent = ({ section, column, id }) => {
                 {ad.image && <div className={styles.containerImage} style={{ backgroundImage: `url(${ad.image})` }}></div>}
               </div>
               :
-              <div className={`${styles.sponsorContainer} sponsor-container`} key={index}>
+              <div className={`${styles.sponsorContainer} ${className} sponsor-container`} key={index}>
                 {!ad.button.text && ad.button.link &&
                   <Link to={ad.button.link}>
                     <img src={ad.image} alt="sponsor" />
@@ -66,6 +72,9 @@ const AdvertiseComponent = ({ section, column, id }) => {
                       </button>
                     </Link>
                   </React.Fragment>
+                }
+                {!ad.button.text && !ad.button.link &&
+                  <img src={ad.image} alt="sponsor" />
                 }
               </div>
         )

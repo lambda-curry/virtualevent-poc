@@ -13,6 +13,7 @@ import VideoComponent from '../components/VideoComponent'
 import TalkComponent from '../components/TalkComponent'
 import HeaderKeynote from '../components/HeaderKeynote'
 import HeroComponent from '../components/HeroComponent'
+import SimpleChatWidgetComponent from '../components/SimpleChatWidgetComponent'
 import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
 import AdvertiseComponent from '../components/AdvertiseComponent'
 
@@ -126,7 +127,7 @@ export const KeynotePageTemplate = class extends React.Component {
               <div className="columns mt-5">
                 <div className="column px-0 pt-5 pb-0 is-three-quarters">
                   <DisqusComponent disqusSSO={user.disqusSSO} page='keynote' event={event} summit={summit} title="Public Conversations" />
-                  <ScheduleLiteComponent
+                  {/* <ScheduleLiteComponent
                     accessToken={loggedUser.accessToken}
                     onEventClick={(ev) => this.onEventChange(ev)}
                     onViewAllEventsClick={() => this.onViewAllEventsClick()}
@@ -137,9 +138,11 @@ export const KeynotePageTemplate = class extends React.Component {
                     trackId={event.track ? event.track.id : null}
                     eventCount={3}
                     title={event.track ? `Up Next on ${event.track.name}` : 'Up Next'}
-                  />
+                  /> */}
+                  <AdvertiseComponent className='px-6' section='keynote' column="left" style={{ marginTop: '2em' }} />
                 </div>
                 <div className="column px-5 pt-5 pb-0 is-one-quarter">
+                  <SimpleChatWidgetComponent accessToken={loggedUser.accessToken} />
                   <AdvertiseComponent section='keynote' column="right" style={{ marginTop: '2em' }} />
                 </div>
               </div>
