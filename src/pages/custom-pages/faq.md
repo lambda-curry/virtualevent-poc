@@ -22,7 +22,7 @@ title: FAQ
 
 #### What dates/times are SMAC 2020?
 
-* SMAC 2020 is scheduled for Tuesday, September 22nd thru Thursday, September 24th, PST.
+* SMAC 2020 is scheduled for Tuesday, September 22 thru Thursday, September 24, PST.
 
   ![SMAC 2020 Schedule](/img/nosmac-sched-sm.png "SMAC 2020 Schedule")
 
