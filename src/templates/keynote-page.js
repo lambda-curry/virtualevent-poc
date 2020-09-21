@@ -68,7 +68,7 @@ export const KeynotePageTemplate = class extends React.Component {
   }
 
   render() {
-    const { loggedUser, event, eventsPhases, user, loading } = this.props;
+    const { loggedUser, event, eventsPhases, eventId, user, loading } = this.props;
     const { firstRender } = this.state;
     let { summit } = SummitObject;
     let currentEvent = eventsPhases.find(e => e.id === event?.id);
@@ -120,7 +120,7 @@ export const KeynotePageTemplate = class extends React.Component {
                 </div>
                 <div className="column px-5 pt-5 pb-0 is-one-quarter">
                   <SimpleChatWidgetComponent accessToken={loggedUser.accessToken} />
-                  <AdvertiseComponent section='keynote' column="right" style={{ marginTop: '2em' }} />
+                  <AdvertiseComponent id={eventId} badges={user.userProfile.summit_tickets} section='keynote' column="right" style={{ marginTop: '2em' }} />
                 </div>
               </div>
             </section>

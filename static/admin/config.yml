@@ -36,7 +36,8 @@ collections:
                     {label: "Text", name: "text", widget: string, required: false},
                     {label: "Link", name: "link", widget: string, required: false}
                   ]},
-                  {label: "Specific Event?", name: "id", widget: string, required: false}
+                  {label: "Specific Event?", name: "id", widget: string, required: false},
+                  {label: "Specific Badge?", name: "id", widget: string, required: false}
                 ]}
               ]},
             ]}
