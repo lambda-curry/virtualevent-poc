@@ -15635,10 +15635,10 @@ signal-exit@^3.0.0, signal-exit@^3.0.2, signal-exit@^3.0.3:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.3.tgz#a1410c2edd8f077b08b4e253c8eacfcaf057461c"
   integrity sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==
 
-simple-chat-widget@^1.0.22:
-  version "1.0.22"
-  resolved "https://registry.yarnpkg.com/simple-chat-widget/-/simple-chat-widget-1.0.22.tgz#14135176d41dbc3ad1c824461506834ab807501e"
-  integrity sha512-56294l0gaDYOROQHb6hhaIc2D6WDqkEyIBL67OZ27QniSROyUHwkQQWXCFr7zJKWn11z6A9pIAW1m356dpLtQw==
+simple-chat-widget@^1.0.23:
+  version "1.0.23"
+  resolved "https://registry.yarnpkg.com/simple-chat-widget/-/simple-chat-widget-1.0.23.tgz#488e19efef52b38888aed198d25e83717fbe9a7c"
+  integrity sha512-D2PN7POSQvQ3UqarKT5tXpfj30D66BUZmkAzN+7yViSBKv7JZnhQ6aD05oAe1HjDoz295fCx4C+WyxNEl+x2YA==
 
 simple-concat@^1.0.0:
   version "1.0.0"
