@@ -116,7 +116,7 @@ export const KeynotePageTemplate = class extends React.Component {
               <div className="columns mt-5">
                 <div className="column px-0 pt-5 pb-0 is-three-quarters">
                   <DisqusComponent disqusSSO={user.disqusSSO} page='keynote' event={event} summit={summit} title="Public Conversations" />
-                  <AdvertiseComponent className='px-6' section='keynote' column="left" style={{ marginTop: '2em' }} />
+                  <AdvertiseComponent className='px-6 py-6' section='keynote' column="left" />
                 </div>
                 <div className="column px-5 pt-5 pb-0 is-one-quarter">
                   <SimpleChatWidgetComponent accessToken={loggedUser.accessToken} />

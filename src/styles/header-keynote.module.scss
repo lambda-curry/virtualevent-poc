@@ -1,13 +1,17 @@
 @import './colors.scss';
 
 .body {
-  display: flex;    
-  height: 80px;
+  display: flex;
   align-items: center;
-  padding: 2rem 1.5rem;
+  padding: 1rem 2rem;
   background-color: black;
   color: white;
-  font-size: 24px;
+  span {
+    font-size: 23px;
+    line-height: 27px;
+    display: inline-block;
+    width: 100%;
+  }
 }
 
 .buttons {
@@ -15,4 +19,11 @@
     margin-right: 10px;
     background-color: $color_secondary_contrast;
   };
+}
+
+@media (max-width: 768px) {
+  .body {
+    span {
+    }
+  }
 }
