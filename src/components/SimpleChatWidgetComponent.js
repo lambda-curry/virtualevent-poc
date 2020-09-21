@@ -19,7 +19,6 @@ const SimpleChatWidgetComponent = class extends React.Component {
         forumSlug: envVariables.STREAM_IO_SSO_SLUG,
         onAuthError: (err, res) => console.log(err),
         openDir: "left",
-        title: "Private Chat",
         showHelp: true,
         showQA: true,
         hideUsers: true,
