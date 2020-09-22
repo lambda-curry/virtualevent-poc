@@ -52,7 +52,7 @@
     }
   ],
   "logo": {
-    "display": false
+    "display": true
   },
   "social": {
     "title": "Follow Us",
@@ -60,23 +60,23 @@
     "networks": [
       {
         "icon": "fa-facebook",
-        "link": "/footer-content/",
+        "link": "https://www.facebook.com/openstack/",
         "display": true
       },
       {
         "icon": "fa-twitter",
-        "link": "/footer-content/",
+        "link": "https://twitter.com/openstack",
         "display": true
       },
       {
         "icon": "fa-linkedin",
         "link": "/footer-content/",
-        "display": true
+        "display": false
       },
       {
         "link": "/footer-content/",
         "icon": "TEST",
-        "display": true
+        "display": false
       }
     ]
   },
