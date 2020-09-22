@@ -82,16 +82,16 @@
   },
   "legal": [
     {
+      "title": "Code of Conduct",
+      "link": "https://www.openstack.org/summit/2020/code-of-conduct/"
+    },
+    {
       "title": "Privacy Policy",
-      "link": "/footer-content/"
+      "link": "https://openstack.org/privacy/"
     },
     {
-      "title": "Legals",
-      "link": "/footer-content/"
-    },
-    {
-      "title": "Disclaimer",
-      "link": "/footer-content/"
+      "title": "OpenStack Foundation",
+      "link": "https://osf.dev"
     }
   ]
 }
