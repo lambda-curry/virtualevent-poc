@@ -77,7 +77,7 @@
               "image": "/img/NinSMAC20_Lobby_WKSHOP_DAY1_WIP.png",
               "button": {
                 "text": "",
-                "link": "/a/keynote/877/"
+                "link": "/a/keynote/880/"
               },
               "id": null,
               "badgeId": 20
@@ -86,7 +86,7 @@
               "image": "/img/NinSMAC20_Lobby_SalesPreso_DAY1_WIP.png",
               "button": {
                 "text": "",
-                "link": "/a/keynote/878/"
+                "link": "/a/keynote/881/"
               },
               "id": null,
               "badgeId": 21
@@ -113,7 +113,7 @@
               "id": null
             }
           ]
-        },        
+        },
         {
           "column": "center",
           "columnAds": []
