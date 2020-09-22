@@ -1,6 +1,6 @@
 ---
 templateKey: custom-page
-title: About the event
+title: About
 ---
 Join the people building and operating open infrastructure, with sessions and workshops on Container Infrastructure, CI/CD, 5G, NFV & Edge, Public Cloud, Private & Hybrid Cloud, Security and members of open source communities like Airship, Ansible, Ceph, Docker, Kata Containers, Kubernetes, ONAP, OpenStack, Open vSwitch, OPNFV, StarlingX, Zuul and more.
 
