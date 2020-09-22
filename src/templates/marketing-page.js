@@ -255,8 +255,8 @@ MarketingPage.propTypes = {
   getDisqusSSO: PropTypes.func,
 }
 
-const mapStateToProps = ({ summitState, loggedUserState, userState }) => ({
-  summit_phase: summitState.summit_phase,
+const mapStateToProps = ({ clockState, loggedUserState, userState }) => ({
+  summit_phase: clockState.summit_phase,
   isLoggedUser: loggedUserState.isLoggedUser,
   loggedUser: loggedUserState,
   user: userState,
