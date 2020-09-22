@@ -4,15 +4,15 @@
     "subTitle": "Coming soon!",
     "date": "virtual • central time zone",
     "time": "",
-    "dateLayout": false,
+    "dateLayout": true,
     "buttons": {
       "registerButton": {
         "text": "Register now!",
-        "display": false
+        "display": true
       },
       "loginButton": {
         "text": "Log in",
-        "display": false
+        "display": true
       }
     },
     "background": "",
