@@ -1,24 +1,24 @@
 {
   "heroBanner": {
-    "title": "YOCO Summit",
-    "subTitle": "Now Live!",
-    "date": "virtual • pacific time zone",
+    "title": "Open Infrastructure Summit",
+    "subTitle": "Coming soon!",
+    "date": "virtual • central time zone",
     "time": "",
     "dateLayout": false,
     "buttons": {
       "registerButton": {
         "text": "Register now",
-        "display": true
+        "display": false
       },
       "loginButton": {
         "text": "Log in",
-        "display": true
+        "display": false
       }
     },
     "background": "",
     "images": [
       {
-        "image": "/img/flavor_wheel.jpg"
+        "image": "/img/hero.png"
       }
     ]
   },
