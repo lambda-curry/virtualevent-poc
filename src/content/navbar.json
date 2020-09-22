@@ -11,19 +11,19 @@
       "display": true
     },
     {
-      "title": "About the event",
+      "title": "About",
       "link": "/about-event",
       "display": true
     },
     {
       "title": "Who we are",
       "link": "/who-we-are",
-      "display": true
+      "display": false
     },
     {
       "title": "Past events",
       "link": "/past-events",
-      "display": true
+      "display": false
     },
     {
       "title": "Contact",
