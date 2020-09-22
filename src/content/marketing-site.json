@@ -41,6 +41,24 @@
     {
       "image": "/img/5g.png",
       "size": "simple"
+    },
+    {
+      "image": "/img/email-635x240-ai.png"
+    },
+    {
+      "image": "/img/email-635x240-cicd.png"
+    },
+    {
+      "image": "/img/email-635x240-containers.png"
+    },
+    {
+      "image": "/img/email-635x240-privatehybridcloud.png"
+    },
+    {
+      "image": "/img/email-635x240-publiccloud.png"
+    },
+    {
+      "image": "/img/email-635x240-security.png"
     }
   ]
 }
