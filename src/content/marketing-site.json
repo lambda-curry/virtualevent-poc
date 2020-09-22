@@ -34,30 +34,13 @@
     "image": {
       "display": false,
       "title": "Image",
-      "src": "/img/yoco-sponsor-ads-large-wherehol-vert.png"
+      "src": ""
     }
   },
   "sponsors": [
     {
-      "image": "/img/yoco-sponsor-ads-large-wherehol-vert.png",
+      "image": "/img/5g.png",
       "size": "simple"
-    },
-    {
-      "image": "/img/yoco-sponsor-ads-medium-tilted.png",
-      "size": "simple"
-    },
-    {
-      "image": "/img/yoco-sponsor-ads-large-mobility-vert-new.png",
-      "size": "simple"
-    },
-    {
-      "image": "/img/yoco-sponsor-ads-large-apex-vert.png",
-      "size": "double"
-    },
-    {},
-    {
-      "image": "/img/yoco-sponsor-ads-medium-treva.png",
-      "size": "double"
     }
   ]
 }
