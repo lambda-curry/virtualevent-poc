@@ -59,7 +59,7 @@ const TalkComponent = class extends React.Component {
                 'Next session will start soon...'
                 :
                 eventStarted < PHASES.DURING || !event.streaming_url ?
-                  `This session will be available on ${epochToMomentTimeZone(start_date, time_zone_id).format('MMMM Do hh:mm A (z)')}`
+                  `This session will be available on ${epochToMomentTimeZone(start_date, time_zone_id).format('MMMM DD hh:mm A (z)')}`
                   :
                   ''
             }
