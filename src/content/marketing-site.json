@@ -51,11 +51,11 @@
       "size": "simple"
     },
     {
-      "image": "/img/yoco-sponsor-ads-large-apex-vert.png",
-      "size": "double"
+      "image": "/img/speaker-2-1x.png"
     },
     {
-      "image": "/img/speaker-2-1x.png"
+      "image": "",
+      "size": "double"
     }
   ]
 }
