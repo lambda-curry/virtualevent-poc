@@ -1,7 +1,7 @@
 {
   "sponsors": [
     {
-      "tier": "headline",
+      "tier": "Headline",
       "sponsors": [
         {
           "name": "huawei",
@@ -16,7 +16,7 @@
       "template": "big-images"
     },
     {
-      "tier": "premier",
+      "tier": "Premier",
       "sponsors": [],
       "button": {
         "text": "View all",
@@ -25,7 +25,7 @@
       "template": "small-images"
     },
     {
-      "tier": "exhibitor",
+      "tier": "Exhibitor",
       "sponsors": [],
       "template": "small-images"
     }
