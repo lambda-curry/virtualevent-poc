@@ -88,7 +88,7 @@ export const KeynotePageTemplate = class extends React.Component {
               <div className="columns is-gapless">
                 {eventStarted >= PHASES.DURING && event.streaming_url ?
                   <div className="column is-full px-0 py-0">
-                    <VideoComponent url={event.streaming_url} />
+                    <VideoComponent url={event.streaming_url} title={event.title} />
                     {event.meeting_url &&
                       <div className="join-zoom-container">
                         <span>
