@@ -1,10 +1,10 @@
 {
   "heroBanner": {
-    "title": "Bloomreach Connect Global Online Virtual 2020",
-    "subTitle": "Now Live!",
+    "title": "Bloomreach Connect ",
+    "subTitle": "Global Online Virtual 2020",
     "date": "",
-    "time": "",
-    "dateLayout": false,
+    "time": "CET / EST ",
+    "dateLayout": true,
     "buttons": {
       "registerButton": {
         "text": "Log in FNid",
