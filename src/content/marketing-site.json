@@ -18,7 +18,22 @@
     "background": "",
     "images": [
       {
-        "image": "/img/br-connect-sf-blog.jpg"
+        "image": "/img/carousel-image-1-2x.png"
+      },
+      {
+        "image": "/img/carousel-image-2-2x.png"
+      },
+      {
+        "image": "/img/carousel-image-3-2x.png"
+      },
+      {
+        "image": "/img/carousel-image-4-2x.png"
+      },
+      {
+        "image": "/img/carousel-image-5-2x.png"
+      },
+      {
+        "image": "/img/carousel-image-6-2x.png"
       }
     ]
   },
