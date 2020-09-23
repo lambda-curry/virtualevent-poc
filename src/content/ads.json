@@ -9,7 +9,7 @@
             {
               "image": "/img/ocp20tw-sponsorad-mock.png",
               "button": {
-                "link": "",
+                "link": "/virtual-booth/",
                 "text": "Button Link"
               },
               "id": ""
@@ -27,7 +27,7 @@
               "image": "/img/ocp20tw-sponsorad-mock.png",
               "button": {
                 "text": "Button Link",
-                "link": ""
+                "link": "/virtual-booth/"
               },
               "id": null
             },
@@ -35,7 +35,7 @@
               "image": "/img/ocp20tw-sponsorad-mock.png",
               "button": {
                 "text": "Button Link",
-                "link": ""
+                "link": "/virtual-booth/"
               },
               "id": null
             }
