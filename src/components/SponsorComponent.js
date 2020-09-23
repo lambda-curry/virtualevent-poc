@@ -19,8 +19,8 @@ const SponsorComponent = ({ tier }) => {
             <span><b>Gold Sponsors</b></span>
             {sponsors.map((sponsor, index) => {
               return (
-                <Link to={sponsor.link}>
-                  <img src={sponsor.image} alt={sponsor.name} key={index} />
+                <Link to={sponsor.link} key={index}>
+                  <img src={sponsor.image} alt={sponsor.name} />
                 </Link>
               )
             })}
