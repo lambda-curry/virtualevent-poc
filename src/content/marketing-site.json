@@ -51,11 +51,11 @@
       "size": "simple"
     },
     {
-      "image": "/img/speaker-2-1x.png"
-    },
-    {
       "image": "/img/yoco-sponsor-ads-medium-treva.png",
       "size": "double"
+    },
+    {
+      "image": "/img/speaker-2-1x.png"
     }
   ]
 }
