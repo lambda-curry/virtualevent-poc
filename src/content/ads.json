@@ -77,10 +77,10 @@
               "image": "/img/AC-SMAC20_Lobby_Party-Link.png",
               "button": {
                 "text": "",
-                "link": "/virtual-booth/"
+                "link": "/"
               },
               "id": null
-            }            
+            }
           ]
         },
         {
