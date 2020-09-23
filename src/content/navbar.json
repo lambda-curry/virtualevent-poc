@@ -28,12 +28,12 @@
     {
       "title": "Contact",
       "link": "/contact",
-      "display": true
+      "display": false
     },
     {
       "title": "Help",
       "link": "/help",
-      "display": true
+      "display": false
     }
   ]
 }
