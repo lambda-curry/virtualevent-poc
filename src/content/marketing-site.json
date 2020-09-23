@@ -2,7 +2,7 @@
   "heroBanner": {
     "title": "OCP TECH WEEK",
     "subTitle": "A VIRTUAL EVENT",
-    "date": "November 9–10 & 12–13, 2020",
+    "date": "November 9–10 & 12–13, 2020 (PST)",
     "time": "",
     "dateLayout": true,
     "buttons": {
@@ -25,7 +25,7 @@
   "leftColumn": {
     "schedule": {
       "display": true,
-      "title": "Full Event Schedule"
+      "title": "Full Event Schedule (PST)"
     },
     "disqus": {
       "display": false,
