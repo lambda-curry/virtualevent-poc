@@ -16,7 +16,7 @@ const SponsorComponent = ({ tier }) => {
       case 'headline':
         return (
           <div className={styles.headlineContainer}>
-            <span><b>Gold Sponsors</b></span>
+            <span><b>Headline Sponsors</b></span>
             {sponsors.map((sponsor, index) => {
               return (
                 <Link to={sponsor.link} key={index}>
