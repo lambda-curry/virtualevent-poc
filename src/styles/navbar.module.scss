@@ -95,6 +95,16 @@
   }
 }
 
+@media (max-width: 768px) {
+  .navbar {  
+    .navbar-brand {        
+      img {
+        height: 1.5rem;        
+      }
+    }
+  }
+}
+
 @media (max-width: 1023px) {
   .navbar {
     .navbar-burger {

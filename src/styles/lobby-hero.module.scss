@@ -187,6 +187,7 @@ div.column:first-of-type {
     }
 
     .date {
+      margin-top: 3em;
       transform: skew(-25deg);
       width: max-content;
       padding: 0.5rem 0;
@@ -285,11 +286,14 @@ div.column:first-of-type {
   .hero-events {
     .hero-body {
       padding: 2rem 1.5rem;
+
       .hero-event-container {
         flex-direction: column;
+
         .subtitle {
           display: inline-block;
-        }        
+        }
+
         .date {
           text-align: center;
         }
@@ -300,11 +304,11 @@ div.column:first-of-type {
 
 @media (max-width: 890px) {
   .hero-events {
-    .hero-body {      
-      .hero-event-container {        
-        .subtitle {          
+    .hero-body {
+      .hero-event-container {
+        .subtitle {
           padding-left: 0;
-        }        
+        }
       }
     }
   }
@@ -318,12 +322,37 @@ div.column:first-of-type {
         .hero-marketing-container {
           height: 520px;
           padding: 2rem 1.5rem;
+          overflow: hidden;
 
           .link {
             margin-bottom: 1rem;
             display: inline-block;
           }
         }
+
+        .date {
+          transform: skew(0deg);
+          width: calc(100% + 6em);
+          padding: 0.5rem 1em;
+          margin-left: -3em;
+          text-align: center;
+
+          div {
+            transform: skew(0deg);
+            letter-spacing: 0.1rem;
+          }
+
+          div:before {
+            content: "";
+            margin-right: 0em;
+          }
+
+          div:after {
+            content: "";
+            margin-left: 0em;
+          }
+        }
+
       }
 
       .right-column {
@@ -349,6 +378,21 @@ div.column:first-of-type {
           transform: none;
           margin-left: 0;
           height: auto;
+
+          h1 {
+            font-size: 3.5rem;
+          }
+
+          .date {
+            div {
+              font-size: 2.5rem
+            }
+          }
+
+          .hero-buttons {
+            display: flex;
+            flex-direction: column;
+          }
         }
       }
 
@@ -356,7 +400,11 @@ div.column:first-of-type {
         width: 100%;
         z-index: 1;
         margin-left: 0;
-        min-height: 150px;
+        height: 270px;
+
+        .image-slider {
+          height: 270px;
+        }
       }
     }
   }
