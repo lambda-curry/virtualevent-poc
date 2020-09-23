@@ -69,11 +69,6 @@
         "display": true
       },
       {
-        "icon": "fa-linkedin",
-        "link": "/footer-content/",
-        "display": false
-      },
-      {
         "icon": "fa-youtube",
         "link": "https://www.youtube.com/user/OpenComputeProject",
         "display": true
