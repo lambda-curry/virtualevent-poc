@@ -8,15 +8,17 @@ import Content from '../content/sponsor.json'
 
 const SponsorComponent = ({ tier }) => {
 
-  const sponsors = Content.sponsors[tier].sponsors;
-  const button = Content.sponsors[tier].button;
+  const selectedTier = Content.sponsors.find(s => s.tier === tier);
+  const sponsors = selectedTier.sponsors;
+  const button = selectedTier.button;
+  const template = selectedTier.template;
 
   if (sponsors.length > 0) {
-    switch (tier) {
-      case 'headline':
+    switch (template) {
+      case 'big-images':
         return (
-          <div className={styles.headlineContainer}>
-            <span><b>Headline Sponsors</b></span>
+          <div className={styles.goldContainer}>
+            <span><b>{tier} Sponsors</b></span>
             {sponsors.map((sponsor, index) => {
               return (
                 <Link to={sponsor.link} key={index}>
@@ -33,32 +35,10 @@ const SponsorComponent = ({ tier }) => {
             }
           </div>
         )
-      case 'premier':
+      case 'small-images':
         return (
-          <div className={styles.premierContainer}>
-            <span><b>Premier Sponsors</b></span>
-            {sponsors.map((sponsor, index) => {
-              return (
-                <div className={styles.imageBox} key={index}>
-                  <Link to={sponsor.link}>
-                    <img src={sponsor.image} alt={sponsor.name} />
-                  </Link>
-                </div>
-              )
-            })}
-            {button.text && button.link &&
-              <Link className={styles.link} to={button.link}>
-                <button className={`${styles.button} button is-large`}>
-                  {button.text}
-                </button>
-              </Link>
-            }
-          </div>
-        )
-      case 'exhibitor':
-        return (
-          <div className={styles.exhibitorContainer}>
-            <span><b>Exhibitor Sponsors</b></span>
+          <div className={styles.silverContainer}>
+            <span><b>{tier} Sponsors</b></span>
             {sponsors.map((sponsor, index) => {
               return (
                 <div className={styles.imageBox} key={index}>

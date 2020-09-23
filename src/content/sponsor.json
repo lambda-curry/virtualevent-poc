@@ -1,6 +1,7 @@
 {
-  "sponsors": {
-    "headline": {
+  "sponsors": [
+    {
+      "tier": "headline",
       "sponsors": [
         {
           "name": "huawei",
@@ -11,21 +12,22 @@
       "button": {
         "text": "View all",
         "link": "/virtual-booth/"
-      }
+      },
+      "template": "big-images"
     },
-    "premier": {
+    {
+      "tier": "premier",
       "sponsors": [],
       "button": {
         "text": "View all",
         "link": "/virtual-booth/"
-      }
+      },
+      "template": "small-images"
     },
-    "exhibitor": {
+    {
+      "tier": "exhibitor",
       "sponsors": [],
-      "button": {
-        "text": "View all",
-        "link": "/virtual-booth/"
-      }
+      "template": "small-images"
     }
-  }
+  ]
 }
