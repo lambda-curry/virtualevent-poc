@@ -4,7 +4,7 @@
     "subTitle": "Global Online Virtual 2020",
     "date": "",
     "time": "CET / EST ",
-    "dateLayout": true,
+    "dateLayout": false,
     "buttons": {
       "registerButton": {
         "text": "Log in FNid",
