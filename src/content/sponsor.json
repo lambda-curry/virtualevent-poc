@@ -24,51 +24,10 @@
       }
     },
     "silver": {
-      "sponsors": [
-        {
-          "name": "System Squared",
-          "image": "/img/logo-middle-tier-systemsquared.png",
-          "link": "/virtual-booth/"
-        },
-        {
-          "name": "GameHub",
-          "image": "/img/logo-top-tier-gamehub.png",
-          "link": "/virtual-booth/"
-        },
-        {
-          "name": "Hyved",
-          "image": "/img/logo-middle-tier-hyved.png",
-          "link": "/virtual-booth/"
-        },
-        {
-          "name": "Hughston",
-          "image": "/img/logo-middle-tier-hughston.png",
-          "link": "/virtual-booth/"
-        },
-        {
-          "name": "Curtin",
-          "image": "/img/logo-middle-tier-curtin.png",
-          "link": "/virtual-booth/"
-        },
-        {
-          "name": "FNTECH",
-          "image": "/img/logo-top-tier-fntech.png",
-          "link": "/virtual-booth/"
-        },
-        {
-          "name": "Seeing Eye",
-          "image": "/img/logo-middle-tier-seeingeye.png",
-          "link": "/virtual-booth/"
-        },
-        {
-          "name": "OpenTech",
-          "image": "/img/logo-top-tier-opentech.png",
-          "link": "/virtual-booth/"
-        }
-      ],
+      "sponsors": [],
       "button": {
-        "text": "View all",
-        "link": "/virtual-booth/"
+        "text": "",
+        "link": ""
       }
     }
   }
