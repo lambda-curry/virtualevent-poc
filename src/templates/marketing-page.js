@@ -75,9 +75,33 @@ export const MarketingPageTemplate = class extends React.Component {
               </React.Fragment>
             }
           </div>
-          <div className="column is-half px-0 pb-0">
+          <div className="column is-half is-hidden-mobile px-0 pb-0">
             <Masonry
               breakpointCols={2}
+              className="my-masonry-grid"
+              columnClassName="my-masonry-grid_column">
+              {MarketingSite.sponsors.map((item, index) => {
+                if(item.image) {
+                  return (
+                    <div key={index}>
+                      {item.link ?
+                        <Link to={item.link}>
+                          <img src={item.image} />
+                        </Link>
+                        :
+                        <img src={item.image} />
+                      }
+                    </div>
+                  )
+                } else {
+                  return null
+                }                
+              })}
+            </Masonry>
+          </div>
+          <div className="column is-half is-hidden-tablet px-0 pb-0">
+            <Masonry
+              breakpointCols={1}
               className="my-masonry-grid"
               columnClassName="my-masonry-grid_column">
               {MarketingSite.sponsors.map((item, index) => {
