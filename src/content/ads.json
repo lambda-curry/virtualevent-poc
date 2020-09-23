@@ -74,7 +74,7 @@
           "column": "right",
           "columnAds": [
             {
-              "image": "/img/NinSMAC20_Lobby_WKSHOP_DAY1_WIP.png",
+              "image": "/img/ninsmac20_lobby_wkshop_day2_wip.png",
               "button": {
                 "text": "",
                 "link": "/a/keynote/880/"
@@ -83,7 +83,7 @@
               "badgeId": 20
             },
             {
-              "image": "/img/NinSMAC20_Lobby_SalesPreso_DAY1_WIP.png",
+              "image": "/img/ninsmac20_lobby_salespreso_day2_wip.png",
               "button": {
                 "text": "",
                 "link": "/a/keynote/881/"
