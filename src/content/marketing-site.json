@@ -32,9 +32,9 @@
       "title": "Join the conversation"
     },
     "image": {
-      "display": false,
+      "display": true,
       "title": "Image",
-      "src": "/img/connectgallery-herobanner.jpeg"
+      "src": "/img/agenda-1x.png"
     }
   },
   "sponsors": [
@@ -43,7 +43,7 @@
       "size": "simple"
     },
     {
-      "image": "/img/commercetools.png",
+      "image": "/img/speaker-1-1x.png",
       "size": "simple"
     },
     {
@@ -54,9 +54,11 @@
       "image": "/img/yoco-sponsor-ads-large-apex-vert.png",
       "size": "double"
     },
-    {},
     {
-      "image": "/img/ep_new_logo_linear_rgb.png",
+      "image": "/img/speaker-3-1x.png"
+    },
+    {
+      "image": "/img/speaker-2-1x.png",
       "size": "double"
     }
   ]
