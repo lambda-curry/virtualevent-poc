@@ -36,6 +36,24 @@
         "text": "View all",
         "link": "/virtual-booth/"
       }
+    },
+    "gold": {
+      "sponsors": [
+        {
+          "image": "/img/huawei-new-lg.jpg",
+          "name": "Huawei",
+          "link": "/"
+        }
+      ]
+    },
+    "silver": {
+      "sponsors": [
+        {
+          "image": "/img/cisco-new-lg.png",
+          "name": "Cisco",
+          "link": "/"
+        }
+      ]
     }
   }
 }
