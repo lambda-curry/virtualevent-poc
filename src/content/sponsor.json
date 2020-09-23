@@ -1,6 +1,6 @@
 {
   "sponsors": {
-    "gold": {
+    "headline": {
       "sponsors": [
         {
           "name": "flowei",
@@ -23,7 +23,14 @@
         "link": "/virtual-booth/"
       }
     },
-    "silver": {
+    "Premier": {
+      "sponsors": [],
+      "button": {
+        "text": "View all",
+        "link": "/virtual-booth/"
+      }
+    },
+    "Exhibitor": {
       "sponsors": [],
       "button": {
         "text": "View all",
