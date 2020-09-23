@@ -2,7 +2,7 @@
   "heroBanner": {
     "title": "Bloomreach Connect Global Online Virtual 2020",
     "subTitle": "Now Live!",
-    "date": "virtual • pacific time zone",
+    "date": "Virtual",
     "time": "",
     "dateLayout": false,
     "buttons": {
@@ -33,7 +33,7 @@
     },
     "image": {
       "display": true,
-      "title": "Image",
+      "title": "",
       "src": "/img/agenda-1x.png"
     }
   },
