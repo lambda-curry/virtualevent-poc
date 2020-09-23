@@ -3,24 +3,24 @@
     "gold": {
       "sponsors": [
         {
-          "name": "flow",
-          "image": "/img/yoco-sponsor-ads-medium-treva.png",
-          "link": "/virtual-booth/"
+          "name": "OCP Member",
+          "image": "/img/ocp-tech-week-marketing-ad2-square.png",
+          "link": "https://www.opencompute.org/membership"
         },
         {
-          "name": "tilted",
-          "image": "/img/yoco-sponsor-ads-medium-flightpath.png",
-          "link": "/virtual-booth/"
+          "name": "OCP Brand Store",
+          "image": "/img/ocp20tw-sponsorad-mock-store.png",
+          "link": "https://opencompute.shop/"
         },
         {
-          "name": "treva",
-          "image": "/img/yoco-sponsor-ads-medium-topographic.png",
+          "name": "Sponsorship Opportunity",
+          "image": "/img/ocp20tw-sponsorad-mock-2.png",
           "link": "/virtual-booth/"
         }
       ],
       "button": {
-        "text": "View all",
-        "link": "/virtual-booth/"
+        "text": "",
+        "link": ""
       }
     },
     "silver": {
