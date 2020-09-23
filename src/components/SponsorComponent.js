@@ -15,7 +15,7 @@ const SponsorComponent = ({ tier }) => {
     switch (tier) {
       case 'headline':
         return (
-          <div className={styles.goldContainer}>
+          <div className={styles.headlineContainer}>
             <span><b>Gold Sponsors</b></span>
             {sponsors.map((sponsor, index) => {
               return (
@@ -35,8 +35,8 @@ const SponsorComponent = ({ tier }) => {
         )
       case 'premier':
         return (
-          <div className={styles.silverContainer}>
-            <span><b>Silver Sponsors</b></span>
+          <div className={styles.premierContainer}>
+            <span><b>Premier Sponsors</b></span>
             {sponsors.map((sponsor, index) => {
               return (
                 <div className={styles.imageBox} key={index}>
@@ -57,8 +57,8 @@ const SponsorComponent = ({ tier }) => {
         )
       case 'exhibitor':
         return (
-          <div className={styles.silverContainer}>
-            <span><b>Silver Sponsors</b></span>
+          <div className={styles.exhibitorContainer}>
+            <span><b>Exhibitor Sponsors</b></span>
             {sponsors.map((sponsor, index) => {
               return (
                 <div className={styles.imageBox} key={index}>

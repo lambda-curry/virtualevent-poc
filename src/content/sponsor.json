@@ -3,18 +3,8 @@
     "headline": {
       "sponsors": [
         {
-          "name": "flowei",
+          "name": "huawei",
           "image": "/img/huawei-new-lg.jpg",
-          "link": "/virtual-booth/"
-        },
-        {
-          "name": "tilted",
-          "image": "/img/zte-lg.jpg",
-          "link": "/virtual-booth/"
-        },
-        {
-          "name": "treva",
-          "image": "/img/inmotionhosting-lg.jpg",
           "link": "/virtual-booth/"
         }
       ],
