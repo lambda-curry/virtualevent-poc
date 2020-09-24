@@ -20,12 +20,15 @@ const AdvertiseComponent = ({ section, column, id }) => {
                 null
                 :
                 <div className={`${styles.sponsorContainer} sponsor-container`} key={index}>
-                  {!ad.button.text && ad.button.link &&
+                  {!ad.button &&
+                    <img src={ad.image} alt="sponsor" />
+                  }
+                  {!ad.button?.text && ad.button?.link &&
                     <Link to={ad.button.link}>
                       <img src={ad.image} alt="sponsor" />
                     </Link>
                   }
-                  {ad.button.text && ad.button.link &&
+                  {ad.button?.text && ad.button?.link &&
                     <Link className={styles.link} to={ad.button.link}>
                       <button className={`${styles.button} button is-large`}>
                         <b>{ad.button.text}</b>
@@ -52,12 +55,15 @@ const AdvertiseComponent = ({ section, column, id }) => {
               </div>
               :
               <div className={`${styles.sponsorContainer} sponsor-container`} key={index}>
-                {!ad.button.text && ad.button.link &&
+                {!ad.button &&
+                  <img src={ad.image} alt="sponsor" />
+                }
+                {!ad.button?.text && ad.button?.link &&
                   <Link to={ad.button.link}>
                     <img src={ad.image} alt="sponsor" />
                   </Link>
                 }
-                {ad.button.text && ad.button.link &&
+                {ad.button?.text && ad.button?.link &&
                   <React.Fragment>
                     <img src={ad.image} alt="sponsor" />
                     <Link className={styles.link} to={ad.button.link}>
