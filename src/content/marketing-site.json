@@ -43,13 +43,13 @@
       "size": "simple"
     },
     {
-      "image": "/img/photo3.jpg"
-    },
-    {
       "image": "/img/photo2.jpg"
     },
     {
-      "image": "/img/tracks.svg"
+      "image": "/img/photo3.jpg"
+    },
+    {
+      "image": "/img/tracks.png"
     }
   ]
 }
