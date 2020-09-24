@@ -57,7 +57,8 @@ export const MarketingPageTemplate = class extends React.Component {
                   accessToken={loggedUser.accessToken}
                   landscape={true}
                   showAllEvents={true}
-                  eventCount={100}
+                  showNav={false}
+                  eventCount={300}
                 />
               </React.Fragment>
             }
