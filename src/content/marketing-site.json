@@ -18,7 +18,7 @@
     "background": "",
     "images": [
       {
-        "image": "/img/hero.png"
+        "image": "/img/photo1.jpg"
       }
     ]
   },
@@ -39,26 +39,17 @@
   },
   "sponsors": [
     {
-      "image": "/img/5g.png",
+      "image": "/img/sponsors.svg",
       "size": "simple"
     },
     {
-      "image": "/img/email-635x240-ai.png"
+      "image": "/img/photo3.jpg"
     },
     {
-      "image": "/img/email-635x240-cicd.png"
+      "image": "/img/photo2.jpg"
     },
     {
-      "image": "/img/email-635x240-containers.png"
-    },
-    {
-      "image": "/img/email-635x240-privatehybridcloud.png"
-    },
-    {
-      "image": "/img/email-635x240-publiccloud.png"
-    },
-    {
-      "image": "/img/email-635x240-security.png"
+      "image": "/img/tracks.svg"
     }
   ]
 }
