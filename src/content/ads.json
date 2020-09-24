@@ -72,7 +72,11 @@
       "columns": [
         {
           "column": "right",
-          "columnAds": []
+          "columnAds": [
+            {
+              "image": "/img/ac-smac20_sessions-ad-mario.png"
+            }
+          ]
         },
         {
           "column": "center",
