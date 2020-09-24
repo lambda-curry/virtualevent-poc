@@ -74,36 +74,21 @@
           "column": "right",
           "columnAds": [
             {
-              "image": "/img/ninsmac20_lobby_wkshop_day2_wip.png",
+              "image": "/img/ninsmac20_lobby_wkshop_day3_wip.png",
               "button": {
                 "text": "",
-                "link": "/a/keynote/880/"
+                "link": "/a/keynote/883/"
               },
               "id": null,
               "badgeId": 20
             },
             {
-              "image": "/img/ninsmac20_lobby_salespreso_day2_wip.png",
+              "image": "/img/ninsmac20_lobby_awardsnight_day3_wip_v2.png",
               "button": {
                 "text": "",
-                "link": "/a/keynote/881/"
-              },
-              "id": null,
-              "badgeId": 21
-            },
-            {
-              "image": "/img/NinSMAC20_Lobby_Photo_DAY1_WIP_V3.png",
-              "button": {
-                "text": "",
-                "link": "https://mosaicme.in/smac"
+                "link": "https://nmiawards2020.fnvirtual.app"
               },
               "id": null
-            },
-            {
-              "button": {
-                "link": "https://us02web.zoom.us/j/89687309172?pwd=VFpGOWN5K1NoWVVweFZQY21scTZYdz09"
-              },
-              "image": "/img/smac-team-trivia-activity.png"
             }
           ]
         },
@@ -111,7 +96,7 @@
           "column": "left",
           "columnAds": [
             {
-              "image": "/img/ninsmac20_lobby_schedule_day2_wipv4.png",
+              "image": "/img/ninsmac20_lobby_schedule_day3_wip_v4.png",
               "button": {
                 "text": "",
                 "link": ""
