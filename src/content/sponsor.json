@@ -3,8 +3,8 @@
     "gold": {
       "sponsors": [
         {
-          "name": "OCP Member",
-          "image": "/img/ocp-tech-week-marketing-ad2-square.png",
+          "name": "Vertical Sponsor Ad Space",
+          "image": "/img/ocp20tw-sponsorad-mock.png",
           "link": "https://www.opencompute.org/membership"
         },
         {
@@ -16,6 +16,11 @@
           "name": "Sponsorship Opportunity",
           "image": "/img/ocp20tw-sponsorad-mock-2.png",
           "link": "/virtual-booth/"
+        },
+        {
+          "name": "OCP Member",
+          "image": "/img/ocp-tech-week-marketing-ad2-square.png",
+          "link": "https://www.opencompute.org/membership"
         }
       ],
       "button": {
