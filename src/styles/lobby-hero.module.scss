@@ -285,6 +285,10 @@ div.column:first-of-type {
   }
 }
 
+.column.is-half, .column.is-half-tablet {
+    background-color: #edf2f7;
+}
+
 @media (max-width: 1400px) {
   .hero-events {
     .hero-body {
