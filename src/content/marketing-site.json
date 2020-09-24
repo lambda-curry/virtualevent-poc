@@ -4,7 +4,7 @@
     "subTitle": "",
     "date": "October 19-23, 2020",
     "time": "",
-    "dateLayout": true,
+    "dateLayout": false,
     "buttons": {
       "registerButton": {
         "text": "Register now!",
@@ -43,13 +43,13 @@
       "size": "simple"
     },
     {
-      "image": "/img/photo2.jpg"
-    },
-    {
       "image": "/img/photo3.jpg"
     },
     {
-      "image": "/img/tracks.png"
+      "image": "/img/photo2.jpg"
+    },
+    {
+      "image": "/img/tracks.svg"
     }
   ]
 }
