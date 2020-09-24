@@ -7,7 +7,7 @@
           "column": "left",
           "columnAds": [
             {
-              "image": "/img/email-635x240-ai.png",
+              "image": "/img/sponsors.svg",
               "button": {
                 "link": "/virtual-booth/"
               }
@@ -22,7 +22,7 @@
           "column": "right",
           "columnAds": [
             {
-              "image": "/img/email-635x240-security.png"
+              "image": "/img/tracks.png"
             }
           ]
         }
