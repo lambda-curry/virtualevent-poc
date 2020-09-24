@@ -26,10 +26,10 @@ class MarketingHeroComponent extends React.Component {
   }
 
   getBackURL = () => {
-    let { location } = this.props;    
+    let { location } = this.props;
     let defaultLocation = envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/';
-    let backUrl = location.state?.backUrl ? location.state.backUrl : defaultLocation;    
-    return URI.encode(backUrl);    
+    let backUrl = location.state?.backUrl ? location.state.backUrl : defaultLocation;
+    return URI.encode(backUrl);
   }
 
   onClickLogin = () => {
@@ -53,9 +53,11 @@ class MarketingHeroComponent extends React.Component {
                 <h2 className="subtitle">
                   {MarketingSite.heroBanner.subTitle}
                 </h2>
-                <div className={styles.date} style={{ backgroundColor: MarketingSite.heroBanner.dateLayout ? 'var(--color_secondary)' : '' }}>
-                  <div>{MarketingSite.heroBanner.date}</div>
-                </div>
+                {MarketingSite.heroBanner.dateLayout &&
+                  <div className={styles.date}>
+                    <div>{MarketingSite.heroBanner.date}</div>
+                  </div>
+                }
                 <h4>{MarketingSite.heroBanner.time}</h4>
                 <div className={styles.heroButtons}>
                   {summit_phase >= PHASES.DURING && isLoggedUser ?
