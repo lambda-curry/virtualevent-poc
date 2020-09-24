@@ -77,7 +77,7 @@ export const HomePageTemplate = class extends React.Component {
                 onRef={addWidgetRef}
                 updateCallback={updateWidgets}
                 title={HomeSettings.centerColumn.schedule.showAllEvents ? "Full Schedule" : "Up Next"}
-                eventCount={HomeSettings.centerColumn.schedule.showAllEvents ? 100 : 4}
+                eventCount={HomeSettings.centerColumn.schedule.showAllEvents ? 300 : 3}
                 className={HomeSettings.centerColumn.schedule.showAllEvents ? "schedule-container-home" : ""}
               />
               <SpeakersWidgetComponent

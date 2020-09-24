@@ -15328,10 +15328,10 @@ saxes@^5.0.0:
   dependencies:
     xmlchars "^2.2.0"
 
-schedule-lite@^1.0.53:
-  version "1.0.53"
-  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.53.tgz#98e9c9bf1d7b23109f1ef8fb9e3d56802535ceaa"
-  integrity sha512-xl4Oh1xSh5DzEvUTahyKqmy8OfNEG27RGhajycCIZLVEGv2T4Rqr0cwDX5Oqd0DbvN4a8nRS65T1GR7sKMSq8g==
+schedule-lite@^1.0.55:
+  version "1.0.55"
+  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.55.tgz#ad5de5669813d1efa70c601bdd7e2da770dd0002"
+  integrity sha512-69pjvCUJs9NuF33J9i2Y5rurYSnwPnQ7Fm/MELI9HO/EB7CzMdZlF9ejAXKEVoQ9T1sCU5dYrN+Bm2kHgkRWNg==
 
 scheduler@^0.18.0:
   version "0.18.0"

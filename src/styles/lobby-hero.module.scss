@@ -197,6 +197,7 @@ div.column:first-of-type {
       width: max-content;
       padding: 0.5rem 0;
       margin-left: -3em;
+      background-color: $color_secondary;
 
       div {
         transform: skew(25deg);
@@ -341,10 +342,10 @@ div.column:first-of-type {
 
         .date {
           transform: skew(0deg);
-          width: calc(100% + 6em);
-          padding: 0.5rem 1em;
-          margin-left: -3em;
-          text-align: center;
+          width: 100%;
+          padding: 0.5rem 0;
+          margin-left: 0;          
+          background-color: transparent;
 
           div {
             transform: skew(0deg);
