@@ -72,16 +72,7 @@
       "columns": [
         {
           "column": "right",
-          "columnAds": [
-            {
-              "image": "/img/AC-SMAC20_Lobby_Party-Link.png",
-              "button": {
-                "text": "",
-                "link": "/"
-              },
-              "id": null
-            }
-          ]
+          "columnAds": []
         },
         {
           "column": "center",
