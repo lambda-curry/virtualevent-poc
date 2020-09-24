@@ -46,16 +46,7 @@
       "columns": [
         {
           "column": "left",
-          "columnAds": [
-            {
-              "image": "/img/yoco-sponsor-ads-medium-flow.png",
-              "button": {
-                "text": "Learn more",
-                "link": "/virtual-booth/"
-              },
-              "id": null
-            }
-          ]
+          "columnAds": []
         },
         {
           "column": "center",
