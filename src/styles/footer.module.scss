@@ -3,10 +3,6 @@
 .footer-colummns {
   text-align: left;
 
-  img {
-    max-height:50px;
-  }
-
   h4 {
     border-bottom: 2px solid $color_text_light;
     text-transform: uppercase;
@@ -33,6 +29,10 @@
     width: 60%;
   }
 }
+
+.footer img {
+    max-height:50px;
+  }
 
 .legals-bar {
   color: $color_text_light;
