@@ -23,7 +23,7 @@
         "text": "View all",
         "link": "/virtual-booth/"
       },
-      "template": "big-images"
+      "template": "horizontal-images"
     },
     {
       "tier": "silver",
@@ -73,7 +73,7 @@
         "text": "View all",
         "link": "/virtual-booth/"
       },
-      "template": "small-images"
+      "template": "horizontal-images"
     }
   ]
 }
