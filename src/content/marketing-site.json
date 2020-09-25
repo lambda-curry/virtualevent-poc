@@ -3,7 +3,7 @@
     "title": "Bloomreach Connect ",
     "subTitle": "Global Online Virtual 2020",
     "date": "October 6, 2020",
-    "time": "Timezones CET / EDT ",
+    "time": "Timezones CEST / EDT ",
     "dateLayout": false,
     "buttons": {
       "registerButton": {
@@ -54,11 +54,11 @@
   },
   "sponsors": [
     {
-      "image": "",
+      "image": "/img/speaker-1-1x.png",
       "size": "simple"
     },
     {
-      "image": "/img/speaker-1-1x.png",
+      "image": "/img/speaker-2-1x.png",
       "size": "simple"
     },
     {
@@ -66,11 +66,20 @@
       "size": "simple"
     },
     {
-      "image": "/img/speaker-2-1x.png"
+      "image": "/img/speaker-4-1x.png"
     },
     {
-      "image": "",
+      "image": "/img/speaker-5-1x.png",
       "size": "double"
+    },
+    {
+      "image": "/img/speaker-6-1x.png"
+    },
+    {
+      "image": "/img/speaker-7-1x.png"
+    },
+    {
+      "image": "/img/speaker-8-1x.png"
     }
   ]
 }
