@@ -1,6 +1,7 @@
 {
-  "sponsors": {
-    "gold": {
+  "sponsors": [
+    {
+      "tier": "gold",
       "sponsors": [
         {
           "name": "NHS Digital",
@@ -21,9 +22,11 @@
       "button": {
         "text": "View all",
         "link": "/virtual-booth/"
-      }
+      },
+      "template": "big-images"
     },
-    "silver": {
+    {
+      "tier": "silver",
       "sponsors": [
         {
           "name": "System Squared",
@@ -69,7 +72,8 @@
       "button": {
         "text": "View all",
         "link": "/virtual-booth/"
-      }
+      },
+      "template": "small-images"
     }
-  }
+  ]
 }

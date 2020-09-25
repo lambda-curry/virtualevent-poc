@@ -7,10 +7,12 @@
 
   span {
     margin-bottom: 2rem;
+    text-transform: capitalize;
   }
 
   a { 
     width: 100%;
+    text-align: center;
   }
 
   img {
@@ -50,6 +52,15 @@
     background-color: $color_secondary;
     color: $color_text_light;
     border: 0px;
+  }
+}
+
+.horizontal-container {
+  display: flex;
+  justify-content: space-evenly;  
+
+  .image-box {    
+    box-sizing: border-box;
   }
 }
 
