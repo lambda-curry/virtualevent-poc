@@ -9,7 +9,7 @@ import { PHASES } from '../utils/phasesUtils'
 
 import SummitObject from '../content/summit.json'
 
-const SchedulePage = ({summit_phase, isLoggedUser, loggedUser}) => {
+const MySchedulePage = ({summit_phase, isLoggedUser, loggedUser}) => {
 
   let { summit } = SummitObject;
 
@@ -23,11 +23,12 @@ const SchedulePage = ({summit_phase, isLoggedUser, loggedUser}) => {
   return (
     <Layout marketing={true}>
       <div className="container">
-        <h1>Schedule</h1>
+        <h1>My Schedule</h1>
         <hr/>
         <ScheduleLiteComponent
           {...scheduleProps}
           accessToken={loggedUser.accessToken}
+          yourSchedule={true}
           landscape={true}
           showNav={true}
           showFilters={true}
@@ -40,7 +41,7 @@ const SchedulePage = ({summit_phase, isLoggedUser, loggedUser}) => {
   )
 }
 
-SchedulePage.propTypes = {
+MySchedulePage.propTypes = {
   summit_phase: PropTypes.number,
   isLoggedUser: PropTypes.bool,
   loggedUser: PropTypes.object,
@@ -54,4 +55,4 @@ const mapStateToProps = ({ clockState, loggedUserState }) => ({
 
 export default connect(
   mapStateToProps, {}
-)(SchedulePage);
+)(MySchedulePage);
