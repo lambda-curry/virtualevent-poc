@@ -21,6 +21,11 @@
       "display": true
     },
     {
+      "title": "My schedule",
+      "link": "/a/my-schedule",
+      "display": true
+    },
+    {
       "title": "Sponsorship",
       "link": "/sponsorship",
       "display": true
