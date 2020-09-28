@@ -44,29 +44,21 @@ collections:
         label: "Sponsors"
         name: "sponsor"
         fields:
-          - {label: "Sponsors", name: "sponsors", widget: object, fields: [
-              {label: "Gold Tier", name: "gold", widget: object, fields: [
-                {label: "Sponsors", name: "sponsors", widget: list, fields: [
-                  {label: "Name", name: "name", widget: string },
-                  {label: "Image", name: "image", widget: image },
-                  {label: "Link", name: "link", widget: string },
-                ]},
-                {label: "Button", name: button, widget: object, fields: [
-                  {label: "Text", name: "text", widget: string, required: false},
-                  {label: "Link", name: "link", widget: string, required: false}
-                ]}
+          - {label: "Sponsors", name: "sponsors", widget: list, fields: [
+              {label: "Tier", name: "tier", widget: string},
+              {label: "Sponsors", name: "sponsors", widget: list, fields: [
+                {label: "Name", name: "name", widget: string },
+                {label: "Image", name: "image", widget: image },
+                {label: "Link", name: "link", widget: string }
               ]},
-              {label: "Silver Tier", name: "silver", widget: object, fields: [
-                {label: "Sponsors", name: "sponsors", widget: list, fields: [
-                  {label: "Name", name: "name", widget: string },
-                  {label: "Image", name: "image", widget: image },
-                  {label: "Link", name: "link", widget: string },
-                ]},
-                {label: "Button", name: button, widget: object, fields: [
-                  {label: "Text", name: "text", widget: string, required: false},
-                  {label: "Link", name: "link", widget: string, required: false}
-                ]}
+              {label: "Button", name: button, widget: object, fields: [
+                {label: "Text", name: "text", widget: string, required: false},
+                {label: "Link", name: "link", widget: string, required: false}
               ]},
+              {label: "Template", name: template, widget: select, options: [
+                { label: "Big Images", value: "big-images" },
+                { label: "Small Images", value: "small-images" },                
+              ]}
             ]}
       - file: "src/content/navbar.json"
         label: "Navbar"

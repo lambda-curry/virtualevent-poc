@@ -8,19 +8,21 @@ import Content from '../content/sponsor.json'
 
 const SponsorComponent = ({ tier }) => {
 
-  const sponsors = Content.sponsors[tier].sponsors;
-  const button = Content.sponsors[tier].button;
+  const selectedTier = Content.sponsors.find(s => s.tier === tier);
+  const sponsors = selectedTier.sponsors;
+  const button = selectedTier.button;
+  const template = selectedTier.template;
 
   if (sponsors.length > 0) {
-    switch (tier) {
-      case 'gold':
+    switch (template) {
+      case 'big-images':
         return (
           <div className={styles.goldContainer}>
-            <span><b>Gold Sponsors</b></span>
+            <span><b>{tier} Sponsors</b></span>
             {sponsors.map((sponsor, index) => {
               return (
-                <Link to={sponsor.link}>
-                  <img src={sponsor.image} alt={sponsor.name} key={index} />
+                <Link to={sponsor.link} key={index}>
+                  <img src={sponsor.image} alt={sponsor.name} />
                 </Link>
               )
             })}
@@ -33,10 +35,10 @@ const SponsorComponent = ({ tier }) => {
             }
           </div>
         )
-      case 'silver':
+      case 'small-images':
         return (
           <div className={styles.silverContainer}>
-            <span><b>Silver Sponsors</b></span>
+            <span><b>{tier} Sponsors</b></span>
             {sponsors.map((sponsor, index) => {
               return (
                 <div className={styles.imageBox} key={index}>
@@ -53,6 +55,20 @@ const SponsorComponent = ({ tier }) => {
                 </button>
               </Link>
             }
+          </div>
+        )
+      case 'horizontal-images':
+        return (
+          <div className={styles.horizontalContainer}>            
+            {sponsors.map((sponsor, index) => {
+              return (
+                <div className={styles.imageBox} key={index}>
+                  <Link to={sponsor.link}>
+                    <img src={sponsor.image} alt={sponsor.name} />
+                  </Link>
+                </div>
+              )
+            })}            
           </div>
         )
     }
