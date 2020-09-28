@@ -63,7 +63,7 @@ const SponsorComponent = ({page}) => {
             )
           case 'horizontal-images':
             return (
-              <div className={styles.horizontalContainer}>
+              <div className={`${styles.horizontalContainer} px-6`}>
                 {sponsors.map((sponsor, index) => {
                   return (
                     <div className={styles.imageBox} key={index}>
