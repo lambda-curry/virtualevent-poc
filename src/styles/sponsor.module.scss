@@ -55,6 +55,15 @@
   }
 }
 
+.horizontal-container {
+  display: flex;
+  justify-content: space-evenly;  
+
+  .image-box {    
+    box-sizing: border-box;
+  }
+}
+
 @media (min-width: 1921px) {
   .gold-container {
     flex-direction: row;
