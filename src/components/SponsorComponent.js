@@ -57,6 +57,20 @@ const SponsorComponent = ({ tier }) => {
             }
           </div>
         )
+      case 'horizontal-images':
+        return (
+          <div className={styles.horizontalContainer}>            
+            {sponsors.map((sponsor, index) => {
+              return (
+                <div className={styles.imageBox} key={index}>
+                  <Link to={sponsor.link}>
+                    <img src={sponsor.image} alt={sponsor.name} />
+                  </Link>
+                </div>
+              )
+            })}            
+          </div>
+        )
     }
   } else {
     return null;
