@@ -1,0 +1,143 @@
+{
+  "tierSponsors": [
+    {
+      "tier": [
+        {
+          "value": "tier-cYGYq5-ae",
+          "label": "Gold"
+        }
+      ],
+      "sponsors": [
+        {
+          "id": 1,
+          "name": "Authentic.",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/top-sponsor-1-2x.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 2,
+          "name": "Commerce Tools",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/top-sponsor-2-2x.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 3,
+          "name": "Elastic Path",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/top-sponsor-3-2x.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 4,
+          "name": "Shift7",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/top-sponsor-4-2x.png",
+          "headerImage": "",
+          "headerVideo": ""
+        }
+      ]
+    },
+    {
+      "tier": [
+        {
+          "value": "tier-DHcI3dWGk",
+          "label": "Silver"
+        }
+      ],
+      "sponsors": [
+        {
+          "id": 5,
+          "name": "BORN",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/second-tier-sponsor-6-2x.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 6,
+          "name": "Capgemini",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/second-tier-sponsor-3-2x.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 7,
+          "name": "GORILLA",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/second-tier-sponsor-2-2x.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 8,
+          "name": "Incentro",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/second-tier-sponsor-4-2x.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 9,
+          "name": "LiveArea",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/second-tier-sponsor-5-2x.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 10,
+          "name": "mindcurv",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/second-tier-sponsor-7-2x.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 11,
+          "name": "SAP",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/second-tier-sponsor-1-2x.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+      ]
+    },
+    {
+      "tier": [
+        {
+          "value": "tier-U_wEwGX8a",
+          "label": "Bronze"
+        }
+      ],
+      "sponsors": []
+    }
+  ]
+}
