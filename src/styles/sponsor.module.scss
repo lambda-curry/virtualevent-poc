@@ -57,10 +57,18 @@
 
 .horizontal-container {
   display: flex;
-  justify-content: space-evenly;  
+  justify-content: space-evenly;
 
-  .image-box {    
+  .image-box {
     box-sizing: border-box;
+    padding-right: 10px;
+    &:last-child {
+      padding-right: 0px;
+    }
+  }
+
+  &:not(:first-of-type) {
+    margin-top: 2rem;
   }
 }
 

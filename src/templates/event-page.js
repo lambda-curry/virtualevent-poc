@@ -130,8 +130,7 @@ export const EventPageTemplate = class extends React.Component {
                 <div className="columns mx-0 my-0 is-multiline">
                   <div className="column px-0 py-0 is-three-quarters is-hidden-mobile">
                     <TalkComponent eventStarted={eventStarted} event={event} summit={summit} noStream={true} />
-                    <SponsorComponent tier='gold' />
-                    <SponsorComponent tier='silver' />
+                    <SponsorComponent page='event' />
                   </div>
                   <DocumentsComponent event={event} />
                   {event.etherpad_link &&

@@ -12,7 +12,7 @@
         }
       },
       "sponsorTemplate": "big-header",
-      "eventTemplate": ""
+      "eventTemplate": "horizontal-images"
     },
     {
       "id": "tier-DHcI3dWGk",
@@ -26,7 +26,7 @@
         }
       },
       "sponsorTemplate": "big-header",
-      "eventTemplate": ""
+      "eventTemplate": "horizontal-images"
     },
     {
       "id": "tier-U_wEwGX8a",
@@ -40,7 +40,7 @@
         }
       },
       "sponsorTemplate": "small-header",
-      "eventTemplate": ""
+      "eventTemplate": "horizontal-images"
     }
   ]
 }
