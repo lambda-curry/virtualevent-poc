@@ -68,8 +68,8 @@ class Countdown extends React.Component {
 
 }
 
-const mapStateToProps = ({ summitState }) => ({  
-  now: summitState.nowUtc,
+const mapStateToProps = ({ clockState }) => ({  
+  now: clockState.nowUtc,
 })
 
 export default connect(mapStateToProps, null)(Countdown);
