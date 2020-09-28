@@ -1,0 +1,202 @@
+@import './colors.scss';
+
+.disqus-container-sponsor {
+  position: relative;
+}
+
+.hero {
+  background-color: black;
+  color: $color_text_light;
+
+  .hero-sponsor {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .hero-body {
+      padding: 2rem;
+      height: 450px;
+
+      .hero-sponsor-container {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+
+        .left-container {
+          align-self: flex-end;
+
+          .link {
+            color: $color_text_light;
+          }
+        }
+
+        .right-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .category {
+            align-self: flex-end;
+            img {
+              max-height: 75px;
+            }
+          }
+
+          .buttons {
+            display: flex;
+            flex-direction: column;
+            align-self: flex-end;
+
+            .link {
+              .button {
+                background-color: $color_secondary_contrast;
+                border-color: $color_secondary_contrast;
+                color: #fff;
+                height: 5rem;
+                width: 25rem;
+
+                i {
+                  color: #fff;
+                  height: 1em;
+                  width: 2.5em;
+                  margin-right: auto;
+                  font-size: 1.8em;
+                }
+
+                b {
+                  display: inline-block;
+                  width: 100%;
+                  text-align: center;
+                }
+
+                &:hover,
+                &:active {
+                  border-color: #fff;
+                }
+
+                &:focus {
+                  border-color: #fff;
+                  box-shadow: none;
+                }
+              }
+
+              &:hover,
+              &:active {
+                text-decoration: none;
+              }
+
+              &:nth-child(2) {
+                margin-top: 1rem;
+              }
+            }
+          }
+
+        }
+
+
+      }
+    }
+  }
+}
+
+.intro-half {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bottom-bar {
+  background-color: $color_secondary_contrast;
+  color: $color_text_light;
+  font-size: 38px;
+  padding: 0 10px;
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+  height: 55px;
+
+  .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 32s linear infinite;
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.container-banner {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 3rem;
+  margin-top: 2rem;
+  background-color: $color_secondary_contrast;
+
+  .container-text {
+    font-size: 32px;
+    color: $color_text_light;
+  }
+
+  .container-buttons {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+
+    .link {
+      .button {
+        background-color: transparent;
+        color: #fff;
+        height: 5rem;
+        width: 20rem;
+
+        i {
+          color: #fff;
+          height: 1em;
+          width: 2.5em;
+          margin-right: auto;
+          font-size: 1.8em;
+        }
+
+        b {
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+        }
+
+        &:hover,
+        &:active {
+          border-color: #fff;
+        }
+
+        &:focus {
+          border-color: #fff;
+          box-shadow: none;
+        }
+      }
+
+      &:hover,
+      &:active {
+        text-decoration: none;
+      }
+
+      &:first-of-type {
+        button {
+          background-color: $color_secondary;
+          border-color: $color_secondary;
+        }
+      }
+    }
+  }
+}

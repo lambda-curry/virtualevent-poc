@@ -1,0 +1,143 @@
+{
+  "tierSponsors": [
+    {
+      "tier": [
+        {
+          "value": "tier-cYGYq5-ae",
+          "label": "Gold"
+        }
+      ],
+      "sponsors": [
+        {
+          "id": 1,
+          "name": "flow",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/yoco-sponsor-ads-medium-treva.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 2,
+          "name": "tilted",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/yoco-sponsor-ads-medium-flightpath.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 3,
+          "name": "treva",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/yoco-sponsor-ads-medium-topographic.png",
+          "headerImage": "",
+          "headerVideo": ""
+        }
+      ]
+    },
+    {
+      "tier": [
+        {
+          "value": "tier-DHcI3dWGk",
+          "label": "Silver"
+        }
+      ],
+      "sponsors": [
+        {
+          "id": 4,
+          "name": "System Squared",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/logo-middle-tier-systemsquared.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 5,
+          "name": "GameHub",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/logo-top-tier-gamehub.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 6,
+          "name": "Hyved",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/logo-middle-tier-hyved.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 7,
+          "name": "Hughston",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/logo-middle-tier-hughston.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 8,
+          "name": "Curtin",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/logo-middle-tier-curtin.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 9,
+          "name": "FNTECH",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/logo-top-tier-fntech.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 10,
+          "name": "Seeing Eye",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/logo-middle-tier-seeingeye.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 11,
+          "name": "OpenTech",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/logo-top-tier-opentech.png",
+          "headerImage": "",
+          "headerVideo": ""
+        }
+      ]
+    },
+    {
+      "tier": [
+        {
+          "value": "tier-U_wEwGX8a",
+          "label": "Bronze"
+        }
+      ],
+      "sponsors": []
+    }
+  ]
+}
