@@ -7,14 +7,14 @@ import styles from '../styles/sponsor.module.scss'
 import Data from '../content/sponsors.json'
 import Tiers from '../content/sponsors-tiers.json'
 
-const SponsorComponent = () => {
+const SponsorComponent = ({page}) => {
 
   return (
 
     Data.tierSponsors.map(s => {
       const sponsors = s.sponsors;
       const tier = Tiers.tiers.find(t => t.id === s.tier[0].value);
-      const template = tier.lobby.lobbyTemplate;
+      const template = page === 'lobby' ? tier.lobby.lobbyTemplate : tier.eventTemplate;
       const button = tier.lobby.button;
 
       if (sponsors.length > 0) {
