@@ -10,12 +10,32 @@
       "sponsors": [
         {
           "id": 1,
-          "name": "Huawei",
-          "title": "We are Huawei",
-          "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
-          "marquee": "Huawei - Smart Technologies",
-          "logo": "/img/sponsors/headline/logo_huawei.png",
-          "headerImage": "/img/sponsors/headline/header_logo_headline.png",
+          "name": "flow",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/yoco-sponsor-ads-medium-treva.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 2,
+          "name": "tilted",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/yoco-sponsor-ads-medium-flightpath.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 3,
+          "name": "treva",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/yoco-sponsor-ads-medium-topographic.png",
+          "headerImage": "",
           "headerVideo": ""
         }
       ]
@@ -29,13 +49,83 @@
       ],
       "sponsors": [
         {
-          "id": 2,
-          "name": "CISCO",
-          "title": "We are CISCO",
-          "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
-          "marquee": "CISCO Shapes the Future of Technology",
-          "logo": "/img/sponsors/premier/logo_cisco.png",
-          "headerImage": "/img/sponsors/premier/header_logo_premier.png",
+          "id": 4,
+          "name": "System Squared",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/logo-middle-tier-systemsquared.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 5,
+          "name": "GameHub",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/logo-top-tier-gamehub.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 6,
+          "name": "Hyved",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/logo-middle-tier-hyved.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 7,
+          "name": "Hughston",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/logo-middle-tier-hughston.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 8,
+          "name": "Curtin",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/logo-middle-tier-curtin.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 9,
+          "name": "FNTECH",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/logo-top-tier-fntech.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 10,
+          "name": "Seeing Eye",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/logo-middle-tier-seeingeye.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 11,
+          "name": "OpenTech",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/logo-top-tier-opentech.png",
+          "headerImage": "",
           "headerVideo": ""
         }
       ]
@@ -47,19 +137,7 @@
           "label": "Bronze"
         }
       ],
-      "sponsors": [
-        {
-          "marquee": "ZTE Shapes the Future of Technology",
-          "logo": "/img/sponsors/exhibitor/logo_ZTE.png",
-          "name": "ZTE",
-          "pageImage": "/img/sponsors/exhibitor/immage.png",
-          "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
-          "headerVideo": "",
-          "headerImage": "/img/sponsors/exhibitor/header_logo_exhibitor.png",
-          "title": "We are ZTE",
-          "id": 3
-        }
-      ]
+      "sponsors": []
     }
   ]
 }
