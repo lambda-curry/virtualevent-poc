@@ -14,19 +14,35 @@ import { OPSessionChecker } from "openstack-uicore-foundation/lib/components";
 
 const PrivateRoute = ({ component: Component, isLoggedIn, location, user: { loading, userProfile }, summit_phase, getUserProfile, ...rest }) => {
 
-  const [isAuthorized, setIsAuthorized] = useState(null);
   const [hasTicket, setHasTicket] = useState(null);
+  const [isAuthorized, setIsAuthorized] = useState(null);
+  const [updatingUserProfile, setUpdatingUserProfile] = useState(null);
 
   useEffect(() => {
-    if (userProfile === null || (isAuthorized === false && hasTicket === false)) {
-      getUserProfile();      
-    } else if (userProfile !== null) {      
-      setIsAuthorized(() => isAuthorizedUser(userProfile.groups));
-      setHasTicket(() => userProfile.summit_tickets?.length > 0)
-    }    
-  }, [userProfile]);
 
-  if (!isLoggedIn && location.pathname !== `/`) {
+    if (!isLoggedIn) return;
+
+    if (userProfile === null) {
+      getUserProfile();
+      return;
+    } else if (updatingUserProfile) {
+      setUpdatingUserProfile(false);
+    }
+
+    if (hasTicket === null || isAuthorized === null || updatingUserProfile === true) {
+      setIsAuthorized(() => isAuthorizedUser(userProfile.groups));
+      setHasTicket(() => userProfile.summit_tickets?.length > 0);
+      return;
+    }
+
+    if (isAuthorized === false && hasTicket === false && updatingUserProfile === null) {
+      getUserProfile();
+      setUpdatingUserProfile(true);
+      return;
+    }
+  }, [userProfile, hasTicket, isAuthorized]);
+
+  if (!isLoggedIn) {
     navigate('/', {
       state: {
         backUrl: `${location.href}`
@@ -35,7 +51,7 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, user: { load
     return null
   }
 
-  if (loading && userProfile === null) {
+  if (loading || userProfile === null || hasTicket === null || isAuthorized === null || (hasTicket === false && isAuthorized === false && updatingUserProfile !== false)) {
     return (
       <HeroComponent
         title="Checking credentials..."
@@ -53,32 +69,20 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, user: { load
   }
 
   if (isAuthorized === false && summit_phase === PHASES.BEFORE) {
-    setTimeout(() => {
-      navigate('/')
-    }, 3000);
     return (
       <HeroComponent
         title="Its not yet show time!"
+        redirectTo="/"
       />
     )
   }
 
-  const clientId = envVariables.OAUTH2_CLIENT_ID;
-  const idpBaseUrl = envVariables.IDP_BASE_URL;
-
-  if (isAuthorized === true || hasTicket === true) {
-    return (
-      <>
-        <OPSessionChecker clientId={clientId} idpBaseUrl={idpBaseUrl} />
-        <Component location={location} {...rest} />
-      </>
-    );
-  } else {
-    return null;
-  }
-
-
+  return (
+    <>
+      <OPSessionChecker clientId={envVariables.OAUTH2_CLIENT_ID} idpBaseUrl={envVariables.IDP_BASE_URL} />
+      <Component location={location} {...rest} />
+    </>
+  );
 }
-
 
 export default connect(null, { getUserProfile })(PrivateRoute)
