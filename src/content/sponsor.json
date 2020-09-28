@@ -1,6 +1,7 @@
 {
-  "sponsors": {
-    "gold": {
+  "sponsors": [
+    {
+      "tier": "gold",
       "sponsors": [
         {
           "name": "Vertical Sponsor Ad Space",
@@ -27,13 +28,6 @@
         "text": "",
         "link": ""
       }
-    },
-    "silver": {
-      "sponsors": [],
-      "button": {
-        "text": "",
-        "link": ""
-      }
     }
-  }
+  ]
 }
