@@ -1,6 +1,6 @@
 ---
 templateKey: custom-page
-title: Footer Content
+title: Disclaimer
 ---
 Terms of Use
 
