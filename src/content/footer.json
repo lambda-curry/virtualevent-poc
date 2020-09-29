@@ -31,16 +31,16 @@
   },
   "legal": [
     {
-      "title": "Privacy Policy",
-      "link": "/privacy-policy/"
-    },
-    {
       "title": "Disclaimer",
       "link": "/footer-content/"
     },
     {
       "title": "Cookie Policy",
       "link": "/cookie-policy/"
+    },
+    {
+      "title": "Privacy Policy",
+      "link": "/privacy-policy/"
     },
     {
       "title": "California Privacy Rights Statement",
