@@ -1,0 +1,46 @@
+{
+  "tiers": [
+    {
+      "id": "tier-cYGYq5-ae",
+      "name": "Headline",
+      "badge": "/img/sponsors/headline/badge_headline.svg",
+      "lobby": {
+        "lobbyTemplate": "big-images",
+        "button": {
+          "text": "View all",
+          "link": "/virtual-booth/"
+        }
+      },
+      "sponsorTemplate": "big-header",
+      "eventTemplate": ""
+    },
+    {
+      "id": "tier-DHcI3dWGk",
+      "name": "Premier",
+      "badge": "/img/sponsors/premier/badge_premier.svg",
+      "lobby": {
+        "lobbyTemplate": "big-images",
+        "button": {
+          "text": "View all",
+          "link": "/virtual-booth/"
+        }
+      },
+      "sponsorTemplate": "big-header",
+      "eventTemplate": ""
+    },
+    {
+      "id": "tier-U_wEwGX8a",
+      "name": "Exhibitor",
+      "badge": "/img/sponsors/exhibitor/badge_exhibitor.svg",
+      "lobby": {
+        "lobbyTemplate": "small-images",
+        "button": {
+          "text": "View all",
+          "link": "/virtual-booth/"
+        }
+      },
+      "sponsorTemplate": "small-header",
+      "eventTemplate": ""
+    }
+  ]
+}
