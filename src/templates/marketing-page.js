@@ -60,6 +60,7 @@ export const MarketingPageTemplate = class extends React.Component {
                   showNav={true}
                   showAllEvents={true}
                   eventCount={100}
+                  showDetails={true}
                 />
               </React.Fragment>
             }
