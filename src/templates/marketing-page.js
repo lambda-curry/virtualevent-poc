@@ -72,7 +72,9 @@ export const MarketingPageTemplate = class extends React.Component {
               <React.Fragment>
                 <h2><b>{MarketingSite.leftColumn.image.title}</b></h2>
                 <br />
-                <img src={MarketingSite.leftColumn.image.src} />
+                <div className="marketing-image">
+                  <img src={MarketingSite.leftColumn.image.src} />
+                </div>
               </React.Fragment>
             }
           </div>

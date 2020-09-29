@@ -52,18 +52,18 @@ export const HomePageTemplate = class extends React.Component {
               <h2><b>Community</b></h2>
               <SponsorComponent page='lobby'/>
               <AdvertiseComponent section='lobby' column="left" style={{ marginTop: '2em' }} />
-            </div>
-            <div className="column is-half">
-              <h2><b>Today's Sessions</b></h2>
-              <LiveEventWidgetComponent
-                onEventClick={(ev) => this.onEventChange(ev)}
-              />
               <DisqusComponent
                 page="lobby"
                 disqusSSO={user.disqusSSO}
                 summit={summit}
                 className="disqus-container-home"
                 title="Public conversation"
+              />
+            </div>
+            <div className="column is-half">
+              <h2><b>Today's Sessions</b></h2>
+              <LiveEventWidgetComponent
+                onEventClick={(ev) => this.onEventChange(ev)}
               />
               <ScheduleLiteComponent
                 accessToken={loggedUser.accessToken}

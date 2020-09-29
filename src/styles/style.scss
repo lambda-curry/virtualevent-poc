@@ -38,6 +38,10 @@ footer {
   min-height: 71vh;
 }
 
+#marketing-columns {
+  background-color: #edf2f7;
+}
+
 div.login-form {
   display: block;
   background-color: #f5f5f5;
@@ -250,9 +254,9 @@ h2 {
   }
 }
 
-.schedule-container-home {  
+.schedule-container-home {
   margin-top: 15px;
-  position: static;  
+  position: static;
   overflow-y: auto;
   overflow-x: hidden;
   padding-bottom: 10px;
@@ -428,6 +432,19 @@ h2 {
       padding-right: 20px;
       padding-bottom: 30px;
     }
+  }
+
+  .marketing-image {
+    flex-direction: column;
+    margin-top: 15px;
+    position: absolute;
+    overflow-y: auto;
+    top: 95px;
+    right: 0;
+    left: 20px;
+    bottom: 0;
+    padding-right: 20px;
+    padding-bottom: 30px;
   }
 }
 
