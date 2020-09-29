@@ -1,6 +1,11 @@
 {
   "items": [
     {
+      "title": "Event Help Desk ",
+      "link": "/help",
+      "display": true
+    },
+    {
       "title": "Our Story",
       "link": "https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fwww.bloomreach.com%2fen%2fabout%2four-story&c=E,1,n2ssa6_mtdH7wjI9LwEOC2BZJhumW3CHH6ZU4Ziz02fKG5toLJM5zYKscrZVp85sPpUxOsZc973-TOTmrFiy0VjI3kFjSvRhBTRZa5Gyq0v_AwEv_XTtog,,&typo=1",
       "display": true
@@ -19,11 +24,6 @@
       "title": "Personalized Bloomreach ROI",
       "display": true,
       "link": "http:www.bloomreach.com/"
-    },
-    {
-      "title": "Help",
-      "link": "/help",
-      "display": true
     },
     {
       "title": "Contact Bloomreach",
