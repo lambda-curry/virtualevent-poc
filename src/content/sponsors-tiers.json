@@ -1,0 +1,18 @@
+{
+  "tiers": [
+    {
+      "id": "tier-cYGYq5-ae",
+      "name": "Gold",
+      "badge": "/img/gold.png",
+      "lobby": {
+        "lobbyTemplate": "big-images",
+        "button": {
+          "text": "View all",
+          "link": "/virtual-booth/"
+        }
+      },
+      "sponsorTemplate": "big-header",
+      "eventTemplate": ""
+    }
+  ]
+}

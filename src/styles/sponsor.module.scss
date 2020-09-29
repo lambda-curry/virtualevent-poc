@@ -10,7 +10,7 @@
     text-transform: capitalize;
   }
 
-  a { 
+  a {
     width: 100%;
     text-align: center;
   }
@@ -57,10 +57,20 @@
 
 .horizontal-container {
   display: flex;
-  justify-content: space-evenly;  
+  justify-content: space-evenly;
 
-  .image-box {    
+
+  .image-box {
     box-sizing: border-box;
+    padding-right: 10px;
+
+    &:last-child {
+      padding-right: 0px;
+    }
+  }
+
+  &:not(:first-of-type) {
+    margin-top: 2rem;
   }
 }
 
@@ -82,7 +92,8 @@
 
   .silver-container {
     justify-content: flex-start;
-    .image-box {      
+
+    .image-box {
       flex: 0 1 32%;
       margin-right: 8px;
     }

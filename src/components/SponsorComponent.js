@@ -4,77 +4,83 @@ import Link from '../components/Link'
 
 import styles from '../styles/sponsor.module.scss'
 
-import Content from '../content/sponsor.json'
+import Data from '../content/sponsors.json'
+import Tiers from '../content/sponsors-tiers.json'
 
-const SponsorComponent = ({ tier }) => {
+const SponsorComponent = ({page}) => {
 
-  const selectedTier = Content.sponsors.find(s => s.tier === tier);
-  const sponsors = selectedTier.sponsors;
-  const button = selectedTier.button;
-  const template = selectedTier.template;
+  return (
 
-  if (sponsors.length > 0) {
-    switch (template) {
-      case 'big-images':
-        return (
-          <div className={styles.goldContainer}>
-            <span><b>{tier} Sponsors</b></span>
-            {sponsors.map((sponsor, index) => {
-              return (
-                <Link to={sponsor.link} key={index}>
-                  <img src={sponsor.image} alt={sponsor.name} />
-                </Link>
-              )
-            })}
-            {button.text && button.link &&
-              <Link className={styles.link} to={button.link}>
-                <button className={`${styles.button} button is-large`}>
-                  {button.text}
-                </button>
-              </Link>
-            }
-          </div>
-        )
-      case 'small-images':
-        return (
-          <div className={styles.silverContainer}>
-            <span><b>{tier} Sponsors</b></span>
-            {sponsors.map((sponsor, index) => {
-              return (
-                <div className={styles.imageBox} key={index}>
-                  <Link to={sponsor.link}>
-                    <img src={sponsor.image} alt={sponsor.name} />
+    Data.tierSponsors.map(s => {
+      const sponsors = s.sponsors;
+      const tier = Tiers.tiers.find(t => t.id === s.tier[0].value);
+      const template = page === 'lobby' ? tier.lobby.lobbyTemplate : tier.eventTemplate;
+      const button = tier.lobby.button;
+
+      if (sponsors.length > 0) {
+        switch (template) {
+          case 'big-images':
+            return (
+              <div className={styles.goldContainer}>
+                <span><b>{tier.name} Sponsors</b></span>
+                {sponsors.map((sponsor, index) => {
+                  return (
+                    <Link to={`/a/sponsor/${sponsor.id}`} key={index}>
+                      <img src={sponsor.logo} alt={sponsor.name} />
+                    </Link>
+                  )
+                })}
+                {button.text && button.link &&
+                  <Link className={styles.link} to={button.link}>
+                    <button className={`${styles.button} button is-large`}>
+                      {button.text}
+                    </button>
                   </Link>
-                </div>
-              )
-            })}
-            {button.text && button.link &&
-              <Link className={styles.link} to={button.link}>
-                <button className={`${styles.button} button is-large`}>
-                  {button.text}
-                </button>
-              </Link>
-            }
-          </div>
-        )
-      case 'horizontal-images':
-        return (
-          <div className={styles.horizontalContainer}>            
-            {sponsors.map((sponsor, index) => {
-              return (
-                <div className={styles.imageBox} key={index}>
-                  <Link to={sponsor.link}>
-                    <img src={sponsor.image} alt={sponsor.name} />
+                }
+              </div>
+            )
+          case 'small-images':
+            return (
+              <div className={styles.silverContainer}>
+                <span><b>{tier.name} Sponsors</b></span>
+                {sponsors.map((sponsor, index) => {
+                  return (
+                    <div className={styles.imageBox} key={index}>
+                      <Link to={`/a/sponsor/${sponsor.id}`}>
+                        <img src={sponsor.logo} alt={sponsor.name} />
+                      </Link>
+                    </div>
+                  )
+                })}
+                {button.text && button.link &&
+                  <Link className={styles.link} to={button.link}>
+                    <button className={`${styles.button} button is-large`}>
+                      {button.text}
+                    </button>
                   </Link>
-                </div>
-              )
-            })}            
-          </div>
-        )
-    }
-  } else {
-    return null;
-  }
+                }
+              </div>
+            )
+          case 'horizontal-images':
+            return (
+              <div className={`${styles.horizontalContainer} px-6`}>
+                {sponsors.map((sponsor, index) => {
+                  return (
+                    <div className={styles.imageBox} key={index}>
+                      <Link to={sponsor.link}>
+                        <img src={sponsor.logo} alt={sponsor.name} />
+                      </Link>
+                    </div>
+                  )
+                })}
+              </div>
+            )
+        }
+      } else {
+        return null;
+      }
+    })
+  )
 }
 
 export default SponsorComponent;
