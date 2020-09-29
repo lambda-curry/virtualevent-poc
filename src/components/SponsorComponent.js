@@ -7,79 +7,83 @@ import styles from '../styles/sponsor.module.scss'
 import Data from '../content/sponsors.json'
 import Tiers from '../content/sponsors-tiers.json'
 
-const SponsorComponent = ({page}) => {
-
+const SponsorComponent = ({ page }) => {
+  const button = Tiers.lobbyButton;
+  let renderButton = false;
   return (
+    <React.Fragment>
+      {Data.tierSponsors.map(s => {
+        const sponsors = s.sponsors;
+        const tier = Tiers.tiers.find(t => t.id === s.tier[0].value);
+        const template = page === 'lobby' ? tier.lobby.lobbyTemplate : tier.eventTemplate;
 
-    Data.tierSponsors.map(s => {
-      const sponsors = s.sponsors;
-      const tier = Tiers.tiers.find(t => t.id === s.tier[0].value);
-      const template = page === 'lobby' ? tier.lobby.lobbyTemplate : tier.eventTemplate;
-      const button = tier.lobby.button;
+        if (sponsors.length > 0) {
+          renderButton = true;
+          switch (template) {
+            case 'big-images':
+              if (page === 'lobby' && !tier.lobby.display) {
+                return null
+              } else {
+                return (
+                  <div className={styles.bigImageContainer}>
+                    <span><b>{tier.name} Sponsors</b></span>
+                    {sponsors.map((sponsor, index) => {
+                      return (
+                        <Link to={`/a/sponsor/${sponsor.id}`} key={`${s.tier.label}-${index}`}>
+                          <img src={sponsor.logo} alt={sponsor.name} />
+                        </Link>
+                      )
+                    })}
+                  </div>
+                )
+              }
 
-      if (sponsors.length > 0) {
-        switch (template) {
-          case 'big-images':
-            return (
-              <div className={styles.goldContainer}>
-                <span><b>{tier.name} Sponsors</b></span>
-                {sponsors.map((sponsor, index) => {
-                  return (
-                    <Link to={`/a/sponsor/${sponsor.id}`} key={index}>
-                      <img src={sponsor.logo} alt={sponsor.name} />
-                    </Link>
-                  )
-                })}
-                {button.text && button.link &&
-                  <Link className={styles.link} to={button.link}>
-                    <button className={`${styles.button} button is-large`}>
-                      {button.text}
-                    </button>
-                  </Link>
-                }
-              </div>
-            )
-          case 'small-images':
-            return (
-              <div className={styles.silverContainer}>
-                <span><b>{tier.name} Sponsors</b></span>
-                {sponsors.map((sponsor, index) => {
-                  return (
-                    <div className={styles.imageBox} key={index}>
-                      <Link to={`/a/sponsor/${sponsor.id}`}>
-                        <img src={sponsor.logo} alt={sponsor.name} />
-                      </Link>
-                    </div>
-                  )
-                })}
-                {button.text && button.link &&
-                  <Link className={styles.link} to={button.link}>
-                    <button className={`${styles.button} button is-large`}>
-                      {button.text}
-                    </button>
-                  </Link>
-                }
-              </div>
-            )
-          case 'horizontal-images':
-            return (
-              <div className={`${styles.horizontalContainer} px-6`}>
-                {sponsors.map((sponsor, index) => {
-                  return (
-                    <div className={styles.imageBox} key={index}>
-                      <Link to={sponsor.link}>
-                        <img src={sponsor.logo} alt={sponsor.name} />
-                      </Link>
-                    </div>
-                  )
-                })}
-              </div>
-            )
+            case 'small-images':
+              if (page === 'lobby' && !tier.lobby.display) {
+                return null
+              } else {
+                return (
+                  <div className={styles.smallImageContainer}>
+                    <span><b>{tier.name} Sponsors</b></span>
+                    {sponsors.map((sponsor, index) => {
+                      return (
+                        <div className={styles.imageBox} key={`${s.tier.label}-${index}`}>
+                          <Link to={`/a/sponsor/${sponsor.id}`}>
+                            <img src={sponsor.logo} alt={sponsor.name} />
+                          </Link>
+                        </div>
+                      )
+                    })}
+                  </div>
+                )
+              }
+            case 'horizontal-images':
+              return (
+                <div className={`${styles.horizontalContainer} px-6`}>
+                  {sponsors.map((sponsor, index) => {
+                    return (
+                      <div className={styles.imageBox} key={`${s.tier.label}-${index}`}>
+                        <Link to={sponsor.link}>
+                          <img src={sponsor.logo} alt={sponsor.name} />
+                        </Link>
+                      </div>
+                    )
+                  })}
+                </div>
+              )
+          }
+        } else {
+          return null;
         }
-      } else {
-        return null;
+      })}
+      {page === 'lobby' && button.text && button.link && renderButton &&
+        <Link className={styles.link} to={button.link}>
+          <button className={`${styles.button} button is-large`}>
+            {button.text}
+          </button>
+        </Link>
       }
-    })
+    </React.Fragment>
   )
 }
 

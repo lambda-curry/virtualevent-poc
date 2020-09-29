@@ -6,10 +6,7 @@
       "badge": "/img/sponsors/headline/badge_headline.svg",
       "lobby": {
         "lobbyTemplate": "big-images",
-        "button": {
-          "text": "View all",
-          "link": "/virtual-booth/"
-        }
+        "display": true
       },
       "sponsorTemplate": "big-header",
       "eventTemplate": ""
@@ -20,10 +17,7 @@
       "badge": "/img/sponsors/premier/badge_premier.svg",
       "lobby": {
         "lobbyTemplate": "big-images",
-        "button": {
-          "text": "View all",
-          "link": "/virtual-booth/"
-        }
+        "display": true
       },
       "sponsorTemplate": "big-header",
       "eventTemplate": ""
@@ -34,13 +28,14 @@
       "badge": "/img/sponsors/exhibitor/badge_exhibitor.svg",
       "lobby": {
         "lobbyTemplate": "small-images",
-        "button": {
-          "text": "View all",
-          "link": "/virtual-booth/"
-        }
+        "display": true
       },
       "sponsorTemplate": "small-header",
       "eventTemplate": ""
     }
-  ]
+  ],
+  "lobbyButton": {
+    "text": "View all",
+    "link": "/virtual-booth/"
+  }
 }
