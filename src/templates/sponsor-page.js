@@ -34,9 +34,8 @@ export const SponsorPageTemplate = class extends React.Component {
   componentWillMount() {
     const { sponsorId } = this.props;
     const sponsor = Sponsors.tierSponsors.map(t => t.sponsors.find(s => s.id === parseInt(sponsorId))).filter(e => e !== undefined)[0];
-    const tier = Sponsors.tierSponsors.find(t => t.sponsors.find(s => s === sponsor)).tier;
-    const tierData = SponsorsTiers.tiers.find(t => t.value === tier.id);
-
+    const tier = Sponsors.tierSponsors.find(t => t.sponsors.find(s => s === sponsor)).tier[0];
+    const tierData = SponsorsTiers.tiers.find(t => t.id === tier.value);
     if (sponsor) this.setState({ sponsor: sponsor, tier: tierData });
   }
 
