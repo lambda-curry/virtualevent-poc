@@ -20,6 +20,7 @@ const ScheduleComponent = class extends React.Component {
       speakerBaseUrl: "/a/speakers",
       roomBaseUrl: "/a/rooms",
       summitId: parseInt(envVariables.SUMMIT_ID),
+      showUTC: true,
       onAuthError: (err, res) => expiredToken(err),
       onRef: ref => this.child = ref,
     };
