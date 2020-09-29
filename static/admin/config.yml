@@ -40,26 +40,35 @@ collections:
                 ]}
               ]},
             ]}
-      - file: "src/content/sponsor.json"
-        label: "Sponsors"
-        name: "sponsor"
+      - file: "src/content/sponsors-tiers.json"
+        label: "Sponsors Tiers"
+        name: "sponsorsTiers"
         fields:
-          - {label: "Sponsors", name: "sponsors", widget: list, fields: [
-              {label: "Tier", name: "tier", widget: string},
-              {label: "Sponsors", name: "sponsors", widget: list, fields: [
-                {label: "Name", name: "name", widget: string },
-                {label: "Image", name: "image", widget: image },
-                {label: "Link", name: "link", widget: string }
+          - {label: "Tiers", name: "tiers", widget: list, fields: [
+              {label: "Tier", name: "name", widget: string},
+              {label: "ID", name: "id", widget: ncw-id, prefix: tier, hidden: true},
+              {label: "Badge", name: "badge", widget: image, required: false},
+              {label: "Lobby", name: "lobby", widget: object, fields: [
+                {label: "Lobby Template", name: "lobbyTemplate", widget: select, required: false, options: [
+                  { label: "Big Images", value: "big-images" },
+                  { label: "Small Images", value: "small-images" },
+                  { label: "Horizontal Images", value: "horizontal-images" },
+                ]},
+                {label: "Button", name: button, widget: object, fields: [
+                  {label: "Text", name: "text", widget: string, required: false},
+                  {label: "Link", name: "link", widget: string, required: false}
+                ]},
               ]},
-              {label: "Button", name: button, widget: object, fields: [
-                {label: "Text", name: "text", widget: string, required: false},
-                {label: "Link", name: "link", widget: string, required: false}
+              {label: "Sponsor Page Template", name: "sponsorTemplate", widget: select, options: [
+                { label: "Big Header", value: "big-header" },
+                { label: "Small Header", value: "small-header" },
               ]},
-              {label: "Template", name: template, widget: select, options: [
+              {label: "In Event Template", name: "eventTemplate", widget: select, required: false, options: [
                 { label: "Big Images", value: "big-images" },
-                { label: "Small Images", value: "small-images" },                
-              ]}
-            ]}
+                { label: "Small Images", value: "small-images" },
+                { label: "Horizontal Images", value: "horizontal-images" },
+              ]},
+            ]}      
       - file: "src/content/navbar.json"
         label: "Navbar"
         name: "navbar"
@@ -194,3 +203,25 @@ collections:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "custom-page"}
       - {label: Title, name: title, widget: string}
       - {label: "Body", name: body, widget: markdown}
+  - name: "sponsors"
+    label: "Sponsors"
+    editor:
+      preview: false
+    files:
+      - file: "src/content/sponsors.json"
+        label: "Tier Sponsors"
+        name: "tierSponsors"
+        fields:
+          - {label: "Tier Sponsors", name: "tierSponsors", widget: list, summary: "{{tier[0].label}}", fields: [
+              {label: "Tier", name: "tier", widget: ncw-file-relation, collection: configurations, file: sponsorsTiers, target_field: tiers, id_field: id, display_fields: name},
+              {label: "Sponsors", name: "sponsors", widget: list, fields: [
+                {label: "Name", name: "name", widget: string },
+                {label: "Title", name: "title", widget: string },
+                {label: "Intro", name: "intro", widget: string },
+                {label: "Marquee", name: "marquee", widget: string },
+                {label: "Logo", name: "logo", widget: image },
+                {label: "Header Image", name: "headerImage", widget: image },
+                {label: "Page Image", name: "pageImage", widget: image, required: false },
+                {label: "Video Header", name: "headerVideo", widget: file, required: false },
+              ]}              
+            ]}

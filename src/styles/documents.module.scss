@@ -1,7 +1,7 @@
 @import './colors.scss';
 
-.docs-container {
-  border: 1px $color_primary_contrast solid;
+.docs-container {  
+  border: 1px solid #d3d3d3;
   color: $color_text_dark;
   display: flex;
   flex-direction: column;
@@ -50,8 +50,8 @@
     margin: 0 auto 0.5rem;
   }
 
-  hr {
-    border-top: 1px solid $color_primary_contrast;
+  hr {    
+    border-top: 1px solid #d3d3d3;
     margin: 0.5rem auto 0.5rem;
     width: 94%;
   }
