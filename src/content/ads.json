@@ -13,6 +13,27 @@
                 "text": "Button Link"
               },
               "id": ""
+            },
+            {
+              "image": "/img/ocp20tw-sponsorad-mock_092420.png",
+              "button": {
+                "link": "/virtual-booth/",
+                "text": "Button Link"
+              }
+            },
+            {
+              "image": "/img/ocp20tw-sponsorad-mock-2_092420.png",
+              "button": {
+                "text": "Button Link",
+                "link": "/virtual-booth/"
+              }
+            },
+            {
+              "image": "/img/ocp20tw-sponsorad-mock_carousel.png",
+              "button": {
+                "text": "Button Link",
+                "link": "/virtual-booth/"
+              }
             }
           ]
         },
