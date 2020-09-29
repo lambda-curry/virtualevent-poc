@@ -5,14 +5,7 @@
       "columns": [
         {
           "column": "left",
-          "columnAds": [
-            {
-              "image": "/img/sponsors.svg",
-              "button": {
-                "link": "/virtual-booth/"
-              }
-            }
-          ]
+          "columnAds": []
         },
         {
           "column": "center",
