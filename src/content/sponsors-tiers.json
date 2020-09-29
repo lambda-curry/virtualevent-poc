@@ -13,34 +13,6 @@
       },
       "sponsorTemplate": "big-header",
       "eventTemplate": ""
-    },
-    {
-      "id": "tier-DHcI3dWGk",
-      "name": "Silver",
-      "badge": "/img/silver.png",
-      "lobby": {
-        "lobbyTemplate": "big-images",
-        "button": {
-          "text": "View all",
-          "link": "/virtual-booth/"
-        }
-      },
-      "sponsorTemplate": "big-header",
-      "eventTemplate": ""
-    },
-    {
-      "id": "tier-U_wEwGX8a",
-      "name": "Bronze",
-      "badge": "/img/bronze.png",
-      "lobby": {
-        "lobbyTemplate": "small-images",
-        "button": {
-          "text": "View all",
-          "link": "/virtual-booth/"
-        }
-      },
-      "sponsorTemplate": "small-header",
-      "eventTemplate": ""
     }
   ]
 }

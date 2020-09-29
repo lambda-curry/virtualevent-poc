@@ -7,59 +7,7 @@
           "label": "Gold"
         }
       ],
-      "sponsors": [
-        {
-          "id": 1,
-          "name": "Huawei",
-          "title": "We are Huawei",
-          "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
-          "marquee": "Huawei - Smart Technologies",
-          "logo": "/img/sponsors/headline/logo_huawei.png",
-          "headerImage": "/img/sponsors/headline/header_logo_headline.png",
-          "headerVideo": ""
-        }
-      ]
-    },
-    {
-      "tier": [
-        {
-          "value": "tier-DHcI3dWGk",
-          "label": "Silver"
-        }
-      ],
-      "sponsors": [
-        {
-          "id": 2,
-          "name": "CISCO",
-          "title": "We are CISCO",
-          "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
-          "marquee": "CISCO Shapes the Future of Technology",
-          "logo": "/img/sponsors/premier/logo_cisco.png",
-          "headerImage": "/img/sponsors/premier/header_logo_premier.png",
-          "headerVideo": ""
-        }
-      ]
-    },
-    {
-      "tier": [
-        {
-          "value": "tier-U_wEwGX8a",
-          "label": "Bronze"
-        }
-      ],
-      "sponsors": [
-        {
-          "marquee": "ZTE Shapes the Future of Technology",
-          "logo": "/img/sponsors/exhibitor/logo_ZTE.png",
-          "name": "ZTE",
-          "pageImage": "/img/sponsors/exhibitor/immage.png",
-          "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
-          "headerVideo": "",
-          "headerImage": "/img/sponsors/exhibitor/header_logo_exhibitor.png",
-          "title": "We are ZTE",
-          "id": 3
-        }
-      ]
+      "sponsors": []
     }
   ]
 }
