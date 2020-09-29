@@ -27,7 +27,7 @@ div.column:first-of-type {
   }
 
   .mid-column {
-    width: 5%;
+    width: 0%;
     background-color: $color_secondary;
     transform: skew(-25deg);
     margin-left: -2%;
@@ -283,6 +283,16 @@ div.column:first-of-type {
   }
 }
 
+@media (max-width: 1700px) {
+  .hero-marketing {    
+    .hero-marketing-columns {
+      h1 {
+        font-size: 5rem;
+      }
+    }
+  }
+}
+
 @media (max-width: 1400px) {
   .hero-events {
     .hero-body {
@@ -361,6 +371,19 @@ div.column:first-of-type {
           height: 530px;
         }
       }
+      h1 {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .hero-marketing {    
+    .hero-marketing-columns {
+      h1 {
+        font-size: 3rem;
+      }
     }
   }
 }
@@ -383,6 +406,7 @@ div.column:first-of-type {
 
           h1 {
             font-size: 3.5rem;
+            margin: 0 -25px 0;
           }
 
           .date {

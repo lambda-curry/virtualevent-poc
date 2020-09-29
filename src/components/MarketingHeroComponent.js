@@ -43,7 +43,7 @@ class MarketingHeroComponent extends React.Component {
     return (
       <section className={styles.heroMarketing}>
         <div className={`${styles.heroMarketingColumns} columns is-gapless`}>
-          <div className={`${styles.leftColumn} column is-6 is-black`}
+          <div className={`${styles.leftColumn} column is-6 px-0 py-0 is-black`}
             style={{ backgroundImage: MarketingSite.heroBanner.background ? `url(${MarketingSite.heroBanner.background})` : '' }}>
             <div className={`${styles.heroMarketingContainer} hero-body`}>
               <div className="container">
@@ -91,7 +91,7 @@ class MarketingHeroComponent extends React.Component {
               </div>
             </div>
           </div>
-          <div className={`${styles.rightColumn} column is-6 px-0`} id="marketing-slider">
+          <div className={`${styles.rightColumn} column is-6 px-0 py-0`} id="marketing-slider">
             <Slider {...this.sliderSettings}>
               {MarketingSite.heroBanner.images.map((img, index) => {
                 return (
