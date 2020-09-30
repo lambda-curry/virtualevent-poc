@@ -59,8 +59,8 @@ export const MarketingPageTemplate = class extends React.Component {
 
     return (
       <React.Fragment>
-        <MarketingHeroComponent summit={summit} isLoggedUser={isLoggedUser} location={location} />
-        {summit && <Countdown summit={summit} />}
+        <MarketingHeroComponent summit={summit} isLoggedUser={isLoggedUser} location={location} />        
+        {summit && <Countdown summit={summit} className='is-hidden-tablet' />}
         <div className="columns" id="marketing-columns">
           <div className="column is-half px-6 pt-3 pb-0 mt-3" style={{ position: 'relative' }}>
             {MarketingSite.leftColumn.schedule.display &&
@@ -94,6 +94,7 @@ export const MarketingPageTemplate = class extends React.Component {
             }
           </div>
           <div className="column is-half is-hidden-mobile px-0 pt-0 pb-3">
+            {summit && <Countdown summit={summit} />}
             <Masonry
               breakpointCols={2}
               className="my-masonry-grid"
@@ -139,21 +140,37 @@ export const MarketingPageTemplate = class extends React.Component {
               className="my-masonry-grid"
               columnClassName="my-masonry-grid_column">
               {MarketingSite.sponsors.map((item, index) => {
-                if(item.image) {
+                if (item.images && item.images.length === 1) {
                   return (
-                    <div key={index}>
-                      {item.link ?
-                        <Link to={item.link}>
-                          <img src={item.image} />
+                    <div className={'single'} key={index}>
+                      {item.images[0].link ?
+                        <Link to={item.images[0].link}>
+                          <img src={item.images[0].image} />
                         </Link>
                         :
-                        <img src={item.image} />
+                        <img src={item.images[0].image} />
                       }
                     </div>
                   )
-                } else {
-                  return null
-                }                
+                } else if (item.images && item.images.length > 1) {
+                  return (
+                    <Slider {...sliderSettings}>
+                      {item.images.map((img, index) => {
+                        return (
+                          <div className={styles.imageSlider} key={index}>
+                            {img.link ?
+                              <Link to={img.link}>
+                                <img src={img.image} />
+                              </Link>
+                              :
+                              <img src={img.image} />
+                            }
+                          </div>
+                        )
+                      })}
+                    </Slider>
+                  )
+                }
               })}
             </Masonry>
           </div>

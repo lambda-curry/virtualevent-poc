@@ -103,13 +103,14 @@ div.column:first-of-type {
       padding-right: 10px;
 
       .button {
-        background-color: #fff;
-        color: #6d6e71;
+        background-color: #ec1d46;
+        border-width: 0;
+        color: #fff;
         height: 5rem;
         width: 20rem;
 
         i {
-          color: #6d6e71;
+          color: #fff;
           height: 1em;
           width: 2.5em;
           margin-right: auto;
@@ -144,13 +145,14 @@ div.column:first-of-type {
     }
   }
 
-  .link:first-of-type {
+  .link.register {
     .button {
       background-color: #fff;
-      color: #6d6e71;
+      color: #ec1d46;
+      border-color: #ec1d46;
 
       i {
-        color: #6d6e71;
+        color: #ec1d46;
       }
     }
   }

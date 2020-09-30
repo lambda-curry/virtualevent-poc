@@ -26,7 +26,7 @@ class Countdown extends React.Component {
   }  
 
   render() {
-    const { summit, now } = this.props;
+    const { summit, now, className } = this.props;
 
     if (!now || !summit.start_date || !summit.time_zone_id) return null;
 
@@ -42,7 +42,7 @@ class Countdown extends React.Component {
 
     if (diff.asMilliseconds() > 0) {
       return (
-        <div className={styles.countdown}>
+        <div className={`${styles.countdown} ${className}`}>
           <div className={`${styles.countdownColumns} columns is-gapless`}>
             <div className={`${styles.leftColumn} column is-6 is-black`}>
               <div>Event Kickoff</div>
