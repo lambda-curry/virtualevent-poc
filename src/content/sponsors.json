@@ -9,14 +9,15 @@
       ],
       "sponsors": [
         {
-          "id": 1,
-          "name": "Authentic.",
-          "title": "",
-          "intro": "",
           "marquee": "",
+          "externalLink": "https://www.beauthentic.digital/case-study/acm",
           "logo": "/img/top-sponsor-1-2x.png",
+          "name": "Authentic.",
+          "intro": "",
+          "headerVideo": "",
           "headerImage": "",
-          "headerVideo": ""
+          "title": "",
+          "id": 1
         },
         {
           "marquee": "",
