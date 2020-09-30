@@ -14,7 +14,7 @@
           "title": "We are Huawei",
           "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
           "marquee": "Huawei - Smart Technologies",
-          "logo": "/img/sponsors/headline/logo_huawei.png",
+          "logo": "/img/logo_ad_huawei.svg",
           "headerImage": "/img/sponsors/headline/header_logo_headline.png",
           "headerVideo": ""
         },
@@ -22,7 +22,7 @@
           "name": "Canonical",
           "title": "Canonical",
           "intro": "Canonical",
-          "logo": "/img/ubuntu-lg.jpg",
+          "logo": "/img/logo_ad_ubuntu.svg",
           "marquee": "Canonical is Amazing",
           "headerImage": "/img/ubuntu-lg.jpg"
         }
@@ -42,7 +42,7 @@
           "title": "We are CISCO",
           "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
           "marquee": "CISCO Shapes the Future of Technology",
-          "logo": "/img/cisco-new-lg.png",
+          "logo": "/img/logo_ad_cisco.png",
           "headerImage": "/img/sponsors/premier/header_logo_premier.png",
           "headerVideo": ""
         }
@@ -58,7 +58,7 @@
       "sponsors": [
         {
           "marquee": "ZTE Shapes the Future of Technology",
-          "logo": "/img/logo-zte.svg",
+          "logo": "/img/logo_ad_zte.svg",
           "name": "ZTE",
           "pageImage": "/img/sponsors/exhibitor/immage.png",
           "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
