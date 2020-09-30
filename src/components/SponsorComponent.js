@@ -29,9 +29,17 @@ const SponsorComponent = ({ page }) => {
                     <span><b>{tier.name} Sponsors</b></span>
                     {sponsors.map((sponsor, index) => {
                       return (
-                        <Link to={`/a/sponsor/${sponsor.id}`} key={`${s.tier.label}-${index}`}>
-                          <img src={sponsor.logo} alt={sponsor.name} />
-                        </Link>
+                        sponsor.externalLink ?
+                          <Link to={sponsor.externalLink} key={`${s.tier.label}-${index}`}>
+                            <img src={sponsor.logo} alt={sponsor.name} />
+                          </Link>
+                          :
+                          sponsor.usesSponsorPage ?
+                            <Link to={`/a/sponsor/${sponsor.id}`} key={`${s.tier.label}-${index}`}>
+                              <img src={sponsor.logo} alt={sponsor.name} />
+                            </Link>
+                            :
+                            <img src={sponsor.logo} alt={sponsor.name} />
                       )
                     })}
                   </div>
@@ -47,11 +55,22 @@ const SponsorComponent = ({ page }) => {
                     <span><b>{tier.name} Sponsors</b></span>
                     {sponsors.map((sponsor, index) => {
                       return (
-                        <div className={styles.imageBox} key={`${s.tier.label}-${index}`}>
-                          <Link to={`/a/sponsor/${sponsor.id}`}>
-                            <img src={sponsor.logo} alt={sponsor.name} />
-                          </Link>
-                        </div>
+                        sponsor.externalLink ?
+                          <div className={styles.imageBox} key={`${s.tier.label}-${index}`}>
+                            <Link to={sponsor.externalLink}>
+                              <img src={sponsor.logo} alt={sponsor.name} />
+                            </Link>
+                          </div>
+                          : sponsor.usesSponsorPage ?
+                            <div className={styles.imageBox} key={`${s.tier.label}-${index}`}>
+                              <Link to={`/a/sponsor/${sponsor.id}`}>
+                                <img src={sponsor.logo} alt={sponsor.name} />
+                              </Link>
+                            </div>
+                            :
+                            <div className={styles.imageBox} key={`${s.tier.label}-${index}`}>
+                              <img src={sponsor.logo} alt={sponsor.name} />
+                            </div>
                       )
                     })}
                   </div>
@@ -62,11 +81,22 @@ const SponsorComponent = ({ page }) => {
                 <div className={`${styles.horizontalContainer} px-6`}>
                   {sponsors.map((sponsor, index) => {
                     return (
-                      <div className={styles.imageBox} key={`${s.tier.label}-${index}`}>
-                        <Link to={sponsor.link}>
-                          <img src={sponsor.logo} alt={sponsor.name} />
-                        </Link>
-                      </div>
+                      sponsor.externalLink ?
+                        <div className={styles.imageBox} key={`${s.tier.label}-${index}`}>
+                          <Link to={sponsor.externalLink}>
+                            <img src={sponsor.logo} alt={sponsor.name} />
+                          </Link>
+                        </div>
+                        : sponsor.usesSponsorPage ?
+                          <div className={styles.imageBox} key={`${s.tier.label}-${index}`}>
+                            <Link to={`/a/sponsor/${sponsor.id}`}>
+                              <img src={sponsor.logo} alt={sponsor.name} />
+                            </Link>
+                          </div>
+                          :
+                          <div className={styles.imageBox} key={`${s.tier.label}-${index}`}>
+                            <img src={sponsor.logo} alt={sponsor.name} />
+                          </div>
                     )
                   })}
                 </div>

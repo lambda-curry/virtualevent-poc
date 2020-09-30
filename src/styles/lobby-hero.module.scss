@@ -38,7 +38,7 @@ div.column:first-of-type {
   h1 {
     font-size: 5rem;
     font-weight: bold;
-    max-width:600px;
+    max-width: 600px;
   }
 
   h2 {
@@ -289,7 +289,7 @@ div.column:first-of-type {
 }
 
 @media (max-width: 1700px) {
-  .hero-marketing {    
+  .hero-marketing {
     .hero-marketing-columns {
       h1 {
         font-size: 5rem;
@@ -336,7 +336,6 @@ div.column:first-of-type {
     .hero-marketing-columns {
       .left-column {
         .hero-marketing-container {
-          height: 520px;
           padding: 2rem 1.5rem;
           overflow: hidden;
 
@@ -368,14 +367,8 @@ div.column:first-of-type {
             margin-left: 0em;
           }
         }
-
       }
 
-      .right-column {
-        .image-slider {
-          height: 530px;
-        }
-      }
       h1 {
         font-size: 4rem;
       }
@@ -384,7 +377,7 @@ div.column:first-of-type {
 }
 
 @media (max-width: 850px) {
-  .hero-marketing {    
+  .hero-marketing {
     .hero-marketing-columns {
       h1 {
         font-size: 3rem;
