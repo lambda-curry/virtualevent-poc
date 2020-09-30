@@ -9,7 +9,7 @@
     "networks": [
       {
         "icon": "fa-facebook",
-        "link": "/footer-content/",
+        "link": "@bloomreach / BloomReach",
         "display": true
       },
       {
@@ -19,7 +19,7 @@
       },
       {
         "icon": "fa-linkedin",
-        "link": "/footer-content/",
+        "link": "@bloomreach ",
         "display": true
       },
       {
