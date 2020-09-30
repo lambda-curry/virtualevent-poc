@@ -7,7 +7,10 @@
           "column": "left",
           "columnAds": [
             {
-              "image": "/img/marketplace-484x484-02.svg"
+              "image": "/img/marketplace-484x484-02.svg",
+              "button": {
+                "link": "https://openinfra2020.netlify.app/a/sponsor/2"
+              }
             },
             {
               "image": "/img/lounge-484x484-03.svg"
