@@ -5,7 +5,11 @@
       "columns": [
         {
           "column": "left",
-          "columnAds": []
+          "columnAds": [
+            {
+              "image": "/img/sponsors.svg"
+            }
+          ]
         },
         {
           "column": "center",
