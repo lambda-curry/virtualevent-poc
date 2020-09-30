@@ -17,7 +17,7 @@ import DocumentsComponent from '../components/DocumentsComponent'
 import EventHeroComponent from '../components/EventHeroComponent'
 import HeroComponent from '../components/HeroComponent'
 
-import { getEventBySlug } from '../actions/event-actions'
+import { getEventById } from '../actions/event-actions'
 import { getDisqusSSO } from '../actions/user-actions'
 
 import { AttendanceTracker } from "openstack-uicore-foundation/lib/components";
@@ -31,7 +31,7 @@ export const EventPageTemplate = class extends React.Component {
 
   componentWillMount() {
     const { eventId } = this.props;
-    this.props.getEventBySlug(eventId);
+    this.props.getEventById(eventId);
   }
 
   componentDidMount() {
@@ -40,7 +40,7 @@ export const EventPageTemplate = class extends React.Component {
 
   onEventChange(ev) {
     navigate(`/a/event/${ev}`);
-    this.props.getEventBySlug(ev);
+    this.props.getEventById(ev);
   }
 
   render() {
@@ -131,7 +131,7 @@ const EventPage = (
     event,
     eventId,
     user,
-    getEventBySlug,
+    getEventById,
     getDisqusSSO
   }
 ) => {
@@ -144,7 +144,7 @@ const EventPage = (
         loading={loading}
         eventId={eventId}
         user={user}
-        getEventBySlug={getEventBySlug}
+        getEventById={getEventById}
         getDisqusSSO={getDisqusSSO}
       />
     </Layout>
@@ -157,7 +157,7 @@ EventPage.propTypes = {
   event: PropTypes.object,
   eventId: PropTypes.string,
   user: PropTypes.object,
-  getEventBySlug: PropTypes.func,
+  getEventById: PropTypes.func,
   getDisqusSSO: PropTypes.func,
 }
 
@@ -167,7 +167,7 @@ EventPageTemplate.propTypes = {
   loading: PropTypes.bool,
   eventId: PropTypes.string,
   user: PropTypes.object,
-  getEventBySlug: PropTypes.func,
+  getEventById: PropTypes.func,
   getDisqusSSO: PropTypes.func,
 }
 
@@ -189,7 +189,7 @@ const mapStateToProps = (
 export default connect(
   mapStateToProps,
   {
-    getEventBySlug,
+    getEventById,
     getDisqusSSO
   }
 )(EventPage);
