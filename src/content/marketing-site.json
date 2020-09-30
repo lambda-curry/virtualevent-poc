@@ -39,20 +39,40 @@
   },
   "sponsors": [
     {
-      "image": "/img/ocp-tech-week-marketing-ad1-square.png",
-      "link": ""
+      "title": "",
+      "images": [
+        {
+          "image": "/img/ocp-tech-week-marketing-ad1-square.png",
+          "link": ""
+        }
+      ]
     },
     {
-      "image": "/img/ocp-tech-week-marketing-ad3-portrait.png",
-      "link": ""
+      "title": "",
+      "images": [
+        {
+          "image": "/img/ocp-tech-week-marketing-ad3-portrait.png",
+          "link": ""
+        }
+      ]
     },
     {
-      "image": "/img/ocp-tech-week-marketing-ad4-portrait.png",
-      "link": ""
+      "title": "",
+      "images": [
+        {
+          "image": "/img/ocp-tech-week-marketing-ad4-portrait.png",
+          "link": ""
+        }
+      ]
     },
     {
-      "image": "/img/ocp-tech-week-marketing-ad2-square.png",
-      "link": ""
+      "title": "",
+      "images": [
+        {
+          "image": "/img/ocp-tech-week-marketing-ad2-square.png",
+          "link": ""
+        }
+      ]
     }
   ]
 }
