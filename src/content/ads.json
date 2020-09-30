@@ -13,7 +13,10 @@
               "image": "/img/lounge-484x484-03.svg"
             },
             {
-              "image": "/img/schedule-484x484-01.svg"
+              "image": "/img/schedule-484x484-01.svg",
+              "button": {
+                "link": "https://openinfra2020.netlify.app/a/schedule"
+              }
             }
           ]
         },
