@@ -19,14 +19,15 @@
           "headerVideo": ""
         },
         {
-          "id": 2,
-          "name": "Commerce Tools",
-          "title": "",
-          "intro": "",
           "marquee": "",
+          "externalLink": "https://commercetools.com/",
           "logo": "/img/top-sponsor-2-2x.png",
+          "name": "Commerce Tools",
+          "intro": "",
+          "headerVideo": "",
           "headerImage": "",
-          "headerVideo": ""
+          "title": "",
+          "id": 2
         },
         {
           "id": 3,
