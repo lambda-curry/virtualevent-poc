@@ -153,8 +153,11 @@ collections:
               ]},
             ]}
           - {label: "Sponsors", name: "sponsors", widget: list, fields: [
-              {label: "Image", name: "image", widget: image, required: false},
-              {label: "Link", name: "link", widget: string, required: false}
+              {label: "Name", name: title, widget: hidden},
+              {label: "Images", name: "images", widget: list, fields: [
+                {label: "Image", name: "image", widget: image, required: false},
+                {label: "Link", name: "link", widget: string, required: false}
+              ]}
             ]}
   - name: "virtualBooth"
     label: "Virtual Booth"
@@ -206,6 +209,8 @@ collections:
                 {label: "Intro", name: "intro", widget: string },
                 {label: "Marquee", name: "marquee", widget: string },
                 {label: "Logo", name: "logo", widget: image },
+                {label: "External Link", name: "externalLink", widget: string, required: false },
+                {label: "Uses Sponsor Page?", name: "usesSponsorPage", widget: boolean, required: false },
                 {label: "Header Image", name: "headerImage", widget: image },
                 {label: "Page Image", name: "pageImage", widget: image, required: false },
                 {label: "Video Header", name: "headerVideo", widget: file, required: false },

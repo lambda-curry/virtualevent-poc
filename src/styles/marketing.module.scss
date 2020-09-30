@@ -1,0 +1,23 @@
+@import './colors.scss';
+
+.masonry {
+
+  img {
+    object-fit: cover;
+    height: auto;
+  }
+
+  .image-slider {
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100%;
+    overflow: hidden;
+
+    img {
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
