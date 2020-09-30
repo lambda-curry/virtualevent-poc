@@ -39,17 +39,40 @@
   },
   "sponsors": [
     {
-      "image": "/img/sponsors.svg",
-      "size": "simple"
+      "title": "Top Left",
+      "images": [
+        {
+          "image": "/img/sponsors.svg",
+          "link": ""
+        }
+      ]
     },
     {
-      "image": "/img/photo3.jpg"
+      "title": "Top Right",
+      "images": [
+        {
+          "image": "/img/photo3.jpg",
+          "link": ""
+        }
+      ]
     },
     {
-      "image": "/img/photo2.jpg"
+      "title": "Bottom Left",
+      "images": [
+        {
+          "image": "/img/photo2.jpg",
+          "link": ""
+        }
+      ]
     },
     {
-      "image": "/img/tracks.png"
+      "title": "Bottom Right",
+      "images": [
+        {
+          "image": "/img/tracks.png",
+          "link": ""
+        }
+      ]
     }
   ]
 }
