@@ -107,20 +107,6 @@ collections:
               {label: "Title", name: "title", widget: string},
               {label: "Link", name: "link", widget: string},         
             ]}
-  - name: "home"
-    label: "Lobby Site"
-    editor:
-      preview: false
-    files:
-      - file: "src/content/home-settings.json"
-        name: "homeSettings"
-        label: "Lobby Settings"
-        fields:
-          - {label: "Center Column", name: "centerColumn", widget: object, fields: [
-              {label: "Schedule", name: "schedule", widget: object, fields: [
-                {label: "Show all events", name: "showAllEvents", widget: boolean, required: false}
-              ]}
-            ]}
   - name: "marketing"
     label: "Marketing Site"
     editor:
