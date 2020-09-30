@@ -6,7 +6,7 @@
       "badge": "/img/sponsors/headline/badge_headline.svg",
       "lobby": {
         "lobbyTemplate": "big-images",
-        "display": true
+        "display": false
       },
       "sponsorTemplate": "big-header",
       "eventTemplate": ""
@@ -17,7 +17,7 @@
       "badge": "/img/sponsors/premier/badge_premier.svg",
       "lobby": {
         "lobbyTemplate": "big-images",
-        "display": true
+        "display": false
       },
       "sponsorTemplate": "big-header",
       "eventTemplate": ""
@@ -28,7 +28,7 @@
       "badge": "/img/sponsors/exhibitor/badge_exhibitor.svg",
       "lobby": {
         "lobbyTemplate": "small-images",
-        "display": true
+        "display": false
       },
       "sponsorTemplate": "small-header",
       "eventTemplate": ""
