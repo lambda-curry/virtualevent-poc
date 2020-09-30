@@ -54,10 +54,7 @@ collections:
                   { label: "Small Images", value: "small-images" },
                   { label: "Horizontal Images", value: "horizontal-images" },
                 ]},
-                {label: "Button", name: button, widget: object, fields: [
-                  {label: "Text", name: "text", widget: string, required: false},
-                  {label: "Link", name: "link", widget: string, required: false}
-                ]},
+                {label: "Display", name: display, widget: boolean, required: false}
               ]},
               {label: "Sponsor Page Template", name: "sponsorTemplate", widget: select, options: [
                 { label: "Big Header", value: "big-header" },
@@ -68,7 +65,11 @@ collections:
                 { label: "Small Images", value: "small-images" },
                 { label: "Horizontal Images", value: "horizontal-images" },
               ]},
-            ]}      
+            ]}
+          - {label: "Lobby Button", name: lobbyButton, widget: object, fields: [
+              {label: "Text", name: "text", widget: string, required: false},
+              {label: "Link", name: "link", widget: string, required: false}
+            ]}
       - file: "src/content/navbar.json"
         label: "Navbar"
         name: "navbar"
