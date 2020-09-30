@@ -19,7 +19,7 @@ import HeroComponent from '../components/HeroComponent'
 import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
 import SponsorComponent from '../components/SponsorComponent'
 
-import { getEventBySlug } from '../actions/event-actions'
+import { getEventById } from '../actions/event-actions'
 import { getDisqusSSO } from '../actions/user-actions'
 
 import { PHASES } from '../utils/phasesUtils';
@@ -41,7 +41,7 @@ export const EventPageTemplate = class extends React.Component {
 
   componentWillMount() {
     this.props.getDisqusSSO();
-    this.props.getEventBySlug(this.props.eventId);
+    this.props.getEventById(this.props.eventId);
   }
 
   componentDidMount() {
@@ -62,7 +62,7 @@ export const EventPageTemplate = class extends React.Component {
   componentWillReceiveProps(nextProps) {
     const { eventId } = this.props;
     if (eventId !== nextProps.eventId) {
-      this.props.getEventBySlug(nextProps.eventId);
+      this.props.getEventById(nextProps.eventId);
     }
   }
 
@@ -175,7 +175,7 @@ const EventPage = (
     eventId,
     user,
     eventsPhases,
-    getEventBySlug,
+    getEventById,
     getDisqusSSO
   }
 ) => {
@@ -198,7 +198,7 @@ const EventPage = (
         eventId={eventId}
         user={user}
         eventsPhases={eventsPhases}
-        getEventBySlug={getEventBySlug}
+        getEventById={getEventById}
         getDisqusSSO={getDisqusSSO}
       />
     </Layout>
@@ -212,7 +212,7 @@ EventPage.propTypes = {
   eventId: PropTypes.string,
   user: PropTypes.object,
   eventsPhases: PropTypes.array,
-  getEventBySlug: PropTypes.func,
+  getEventById: PropTypes.func,
   getDisqusSSO: PropTypes.func,
 }
 
@@ -223,7 +223,7 @@ EventPageTemplate.propTypes = {
   eventId: PropTypes.string,
   user: PropTypes.object,
   eventsPhases: PropTypes.array,
-  getEventBySlug: PropTypes.func,
+  getEventById: PropTypes.func,
   getDisqusSSO: PropTypes.func,
 }
 
@@ -246,7 +246,7 @@ const mapStateToProps = (
 export default connect(
   mapStateToProps,
   {
-    getEventBySlug,
+    getEventById,
     getDisqusSSO
   }
 )(EventPage);

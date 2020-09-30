@@ -6,10 +6,7 @@
       "badge": "/img/gold.png",
       "lobby": {
         "lobbyTemplate": "big-images",
-        "button": {
-          "text": "View all",
-          "link": "/virtual-booth/"
-        }
+        "display": true
       },
       "sponsorTemplate": "big-header",
       "eventTemplate": "horizontal-images"
@@ -20,10 +17,7 @@
       "badge": "/img/silver.png",
       "lobby": {
         "lobbyTemplate": "big-images",
-        "button": {
-          "text": "View all",
-          "link": "/virtual-booth/"
-        }
+        "display": true
       },
       "sponsorTemplate": "big-header",
       "eventTemplate": "horizontal-images"
@@ -34,13 +28,14 @@
       "badge": "/img/bronze.png",
       "lobby": {
         "lobbyTemplate": "small-images",
-        "button": {
-          "text": "View all",
-          "link": "/virtual-booth/"
-        }
+        "display": true
       },
       "sponsorTemplate": "small-header",
       "eventTemplate": "horizontal-images"
     }
-  ]
+  ],
+  "lobbyButton": {
+    "text": "View all",
+    "link": "/virtual-booth/"
+  }
 }
