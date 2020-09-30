@@ -26,7 +26,7 @@ export const getEventById = (eventId) => (dispatch, getState) => {
 
   let params = {
       access_token: accessToken,      
-      expand: 'rsvp_template,+type,+track,+location,+location.venue,+location.floor,+speakers,+moderator,+sponsors,+groups,+feedback,+summit'
+      expand: 'rsvp_template%2C+type%2C+track%2C+location%2C+location.venue%2C+location.floor%2C+speakers%2C+moderator%2C+sponsors%2C+groups%2C+feedback%2C+summit'
   };
 
   return getRequest(
