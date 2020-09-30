@@ -7,7 +7,13 @@
           "column": "left",
           "columnAds": [
             {
-              "image": "/img/sponsors.svg"
+              "image": "/img/marketplace-484x484-02.svg"
+            },
+            {
+              "image": "/img/lounge-484x484-03.svg"
+            },
+            {
+              "image": "/img/schedule-484x484-01.svg"
             }
           ]
         },
