@@ -50,20 +50,20 @@ export const HomePageTemplate = class extends React.Component {
           <div className="columns">
             <div className="column is-one-quarter home-column">
               <h2><b>Community</b></h2>
-              <SponsorComponent page='lobby'/>
-              <AdvertiseComponent section='lobby' column="left" style={{ marginTop: '2em' }} />
+              <SponsorComponent page='lobby' />
+              <AdvertiseComponent section='lobby' column="left" style={{ marginTop: '2em' }} />              
+            </div>
+            <div className="column is-half home-column">
+              <h2><b>Today's Sessions</b></h2>
+              <LiveEventWidgetComponent
+                onEventClick={(ev) => this.onEventChange(ev)}
+              />
               <DisqusComponent
                 page="lobby"
                 disqusSSO={user.disqusSSO}
                 summit={summit}
                 className="disqus-container-home"
                 title="Public conversation"
-              />
-            </div>
-            <div className="column is-half home-column">
-              <h2><b>Today's Sessions</b></h2>
-              <LiveEventWidgetComponent
-                onEventClick={(ev) => this.onEventChange(ev)}
               />
               <ScheduleLiteComponent
                 accessToken={loggedUser.accessToken}
@@ -79,16 +79,20 @@ export const HomePageTemplate = class extends React.Component {
                 eventCount={HomeSettings.centerColumn.schedule.showAllEvents ? 100 : 4}
                 className={HomeSettings.centerColumn.schedule.showAllEvents ? "schedule-container-home" : ""}
               />
-              <SpeakersWidgetComponent
-                accessToken={loggedUser.accessToken}
-                title="Today's Speakers"
-                bigPics={true}
-              />
-              <SpeakersWidgetComponent
-                accessToken={loggedUser.accessToken}
-                title="Featured Speakers"
-                bigPics={false}
-              />
+              {HomeSettings.centerColumn.speakers.showTodaySpeakers &&
+                <SpeakersWidgetComponent
+                  accessToken={loggedUser.accessToken}
+                  title="Today's Speakers"
+                  bigPics={true}
+                />
+              }
+              {HomeSettings.centerColumn.speakers.showFeatureSpeakers &&
+                <SpeakersWidgetComponent
+                  accessToken={loggedUser.accessToken}
+                  title="Featured Speakers"
+                  bigPics={false}
+                />
+              }
               <AdvertiseComponent section='lobby' column="center" />
             </div>
             <div className="column is-one-quarter pb-6 home-column">
