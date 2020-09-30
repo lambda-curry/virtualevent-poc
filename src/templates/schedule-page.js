@@ -33,7 +33,6 @@ const SchedulePage = ({summit_phase, isLoggedUser, loggedUser}) => {
           showFilters={true}
           showAllEvents={true}
           eventCount={100}
-          showDetails={true}
         />
       </div>
     </Layout>
