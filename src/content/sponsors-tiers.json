@@ -11,5 +11,9 @@
       "sponsorTemplate": "big-header",
       "eventTemplate": ""
     }
-  ]
+  ],
+  "lobbyButton": {
+    "text": "",
+    "link": ""
+  }
 }
