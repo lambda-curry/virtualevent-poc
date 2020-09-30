@@ -39,20 +39,40 @@
   },
   "sponsors": [
     {
-      "image": "/img/ocp-tech-week-marketing-ad1-square.png",
-      "link": ""
+      "title": "",
+      "images": [
+        {
+          "image": "/img/ocp-tech-week-marketing-ad1-square.png",
+          "link": ""
+        }
+      ]
     },
     {
-      "image": "/img/ocp-tech-week-marketing-ad3-portrait.png",
-      "link": "https://opencompute.shop/"
+      "title": "",
+      "images": [
+        {
+          "image": "/img/ocp-tech-week-marketing-ad3-portrait.png",
+          "link": "https://opencompute.shop/"
+        }
+      ]
     },
     {
-      "image": "/img/ocp-tech-week-marketing-ad4-portrait.png",
-      "link": "https://www.opencompute.org/products"
+      "title": "",
+      "images": [
+        {
+          "image": "/img/ocp-tech-week-marketing-ad4-portrait.png",
+          "link": "https://www.opencompute.org/products"
+        }
+      ]
     },
     {
-      "image": "/img/ocp-tech-week-marketing-ad2-square.png",
-      "link": "https://www.opencompute.org/membership"
+      "title": "",
+      "images": [
+        {
+          "image": "/img/ocp-tech-week-marketing-ad2-square.png",
+          "link": "https://www.opencompute.org/membership"
+        }
+      ]
     }
   ]
 }
