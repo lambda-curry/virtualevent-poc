@@ -6,7 +6,7 @@
       "badge": "/img/sponsors/headline/badge_headline.svg",
       "lobby": {
         "lobbyTemplate": "big-images",
-        "display": false
+        "display": true
       },
       "sponsorTemplate": "big-header",
       "eventTemplate": ""
