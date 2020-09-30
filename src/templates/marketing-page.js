@@ -47,7 +47,7 @@ export const MarketingPageTemplate = class extends React.Component {
         <MarketingHeroComponent summit={summit} isLoggedUser={isLoggedUser} location={location}/>
         {summit && <Countdown summit={summit} />}
         <div className="columns" id="marketing-columns">
-          <div className="column is-half px-6 pt-6 pb-0" style={{ position: 'relative' }}>
+          <div className="column is-half px-6 pt-3 pb-0 mt-3" style={{ position: 'relative' }}>
             {MarketingSite.leftColumn.schedule.display &&
               <React.Fragment>
                 <h2><b>{MarketingSite.leftColumn.schedule.title}</b></h2>
@@ -78,7 +78,7 @@ export const MarketingPageTemplate = class extends React.Component {
               </React.Fragment>
             }
           </div>
-          <div className="column is-half is-hidden-mobile px-0 pb-0">
+          <div className="column is-half is-hidden-mobile px-0 pt-0 pb-3">
             <Masonry
               breakpointCols={2}
               className="my-masonry-grid"
