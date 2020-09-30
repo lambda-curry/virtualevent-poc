@@ -30,14 +30,15 @@
           "id": 2
         },
         {
-          "id": 3,
-          "name": "Elastic Path",
-          "title": "",
-          "intro": "",
           "marquee": "",
+          "externalLink": "https://share.vidyard.com/watch/kinUK5MNc9JrFkJaZumN9s",
           "logo": "/img/top-sponsor-3-2x.png",
+          "name": "Elastic Path",
+          "intro": "",
+          "headerVideo": "",
           "headerImage": "",
-          "headerVideo": ""
+          "title": "",
+          "id": 3
         },
         {
           "id": 4,
