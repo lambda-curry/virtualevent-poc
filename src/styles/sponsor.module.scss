@@ -1,6 +1,6 @@
 @import './colors.scss';
 
-.gold-container {
+.big-image-container {
   display: flex;
   flex-direction: column;
   margin-top: 3rem;
@@ -20,7 +20,7 @@
   }
 }
 
-.silver-container {
+.small-image-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
