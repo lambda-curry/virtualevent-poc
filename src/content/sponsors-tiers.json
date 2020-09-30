@@ -6,10 +6,7 @@
       "badge": "/img/gold.png",
       "lobby": {
         "lobbyTemplate": "big-images",
-        "button": {
-          "text": "View all",
-          "link": "/virtual-booth/"
-        }
+        "display": true
       },
       "sponsorTemplate": "big-header",
       "eventTemplate": ""

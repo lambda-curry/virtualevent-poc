@@ -18,19 +18,25 @@ export const handleResetReducers = () => (dispatch, getState) => {
   dispatch(createAction(LOGOUT_USER)({}));
 }
 
-export const getEventBySlug = (slug) => (dispatch, getState) => {
+export const getEventById = (eventId) => (dispatch, getState) => {
 
-  dispatch(startLoading());
+  let { loggedUserState: { accessToken } } = getState();
+
+  if (!accessToken) return Promise.resolve();
+
+  let params = {
+      access_token: accessToken,      
+      expand: 'rsvp_template,+type,+track,+location,+location.venue,+location.floor,+speakers,+moderator,+sponsors,+groups,+feedback,+summit'
+  };
 
   return getRequest(
     dispatch(startLoading()),
     createAction(GET_EVENT_DATA),
-    `${window.SUMMIT_API_BASE_URL}/api/public/v1/summits/${window.SUMMIT_ID}/events/${slug}/published?expand=rsvp_template%2C+type%2C+track%2C+location%2C+location.venue%2C+location.floor%2C+speakers%2C+moderator%2C+sponsors%2C+groups%2C+feedback%2C+summit`,
+    `${window.SUMMIT_API_BASE_URL}/api/v1/summits/${window.SUMMIT_ID}/events/${eventId}/published`,
     customErrorHandler
-  )({})(dispatch).then(() => {
+  )(params)(dispatch).then(() => {
     dispatch(stopLoading());
-  }
-  ).catch(e => {
+  }).catch(e => {
     dispatch(stopLoading());
     dispatch(createAction(GET_EVENT_DATA_ERROR)({}))
     return (e);
