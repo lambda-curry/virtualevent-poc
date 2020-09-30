@@ -35,7 +35,7 @@
     }
   ],
   "lobbyButton": {
-    "text": "View all",
-    "link": "/virtual-booth/"
+    "text": "",
+    "link": ""
   }
 }
