@@ -116,6 +116,12 @@ h2 {
   }
 }
 
+.home-column {
+  >div:first-of-type {
+    margin-top: 15px;
+  }
+}
+
 .talk {
 
   &__break {

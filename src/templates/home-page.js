@@ -47,7 +47,7 @@ export const HomePageTemplate = class extends React.Component {
         <LobbyHeroComponent />
         <div className="px-5 py-5 mb-6">
           <div className="columns">
-            <div className="column is-one-quarter">
+            <div className="column is-one-quarter home-column">
               <h2><b>Community</b></h2>
               <SponsorComponent page='lobby'/>
               <AdvertiseComponent section='lobby' column="left" style={{ marginTop: '2em' }} />
@@ -59,7 +59,7 @@ export const HomePageTemplate = class extends React.Component {
                 title="Public conversation"
               />
             </div>
-            <div className="column is-half">
+            <div className="column is-half home-column">
               <h2><b>Today's Sessions</b></h2>
               <LiveEventWidgetComponent
                 onEventClick={(ev) => this.onEventChange(ev)}
@@ -88,7 +88,7 @@ export const HomePageTemplate = class extends React.Component {
               />
               <AdvertiseComponent section='lobby' column="center" />
             </div>
-            <div className="column is-one-quarter pb-6">
+            <div className="column is-one-quarter pb-6 home-column">
               <h2><b>My Info</b></h2>
               <SimpleChatWidgetComponent accessToken={loggedUser.accessToken} title="Private Chat" />
               <ScheduleLiteComponent
