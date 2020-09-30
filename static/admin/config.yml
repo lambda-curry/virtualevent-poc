@@ -54,10 +54,7 @@ collections:
                   { label: "Small Images", value: "small-images" },
                   { label: "Horizontal Images", value: "horizontal-images" },
                 ]},
-                {label: "Button", name: button, widget: object, fields: [
-                  {label: "Text", name: "text", widget: string, required: false},
-                  {label: "Link", name: "link", widget: string, required: false}
-                ]},
+                {label: "Display", name: display, widget: boolean, required: false}
               ]},
               {label: "Sponsor Page Template", name: "sponsorTemplate", widget: select, options: [
                 { label: "Big Header", value: "big-header" },
@@ -68,7 +65,11 @@ collections:
                 { label: "Small Images", value: "small-images" },
                 { label: "Horizontal Images", value: "horizontal-images" },
               ]},
-            ]}      
+            ]}
+          - {label: "Lobby Button", name: lobbyButton, widget: object, fields: [
+              {label: "Text", name: "text", widget: string, required: false},
+              {label: "Link", name: "link", widget: string, required: false}
+            ]}
       - file: "src/content/navbar.json"
         label: "Navbar"
         name: "navbar"
@@ -105,20 +106,6 @@ collections:
           - {label: "Legal", name: "legal", widget: list, fields: [
               {label: "Title", name: "title", widget: string},
               {label: "Link", name: "link", widget: string},         
-            ]}
-  - name: "home"
-    label: "Lobby Site"
-    editor:
-      preview: false
-    files:
-      - file: "src/content/home-settings.json"
-        name: "homeSettings"
-        label: "Lobby Settings"
-        fields:
-          - {label: "Center Column", name: "centerColumn", widget: object, fields: [
-              {label: "Schedule", name: "schedule", widget: object, fields: [
-                {label: "Show all events", name: "showAllEvents", widget: boolean, required: false}
-              ]}
             ]}
   - name: "marketing"
     label: "Marketing Site"
