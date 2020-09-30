@@ -2,6 +2,6 @@
 templateKey: custom-page
 title: Help
 ---
-YOU DECIDE!
+For FNvirtual event platform tech support, please email the FNTECH support team at [support@fntech.com](mailto:support@fntech.com). Standard hours are from 8am to 6pm (PDT), Monday through Friday
 
-Whether this goes to our tech support group, your internal events team, the registration folks, or all of the above, having a simple “help” tab in the top navigation ensures your attendees have a direct link to someone who can assist immediately.
+For Bloomreach general questions, or information on attending one of our Bloomreach Virtual Workshops, please email [events@bloomreach.com](mailto:events@bloomreach.com)
