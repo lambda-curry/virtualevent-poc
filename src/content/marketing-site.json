@@ -54,23 +54,76 @@
   },
   "sponsors": [
     {
-      "image": "",
-      "size": "simple"
+      "title": "",
+      "images": [
+        {
+          "image": "/img/speaker-1-1x.png",
+          "link": ""
+        }
+      ]
     },
     {
-      "image": "/img/speaker-1-1x.png",
-      "size": "simple"
+      "title": "",
+      "images": [
+        {
+          "image": "/img/speaker-2-1x.png",
+          "link": ""
+        }
+      ]
     },
     {
-      "image": "/img/speaker-3-1x.png",
-      "size": "simple"
+      "title": "",
+      "images": [
+        {
+          "image": "/img/speaker-3-1x.png",
+          "link": ""
+        }
+      ]
     },
     {
-      "image": "/img/speaker-2-1x.png"
+      "title": "",
+      "images": [
+        {
+          "image": "/img/speaker-4-1x.png",
+          "link": ""
+        }
+      ]
     },
     {
-      "image": "",
-      "size": "double"
+      "title": "",
+      "images": [
+        {
+          "image": "/img/speaker-5-1x.png",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "title": "",
+      "images": [
+        {
+          "image": "/img/speaker-6-1x.png",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "title": "",
+      "images": [
+        {
+          "image": "/img/speaker-7-1x.png",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "title": "",
+      "images": [
+        {
+          "image": "/img/speaker-8-1x.png",
+          "link": ""
+        }
+      ]
     }
   ]
 }
