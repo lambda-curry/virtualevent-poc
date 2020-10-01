@@ -9,17 +9,17 @@
     "networks": [
       {
         "icon": "fa-facebook",
-        "link": "@bloomreach / BloomReach",
+        "link": "https://www.facebook.com/bloomreach",
         "display": true
       },
       {
         "icon": "fa-twitter",
-        "link": "@bloomreachinc",
+        "link": "https://twitter.com/bloomreach_tm",
         "display": true
       },
       {
         "icon": "fa-linkedin",
-        "link": "@bloomreach ",
+        "link": "https://www.linkedin.com/company/bloomreach/",
         "display": true
       },
       {
