@@ -9,9 +9,11 @@ import { PHASES } from '../utils/phasesUtils'
 
 import SummitObject from '../content/summit.json'
 
-const SchedulePage = ({summit_phase, isLoggedUser, loggedUser}) => {
+const SchedulePage = ({summit_phase, isLoggedUser, loggedUser, mySchedule}) => {
 
   let { summit } = SummitObject;
+
+  let title = mySchedule ? 'My Schedule' : 'Schedule';
 
   let scheduleProps = {}
   if (isLoggedUser && summit_phase !== PHASES.BEFORE) {
@@ -23,7 +25,7 @@ const SchedulePage = ({summit_phase, isLoggedUser, loggedUser}) => {
   return (
     <Layout marketing={true}>
       <div className="container">
-        <h1>Schedule</h1>
+        <h1>{ title }</h1>
         <hr/>
         <ScheduleLiteComponent
           {...scheduleProps}
@@ -32,6 +34,7 @@ const SchedulePage = ({summit_phase, isLoggedUser, loggedUser}) => {
           showNav={true}
           showFilters={true}
           showAllEvents={true}
+          yourSchedule={mySchedule}
           eventCount={100}
           showDetails={true}
         />
