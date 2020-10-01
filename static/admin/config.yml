@@ -223,13 +223,13 @@ collections:
               {label: "Tier", name: "tier", widget: ncw-file-relation, collection: configurations, file: sponsorsTiers, target_field: tiers, id_field: id, display_fields: name},
               {label: "Sponsors", name: "sponsors", widget: list, fields: [
                 {label: "Name", name: "name", widget: string },
-                {label: "Title", name: "title", widget: string },
-                {label: "Intro", name: "intro", widget: string },
-                {label: "Marquee", name: "marquee", widget: string },
+                {label: "Title", name: "title", widget: string, required: false },
+                {label: "Intro", name: "intro", widget: string, required: false },
+                {label: "Marquee", name: "marquee", widget: string, required: false },
                 {label: "Logo", name: "logo", widget: image },
                 {label: "External Link", name: "externalLink", widget: string, required: false },
                 {label: "Uses Sponsor Page?", name: "usesSponsorPage", widget: boolean, required: false },
-                {label: "Header Image", name: "headerImage", widget: image },
+                {label: "Header Image", name: "headerImage", widget: image, required: false },
                 {label: "Page Image", name: "pageImage", widget: image, required: false },
                 {label: "Video Header", name: "headerVideo", widget: file, required: false },
               ]}              
