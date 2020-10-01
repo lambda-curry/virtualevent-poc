@@ -71,6 +71,14 @@ class MarketingHeroComponent extends React.Component {
                           </button>
                         </a>
                       }
+                      {MarketingSite.heroBanner.buttons.loginButton.display && !isLoggedUser &&
+                        <a className={styles.link}>
+                          <button className={`${styles.button} button is-large`} onClick={() => this.onClickLogin()}>
+                            <i className={`fa fa-2x fa-sign-in icon is-large`}></i>
+                            <b>{MarketingSite.heroBanner.buttons.loginButton.text}</b>
+                          </button>
+                        </a>
+                      }
                     </React.Fragment>
                   }
                 </div>
@@ -79,14 +87,6 @@ class MarketingHeroComponent extends React.Component {
           </div>
           <div className={`${styles.rightColumn} column is-6 px-0`} id="marketing-slider">
             <Slider {...sliderSettings}>
-              {MarketingSite.heroBanner.images.map((img, index) => {
-                return (
-                  <div key={index}>
-                    <div className={styles.imageSlider} style={{ backgroundImage: `url(${img.image})` }}>
-                    </div>
-                  </div>
-                )
-              })}
               {MarketingSite.heroBanner.images.map((img, index) => {
                 return (
                   <div key={index}>
