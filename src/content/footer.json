@@ -25,7 +25,7 @@
       {
         "link": "/footer-content/",
         "icon": "TEST",
-        "display": true
+        "display": false
       }
     ]
   },
