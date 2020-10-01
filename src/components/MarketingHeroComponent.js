@@ -12,19 +12,6 @@ import envVariables from '../utils/envVariables'
 
 class MarketingHeroComponent extends React.Component {
 
-  constructor(props) {
-    super(props);
-
-    const sliderSettings = {
-      autoplay: true,
-      dots: false,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
-  }
-
   getBackURL = () => {
     let { location } = this.props;
     let defaultLocation = envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/';
@@ -39,6 +26,15 @@ class MarketingHeroComponent extends React.Component {
   render() {
 
     const { summit, summit_phase, isLoggedUser } = this.props;
+
+    const sliderSettings = {
+      autoplay: true,
+      autoplaySpeed: 5000,
+      infinite: true,
+      dots: false,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
 
     return (
       <section className={styles.heroMarketing}>
@@ -91,8 +87,8 @@ class MarketingHeroComponent extends React.Component {
               </div>
             </div>
           </div>
-          <div className={`${styles.rightColumn} column is-6 px-0 py-0`} id="marketing-slider">
-            <Slider {...this.sliderSettings}>
+          <div className={`${styles.rightColumn} column is-6 px-0`} id="marketing-slider">
+            <Slider {...sliderSettings}>
               {MarketingSite.heroBanner.images.map((img, index) => {
                 return (
                   <div key={index}>
@@ -110,8 +106,8 @@ class MarketingHeroComponent extends React.Component {
   }
 }
 
-const mapStateToProps = ({ summitState }) => ({
-  summit_phase: summitState.summit_phase,
+const mapStateToProps = ({ clockState }) => ({
+  summit_phase: clockState.summit_phase,
 })
 
 export default connect(mapStateToProps, null)(MarketingHeroComponent);
