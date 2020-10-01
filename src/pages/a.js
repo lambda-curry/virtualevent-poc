@@ -22,6 +22,7 @@ const App = ({ isLoggedUser, user, summit_phase }) => {
           <PrivateRoute path="/event/:eventId" summit_phase={summit_phase} component={EventPage} isLoggedIn={isLoggedUser} user={user} location={location} />
           <PrivateRoute path="/sponsor/:sponsorId" component={SponsorPage} isLoggedIn={isLoggedUser} user={user} location={location} />
           <PublicRoute path="/schedule" component={SchedulePage} location={location} />
+          <PublicRoute path="/my-schedule" component={SchedulePage} mySchedule={true} location={location} />
           <LoginPage path="/login" location={location} />
         </Router>
       )}
