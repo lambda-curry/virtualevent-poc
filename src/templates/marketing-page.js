@@ -49,10 +49,9 @@ export const MarketingPageTemplate = class extends React.Component {
 
     const sliderSettings = {
       autoplay: true,
-      arrows: true,
-      dots: false,
+      autoplaySpeed: 5000,
       infinite: true,
-      speed: 500,
+      dots: false,
       slidesToShow: 1,
       slidesToScroll: 1
     };
