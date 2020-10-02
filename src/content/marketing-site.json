@@ -62,6 +62,14 @@
       ]
     },
     {
+      "images": [
+        {
+          "image": "/img/bloomreach-brand-1x.png",
+          "link": "https://brconnect.fnvirtual.app/a/event/876"
+        }
+      ]
+    },
+    {
       "title": "",
       "images": [
         {
@@ -130,13 +138,6 @@
         {
           "image": "/img/speaker-8-1x.png",
           "link": ""
-        }
-      ]
-    },
-    {
-      "images": [
-        {
-          "image": "/img/bloomreach-brand-1x.png"
         }
       ]
     }
