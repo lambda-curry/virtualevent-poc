@@ -11,7 +11,7 @@
         "display": false
       },
       "loginButton": {
-        "text": "Enter event with your FNid",
+        "text": "Log in with your FNid",
         "display": true
       }
     },
