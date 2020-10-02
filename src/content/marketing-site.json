@@ -3,11 +3,11 @@
     "title": "Bloomreach Connect ",
     "subTitle": "Global Online Virtual Summit 2020",
     "date": "October 6, 2020",
-    "time": "Timezones CEST / EDT ",
+    "time": "Click below to enter event. Need help ",
     "dateLayout": false,
     "buttons": {
       "registerButton": {
-        "text": "Log in FNid",
+        "text": "Enter event with your FNid",
         "display": false
       },
       "loginButton": {
