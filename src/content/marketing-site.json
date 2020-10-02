@@ -56,16 +56,16 @@
     {
       "images": [
         {
-          "link": "https://idp.fntech.com/auth/register",
-          "image": "/img/bloomreach-connect-brand-1x.png"
+          "image": "/img/bloomreach-brand-1x.png",
+          "link": "https://idp.fntech.com/auth/login"
         }
       ]
     },
     {
       "images": [
         {
-          "image": "/img/bloomreach-brand-1x.png",
-          "link": ""
+          "link": "https://idp.fntech.com/auth/register",
+          "image": "/img/bloomreach-connect-brand-1x.png"
         }
       ]
     },
