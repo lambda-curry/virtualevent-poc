@@ -54,6 +54,14 @@
   },
   "sponsors": [
     {
+      "images": [
+        {
+          "link": "https://idp.fntech.com/auth/register",
+          "image": "/img/bloomreach-connect-brand-1x.png"
+        }
+      ]
+    },
+    {
       "title": "",
       "images": [
         {
@@ -122,6 +130,13 @@
         {
           "image": "/img/speaker-8-1x.png",
           "link": ""
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "image": "/img/bloomreach-brand-1x.png"
         }
       ]
     }
