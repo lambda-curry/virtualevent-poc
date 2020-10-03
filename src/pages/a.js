@@ -6,7 +6,6 @@ import LoginPage from "../templates/login-page"
 import HomePage from "../templates/home-page"
 import EventPage from "../templates/event-page"
 import SchedulePage from "../templates/schedule-page";
-import MySchedulePage from "../templates/my-schedule-page";
 import SponsorPage from "../templates/sponsor-page"
 
 import SummitObject from '../content/summit.json'
