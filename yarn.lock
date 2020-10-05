@@ -10329,9 +10329,9 @@ linkifyjs@^2.1.9:
   integrity sha512-74ivurkK6WHvHFozVaGtQWV38FzBwSTGNmJolEgFp7QgR2bl6ArUWlvT4GcHKbPe1z3nWYi+VUdDZk16zDOVug==
 
 live-event-widget@^1.0.32:
-  version "1.0.32"
-  resolved "https://registry.yarnpkg.com/live-event-widget/-/live-event-widget-1.0.32.tgz#72084000725e9ab7f77edd99b588f5aae80f2183"
-  integrity sha512-C2ywDqpUUYQUGppMO0wRZISBH20KEEey0JUjJwWsOiyzYeq/BsPvnF8Icx2WDp7WWs3plIJZTDrrGuGFG0dX7A==
+  version "1.0.33"
+  resolved "https://registry.yarnpkg.com/live-event-widget/-/live-event-widget-1.0.33.tgz#f7a73ab84d72d7ad3bbcb301ff6c54d84812a3f5"
+  integrity sha512-94qkdTXBDS4JusgLOpDEWivXRoIsq+GmwQisKBDO6Yq/+WAUOZ8JNwQGUYxyIpb1Nkm9FX/Q9zumbZchwEaqlA==
   dependencies:
     svg-url-loader "^6.0.0"
 
@@ -15440,7 +15440,7 @@ saxes@^5.0.0:
   dependencies:
     xmlchars "^2.2.0"
 
-schedule-lite@latest:
+schedule-lite@^1.0.58:
   version "1.0.58"
   resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.58.tgz#a0b53cc207c48aa4680f962a0875d075a47dd91f"
   integrity sha512-01D9VS1nXCrILRvwGiyoWhU4u46i9Kz+QMxo4G/dJN2b91S6d3HoC0NR/bwE0Lj5fyn4gD9FXHdy/PCJBRHoFw==
