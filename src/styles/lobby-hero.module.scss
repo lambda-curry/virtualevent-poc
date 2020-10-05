@@ -98,6 +98,7 @@ div.column:first-of-type {
 }
 
 .hero-marketing {
+  padding-bottom: 0.75rem;
   .hero-marketing-container {
     display: flex;
     flex-direction: row;
@@ -395,7 +396,7 @@ div.column:first-of-type {
 @media (max-width: 768px) {
 
   .hero-marketing {
-
+    padding-bottom: 0;
     .hero-marketing-columns {
       .left-column {
         transform: none;
