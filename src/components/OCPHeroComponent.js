@@ -21,7 +21,7 @@ const onClickLogin = (location) => {
 }
 
 const OCPHeroComponent = ({ location, isLoggedUser, summit, summit_phase }) => (
-  <section className={`${styles.ocpHero}`}>
+  <section className={`${styles.ocpHero} pb-3`}>
     <div className={`${styles.ocpHeroColumns} columns`} style={{ backgroundImage: `url(${HeroContent.heroBanner.background})` }}>
       <div className={`${styles.ocpLeftColumn} column is-6 px-0 py-0`}>
         <div className={`${styles.ocpHeroContainer} hero-body`}>
