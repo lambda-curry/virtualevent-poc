@@ -16,6 +16,7 @@ const LiveEventWidgetComponent = class extends React.Component {
       marketingApiBaseUrl: envVariables.MARKETING_API_BASE_URL,
       summitId: parseInt(envVariables.SUMMIT_ID),
       title: "",
+      featuredRoomId: 21
     };
 
     return (
