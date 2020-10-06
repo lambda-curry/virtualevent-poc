@@ -1,0 +1,17 @@
+{
+  "centerColumn": {
+    "schedule": {
+      "showAllEvents": false
+    },
+    "speakers": {
+      "showTodaySpeakers": false,
+      "showFeatureSpeakers": false
+    }
+  },
+  "homeHero": {
+    "title": "",
+    "subTitle": "",
+    "image": "",
+    "copy": ""
+  }
+}
