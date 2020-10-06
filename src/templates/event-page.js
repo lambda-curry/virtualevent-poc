@@ -132,15 +132,17 @@ export const EventPageTemplate = class extends React.Component {
                     <TalkComponent eventStarted={eventStarted} event={event} summit={summit} noStream={true} />
                     <SponsorComponent page='event' />
                   </div>
-                  <DocumentsComponent event={event} />
+                  <div className="column is-one-quarter">
+                    <DocumentsComponent event={event} sponsor={true} />
+                    <div style={{ paddingTop: '20px' }}>
+                      <SimpleChatWidgetComponent accessToken={loggedUser.accessToken} />
+                    </div>
+                  </div>
                   {event.etherpad_link &&
                     <div className="column is-three-quarters">
                       <Etherpad className="talk__etherpad" etherpad_link={event.etherpad_link} userName={user.userProfile.first_name} />
                     </div>
                   }
-                  <div className="column is-one-quarter" style={{ marginLeft: 'auto' }}>
-                    <SimpleChatWidgetComponent accessToken={loggedUser.accessToken} />
-                  </div>
                   <div className="column is-three-quarters">
                     {/* <ScheduleLiteComponent
                       accessToken={loggedUser.accessToken}
