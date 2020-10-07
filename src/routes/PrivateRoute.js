@@ -91,7 +91,7 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, eventId, use
   return (
     <>
       <OPSessionChecker clientId={envVariables.OAUTH2_CLIENT_ID} idpBaseUrl={envVariables.IDP_BASE_URL} />
-      <Component location={location} {...rest} />
+      <Component location={location} eventId={eventId} {...rest} />
     </>
   );
 }
