@@ -6,6 +6,7 @@ import ClockComponent from '../components/ClockComponent'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 
+import GeneralSettings from '../content/settings.json'
 import SummitObject from '../content/summit.json'
 
 // import "../styles/all.scss"
@@ -47,7 +48,7 @@ const TemplateWrapper = ({ children, marketing }) => {
         <link
           rel="icon"
           type="image/png"
-          href={`${withPrefix('/')}img/favicon.png`}
+          href={`${withPrefix('/')}${GeneralSettings.favicon}`}
           sizes="16x16"
         />
 
