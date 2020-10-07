@@ -9,16 +9,16 @@
       ],
       "sponsors": [
         {
-          "id": 1,
-          "name": "Huawei",
-          "title": "We are Huawei",
-          "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
           "marquee": "Huawei - Smart Technologies",
-          "logo": "/img/logo_ad_huawei.svg",
           "externalLink": "",
-          "usesSponsorPage": true,
+          "logo": "/img/logo_ad_huawei.svg",
+          "name": "Huawei",
+          "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
+          "headerVideo": "",
           "headerImage": "/img/sponsors/headline/header_logo_headline.png",
-          "headerVideo": ""
+          "title": "We are Huawei",
+          "id": 1,
+          "usesSponsorPage": true
         },
         {
           "name": "Canonical",
@@ -26,7 +26,12 @@
           "intro": "Canonical",
           "logo": "/img/logo_ad_ubuntu.svg",
           "marquee": "Canonical is Amazing",
-          "headerImage": "/img/ubuntu-lg.jpg"
+          "headerImage": "/img/ubuntu-lg.jpg",
+          "usesSponsorPage": false
+        },
+        {
+          "name": "Vexxhost",
+          "logo": "/img/vexxhost_vexxhost-vertical-logo.png"
         }
       ]
     },
@@ -39,16 +44,16 @@
       ],
       "sponsors": [
         {
-          "id": 2,
-          "name": "CISCO",
-          "title": "We are CISCO",
-          "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
           "marquee": "CISCO Shapes the Future of Technology",
-          "logo": "/img/logo_ad_cisco.png",
           "externalLink": "",
-          "usesSponsorPage": true,
+          "logo": "/img/logo_ad_cisco.png",
+          "name": "CISCO",
+          "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
+          "headerVideo": "",
           "headerImage": "/img/sponsors/premier/header_logo_premier.png",
-          "headerVideo": ""
+          "title": "We are CISCO",
+          "id": 2,
+          "usesSponsorPage": true
         }
       ]
     },
@@ -62,16 +67,16 @@
       "sponsors": [
         {
           "marquee": "ZTE Shapes the Future of Technology",
-          "logo": "/img/logo_ad_zte.svg",
           "externalLink": "",
-          "usesSponsorPage": true,
+          "logo": "/img/logo_ad_zte.svg",
           "name": "ZTE",
           "pageImage": "/img/sponsors/exhibitor/immage.png",
           "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
           "headerVideo": "",
           "headerImage": "/img/sponsors/exhibitor/header_logo_exhibitor.png",
           "title": "We are ZTE",
-          "id": 3
+          "id": 3,
+          "usesSponsorPage": true
         }
       ]
     }
