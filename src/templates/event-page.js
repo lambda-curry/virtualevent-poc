@@ -144,13 +144,13 @@ export const EventPageTemplate = class extends React.Component {
                       accessToken={loggedUser.accessToken}
                       onEventClick={(ev) => this.onEventChange(ev)}
                       onViewAllEventsClick={() => this.onViewAllEventsClick()}
-                      landscape={true}
+                      landscape={false}
                       yourSchedule={false}
                       showFilters={false}
                       showNav={false}
                       trackId={event.track ? event.track.id : null}
                       eventCount={3}
-                      title={event.track ? `Up Next on ${event.track.name}` : 'Up Next'}
+                      title={event.track ? `Happening Now on ${event.track.name}` : 'Happening Now'}
                     />
                   </div>
                 </div>

@@ -5170,6 +5170,11 @@ deep-extend@^0.6.0:
   resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.6.0.tgz#c4fa7c95404a17a9c3e8ca7e1537312b736330ac"
   integrity sha512-LOHxIOaPYdHlJRtCQfDIVZtfw/ufM8+rVj649RIHzcm/vGwQRXFt6OPqIFWsm2XEMrNIEtWR64sY1LEKD2vAOA==
 
+deep-freeze@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/deep-freeze/-/deep-freeze-0.0.1.tgz#3a0b0005de18672819dfd38cd31f91179c893e84"
+  integrity sha1-OgsABd4YZygZ39OM0x+RF5yJPoQ=
+
 deep-is@~0.1.3:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/deep-is/-/deep-is-0.1.3.tgz#b369d6fb5dbc13eecf524f91b070feedc357cf34"
@@ -5183,6 +5188,11 @@ deep-map@^1.5.0:
     es6-weak-map "^2.0.2"
     lodash "^4.17.4"
     tslib "^1.6.0"
+
+deepmerge@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-2.2.1.tgz#5d3ff22a01c00f645405a2fbc17d0778a1801170"
+  integrity sha512-R9hc1Xa/NOBi9WRVUWg19rl1UB7Tt4kuPd+thNJgFZoxXsTz7ncaPaeIm+40oSGuP33DfMb4sZt1QIGiJzC4EA==
 
 deepmerge@^4.0.0:
   version "4.2.2"
@@ -5883,6 +5893,13 @@ eol@^0.9.1:
   version "0.9.1"
   resolved "https://registry.yarnpkg.com/eol/-/eol-0.9.1.tgz#f701912f504074be35c6117a5c4ade49cd547acd"
   integrity sha512-Ds/TEoZjwggRoz/Q2O7SE3i4Jm66mqTDfmdHdq/7DKVk3bro9Q8h6WdXKdPqFLMoqxrDK5SVRzHVPOS6uuGtrg==
+
+equals@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/equals/-/equals-1.0.5.tgz#212062dde5e1a510d955f13598efcc6a621b6ace"
+  integrity sha1-ISBi3eXhpRDZVfE1mO/MamIbas4=
+  dependencies:
+    jkroso-type "1"
 
 errno@^0.1.3, errno@~0.1.7:
   version "0.1.7"
@@ -9965,6 +9982,11 @@ jimp@^0.10.2:
     core-js "^3.4.1"
     regenerator-runtime "^0.13.3"
 
+jkroso-type@1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/jkroso-type/-/jkroso-type-1.1.1.tgz#bc4ced6d6c45fe0745282bafc86a9f8c4fc9ce61"
+  integrity sha1-vEztbWxF/gdFKCuvyGqfjE/JzmE=
+
 jpeg-js@^0.3.4:
   version "0.3.7"
   resolved "https://registry.yarnpkg.com/jpeg-js/-/jpeg-js-0.3.7.tgz#471a89d06011640592d314158608690172b1028d"
@@ -10328,10 +10350,10 @@ linkifyjs@^2.1.9:
   resolved "https://registry.yarnpkg.com/linkifyjs/-/linkifyjs-2.1.9.tgz#af06e45a2866ff06c4766582590d098a4d584702"
   integrity sha512-74ivurkK6WHvHFozVaGtQWV38FzBwSTGNmJolEgFp7QgR2bl6ArUWlvT4GcHKbPe1z3nWYi+VUdDZk16zDOVug==
 
-live-event-widget@^1.0.32:
-  version "1.0.33"
-  resolved "https://registry.yarnpkg.com/live-event-widget/-/live-event-widget-1.0.33.tgz#f7a73ab84d72d7ad3bbcb301ff6c54d84812a3f5"
-  integrity sha512-94qkdTXBDS4JusgLOpDEWivXRoIsq+GmwQisKBDO6Yq/+WAUOZ8JNwQGUYxyIpb1Nkm9FX/Q9zumbZchwEaqlA==
+live-event-widget@^1.0.34:
+  version "1.0.34"
+  resolved "https://registry.yarnpkg.com/live-event-widget/-/live-event-widget-1.0.34.tgz#e118fc44fa1fa6df44a55eab85e7dd03839e8251"
+  integrity sha512-o2J76WHxAUlqvEP4lbvcV+CueBuATeVzTDNoh/9oxXyaPAFH1YnpgvpQJKVhvpAh7agKfyVqvxpfFXxka0KJSg==
   dependencies:
     svg-url-loader "^6.0.0"
 
@@ -12300,10 +12322,10 @@ open@^6.4.0:
   dependencies:
     is-wsl "^1.1.0"
 
-openstack-uicore-foundation@^2.0.65:
-  version "2.0.65"
-  resolved "https://registry.yarnpkg.com/openstack-uicore-foundation/-/openstack-uicore-foundation-2.0.65.tgz#502544c92c63f4479c159df42645bfd94b844e7e"
-  integrity sha512-Ro+gPd9R/ulv7FtI3QxAL7UkhCOgEM6QDSyyabLozrQ+CbrJOtkiNidHr2rdjuFX878RTLInRefWd1TCmOkSYw==
+openstack-uicore-foundation@^2.0.66:
+  version "2.0.66"
+  resolved "https://registry.yarnpkg.com/openstack-uicore-foundation/-/openstack-uicore-foundation-2.0.66.tgz#9c7a0e16d47f55e8c7f93aa13c5aec4ead416dff"
+  integrity sha512-dWCFY2woqVAvclvTcC3FmtM3FDxydNO4cpXhRl0k19zueI4WpWAdSb8dro7PHGz7XUpNlnHq4QHjPUWJ2qiJoQ==
 
 opentracing@^0.14.4:
   version "0.14.4"
@@ -13660,6 +13682,17 @@ punycode@^2.1.0, punycode@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
+
+pure-react-carousel@^1.27.4:
+  version "1.27.4"
+  resolved "https://registry.yarnpkg.com/pure-react-carousel/-/pure-react-carousel-1.27.4.tgz#870ae5c6f8325b7fb8cc2c8b322c08a98fb3cbb9"
+  integrity sha512-o4msT2SULQHbGd8xDDpkKPK91cQwdRGcIEe7Y3vtLusbB2sve1yvq8l57Q+oTyMgZnjQu9vUNayOFjJI89BdBA==
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+    deep-freeze "0.0.1"
+    deepmerge "^2.2.1"
+    equals "^1.0.5"
+    prop-types "^15.6.2"
 
 purgecss@^2.1.0:
   version "2.1.2"
@@ -15440,10 +15473,12 @@ saxes@^5.0.0:
   dependencies:
     xmlchars "^2.2.0"
 
-schedule-lite@^1.0.58:
-  version "1.0.58"
-  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.58.tgz#a0b53cc207c48aa4680f962a0875d075a47dd91f"
-  integrity sha512-01D9VS1nXCrILRvwGiyoWhU4u46i9Kz+QMxo4G/dJN2b91S6d3HoC0NR/bwE0Lj5fyn4gD9FXHdy/PCJBRHoFw==
+schedule-lite@^1.0.59:
+  version "1.0.59"
+  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.59.tgz#bd5f5f96866d22284ed3b8e43a6174732436f244"
+  integrity sha512-1XoaVhu63/vP5R5YVtoC7T2rvWTpRfWzT17jUFSFMHqtFPZDzTT2k3t5HJJ+uUupY8MtH6yMekQIydF710T26A==
+  dependencies:
+    pure-react-carousel "^1.27.4"
 
 scheduler@^0.18.0:
   version "0.18.0"
@@ -15789,10 +15824,10 @@ signal-exit@^3.0.0, signal-exit@^3.0.2, signal-exit@^3.0.3:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.3.tgz#a1410c2edd8f077b08b4e253c8eacfcaf057461c"
   integrity sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==
 
-simple-chat-widget@^1.0.25:
-  version "1.0.25"
-  resolved "https://registry.yarnpkg.com/simple-chat-widget/-/simple-chat-widget-1.0.25.tgz#84f5aa6606c68a455d0b75d840c3176771131d1b"
-  integrity sha512-DnIo6jRJLuFvNG5cXYX/SYrN2JYDV7l1yxcG2mXdyv6m3SWLWVKBO95bdkdPAL36of6IL9vbKCiZfwCuTUBjew==
+simple-chat-widget@^1.0.26:
+  version "1.0.26"
+  resolved "https://registry.yarnpkg.com/simple-chat-widget/-/simple-chat-widget-1.0.26.tgz#a56c5e01e002d02026d149f51aba05abd26bf743"
+  integrity sha512-odgHzrv8KW5yM129R4JUtwuF8z+wWywTUb86Trj0V3D2kccJitW/k9zdZBwL07lGMvzKQHgOjLQBclgzH8G6PQ==
 
 simple-concat@^1.0.0:
   version "1.0.0"
