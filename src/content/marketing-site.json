@@ -1,8 +1,8 @@
 {
   "heroBanner": {
     "title": "Bloomreach Connect ",
-    "subTitle": "Global Online Virtual Summit 2020",
-    "date": "October 6, 2020",
+    "subTitle": "User Group Virtual Workshops ",
+    "date": "October 7, 2020",
     "time": "Click below to enter brConnect. For Event Help Desk, click in navigation bar above.",
     "dateLayout": false,
     "buttons": {
@@ -36,7 +36,7 @@
         "image": "/img/carousel-image-6-2x.png"
       }
     ]
-  },  
+  },
   "leftColumn": {
     "schedule": {
       "display": false,
