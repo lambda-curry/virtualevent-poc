@@ -10,9 +10,9 @@ const FooterMarketing = () => (
     <div className={styles.socialNetworks}>
       {footerContent.social.networks.map((net, index) => (
         net.display &&
-        <a href={net.link} className={styles.link} key={index}>
+        <Link href={net.link} className={styles.link} key={index}>
           <i className={`fa icon is-large ${net.icon}`}></i>
-        </a>
+        </Link>
       ))}
     </div>
     <div className={styles.legalItems}>
@@ -25,19 +25,7 @@ const FooterMarketing = () => (
           </Link>
         )
       })}
-<<<<<<< HEAD
-    </div>   
-=======
     </div>
-    <div className={styles.socialNetworks}>
-      {footerContent.social.networks.map((net, index) => (
-        net.display &&
-        <Link href={net.link} className={styles.link} key={index}>
-          <i className={`fa icon is-large ${net.icon}`}></i>
-        </Link>
-      ))}
-    </div>    
->>>>>>> master
   </div>
 )
 
