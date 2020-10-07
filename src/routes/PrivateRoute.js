@@ -35,7 +35,7 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, eventId, use
       return;
     }
 
-    if (isAuthorized === false && hasTicket === false && updatingUserProfile === null) {
+    if (updatingUserProfile === null) {
       getUserProfile();
       setUpdatingUserProfile(true);
       return;
