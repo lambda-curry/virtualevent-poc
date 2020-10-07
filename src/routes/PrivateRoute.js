@@ -79,7 +79,7 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, eventId, use
 
   if (eventId && userProfile && !isAuthorizedBadge(eventId, userProfile.summit_tickets)) {    
     setTimeout(() => {
-      navigate(location.state.previousUrl ? location.state.previousUrl : '/')
+      navigate(location.state?.previousUrl ? location.state.previousUrl : '/')
     }, 3000);
     return (
       <HeroComponent
