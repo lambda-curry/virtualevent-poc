@@ -7,27 +7,7 @@
           "label": "Gold"
         }
       ],
-      "sponsors": [
-        {
-          "logo": "/img/bloomreach-brand-1x.png",
-          "name": "Bloomreach ",
-          "headerImage": ""
-        },
-        {
-          "name": "Zoom 1 ",
-          "logo": "/img/zoom-link-1-1x.png",
-          "externalLink": "https://bloomreach.zoom.us/j/98515210382?pwd=ckkyek5mbEF2NXlCU2RjeThDY3plUT09#success"
-        },
-        {
-          "name": "Zoom 2 ",
-          "logo": "/img/zoom-link-2-1x.png",
-          "externalLink": "https://bloomreach.zoom.us/j/97909451242?pwd=aTJ4eUxuekdMTXFDVDJOTCtZT2Z6dz09"
-        },
-        {
-          "name": "Bloomreach ",
-          "logo": "/img/bloomreach-brand-1x.png"
-        }
-      ]
+      "sponsors": []
     },
     {
       "tier": [
