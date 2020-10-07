@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import { navigate } from "gatsby"
 
 import envVariables from '../utils/envVariables';
-import isAuthorizedUser from '../utils/authorizedGroups';
+import { isAuthorizedUser, isAuthorizedBadge } from '../utils/authorizedGroups';
 
 import { PHASES } from '../utils/phasesUtils'
 
@@ -73,6 +73,17 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, user: { load
       <HeroComponent
         title="Its not yet show time!"
         redirectTo="/"
+      />
+    )
+  }
+
+  if (eventId && userProfile && !isAuthorizedBadge(eventId, userProfile.summit_tickets)) {    
+    setTimeout(() => {
+      navigate(location.state.previousUrl ? location.state.previousUrl : '/')
+    }, 3000);
+    return (
+      <HeroComponent
+        title="You are not authorized to view this session!"
       />
     )
   }
