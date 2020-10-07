@@ -48,7 +48,7 @@ const TemplateWrapper = ({ children, marketing }) => {
         <link
           rel="icon"
           type="image/png"
-          href={`${withPrefix('/')}${GeneralSettings.favicon}`}
+          href={`${withPrefix('/')}${GeneralSettings.favicon.substring(1)}`}
           sizes="16x16"
         />
 
