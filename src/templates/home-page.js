@@ -7,6 +7,7 @@ import Layout from '../components/Layout'
 import withOrchestra from "../utils/widgetOrchestra";
 
 import SummitObject from '../content/summit.json'
+import HomeSettings from '../content/home-settings.json'
 
 import OCPHeroComponent from '../components/OCPHeroComponent'
 import AdvertiseComponent from '../components/AdvertiseComponent'
@@ -67,24 +68,30 @@ export const HomePageTemplate = class extends React.Component {
                 accessToken={loggedUser.accessToken}
                 onEventClick={(ev) => this.onEventChange(ev)}
                 onViewAllEventsClick={() => this.onViewAllEventsClick()}
-                landscape={false}
+                landscape={HomeSettings.centerColumn.schedule.showAllEvents}
                 yourSchedule={false}
                 showNav={false}
+                showAllEvents={HomeSettings.centerColumn.schedule.showAllEvents}
                 onRef={addWidgetRef}
                 updateCallback={updateWidgets}
-                title={"Up Next"}
-                eventCount={4}
+                title={HomeSettings.centerColumn.schedule.showAllEvents ? "Full Schedule" : "Up Next"}
+                eventCount={HomeSettings.centerColumn.schedule.showAllEvents ? 100 : 4}
+                className={HomeSettings.centerColumn.schedule.showAllEvents ? "schedule-container-home" : ""}
               />
-              <SpeakersWidgetComponent
-                accessToken={loggedUser.accessToken}
-                title="Today's Speakers"
-                bigPics={true}
-              />
-              <SpeakersWidgetComponent
-                accessToken={loggedUser.accessToken}
-                title="Featured Speakers"
-                bigPics={false}
-              />
+              {HomeSettings.centerColumn.speakers.showTodaySpeakers &&
+                <SpeakersWidgetComponent
+                  accessToken={loggedUser.accessToken}
+                  title="Today's Speakers"
+                  bigPics={true}
+                />
+              }
+              {HomeSettings.centerColumn.speakers.showFeatureSpeakers &&
+                <SpeakersWidgetComponent
+                  accessToken={loggedUser.accessToken}
+                  title="Featured Speakers"
+                  bigPics={false}
+                />
+              }
               <AdvertiseComponent section='lobby' column="center" />
             </div>
             <div className="column is-one-quarter pb-6">

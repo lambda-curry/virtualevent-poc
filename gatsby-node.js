@@ -41,17 +41,6 @@ exports.onPreBootstrap = async () => {
     console.log('Saved!');
   });
 
-  let heroBanner = JSON.parse(fs.readFileSync('src/content/hero-banner.json'));
-
-  marketingData.map((item) => {
-    if (item.key.startsWith('hero_')) heroBanner[item.key] = item.value;
-  });
-
-  fs.writeFileSync('src/content/hero-banner.json', JSON.stringify(heroBanner), 'utf8', function (err) {
-    if (err) throw err;
-    console.log('Saved!');
-  });
-
   let disqusSettings = JSON.parse(fs.readFileSync('src/content/disqus-settings.json'));
 
   marketingData.map((item) => {

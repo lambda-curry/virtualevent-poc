@@ -9,6 +9,7 @@ import envVariables from '../utils/envVariables'
 
 class VideoJSPlayer extends React.Component {
   componentDidMount() {
+    const { title, namespace } = this.props;
 
     let plugins = {}
 
@@ -18,8 +19,9 @@ class VideoJSPlayer extends React.Component {
           debug: false,
           data: {
             env_key: envVariables.MUX_ENV_KEY,
+            video_title: title,
+            sub_property_id: namespace,
             /* Metadata
-            player_name: '',
             player_init_time: playerInitTime*/
           }
         }
