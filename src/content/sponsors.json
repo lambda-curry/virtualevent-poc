@@ -44,13 +44,14 @@
       ],
       "sponsors": [
         {
-          "marquee": "CISCO Shapes the Future of Technology",
+          "marquee": "Build the foundation of your edge computing strategy and prepare for the 5G era with Cisco VIM - Virtualized Infrastructure Manager",
           "externalLink": "",
           "logo": "/img/logo_ad_cisco.png",
           "name": "CISCO",
-          "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
+          "pageImage": "/img/cisco_openstack_project_ois-sponsor-ad_logo-01.png",
+          "intro": "Faced with dual threats of rising operational costs and flattening revenues, network service providers are increasingly exploring approaches to meet constantly changing market conditions and demanding customer expectations. They have started to transition from static, hardware-based networks to virtualized software and cloud-based applications as a means to accelerate time to market, respond to dynamic capacity and meet customer experience demands while evolving to a 5G core. Many Service Providers start their 5G journey with transforming the EPC for a variety of functions including Mobile Packet Core, IMS, CDN, vRAN. Running Cisco's Mobility solution on top of a unified platform drives down the cost of telco cloud platform integration and streamlines ongoing operational support, reducing customer's Total Cost of Ownership. This includes Cisco's market-leading virtualized packet core built upon Cisco UCS, Virtualized Infrastructure Manager and Nexus fabric.",
           "headerVideo": "",
-          "headerImage": "/img/sponsors/premier/header_logo_premier.png",
+          "headerImage": "/img/cisco_openstack_project_ois-banner_cisco_final-01.png",
           "title": "We are CISCO",
           "id": 2,
           "usesSponsorPage": true
@@ -70,10 +71,10 @@
           "externalLink": "",
           "logo": "/img/logo_ad_zte.svg",
           "name": "ZTE",
-          "pageImage": "/img/sponsors/exhibitor/immage.png",
+          "pageImage": "",
           "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
           "headerVideo": "",
-          "headerImage": "/img/sponsors/exhibitor/header_logo_exhibitor.png",
+          "headerImage": "/img/zte_banner-zte-.jpg",
           "title": "We are ZTE",
           "id": 3,
           "usesSponsorPage": true
