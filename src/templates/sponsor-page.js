@@ -146,10 +146,12 @@ export const SponsorPageTemplate = class extends React.Component {
                   onEventClick={(ev) => this.onEventChange(ev)}
                   onViewAllEventsClick={() => this.onViewAllEventsClick()}
                   landscape={false}
+                  showDetails={false}
                   yourSchedule={false}
                   showNav={false}
                   showAllEvents={false}
                   eventCount={3}
+                  title="Happening Now"
                 />
               </div>
               <div className="column is-one-quarter px-5 py-0">

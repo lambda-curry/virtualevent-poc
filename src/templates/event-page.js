@@ -145,6 +145,7 @@ export const EventPageTemplate = class extends React.Component {
                       onEventClick={(ev) => this.onEventChange(ev)}
                       onViewAllEventsClick={() => this.onViewAllEventsClick()}
                       landscape={false}
+                      showDetails={false}
                       yourSchedule={false}
                       showFilters={false}
                       showNav={false}

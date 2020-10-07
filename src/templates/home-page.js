@@ -70,6 +70,7 @@ export const HomePageTemplate = class extends React.Component {
                 onEventClick={(ev) => this.onEventChange(ev)}
                 onViewAllEventsClick={() => this.onViewAllEventsClick()}
                 landscape={false}
+                showDetails={false}
                 yourSchedule={false}
                 showNav={false}
                 showAllEvents={true}
