@@ -7,41 +7,7 @@
           "label": "Gold"
         }
       ],
-      "sponsors": [
-        {
-          "marquee": "",
-          "externalLink": "https://www.beauthentic.digital/case-study/acm",
-          "logo": "/img/top-sponsor-1-2x.png",
-          "name": "Authentic.",
-          "intro": "",
-          "headerVideo": "",
-          "headerImage": "",
-          "title": "",
-          "id": 1
-        },
-        {
-          "marquee": "",
-          "externalLink": "https://ok.commercetools.com/casestudy-bs-international?utm_campaign=Partner%20Co-Marketing&utm_source=bloomreach_connect_event&utm_medium=bloomreach_website",
-          "logo": "/img/top-sponsor-2-2x.png",
-          "name": "Commerce Tools",
-          "intro": "",
-          "headerVideo": "",
-          "headerImage": "",
-          "title": "",
-          "id": 2
-        },
-        {
-          "marquee": "",
-          "externalLink": "https://share.vidyard.com/watch/kinUK5MNc9JrFkJaZumN9s",
-          "logo": "/img/top-sponsor-3-2x.png",
-          "name": "Elastic Path",
-          "intro": "",
-          "headerVideo": "",
-          "headerImage": "",
-          "title": "",
-          "id": 3
-        }
-      ]
+      "sponsors": []
     },
     {
       "tier": [
@@ -50,78 +16,7 @@
           "label": "Silver"
         }
       ],
-      "sponsors": [
-        {
-          "id": 5,
-          "name": "BORN",
-          "title": "",
-          "intro": "",
-          "marquee": "",
-          "logo": "/img/second-tier-sponsor-6-2x.png",
-          "headerImage": "",
-          "headerVideo": ""
-        },
-        {
-          "id": 6,
-          "name": "Capgemini",
-          "title": "",
-          "intro": "",
-          "marquee": "",
-          "logo": "/img/second-tier-sponsor-3-2x.png",
-          "headerImage": "",
-          "headerVideo": ""
-        },
-        {
-          "id": 7,
-          "name": "GORILLA",
-          "title": "",
-          "intro": "",
-          "marquee": "",
-          "logo": "/img/second-tier-sponsor-2-2x.png",
-          "headerImage": "",
-          "headerVideo": ""
-        },
-        {
-          "id": 8,
-          "name": "Incentro",
-          "title": "",
-          "intro": "",
-          "marquee": "",
-          "logo": "/img/second-tier-sponsor-4-2x.png",
-          "headerImage": "",
-          "headerVideo": ""
-        },
-        {
-          "id": 9,
-          "name": "LiveArea",
-          "title": "",
-          "intro": "",
-          "marquee": "",
-          "logo": "/img/second-tier-sponsor-5-2x.png",
-          "headerImage": "",
-          "headerVideo": ""
-        },
-        {
-          "id": 10,
-          "name": "mindcurv",
-          "title": "",
-          "intro": "",
-          "marquee": "",
-          "logo": "/img/second-tier-sponsor-7-2x.png",
-          "headerImage": "",
-          "headerVideo": ""
-        },
-        {
-          "id": 11,
-          "name": "SAP",
-          "title": "",
-          "intro": "",
-          "marquee": "",
-          "logo": "/img/second-tier-sponsor-1-2x.png",
-          "headerImage": "",
-          "headerVideo": ""
-        }
-      ]
+      "sponsors": []
     },
     {
       "tier": [
