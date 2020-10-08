@@ -72,6 +72,11 @@
         "icon": "fa-youtube",
         "link": "https://www.youtube.com/user/OpenComputeProject",
         "display": true
+      },
+      {
+        "icon": "fa-linkedin-square",
+        "link": "https://www.linkedin.com/groups/4152886/",
+        "display": true
       }
     ]
   },
