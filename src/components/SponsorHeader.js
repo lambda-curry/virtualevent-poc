@@ -12,16 +12,14 @@ const SponsorHeader = ({ sponsor, tier }) => (
       </video>
       <div className={`${styles.heroBody}`} style={{ height: `${tier.sponsorPage.sponsorTemplate !== 'big-header' ? '250px' : ''}` }}>
         <div className={`${styles.heroSponsorContainer}`}>
-          {sponsor.socialNetworks.length > 0 &&
-            <div className={styles.leftContainer}>
-              {sponsor.socialNetworks.map((net, index) => (
-                net.display && net.icon &&
-                <Link to={net.link} className={styles.link} key={index}>
-                  <i className={`fa icon is-large ${net.icon}`}></i>
-                </Link>
-              ))}
-            </div>
-          }
+          <div className={styles.leftContainer}>
+            {sponsor.socialNetworks.map((net, index) => (
+              net.display && net.icon &&
+              <Link to={net.link} className={styles.link} key={index}>
+                <i className={`fa icon is-large ${net.icon}`}></i>
+              </Link>
+            ))}
+          </div>
           <div className={styles.rightContainer}>
             <div className={styles.category}>
               <img src={tier.badge} />
