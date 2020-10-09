@@ -7,6 +7,8 @@ import styles from '../styles/sponsor.module.scss'
 import Data from '../content/sponsors.json'
 import Tiers from '../content/sponsors-tiers.json'
 
+import { getSponsorURL } from '../utils/urlFormating'
+
 const SponsorComponent = ({ page }) => {
   const button = Tiers.lobbyButton;
   let renderButton = false;
@@ -35,7 +37,7 @@ const SponsorComponent = ({ page }) => {
                           </Link>
                           :
                           sponsor.usesSponsorPage ?
-                            <Link to={`/a/sponsor/${sponsor.id}`} key={`${s.tier.label}-${index}`}>
+                            <Link to={`/a/sponsor/${getSponsorURL(sponsor.id, sponsor.name)}`} key={`${s.tier.label}-${index}`}>
                               <img src={sponsor.logo} alt={sponsor.name} />
                             </Link>
                             :
@@ -63,7 +65,7 @@ const SponsorComponent = ({ page }) => {
                           </div>
                           : sponsor.usesSponsorPage ?
                             <div className={styles.imageBox} key={`${s.tier.label}-${index}`}>
-                              <Link to={`/a/sponsor/${sponsor.id}`}>
+                              <Link to={`/a/sponsor/${getSponsorURL(sponsor.id, sponsor.name)}`}>
                                 <img src={sponsor.logo} alt={sponsor.name} />
                               </Link>
                             </div>
@@ -89,7 +91,7 @@ const SponsorComponent = ({ page }) => {
                         </div>
                         : sponsor.usesSponsorPage ?
                           <div className={styles.imageBox} key={`${s.tier.label}-${index}`}>
-                            <Link to={`/a/sponsor/${sponsor.id}`}>
+                            <Link to={`/a/sponsor/${getSponsorURL(sponsor.id, sponsor.name)}`}>
                               <img src={sponsor.logo} alt={sponsor.name} />
                             </Link>
                           </div>

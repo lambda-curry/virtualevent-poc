@@ -27,6 +27,14 @@
 
           .link {
             color: $color_text_light;
+
+            i {
+              font-size: 2.5rem;
+            }
+
+            &:last-child {
+              margin-left: 5px;
+            }
           }
         }
 
@@ -91,23 +99,25 @@
               }
             }
           }
-
         }
-
-
       }
     }
   }
 }
 
+.sponsor-intro {
+  margin-bottom: 3rem;
+}
+
 .video-chat-button {
   margin: 20px 0;
+
   .link {
     .button {
       background-color: $color_secondary_contrast;
       border-color: $color_secondary_contrast;
       color: #fff;
-      height: 5rem;      
+      height: 5rem;
       width: 100%;
 
       i {
@@ -118,7 +128,7 @@
       }
 
       b {
-        display: inline-block;        
+        display: inline-block;
         text-align: center;
         padding-top: 2px;
       }

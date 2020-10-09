@@ -76,7 +76,7 @@ export const SponsorPageTemplate = class extends React.Component {
             <div className="columns mx-0 my-0">
               <div className="column is-three-quarters px-5 py-0">
                 {!sponsor.sideImage &&
-                  <div>
+                  <div className={styles.sponsorIntro}>
                     <h1>{sponsor.title}</h1>
                     <span>
                       {sponsor.intro}
