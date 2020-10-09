@@ -9,11 +9,26 @@
   color: $color_text_light;
 
   .hero-sponsor {
+    position: relative;
+    overflow: hidden;
+    max-height: 450px;
+    background-color: $color_secondary_contrast;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
+    .hero-video {
+      object-fit: cover;
+      max-height: 450px;
+      height: 100%;
+      width: 100%;
+    }
+
     .hero-body {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
       padding: 2rem;
       height: 450px;
 
