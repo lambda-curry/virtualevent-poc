@@ -2,7 +2,8 @@
   "ads": [
     {
       "section": "lobby",
-      "columnAds": [        {
+      "columnAds": [
+        {
           "image": "/img/leftnav-lounge.png",
           "column": "left"
         },
@@ -13,7 +14,7 @@
         {
           "image": "/img/leftnav-schedule.png",
           "button": {
-            "link": "https://openinfra2020.netlify.app/a/schedule"
+            "link": "/a/schedule"
           },
           "column": "left"
         }
