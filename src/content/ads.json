@@ -7,16 +7,13 @@
           "column": "left",
           "columnAds": [
             {
-              "image": "/img/marketplace-484x484-02.svg",
-              "button": {
-                "link": "https://openinfra2020.netlify.app/a/sponsor/2"
-              }
+              "image": "/img/leftnav-lounge.png"
             },
             {
-              "image": "/img/lounge-484x484-03.svg"
+              "image": "/img/leftnav-marketplace.png"
             },
             {
-              "image": "/img/schedule-484x484-01.svg",
+              "image": "/img/leftnav-schedule.png",
               "button": {
                 "link": "https://openinfra2020.netlify.app/a/schedule"
               }
