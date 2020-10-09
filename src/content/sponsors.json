@@ -38,13 +38,13 @@
           "logo": "/img/logo_ad_ubuntu.svg",
           "marquee": "Canonical is Amazing",
           "headerImage": "/img/ubuntu-lg.jpg",
-          "usesSponsorPage": true
+          "usesSponsorPage": false
         },
         {
           "id": 769,
           "name": "Vexxhost",
           "logo": "/img/vexxhorizontal.svg",
-          "usesSponsorPage": true
+          "usesSponsorPage": false
         }
       ]
     },
