@@ -13,7 +13,7 @@ const SponsorHeader = ({ sponsor, tier }) => (
       <div className={`${styles.heroBody}`} style={{ height: `${tier.sponsorPage.sponsorTemplate !== 'big-header' ? '250px' : ''}` }}>
         <div className={`${styles.heroSponsorContainer}`}>
           <div className={styles.leftContainer}>
-            {sponsor.socialNetworks.map((net, index) => (
+            {sponsor.socialNetworks && sponsor.socialNetworks.map((net, index) => (
               net.display && net.icon &&
               <Link to={net.link} className={styles.link} key={index}>
                 <i className={`fa icon is-large ${net.icon}`}></i>
