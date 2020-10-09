@@ -1,7 +1,6 @@
 import React from 'react'
-import { DiscussionEmbed } from 'disqus-react';
 
-//import { v5 as uuidv5 } from 'uuid';
+import { DiscussionEmbed } from 'disqus-react';
 
 import DisqusSettings from '../content/disqus-settings.json';
 
@@ -15,50 +14,54 @@ const DisqusComponent = class extends React.Component {
   }
 
   getIdentifier() {
-    const { summit, event, page } = this.props;
+    const { summit, page, sponsor, event } = this.props;
 
     let threadsBy = DisqusSettings.disqus_threads_by ? DisqusSettings.disqus_threads_by : DisqusSettings.threads_by;
-    let eventExcludes = DisqusSettings.disqus_exclude_events ? DisqusSettings.disqus_exclude_events : [];
-    let trackExcludes = DisqusSettings.disqus_exclude_tracks ? DisqusSettings.disqus_exclude_tracks : [];
 
     let identifier = null;
-    if (event && event.id) {
+
+    if (event) {
+      let eventExcludes = DisqusSettings.disqus_exclude_events ? DisqusSettings.disqus_exclude_events : [];
+      let trackExcludes = DisqusSettings.disqus_exclude_tracks ? DisqusSettings.disqus_exclude_tracks : [];
+
       identifier = eventExcludes.includes(event.id) ? `summit/${summit.id}/event/${event.id}` : null;
-    }
-    if (event && event.track && event.track.id) {
-      identifier = trackExcludes.includes(event.track.id) ? `summit/${summit.id}/track/${event.track.id}` : null;
-    }
-    if (!event) {
-      let path = page ? `/${page}` : '';
-      identifier = `summit/${summit.id}${path}`;
-    }
-    if (identifier === null) {
-      switch (threadsBy) {
-        case 'summit':
-          identifier = `summit/${summit.id}`;
-          break;
-        case 'event':
-          identifier = `summit/${summit.id}/event/${event.id}`;
-          break;
-        case 'track':
-          identifier = event.track?.id ? `summit/${summit.id}/track/${event.track.id}` : `summit/${summit.id}/event/${event.id}`;
-          break;
-        default:
-          identifier = null;
-          break;
+
+      if (event.track && event.track.id) {
+        identifier = trackExcludes.includes(event.track.id) ? `summit/${summit.id}/track/${event.track.id}` : null;
       }
+
+      if (identifier === null) {
+        switch (threadsBy) {
+          case 'event':
+            identifier = `summit/${summit.id}/event/${event.id}`;
+            break;
+          case 'track':
+            identifier = event.track?.id ? `summit/${summit.id}/track/${event.track.id}` : `summit/${summit.id}/event/${event.id}`;
+            break;
+          case 'summit':
+            identifier = `summit/${summit.id}`;
+            break;
+          default:
+            identifier = null;
+            break;
+        }
+      }
+    } else if (sponsor) {
+      identifier = `summit/${summit.id}/sponsor/${sponsor.id}`;
     }
 
-    //const namespace = 'cd024da4-7762-46ea-96b9-d64a331ed00a';
-    //return uuidv5(identifier, namespace);
+    if (page) {
+      identifier = threadsBy === 'summit' ? `summit/${summit.id}` : `summit/${summit.id}/${page}`;
+    }
+
     return identifier;
   }
 
   getTitle() {
-    const { summit, event, page } = this.props;
+    const { summit, page, sponsor, event } = this.props;
     let suffix = '';
+    let threadsBy = DisqusSettings.disqus_threads_by ? DisqusSettings.disqus_threads_by : DisqusSettings.threads_by;
     if (event) {
-      let threadsBy = DisqusSettings.disqus_threads_by ? DisqusSettings.disqus_threads_by : DisqusSettings.threads_by;
       let trackExcludes = DisqusSettings.disqus_exclude_tracks ? DisqusSettings.disqus_exclude_tracks : [];
       if (event.track && event.track.id && (threadsBy === 'track' || trackExcludes.includes(event.track.id))) {
         suffix += ' - '
@@ -67,7 +70,9 @@ const DisqusComponent = class extends React.Component {
       } else {
         suffix += ` - ${event.title}`
       }
-    } else if (page) {
+    } else if (sponsor) {
+      suffix += ` - Sponsor - ${sponsor.name}`
+    } else if (page && threadsBy !== 'summit') {
       switch (page) {
         case 'lobby':
           suffix += ' - Lobby';

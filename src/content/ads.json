@@ -2,59 +2,26 @@
   "ads": [
     {
       "section": "lobby",
-      "columns": [
-        {
-          "column": "left",
-          "columnAds": [
-            {
-              "image": "/img/leftnav-lounge.png"
-            },
-            {
-              "image": "/img/leftnav-marketplace.png"
-            },
-            {
-              "image": "/img/leftnav-schedule.png",
-              "button": {
-                "link": "https://openinfra2020.netlify.app/a/schedule"
-              }
-            }
-          ]
+      "columnAds": [        {
+          "image": "/img/leftnav-lounge.png",
+          "column": "left"
         },
         {
-          "column": "center",
-          "columnAds": []
+          "image": "/img/leftnav-marketplace.png",
+          "column": "left"
         },
         {
-          "column": "right",
-          "columnAds": []
+          "image": "/img/leftnav-schedule.png",
+          "button": {
+            "link": "https://openinfra2020.netlify.app/a/schedule"
+          },
+          "column": "left"
         }
       ]
     },
     {
       "section": "event",
-      "columns": [
-        {
-          "column": "left",
-          "columnAds": [
-            {
-              "image": "/img/yoco-sponsor-ads-medium-flow.png",
-              "button": {
-                "text": "Learn more",
-                "link": "/virtual-booth/"
-              },
-              "id": null
-            }
-          ]
-        },
-        {
-          "column": "center",
-          "columnAds": []
-        },
-        {
-          "column": "right",
-          "columnAds": []
-        }
-      ]
+      "columnAds": []
     }
   ]
 }

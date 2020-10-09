@@ -8,7 +8,7 @@ import Content from '../content/ads.json'
 
 const AdvertiseComponent = ({ section, column, id }) => {
 
-  const sectionAds = Content.ads.find(ad => ad.section === section).columns.find(c => c.column === column).columnAds;
+  const sectionAds = Content.ads.find(ad => ad.section === section).columnAds.filter(c => c.column === column);
 
   if (sectionAds.length > 0) {
     return (

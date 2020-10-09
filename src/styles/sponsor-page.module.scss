@@ -12,6 +12,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
     .hero-body {
       padding: 2rem;
       height: 450px;
@@ -26,6 +27,14 @@
 
           .link {
             color: $color_text_light;
+
+            i {
+              font-size: 2.5rem;
+            }
+
+            &:last-child {
+              margin-left: 5px;
+            }
           }
         }
 
@@ -36,6 +45,7 @@
 
           .category {
             align-self: flex-end;
+
             img {
               max-height: 75px;
             }
@@ -89,13 +99,66 @@
               }
             }
           }
-
         }
-
-
       }
     }
   }
+}
+
+.sponsor-intro {
+  margin-bottom: 3rem;
+}
+
+.video-chat-button {
+  margin: 20px 0;
+
+  .link {
+    .button {
+      background-color: $color_secondary_contrast;
+      border-color: $color_secondary_contrast;
+      color: #fff;
+      height: 5rem;
+      width: 100%;
+
+      i {
+        color: #fff;
+        height: 1em;
+        width: 2.5em;
+        font-size: 1.8em;
+      }
+
+      b {
+        display: inline-block;
+        text-align: center;
+        padding-top: 2px;
+      }
+
+      &:hover,
+      &:active {
+        border-color: #fff;
+      }
+
+      &:focus {
+        border-color: #fff;
+        box-shadow: none;
+      }
+    }
+
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+}
+
+.side-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.sponsor-info {
+  margin-bottom: 3rem;
 }
 
 .intro-half {
@@ -107,8 +170,8 @@
 .bottom-bar {
   background-color: $color_secondary_contrast;
   color: $color_text_light;
-  font-size: 38px;
-  padding: 0 10px;
+  font-size: 30px;
+  padding: 6px 10px;
   position: relative;
   width: 100vw;
   max-width: 100%;
@@ -119,7 +182,7 @@
     position: absolute;
     white-space: nowrap;
     will-change: transform;
-    animation: marquee 32s linear infinite;
+    animation: marquee 50s linear infinite;
   }
 
   @keyframes marquee {
@@ -150,9 +213,9 @@
   }
 
   .container-buttons {
-    width: 50%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    width: 100%;
 
     .link {
       .button {
@@ -195,6 +258,32 @@
         button {
           background-color: $color_secondary;
           border-color: $color_secondary;
+          margin-right: 3rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container-banner {
+    height: 300px;
+    margin-bottom: 2rem;
+
+    .container-text {
+      text-align: center;
+    }
+
+    .container-buttons {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+
+      .link:first-of-type {
+        .button {
+          margin-right: 0rem;
+          margin-bottom: 1rem;
         }
       }
     }
