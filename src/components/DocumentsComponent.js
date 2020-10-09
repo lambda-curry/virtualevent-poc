@@ -29,7 +29,7 @@ const DocumentsComponent = ({ event, sponsor }) => {
           <hr />
           {sortedMaterials.map((material, index) => {
               return (
-                <React.Fragment>
+                <React.Fragment key={index}>
                   {material.class_name === 'PresentationSlide' ?
                     <div className={`${styles.documentColumn} columns is-mobile is-vcentered`} key={index}>
                       <div className="column is-2 is-offset-1">

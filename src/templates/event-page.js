@@ -15,6 +15,7 @@ import VideoComponent from '../components/VideoComponent'
 import TalkComponent from '../components/TalkComponent'
 import DocumentsComponent from '../components/DocumentsComponent'
 import EventHeroComponent from '../components/EventHeroComponent'
+import NoTalkComponent from '../components/NoTalkComponent'
 import HeroComponent from '../components/HeroComponent'
 import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
 
@@ -66,22 +67,25 @@ export const EventPageTemplate = class extends React.Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    if (this.props.loading !== nextProps.loading) return true;
-    if (this.props.eventId !== nextProps.eventId) return true;
-    if (this.props.event?.id !== nextProps.event?.id) return true;
-    if (this.props.eventsPhases !== nextProps.eventsPhases) return true;
+    const { loading, eventId, event, eventsPhases } = this.props;
+    if (loading !== nextProps.loading) return true;
+    if (eventId !== nextProps.eventId) return true;
+    if (event?.id !== nextProps.event?.id) return true;
+    const currentPhase = eventsPhases.find(e => e.id == eventId)?.phase;
+    const nextCurrentPhase = nextProps.eventsPhases.find(e => e.id == eventId)?.phase;
+    if (currentPhase !== nextCurrentPhase && !(currentPhase === 0 && nextCurrentPhase === 1)) return true;
     return false
   }
 
   render() {
-    const { loggedUser, event, eventsPhases, user, loading } = this.props;
-    const { firstRender } = this.state; 
+    const { loggedUser, event, eventId, eventsPhases, user, loading } = this.props;
+    const { firstRender } = this.state;
     let { summit } = SummitObject;
-    let currentEvent = eventsPhases.find(e => e.id === event?.id);
-    let eventStarted = currentEvent && currentEvent.phase !== null ? currentEvent.phase : null;    
+    let currentEvent = eventsPhases.find(e => e.id == eventId);
+    let eventStarted = currentEvent && currentEvent.phase !== null ? currentEvent.phase : null;
 
-    if(!firstRender && !loading && !event) {
-      return <HeroComponent title="Event not found" redirectTo="/a/schedule"/>
+    if (!firstRender && !loading && !event) {
+      return <HeroComponent title="Event not found" redirectTo="/a/schedule" />
     }
 
     if (loading || eventStarted === null) {
@@ -95,7 +99,7 @@ export const EventPageTemplate = class extends React.Component {
               <div className="columns is-gapless">
                 {eventStarted >= PHASES.DURING && event.streaming_url ?
                   <div className="column is-three-quarters px-0 py-0">
-                    <VideoComponent url={event.streaming_url} />
+                    <VideoComponent url={event.streaming_url} title={event.title} namespace={summit.name} />
                     {event.meeting_url &&
                       <div className="join-zoom-container">
                         <span>
@@ -112,13 +116,15 @@ export const EventPageTemplate = class extends React.Component {
                     }
                   </div>
                   :
-                  <div className="column is-three-quarters px-0 py-0 is-hidden-mobile">
-                    <TalkComponent eventStarted={eventStarted} event={event} summit={summit} noStream={true} />
-                  </div>
+                  <>
+                    <div className="column is-three-quarters px-0 py-0 is-hidden-mobile">
+                      <NoTalkComponent eventStarted={eventStarted} event={event} summit={summit} />
+                    </div>
+                    <div className="column is-hidden-tablet">
+                      <NoTalkComponent eventStarted={eventStarted} event={event} summit={summit} />
+                    </div>
+                  </>
                 }
-                <div className="column is-hidden-tablet">
-                  <TalkComponent eventStarted={eventStarted} event={event} summit={summit} noStream={true} />
-                </div>
                 <div className="column" style={{ position: 'relative', borderBottom: '1px solid #d3d3d3' }}>
                   <DisqusComponent disqusSSO={user.disqusSSO} event={event} summit={summit} title="Public Conversation" />
                 </div>
@@ -128,7 +134,7 @@ export const EventPageTemplate = class extends React.Component {
               <section className="section px-0 pt-5 pb-0">
                 <div className="columns mx-0 my-0 is-multiline">
                   <div className="column px-0 py-0 is-three-quarters is-hidden-mobile">
-                    <TalkComponent eventStarted={eventStarted} event={event} summit={summit} noStream={true} />
+                    <TalkComponent eventStarted={eventStarted} event={event} summit={summit} />
                   </div>
                   <DocumentsComponent event={event} />
                   {event.etherpad_link &&
@@ -182,13 +188,13 @@ const EventPage = (
   return (
     <Layout>
       {event && event.id &&
-      <AttendanceTracker
+        <AttendanceTracker
           key={`att-tracker-${event.id}`}
           eventId={event.id}
           summitId={SummitObject.summit.id}
           apiBaseUrl={envVariables.SUMMIT_API_BASE_URL}
           accessToken={loggedUser.accessToken}
-      />
+        />
       }
       <EventPageTemplate
         loggedUser={loggedUser}

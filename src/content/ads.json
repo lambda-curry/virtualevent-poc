@@ -2,50 +2,11 @@
   "ads": [
     {
       "section": "lobby",
-      "columns": [
-        {
-          "column": "left",
-          "columnAds": []
-        },
-        {
-          "column": "center",
-          "columnAds": []
-        },
-        {
-          "column": "right",
-          "columnAds": [
-            {
-              "image": "/img/tracks.png"
-            }
-          ]
-        }
-      ]
+      "columnAds": []
     },
     {
       "section": "event",
-      "columns": [
-        {
-          "column": "left",
-          "columnAds": [
-            {
-              "image": "/img/yoco-sponsor-ads-medium-flow.png",
-              "button": {
-                "text": "Learn more",
-                "link": "/virtual-booth/"
-              },
-              "id": null
-            }
-          ]
-        },
-        {
-          "column": "center",
-          "columnAds": []
-        },
-        {
-          "column": "right",
-          "columnAds": []
-        }
-      ]
+      "columnAds": []
     }
   ]
 }

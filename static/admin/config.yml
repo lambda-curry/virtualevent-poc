@@ -18,26 +18,29 @@ collections:
     editor:
       preview: false
     files:
+      - file: "src/content/settings.json"
+        label: "General Settings"
+        name: "generalSettings"
+        fields:
+          - {label: "Favicon", name: favicon, widget: image}
       - file: "src/content/ads.json"
         label: "Advertisement"
         name: "ads"
         fields:
           - {label: "Ads", name: "ads", widget: list, fields: [
-              {label: "Page", name: "section", widget: string},
-              {label: "Columns", name: "columns", widget: list, fields: [
+              {label: "Page", name: "section", widget: string},                          
+              {label: "Ads", name: "columnAds", widget: list, required: false, fields: [
+                {label: "Image", name: "image", widget: image},
+                {label: "Button", name: button, widget: object, required: false, fields: [
+                  {label: "Text", name: "text", widget: string, required: false},
+                  {label: "Link", name: "link", widget: string, required: false}
+                ]},
                 {label: "Column", name: "column", widget: select, options: [
                   { label: "Left", value: "left" },
                   { label: "Center", value: "center" },
                   { label: "Right", value: "right" },
                 ]},
-                {label: "Ads", name: "columnAds", widget: list, required: false, fields: [
-                  {label: "Image", name: "image", widget: image},
-                  {label: "Button", name: button, widget: object, required: false, fields: [
-                    {label: "Text", name: "text", widget: string, required: false},
-                    {label: "Link", name: "link", widget: string, required: false}
-                  ]},
-                  {label: "Specific Event?", name: "id", widget: string, required: false}
-                ]}
+                {label: "Specific Event?", name: "id", widget: string, required: false}              
               ]},
             ]}
       - file: "src/content/sponsors-tiers.json"
@@ -56,10 +59,16 @@ collections:
                 ]},
                 {label: "Display", name: display, widget: boolean, required: false}
               ]},
-              {label: "Sponsor Page Template", name: "sponsorTemplate", widget: select, options: [
-                { label: "Big Header", value: "big-header" },
-                { label: "Small Header", value: "small-header" },
-              ]},
+              {label: "Sponsor Page", name: "sponsorPage", widget: object, fields: [
+                {label: "Sponsor Page Template", name: "sponsorTemplate", widget: select, options: [
+                  { label: "Big Header", value: "big-header" },
+                  { label: "Small Header", value: "small-header" },
+                ]},
+                {label: "Disqus", name: disqus, widget: boolean, required: false},
+                {label: "Live Event", name: liveEvent, widget: boolean, required: false},
+                {label: "Schedule", name: schedule, widget: boolean, required: false},
+                {label: "Banner", name: banner, widget: boolean, required: false}
+              ]},              
               {label: "In Event Template", name: "eventTemplate", widget: select, required: false, options: [
                 { label: "Big Images", value: "big-images" },
                 { label: "Small Images", value: "small-images" },
@@ -124,6 +133,12 @@ collections:
                 {label: "Show Today Speakers", name: "showTodaySpeakers", widget: boolean, required: false},
                 {label: "Show Feature Speakers", name: "showFeatureSpeakers", widget: boolean, required: false}
               ]}
+            ]}
+          - {label: "Home Hero", name: homeHero, widget: object, fields: [
+              {label: "Title", name: title, widget: string},
+              {label: "Sub Title", name: subTitle, widget: string, required: false},
+              {label: "Image", name: image, widget: image, required: false},
+              {label: "Copy", name: copy, widget: text, required: false}
             ]}
   - name: "marketing"
     label: "Marketing Site"
@@ -211,7 +226,7 @@ collections:
       - {label: Title, name: title, widget: string}
       - {label: "Body", name: body, widget: markdown}
   - name: "sponsors"
-    label: "Sponsors"
+    label: "Sponsors Data"
     editor:
       preview: false
     files:
@@ -223,14 +238,47 @@ collections:
               {label: "Tier", name: "tier", widget: ncw-file-relation, collection: configurations, file: sponsorsTiers, target_field: tiers, id_field: id, display_fields: name},
               {label: "Sponsors", name: "sponsors", widget: list, fields: [
                 {label: "Name", name: "name", widget: string },
+                {label: "External ID", name: "id", widget: number },
                 {label: "Title", name: "title", widget: string, required: false },
                 {label: "Intro", name: "intro", widget: string, required: false },
+                {label: "Contact Email", name: "email", widget: string, required: false },
+                {label: "Live Video Chat Link", name: "chatLink", widget: string, required: false },
                 {label: "Marquee", name: "marquee", widget: string, required: false },
                 {label: "Logo", name: "logo", widget: image },
                 {label: "External Link", name: "externalLink", widget: string, required: false },
+                {label: "Social Networks", name: "socialNetworks", widget: list, fields: [
+                  {label: "Icon", name: "icon", widget: string},
+                  {label: "Link", name: "link", widget: string},
+                  {label: "Display", name: "display", widget: boolean, required: false},
+                ]},
+                {label: "Documents", name: "documents", widget: object, fields: [
+                  {label: "Slides", name: "slides", widget: list, fields: [
+                    {label: "Class Name", name: class_name, widget: hidden, default: "PresentationSlide"},
+                    {label: "Name", name: name, widget: string},
+                    {label: "Order", name: order, widget: number},
+                    {label: "Link", name: link, widget: string}
+                  ]},
+                  {label: "Links", name: "links", widget: list, fields: [
+                    {label: "Class Name", name: class_name, widget: hidden, default: "PresentationLink"},
+                    {label: "Name", name: name, widget: string},
+                    {label: "Order", name: order, widget: number},
+                    {label: "Link", name: link, widget: string}
+                  ]},
+                  {label: "Videos", name: "videos", widget: list, fields: [
+                    {label: "Class Name", name: class_name, widget: hidden, default: "PresentationVideo"},
+                    {label: "Name", name: name, widget: string},
+                    {label: "Order", name: order, widget: number},
+                    {label: "Youtube ID", name: youtube_id, widget: string}
+                  ]},
+                ]},
+                {label: "Ads", name: "columnAds", widget: list, required: false, fields: [
+                  {label: "Image", name: "image", widget: image},
+                  {label: "Button Text", name: "text", widget: string, required: false},
+                  {label: "Link", name: "link", widget: string, required: false}                  
+                ]},
                 {label: "Uses Sponsor Page?", name: "usesSponsorPage", widget: boolean, required: false },
                 {label: "Header Image", name: "headerImage", widget: image, required: false },
-                {label: "Page Image", name: "pageImage", widget: image, required: false },
+                {label: "Side Image", name: "pageImage", widget: image, required: false },
                 {label: "Video Header", name: "headerVideo", widget: file, required: false },
               ]}              
             ]}

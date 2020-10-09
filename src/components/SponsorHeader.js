@@ -1,20 +1,18 @@
 import React from 'react'
 
 import Link from './Link'
-import Content from '../content/marketing-site.json'
-import footerContent from '../content/footer.json';
 
 import styles from '../styles/sponsor-page.module.scss'
 
 const SponsorHeader = ({ sponsor, tier }) => (
   <section className={styles.hero}>
     <div className={`${styles.heroSponsor}`} style={{backgroundImage: `url(${sponsor.headerImage})`}}>
-      <div className={`${styles.heroBody}`} style={{height: `${tier.sponsorTemplate !== 'big-header' ? '250px' : ''}`}}>
+      <div className={`${styles.heroBody}`} style={{height: `${tier.sponsorPage.sponsorTemplate !== 'big-header' ? '250px' : ''}`}}>
         <div className={`${styles.heroSponsorContainer}`}>
-          {footerContent.social.display &&
+          {sponsor.socialNetworks.length > 0 &&
             <div className={styles.leftContainer}>
-              {footerContent.social.networks.map((net, index) => (
-                net.display &&
+              {sponsor.socialNetworks.map((net, index) => (
+                net.display && net.icon &&
                 <Link to={net.link} className={styles.link} key={index}>
                   <i className={`fa icon is-large ${net.icon}`}></i>
                 </Link>
@@ -26,18 +24,18 @@ const SponsorHeader = ({ sponsor, tier }) => (
               <img src={tier.badge} />
             </div>
             <div className={styles.buttons}>
-              <a className={styles.link}>
+              <Link className={styles.link}>
                 <button className={`${styles.button} button is-large`}>
                   <i className={`fa fa-2x fa-qrcode icon is-large`}></i>
-                  <b>Call to Action</b>
+                  <b>Scan your badge</b>
                 </button>
-              </a>
-              <a className={styles.link}>
+              </Link>
+              <Link className={styles.link} to={`mailto:${sponsor.email}`}>
                 <button className={`${styles.button} button is-large`}>
-                  <i className={`fa fa-2x fa-calendar icon is-large`}></i>
-                  <b>Schedule Call</b>
+                  <i className={`fa fa-2x fa-envelope icon is-large`}></i>
+                  <b>Contact Us!</b>
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
