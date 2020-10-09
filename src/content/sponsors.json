@@ -9,26 +9,26 @@
       ],
       "sponsors": [
         {
-          "id": 763,
-          "name": "Huawei",
-          "title": "We are Huawei",
-          "email": "huawei@huawei.com",
-          "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
           "marquee": "Huawei - Smart Technologies",
+          "sideImage": "",
           "externalLink": "",
           "logo": "/img/logo_ad_huawei.svg",
+          "name": "Huawei",
+          "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
+          "headerVideo": "",
+          "headerImage": "/img/sponsors/headline/header_logo_headline.png",
+          "socialNetworks": [],
           "chatLink": "",
-          "usesSponsorPage": true,
+          "title": "We are Huawei",
           "documents": {
             "slides": [],
             "links": [],
             "videos": []
           },
           "columnAds": [],
-          "socialNetworks": [],
-          "headerImage": "/img/sponsors/headline/header_logo_headline.png",
-          "headerVideo": "",
-          "sideImage": ""
+          "id": 763,
+          "email": "huawei@huawei.com",
+          "usesSponsorPage": true
         },
         {
           "id": 768,
@@ -38,12 +38,13 @@
           "logo": "/img/logo_ad_ubuntu.svg",
           "marquee": "Canonical is Amazing",
           "headerImage": "/img/ubuntu-lg.jpg",
-          "usesSponsorPage": false
+          "usesSponsorPage": true
         },
         {
           "id": 769,
           "name": "Vexxhost",
-          "logo": "/img/vexxhorizontal.svg"
+          "logo": "/img/vexxhorizontal.svg",
+          "usesSponsorPage": true
         }
       ]
     },
@@ -56,27 +57,27 @@
       ],
       "sponsors": [
         {
-          "id": 767,
-          "name": "CISCO",
-          "sideImage": "",
-          "title": "We are CISCO",
-          "email": "huawei@huawei.com",
-          "intro": "Faced with dual threats of rising operational costs and flattening revenues, network service providers are increasingly exploring approaches to meet constantly changing market conditions and demanding customer expectations. They have started to transition from static, hardware-based networks to virtualized software and cloud-based applications as a means to accelerate time to market, respond to dynamic capacity and meet customer experience demands while evolving to a 5G core. Many Service Providers start their 5G journey with transforming the EPC for a variety of functions including Mobile Packet Core, IMS, CDN, vRAN. Running Cisco's Mobility solution on top of a unified platform drives down the cost of telco cloud platform integration and streamlines ongoing operational support, reducing customer's Total Cost of Ownership. This includes Cisco's market-leading virtualized packet core built upon Cisco UCS, Virtualized Infrastructure Manager and Nexus fabric.",
           "marquee": "Build the foundation of your edge computing strategy and prepare for the 5G era with Cisco VIM - Virtualized Infrastructure Manager",
-          "logo": "/img/logo_ad_cisco.png",
-          "pageImage": "/img/cisco_openstack_project_ois-sponsor-ad_logo-01.png",
+          "sideImage": "",
           "externalLink": "",
+          "logo": "/img/logo_ad_cisco.png",
+          "name": "CISCO",
+          "pageImage": "/img/cisco_openstack_project_ois-sponsor-ad_logo-01.png",
+          "intro": "Faced with dual threats of rising operational costs and flattening revenues, network service providers are increasingly exploring approaches to meet constantly changing market conditions and demanding customer expectations. They have started to transition from static, hardware-based networks to virtualized software and cloud-based applications as a means to accelerate time to market, respond to dynamic capacity and meet customer experience demands while evolving to a 5G core. Many Service Providers start their 5G journey with transforming the EPC for a variety of functions including Mobile Packet Core, IMS, CDN, vRAN. Running Cisco's Mobility solution on top of a unified platform drives down the cost of telco cloud platform integration and streamlines ongoing operational support, reducing customer's Total Cost of Ownership. This includes Cisco's market-leading virtualized packet core built upon Cisco UCS, Virtualized Infrastructure Manager and Nexus fabric.",
+          "headerVideo": "",
+          "headerImage": "/img/cisco_openstack_project_ois-banner_cisco_final-01.png",
+          "socialNetworks": [],
           "chatLink": "",
-          "usesSponsorPage": true,
+          "title": "We are CISCO",
           "documents": {
             "slides": [],
             "links": [],
             "videos": []
           },
           "columnAds": [],
-          "socialNetworks": [],
-          "headerImage": "/img/cisco_openstack_project_ois-banner_cisco_final-01.png",
-          "headerVideo": ""
+          "id": 767,
+          "email": "huawei@huawei.com",
+          "usesSponsorPage": true
         }
       ]
     },
@@ -90,25 +91,25 @@
       "sponsors": [
         {
           "marquee": "ZTE Shapes the Future of Technology",
-          "logo": "/img/logo_ad_zte.svg",
-          "email": "",
+          "sideImage": "/img/sponsors/exhibitor/immage.png",
           "externalLink": "",
+          "logo": "/img/logo_ad_zte.svg",
+          "name": "ZTE",
+          "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
+          "headerVideo": "",
+          "headerImage": "/img/zte_banner-zte-.jpg",
+          "socialNetworks": [],
           "chatLink": "",
-          "usesSponsorPage": true,
+          "title": "ZTE",
           "documents": {
             "slides": [],
             "links": [],
             "videos": []
           },
           "columnAds": [],
-          "socialNetworks": [],
-          "name": "ZTE",
-          "sideImage": "/img/sponsors/exhibitor/immage.png",
-          "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
-          "headerVideo": "",
-          "headerImage": "/img/zte_banner-zte-.jpg",
-          "title": "ZTE",
-          "id": 765
+          "id": 765,
+          "email": "",
+          "usesSponsorPage": true
         }
       ]
     }
