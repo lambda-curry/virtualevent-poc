@@ -9,7 +9,7 @@
       ],
       "sponsors": [
         {
-          "id": 1,
+          "id": 763,
           "name": "Huawei",
           "sideImage": "",
           "title": "We are Huawei",
@@ -92,7 +92,7 @@
       ],
       "sponsors": [
         {
-          "id": 2,
+          "id": 767,
           "name": "CISCO",
           "sideImage": "",
           "title": "We are CISCO",
@@ -229,7 +229,7 @@
           "headerVideo": "",
           "headerImage": "/img/sponsors/exhibitor/header_logo_exhibitor.png",
           "title": "We are ZTE",
-          "id": 3
+          "id": 765
         }
       ]
     }
