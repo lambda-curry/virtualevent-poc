@@ -6,33 +6,28 @@
       "display": true
     },
     {
+      "title": "About Us",
+      "link": "/about-us",
+      "display": true
+    },
+    {
       "title": "Schedule",
       "link": "/a/schedule",
       "display": true
     },
     {
-      "title": "About the event",
-      "link": "/about-event",
+      "title": "Contact IF",
+      "link": "/contact-IF",
       "display": true
     },
     {
-      "title": "Who we are",
-      "link": "/who-we-are",
+      "title": "Tech Support",
+      "link": "/tech-support",
       "display": true
     },
     {
-      "title": "Past events",
-      "link": "/past-events",
-      "display": true
-    },
-    {
-      "title": "Contact",
-      "link": "/contact",
-      "display": true
-    },
-    {
-      "title": "Help",
-      "link": "/help",
+      "title": "FAQ",
+      "link": "/FAQ",
       "display": true
     }
   ]
