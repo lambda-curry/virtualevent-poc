@@ -31,13 +31,14 @@
           "usesSponsorPage": true
         },
         {
-          "id": 768,
-          "name": "Canonical",
-          "title": "Canonical",
-          "intro": "Canonical",
-          "logo": "/img/logo_ad_ubuntu.svg",
           "marquee": "Canonical is Amazing",
+          "logo": "/img/logo_ad_ubuntu.svg",
+          "name": "Canonical",
+          "intro": "Canonical",
           "headerImage": "/img/ubuntu-lg.jpg",
+          "chatLink": "https://meet.google.com/gvt-cmid-zwe?authuser=0 ",
+          "title": "Canonical",
+          "id": 768,
           "usesSponsorPage": false
         },
         {
