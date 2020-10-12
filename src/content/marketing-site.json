@@ -1,10 +1,10 @@
 {
   "heroBanner": {
     "title": "Infinity Festival",
-    "subTitle": "VIRTUAL IN 2020",
-    "date": "",
+    "subTitle": "",
+    "date": "October 28 – January 7",
     "time": "VIRTUAL IN 2020",
-    "dateLayout": true,
+    "dateLayout": false,
     "buttons": {
       "registerButton": {
         "text": "Register now",
