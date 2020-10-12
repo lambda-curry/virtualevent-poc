@@ -35,6 +35,7 @@
           "logo": "/img/logo_ad_ubuntu.svg",
           "name": "Canonical",
           "intro": "Canonical is the publisher of Ubuntu, the OS for most public cloud workloads as well as the emerging categories of smart gateways, self-driving cars and advanced robots. Canonical provides enterprise security, support and services to commercial users of Ubuntu. Established in 2004, Canonical is a privately held company.",
+          "headerVideo": "/img/microstack.mp4",
           "headerImage": "/img/ubuntu-lg.jpg",
           "chatLink": "https://meet.google.com/gvt-cmid-zwe?authuser=0 ",
           "title": "Canonical",
@@ -49,6 +50,7 @@
           "intro": "VEXXHOST Inc. is a cloud computing provider. It has established itself a well-reputed spot in the OpenStack community since 2011, this means that our clients work side by side with an experienced OpenStack user and contributor. Offering public cloud and private cloud, in addition to 3 levels of support available for all private clouds, including: one-time deployment, fully managed and support services. Alongside offering consulting services to enterprises and developers to deliver high-level expertise to its customers, with the ultimate goal to optimize and accelerate their cloud infrastructure. VEXXHOST is serving clients in over 150 countries - from small businesses to governments. VEXXHOST believes in valuing its clients by providing high-performance, community-driven and license-free solutions. Our team of knowledgeable openStack experts work closely with clients to provide them with optimum support to accelerate their cloud infrastructure to ensure guaranteed success ahead.",
           "headerVideo": "/img/vexxhost_vexxhost-promo-video.mp4",
           "chatLink": "https://vexxhost.zoom.us/j/81203962805?pwd=c0JsSlI3bnpOSlJrWnRUZ3pDblljdz09",
+          "title": "Vexxhost",
           "id": 769,
           "email": "sales@vexxhost.com",
           "usesSponsorPage": true
