@@ -174,7 +174,12 @@
           "intro": "Mirantis helps organizations ship code faster on public and private clouds. The company provides a public cloud experience on any infrastructure to the data center to the edge. With Lens and Docker Enterprise Container Cloud, Mirantis empowers a new breed of Kubernetes developers by removing infrastructure and operations complexity and providing one cohesive cloud experience for complete app and devops portability, a single pane of glass, and automated full-stack lifecycle management with continuous updates. Mirantis serves many of the world’s leading enterprises, including Adobe, DocuSign, Liberty Mutual, Nationwide Insurance, PayPal, Reliance Jio, Splunk, and STC. Learn more at www.mirantis.com.",
           "marquee": "Ship Code Faster",
           "email": "https://info.mirantis.com/contact-us",
-          "chatLink": "https://meet.google.com/xdr-vnva-bmj?authuser=0"
+          "chatLink": "https://meet.google.com/xdr-vnva-bmj?authuser=0",
+          "columnAds": [
+            {
+              "image": "/img/mirantis_open-infra-booth-image-v4.jpg"
+            }
+          ]
         }
       ]
     }
