@@ -165,7 +165,8 @@
           "chatLink": "https://meet.google.com/xdr-vnva-bmj?authuser=0",
           "columnAds": [
             {
-              "image": "/img/mirantis_open-infra-booth-image-v4.jpg"
+              "image": "/img/mirantis_open-infra-booth-image-v4.jpg",
+              "link": "https://info.mirantis.com/open-infra-2020"
             }
           ],
           "id": 772,
