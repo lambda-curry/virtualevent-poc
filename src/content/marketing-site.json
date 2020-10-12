@@ -1,10 +1,10 @@
 {
   "heroBanner": {
-    "title": "YOCO Summit",
-    "subTitle": "Now Live!",
-    "date": "virtual • pacific time zone",
-    "time": "",
-    "dateLayout": false,
+    "title": "Infinity Festival",
+    "subTitle": "VIRTUAL IN 2020",
+    "date": "",
+    "time": "VIRTUAL IN 2020",
+    "dateLayout": true,
     "buttons": {
       "registerButton": {
         "text": "Register now",
@@ -18,13 +18,28 @@
     "background": "",
     "images": [
       {
-        "image": "/img/flavor_wheel.jpg"
+        "image": "/img/1_hollywood-sign_grayscale_v2.jpg"
+      },
+      {
+        "image": "/img/2_joseph-gordon-levitt-bw.jpg"
+      },
+      {
+        "image": "/img/3_awards-bw_edit.png"
+      },
+      {
+        "image": "/img/4_vr-user-bw_edit.png"
+      },
+      {
+        "image": "/img/5_brie-elijah-bw-1-_edit.jpg"
+      },
+      {
+        "image": "/img/6_refik-anadol-infinite-space-bw.jpg"
       }
     ]
-  },  
+  },
   "leftColumn": {
     "schedule": {
-      "display": true,
+      "display": false,
       "title": "Full Event Schedule"
     },
     "disqus": {
@@ -32,9 +47,9 @@
       "title": "Join the conversation"
     },
     "image": {
-      "display": false,
-      "title": "Image",
-      "src": "/img/yoco-sponsor-ads-large-wherehol-vert.png"
+      "display": true,
+      "title": "",
+      "src": "/img/if2020-marketing-schedule.png"
     }
   },
   "sponsors": [
@@ -42,15 +57,7 @@
       "title": "Top Left",
       "images": [
         {
-          "image": "/img/yoco-sponsor-ads-large-wherehol-vert.png",
-          "link": ""
-        },
-        {
-          "image": "/img/yoco-sponsor-ads-large-wherehol-vert.png",
-          "link": ""
-        },
-        {
-          "image": "/img/yoco-sponsor-ads-large-wherehol-vert.png",
+          "image": "/img/if2020-marketing-ad3.png",
           "link": ""
         }
       ]
@@ -59,7 +66,7 @@
       "title": "Top Right",
       "images": [
         {
-          "image": "/img/yoco-sponsor-ads-medium-tilted.png",
+          "image": "/img/if2020-marketing-ad1.png",
           "link": ""
         }
       ]
@@ -68,7 +75,7 @@
       "title": "Mid Left",
       "images": [
         {
-          "image": "/img/yoco-sponsor-ads-large-mobility-vert-new.png",
+          "image": "/img/if2020-marketing-ad4.png",
           "link": ""
         }
       ]
@@ -77,17 +84,7 @@
       "title": "Top Left",
       "images": [
         {
-          "image": "/img/yoco-sponsor-ads-large-apex-vert.png",
-          "link": ""
-        }
-      ]
-    },
-    {},
-    {
-      "title": "Top Left",
-      "images": [
-        {
-          "image": "/img/yoco-sponsor-ads-medium-treva.png",
+          "image": "/img/if2020-marketing-ad2.png",
           "link": ""
         }
       ]
