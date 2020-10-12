@@ -4,42 +4,19 @@
       "section": "lobby",
       "columnAds": [
         {
-          "image": "/img/yoco-sponsor-ads-medium-tilted.png",
+          "image": "/img/if2020-marketing-ad2.png",
           "button": {
-            "link": "/virtual-booth/"
+            "link": ""
           },
           "column": "left"
         },
         {
-          "image": "/img/yoco-sponsor-ads-large-carbonclean-vert.png",
-          "button": {
-            "text": "Learn more",
-            "link": "/virtual-booth/"
-          },
-          "column": "right",
-          "id": null
-        },
-        {
-          "image": "/img/ad_subscribe.png",
+          "image": "/img/if2020-marketing-ad1.png",
           "button": {
             "text": "",
-            "link": "/virtual-booth/"
+            "link": ""
           },
           "column": "right",
-          "id": null
-        }
-      ]
-    },
-    {
-      "section": "event",
-      "columnAds": [
-        {
-          "image": "/img/yoco-sponsor-ads-medium-flow.png",
-          "button": {
-            "text": "Learn more",
-            "link": "/virtual-booth/"
-          },
-          "column": "left",
           "id": null
         }
       ]
