@@ -9,14 +9,14 @@
       ],
       "sponsors": [
         {
-          "marquee": "Huawei - Smart Technologies",
+          "marquee": "Build a 5G-oriented hyper-converged Telco Cloud that is secure, reliable, agile, open, and compatible, enabling 5G business success.",
           "sideImage": "",
           "externalLink": "",
-          "logo": "/img/logo_ad_huawei.svg",
+          "logo": "/img/huawei-logo.png",
           "name": "Huawei",
-          "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
+          "intro": "Founded in 1987, Huawei is a leading global provider of information and communications technology (ICT) infrastructure and smart devices. We have more than 194,000 employees, and we operate in more than 170 countries and regions, serving more than three billion people around the world. We are committed to bringing digital to every person, home and organization for a fully connected, intelligent world. To this end, we will: Drive ubiquitous connectivity and promote equal access to networks; Provide the ultimate computing power to deliver ubiquitous cloud and pervasive intelligence; Build digital platforms to help all industries and organizations become more agile, efficient, and dynamic; Redefine user experience with AI, making it more personalized for people across all scenarios, whether they’re at home, in the office, or on the go. For more information, please visit Huawei online at www.huawei.com or follow us on: http://www.linkedin.com/company/Huawei  http://www.twitter.com/Huawei  http://www.facebook.com/Huawei http://www.youtube.com/Huawei",
           "headerVideo": "",
-          "headerImage": "/img/sponsors/headline/header_logo_headline.png",
+          "headerImage": "/img/banner.jpg",
           "socialNetworks": [],
           "chatLink": "",
           "title": "We are Huawei",
@@ -27,7 +27,7 @@
           },
           "columnAds": [],
           "id": 763,
-          "email": "huawei@huawei.com",
+          "email": "contact@edgegallery.org",
           "usesSponsorPage": true
         },
         {
