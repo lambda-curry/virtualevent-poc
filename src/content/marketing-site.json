@@ -21,10 +21,10 @@
         "image": "/img/photo1.jpg"
       }
     ]
-  },  
+  },
   "leftColumn": {
     "schedule": {
-      "display": false,
+      "display": true,
       "title": "Full Event Schedule"
     },
     "disqus": {
@@ -32,7 +32,7 @@
       "title": "Join the conversation"
     },
     "image": {
-      "display": true,
+      "display": false,
       "title": "SCHEDULE",
       "src": "/img/schedule.svg"
     }
