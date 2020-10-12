@@ -41,7 +41,7 @@
           "title": "Canonical",
           "id": 768,
           "email": "sales@canonical.com",
-          "usesSponsorPage": false
+          "usesSponsorPage": true
         },
         {
           "marquee": "Empower your cloud infrastructure with the high-level expertise and revolutionize your success - Scan your badge to redeem the $200 public cloud credit.",
