@@ -57,6 +57,12 @@
           "headerVideo": "/img/vexxhost_vexxhost-promo-video.mp4",
           "chatLink": "https://vexxhost.zoom.us/j/81203962805?pwd=c0JsSlI3bnpOSlJrWnRUZ3pDblljdz09",
           "title": "Vexxhost",
+          "columnAds": [
+            {
+              "image": "/img/vexxhost_sponsored-private-cloud-ad.png",
+              "link": "https://info.vexxhost.com/en/hosted-private-cloud-poc-0"
+            }
+          ],
           "id": 769,
           "email": "sales@vexxhost.com",
           "usesSponsorPage": true
