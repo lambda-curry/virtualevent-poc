@@ -1,6 +1,6 @@
 backend:
   name: github
-  branch: master
+  branch: prod-infinityfest
   repo: fntechgit/virtualevent-poc
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
