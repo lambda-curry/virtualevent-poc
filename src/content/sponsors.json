@@ -131,6 +131,11 @@
           "id": 765,
           "email": "",
           "usesSponsorPage": true
+        },
+        {
+          "name": "InMotion Hosting",
+          "id": 766,
+          "logo": "/img/inmotionhosting-lg.jpg"
         }
       ]
     }
