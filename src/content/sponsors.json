@@ -216,6 +216,19 @@
           "id": 764,
           "email": "info@trilio.io",
           "usesSponsorPage": true
+        },
+        {
+          "name": "Vanilla Stack ",
+          "id": 773,
+          "logo": "/img/cloudical.png",
+          "headerImage": "/img/cloudical_vinallastack_booth-open-infrastructure-summit.png",
+          "usesSponsorPage": true,
+          "columnAds": [
+            {
+              "image": "/img/cloudical_ad.png",
+              "link": "https://vanillastack.io"
+            }
+          ]
         }
       ]
     }
