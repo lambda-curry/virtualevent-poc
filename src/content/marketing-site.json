@@ -25,7 +25,7 @@
   "leftColumn": {
     "schedule": {
       "display": true,
-      "title": "Full Event Schedule"
+      "title": "Full Event Schedule (times below in CDT)"
     },
     "disqus": {
       "display": false,
