@@ -5,13 +5,13 @@
     },
     "speakers": {
       "showTodaySpeakers": false,
-      "showFeatureSpeakers": false
+      "showFeatureSpeakers": true
     }
   },
   "homeHero": {
-    "title": "YOCO Summit.  Live Now!",
-    "subTitle": "virtual · pacific time",
-    "image": "/img/hero-man-with-headphones.jpg",
-    "copy": "<h2><strong>YOCO Summit Live NOW!</strong></h2>\r\n<h2>from San Jose, CA</h2>"    
+    "title": "Infinity Festival",
+    "subTitle": "VIRTUAL IN 2020",
+    "image": "/img/1_hollywood-sign_grayscale_v2.jpg",
+    "copy": "<h2><strong>YOCO Summit Live NOW!</strong></h2>\r\n<h2>from San Jose, CA</h2>"
   }
 }
