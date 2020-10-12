@@ -178,28 +178,6 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "ZTE Shapes the Future of Technology",
-          "sideImage": "/img/sponsors/exhibitor/immage.png",
-          "externalLink": "",
-          "logo": "/img/logo_ad_zte.svg",
-          "name": "ZTE",
-          "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
-          "headerVideo": "",
-          "headerImage": "/img/zte_banner-zte-.jpg",
-          "socialNetworks": [],
-          "chatLink": "",
-          "title": "ZTE",
-          "documents": {
-            "slides": [],
-            "links": [],
-            "videos": []
-          },
-          "columnAds": [],
-          "id": 765,
-          "email": "",
-          "usesSponsorPage": true
-        },
-        {
           "marquee": "Trilio is a leader in cloud-native data protection for OpenStack, Kubernetes & Red Hat OpenShift.",
           "logo": "/img/trilio_logo_1-1.png",
           "name": "Trilio Data",
@@ -231,6 +209,28 @@
           ],
           "intro": "VanillaStack is the main product of Cloudical, a company based in Germany and Poland that specializes in the \"cloud\" sector. Being unique in the world in this form, the VanillaStack is a pure open source cloud-native stack based on Kubernetes. With Kubernetes as Container-as-a-Service-Platform, VanillaStack allows you to roll out OpenStack as the Infrastructure-as-a-Service-platform. The Platform-as-a-Service-platform being used is Cloud Foundry. VanillaStack is made of open-source projects only and the community is strongly encouraged to contribute: The VanillaStack sources and GIT-repos are available. Cloudical also offers managed services (Managed Platform as a Service, Managed Software as a Service) and cloud consulting (consulting, coaching, training). Cloudical works independently of manufacturers and platforms, enabling it to provide its customers solutions tailored to their needs.  Founded in 2017, Cloudical currently employs 30 experts.",
           "marquee": "VanillaStack from Cloudical. "
+        },
+        {
+          "marquee": "",
+          "sideImage": "/img/sponsors/exhibitor/immage.png",
+          "externalLink": "",
+          "logo": "/img/logo_ad_zte.svg",
+          "name": "ZTE",
+          "intro": "",
+          "headerVideo": "",
+          "headerImage": "/img/zte_banner-zte-.jpg",
+          "socialNetworks": [],
+          "chatLink": "",
+          "title": "ZTE",
+          "documents": {
+            "slides": [],
+            "links": [],
+            "videos": []
+          },
+          "columnAds": [],
+          "id": 765,
+          "email": "",
+          "usesSponsorPage": true
         }
       ]
     }
