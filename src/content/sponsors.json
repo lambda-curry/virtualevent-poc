@@ -39,6 +39,12 @@
           "headerImage": "/img/ubuntu-lg.jpg",
           "chatLink": "https://meet.google.com/gvt-cmid-zwe?authuser=0 ",
           "title": "Canonical",
+          "columnAds": [
+            {
+              "image": "/img/canonical_screen-shot-2020-10-06-at-19.53.02.png",
+              "link": "https://pages.ubuntu.com/open-infrastructure-summit-2020"
+            }
+          ],
           "id": 768,
           "email": "sales@canonical.com",
           "usesSponsorPage": true
