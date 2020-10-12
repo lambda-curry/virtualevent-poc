@@ -83,10 +83,12 @@
     {
       "title": "Top Left",
       "images": [
-        {
-          "image": "/img/if2020-marketing-ad2.png",
-          "link": ""
-        }
+        {}
+      ]
+    },
+    {
+      "images": [
+        {}
       ]
     }
   ]
