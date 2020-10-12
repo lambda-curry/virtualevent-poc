@@ -135,7 +135,10 @@
         {
           "name": "InMotion Hosting",
           "id": 766,
-          "logo": "/img/inmotionhosting-lg.jpg"
+          "logo": "/img/inmotionhosting-lg.jpg",
+          "usesSponsorPage": true,
+          "headerImage": "/img/inmotion_hosting_static-image.png",
+          "pageImage": "/img/inmotion_hosting_final.jpg"
         }
       ]
     }
