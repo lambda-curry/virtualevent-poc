@@ -24,6 +24,7 @@ const ScheduleComponent = class extends React.Component {
       showDetails: true,
       onAuthError: (err, res) => expiredToken(err),
       onRef: ref => this.child = ref,
+      subtitle: "All times below are listed in CDT unless otherwise noted",
     };
 
     const { className } = this.props;
