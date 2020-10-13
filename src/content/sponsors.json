@@ -106,7 +106,7 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Tencent Cloud TStack is a private cloud platform launched by Tencent Cloud based on its strong technical capabilities and massive operational experience. It provides a private full-stack cloud solution integrating IaaS, PaaS and SaaS, and has a large number of privatization deployment experience and hybrid cloud management capabilities. With high stability, unified management, visualization operation and other features, it helps governments and enterprises to build a stable and secure cloud environment and a healthy cloud ecosystem.",
+          "marquee": "Private Full-Stack Cloud Solution--Tencent Cloud TStack",
           "logo": "/img/company-logo.png",
           "name": "Tencent",
           "pageImage": "",
@@ -116,7 +116,8 @@
           "title": "Tencent",
           "documents": {
             "videos": [],
-            "links": []
+            "links": [],
+            "slides": []
           },
           "columnAds": [
             {
