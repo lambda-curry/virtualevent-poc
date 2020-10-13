@@ -9,12 +9,22 @@
         },
         {
           "image": "/img/leftnav-marketplace.png",
-          "column": "left"
+          "column": "left",
+          "button": {
+            "link": "/a/sponsors/"
+          }
         },
         {
           "image": "/img/leftnav-schedule.png",
           "button": {
             "link": "/a/schedule"
+          },
+          "column": "left"
+        },
+        {
+          "image": "/img/leftnav-join.png",
+          "button": {
+            "link": "https://openinfra.dev/join"
           },
           "column": "left"
         }
