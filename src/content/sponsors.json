@@ -259,7 +259,8 @@
                 "order": 1
               }
             ]
-          }
+          },
+          "usesSponsorPage": true
         }
       ]
     },
