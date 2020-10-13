@@ -469,12 +469,30 @@
         },
         {
           "marquee": "Trilio is a leader in cloud-native data protection for OpenStack, Kubernetes & Red Hat OpenShift.",
+          "sponsorColor": "#78BC42",
           "logo": "/img/trilio_logo_1-1.png",
           "name": "Trilio Data",
           "intro": "Trilio is a leader in cloud-native data protection for Kubernetes, OpenStack and Red Hat Virtualization environments. Our TrilioVault technology is trusted by cloud infrastructure operators and developers for backup and recovery, migration and application mobility. Customers in telecom, defense, automotive and financial services leverage TrilioVault to recover from disasters, migrate workloads, move workloads to new infrastructure and migrate to new software distributions. www.trilio.io and @triliodata on Twitter.",
           "headerImage": "/img/trilio_header_image.png",
           "chatLink": "https://us02web.zoom.us/j/8691886062",
           "title": "Trilio Data",
+          "documents": {
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/trilio_data_inc_triliovault-for-openstack.pdf",
+                "name": "TrilioVault for OpenStack Cloud",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/trilio-red-hat-openstack-backup.pdf",
+                "name": "TrilioVault for RHV",
+                "order": 2
+              }
+            ],
+            "videos": []
+          },
           "columnAds": [
             {
               "link": "",
