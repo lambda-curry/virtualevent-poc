@@ -61,7 +61,7 @@
       "expoHallSize": "small"
     }
   ],
-  "imageHeader": "/img/jumbotron.jpg",
+  "imageHeader": "/img/bg-cropped.jpg",
   "lobbyButton": {
     "text": "View all",
     "link": "/a/sponsors/"
