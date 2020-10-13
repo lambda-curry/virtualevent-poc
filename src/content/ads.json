@@ -4,6 +4,13 @@
       "section": "lobby",
       "columnAds": [
         {
+          "image": "/img/leftnav-join.png",
+          "button": {
+            "link": "https://openinfra.dev/join"
+          },
+          "column": "left"
+        },
+        {
           "image": "/img/leftnav-marketplace.png",
           "column": "left",
           "button": {
@@ -18,15 +25,11 @@
           "column": "left"
         },
         {
-          "image": "/img/leftnav-join.png",
-          "button": {
-            "link": "https://openinfra.dev/join"
-          },
-          "column": "left"
-        },
-        {
           "image": "/img/leftnav-lounge.png",
-          "column": "left"
+          "column": "left",
+          "button": {
+            "link": "/a/sponsor/774-openstack-foundation-(osf)"
+          }
         }
       ]
     },
