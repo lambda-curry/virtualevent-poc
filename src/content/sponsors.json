@@ -276,7 +276,7 @@
           "sideImage": "",
           "externalLink": "",
           "sponsorColor": "#02BCEA",
-          "logo": "/img/cisco_logo_whiteblue-01-1-.png",
+          "logo": "/img/cisco-new-lg.png",
           "name": "CISCO",
           "pageImage": "",
           "intro": "Faced with dual threats of rising operational costs and flattening revenues, network service providers are increasingly exploring approaches to meet constantly changing market conditions and demanding customer expectations. They have started to transition from static, hardware-based networks to virtualized software and cloud-based applications as a means to accelerate time to market, respond to dynamic capacity and meet customer experience demands while evolving to a 5G core. Many Service Providers start their 5G journey with transforming the EPC for a variety of functions including Mobile Packet Core, IMS, CDN, vRAN. Running Cisco's Mobility solution on top of a unified platform drives down the cost of telco cloud platform integration and streamlines ongoing operational support, reducing customer's Total Cost of Ownership. This includes Cisco's market-leading virtualized packet core built upon Cisco UCS, Virtualized Infrastructure Manager and Nexus fabric.",
@@ -457,6 +457,7 @@
         },
         {
           "marquee": "Open your infrastructure. Own your future.",
+          "sponsorColor": "#EE0000",
           "logo": "/img/redhat_logo-d-color-rgb.png",
           "name": "Red Hat ",
           "intro": "Red Hat is the world’s leading provider of enterprise open source software solutions, using a community-powered approach to deliver reliable and high-performing Linux, hybrid cloud, container, and Kubernetes technologies. Red Hat helps customers develop cloud-native applications, integrate existing and new IT applications, and automate and manage complex environments. A trusted adviser to the Fortune 500, Red Hat provides award-winning support, training, and consulting services that bring the benefits of open innovation to any industry. Red Hat is a connective hub in a global network of enterprises, partners, and communities, helping organizations grow, transform, and prepare for the digital future.",
