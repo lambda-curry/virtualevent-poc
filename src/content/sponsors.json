@@ -287,14 +287,14 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "link": "https://www.dropbox.com/s/129yzeozmiw7pmt/cisco_openstack_project_CVIM-Monitoring-Demo.mp4?dl=0﻿",
+                "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/sponsor-services/cisco_openstack_project_CVIM-Monitoring-Demo.mp4",
                 "name": "Cisco Openstack Project CVIM Monitoring Demo",
                 "order": 4
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Cisco Openstack Project CVIM Monitoring Overview",
-                "link": "cisco_openstack_project_CVIM-Monitoring-Overview.mp4",
+                "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/sponsor-services/cisco_openstack_project_CVIM-Monitoring-Overview.mp4",
                 "order": 5
               }
             ]
