@@ -391,6 +391,7 @@
       "sponsors": [
         {
           "marquee": "InMotion Hosting is Providing the Industry’s First On-Demand Private Cloud powered by OpenStack",
+          "sponsorColor": "#2C2227",
           "logo": "/img/inmotionhosting-lg.jpg",
           "name": "InMotion Hosting",
           "pageImage": "",
@@ -398,6 +399,24 @@
           "headerImage": "/img/inmotion_hosting_static-image.png",
           "chatLink": "https://zoom.us/meeting/tJEuf-qvrj0vGtUD6ct-ua634yX89GOVL0fO/ics?icsToken=98tyKuCtrTMpHdSTtRmGRowMA4qgb-3ziCFYjbdouEnmF21GY1WlYvt6autYP-78 Join Zoom Meeting https://zoom.us/j/95383706501?pwd=QjExQ0F0S1IwVStlemU2MzZ5cU9PQT09 ",
           "title": "InMotion Hosting",
+          "documents": {
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/inmotion_hosting_flex-metal-private-cloud-brochure.pdf",
+                "name": "Flex Metal Private Cloud",
+                "order": 1
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "Flex Metal Demo",
+                "link": "Flex_Metal_Demo_FINAL (1).mp4",
+                "order": 2
+              }
+            ]
+          },
           "columnAds": [
             {
               "image": "/img/inmotion_hosting_final.jpg",
