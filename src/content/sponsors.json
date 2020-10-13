@@ -590,6 +590,38 @@
                 "link": "https://www.youtube.com/c/OpenStackFoundation/playlists",
                 "order": 2
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/airship_onepager-web.pdf",
+                "name": "Airship",
+                "order": 4
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/kata_onepager-web.pdf",
+                "name": "Katacontainers",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/starlingx_onepager-web.pdf",
+                "name": "StarlingX",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/openstack_onepager-web.pdf",
+                "name": "OpenStack ",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/zuul_onepager-web.pdf",
+                "name": "Zuul",
+                "order": 7
+              }
             ]
           },
           "logo": "/img/osf_logo_rgb_stacked.png",
