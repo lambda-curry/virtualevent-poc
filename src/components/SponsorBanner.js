@@ -4,8 +4,8 @@ import Link from './Link'
 
 import styles from '../styles/sponsor-page.module.scss'
 
-const SponsorBanner = () => (
-  <div className={`${styles.containerBanner}`}>
+const SponsorBanner = ({ bgColor }) => (
+  <div className={`${styles.containerBanner}`} style={{ backgroundColor: bgColor }}>
     <div className={styles.containerText}>
       <span className={styles.adText}>
         <b>Contact us for more information.</b>

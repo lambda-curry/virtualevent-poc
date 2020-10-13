@@ -103,10 +103,10 @@ export const SponsorPageTemplate = class extends React.Component {
                     title="Happening Now"
                   />
                 }
-                {banner && <SponsorBanner />}
+                {banner && <SponsorBanner bgColor={sponsor.sponsorColor} />}
               </div>
               <div className="column is-one-quarter px-5 py-0">
-                {!sponsor.chatLink &&
+                {sponsor.chatLink &&
                   <div className={styles.videoChatButton}>
                     <Link className={styles.link} to={sponsor.chatLink}>
                       <button className={`${styles.button} button is-large`}>                        
