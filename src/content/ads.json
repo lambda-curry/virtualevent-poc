@@ -4,13 +4,6 @@
       "section": "lobby",
       "columnAds": [
         {
-          "image": "/img/if2020-marketing-ad2.png",
-          "button": {
-            "link": ""
-          },
-          "column": "left"
-        },
-        {
           "image": "/img/if2020-marketing-ad1.png",
           "button": {
             "text": "",
@@ -18,6 +11,13 @@
           },
           "column": "right",
           "id": null
+        },
+        {
+          "image": "/img/if2020-marketing-ad2.png",
+          "button": {
+            "link": ""
+          },
+          "column": "left"
         }
       ]
     }
