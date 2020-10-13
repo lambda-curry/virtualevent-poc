@@ -311,6 +311,7 @@
         },
         {
           "marquee": "Private Full-Stack Cloud Solution--Tencent Cloud TStack",
+          "sponsorColor": "#0052D9",
           "logo": "/img/company-logo.png",
           "name": "Tencent",
           "pageImage": "",
@@ -319,13 +320,35 @@
           "chatLink": "https://meetingsapac49.webex.com/webappng/sites/meetingsapac49/dashboard/feedback",
           "title": "Tencent",
           "documents": {
-            "videos": [],
-            "links": [],
-            "slides": []
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "order": 3,
+                "name": "Tencent Cloud TStack Introduction Video",
+                "link": "Tencent Cloud TStack Introduction Video_1.mp4"
+              }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://intl.cloud.tencent.com/zh/",
+                "name": "Click here to learn more",
+                "order": 1
+              }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/tencent-private-fullstack-introduction.pdf",
+                "name": "Tencent PrivateFullstack ",
+                "order": 2
+              }
+            ]
           },
           "columnAds": [
             {
-              "image": "/img/sponsor-ad-1-1-.png"
+              "image": "/img/sponsor-ad-1-1-.png",
+              "link": "https://intl.cloud.tencent.com"
             }
           ],
           "id": 770,
