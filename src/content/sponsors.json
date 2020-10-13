@@ -10,7 +10,7 @@
       "sponsors": [
         {
           "marquee": "Delivered by Canonical.            ",
-          "sponsorColor": "#de4814",
+          "sponsorColor": "#E95420",
           "logo": "/img/ubuntu-2.svg",
           "name": "Canonical",
           "intro": "Canonical is the publisher of Ubuntu, the OS for most public cloud workloads as well as the emerging categories of smart gateways, self-driving cars and advanced robots. Canonical provides enterprise security, support and services to commercial users of Ubuntu. Established in 2004, Canonical is a privately held company.",
@@ -18,6 +18,43 @@
           "headerImage": "",
           "chatLink": "https://meet.google.com/gvt-cmid-zwe?authuser=0 ",
           "title": "Canonical",
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/Ubuntu",
+                "name": "Ubuntu on Twitter ",
+                "order": 1
+              }
+            ],
+            "videos": [],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/canonical_bt-5g-openstack-nov-2019-5-.pdf",
+                "name": "BT will use Ubuntu and OpenStack to power 5G ",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/canonical_migrating_from_vmware_to_openstack-_wp.pdf",
+                "name": "Migrating from VMware to OpenStack ",
+                "order": 4
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/canonical_rh-vs-ubuntu-openstack.pdf",
+                "name": "Comparing Red Hat Openstack Platform & Canonical's Charmed Openstack",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/canonical_sbi-bits-case-study_aw.pdf",
+                "name": "SBI BITS Case Study",
+                "order": 6
+              }
+            ]
+          },
           "columnAds": [
             {
               "image": "/img/canonical_screen-shot-2020-10-06-at-19.53.02.png",
