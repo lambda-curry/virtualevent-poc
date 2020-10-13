@@ -10,6 +10,7 @@
       "sponsors": [
         {
           "marquee": "Delivered by Canonical.            ",
+          "sponsorColor": "de4814",
           "logo": "/img/ubuntu-2.svg",
           "name": "Canonical",
           "intro": "Canonical is the publisher of Ubuntu, the OS for most public cloud workloads as well as the emerging categories of smart gateways, self-driving cars and advanced robots. Canonical provides enterprise security, support and services to commercial users of Ubuntu. Established in 2004, Canonical is a privately held company.",
@@ -17,6 +18,32 @@
           "headerImage": "",
           "chatLink": "https://meet.google.com/gvt-cmid-zwe?authuser=0 ",
           "title": "Canonical",
+          "documents": {
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "Ubuntu Masters (Example)",
+                "link": "https://vimeo.com/425889911",
+                "order": 3
+              }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "Ubuntu on Twitter",
+                "order": 1,
+                "link": "https://twitter.com/ubuntu"
+              }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/ubuntu_tutorial.pdf",
+                "name": "Ubuntu Tutorial (Example)",
+                "order": 2
+              }
+            ]
+          },
           "columnAds": [
             {
               "image": "/img/canonical_screen-shot-2020-10-06-at-19.53.02.png",
