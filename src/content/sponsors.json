@@ -9,6 +9,60 @@
       ],
       "sponsors": [
         {
+          "marquee": "Build a 5G-oriented hyper-converged Telco Cloud that is secure, reliable, agile, open, and compatible, enabling 5G business success.",
+          "sideImage": "",
+          "externalLink": "",
+          "sponsorColor": "#C7000B",
+          "logo": "/img/huawei-logo.png",
+          "name": "Huawei",
+          "intro": "Founded in 1987, Huawei is a leading global provider of information and communications technology (ICT) infrastructure and smart devices. We have more than 194,000 employees, and we operate in more than 170 countries and regions, serving more than three billion people around the world. We are committed to bringing digital to every person, home and organization for a fully connected, intelligent world. To this end, we will: Drive ubiquitous connectivity and promote equal access to networks; Provide the ultimate computing power to deliver ubiquitous cloud and pervasive intelligence; Build digital platforms to help all industries and organizations become more agile, efficient, and dynamic; Redefine user experience with AI, making it more personalized for people across all scenarios, whether they’re at home, in the office, or on the go.",
+          "headerVideo": "",
+          "headerImage": "/img/banner.jpg",
+          "socialNetworks": [],
+          "chatLink": "",
+          "title": "We are Huawei",
+          "documents": {
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/huawei_build-a-hyper-converged-telco-cloud-to-enable-carriers-5g-business-succ....pdf",
+                "name": "Build a Hyper Converged Telco Cloud to Enable Carriers' 5G Business Success",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/huawei_evolving-to-a-telco-converged-cloud-for-a-worry-free-5g-sa-.pdf",
+                "name": "Evolving to a Telco Converged Cloud for a Worry-Free 5G SA",
+                "order": 4
+              }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "  http://www.twitter.com/Huawei",
+                "name": "Follow us on Twitter ",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "http://www.facebook.com/Huawei",
+                "name": "Follow us on Facebook",
+                "order": 2
+              }
+            ],
+            "videos": []
+          },
+          "columnAds": [
+            {
+              "link": "https://carrier.huawei.com/en/products/core-network/telco-cloud",
+              "image": "/img/huawei-logo.png"
+            }
+          ],
+          "id": 763,
+          "email": "contact@edgegallery.org",
+          "usesSponsorPage": true
+        },
+        {
           "marquee": "Delivered by Canonical.            ",
           "sponsorColor": "#E95420",
           "logo": "/img/ubuntu-2.svg",
@@ -94,60 +148,6 @@
           ],
           "id": 768,
           "email": "sales@canonical.com",
-          "usesSponsorPage": true
-        },
-        {
-          "marquee": "Build a 5G-oriented hyper-converged Telco Cloud that is secure, reliable, agile, open, and compatible, enabling 5G business success.",
-          "sideImage": "",
-          "externalLink": "",
-          "sponsorColor": "#C7000B",
-          "logo": "/img/huawei-logo.png",
-          "name": "Huawei",
-          "intro": "Founded in 1987, Huawei is a leading global provider of information and communications technology (ICT) infrastructure and smart devices. We have more than 194,000 employees, and we operate in more than 170 countries and regions, serving more than three billion people around the world. We are committed to bringing digital to every person, home and organization for a fully connected, intelligent world. To this end, we will: Drive ubiquitous connectivity and promote equal access to networks; Provide the ultimate computing power to deliver ubiquitous cloud and pervasive intelligence; Build digital platforms to help all industries and organizations become more agile, efficient, and dynamic; Redefine user experience with AI, making it more personalized for people across all scenarios, whether they’re at home, in the office, or on the go.",
-          "headerVideo": "",
-          "headerImage": "/img/banner.jpg",
-          "socialNetworks": [],
-          "chatLink": "",
-          "title": "We are Huawei",
-          "documents": {
-            "slides": [
-              {
-                "class_name": "PresentationSlide",
-                "link": "/img/huawei_build-a-hyper-converged-telco-cloud-to-enable-carriers-5g-business-succ....pdf",
-                "name": "Build a Hyper Converged Telco Cloud to Enable Carriers' 5G Business Success",
-                "order": 3
-              },
-              {
-                "class_name": "PresentationSlide",
-                "link": "/img/huawei_evolving-to-a-telco-converged-cloud-for-a-worry-free-5g-sa-.pdf",
-                "name": "Evolving to a Telco Converged Cloud for a Worry-Free 5G SA",
-                "order": 4
-              }
-            ],
-            "links": [
-              {
-                "class_name": "PresentationLink",
-                "link": "  http://www.twitter.com/Huawei",
-                "name": "Follow us on Twitter ",
-                "order": 1
-              },
-              {
-                "class_name": "PresentationLink",
-                "link": "http://www.facebook.com/Huawei",
-                "name": "Follow us on Facebook",
-                "order": 2
-              }
-            ],
-            "videos": []
-          },
-          "columnAds": [
-            {
-              "link": "https://carrier.huawei.com/en/products/core-network/telco-cloud",
-              "image": "/img/huawei-logo.png"
-            }
-          ],
-          "id": 763,
-          "email": "contact@edgegallery.org",
           "usesSponsorPage": true
         },
         {
