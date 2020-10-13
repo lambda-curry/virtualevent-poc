@@ -144,6 +144,7 @@
           "marquee": "Build the foundation of your edge computing strategy and prepare for the 5G era with Cisco VIM - Virtualized Infrastructure Manager",
           "sideImage": "",
           "externalLink": "",
+          "sponsorColor": "#02BCEA",
           "logo": "/img/cisco_logo_whiteblue-01-1-.png",
           "name": "CISCO",
           "pageImage": "",
@@ -159,13 +160,13 @@
                 "class_name": "PresentationSlide",
                 "link": "/img/cisco_openstack_project_osi-forum-breakout-session-1.pdf",
                 "name": "Cisco Openstack Project OSI Forum - Breakout Session",
-                "order": 1
+                "order": 2
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/cisco_openstack_project_cisco-vim-overview-2020.pdf",
                 "name": "Cisco Openstack Project Cisco VIM Overview 2020 ",
-                "order": 2
+                "order": 3
               }
             ],
             "links": [
@@ -181,13 +182,13 @@
                 "class_name": "PresentationVideo",
                 "link": "https://www.dropbox.com/s/129yzeozmiw7pmt/cisco_openstack_project_CVIM-Monitoring-Demo.mp4?dl=0﻿",
                 "name": "Cisco Openstack Project CVIM Monitoring Demo",
-                "order": 2
+                "order": 4
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Cisco Openstack Project CVIM Monitoring Overview",
                 "link": "cisco_openstack_project_CVIM-Monitoring-Overview.mp4",
-                "order": 3
+                "order": 5
               }
             ]
           },
