@@ -7,7 +7,7 @@ import styles from '../styles/sponsor-page.module.scss'
 const SponsorHeader = ({ sponsor, tier }) => (
   <section className={styles.hero}>
     <div className={`${styles.heroSponsor}`} style={{ backgroundImage: `url(${sponsor.headerImage})` }}>
-      <video className={`${styles.heroVideo} is-hidden-mobile`} preload="auto" autoPlay loop muted="muted" volume="0">
+      <video className={`${styles.heroVideo}`} preload="auto" autoPlay loop muted="muted" volume="0">
         <source src={sponsor.headerVideo} type="video/mp4" />
       </video>
       <div className={`${styles.heroBody}`} style={{ height: `${tier.sponsorPage.sponsorTemplate !== 'big-header' ? '250px' : ''}` }}>
@@ -45,7 +45,7 @@ const SponsorHeader = ({ sponsor, tier }) => (
     <div className={styles.bottomBar}>
       <div className={styles.track}>
         <div>
-          {`${sponsor.marquee} / `.repeat(10)}
+          {`${sponsor.marquee} / `.repeat(100).slice(0,259)}
         </div>
       </div>
     </div>

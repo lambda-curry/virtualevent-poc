@@ -17,7 +17,8 @@
           "banner": true
         }
       },
-      "eventTemplate": ""
+      "eventTemplate": "",
+      "expoHallSize": "large"
     },
     {
       "id": "tier-DHcI3dWGk",
@@ -36,7 +37,8 @@
           "banner": true
         }
       },
-      "eventTemplate": ""
+      "eventTemplate": "",
+      "expoHallSize": "medium"
     },
     {
       "id": "tier-U_wEwGX8a",
@@ -55,11 +57,13 @@
           "banner": true
         }
       },
-      "eventTemplate": ""
+      "eventTemplate": "",
+      "expoHallSize": "small"
     }
   ],
+  "imageHeader": "/img/jumbotron.jpg",
   "lobbyButton": {
-    "text": "",
-    "link": ""
+    "text": "View all",
+    "link": "/a/sponsors/"
   }
 }

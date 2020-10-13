@@ -68,13 +68,19 @@ collections:
                 {label: "Live Event", name: liveEvent, widget: boolean, required: false},
                 {label: "Schedule", name: schedule, widget: boolean, required: false},
                 {label: "Banner", name: banner, widget: boolean, required: false}
-              ]},              
+              ]},
+              {label: "Sponsor Hall Size", name: "expoHallSize", widget: select, required: true, options: [
+                { label: "Large Images", value: "large" },
+                { label: "Medium Images", value: "medium" },
+                { label: "Small Images", value: "small" },
+              ]},
               {label: "In Event Template", name: "eventTemplate", widget: select, required: false, options: [
                 { label: "Big Images", value: "big-images" },
                 { label: "Small Images", value: "small-images" },
                 { label: "Horizontal Images", value: "horizontal-images" },
               ]},
             ]}
+          - {label: "Header Sponsor Hall", name: imageHeader, widget: image}
           - {label: "Lobby Button", name: lobbyButton, widget: object, fields: [
               {label: "Text", name: "text", widget: string, required: false},
               {label: "Link", name: "link", widget: string, required: false}
@@ -243,7 +249,8 @@ collections:
                 {label: "Intro", name: "intro", widget: string, required: false },
                 {label: "Contact Email", name: "email", widget: string, required: false },
                 {label: "Live Video Chat Link", name: "chatLink", widget: string, required: false },
-                {label: "Marquee", name: "marquee", widget: string, required: false },
+                {label: "Marquee Text", name: "marquee", widget: string, required: false },
+                {label: "Marquee Color", name: "marqueeColor", widget: string, required: false },
                 {label: "Logo", name: "logo", widget: image },
                 {label: "External Link", name: "externalLink", widget: string, required: false },
                 {label: "Social Networks", name: "socialNetworks", widget: list, fields: [

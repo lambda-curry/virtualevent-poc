@@ -14,15 +14,14 @@ const SponsorBanner = () => (
     <div className={styles.containerButtons}>
       <a className={styles.link}>
         <button className={`${styles.button} button is-large`}>
-          <i className={`fa fa-2x fa-envelope icon is-large`}></i>
-          <b>Contact Us!</b>
+          <i className={`fa fa-2x fa-qrcode icon is-large`}></i>
+          <b>Scan your badge</b>
         </button>
       </a>
       <a className={styles.link}>
         <button className={`${styles.button} button is-large`}>
-          <span>
-            <b>Contact Us</b>
-          </span>
+          <i className={`fa fa-2x fa-envelope icon is-large`}></i>
+          <b>Contact Us</b>
         </button>
       </a>
     </div>
