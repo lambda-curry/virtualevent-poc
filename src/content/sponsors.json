@@ -27,7 +27,32 @@
                 "order": 1
               }
             ],
-            "videos": [],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "order": 7,
+                "name": "Charmed o7k + remote Nova compute -- demo by Przem",
+                "link": "https://canonical.com"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "order": 8,
+                "name": "Microstack: (Clustered, MicroK8s as a workload)",
+                "link": "https://canonical.com"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "order": 9,
+                "name": "Edge - LXD & MAAS & Ceph",
+                "link": "https://canonical.com"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "order": 10,
+                "name": "MicroK8s with Kata",
+                "link": "https://canonical.com"
+              }
+            ],
             "slides": [
               {
                 "class_name": "PresentationSlide",
