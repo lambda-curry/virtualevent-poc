@@ -2495,9 +2495,9 @@ ajv@^6.10.0:
     uri-js "^4.2.2"
 
 ajv@^6.12.4:
-  version "6.12.5"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.12.5.tgz#19b0e8bae8f476e5ba666300387775fb1a00a4da"
-  integrity sha512-lRF8RORchjpKG50/WFf8xmg7sgCLFiYNNnqdKflk63whMQcWR5ngGjiSXkL9bjxy6B2npOK2HSMN49jEBMSkag==
+  version "6.12.6"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.12.6.tgz#baf5a62e802b07d977034586f8c3baf5adf26df4"
+  integrity sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==
   dependencies:
     fast-deep-equal "^3.1.1"
     fast-json-stable-stringify "^2.0.0"
@@ -10351,9 +10351,9 @@ linkifyjs@^2.1.9:
   integrity sha512-74ivurkK6WHvHFozVaGtQWV38FzBwSTGNmJolEgFp7QgR2bl6ArUWlvT4GcHKbPe1z3nWYi+VUdDZk16zDOVug==
 
 live-event-widget@^1.0.34:
-  version "1.0.35"
-  resolved "https://registry.yarnpkg.com/live-event-widget/-/live-event-widget-1.0.35.tgz#a0a3e8130ff41736dea4e08700e11d0648131f2d"
-  integrity sha512-OBo7//ReiZ7WwJeqSzqluCverhIIlermxXJMniYDdWoA2+v6H0sD5Ld9yfZW9Bmvo960xt+0Qf3J0/XRUjf4cg==
+  version "1.0.37"
+  resolved "https://registry.yarnpkg.com/live-event-widget/-/live-event-widget-1.0.37.tgz#1f5e0fa94ab01f211f40db69e7c97c28b9ee731c"
+  integrity sha512-dh7hUOwyzR9VDkEuCFjAGSNuT74zx6QMpLIjYxWsQzdYOVrlDIJddtjcl1/vEJWgC0TpSTF0WCpmryNBoYFWCg==
   dependencies:
     svg-url-loader "^6.0.0"
 
@@ -12323,9 +12323,9 @@ open@^6.4.0:
     is-wsl "^1.1.0"
 
 openstack-uicore-foundation@^2.0.66:
-  version "2.0.66"
-  resolved "https://registry.yarnpkg.com/openstack-uicore-foundation/-/openstack-uicore-foundation-2.0.66.tgz#9c7a0e16d47f55e8c7f93aa13c5aec4ead416dff"
-  integrity sha512-dWCFY2woqVAvclvTcC3FmtM3FDxydNO4cpXhRl0k19zueI4WpWAdSb8dro7PHGz7XUpNlnHq4QHjPUWJ2qiJoQ==
+  version "2.0.68"
+  resolved "https://registry.yarnpkg.com/openstack-uicore-foundation/-/openstack-uicore-foundation-2.0.68.tgz#8614585b6dd8ed8003de88fbd6d8c259d51ec349"
+  integrity sha512-3S14MbfM0B4un7rnWyTfMigdn2O8giB/HOVHqxsJcfm0B4wxc+jBOOkgktWpHvGpyp25yvf0sr+2NIp5g40pUg==
 
 opentracing@^0.14.4:
   version "0.14.4"
@@ -15479,9 +15479,9 @@ saxes@^5.0.0:
     xmlchars "^2.2.0"
 
 schedule-lite@^1.0.59:
-  version "1.0.61"
-  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.61.tgz#d68d68f57638c82647ff54be500a54be8518e318"
-  integrity sha512-Q1xJos+SskVw/IuK5iat/4yX2yv78CXCIFhN3nBKWf+N5gr9NDXFCvciRElE3USEoIAmVUveIUulXpFa5tbM1w==
+  version "1.0.62"
+  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.62.tgz#0e15a8ed7e07b02fc65037bea3ee882bb9cc6c89"
+  integrity sha512-HTqpPhNr7UcPLUxQTet3XEycKp8BSdCXupo68Vbx17QvUduDWJWpj/Y+AL3mSLy/QcRnrxkGsKBvgkz3vD1vPw==
   dependencies:
     pure-react-carousel "^1.27.4"
 
