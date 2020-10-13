@@ -37,16 +37,20 @@
       "display": true,
       "items": [
         {
-          "title": "Supporting Companies",
-          "link": "https://osf.dev/companies/"
+          "title": "Join us",
+          "link": "https://openinfra.dev/join"
         },
         {
-          "title": "Join us",
-          "link": "https://www.openstack.org/join"
+          "title": "Code of Conduct",
+          "link": "https://www.openstack.org/summit/2020/code-of-conduct/"
+        },
+        {
+          "title": "Supporting Companies",
+          "link": "https://openinfra.dev/companies/"
         },
         {
           "title": "Services",
-          "link": "https://osf.dev/projects/services/"
+          "link": "https://openinfra.dev/projects/services/"
         }
       ]
     }
