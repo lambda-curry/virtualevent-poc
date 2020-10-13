@@ -59,6 +59,14 @@
       },
       "eventTemplate": "",
       "expoHallSize": "small"
+    },
+    {
+      "id": "tier-_Chlce0BZ",
+      "name": "Supporting ",
+      "sponsorPage": {
+        "sponsorTemplate": "big-header"
+      },
+      "expoHallSize": "small"
     }
   ],
   "imageHeader": "/img/virtual-expo-bg.jpg",
