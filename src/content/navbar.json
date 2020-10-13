@@ -21,6 +21,11 @@
       "display": true
     },
     {
+      "title": "Sponsor IF",
+      "link": "/sponsor-IF",
+      "display": true
+    },
+    {
       "title": "Contact IF",
       "link": "/contact-IF",
       "display": true
@@ -33,11 +38,6 @@
     {
       "title": "FAQ",
       "link": "/FAQ",
-      "display": true
-    },
-    {
-      "title": "Sponsorships",
-      "link": "/sponsorships",
       "display": true
     }
   ]
