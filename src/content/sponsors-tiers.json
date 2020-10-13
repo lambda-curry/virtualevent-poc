@@ -61,7 +61,7 @@
       "expoHallSize": "small"
     }
   ],
-  "imageHeader": "/img/bg-cropped.jpg",
+  "imageHeader": "/img/virtual-expo-bg.jpg",
   "lobbyButton": {
     "text": "View all",
     "link": "/a/sponsors/"
