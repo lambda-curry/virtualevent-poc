@@ -2,7 +2,7 @@
   "tiers": [
     {
       "id": "tier-cYGYq5-ae",
-      "name": "Presenting Sponsors",
+      "name": "Presenting",
       "badge": "",
       "lobby": {
         "lobbyTemplate": "big-images",
@@ -23,7 +23,7 @@
     },
     {
       "id": "tier-DHcI3dWGk",
-      "name": "Sponsors",
+      "name": "Silver",
       "badge": "",
       "lobby": {
         "lobbyTemplate": "big-images",
@@ -43,7 +43,7 @@
     },
     {
       "id": "tier-U_wEwGX8a",
-      "name": "Sponsors",
+      "name": "Bronze",
       "badge": "",
       "lobby": {
         "lobbyTemplate": "small-images",
