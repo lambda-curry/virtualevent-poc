@@ -14,7 +14,6 @@ import { OPSessionChecker } from "openstack-uicore-foundation/lib/components";
 
 const PrivateRoute = ({ component: Component, isLoggedIn, location, eventId, user: { loading, userProfile }, summit_phase, getUserProfile, ...rest }) => {
 
-  const [hasTicket, setHasTicket] = useState(null);
   const [isAuthorized, setIsAuthorized] = useState(null);
   const [updatingUserProfile, setUpdatingUserProfile] = useState(null);
 
@@ -29,18 +28,17 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, eventId, use
       setUpdatingUserProfile(false);
     }
 
-    if (hasTicket === null || isAuthorized === null || updatingUserProfile === true) {
+    if (isAuthorized === null || updatingUserProfile === true) {
       setIsAuthorized(() => isAuthorizedUser(userProfile.groups));
-      setHasTicket(() => userProfile.summit_tickets?.length > 0);
       return;
     }
 
-    if (isAuthorized === false && hasTicket === false && updatingUserProfile === null) {
+    if (isAuthorized === false && updatingUserProfile === null) {
       getUserProfile();
       setUpdatingUserProfile(true);
       return;
     }
-  }, [userProfile, hasTicket, isAuthorized]);
+  }, [userProfile, isAuthorized]);
 
   if (!isLoggedIn) {
     navigate('/', {
@@ -51,7 +49,7 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, eventId, use
     return null
   }
 
-  if (loading || userProfile === null || hasTicket === null || isAuthorized === null || (hasTicket === false && isAuthorized === false && updatingUserProfile !== false)) {
+  if (loading || userProfile === null || isAuthorized === null || (isAuthorized === false && updatingUserProfile !== false)) {
     return (
       <HeroComponent
         title="Checking credentials..."
@@ -59,31 +57,11 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, eventId, use
     )
   }
 
-  if (isAuthorized === false && hasTicket === false) {
-    navigate('/authz/ticket', {
-      state: {
-        error: 'no-ticket'
-      }
-    })
-    return null
-  }
-
   if (isAuthorized === false && summit_phase === PHASES.BEFORE) {
     return (
       <HeroComponent
         title="Its not yet show time!"
         redirectTo="/"
-      />
-    )
-  }
-
-  if (eventId && userProfile && !isAuthorizedBadge(eventId, userProfile.summit_tickets)) {    
-    setTimeout(() => {
-      navigate(location.state?.previousUrl ? location.state.previousUrl : '/')
-    }, 3000);
-    return (
-      <HeroComponent
-        title="You are not authorized to view this session!"
       />
     )
   }
