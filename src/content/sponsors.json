@@ -65,9 +65,9 @@
           },
           "columnAds": [
             {
-              "image": "/img/yoco-sponsor-ads-medium-flow.png",
+              "image": "/img/if2020-sponsor-zbyhp.png",
               "button": "",
-              "link": "/virtual-booth/"
+              "link": ""
             }
           ],
           "id": 1,
@@ -161,18 +161,18 @@
       "tier": [
         {
           "value": "tier-U_wEwGX8a",
-          "label": "Bronze"
+          "label": "Associated"
         }
       ],
       "sponsors": [
         {
           "marqueeColor": "",
-          "marquee": "ZTE Shapes the Future of Technology",
+          "marquee": "",
           "sideImage": "/img/sponsors/exhibitor/immage.png",
           "externalLink": "",
-          "logo": "/img/sponsors/exhibitor/logo_ZTE.png",
-          "name": "ZTE",
-          "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
+          "logo": "/img/if2020-sponsor-unity.png",
+          "name": "Unity",
+          "intro": "",
           "headerVideo": "",
           "headerImage": "/img/sponsors/exhibitor/header_logo_exhibitor.png",
           "socialNetworks": [
@@ -193,7 +193,7 @@
             }
           ],
           "chatLink": "",
-          "title": "We are ZTE",
+          "title": "",
           "documents": {
             "slides": [
               {
@@ -228,7 +228,7 @@
             }
           ],
           "id": 3,
-          "email": "huawei@huawei.com",
+          "email": "",
           "usesSponsorPage": true
         }
       ]
