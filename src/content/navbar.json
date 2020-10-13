@@ -6,18 +6,23 @@
       "display": true
     },
     {
+      "title": "Marketplace",
+      "link": "https://openinfra2020.netlify.app/a/sponsors/",
+      "display": true
+    },
+    {
       "title": "Schedule",
       "link": "/a/schedule",
       "display": true
     },
     {
-      "title": "Code of Conduct",
-      "link": "https://www.openstack.org/summit/2020/code-of-conduct/",
+      "title": "About",
+      "link": "/about-event",
       "display": true
     },
     {
-      "title": "About",
-      "link": "/about-event",
+      "title": "Help",
+      "link": "/help",
       "display": true
     },
     {
@@ -33,11 +38,6 @@
     {
       "title": "Contact",
       "link": "/contact",
-      "display": false
-    },
-    {
-      "title": "Help",
-      "link": "/help",
       "display": false
     }
   ]
