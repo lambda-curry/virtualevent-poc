@@ -6,6 +6,10 @@
         {
           "image": "/img/if2020-artist-nav.png",
           "column": "left"
+        },
+        {
+          "image": "/img/if2020-marketing-ad2.png",
+          "column": "right"
         }
       ]
     }
