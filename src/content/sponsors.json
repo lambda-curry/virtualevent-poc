@@ -524,6 +524,7 @@
           "marquee": "",
           "sideImage": "/img/sponsors/exhibitor/immage.png",
           "externalLink": "",
+          "sponsorColor": "#0099CC",
           "logo": "/img/logo-zte.svg",
           "name": "ZTE",
           "intro": "",
@@ -533,11 +534,30 @@
           "chatLink": "",
           "title": "ZTE",
           "documents": {
-            "slides": [],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/zte-common-edge-white-paper.pdf",
+                "name": "ZTE Common Edge White Paper",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/distributed-precise-cloud-accelerating-industry-digital-and-intelligent-transformation-zte.pdf",
+                "name": "Distributed Precise Cloud, Accelerating Industry Digital and Intelligent Transformation",
+                "order": 2
+              }
+            ],
             "links": [],
             "videos": []
           },
-          "columnAds": [],
+          "columnAds": [
+            {
+              "image": "/img/logo_ad_zte.svg",
+              "link": "https://www.youtube.com/channel/UCP7JH1riHscZXS_9btwDVHg",
+              "text": ""
+            }
+          ],
           "id": 765,
           "email": "",
           "usesSponsorPage": true
