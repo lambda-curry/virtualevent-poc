@@ -7,7 +7,7 @@
     },
     {
       "title": "About Us",
-      "link": "/about-us",
+      "link": "/about-us/",
       "display": true
     },
     {
@@ -22,22 +22,22 @@
     },
     {
       "title": "Sponsor IF",
-      "link": "/sponsor-IF",
+      "link": "/sponsor-IF/",
       "display": true
     },
     {
       "title": "Contact IF",
-      "link": "/contact-IF",
+      "link": "/contact-IF/",
       "display": true
     },
     {
       "title": "Tech Support",
-      "link": "/tech-support",
+      "link": "/tech-support/",
       "display": true
     },
     {
       "title": "FAQ",
-      "link": "/FAQ",
+      "link": "/FAQ/",
       "display": true
     }
   ]
