@@ -447,6 +447,14 @@
                 "link": "red_hat_10Years_Openstack_03_lowres.mp4",
                 "order": 2
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/redhatopenstack-10-osp-16.1-booth-pdf.pdf",
+                "name": "RedHat OpenStack @ 10 years ",
+                "order": 1
+              }
             ]
           },
           "columnAds": [
