@@ -34,6 +34,11 @@
       "title": "FAQ",
       "link": "/FAQ",
       "display": true
+    },
+    {
+      "title": "Sponsorships",
+      "link": "/sponsorships",
+      "display": true
     }
   ]
 }
