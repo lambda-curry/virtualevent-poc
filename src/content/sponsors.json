@@ -91,7 +91,20 @@
           "chatLink": "https://cisco.webex.com/cisco/j.php?MTID=m97db399fbe07ffbc14a1c0156cde8a9b",
           "title": "We are CISCO",
           "documents": {
-            "slides": [],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/cisco_openstack_project_osi-forum-breakout-session-1.pdf",
+                "name": "Cisco Openstack Project OSI Forum - Breakout Session",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/cisco_openstack_project_cisco-vim-overview-2020.pdf",
+                "name": "Cisco Openstack Project Cisco VIM Overview 2020 ",
+                "order": 2
+              }
+            ],
             "links": [
               {
                 "class_name": "PresentationLink",
