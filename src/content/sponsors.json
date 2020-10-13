@@ -236,31 +236,6 @@
           "id": 769,
           "email": "sales@vexxhost.com",
           "usesSponsorPage": true
-        },
-        {
-          "name": "OpenStack Foundation (OSF)",
-          "id": 774,
-          "title": "OpenStack Foundation (OSF)",
-          "intro": "Open Infrastructure is the integration of open source technologies supporting cloud-native applications. The OSF helps people build and operate open infrastructure. From cloud hosting to the driving force behind 5G to machine learning, OSF projects like Airship, Kata Containers, OpenStack, StarlingX, and Zuul all operate under the guiding principles we call the Four Opens: Open Source; Open Design; Open Development and  Open Community. For more information, please visit openstack.org.",
-          "logo": "/img/osf_logo_rgb_stacked.svg",
-          "socialNetworks": [],
-          "documents": {
-            "links": [
-              {
-                "class_name": "PresentationLink",
-                "name": "Openstack Youtube Channel ",
-                "order": 2,
-                "link": "https://www.youtube.com/c/OpenStackFoundation/playlists"
-              },
-              {
-                "class_name": "PresentationLink",
-                "name": "Twitter: @Openstack",
-                "link": "https://twitter.com/OpenStack",
-                "order": 1
-              }
-            ]
-          },
-          "usesSponsorPage": true
         }
       ]
     },
@@ -527,6 +502,33 @@
           "columnAds": [],
           "id": 765,
           "email": "",
+          "usesSponsorPage": true
+        }
+      ]
+    },
+    {
+      "tier": [
+        {
+          "value": "tier-_Chlce0BZ",
+          "label": "Supporting "
+        }
+      ],
+      "sponsors": [
+        {
+          "name": "OpenStack Foundation (OSF)",
+          "id": 774,
+          "intro": "Open Infrastructure is the integration of open source technologies supporting cloud-native applications. The OSF helps people build and operate open infrastructure. From cloud hosting to the driving force behind 5G to machine learning, OSF projects like Airship, Kata Containers, OpenStack, StarlingX, and Zuul all operate under the guiding principles we call the Four Opens: Open Source; Open Design; Open Development and  Open Community. For more information, please visit openstack.org.",
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "Openstack Youtube Channel ",
+                "link": "https://www.youtube.com/c/OpenStackFoundation/playlists",
+                "order": 1
+              }
+            ]
+          },
+          "logo": "/img/osf_logo_rgb_stacked.svg",
           "usesSponsorPage": true
         }
       ]
