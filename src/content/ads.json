@@ -4,10 +4,6 @@
       "section": "lobby",
       "columnAds": [
         {
-          "image": "/img/leftnav-lounge.png",
-          "column": "left"
-        },
-        {
           "image": "/img/leftnav-marketplace.png",
           "column": "left",
           "button": {
@@ -26,6 +22,10 @@
           "button": {
             "link": "https://openinfra.dev/join"
           },
+          "column": "left"
+        },
+        {
+          "image": "/img/leftnav-lounge.png",
           "column": "left"
         }
       ]
