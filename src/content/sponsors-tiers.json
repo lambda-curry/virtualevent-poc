@@ -2,8 +2,8 @@
   "tiers": [
     {
       "id": "tier-cYGYq5-ae",
-      "name": "Gold",
-      "badge": "/img/gold.png",
+      "name": "Presenting Sponsors",
+      "badge": "",
       "lobby": {
         "lobbyTemplate": "big-images",
         "display": true
@@ -15,15 +15,16 @@
           "liveEvent": true,
           "schedule": true,
           "banner": true
-        }
+        },
+        "banner": true
       },
       "eventTemplate": "",
       "expoHallSize": "large"
     },
     {
       "id": "tier-DHcI3dWGk",
-      "name": "Silver",
-      "badge": "/img/silver.png",
+      "name": "Sponsors",
+      "badge": "",
       "lobby": {
         "lobbyTemplate": "big-images",
         "display": true
@@ -42,8 +43,8 @@
     },
     {
       "id": "tier-U_wEwGX8a",
-      "name": "Bronze",
-      "badge": "/img/bronze.png",
+      "name": "Sponsors",
+      "badge": "",
       "lobby": {
         "lobbyTemplate": "small-images",
         "display": true
@@ -61,9 +62,9 @@
       "expoHallSize": "small"
     }
   ],
-  "imageHeader": "/img/jumbotron.jpg",
+  "imageHeader": "/img/1_hollywood-sign_grayscale_v2.jpg",
   "lobbyButton": {
-    "text": "View all",
-    "link": "/a/sponsors/"
+    "text": "",
+    "link": ""
   }
 }
