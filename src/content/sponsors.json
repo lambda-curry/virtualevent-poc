@@ -25,6 +25,12 @@
                 "link": "https://twitter.com/Ubuntu",
                 "name": "Follow us on Twitter ",
                 "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/canonical",
+                "name": "Follow us on LinkedIn",
+                "order": 2
               }
             ],
             "videos": [
