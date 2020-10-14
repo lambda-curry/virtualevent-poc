@@ -273,6 +273,11 @@
       transform: translateX(-50%);
     }
   }
+  &--small {
+    @extend .bottom-bar;
+    font-size: 18px;
+    height: 35px;
+  }
 }
 
 .container-banner {
