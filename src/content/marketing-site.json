@@ -3,8 +3,8 @@
     "title": "HERO Text",
     "subTitle": "Subtitle Text",
     "date": "Date Text",
-    "time": "",
-    "dateLayout": false,
+    "time": "Time (Optional) ",
+    "dateLayout": true,
     "buttons": {
       "registerButton": {
         "text": "Register now",
