@@ -181,6 +181,9 @@
         }
       }
     }
+    &-mobile {
+      @extend .hero-sponsor;
+    }
   }
 }
 
@@ -383,7 +386,7 @@
 
   .hero {
     .hero-sponsor {
-      min-height: 400px;
+      height: 400px;
       background-size: cover;
 
       .hero-body {
@@ -530,6 +533,9 @@
             }
           }
         }
+      }
+      &-mobile {
+        height: 250px;        
       }
     }
   }
