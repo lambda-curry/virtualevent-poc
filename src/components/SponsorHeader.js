@@ -56,13 +56,15 @@ const SponsorHeader = ({ sponsor, tier }) => {
           </div>
         </div>
       </div>
-      <div className={`${tier.sponsorPage.sponsorTemplate === 'big-header' ? styles.bottomBar : styles.bottomBarSmall}`} style={{ backgroundColor: `${sponsor.sponsorColor}` }}>
-        <div className={styles.track}>
-          <div>
-            {`${sponsor.marquee} / `.repeat(100).slice(0, 459)}
+      {sponsor.marquee &&
+        <div className={`${tier.sponsorPage.sponsorTemplate === 'big-header' ? styles.bottomBar : styles.bottomBarSmall}`} style={{ backgroundColor: `${sponsor.sponsorColor}` }}>
+          <div className={styles.track}>
+            <div>
+              {`${sponsor.marquee} / `.repeat(100).slice(0, 459)}
+            </div>
           </div>
         </div>
-      </div>
+      }
     </section >
   )
 }
