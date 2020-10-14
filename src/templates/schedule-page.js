@@ -26,6 +26,7 @@ const SchedulePage = ({summit_phase, isLoggedUser, loggedUser, mySchedule}) => {
     <Layout>
       <div className="container">
         <h1>{ title }</h1>
+        <p>All times below are listed in CDT unless otherwise noted</p>
         <hr/>
         <ScheduleLiteComponent
           {...scheduleProps}
