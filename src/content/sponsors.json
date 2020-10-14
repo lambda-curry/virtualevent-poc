@@ -441,7 +441,8 @@
             }
           ],
           "id": 772,
-          "email": "https://info.mirantis.com/contact-us"
+          "email": "https://info.mirantis.com/contact-us",
+          "usesSponsorPage": true
         },
         {
           "marquee": "Open your infrastructure. Own your future.",
