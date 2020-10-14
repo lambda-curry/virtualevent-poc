@@ -19,6 +19,10 @@ First, make sure you have an [OpenStackID](https://openstackid.org/).
 
 Still having trouble? Contact us at [summitreg@openstack.org](mailto:summitreg@openstack.org).
 
+### Tell us about your experience
+
+Take the [2020 Virtual Summit Survey](https://www.surveymonkey.com/r/Summit2020virtual).
+
 ### FAQ
 
 * **What internet browsers do you suggest for the best experience?**\
