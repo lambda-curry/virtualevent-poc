@@ -33,7 +33,9 @@ const SponsorHeader = ({ sponsor, tier }) => {
             </div>
             <div className={styles.rightContainer}>
               <div className={styles.category}>
-                <i onClick={() => setIsMuted(!isMuted)} className={`${styles.volumeButton} fa fa-2x ${isMuted ? 'fa-volume-off' : 'fa-volume-up'} icon is-large`}></i>
+                {sponsor.headerVideo &&
+                  <i onClick={() => setIsMuted(!isMuted)} className={`${styles.volumeButton} fa fa-2x ${isMuted ? 'fa-volume-off' : 'fa-volume-up'} icon is-large`}></i>
+                }
                 <img src={tier.badge} />
               </div>
               <div className={`${tier.sponsorPage.sponsorTemplate === 'big-header' ? styles.buttons : styles.buttonsSmall}`}>
