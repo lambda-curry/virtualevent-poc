@@ -595,9 +595,12 @@
       ],
       "sponsors": [
         {
+          "marquee": "OpenStack Foundation (OSF)",
+          "logo": "/img/osf_logo_rgb_stacked.png",
           "name": "OpenStack Foundation (OSF)",
-          "id": 433,
           "intro": "When the OSF formed to govern the OpenStack project in 2012, clouds mainly offered virtual machines in a datacenter. The Foundation evolved as datacenter composition evolved into a mix of bare metal, VMs, and containers. OpenStack remains at the heart of its focus, but the Foundation realized more technology is needed to meet all of the diverse use cases, and we want to make sure it’s developed in the open, using the same proven approach to open source.  For this reason, the Foundation expanded its focus and is establishing new open source communities to advance areas where technology can successfully contribute to the development of open infrastructure: AI/Machine Learning, CI/CD, Container Infrastructure, Edge Computing and of course, Public, Private and Hybrid Clouds.  Now, the OSF supports the development and adoption of open infrastructure globally, across a community of over 100,000 individuals in 187 countries, by hosting open source projects and communities of practice.  From cloud hosting to the driving force behind 5G, these projects are code first. These projects include OpenStack, Airship, Kata Containers, OpenInfra Labs, StarlingX, and Zuul. ",
+          "headerVideo": "/img/open_infra_101120_v8_1.mp4",
+          "chatLink": "https://zoom.us/j/5271964510?pwd=RWx3eko2RkRBZzVQTk5kdkc4dTZCQT09",
           "documents": {
             "links": [
               {
@@ -646,10 +649,9 @@
               }
             ]
           },
-          "logo": "/img/osf_logo_rgb_stacked.png",
-          "usesSponsorPage": true,
-          "headerVideo": "/img/open_infra_101120_v8_1.mp4",
-          "marquee": "OpenStack Foundation (OSF)"
+          "id": 433,
+          "email": "summit@openstack.org",
+          "usesSponsorPage": true
         }
       ]
     }
