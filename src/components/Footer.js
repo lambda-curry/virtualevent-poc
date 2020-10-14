@@ -81,7 +81,7 @@ const Footer = ({ summit, marketing }) => {
                       {footerContent.columns.map((col, index) => {
                         return (
                           col.display &&
-                          <div className={`column is-3 ${index > 0 && index % 3 !== 0 ? 'is-offset-1' : ''}`} key={index}>
+                          <div className={`column is-3 ${index > 0 && index % 3 !== 0 || index === 0 ? 'is-offset-1' : ''}`} key={index}>
                             <h4>
                               {col.title}
                             </h4>
