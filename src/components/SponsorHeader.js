@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 
 import Link from './Link'
 
@@ -8,11 +8,29 @@ const SponsorHeader = ({ sponsor, tier }) => {
 
   const [isMuted, setIsMuted] = useState(false);
 
+  const [isMobile, setIsMobile] = useState(null);
+
+  const onResize = useCallback(() => {
+    if (window.innerWidth <= 768) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  });
+
+  useEffect(() => {
+    onResize();
+    window.addEventListener("resize", onResize);
+    return () => {
+      window.removeEventListener("resize", onResize);
+    };
+  });
+
   return (
     <section className={styles.hero}>
-      <div className={`${styles.heroSponsor}`}
+      <div className={`${isMobile ? styles.heroSponsorMobile : styles.heroSponsor}`}
         style={{
-          backgroundImage: `url(${sponsor.headerImage})`,
+          backgroundImage: `url(${isMobile ? sponsor.headerImageMobile : sponsor.headerImage})`,
           paddingBottom: `${tier.sponsorPage.sponsorTemplate === 'big-header' ? '27.77%' : '13.88%'}`,
           maxHeight: `${tier.sponsorPage.sponsorTemplate === 'big-header' ? '400px' : '200px'}`
         }}>
@@ -46,7 +64,7 @@ const SponsorHeader = ({ sponsor, tier }) => {
                   </button>
                 </Link>
                 {sponsor.email &&
-                  <Link className={styles.link} to={`mailto:${sponsor.email}`}>
+                  <Link className={styles.link} to={sponsor.email}>
                     <button className={`${styles.button} button is-large`} style={{ backgroundColor: `${sponsor.sponsorColor}` }}>
                       <i className={`fa fa-2x fa-envelope icon is-large`}></i>
                       <b>Contact Us!</b>

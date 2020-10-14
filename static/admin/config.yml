@@ -285,6 +285,7 @@ collections:
                 ]},
                 {label: "Uses Sponsor Page?", name: "usesSponsorPage", widget: boolean, required: false },
                 {label: "Header Image", name: "headerImage", widget: image, required: false },
+                {label: "Mobile Header Image", name: "headerImageMobile", widget: image, required: false },
                 {label: "Side Image", name: "pageImage", widget: image, required: false },
                 {label: "Video Header", name: "headerVideo", widget: file, required: false },
               ]}              
