@@ -12,7 +12,7 @@ const SponsorHeader = ({ sponsor, tier }) => (
         paddingBottom: `${tier.sponsorPage.sponsorTemplate === 'big-header' ? '27.77%' : '13.88%'}`,
         maxHeight: `${tier.sponsorPage.sponsorTemplate === 'big-header' ? '400px' : '200px'}`
       }}>
-      {!sponsor.headerVideo &&
+      {sponsor.headerVideo &&
         <video className={`${styles.heroVideo}`} preload="auto" autoPlay loop muted="muted" volume="0">
           <source src={sponsor.headerVideo} type="video/mp4" />
         </video>
