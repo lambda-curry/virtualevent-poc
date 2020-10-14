@@ -1,8 +1,8 @@
 {
   "heroBanner": {
-    "title": "YOCO Summit",
-    "subTitle": "Now Live!",
-    "date": "virtual • pacific time zone",
+    "title": "HERO Text",
+    "subTitle": "Subtitle Text",
+    "date": "Date Text",
     "time": "",
     "dateLayout": false,
     "buttons": {
@@ -21,7 +21,7 @@
         "image": "/img/flavor_wheel.jpg"
       }
     ]
-  },  
+  },
   "leftColumn": {
     "schedule": {
       "display": true,
