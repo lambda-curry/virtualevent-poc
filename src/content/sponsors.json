@@ -191,23 +191,23 @@
                 "class_name": "PresentationVideo",
                 "name": "Get To Know Us",
                 "order": 7,
-                "link": "https://vexxhost.com"
+                "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/sponsor-services/vexxhost_Get%20To%20Know%20Us.mp4"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Our Private Clouds",
-                "link": "vexxhost_Our Private Clouds.mp4",
+                "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/sponsor-services/vexxhost_Our%20Private%20Clouds.mp4",
                 "order": 8
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Our Public Cloud",
                 "order": 9,
-                "link": "vexxhost_Our Public Cloud.mp4"
+                "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/sponsor-services/vexxhost_Our%20Public%20Cloud.mp4"
               },
               {
                 "class_name": "PresentationVideo",
-                "link": "vexxhost_Our Solutions.mp4",
+                "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/sponsor-services/vexxhost_Our%20Solutions.mp4",
                 "name": "Our Solutions",
                 "order": 10
               }
@@ -337,7 +337,7 @@
                 "class_name": "PresentationVideo",
                 "order": 3,
                 "name": "Tencent Cloud TStack Introduction Video",
-                "link": "Tencent Cloud TStack Introduction Video_1.mp4"
+                "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/sponsor-services/Tencent%20Cloud%20TStack%20Introduction%20Video_1.mp4"
               }
             ],
             "links": [
@@ -400,7 +400,7 @@
               {
                 "class_name": "PresentationVideo",
                 "name": "Flex Metal Demo",
-                "link": "Flex_Metal_Demo_FINAL (1).mp4",
+                "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/sponsor-services/cisco_openstack_project_CVIM-Monitoring-Demo.mp4",
                 "order": 2
               }
             ]
@@ -457,7 +457,7 @@
               {
                 "class_name": "PresentationVideo",
                 "name": "10Years Openstack",
-                "link": "red_hat_10Years_Openstack_03_lowres.mp4",
+                "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/sponsor-services/red_hat_10Years_Openstack_03_lowres.mp4",
                 "order": 2
               }
             ],
