@@ -432,7 +432,14 @@
                 "order": 1
               }
             ],
-            "videos": []
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "Docker Enterprise Container Cloud Overview",
+                "link": "https://www.youtube.com/watch?v=Y9-TSLnJLzo",
+                "order": 2
+              }
+            ]
           },
           "columnAds": [
             {
