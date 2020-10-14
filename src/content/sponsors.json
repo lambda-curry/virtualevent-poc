@@ -70,7 +70,7 @@
               "image": "/img/484-484-像素（白底）.png"
             }
           ],
-          "id": 763,
+          "id": 248,
           "email": "contact@edgegallery.org",
           "usesSponsorPage": true
         },
@@ -158,7 +158,7 @@
               "link": "https://pages.ubuntu.com/open-infrastructure-summit-2020"
             }
           ],
-          "id": 768,
+          "id": 57,
           "email": "sales@canonical.com",
           "usesSponsorPage": true
         },
@@ -317,7 +317,7 @@
               "link": "https://www.cisco.com/c/en/us/products/cloud-systems-management/virtualized-infrastructure-manager/index.html"
             }
           ],
-          "id": 767,
+          "id": 59,
           "email": "https://www.cisco.com/c/en/us/about/contact-cisco.html",
           "usesSponsorPage": true
         },
@@ -363,7 +363,7 @@
               "link": "https://intl.cloud.tencent.com"
             }
           ],
-          "id": 770,
+          "id": 1074,
           "email": "tstack@tencent.com",
           "usesSponsorPage": true
         }
@@ -411,7 +411,7 @@
               "link": "https://central.inmotionhosting.com/flex-metal"
             }
           ],
-          "id": 766,
+          "id": 1166,
           "email": "openstack@inmotionhosting.com",
           "usesSponsorPage": true
         },
@@ -447,7 +447,7 @@
               "link": "https://info.mirantis.com/open-infra-2020"
             }
           ],
-          "id": 772,
+          "id": 105,
           "email": "https://info.mirantis.com/contact-us",
           "usesSponsorPage": true
         },
@@ -483,7 +483,7 @@
               "link": "https://www.redhat.com/en/technologies/linux-platforms/openstack-platform"
             }
           ],
-          "id": 771,
+          "id": 227,
           "email": "https://www.redhat.com/en/contact",
           "usesSponsorPage": true
         },
@@ -519,7 +519,7 @@
               "image": "/img/trilio_clickable_ad.png"
             }
           ],
-          "id": 764,
+          "id": 504,
           "email": "info@trilio.io",
           "usesSponsorPage": true
         },
@@ -537,7 +537,7 @@
               "link": "https://us02web.zoom.us/webinar/register/WN_GkgAknPdTnyFadmvTRITLA"
             }
           ],
-          "id": 773,
+          "id": 1171,
           "usesSponsorPage": true
         },
         {
@@ -578,7 +578,7 @@
               "text": ""
             }
           ],
-          "id": 765,
+          "id": 430,
           "email": "",
           "usesSponsorPage": true
         }
@@ -594,7 +594,7 @@
       "sponsors": [
         {
           "name": "OpenStack Foundation (OSF)",
-          "id": 774,
+          "id": 433,
           "intro": "Open Infrastructure is the integration of open source technologies supporting cloud-native applications. The OSF helps people build and operate open infrastructure. From cloud hosting to the driving force behind 5G to machine learning, OSF projects like Airship, Kata Containers, OpenStack, StarlingX, and Zuul all operate under the guiding principles we call the Four Opens: Open Source; Open Design; Open Development and  Open Community. For more information, please visit openstack.org.",
           "documents": {
             "links": [
