@@ -19,8 +19,8 @@
           "headerVideo": "",
           "headerImage": "/img/banner.jpg",
           "socialNetworks": [],
-          "chatLink": "",
-          "title": "We are Huawei",
+          "chatLink": "https://welink-meeting.zoom.us/j/762987313#success",
+          "title": "Huawei",
           "documents": {
             "slides": [
               {
@@ -34,6 +34,18 @@
                 "link": "/img/huawei_evolving-to-a-telco-converged-cloud-for-a-worry-free-5g-sa-.pdf",
                 "name": "Evolving to a Telco Converged Cloud for a Worry-Free 5G SA",
                 "order": 4
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/huawei_pdf3-the-industry-s-first-5g-mec-open-source-platform-edgegallery-goes-l....pdf",
+                "name": "The Industry's First 5G MEC Open-source Platform",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/huawie-edgegallery-open-source-community-officially-established-with-its....pdf",
+                "name": "EdgeGallery Open Source Community Officially Established, with Its First Board Meeting  Held in Beijing",
+                "order": 6
               }
             ],
             "links": [
@@ -54,7 +66,7 @@
           },
           "columnAds": [
             {
-              "link": "https://carrier.huawei.com/en/products/core-network/telco-cloud",
+              "link": "http://www.edgegallery.org/en/",
               "image": "/img/huawei-logo.png"
             }
           ],
