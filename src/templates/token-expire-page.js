@@ -12,26 +12,25 @@ import HeroComponent from '../components/HeroComponent'
 
 export const TokenExpirePageTemplate = class extends React.Component {
 
-  constructor(props) {
-    super(props);
+  componentDidMount() {
 
-    this.redirectToLogin = this.redirectToLogin.bind(this);
-  }
-
-  redirectToLogin() {
     const { location, handleResetReducers } = this.props;
 
-    let defaultPath = envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/';
-    let previousLocation = location.state?.backUrl ? location.state.backUrl : defaultPath;
-    let backUrl = URI.encode(previousLocation);
-    setTimeout(() => {
-      handleResetReducers();
-      doLogin(backUrl);
-    }, 3000);
+    if (window.authExpired === undefined) {
+      window.authExpired = true
+
+      let defaultPath = envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/';
+      let previousLocation = location.state?.backUrl && location.state.backUrl !== '/auth/expired' ? location.state.backUrl : defaultPath;
+      let backUrl = URI.encode(previousLocation);
+
+      setTimeout(() => {
+        handleResetReducers();
+        doLogin(backUrl);
+      }, 1500);
+    }
   }
 
   render() {
-    this.redirectToLogin();
     return (
       <HeroComponent
         title="Checking credentials..."
