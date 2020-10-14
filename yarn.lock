@@ -10351,9 +10351,9 @@ linkifyjs@^2.1.9:
   integrity sha512-74ivurkK6WHvHFozVaGtQWV38FzBwSTGNmJolEgFp7QgR2bl6ArUWlvT4GcHKbPe1z3nWYi+VUdDZk16zDOVug==
 
 live-event-widget@^1.0.34:
-  version "1.0.37"
-  resolved "https://registry.yarnpkg.com/live-event-widget/-/live-event-widget-1.0.37.tgz#1f5e0fa94ab01f211f40db69e7c97c28b9ee731c"
-  integrity sha512-dh7hUOwyzR9VDkEuCFjAGSNuT74zx6QMpLIjYxWsQzdYOVrlDIJddtjcl1/vEJWgC0TpSTF0WCpmryNBoYFWCg==
+  version "1.0.40"
+  resolved "https://registry.yarnpkg.com/live-event-widget/-/live-event-widget-1.0.40.tgz#6a84adafa3eaa9c4acc727b50cdd079e82d70426"
+  integrity sha512-UH2nJPL+UPBg1ZEvE3k3e7gBiOtDnwXbmzS6VPkpp3KMRhw/tjH47x/rodwO1noafethj76ZGBD1vQT41grJiA==
   dependencies:
     svg-url-loader "^6.0.0"
 
@@ -15479,9 +15479,9 @@ saxes@^5.0.0:
     xmlchars "^2.2.0"
 
 schedule-lite@^1.0.59:
-  version "1.0.64"
-  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.64.tgz#787b0c62b5c8c3be8ec5a82afd37f8e942326545"
-  integrity sha512-byJ2oEm7SallCH3nz1WPXp283GfMK95LARfqJQl1R8PFL7zu+c1ML7sMXvP66rhJahjBDFMmkaUWmYUoT6D73g==
+  version "1.0.65"
+  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.65.tgz#6ca2c62b40b98f90a8bcd8cdba75e427c702f002"
+  integrity sha512-f1/K7r7DwneYw+lAiTLehDlfmUe9KxO45v3dU8N5dr1iVFc0wyZV310oXJMzQf9nuKBewZkdkBMGvoOVZhMrwg==
   dependencies:
     pure-react-carousel "^1.27.4"
 
