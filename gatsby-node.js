@@ -73,7 +73,7 @@ exports.onPreBootstrap = async () => {
     }
   });
 
-  fs.writeFileSync('src/content/marketing-site.json', JSON.stringify(homeSettings), 'utf8', function (err) {
+  fs.writeFileSync('src/content/home-settings.json', JSON.stringify(homeSettings), 'utf8', function (err) {
     if (err) throw err;
     console.log('Saved!');
   });
