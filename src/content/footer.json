@@ -1,6 +1,28 @@
 {
   "columns": [
     {
+      "title": "The OpenStack Foundation",
+      "display": true,
+      "items": [
+        {
+          "title": "Join us",
+          "link": "https://openinfra.dev/join"
+        },
+        {
+          "title": "Code of Conduct",
+          "link": "https://www.openstack.org/summit/2020/code-of-conduct/"
+        },
+        {
+          "title": "Supporting Companies",
+          "link": "https://openinfra.dev/companies/"
+        },
+        {
+          "title": "Services",
+          "link": "https://openinfra.dev/projects/services/"
+        }
+      ]
+    },
+    {
       "title": "The Event",
       "display": false,
       "items": [
@@ -29,28 +51,6 @@
         {
           "title": "Sponsors",
           "link": "/footer-content/"
-        }
-      ]
-    },
-    {
-      "title": "The OpenStack Foundation",
-      "display": true,
-      "items": [
-        {
-          "title": "Join us",
-          "link": "https://openinfra.dev/join"
-        },
-        {
-          "title": "Code of Conduct",
-          "link": "https://www.openstack.org/summit/2020/code-of-conduct/"
-        },
-        {
-          "title": "Supporting Companies",
-          "link": "https://openinfra.dev/companies/"
-        },
-        {
-          "title": "Services",
-          "link": "https://openinfra.dev/projects/services/"
         }
       ]
     }
