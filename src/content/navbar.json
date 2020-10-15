@@ -22,12 +22,12 @@
     },
     {
       "title": "Sponsor IF",
-      "link": "/sponsor-IF/",
+      "link": "/sponsor-if/",
       "display": true
     },
     {
       "title": "Contact IF",
-      "link": "/contact-IF/",
+      "link": "/contact-if/",
       "display": true
     },
     {
@@ -37,7 +37,7 @@
     },
     {
       "title": "FAQ",
-      "link": "/FAQ/",
+      "link": "/faq/",
       "display": true
     }
   ]
