@@ -21,7 +21,7 @@
         "image": "/img/ocp-tech-week-marketing-header-icons-only.png"
       }
     ]
-  },  
+  },
   "leftColumn": {
     "schedule": {
       "display": true,
@@ -43,7 +43,7 @@
       "images": [
         {
           "image": "/img/ocp-tech-week-marketing-ad1-square.png",
-          "link": ""
+          "link": "idp.fntech.com/auth/login"
         }
       ]
     },
