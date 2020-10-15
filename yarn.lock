@@ -1054,7 +1054,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.4.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.7":
+"@babel/runtime@^7.4.4", "@babel/runtime@^7.8.7":
   version "7.11.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.11.2.tgz#f549c13c754cc40b87644b9fa9f09a6a95fe0736"
   integrity sha512-TeWkU52so0mPtDcaCTxNBI/IHiz0pZgr8VEFqXFtZWpYD08ZB6FaSwVAS8MKRQAP3bYKiVjwysOJgMFY28o6Tw==
@@ -1065,6 +1065,13 @@
   version "7.9.6"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.9.6.tgz#a9102eb5cadedf3f31d08a9ecf294af7827ea29f"
   integrity sha512-64AF1xY3OAkFHqOb9s4jpgk1Mm5vDZ4L3acHvAml+53nO1XbXLuDodsVpO4OIUsmemlUHMxNdYMNJmsvOwLrvQ==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
+"@babel/runtime@^7.5.5":
+  version "7.12.0"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.0.tgz#98bd7666186969c04be893d747cf4a6c6c8fa6b0"
+  integrity sha512-lS4QLXQ2Vbw2ubfQjeQcn+BZgZ5+ROHW9f+DWjEp5Y+NHYmkRGKqHSJ1tuhbUauKu2nhZNTBIvsIQ8dXfY5Gjw==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -15479,9 +15486,9 @@ saxes@^5.0.0:
     xmlchars "^2.2.0"
 
 schedule-lite@^1.0.59:
-  version "1.0.65"
-  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.65.tgz#6ca2c62b40b98f90a8bcd8cdba75e427c702f002"
-  integrity sha512-f1/K7r7DwneYw+lAiTLehDlfmUe9KxO45v3dU8N5dr1iVFc0wyZV310oXJMzQf9nuKBewZkdkBMGvoOVZhMrwg==
+  version "1.0.67"
+  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.67.tgz#514d21ba6af5614caa95ecccf5d15c8a63e8bb4c"
+  integrity sha512-xh3KIRer88iNWswN+Bm1doxqPcogsaRtdVrSi9pwk1uj1TuM0eDZXbyfBOD7tEp5IO8qHndEs2htdLe5zGkWaA==
   dependencies:
     pure-react-carousel "^1.27.4"
 
