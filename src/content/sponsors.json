@@ -529,7 +529,7 @@
         },
         {
           "marquee": "Check out our webinar \"OpenStack on Vanilla: From 0 to 100 in 35 minutes.“ on Wednesday, 21 October, 10AM (PDT) / 1PM (EDT)! Click on the ad below!",
-          "sponsorColor": "#465872",
+          "sponsorColor": "#f20033",
           "logo": "/img/cloudical.png",
           "name": "Vanilla Stack ",
           "intro": "VanillaStack is the main product of Cloudical, a company based in Germany and Poland that specializes in the \"cloud\" sector. Being unique in the world in this form, the VanillaStack is a pure open source cloud-native stack based on Kubernetes. With Kubernetes as Container-as-a-Service-Platform, VanillaStack allows you to roll out OpenStack as the Infrastructure-as-a-Service-platform. The Platform-as-a-Service-platform being used is Cloud Foundry. VanillaStack is made of open-source projects only and the community is strongly encouraged to contribute: The VanillaStack sources and GIT-repos are available. Cloudical also offers managed services (Managed Platform as a Service, Managed Software as a Service) and cloud consulting (consulting, coaching, training). Cloudical works independently of manufacturers and platforms, enabling it to provide its customers solutions tailored to their needs.  Founded in 2017, Cloudical currently employs 30 experts.",
