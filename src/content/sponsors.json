@@ -74,8 +74,8 @@
           "id": 248,
           "email": "contact@edgegallery.org",
           "usesSponsorPage": true,
-          "sponsorId": 8,
-          "companyId": 9
+          "sponsorId": 763,
+          "companyId": 248
         },
         {
           "marquee": "Delivered by Canonical.            ",
@@ -163,7 +163,9 @@
           ],
           "id": 57,
           "email": "sales@canonical.com",
-          "usesSponsorPage": true
+          "usesSponsorPage": true,
+          "sponsorId": 768,
+          "companyId": 57
         },
         {
           "marquee": "Empower your cloud infrastructure with the high-level expertise and revolutionize your success - Scan your badge to redeem the $200 public cloud credit.",
@@ -251,8 +253,8 @@
           "id": 120,
           "email": "sales@vexxhost.com",
           "usesSponsorPage": true,
-          "sponsorId": 8,
-          "companyId": 9
+          "sponsorId": 769,
+          "companyId": 120
         }
       ]
     },
@@ -326,8 +328,8 @@
           "id": 59,
           "email": "https://www.cisco.com/c/en/us/about/contact-cisco.html",
           "usesSponsorPage": true,
-          "sponsorId": 8,
-          "companyId": 9
+          "sponsorId": 767,
+          "companyId": 59
         },
         {
           "marquee": "Leading 5G innovation",
@@ -375,8 +377,8 @@
           "id": 1074,
           "email": "tstack@tencent.com",
           "usesSponsorPage": true,
-          "sponsorId": 8,
-          "companyId": 9
+          "sponsorId": 770,
+          "companyId": 1074
         }
       ]
     },
@@ -425,8 +427,8 @@
           "id": 1166,
           "email": "openstack@inmotionhosting.com",
           "usesSponsorPage": true,
-          "sponsorId": 8,
-          "companyId": 9
+          "sponsorId": 766,
+          "companyId": 1166
         },
         {
           "marquee": "Ship Code Faster",
@@ -464,8 +466,8 @@
           "id": 105,
           "email": "https://info.mirantis.com/contact-us",
           "usesSponsorPage": true,
-          "sponsorId": 8,
-          "companyId": 9,
+          "sponsorId": 772,
+          "companyId": 105,
         },
         {
           "marquee": "Open your infrastructure. Own your future.",
@@ -502,8 +504,8 @@
           "id": 227,
           "email": "https://www.redhat.com/en/contact",
           "usesSponsorPage": true,
-          "sponsorId": 8,
-          "companyId": 9
+          "sponsorId": 771,
+          "companyId": 227
         },
         {
           "marquee": "Trilio is a leader in cloud-native data protection for OpenStack, Kubernetes & Red Hat OpenShift.",
@@ -540,8 +542,8 @@
           "id": 504,
           "email": "info@trilio.io",
           "usesSponsorPage": true,
-          "sponsorId": 8,
-          "companyId": 9
+          "sponsorId": 764,
+          "companyId": 504
         },
         {
           "marquee": "Check out our webinar \"OpenStack on Vanilla: From 0 to 100 in 35 minutes.“ on Wednesday, 21 October, 10AM (PDT) / 1PM (EDT)! Click on the ad below!",
@@ -551,8 +553,8 @@
           "intro": "VanillaStack is the main product of Cloudical, a company based in Germany and Poland that specializes in the \"cloud\" sector. Being unique in the world in this form, the VanillaStack is a pure open source cloud-native stack based on Kubernetes. With Kubernetes as Container-as-a-Service-Platform, VanillaStack allows you to roll out OpenStack as the Infrastructure-as-a-Service-platform. The Platform-as-a-Service-platform being used is Cloud Foundry. VanillaStack is made of open-source projects only and the community is strongly encouraged to contribute: The VanillaStack sources and GIT-repos are available. Cloudical also offers managed services (Managed Platform as a Service, Managed Software as a Service) and cloud consulting (consulting, coaching, training). Cloudical works independently of manufacturers and platforms, enabling it to provide its customers solutions tailored to their needs.  Founded in 2017, Cloudical currently employs 30 experts.",
           "headerImage": "/img/cloudical_welcome.png",
           "chatLink": "",
-          "sponsorId": 8,
-          "companyId": 9,
+          "sponsorId": 773,
+          "companyId": 1171,
           "columnAds": [
             {
               "image": "/img/openstackonvanilla.png",
@@ -603,8 +605,8 @@
           "id": 430,
           "email": "",
           "usesSponsorPage": true,
-          "sponsorId": 8,
-          "companyId": 9
+          "sponsorId": 765,
+          "companyId": 430
         }
       ]
     },
@@ -673,7 +675,9 @@
           },
           "id": 433,
           "email": "summit@openstack.org",
-          "usesSponsorPage": true
+          "usesSponsorPage": true,
+          "sponsorId": 774,
+          "companyId": 433
         }
       ]
     }
