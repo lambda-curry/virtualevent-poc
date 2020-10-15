@@ -19,6 +19,8 @@ import SponsorComponent from '../components/SponsorComponent'
 import SimpleChatWidgetComponent from '../components/SimpleChatWidgetComponent'
 
 import { getDisqusSSO, getUserProfile } from '../actions/user-actions'
+import envVariables from "../utils/envVariables";
+import {AttendanceTracker} from "openstack-uicore-foundation/lib/components";
 
 export const HomePageTemplate = class extends React.Component {
 
@@ -133,6 +135,12 @@ const HomePage = (
 
   return (
     <Layout>
+      <AttendanceTracker
+          sourceName="LOBBY"
+          summitId={SummitObject.summit.id}
+          apiBaseUrl={envVariables.SUMMIT_API_BASE_URL}
+          accessToken={loggedUser.accessToken}
+      />
       <OrchestedTemplate
         loggedUser={loggedUser}
         user={user}

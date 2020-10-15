@@ -20,6 +20,8 @@ import SponsorsTiers from '../content/sponsors-tiers.json'
 import Layout from '../components/Layout'
 
 import styles from '../styles/sponsor-page.module.scss'
+import envVariables from "../utils/envVariables";
+import {AttendanceTracker} from "openstack-uicore-foundation/lib/components";
 
 export const SponsorPageTemplate = class extends React.Component {
 
@@ -56,6 +58,7 @@ export const SponsorPageTemplate = class extends React.Component {
     const { loggedUser, user } = this.props;
     const { sponsor, tier, notFound } = this.state;
     let { summit } = SummitObject;
+    const { disqus, liveEvent, schedule, banner } = tier.sponsorPage.widgets;
 
     if (notFound) {
       return <HeroComponent title="Sponsor not found" redirectTo="/a/sponsors" />
@@ -63,6 +66,13 @@ export const SponsorPageTemplate = class extends React.Component {
       const { disqus, liveEvent, schedule, banner } = tier.sponsorPage.widgets;
       return (
         <>
+          <AttendanceTracker
+              sourceName="SPONSOR"
+              sourceId={sponsor.sponsorId}
+              summitId={summit.id}
+              apiBaseUrl={envVariables.SUMMIT_API_BASE_URL}
+              accessToken={loggedUser.accessToken}
+          />
           <SponsorHeader sponsor={sponsor} tier={tier} />
           <section className={`section px-0 ${tier.sponsorPage.sponsorTemplate === 'big-header' ? 'pt-5' : 'pt-0'} pb-0`}>
             {sponsor.sideImage &&
@@ -91,7 +101,7 @@ export const SponsorPageTemplate = class extends React.Component {
                 {liveEvent &&
                   <LiveEventWidgetComponent
                     onEventClick={(ev) => this.onEventChange(ev)}
-                    sponsorId={sponsor.id}
+                    sponsorId={sponsor.companyId}
                   />
                 }
                 {schedule &&
@@ -105,8 +115,8 @@ export const SponsorPageTemplate = class extends React.Component {
                     showNav={false}
                     showAllEvents={false}
                     eventCount={3}
-                    sponsorId={sponsor.id}
                     title="Happening Now"
+                    sponsorId={sponsor.companyId}
                   />
                 }
                 {banner && <SponsorBanner sponsor={sponsor} bgColor={sponsor.sponsorColor} />}

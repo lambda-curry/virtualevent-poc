@@ -12330,9 +12330,9 @@ open@^6.4.0:
     is-wsl "^1.1.0"
 
 openstack-uicore-foundation@^2.0.66:
-  version "2.0.68"
-  resolved "https://registry.yarnpkg.com/openstack-uicore-foundation/-/openstack-uicore-foundation-2.0.68.tgz#8614585b6dd8ed8003de88fbd6d8c259d51ec349"
-  integrity sha512-3S14MbfM0B4un7rnWyTfMigdn2O8giB/HOVHqxsJcfm0B4wxc+jBOOkgktWpHvGpyp25yvf0sr+2NIp5g40pUg==
+  version "2.0.69"
+  resolved "https://registry.yarnpkg.com/openstack-uicore-foundation/-/openstack-uicore-foundation-2.0.69.tgz#b9fdc0356119e911d7e94787df249a188c48733a"
+  integrity sha512-sYLhYCtnfYTUWCHxKIpZDilWlydemwTn/xd4txLSB/0T7H9PehNMuFgFktWXwc4pUPrDjRJ6G1sDLt3LxpivDg==
 
 opentracing@^0.14.4:
   version "0.14.4"
