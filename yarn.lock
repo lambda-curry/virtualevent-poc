@@ -1054,7 +1054,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.4.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.7":
+"@babel/runtime@^7.4.4", "@babel/runtime@^7.8.7":
   version "7.11.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.11.2.tgz#f549c13c754cc40b87644b9fa9f09a6a95fe0736"
   integrity sha512-TeWkU52so0mPtDcaCTxNBI/IHiz0pZgr8VEFqXFtZWpYD08ZB6FaSwVAS8MKRQAP3bYKiVjwysOJgMFY28o6Tw==
@@ -1065,6 +1065,13 @@
   version "7.9.6"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.9.6.tgz#a9102eb5cadedf3f31d08a9ecf294af7827ea29f"
   integrity sha512-64AF1xY3OAkFHqOb9s4jpgk1Mm5vDZ4L3acHvAml+53nO1XbXLuDodsVpO4OIUsmemlUHMxNdYMNJmsvOwLrvQ==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
+"@babel/runtime@^7.5.5":
+  version "7.12.0"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.0.tgz#98bd7666186969c04be893d747cf4a6c6c8fa6b0"
+  integrity sha512-lS4QLXQ2Vbw2ubfQjeQcn+BZgZ5+ROHW9f+DWjEp5Y+NHYmkRGKqHSJ1tuhbUauKu2nhZNTBIvsIQ8dXfY5Gjw==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -2495,9 +2502,9 @@ ajv@^6.10.0:
     uri-js "^4.2.2"
 
 ajv@^6.12.4:
-  version "6.12.5"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.12.5.tgz#19b0e8bae8f476e5ba666300387775fb1a00a4da"
-  integrity sha512-lRF8RORchjpKG50/WFf8xmg7sgCLFiYNNnqdKflk63whMQcWR5ngGjiSXkL9bjxy6B2npOK2HSMN49jEBMSkag==
+  version "6.12.6"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.12.6.tgz#baf5a62e802b07d977034586f8c3baf5adf26df4"
+  integrity sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==
   dependencies:
     fast-deep-equal "^3.1.1"
     fast-json-stable-stringify "^2.0.0"
@@ -10351,9 +10358,9 @@ linkifyjs@^2.1.9:
   integrity sha512-74ivurkK6WHvHFozVaGtQWV38FzBwSTGNmJolEgFp7QgR2bl6ArUWlvT4GcHKbPe1z3nWYi+VUdDZk16zDOVug==
 
 live-event-widget@^1.0.34:
-  version "1.0.34"
-  resolved "https://registry.yarnpkg.com/live-event-widget/-/live-event-widget-1.0.34.tgz#e118fc44fa1fa6df44a55eab85e7dd03839e8251"
-  integrity sha512-o2J76WHxAUlqvEP4lbvcV+CueBuATeVzTDNoh/9oxXyaPAFH1YnpgvpQJKVhvpAh7agKfyVqvxpfFXxka0KJSg==
+  version "1.0.40"
+  resolved "https://registry.yarnpkg.com/live-event-widget/-/live-event-widget-1.0.40.tgz#6a84adafa3eaa9c4acc727b50cdd079e82d70426"
+  integrity sha512-UH2nJPL+UPBg1ZEvE3k3e7gBiOtDnwXbmzS6VPkpp3KMRhw/tjH47x/rodwO1noafethj76ZGBD1vQT41grJiA==
   dependencies:
     svg-url-loader "^6.0.0"
 
@@ -12323,9 +12330,9 @@ open@^6.4.0:
     is-wsl "^1.1.0"
 
 openstack-uicore-foundation@^2.0.66:
-  version "2.0.66"
-  resolved "https://registry.yarnpkg.com/openstack-uicore-foundation/-/openstack-uicore-foundation-2.0.66.tgz#9c7a0e16d47f55e8c7f93aa13c5aec4ead416dff"
-  integrity sha512-dWCFY2woqVAvclvTcC3FmtM3FDxydNO4cpXhRl0k19zueI4WpWAdSb8dro7PHGz7XUpNlnHq4QHjPUWJ2qiJoQ==
+  version "2.0.68"
+  resolved "https://registry.yarnpkg.com/openstack-uicore-foundation/-/openstack-uicore-foundation-2.0.68.tgz#8614585b6dd8ed8003de88fbd6d8c259d51ec349"
+  integrity sha512-3S14MbfM0B4un7rnWyTfMigdn2O8giB/HOVHqxsJcfm0B4wxc+jBOOkgktWpHvGpyp25yvf0sr+2NIp5g40pUg==
 
 opentracing@^0.14.4:
   version "0.14.4"
@@ -13684,9 +13691,9 @@ punycode@^2.1.0, punycode@^2.1.1:
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
 pure-react-carousel@^1.27.4:
-  version "1.27.4"
-  resolved "https://registry.yarnpkg.com/pure-react-carousel/-/pure-react-carousel-1.27.4.tgz#870ae5c6f8325b7fb8cc2c8b322c08a98fb3cbb9"
-  integrity sha512-o4msT2SULQHbGd8xDDpkKPK91cQwdRGcIEe7Y3vtLusbB2sve1yvq8l57Q+oTyMgZnjQu9vUNayOFjJI89BdBA==
+  version "1.27.5"
+  resolved "https://registry.yarnpkg.com/pure-react-carousel/-/pure-react-carousel-1.27.5.tgz#59f14c487b5106e3faf5e01cb5ff7fa0593fb3ad"
+  integrity sha512-JsWL2JmDcT4LY0V91wD1csbCiKMggOeUKx7wthiA8bIn4ZNfH5F3GAaPFzYW8ecbLyxH8UzhdaMGNu2zYSb/XQ==
   dependencies:
     "@babel/runtime" "^7.5.5"
     deep-freeze "0.0.1"
@@ -15479,9 +15486,9 @@ saxes@^5.0.0:
     xmlchars "^2.2.0"
 
 schedule-lite@^1.0.59:
-  version "1.0.59"
-  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.59.tgz#bd5f5f96866d22284ed3b8e43a6174732436f244"
-  integrity sha512-1XoaVhu63/vP5R5YVtoC7T2rvWTpRfWzT17jUFSFMHqtFPZDzTT2k3t5HJJ+uUupY8MtH6yMekQIydF710T26A==
+  version "1.0.66"
+  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.66.tgz#c55ed32955a6a4da5c7e8b0e60ec1093f6794330"
+  integrity sha512-aknqMhRd8rTvNfUHXcUHlGipG6tT19VXqYeC9e2MhaOnqEO7D4+AL89/IefmxnwP0vOKWyWI+htvfETnsHjHuA==
   dependencies:
     pure-react-carousel "^1.27.4"
 
