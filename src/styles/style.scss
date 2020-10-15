@@ -1,8 +1,99 @@
 @import './colors.scss';
 
+/**
+ * @license
+ * MyFonts Webfont Build ID 3946995, 2020-09-11T15:52:41-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: AvantGardeGothicITCW01Bd by ITC
+ * URL: https://www.myfonts.com/fonts/itc/avant-garde-gothic/std-bold/
+ * 
+ * Webfont: AvantGardeGothicITCW01Bk by ITC
+ * URL: https://www.myfonts.com/fonts/itc/avant-garde-gothic/std-book/
+ * 
+ * Webfont: AvantGardeGothicITCW02BdObl by ITC
+ * URL: https://www.myfonts.com/fonts/itc/avant-garde-gothic/std-bold-oblique/
+ * 
+ * Webfont: AvantGardeGothicITCW02BkObl by ITC
+ * URL: https://www.myfonts.com/fonts/itc/avant-garde-gothic/std-book-oblique/
+ * 
+ * Webfont: AvantGardeGothicITCW02Dm by ITC
+ * URL: https://www.myfonts.com/fonts/itc/avant-garde-gothic/std-demi-bold/
+ * 
+ * Webfont: AvantGardeGothicITCW02DmObl by ITC
+ * URL: https://www.myfonts.com/fonts/itc/avant-garde-gothic/std-demi-bold-oblique/
+ * 
+ * Webfont: AvantGardeGothicITCW02XLt by ITC
+ * URL: https://www.myfonts.com/fonts/itc/avant-garde-gothic/std-extra-light/
+ * 
+ * Webfont: AvantGardeGthcITCW02XLtObl by ITC
+ * URL: https://www.myfonts.com/fonts/itc/avant-garde-gothic/std-extra-light-oblique/
+ * 
+ * Webfont: AvantGardeGothicITCW02Md by ITC
+ * URL: https://www.myfonts.com/fonts/itc/avant-garde-gothic/std-medium/
+ * 
+ * Webfont: AvantGardeGothicITCW02MdObl by ITC
+ * URL: https://www.myfonts.com/fonts/itc/avant-garde-gothic/std-medium-oblique/
+ * 
+ * 
+ * Webfonts copyright: Font software Copyright 1993, 1994, 2001 Adobe Systems Incorporated. Typeface designs Copyright 2005 International Typeface Corporation. All rights reserved.
+ * 
+ * © 2020 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3c39f3");
+  
+@font-face {
+  font-family: 'AvantGardeGothicITCW01Bd';
+  src: url('/fonts/AvantGardeGothicITCW01Bd/font.woff2') format('woff2'), url('/fonts/AvantGardeGothicITCW01Bd/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'AvantGardeGothicITCW01Bk';
+  src: url('/fonts/AvantGardeGothicITCW01Bk/font.woff2') format('woff2'), url('/fonts/AvantGardeGothicITCW01Bk/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'AvantGardeGothicITCW02Dm';
+  src: url('/fonts/AvantGardeGothicITCW02Dm/font.woff2') format('woff2'), url('/fonts/AvantGardeGothicITCW02Dm/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'AvantGardeGothicITCW02BdObl';
+  src: url('/fonts/AvantGardeGothicITCW02BdObl/font.woff2') format('woff2'), url('/fonts/AvantGardeGothicITCW02BdObl/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'AvantGardeGothicITCW02MdObl';
+  src: url('/fonts/AvantGardeGothicITCW02MdObl/font.woff2') format('woff2'), url('/fonts/AvantGardeGothicITCW02MdObl/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'AvantGardeGothicITCW02XLt';
+  src: url('/fonts/AvantGardeGothicITCW02XLt/font.woff2') format('woff2'), url('/fonts/AvantGardeGothicITCW02XLt/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'AvantGardeGthcITCW02XLtObl';
+  src: url('/fonts/AvantGardeGthcITCW02XLtObl/font.woff2') format('woff2'), url('/fonts/AvantGardeGthcITCW02XLtObl/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'AvantGardeGothicITCW02Md';
+  src: url('/fonts/AvantGardeGothicITCW02Md/font.woff2') format('woff2'), url('/fonts/AvantGardeGothicITCW02Md/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'AvantGardeGothicITCW02DmObl';
+  src: url('/fonts/AvantGardeGothicITCW02DmObl/font.woff2') format('woff2'), url('/fonts/AvantGardeGothicITCW02DmObl/font.woff') format('woff');
+}
+@font-face {
+  font-family: 'AvantGardeGothicITCW02BkObl';
+  src: url('/fonts/AvantGardeGothicITCW02BkObl/font.woff2') format('woff2'), url('/fonts/AvantGardeGothicITCW02BkObl/font.woff') format('woff');
+}
+
 html,
 body {
-  font-family: 'Nunito Sans', sans-serif !important;
+  font-family: 'AvantGardeGothicITCW01Bk', sans-serif !important;
   margin: 0;
   padding: 0;
   height: 100%;
