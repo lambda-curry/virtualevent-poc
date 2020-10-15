@@ -22,6 +22,8 @@ import SummitObject from '../content/summit.json'
 import { getDisqusSSO } from '../actions/user-actions'
 
 import styles from "../styles/marketing.module.scss"
+import envVariables from "../utils/envVariables";
+import {AttendanceTracker} from "openstack-uicore-foundation/lib/components";
 
 
 export const MarketingPageTemplate = class extends React.Component {
@@ -58,8 +60,13 @@ export const MarketingPageTemplate = class extends React.Component {
 
     return (
       <React.Fragment>
-        <MarketingHeroComponent summit={summit} isLoggedUser={isLoggedUser} location={location} />        
+        <MarketingHeroComponent summit={summit} isLoggedUser={isLoggedUser} location={location} />
         {summit && <Countdown summit={summit} className='is-hidden-tablet' />}
+        <AttendanceTracker
+            summitId={summit.id}
+            apiBaseUrl={envVariables.SUMMIT_API_BASE_URL}
+            accessToken={loggedUser.accessToken}
+        />
         <div className="columns" id="marketing-columns">
           <div className="column is-half px-6 pt-3 pb-0 mt-3" style={{ position: 'relative' }}>
             {MarketingSite.leftColumn.schedule.display &&
