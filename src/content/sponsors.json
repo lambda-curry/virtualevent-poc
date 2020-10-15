@@ -81,7 +81,7 @@
           "logo": "/img/ubuntu-2.svg",
           "name": "Canonical",
           "intro": "Canonical is the publisher of Ubuntu, the OS for most public cloud workloads as well as the emerging categories of smart gateways, self-driving cars and advanced robots. Canonical provides enterprise security, support and services to commercial users of Ubuntu. Established in 2004, Canonical is a privately held company.",
-          "headerVideo": "/img/canonical_microstack.mp4",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/31-Virtual/Sponsors/Canonical/canonical_microstack.mp4",
           "headerImage": "",
           "chatLink": "https://meet.google.com/gvt-cmid-zwe?authuser=0 ",
           "title": "Canonical",
