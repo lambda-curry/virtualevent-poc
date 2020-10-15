@@ -11,7 +11,7 @@ const SponsorHeader = ({ sponsor, tier }) => {
   const videoParentRef = useRef(null);
 
   const setIsMuted = useCallback((isMuted) => {
-    const player = videoParentRef.current.children[0];    
+    const player = videoParentRef.current.children[0];
     player.muted = isMuted;
     _setIsMuted(isMuted)
   })
@@ -95,6 +95,22 @@ const SponsorHeader = ({ sponsor, tier }) => {
           </div>
         </div>
       }
+      <div className={`${styles.buttonsMobile}`}>
+        <Link className={styles.link}>
+          <button className={`${styles.button} button is-large`} style={{ backgroundColor: `${sponsor.sponsorColor}` }}>
+            <i className={`fa fa-2x fa-qrcode icon is-large`}></i>
+            <b>Scan your badge</b>
+          </button>
+        </Link>
+        {sponsor.email &&
+          <Link className={styles.link} to={sponsor.email}>
+            <button className={`${styles.button} button is-large`} style={{ backgroundColor: `${sponsor.sponsorColor}` }}>
+              <i className={`fa fa-2x fa-envelope icon is-large`}></i>
+              <b>Contact Us!</b>
+            </button>
+          </Link>
+        }
+      </div>
     </section >
   )
 }
