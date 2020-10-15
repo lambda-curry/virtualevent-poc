@@ -200,7 +200,7 @@
   .link {
     .button {
       background-color: $color_secondary_contrast;
-      border-color: $color_secondary_contrast;
+      border: none;
       color: #fff;
       height: 5rem;
       width: 100%;
@@ -220,11 +220,11 @@
 
       &:hover,
       &:active {
-        border-color: #fff;
+        border: none;
       }
 
       &:focus {
-        border-color: #fff;
+        border: none;
         box-shadow: none;
       }
     }
@@ -347,8 +347,6 @@
 
       &:first-of-type {
         button {
-          background-color: $color_secondary;
-          border-color: $color_secondary;
           margin-right: 3rem;
         }
       }
