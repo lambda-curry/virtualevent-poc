@@ -5,7 +5,7 @@
     },
     "speakers": {
       "showTodaySpeakers": true,
-      "showFeatureSpeakers": true
+      "showFeatureSpeakers": false
     }
   },
   "homeHero": {
