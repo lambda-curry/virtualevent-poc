@@ -43,7 +43,7 @@
       "images": [
         {
           "image": "/img/ocp-tech-week-marketing-ad1-square.png",
-          "link": "idp.fntech.com/auth/login"
+          "link": "https://idp.fntech.com/auth/login"
         }
       ]
     },
