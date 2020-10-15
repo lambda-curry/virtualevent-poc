@@ -2,7 +2,7 @@
   "columns": [
     {
       "title": "The Event",
-      "display": true,
+      "display": false,
       "items": [
         {
           "title": "All Projects",
@@ -20,7 +20,7 @@
     },
     {
       "title": "The Vision",
-      "display": true,
+      "display": false,
       "items": [
         {
           "title": "About",
@@ -83,15 +83,15 @@
   "legal": [
     {
       "title": "Privacy Policy",
-      "link": "/footer-content/"
+      "link": "/privacy-policy/"
     },
     {
       "title": "Legals",
-      "link": "/footer-content/"
+      "link": "/legals/"
     },
     {
       "title": "Disclaimer",
-      "link": "/footer-content/"
+      "link": "/disclaimer/"
     }
   ]
 }
