@@ -65,6 +65,19 @@ exports.onPreBootstrap = async () => {
     console.log('Saved!');
   });
 
+  let homeSettings = JSON.parse(fs.readFileSync('src/content/home-settings.json'));
+
+  marketingData.map((item) => {
+    if (item.key.startsWith('schedule_default_image')) {
+      homeSettings[item.key] = item.value;
+    }
+  });
+
+  fs.writeFileSync('src/content/marketing-site.json', JSON.stringify(homeSettings), 'utf8', function (err) {
+    if (err) throw err;
+    console.log('Saved!');
+  });
+
 }
 
 // makes Summit logo optional for graphql queries

@@ -8,6 +8,8 @@ import expiredToken from '../utils/expiredToken';
 import ScheduleLite from 'schedule-lite/dist';
 import 'schedule-lite/dist/index.css';
 
+import HomeSettings from '../content/home-settings.json'
+
 const ScheduleComponent = class extends React.Component {
 
   render() {
@@ -25,6 +27,7 @@ const ScheduleComponent = class extends React.Component {
       onAuthError: (err, res) => expiredToken(err),
       onRef: ref => this.child = ref,
       subtitle: "All times below are listed in CDT unless otherwise noted",
+      defaultImage: HomeSettings.schedule_default_image
     };
 
     const { className } = this.props;
