@@ -13,12 +13,12 @@
     {
       "title": "Schedule",
       "link": "/a/schedule",
-      "display": true
+      "display": false
     },
     {
       "title": "My Schedule",
       "link": "/a/my-schedule",
-      "display": true
+      "display": false
     },
     {
       "title": "Sponsor IF",
