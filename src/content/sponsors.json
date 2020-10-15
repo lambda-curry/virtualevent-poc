@@ -21,7 +21,9 @@
           "headerImageMobile": "/img/huawei_768-400-size-banner.png",
           "socialNetworks": [],
           "chatLink": "https://welink-meeting.zoom.us/j/762987313#success",
+          "sponsorId": 763,
           "title": "Huawei",
+          "companyId": 248,
           "documents": {
             "slides": [
               {
@@ -73,9 +75,7 @@
           ],
           "id": 248,
           "email": "contact@edgegallery.org",
-          "usesSponsorPage": true,
-          "sponsorId": 763,
-          "companyId": 248
+          "usesSponsorPage": true
         },
         {
           "marquee": "Delivered by Canonical.            ",
@@ -86,7 +86,9 @@
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/31-Virtual/Sponsors/Canonical/canonical_microstack.mp4",
           "headerImage": "",
           "chatLink": "https://meet.google.com/gvt-cmid-zwe?authuser=0 ",
+          "sponsorId": 768,
           "title": "Canonical",
+          "companyId": 57,
           "documents": {
             "links": [
               {
@@ -163,9 +165,7 @@
           ],
           "id": 57,
           "email": "sales@canonical.com",
-          "usesSponsorPage": true,
-          "sponsorId": 768,
-          "companyId": 57
+          "usesSponsorPage": true
         },
         {
           "marquee": "Empower your cloud infrastructure with the high-level expertise and revolutionize your success - Scan your badge to redeem the $200 public cloud credit.",
@@ -175,7 +175,9 @@
           "intro": "VEXXHOST Inc. is a cloud computing provider. It has established itself a well-reputed spot in the OpenStack community since 2011, this means that our clients work side by side with an experienced OpenStack user and contributor. Offering public cloud and private cloud, in addition to 3 levels of support available for all private clouds, including: one-time deployment, fully managed and support services. Alongside offering consulting services to enterprises and developers to deliver high-level expertise to its customers, with the ultimate goal to optimize and accelerate their cloud infrastructure. VEXXHOST is serving clients in over 150 countries - from small businesses to governments. VEXXHOST believes in valuing its clients by providing high-performance, community-driven and license-free solutions. Our team of knowledgeable openStack experts work closely with clients to provide them with optimum support to accelerate their cloud infrastructure to ensure guaranteed success ahead.",
           "headerVideo": "/img/vexxhost_vexxhost-promo-video.mp4",
           "chatLink": "https://vexxhost.zoom.us/j/81203962805?pwd=c0JsSlI3bnpOSlJrWnRUZ3pDblljdz09",
+          "sponsorId": 769,
           "title": "Vexxhost",
+          "companyId": 120,
           "documents": {
             "links": [
               {
@@ -252,9 +254,7 @@
           ],
           "id": 120,
           "email": "sales@vexxhost.com",
-          "usesSponsorPage": true,
-          "sponsorId": 769,
-          "companyId": 120
+          "usesSponsorPage": true
         }
       ]
     },
@@ -280,7 +280,9 @@
           "headerImageMobile": "/img/cisco_ois-banner_straight_mobile-01.png",
           "socialNetworks": [],
           "chatLink": "https://cisco.webex.com/cisco/j.php?MTID=m97db399fbe07ffbc14a1c0156cde8a9b",
+          "sponsorId": 767,
           "title": "We are CISCO",
+          "companyId": 59,
           "documents": {
             "slides": [
               {
@@ -327,9 +329,7 @@
           ],
           "id": 59,
           "email": "https://www.cisco.com/c/en/us/about/contact-cisco.html",
-          "usesSponsorPage": true,
-          "sponsorId": 767,
-          "companyId": 59
+          "usesSponsorPage": true
         },
         {
           "marquee": "Leading 5G innovation",
@@ -341,7 +341,9 @@
           "headerImage": "/img/tencent_static-welcome-image-1440-400-.png",
           "headerImageMobile": "/img/tencent_static-welcome-image-768-400-.png",
           "chatLink": "https://meetingsapac49.webex.com/webappng/sites/meetingsapac49/dashboard/feedback",
+          "sponsorId": 770,
           "title": "Tencent",
+          "companyId": 1074,
           "documents": {
             "videos": [
               {
@@ -376,9 +378,7 @@
           ],
           "id": 1074,
           "email": "tstack@tencent.com",
-          "usesSponsorPage": true,
-          "sponsorId": 770,
-          "companyId": 1074
+          "usesSponsorPage": true
         }
       ]
     },
@@ -397,9 +397,12 @@
           "name": "InMotion Hosting",
           "pageImage": "",
           "intro": "InMotion Hosting is a privately held technology company providing web hosting, cloud-based solutions and managed services to businesses and entrepreneurs across the globe. With over 150,000 customers, InMotion Hosting’s mission is to bring tools, platforms and outstanding customer service within anyone's reach to transform their online presence. Since 2001, we have built our foundation around 24/7/365 US-based customer support and open source technology. Our partnerships include SuperMicro and the OpenStack Infrastructure Foundation.                                                ",
-          "headerImage": "/img/inmotion_hosting_static-image.png",
+          "headerImage": "/img/inmotion_static-image-1-.png",
+          "headerImageMobile": "/img/in_motion-mobile.png",
           "chatLink": "https://zoom.us/meeting/tJEuf-qvrj0vGtUD6ct-ua634yX89GOVL0fO/ics?icsToken=98tyKuCtrTMpHdSTtRmGRowMA4qgb-3ziCFYjbdouEnmF21GY1WlYvt6autYP-78 Join Zoom Meeting https://zoom.us/j/95383706501?pwd=QjExQ0F0S1IwVStlemU2MzZ5cU9PQT09 ",
+          "sponsorId": 766,
           "title": "InMotion Hosting",
+          "companyId": 1166,
           "documents": {
             "slides": [
               {
@@ -426,9 +429,7 @@
           ],
           "id": 1166,
           "email": "openstack@inmotionhosting.com",
-          "usesSponsorPage": true,
-          "sponsorId": 766,
-          "companyId": 1166
+          "usesSponsorPage": true
         },
         {
           "marquee": "Ship Code Faster",
@@ -439,6 +440,8 @@
           "headerImage": "/img/mirantis_open-infra-horizontal-banner-v4.png",
           "headerImageMobile": "/img/mirantis_open-infra-horizontal-mobile-banner-v1.png",
           "chatLink": "https://meet.google.com/xdr-vnva-bmj?authuser=0",
+          "sponsorId": 772,
+          "companyId": 105,
           "documents": {
             "slides": [
               {
@@ -465,9 +468,7 @@
           ],
           "id": 105,
           "email": "https://info.mirantis.com/contact-us",
-          "usesSponsorPage": true,
-          "sponsorId": 772,
-          "companyId": 105
+          "usesSponsorPage": true
         },
         {
           "marquee": "Open your infrastructure. Own your future.",
@@ -477,6 +478,8 @@
           "intro": "Red Hat is the world’s leading provider of enterprise open source software solutions, using a community-powered approach to deliver reliable and high-performing Linux, hybrid cloud, container, and Kubernetes technologies. Red Hat helps customers develop cloud-native applications, integrate existing and new IT applications, and automate and manage complex environments. A trusted adviser to the Fortune 500, Red Hat provides award-winning support, training, and consulting services that bring the benefits of open innovation to any industry. Red Hat is a connective hub in a global network of enterprises, partners, and communities, helping organizations grow, transform, and prepare for the digital future.",
           "headerImage": "/img/red_hat_rh-openstack-open-infrastructure-summit-graphics-us272737wg-202010_header.png",
           "chatLink": "https://bluejeans.com/493140351",
+          "sponsorId": 771,
+          "companyId": 227,
           "documents": {
             "videos": [
               {
@@ -503,9 +506,7 @@
           ],
           "id": 227,
           "email": "https://www.redhat.com/en/contact",
-          "usesSponsorPage": true,
-          "sponsorId": 771,
-          "companyId": 227
+          "usesSponsorPage": true
         },
         {
           "marquee": "Trilio is a leader in cloud-native data protection for OpenStack, Kubernetes & Red Hat OpenShift.",
@@ -514,8 +515,11 @@
           "name": "Trilio Data",
           "intro": "Trilio is a leader in cloud-native data protection for Kubernetes, OpenStack and Red Hat Virtualization environments. Our TrilioVault technology is trusted by cloud infrastructure operators and developers for backup and recovery, migration and application mobility. Customers in telecom, defense, automotive and financial services leverage TrilioVault to recover from disasters, migrate workloads, move workloads to new infrastructure and migrate to new software distributions. www.trilio.io and @triliodata on Twitter.",
           "headerImage": "/img/trilio_header_image.png",
+          "headerImageMobile": "/img/trillio_revised_openinfra_image.png",
           "chatLink": "https://us02web.zoom.us/j/8691886062",
+          "sponsorId": 764,
           "title": "Trilio Data",
+          "companyId": 504,
           "documents": {
             "slides": [
               {
@@ -541,9 +545,7 @@
           ],
           "id": 504,
           "email": "info@trilio.io",
-          "usesSponsorPage": true,
-          "sponsorId": 764,
-          "companyId": 504
+          "usesSponsorPage": true
         },
         {
           "marquee": "Check out our webinar \"OpenStack on Vanilla: From 0 to 100 in 35 minutes.“ on Wednesday, 21 October, 10AM (PDT) / 1PM (EDT)! Click on the ad below!",
@@ -552,6 +554,7 @@
           "name": "Vanilla Stack ",
           "intro": "VanillaStack is the main product of Cloudical, a company based in Germany and Poland that specializes in the \"cloud\" sector. Being unique in the world in this form, the VanillaStack is a pure open source cloud-native stack based on Kubernetes. With Kubernetes as Container-as-a-Service-Platform, VanillaStack allows you to roll out OpenStack as the Infrastructure-as-a-Service-platform. The Platform-as-a-Service-platform being used is Cloud Foundry. VanillaStack is made of open-source projects only and the community is strongly encouraged to contribute: The VanillaStack sources and GIT-repos are available. Cloudical also offers managed services (Managed Platform as a Service, Managed Software as a Service) and cloud consulting (consulting, coaching, training). Cloudical works independently of manufacturers and platforms, enabling it to provide its customers solutions tailored to their needs.  Founded in 2017, Cloudical currently employs 30 experts.",
           "headerImage": "/img/cloudical_welcome.png",
+          "headerImageMobile": "/img/header-booth-ois_small.png",
           "chatLink": "",
           "sponsorId": 773,
           "companyId": 1171,
@@ -574,9 +577,12 @@
           "intro": "ZTE Corporation is a global leader in telecommunications and information technology. Founded in 1985 and listed on both the Hong Kong and Shenzhen Stock Exchanges, the company has been committed to providing integrated end-to-end innovations to deliver excellence and value to consumers, carriers, businesses and government and enterprise network customers from over 160 countries around the world to enable increased connectivity and productivity.",
           "headerVideo": "",
           "headerImage": "/img/zte_banner-zte-.jpg",
+          "headerImageMobile": "/img/zte.jpg",
           "socialNetworks": [],
           "chatLink": "",
+          "sponsorId": 765,
           "title": "ZTE",
+          "companyId": 430,
           "documents": {
             "slides": [
               {
@@ -604,9 +610,7 @@
           ],
           "id": 430,
           "email": "",
-          "usesSponsorPage": true,
-          "sponsorId": 765,
-          "companyId": 430
+          "usesSponsorPage": true
         }
       ]
     },
@@ -625,6 +629,8 @@
           "intro": "When the OSF formed to govern the OpenStack project in 2012, clouds mainly offered virtual machines in a datacenter. The Foundation evolved as datacenter composition evolved into a mix of bare metal, VMs, and containers. OpenStack remains at the heart of its focus, but the Foundation realized more technology is needed to meet all of the diverse use cases, and we want to make sure it’s developed in the open, using the same proven approach to open source.  For this reason, the Foundation expanded its focus and is establishing new open source communities to advance areas where technology can successfully contribute to the development of open infrastructure: AI/Machine Learning, CI/CD, Container Infrastructure, Edge Computing and of course, Public, Private and Hybrid Clouds.  Now, the OSF supports the development and adoption of open infrastructure globally, across a community of over 100,000 individuals in 187 countries, by hosting open source projects and communities of practice.  From cloud hosting to the driving force behind 5G, these projects are code first. These projects include OpenStack, Airship, Kata Containers, OpenInfra Labs, StarlingX, and Zuul. ",
           "headerVideo": "/img/open_infra_101120_v8_1.mp4",
           "chatLink": "https://zoom.us/j/5271964510?pwd=RWx3eko2RkRBZzVQTk5kdkc4dTZCQT09",
+          "sponsorId": 774,
+          "companyId": 433,
           "documents": {
             "links": [
               {
@@ -675,9 +681,7 @@
           },
           "id": 433,
           "email": "summit@openstack.org",
-          "usesSponsorPage": true,
-          "sponsorId": 774,
-          "companyId": 433
+          "usesSponsorPage": true
         }
       ]
     }
