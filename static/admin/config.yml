@@ -287,6 +287,6 @@ collections:
                 {label: "Header Image", name: "headerImage", widget: image, required: false },
                 {label: "Mobile Header Image", name: "headerImageMobile", widget: image, required: false },
                 {label: "Side Image", name: "sideImage", widget: image, required: false },
-                {label: "Video Header", name: "headerVideo", widget: file, required: false },
+                {label: "Video Header", name: "headerVideo", widget: string, required: false },
               ]}              
             ]}

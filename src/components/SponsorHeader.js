@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react'
+import React, { useState, useEffect, useRef, useCallback } from 'react'
 
 import Link from './Link'
 
@@ -6,9 +6,15 @@ import styles from '../styles/sponsor-page.module.scss'
 
 const SponsorHeader = ({ sponsor, tier }) => {
 
-  const [isMuted, setIsMuted] = useState(false);
-
+  const [isMuted, _setIsMuted] = useState(true);
   const [isMobile, setIsMobile] = useState(null);
+  const videoParentRef = useRef(null);
+
+  const setIsMuted = useCallback((isMuted) => {
+    const player = videoParentRef.current.children[0];    
+    player.muted = isMuted;
+    _setIsMuted(isMuted)
+  })
 
   const onResize = useCallback(() => {
     if (window.innerWidth <= 768) {
@@ -35,9 +41,13 @@ const SponsorHeader = ({ sponsor, tier }) => {
           maxHeight: `${tier.sponsorPage.sponsorTemplate === 'big-header' ? '400px' : '200px'}`
         }}>
         {sponsor.headerVideo &&
-          <video className={`${styles.heroVideo}`} id="sponsorVideo" preload="auto" autoPlay loop volume={isMuted ? '0' : '1'}>
-            <source src={sponsor.headerVideo} type="video/mp4" />
-          </video>
+          <div ref={videoParentRef} dangerouslySetInnerHTML={{
+            __html: `
+              <video class=${styles.heroVideo} preload="auto" autoPlay loop muted playsinline>
+                <source src=${sponsor.headerVideo} type="video/mp4" />
+              </video>
+              `
+          }} />
         }
         <div className={`${styles.heroBody}`}>
           <div className={`${styles.heroSponsorContainer}`}>

@@ -28,6 +28,7 @@ export const SponsorPageTemplate = class extends React.Component {
 
     this.state = {
       sponsor: null,
+      notFound: null,
       tier: null
     }
   }
@@ -35,9 +36,13 @@ export const SponsorPageTemplate = class extends React.Component {
   componentWillMount() {
     const { sponsorId } = this.props;
     const sponsor = Sponsors.tierSponsors.map(t => t.sponsors.find(s => s.id === parseInt(sponsorId))).filter(e => e !== undefined)[0];
-    const tier = Sponsors.tierSponsors.find(t => t.sponsors.find(s => s === sponsor)).tier[0];
-    const tierData = SponsorsTiers.tiers.find(t => t.id === tier.value);
-    if (sponsor) this.setState({ sponsor: sponsor, tier: tierData });
+    if (!sponsor) {
+      this.setState({ notFound: true });
+    } else {
+      const tier = Sponsors.tierSponsors.find(t => t.sponsors.find(s => s === sponsor)).tier[0];
+      const tierData = SponsorsTiers.tiers.find(t => t.id === tier.value);
+      if (sponsor) this.setState({ sponsor: sponsor, tier: tierData });
+    }
   }
 
   onEventChange = (ev) => {
@@ -49,13 +54,13 @@ export const SponsorPageTemplate = class extends React.Component {
 
   render() {
     const { loggedUser, user } = this.props;
-    const { sponsor, tier } = this.state;
+    const { sponsor, tier, notFound } = this.state;
     let { summit } = SummitObject;
-    const { disqus, liveEvent, schedule, banner } = tier.sponsorPage.widgets;
 
-    if (!sponsor) {
-      return <HeroComponent title="Sponsor not found" redirectTo="/a/" />
+    if (notFound) {
+      return <HeroComponent title="Sponsor not found" redirectTo="/a/sponsors" />
     } else {
+      const { disqus, liveEvent, schedule, banner } = tier.sponsorPage.widgets;
       return (
         <>
           <SponsorHeader sponsor={sponsor} tier={tier} />
@@ -104,7 +109,7 @@ export const SponsorPageTemplate = class extends React.Component {
                     title="Happening Now"
                   />
                 }
-                {banner && <SponsorBanner bgColor={sponsor.sponsorColor} />}
+                {banner && <SponsorBanner sponsor={sponsor} bgColor={sponsor.sponsorColor} />}
               </div>
               <div className="column is-one-quarter px-5 py-0">
                 {sponsor.chatLink &&
