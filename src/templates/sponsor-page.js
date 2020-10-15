@@ -113,9 +113,9 @@ export const SponsorPageTemplate = class extends React.Component {
               </div>
               <div className="column is-one-quarter px-5 py-0">
                 {sponsor.chatLink &&
-                  <div className={styles.videoChatButton} style={{ backgroundColor: `${sponsor.sponsorColor}` }}>
+                  <div className={styles.videoChatButton}>
                     <Link className={styles.link} to={sponsor.chatLink}>
-                      <button className={`${styles.button} button is-large`}>
+                      <button className={`${styles.button} button is-large`} style={{ backgroundColor: `${sponsor.sponsorColor}` }}>
                         <b>LIVE VIDEO CHAT!</b>
                       </button>
                     </Link>

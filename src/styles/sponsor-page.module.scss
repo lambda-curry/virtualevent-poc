@@ -74,7 +74,7 @@
             .link {
               .button {
                 background-color: $color_secondary_contrast;
-                border-color: $color_secondary_contrast;
+                border: none;
                 color: #fff;
                 height: 5rem;
                 width: 25rem;
@@ -94,12 +94,12 @@
                 }
 
                 &:hover,
-                &:active {
-                  border-color: #fff;
+                &:active {                  
+                  border: none;
                 }
 
                 &:focus {
-                  border-color: #fff;
+                  border: none;
                   box-shadow: none;
                 }
               }
@@ -122,7 +122,7 @@
               .link {
                 .button {
                   background-color: $color_secondary_contrast;
-                  border-color: $color_secondary_contrast;
+                  border: none;
                   color: #fff;
                   height: 3.5rem;
                   width: 20rem;
@@ -144,11 +144,11 @@
 
                   &:hover,
                   &:active {
-                    border-color: #fff;
+                    border: none;
                   }
 
                   &:focus {
-                    border-color: #fff;
+                    border: none;
                     box-shadow: none;
                   }
                 }
