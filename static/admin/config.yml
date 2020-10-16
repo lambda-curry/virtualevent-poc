@@ -245,8 +245,8 @@ collections:
               {label: "Sponsors", name: "sponsors", widget: list, fields: [
                 {label: "Name", name: "name", widget: string },
                 {label: "External ID", name: "id", widget: number },
-                {label: "Sponsor ID", name: "sponsor_id", widget: number, required: false },
-                {label: "Company ID", name: "company_id", widget: number, required: false },
+                {label: "Sponsor ID", name: "sponsorId", widget: number, required: false },
+                {label: "Company ID", name: "companyId", widget: number, required: false },
                 {label: "Title", name: "title", widget: string, required: false },
                 {label: "Intro", name: "intro", widget: markdown, required: false },
                 {label: "Contact Email", name: "email", widget: string, required: false },
