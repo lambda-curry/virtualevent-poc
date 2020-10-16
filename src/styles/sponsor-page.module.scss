@@ -1,7 +1,9 @@
 @import './colors.scss';
 
 .disqus-container-sponsor {
-  position: relative;
+  position: relative;  
+  max-height: 1160px;
+  overflow-y: scroll;
 }
 
 .hero {
