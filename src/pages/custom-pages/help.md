@@ -29,7 +29,7 @@ Take the [2020 Virtual Summit Survey](https://www.surveymonkey.com/r/Summit2020v
   Event platform works best in Chrome, Safari, Brave, and Firefox. To ensure you have a fast, safe, and secure internet experience, please verify your preferred browser is up to date.
 * **I’m having trouble with my OpenStackID. Who should I contact?**\
   For tech support, please email s[ummitreg@openstack.org](mailto:ummitreg@openstack.org).
-* **One or more pieces of the event page aren’t oading for me - what should I do?**
+* **One or more pieces of the event page aren’t loading for me - what should I do?**
 
   * First log out of the website and log back in with your OpenStackID
   * Next, you may need to clear out your cache. Websites often ‘cache’ information so they load faster the next time you visit. This can cause a ‘white screen’.
