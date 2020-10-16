@@ -314,7 +314,7 @@
             "links": [
               {
                 "class_name": "PresentationLink",
-                "link": "twitter@CiscoSP360",
+                "link": "https://twitter.com/CiscoSP360",
                 "name": "Cisco on Twitter",
                 "order": 1
               }
