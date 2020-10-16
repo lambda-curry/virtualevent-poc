@@ -4,14 +4,14 @@ import Link from './Link'
 
 import styles from '../styles/sponsor-page.module.scss'
 
-const SponsorHeader = ({ sponsor, tier }) => {
+const SponsorHeader = ({ sponsor, tier, scanBadge }) => {
 
   const [isMuted, _setIsMuted] = useState(true);
   const [isMobile, setIsMobile] = useState(null);
   const videoParentRef = useRef(null);
 
   const setIsMuted = useCallback((isMuted) => {
-    const player = videoParentRef.current.children[0];    
+    const player = videoParentRef.current.children[0];
     player.muted = isMuted;
     _setIsMuted(isMuted)
   })
@@ -67,7 +67,7 @@ const SponsorHeader = ({ sponsor, tier }) => {
                 <img src={tier.badge} />
               </div>
               <div className={`${tier.sponsorPage.sponsorTemplate === 'big-header' ? styles.buttons : styles.buttonsSmall}`}>
-                <Link className={styles.link}>
+                <Link className={styles.link} onClick={scanBadge}>
                   <button className={`${styles.button} button is-large`} style={{ backgroundColor: `${sponsor.sponsorColor}` }}>
                     <i className={`fa fa-2x fa-qrcode icon is-large`}></i>
                     <b>Scan your badge</b>

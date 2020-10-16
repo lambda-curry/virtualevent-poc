@@ -23,6 +23,9 @@ import styles from '../styles/sponsor-page.module.scss'
 import envVariables from "../utils/envVariables";
 import { AttendanceTracker } from "openstack-uicore-foundation/lib/components";
 
+import { scanBadge } from '../actions/user-actions'
+import { getDisqusSSO } from '../actions/user-actions'
+
 import MarkdownIt from "markdown-it";
 
 export const SponsorPageTemplate = class extends React.Component {
@@ -65,6 +68,11 @@ export const SponsorPageTemplate = class extends React.Component {
     }
   }
 
+  onBadgeScan = () => {    
+    const { sponsor: { sponsorId } } = this.state;
+    this.props.scanBadge(sponsorId);
+  }
+
   render() {
     const { loggedUser, user } = this.props;
     const { sponsor, tier, notFound, parsedIntro } = this.state;
@@ -83,7 +91,7 @@ export const SponsorPageTemplate = class extends React.Component {
             apiBaseUrl={envVariables.SUMMIT_API_BASE_URL}
             accessToken={loggedUser.accessToken}
           />
-          <SponsorHeader sponsor={sponsor} tier={tier} />
+          <SponsorHeader sponsor={sponsor} tier={tier} scanBadge={() => this.onBadgeScan()} />
           <section className={`section px-0 ${tier.sponsorPage.sponsorTemplate === 'big-header' ? 'pt-5' : 'pt-0'} pb-0`}>
             {sponsor.sideImage &&
               <div className="columns mx-0 mt-0 mb-6">
@@ -125,7 +133,7 @@ export const SponsorPageTemplate = class extends React.Component {
                     sponsorId={sponsor.companyId}
                   />
                 }
-                {banner && <SponsorBanner sponsor={sponsor} bgColor={sponsor.sponsorColor} />}
+                {banner && <SponsorBanner sponsor={sponsor} bgColor={sponsor.sponsorColor} scanBadge={() => this.onBadgeScan()} />}
               </div>
               <div className="column is-one-quarter px-5 py-0">
                 {sponsor.chatLink &&
@@ -160,7 +168,8 @@ const SponsorPage = (
     loggedUser,
     sponsorId,
     user,
-    getDisqusSSO
+    getDisqusSSO,
+    scanBadge
   }
 ) => {
 
@@ -171,6 +180,7 @@ const SponsorPage = (
         sponsorId={sponsorId}
         user={user}
         getDisqusSSO={getDisqusSSO}
+        scanBadge={scanBadge}
       />
     </Layout>
   )
@@ -181,6 +191,7 @@ SponsorPage.propTypes = {
   sponsorId: PropTypes.string,
   user: PropTypes.object,
   getDisqusSSO: PropTypes.func,
+  scanBadge: PropTypes.func,
 }
 
 SponsorPageTemplate.propTypes = {
@@ -188,6 +199,7 @@ SponsorPageTemplate.propTypes = {
   sponsorId: PropTypes.string,
   user: PropTypes.object,
   getDisqusSSO: PropTypes.func,
+  scanBadge: PropTypes.func,
 }
 
 const mapStateToProps = (
@@ -196,9 +208,8 @@ const mapStateToProps = (
     userState,
   }
 ) => ({
-
   loggedUser: loggedUserState,
   user: userState,
 })
 
-export default connect(mapStateToProps, {})(SponsorPage);
+export default connect(mapStateToProps, { scanBadge, getDisqusSSO })(SponsorPage);
