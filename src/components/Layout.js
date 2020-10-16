@@ -49,7 +49,7 @@ const TemplateWrapper = ({ children, marketing }) => {
           rel="icon"
           type="image/png"
           href={`${withPrefix('/')}${GeneralSettings.favicon.substring(1)}`}
-          sizes="16x16"
+          sizes="32x32"
         />
 
         <meta name="theme-color" content="#fff" />
