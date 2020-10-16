@@ -54,7 +54,7 @@
             "links": [
               {
                 "class_name": "PresentationLink",
-                "link": "  http://www.twitter.com/Huawei",
+                "link": "http://www.twitter.com/Huawei",
                 "name": "Follow us on Twitter ",
                 "order": 1
               },
