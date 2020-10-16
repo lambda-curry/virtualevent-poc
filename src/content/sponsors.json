@@ -120,18 +120,6 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "order": 7,
-                "name": "Charmed o7k + remote Nova compute -- demo by Przem",
-                "link": "https://canonical.com"
-              },
-              {
-                "class_name": "PresentationVideo",
-                "order": 8,
-                "name": "Microstack: (Clustered, MicroK8s as a workload)",
-                "link": "https://canonical.com"
-              },
-              {
-                "class_name": "PresentationVideo",
                 "order": 9,
                 "name": "Edge LXD Clustering",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/temp-os-virtual-sponsor-uploads/Canonical_Edge%20LXD%20Clustering.mp4"
