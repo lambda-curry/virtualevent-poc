@@ -65,7 +65,20 @@
                 "order": 2
               }
             ],
-            "videos": []
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "Haier Smart Campus ",
+                "order": 7,
+                "link": "Huawei_Video1 Haier Smart Campus.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": " EdgeGallery Demo ",
+                "order": 8,
+                "link": "Huawei_ 2 EdgeGallery demo.mp4"
+              }
+            ]
           },
           "columnAds": [
             {
@@ -632,7 +645,7 @@
           "name": "OpenStack Foundation (OSF)",
           "intro": "Open Infrastructure is the integration of open source technologies supporting cloud-native applications. The OSF helps people build and operate open infrastructure.\n\nFrom cloud hosting to the driving force behind 5G to machine learning, OSF projects like Airship, Kata Containers, OpenStack, StarlingX, and Zuul all operate under the guiding principles we call the Four Opens: \n\no Open Source\n\no Open Design\n\no Open Development\n\no Open Community\n\nFor more information, please visit [openstack.org. ](http://openstack.org/)",
           "headerVideo": "/img/open_infra_101120_v8_1.mp4",
-          "chatLink": "https://zoom.us/j/97546270006?pwd=YnFoUm9RZlN2MUxlTTQ3MDVwRk8zdz09",
+          "chatLink": "",
           "sponsorId": 774,
           "title": "OpenStack Foundation (OSF)",
           "companyId": 433,
