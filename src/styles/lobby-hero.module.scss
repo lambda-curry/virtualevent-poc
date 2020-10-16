@@ -194,7 +194,7 @@ div.column:first-of-type {
 
       div {
         transform: skew(25deg);
-        font-size: 3rem;
+        font-size: 2.9rem;
         font-weight: bold;
         color: $color_text_light;
         letter-spacing: 0.1rem;
@@ -357,6 +357,29 @@ div.column:first-of-type {
         z-index: 1;
         margin-left: 0;
         min-height: 150px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-marketing {
+    .hero-marketing-columns {
+      .right-column {
+        width: 100%;
+        height: 300px;
+        z-index: 1;
+        margin-left: 0;
+        min-height: 150px;
+        .image-slider {
+          height: 300px;
+        }
+      }
+      .date {
+        div {
+          padding-left: 0.3rem;
+          font-size: 2.6rem;
+        }
       }
     }
   }
