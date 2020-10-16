@@ -78,7 +78,7 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Delivered by Canonical.            ",
+          "marquee": "Delivered by Canonical",
           "sponsorColor": "#E95420",
           "logo": "/img/ubuntu-2.svg",
           "name": "Canonical",
@@ -87,7 +87,7 @@
           "headerImage": "",
           "chatLink": "https://meet.google.com/gvt-cmid-zwe?authuser=0 ",
           "sponsorId": 768,
-          "title": "Canonical",
+          "title": "UBUNTU Delivered by Canonical",
           "companyId": 57,
           "documents": {
             "links": [
@@ -168,15 +168,15 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Empower your cloud infrastructure with the high-level expertise and revolutionize your success - Scan your badge to redeem the $200 public cloud credit.",
+          "marquee": "Scan your badge to redeem the $200 public cloud credit",
           "sponsorColor": "#6536FF",
           "logo": "/img/vexxhoststack.png",
-          "name": "Vexxhost",
+          "name": "VEXXHOST",
           "intro": "VEXXHOST Inc. is a cloud computing provider. It has established itself a well-reputed spot in the OpenStack community since 2011, this means that our clients work side by side with an experienced OpenStack user and contributor. Offering public cloud and private cloud, in addition to 3 levels of support available for all private clouds, including: one-time deployment, fully managed and support services. Alongside offering consulting services to enterprises and developers to deliver high-level expertise to its customers, with the ultimate goal to optimize and accelerate their cloud infrastructure. VEXXHOST is serving clients in over 150 countries - from small businesses to governments. VEXXHOST believes in valuing its clients by providing high-performance, community-driven and license-free solutions. Our team of knowledgeable openStack experts work closely with clients to provide them with optimum support to accelerate their cloud infrastructure to ensure guaranteed success ahead.",
           "headerVideo": "/img/vexxhost_vexxhost-promo-video.mp4",
           "chatLink": "https://vexxhost.zoom.us/j/81203962805?pwd=c0JsSlI3bnpOSlJrWnRUZ3pDblljdz09",
           "sponsorId": 769,
-          "title": "Vexxhost",
+          "title": "VEXXHOST",
           "companyId": 120,
           "documents": {
             "links": [
@@ -441,6 +441,7 @@
           "headerImageMobile": "/img/mirantis_open-infra-horizontal-mobile-banner-v1.png",
           "chatLink": "https://meet.google.com/xdr-vnva-bmj?authuser=0",
           "sponsorId": 772,
+          "title": "Mirantis ",
           "companyId": 105,
           "documents": {
             "slides": [
@@ -480,6 +481,7 @@
           "headerImageMobile": "/img/redhat-header-768x250.png",
           "chatLink": "https://bluejeans.com/493140351",
           "sponsorId": 771,
+          "title": "Red Hat ",
           "companyId": 227,
           "documents": {
             "videos": [
@@ -558,6 +560,7 @@
           "headerImageMobile": "/img/header-booth-ois_small.png",
           "chatLink": "",
           "sponsorId": 773,
+          "title": "Vanilla Stack ",
           "companyId": 1171,
           "columnAds": [
             {
