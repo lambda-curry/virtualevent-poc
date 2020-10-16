@@ -59,6 +59,7 @@ export const HomePageTemplate = class extends React.Component {
               <h2><b>Today's Sessions</b></h2>
               <LiveEventWidgetComponent
                 onEventClick={(ev) => this.onEventChange(ev)}
+                style={{marginBottom: '15px'}}
               />
               <DisqusComponent
                 page="lobby"
