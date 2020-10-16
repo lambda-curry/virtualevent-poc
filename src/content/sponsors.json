@@ -134,13 +134,13 @@
                 "class_name": "PresentationVideo",
                 "order": 9,
                 "name": "Edge LXD Clustering",
-                "link": "https://docs.google.com/document/d/16zslfYTAj8RrxYZeY5kQkdOZU-471Ng_2KF4Zz_bPKs/edit# "
+                "link": "https://canonical.com"
               },
               {
                 "class_name": "PresentationVideo",
                 "order": 10,
                 "name": "MicroK8s & Charmed Ceph at the Edge",
-                "link": "https://docs.google.com/document/d/16zslfYTAj8RrxYZeY5kQkdOZU-471Ng_2KF4Zz_bPKs/edit# "
+                "link": "https://canonical.com"
               }
             ],
             "slides": [
