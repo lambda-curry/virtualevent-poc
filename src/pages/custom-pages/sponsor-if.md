@@ -1,5 +1,5 @@
 ---
 templateKey: custom-page
-title: Sponsor IF
+title: SPONSOR INFINITY FESTIVAL
 ---
-Information regarding sponsorships for 2020 and 2021 displays here.
+Interested in sponsoring the Infinity Festival and becoming part of the narrative? Drop us a line at [sponsorship@infinityfestival.com ](mailto:sponsorship@infinityfestival.com)
