@@ -11,6 +11,8 @@ const LiveEventWidgetComponent = class extends React.Component {
 
   render() {
 
+    const { style } = this.props;
+
     const widgetProps = {
       apiBaseUrl: envVariables.SUMMIT_API_BASE_URL,
       marketingApiBaseUrl: envVariables.MARKETING_API_BASE_URL,
@@ -24,7 +26,7 @@ const LiveEventWidgetComponent = class extends React.Component {
         <Helmet>
           <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/1.0.2/awesome-bootstrap-checkbox.min.css" />
         </Helmet>
-        <div>
+        <div style={style}>
           <LiveEventWidget {...widgetProps} {...this.props} />
         </div>
       </>
