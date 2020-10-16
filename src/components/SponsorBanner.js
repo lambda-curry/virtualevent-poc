@@ -18,12 +18,14 @@ const SponsorBanner = ({ sponsor, bgColor }) => (
           <b>Scan your badge</b>
         </button>
       </Link>
-      <Link className={styles.link} to={sponsor.email}>
-        <button className={`${styles.button} button is-large`}>
-          <i className={`fa fa-2x fa-envelope icon is-large`}></i>
-          <b>Contact Us</b>
-        </button>
-      </Link>
+      {sponsor.email &&
+        <Link className={styles.link} to={sponsor.email}>
+          <button className={`${styles.button} button is-large`}>
+            <i className={`fa fa-2x fa-envelope icon is-large`}></i>
+            <b>Contact Us</b>
+          </button>
+        </Link>
+      }
     </div>
   </div>
 )

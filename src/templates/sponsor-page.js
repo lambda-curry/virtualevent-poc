@@ -21,7 +21,9 @@ import Layout from '../components/Layout'
 
 import styles from '../styles/sponsor-page.module.scss'
 import envVariables from "../utils/envVariables";
-import {AttendanceTracker} from "openstack-uicore-foundation/lib/components";
+import { AttendanceTracker } from "openstack-uicore-foundation/lib/components";
+
+import MarkdownIt from "markdown-it";
 
 export const SponsorPageTemplate = class extends React.Component {
 
@@ -31,6 +33,7 @@ export const SponsorPageTemplate = class extends React.Component {
     this.state = {
       sponsor: null,
       notFound: null,
+      parsedIntro: null,
       tier: null
     }
   }
@@ -43,7 +46,15 @@ export const SponsorPageTemplate = class extends React.Component {
     } else {
       const tier = Sponsors.tierSponsors.find(t => t.sponsors.find(s => s === sponsor)).tier[0];
       const tierData = SponsorsTiers.tiers.find(t => t.id === tier.value);
-      if (sponsor) this.setState({ sponsor: sponsor, tier: tierData });
+      const parser = new MarkdownIt({
+        html: false,
+        breaks: true,
+        linkify: true,
+        xhtmlOut: true,
+        typographer: true,
+      });
+      const parsedIntro = parser.render(sponsor.intro);
+      if (sponsor) this.setState({ sponsor: sponsor, tier: tierData, parsedIntro: parsedIntro });
     }
   }
 
@@ -56,9 +67,8 @@ export const SponsorPageTemplate = class extends React.Component {
 
   render() {
     const { loggedUser, user } = this.props;
-    const { sponsor, tier, notFound } = this.state;
+    const { sponsor, tier, notFound, parsedIntro } = this.state;
     let { summit } = SummitObject;
-    const { disqus, liveEvent, schedule, banner } = tier.sponsorPage.widgets;
 
     if (notFound) {
       return <HeroComponent title="Sponsor not found" redirectTo="/a/sponsors" />
@@ -67,11 +77,11 @@ export const SponsorPageTemplate = class extends React.Component {
       return (
         <>
           <AttendanceTracker
-              sourceName="SPONSOR"
-              sourceId={sponsor.sponsorId}
-              summitId={summit.id}
-              apiBaseUrl={envVariables.SUMMIT_API_BASE_URL}
-              accessToken={loggedUser.accessToken}
+            sourceName="SPONSOR"
+            sourceId={sponsor.sponsorId}
+            summitId={summit.id}
+            apiBaseUrl={envVariables.SUMMIT_API_BASE_URL}
+            accessToken={loggedUser.accessToken}
           />
           <SponsorHeader sponsor={sponsor} tier={tier} />
           <section className={`section px-0 ${tier.sponsorPage.sponsorTemplate === 'big-header' ? 'pt-5' : 'pt-0'} pb-0`}>
@@ -79,9 +89,7 @@ export const SponsorPageTemplate = class extends React.Component {
               <div className="columns mx-0 mt-0 mb-6">
                 <div className={`column is-half px-5 py-0 ${styles.introHalf}`}>
                   <h1>{sponsor.title}</h1>
-                  <span>
-                    {sponsor.intro}
-                  </span>
+                  <span dangerouslySetInnerHTML={{ __html: parsedIntro }} />
                 </div>
                 <div className="column is-half px-0 py-0">
                   <img src={sponsor.sideImage} className={styles.sideImage} />
@@ -93,9 +101,7 @@ export const SponsorPageTemplate = class extends React.Component {
                 {!sponsor.sideImage &&
                   <div className={styles.sponsorIntro}>
                     <h1>{sponsor.title}</h1>
-                    <span>
-                      {sponsor.intro}
-                    </span>
+                    <span dangerouslySetInnerHTML={{ __html: parsedIntro }} />
                   </div>
                 }
                 {liveEvent &&
