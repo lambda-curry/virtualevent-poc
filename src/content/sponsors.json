@@ -477,6 +477,7 @@
           "name": "Red Hat ",
           "intro": "Red Hat is the world’s leading provider of enterprise open source software solutions, using a community-powered approach to deliver reliable and high-performing Linux, hybrid cloud, container, and Kubernetes technologies. Red Hat helps customers develop cloud-native applications, integrate existing and new IT applications, and automate and manage complex environments. A trusted adviser to the Fortune 500, Red Hat provides award-winning support, training, and consulting services that bring the benefits of open innovation to any industry. Red Hat is a connective hub in a global network of enterprises, partners, and communities, helping organizations grow, transform, and prepare for the digital future.",
           "headerImage": "/img/red_hat_rh-openstack-open-infrastructure-summit-graphics-us272737wg-202010_header.png",
+          "headerImageMobile": "/img/redhat-header-768x250.png",
           "chatLink": "https://bluejeans.com/493140351",
           "sponsorId": 771,
           "companyId": 227,
