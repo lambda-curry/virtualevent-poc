@@ -629,7 +629,7 @@
       "sponsors": [
         {
           "marquee": "We build communities that write software that runs in production",
-          "logo": "/img/osf_logo_rgb_stacked.png",
+          "logo": "/img/openinfraarrows.svg",
           "name": "OpenStack Foundation (OSF)",
           "intro": "Open Infrastructure is the integration of open source technologies supporting cloud-native applications. The OSF helps people build and operate open infrastructure.\n\nFrom cloud hosting to the driving force behind 5G to machine learning, OSF projects like Airship, Kata Containers, OpenStack, StarlingX, and Zuul all operate under the guiding principles we call the Four Opens: \n\no Open Source\n\no Open Design\n\no Open Development\n\no Open Community\n\nFor more information, please visit [openstack.org. ](http://openstack.org/)",
           "headerVideo": "/img/open_infra_101120_v8_1.mp4",
