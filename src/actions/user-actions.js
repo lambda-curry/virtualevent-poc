@@ -95,8 +95,8 @@ export const scanBadge = (sponsorId) => (dispatch, getState) => {
     // entity
 )(params)(dispatch)
     .then((payload) => {
-        let msg = '';
-        Swal.fire("Validation error", msg, "success");
+        let msg = 'Badge scan successful';
+        Swal.fire("Success", msg, "success");
         return (payload)
     })
     .catch(e => {
