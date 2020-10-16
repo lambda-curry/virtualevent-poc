@@ -66,7 +66,7 @@ class MarketingHeroComponent extends React.Component {
                     :
                     <React.Fragment>
                       {MarketingSite.heroBanner.buttons.registerButton.display &&
-                        <a className={`${styles.link} ${styles.register}`} href="https://openinfrasummit2020.eventbrite.com/?aff=PlatformReg" target="_blank" rel="noreferrer">
+                        <a className={`${styles.link} ${styles.register}`} href="https://openstackid.org/auth/register?redirect_uri=https%3A%2F%2Fsummit.openinfra.dev%2FSecurity%2Flogin%3FBackURL%3Djoin%252Fregister%252F%253Fmembership-type%253Dcommunity%26BackURL%3Dhttps%253A%252F%252Fsummit.openinfra.dev%252F" target="_blank" rel="noreferrer">
                           <button className={`${styles.button} button is-large`}>
                             <i className={`fa fa-2x fa-edit icon is-large`}></i>
                             <b>{MarketingSite.heroBanner.buttons.registerButton.text}</b>
