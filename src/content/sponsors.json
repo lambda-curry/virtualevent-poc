@@ -533,7 +533,14 @@
                 "order": 1
               }
             ],
-            "videos": []
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "Trilio Video",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/temp-os-virtual-sponsor-uploads/Trilio_Video.mp4",
+                "order": 0
+              }
+            ]
           },
           "columnAds": [
             {
