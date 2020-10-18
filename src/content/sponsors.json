@@ -631,7 +631,7 @@
           "marquee": "We build communities that write software that runs in production",
           "logo": "/img/osf_logo_rgb_stacked.svg",
           "name": "OpenStack Foundation (OSF)",
-          "intro": "Open Infrastructure is the integration of open source technologies supporting cloud-native applications. The OSF helps people build and operate open infrastructure.\n\nFrom cloud hosting to the driving force behind 5G to machine learning, OSF projects like Airship, Kata Containers, OpenStack, StarlingX, and Zuul all operate under the guiding principles we call the Four Opens: \n\no Open Source\n\no Open Design\n\no Open Development\n\no Open Community\n\nFor more information, please visit [osf.dev](https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fosf.dev&c=E,1,gy5OgMsZjw9m9z9ADpghtevcsZUY5jqERDvXZHBwWiqf50oFYE-N_gxeM-1f-kW3n7ULCpAPd407a63rH4gFnPphV9X0aVL9E25SrJCeDQBVEKEL&typo=1).  [](https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fosf.dev&c=E,1,gy5OgMsZjw9m9z9ADpghtevcsZUY5jqERDvXZHBwWiqf50oFYE-N_gxeM-1f-kW3n7ULCpAPd407a63rH4gFnPphV9X0aVL9E25SrJCeDQBVEKEL&typo=1)",
+          "intro": "\\\nWhen the OSF formed to govern the OpenStack project in 2012, clouds mainly offered virtual machines in a datacenter. The Foundation evolved as datacenter composition evolved into a mix of bare metal, VMs, and containers. OpenStack remains at the heart of its focus, but the Foundation realized more technology is needed to meet all of the diverse use cases, and we want to make sure it’s developed in the open, using the same proven approach to open source.\n\nFor this reason, the Foundation expanded its focus and is establishing new open source communities to advance areas where technology can successfully contribute to the development of open infrastructure: AI/Machine Learning, CI/CD, Container Infrastructure, Edge Computing and of course, Public, Private and Hybrid Clouds.\n\nNow, the OSF supports the development and adoption of open infrastructure globally, across a community of over 100,000 individuals in 187 countries, by hosting open source projects and communities of practice.\n\nFrom cloud hosting to the driving force behind 5G, these projects are code first. These projects include [OpenStack](https://www.openstack.org/), [Airship](https://airshipit.org/), [Kata Containers](https://katacontainers.io/), [OpenInfra Labs](https://openinfralabs.org/), [StarlingX](https://starlingx.io/), and [Zuul](https://zuul-ci.org/).\n\n[](https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fosf.dev&c=E,1,gy5OgMsZjw9m9z9ADpghtevcsZUY5jqERDvXZHBwWiqf50oFYE-N_gxeM-1f-kW3n7ULCpAPd407a63rH4gFnPphV9X0aVL9E25SrJCeDQBVEKEL&typo=1)",
           "headerVideo": "/img/open_infra_101120_v8_1.mp4",
           "chatLink": "",
           "sponsorId": 774,
@@ -668,7 +668,7 @@
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/magma-overview.pdf",
-                "name": "Magma Overview",
+                "name": "Magma",
                 "order": 6
               },
               {
