@@ -528,15 +528,9 @@
             "slides": [
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/trilio_data_inc_triliovault-for-openstack.pdf",
-                "name": "TrilioVault for OpenStack Cloud",
+                "link": "/img/trilio_openinfra.pdf",
+                "name": "TrilioVault for Kubernetes, TrilioVault for OpenStack Cloud and TrilioVault for RHV & RHHI-V.",
                 "order": 1
-              },
-              {
-                "class_name": "PresentationSlide",
-                "link": "/img/trilio-red-hat-openstack-backup.pdf",
-                "name": "TrilioVault for RHV",
-                "order": 2
               }
             ],
             "videos": []
