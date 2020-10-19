@@ -3,6 +3,82 @@
     {
       "tier": [
         {
+          "value": "tier-DHcI3dWGk",
+          "label": "Featured"
+        }
+      ],
+      "sponsors": [
+        {
+          "marqueeColor": "",
+          "marquee": "",
+          "sideImage": "",
+          "externalLink": "",
+          "logo": "/img/if2020-sponsor-capitol.png",
+          "name": "Capitol Royale",
+          "intro": "",
+          "headerVideo": "",
+          "headerImage": "/img/sponsors/premier/header_logo_premier.png",
+          "socialNetworks": [
+            {
+              "icon": "fa-facebook",
+              "link": "/footer-content/",
+              "display": true
+            },
+            {
+              "icon": "fa-twitter",
+              "link": "/footer-content/",
+              "display": true
+            },
+            {
+              "icon": "fa-linkedin",
+              "link": "/footer-content/",
+              "display": true
+            }
+          ],
+          "chatLink": "",
+          "title": "",
+          "documents": {
+            "slides": [
+              {
+                "name": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html",
+                "order": 2,
+                "class_name": "PresentationSlide",
+                "link": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html"
+              }
+            ],
+            "links": [
+              {
+                "name": "http://relaxdiego.com/2017/05/swampup-2017-slides.html",
+                "order": 1,
+                "class_name": "PresentationLink",
+                "link": "http://relaxdiego.com/2017/05/swampup-2017-slides.html"
+              }
+            ],
+            "videos": [
+              {
+                "name": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html",
+                "order": 3,
+                "class_name": "PresentationVideo",
+                "youtube_id": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html"
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "image": "/img/yoco-sponsor-ads-medium-flow.png",
+              "button": "",
+              "link": "/virtual-booth/"
+            }
+          ],
+          "id": 3,
+          "email": "",
+          "usesSponsorPage": true
+        }
+      ]
+    },
+    {
+      "tier": [
+        {
           "value": "tier-cYGYq5-ae",
           "label": "Presenting"
         }
@@ -78,82 +154,6 @@
           "name": "Microsoft",
           "id": 2,
           "logo": "/img/if2020-sponsor-microsoft.png"
-        }
-      ]
-    },
-    {
-      "tier": [
-        {
-          "value": "tier-DHcI3dWGk",
-          "label": "Featured"
-        }
-      ],
-      "sponsors": [
-        {
-          "marqueeColor": "",
-          "marquee": "",
-          "sideImage": "",
-          "externalLink": "",
-          "logo": "/img/if2020-sponsor-capitol.png",
-          "name": "Capitol Royale",
-          "intro": "",
-          "headerVideo": "",
-          "headerImage": "/img/sponsors/premier/header_logo_premier.png",
-          "socialNetworks": [
-            {
-              "icon": "fa-facebook",
-              "link": "/footer-content/",
-              "display": true
-            },
-            {
-              "icon": "fa-twitter",
-              "link": "/footer-content/",
-              "display": true
-            },
-            {
-              "icon": "fa-linkedin",
-              "link": "/footer-content/",
-              "display": true
-            }
-          ],
-          "chatLink": "",
-          "title": "",
-          "documents": {
-            "slides": [
-              {
-                "name": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html",
-                "order": 2,
-                "class_name": "PresentationSlide",
-                "link": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html"
-              }
-            ],
-            "links": [
-              {
-                "name": "http://relaxdiego.com/2017/05/swampup-2017-slides.html",
-                "order": 1,
-                "class_name": "PresentationLink",
-                "link": "http://relaxdiego.com/2017/05/swampup-2017-slides.html"
-              }
-            ],
-            "videos": [
-              {
-                "name": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html",
-                "order": 3,
-                "class_name": "PresentationVideo",
-                "youtube_id": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html"
-              }
-            ]
-          },
-          "columnAds": [
-            {
-              "image": "/img/yoco-sponsor-ads-medium-flow.png",
-              "button": "",
-              "link": "/virtual-booth/"
-            }
-          ],
-          "id": 3,
-          "email": "",
-          "usesSponsorPage": true
         }
       ]
     },
