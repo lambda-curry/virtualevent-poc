@@ -28,21 +28,21 @@ module.exports = {
         name: 'images',
       },
     },
-    {
-      resolve: 'gatsby-plugin-webfonts',
-      options: {
-        fonts: {
-          google: [
-            {
-              family: 'Nunito',
-              variants: ['300', '700'],
-              fontDisplay: 'swap',
-              strategy: 'selfHosted'
-            },
-          ],
-        },
-      }
-    },
+    // {
+    //   resolve: 'gatsby-plugin-webfonts',
+    //   options: {
+    //     fonts: {
+    //       google: [
+    //         {
+    //           family: 'Nunito',
+    //           variants: ['300', '700'],
+    //           fontDisplay: 'swap',
+    //           strategy: 'selfHosted'
+    //         },
+    //       ],
+    //     },
+    //   }
+    // },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {

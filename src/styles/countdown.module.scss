@@ -4,7 +4,6 @@
   height: 150px;
   background-color: $color_secondary;
   color: $color_text_light;
-  font-family: 'AvantGardeGothicITCW02Dm';
 
   .countdown-columns {
     height: 100%;
@@ -39,12 +38,10 @@
         justify-content: center;
         text-transform: uppercase;
         font-weight: bold;
-        font-family: 'AvantGardeGothicITCW01Bk';
 
         span {
           font-size: 42px;
           line-height: 40px;
-          font-family: 'AvantGardeGothicITCW02Dm';
         }
       }
     }
@@ -59,16 +56,10 @@
   
       .left-column {
         height: 50%;
-        div {
-          font-family: 'AvantGardeGothicITCW02Dm', 'Times New Roman';
-        }
       }
   
       .right-column {
         height: 50%;
-        div {
-          font-family: 'AvantGardeGothicITCW02Dm', 'Times New Roman';
-        }
       }
     }
   }
