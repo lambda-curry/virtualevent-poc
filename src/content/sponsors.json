@@ -564,6 +564,16 @@
           "sponsorId": 773,
           "title": "Vanilla Stack ",
           "companyId": 1171,
+          "documents": {
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/2020-10-presentation_short_en.pdf",
+                "name": "VanillaStack ",
+                "order": 1
+              }
+            ]
+          },
           "columnAds": [
             {
               "image": "/img/openstackonvanilla.png",
@@ -571,6 +581,7 @@
             }
           ],
           "id": 1171,
+          "email": "sales@cloudical.io",
           "usesSponsorPage": true
         },
         {
