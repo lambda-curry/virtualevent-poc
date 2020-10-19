@@ -57,7 +57,7 @@ export const HomePageTemplate = class extends React.Component {
             </div>
             <div className="column is-half home-column">
               <h2><b>Today's Sessions</b></h2>
-              <LiveEventWidgetComponent
+              {/* <LiveEventWidgetComponent
                 onEventClick={(ev) => this.onEventChange(ev)}
                 style={{marginBottom: '15px'}}
               />
