@@ -649,9 +649,10 @@
       "sponsors": [
         {
           "marquee": "We build communities that write software that runs in production",
+          "sponsorColor": "#161616",
           "logo": "/img/osf_logo_rgb_stacked.svg",
           "name": "OpenStack Foundation (OSF)",
-          "intro": "\\\nWhen the OSF formed to govern the OpenStack project in 2012, clouds mainly offered virtual machines in a datacenter. The Foundation evolved as datacenter composition evolved into a mix of bare metal, VMs, and containers. OpenStack remains at the heart of its focus, but the Foundation realized more technology is needed to meet all of the diverse use cases, and we want to make sure it’s developed in the open, using the same proven approach to open source.\n\nFor this reason, the Foundation expanded its focus and is establishing new open source communities to advance areas where technology can successfully contribute to the development of open infrastructure: AI/Machine Learning, CI/CD, Container Infrastructure, Edge Computing and of course, Public, Private and Hybrid Clouds.\n\nNow, the OSF supports the development and adoption of open infrastructure globally, across a community of over 100,000 individuals in 187 countries, by hosting open source projects and communities of practice.\n\nFrom cloud hosting to the driving force behind 5G, these projects are code first. These projects include [OpenStack](https://www.openstack.org/), [Airship](https://airshipit.org/), [Kata Containers](https://katacontainers.io/), [OpenInfra Labs](https://openinfralabs.org/), [StarlingX](https://starlingx.io/), and [Zuul](https://zuul-ci.org/).\n\n[](https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fosf.dev&c=E,1,gy5OgMsZjw9m9z9ADpghtevcsZUY5jqERDvXZHBwWiqf50oFYE-N_gxeM-1f-kW3n7ULCpAPd407a63rH4gFnPphV9X0aVL9E25SrJCeDQBVEKEL&typo=1)",
+          "intro": "\\\nBacked by over 60 founding members and a global community of over 105,000 individual contributors, the Open Infrastructure Foundation (OIF) is the successor to the OpenStack Foundation. From cloud hosting to the driving force behind 5G, these projects are code first and operate under the guiding principles called the “Four Opens.” These projects include [OpenStack](https://www.openstack.org/), [Airship](https://airshipit.org/), [Kata Containers](https://katacontainers.io/), [OpenInfra Labs](https://openinfralabs.org/), [StarlingX](https://starlingx.io/), and [Zuul](https://zuul-ci.org/).\n\nAfter 10 years, OpenStack is one of the Top 3 most actively developed open source software projects, along with the Linux kernel and Chromium. The OIF supports open source communities with a focus on building software that runs in production across the world and addressing numerous emerging use cases, including AI/ML; CI/CD; container infrastructure; edge computing; and public, private and hybrid clouds. The OIF also nurtures cross-community collaboration with other open source communities like Ansible, Ceph, Gerrit, Kubernetes, Magma rust-vmm and more.\n\nThe OIF invites you to join and participate in the open infrastructure community—everyone is welcome. Share your personal Open Infrastructure journey using #WeAreOpenInfra\n\n[](https://linkprotect.cudasvc.com/url?a=https%3a%2f%2fosf.dev&c=E,1,gy5OgMsZjw9m9z9ADpghtevcsZUY5jqERDvXZHBwWiqf50oFYE-N_gxeM-1f-kW3n7ULCpAPd407a63rH4gFnPphV9X0aVL9E25SrJCeDQBVEKEL&typo=1)",
           "headerVideo": "/img/open_infra_101120_v8_1.mp4",
           "chatLink": "",
           "sponsorId": 774,
@@ -673,6 +674,12 @@
               }
             ],
             "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/oif_onepager-web.pdf",
+                "name": "Open Infrastructure Foundation (OIF)",
+                "order": 3
+              },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/airship_onepager-web.pdf",
@@ -712,7 +719,7 @@
             ]
           },
           "id": 433,
-          "email": "summit@openstack.org",
+          "email": "info@openinfra.dev",
           "usesSponsorPage": true
         }
       ]
