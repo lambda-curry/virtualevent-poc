@@ -146,7 +146,7 @@ export const EventPageTemplate = class extends React.Component {
                     <SimpleChatWidgetComponent accessToken={loggedUser.accessToken} />
                   </div>
                   <div className="column is-three-quarters">
-                    <ScheduleLiteComponent
+                    {/* <ScheduleLiteComponent
                       accessToken={loggedUser.accessToken}
                       onEventClick={(ev) => this.onEventChange(ev)}
                       onViewAllEventsClick={() => this.onViewAllEventsClick()}
@@ -158,7 +158,7 @@ export const EventPageTemplate = class extends React.Component {
                       trackId={event.track ? event.track.id : null}
                       eventCount={3}
                       title={event.track ? `Happening Now on ${event.track.name}` : 'Happening Now'}
-                    />
+                    /> */}
                   </div>
                 </div>
               </section>
