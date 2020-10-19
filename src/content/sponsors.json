@@ -662,8 +662,8 @@
             "links": [
               {
                 "class_name": "PresentationLink",
-                "name": " https://twitter.com/openinfradev",
-                "link": "https://twitter.com/OpenStack",
+                "name": "Follow OIF on Twitter ",
+                "link": " https://twitter.com/openinfradev",
                 "order": 1
               },
               {
