@@ -24,7 +24,7 @@
   },
   "leftColumn": {
     "schedule": {
-      "display": true,
+      "display": false,
       "title": "Full Event Schedule (times below in CDT)"
     },
     "disqus": {
@@ -32,7 +32,7 @@
       "title": "Join the conversation"
     },
     "image": {
-      "display": false,
+      "display": true,
       "title": "SCHEDULE",
       "src": "/img/schedule.svg"
     }
