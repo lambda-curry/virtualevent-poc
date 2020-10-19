@@ -68,7 +68,7 @@ export const HomePageTemplate = class extends React.Component {
                 className="disqus-container-home"
                 title="Public conversation"
               />
-              <ScheduleLiteComponent
+              {/* <ScheduleLiteComponent
                 accessToken={loggedUser.accessToken}
                 onEventClick={(ev) => this.onEventChange(ev)}
                 onViewAllEventsClick={() => this.onViewAllEventsClick()}
@@ -81,7 +81,7 @@ export const HomePageTemplate = class extends React.Component {
                 updateCallback={updateWidgets}
                 title={HomeSettings.centerColumn.schedule.showAllEvents ? "Full Schedule" : "Happening Now"}
                 eventCount={HomeSettings.centerColumn.schedule.showAllEvents ? 100 : 4}
-              />
+              /> */}
               {HomeSettings.centerColumn.speakers.showTodaySpeakers &&
                 <SpeakersWidgetComponent
                   accessToken={loggedUser.accessToken}
@@ -101,7 +101,7 @@ export const HomePageTemplate = class extends React.Component {
             <div className="column is-one-quarter pb-6 home-column">
               <h2><b>My Info</b></h2>
               <SimpleChatWidgetComponent accessToken={loggedUser.accessToken} title="Private Chat" />
-              <ScheduleLiteComponent
+              {/* <ScheduleLiteComponent
                 accessToken={loggedUser.accessToken}
                 onEventClick={(ev) => this.onEventChange(ev)}
                 onViewAllEventsClick={() => this.onViewAllEventsClick()}
@@ -113,7 +113,7 @@ export const HomePageTemplate = class extends React.Component {
                 slotCount={1}
                 onRef={addWidgetRef}
                 updateCallback={updateWidgets}
-              />
+              /> */}
               <AdvertiseComponent section='lobby' column="right" />
             </div>
           </div>
