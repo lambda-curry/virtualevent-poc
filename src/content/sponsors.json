@@ -556,13 +556,13 @@
           "marquee": "Check out our webinar \"OpenStack on Vanilla: From 0 to 100 in 35 minutes.“ on Wednesday, 21 October, 10AM (PDT) / 1PM (EDT)! Click on the ad below!",
           "sponsorColor": "#f20033",
           "logo": "/img/logo.png",
-          "name": "Vanilla Stack ",
-          "intro": "VanillaStack is the main product of Cloudical, a company based in Germany and Poland that specializes in the \"cloud\" sector. Being unique in the world in this form, the VanillaStack is a pure open source cloud-native stack based on Kubernetes. With Kubernetes as Container-as-a-Service-Platform, VanillaStack allows you to roll out OpenStack as the Infrastructure-as-a-Service-platform. The Platform-as-a-Service-platform being used is Cloud Foundry. VanillaStack is made of open-source projects only and the community is strongly encouraged to contribute: The VanillaStack sources and GIT-repos are available. Cloudical also offers managed services (Managed Platform as a Service, Managed Software as a Service) and cloud consulting (consulting, coaching, training). Cloudical works independently of manufacturers and platforms, enabling it to provide its customers solutions tailored to their needs.  Founded in 2017, Cloudical currently employs 30 experts.\n\n**Connect LIVE with our Vanilla Stack team during the following hours; October 19 to October 21 from 6:00am to 12:00pm PT. Click on the LIVE VIDEO CHAT or send a message in the chat.**",
+          "name": "VanillaStack",
+          "intro": "VanillaStack is the main product of Cloudical, a company based in Germany and Poland that specializes in the \"cloud\" sector. Being unique in the world in this form, the VanillaStack is a pure open source cloud-native stack based on Kubernetes. With Kubernetes as Container-as-a-Service-Platform, VanillaStack allows you to roll out OpenStack as the Infrastructure-as-a-Service-platform. The Platform-as-a-Service-platform being used is Cloud Foundry. VanillaStack is made of open-source projects only and the community is strongly encouraged to contribute: The VanillaStack sources and GIT-repos are available. Cloudical also offers managed services (Managed Platform as a Service, Managed Software as a Service) and cloud consulting (consulting, coaching, training). Cloudical works independently of manufacturers and platforms, enabling it to provide its customers solutions tailored to their needs.  Founded in 2017, Cloudical currently employs 30 experts.\n\n**Connect LIVE with our VanillaStack team during the following hours; October 19 to October 21 from 6:00am to 12:00pm PT. Click on the LIVE VIDEO CHAT or send a message in the chat.**",
           "headerImage": "/img/cloudical_welcome.png",
           "headerImageMobile": "/img/header-booth-ois_small.png",
           "chatLink": "https://us02web.zoom.us/j/85129020398?pwd=SnROTFphNXJtS0VzVFZHc1ZiNmhkdz09",
           "sponsorId": 773,
-          "title": "Vanilla Stack ",
+          "title": "VanillaStack",
           "companyId": 1171,
           "documents": {
             "slides": [
