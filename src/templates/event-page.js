@@ -73,8 +73,7 @@ export const EventPageTemplate = class extends React.Component {
     if (event?.id !== nextProps.event?.id) return true;
     const currentPhase = eventsPhases.find(e => e.id == eventId)?.phase;
     const nextCurrentPhase = nextProps.eventsPhases.find(e => e.id == eventId)?.phase;
-    if (currentPhase !== nextCurrentPhase && (currentPhase === -1 && nextCurrentPhase === 0)) return true;
-    if (currentPhase !== nextCurrentPhase && currentPhase === null) return true;
+    if (currentPhase !== nextCurrentPhase && !(currentPhase === 0 && nextCurrentPhase === 1)) return true;
     return false
   }
 
