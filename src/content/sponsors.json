@@ -569,8 +569,16 @@
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/2020-10-presentation_short_en.pdf",
-                "name": "VanillaStack ",
+                "name": "VanillaStack Overview",
                 "order": 1
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/31-Virtual/Sponsors/VanillaStack/Mobile_720k.mp4",
+                "order": 2,
+                "name": "VanillaStack video"
               }
             ]
           },
