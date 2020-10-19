@@ -105,71 +105,71 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   }
 }
 
-// exports.sourceNodes = async ({
-//   actions,
-//   createNodeId,
-//   createContentDigest
-// }) => {
-//   const { createNode } = actions
+exports.sourceNodes = async ({
+  actions,
+  createNodeId,
+  createContentDigest
+}) => {
+  const { createNode } = actions
 
-//   const summit = await axios.get(
-//     `${process.env.GATSBY_SUMMIT_API_BASE_URL}/api/public/v1/summits/${process.env.GATSBY_SUMMIT_ID}?expand=event_types%2C+tracks%2C+track_groups%2C+presentation_levels%2C+locations.rooms%2C+locations.floors`
-//   ).then((response) => response.data)
-//     .catch(e => console.log('ERROR: ', e));
+  const summit = await axios.get(
+    `${process.env.GATSBY_SUMMIT_API_BASE_URL}/api/public/v1/summits/${process.env.GATSBY_SUMMIT_ID}?expand=event_types%2C+tracks%2C+track_groups%2C+presentation_levels%2C+locations.rooms%2C+locations.floors`
+  ).then((response) => response.data)
+    .catch(e => console.log('ERROR: ', e));
 
-//   const events = await axios.get(
-//     `${process.env.GATSBY_SUMMIT_API_BASE_URL}/api/public/v1/summits/${process.env.GATSBY_SUMMIT_ID}/events/published?expand=rsvp_template%2C+type%2C+track%2C+location%2C+location.venue%2C+location.floor%2C+speakers%2C+moderator%2C+sponsors%2C+groups&page=1&per_page=100&order=%2Bstart_date`
-//   ).then((response) => response.data.data)
-//     .catch(e => console.log('ERROR: ', e));
+  const events = await axios.get(
+    `${process.env.GATSBY_SUMMIT_API_BASE_URL}/api/public/v1/summits/${process.env.GATSBY_SUMMIT_ID}/events/published?expand=rsvp_template%2C+type%2C+track%2C+location%2C+location.venue%2C+location.floor%2C+speakers%2C+moderator%2C+sponsors%2C+groups&page=1&per_page=100&order=%2Bstart_date`
+  ).then((response) => response.data.data)
+    .catch(e => console.log('ERROR: ', e));
 
-//   const summitObject = { summit }
+  const summitObject = { summit }
 
-//   fs.writeFileSync('src/content/summit.json', JSON.stringify(summitObject), 'utf8', function (err) {
-//     if (err) throw err;
-//     console.log('Saved!');
-//   });
+  fs.writeFileSync('src/content/summit.json', JSON.stringify(summitObject), 'utf8', function (err) {
+    if (err) throw err;
+    console.log('Saved!');
+  });
 
-//   const nodeContent = JSON.stringify(summit)
+  const nodeContent = JSON.stringify(summit)
 
-//   const nodeMeta = {
-//     ...summit,
-//     id: createNodeId(`summit-${summit.id}`),
-//     summit_id: summit.id,
-//     parent: null,
-//     children: [],
-//     internal: {
-//       type: `Summit`,
-//       mediaType: `application/json`,
-//       content: nodeContent,
-//       contentDigest: createContentDigest(summit)
-//     }
-//   }
+  const nodeMeta = {
+    ...summit,
+    id: createNodeId(`summit-${summit.id}`),
+    summit_id: summit.id,
+    parent: null,
+    children: [],
+    internal: {
+      type: `Summit`,
+      mediaType: `application/json`,
+      content: nodeContent,
+      contentDigest: createContentDigest(summit)
+    }
+  }
 
-//   const node = Object.assign({}, summit, nodeMeta)
-//   createNode(node)
+  const node = Object.assign({}, summit, nodeMeta)
+  createNode(node)
 
-//   for (const event of events) {
-//     const nodeContent = JSON.stringify(event)
+  for (const event of events) {
+    const nodeContent = JSON.stringify(event)
 
-//     const nodeMeta = {
-//       ...event,
-//       timezone: summit.time_zone_id,
-//       id: createNodeId(`event-${event.id}`),
-//       event_id: event.id,
-//       parent: null,
-//       children: [],
-//       internal: {
-//         type: `Event`,
-//         mediaType: `application/json`,
-//         content: nodeContent,
-//         contentDigest: createContentDigest(event)
-//       }
-//     }
+    const nodeMeta = {
+      ...event,
+      timezone: summit.time_zone_id,
+      id: createNodeId(`event-${event.id}`),
+      event_id: event.id,
+      parent: null,
+      children: [],
+      internal: {
+        type: `Event`,
+        mediaType: `application/json`,
+        content: nodeContent,
+        contentDigest: createContentDigest(event)
+      }
+    }
 
-//     const node = Object.assign({}, event, nodeMeta)
-//     createNode(node)
-//   }
-// }
+    const node = Object.assign({}, event, nodeMeta)
+    createNode(node)
+  }
+}
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
