@@ -678,43 +678,51 @@
                 "class_name": "PresentationSlide",
                 "link": "/img/oif_onepager-web.pdf",
                 "name": "Open Infrastructure Foundation (OIF)",
-                "order": 3
+                "order": 4
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/airship_onepager-web.pdf",
                 "name": "Airship",
-                "order": 4
+                "order": 5
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/kata_onepager-web.pdf",
                 "name": "Kata Containers",
-                "order": 5
+                "order": 6
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/magma-overview.pdf",
                 "name": "Magma",
-                "order": 6
+                "order": 7
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/starlingx_onepager-web.pdf",
                 "name": "StarlingX",
-                "order": 7
+                "order": 8
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/openstack_onepager-web.pdf",
                 "name": "OpenStack ",
-                "order": 3
+                "order": 9
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/zuul_onepager-web.pdf",
                 "name": "Zuul",
-                "order": 8
+                "order": 10
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "Hear straight from the Founding Open Infrastructure Foundation Members on why they’re supporting the global community.",
+                "order": 3,
+                "link": " https://www.youtube.com/playlist?list=PLKqaoAnDyfgoDG_DZU14R1zIdEKSVzMDt"
               }
             ]
           },
