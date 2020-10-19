@@ -517,7 +517,7 @@
           "sponsorColor": "#78BC42",
           "logo": "/img/trilio_logo_1-1.png",
           "name": "Trilio Data",
-          "intro": "Trilio is a leader in cloud-native data protection for Kubernetes, OpenStack and Red Hat Virtualization environments. Our TrilioVault technology is trusted by cloud infrastructure operators and developers for backup and recovery, migration and application mobility. Customers in telecom, defense, automotive and financial services leverage TrilioVault to recover from disasters, migrate workloads, move workloads to new infrastructure and migrate to new software distributions. www.trilio.io and @triliodata on Twitter.",
+          "intro": "Trilio is a leader in cloud-native data protection for Kubernetes, OpenStack and Red Hat Virtualization environments. Our TrilioVault technology is trusted by cloud infrastructure operators and developers for backup and recovery, migration and application mobility. Customers in telecom, defense, automotive and financial services leverage TrilioVault to recover from disasters, migrate workloads, move workloads to new infrastructure and migrate to new software distributions. www.trilio.io and @triliodata on Twitter.\n\n**Connect LIVE with our Trilio Data team during the following hours; October 19 to October 21 from 6:00am to 12:00pm PT. Click on the LIVE VIDEO CHAT or send a message in the chat.**",
           "headerImage": "/img/trilio_header_image.png",
           "headerImageMobile": "/img/trillio_revised_openinfra_image.png",
           "chatLink": "https://us02web.zoom.us/j/8691886062",
@@ -536,9 +536,9 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "name": "Trilio Video",
+                "name": "Trilio Video ",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/temp-os-virtual-sponsor-uploads/Trilio_Video.mp4",
-                "order": 0
+                "order": 2
               }
             ]
           },
@@ -615,7 +615,7 @@
             }
           ],
           "id": 430,
-          "email": "",
+          "email": "SharedMailbox124724@zte.com.cn",
           "usesSponsorPage": true
         }
       ]
