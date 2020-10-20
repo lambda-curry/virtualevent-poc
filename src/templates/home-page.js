@@ -101,7 +101,7 @@ export const HomePageTemplate = class extends React.Component {
             <div className="column is-one-quarter pb-6 home-column">
               <h2><b>My Info</b></h2>
               <SimpleChatWidgetComponent accessToken={loggedUser.accessToken} title="Private Chat" />
-              { <ScheduleLiteComponent
+              <ScheduleLiteComponent
                 accessToken={loggedUser.accessToken}
                 onEventClick={(ev) => this.onEventChange(ev)}
                 onViewAllEventsClick={() => this.onViewAllEventsClick()}
@@ -110,10 +110,11 @@ export const HomePageTemplate = class extends React.Component {
                 yourSchedule={true}
                 showNav={true}
                 eventCount={10}
+                showAllEvents={true}
                 slotCount={1}
                 onRef={addWidgetRef}
                 updateCallback={updateWidgets}
-              /> }
+              />
               <AdvertiseComponent section='lobby' column="right" />
             </div>
           </div>

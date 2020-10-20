@@ -15514,9 +15514,9 @@ saxes@^5.0.0:
     xmlchars "^2.2.0"
 
 schedule-lite@^1.0.59:
-  version "1.0.71"
-  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.71.tgz#06221b49c00afadc27ce4743ad0e5afc84c2d29f"
-  integrity sha512-egSlbtJd9umUhL1ZskE8/Vqb98PHtDjBFpaAGTdpy0X2zlKUS63EeGvwEK5/07E3mJ6YWikP+Ron2un8VKtLUw==
+  version "1.0.72"
+  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.72.tgz#9b0962267471a48d496bb4dea87cb58d9d3cd221"
+  integrity sha512-O8FR18eUfIHfHlS/K1NSDRcZf/fOMGHXZ72TtP4c1gh7UEf0jyFk4hIQxauR+44+59uYvsDGKKAaoDpT6AIJwg==
   dependencies:
     pure-react-carousel "^1.27.4"
 
