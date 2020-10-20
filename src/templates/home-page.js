@@ -68,7 +68,7 @@ export const HomePageTemplate = class extends React.Component {
                 className="disqus-container-home"
                 title="Public conversation"
               />
-              {/* <ScheduleLiteComponent
+              { <ScheduleLiteComponent
                 accessToken={loggedUser.accessToken}
                 onEventClick={(ev) => this.onEventChange(ev)}
                 onViewAllEventsClick={() => this.onViewAllEventsClick()}
@@ -81,7 +81,7 @@ export const HomePageTemplate = class extends React.Component {
                 updateCallback={updateWidgets}
                 title={HomeSettings.centerColumn.schedule.showAllEvents ? "Full Schedule" : "Happening Now"}
                 eventCount={HomeSettings.centerColumn.schedule.showAllEvents ? 100 : 4}
-              /> */}
+              /> }
               {HomeSettings.centerColumn.speakers.showTodaySpeakers &&
                 <SpeakersWidgetComponent
                   accessToken={loggedUser.accessToken}
