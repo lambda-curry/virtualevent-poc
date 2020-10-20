@@ -123,7 +123,7 @@
       ],
       "sponsors": [
         {
-          "marqueeColor": "",
+          "marqueeColor": "#000000",
           "marquee": "Create. Collaborate. Iterate. Unity is the platform of choice for your journey to real-time.",
           "sideImage": "/img/sponsors/exhibitor/immage.png",
           "externalLink": "",
