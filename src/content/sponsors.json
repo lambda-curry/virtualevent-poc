@@ -132,23 +132,7 @@
           "intro": "",
           "headerVideo": "",
           "headerImage": "/img/sponsors/exhibitor/header_logo_exhibitor.png",
-          "socialNetworks": [
-            {
-              "icon": "fa-facebook",
-              "link": "/footer-content/",
-              "display": true
-            },
-            {
-              "icon": "fa-twitter",
-              "link": "/footer-content/",
-              "display": true
-            },
-            {
-              "icon": "fa-linkedin",
-              "link": "/footer-content/",
-              "display": true
-            }
-          ],
+          "socialNetworks": [],
           "chatLink": "",
           "title": "",
           "documents": {
