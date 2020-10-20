@@ -124,12 +124,12 @@
       "sponsors": [
         {
           "marqueeColor": "",
-          "marquee": "",
+          "marquee": "Create. Collaborate. Iterate. Unity is the platform of choice for your journey to real-time.",
           "sideImage": "/img/sponsors/exhibitor/immage.png",
           "externalLink": "",
           "logo": "/img/infinity-festival-unity-logo.jpg",
           "name": "Unity",
-          "intro": "",
+          "intro": "From independent boutiques to global media producers, immersive agencies and location-based creators – studios around the world are harnessing the power of real-time 3D technology to speed up production, smooth workflow hurdles, and grow their creativity with Unity.",
           "headerVideo": "",
           "headerImage": "/img/infinity-festival-welcome-image.jpg",
           "socialNetworks": [],
@@ -138,7 +138,20 @@
           "documents": {
             "slides": [],
             "links": [],
-            "videos": []
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "youtube_id": "https://youtu.be/r0JDdXqdnww",
+                "order": 6,
+                "name": "Unity "
+              },
+              {
+                "class_name": "PresentationVideo",
+                "youtube_id": "https://www.youtube.com/watch?v=0dQqUQ1sBso",
+                "order": 7,
+                "name": "Unity "
+              }
+            ]
           },
           "columnAds": [
             {
