@@ -131,44 +131,17 @@
           "name": "Unity",
           "intro": "",
           "headerVideo": "",
-          "headerImage": "/img/sponsors/exhibitor/header_logo_exhibitor.png",
+          "headerImage": "",
           "socialNetworks": [],
           "chatLink": "",
           "title": "",
           "documents": {
-            "slides": [
-              {
-                "name": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html",
-                "order": 2,
-                "class_name": "PresentationSlide",
-                "link": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html"
-              }
-            ],
-            "links": [
-              {
-                "name": "http://relaxdiego.com/2017/05/swampup-2017-slides.html",
-                "order": 1,
-                "class_name": "PresentationLink",
-                "link": "http://relaxdiego.com/2017/05/swampup-2017-slides.html"
-              }
-            ],
-            "videos": [
-              {
-                "name": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html",
-                "order": 3,
-                "class_name": "PresentationVideo",
-                "youtube_id": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html"
-              }
-            ]
+            "slides": [],
+            "links": [],
+            "videos": []
           },
-          "columnAds": [
-            {
-              "image": "/img/yoco-sponsor-ads-medium-flow.png",
-              "button": "",
-              "link": "/virtual-booth/"
-            }
-          ],
-          "id": 3,
+          "columnAds": [],
+          "id": 12,
           "email": "",
           "usesSponsorPage": true
         }
