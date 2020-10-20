@@ -133,20 +133,23 @@ export const EventPageTemplate = class extends React.Component {
             {eventStarted >= PHASES.DURING && event.streaming_url &&
               <section className="section px-0 pt-5 pb-0">
                 <div className="columns mx-0 my-0 is-multiline">
-                  <div className="column px-0 py-0 is-three-quarters is-hidden-mobile">
-                    <TalkComponent eventStarted={eventStarted} event={event} summit={summit} />
-                  </div>
-                  <DocumentsComponent event={event} />
-                  {event.etherpad_link &&
-                    <div className="column is-three-quarters">
-                      <Etherpad className="talk__etherpad" etherpad_link={event.etherpad_link} userName={user.userProfile.first_name} />
+                  <div className="column is-three-quarters">
+                    <div className="px-5 py-5 is-hidden-mobile">
+                      <TalkComponent eventStarted={eventStarted} event={event} summit={summit} />
                     </div>
-                  }
-                  <div className="column is-one-quarter" style={{ marginLeft: 'auto' }}>
+                    <div className="px-5 py-5">
+                      {event.etherpad_link &&
+                        <Etherpad className="talk__etherpad" etherpad_link={event.etherpad_link} userName={user.userProfile.first_name} />
+                      }
+                    </div>
+                  </div>
+                  <div className="column px-5 py-6 is-one-quarter">
+                    <DocumentsComponent event={event} sponsor={true} style={{ marginBottom: '15px' }} />
                     <SimpleChatWidgetComponent accessToken={loggedUser.accessToken} />
                   </div>
+                  {/*
                   <div className="column is-three-quarters">
-                    {/* <ScheduleLiteComponent
+                     <ScheduleLiteComponent
                       accessToken={loggedUser.accessToken}
                       onEventClick={(ev) => this.onEventChange(ev)}
                       onViewAllEventsClick={() => this.onViewAllEventsClick()}
@@ -158,8 +161,9 @@ export const EventPageTemplate = class extends React.Component {
                       trackId={event.track ? event.track.id : null}
                       eventCount={3}
                       title={event.track ? `Happening Now on ${event.track.name}` : 'Happening Now'}
-                    /> */}
+                    />
                   </div>
+                  */}
                 </div>
               </section>
             }
