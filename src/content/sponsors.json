@@ -127,11 +127,11 @@
           "marquee": "",
           "sideImage": "/img/sponsors/exhibitor/immage.png",
           "externalLink": "",
-          "logo": "/img/if2020-sponsor-unity.png",
+          "logo": "/img/infinity-festival-unity-logo.jpg",
           "name": "Unity",
           "intro": "",
           "headerVideo": "",
-          "headerImage": "",
+          "headerImage": "/img/infinity-festival-welcome-image.jpg",
           "socialNetworks": [],
           "chatLink": "",
           "title": "",
@@ -140,7 +140,12 @@
             "links": [],
             "videos": []
           },
-          "columnAds": [],
+          "columnAds": [
+            {
+              "image": "/img/mars-mne-event-968x968-1-.jpg",
+              "link": "https://unity.com/products/unity-mars"
+            }
+          ],
           "id": 12,
           "email": "",
           "usesSponsorPage": true
