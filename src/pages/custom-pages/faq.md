@@ -73,7 +73,7 @@ A. For FNregistration support, please email [registration@fntech.com](<>)
 
 A. After you registered/purchased your ticket, you should have received an Order Confirmation email that contained your virtual ticket.
 
-* If you don’t remember receiving your Order Confirmation email, please check your Junk/Spam folder for an email from registration@fntech.com
+* If you don’t remember receiving your Order Confirmation email, please check your Junk/Spam folder for an email from [registration@fntech.com](<>) 
 * Alternatively, you can find your ticket in the “My Tickets” page in FNregistration. You may use your FNid to log in here <https://registration.fntech.com/a/member/orders>
 * For additional FNregistration support, please email [registration@fntech.com](<>)
 
@@ -109,7 +109,7 @@ A. Each FNvirtual event requires that you are registered and/or have purchased a
 A. First, log out of the website and log back in using your FNid.
 
 * Next, you may need to clear your cache. Websites often ‘cache’ information so they load faster the next time you visit. This can occasionally cause issues, like a ‘white screen’ or an error code.
-* If you are still having trouble, please email [support@fntech.com](<>) and tell us what browser & version you are using, what page you’re having trouble with -- including the event you are trying to access..
+* If you are still having trouble, please email [support@fntech.com](<>) and tell us what browser & version you are using, what page you’re having trouble with -- including the event you are trying to access.
 
 **—**
 
@@ -117,8 +117,8 @@ A. First, log out of the website and log back in using your FNid.
 
 A. Open your internet browser. Then…
 
-* Keystrokes for Mac users: “Command” + “+/-”
-* Keystrokes for PC users: “Alt + View”, then point to the text size you desire (Largest, Larger, Medium (default), Smaller and Smallest)
+* **Keystrokes for Mac users:** “Command” + “+/-”
+* **Keystrokes for PC users:** “Alt + View”, then point to the text size you desire (Largest, Larger, Medium (default), Smaller and Smallest)
 
 **—**
 
