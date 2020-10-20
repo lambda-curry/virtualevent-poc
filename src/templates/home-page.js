@@ -57,10 +57,10 @@ export const HomePageTemplate = class extends React.Component {
             </div>
             <div className="column is-half home-column">
               <h2><b>Today's Sessions</b></h2>
-              {/* <LiveEventWidgetComponent
+               <LiveEventWidgetComponent
                 onEventClick={(ev) => this.onEventChange(ev)}
                 style={{marginBottom: '15px'}}
-              /> */}
+              /> 
               <DisqusComponent
                 page="lobby"
                 disqusSSO={user.disqusSSO}
@@ -76,7 +76,7 @@ export const HomePageTemplate = class extends React.Component {
                 showDetails={HomeSettings.centerColumn.schedule.showAllEvents}
                 yourSchedule={false}
                 showNav={false}
-                showAllEvents={HomeSettings.centerColumn.schedule.showAllEvents}
+                showAllEvents={true}
                 onRef={addWidgetRef}
                 updateCallback={updateWidgets}
                 title={HomeSettings.centerColumn.schedule.showAllEvents ? "Full Schedule" : "Happening Now"}
