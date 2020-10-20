@@ -48,7 +48,7 @@ const TalkComponent = class extends React.Component {
     const { event: { start_date, end_date, speakers, title, description }, event, summit: { time_zone_id } } = this.props;
 
     return (
-      <div className={`columns talk px-5 py-5`}>
+      <div className={`columns talk`}>
         <div className="column is-full">
           <span className="talk__date">{this.formatEventDate(start_date, end_date, time_zone_id)} {this.formatEventLocation(event)}</span>
           <h1>
