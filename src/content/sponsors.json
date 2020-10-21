@@ -336,15 +336,24 @@
           "usesSponsorPage": true
         },
         {
-          "name": "Intel ",
-          "logo": "/img/boxed-logo-energyblue-3000px.png",
-          "id": 14,
-          "title": "Media & Entertainment - Intel® AI",
+          "marquee": "Simplify AI with Intel® Artificial Intelligence Technologies",
           "sponsorColor": "#0068b5",
-          "intro": "# Simplify AI with Intel® Artificial Intelligence Technologies\n\nToday, implementing artificial intelligence is essential to better serving customers and unlocking new business value. 1 But deploying the infrastructure needed to support AI at scale remains a challenge for many enterprises, given the complexity of achieving high performance and accuracy - all while managing costs and utilization.\n\nWith Intel® architecture, you can deploy applications into production both quickly and cost-effectively. And with access to Intel’s global partner ecosystem, you’ll find expertise and solutions to suit your every AI need. **Learn more [here.](https://www.intel.com/content/www/us/en/artificial-intelligence/overview.html)**",
+          "logo": "/img/boxed-logo-energyblue-3000px.png",
+          "name": "Intel ",
+          "intro": "Intel's Our Purpose\n\n**We create world-changing technology that enriches the lives of every person on earth.**\\\nWe are inspired to:\n\n* Drive innovation that makes the world safer, builds healthy and vibrant communities, and increases productivity.\n* Harness our reach around the globe to better society, business, and the planet.\n* Push ourselves and our industry peers to be more responsible, inclusive, and sustainable.\n\nWe have big ambitions, and a growing sense of urgency to work with others and address world challenges no one can tackle alone.\n\n**Simplify AI with Intel® Artificial Intelligence Technologies**\n\nToday, implementing artificial intelligence is essential to better serving customers and unlocking new business value. 1 But deploying the infrastructure needed to support AI at scale remains a challenge for many enterprises, given the complexity of achieving high performance and accuracy - all while managing costs and utilization.\n\nWith Intel® architecture, you can deploy applications into production both quickly and cost-effectively. And with access to Intel’s global partner ecosystem, you’ll find expertise and solutions to suit your every AI need. Learn more [here](https://www.intel.com/content/www/us/en/artificial-intelligence/overview.html).",
+          "headerImage": "/img/if2020-intel-header-1440x200.png",
+          "title": "Media & Entertainment - Intel® AI",
           "documents": {
-            "links": []
-          }
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/IntelAI",
+                "name": "Follow us on Twitter ",
+                "order": 1
+              }
+            ]
+          },
+          "id": 14
         }
       ]
     }
