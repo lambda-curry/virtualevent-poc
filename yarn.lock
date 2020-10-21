@@ -10375,9 +10375,9 @@ linkifyjs@^2.1.9:
   integrity sha512-74ivurkK6WHvHFozVaGtQWV38FzBwSTGNmJolEgFp7QgR2bl6ArUWlvT4GcHKbPe1z3nWYi+VUdDZk16zDOVug==
 
 live-event-widget@^1.0.34:
-  version "1.0.43"
-  resolved "https://registry.yarnpkg.com/live-event-widget/-/live-event-widget-1.0.43.tgz#51a0248f555a758e8543b3bba60fce35d3c3038c"
-  integrity sha512-jZmPlEKW5V3zW4Wv5Z/HkVZK1VBqNpqhQV7X5KA8Sp3c5bR6+OLxTHBfSEV3FxsL4DkptitdjKPwDmL7R2+6Hw==
+  version "1.0.44"
+  resolved "https://registry.yarnpkg.com/live-event-widget/-/live-event-widget-1.0.44.tgz#b2595c152b985f5be3a77a98cd5982398cce8867"
+  integrity sha512-eeVUc6qRHAR1e7lWdZKFi7tdp4sRVHeKfgZmYBpmz73vaUuYaZJJJLwp0yDTmWx/U/HBMEiziWkoOiwjXfDKVA==
   dependencies:
     svg-url-loader "^6.0.0"
 
@@ -12358,9 +12358,9 @@ open@^6.4.0:
     is-wsl "^1.1.0"
 
 openstack-uicore-foundation@^2.0.66:
-  version "2.0.69"
-  resolved "https://registry.yarnpkg.com/openstack-uicore-foundation/-/openstack-uicore-foundation-2.0.69.tgz#b9fdc0356119e911d7e94787df249a188c48733a"
-  integrity sha512-sYLhYCtnfYTUWCHxKIpZDilWlydemwTn/xd4txLSB/0T7H9PehNMuFgFktWXwc4pUPrDjRJ6G1sDLt3LxpivDg==
+  version "2.0.70"
+  resolved "https://registry.yarnpkg.com/openstack-uicore-foundation/-/openstack-uicore-foundation-2.0.70.tgz#8aab5da150877f00a2bfe2fb289fcdc8af0f9f8c"
+  integrity sha512-O8YKCiTDzXnnGa07tgrSAymh4uQrUHrJAd7wKDrkymDkD+waBFLh83Ao/nW6pfcxn1ud9sjdYphY2Esarg/EmA==
 
 opentracing@^0.14.4:
   version "0.14.4"
@@ -15514,9 +15514,9 @@ saxes@^5.0.0:
     xmlchars "^2.2.0"
 
 schedule-lite@^1.0.59:
-  version "1.0.73"
-  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.73.tgz#7be39ae9d152d36d85579da7309dda6222d882d1"
-  integrity sha512-MDvTcHIoGlndRNOz/CxSp+FM9BDzL6nTKB+whPka/2G/2BLxCR6zTd651q/LRSnEXiTHQwz6+AgusSzfEyJj0w==
+  version "1.0.74"
+  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.74.tgz#be1abae9e2262c9e4a05e9d7f08ed6a299579b98"
+  integrity sha512-F3cBW0GMxYrIBrM+Ki0H/Zi/GuDo1dW/loE2aalSzi3KcaaeKnfMoqtF7ZEkvxhqr9ELzaza3SGAaZNLn6QRnQ==
   dependencies:
     pure-react-carousel "^1.27.4"
 
