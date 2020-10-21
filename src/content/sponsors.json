@@ -17,7 +17,7 @@
           "name": "Capitol Royale",
           "intro": "",
           "headerVideo": "",
-          "headerImage": "/img/sponsors/premier/header_logo_premier.png",
+          "headerImage": "",
           "socialNetworks": [
             {
               "icon": "fa-facebook",
@@ -54,22 +54,9 @@
                 "link": "http://relaxdiego.com/2017/05/swampup-2017-slides.html"
               }
             ],
-            "videos": [
-              {
-                "name": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html",
-                "order": 3,
-                "class_name": "PresentationVideo",
-                "youtube_id": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html"
-              }
-            ]
+            "videos": []
           },
-          "columnAds": [
-            {
-              "image": "/img/yoco-sponsor-ads-medium-flow.png",
-              "button": "",
-              "link": "/virtual-booth/"
-            }
-          ],
+          "columnAds": [],
           "id": 3,
           "email": "",
           "usesSponsorPage": true
@@ -89,6 +76,7 @@
           "marquee": "Power Your Breakthrough",
           "sideImage": "",
           "externalLink": "",
+          "sponsorColor": "#2A2C2E",
           "logo": "/img/if2020-sponsor-zbyhp.png",
           "name": "Z by HP",
           "intro": "Z by HP creates high-performance laptops, desktops, displays and solutions built for creators - artists, designers and power users - who need ultimate performance, maximum reliability, and the broadest expandability and versatility to get the job done. At Z by HP, we’ve spent decades innovating high-performance computing designed to equip creative pros in their journey to keep evolving. www.hp.com/PowerYourBreakthrough   We’re excited to introduce ZBook Create, our latest notebook specifically designed for creators. Transform your work with NVIDIA® GeForce® RTX™ graphics, real-time rendering, and the power of Z, all packed into an ultra-sleek design. It’s the new standard for the serious creator.",
@@ -98,7 +86,32 @@
           "chatLink": "",
           "title": "Z by HP",
           "documents": {
-            "slides": [],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/z_by_hp_3d-trend-report.pdf",
+                "name": "3D Trend Report",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/z_by_hp_ai-trend-report.pdf",
+                "name": "AI Trend Report",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/z_by_hp_create-data-sheet.pdf",
+                "name": "Create Data Sheet",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/z_by_hp_nk-trend-report.pdf",
+                "name": "(n) K Trend Report",
+                "order": 4
+              }
+            ],
             "links": [],
             "videos": []
           },
@@ -146,7 +159,7 @@
         {
           "marqueeColor": "#000000",
           "marquee": "Create. Collaborate. Iterate. Unity is the platform of choice for your journey to real-time.",
-          "sideImage": "/img/sponsors/exhibitor/immage.png",
+          "sideImage": "",
           "externalLink": "",
           "logo": "/img/infinity-festival-unity-logo.jpg",
           "name": "Unity",
@@ -172,20 +185,7 @@
                 "name": "UNITY "
               }
             ],
-            "videos": [
-              {
-                "class_name": "PresentationVideo",
-                "youtube_id": "https://youtu.be/r0JDdXqdnww",
-                "order": 6,
-                "name": "Unity "
-              },
-              {
-                "class_name": "PresentationVideo",
-                "youtube_id": "https://www.youtube.com/watch?v=0dQqUQ1sBso",
-                "order": 7,
-                "name": "Unity "
-              }
-            ]
+            "videos": []
           },
           "columnAds": [
             {
@@ -245,14 +245,7 @@
           "headerImage": "/img/phase_two_phasetwobanner_static1440x200px-03.png",
           "title": "Phase Two",
           "documents": {
-            "videos": [
-              {
-                "class_name": "PresentationVideo",
-                "name": "Phase Two Video ",
-                "youtube_id": "https://fntech.sfo2.cdn.digitaloceanspaces.com/temp-os-virtual-sponsor-uploads/phase_two_Phase%20Two%20-%20Shorter720p.mp4",
-                "order": 3
-              }
-            ]
+            "videos": []
           },
           "columnAds": [
             {
