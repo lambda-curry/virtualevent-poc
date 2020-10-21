@@ -112,7 +112,7 @@
           "logo": "/img/microsoft-logo_rgb_c-gray.png",
           "name": "Microsoft",
           "intro": "Microsoft empowers media & entertainment organizations to achieve more through a trusted and secure platform supported by a comprehensive partner ecosystem with industry-leading solutions for content production, collaboration, content delivery, audience insights, and personalized experiences.",
-          "headerImage": "/img/media_banner_general.jpg",
+          "headerImage": "/img/if2020-microsoft-content-creation-2.png",
           "title": "Microsoft",
           "documents": {
             "links": [
@@ -208,6 +208,35 @@
       ],
       "sponsors": [
         {
+          "marqueeColor": "#000000",
+          "marquee": "",
+          "logo": "/img/essentia_water_ew_logos_if_101320-.png",
+          "name": "Essentia Water",
+          "intro": "Essentia is supercharged ionized alkaline water. We’re here to put a flag in the ground and tell the world that a better you starts with a better water. Our mission is to inspire people everywhere to do the things that matter most to them.",
+          "headerImage": "/img/essentia_water_ew_if_header_image_1440x200.png",
+          "title": "Essentia Water",
+          "columnAds": [
+            {
+              "image": "/img/essentia_water_ew_if_sponsor_ad_968x968.png",
+              "link": "https://essentiawater.com/water/"
+            }
+          ],
+          "id": 15,
+          "email": "customerservice@essentiawater.com",
+          "usesSponsorPage": true
+        },
+        {
+          "marquee": "We leverage the power of technology, location, and creativity to make meaningful connections between brands and audiences.",
+          "logo": "/img/favicon.png",
+          "name": "Outfront ",
+          "intro": " OUTFRONT is embedded into the fabric of our cities and communities and trusted by the millions who engage with our media every day. We provide an integrated and targeted platform to connect brands to their desired audiences, as they live their lives through one of the largest and most diverse sets of billboard, transit, and mobile assets in North America. We are famous for incomparable impact and creativity of our medium, which drives engagement, fame, and trust. Our technology platform is fundamentally changing the ways advertisers engage audiences on-the-go.",
+          "headerImage": "/img/banner-4.png",
+          "title": "Outfront",
+          "id": 18,
+          "email": "sales@outfrontmedia.com",
+          "usesSponsorPage": true
+        },
+        {
           "marqueeColor": "#114776",
           "marquee": "",
           "logo": "/img/phase_two_phasetwo_white_logosq.png",
@@ -236,33 +265,10 @@
           "usesSponsorPage": true
         },
         {
-          "marqueeColor": "#000000",
-          "marquee": "",
-          "logo": "/img/essentia_water_ew_logos_if_101320-.png",
-          "name": "Essentia Water",
-          "intro": "Essentia is supercharged ionized alkaline water. We’re here to put a flag in the ground and tell the world that a better you starts with a better water. Our mission is to inspire people everywhere to do the things that matter most to them.",
-          "headerImage": "/img/essentia_water_ew_if_header_image_1440x200.png",
-          "title": "Essentia Water",
-          "columnAds": [
-            {
-              "image": "/img/essentia_water_ew_if_sponsor_ad_968x968.png",
-              "link": "https://essentiawater.com/water/"
-            }
-          ],
-          "id": 15,
-          "email": "customerservice@essentiawater.com",
-          "usesSponsorPage": true
-        },
-        {
-          "marquee": "We leverage the power of technology, location, and creativity to make meaningful connections between brands and audiences.",
-          "logo": "/img/favicon.png",
-          "name": "Outfront ",
-          "intro": " OUTFRONT is embedded into the fabric of our cities and communities and trusted by the millions who engage with our media every day. We provide an integrated and targeted platform to connect brands to their desired audiences, as they live their lives through one of the largest and most diverse sets of billboard, transit, and mobile assets in North America. We are famous for incomparable impact and creativity of our medium, which drives engagement, fame, and trust. Our technology platform is fundamentally changing the ways advertisers engage audiences on-the-go.",
-          "headerImage": "/img/banner-4.png",
-          "title": "Outfront",
-          "id": 18,
-          "email": "sales@outfrontmedia.com",
-          "usesSponsorPage": true
+          "name": "Intel ",
+          "logo": "/img/boxed-logo-energyblue-3000px.png",
+          "id": 14,
+          "title": "Intel "
         }
       ]
     }
