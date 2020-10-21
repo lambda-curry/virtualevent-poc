@@ -50,7 +50,7 @@
         "display": true
       },
       "sponsorPage": {
-        "sponsorTemplate": "small-header",
+        "sponsorTemplate": "big-header",
         "widgets": {
           "disqus": true,
           "liveEvent": true,
