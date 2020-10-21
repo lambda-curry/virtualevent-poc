@@ -91,25 +91,25 @@
                 "class_name": "PresentationSlide",
                 "link": "/img/z_by_hp_3d-trend-report.pdf",
                 "name": "3D Trend Report",
-                "order": 1
+                "order": 3
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/z_by_hp_ai-trend-report.pdf",
                 "name": "AI Trend Report",
-                "order": 2
+                "order": 4
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/z_by_hp_create-data-sheet.pdf",
                 "name": "Create Data Sheet",
-                "order": 3
+                "order": 4
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/z_by_hp_nk-trend-report.pdf",
                 "name": "(n) K Trend Report",
-                "order": 4
+                "order": 6
               }
             ],
             "links": [
@@ -131,7 +131,7 @@
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/temp-os-virtual-sponsor-uploads/z_by_hp_Wave_Intel_06_070920_1x1.mp4",
                 "name": "Z by HP commercial ",
-                "order": 5
+                "order": 7
               }
             ]
           },
