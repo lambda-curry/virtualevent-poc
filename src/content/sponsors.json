@@ -114,6 +114,16 @@
           "intro": "Microsoft empowers media & entertainment organizations to achieve more through a trusted and secure platform supported by a comprehensive partner ecosystem with industry-leading solutions for content production, collaboration, content delivery, audience insights, and personalized experiences.",
           "headerImage": "/img/media_banner_general.jpg",
           "title": "Microsoft",
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/MSCloud https://www.linkedin.com/showcase/microsoft-cloud-platform/",
+                "name": "Follow us on Twitter ",
+                "order": 1
+              }
+            ]
+          },
           "columnAds": [
             {
               "image": "/img/media_banner_general_239.jpg"
