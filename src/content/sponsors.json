@@ -112,7 +112,20 @@
                 "order": 4
               }
             ],
-            "links": [],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "Z by HP YouTube Channel ",
+                "link": "YouTube: www.youtube.com/zbyhp",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Z by HP on Instagram ",
+                "link": "www.instagram.com/zbyhp",
+                "order": 2
+              }
+            ],
             "videos": [
               {
                 "class_name": "PresentationVideo",
