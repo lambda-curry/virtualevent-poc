@@ -276,6 +276,24 @@
           "intro": " OUTFRONT is embedded into the fabric of our cities and communities and trusted by the millions who engage with our media every day. We provide an integrated and targeted platform to connect brands to their desired audiences, as they live their lives through one of the largest and most diverse sets of billboard, transit, and mobile assets in North America. We are famous for incomparable impact and creativity of our medium, which drives engagement, fame, and trust. Our technology platform is fundamentally changing the ways advertisers engage audiences on-the-go.",
           "headerImage": "/img/banner-4.png",
           "title": "Outfront",
+          "documents": {
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://outfrontmedia.thruinc.net/Desktop/Distro/Open/03619RKR2EG",
+                "name": "Outfront Purpose",
+                "order": 1
+              }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/outfront-brand-one-sheet.pdf",
+                "order": 2,
+                "name": "OUTFRONT Brand "
+              }
+            ]
+          },
           "id": 18,
           "email": "sales@outfrontmedia.com",
           "usesSponsorPage": true
