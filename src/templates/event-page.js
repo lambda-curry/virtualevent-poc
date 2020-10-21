@@ -189,7 +189,8 @@ const EventPage = (
       {event && event.id &&
         <AttendanceTracker
           key={`att-tracker-${event.id}`}
-          eventId={event.id}
+          sourceId={event.id}
+          sourceName="EVENT"
           summitId={SummitObject.summit.id}
           apiBaseUrl={envVariables.SUMMIT_API_BASE_URL}
           accessToken={loggedUser.accessToken}

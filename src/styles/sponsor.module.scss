@@ -81,21 +81,33 @@
 
   .image-box {
     box-sizing: border-box;
-    padding: 50px;
+    padding: 20px;
     background-color: $color_primary_contrast;
     margin: 10px;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     &.large {
       flex: 0 1 23%;
+      min-width: 250px;
+    }
+
+    &.medium {
+      flex: 0 1 18%;
+      padding: 20px;
+      min-width: 200px;
     }
 
     &.small {      
-      padding: 25px;
+      padding: 20px;
+      min-width: 125px;
       background-color: transparent;
       border: 1px solid #d3d3d3;
-      flex: 0 1 11%;
+      flex: 0 1 13%;
+      img {        
+        min-width: 100px;
+      }
     }
   }
 

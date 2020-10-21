@@ -20,6 +20,13 @@ import SponsorsTiers from '../content/sponsors-tiers.json'
 import Layout from '../components/Layout'
 
 import styles from '../styles/sponsor-page.module.scss'
+import envVariables from "../utils/envVariables";
+import { AttendanceTracker } from "openstack-uicore-foundation/lib/components";
+
+import { scanBadge } from '../actions/user-actions'
+import { getDisqusSSO } from '../actions/user-actions'
+
+import MarkdownIt from "markdown-it";
 
 export const SponsorPageTemplate = class extends React.Component {
 
@@ -28,6 +35,8 @@ export const SponsorPageTemplate = class extends React.Component {
 
     this.state = {
       sponsor: null,
+      notFound: null,
+      parsedIntro: null,
       tier: null
     }
   }
@@ -35,9 +44,21 @@ export const SponsorPageTemplate = class extends React.Component {
   componentWillMount() {
     const { sponsorId } = this.props;
     const sponsor = Sponsors.tierSponsors.map(t => t.sponsors.find(s => s.id === parseInt(sponsorId))).filter(e => e !== undefined)[0];
-    const tier = Sponsors.tierSponsors.find(t => t.sponsors.find(s => s === sponsor)).tier[0];
-    const tierData = SponsorsTiers.tiers.find(t => t.id === tier.value);
-    if (sponsor) this.setState({ sponsor: sponsor, tier: tierData });
+    if (!sponsor) {
+      this.setState({ notFound: true });
+    } else {
+      const tier = Sponsors.tierSponsors.find(t => t.sponsors.find(s => s === sponsor)).tier[0];
+      const tierData = SponsorsTiers.tiers.find(t => t.id === tier.value);
+      const parser = new MarkdownIt({
+        html: false,
+        breaks: true,
+        linkify: true,
+        xhtmlOut: true,
+        typographer: true,
+      });
+      const parsedIntro = parser.render(sponsor.intro);
+      if (sponsor) this.setState({ sponsor: sponsor, tier: tierData, parsedIntro: parsedIntro });
+    }
   }
 
   onEventChange = (ev) => {
@@ -47,26 +68,36 @@ export const SponsorPageTemplate = class extends React.Component {
     }
   }
 
+  onBadgeScan = () => {    
+    const { sponsor: { sponsorId } } = this.state;
+    this.props.scanBadge(sponsorId);
+  }
+
   render() {
     const { loggedUser, user } = this.props;
-    const { sponsor, tier } = this.state;
+    const { sponsor, tier, notFound, parsedIntro } = this.state;
     let { summit } = SummitObject;
-    const { disqus, liveEvent, schedule, banner } = tier.sponsorPage.widgets;    
 
-    if (!sponsor) {
-      return <HeroComponent title="Sponsor not found" redirectTo="/a/" />
+    if (notFound) {
+      return <HeroComponent title="Sponsor not found" redirectTo="/a/sponsors" />
     } else {
+      const { disqus, liveEvent, schedule, banner } = tier.sponsorPage.widgets;
       return (
         <>
-          <SponsorHeader sponsor={sponsor} tier={tier} />
+          <AttendanceTracker
+            sourceName="SPONSOR"
+            sourceId={sponsor.sponsorId}
+            summitId={summit.id}
+            apiBaseUrl={envVariables.SUMMIT_API_BASE_URL}
+            accessToken={loggedUser.accessToken}
+          />
+          <SponsorHeader sponsor={sponsor} tier={tier} scanBadge={() => this.onBadgeScan()} />
           <section className={`section px-0 ${tier.sponsorPage.sponsorTemplate === 'big-header' ? 'pt-5' : 'pt-0'} pb-0`}>
             {sponsor.sideImage &&
               <div className="columns mx-0 mt-0 mb-6">
                 <div className={`column is-half px-5 py-0 ${styles.introHalf}`}>
                   <h1>{sponsor.title}</h1>
-                  <span>
-                    {sponsor.intro}
-                  </span>
+                  <span dangerouslySetInnerHTML={{ __html: parsedIntro }} />
                 </div>
                 <div className="column is-half px-0 py-0">
                   <img src={sponsor.sideImage} className={styles.sideImage} />
@@ -78,15 +109,13 @@ export const SponsorPageTemplate = class extends React.Component {
                 {!sponsor.sideImage &&
                   <div className={styles.sponsorIntro}>
                     <h1>{sponsor.title}</h1>
-                    <span>
-                      {sponsor.intro}
-                    </span>
+                    <span dangerouslySetInnerHTML={{ __html: parsedIntro }} />
                   </div>
                 }
                 {liveEvent &&
                   <LiveEventWidgetComponent
                     onEventClick={(ev) => this.onEventChange(ev)}
-                    sponsorId={sponsor.id}
+                    sponsorId={sponsor.companyId}
                   />
                 }
                 {schedule &&
@@ -99,16 +128,16 @@ export const SponsorPageTemplate = class extends React.Component {
                     showNav={false}
                     showAllEvents={false}
                     eventCount={3}
-                    sponsorId={sponsor.id}
+                    sponsorId={sponsor.companyId}
                   />
                 }
-                {banner && <SponsorBanner />}
+                {banner && <SponsorBanner sponsor={sponsor} bgColor={sponsor.sponsorColor} scanBadge={() => this.onBadgeScan()} />}
               </div>
               <div className="column is-one-quarter px-5 py-0">
-                {!sponsor.chatLink &&
+                {sponsor.chatLink &&
                   <div className={styles.videoChatButton}>
                     <Link className={styles.link} to={sponsor.chatLink}>
-                      <button className={`${styles.button} button is-large`}>                        
+                      <button className={`${styles.button} button is-large`} style={{ backgroundColor: `${sponsor.sponsorColor}` }}>
                         <b>LIVE VIDEO CHAT!</b>
                       </button>
                     </Link>
@@ -137,7 +166,8 @@ const SponsorPage = (
     loggedUser,
     sponsorId,
     user,
-    getDisqusSSO
+    getDisqusSSO,
+    scanBadge
   }
 ) => {
 
@@ -148,6 +178,7 @@ const SponsorPage = (
         sponsorId={sponsorId}
         user={user}
         getDisqusSSO={getDisqusSSO}
+        scanBadge={scanBadge}
       />
     </Layout>
   )
@@ -158,6 +189,7 @@ SponsorPage.propTypes = {
   sponsorId: PropTypes.string,
   user: PropTypes.object,
   getDisqusSSO: PropTypes.func,
+  scanBadge: PropTypes.func,
 }
 
 SponsorPageTemplate.propTypes = {
@@ -165,6 +197,7 @@ SponsorPageTemplate.propTypes = {
   sponsorId: PropTypes.string,
   user: PropTypes.object,
   getDisqusSSO: PropTypes.func,
+  scanBadge: PropTypes.func,
 }
 
 const mapStateToProps = (
@@ -173,9 +206,8 @@ const mapStateToProps = (
     userState,
   }
 ) => ({
-
   loggedUser: loggedUserState,
   user: userState,
 })
 
-export default connect(mapStateToProps, {})(SponsorPage);
+export default connect(mapStateToProps, { scanBadge, getDisqusSSO })(SponsorPage);

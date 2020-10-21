@@ -71,6 +71,7 @@ collections:
               ]},
               {label: "Sponsor Hall Size", name: "expoHallSize", widget: select, required: true, options: [
                 { label: "Large Images", value: "large" },
+                { label: "Medium Images", value: "medium" },
                 { label: "Small Images", value: "small" },
               ]},
               {label: "In Event Template", name: "eventTemplate", widget: select, required: false, options: [
@@ -244,12 +245,14 @@ collections:
               {label: "Sponsors", name: "sponsors", widget: list, fields: [
                 {label: "Name", name: "name", widget: string },
                 {label: "External ID", name: "id", widget: number },
+                {label: "Sponsor ID", name: "sponsorId", widget: number, required: false },
+                {label: "Company ID", name: "companyId", widget: number, required: false },
                 {label: "Title", name: "title", widget: string, required: false },
-                {label: "Intro", name: "intro", widget: string, required: false },
+                {label: "Intro", name: "intro", widget: markdown, required: false },
                 {label: "Contact Email", name: "email", widget: string, required: false },
                 {label: "Live Video Chat Link", name: "chatLink", widget: string, required: false },
                 {label: "Marquee Text", name: "marquee", widget: string, required: false },
-                {label: "Marquee Color", name: "marqueeColor", widget: string, required: false },
+                {label: "Sponsor Color", name: "sponsorColor", widget: string, required: false },
                 {label: "Logo", name: "logo", widget: image },
                 {label: "External Link", name: "externalLink", widget: string, required: false },
                 {label: "Social Networks", name: "socialNetworks", widget: list, fields: [
@@ -262,7 +265,7 @@ collections:
                     {label: "Class Name", name: class_name, widget: hidden, default: "PresentationSlide"},
                     {label: "Name", name: name, widget: string},
                     {label: "Order", name: order, widget: number},
-                    {label: "Link", name: link, widget: string}
+                    {label: "Link", name: link, widget: file, default: "/documents/" }
                   ]},
                   {label: "Links", name: "links", widget: list, fields: [
                     {label: "Class Name", name: class_name, widget: hidden, default: "PresentationLink"},
@@ -274,7 +277,7 @@ collections:
                     {label: "Class Name", name: class_name, widget: hidden, default: "PresentationVideo"},
                     {label: "Name", name: name, widget: string},
                     {label: "Order", name: order, widget: number},
-                    {label: "Youtube ID", name: youtube_id, widget: string}
+                    {label: "Link", name: link, widget: string}
                   ]},
                 ]},
                 {label: "Ads", name: "columnAds", widget: list, required: false, fields: [
@@ -284,7 +287,8 @@ collections:
                 ]},
                 {label: "Uses Sponsor Page?", name: "usesSponsorPage", widget: boolean, required: false },
                 {label: "Header Image", name: "headerImage", widget: image, required: false },
-                {label: "Side Image", name: "pageImage", widget: image, required: false },
-                {label: "Video Header", name: "headerVideo", widget: file, required: false },
+                {label: "Mobile Header Image", name: "headerImageMobile", widget: image, required: false },
+                {label: "Side Image", name: "sideImage", widget: image, required: false },
+                {label: "Video Header", name: "headerVideo", widget: string, required: false },
               ]}              
             ]}

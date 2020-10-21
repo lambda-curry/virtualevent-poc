@@ -109,19 +109,31 @@ const SponsorComponent = ({ page }) => {
                   {sponsors.map((sponsor, index) => {
                     return (
                       sponsor.externalLink ?
-                        <div className={`${styles.imageBox} ${tier.expoHallSize === 'large' ? styles.large : styles.small}`} key={`${s.tier.label}-${index}`}>
+                        <div className={`
+                          ${styles.imageBox} 
+                          ${tier.expoHallSize === 'large' ? styles.large : tier.expoHallSize === 'medium' ? styles.medium : styles.small}`}
+                          key={`${s.tier.label}-${index}`}
+                        >
                           <Link to={sponsor.externalLink}>
                             <img src={sponsor.logo} alt={sponsor.name} />
                           </Link>
                         </div>
                         : sponsor.usesSponsorPage ?
-                          <div className={`${styles.imageBox} ${tier.expoHallSize === 'large' ? styles.large : styles.small}`} key={`${s.tier.label}-${index}`}>
+                          <div className={`
+                            ${styles.imageBox} 
+                            ${tier.expoHallSize === 'large' ? styles.large : tier.expoHallSize === 'medium' ? styles.medium : styles.small}`}
+                            key={`${s.tier.label}-${index}`}
+                          >
                             <Link to={`/a/sponsor/${getSponsorURL(sponsor.id, sponsor.name)}`}>
                               <img src={sponsor.logo} alt={sponsor.name} />
                             </Link>
                           </div>
                           :
-                          <div className={`${styles.imageBox} ${tier.expoHallSize === 'large' ? styles.large : styles.small}`} key={`${s.tier.label}-${index}`}>
+                          <div className={`
+                            ${styles.imageBox} 
+                            ${tier.expoHallSize === 'large' ? styles.large : tier.expoHallSize === 'medium' ? styles.medium : styles.small}`}
+                            key={`${s.tier.label}-${index}`}
+                          >
                             <img src={sponsor.logo} alt={sponsor.name} />
                           </div>
                     )
