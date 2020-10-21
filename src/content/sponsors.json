@@ -308,7 +308,14 @@
           "headerImage": "/img/phase_two_phasetwobanner_static1440x200px-03.png",
           "title": "Phase Two",
           "documents": {
-            "videos": [],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "order": 2,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/temp-os-virtual-sponsor-uploads/phase_two_Phase%20Two%20-%20Shorter720p.mp4",
+                "name": "Phase Two Video "
+              }
+            ],
             "slides": [
               {
                 "class_name": "PresentationSlide",
