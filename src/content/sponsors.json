@@ -182,22 +182,42 @@
           "chatLink": "",
           "title": "Unity",
           "documents": {
-            "slides": [],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/unity-cinematic-lighting-in-real-time-ebook.pdf",
+                "name": "Unity-Cinematic-Lighting-in-Real-Time-ebook",
+                "order": 3
+              }
+            ],
             "links": [
               {
                 "class_name": "PresentationLink",
                 "link": "https://unity.com/solutions/film-animation-cinematics",
                 "order": 1,
-                "name": "UNITY "
+                "name": "Unity: Film, animation and cinematics. "
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://unity.com/solutions/brands-and-creative-agencies",
                 "order": 2,
-                "name": "UNITY "
+                "name": "Unity: Brands and creative agencies."
               }
             ],
-            "videos": []
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://youtu.be/r0JDdXqdnww",
+                "name": "The future of filmmaking: Creators developing with a real-time workflow",
+                "order": 4
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://www.youtube.com/watch?v=0dQqUQ1sBso",
+                "name": "CGI Dreamworks Animation Studio Pipeline | CGMeetup",
+                "order": 5
+              }
+            ]
           },
           "columnAds": [
             {
