@@ -242,11 +242,23 @@
         {
           "marqueeColor": "#000000",
           "marquee": "",
+          "sponsorColor": "#000000",
           "logo": "/img/essentia_water_ew_logos_if_101320-.png",
           "name": "Essentia Water",
           "intro": "Essentia is supercharged ionized alkaline water. We’re here to put a flag in the ground and tell the world that a better you starts with a better water. Our mission is to inspire people everywhere to do the things that matter most to them.",
           "headerImage": "/img/essentia_water_ew_if_header_image_1440x200.png",
           "title": "Essentia Water",
+          "documents": {
+            "slides": [],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/temp-os-virtual-sponsor-uploads/essentia_water_IMAWBY_Anthem_30_2020_OLV_Rev%202%2016x9.mp4",
+                "name": "Essentia Water IMAWBY Anthem",
+                "order": 1
+              }
+            ]
+          },
           "columnAds": [
             {
               "image": "/img/essentia_water_ew_if_sponsor_ad_968x968.png",
