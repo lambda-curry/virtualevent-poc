@@ -113,7 +113,14 @@
               }
             ],
             "links": [],
-            "videos": []
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/temp-os-virtual-sponsor-uploads/z_by_hp_Wave_Intel_06_070920_1x1.mp4",
+                "name": "Z by HP commercial ",
+                "order": 5
+              }
+            ]
           },
           "columnAds": [
             {
