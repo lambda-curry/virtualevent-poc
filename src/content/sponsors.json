@@ -260,8 +260,14 @@
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/temp-os-virtual-sponsor-uploads/essentia_water_IMAWBY_Anthem_30_2020_OLV_Rev%202%2016x9.mp4",
-                "name": "Essentia Water IMAWBY Anthem",
+                "name": "Essentia Water Anthem",
                 "order": 1
+              },
+              {
+                "class_name": "PresentationVideo",
+                "order": 2,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/temp-os-virtual-sponsor-uploads/Essentia_water2_IMAWBY_Someone_Musician_2020_OLV%20REV%203%2016x9_1.mp4",
+                "name": "Essentia Water Someone Musician"
               }
             ]
           },
