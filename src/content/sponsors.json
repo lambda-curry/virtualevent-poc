@@ -115,7 +115,11 @@
             "links": [],
             "videos": []
           },
-          "columnAds": [],
+          "columnAds": [
+            {
+              "image": "/img/z_by_hp_sponsor-ad.png"
+            }
+          ],
           "id": 11,
           "email": "Stef.brower@hp.com",
           "usesSponsorPage": true
