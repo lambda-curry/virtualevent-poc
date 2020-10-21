@@ -339,7 +339,12 @@
           "name": "Intel ",
           "logo": "/img/boxed-logo-energyblue-3000px.png",
           "id": 14,
-          "title": "Intel "
+          "title": "Media & Entertainment - Intel® AI",
+          "sponsorColor": "#0068b5",
+          "intro": "# Simplify AI with Intel® Artificial Intelligence Technologies\n\nToday, implementing artificial intelligence is essential to better serving customers and unlocking new business value. 1 But deploying the infrastructure needed to support AI at scale remains a challenge for many enterprises, given the complexity of achieving high performance and accuracy - all while managing costs and utilization.\n\nWith Intel® architecture, you can deploy applications into production both quickly and cost-effectively. And with access to Intel’s global partner ecosystem, you’ll find expertise and solutions to suit your every AI need. **Learn more [here.](https://www.intel.com/content/www/us/en/artificial-intelligence/overview.html)**",
+          "documents": {
+            "links": []
+          }
         }
       ]
     }
