@@ -360,7 +360,8 @@
               }
             ]
           },
-          "id": 14
+          "id": 14,
+          "usesSponsorPage": true
         }
       ]
     }
