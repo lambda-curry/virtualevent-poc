@@ -60,6 +60,12 @@
           "id": 3,
           "email": "",
           "usesSponsorPage": true
+        },
+        {
+          "name": "Artist Gallery ",
+          "title": "Artist Gallery",
+          "id": 21,
+          "logo": "/img/if2020-artist-nav.png"
         }
       ]
     },
@@ -340,7 +346,7 @@
           "name": "Outfront ",
           "intro": " OUTFRONT is embedded into the fabric of our cities and communities and trusted by the millions who engage with our media every day. We provide an integrated and targeted platform to connect brands to their desired audiences, as they live their lives through one of the largest and most diverse sets of billboard, transit, and mobile assets in North America. We are famous for incomparable impact and creativity of our medium, which drives engagement, fame, and trust. Our technology platform is fundamentally changing the ways advertisers engage audiences on-the-go.",
           "headerImage": "/img/banner-4.png",
-          "title": "Outfront",
+          "title": "Outfront - Presenting Media Partner",
           "documents": {
             "videos": [
               {
