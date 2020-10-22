@@ -81,7 +81,7 @@ export const SponsorPageTemplate = class extends React.Component {
     if (notFound) {
       return <HeroComponent title="Sponsor not found" redirectTo="/a/sponsors" />
     } else {
-      const { disqus, liveEvent, schedule, banner } = tier.sponsorPage.widgets;
+      const { disqus, liveEvent, schedule, banner } = tier.sponsorPage.widgets || {};
       return (
         <>
           <AttendanceTracker

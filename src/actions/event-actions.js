@@ -26,7 +26,7 @@ export const getEventById = (eventId) => (dispatch, getState) => {
 
   let params = {
       access_token: accessToken,      
-      expand: 'type,track,location,location.venue,location.floor,speakers,moderator,sponsors'
+      expand: 'track,location,location.venue,location.floor,speakers,slides,links,videos'
   };
 
   return getRequest(
