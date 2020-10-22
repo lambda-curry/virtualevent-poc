@@ -43,13 +43,14 @@
     },
     {
       "id": "tier-S_ykYbFqh",
-      "name": "Producer ",
+      "name": "Producer",
       "sponsorPage": {
         "sponsorTemplate": "small-header"
       },
       "expoHallSize": "small",
       "lobby": {
-        "lobbyTemplate": "small-images"
+        "lobbyTemplate": "small-images",
+        "display": false
       }
     },
     {
