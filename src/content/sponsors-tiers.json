@@ -50,7 +50,7 @@
       "expoHallSize": "small",
       "lobby": {
         "lobbyTemplate": "small-images",
-        "display": false
+        "display": true
       }
     },
     {
