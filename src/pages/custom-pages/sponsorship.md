@@ -2,7 +2,7 @@
 templateKey: custom-page
 title: Sponsorship
 ---
-Interested in sponsoring OCP TECH WEEK? <a target="_blank" rel="noopener noreferrer" href="https://www.dropbox.com/s/017qgx00smbvl8d/OCP20TW-Sponsorship-Opportunities.pdf?dl=0">Click here</a> to view the sponsorship options.
+Interested in sponsoring OCP TECH WEEK? <a target="_blank" rel="noopener noreferrer" href="https://146a55aca6f00848c565-a7635525d40ac1c70300198708936b4e.ssl.cf1.rackcdn.com/images/b44c7f86a06deece9aee9c4cf4e67b18ad82d0c0.pdf">Click here</a> to view the sponsorship options.
 
 ![](/img/ocp20tw-sponsorship-opportunities_page_1.png)
 
