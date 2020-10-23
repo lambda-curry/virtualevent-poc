@@ -2,7 +2,7 @@
   "tiers": [
     {
       "id": "tier-cYGYq5-ae",
-      "name": "Visti Presenting",
+      "name": "Visit Presenting",
       "badge": "",
       "lobby": {
         "lobbyTemplate": "big-images",
@@ -43,7 +43,7 @@
     },
     {
       "id": "tier-S_ykYbFqh",
-      "name": "Producer",
+      "name": "Visit Producer",
       "sponsorPage": {
         "sponsorTemplate": "small-header"
       },
@@ -55,7 +55,7 @@
     },
     {
       "id": "tier-DHcI3dWGk",
-      "name": "Featured",
+      "name": "Visit Featured",
       "badge": "",
       "lobby": {
         "lobbyTemplate": "big-images",
