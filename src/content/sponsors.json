@@ -136,13 +136,13 @@
               {
                 "class_name": "PresentationLink",
                 "name": "Z by HP YouTube Channel ",
-                "link": "www.youtube.com/zbyhp",
+                "link": "https://www.youtube.com/zbyhp",
                 "order": 1
               },
               {
                 "class_name": "PresentationLink",
                 "name": "Z by HP on Instagram ",
-                "link": "www.instagram.com/zbyhp",
+                "link": "https://www.instagram.com/zbyhp/",
                 "order": 2
               }
             ],
