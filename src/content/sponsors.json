@@ -13,9 +13,10 @@
           "marquee": "",
           "sideImage": "",
           "externalLink": "",
+          "sponsorColor": "#cd0a7c",
           "logo": "/img/if2020-sponsor-capitol.png",
           "name": "Capitol Royale",
-          "intro": "",
+          "intro": "Every Thursday from October 28 to December 10, **Capitol Royale** will roll out unique music-related programming—new content drops, industry-leading conversations, emerging technology, etc. Check back weekly to take part in a **virtual** **Capitol Records Tower experience, where guests can explore 360 navigable versions of the iconic Hollywood landmark’s lobby, rooftop, and surrounding lot**—complete withexclusive content live and on-demand.",
           "headerVideo": "",
           "headerImage": "",
           "socialNetworks": [
@@ -42,7 +43,7 @@
           "documents": {
             "slides": [
               {
-                "name": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html",
+                "name": "External Link",
                 "order": 2,
                 "class_name": "PresentationSlide",
                 "link": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html"
@@ -50,7 +51,7 @@
             ],
             "links": [
               {
-                "name": "http://relaxdiego.com/2017/05/swampup-2017-slides.html",
+                "name": "Presentation Link ",
                 "order": 1,
                 "class_name": "PresentationLink",
                 "link": "http://relaxdiego.com/2017/05/swampup-2017-slides.html"
@@ -58,9 +59,16 @@
             ],
             "videos": []
           },
-          "columnAds": [],
+          "columnAds": [
+            {
+              "image": "/img/if2020-marketing-space1.png"
+            },
+            {
+              "image": "/img/if2020-marketing-space2.png"
+            }
+          ],
           "id": 3,
-          "email": "",
+          "email": "umgdigitalbusiness@umusic.com",
           "usesSponsorPage": true
         },
         {
