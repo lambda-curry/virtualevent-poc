@@ -136,7 +136,7 @@
               {
                 "class_name": "PresentationLink",
                 "name": "Z by HP YouTube Channel ",
-                "link": "YouTube: www.youtube.com/zbyhp",
+                "link": "www.youtube.com/zbyhp",
                 "order": 1
               },
               {
@@ -178,49 +178,55 @@
             "links": [
               {
                 "class_name": "PresentationLink",
-                "link": "https://twitter.com/MSCloud https://www.linkedin.com/showcase/microsoft-cloud-platform/",
+                "link": "https://twitter.com/MSCloud",
                 "name": "Follow us on Twitter ",
                 "order": 1
-              }
-            ],
-            "videos": [
+              },
               {
-                "class_name": "PresentationVideo",
-                "name": "Intelligent Media and Entertainment",
-                "link": "https://www.microsoft.com/en-us/industry/media-entertainment",
+                "class_name": "PresentationLink",
+                "name": "Microsoft on Linkedin ",
+                "link": "https://www.linkedin.com/showcase/microsoft-cloud-platform/",
                 "order": 2
               },
               {
-                "class_name": "PresentationVideo",
-                "name": "Accelerate content production",
-                "link": " https://www.microsoft.com/en-us/industry/media-entertainment/accelerate-content-production",
+                "class_name": "PresentationLink",
+                "name": "Intelligent Media and Entertainment",
+                "link": "https://www.microsoft.com/en-us/industry/media-entertainment",
                 "order": 3
               },
               {
-                "class_name": "PresentationVideo",
-                "name": "Modernize collaboration",
-                "link": "https://www.microsoft.com/en-us/industry/media-entertainment/modernize-collaboration",
-                "order": 4
+                "class_name": "PresentationLink",
+                "name": "Accelerate content production",
+                "order": 4,
+                "link": " https://www.microsoft.com/en-us/industry/media-entertainment/accelerate-content-production"
               },
               {
-                "class_name": "PresentationVideo",
-                "name": "Optimize content delivery",
-                "link": "https://www.microsoft.com/en-us/industry/media-entertainment/optimize-content-delivery",
+                "class_name": "PresentationLink",
+                "name": "Modernize collaboration",
+                "link": "https://www.microsoft.com/en-us/industry/media-entertainment/modernize-collaboration",
                 "order": 5
               },
               {
-                "class_name": "PresentationVideo",
-                "name": "Know your audience",
-                "link": " https://www.microsoft.com/en-us/industry/media-entertainment/know-your-audience",
+                "class_name": "PresentationLink",
+                "name": "Optimize content delivery",
+                "link": "https://www.microsoft.com/en-us/industry/media-entertainment/optimize-content-delivery",
                 "order": 6
               },
               {
-                "class_name": "PresentationVideo",
-                "link": "https://www.microsoft.com/en-us/industry/media-entertainment/monetize-content-and-experiences",
+                "class_name": "PresentationLink",
+                "name": "Know your audience",
+                "order": 7,
+                "link": " https://www.microsoft.com/en-us/industry/media-entertainment/know-your-audience"
+              },
+              {
+                "class_name": "PresentationLink",
                 "name": "Monetize content and experiences",
-                "order": 7
+                "order": 8,
+                "link": "https://www.microsoft.com/en-us/industry/media-entertainment/monetize-content-and-experiences"
               }
-            ]
+            ],
+            "videos": [],
+            "slides": []
           },
           "columnAds": [
             {
