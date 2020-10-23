@@ -283,26 +283,26 @@
                 "class_name": "PresentationLink",
                 "link": "https://unity.com/solutions/film-animation-cinematics",
                 "order": 1,
-                "name": "Unity: Film, animation and cinematics. "
+                "name": "Unity for Film & Animation"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://unity.com/solutions/brands-and-creative-agencies",
                 "order": 2,
-                "name": "Unity: Brands and creative agencies."
+                "name": "Unity for Brands and Creative Agencies"
               }
             ],
             "videos": [
               {
                 "class_name": "PresentationVideo",
                 "link": "https://youtu.be/r0JDdXqdnww",
-                "name": "The future of filmmaking: Creators developing with a real-time workflow",
+                "name": "The Future of Filmmaking ",
                 "order": 5
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://www.youtube.com/watch?v=0dQqUQ1sBso",
-                "name": "CGI Dreamworks Animation Studio Pipeline | CGMeetup",
+                "name": "Capture your audience’s imagination with immersive experiences",
                 "order": 6
               }
             ]
