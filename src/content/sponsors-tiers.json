@@ -2,7 +2,7 @@
   "tiers": [
     {
       "id": "tier-cYGYq5-ae",
-      "name": "Presenting",
+      "name": "Visti Presenting",
       "badge": "",
       "lobby": {
         "lobbyTemplate": "big-images",
@@ -23,7 +23,7 @@
     },
     {
       "id": "tier-U_wEwGX8a",
-      "name": "Co-Presenting",
+      "name": "Visit Co-Presenting",
       "badge": "",
       "lobby": {
         "lobbyTemplate": "small-images",
