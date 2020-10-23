@@ -67,7 +67,9 @@
           "name": "Art + Tech Gallery ",
           "title": "Art + Tech Gallery ",
           "id": 21,
-          "logo": "/img/if2020-artist-nav.png"
+          "logo": "/img/if2020-artist-nav.png",
+          "sponsorId": 21,
+          "companyId": 18
         }
       ]
     },
@@ -319,7 +321,9 @@
           "name": "Essentia Water",
           "intro": "Essentia is supercharged ionized alkaline water. We’re here to put a flag in the ground and tell the world that a better you starts with a better water. Our mission is to inspire people everywhere to do the things that matter most to them.",
           "headerImage": "/img/essentia_water_ew_if_header_image_1440x200.png",
+          "sponsorId": 15,
           "title": "Essentia Water",
+          "companyId": 13,
           "documents": {
             "slides": [],
             "videos": [
@@ -354,7 +358,9 @@
           "name": "Outfront ",
           "intro": " OUTFRONT is embedded into the fabric of our cities and communities and trusted by the millions who engage with our media every day. We provide an integrated and targeted platform to connect brands to their desired audiences, as they live their lives through one of the largest and most diverse sets of billboard, transit, and mobile assets in North America. We are famous for incomparable impact and creativity of our medium, which drives engagement, fame, and trust. Our technology platform is fundamentally changing the ways advertisers engage audiences on-the-go.",
           "headerImage": "/img/banner-4.png",
+          "sponsorId": 18,
           "title": "Outfront - Presenting Media Partner of Infinity Festival 2020",
+          "companyId": 16,
           "documents": {
             "videos": [
               {
@@ -385,7 +391,9 @@
           "name": "Phase Two",
           "intro": "Phase Two in Culver City, CA is a flexible workspace curated around talented entrepreneurs and businesses working in technology, media and entertainment. We help people and businesses reach their next phase of growth by providing creative office solutions, personalized hospitality, and business support.",
           "headerImage": "/img/phase_two_phasetwobanner_static1440x200px-03.png",
+          "sponsorId": 16,
           "title": "Phase Two",
+          "companyId": 12,
           "documents": {
             "videos": [
               {
@@ -421,7 +429,9 @@
           "name": "Intel ",
           "intro": "Intel's Our Purpose\n\n**We create world-changing technology that enriches the lives of every person on earth.**\\\nWe are inspired to:\n\n* Drive innovation that makes the world safer, builds healthy and vibrant communities, and increases productivity.\n* Harness our reach around the globe to better society, business, and the planet.\n* Push ourselves and our industry peers to be more responsible, inclusive, and sustainable.\n\nWe have big ambitions, and a growing sense of urgency to work with others and address world challenges no one can tackle alone.\n\n**Simplify AI with Intel® Artificial Intelligence Technologies**\n\nToday, implementing artificial intelligence is essential to better serving customers and unlocking new business value. 1 But deploying the infrastructure needed to support AI at scale remains a challenge for many enterprises, given the complexity of achieving high performance and accuracy - all while managing costs and utilization.\n\nWith Intel® architecture, you can deploy applications into production both quickly and cost-effectively. And with access to Intel’s global partner ecosystem, you’ll find expertise and solutions to suit your every AI need. Learn more [here](https://www.intel.com/content/www/us/en/artificial-intelligence/overview.html).",
           "headerImage": "/img/if2020-intel-header-1440x200.png",
+          "sponsorId": 14,
           "title": "Media & Entertainment - Intel® AI",
+          "companyId": 1,
           "documents": {
             "links": [
               {
