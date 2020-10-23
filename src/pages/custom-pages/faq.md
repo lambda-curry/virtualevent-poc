@@ -43,8 +43,8 @@ A. Your basic FNid information will become your attendee profile.
 
 A. The information you provide as a speaker/presenter through FNspeaker.mgmt will be visible to attendees. If you are a speaker, you will have two profiles for an event.
 
-* Speaker Profile: Information specific to your speaking opportunity (your bio, etc.)
-* FNid Attendee Profile: Only your name is shared through the chat feature. If you opt-in, additional information is shared with sponsors.
+* **Speaker Profile:** Information specific to your speaking opportunity (your bio, etc.)
+* **FNid Attendee Profile:** Only your name is shared through the chat feature. If you opt-in, additional information is shared with sponsors.
 
 **—**
 
@@ -87,9 +87,9 @@ A. If you registered with your FNid, you can simply log in using those credentia
 
 **Q. I’m looking for my event order. Where can I find this?**
 
-1. You can access your order from the Order Confirmation email you received at the address you provided during the registration process.
+A. You can access your order from the Order Confirmation email you received at the address you provided during the registration process.
 
-* If you don’t remember receiving your Order Confirmation email, please check your Junk folder for an email from registration@fntech.com
+* If you don’t remember receiving your Order Confirmation email, please check your Junk folder for an email from [registration@fntech.com](<>)
 * Alternatively, you can find your ticket in the “My Tickets” page in FNregistration. You may use your FNid to log in here <https://registration.fntech.com/a/member/orders>
 * For additional FNregistration support, please email [registration@fntech.com](<>)
 
