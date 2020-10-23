@@ -36,7 +36,9 @@
             }
           ],
           "chatLink": "",
-          "title": "",
+          "sponsorId": 3,
+          "title": "Capitol Royale",
+          "companyId": 14,
           "documents": {
             "slides": [
               {
@@ -90,7 +92,9 @@
           "headerImage": "",
           "socialNetworks": [],
           "chatLink": "",
+          "sponsorId": 11,
           "title": "Z by HP",
+          "companyId": 8,
           "documents": {
             "slides": [
               {
@@ -157,7 +161,9 @@
           "name": "Microsoft",
           "intro": "Microsoft empowers media & entertainment organizations to achieve more through a trusted and secure platform supported by a comprehensive partner ecosystem with industry-leading solutions for content production, collaboration, content delivery, audience insights, and personalized experiences.",
           "headerImage": "/img/if2020-microsoft-content_creation-v2.png",
+          "sponsorId": 13,
           "title": "Microsoft",
+          "companyId": 10,
           "documents": {
             "links": [
               {
@@ -238,7 +244,9 @@
           "headerImage": "/img/infinity-festival-welcome-image.jpg",
           "socialNetworks": [],
           "chatLink": "",
+          "sponsorId": 12,
           "title": "Unity",
+          "companyId": 9,
           "documents": {
             "slides": [
               {
