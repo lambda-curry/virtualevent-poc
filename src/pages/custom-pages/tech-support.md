@@ -6,4 +6,4 @@ For FNid or FNvirtual event platform tech support, please email the FNTECH suppo
 
 –
 
-Have a registration question? Contact [registration@fntech.com](mailto:registration@fntech.com)
+For registration questions, please email the FNTECH registration team at [registration@fntech.com. ](mailto:registration@fntech.com)Standard hours are from 8am to 6pm (PDT), Monday through Friday.
