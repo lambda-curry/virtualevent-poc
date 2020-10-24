@@ -6,18 +6,18 @@
       "display": false
     },
     {
-      "title": "About Us",
-      "link": "/about-event/",
-      "display": true
-    },
-    {
       "title": "Schedule",
-      "link": "/a/schedule",
+      "link": "/schedule",
       "display": true
     },
     {
       "title": "My Schedule",
       "link": "/a/my-schedule",
+      "display": true
+    },
+    {
+      "title": "About Us",
+      "link": "/about-event/",
       "display": true
     },
     {
