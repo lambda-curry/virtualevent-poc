@@ -9,9 +9,9 @@
     }
   },
   "homeHero": {
-    "title": "",
-    "subTitle": "",
-    "image": "",
+    "title": "OCP TECH WEEK",
+    "subTitle": "A VIRTUAL EVENT",
+    "image": "/img/ocp-tech-week-marketing-header-icons-only.png",
     "copy": ""
   }
 }
