@@ -30,27 +30,28 @@
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.facebook.com/CapitolMusic360/",
-                "order": 1,
+                "order": 2,
                 "name": "Follow us on Facebook "
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://twitter.com/capitol360",
                 "name": "Follow us on Twitter ",
-                "order": 2
+                "order": 3
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.instagram.com/capitolmusic360/",
                 "name": "Follow up on Instagram ",
-                "order": 3
+                "order": 4
               }
             ],
             "videos": []
           },
           "columnAds": [
             {
-              "image": "/img/if2020-capitolroyale-1.png"
+              "image": "/img/if2020-capitolroyale-1.png",
+              "link": ""
             }
           ],
           "id": 3,
@@ -72,7 +73,6 @@
             "videos": []
           },
           "id": 21,
-          "email": "adam@infinityfestival.com",
           "usesSponsorPage": true
         }
       ]
