@@ -69,12 +69,16 @@
           "usesSponsorPage": true
         },
         {
-          "name": "Art + Tech Gallery ",
-          "title": "Art + Tech Gallery ",
-          "id": 21,
+          "sponsorColor": "#ff00a3",
           "logo": "/img/if2020-artist-nav.png",
+          "name": "Art + Tech Gallery ",
+          "intro": "Art is made possible through technology. From the invention of the paintbrush to computer-programmed augmented reality, artists have always used technology to translate a creative thought into a physical work of\n art. The ART+TECH Exhibition at the Infinity Festival brings together the incredible resources and advanced technology with the equally incredible imagination and talent of today’s cutting-edge artists.\n\nART+TECH includes internationally known and local artists working in mediums that include VR, AR, 3D printing, digital photography and light sculpture. This compelling exhibit will run for the duration of the festival and is included with admission.",
+          "headerImage": "/img/if2020-art-tech-header.png",
+          "headerImageMobile": "/img/if2020-art-tech-header.png",
           "sponsorId": 21,
-          "companyId": 18
+          "title": "Art + Tech Gallery ",
+          "companyId": 18,
+          "id": 21
         }
       ]
     },
