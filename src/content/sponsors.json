@@ -10,7 +10,7 @@
       "sponsors": [
         {
           "marqueeColor": "",
-          "marquee": "",
+          "marquee": "Check back every Thursday to take part in a 360 virtual tour of the Capitol Tower with new content drops, industry-leading conversations, emerging technology, etc.",
           "sideImage": "",
           "externalLink": "",
           "sponsorColor": "#cd0a7c",
@@ -22,17 +22,17 @@
           "socialNetworks": [
             {
               "icon": "fa-facebook",
-              "link": "/footer-content/",
+              "link": "https://www.facebook.com/CapitolMusic360/",
               "display": true
             },
             {
               "icon": "fa-twitter",
-              "link": "/footer-content/",
+              "link": "https://twitter.com/capitol360",
               "display": true
             },
             {
-              "icon": "fa-linkedin",
-              "link": "/footer-content/",
+              "icon": "fa-instagram",
+              "link": "https://www.instagram.com/capitolmusic360/",
               "display": true
             }
           ],
@@ -43,7 +43,7 @@
           "documents": {
             "slides": [
               {
-                "name": "External Link",
+                "name": "Example External Link",
                 "order": 2,
                 "class_name": "PresentationSlide",
                 "link": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html"
@@ -51,7 +51,7 @@
             ],
             "links": [
               {
-                "name": "Presentation Link ",
+                "name": "Example Download Link ",
                 "order": 1,
                 "class_name": "PresentationLink",
                 "link": "http://relaxdiego.com/2017/05/swampup-2017-slides.html"
@@ -62,9 +62,6 @@
           "columnAds": [
             {
               "image": "/img/if2020-capitolroyale-1.png"
-            },
-            {
-              "image": "/img/if2020-marketing-space2.png"
             }
           ],
           "id": 3,
