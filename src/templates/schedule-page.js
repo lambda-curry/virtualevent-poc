@@ -8,6 +8,8 @@ import ScheduleLiteComponent from "../components/ScheduleLiteComponent";
 import { PHASES } from '../utils/phasesUtils'
 
 import SummitObject from '../content/summit.json'
+import envVariables from "../utils/envVariables";
+import {AttendanceTracker} from "openstack-uicore-foundation/lib/components";
 
 const SchedulePage = ({summit_phase, isLoggedUser, loggedUser, mySchedule}) => {
 
@@ -39,6 +41,11 @@ const SchedulePage = ({summit_phase, isLoggedUser, loggedUser, mySchedule}) => {
           showDetails={true}
         />
       </div>
+      <AttendanceTracker
+          summitId={summit.id}
+          apiBaseUrl={envVariables.SUMMIT_API_BASE_URL}
+          accessToken={loggedUser.accessToken}
+      />
     </Layout>
   )
 }

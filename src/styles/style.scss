@@ -186,6 +186,7 @@ h2 {
   padding-left: 0px;
   /* gutter size */
   background-clip: padding-box;
+
   .slick-slider {
     margin-bottom: -5px;
   }
@@ -198,6 +199,19 @@ h2 {
 
   img {
     width: 100%;
+  }
+}
+
+.sponsor-carousel {
+  .slick-track {
+    display: flex;
+
+    .slick-slide {
+      display: flex;
+      height: auto;
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
 
@@ -358,6 +372,12 @@ h2 {
     margin-bottom: 0;
     height: auto;
   }
+}
+
+.sponsors-header {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .rocket-container {

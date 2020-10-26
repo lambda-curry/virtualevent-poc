@@ -19,6 +19,8 @@ import SponsorComponent from '../components/SponsorComponent'
 import SimpleChatWidgetComponent from '../components/SimpleChatWidgetComponent'
 
 import { getDisqusSSO, getUserProfile } from '../actions/user-actions'
+import envVariables from "../utils/envVariables";
+import {AttendanceTracker} from "openstack-uicore-foundation/lib/components";
 
 export const HomePageTemplate = class extends React.Component {
 
@@ -56,6 +58,7 @@ export const HomePageTemplate = class extends React.Component {
               <h2><b>Today's Sessions</b></h2>
               <LiveEventWidgetComponent
                 onEventClick={(ev) => this.onEventChange(ev)}
+                style={{marginBottom: '15px'}}
               />
               <DisqusComponent
                 page="lobby"
@@ -131,7 +134,13 @@ const HomePage = (
 ) => {
 
   return (
-    <Layout marketing={true}>
+    <Layout>
+      <AttendanceTracker
+          sourceName="LOBBY"
+          summitId={SummitObject.summit.id}
+          apiBaseUrl={envVariables.SUMMIT_API_BASE_URL}
+          accessToken={loggedUser.accessToken}
+      />
       <OrchestedTemplate
         loggedUser={loggedUser}
         user={user}

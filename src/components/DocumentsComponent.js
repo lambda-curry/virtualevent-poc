@@ -29,7 +29,7 @@ const DocumentsComponent = ({ event, sponsor }) => {
           <hr />
           {sortedMaterials.map((material, index) => {
               return (
-                <React.Fragment>
+                <React.Fragment key={index}>
                   {material.class_name === 'PresentationSlide' ?
                     <div className={`${styles.documentColumn} columns is-mobile is-vcentered`} key={index}>
                       <div className="column is-2 is-offset-1">
@@ -49,7 +49,7 @@ const DocumentsComponent = ({ event, sponsor }) => {
                         <i className={`fa ${material.class_name === 'PresentationVideo' ? 'fa-video-camera' : 'fa-link'} icon is-large`}></i>
                       </div>
                       <div className={`column is-8 ${styles.documentName}`}>
-                        <a target="_blank" rel="noreferrer" href={material.class_name === 'PresentationVideo' ? `https://www.youtube.com/watch?v=${material.youtube_id}` : material.link}>
+                        <a target="_blank" rel="noreferrer" href={material.link}>
                           <span>{material.name}</span>
                         </a>
                       </div>

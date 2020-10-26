@@ -22,6 +22,8 @@ import SummitObject from '../content/summit.json'
 import { getDisqusSSO } from '../actions/user-actions'
 
 import styles from "../styles/marketing.module.scss"
+import envVariables from "../utils/envVariables";
+import {AttendanceTracker} from "openstack-uicore-foundation/lib/components";
 
 
 export const MarketingPageTemplate = class extends React.Component {
@@ -58,6 +60,11 @@ export const MarketingPageTemplate = class extends React.Component {
 
     return (
       <React.Fragment>
+        <AttendanceTracker
+            summitId={summit.id}
+            apiBaseUrl={envVariables.SUMMIT_API_BASE_URL}
+            accessToken={loggedUser.accessToken}
+        />
         <OCPHeroComponent summit={summit} isLoggedUser={isLoggedUser} location={location} />
         {summit && <Countdown summit={summit} />}
         <div className="columns" id="marketing-columns">
@@ -111,10 +118,10 @@ export const MarketingPageTemplate = class extends React.Component {
                   )
                 } else if (item.images && item.images.length > 1) {
                   return (
-                    <Slider {...sliderSettings}>
-                      {item.images.map((img, index) => {
+                    <Slider {...sliderSettings} key={index}>
+                      {item.images.map((img, indexSlide) => {
                         return (
-                          <div className={styles.imageSlider} key={index}>
+                          <div className={styles.imageSlider} key={indexSlide}>
                             {img.link ?
                               <Link to={img.link}>
                                 <img src={img.image} />

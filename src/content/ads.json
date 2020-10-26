@@ -2,91 +2,67 @@
   "ads": [
     {
       "section": "lobby",
-      "columns": [
+      "columnAds": [
         {
-          "column": "left",
-          "columnAds": [
-            {
-              "image": "/img/ocp20tw-sponsorad-mock_092420.png",
-              "button": {
-                "link": "/virtual-booth/",
-                "text": "Button Link"
-              },
-              "id": ""
-            },
-            {
-              "image": "/img/ocp20tw-sponsorad-mock_092420.png",
-              "button": {
-                "link": "/virtual-booth/",
-                "text": "Button Link"
-              }
-            },
-            {
-              "image": "/img/ocp20tw-sponsorad-mock-2_092420.png",
-              "button": {
-                "text": "Button Link",
-                "link": "/virtual-booth/"
-              }
-            },
-            {
-              "image": "/img/ocp20tw-sponsorad-mock_carousel.png",
-              "button": {
-                "text": "Button Link",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/temp-os-virtual-sponsor-uploads/Essentia_water2_IMAWBY_Someone_Musician_2020_OLV%20REV%203%2016x9_1.mp4"
-              }
-            }
-          ]
+          "image": "/img/ocp20tw-sponsorad-mock_092420.png",
+          "button": {
+            "link": "/virtual-booth/",
+            "text": "Button Link"
+          },
+          "column": "left"
         },
         {
-          "column": "center",
-          "columnAds": []
+          "image": "/img/ocp20tw-sponsorad-mock_092420.png",
+          "button": {
+            "link": "/virtual-booth/",
+            "text": "Button Link"
+          },
+          "column": "left"
         },
         {
-          "column": "right",
-          "columnAds": [
-            {
-              "image": "/img/ocp20tw-sponsorad-mock_092420.png",
-              "button": {
-                "text": "Button Link",
-                "link": "/virtual-booth/"
-              },
-              "id": null
-            },
-            {
-              "image": "/img/ocp20tw-sponsorad-mock_092420.png",
-              "button": {
-                "text": "Button Link",
-                "link": "/virtual-booth/"
-              },
-              "id": null
-            }
-          ]
+          "image": "/img/ocp20tw-sponsorad-mock-2_092420.png",
+          "button": {
+            "text": "Button Link",
+            "link": "/virtual-booth/"
+          },
+          "column": "left"
+        },
+        {
+          "image": "/img/ocp20tw-sponsorad-mock_carousel.png",
+          "button": {
+            "text": "Button Link",
+            "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/temp-os-virtual-sponsor-uploads/Essentia_water2_IMAWBY_Someone_Musician_2020_OLV%20REV%203%2016x9_1.mp4"
+          },
+          "column": "left"
+        },
+        {
+          "image": "/img/ocp20tw-sponsorad-mock_092420.png",
+          "button": {
+            "text": "Button Link",
+            "link": "/virtual-booth/"
+          },
+          "column": "right"
+        },
+        {
+          "image": "/img/ocp20tw-sponsorad-mock_092420.png",
+          "button": {
+            "text": "Button Link",
+            "link": "/virtual-booth/"
+          },
+          "column": "right"
         }
       ]
     },
     {
       "section": "event",
-      "columns": [
+      "columnAds": [
         {
-          "column": "left",
-          "columnAds": [
-            {
-              "image": "/img/ocp20tw-sponsorad-mock-2_092420.png",
-              "button": {
-                "text": "Learn more",
-                "link": "/virtual-booth/"
-              },
-              "id": null
-            }
-          ]
-        },
-        {
-          "column": "center",
-          "columnAds": []
-        },
-        {
-          "column": "right",
-          "columnAds": []
+          "image": "/img/ocp20tw-sponsorad-mock-2_092420.png",
+          "button": {
+            "text": "Learn more",
+            "link": "/virtual-booth/"
+          },
+          "column": "left"
         }
       ]
     }

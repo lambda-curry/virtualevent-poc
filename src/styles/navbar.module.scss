@@ -135,3 +135,13 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .navbar {  
+    .navbar-brand {    
+      img {
+        height: 1.75rem;
+      }
+    }
+  }
+}

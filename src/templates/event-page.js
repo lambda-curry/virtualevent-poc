@@ -15,6 +15,7 @@ import VideoComponent from '../components/VideoComponent'
 import TalkComponent from '../components/TalkComponent'
 import DocumentsComponent from '../components/DocumentsComponent'
 import EventHeroComponent from '../components/EventHeroComponent'
+import NoTalkComponent from '../components/NoTalkComponent'
 import HeroComponent from '../components/HeroComponent'
 import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
 
@@ -115,13 +116,15 @@ export const EventPageTemplate = class extends React.Component {
                     }
                   </div>
                   :
-                  <div className="column is-three-quarters px-0 py-0 is-hidden-mobile">
-                    <TalkComponent eventStarted={eventStarted} event={event} summit={summit} noStream={true} />
-                  </div>
+                  <>
+                    <div className="column is-three-quarters px-0 py-0 is-hidden-mobile">
+                      <NoTalkComponent eventStarted={eventStarted} event={event} summit={summit} />
+                    </div>
+                    <div className="column is-hidden-tablet">
+                      <NoTalkComponent eventStarted={eventStarted} event={event} summit={summit} />
+                    </div>
+                  </>
                 }
-                <div className="column is-hidden-tablet">
-                  <TalkComponent eventStarted={eventStarted} event={event} summit={summit} noStream={true} />
-                </div>
                 <div className="column" style={{ position: 'relative', borderBottom: '1px solid #d3d3d3' }}>
                   <DisqusComponent disqusSSO={user.disqusSSO} event={event} summit={summit} title="Public Conversation" />
                 </div>
@@ -131,7 +134,7 @@ export const EventPageTemplate = class extends React.Component {
               <section className="section px-0 pt-5 pb-0">
                 <div className="columns mx-0 my-0 is-multiline">
                   <div className="column px-0 py-0 is-three-quarters is-hidden-mobile">
-                    <TalkComponent eventStarted={eventStarted} event={event} summit={summit} noStream={true} />
+                    <TalkComponent eventStarted={eventStarted} event={event} summit={summit} />
                   </div>
                   <DocumentsComponent event={event} />
                   {event.etherpad_link &&
@@ -186,7 +189,8 @@ const EventPage = (
       {event && event.id &&
         <AttendanceTracker
           key={`att-tracker-${event.id}`}
-          eventId={event.id}
+          sourceId={event.id}
+          sourceName="EVENT"
           summitId={SummitObject.summit.id}
           apiBaseUrl={envVariables.SUMMIT_API_BASE_URL}
           accessToken={loggedUser.accessToken}
