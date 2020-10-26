@@ -69,6 +69,7 @@
           "usesSponsorPage": true
         },
         {
+          "marquee": "Check back every Thursday to take part in a 360 virtual tour of the Capitol Tower with new content drops, industry-leading conversations, emerging technology, etc.",
           "sponsorColor": "#ff00a3",
           "logo": "/img/if2020-artist-nav.png",
           "name": "ART+TECH Gallery ",
@@ -78,7 +79,66 @@
           "sponsorId": 21,
           "title": "ART+TECH Gallery ",
           "companyId": 18,
-          "id": 21
+          "documents": {
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "Danielle Parsons",
+                "order": 1,
+                "link": "https://infinityfestival.com"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "order": 2,
+                "name": "Djeneba Aduayom",
+                "link": "https://infinityfestival.com"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "order": 3,
+                "name": "Esteban Diacono",
+                "link": "https://infinityfestival.com"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "order": 4,
+                "name": "Cara Lee",
+                "link": "https://infinityfestival.com"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "order": 5,
+                "name": "Deborah Anderson",
+                "link": "https://infinityfestival.com"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "order": 6,
+                "name": "Carlos Luna James ",
+                "link": "https://infinityfestival.com"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "order": 7,
+                "name": "James Sutton ",
+                "link": "https://infinityfestival.com"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "order": 8,
+                "name": "Joseph Ryba",
+                "link": "https://infinityfestival.com"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "order": 9,
+                "name": "Nicky Giraffe",
+                "link": "https://infinityfestival.com"
+              }
+            ]
+          },
+          "id": 21,
+          "usesSponsorPage": true
         }
       ]
     },
