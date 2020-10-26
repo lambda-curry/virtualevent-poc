@@ -56,6 +56,7 @@ collections:
                   { label: "Big Images", value: "big-images" },
                   { label: "Small Images", value: "small-images" },
                   { label: "Horizontal Images", value: "horizontal-images" },
+                  { label: "Carousel", value: "carousel" },
                 ]},
                 {label: "Display", name: display, widget: boolean, required: false}
               ]},
@@ -254,6 +255,7 @@ collections:
                 {label: "Marquee Text", name: "marquee", widget: string, required: false },
                 {label: "Sponsor Color", name: "sponsorColor", widget: string, required: false },
                 {label: "Logo", name: "logo", widget: image },
+                {label: "Advertise Image", name: "advertiseImage", widget: image, required: false, default: '' },
                 {label: "External Link", name: "externalLink", widget: string, required: false },
                 {label: "Social Networks", name: "socialNetworks", widget: list, fields: [
                   {label: "Icon", name: "icon", widget: string},
