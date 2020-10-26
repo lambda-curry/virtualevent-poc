@@ -2,7 +2,7 @@
   "tiers": [
     {
       "id": "tier-cYGYq5-ae",
-      "name": "Visit Presenting",
+      "name": "Click below to visit Presenting",
       "badge": "",
       "lobby": {
         "lobbyTemplate": "big-images",
@@ -23,7 +23,7 @@
     },
     {
       "id": "tier-U_wEwGX8a",
-      "name": "Visit Co-Presenting",
+      "name": "Click below to visit Co-Presenting",
       "badge": "",
       "lobby": {
         "lobbyTemplate": "small-images",
@@ -43,7 +43,7 @@
     },
     {
       "id": "tier-S_ykYbFqh",
-      "name": "Visit Producer",
+      "name": "Click below to visit Producer",
       "sponsorPage": {
         "sponsorTemplate": "small-header"
       },
@@ -55,7 +55,7 @@
     },
     {
       "id": "tier-DHcI3dWGk",
-      "name": "Visit Featured",
+      "name": "Click below to visit Featured",
       "badge": "",
       "lobby": {
         "lobbyTemplate": "big-images",
