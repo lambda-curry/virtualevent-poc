@@ -19,42 +19,31 @@
           "intro": "Every Thursday from October 28 to December 10, **Capitol Royale** will roll out unique music-related programming—new content drops, industry-leading conversations, emerging technology, etc. Check back weekly to take part in a **virtual** **Capitol Records Tower experience, where guests can explore 360 navigable versions of the iconic Hollywood landmark’s lobby, rooftop, and surrounding lot**—complete withexclusive content live and on-demand.",
           "headerVideo": "",
           "headerImage": "",
-          "socialNetworks": [
-            {
-              "icon": "fa-facebook",
-              "link": "https://www.facebook.com/CapitolMusic360/",
-              "display": true
-            },
-            {
-              "icon": "fa-twitter",
-              "link": "https://twitter.com/capitol360",
-              "display": true
-            },
-            {
-              "icon": "fa-instagram",
-              "link": "https://www.instagram.com/capitolmusic360/",
-              "display": true
-            }
-          ],
+          "socialNetworks": [],
           "chatLink": "",
           "sponsorId": 3,
           "title": "Capitol Royale",
           "companyId": 14,
           "documents": {
-            "slides": [
-              {
-                "name": "Example External Link",
-                "order": 2,
-                "class_name": "PresentationSlide",
-                "link": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html"
-              }
-            ],
+            "slides": [],
             "links": [
               {
-                "name": "Example Download Link ",
-                "order": 1,
                 "class_name": "PresentationLink",
-                "link": "http://relaxdiego.com/2017/05/swampup-2017-slides.html"
+                "link": "https://www.facebook.com/CapitolMusic360/",
+                "order": 1,
+                "name": "Follow us on Facebook "
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/capitol360",
+                "name": "Follow us on Twitter ",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.instagram.com/capitolmusic360/",
+                "name": "Follow up on Instagram ",
+                "order": 3
               }
             ],
             "videos": []
