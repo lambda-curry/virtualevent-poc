@@ -70,7 +70,63 @@
           "title": "ART+TECH Gallery ",
           "companyId": 19,
           "documents": {
-            "videos": []
+            "videos": [],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "www.wonderscience.com",
+                "name": "Learn more about the artist Danielle Parsons: Ferrofluid",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "www.djeneba-aduayom.com",
+                "name": "Learn more about the artist Djeneba Aduayom: Black Gold",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Learn more about the artist Esteban Diacono: Social Interactions",
+                "order": 5,
+                "link": "www.estebandiacono.com"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Learn more about the artist Cara Lee: CHiLL_Adrift",
+                "order": 7,
+                "link": "www.caraleeproject.com"
+              },
+              {
+                "class_name": "PresentationLink",
+                "order": 9,
+                "name": "Deborah Anderson: Save My Missing Sisters",
+                "link": "www.womenofthewhitebuffalo.com/"
+              },
+              {
+                "class_name": "PresentationLink",
+                "order": 11,
+                "link": "www.jamsutton.com",
+                "name": "Jam Sutton: Rituals: Megalithomania"
+              },
+              {
+                "class_name": "PresentationLink",
+                "order": 13,
+                "name": "Carlos Luna James: Galaktic Transmission",
+                "link": "www.magogalaktiko.com"
+              },
+              {
+                "class_name": "PresentationLink",
+                "order": 15,
+                "link": "www.giraffestudiosla.com",
+                "name": "Nicky Giraffe: Audition for a Role in my Own Life"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Joseph Ryba: Becoming",
+                "order": 17,
+                "link": "www.josephryba.com"
+              }
+            ]
           },
           "id": 21,
           "usesSponsorPage": true
