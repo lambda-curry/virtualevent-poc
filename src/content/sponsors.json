@@ -183,6 +183,11 @@
               }
             ]
           },
+          "columnAds": [
+            {
+              "image": "/img/if2020-art-tech-1.png"
+            }
+          ],
           "id": 21,
           "usesSponsorPage": true
         }
