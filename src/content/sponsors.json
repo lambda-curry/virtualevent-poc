@@ -4,13 +4,13 @@
       "tier": [
         {
           "value": "tier-DHcI3dWGk",
-          "label": "Visit Featured"
+          "label": "Click below to visit Featured"
         }
       ],
       "sponsors": [
         {
           "marqueeColor": "",
-          "marquee": "",
+          "marquee": "Check back every Thursday to take part in a 360 virtual tour of the Capitol Tower with new content drops, industry-leading conversations, emerging technology, etc.",
           "sideImage": "",
           "externalLink": "",
           "sponsorColor": "#cd0a7c",
@@ -22,17 +22,17 @@
           "socialNetworks": [
             {
               "icon": "fa-facebook",
-              "link": "/footer-content/",
+              "link": "https://www.facebook.com/CapitolMusic360/",
               "display": true
             },
             {
               "icon": "fa-twitter",
-              "link": "/footer-content/",
+              "link": "https://twitter.com/capitol360",
               "display": true
             },
             {
-              "icon": "fa-linkedin",
-              "link": "/footer-content/",
+              "icon": "fa-instagram",
+              "link": "https://www.instagram.com/capitolmusic360/",
               "display": true
             }
           ],
@@ -43,7 +43,7 @@
           "documents": {
             "slides": [
               {
-                "name": "External Link",
+                "name": "Example External Link",
                 "order": 2,
                 "class_name": "PresentationSlide",
                 "link": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html"
@@ -51,7 +51,7 @@
             ],
             "links": [
               {
-                "name": "Presentation Link ",
+                "name": "Example Download Link ",
                 "order": 1,
                 "class_name": "PresentationLink",
                 "link": "http://relaxdiego.com/2017/05/swampup-2017-slides.html"
@@ -62,9 +62,6 @@
           "columnAds": [
             {
               "image": "/img/if2020-capitolroyale-1.png"
-            },
-            {
-              "image": "/img/if2020-marketing-space2.png"
             }
           ],
           "id": 3,
@@ -72,12 +69,16 @@
           "usesSponsorPage": true
         },
         {
-          "name": "Art + Tech Gallery ",
-          "title": "Art + Tech Gallery ",
-          "id": 21,
+          "sponsorColor": "#ff00a3",
           "logo": "/img/if2020-artist-nav.png",
+          "name": "ART+TECH Gallery ",
+          "intro": "Art is made possible through technology. From the invention of the paintbrush to computer-programmed augmented reality, artists have always used technology to translate a creative thought into a physical work of\n art. The ART+TECH Exhibition at the Infinity Festival brings together the incredible resources and advanced technology with the equally incredible imagination and talent of today’s cutting-edge artists.\n\nART+TECH includes internationally known and local artists working in mediums that include VR, AR, 3D printing, digital photography and light sculpture. This compelling exhibit will run for the duration of the festival and is included with admission.",
+          "headerImage": "/img/if2020-art-tech-header.png",
+          "headerImageMobile": "/img/if2020-art-tech-header.png",
           "sponsorId": 21,
-          "companyId": 18
+          "title": "ART+TECH Gallery ",
+          "companyId": 18,
+          "id": 21
         }
       ]
     },
@@ -85,7 +86,7 @@
       "tier": [
         {
           "value": "tier-cYGYq5-ae",
-          "label": "Visit Presenting"
+          "label": "Click below to visit Presenting"
         }
       ],
       "sponsors": [
@@ -243,7 +244,7 @@
       "tier": [
         {
           "value": "tier-U_wEwGX8a",
-          "label": "Visit Co-Presenting"
+          "label": "Click below to visit Co-Presenting"
         }
       ],
       "sponsors": [
@@ -323,7 +324,7 @@
       "tier": [
         {
           "value": "tier-S_ykYbFqh",
-          "label": "Visit Producer"
+          "label": "Click below to visit Producer"
         }
       ],
       "sponsors": [
