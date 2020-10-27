@@ -129,13 +129,13 @@
             "links": [
               {
                 "class_name": "PresentationLink",
-                "link": "www.wonderscience.com",
+                "link": "https://wonderscience.com",
                 "name": "Visit Artist: Danielle Parsons",
                 "order": 1
               },
               {
                 "class_name": "PresentationLink",
-                "link": "www.djeneba-aduayom.com",
+                "link": "https://www.djeneba-aduayom.com",
                 "name": "Visit Artist: Djeneba Aduayom",
                 "order": 3
               },
@@ -143,43 +143,43 @@
                 "class_name": "PresentationLink",
                 "name": "Visit Artist: Esteban Diacono",
                 "order": 5,
-                "link": "www.estebandiacono.com"
+                "link": "https://www.estebandiacono.com"
               },
               {
                 "class_name": "PresentationLink",
                 "name": "Visit Artist: Cara Lee",
                 "order": 7,
-                "link": "www.caraleeproject.com"
+                "link": "https://www.caraleeproject.com"
               },
               {
                 "class_name": "PresentationLink",
                 "order": 9,
                 "name": "Visit Artist: Deborah Anderson",
-                "link": "www.womenofthewhitebuffalo.com/"
+                "link": "https://womenofthewhitebuffalo.com/home/"
               },
               {
                 "class_name": "PresentationLink",
                 "order": 11,
-                "link": "www.jamsutton.com",
+                "link": "https://jamsutton.com",
                 "name": "Visit Artist: Jam Sutton "
               },
               {
                 "class_name": "PresentationLink",
                 "order": 13,
                 "name": "Visit Artist: Carlos Luna James",
-                "link": "www.magogalaktiko.com"
+                "link": "https://www.magogalaktiko.com"
               },
               {
                 "class_name": "PresentationLink",
                 "order": 15,
-                "link": "www.giraffestudiosla.com",
+                "link": "https://www.giraffestudiosla.com",
                 "name": "Visit Artist: Nicky Giraffe"
               },
               {
                 "class_name": "PresentationLink",
                 "name": "Visit Artist: Joseph Ryba",
                 "order": 17,
-                "link": "www.josephryba.com"
+                "link": "https://www.josephryba.com"
               }
             ]
           },
