@@ -59,7 +59,7 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Art is made possible through technology",
+          "marquee": "",
           "sponsorColor": "#ff00a3",
           "logo": "/img/if2020-artist-nav.png",
           "name": "ART+TECH Gallery ",
@@ -189,7 +189,6 @@
             }
           ],
           "id": 21,
-          "email": "adam@infinityfestival.com",
           "usesSponsorPage": true
         }
       ]
@@ -235,13 +234,13 @@
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/z_by_hp_create-data-sheet.pdf",
-                "name": "Create Data Sheet",
+                "name": "ZBook Create G7 Data Sheet",
                 "order": 4
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/z_by_hp_nk-trend-report.pdf",
-                "name": "(n) K Trend Report",
+                "name": "(n)K Trend Report",
                 "order": 6
               }
             ],
@@ -343,7 +342,7 @@
           },
           "columnAds": [
             {
-              "image": "/img/media_banner_general_239.jpg"
+              "image": "/img/media-square.png"
             }
           ],
           "id": 13,
