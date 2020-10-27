@@ -9,7 +9,7 @@ import withOrchestra from "../utils/widgetOrchestra";
 import SummitObject from '../content/summit.json'
 import HomeSettings from '../content/home-settings.json'
 
-import OCPHeroComponent from '../components/OCPHeroComponent'
+import LobbyHeroComponent from '../components/LobbyHeroComponent'
 import AdvertiseComponent from '../components/AdvertiseComponent'
 import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
 import DisqusComponent from '../components/DisqusComponent'
