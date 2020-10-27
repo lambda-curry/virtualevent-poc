@@ -505,6 +505,11 @@
               }
             ]
           },
+          "columnAds": [
+            {
+              "image": "/img/example.jpg"
+            }
+          ],
           "id": 18,
           "email": "sales@outfrontmedia.com",
           "usesSponsorPage": true
