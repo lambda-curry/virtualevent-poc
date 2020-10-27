@@ -20,7 +20,7 @@ const AdvertiseComponent = ({ section, column, id }) => {
                 null
                 :
                 <div className={`${styles.sponsorContainer} sponsor-container`} key={index}>
-                  {!ad.button &&
+                  {!ad.button?.link &&
                     <img src={ad.image} alt="sponsor" />
                   }
                   {!ad.button?.text && ad.button?.link &&
@@ -55,7 +55,7 @@ const AdvertiseComponent = ({ section, column, id }) => {
               </div>
               :
               <div className={`${styles.sponsorContainer} sponsor-container`} key={index}>
-                {!ad.button &&
+                {!ad.button?.link &&
                   <img src={ad.image} alt="sponsor" />
                 }
                 {!ad.button?.text && ad.button?.link &&
