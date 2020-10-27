@@ -76,7 +76,7 @@
     "redux": "^4.0.5",
     "redux-persist": "^5.9.1",
     "redux-thunk": "^2.3.0",
-    "schedule-lite": "^1.0.59",
+    "schedule-lite": "^1.0.79",
     "simple-chat-widget": "^1.0.26",
     "slick-carousel": "^1.8.1",
     "speakers-widget": "^1.0.14",
