@@ -129,13 +129,13 @@
             "links": [
               {
                 "class_name": "PresentationLink",
-                "link": "www.wonderscience.com",
+                "link": "https://wonderscience.com",
                 "name": "Visit Artist: Danielle Parsons",
                 "order": 1
               },
               {
                 "class_name": "PresentationLink",
-                "link": "www.djeneba-aduayom.com",
+                "link": "https://www.djeneba-aduayom.com",
                 "name": "Visit Artist: Djeneba Aduayom",
                 "order": 3
               },
@@ -143,7 +143,7 @@
                 "class_name": "PresentationLink",
                 "name": "Visit Artist: Esteban Diacono",
                 "order": 5,
-                "link": "www.estebandiacono.com"
+                "link": "https://www.estebandiacono.com"
               },
               {
                 "class_name": "PresentationLink",
