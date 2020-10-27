@@ -3,7 +3,7 @@
     {
       "title": "Lobby",
       "link": "/a/",
-      "display": false
+      "display": true
     },
     {
       "title": "Schedule",
