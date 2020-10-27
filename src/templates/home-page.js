@@ -67,6 +67,7 @@ export const HomePageTemplate = class extends React.Component {
                 summit={summit}
                 className="disqus-container-home"
                 title="Public conversation"
+                style={{ marginTop: '15px' }}
               />
               <ScheduleLiteComponent
                 accessToken={loggedUser.accessToken}

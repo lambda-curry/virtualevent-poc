@@ -15513,10 +15513,10 @@ saxes@^5.0.0:
   dependencies:
     xmlchars "^2.2.0"
 
-schedule-lite@^1.0.59:
-  version "1.0.78"
-  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.78.tgz#372aa3963801fa0c5cd3a1cabd477f57bfa01b20"
-  integrity sha512-4PJimIeRCdEqXLuRaV/nX63v8VVyF7rmOTjB5MPpzq4thlHx0wbxYTk554hejCyPdJ/ElD4divIJzhHrig/xjQ==
+schedule-lite@^1.0.79:
+  version "1.0.79"
+  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.79.tgz#9ee7bbe0e4b2d1c7f1c8b23ecab961120a095661"
+  integrity sha512-3L0KTmnzLM/I7Ly5XaWJ71gr/2xNSIN+pHQpPN/6Dg7OOie0jXmK4dVDQNlGP8YxR5XDaYhyKiRP1ZiYjjj4Vg==
   dependencies:
     pure-react-carousel "^1.27.4"
 
