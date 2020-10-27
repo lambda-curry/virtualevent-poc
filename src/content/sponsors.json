@@ -63,7 +63,7 @@
           "sponsorColor": "#ff00a3",
           "logo": "/img/if2020-artist-nav.png",
           "name": "ART+TECH Gallery ",
-          "intro": "Art is made possible through technology. From the invention of the paintbrush to computer-programmed augmented reality, artists have always used technology to translate a creative thought into a physical work of art. The ART+TECH Exhibition at the Infinity Festival brings together the incredible resources and advanced technology with the equally incredible imagination and talent of today’s cutting-edge artists.\n\nART+TECH includes internationally known and local artists working in mediums that include VR, AR, 3D printing, digital photography and light sculpture. This compelling exhibit will run for the duration of the festival and is included with admission.",
+          "intro": "Art is made possible through technology. From the invention of the paintbrush to computer-programmed augmented reality, artists have always used technology to translate a creative thought into a physical work of art. The ART+TECH space at Infinity Festival showcases the incredible resources, advanced technology and incredible imagination of today’s cutting-edge artists.\n\nART+TECH includes internationally known artists working in mediums ranging from traditional video to advanced modern techniques including AR, AI and VR – all redefining the unlimited vision of the creative world. Infinity Festival supports the art community in all its forms. For additional information on our featured artists, please reference the list on the right side of this page.",
           "headerImage": "/img/if2020-art-tech-header2.png",
           "headerImageMobile": "/img/if2020-art-tech-mobile-header_v2.png",
           "sponsorId": 21,
@@ -372,6 +372,7 @@
           "intro": "From independent boutiques to global media producers, immersive agencies and location-based creators – studios around the world are harnessing the power of real-time 3D technology to speed up production, smooth workflow hurdles, and grow their creativity with Unity.",
           "headerVideo": "",
           "headerImage": "/img/infinity-festival-welcome-image.jpg",
+          "headerImageMobile": "/img/if2020-unity-mobile-header.png",
           "socialNetworks": [],
           "chatLink": "",
           "sponsorId": 12,
@@ -449,6 +450,7 @@
           "name": "Essentia Water",
           "intro": "Essentia is supercharged ionized alkaline water. We’re here to put a flag in the ground and tell the world that a better you starts with a better water. Our mission is to inspire people everywhere to do the things that matter most to them.",
           "headerImage": "/img/essentia_water_ew_if_header_image_1440x200.png",
+          "headerImageMobile": "/img/if2020-essentia-mobile-header.png",
           "sponsorId": 15,
           "title": "Essentia Water",
           "companyId": 13,
@@ -484,8 +486,9 @@
           "sponsorColor": "#64008F",
           "logo": "/img/if2020-outfront-logo.png",
           "name": "OUTFRONT",
-          "intro": " OUTFRONT is embedded into the fabric of our cities and communities and trusted by the millions who engage with our media every day. We provide an integrated and targeted platform to connect brands to their desired audiences, as they live their lives through one of the largest and most diverse sets of billboard, transit, and mobile assets in North America. We are famous for incomparable impact and creativity of our medium, which drives engagement, fame, and trust. Our technology platform is fundamentally changing the ways advertisers engage audiences on-the-go.",
+          "intro": "OUTFRONT is embedded into the fabric of our cities and communities and trusted by the millions who engage with our media every day. We provide an integrated and targeted platform to connect brands to their desired audiences, as they live their lives through one of the largest and most diverse sets of billboard, transit, and mobile assets in North America. We are famous for incomparable impact and creativity of our medium, which drives engagement, fame, and trust. Our technology platform is fundamentally changing the ways advertisers engage audiences on-the-go.",
           "headerImage": "/img/banner-4.png",
+          "headerImageMobile": "/img/if2020-outfront-mobile-header.png",
           "sponsorId": 18,
           "title": "OUTFRONT - Presenting Media Partner of Infinity Festival 2020",
           "companyId": 16,
@@ -524,6 +527,7 @@
           "name": "Phase Two",
           "intro": "Phase Two in Culver City, CA is a flexible workspace curated around talented entrepreneurs and businesses working in technology, media and entertainment. We help people and businesses reach their next phase of growth by providing creative office solutions, personalized hospitality, and business support.",
           "headerImage": "/img/linkedindesign_template2020-v2-03.png",
+          "headerImageMobile": "/img/if2020-phase2-mobile-header.png",
           "sponsorId": 16,
           "title": "Phase Two",
           "companyId": 12,
@@ -576,7 +580,7 @@
             ]
           },
           "id": 14,
-          "usesSponsorPage": true
+          "usesSponsorPage": false
         }
       ]
     }
