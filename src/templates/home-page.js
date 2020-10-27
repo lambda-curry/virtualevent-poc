@@ -9,7 +9,7 @@ import withOrchestra from "../utils/widgetOrchestra";
 import SummitObject from '../content/summit.json'
 import HomeSettings from '../content/home-settings.json'
 
-import LobbyHeroComponent from '../components/LobbyHeroComponent'
+import OCPHeroComponent from '../components/OCPHeroComponent'
 import AdvertiseComponent from '../components/AdvertiseComponent'
 import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
 import DisqusComponent from '../components/DisqusComponent'
@@ -20,7 +20,7 @@ import SimpleChatWidgetComponent from '../components/SimpleChatWidgetComponent'
 
 import { getDisqusSSO, getUserProfile } from '../actions/user-actions'
 import envVariables from "../utils/envVariables";
-import {AttendanceTracker} from "openstack-uicore-foundation/lib/components";
+import { AttendanceTracker } from "openstack-uicore-foundation/lib/components";
 
 export const HomePageTemplate = class extends React.Component {
 
@@ -47,19 +47,19 @@ export const HomePageTemplate = class extends React.Component {
 
     return (
       <React.Fragment>
-        <LobbyHeroComponent />
+        <OCPHeroComponent summit={summit} location={null} />
         <div className="px-5 py-5 mb-6">
           <div className="columns">
             <div className="column is-one-quarter">
               <h2><b>Community</b></h2>
-              <SponsorComponent page='lobby'/>
+              <SponsorComponent page='lobby' />
               <AdvertiseComponent section='lobby' column="left" style={{ marginTop: '2em' }} />
             </div>
             <div className="column is-half">
               <h2><b>Today's Sessions</b></h2>
               <LiveEventWidgetComponent
                 onEventClick={(ev) => this.onEventChange(ev)}
-                style={{marginBottom: '15px'}}
+                style={{ marginBottom: '15px' }}
               />
               <DisqusComponent
                 page="lobby"
@@ -137,10 +137,10 @@ const HomePage = (
   return (
     <Layout>
       <AttendanceTracker
-          sourceName="LOBBY"
-          summitId={SummitObject.summit.id}
-          apiBaseUrl={envVariables.SUMMIT_API_BASE_URL}
-          accessToken={loggedUser.accessToken}
+        sourceName="LOBBY"
+        summitId={SummitObject.summit.id}
+        apiBaseUrl={envVariables.SUMMIT_API_BASE_URL}
+        accessToken={loggedUser.accessToken}
       />
       <OrchestedTemplate
         loggedUser={loggedUser}
