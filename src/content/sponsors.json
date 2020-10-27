@@ -380,13 +380,13 @@
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/unity-cinematic-lighting-in-real-time-ebook.pdf",
-                "name": "Unity-Cinematic-Lighting-in-Real-Time-ebook",
+                "name": "Unity Cinematic Lighting in Real Time ebook",
                 "order": 3
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/nent-case-study.pdf",
-                "name": "NENT Case Study",
+                "name": "Nordic Entertainment: Real-time Animation Case Study",
                 "order": 4
               }
             ],
