@@ -45,7 +45,13 @@
       "id": "tier-S_ykYbFqh",
       "name": "Click below to visit Producer",
       "sponsorPage": {
-        "sponsorTemplate": "small-header"
+        "sponsorTemplate": "small-header",
+        "widgets": {
+          "disqus": true,
+          "liveEvent": true,
+          "schedule": true,
+          "banner": true
+        }
       },
       "expoHallSize": "small",
       "lobby": {
