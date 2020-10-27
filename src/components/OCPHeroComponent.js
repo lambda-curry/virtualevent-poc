@@ -35,35 +35,45 @@ const OCPHeroComponent = ({ location, isLoggedUser, summit, summit_phase }) => (
             <span className={`${styles.date}`}>
               {HeroContent.heroBanner.date}
             </span>
-            <div className={styles.heroButtons}>
-              {summit_phase >= PHASES.DURING && isLoggedUser ?
-                <a className={styles.link} href={`${envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/'}`} target="_blank" rel="noreferrer">
-                  <button className={`${styles.button} button is-large`}>
-                    <i className={`fa fa-2x fa-sign-in icon is-large`}></i>
-                    <b>Enter</b>
-                  </button>
-                </a>
-                :
-                <React.Fragment>
-                  {HeroContent.heroBanner.buttons.registerButton.display &&
-                    <a className={styles.link} href={`${envVariables.REGISTRATION_BASE_URL}/a/${summit.slug}/`} target="_blank" rel="noreferrer">
-                      <button className={`${styles.button} button is-large`}>
-                        <i className={`fa fa-2x fa-edit icon is-large`}></i>
-                        <b>{HeroContent.heroBanner.buttons.registerButton.text}</b>
-                      </button>
-                    </a>
-                  }
-                  {HeroContent.heroBanner.buttons.loginButton.display && !isLoggedUser &&
-                    <a className={styles.link}>
-                      <button className={`${styles.button} button is-large`} onClick={() => onClickLogin(location)}>
-                        <i className={`fa fa-2x fa-sign-in icon is-large`}></i>
-                        <b>{HeroContent.heroBanner.buttons.loginButton.text}</b>
-                      </button>
-                    </a>
-                  }
-                </React.Fragment>
-              }
-            </div>
+            {location ?
+              <div className={styles.heroButtons}>
+                {summit_phase >= PHASES.DURING && isLoggedUser ?
+                  <a className={styles.link} href={`${envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/'}`} target="_blank" rel="noreferrer">
+                    <button className={`${styles.button} button is-large`}>
+                      <i className={`fa fa-2x fa-sign-in icon is-large`}></i>
+                      <b>Enter</b>
+                    </button>
+                  </a>
+                  :
+                  <React.Fragment>
+                    {HeroContent.heroBanner.buttons.registerButton.display &&
+                      <a className={styles.link} href={`${envVariables.REGISTRATION_BASE_URL}/a/${summit.slug}/`} target="_blank" rel="noreferrer">
+                        <button className={`${styles.button} button is-large`}>
+                          <i className={`fa fa-2x fa-edit icon is-large`}></i>
+                          <b>{HeroContent.heroBanner.buttons.registerButton.text}</b>
+                        </button>
+                      </a>
+                    }
+                    {HeroContent.heroBanner.buttons.loginButton.display && !isLoggedUser &&
+                      <a className={styles.link}>
+                        <button className={`${styles.button} button is-large`} onClick={() => onClickLogin(location)}>
+                          <i className={`fa fa-2x fa-sign-in icon is-large`}></i>
+                          <b>{HeroContent.heroBanner.buttons.loginButton.text}</b>
+                        </button>
+                      </a>
+                    }
+                  </React.Fragment>
+                }
+              </div>
+              :
+              <div className={styles.connect}>                
+                <h2 className={`${styles.subtitle}`}>
+                  CONNECT <br />
+                  COLLABORATE <br />
+                  ACCELERATE
+                </h2>
+              </div>
+            }
           </div>
         </div>
       </div>
