@@ -4,52 +4,19 @@
       "section": "lobby",
       "columnAds": [
         {
-          "image": "/img/ocp20tw-sponsorad-mock_092420.png",
+          "image": "/img/17212aei_ocp_banner_484x968_v1_1015.jpg",
           "button": {
-            "link": "/virtual-booth/",
-            "text": "Button Link"
+            "link": "https://www.artesyn.com/power-supplies/cat/188/open-compute-platform-orv3",
+            "text": ""
           },
           "column": "left"
         },
         {
-          "image": "/img/ocp20tw-sponsorad-mock_092420.png",
+          "image": "/img/time-to-embrace-banner-v5-circleb.jpg",
           "button": {
-            "link": "/virtual-booth/",
-            "text": "Button Link"
+            "link": "https://circleb.eu"
           },
           "column": "left"
-        },
-        {
-          "image": "/img/ocp20tw-sponsorad-mock-2_092420.png",
-          "button": {
-            "text": "Button Link",
-            "link": "/virtual-booth/"
-          },
-          "column": "left"
-        },
-        {
-          "image": "/img/ocp20tw-sponsorad-mock_carousel.png",
-          "button": {
-            "text": "Button Link",
-            "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/temp-os-virtual-sponsor-uploads/Essentia_water2_IMAWBY_Someone_Musician_2020_OLV%20REV%203%2016x9_1.mp4"
-          },
-          "column": "left"
-        },
-        {
-          "image": "/img/ocp20tw-sponsorad-mock_092420.png",
-          "button": {
-            "text": "Button Link",
-            "link": "/virtual-booth/"
-          },
-          "column": "right"
-        },
-        {
-          "image": "/img/ocp20tw-sponsorad-mock_092420.png",
-          "button": {
-            "text": "Button Link",
-            "link": "/virtual-booth/"
-          },
-          "column": "right"
         }
       ]
     },
