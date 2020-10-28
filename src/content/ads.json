@@ -12,26 +12,14 @@
           "column": "left"
         },
         {
-          "image": "/img/time-to-embrace-banner-v5-circleb.jpg",
-          "button": {
-            "link": "https://circleb.eu"
-          },
+          "image": "/img/ocp20tw-lobby-mediasponsors.png",
           "column": "left"
         }
       ]
     },
     {
       "section": "event",
-      "columnAds": [
-        {
-          "image": "/img/ocp20tw-sponsorad-mock-2_092420.png",
-          "button": {
-            "text": "Learn more",
-            "link": "/virtual-booth/"
-          },
-          "column": "left"
-        }
-      ]
+      "columnAds": []
     }
   ]
 }
