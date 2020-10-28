@@ -124,6 +124,12 @@
                 "name": "Joseph Ryba: Becoming",
                 "order": 18,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/Art_&_Tech/Joseph%20Ryba_Becoming.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/Art_&_Tech/Claudia%20Meyer_VirtualA.mp4",
+                "name": "Claudia Meyer",
+                "order": 5
               }
             ],
             "links": [
@@ -180,6 +186,12 @@
                 "name": "Visit Artist: Joseph Ryba",
                 "order": 17,
                 "link": "https://www.josephryba.com"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Visit Artist: Claudia Meyer",
+                "link": "http://claudiameyer.com",
+                "order": 4
               }
             ]
           },
