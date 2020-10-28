@@ -5,30 +5,30 @@
       "display": true,
       "items": [
         {
-          "title": "All Projects",
-          "link": "/footer-content/"
+          "title": "Lobby",
+          "link": "/a/"
         },
         {
-          "title": "Host a project",
-          "link": "/footer-content/"
+          "title": "Schedule",
+          "link": "/a/schedule"
         },
         {
-          "title": "Services",
-          "link": "/footer-content/"
+          "title": "About the event",
+          "link": "/about-event/"
         }
       ]
     },
     {
-      "title": "The Vision",
+      "title": "Open Compute Project",
       "display": true,
       "items": [
         {
-          "title": "About",
-          "link": "/footer-content/"
+          "title": "Become a member",
+          "link": "https://www.opencompute.org/membership"
         },
         {
-          "title": "Supporters",
-          "link": "/footer-content/"
+          "title": "Shop the OCP Store",
+          "link": "https://opencompute.shop"
         }
       ]
     },
@@ -37,15 +37,15 @@
       "display": true,
       "items": [
         {
-          "title": "Corporate members",
+          "title": "Link 1 ",
           "link": "/footer-content/"
         },
         {
-          "title": "Join us",
+          "title": "Link 2",
           "link": "/footer-content/"
         },
         {
-          "title": "Services",
+          "title": "Link 2",
           "link": "p/footer-content/"
         }
       ]
