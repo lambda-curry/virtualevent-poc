@@ -10350,10 +10350,10 @@ linkifyjs@^2.1.9:
   resolved "https://registry.yarnpkg.com/linkifyjs/-/linkifyjs-2.1.9.tgz#af06e45a2866ff06c4766582590d098a4d584702"
   integrity sha512-74ivurkK6WHvHFozVaGtQWV38FzBwSTGNmJolEgFp7QgR2bl6ArUWlvT4GcHKbPe1z3nWYi+VUdDZk16zDOVug==
 
-live-event-widget@^1.0.34:
-  version "1.0.37"
-  resolved "https://registry.yarnpkg.com/live-event-widget/-/live-event-widget-1.0.37.tgz#1f5e0fa94ab01f211f40db69e7c97c28b9ee731c"
-  integrity sha512-dh7hUOwyzR9VDkEuCFjAGSNuT74zx6QMpLIjYxWsQzdYOVrlDIJddtjcl1/vEJWgC0TpSTF0WCpmryNBoYFWCg==
+live-event-widget@^1.0.46:
+  version "1.0.46"
+  resolved "https://registry.yarnpkg.com/live-event-widget/-/live-event-widget-1.0.46.tgz#7a86ceeb2310a2e082e2cda990a7eb31901e2910"
+  integrity sha512-LkJXKsa2UWBSqBI5DqEWOqL69wFoRlGEbH4pS6StTGbshsO1/UAoVL6OGgXIceBj+6uxUk66boicCDEdEHQ9Eg==
   dependencies:
     svg-url-loader "^6.0.0"
 
@@ -12322,10 +12322,10 @@ open@^6.4.0:
   dependencies:
     is-wsl "^1.1.0"
 
-openstack-uicore-foundation@^2.0.66:
-  version "2.0.68"
-  resolved "https://registry.yarnpkg.com/openstack-uicore-foundation/-/openstack-uicore-foundation-2.0.68.tgz#8614585b6dd8ed8003de88fbd6d8c259d51ec349"
-  integrity sha512-3S14MbfM0B4un7rnWyTfMigdn2O8giB/HOVHqxsJcfm0B4wxc+jBOOkgktWpHvGpyp25yvf0sr+2NIp5g40pUg==
+openstack-uicore-foundation@2.0.69:
+  version "2.0.69"
+  resolved "https://registry.yarnpkg.com/openstack-uicore-foundation/-/openstack-uicore-foundation-2.0.69.tgz#b9fdc0356119e911d7e94787df249a188c48733a"
+  integrity sha512-sYLhYCtnfYTUWCHxKIpZDilWlydemwTn/xd4txLSB/0T7H9PehNMuFgFktWXwc4pUPrDjRJ6G1sDLt3LxpivDg==
 
 opentracing@^0.14.4:
   version "0.14.4"
@@ -15478,10 +15478,10 @@ saxes@^5.0.0:
   dependencies:
     xmlchars "^2.2.0"
 
-schedule-lite@^1.0.59:
-  version "1.0.62"
-  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.62.tgz#0e15a8ed7e07b02fc65037bea3ee882bb9cc6c89"
-  integrity sha512-HTqpPhNr7UcPLUxQTet3XEycKp8BSdCXupo68Vbx17QvUduDWJWpj/Y+AL3mSLy/QcRnrxkGsKBvgkz3vD1vPw==
+schedule-lite@^1.0.79:
+  version "1.0.79"
+  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.79.tgz#9ee7bbe0e4b2d1c7f1c8b23ecab961120a095661"
+  integrity sha512-3L0KTmnzLM/I7Ly5XaWJ71gr/2xNSIN+pHQpPN/6Dg7OOie0jXmK4dVDQNlGP8YxR5XDaYhyKiRP1ZiYjjj4Vg==
   dependencies:
     pure-react-carousel "^1.27.4"
 
