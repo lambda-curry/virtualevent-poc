@@ -25,7 +25,14 @@
           "title": "Capitol Royale",
           "companyId": 14,
           "documents": {
-            "slides": [],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/if2020-capitolroyale-umg-innovation-announcement.pdf",
+                "name": "UMG-Capitol Innovation Challenge",
+                "order": 1
+              }
+            ],
             "links": [
               {
                 "class_name": "PresentationLink",
