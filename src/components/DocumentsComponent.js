@@ -5,9 +5,13 @@ const DocumentsComponent = ({ event, sponsor }) => {
 
   const getMaterials = (event) => {
     let materials = [];
+
+    const mediaUploads = event.media_uploads?.filter(mu => mu.display_on_site);
+
     if (event.links?.length > 0) materials = [...materials, ...event.links]
     if (event.videos?.length > 0) materials = [...materials, ...event.videos]
     if (event.slides?.length > 0) materials = [...materials, ...event.slides]
+    if (mediaUploads?.length > 0) materials = [...materials, ...mediaUploads]
     return materials;
   }
 
@@ -28,28 +32,43 @@ const DocumentsComponent = ({ event, sponsor }) => {
           <div className={`navbar-brand ${styles.title}`}>Additional Media/Links</div>
           <hr />
           {sortedMaterials.map((material, index) => {
+              let faIcon = 'fa-link';
+              switch (material.class_name) {
+                case 'PresentationSlide':
+                  faIcon = 'fa-file-o';
+                  break;
+                case 'PresentationVideo':
+                  faIcon = 'fa-video-camera';
+                  break;
+                case 'PresentationMediaUpload':
+                  faIcon = 'fa-cloud-download';
+                  break;
+              }
+
+              const link = material.class_name === 'PresentationMediaUpload' ? material.public_url : material.link;
+
               return (
                 <React.Fragment key={index}>
-                  {material.class_name === 'PresentationSlide' ?
+                  {material.class_name === 'PresentationSlide' || material.class_name === 'PresentationMediaUpload' ?
                     <div className={`${styles.documentColumn} columns is-mobile is-vcentered`} key={index}>
                       <div className="column is-2 is-offset-1">
-                        <i className={`fa fa-file-o icon is-large`}></i>
+                        <i className={`fa ${faIcon} icon is-large`}></i>
                       </div>
                       <div className={`column is-6 ${styles.documentName}`}>
                         <span>{material.name}</span>
                       </div>
                       <div className="column is-2 has-text-right">
-                        <a target="_blank" rel="noreferrer" href={material.link}><i className="fa fa-download icon is-large"></i></a>
+                        <a target="_blank" rel="noreferrer" href={link}><i className="fa fa-download icon is-large"></i></a>
                       </div>
                       <div className="column is-1"></div>
                     </div>
                     :
                     <div className={`${styles.documentColumn} columns is-mobile is-vcentered`} key={index}>
                       <div className="column is-2 is-offset-1">
-                        <i className={`fa ${material.class_name === 'PresentationVideo' ? 'fa-video-camera' : 'fa-link'} icon is-large`}></i>
+                        <i className={`fa ${faIcon} icon is-large`}></i>
                       </div>
                       <div className={`column is-8 ${styles.documentName}`}>
-                        <a target="_blank" rel="noreferrer" href={material.link}>
+                        <a target="_blank" rel="noreferrer" href={link}>
                           <span>{material.name}</span>
                         </a>
                       </div>
