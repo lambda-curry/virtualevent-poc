@@ -41,7 +41,7 @@ const DocumentsComponent = ({ event, sponsor }) => {
                   faIcon = 'fa-video-camera';
                   break;
                 case 'PresentationMediaUpload':
-                  faIcon = 'fa-cloud-download';
+                  faIcon = 'fa-file-o';
                   break;
               }
 
