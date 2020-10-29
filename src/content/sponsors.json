@@ -50,8 +50,12 @@
           },
           "columnAds": [
             {
-              "image": "/img/if2020-capitolroyale-2.png",
-              "link": ""
+              "image": "/img/if2020-capitolroyale-1.png",
+              "link": "https://www.capitolroyale.com"
+            },
+            {
+              "image": "/img/if2020-capitolroyale-startuptrack.png",
+              "link": "https://onrampentertainmentconference.com"
             }
           ],
           "id": 3,
