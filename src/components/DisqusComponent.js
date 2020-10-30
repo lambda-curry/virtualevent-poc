@@ -115,9 +115,9 @@ const DisqusComponent = class extends React.Component {
 
   render() {
 
-    const { title, style, className, disqusSSO, page, hideMobile } = this.props;
+    const { title, style, className, disqusSSO, page, hideMobile = null } = this.props;
     const { isMobile } = this.state || null;
-    
+
     let disqusConfig = {
       url: window.location.href,
       identifier: this.getIdentifier(),
