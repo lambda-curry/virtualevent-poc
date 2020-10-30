@@ -122,6 +122,7 @@ export const EventPageTemplate = class extends React.Component {
                   <div className="column is-three-quarters is-full-mobile">
                     <div className="px-5 py-5">
                       <TalkComponent eventStarted={eventStarted} event={event} summit={summit} />
+                      <img src="/img/IF2020-EventPage-Graphic.png" />
                     </div>
                     <div className="px-5 py-0">
                       <SponsorComponent page='event'/>
