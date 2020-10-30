@@ -1,17 +1,1 @@
-{
-  "centerColumn": {
-    "schedule": {
-      "showAllEvents": false
-    },
-    "speakers": {
-      "showTodaySpeakers": true,
-      "showFeatureSpeakers": true
-    }
-  },
-  "homeHero": {
-    "title": "",
-    "subTitle": "",
-    "image": "",
-    "copy": ""
-  }
-}
+{"centerColumn":{"schedule":{"showAllEvents":false},"speakers":{"showTodaySpeakers":true,"showFeatureSpeakers":true}},"homeHero":{"title":"","subTitle":"","image":"","copy":""},"schedule_default_image":"https://fntech.sfo2.cdn.digitaloceanspaces.com/17/OCP20TW-Session-Thumbnail-110920-OCP.png"}
