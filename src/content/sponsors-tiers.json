@@ -2,8 +2,8 @@
   "tiers": [
     {
       "id": "tier-cYGYq5-ae",
-      "name": "Gold",
-      "badge": "/img/gold.png",
+      "name": "Sponsor Ads",
+      "badge": "",
       "lobby": {
         "lobbyTemplate": "carousel",
         "display": true
