@@ -61,7 +61,7 @@ collections:
                 {label: "Display", name: display, widget: boolean, required: false}
               ]},
               {label: "Sponsor Page", name: "sponsorPage", widget: object, fields: [
-                {label: "Sponsor Page Template", name: "sponsorTemplate", widget: select, options: [
+                {label: "Sponsor Page Template", name: "sponsorTemplate", widget: select, required: false, options: [
                   { label: "Big Header", value: "big-header" },
                   { label: "Small Header", value: "small-header" },
                 ]},
@@ -70,7 +70,7 @@ collections:
                 {label: "Schedule", name: schedule, widget: boolean, required: false},
                 {label: "Banner", name: banner, widget: boolean, required: false}
               ]},
-              {label: "Sponsor Hall Size", name: "expoHallSize", widget: select, required: true, options: [
+              {label: "Sponsor Hall Size", name: "expoHallSize", widget: select, required: false, options: [
                 { label: "Large Images", value: "large" },
                 { label: "Medium Images", value: "medium" },
                 { label: "Small Images", value: "small" },
@@ -81,7 +81,7 @@ collections:
                 { label: "Horizontal Images", value: "horizontal-images" },
               ]},
             ]}
-          - {label: "Header Sponsor Hall", name: imageHeader, widget: image}
+          - {label: "Header Sponsor Hall", name: imageHeader, widget: image, required: false}
           - {label: "Lobby Button", name: lobbyButton, widget: object, fields: [
               {label: "Text", name: "text", widget: string, required: false},
               {label: "Link", name: "link", widget: string, required: false}
