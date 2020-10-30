@@ -51,12 +51,12 @@ div.column:first-of-type {
   }
 
   .right-column {
-    width: 65%;
     z-index: 1;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: -10%;
+    margin-right: 8px;
     min-height: 100%;
   }
 }

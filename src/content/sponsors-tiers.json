@@ -1,28 +1,8 @@
 {
   "tiers": [
     {
-      "id": "tier-DHcI3dWGk",
-      "name": "Featured",
-      "badge": "",
-      "lobby": {
-        "lobbyTemplate": "big-images",
-        "display": true
-      },
-      "sponsorPage": {
-        "sponsorTemplate": "big-header",
-        "widgets": {
-          "disqus": true,
-          "liveEvent": true,
-          "schedule": true,
-          "banner": true
-        }
-      },
-      "eventTemplate": "",
-      "expoHallSize": "large"
-    },
-    {
       "id": "tier-cYGYq5-ae",
-      "name": "Presenting",
+      "name": "Click below to visit Presenting",
       "badge": "",
       "lobby": {
         "lobbyTemplate": "big-images",
@@ -39,16 +19,31 @@
         "banner": true
       },
       "eventTemplate": "",
-      "expoHallSize": "medium"
+      "expoHallSize": "large"
     },
     {
       "id": "tier-U_wEwGX8a",
-      "name": "Co-Presenting",
+      "name": "Click below to visit Co-Presenting",
       "badge": "",
       "lobby": {
         "lobbyTemplate": "small-images",
         "display": true
       },
+      "sponsorPage": {
+        "sponsorTemplate": "big-header",
+        "widgets": {
+          "disqus": true,
+          "liveEvent": true,
+          "schedule": true,
+          "banner": true
+        }
+      },
+      "eventTemplate": "",
+      "expoHallSize": "medium"
+    },
+    {
+      "id": "tier-S_ykYbFqh",
+      "name": "Click below to visit Producer",
       "sponsorPage": {
         "sponsorTemplate": "small-header",
         "widgets": {
@@ -58,15 +53,30 @@
           "banner": true
         }
       },
-      "eventTemplate": "",
-      "expoHallSize": "small"
+      "expoHallSize": "small",
+      "lobby": {
+        "lobbyTemplate": "small-images",
+        "display": true
+      }
     },
     {
-      "id": "tier-S_ykYbFqh",
-      "name": "Producer ",
-      "sponsorPage": {
-        "sponsorTemplate": "small-header"
+      "id": "tier-DHcI3dWGk",
+      "name": "Click below to visit Featured",
+      "badge": "",
+      "lobby": {
+        "lobbyTemplate": "big-images",
+        "display": true
       },
+      "sponsorPage": {
+        "sponsorTemplate": "big-header",
+        "widgets": {
+          "disqus": true,
+          "liveEvent": true,
+          "schedule": true,
+          "banner": true
+        }
+      },
+      "eventTemplate": "",
       "expoHallSize": "small"
     }
   ],

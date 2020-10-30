@@ -4,14 +4,14 @@
       "showAllEvents": false
     },
     "speakers": {
-      "showTodaySpeakers": true,
+      "showTodaySpeakers": false,
       "showFeatureSpeakers": true
     }
   },
   "homeHero": {
     "title": "Infinity Festival",
     "subTitle": "VIRTUAL IN 2020",
-    "image": "/img/1_hollywood-sign_grayscale_v2.jpg",
-    "copy": "<h2><strong>YOCO Summit Live NOW!</strong></h2>\r\n<h2>from San Jose, CA</h2>"
+    "image": "/img/1_hollywood-sign_grayscale_v2a_edit.png",
+    "copy": ""
   }
 }

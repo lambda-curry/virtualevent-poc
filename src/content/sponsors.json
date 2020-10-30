@@ -4,74 +4,228 @@
       "tier": [
         {
           "value": "tier-DHcI3dWGk",
-          "label": "Featured"
+          "label": "Click below to visit Featured"
         }
       ],
       "sponsors": [
         {
           "marqueeColor": "",
-          "marquee": "",
+          "marquee": "Check back every Thursday to take part in a 360 virtual tour of the Capitol Tower with new content drops, industry-leading conversations, emerging technology, etc.",
           "sideImage": "",
           "externalLink": "",
+          "sponsorColor": "#cd0a7c",
           "logo": "/img/if2020-sponsor-capitol.png",
           "name": "Capitol Royale",
-          "intro": "",
-          "headerVideo": "",
-          "headerImage": "/img/sponsors/premier/header_logo_premier.png",
-          "socialNetworks": [
-            {
-              "icon": "fa-facebook",
-              "link": "/footer-content/",
-              "display": true
-            },
-            {
-              "icon": "fa-twitter",
-              "link": "/footer-content/",
-              "display": true
-            },
-            {
-              "icon": "fa-linkedin",
-              "link": "/footer-content/",
-              "display": true
-            }
-          ],
+          "intro": "Every Thursday from October 28 to December 10, **Capitol Royale** will roll out unique music-related programming—new content drops, industry-leading conversations, emerging technology, etc. Check back weekly to take part in a **virtual** **Capitol Records Tower experience, where guests can explore 360 navigable versions of the iconic Hollywood landmark’s lobby, rooftop, and surrounding lot**—complete with exclusive content live and on-demand.",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/IF2020_Manual_Upload/NeonXP_Capitol%20Royale_Trailer_Press.mp4",
+          "headerImage": "",
+          "socialNetworks": [],
           "chatLink": "",
-          "title": "",
+          "sponsorId": 17,
+          "title": "Capitol Royale",
+          "companyId": 14,
           "documents": {
             "slides": [
               {
-                "name": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html",
-                "order": 2,
                 "class_name": "PresentationSlide",
-                "link": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html"
+                "link": "/img/if2020-capitolroyale-umg-innovation-announcement.pdf",
+                "name": "UMG-Capitol Innovation Challenge",
+                "order": 1
               }
             ],
             "links": [
               {
-                "name": "http://relaxdiego.com/2017/05/swampup-2017-slides.html",
-                "order": 1,
                 "class_name": "PresentationLink",
-                "link": "http://relaxdiego.com/2017/05/swampup-2017-slides.html"
+                "link": "https://www.facebook.com/CapitolMusic360/",
+                "order": 2,
+                "name": "Follow us on Facebook "
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/capitol360",
+                "name": "Follow us on Twitter ",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.instagram.com/capitolmusic360/",
+                "name": "Follow up on Instagram ",
+                "order": 4
               }
             ],
             "videos": [
               {
-                "name": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html",
-                "order": 3,
                 "class_name": "PresentationVideo",
-                "youtube_id": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html"
+                "link": "https://infinityfestival2020.fnvirtual.app/a/event/1155",
+                "name": "Capitol Royale: Greg Penny on Mixing \"Rocket Man\"",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://infinityfestival2020.fnvirtual.app/a/event/1156",
+                "name": "Capitol Royale: New Music Breaks",
+                "order": 6
               }
             ]
           },
           "columnAds": [
             {
-              "image": "/img/yoco-sponsor-ads-medium-flow.png",
-              "button": "",
-              "link": "/virtual-booth/"
+              "image": "/img/if2020-capitolroyale-1.png",
+              "link": "https://www.capitolroyale.com"
+            },
+            {
+              "image": "/img/if2020-capitolroyale-startuptrack.png",
+              "link": "https://onrampentertainmentconference.com"
             }
           ],
           "id": 3,
-          "email": "",
+          "email": "umgdigitalbusiness@umusic.com",
+          "usesSponsorPage": true
+        },
+        {
+          "marquee": "Art is made possible through technology",
+          "sponsorColor": "#ff00a3",
+          "logo": "/img/if2020-artist-nav.png",
+          "name": "ART+TECH Gallery ",
+          "intro": "Art is made possible through technology. From the invention of the paintbrush to computer-programmed augmented reality, artists have always used technology to translate a creative thought into a physical work of art. The ART+TECH space at Infinity Festival showcases the incredible resources, advanced technology and incredible imagination of today’s cutting-edge artists.\n\nART+TECH includes internationally known artists working in mediums ranging from traditional video to advanced modern techniques including AR, AI and VR – all redefining the unlimited vision of the creative world. Infinity Festival supports the art community in all its forms. For additional information on our featured artists, please reference the list on the right side of this page.",
+          "headerImage": "/img/if2020-art-tech-header2.png",
+          "headerImageMobile": "/img/if2020-art-tech-mobile-header_v2.png",
+          "sponsorId": 21,
+          "title": "ART+TECH Gallery ",
+          "companyId": 19,
+          "documents": {
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "Jam Sutton: Rituals: Megalithomania",
+                "order": 2,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/Art_&_Tech/Jam%20Sutton_Rituals%20-%20Megalithomania.MP4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Djeneba Aduayom: Black Gold",
+                "order": 4,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/Art_&_Tech/Djeneba%20Adauyom_Black%20Gold.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Esteban Diacono: Social Interactions",
+                "order": 6,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/Art_&_Tech/Esteban%20Diacono_Social%20Interactions.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/Art_&_Tech/Claudia%20Meyer_VirtualA.mp4",
+                "name": "Claudia Meyer",
+                "order": 8
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Danielle Parsons: Ferrofluid",
+                "order": 10,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/Art_&_Tech/Danielle%20Parsons_Ferrofluid.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Cara Lee: CHiLL_Adrift",
+                "order": 12,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/Art_&_Tech/Cara%20Lee_CHiLL_Adrift.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Deborah Anderson: Save My Missing Sisters",
+                "order": 14,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/Art_&_Tech/Deborah%20Anderson_Save%20My%20Missing%20Sisters.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Carlos Luna James: MGOGLKTKO",
+                "order": 16,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/IMG_4572.MP4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Joseph Ryba: Becoming",
+                "order": 18,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/Art_&_Tech/Joseph%20Ryba_Becoming.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Nicky Giraffe: Audition for a Role in my Own Life",
+                "order": 20,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/Art_&_Tech/Nicky%20Giraffe_Audition%20for%20a%20Role%20in%20My%20Own%20Life.mp4"
+              }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "order": 1,
+                "link": "https://jamsutton.com",
+                "name": "Visit Artist: Jam Sutton "
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.djeneba-aduayom.com",
+                "name": "Visit Artist: Djeneba Aduayom",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Visit Artist: Esteban Diacono",
+                "order": 5,
+                "link": "https://www.estebandiacono.com"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Visit Artist: Claudia Meyer",
+                "link": "http://claudiameyer.com",
+                "order": 7
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://wonderscience.com",
+                "name": "Visit Artist: Danielle Parsons",
+                "order": 9
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Visit Artist: Cara Lee",
+                "order": 11,
+                "link": "https://www.caraleeproject.com"
+              },
+              {
+                "class_name": "PresentationLink",
+                "order": 13,
+                "name": "Visit Artist: Deborah Anderson",
+                "link": "https://womenofthewhitebuffalo.com/home/"
+              },
+              {
+                "class_name": "PresentationLink",
+                "order": 15,
+                "name": "Visit Artist: Carlos Luna James",
+                "link": "https://www.magogalaktiko.com"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Visit Artist: Joseph Ryba",
+                "order": 17,
+                "link": "https://www.josephryba.com"
+              },
+              {
+                "class_name": "PresentationLink",
+                "order": 19,
+                "link": "https://www.giraffestudiosla.com",
+                "name": "Visit Artist: Nicky Giraffe"
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "image": "/img/if2020-art-tech-1.png"
+            }
+          ],
+          "id": 21,
+          "email": "adam@infinityfestival.com",
           "usesSponsorPage": true
         }
       ]
@@ -80,7 +234,7 @@
       "tier": [
         {
           "value": "tier-cYGYq5-ae",
-          "label": "Presenting"
+          "label": "Click below to visit Presenting"
         }
       ],
       "sponsors": [
@@ -89,48 +243,148 @@
           "marquee": "Power Your Breakthrough",
           "sideImage": "",
           "externalLink": "",
+          "sponsorColor": "#2A2C2E",
           "logo": "/img/if2020-sponsor-zbyhp.png",
           "name": "Z by HP",
           "intro": "Z by HP creates high-performance laptops, desktops, displays and solutions built for creators - artists, designers and power users - who need ultimate performance, maximum reliability, and the broadest expandability and versatility to get the job done. At Z by HP, we’ve spent decades innovating high-performance computing designed to equip creative pros in their journey to keep evolving. www.hp.com/PowerYourBreakthrough   We’re excited to introduce ZBook Create, our latest notebook specifically designed for creators. Transform your work with NVIDIA® GeForce® RTX™ graphics, real-time rendering, and the power of Z, all packed into an ultra-sleek design. It’s the new standard for the serious creator.",
-          "headerVideo": "",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/temp-os-virtual-sponsor-uploads/z_by_hp_Welcome%20Video_30s.mp4",
           "headerImage": "",
           "socialNetworks": [],
           "chatLink": "",
+          "sponsorId": 11,
           "title": "Z by HP",
+          "companyId": 8,
           "documents": {
-            "slides": [],
-            "links": [],
-            "videos": []
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/z_by_hp_3d-trend-report.pdf",
+                "name": "3D Trend Report",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/z_by_hp_ai-trend-report.pdf",
+                "name": "AI Trend Report",
+                "order": 4
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/z_by_hp_create-data-sheet.pdf",
+                "name": "ZBook Create G7 Data Sheet",
+                "order": 4
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/z_by_hp_nk-trend-report.pdf",
+                "name": "(n)K Trend Report",
+                "order": 6
+              }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "Z by HP YouTube Channel ",
+                "link": "https://www.youtube.com/zbyhp",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Z by HP on Instagram ",
+                "link": "https://www.instagram.com/zbyhp/",
+                "order": 2
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/temp-os-virtual-sponsor-uploads/z_by_hp_Wave_Intel_06_070920_1x1.mp4",
+                "name": "Z by HP commercial ",
+                "order": 7
+              }
+            ]
           },
-          "columnAds": [],
+          "columnAds": [
+            {
+              "image": "/img/z_by_hp_sponsor-ad.png"
+            }
+          ],
           "id": 11,
           "email": "Stef.brower@hp.com",
           "usesSponsorPage": true
         },
         {
           "marquee": "Empowering your future of creativity, content, and experiences.",
-          "logo": "/img/microsoft-logo_rgb_c-gray.png",
+          "sponsorColor": "#0078d4",
+          "logo": "/img/if2020-microsoft-logo.png",
           "name": "Microsoft",
           "intro": "Microsoft empowers media & entertainment organizations to achieve more through a trusted and secure platform supported by a comprehensive partner ecosystem with industry-leading solutions for content production, collaboration, content delivery, audience insights, and personalized experiences.",
-          "headerImage": "/img/if2020-microsoft-content-creation-2.png",
+          "headerImage": "/img/if2020-microsoft-content_creation-v2.png",
+          "headerImageMobile": "/img/if2020-microsoft-mobile-header.png",
+          "sponsorId": 13,
           "title": "Microsoft",
+          "companyId": 10,
           "documents": {
             "links": [
               {
                 "class_name": "PresentationLink",
-                "link": "https://twitter.com/MSCloud https://www.linkedin.com/showcase/microsoft-cloud-platform/",
+                "link": "https://twitter.com/MSCloud",
                 "name": "Follow us on Twitter ",
                 "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Microsoft on Linkedin ",
+                "link": "https://www.linkedin.com/showcase/microsoft-cloud-platform/",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Intelligent Media and Entertainment",
+                "link": "https://www.microsoft.com/en-us/industry/media-entertainment",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Accelerate content production",
+                "order": 4,
+                "link": " https://www.microsoft.com/en-us/industry/media-entertainment/accelerate-content-production"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Modernize collaboration",
+                "link": "https://www.microsoft.com/en-us/industry/media-entertainment/modernize-collaboration",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Optimize content delivery",
+                "link": "https://www.microsoft.com/en-us/industry/media-entertainment/optimize-content-delivery",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Know your audience",
+                "order": 7,
+                "link": " https://www.microsoft.com/en-us/industry/media-entertainment/know-your-audience"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Monetize content and experiences",
+                "order": 8,
+                "link": "https://www.microsoft.com/en-us/industry/media-entertainment/monetize-content-and-experiences"
               }
-            ]
+            ],
+            "videos": [],
+            "slides": []
           },
           "columnAds": [
             {
-              "image": "/img/media_banner_general_239.jpg"
+              "image": "/img/media-square.png"
             }
           ],
           "id": 13,
-          "email": "jsloss@microsoft.com",
+          "email": "",
           "usesSponsorPage": true
         }
       ]
@@ -139,51 +393,68 @@
       "tier": [
         {
           "value": "tier-U_wEwGX8a",
-          "label": "Co-Presenting"
+          "label": "Click below to visit Co-Presenting"
         }
       ],
       "sponsors": [
         {
           "marqueeColor": "#000000",
           "marquee": "Create. Collaborate. Iterate. Unity is the platform of choice for your journey to real-time.",
-          "sideImage": "/img/sponsors/exhibitor/immage.png",
+          "sideImage": "",
           "externalLink": "",
+          "sponsorColor": "#000000",
           "logo": "/img/infinity-festival-unity-logo.jpg",
           "name": "Unity",
           "intro": "From independent boutiques to global media producers, immersive agencies and location-based creators – studios around the world are harnessing the power of real-time 3D technology to speed up production, smooth workflow hurdles, and grow their creativity with Unity.",
           "headerVideo": "",
           "headerImage": "/img/infinity-festival-welcome-image.jpg",
+          "headerImageMobile": "/img/if2020-unity-mobile-header.png",
           "socialNetworks": [],
           "chatLink": "",
-          "title": "",
+          "sponsorId": 12,
+          "title": "Unity",
+          "companyId": 9,
           "documents": {
-            "slides": [],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/unity-cinematic-lighting-in-real-time-ebook.pdf",
+                "name": "Unity Cinematic Lighting in Real Time ebook",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/nent-case-study.pdf",
+                "name": "Nordic Entertainment: Real-time Animation Case Study",
+                "order": 4
+              }
+            ],
             "links": [
               {
                 "class_name": "PresentationLink",
                 "link": "https://unity.com/solutions/film-animation-cinematics",
                 "order": 1,
-                "name": "UNITY "
+                "name": "Unity for Film & Animation"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://unity.com/solutions/brands-and-creative-agencies",
                 "order": 2,
-                "name": "UNITY "
+                "name": "Unity for Brands and Creative Agencies"
               }
             ],
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "youtube_id": "https://youtu.be/r0JDdXqdnww",
-                "order": 6,
-                "name": "Unity "
+                "link": "https://youtu.be/r0JDdXqdnww",
+                "name": "The Future of Filmmaking ",
+                "order": 5
               },
               {
                 "class_name": "PresentationVideo",
-                "youtube_id": "https://www.youtube.com/watch?v=0dQqUQ1sBso",
-                "order": 7,
-                "name": "Unity "
+                "link": "https://www.youtube.com/watch?v=0dQqUQ1sBso",
+                "name": "Capture your audience’s imagination with immersive experiences",
+                "order": 6
               }
             ]
           },
@@ -203,18 +474,39 @@
       "tier": [
         {
           "value": "tier-S_ykYbFqh",
-          "label": "Producer "
+          "label": "Click below to visit Producer"
         }
       ],
       "sponsors": [
         {
           "marqueeColor": "#000000",
           "marquee": "",
-          "logo": "/img/essentia_water_ew_logos_if_101320-.png",
+          "sponsorColor": "#000000",
+          "logo": "/img/if2020-essentia-logo.png",
           "name": "Essentia Water",
           "intro": "Essentia is supercharged ionized alkaline water. We’re here to put a flag in the ground and tell the world that a better you starts with a better water. Our mission is to inspire people everywhere to do the things that matter most to them.",
           "headerImage": "/img/essentia_water_ew_if_header_image_1440x200.png",
+          "headerImageMobile": "/img/if2020-essentia-mobile-header.png",
+          "sponsorId": 15,
           "title": "Essentia Water",
+          "companyId": 13,
+          "documents": {
+            "slides": [],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/temp-os-virtual-sponsor-uploads/essentia_water_IMAWBY_Anthem_30_2020_OLV_Rev%202%2016x9.mp4",
+                "name": "Essentia Water Anthem",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationVideo",
+                "order": 2,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/temp-os-virtual-sponsor-uploads/Essentia_water2_IMAWBY_Someone_Musician_2020_OLV%20REV%203%2016x9_1.mp4",
+                "name": "Essentia Water Someone Musician"
+              }
+            ]
+          },
           "columnAds": [
             {
               "image": "/img/essentia_water_ew_if_sponsor_ad_968x968.png",
@@ -227,11 +519,39 @@
         },
         {
           "marquee": "We leverage the power of technology, location, and creativity to make meaningful connections between brands and audiences.",
-          "logo": "/img/favicon.png",
-          "name": "Outfront ",
-          "intro": " OUTFRONT is embedded into the fabric of our cities and communities and trusted by the millions who engage with our media every day. We provide an integrated and targeted platform to connect brands to their desired audiences, as they live their lives through one of the largest and most diverse sets of billboard, transit, and mobile assets in North America. We are famous for incomparable impact and creativity of our medium, which drives engagement, fame, and trust. Our technology platform is fundamentally changing the ways advertisers engage audiences on-the-go.",
+          "sponsorColor": "#64008F",
+          "logo": "/img/if2020-outfront-logo.png",
+          "name": "OUTFRONT",
+          "intro": "OUTFRONT is embedded into the fabric of our cities and communities and trusted by the millions who engage with our media every day. We provide an integrated and targeted platform to connect brands to their desired audiences, as they live their lives through one of the largest and most diverse sets of billboard, transit, and mobile assets in North America. We are famous for incomparable impact and creativity of our medium, which drives engagement, fame, and trust. Our technology platform is fundamentally changing the ways advertisers engage audiences on-the-go.",
           "headerImage": "/img/banner-4.png",
-          "title": "Outfront",
+          "headerImageMobile": "/img/if2020-outfront-mobile-header.png",
+          "sponsorId": 18,
+          "title": "OUTFRONT - Presenting Media Partner of Infinity Festival 2020",
+          "companyId": 16,
+          "documents": {
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/Purpose%20Video.mp4",
+                "name": "Outfront Purpose",
+                "order": 1
+              }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/outfront-brand-one-sheet.pdf",
+                "order": 2,
+                "name": "OUTFRONT Brand "
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "image": "/img/example.jpg",
+              "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/2020_SMM_Kickoff_External_Streaming.mp4"
+            }
+          ],
           "id": 18,
           "email": "sales@outfrontmedia.com",
           "usesSponsorPage": true
@@ -239,18 +559,30 @@
         {
           "marqueeColor": "#114776",
           "marquee": "",
-          "logo": "/img/phase_two_phasetwo_white_logosq.png",
+          "sponsorColor": "#114776",
+          "logo": "/img/if2020-phasetwo-logo-484x484.png",
           "name": "Phase Two",
           "intro": "Phase Two in Culver City, CA is a flexible workspace curated around talented entrepreneurs and businesses working in technology, media and entertainment. We help people and businesses reach their next phase of growth by providing creative office solutions, personalized hospitality, and business support.",
-          "headerImage": "/img/phase_two_phasetwobanner_static1440x200px-03.png",
+          "headerImage": "/img/linkedindesign_template2020-v2-03.png",
+          "headerImageMobile": "/img/if2020-phase2-mobile-header.png",
+          "sponsorId": 16,
           "title": "Phase Two",
+          "companyId": 12,
           "documents": {
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "name": "Phase Two Video ",
-                "youtube_id": "https://fntech.sfo2.cdn.digitaloceanspaces.com/temp-os-virtual-sponsor-uploads/phase_two_Phase%20Two%20-%20Shorter720p.mp4",
-                "order": 3
+                "order": 2,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/temp-os-virtual-sponsor-uploads/phase_two_Phase%20Two%20-%20Shorter720p.mp4",
+                "name": "Phase Two Video "
+              }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/phase_two_phasetwo_sales_brokerpitch_06022020_v1-07.pdf",
+                "name": "Phase Two: Flexible Space Solutions for the Future",
+                "order": 1
               }
             ]
           },
@@ -260,15 +592,32 @@
               "link": "https://phasetwo.spaces.nexudus.com/en/tour"
             }
           ],
-          "id": 12,
+          "id": 16,
           "email": "info@phasetwospace.com",
           "usesSponsorPage": true
         },
         {
-          "name": "Intel ",
+          "marquee": "Simplify AI with Intel® Artificial Intelligence Technologies",
+          "sponsorColor": "#0068b5",
           "logo": "/img/boxed-logo-energyblue-3000px.png",
+          "name": "Intel ",
+          "intro": "Intel's Our Purpose\n\n**We create world-changing technology that enriches the lives of every person on earth.**\\\nWe are inspired to:\n\n* Drive innovation that makes the world safer, builds healthy and vibrant communities, and increases productivity.\n* Harness our reach around the globe to better society, business, and the planet.\n* Push ourselves and our industry peers to be more responsible, inclusive, and sustainable.\n\nWe have big ambitions, and a growing sense of urgency to work with others and address world challenges no one can tackle alone.\n\n**Simplify AI with Intel® Artificial Intelligence Technologies**\n\nToday, implementing artificial intelligence is essential to better serving customers and unlocking new business value. 1 But deploying the infrastructure needed to support AI at scale remains a challenge for many enterprises, given the complexity of achieving high performance and accuracy - all while managing costs and utilization.\n\nWith Intel® architecture, you can deploy applications into production both quickly and cost-effectively. And with access to Intel’s global partner ecosystem, you’ll find expertise and solutions to suit your every AI need. Learn more [here](https://www.intel.com/content/www/us/en/artificial-intelligence/overview.html).",
+          "headerImage": "/img/if2020-intel-header-1440x200.png",
+          "sponsorId": 14,
+          "title": "Media & Entertainment - Intel® AI",
+          "companyId": 1,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/IntelAI",
+                "name": "Follow us on Twitter ",
+                "order": 1
+              }
+            ]
+          },
           "id": 14,
-          "title": "Intel "
+          "usesSponsorPage": false
         }
       ]
     }

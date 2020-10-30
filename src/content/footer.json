@@ -1,20 +1,20 @@
 {
   "columns": [
     {
-      "title": "The Event",
-      "display": false,
+      "title": "The Festival",
+      "display": true,
       "items": [
         {
-          "title": "All Projects",
-          "link": "/footer-content/"
+          "title": "Lobby",
+          "link": "/a/"
         },
         {
-          "title": "Host a project",
-          "link": "/footer-content/"
+          "title": "Schedule",
+          "link": "/a/schedule"
         },
         {
-          "title": "Services",
-          "link": "/footer-content/"
+          "title": "About the Event",
+          "link": "/about-event/"
         }
       ]
     },
