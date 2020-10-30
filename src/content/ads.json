@@ -4,16 +4,29 @@
       "section": "lobby",
       "columnAds": [
         {
-          "image": "/img/17212aei_ocp_banner_484x968_v1_1015.jpg",
-          "button": {
-            "link": "https://www.artesyn.com/power-supplies/cat/188/open-compute-platform-orv3",
-            "text": ""
-          },
+          "image": "/img/ocp20tw-lobby-mediasponsors.png",
           "column": "left"
         },
         {
-          "image": "/img/ocp20tw-lobby-mediasponsors.png",
-          "column": "left"
+          "image": "/img/ocp20tw-member-button.png",
+          "column": "right",
+          "button": {
+            "link": "https://www.opencompute.org/membership"
+          }
+        },
+        {
+          "image": "/img/ocp20tw-photo-button.png",
+          "button": {
+            "link": "https://idp.fntech.com/accounts/user/profile"
+          },
+          "column": "right"
+        },
+        {
+          "image": "/img/ocp20tw-store-button.png",
+          "button": {
+            "link": "https://opencompute.shop/"
+          },
+          "column": "right"
         }
       ]
     },
