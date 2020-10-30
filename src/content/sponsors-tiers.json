@@ -5,7 +5,7 @@
       "name": "Gold",
       "badge": "/img/gold.png",
       "lobby": {
-        "lobbyTemplate": "big-images",
+        "lobbyTemplate": "carousel",
         "display": true
       },
       "sponsorTemplate": "big-header",
