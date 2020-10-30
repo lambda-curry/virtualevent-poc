@@ -9,8 +9,34 @@ const DisqusComponent = class extends React.Component {
   constructor(props) {
     super(props)
 
+    this.state = {
+      isMobile: false
+    }
+
     this.getIdentifier = this.getIdentifier.bind(this);
     this.getTitle = this.getTitle.bind(this);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.onResize);
+  }
+
+  componentDidMount() {
+    window.addEventListener("resize", this.onResize);
+    if (window.innerWidth <= 768) {
+      this.setState({ isMobile: true })
+    } else {
+      this.setState({ isMobile: false })
+    }
+  }
+
+  onResize = () => {
+    if (window.innerWidth <= 768 && this.state.isMobile === false) {
+      this.setState({ isMobile: true })
+    }
+    if (window.innerWidth > 768 && this.state.isMobile === true) {
+      this.setState({ isMobile: false })
+    }
   }
 
   getIdentifier() {
@@ -89,19 +115,24 @@ const DisqusComponent = class extends React.Component {
 
   render() {
 
-    const { title, style, className, disqusSSO, page } = this.props;
-
+    const { title, style, className, disqusSSO, page, hideMobile } = this.props;
+    const { isMobile } = this.state || null;
+    
     let disqusConfig = {
       url: window.location.href,
       identifier: this.getIdentifier(),
       title: this.getTitle(),
       remoteAuthS3: disqusSSO.auth,
-      apiKey: disqusSSO.public_key,
+      apiKey: disqusSSO.public_key
+    }
+
+    if (hideMobile !== null && hideMobile === isMobile) {
+      return null;
     }
 
     return (
       <div className={className ? className : style ? '' : page === 'marketing-site' ? 'disqus-container-marketing' : 'disqus-container'} style={style}>
-        {title && <span className="navbar-brand title" style={{paddingLeft: '0px'}}>{title}</span>}
+        {title && <span className="navbar-brand title" style={{ paddingLeft: '0px' }}>{title}</span>}
         <DiscussionEmbed
           shortname='fnvirtual-poc'
           config={disqusConfig}

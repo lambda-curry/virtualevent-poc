@@ -148,7 +148,7 @@ export const SponsorPageTemplate = class extends React.Component {
                   <DisqusComponent disqusSSO={user.disqusSSO} className={styles.disqusContainerSponsor} summit={summit} title="" sponsor={sponsor} />
                 }
                 {sponsor.documents &&
-                  <DocumentsComponent event={sponsor.documents} sponsor={true} />
+                  <DocumentsComponent event={sponsor.documents} />
                 }
                 {sponsor.columnAds &&
                   <AdvertiseSponsorsComponent ads={sponsor.columnAds} style={{ marginTop: '2em' }} />
