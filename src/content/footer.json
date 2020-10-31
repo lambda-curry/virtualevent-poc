@@ -1,7 +1,29 @@
 {
   "columns": [
     {
-      "title": "The Event",
+      "title": "About OCP",
+      "display": true,
+      "items": [
+        {
+          "title": "History & Mission",
+          "link": "https://www.opencompute.org/about"
+        },
+        {
+          "title": "OCP Marketplace",
+          "link": "https://www.opencompute.org/products"
+        },
+        {
+          "title": "Foundation Staff",
+          "link": "https://www.opencompute.org/about/foundation-staff"
+        },
+        {
+          "title": "OCP Adoption",
+          "link": "https://www.opencompute.org/about/ocp-adoption"
+        }
+      ]
+    },
+    {
+      "title": "OCP TECH WEEK",
       "display": true,
       "items": [
         {
@@ -13,40 +35,8 @@
           "link": "/a/schedule"
         },
         {
-          "title": "About the event",
-          "link": "/about-event/"
-        }
-      ]
-    },
-    {
-      "title": "Open Compute Project",
-      "display": true,
-      "items": [
-        {
-          "title": "Become a member",
-          "link": "https://www.opencompute.org/membership"
-        },
-        {
-          "title": "Shop the OCP Store",
-          "link": "https://opencompute.shop"
-        }
-      ]
-    },
-    {
-      "title": "Membership",
-      "display": true,
-      "items": [
-        {
-          "title": "Link 1 ",
-          "link": "/footer-content/"
-        },
-        {
-          "title": "Link 2",
-          "link": "/footer-content/"
-        },
-        {
-          "title": "Link 2",
-          "link": "p/footer-content/"
+          "title": "Need help?",
+          "link": "/help"
         }
       ]
     }
@@ -55,12 +45,17 @@
     "display": false
   },
   "social": {
-    "title": "Follow Us",
+    "title": "Join the conversation!",
     "display": true,
     "networks": [
       {
         "icon": "fa-facebook",
         "link": "https://www.facebook.com/groups/opencompute/",
+        "display": true
+      },
+      {
+        "icon": "fa-linkedin-square",
+        "link": "https://www.linkedin.com/groups/4152886/",
         "display": true
       },
       {
@@ -71,11 +66,6 @@
       {
         "icon": "fa-youtube",
         "link": "https://www.youtube.com/user/OpenComputeProject",
-        "display": true
-      },
-      {
-        "icon": "fa-linkedin-square",
-        "link": "https://www.linkedin.com/groups/4152886/",
         "display": true
       }
     ]
