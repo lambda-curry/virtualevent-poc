@@ -148,7 +148,7 @@ export const SponsorPageTemplate = class extends React.Component {
                   <DisqusComponent disqusSSO={user.disqusSSO} className={styles.disqusContainerSponsor} summit={summit} title="" sponsor={sponsor} />
                 }
                 {sponsor.documents &&
-                  <DocumentsComponent event={sponsor.documents} sponsor={true} />
+                  <DocumentsComponent event={sponsor.documents} />
                 }
                 {sponsor.columnAds &&
                   <AdvertiseSponsorsComponent ads={sponsor.columnAds} style={{ marginTop: '2em' }} />
@@ -164,6 +164,7 @@ export const SponsorPageTemplate = class extends React.Component {
 
 const SponsorPage = (
   {
+    location,
     loggedUser,
     sponsorId,
     user,
@@ -173,7 +174,7 @@ const SponsorPage = (
 ) => {
 
   return (
-    <Layout>
+    <Layout location={location}>
       <SponsorPageTemplate
         loggedUser={loggedUser}
         sponsorId={sponsorId}
