@@ -149,10 +149,7 @@ export const updateProfilePicture = (pic) => (dispatch, getState) => {
     {},
     customErrorHandler,
   )(params)(dispatch)
-    .then((payload) => {
-      console.log(payload)
-      dispatch(getIDPProfile());
-    });
+    .then(() => dispatch(getIDPProfile()));
 }
 
 export const updateProfile = (profile) => (dispatch, getState) => {
