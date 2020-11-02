@@ -5,6 +5,8 @@ import styles from '../styles/profile.module.scss'
 
 import { AjaxLoader } from "openstack-uicore-foundation/lib/components";
 
+import { create_UUID } from '../utils/uuidGenerator'
+
 const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfile, changePicture, changeProfile }) => {
 
   const editorRef = useRef(null);
@@ -40,6 +42,7 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
 
   const urltoFile = (url, filename, mimeType) => {
     mimeType = mimeType || (url.match(/^data:([^;]+);/) || '')[1];
+    filename = filename || create_UUID();
     return (fetch(url)
       .then(function (res) { return res.arrayBuffer(); })
       .then(function (buf) { return new File([buf], filename, { type: mimeType }); })
