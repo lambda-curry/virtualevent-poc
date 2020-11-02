@@ -477,17 +477,8 @@
           "label": "Click below to visit Executive Producer"
         }
       ],
-      "sponsors": []
-    },
-    {
-      "tier": [
-        {
-          "value": "tier-S_ykYbFqh",
-          "label": "Click below to visit Producer"
-        }
-      ],
       "sponsors": [
-        {
+      {
           "marquee": "Simplify AI with Intel® Artificial Intelligence Technologies",
           "sponsorColor": "#0068b5",
           "logo": "/img/boxed-logo-energyblue-3000px.png",
@@ -509,7 +500,17 @@
           },
           "id": 14,
           "usesSponsorPage": false
-        },
+        }
+      ]
+    },
+    {
+      "tier": [
+        {
+          "value": "tier-S_ykYbFqh",
+          "label": "Click below to visit Producer"
+        }
+      ],
+      "sponsors": [
         {
           "marqueeColor": "#000000",
           "marquee": "",
