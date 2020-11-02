@@ -60,7 +60,7 @@ export const HomePageTemplate = class extends React.Component {
               <LiveEventWidgetComponent
                 onEventClick={(ev) => this.onEventChange(ev)}
                 style={{ marginBottom: '15px' }}
-                showSponsor={false}
+                showSponsor={true}
                 showTrack={true}
                 showSpeakers={true}
                 showSpeakerCompany={false}
