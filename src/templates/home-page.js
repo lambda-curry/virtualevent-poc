@@ -63,7 +63,7 @@ export const HomePageTemplate = class extends React.Component {
                 showSponsor={true}
                 showTrack={true}
                 showSpeakers={true}
-                showSpeakerCompany={false}
+                showSpeakerCompany={true}
               />
               <DisqusComponent
                 page="lobby"
