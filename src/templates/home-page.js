@@ -132,15 +132,15 @@ const OrchestedTemplate = withOrchestra(HomePageTemplate);
 
 const HomePage = (
   {
+    location,
     loggedUser,
     user,
     getUserProfile,
     getDisqusSSO
   }
-) => {
-
+) => {  
   return (
-    <Layout>
+    <Layout location={location}>
       <AttendanceTracker
         sourceName="LOBBY"
         summitId={SummitObject.summit.id}

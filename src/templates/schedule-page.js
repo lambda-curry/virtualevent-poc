@@ -11,7 +11,7 @@ import SummitObject from '../content/summit.json'
 import envVariables from "../utils/envVariables";
 import {AttendanceTracker} from "openstack-uicore-foundation/lib/components";
 
-const SchedulePage = ({summit_phase, isLoggedUser, loggedUser, mySchedule}) => {
+const SchedulePage = ({summit_phase, isLoggedUser, loggedUser, mySchedule, location}) => {
 
   let { summit } = SummitObject;
 
@@ -25,7 +25,7 @@ const SchedulePage = ({summit_phase, isLoggedUser, loggedUser, mySchedule}) => {
   }
 
   return (
-    <Layout marketing={true}>
+    <Layout location={location} marketing={true}>
       <div className="container">
         <h1>{ title }</h1>
         <hr/>
