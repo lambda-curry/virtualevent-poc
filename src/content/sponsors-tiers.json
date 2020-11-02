@@ -42,6 +42,17 @@
       "expoHallSize": "medium"
     },
     {
+      "id": "tier-H6WSuRToI",
+      "name": "Click below to visit Executive Producer",
+      "lobby": {
+        "lobbyTemplate": "small-images",
+        "display": true
+      },
+      "sponsorPage": {
+        "sponsorTemplate": "small-header"
+      }
+    },
+    {
       "id": "tier-S_ykYbFqh",
       "name": "Click below to visit Producer",
       "sponsorPage": {
