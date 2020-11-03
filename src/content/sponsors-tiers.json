@@ -3,13 +3,23 @@
     {
       "id": "tier-cYGYq5-ae",
       "name": "Gold",
+      "widgetTitle": "Gold Sponsors",
       "badge": "/img/gold.png",
       "lobby": {
         "lobbyTemplate": "big-images",
         "display": true
+      },      
+      "sponsorPage": {
+        "sponsorTemplate": "big-header",
+        "widgets": {
+          "disqus": true,
+          "liveEvent": true,
+          "schedule": true,
+          "banner": true
+        }
       },
-      "sponsorTemplate": "big-header",
-      "eventTemplate": ""
+      "eventTemplate": "",
+      "expoHallSize": "large"
     }
   ],
   "lobbyButton": {
