@@ -2,7 +2,8 @@
   "tiers": [
     {
       "id": "tier-cYGYq5-ae",
-      "name": "Thank You to our",
+      "name": "All Sponsors",
+      "widgetTitle": "Thank You to our Sponsors",
       "badge": "",
       "lobby": {
         "lobbyTemplate": "carousel",

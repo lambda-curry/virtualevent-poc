@@ -1,1 +1,63 @@
-{"heroBanner":{"title":"OCP TECH WEEK","subTitle":"A VIRTUAL EVENT","date":"November 9–10 & 12–13, 2020 (PST)","time":"All times listed in US Pacific Standard Time.","dateLayout":true,"buttons":{"registerButton":{"text":"Register now","display":true},"loginButton":{"text":"Log in","display":true}},"background":"/img/2020-ocp-tech-week-marketing-header-blank-left.png","images":[{"image":"/img/ocp-tech-week-marketing-header-icons-only.png"}]},"leftColumn":{"schedule":{"display":true,"title":"Full Event Schedule (PST)"},"disqus":{"display":false,"title":"Join the conversation"},"image":{"display":false,"title":"","src":"/img/ocp20tw-schedule-overview-short.png"}},"sponsors":[{"title":"","images":[{"image":"/img/ocp-tech-week-marketing-ad1-square.png","link":"https://idp.fntech.com/auth/login"}]},{"title":"","images":[{"image":"/img/ocp-tech-week-marketing-ad3-portrait.png","link":"https://opencompute.shop/"}]},{"title":"","images":[{"image":"/img/ocp-tech-week-marketing-ad4-portrait.png","link":"https://www.opencompute.org/products"}]},{"title":"","images":[{"image":"/img/ocp-tech-week-marketing-ad2-square.png","link":"https://www.opencompute.org/membership"}]}]}
+{
+    "heroBanner": {
+        "title": "OCP TECH WEEK",
+        "subTitle": "",
+        "date": "November 9–10 & 12–13, 2020 (PST)",
+        "time": "All times listed in US Pacific Standard Time.",
+        "dateLayout": true,
+        "buttons": {
+            "registerButton": {
+                "text": "Register now",
+                "display": true
+            },
+            "loginButton": {
+                "text": "Log in",
+                "display": true
+            }
+        },
+        "background": "/img/2020-ocp-tech-week-marketing-header-blank-left.png",
+        "images": [{
+            "image": "/img/OCP20TW-Lobby-Header-Graphic-Right-transparent.png"
+        }]
+    },
+    "leftColumn": {
+        "schedule": {
+            "display": true,
+            "title": "Full Event Schedule (PST)"
+        },
+        "disqus": {
+            "display": false,
+            "title": "Join the conversation"
+        },
+        "image": {
+            "display": false,
+            "title": "",
+            "src": "/img/ocp20tw-schedule-overview-short.png"
+        }
+    },
+    "sponsors": [{
+        "title": "",
+        "images": [{
+            "image": "/img/ocp-tech-week-marketing-ad1-square.png",
+            "link": "https://idp.fntech.com/auth/login"
+        }]
+    }, {
+        "title": "",
+        "images": [{
+            "image": "/img/ocp-tech-week-marketing-ad3-portrait.png",
+            "link": "https://opencompute.shop/"
+        }]
+    }, {
+        "title": "",
+        "images": [{
+            "image": "/img/ocp-tech-week-marketing-ad4-portrait.png",
+            "link": "https://www.opencompute.org/products"
+        }]
+    }, {
+        "title": "",
+        "images": [{
+            "image": "/img/ocp-tech-week-marketing-ad2-square.png",
+            "link": "https://www.opencompute.org/membership"
+        }]
+    }]
+}

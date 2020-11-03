@@ -1,5 +1,4 @@
 import React from 'react'
-import { connect } from "react-redux";
 import { doLogin } from "openstack-uicore-foundation/lib/methods";
 import URI from "urijs";
 
@@ -38,7 +37,7 @@ const OCPHeroComponent = ({ location, isLoggedUser, summit, summit_phase }) => (
             {location ?
               <div className={styles.heroButtons}>
                 {summit_phase >= PHASES.DURING && isLoggedUser ?
-                  <a className={styles.link} href={`${envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/'}`} target="_blank" rel="noreferrer">
+                  <a className={styles.link} href={`${envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/'}`} rel="noreferrer">
                     <button className={`${styles.button} button is-large`}>
                       <i className={`fa fa-2x fa-sign-in icon is-large`}></i>
                       <b>Enter</b>
@@ -68,9 +67,9 @@ const OCPHeroComponent = ({ location, isLoggedUser, summit, summit_phase }) => (
               :
               <div className={styles.connect}>                
                 <h2 className={`${styles.subtitle}`}>
-                  CONNECT <br />
-                  COLLABORATE <br />
-                  ACCELERATE
+                  CONNECT. <br />
+                  COLLABORATE. <br />
+                  ACCELERATE.
                 </h2>
               </div>
             }
@@ -82,7 +81,6 @@ const OCPHeroComponent = ({ location, isLoggedUser, summit, summit_phase }) => (
       </div>
     </div>
   </section>
-
 )
 
 export default OCPHeroComponent;
