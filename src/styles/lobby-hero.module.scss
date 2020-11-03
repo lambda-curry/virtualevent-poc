@@ -62,10 +62,10 @@ div.column:first-of-type {
 }
 
 .ocp-hero {
-  max-height: 419px;
+  max-height: 350px;
 
   .ocp-hero-columns {
-    max-height: 419px;
+    max-height: 350px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -172,7 +172,9 @@ div.column:first-of-type {
     .ocp-right-column {
       display: flex;
       justify-content: center;
+      align-items: flex-end;
       img {
+        height: 90%;
         object-position: bottom;
         object-fit: contain;
       }
@@ -511,6 +513,13 @@ div.column:first-of-type {
           .subtitle {
             font-size: 2.5rem;
           }
+        }
+      }
+
+      .ocp-right-column {
+        img {
+          width: 80%;
+          height: auto;
         }
       }
     }
