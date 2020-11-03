@@ -492,8 +492,8 @@ div.column:first-of-type {
       .ocp-left-column {
         .ocp-hero-container {
           .title {
-            font-size: 6rem;
-            line-height: 6rem;            
+            font-size: 3.5rem;
+            line-height: 4rem;            
           }
 
           .subtitle {
@@ -501,9 +501,15 @@ div.column:first-of-type {
           }
 
           .date {
+            font-size: 2rem;
             margin-top: 1rem;
             text-align: center;
             display: block;
+          }
+        }
+        .connect {
+          .subtitle {
+            font-size: 2.5rem;
           }
         }
       }
