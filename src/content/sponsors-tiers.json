@@ -2,7 +2,7 @@
   "tiers": [
     {
       "id": "tier-cYGYq5-ae",
-      "name": "All Sponsors",
+      "name": "Sponsor Group 1",
       "widgetTitle": "",
       "badge": "",
       "lobby": {
@@ -11,6 +11,10 @@
       },
       "sponsorTemplate": "big-header",
       "eventTemplate": ""
+    },
+    {
+      "id": "tier-ta8HFoy4a",
+      "name": "Sponsor Group 2"
     }
   ],
   "lobbyButton": {
