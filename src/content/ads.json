@@ -4,12 +4,15 @@
       "section": "lobby",
       "columnAds": [
         {
-          "image": "/img/ocp20tw-lobby-mediasponsors.png",
-          "column": "right"
+          "image": "/img/ocp20tw-member-sessionsearch.png",
+          "button": {
+            "link": "/a/schedule"
+          },
+          "column": "left"
         },
         {
           "image": "/img/ocp20tw-member-button.png",
-          "column": "right",
+          "column": "left",
           "button": {
             "link": "https://www.opencompute.org/membership"
           }
@@ -26,6 +29,10 @@
           "button": {
             "link": "https://opencompute.shop/"
           },
+          "column": "right"
+        },
+        {
+          "image": "/img/ocp20tw-lobby-mediasponsors.png",
           "column": "right"
         }
       ]
