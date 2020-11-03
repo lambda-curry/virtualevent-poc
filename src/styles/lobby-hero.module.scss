@@ -62,10 +62,10 @@ div.column:first-of-type {
 }
 
 .ocp-hero {
-  max-height: 350px;
+  max-height: 262px;
 
   .ocp-hero-columns {
-    max-height: 350px;
+    max-height: 262px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -131,7 +131,7 @@ div.column:first-of-type {
         .title {
           font-family: 'FranklinGothicURW-Dem';
           color: $color_text_light;
-          margin-top: 3rem;
+          margin-top: 0.5rem;
         }
 
         .subtitle {
@@ -143,7 +143,7 @@ div.column:first-of-type {
 
         .date {
           font-family: 'FranklinGothicURW-Med';
-          font-size: 2.5rem;
+          font-size: 2rem;
           padding: 10px 20px 5px 20px;
           color: $color_text_light;
           background-color: $color_secondary;
@@ -151,19 +151,21 @@ div.column:first-of-type {
         }
 
         .connect {
-          margin-top: 3rem;
+          margin-top: 1.8rem;
+          margin-left: 1px;
         }
       }
     }
 
     h1 {
-      font-size: 6.75rem;
+      font-size: 6.5rem;
       line-height: 1;
       margin-bottom: 0px;
     }
 
     h2 {
-      font-size: 3rem;
+      font-size: 2.7rem;
+      line-height: 1.2;
       margin-top: 0px;
     }
 
@@ -173,6 +175,7 @@ div.column:first-of-type {
       display: flex;
       justify-content: center;
       align-items: flex-end;
+
       img {
         height: 90%;
         object-position: bottom;
@@ -494,8 +497,8 @@ div.column:first-of-type {
       .ocp-left-column {
         .ocp-hero-container {
           .title {
-            font-size: 3.5rem;
-            line-height: 4rem;            
+            font-size: 4rem;
+            line-height: 4rem;
           }
 
           .subtitle {
@@ -503,22 +506,63 @@ div.column:first-of-type {
           }
 
           .date {
-            font-size: 2rem;
+            font-size: 1.4rem;
             margin-top: 1rem;
             text-align: center;
-            display: block;
           }
         }
+
         .connect {
           .subtitle {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
           }
         }
       }
 
       .ocp-right-column {
         img {
-          width: 80%;
+          width: 200px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .hero-marketing {
+
+    .hero-marketing-columns {
+      .left-column {
+        transform: none;
+        width: 100%;
+        margin-left: 0;
+
+        .hero-marketing-container {
+          transform: none;
+          margin-left: 0;
+          height: auto;
+        }
+      }
+
+      .right-column {
+        width: 100%;
+        z-index: 1;
+        margin-left: 0;
+        min-height: 150px;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .ocp-hero {
+    .ocp-hero-columns {
+
+      .ocp-right-column {
+        img {
+          width: 90%;
           height: auto;
         }
       }

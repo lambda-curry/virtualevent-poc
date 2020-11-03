@@ -28,9 +28,11 @@ const OCPHeroComponent = ({ location, isLoggedUser, summit, summit_phase }) => (
             <h1 className={`${styles.title}`}>
               {HeroContent.heroBanner.title}
             </h1>
-            <h2 className={`${styles.subtitle}`}>
-              {HeroContent.heroBanner.subTitle}
-            </h2>
+            {HeroContent.heroBanner.subTitle &&
+              <h2 className={`${styles.subtitle}`}>
+                {HeroContent.heroBanner.subTitle}
+              </h2>
+            }
             <span className={`${styles.date}`}>
               {HeroContent.heroBanner.date}
             </span>
@@ -65,7 +67,7 @@ const OCPHeroComponent = ({ location, isLoggedUser, summit, summit_phase }) => (
                 }
               </div>
               :
-              <div className={styles.connect}>                
+              <div className={styles.connect}>
                 <h2 className={`${styles.subtitle}`}>
                   CONNECT. <br />
                   COLLABORATE. <br />
