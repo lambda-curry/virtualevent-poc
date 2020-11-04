@@ -2,19 +2,19 @@
 templateKey: custom-page
 title: FAQ - Registration and FiNd
 ---
-Q. What internet browsers do you suggest for your platform?
+**Q. What internet browsers do you suggest for your platform?**
 
 A. FNvirtual works best in Chrome, Safari, Brave, and Firefox. To ensure you have a fast, safe, and secure internet experience, please verify your preferred browser is up to date.
 
+–
 
-
-Q. What is an FNid?
+**Q. What is an FNid?**
 
 A. Your FNid is a set of credentials that authenticates you as a user of the FNvirtual Event Platform. When you create your FNid, you enter basic info about yourself and create a password to protect your info. You will use your FNid to access all FNvirtual Events.
 
 –
 
-Q. I created my FNid; why do I need to register for the event as well?
+**Q. I created my FNid; why do I need to register for the event as well?**
 
 A. Creating an FNid and registering/purchasing an event ticket are two different things.
 
@@ -24,13 +24,13 @@ A. Creating an FNid and registering/purchasing an event ticket are two different
 
 –
 
-Q. Why am I being asked to allow the Virtual Event app to access my information after I log in for the first time?
+**Q. Why am I being asked to allow the Virtual Event app to access my information after I log in for the first time?**
 
 A. In accordance with General Data Protection Regulation (GDPR) guidelines, the website is providing details on how it may use your information. This is standard industry practice. You will only need to accept this set of permissions once.
 
 –
 
-Q. Who will see the information in my FNid?
+**Q. Who will see the information in my FNid?**
 
 A. Your basic FNid information will become your attendee profile.
 
@@ -39,7 +39,7 @@ A. Your basic FNid information will become your attendee profile.
 
 –
 
-Q. What is my speaker information used for?
+**Q. What is my speaker information used for?**
 
 A. The information you provide as a speaker/presenter through FNspeaker.mgmt will be visible to attendees. If you are a speaker, you will have two profiles for an event.
 
@@ -48,28 +48,28 @@ A. The information you provide as a speaker/presenter through FNspeaker.mgmt wil
 
 –
 
-Q. I forgot my FNid login/password
+**Q. I forgot my FNid login/password**
 
-A. Please visit https://idp.fntech.com.
+A. Please visit <https://idp.fntech.com>.
 
 * Choose “Forgot Password?”. Follow the process to receive your password.
 * You will receive an email—at whatever email address you used to create your FNid—which will allow you to reset your password.
 
 –
 
-Q. I’m having trouble with my FNid. Who should I contact?
+**Q. I’m having trouble with my FNid. Who should I contact?**
 
 A. For tech support, please email [support@fntech.com](<>)
 
 –
 
-Q. I’m having trouble registering for an event. Who should I contact?
+**Q. I’m having trouble registering for an event. Who should I contact?**
 
 A. For FNregistration support, please email [registration@fntech.com](<>)
 
 –
 
-Q. I’m looking for my virtual “ticket” to an event. Where can I find this?
+**Q. I’m looking for my virtual “ticket” to an event. Where can I find this?**
 
 A. After you registered/purchased your ticket, you should have received an Order Confirmation email that contained your virtual ticket.
 
@@ -79,13 +79,13 @@ A. After you registered/purchased your ticket, you should have received an Order
 
 –
 
-Q. I know the event url, but can’t find my ticket. How can I enter the event?
+**Q. I know the event url, but can’t find my ticket. How can I enter the event?**
 
 A. If you registered with your FNid, you can simply log in using those credentials. The system will know that you purchased a ticket.
 
 –
 
-Q. I’m looking for my event order. Where can I find this?
+**Q. I’m looking for my event order. Where can I find this?**
 
 A. You can access your order from the Order Confirmation email you received at the address you provided during the registration process.
 
@@ -95,7 +95,7 @@ A. You can access your order from the Order Confirmation email you received at t
 
 –
 
-Q. The event page says, “I’m sorry, you are not registered for the event,” but I have an FNid. Why am I unable to enter the event?
+**Q. The event page says, “I’m sorry, you are not registered for the event,” but I have an FNid. Why am I unable to enter the event?**
 
 A. Each FNvirtual event requires that you are registered and/or have purchased a virtual ticket to that event. The website will redirect you to Registration so you can purchase a ticket.
 
@@ -104,7 +104,7 @@ A. Each FNvirtual event requires that you are registered and/or have purchased a
 
 –
 
-Q. The event webpage isn’t loading for me. What should I do?
+**Q. The event webpage isn’t loading for me. What should I do?**
 
 A. First, log out of the website and log back in using your FNid. (The log out button can be found on the top right of the page.)
 
@@ -114,7 +114,7 @@ A. First, log out of the website and log back in using your FNid. (The log out b
 
 –
 
-Q. How do I add a session to my agenda or “My Schedule”?
+**Q. How do I add a session to my agenda or “My Schedule”?**
 
 A. Click on “Schedule” in the top navigation bar.
 
@@ -123,7 +123,7 @@ A. Click on “Schedule” in the top navigation bar.
 
 –
 
-Q. How do I increase or decrease the text in FNvirtual Event Platform?
+**Q. How do I increase or decrease the text in FNvirtual Event Platform?**
 
 A. Open your internet browser. Then…
 
@@ -132,6 +132,6 @@ A. Open your internet browser. Then…
 
 –
 
-Q. I’m interested in using FNvirtual for an event. Who should I contact?
+**Q. I’m interested in using FNvirtual for an event. Who should I contact?**
 
 A. Please email [govirtual@fntech.com](<>). We’d love to collaborate with you!
