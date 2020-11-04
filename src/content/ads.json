@@ -4,11 +4,18 @@
       "section": "lobby",
       "columnAds": [
         {
-          "image": "/img/if2020-lobby-1.png",
+          "image": "/img/if2020-lobby-schedule.png",
           "column": "right",
           "button": {
             "link": "/a/schedule"
           }
+        },
+        {
+          "image": "/img/if2020-lobby-schedule-contentwells.png",
+          "button": {
+            "link": "/a/schedule"
+          },
+          "column": "right"
         }
       ]
     }
