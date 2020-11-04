@@ -56,13 +56,13 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "link": "https://infinityfestival2020.fnvirtual.app/a/event/1155",
+                "link": "/a/event/1155",
                 "name": "Capitol Royale: Greg Penny on Mixing \"Rocket Man\"",
                 "order": 5
               },
               {
                 "class_name": "PresentationVideo",
-                "link": "https://infinityfestival2020.fnvirtual.app/a/event/1156",
+                "link": "/a/event/1156",
                 "name": "Capitol Royale: New Music Breaks",
                 "order": 6
               }
