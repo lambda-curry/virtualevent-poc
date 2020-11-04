@@ -9,7 +9,7 @@ import withOrchestra from "../utils/widgetOrchestra";
 import SummitObject from '../content/summit.json'
 import HomeSettings from '../content/home-settings.json'
 
-import OCPHeroComponent from '../components/OCPHeroComponent'
+import LobbyHeroComponent from '../components/LobbyHeroComponent'
 import AdvertiseComponent from '../components/AdvertiseComponent'
 import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
 import DisqusComponent from '../components/DisqusComponent'
@@ -47,7 +47,7 @@ export const HomePageTemplate = class extends React.Component {
 
     return (
       <React.Fragment>
-        <OCPHeroComponent summit={summit} location={null} />
+        <LobbyHeroComponent />
         <div className="px-5 py-5 mb-6">
           <div className="columns">
             <div className="column is-one-quarter">
