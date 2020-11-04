@@ -73,6 +73,10 @@ export const SponsorPageTemplate = class extends React.Component {
     this.props.scanBadge(sponsorId);
   }
 
+  onViewAllEventsClick() {
+    navigate('/a/schedule')
+  }
+
   render() {
     const { loggedUser, user } = this.props;
     const { sponsor, tier, notFound, parsedIntro } = this.state;
