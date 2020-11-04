@@ -1,6 +1,26 @@
 {
   "tiers": [
     {
+      "id": "tier-DHcI3dWGk",
+      "name": "Click below to visit Featured",
+      "badge": "",
+      "lobby": {
+        "lobbyTemplate": "big-images",
+        "display": true
+      },
+      "sponsorPage": {
+        "sponsorTemplate": "big-header",
+        "widgets": {
+          "disqus": true,
+          "liveEvent": true,
+          "schedule": true,
+          "banner": true
+        }
+      },
+      "eventTemplate": "",
+      "expoHallSize": "small"
+    },
+    {
       "id": "tier-cYGYq5-ae",
       "name": "Click below to visit Presenting",
       "badge": "",
@@ -53,6 +73,14 @@
       }
     },
     {
+      "id": "tier-b2uY24vbB",
+      "name": "Click below to visit Presenting Media Partner",
+      "lobby": {
+        "lobbyTemplate": "small-images",
+        "display": true
+      }
+    },
+    {
       "id": "tier-S_ykYbFqh",
       "name": "Click below to visit Producer",
       "sponsorPage": {
@@ -65,34 +93,6 @@
         }
       },
       "expoHallSize": "small",
-      "lobby": {
-        "lobbyTemplate": "small-images",
-        "display": true
-      }
-    },
-    {
-      "id": "tier-DHcI3dWGk",
-      "name": "Click below to visit Featured",
-      "badge": "",
-      "lobby": {
-        "lobbyTemplate": "big-images",
-        "display": true
-      },
-      "sponsorPage": {
-        "sponsorTemplate": "big-header",
-        "widgets": {
-          "disqus": true,
-          "liveEvent": true,
-          "schedule": true,
-          "banner": true
-        }
-      },
-      "eventTemplate": "",
-      "expoHallSize": "small"
-    },
-    {
-      "id": "tier-b2uY24vbB",
-      "name": "Click below to visit Presenting Media Partner",
       "lobby": {
         "lobbyTemplate": "small-images",
         "display": true
