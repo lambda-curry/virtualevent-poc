@@ -69,7 +69,13 @@
         "display": true
       },
       "sponsorPage": {
-        "sponsorTemplate": "small-header"
+        "sponsorTemplate": "small-header",
+        "widgets": {
+          "disqus": true,
+          "liveEvent": true,
+          "schedule": true,
+          "banner": true
+        }
       }
     },
     {
@@ -78,6 +84,15 @@
       "lobby": {
         "lobbyTemplate": "small-images",
         "display": true
+      },
+      "sponsorPage": {
+        "sponsorTemplate": "small-header",
+        "widgets": {
+          "disqus": true,
+          "liveEvent": true,
+          "schedule": true,
+          "banner": true
+        }
       }
     },
     {
