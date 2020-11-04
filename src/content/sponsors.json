@@ -478,7 +478,7 @@
         }
       ],
       "sponsors": [
-      {
+        {
           "marquee": "Simplify AI with Intel® Artificial Intelligence Technologies",
           "sponsorColor": "#0068b5",
           "logo": "/img/boxed-logo-energyblue-3000px.png",
@@ -500,6 +500,14 @@
           },
           "id": 14,
           "usesSponsorPage": false
+        }
+      ]
+    },
+    {
+      "tier": [
+        {
+          "value": "tier-b2uY24vbB",
+          "label": "Click below to visit Presenting Media Partner"
         }
       ]
     },
