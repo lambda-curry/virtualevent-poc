@@ -14,7 +14,7 @@
           "image": "/img/ocp20tw-member-button.png",
           "column": "left",
           "button": {
-            "link": "https://www.opencompute.org/membership"
+            "link": "https://bit.ly/32fORC5 "
           }
         },
         {
@@ -27,13 +27,16 @@
         {
           "image": "/img/ocp20tw-store-button.png",
           "button": {
-            "link": "https://opencompute.shop/"
+            "link": "https://bit.ly/32gu69k "
           },
           "column": "right"
         },
         {
           "image": "/img/ocp20tw-virtual-tour-button.png",
-          "column": "right"
+          "column": "right",
+          "button": {
+            "link": "https://bit.ly/34ZpXZj "
+          }
         },
         {
           "image": "/img/ocp20tw-lobby-mediasponsors.png",
