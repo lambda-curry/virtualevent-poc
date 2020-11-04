@@ -20,7 +20,7 @@ const SponsorComponent = ({ page }) => {
         const tier = Tiers.tiers.find(t => t.id === s.tier[0].value);
         const template = page === 'lobby' ? tier.lobby.lobbyTemplate : page === 'event' ? tier.eventTemplate : 'expo-hall';
 
-        if (sponsors.length > 0) {
+        if (sponsors?.length > 0) {
           renderButton = true;
           switch (template) {
             case 'big-images': {
