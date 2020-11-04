@@ -116,7 +116,8 @@
       "lobby": {
         "lobbyTemplate": "small-images",
         "display": true
-      }
+      },
+      "widgetTitle": "Click below to visit Producer Sponsors"
     }
   ],
   "imageHeader": "/img/1_hollywood-sign_grayscale_v2.jpg",
