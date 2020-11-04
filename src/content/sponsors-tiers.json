@@ -18,7 +18,8 @@
         }
       },
       "eventTemplate": "",
-      "expoHallSize": "small"
+      "expoHallSize": "small",
+      "widgetTitle": "Click below to visit Featured Sponsors"
     },
     {
       "id": "tier-cYGYq5-ae",
@@ -39,7 +40,8 @@
         "banner": true
       },
       "eventTemplate": "",
-      "expoHallSize": "large"
+      "expoHallSize": "large",
+      "widgetTitle": "Click below to visit Presenting Sponsors"
     },
     {
       "id": "tier-U_wEwGX8a",
@@ -59,7 +61,8 @@
         }
       },
       "eventTemplate": "",
-      "expoHallSize": "medium"
+      "expoHallSize": "medium",
+      "widgetTitle": "Click below to visit Co-Presenting Sponsors"
     },
     {
       "id": "tier-H6WSuRToI",
@@ -76,7 +79,8 @@
           "schedule": true,
           "banner": true
         }
-      }
+      },
+      "widgetTitle": "Thank you to our Executive Producer Sponsor"
     },
     {
       "id": "tier-b2uY24vbB",
@@ -93,7 +97,8 @@
           "schedule": true,
           "banner": true
         }
-      }
+      },
+      "widgetTitle": "Click below to visit Presenting Media Partner Sponsors"
     },
     {
       "id": "tier-S_ykYbFqh",
