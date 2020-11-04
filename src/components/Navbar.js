@@ -1,13 +1,15 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
-import UserNavbar from './UserNavbar';
 import styles from '../styles/navbar.module.scss';
 
 import LogoutButton from './LogoutButton';
-
 import Link from './Link'
-import Content from '../content/navbar.json'
+import ProfilePopupComponent from './ProfilePopupComponent';
 
+import { updateProfilePicture, updateProfile } from '../actions/user-actions'
+
+import Content from '../content/navbar.json'
 import SummitObject from '../content/summit.json'
 
 import envVariables from '../utils/envVariables'
@@ -17,6 +19,7 @@ const Navbar = class extends React.Component {
     super(props)
     this.state = {
       active: false,
+      showProfile: false,
       navBarActiveClass: '',
     }
   }
@@ -41,13 +44,31 @@ const Navbar = class extends React.Component {
     )
   }
 
+  handlePictureUpdate = (picture) => {
+    this.props.updateProfilePicture(picture);
+  }
+
+  handleProfileUpdate = (profile) => {
+    this.props.updateProfile(profile)
+  }
+
+  handleTogglePopup = (profile) => {
+    if (profile) {
+      document.body.classList.add('is-clipped');
+    } else {
+      document.body.classList.remove('is-clipped');
+    }
+    this.setState({ showProfile: profile })
+  }
+
   render() {
 
-    let { isLoggedUser, logo } = this.props;
+    let { isLoggedUser, idpProfile, logo, idpLoading, location } = this.props;
+    let { showProfile } = this.state;
 
     let { summit } = SummitObject
     let defaultPath = envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/';
-    
+
     return (
       <React.Fragment>
         <nav className={`${styles.navbar}`} role="navigation" aria-label="main navigation">
@@ -88,14 +109,28 @@ const Navbar = class extends React.Component {
                   )
                 }
               })}
+              {isLoggedUser &&
+                <div className={styles.navbarItem}>
+                  <img onClick={() => this.handleTogglePopup(!showProfile)} className={styles.profilePic} src={idpProfile?.picture} />
+                  {showProfile &&
+                    <ProfilePopupComponent
+                      userProfile={idpProfile}
+                      showProfile={showProfile}
+                      idpLoading={idpLoading}
+                      changePicture={(pic) => this.handlePictureUpdate(pic)}
+                      changeProfile={(profile) => this.handleProfileUpdate(profile)}
+                      closePopup={() => this.handleTogglePopup(!showProfile)}
+                    />
+                  }
+                </div>
+              }
               <LogoutButton styles={styles} isLoggedUser={isLoggedUser} />
             </div>
           </div>
         </nav>
-        {/* {isLoggedUser && <UserNavbar isLoggedUser={isLoggedUser} />} */}
       </React.Fragment>
     )
   }
 }
 
-export default Navbar
+export default connect(null, { updateProfilePicture, updateProfile })(Navbar)

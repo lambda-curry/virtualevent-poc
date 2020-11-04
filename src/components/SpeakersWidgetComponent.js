@@ -13,19 +13,17 @@ const SpeakersWidgetComponent = class extends React.Component {
 
   render() {
 
-    const { accessToken, title, bigPics, now } = this.props;
+    const { now, ...props } = this.props;
 
     const widgetProps = {
       apiBaseUrl: envVariables.SUMMIT_API_BASE_URL,
       marketingApiBaseUrl: envVariables.MARKETING_API_BASE_URL,
       summitId: parseInt(envVariables.SUMMIT_ID),
-      accessToken: accessToken,
-      title,
-      bigPics,
-      title: title,
       date: now,
       // speakerIds: [1, 187, 190],
       onAuthError: (err, res) => expiredToken(err),
+      // featured: true,
+      ...props
     };
 
     return (

@@ -18,6 +18,10 @@
     }
   }
 
+  .navbar-mobile {
+    display: none;
+  }
+
   .navbar-end {
     padding-right: 15px;
   }
@@ -51,7 +55,16 @@
         &:visited {
           color: $color_text_light;
         }
-      }
+      }      
+
+      img.profile-pic {
+        height: 4rem;
+        width: 4rem;
+        max-height: 4rem;
+        border-radius: 5px;
+        object-fit: cover;
+        cursor: pointer;
+      } 
     }
   }
 }
@@ -97,6 +110,18 @@
 
 @media (max-width: 1023px) {
   .navbar {
+
+    .navbar-mobile {
+      display: flex;
+      justify-content: space-between;
+
+      .navbar-end {
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+      }
+    }
+
     .navbar-burger {
       color: $color_text_light;
     }
@@ -134,8 +159,8 @@
 }
 
 @media (max-width: 768px) {
-  .navbar {  
-    .navbar-brand {    
+  .navbar {
+    .navbar-brand {
       img {
         height: 3rem;
       }

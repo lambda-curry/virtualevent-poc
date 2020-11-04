@@ -73,6 +73,10 @@ export const SponsorPageTemplate = class extends React.Component {
     this.props.scanBadge(sponsorId);
   }
 
+  onViewAllEventsClick() {
+    navigate('/a/schedule')
+  }
+
   render() {
     const { loggedUser, user } = this.props;
     const { sponsor, tier, notFound, parsedIntro } = this.state;
@@ -164,6 +168,7 @@ export const SponsorPageTemplate = class extends React.Component {
 
 const SponsorPage = (
   {
+    location,
     loggedUser,
     sponsorId,
     user,
@@ -173,7 +178,7 @@ const SponsorPage = (
 ) => {
 
   return (
-    <Layout>
+    <Layout location={location}>
       <SponsorPageTemplate
         loggedUser={loggedUser}
         sponsorId={sponsorId}

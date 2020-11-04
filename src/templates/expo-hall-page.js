@@ -10,10 +10,10 @@ import envVariables from "../utils/envVariables";
 import {AttendanceTracker} from "openstack-uicore-foundation/lib/components";
 import {connect} from "react-redux";
 
-const ExpoHallPage = ({accessToken}) => {
+const ExpoHallPage = ({accessToken, location}) => {
 
   return (
-    <Layout>
+    <Layout location={location}>
       <AttendanceTracker
           summitId={SummitObject.summit.id}
           apiBaseUrl={envVariables.SUMMIT_API_BASE_URL}
@@ -21,7 +21,7 @@ const ExpoHallPage = ({accessToken}) => {
       />
       <section className="hero is-large sponsors-header" style={{backgroundImage: `url(${Tiers.imageHeader})`}}>
         <div className="hero-body">
-          <div className="container">            
+          <div className="container">
           </div>
         </div>
       </section>

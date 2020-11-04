@@ -5,7 +5,7 @@ const VideoBanner = ({ event }) => {
   return (
     <div className="join-zoom-container">
       <span>
-        Take the virtual mic and participate!
+        Click to Gain Speaker Access
       </span>
       <a className="zoom-link" href={event.meeting_url} target="_blank">
         <button className="zoom-button button">

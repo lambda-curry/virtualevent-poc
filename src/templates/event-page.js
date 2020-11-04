@@ -168,6 +168,7 @@ export const EventPageTemplate = class extends React.Component {
 const EventPage = (
   {
     loggedUser,
+    location,
     loading,
     event,
     eventId,
@@ -179,7 +180,7 @@ const EventPage = (
 ) => {
 
   return (
-    <Layout>
+    <Layout location={location}>
       {event && event.id &&
         <AttendanceTracker
           key={`att-tracker-${event.id}`}
