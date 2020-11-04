@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from '../components/Link'
 import styles from '../styles/documents.module.scss'
 
 const DocumentsComponent = ({ event }) => {
@@ -58,7 +59,7 @@ const DocumentsComponent = ({ event }) => {
                         <span>{material.name}</span>
                       </div>
                       <div className="column is-2 has-text-right">
-                        <a target="_blank" rel="noreferrer" href={link}><i className="fa fa-download icon is-large"></i></a>
+                        <Link to={link}><i className="fa fa-download icon is-large"></i></Link>
                       </div>
                       <div className="column is-1"></div>
                     </div>
@@ -68,9 +69,9 @@ const DocumentsComponent = ({ event }) => {
                         <i className={`fa ${faIcon} icon is-large`}></i>
                       </div>
                       <div className={`column is-8 ${styles.documentName}`}>
-                        <a target="_blank" rel="noreferrer" href={link}>
+                        <Link to={link}>
                           <span>{material.name}</span>
-                        </a>
+                        </Link>
                       </div>
                       <div className="column is-1"></div>
                     </div>}
