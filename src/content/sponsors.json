@@ -474,7 +474,7 @@
       "tier": [
         {
           "value": "tier-H6WSuRToI",
-          "label": "Click below to visit Executive Producer"
+          "label": "Thank you to our Executive Producer"
         }
       ],
       "sponsors": [
@@ -510,9 +510,7 @@
           "label": "Click below to visit Presenting Media Partner"
         }
       ],
-      "sponsors":
-      [
-      
+      "sponsors": [
         {
           "marquee": "We leverage the power of technology, location, and creativity to make meaningful connections between brands and audiences.",
           "sponsorColor": "#64008F",
@@ -552,8 +550,7 @@
           "email": "sales@outfrontmedia.com",
           "usesSponsorPage": true
         }
-        
-        ]
+      ]
     },
     {
       "tier": [
