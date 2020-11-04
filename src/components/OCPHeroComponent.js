@@ -35,6 +35,13 @@ const OCPHeroComponent = ({ location, isLoggedUser, summit, summit_phase }) => (
             <span className={`${styles.date}`}>
               {HeroContent.heroBanner.date}
             </span>
+            <div className={styles.connect}>
+              <h2 className={`${styles.subtitle}`}>
+                CONNECT. <br />
+                COLLABORATE. <br />
+                ACCELERATE.
+              </h2>
+            </div>
             <div className={styles.heroButtons}>
               {summit_phase >= PHASES.DURING && isLoggedUser ?
                 <a className={styles.link} href={`${envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/'}`} rel="noreferrer">
@@ -63,14 +70,7 @@ const OCPHeroComponent = ({ location, isLoggedUser, summit, summit_phase }) => (
                   }
                 </React.Fragment>
               }
-            </div>
-            <div className={styles.connect}>
-              <h2 className={`${styles.subtitle}`}>
-                CONNECT. <br />
-                COLLABORATE. <br />
-                ACCELERATE.
-              </h2>
-            </div>
+            </div>            
           </div>
         </div>
       </div>
