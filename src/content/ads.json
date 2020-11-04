@@ -32,6 +32,10 @@
           "column": "right"
         },
         {
+          "image": "/img/ocp20tw-virtual-tour-button.png",
+          "column": "right"
+        },
+        {
           "image": "/img/ocp20tw-lobby-mediasponsors.png",
           "column": "right"
         }
