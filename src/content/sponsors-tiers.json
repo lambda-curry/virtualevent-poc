@@ -14,7 +14,11 @@
     },
     {
       "id": "tier-ta8HFoy4a",
-      "name": "Sponsor Group 2"
+      "name": "Sponsor Group 2",
+      "lobby": {
+        "lobbyTemplate": "carousel",
+        "display": true
+      }
     }
   ],
   "lobbyButton": {
