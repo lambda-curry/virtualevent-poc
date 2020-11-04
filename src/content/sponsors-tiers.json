@@ -89,6 +89,14 @@
       },
       "eventTemplate": "",
       "expoHallSize": "small"
+    },
+    {
+      "id": "tier-b2uY24vbB",
+      "name": "Click below to visit Presenting Media Partner",
+      "lobby": {
+        "lobbyTemplate": "small-images",
+        "display": true
+      }
     }
   ],
   "imageHeader": "/img/1_hollywood-sign_grayscale_v2.jpg",
