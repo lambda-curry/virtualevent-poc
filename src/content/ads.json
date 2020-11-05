@@ -4,6 +4,17 @@
       "section": "lobby",
       "columnAds": [
         {
+          "image": "/img/ocp20tw-lobby-sponsoredsession-tile-mon-coffee.png",
+          "button": {
+            "link": "http://fooji.info/OCPTechWeek"
+          },
+          "column": "left"
+        },
+        {
+          "image": "/img/ocp20tw-lobby-sponsoredsession-tile-mon-yoga.png",
+          "column": "left"
+        },
+        {
           "image": "/img/ocp20tw-member-sessionsearch.png",
           "button": {
             "link": "/a/schedule"
