@@ -99,23 +99,23 @@
                 "class_name": "PresentationVideo",
                 "name": "Jam Sutton: Rituals: Megalithomania",
                 "order": 2,
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/Art_&_Tech/Jam%20Sutton_Rituals%20-%20Megalithomania.MP4"
+                "link": "/a/event/1301"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Djeneba Aduayom: Black Gold",
                 "order": 4,
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/Art_&_Tech/Djeneba%20Adauyom_Black%20Gold.mp4"
+                "link": "/a/event/1296"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Esteban Diacono: Social Interactions",
                 "order": 6,
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/Art_&_Tech/Esteban%20Diacono_Social%20Interactions.mp4"
+                "link": "/a/event/1297"
               },
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/Art_&_Tech/Claudia%20Meyer_VirtualA.mp4",
+                "link": "/a/event/1305",
                 "name": "Claudia Meyer",
                 "order": 8
               },
@@ -123,37 +123,37 @@
                 "class_name": "PresentationVideo",
                 "name": "Danielle Parsons: Ferrofluid",
                 "order": 10,
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/Art_&_Tech/Danielle%20Parsons_Ferrofluid.mp4"
+                "link": "/a/event/1295"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Cara Lee: CHiLL_Adrift",
                 "order": 12,
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/Art_&_Tech/Cara%20Lee_CHiLL_Adrift.mp4"
+                "link": "/a/event/1299"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Deborah Anderson: Save My Missing Sisters",
                 "order": 14,
-                "link": "/a/event/1295"
+                "link": "/a/event/1300"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Carlos Luna James: MGOGLKTKO",
                 "order": 16,
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/IMG_4572.MP4"
+                "link": "/a/event/1302"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Joseph Ryba: Becoming",
                 "order": 18,
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/Art_&_Tech/Joseph%20Ryba_Becoming.mp4"
+                "link": "/a/event/1304"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Nicky Giraffe: Audition for a Role in my Own Life",
                 "order": 20,
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/Art_&_Tech/Nicky%20Giraffe_Audition%20for%20a%20Role%20in%20My%20Own%20Life.mp4"
+                "link": "/a/event/1303"
               }
             ],
             "links": [
