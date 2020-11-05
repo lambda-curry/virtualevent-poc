@@ -1,5 +1,6 @@
 ---
 templateKey: custom-page
+requiresAuth: false
 title: FAQ - Registration and FiNd
 ---
 **Q. What internet browsers do you suggest for your platform?**

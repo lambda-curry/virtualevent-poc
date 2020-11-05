@@ -1,6 +1,8 @@
 ---
 templateKey: custom-page
+requiresAuth: false
 title: About the event
+
 ---
 OCP is excited to announce our next virtual event, OCP TECH WEEK, planned for the week of November 9.
 

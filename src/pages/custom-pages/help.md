@@ -1,5 +1,6 @@
 ---
 templateKey: custom-page
+requiresAuth: false
 title: Help
 ---
 **EVENT TECH SUPPORT**\

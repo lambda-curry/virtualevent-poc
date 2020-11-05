@@ -1,5 +1,6 @@
 ---
 templateKey: custom-page
+requiresAuth: false
 title: Registration
 ---
 **Registration Fee:** $99 per person - Full access to OCP TECH WEEK

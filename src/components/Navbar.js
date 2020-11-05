@@ -96,7 +96,7 @@ const Navbar = class extends React.Component {
             </div>
             <div className={styles.navbarEnd}>
               {Content.items.map((item, index) => {
-                if (!isLoggedUser && item.link.startsWith('/a/') && !item.link.startsWith('/a/schedule')) {
+                if (!isLoggedUser && item.requiresAuth) {
                   return null
                 } else {
                   return (
