@@ -1,10 +1,10 @@
 {
   "heroBanner": {
-    "title": "Hero Title Text",
-    "subTitle": "Subtitle Text",
-    "date": "Date Title ",
+    "title": "Conquering Atlantis",
+    "subTitle": "presented by Stream City",
+    "date": "November 17th, 2020",
     "time": "",
-    "dateLayout": false,
+    "dateLayout": true,
     "buttons": {
       "registerButton": {
         "text": "Register now",
