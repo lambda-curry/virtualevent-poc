@@ -53,6 +53,12 @@
       "link": "/help",
       "display": true,
       "requiresAuth": false
+    },
+    {
+      "display": true,
+      "requiresAuth": true,
+      "title": "FAQ",
+      "link": "https://2020ocptechweek.fnvirtual.app/faq-event"
     }
   ]
 }
