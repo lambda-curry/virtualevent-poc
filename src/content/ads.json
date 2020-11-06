@@ -19,13 +19,13 @@
           "button": {
             "link": "/a/schedule"
           },
-          "column": "left"
+          "column": "right"
         },
         {
-          "image": "/img/ocp20tw-member-button.png",
-          "column": "left",
+          "image": "/img/ocp20tw-virtual-tour-button.png",
+          "column": "right",
           "button": {
-            "link": "https://bit.ly/32fORC5 "
+            "link": "https://bit.ly/34ZpXZj "
           }
         },
         {
@@ -43,10 +43,10 @@
           "column": "right"
         },
         {
-          "image": "/img/ocp20tw-virtual-tour-button.png",
+          "image": "/img/ocp20tw-member-button.png",
           "column": "right",
           "button": {
-            "link": "https://bit.ly/34ZpXZj "
+            "link": "https://bit.ly/32fORC5 "
           }
         },
         {
