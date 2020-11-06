@@ -10375,9 +10375,9 @@ linkifyjs@^2.1.9:
   integrity sha512-74ivurkK6WHvHFozVaGtQWV38FzBwSTGNmJolEgFp7QgR2bl6ArUWlvT4GcHKbPe1z3nWYi+VUdDZk16zDOVug==
 
 live-event-widget@^1.0.48:
-  version "1.0.49"
-  resolved "https://registry.yarnpkg.com/live-event-widget/-/live-event-widget-1.0.49.tgz#d7be9cd94ad6c063b38da673a9e9b0d8f893338f"
-  integrity sha512-S1XghUb7QS6hq+sKDo/onuwdMhFaTcsmDtKnkdJeF3s2efuI/7Mi3k7Y4JrmD+dP+y+bzjCX1eUZ/Ex6Xj9yZA==
+  version "1.0.50"
+  resolved "https://registry.yarnpkg.com/live-event-widget/-/live-event-widget-1.0.50.tgz#be326fd8e362ee63bac3bae6462d081c7eb13803"
+  integrity sha512-fyW4TO8r/fbkcF1XsJf23/nAqgNCeX2cANdQsAlJi+cRZSiUQY/UsujQC94H0C+TJPDT0WmZbC0kh7BaufZ0mQ==
   dependencies:
     svg-url-loader "^6.0.0"
 
