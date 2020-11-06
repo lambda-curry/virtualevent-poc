@@ -25,8 +25,8 @@ const SchedulePage = ({summit_phase, isLoggedUser, loggedUser, mySchedule, locat
   }
 
   return (
-    <Layout location={location} marketing={true}>
-      <div className="container">
+    <Layout location={location}>
+      <div className="container" style={{paddingBottom: '5rem'}}>
         <h1>{ title }</h1>
         <hr/>
         <ScheduleLiteComponent
