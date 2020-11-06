@@ -99,6 +99,7 @@ export const HomePageTemplate = class extends React.Component {
                   accessToken={loggedUser.accessToken}
                   title="Featured Speakers"
                   bigPics={false}
+                  featured={true}
                 />
               }
               <AdvertiseComponent section='lobby' column="center" />
