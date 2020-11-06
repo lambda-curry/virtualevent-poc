@@ -1,10 +1,8 @@
 ---
 templateKey: custom-page
-requiresAuth: true
 title: "FAQ - Event "
+requiresAuth: true
 ---
-
-
 **Q. What internet browsers do you suggest for your platform?**
 
 A. FNvirtual works best in Chrome, Safari, Brave, and Firefox. To ensure you have a fast, safe, and secure internet experience, please verify your preferred browser is up to date.
@@ -34,10 +32,7 @@ A. Open your internet browser. Then…
 
 * Keystrokes for Mac users: “Command” + “+/-”
 * Keystrokes for PC users: “Alt + View”, then point to the text size you desire (Largest, Larger, Medium (default), Smaller and Smallest)
-
--
-
-**Q. It appears that some information is not showing correctly on my page. How can I fix this?**
+* **Q. It appears that some information is not showing correctly on my page. How can I fix this?**
 
 A. FNvirtual uses dynamic data which adjusts in size and position on the page depending on the size/shape of viewable space. Try adjusting your window size by hovering over the edge or corner of the window and dragging your mouse to the desired position. This should adjust the image and/or text accordingly.
 
@@ -95,16 +90,12 @@ A. Click on “Schedule” in the top navigation bar.
 * Then choose the track you are interested in from the upper right corner.
 * Don’t forget to add the events or sessions you are most interested in to “My Schedule” by clicking the “+” symbol.
 
-
-
 **Q. Why is there a time zone in the schedule? How do I know what time zone the show is happening?**
 
 A. Even though the event is virtual, the event does need to exist in a specific time zone.
 
 * The time zone is listed in the website header.
 * This event is in Pacific Time Zone 
-
-
 
 **Q. What is the difference between a Private Chat and a Public Conversation?**
 
