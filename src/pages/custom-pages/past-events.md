@@ -1,5 +1,6 @@
 ---
 templateKey: custom-page
+requiresAuth: false
 title: Past Events
 ---
 In May of 2020, OCP held its first ever all-virtual event, the 2020 OCP Virtual Summit and Future Technologies Symposium. [Click here](https://www.opencompute.org/blog/2020-ocp-virtual-summit-by-the-numbers "2020 OCP Virtual Summit and Future Technologies Symposium report") to review the post-event data report.

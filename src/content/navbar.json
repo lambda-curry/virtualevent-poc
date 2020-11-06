@@ -3,47 +3,56 @@
     {
       "title": "Lobby",
       "link": "/a/",
-      "display": true
+      "display": true,
+      "requiresAuth": true
     },
     {
       "title": "About the event",
       "link": "/about-event",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     },
     {
       "title": "Registration",
       "link": "/registration",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     },
     {
       "title": "Schedule",
       "link": "/a/schedule",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     },
     {
       "title": "My Schedule",
       "link": "/a/my-schedule",
-      "display": true
+      "display": true,
+      "requiresAuth": true
     },
     {
       "title": "Sponsorship",
       "link": "/sponsorship",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     },
     {
       "title": "Past events",
       "link": "/past-events",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     },
     {
       "title": "Contact",
       "link": "/contact",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     },
     {
       "title": "Help",
       "link": "/help",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     }
   ]
 }

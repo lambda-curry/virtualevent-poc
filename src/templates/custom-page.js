@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import { Redirect } from '@reach/router'
 import { connect } from 'react-redux'
 import Layout from '../components/Layout'
 import OCPHeroComponent from '../components/OCPHeroComponent'
@@ -15,7 +16,7 @@ export const CustomPageTemplate = ({
   const PageContent = contentComponent || Content
 
   return (
-    <div className="content">      
+    <div className="content">
       <h2>{title}</h2>
       <PageContent content={content} />
     </div>
@@ -32,8 +33,12 @@ const CustomPage = ({ data, location, summit_phase, isLoggedUser }) => {
   const { frontmatter, html } = data.markdownRemark
   let { summit } = SummitObject;
 
+  if (frontmatter.requiresAuth && !isLoggedUser) {
+    return <Redirect to='/' noThrow />
+  }
+
   return (
-    <Layout marketing={true}>
+    <Layout>
       <OCPHeroComponent
         summit={summit}
         summit_phase={summit_phase}
@@ -72,6 +77,7 @@ export const customPageQuery = graphql`
       html
       frontmatter {        
         title
+        requiresAuth
       }
     }
   }

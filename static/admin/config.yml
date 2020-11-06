@@ -94,7 +94,8 @@ collections:
           - {label: "Navbar", name: "items", widget: list, fields: [
               {label: "Title", name: "title", widget: string},
               {label: "Link", name: "link", widget: string},
-              {label: "Display", name: "display", widget: boolean, required: false},
+              {label: "Display", name: "display", widget: boolean, required: false, default: true},
+              {label: "Requires Auth?", name: "requiresAuth", widget: boolean, required: false, default: false},
             ]}
       - file: "src/content/footer.json"
         label: "Footer"
@@ -233,6 +234,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "custom-page"}
       - {label: Title, name: title, widget: string}
+      - {label: "Requires Auth?", name: requiresAuth, widget: boolean, required: false, default: false}
       - {label: "Body", name: body, widget: markdown}
   - name: "sponsors"
     label: "Sponsors Data"

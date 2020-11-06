@@ -1,5 +1,6 @@
 ---
 templateKey: custom-page
+requiresAuth: true
 title: "FAQ - Event "
 ---
 
