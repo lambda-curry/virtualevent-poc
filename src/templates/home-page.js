@@ -100,6 +100,7 @@ export const HomePageTemplate = class extends React.Component {
                   title="Featured Speakers"
                   bigPics={false}
                   featured={true}
+                  date={null}
                 />
               }
               <AdvertiseComponent section='lobby' column="center" />
