@@ -12,7 +12,10 @@
         },
         {
           "image": "/img/ocp20tw-lobby-sponsoredsession-tile-mon-yoga.png",
-          "column": "left"
+          "column": "left",
+          "button": {
+            "link": "/a/event/1227"
+          }
         },
         {
           "image": "/img/ocp20tw-member-sessionsearch.png",
