@@ -95,8 +95,8 @@ const Navbar = class extends React.Component {
             </Link> */}
             </div>
             <div className={styles.navbarEnd}>
-              {Content.items.map((item, index) => {
-                if (!isLoggedUser && item.requiresAuth) {
+              {Content.items.map((item, index) => {                
+                if (!isLoggedUser && item.requiresAuth || isLoggedUser && item.link.startsWith('/faq') && !item.requiresAuth) {
                   return null
                 } else {
                   return (
