@@ -16278,9 +16278,9 @@ spdy@^4.0.2:
     spdy-transport "^3.0.0"
 
 speakers-widget@^1.0.14:
-  version "1.0.15"
-  resolved "https://registry.yarnpkg.com/speakers-widget/-/speakers-widget-1.0.15.tgz#fb10a06000deb515f53af32d239cc8abf515c92d"
-  integrity sha512-D5wHbLm26xs+yE2EODPIC0OGAWG6PdLFVU1y2uG52ymlUUIOwafk5PlYHY+Xye9HcEevYFe9uIslBAuPNB9Onw==
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/speakers-widget/-/speakers-widget-1.0.16.tgz#87ceb792b80611481219b9b0434b312d05eeb37e"
+  integrity sha512-Cl7ZyGofOQV+zh0KzYASxnvM1tVlUEPi4BPKHFN09YkrXdktoWjZBz1kAPDUav7loTy8gV8li/dWjR+apZv+Lg==
 
 split-on-first@^1.0.0:
   version "1.1.0"
