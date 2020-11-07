@@ -58,13 +58,13 @@
       "display": true,
       "requiresAuth": true,
       "title": "FAQ",
-      "link": "https://2020ocptechweek.fnvirtual.app/faq-event"
+      "link": "/faq-event"
     },
     {
       "display": true,
       "requiresAuth": false,
       "title": "FAQ",
-      "link": "https://2020ocptechweek.fnvirtual.app/faq-registration-and-find"
+      "link": "/faq-registration-and-find"
     }
   ]
 }
