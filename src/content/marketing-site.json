@@ -1,10 +1,10 @@
 {
   "heroBanner": {
     "title": "New Hire Orientation",
-    "subTitle": "Subtitle Text",
-    "date": "Date Title ",
-    "time": "",
-    "dateLayout": false,
+    "subTitle": "",
+    "date": "DEC 5 2020",
+    "time": "9 AM PST",
+    "dateLayout": true,
     "buttons": {
       "registerButton": {
         "text": "Register now",
