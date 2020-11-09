@@ -2,6 +2,8 @@ import React from 'react'
 import { doLogin } from "openstack-uicore-foundation/lib/methods";
 import URI from "urijs";
 
+import Link from '../components/Link'
+
 import { PHASES } from '../utils/phasesUtils';
 import envVariables from '../utils/envVariables'
 
@@ -44,12 +46,12 @@ const OCPHeroComponent = ({ location, isLoggedUser, summit, summit_phase }) => (
             </div>
             <div className={styles.heroButtons}>
               {summit_phase >= PHASES.DURING && isLoggedUser ?
-                <a className={styles.link} href={`${envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/'}`} rel="noreferrer">
+                <Link className={styles.link} to={`${envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/'}`} >
                   <button className={`${styles.button} button is-large`}>
                     <i className={`fa fa-2x fa-sign-in icon is-large`}></i>
                     <b>Enter</b>
                   </button>
-                </a>
+                </Link>
                 :
                 <React.Fragment>
                   {HeroContent.heroBanner.buttons.registerButton.display &&
