@@ -33,7 +33,7 @@
     {
       "title": "Sponsorship",
       "link": "/sponsorship",
-      "display": true,
+      "display": false,
       "requiresAuth": false
     },
     {
