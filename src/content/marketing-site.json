@@ -44,14 +44,6 @@
         {
           "image": "/img/fnvirtual-template-conqueringatlantis-11.jpg",
           "link": ""
-        },
-        {
-          "image": "",
-          "link": ""
-        },
-        {
-          "image": "",
-          "link": ""
         }
       ]
     },
@@ -85,12 +77,7 @@
     {},
     {
       "title": "Top Left",
-      "images": [
-        {
-          "image": "/img/yoco-sponsor-ads-medium-treva.png",
-          "link": ""
-        }
-      ]
+      "images": []
     }
   ]
 }
