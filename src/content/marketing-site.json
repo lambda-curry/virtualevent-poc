@@ -25,7 +25,7 @@
   "leftColumn": {
     "schedule": {
       "display": true,
-      "title": "Full Event Schedule"
+      "title": "Event Schedule"
     },
     "disqus": {
       "display": false,
@@ -34,7 +34,7 @@
     "image": {
       "display": false,
       "title": "Image",
-      "src": "/img/yoco-sponsor-ads-large-wherehol-vert.png"
+      "src": "/img/fnvirtual-template-conqueringatlantis-11.jpg"
     }
   },
   "sponsors": [
@@ -42,15 +42,15 @@
       "title": "Top Left",
       "images": [
         {
-          "image": "/img/yoco-sponsor-ads-large-wherehol-vert.png",
+          "image": "/img/fnvirtual-template-conqueringatlantis-11.jpg",
           "link": ""
         },
         {
-          "image": "/img/yoco-sponsor-ads-large-wherehol-vert.png",
+          "image": "",
           "link": ""
         },
         {
-          "image": "/img/yoco-sponsor-ads-large-wherehol-vert.png",
+          "image": "",
           "link": ""
         }
       ]
@@ -59,7 +59,7 @@
       "title": "Top Right",
       "images": [
         {
-          "image": "/img/yoco-sponsor-ads-medium-tilted.png",
+          "image": "/img/fnvirtual-template-conqueringatlantis-09.jpg",
           "link": ""
         }
       ]
@@ -68,7 +68,7 @@
       "title": "Mid Left",
       "images": [
         {
-          "image": "/img/yoco-sponsor-ads-large-mobility-vert-new.png",
+          "image": "/img/fnvirtual-template-conqueringatlantis-10.jpg",
           "link": ""
         }
       ]
@@ -77,7 +77,7 @@
       "title": "Top Left",
       "images": [
         {
-          "image": "/img/yoco-sponsor-ads-large-apex-vert.png",
+          "image": "/img/fnvirtual-template-conqueringatlantis-12.jpg",
           "link": ""
         }
       ]
