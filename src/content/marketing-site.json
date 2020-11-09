@@ -3,7 +3,7 @@
     "title": "Conquering Atlantis",
     "subTitle": "presented by Stream City",
     "date": "November 17th, 2020",
-    "time": "",
+    "time": "11AM PST",
     "dateLayout": true,
     "buttons": {
       "registerButton": {
@@ -34,7 +34,7 @@
     "image": {
       "display": false,
       "title": "Image",
-      "src": "/img/fnvirtual-template-conqueringatlantis-11.jpg"
+      "src": ""
     }
   },
   "sponsors": [
@@ -43,7 +43,7 @@
       "images": [
         {
           "image": "/img/fnvirtual-template-conqueringatlantis-11.jpg",
-          "link": ""
+          "link": "https://conqueringatlantis.com/events"
         }
       ]
     },
@@ -52,7 +52,7 @@
       "images": [
         {
           "image": "/img/fnvirtual-template-conqueringatlantis-09.jpg",
-          "link": ""
+          "link": "https://www.facebook.com/conqueringatlantis/?modal=admin_todo_tour"
         }
       ]
     },
@@ -61,7 +61,7 @@
       "images": [
         {
           "image": "/img/fnvirtual-template-conqueringatlantis-10.jpg",
-          "link": ""
+          "link": "https://www.youtube.com/conqueringatlantis"
         }
       ]
     },
@@ -70,7 +70,7 @@
       "images": [
         {
           "image": "/img/fnvirtual-template-conqueringatlantis-12.jpg",
-          "link": ""
+          "link": "https://conqueringatlantis.com/"
         }
       ]
     },
