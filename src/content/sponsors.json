@@ -71,6 +71,12 @@
                 "name": "Capitol Royale: Inside the Mix - Nick Rives on SuperM's Tiger ",
                 "order": 7,
                 "link": "/a/event/1169"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Capitol Royale: Anatomy of Screen Music",
+                "order": 8,
+                "link": "/a/event/1171"
               }
             ]
           },
