@@ -65,6 +65,12 @@
                 "link": "/a/event/1156",
                 "name": "Capitol Royale: New Music Breaks",
                 "order": 6
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Capitol Royale: Inside the Mix - Nick Rives on SuperM's Tiger ",
+                "order": 7,
+                "link": "/a/event/1169"
               }
             ]
           },
