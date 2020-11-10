@@ -4,7 +4,7 @@
     "subTitle": "presented by Stream City",
     "date": "November 17th, 2020",
     "time": "11AM PST",
-    "dateLayout": true,
+    "dateLayout": false,
     "buttons": {
       "registerButton": {
         "text": "Register now",
