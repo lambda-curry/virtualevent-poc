@@ -301,7 +301,7 @@
           "companyId": 20,
           "columnAds": [],
           "id": 22,
-          "usesSponsorPage": false
+          "usesSponsorPage": true
         }
       ]
     },
