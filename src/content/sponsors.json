@@ -299,7 +299,11 @@
           "sponsorId": 22,
           "title": "ShIFt ",
           "companyId": 20,
-          "columnAds": [],
+          "columnAds": [
+            {
+              "image": "/img/if2020-shiftsession-graphic.png"
+            }
+          ],
           "id": 22,
           "usesSponsorPage": true
         }
