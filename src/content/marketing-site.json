@@ -24,11 +24,11 @@
   },
   "leftColumn": {
     "schedule": {
-      "display": true,
+      "display": false,
       "title": "Event Schedule"
     },
     "disqus": {
-      "display": false,
+      "display": true,
       "title": "Join the conversation"
     },
     "image": {
