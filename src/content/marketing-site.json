@@ -28,13 +28,13 @@
       "title": "Event Schedule"
     },
     "disqus": {
-      "display": true,
+      "display": false,
       "title": "Join the conversation"
     },
     "image": {
       "display": false,
       "title": "Image",
-      "src": ""
+      "src": "/img/smoke_logo_vertical.gif"
     }
   },
   "sponsors": [
