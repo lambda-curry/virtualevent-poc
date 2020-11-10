@@ -19,7 +19,7 @@ const withSessionChecker = (WrappedComponent) => (props) => {
   return (
     <Fragment>
       {instantiateSessionChecker()}
-      <WrappedComponent {...props} />;
+      <WrappedComponent {...props} />
     </Fragment>
   );
 };
