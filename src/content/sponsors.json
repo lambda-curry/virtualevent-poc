@@ -264,6 +264,18 @@
                 "order": 15,
                 "link": "https://www.giraffestudiosla.com",
                 "name": "Visit Artist: Nicky Giraffe"
+              },
+              {
+                "class_name": "PresentationLink",
+                "order": 21,
+                "name": "Visit Artist: Kiyan Forootan",
+                "link": "https://www.instagram.com/kiyanforootan/?hl=en"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.jennsingergallery.com/davidstenbeck",
+                "name": "Visit Artist: David Stenbeck",
+                "order": 23
               }
             ]
           },
