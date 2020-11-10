@@ -83,6 +83,18 @@
                 "name": "Capitol Royale: \"New Slang\" ",
                 "order": 9,
                 "link": "/a/event/1173"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Capitol Royale: Steve Genewick - Creating for Atmos ",
+                "order": 10,
+                "link": "/a/event/1288"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Capitol Royale: Riley Clemmons \"Healing\"",
+                "order": 11,
+                "link": "/a/event/1289"
               }
             ]
           },
