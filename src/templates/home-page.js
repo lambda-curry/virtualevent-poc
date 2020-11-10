@@ -62,7 +62,7 @@ export const HomePageTemplate = class extends React.Component {
                 style={{ marginBottom: '15px' }}
                 showSponsor={true}
                 showTrack={true}
-                showSpeakers={false}
+                showSpeakers={true}
                 showSpeakerCompany={true}
               />
               <DisqusComponent
