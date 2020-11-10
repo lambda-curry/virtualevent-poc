@@ -95,6 +95,18 @@
                 "name": "Capitol Royale: Riley Clemmons \"Healing\"",
                 "order": 11,
                 "link": "/a/event/1289"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Capitol Studios - The Virtual Tour",
+                "order": 12,
+                "link": "/a/event/1290"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Capitol Royale: George Massenburg on Dolby Atmos Playback & Blackbird Studios",
+                "order": 13,
+                "link": "/a/event/1291"
               }
             ]
           },
