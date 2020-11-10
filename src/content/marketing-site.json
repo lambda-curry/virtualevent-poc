@@ -32,7 +32,7 @@
       "title": "Join the conversation"
     },
     "image": {
-      "display": false,
+      "display": true,
       "title": "",
       "src": "/img/smoke_logo_vertical.gif"
     }
