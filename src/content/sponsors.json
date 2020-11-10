@@ -77,6 +77,12 @@
                 "name": "Capitol Royale: Anatomy of Screen Music",
                 "order": 8,
                 "link": "/a/event/1171"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Capitol Royale: \"New Slang\" ",
+                "order": 9,
+                "link": "/a/event/1173"
               }
             ]
           },
