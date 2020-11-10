@@ -287,6 +287,21 @@
           "id": 21,
           "email": "adam@infinityfestival.com",
           "usesSponsorPage": true
+        },
+        {
+          "marquee": "Insightful and unique curated community content",
+          "sponsorColor": "",
+          "logo": "/img/if2020-shiftsession-logo.png",
+          "name": "ShIFt",
+          "headerImage": "",
+          "headerImageMobile": "",
+          "advertiseImage": "",
+          "sponsorId": 22,
+          "title": "ShIFt ",
+          "companyId": 20,
+          "columnAds": [],
+          "id": 22,
+          "usesSponsorPage": false
         }
       ]
     },
