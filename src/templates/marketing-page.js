@@ -65,7 +65,7 @@ export const MarketingPageTemplate = class extends React.Component {
             apiBaseUrl={envVariables.SUMMIT_API_BASE_URL}
             accessToken={loggedUser.accessToken}
         />
-        <OCPHeroComponent summit={summit} isLoggedUser={isLoggedUser} location={location} />
+        <OCPHeroComponent summit={summit} summit_phase={summit_phase} isLoggedUser={isLoggedUser} location={location} />
         {summit && <Countdown summit={summit} />}
         <div className="columns" id="marketing-columns">
           <div className="column is-half px-6 pt-6 pb-3" style={{ position: 'relative' }}>
