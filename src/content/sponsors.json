@@ -37,6 +37,7 @@
             }
           ],
           "chatLink": "",
+          "advertiseImage": "/img/combatpunk_header-13-13.jpg",
           "sponsorId": 8,
           "title": "Combat Veteran Owned",
           "companyId": 9,
@@ -66,13 +67,7 @@
               }
             ]
           },
-          "columnAds": [
-            {
-              "image": "/img/yoco-sponsor-ads-medium-flow.png",
-              "button": "",
-              "link": "/virtual-booth/"
-            }
-          ],
+          "columnAds": [],
           "id": 1,
           "email": "",
           "usesSponsorPage": true
