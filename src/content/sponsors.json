@@ -98,13 +98,13 @@
               {
                 "class_name": "PresentationVideo",
                 "name": "Jam Sutton: Rituals: Megalithomania",
-                "order": 20,
+                "order": 18,
                 "link": "/a/event/1301"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Djeneba Aduayom: Black Gold",
-                "order": 18,
+                "order": 20,
                 "link": "/a/event/1296"
               },
               {
@@ -128,7 +128,7 @@
               {
                 "class_name": "PresentationVideo",
                 "name": "Cara Lee: CHiLL_Adrift",
-                "order": 10,
+                "order": 8,
                 "link": "/a/event/1299"
               },
               {
