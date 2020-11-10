@@ -29,7 +29,7 @@ const DocumentsComponent = ({ event }) => {
   if (sortedMaterials.length > 0) {
     return (
       <div>
-        <div className={`${styles.docsContainer}`} style={{ marginTop: '1em' }}>
+        <div className={`${styles.docsContainer}`} style={{ marginTop: '1em' , marginBottom: '1em'}}>
           <div className={`navbar-brand ${styles.title}`}>Additional Media/Links</div>
           <hr />
           {sortedMaterials.map((material, index) => {

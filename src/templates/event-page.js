@@ -124,15 +124,13 @@ export const EventPageTemplate = class extends React.Component {
                       <TalkComponent eventStarted={eventStarted} event={event} summit={summit} />
                     </div>
                     <div className="px-5 py-0">
-                      <SponsorComponent page='event'/>
+                      <SponsorComponent page='event' />
                     </div>
                     <div className="is-hidden-tablet">
                       <DisqusComponent hideMobile={false} disqusSSO={user.disqusSSO} event={event} summit={summit} title="Public Conversation" />∆
                     </div>
                     {event.etherpad_link &&
-                      <div className="column is-three-quarters">
-                        <Etherpad className="talk__etherpad" etherpad_link={event.etherpad_link} userName={user.userProfile.first_name} />
-                      </div>
+                      <Etherpad className="talk__etherpad" etherpad_link={event.etherpad_link} userName={user.userProfile.first_name} />
                     }
                     <ScheduleLiteComponent
                       accessToken={loggedUser.accessToken}
@@ -179,7 +177,7 @@ const EventPage = (
 ) => {
 
   return (
-    <Layout location={location}  marketing={true}>
+    <Layout location={location} marketing={true}>
       {event && event.id &&
         <AttendanceTracker
           key={`att-tracker-${event.id}`}
