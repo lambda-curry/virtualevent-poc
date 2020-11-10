@@ -293,7 +293,7 @@
           "sponsorColor": "#ea032f ",
           "logo": "/img/if2020-shiftsession-logo.png",
           "name": "ShIFt",
-          "headerImage": "/img/shift-sessions-header-image.png",
+          "headerImage": "/img/shift-sessions-header_v2_1440x400.png",
           "headerImageMobile": "/img/shift-sessions-header_mobile.png",
           "advertiseImage": "",
           "sponsorId": 22,
@@ -305,6 +305,7 @@
             }
           ],
           "id": 22,
+          "email": "lori@worldofschwartz.com",
           "usesSponsorPage": true
         }
       ]
