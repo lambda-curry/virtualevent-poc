@@ -15870,9 +15870,9 @@ signal-exit@^3.0.0, signal-exit@^3.0.2, signal-exit@^3.0.3:
   integrity sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==
 
 simple-chat-widget@^1.0.29:
-  version "1.0.29"
-  resolved "https://registry.yarnpkg.com/simple-chat-widget/-/simple-chat-widget-1.0.29.tgz#aadebe84a62efebe1ff0becb7ec53fc256c25d52"
-  integrity sha512-abwrVC+zJkhpShBYW3iX/ssT5dpqiIwBW2DuVCxTPITOHmaXNsPDh/Zq3n0jXEy4VePUWSy4cprxF/AFNpWzRQ==
+  version "1.0.30"
+  resolved "https://registry.yarnpkg.com/simple-chat-widget/-/simple-chat-widget-1.0.30.tgz#eaa41cba50188843c88a3f0a0d02748db1833d41"
+  integrity sha512-+gCnjzcU0/gIIejToaFVD23HyVgOB21QbUFEZzuxBZMcEF8+U8sKMDHF7aAN/SJxhO8zrT/IuHX0vdhl1EQFXw==
 
 simple-concat@^1.0.0:
   version "1.0.0"
