@@ -18,6 +18,13 @@
           }
         },
         {
+          "image": "/img/ocp20tw-lobby-sponsoredsession-tile-tues-lunch_v2.png",
+          "button": {
+            "link": "https://www.linkedin.com/feed/update/urn:li:activity:6731931083182608384"
+          },
+          "column": "left"
+        },
+        {
           "image": "/img/ocp20tw-member-sessionsearch.png",
           "button": {
             "link": "/a/schedule"
