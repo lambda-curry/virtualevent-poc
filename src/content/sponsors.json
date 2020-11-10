@@ -83,7 +83,7 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Featured Artist: Djeneba Aduayom",
+          "marquee": "Featured Artist: Esteban Diacono",
           "sponsorColor": "#ff00a3",
           "logo": "/img/if2020-artist-nav.png",
           "name": "ART+TECH Gallery ",
@@ -98,68 +98,68 @@
               {
                 "class_name": "PresentationVideo",
                 "name": "Jam Sutton: Rituals: Megalithomania",
-                "order": 2,
+                "order": 20,
                 "link": "/a/event/1301"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Djeneba Aduayom: Black Gold",
-                "order": 4,
+                "order": 18,
                 "link": "/a/event/1296"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Esteban Diacono: Social Interactions",
-                "order": 6,
+                "order": 2,
                 "link": "/a/event/1297"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "/a/event/1305",
                 "name": "Claudia Meyer",
-                "order": 8
+                "order": 4
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Danielle Parsons: Ferrofluid",
-                "order": 10,
+                "order": 6,
                 "link": "/a/event/1295"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Cara Lee: CHiLL_Adrift",
-                "order": 12,
+                "order": 10,
                 "link": "/a/event/1299"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Deborah Anderson: Save My Missing Sisters",
-                "order": 14,
+                "order": 10,
                 "link": "/a/event/1300"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Carlos Luna James: MGOGLKTKO",
-                "order": 16,
+                "order": 12,
                 "link": "/a/event/1302"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Joseph Ryba: Becoming",
-                "order": 18,
+                "order": 14,
                 "link": "/a/event/1304"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Nicky Giraffe: Audition for a Role in my Own Life",
-                "order": 20,
+                "order": 16,
                 "link": "/a/event/1303"
               }
             ],
             "links": [
               {
                 "class_name": "PresentationLink",
-                "order": 1,
+                "order": 17,
                 "link": "https://jamsutton.com",
                 "name": "Visit Artist: Jam Sutton "
               },
@@ -167,53 +167,53 @@
                 "class_name": "PresentationLink",
                 "link": "https://www.djeneba-aduayom.com",
                 "name": "Visit Artist: Djeneba Aduayom",
-                "order": 3
+                "order": 19
               },
               {
                 "class_name": "PresentationLink",
                 "name": "Visit Artist: Esteban Diacono",
-                "order": 5,
+                "order": 1,
                 "link": "https://www.estebandiacono.com"
               },
               {
                 "class_name": "PresentationLink",
                 "name": "Visit Artist: Claudia Meyer",
                 "link": "http://claudiameyer.com",
-                "order": 7
+                "order": 3
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://wonderscience.com",
                 "name": "Visit Artist: Danielle Parsons",
-                "order": 9
+                "order": 5
               },
               {
                 "class_name": "PresentationLink",
                 "name": "Visit Artist: Cara Lee",
-                "order": 11,
+                "order": 7,
                 "link": "https://www.caraleeproject.com"
               },
               {
                 "class_name": "PresentationLink",
-                "order": 13,
+                "order": 9,
                 "name": "Visit Artist: Deborah Anderson",
                 "link": "https://womenofthewhitebuffalo.com/home/"
               },
               {
                 "class_name": "PresentationLink",
-                "order": 15,
+                "order": 11,
                 "name": "Visit Artist: Carlos Luna James",
                 "link": "https://www.magogalaktiko.com"
               },
               {
                 "class_name": "PresentationLink",
                 "name": "Visit Artist: Joseph Ryba",
-                "order": 17,
+                "order": 13,
                 "link": "https://www.josephryba.com"
               },
               {
                 "class_name": "PresentationLink",
-                "order": 19,
+                "order": 15,
                 "link": "https://www.giraffestudiosla.com",
                 "name": "Visit Artist: Nicky Giraffe"
               }
