@@ -82,18 +82,18 @@
       ],
       "sponsors": [
         {
+          "advertiseImage": "/img/opencomputingsg-ocp-banner-ad.jpg",
+          "name": "Open Computing Singapore ",
+          "id": 1012,
+          "logo": "/img/ocp-placeholder-thumbnail.png",
+          "externalLink": "https://bit.ly/2HYz7ML"
+        },
+        {
           "advertiseImage": "/img/ocpchina_banner_484x484px.jpg",
           "name": "OCP China",
           "id": 1011,
           "logo": "/img/ocp-placeholder-thumbnail.png",
           "externalLink": "https://bit.ly/32aR3uR "
-        },
-        {
-          "advertiseImage": "/img/ocp20tw-opencomputingsingapore-484x484.png",
-          "name": "Open Computing Singapore ",
-          "id": 1012,
-          "logo": "/img/ocp-placeholder-thumbnail.png",
-          "externalLink": "https://bit.ly/2HYz7ML"
         },
         {
           "advertiseImage": "/img/fblogo_techweek.png",
