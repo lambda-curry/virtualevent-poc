@@ -9,18 +9,18 @@
       ],
       "sponsors": [
         {
-          "advertiseImage": "/img/it-renew-sesame-faststart_484x968-final.jpg",
-          "name": "IT Renew Sesame Faststart",
-          "id": 1003,
-          "externalLink": "https://bit.ly/3lj9Awn",
-          "logo": "/img/ocp-placeholder-thumbnail.png"
-        },
-        {
           "advertiseImage": "/img/shell-banner-otw20.png",
           "name": "Shell",
           "id": 1008,
           "logo": "/img/ocp-placeholder-thumbnail.png",
           "externalLink": "https://go.shell.com/34UEplh"
+        },
+        {
+          "advertiseImage": "/img/intel_banner_484x968.png",
+          "name": "Intel",
+          "id": 1007,
+          "logo": "/img/ocp-placeholder-thumbnail.png",
+          "externalLink": "https://intel.ly/3jTiwHh"
         },
         {
           "advertiseImage": "/img/ocp_tech_week_banner_484x968px.jpg",
@@ -30,10 +30,24 @@
           "externalLink": "https://bit.ly/3elvbBM"
         },
         {
-          "advertiseImage": "/img/it-renew-sesame-opensystems_484x968_final.jpg",
-          "name": "IT Renew Sesame Opensystems",
-          "id": 1005,
-          "externalLink": "https://bit.ly/3n2415U ",
+          "advertiseImage": "/img/it-renew-sesame-hybrid_484x968_final.jpg",
+          "name": "IT Renew Sesame Hybrid",
+          "id": 1004,
+          "externalLink": "https://bit.ly/3n561uj",
+          "logo": "/img/ocp-placeholder-thumbnail.png"
+        },
+        {
+          "advertiseImage": "/img/inspur-ocp-tech-week-banner.png",
+          "name": "Inspur",
+          "externalLink": "https://bit.ly/32rM2yb",
+          "id": 1002,
+          "logo": "/img/ocp-placeholder-thumbnail.png"
+        },
+        {
+          "advertiseImage": "/img/it-renew-sesame-faststart_484x968-final.jpg",
+          "name": "IT Renew Sesame Faststart",
+          "id": 1003,
+          "externalLink": "https://bit.ly/3lj9Awn",
           "logo": "/img/ocp-placeholder-thumbnail.png"
         },
         {
@@ -44,32 +58,18 @@
           "logo": "/img/ocp-placeholder-thumbnail.png"
         },
         {
+          "advertiseImage": "/img/it-renew-sesame-opensystems_484x968_final.jpg",
+          "name": "IT Renew Sesame Opensystems",
+          "id": 1005,
+          "externalLink": "https://bit.ly/3n2415U ",
+          "logo": "/img/ocp-placeholder-thumbnail.png"
+        },
+        {
           "advertiseImage": "/img/17212aei_ocp_banner_484x968_v1_1015.jpg",
           "name": "Artesyn",
           "id": 1006,
           "logo": "/img/ocp-placeholder-thumbnail.png",
           "externalLink": "https://bit.ly/387Qdm9"
-        },
-        {
-          "advertiseImage": "/img/inspur-ocp-tech-week-banner.png",
-          "name": "Inspur",
-          "externalLink": "https://bit.ly/32rM2yb",
-          "id": 1002,
-          "logo": "/img/ocp-placeholder-thumbnail.png"
-        },
-        {
-          "advertiseImage": "/img/it-renew-sesame-hybrid_484x968_final.jpg",
-          "name": "IT Renew Sesame Hybrid",
-          "id": 1004,
-          "externalLink": "https://bit.ly/3n561uj",
-          "logo": "/img/ocp-placeholder-thumbnail.png"
-        },
-        {
-          "advertiseImage": "/img/intel_banner_484x968.png",
-          "name": "Intel",
-          "id": 1007,
-          "logo": "/img/ocp-placeholder-thumbnail.png",
-          "externalLink": "https://intel.ly/3jTiwHh"
         }
       ]
     },
@@ -96,18 +96,18 @@
           "externalLink": "https://bit.ly/32aR3uR "
         },
         {
-          "advertiseImage": "/img/fblogo_techweek.png",
-          "name": "Facebook",
-          "id": 1010,
-          "logo": "/img/ocp-placeholder-thumbnail.png",
-          "externalLink": "https://bit.ly/2I0YIEC"
-        },
-        {
           "advertiseImage": "/img/ufispace_5g_solutions_banner.jpg",
           "name": "Ufi Space ",
           "id": 1013,
           "externalLink": "https://bit.ly/3mQyZy0",
           "logo": "/img/ocp-placeholder-thumbnail.png"
+        },
+        {
+          "advertiseImage": "/img/fblogo_techweek.png",
+          "name": "Facebook",
+          "id": 1010,
+          "logo": "/img/ocp-placeholder-thumbnail.png",
+          "externalLink": "https://bit.ly/2I0YIEC"
         }
       ]
     }
