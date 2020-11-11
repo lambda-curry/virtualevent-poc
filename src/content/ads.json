@@ -4,21 +4,14 @@
       "section": "lobby",
       "columnAds": [
         {
-          "image": "/img/ocp20tw-lobby-sponsoredsession-tile-mon-coffee_no-date.png",
+          "image": "/img/ocp20tw-lobby-sponsoredsession-tile-mon-yogav2.png",
           "button": {
-            "link": "http://fooji.info/OCPTechWeek"
+            "link": "/a/event/1307"
           },
           "column": "left"
         },
         {
-          "image": "/img/ocp20tw-lobby-sponsoredsession-tile-tues-lunch_v2.png",
-          "button": {
-            "link": "https://www.linkedin.com/feed/update/urn:li:activity:6731931083182608384"
-          },
-          "column": "left"
-        },
-        {
-          "image": "/img/ocp20tw-lobby-sponsoredsession-tile-tues-meditation.png",
+          "image": "/img/ocp20tw-lobby-sponsoredsession-tile-fri-meditationv2.png",
           "column": "left",
           "button": {
             "link": "/a/event/1310"
