@@ -202,6 +202,18 @@
                 "name": "Nicky Giraffe: Audition for a Role in my Own Life",
                 "order": 16,
                 "link": "/a/event/1303"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "order": 18,
+                "link": "/a/event/1331",
+                "name": "Kiyan Forootan"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "order": 20,
+                "link": "/a/event/1332",
+                "name": "David Stenbeck"
               }
             ],
             "links": [
