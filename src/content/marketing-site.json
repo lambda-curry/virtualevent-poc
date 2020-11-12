@@ -28,7 +28,7 @@
       "title": "Event Schedule"
     },
     "disqus": {
-      "display": true,
+      "display": false,
       "title": "Join the conversation"
     },
     "image": {
