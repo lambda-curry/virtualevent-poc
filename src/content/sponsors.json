@@ -9,6 +9,20 @@
       ],
       "sponsors": [
         {
+          "advertiseImage": "/img/time-embrace-positive-change-circleb.jpg",
+          "name": "Circle B",
+          "id": 1001,
+          "externalLink": "https://bit.ly/3l6m1eZ",
+          "logo": "/img/ocp-placeholder-thumbnail.png"
+        },
+        {
+          "advertiseImage": "/img/it-renew-sesame-opensystems_484x968_final.jpg",
+          "name": "IT Renew Sesame Opensystems",
+          "id": 1005,
+          "externalLink": "https://bit.ly/3n2415U ",
+          "logo": "/img/ocp-placeholder-thumbnail.png"
+        },
+        {
           "advertiseImage": "/img/shell-banner-otw20.png",
           "name": "Shell",
           "id": 1008,
@@ -16,18 +30,11 @@
           "externalLink": "https://go.shell.com/34UEplh"
         },
         {
-          "advertiseImage": "/img/intel_banner_484x968.png",
-          "name": "Intel",
-          "id": 1007,
+          "advertiseImage": "/img/17212aei_ocp_banner_484x968_v1_1015.jpg",
+          "name": "Artesyn",
+          "id": 1006,
           "logo": "/img/ocp-placeholder-thumbnail.png",
-          "externalLink": "https://intel.ly/3jTiwHh"
-        },
-        {
-          "advertiseImage": "/img/ocp_tech_week_banner_484x968px.jpg",
-          "name": "Submer",
-          "id": 1009,
-          "logo": "/img/ocp-placeholder-thumbnail.png",
-          "externalLink": "https://bit.ly/3elvbBM"
+          "externalLink": "https://bit.ly/387Qdm9"
         },
         {
           "advertiseImage": "/img/it-renew-sesame-hybrid_484x968_final.jpg",
@@ -44,6 +51,13 @@
           "logo": "/img/ocp-placeholder-thumbnail.png"
         },
         {
+          "advertiseImage": "/img/ocp_tech_week_banner_484x968px.jpg",
+          "name": "Submer",
+          "id": 1009,
+          "logo": "/img/ocp-placeholder-thumbnail.png",
+          "externalLink": "https://bit.ly/3elvbBM"
+        },
+        {
           "advertiseImage": "/img/it-renew-sesame-faststart_484x968-final.jpg",
           "name": "IT Renew Sesame Faststart",
           "id": 1003,
@@ -51,25 +65,11 @@
           "logo": "/img/ocp-placeholder-thumbnail.png"
         },
         {
-          "advertiseImage": "/img/time-embrace-positive-change-circleb.jpg",
-          "name": "Circle B",
-          "id": 1001,
-          "externalLink": "https://bit.ly/3l6m1eZ",
-          "logo": "/img/ocp-placeholder-thumbnail.png"
-        },
-        {
-          "advertiseImage": "/img/it-renew-sesame-opensystems_484x968_final.jpg",
-          "name": "IT Renew Sesame Opensystems",
-          "id": 1005,
-          "externalLink": "https://bit.ly/3n2415U ",
-          "logo": "/img/ocp-placeholder-thumbnail.png"
-        },
-        {
-          "advertiseImage": "/img/17212aei_ocp_banner_484x968_v1_1015.jpg",
-          "name": "Artesyn",
-          "id": 1006,
+          "advertiseImage": "/img/intel_banner_484x968.png",
+          "name": "Intel",
+          "id": 1007,
           "logo": "/img/ocp-placeholder-thumbnail.png",
-          "externalLink": "https://bit.ly/387Qdm9"
+          "externalLink": "https://intel.ly/3jTiwHh"
         }
       ]
     },
@@ -82,13 +82,6 @@
       ],
       "sponsors": [
         {
-          "advertiseImage": "/img/opencomputingsg-ocp-banner-ad.jpg",
-          "name": "Open Computing Singapore ",
-          "id": 1012,
-          "logo": "/img/ocp-placeholder-thumbnail.png",
-          "externalLink": "https://bit.ly/2HYz7ML"
-        },
-        {
           "advertiseImage": "/img/ocpchina_banner_484x484px.jpg",
           "name": "OCP China",
           "id": 1011,
@@ -96,11 +89,11 @@
           "externalLink": "https://bit.ly/32aR3uR "
         },
         {
-          "advertiseImage": "/img/ufispace_5g_solutions_banner.jpg",
-          "name": "Ufi Space ",
-          "id": 1013,
-          "externalLink": "https://bit.ly/3mQyZy0",
-          "logo": "/img/ocp-placeholder-thumbnail.png"
+          "advertiseImage": "/img/opencomputingsg-ocp-banner-ad.jpg",
+          "name": "Open Computing Singapore ",
+          "id": 1012,
+          "logo": "/img/ocp-placeholder-thumbnail.png",
+          "externalLink": "https://bit.ly/2HYz7ML"
         },
         {
           "advertiseImage": "/img/fblogo_techweek.png",
@@ -108,6 +101,13 @@
           "id": 1010,
           "logo": "/img/ocp-placeholder-thumbnail.png",
           "externalLink": "https://bit.ly/2I0YIEC"
+        },
+        {
+          "advertiseImage": "/img/ufispace_5g_solutions_banner.jpg",
+          "name": "Ufi Space ",
+          "id": 1013,
+          "externalLink": "https://bit.ly/3mQyZy0",
+          "logo": "/img/ocp-placeholder-thumbnail.png"
         }
       ]
     }
