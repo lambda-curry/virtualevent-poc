@@ -34,7 +34,7 @@
     "image": {
       "display": true,
       "title": "",
-      "src": "/img/smoke_logo_vertical.gif"
+      "src": "/img/smoke_logo_lrg_comp.gif"
     }
   },
   "sponsors": [
@@ -51,8 +51,8 @@
       "title": "Top Right",
       "images": [
         {
-          "image": "/img/fnvirtual-template-conqueringatlantis-09.jpg",
-          "link": "https://www.facebook.com/conqueringatlantis/?modal=admin_todo_tour"
+          "image": "/img/combatpunk_logo.png",
+          "link": "https://combatpunk.com/"
         }
       ]
     },
