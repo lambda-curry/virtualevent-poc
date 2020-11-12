@@ -48,20 +48,20 @@
       ]
     },
     {
-      "title": "Top Right",
-      "images": [
-        {
-          "image": "/img/combatpunk_logo.png",
-          "link": "https://combatpunk.com/"
-        }
-      ]
-    },
-    {
       "title": "Mid Left",
       "images": [
         {
           "image": "/img/fnvirtual-template-conqueringatlantis-10.jpg",
           "link": "https://www.youtube.com/conqueringatlantis"
+        }
+      ]
+    },
+    {
+      "title": "Top Right",
+      "images": [
+        {
+          "image": "/img/combatpunk_logo.png",
+          "link": "https://combatpunk.com/"
         }
       ]
     },
