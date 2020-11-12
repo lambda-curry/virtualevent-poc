@@ -1,9 +1,9 @@
 {
   "heroBanner": {
-    "title": "HERO Text",
-    "subTitle": "Subtitle Text",
-    "date": "Date Text",
-    "time": "Time (Optional) ",
+    "title": "TIER 1 - EVENT NAME HERE",
+    "subTitle": "Subtitle for event",
+    "date": "Date Information",
+    "time": "Timezone",
     "dateLayout": true,
     "buttons": {
       "registerButton": {
@@ -18,13 +18,19 @@
     "background": "",
     "images": [
       {
-        "image": "/img/flavor_wheel.jpg"
+        "image": "/img/tier1-default-header1.png"
+      },
+      {
+        "image": "/img/tier1-default-header2.png"
+      },
+      {
+        "image": "/img/tier1-default-header3.png"
       }
     ]
   },
   "leftColumn": {
     "schedule": {
-      "display": true,
+      "display": false,
       "title": "Full Event Schedule"
     },
     "disqus": {
@@ -32,9 +38,9 @@
       "title": "Join the conversation"
     },
     "image": {
-      "display": false,
+      "display": true,
       "title": "Image",
-      "src": "/img/yoco-sponsor-ads-large-wherehol-vert.png"
+      "src": "/img/tier1-default-container-left.png"
     }
   },
   "sponsors": [
@@ -42,16 +48,11 @@
       "title": "Top Left",
       "images": [
         {
-          "image": "/img/yoco-sponsor-ads-large-wherehol-vert.png",
+          "image": "/img/tier1-default-space3.png",
           "link": ""
         },
         {
-          "image": "/img/yoco-sponsor-ads-large-wherehol-vert.png",
-          "link": ""
-        },
-        {
-          "image": "/img/yoco-sponsor-ads-large-wherehol-vert.png",
-          "link": ""
+          "image": "/img/tier1-default-space4.png"
         }
       ]
     },
@@ -59,7 +60,7 @@
       "title": "Top Right",
       "images": [
         {
-          "image": "/img/yoco-sponsor-ads-medium-tilted.png",
+          "image": "/img/tier1-default-space2.png",
           "link": ""
         }
       ]
@@ -68,27 +69,14 @@
       "title": "Mid Left",
       "images": [
         {
-          "image": "/img/yoco-sponsor-ads-large-mobility-vert-new.png",
-          "link": ""
+          "image": "/img/tier1-default-space2.png"
         }
       ]
     },
     {
-      "title": "Top Left",
       "images": [
         {
-          "image": "/img/yoco-sponsor-ads-large-apex-vert.png",
-          "link": ""
-        }
-      ]
-    },
-    {},
-    {
-      "title": "Top Left",
-      "images": [
-        {
-          "image": "/img/yoco-sponsor-ads-medium-treva.png",
-          "link": ""
+          "image": "/img/tier1-default-space4.png"
         }
       ]
     }
