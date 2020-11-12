@@ -67,23 +67,13 @@
         "icon": "fa-twitter",
         "link": "/footer-content/",
         "display": true
-      },
-      {
-        "icon": "fa-linkedin",
-        "link": "/footer-content/",
-        "display": true
-      },
-      {
-        "link": "/footer-content/",
-        "icon": "TEST",
-        "display": true
       }
     ]
   },
   "legal": [
     {
       "title": "Privacy Policy",
-      "link": "/footer-content/"
+      "link": "/privacy-policy/"
     },
     {
       "title": "Legals",
@@ -92,6 +82,14 @@
     {
       "title": "Disclaimer",
       "link": "/footer-content/"
+    },
+    {
+      "title": "California Privacy Rights Statement ",
+      "link": "/California-Privacy-Rights-Statement/"
+    },
+    {
+      "title": "Cookie Policy",
+      "link": "/cookie-policy/"
     }
   ]
 }
