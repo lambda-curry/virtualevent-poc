@@ -1,13 +1,14 @@
 ---
 templateKey: custom-page
-requiresAuth: false
 title: Registration
+requiresAuth: false
 ---
-**Registration Fee:** $99 per person - Full access to OCP TECH WEEK
+**Post-Event Registration for On-Demand Access**: $49 USD per person
 
-**Cancellation Policy**:\
+All OCP TECH WEEK content will be available to view ON DEMAND following the live event. If you did not attend live and would like to purchase a ticket to access all the videos/slides/materials, register above for the discounted rate of $49 USD.
+
+**Cancellation Policy:**\
 Cancellations prior to Oct 9 - Full refund\
-Cancellations after Oct 9 - No refund\
-Cancellation requests must be emailed to [registration@opencompute.org](mailto:registration@opencompute.org)
+Cancellations after Oct 9 - No refund
 
-To apply for a media pass, click [here](https://docs.google.com/forms/d/e/1FAIpQLSfsDVYfSGmYX7RFATkaowYht-NcazHWPtDAtfHGjwDuGYtfMw/viewform "Apply for a media pass here").
+To apply for a media pass, email [dirkv@opencompute.org](mailto:dirkv@opencompute.org)
