@@ -471,11 +471,7 @@
             "videos": [],
             "slides": []
           },
-          "columnAds": [
-            {
-              "image": "/img/media-square.png"
-            }
-          ],
+          "columnAds": [],
           "id": 13,
           "email": "",
           "usesSponsorPage": true
