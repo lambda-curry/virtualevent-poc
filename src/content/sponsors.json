@@ -314,7 +314,8 @@
           "companyId": 20,
           "columnAds": [
             {
-              "image": "/img/if2020-shiftsession-graphic.png"
+              "image": "/img/if2020-shiftsession-graphic.png",
+              "link": "/a/schedule"
             }
           ],
           "id": 22,
