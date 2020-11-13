@@ -17056,6 +17056,13 @@ terser@^4.1.2:
     source-map "~0.6.1"
     source-map-support "~0.5.12"
 
+test-module-gatsby-compat@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/test-module-gatsby-compat/-/test-module-gatsby-compat-1.0.3.tgz#af50021a559267ee09c78339a6a64626e3249069"
+  integrity sha512-iosEcjVYHp9wqXQeYiBSqv3RMyPXO7tVd7RrA3FX0ffRVOsEMupL7Ekyb7AtU/834qbjmhKKGappogK7iatyVg==
+  dependencies:
+    svg-url-loader "^6.0.0"
+
 text-table@0.2.0, text-table@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
