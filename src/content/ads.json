@@ -4,13 +4,6 @@
       "section": "lobby",
       "columnAds": [
         {
-          "image": "/img/ocp20tw-lobby-sponsoredsession-tile-fri-meditationv2.png",
-          "button": {
-            "link": "/a/event/1313"
-          },
-          "column": "left"
-        },
-        {
           "image": "/img/ocp20tw-lobby-sponsoredsession-tile-mon-coffee_no-date.png",
           "column": "left",
           "button": {
