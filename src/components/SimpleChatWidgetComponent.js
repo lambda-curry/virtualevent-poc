@@ -20,7 +20,7 @@ const SimpleChatWidgetComponent = class extends React.Component {
         onAuthError: (err, res) => console.log(err),
         openDir: "left",
         title: "Private Chat",
-        showHelp: true,
+        showHelp: false,
         showQA: false,
         hideUsers: false,
     };
