@@ -4,10 +4,10 @@ import { Helmet } from 'react-helmet'
 import envVariables from '../utils/envVariables';
 
 // these two libraries are client-side only
-//import LiveEventWidget from 'live-event-widget/dist';
-//import 'live-event-widget/dist/index.css';
-import LiveEventWidget from 'test-module-gatsby-compat';
-import 'test-module-gatsby-compat/index.css';
+import LiveEventWidget from 'live-event-widget/dist';
+import 'live-event-widget/dist/index.css';
+//import LiveEventWidget from 'test-module-gatsby-compat';
+//import 'test-module-gatsby-compat/index.css';
 
 const LiveEventWidgetComponent = class extends React.Component {
 
