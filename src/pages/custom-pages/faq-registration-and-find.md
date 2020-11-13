@@ -1,7 +1,7 @@
 ---
 templateKey: custom-page
+title: FAQ - Registration and FNid
 requiresAuth: false
-title: FAQ - Registration and FiNd
 ---
 **Q. What internet browsers do you suggest for your platform?**
 
