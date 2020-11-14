@@ -4,7 +4,7 @@
     "subTitle": "Here is the Subtitle",
     "date": "January 3, 2021 ",
     "time": "",
-    "dateLayout": true,
+    "dateLayout": false,
     "buttons": {
       "registerButton": {
         "text": "Register",
