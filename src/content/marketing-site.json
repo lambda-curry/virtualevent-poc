@@ -1,40 +1,46 @@
 {
   "heroBanner": {
-    "title": "Hero Title Text",
-    "subTitle": "Subtitle Text",
-    "date": "Date Title ",
+    "title": "Facebook Sample Site 2",
+    "subTitle": "Here is the Subtitle 2",
+    "date": "January 2, 2021 ",
     "time": "",
     "dateLayout": false,
     "buttons": {
       "registerButton": {
-        "text": "Register now",
+        "text": "Register",
         "display": true
       },
       "loginButton": {
-        "text": "Log in",
+        "text": "Log-in",
         "display": true
       }
     },
     "background": "",
     "images": [
       {
-        "image": "/img/flavor_wheel.jpg"
+        "image": "/img/header-r.png"
+      },
+      {
+        "image": "/img/2header-r.png"
+      },
+      {
+        "image": "/img/3header-r.png"
       }
     ]
   },
   "leftColumn": {
     "schedule": {
-      "display": true,
-      "title": "Full Event Schedule"
+      "display": false,
+      "title": "Event Schedule 2"
     },
     "disqus": {
-      "display": false,
-      "title": "Join the conversation"
+      "display": true,
+      "title": "Join the conversation 2"
     },
     "image": {
-      "display": false,
+      "display": true,
       "title": "Image",
-      "src": "/img/yoco-sponsor-ads-large-wherehol-vert.png"
+      "src": "/img/schedule.png"
     }
   },
   "sponsors": [
@@ -42,15 +48,7 @@
       "title": "Top Left",
       "images": [
         {
-          "image": "/img/yoco-sponsor-ads-large-wherehol-vert.png",
-          "link": ""
-        },
-        {
-          "image": "/img/yoco-sponsor-ads-large-wherehol-vert.png",
-          "link": ""
-        },
-        {
-          "image": "/img/yoco-sponsor-ads-large-wherehol-vert.png",
+          "image": "/img/fbmicro_1-top-left.png",
           "link": ""
         }
       ]
@@ -59,8 +57,7 @@
       "title": "Top Right",
       "images": [
         {
-          "image": "/img/yoco-sponsor-ads-medium-tilted.png",
-          "link": ""
+          "image": "/img/fbmicro_2-top-right.png"
         }
       ]
     },
@@ -68,8 +65,7 @@
       "title": "Mid Left",
       "images": [
         {
-          "image": "/img/yoco-sponsor-ads-large-mobility-vert-new.png",
-          "link": ""
+          "image": "/img/fbmicro_3-mid-left.png"
         }
       ]
     },
@@ -77,18 +73,22 @@
       "title": "Top Left",
       "images": [
         {
-          "image": "/img/yoco-sponsor-ads-large-apex-vert.png",
-          "link": ""
+          "image": "/img/fbmicro_4-mid-right.png"
         }
       ]
     },
-    {},
+    {
+      "images": [
+        {
+          "image": "/img/fbmicro_5-bot-left.png"
+        }
+      ]
+    },
     {
       "title": "Top Left",
       "images": [
         {
-          "image": "/img/yoco-sponsor-ads-medium-treva.png",
-          "link": ""
+          "image": "/img/fbmicro_6-bot-right.png"
         }
       ]
     }
