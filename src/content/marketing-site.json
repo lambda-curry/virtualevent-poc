@@ -30,17 +30,17 @@
   },
   "leftColumn": {
     "schedule": {
-      "display": false,
-      "title": "Event Schedule 2"
+      "display": true,
+      "title": "Full Schedule"
     },
     "disqus": {
       "display": false,
       "title": "Join the conversation 2"
     },
     "image": {
-      "display": true,
-      "title": "Image",
-      "src": "/img/schedule.png"
+      "display": false,
+      "title": "",
+      "src": ""
     }
   },
   "sponsors": [
