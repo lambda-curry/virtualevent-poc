@@ -9,7 +9,7 @@
       ],
       "sponsors": [
         {
-          "marquee": "Your text here (MAX 150 Characters) ",
+          "marquee": "\"Your text here! (150 characters max)\"",
           "sponsorColor": "#414042",
           "logo": "/img/tier1-default-sponsor-logo.png",
           "name": "Top-Tier",
