@@ -38,9 +38,9 @@
       "title": "Join the conversation"
     },
     "image": {
-      "display": true,
+      "display": false,
       "title": "Image",
-      "src": "/img/tier1-default-container-left-opt2.png"
+      "src": ""
     }
   },
   "sponsors": [
