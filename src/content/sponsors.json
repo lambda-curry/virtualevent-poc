@@ -4,7 +4,7 @@
       "tier": [
         {
           "value": "tier-cYGYq5-ae",
-          "label": "Gold"
+          "label": "Top-Tier"
         }
       ],
       "sponsors": [
@@ -12,11 +12,11 @@
           "marquee": "Your text here (MAX 150 Characters) ",
           "sponsorColor": "#414042",
           "logo": "/img/tier1-default-sponsor-logo.png",
-          "name": "Gold Sponsor ",
+          "name": "Top-Tier",
           "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
           "headerImage": "/img/tier1-default-sponsor-headerimage-toptier.png",
           "socialNetworks": [],
-          "title": "Gold Sponsor Description ",
+          "title": "Top-Tier Sponsor Description ",
           "documents": {
             "links": [
               {
@@ -51,7 +51,7 @@
       "tier": [
         {
           "value": "tier-DHcI3dWGk",
-          "label": "Silver"
+          "label": "Mid-Tier "
         }
       ],
       "sponsors": [
@@ -61,13 +61,13 @@
           "externalLink": "",
           "sponsorColor": "#58595b",
           "logo": "/img/tier1-default-sponsor-logo.png",
-          "name": "Silver Sponsor - Mid Tier ",
+          "name": "Mid-Tier",
           "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
           "headerVideo": "",
           "headerImage": "/img/tier1-default-sponsor-headerimage-middletier.png",
           "socialNetworks": [],
           "chatLink": "",
-          "title": "Silver Company Description ",
+          "title": "Mid-Tier Sponsor Description ",
           "documents": {
             "slides": [],
             "links": [
@@ -104,7 +104,7 @@
       "tier": [
         {
           "value": "tier-U_wEwGX8a",
-          "label": "Bronze"
+          "label": "Lower-Tier"
         }
       ],
       "sponsors": [
@@ -114,13 +114,13 @@
           "externalLink": "",
           "sponsorColor": "#6d6e71",
           "logo": "/img/tier1-default-sponsor-logo.png",
-          "name": "Bronze Sponsor ",
+          "name": "Lower-Tier ",
           "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
           "headerVideo": "",
           "headerImage": "/img/tier1-default-sponsor-headerimage-lowertier.png",
           "socialNetworks": [],
           "chatLink": "",
-          "title": "Bronze Sponsor Description ",
+          "title": "Lower-Tier Sponsor Description ",
           "documents": {
             "slides": [],
             "links": [
