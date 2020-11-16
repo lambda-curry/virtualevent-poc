@@ -7,7 +7,44 @@
           "label": "Gold"
         }
       ],
-      "sponsors": []
+      "sponsors": [
+        {
+          "marquee": "Your Text here 150 Characters MAX",
+          "logo": "/img/tier1-default-sponsor-logo.png",
+          "name": "Top Tier Sponsor ",
+          "intro": "",
+          "headerImage": "/img/tier1-default-sponsor-headerimage-toptier-mobile.png",
+          "socialNetworks": [],
+          "title": "Top Tier Sponsor ",
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "Follow us on Facebook ",
+                "order": 1,
+                "link": "https://www.facebook.com/FNTECH"
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "FNTECH Videos ",
+                "order": 2,
+                "link": "https://www.youtube.com/channel/UC81WrqqnYmigub0fTNKT-Mw"
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "image": "/img/tier1-default-sponsor-space1.png",
+              "link": "fntech.com"
+            }
+          ],
+          "id": 24,
+          "email": "support@fntech.com",
+          "usesSponsorPage": true
+        }
+      ]
     },
     {
       "tier": [
