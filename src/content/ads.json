@@ -4,6 +4,14 @@
       "section": "lobby",
       "columnAds": [
         {
+          "image": "/img/tier1-default-lobby-space1.png",
+          "column": "left"
+        },
+        {
+          "image": "/img/tier1-default-lobby-button.png",
+          "column": "left"
+        },
+        {
           "image": "/img/tier1-default-lobby-button.png",
           "button": {
             "link": "/virtual-booth/"
