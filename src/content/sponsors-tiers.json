@@ -2,7 +2,7 @@
   "tiers": [
     {
       "id": "tier-cYGYq5-ae",
-      "name": "Gold",
+      "name": "Gold ",
       "badge": "/img/gold.png",
       "lobby": {
         "lobbyTemplate": "big-images",
@@ -25,7 +25,7 @@
       "name": "Silver",
       "badge": "/img/silver.png",
       "lobby": {
-        "lobbyTemplate": "big-images",
+        "lobbyTemplate": "small-images",
         "display": true
       },
       "sponsorPage": {
