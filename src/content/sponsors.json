@@ -145,18 +145,6 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "name": "Jam Sutton: Rituals: Megalithomania",
-                "order": 18,
-                "link": "/a/event/1301"
-              },
-              {
-                "class_name": "PresentationVideo",
-                "name": "Djeneba Aduayom: Black Gold",
-                "order": 20,
-                "link": "/a/event/1296"
-              },
-              {
-                "class_name": "PresentationVideo",
                 "name": "Esteban Diacono: Social Interactions",
                 "order": 2,
                 "link": "/a/event/1297"
@@ -205,6 +193,18 @@
               },
               {
                 "class_name": "PresentationVideo",
+                "name": "Jam Sutton: Rituals: Megalithomania",
+                "order": 18,
+                "link": "/a/event/1301"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Djeneba Aduayom: Black Gold",
+                "order": 20,
+                "link": "/a/event/1296"
+              },
+              {
+                "class_name": "PresentationVideo",
                 "order": 22,
                 "link": "/a/event/1331",
                 "name": "Kiyan Forootan: Gene-Sys"
@@ -225,9 +225,9 @@
               },
               {
                 "class_name": "PresentationLink",
-                "name": "Visit Artist: Esteban Diacono",
+                "name": "Visit Artist: Cara Lee",
                 "order": 3,
-                "link": "https://www.estebandiacono.com"
+                "link": "https://www.caraleeproject.com"
               },
               {
                 "class_name": "PresentationLink",
@@ -240,12 +240,6 @@
                 "link": "https://wonderscience.com",
                 "name": "Visit Artist: Danielle Parsons",
                 "order": 7
-              },
-              {
-                "class_name": "PresentationLink",
-                "name": "Visit Artist: Cara Lee",
-                "order": 9,
-                "link": "https://www.caraleeproject.com"
               },
               {
                 "class_name": "PresentationLink",
@@ -293,7 +287,13 @@
                 "class_name": "PresentationLink",
                 "link": "https://www.jennsingergallery.com/davidstenbeck",
                 "name": "Visit Artist: David Stenbeck",
-                "order": 25
+                "order": 21
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Visit Artist: Esteban Diacono",
+                "order": 25,
+                "link": "https://www.estebandiacono.com"
               }
             ]
           },
