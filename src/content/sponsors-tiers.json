@@ -2,7 +2,7 @@
   "tiers": [
     {
       "id": "tier-cYGYq5-ae",
-      "name": "Gold ",
+      "name": "Top-Tier",
       "badge": "/img/gold.png",
       "lobby": {
         "lobbyTemplate": "big-images",
@@ -22,7 +22,7 @@
     },
     {
       "id": "tier-DHcI3dWGk",
-      "name": "Silver",
+      "name": "Mid-Tier ",
       "badge": "/img/silver.png",
       "lobby": {
         "lobbyTemplate": "small-images",
@@ -42,7 +42,7 @@
     },
     {
       "id": "tier-U_wEwGX8a",
-      "name": "Bronze",
+      "name": "Lower-Tier",
       "badge": "/img/bronze.png",
       "lobby": {
         "lobbyTemplate": "small-images",
