@@ -5,16 +5,22 @@
       "columnAds": [
         {
           "image": "/img/tier1-default-lobby-space1.png",
-          "column": "left"
+          "column": "left",
+          "button": {
+            "link": "/link-to-URL-of-your-choice"
+          }
         },
         {
           "image": "/img/tier1-default-lobby-button.png",
-          "column": "left"
+          "column": "left",
+          "button": {
+            "link": "/link-to-URL-of-your-choice"
+          }
         },
         {
           "image": "/img/tier1-default-lobby-button.png",
           "button": {
-            "link": "/virtual-booth/"
+            "link": "/link-to-URL-of-your-choice"
           },
           "column": "right"
         },
@@ -22,7 +28,7 @@
           "image": "/img/tier1-default-lobby-space1.png",
           "button": {
             "text": "",
-            "link": "/virtual-booth/"
+            "link": "/link-to-URL-of-your-choice"
           },
           "column": "right",
           "id": null
@@ -31,7 +37,7 @@
           "image": "/img/tier1-default-lobby-space2.png",
           "button": {
             "text": "",
-            "link": "/virtual-booth/"
+            "link": "/link-to-URL-of-your-choice"
           },
           "column": "right",
           "id": null
