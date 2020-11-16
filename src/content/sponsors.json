@@ -151,12 +151,6 @@
               },
               {
                 "class_name": "PresentationVideo",
-                "name": "Esteban Diacono: Social Interactions",
-                "order": 2,
-                "link": "/a/event/1297"
-              },
-              {
-                "class_name": "PresentationVideo",
                 "link": "/a/event/1305",
                 "name": "Claudia Meyer",
                 "order": 4
@@ -205,21 +199,27 @@
               },
               {
                 "class_name": "PresentationVideo",
-                "name": "Djeneba Aduayom: Black Gold",
                 "order": 20,
-                "link": "/a/event/1296"
-              },
-              {
-                "class_name": "PresentationVideo",
-                "order": 22,
                 "link": "/a/event/1331",
                 "name": "Kiyan Forootan: Gene-Sys"
               },
               {
                 "class_name": "PresentationVideo",
-                "order": 24,
+                "order": 22,
                 "link": "/a/event/1332",
                 "name": "David Stenbeck: Ultrahavn"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Djeneba Aduayom: Black Gold",
+                "order": 24,
+                "link": "/a/event/1296"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Esteban Diacono: Social Interactions",
+                "order": 26,
+                "link": "/a/event/1297"
               }
             ],
             "links": [
