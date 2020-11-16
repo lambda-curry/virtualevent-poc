@@ -11,6 +11,20 @@
           }
         },
         {
+          "image": "/img/ocp20tw-store-button.png",
+          "button": {
+            "link": "https://bit.ly/32gu69k "
+          },
+          "column": "left"
+        },
+        {
+          "image": "/img/ocp20tw-member-button.png",
+          "column": "left",
+          "button": {
+            "link": "https://bit.ly/32fORC5 "
+          }
+        },
+        {
           "image": "/img/ocp20tw-member-sessionsearch.png",
           "button": {
             "link": "/a/schedule"
@@ -30,20 +44,6 @@
             "link": "https://idp.fntech.com/accounts/user/profile"
           },
           "column": "right"
-        },
-        {
-          "image": "/img/ocp20tw-store-button.png",
-          "button": {
-            "link": "https://bit.ly/32gu69k "
-          },
-          "column": "right"
-        },
-        {
-          "image": "/img/ocp20tw-member-button.png",
-          "column": "right",
-          "button": {
-            "link": "https://bit.ly/32fORC5 "
-          }
         },
         {
           "image": "/img/ocp20tw-lobby-mediasponsors.png",
