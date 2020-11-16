@@ -12,11 +12,11 @@
           "marquee": "Your text here (MAX 150 Characters) ",
           "sponsorColor": "#414042",
           "logo": "/img/tier1-default-sponsor-logo.png",
-          "name": "Top Tier Sponsor ",
+          "name": "Gold Sponsor ",
           "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
           "headerImage": "/img/tier1-default-sponsor-headerimage-toptier.png",
           "socialNetworks": [],
-          "title": "Top Tier Sponsor ",
+          "title": "Gold Sponsor Description ",
           "documents": {
             "links": [
               {
