@@ -1,7 +1,7 @@
 {
   "heroBanner": {
     "title": "TIER 1 - EVENT NAME HERE",
-    "subTitle": "Subtitle for event",
+    "subTitle": "",
     "date": "Date Information",
     "time": "Timezone",
     "dateLayout": true,
@@ -30,7 +30,7 @@
   },
   "leftColumn": {
     "schedule": {
-      "display": false,
+      "display": true,
       "title": "Full Event Schedule"
     },
     "disqus": {
@@ -40,7 +40,7 @@
     "image": {
       "display": true,
       "title": "Image",
-      "src": "/img/tier1-default-container-left.png"
+      "src": "/img/tier1-default-container-left-opt2.png"
     }
   },
   "sponsors": [
@@ -60,7 +60,7 @@
       "title": "Top Right",
       "images": [
         {
-          "image": "/img/tier1-default-space2.png",
+          "image": "/img/tier1-default-space1.png",
           "link": ""
         }
       ]
