@@ -219,18 +219,6 @@
             "links": [
               {
                 "class_name": "PresentationLink",
-                "order": 17,
-                "link": "https://jamsutton.com",
-                "name": "Visit Artist: Jam Sutton "
-              },
-              {
-                "class_name": "PresentationLink",
-                "link": "https://www.djeneba-aduayom.com",
-                "name": "Visit Artist: Djeneba Aduayom",
-                "order": 19
-              },
-              {
-                "class_name": "PresentationLink",
                 "name": "Visit Artist: Esteban Diacono",
                 "order": 1,
                 "link": "https://www.estebandiacono.com"
@@ -276,6 +264,18 @@
                 "order": 15,
                 "link": "https://www.giraffestudiosla.com",
                 "name": "Visit Artist: Nicky Giraffe"
+              },
+              {
+                "class_name": "PresentationLink",
+                "order": 17,
+                "link": "https://jamsutton.com",
+                "name": "Visit Artist: Jam Sutton "
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.djeneba-aduayom.com",
+                "name": "Visit Artist: Djeneba Aduayom",
+                "order": 19
               },
               {
                 "class_name": "PresentationLink",
