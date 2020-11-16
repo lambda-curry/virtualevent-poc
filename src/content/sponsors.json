@@ -56,7 +56,7 @@
       ],
       "sponsors": [
         {
-          "marquee": "Your text here (MAX 150 Characters) ",
+          "marquee": "\"Your text here! (150 characters max)\"",
           "sideImage": "",
           "externalLink": "",
           "sponsorColor": "#58595b",
@@ -73,7 +73,7 @@
             "links": [
               {
                 "class_name": "PresentationLink",
-                "name": "Your Social Media Links Here ",
+                "name": "Your social media links here ",
                 "order": 1,
                 "link": "https://www.facebook.com/FNTECH"
               }
@@ -81,7 +81,7 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "name": "Your Video Links Here ",
+                "name": "Your external video links here ",
                 "link": "https://www.youtube.com/channel/UC81WrqqnYmigub0fTNKT-Mw",
                 "order": 2
               }
@@ -109,7 +109,7 @@
       ],
       "sponsors": [
         {
-          "marquee": "Your text here (MAX 150 Characters) ",
+          "marquee": "\"Your text here! (150 characters max)\"",
           "sideImage": "/img/sponsors/exhibitor/immage.png",
           "externalLink": "",
           "sponsorColor": "#6d6e71",
@@ -126,7 +126,7 @@
             "links": [
               {
                 "class_name": "PresentationLink",
-                "name": "Your Social Media Links Here ",
+                "name": "Your social media links here ",
                 "link": "https://www.facebook.com/FNTECH",
                 "order": 1
               }
@@ -136,7 +136,7 @@
                 "class_name": "PresentationVideo",
                 "link": "https://www.youtube.com/channel/UC81WrqqnYmigub0fTNKT-Mw",
                 "order": 2,
-                "name": "Your Video Links Here "
+                "name": "Your external video links here "
               }
             ]
           },
