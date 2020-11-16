@@ -243,43 +243,37 @@
               },
               {
                 "class_name": "PresentationLink",
-                "order": 11,
+                "order": 9,
                 "name": "Visit Artist: Deborah Anderson",
                 "link": "https://womenofthewhitebuffalo.com/home/"
               },
               {
                 "class_name": "PresentationLink",
-                "order": 13,
+                "order": 11,
                 "name": "Visit Artist: Carlos Luna James",
                 "link": "https://www.magogalaktiko.com"
               },
               {
                 "class_name": "PresentationLink",
                 "name": "Visit Artist: Joseph Ryba",
-                "order": 15,
+                "order": 13,
                 "link": "https://www.josephryba.com"
               },
               {
                 "class_name": "PresentationLink",
-                "order": 17,
+                "order": 15,
                 "link": "https://www.giraffestudiosla.com",
                 "name": "Visit Artist: Nicky Giraffe"
               },
               {
                 "class_name": "PresentationLink",
-                "order": 19,
+                "order": 17,
                 "link": "https://jamsutton.com",
                 "name": "Visit Artist: Jam Sutton "
               },
               {
                 "class_name": "PresentationLink",
-                "link": "https://www.djeneba-aduayom.com",
-                "name": "Visit Artist: Djeneba Aduayom",
-                "order": 21
-              },
-              {
-                "class_name": "PresentationLink",
-                "order": 23,
+                "order": 19,
                 "name": "Visit Artist: Kiyan Forootan",
                 "link": "https://www.instagram.com/kiyanforootan/?hl=en"
               },
@@ -288,6 +282,12 @@
                 "link": "https://www.jennsingergallery.com/davidstenbeck",
                 "name": "Visit Artist: David Stenbeck",
                 "order": 21
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.djeneba-aduayom.com",
+                "name": "Visit Artist: Djeneba Aduayom",
+                "order": 23
               },
               {
                 "class_name": "PresentationLink",
