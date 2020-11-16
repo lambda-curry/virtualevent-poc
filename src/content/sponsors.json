@@ -151,21 +151,21 @@
               },
               {
                 "class_name": "PresentationVideo",
+                "name": "Cara Lee: CHiLL_Adrift",
+                "order": 4,
+                "link": "/a/event/1299"
+              },
+              {
+                "class_name": "PresentationVideo",
                 "link": "/a/event/1305",
                 "name": "Claudia Meyer",
-                "order": 4
+                "order": 6
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Danielle Parsons: Ferrofluid",
-                "order": 6,
-                "link": "/a/event/1295"
-              },
-              {
-                "class_name": "PresentationVideo",
-                "name": "Cara Lee: CHiLL_Adrift",
                 "order": 8,
-                "link": "/a/event/1299"
+                "link": "/a/event/1295"
               },
               {
                 "class_name": "PresentationVideo",
