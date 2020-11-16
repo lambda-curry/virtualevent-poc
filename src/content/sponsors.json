@@ -9,14 +9,14 @@
       ],
       "sponsors": [
         {
-          "marquee": "\"Your text here! (150 characters max)\"",
+          "marquee": "Your text here! (150-characters max)",
           "sponsorColor": "#414042",
           "logo": "/img/tier1-default-sponsor-logo.png",
           "name": "Top-Tier",
-          "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
+          "intro": "Sponsor Description (1000-character max) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
           "headerImage": "/img/tier1-default-sponsor-headerimage-toptier.png",
           "socialNetworks": [],
-          "title": "Top-Tier Sponsor Description ",
+          "title": "Top-Tier Sponsor",
           "documents": {
             "links": [
               {
@@ -56,18 +56,18 @@
       ],
       "sponsors": [
         {
-          "marquee": "\"Your text here! (150 characters max)\"",
+          "marquee": "Your text here! (150-characters max)",
           "sideImage": "",
           "externalLink": "",
           "sponsorColor": "#58595b",
           "logo": "/img/tier1-default-sponsor-logo.png",
           "name": "Mid-Tier",
-          "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
+          "intro": "Sponsor Description (1000-character max) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
           "headerVideo": "",
           "headerImage": "/img/tier1-default-sponsor-headerimage-middletier.png",
           "socialNetworks": [],
           "chatLink": "",
-          "title": "Mid-Tier Sponsor Description ",
+          "title": "Mid-Tier Sponsor",
           "documents": {
             "slides": [],
             "links": [
@@ -91,7 +91,7 @@
             {
               "image": "/img/tier1-default-sponsor-space1.png",
               "button": "",
-              "link": "fntech.com"
+              "link": "https://fntech.com"
             }
           ],
           "id": 25,
@@ -109,18 +109,18 @@
       ],
       "sponsors": [
         {
-          "marquee": "\"Your text here! (150 characters max)\"",
+          "marquee": "Your text here! (150-characters max)",
           "sideImage": "/img/sponsors/exhibitor/immage.png",
           "externalLink": "",
           "sponsorColor": "#6d6e71",
           "logo": "/img/tier1-default-sponsor-logo.png",
           "name": "Lower-Tier ",
-          "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
+          "intro": "Sponsor Description (1000-character max) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
           "headerVideo": "",
           "headerImage": "/img/tier1-default-sponsor-headerimage-lowertier.png",
           "socialNetworks": [],
           "chatLink": "",
-          "title": "Lower-Tier Sponsor Description ",
+          "title": "Lower-Tier Sponsor",
           "documents": {
             "slides": [],
             "links": [
