@@ -11,7 +11,7 @@
   "homeHero": {
     "title": "Lobby HERO Text",
     "subTitle": "Lobby Subtitle Text",
-    "image": "/img/hero-man-with-headphones.jpg",
+    "image": "/img/tier1-default-lobby-header1.png",
     "copy": "<h2><strong>Lobby HERO Text</strong></h2>\n<h2>Lobby Subtitle Text</h2>"
   }
 }
