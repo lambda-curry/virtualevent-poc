@@ -123,7 +123,14 @@
           "title": "Bronze Sponsor Description ",
           "documents": {
             "slides": [],
-            "links": [],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "Follow us on Facebook",
+                "link": "https://www.facebook.com/FNTECH",
+                "order": 1
+              }
+            ],
             "videos": [
               {
                 "class_name": "PresentationVideo",
