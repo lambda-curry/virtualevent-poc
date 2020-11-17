@@ -333,6 +333,37 @@
           "id": 22,
           "email": "lori@infinityfestival.com",
           "usesSponsorPage": true
+        },
+        {
+          "sponsorColor": "#075987 ",
+          "logo": "/img/if2020-refikanadol-logo.png",
+          "name": "Refik Anadol, Media Artist + Director ",
+          "intro": "Refik Anadol (b. 1985, Istanbul, Turkey) is a media artist, director, and pioneer in the aesthetics of machine intelligence, working in the fields of live audio/visual performance, site-specific immersive installation, and parametric sculpture. His art explores the space among digital and physical entities by creating a hybrid relationship between architecture, media arts, and machine intelligence. Embedding arts into architecture, he questions the possibility of a post-digital architectural future in which there are no more non-digital realities. Anadol is intrigued by the ways in which the transformation of contemporary culture requires rethinking of the new aesthetic, technique, and dynamic perception of space. Refik Anadol has been the recipient of numerous awards and residencies, and continues to serve as a guest lecturer and visiting researcher in UCLA’s Department of Design Media Arts.",
+          "headerImage": "/img/if2020-refikanadol-header.png",
+          "headerImageMobile": "/img/if2020-refikanadol-header-mobile.png",
+          "advertiseImage": "",
+          "sponsorId": 23,
+          "title": "Refik Anadol",
+          "companyId": 21,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "Refik Anadol’s Instagram ",
+                "link": "https://www.instagram.com/refikanadol/ ",
+                "order": 1
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "link": "https://refikanadol.com ",
+              "image": "/img/if2020-refikanadol-space1.png"
+            }
+          ],
+          "id": 23,
+          "email": "hello@infinityfestival.com ",
+          "usesSponsorPage": true
         }
       ]
     },
