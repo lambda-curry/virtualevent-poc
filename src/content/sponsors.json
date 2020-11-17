@@ -119,6 +119,12 @@
                 "link": "/a/event/1319",
                 "name": "Capitol Royale: Mark Binder on Building Dolby Atmos Sound Stages (VOD)",
                 "order": 15
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Capitol Royale: New Music Break (VOD)",
+                "order": 16,
+                "link": "/a/event/1320"
               }
             ]
           },
