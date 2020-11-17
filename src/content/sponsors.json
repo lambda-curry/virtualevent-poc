@@ -113,6 +113,12 @@
                 "name": "Capitol Royale: We The Kingdom - Child of Love Live",
                 "order": 14,
                 "link": "/a/event/1292"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "/a/event/1319",
+                "name": "Capitol Royale: Mark Binder on Building Dolby Atmos Sound Stages (VOD)",
+                "order": 15
               }
             ]
           },
