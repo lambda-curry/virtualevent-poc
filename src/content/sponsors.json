@@ -340,7 +340,7 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "name": "Framestore by MikeMcGee & William Bartlett",
+                "name": "Framestore by Mike McGee & William Bartlett",
                 "order": 1,
                 "link": "/a/event/1348"
               },
@@ -355,7 +355,7 @@
               {
                 "class_name": "PresentationLink",
                 "link": "http://popupsummernew.wpengine.com/workshop/",
-                "name": "Learn More about Pop-Up Survivor Workshop:",
+                "name": "Learn More about Pop-Up Survivor Workshop",
                 "order": 4
               },
               {
@@ -368,7 +368,7 @@
           },
           "columnAds": [
             {
-              "image": "/img/if2020-shiftsession-graphic.png",
+              "image": "/img/if2020-shiftsession-graphic_v2.png",
               "link": "/a/schedule"
             }
           ],
