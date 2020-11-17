@@ -18,7 +18,13 @@
     "background": "",
     "images": [
       {
-        "image": "/img/nho_imageasset-1.png"
+        "image": "/img/carousel_img-14.jpg"
+      },
+      {
+        "image": "/img/carousel_img-13.jpg"
+      },
+      {
+        "image": "/img/carousel_img-15.jpg"
       }
     ]
   },
