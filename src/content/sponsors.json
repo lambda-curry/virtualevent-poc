@@ -352,12 +352,32 @@
                 "name": "Refik Anadol’s Instagram ",
                 "link": "https://www.instagram.com/refikanadol/ ",
                 "order": 1
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "IF You Knew",
+                "link": "/a/event/1253",
+                "order": 2
               },
               {
-                "class_name": "PresentationLink",
-                "link": "/a/event/1253",
-                "order": 2,
-                "name": "IF You Knew : Refik Anadol"
+                "class_name": "PresentationVideo",
+                "name": "Archive Dreaming",
+                "order": 3,
+                "link": "/a/event/1333"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "/a/event/1334",
+                "name": "Melting Memories",
+                "order": 4
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "/a/event/1335",
+                "name": "WDCH Dreams",
+                "order": 5
               }
             ]
           },
