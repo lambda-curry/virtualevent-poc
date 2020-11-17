@@ -324,6 +324,22 @@
           "sponsorId": 22,
           "title": "ShIFt Sessions",
           "companyId": 20,
+          "documents": {
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "Framestore by MikeMcGee & William Bartlett",
+                "order": 1,
+                "link": "/a/event/1348"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Pop-Up Survivor Workshop by Susan Sandler ",
+                "order": 2,
+                "link": "/a/event/1349"
+              }
+            ]
+          },
           "columnAds": [
             {
               "image": "/img/if2020-shiftsession-graphic.png",
