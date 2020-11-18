@@ -54,15 +54,6 @@
       "title": "Top Left",
       "images": [
         {
-          "image": "/img/fnvirtual-platform-template-wip_nho-11.jpg",
-          "link": ""
-        }
-      ]
-    },
-    {
-      "title": "Top Left",
-      "images": [
-        {
           "image": "/img/emoji_gif_484_frame.gif",
           "link": ""
         }
@@ -90,6 +81,15 @@
         {
           "image": "/img/fnvirtual-platform-template-wip_nho-18.jpg",
           "link": "https://diversity.fb.com/"
+        }
+      ]
+    },
+    {
+      "title": "Top Left",
+      "images": [
+        {
+          "image": "/img/fnvirtual-platform-template-wip_nho-11.jpg",
+          "link": ""
         }
       ]
     }
