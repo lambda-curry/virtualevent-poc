@@ -9,10 +9,12 @@ import SchedulePage from "../templates/schedule-page";
 import SponsorPage from "../templates/sponsor-page"
 import ExpoHallPage from "../templates/expo-hall-page"
 
-import SummitObject from '../content/summit.json'
+// import SummitObject from '../content/summit.json'
 
 import PrivateRoute from '../routes/PrivateRoute'
 import PublicRoute from "../routes/PublicRoute"
+
+import withSessionChecker from "../utils/withSessionChecker"
 
 const App = ({ isLoggedUser, user, summit_phase }) => {  
   return (
@@ -38,4 +40,4 @@ const mapStateToProps = ({ loggedUserState, userState, clockState }) => ({
   user: userState
 })
 
-export default connect(mapStateToProps)(App)
+export default connect(mapStateToProps)(withSessionChecker(App))

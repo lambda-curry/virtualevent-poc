@@ -2,15 +2,10 @@ import React, { useState, useEffect } from "react"
 import { connect } from 'react-redux'
 import { navigate } from "gatsby"
 
-import envVariables from '../utils/envVariables';
 import { isAuthorizedUser, isAuthorizedBadge } from '../utils/authorizedGroups';
-
 import { PHASES } from '../utils/phasesUtils'
-
 import { getUserProfile } from "../actions/user-actions";
-
 import HeroComponent from '../components/HeroComponent'
-import { OPSessionChecker } from "openstack-uicore-foundation/lib/components";
 
 const PrivateRoute = ({ component: Component, isLoggedIn, location, eventId, user: { loading, userProfile }, summit_phase, getUserProfile, ...rest }) => {
 
@@ -19,7 +14,7 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, eventId, use
   const [updatingUserProfile, setUpdatingUserProfile] = useState(null);
 
   useEffect(() => {
-
+   
     if (!isLoggedIn) return;
 
     if (userProfile === null) {
@@ -51,7 +46,8 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, eventId, use
     return null
   }
 
-  if (loading || userProfile === null || hasTicket === null || isAuthorized === null || (hasTicket === false && isAuthorized === false && updatingUserProfile !== false)) {
+  if (loading || userProfile === null || hasTicket === null || isAuthorized === null || 
+    (hasTicket === false && isAuthorized === false && updatingUserProfile !== false)) {
     return (
       <HeroComponent
         title="Checking credentials..."
@@ -88,12 +84,7 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, eventId, use
     )
   }
 
-  return (
-    <>
-      <OPSessionChecker clientId={envVariables.OAUTH2_CLIENT_ID} idpBaseUrl={envVariables.IDP_BASE_URL} />
-      <Component location={location} eventId={eventId} {...rest} />
-    </>
-  );
+  return (<Component location={location} eventId={eventId} {...rest} />);
 }
 
 export default connect(null, { getUserProfile })(PrivateRoute)
