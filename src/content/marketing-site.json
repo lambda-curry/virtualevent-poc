@@ -15,7 +15,7 @@
         "display": true
       }
     },
-    "background": "",
+    "background": "/img/hero_bgasset-5.png",
     "images": [
       {
         "image": "/img/carousel_img-14.jpg"
@@ -54,7 +54,7 @@
       "title": "Top Left",
       "images": [
         {
-          "image": "/img/fnvirtual-platform-template-wip_nho-11.png",
+          "image": "/img/fnvirtual-platform-template-wip_nho-11.jpg",
           "link": ""
         }
       ]
