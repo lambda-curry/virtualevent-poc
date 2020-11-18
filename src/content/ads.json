@@ -4,45 +4,27 @@
       "section": "lobby",
       "columnAds": [
         {
-          "image": "/img/fnvirtual-platform-template-wip_nho-10.png",
+          "image": "/img/cs_484asset-7.png",
           "button": {
-            "link": "https://www.facebook.com/community/"
+            "link": "https://www.facebook.com/community/",
+            "text": "Facebook Community"
           },
           "column": "left"
         },
         {
-          "image": "/img/emoji-gif.gif",
+          "image": "/img/emoji_gif_484.gif",
           "button": {
             "text": "Learn more",
-            "link": "/virtual-booth/"
+            "link": "https://www.facebook.com/community/"
           },
-          "column": "right",
-          "id": null
-        },
-        {
-          "image": "/img/ad_subscribe.png",
-          "button": {
-            "text": "",
-            "link": "/virtual-booth/"
-          },
-          "column": "right",
+          "column": "left",
           "id": null
         }
       ]
     },
     {
       "section": "event",
-      "columnAds": [
-        {
-          "image": "/img/yoco-sponsor-ads-medium-flow.png",
-          "button": {
-            "text": "Learn more",
-            "link": "/virtual-booth/"
-          },
-          "column": "left",
-          "id": null
-        }
-      ]
+      "columnAds": []
     }
   ]
 }
