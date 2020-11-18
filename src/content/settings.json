@@ -1,5 +1,5 @@
 {
-  "favicon": "/img/if2020-favicon.png"
+  "favicon": "/img/if2020-favicon.png",
   "widgets": {
     "chat": {
       "showQA": false,
