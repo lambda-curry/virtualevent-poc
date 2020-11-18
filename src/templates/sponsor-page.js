@@ -73,6 +73,10 @@ export const SponsorPageTemplate = class extends React.Component {
     this.props.scanBadge(sponsorId);
   }
 
+  onViewAllEventsClick() {
+    navigate('/a/schedule')
+  }
+
   render() {
     const { loggedUser, user } = this.props;
     const { sponsor, tier, notFound, parsedIntro } = this.state;
@@ -81,7 +85,7 @@ export const SponsorPageTemplate = class extends React.Component {
     if (notFound) {
       return <HeroComponent title="Sponsor not found" redirectTo="/a/sponsors" />
     } else {
-      const { disqus, liveEvent, schedule, banner } = tier.sponsorPage.widgets;
+      const { disqus, liveEvent, schedule, banner } = tier.sponsorPage.widgets || {};
       return (
         <>
           <AttendanceTracker
@@ -116,6 +120,7 @@ export const SponsorPageTemplate = class extends React.Component {
                   <LiveEventWidgetComponent
                     onEventClick={(ev) => this.onEventChange(ev)}
                     sponsorId={sponsor.companyId}
+                    showSponsor={sponsor.companyId ? true : false}
                   />
                 }
                 {schedule &&
@@ -147,7 +152,7 @@ export const SponsorPageTemplate = class extends React.Component {
                   <DisqusComponent disqusSSO={user.disqusSSO} className={styles.disqusContainerSponsor} summit={summit} title="" sponsor={sponsor} />
                 }
                 {sponsor.documents &&
-                  <DocumentsComponent event={sponsor.documents} sponsor={true} />
+                  <DocumentsComponent event={sponsor.documents} />
                 }
                 {sponsor.columnAds &&
                   <AdvertiseSponsorsComponent ads={sponsor.columnAds} style={{ marginTop: '2em' }} />
@@ -163,6 +168,7 @@ export const SponsorPageTemplate = class extends React.Component {
 
 const SponsorPage = (
   {
+    location,
     loggedUser,
     sponsorId,
     user,
@@ -172,7 +178,7 @@ const SponsorPage = (
 ) => {
 
   return (
-    <Layout>
+    <Layout location={location}>
       <SponsorPageTemplate
         loggedUser={loggedUser}
         sponsorId={sponsorId}

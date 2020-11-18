@@ -3,6 +3,8 @@ import { Helmet } from 'react-helmet'
 
 import envVariables from '../utils/envVariables';
 
+import GeneralSettings from '../content/settings.json'
+
 // these two libraries are client-side only
 import SimpleChatWidget from 'simple-chat-widget/dist';
 import 'simple-chat-widget/dist/index.css';
@@ -20,8 +22,8 @@ const SimpleChatWidgetComponent = class extends React.Component {
         onAuthError: (err, res) => console.log(err),
         openDir: "left",
         title: "Private Chat",
-        showHelp: false,
-        showQA: false,
+        showHelp: GeneralSettings.widgets.chat.showHelp,
+        showQA: GeneralSettings.widgets.chat.showQA,
         hideUsers: false,
     };
 

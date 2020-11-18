@@ -1,3 +1,9 @@
 {
-  "favicon": "/img/favicon.png"
+  "favicon": "/img/favicon.svg",
+  "widgets": {
+    "chat": {
+      "showQA": false,
+      "showHelp": false
+    }
+  }
 }

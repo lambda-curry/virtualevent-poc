@@ -3,6 +3,7 @@
     {
       "id": "tier-cYGYq5-ae",
       "name": "Gold",
+      "widgetTitle": "Gold Sponsors",
       "badge": "/img/gold.png",
       "lobby": {
         "lobbyTemplate": "big-images",
@@ -23,6 +24,7 @@
     {
       "id": "tier-DHcI3dWGk",
       "name": "Silver",
+      "widgetTitle": "Silver Sponsors",
       "badge": "/img/silver.png",
       "lobby": {
         "lobbyTemplate": "big-images",
@@ -43,6 +45,7 @@
     {
       "id": "tier-U_wEwGX8a",
       "name": "Bronze",
+      "widgetTitle": "Bronze Sponsors",
       "badge": "/img/bronze.png",
       "lobby": {
         "lobbyTemplate": "small-images",
