@@ -60,15 +60,6 @@
       ]
     },
     {
-      "title": "Mid Left",
-      "images": [
-        {
-          "image": "/img/fnvirtual-platform-template-wip_nho-18.jpg",
-          "link": "https://diversity.fb.com/"
-        }
-      ]
-    },
-    {
       "title": "Top Left",
       "images": [
         {
@@ -90,6 +81,15 @@
         {
           "image": "/img/fnvirtual-platform-template-wip_nho-21.jpg",
           "link": "https://sustainability.fb.com/"
+        }
+      ]
+    },
+    {
+      "title": "Mid Left",
+      "images": [
+        {
+          "image": "/img/fnvirtual-platform-template-wip_nho-18.jpg",
+          "link": "https://diversity.fb.com/"
         }
       ]
     }
