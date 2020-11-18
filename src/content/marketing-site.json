@@ -15,7 +15,7 @@
         "display": true
       }
     },
-    "background": "/img/hero_bgasset-5.png",
+    "background": "",
     "images": [
       {
         "image": "/img/carousel_img-14.jpg"
@@ -72,7 +72,7 @@
       "title": "Mid Left",
       "images": [
         {
-          "image": "/img/fnvirtual-platform-template-wip_nho-19.png",
+          "image": "/img/fnvirtual-platform-template-wip_nho-19.jpg",
           "link": "https://diversity.fb.com/"
         }
       ]
@@ -81,12 +81,19 @@
       "title": "Top Left",
       "images": [
         {
-          "image": "/img/emoji-gif.gif",
-          "link": ""
+          "image": "/img/emoji_gif_484.gif",
+          "link": "https://www.facebook.com/community/"
         }
       ]
     },
-    {},
+    {
+      "images": [
+        {
+          "image": "/img/fnvirtual-platform-template-wip_nho-22.jpg",
+          "link": "https://sustainability.fb.com/"
+        }
+      ]
+    },
     {
       "title": "Top Left",
       "images": [
