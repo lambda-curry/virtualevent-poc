@@ -1,3 +1,9 @@
 {
   "favicon": "/img/if2020-favicon.png"
+  "widgets": {
+    "chat": {
+      "showQA": false,
+      "showHelp": false
+    }
+  }
 }
