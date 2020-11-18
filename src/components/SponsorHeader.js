@@ -1,25 +1,53 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef, useCallback } from 'react'
 
 import Link from './Link'
 
 import styles from '../styles/sponsor-page.module.scss'
 
-const SponsorHeader = ({ sponsor, tier }) => {
+const SponsorHeader = ({ sponsor, tier, scanBadge }) => {
 
-  const [isMuted, setIsMuted] = useState(false);
+  const [isMuted, _setIsMuted] = useState(true);
+  const [isMobile, setIsMobile] = useState(null);
+  const videoParentRef = useRef(null);
+
+  const setIsMuted = useCallback((isMuted) => {
+    const player = videoParentRef.current.children[0];
+    player.muted = isMuted;
+    _setIsMuted(isMuted)
+  })
+
+  const onResize = useCallback(() => {
+    if (window.innerWidth <= 768) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  });
+
+  useEffect(() => {
+    onResize();
+    window.addEventListener("resize", onResize);
+    return () => {
+      window.removeEventListener("resize", onResize);
+    };
+  });
 
   return (
     <section className={styles.hero}>
-      <div className={`${styles.heroSponsor}`}
+      <div className={`${isMobile ? styles.heroSponsorMobile : styles.heroSponsor}`}
         style={{
-          backgroundImage: `url(${sponsor.headerImage})`,
+          backgroundImage: `url(${isMobile ? sponsor.headerImageMobile : sponsor.headerImage})`,
           paddingBottom: `${tier.sponsorPage.sponsorTemplate === 'big-header' ? '27.77%' : '13.88%'}`,
           maxHeight: `${tier.sponsorPage.sponsorTemplate === 'big-header' ? '400px' : '200px'}`
         }}>
         {sponsor.headerVideo &&
-          <video className={`${styles.heroVideo}`} id="sponsorVideo" preload="auto" autoPlay loop volume={isMuted ? '0' : '1'}>
-            <source src={sponsor.headerVideo} type="video/mp4" />
-          </video>
+          <div ref={videoParentRef} dangerouslySetInnerHTML={{
+            __html: `
+              <video class=${styles.heroVideo} preload="auto" autoPlay loop muted playsinline>
+                <source src=${sponsor.headerVideo} type="video/mp4" />
+              </video>
+              `
+          }} />
         }
         <div className={`${styles.heroBody}`}>
           <div className={`${styles.heroSponsorContainer}`}>
@@ -39,14 +67,14 @@ const SponsorHeader = ({ sponsor, tier }) => {
                 <img src={tier.badge} />
               </div>
               <div className={`${tier.sponsorPage.sponsorTemplate === 'big-header' ? styles.buttons : styles.buttonsSmall}`}>
-                <Link className={styles.link}>
+                <Link className={styles.link} onClick={scanBadge}>
                   <button className={`${styles.button} button is-large`} style={{ backgroundColor: `${sponsor.sponsorColor}` }}>
                     <i className={`fa fa-2x fa-qrcode icon is-large`}></i>
                     <b>Scan your badge</b>
                   </button>
                 </Link>
                 {sponsor.email &&
-                  <Link className={styles.link} to={`mailto:${sponsor.email}`}>
+                  <Link className={styles.link} to={sponsor.email}>
                     <button className={`${styles.button} button is-large`} style={{ backgroundColor: `${sponsor.sponsorColor}` }}>
                       <i className={`fa fa-2x fa-envelope icon is-large`}></i>
                       <b>Contact Us!</b>

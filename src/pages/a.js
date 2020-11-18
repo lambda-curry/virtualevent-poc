@@ -9,10 +9,12 @@ import SchedulePage from "../templates/schedule-page";
 import SponsorPage from "../templates/sponsor-page"
 import ExpoHallPage from "../templates/expo-hall-page"
 
-import SummitObject from '../content/summit.json'
+// import SummitObject from '../content/summit.json'
 
 import PrivateRoute from '../routes/PrivateRoute'
 import PublicRoute from "../routes/PublicRoute"
+
+import withSessionChecker from "../utils/withSessionChecker"
 
 const App = ({ isLoggedUser, user, summit_phase }) => {  
   return (
@@ -21,8 +23,8 @@ const App = ({ isLoggedUser, user, summit_phase }) => {
         <Router basepath="/a" >
           <PrivateRoute path="/" summit_phase={summit_phase} component={HomePage} isLoggedIn={isLoggedUser} user={user} location={location} />
           <PrivateRoute path="/event/:eventId" summit_phase={summit_phase} component={EventPage} isLoggedIn={isLoggedUser} user={user} location={location} />
-          <PrivateRoute path="/sponsor/:sponsorId" component={SponsorPage} isLoggedIn={isLoggedUser} user={user} location={location} />
-          <PrivateRoute path="/sponsors/" component={ExpoHallPage} isLoggedIn={isLoggedUser} user={user} location={location} />
+          <PrivateRoute path="/sponsor/:sponsorId" summit_phase={summit_phase} component={SponsorPage} isLoggedIn={isLoggedUser} user={user} location={location} />
+          <PrivateRoute path="/sponsors/" summit_phase={summit_phase} component={ExpoHallPage} isLoggedIn={isLoggedUser} user={user} location={location} />
           <PublicRoute path="/schedule" component={SchedulePage} location={location} />
           <PublicRoute path="/my-schedule" component={SchedulePage} mySchedule={true} location={location} />
           <LoginPage path="/login" location={location} />
@@ -38,4 +40,4 @@ const mapStateToProps = ({ loggedUserState, userState, clockState }) => ({
   user: userState
 })
 
-export default connect(mapStateToProps)(App)
+export default connect(mapStateToProps)(withSessionChecker(App))

@@ -1,7 +1,9 @@
 @import './colors.scss';
 
 .disqus-container-sponsor {
-  position: relative;
+  position: relative;  
+  max-height: 1160px;
+  overflow-y: scroll;
 }
 
 .hero {
@@ -44,6 +46,7 @@
 
             i {
               font-size: 2.5rem;
+              text-shadow: 0 0 2px #000;
             }
 
             &:last-child {
@@ -73,7 +76,7 @@
             .link {
               .button {
                 background-color: $color_secondary_contrast;
-                border-color: $color_secondary_contrast;
+                border: none;
                 color: #fff;
                 height: 5rem;
                 width: 25rem;
@@ -93,12 +96,12 @@
                 }
 
                 &:hover,
-                &:active {
-                  border-color: #fff;
+                &:active {                  
+                  border: none;
                 }
 
                 &:focus {
-                  border-color: #fff;
+                  border: none;
                   box-shadow: none;
                 }
               }
@@ -121,7 +124,7 @@
               .link {
                 .button {
                   background-color: $color_secondary_contrast;
-                  border-color: $color_secondary_contrast;
+                  border: none;
                   color: #fff;
                   height: 3.5rem;
                   width: 20rem;
@@ -143,11 +146,11 @@
 
                   &:hover,
                   &:active {
-                    border-color: #fff;
+                    border: none;
                   }
 
                   &:focus {
-                    border-color: #fff;
+                    border: none;
                     box-shadow: none;
                   }
                 }
@@ -170,8 +173,9 @@
         background-color: transparent;
         border: none;
         cursor: pointer;
-        align-self: flex-end;        
+        align-self: flex-end;
         margin-right: 10px;
+        text-shadow: 0 0 2px #000;
 
         &:hover,
         &:active,
@@ -180,6 +184,10 @@
           border: none;
         }
       }
+    }
+
+    &-mobile {
+      @extend .hero-sponsor;
     }
   }
 }
@@ -194,7 +202,7 @@
   .link {
     .button {
       background-color: $color_secondary_contrast;
-      border-color: $color_secondary_contrast;
+      border: none;
       color: #fff;
       height: 5rem;
       width: 100%;
@@ -214,11 +222,11 @@
 
       &:hover,
       &:active {
-        border-color: #fff;
+        border: none;
       }
 
       &:focus {
-        border-color: #fff;
+        border: none;
         box-shadow: none;
       }
     }
@@ -273,6 +281,7 @@
       transform: translateX(-50%);
     }
   }
+
   &--small {
     @extend .bottom-bar;
     font-size: 18px;
@@ -340,8 +349,6 @@
 
       &:first-of-type {
         button {
-          background-color: $color_secondary;
-          border-color: $color_secondary;
           margin-right: 3rem;
         }
       }
@@ -383,7 +390,7 @@
 
   .hero {
     .hero-sponsor {
-      min-height: 400px;
+      height: 400px;
       background-size: cover;
 
       .hero-body {
@@ -408,6 +415,7 @@
 
               i {
                 font-size: 2.5rem;
+                text-shadow: 0 0 2px #000;
               }
 
               &:last-child {
@@ -530,6 +538,10 @@
             }
           }
         }
+      }
+
+      &-mobile {
+        height: 250px;
       }
     }
   }
