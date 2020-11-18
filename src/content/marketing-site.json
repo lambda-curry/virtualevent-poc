@@ -61,12 +61,7 @@
     },
     {
       "title": "Top Right",
-      "images": [
-        {
-          "image": "/img/fnvirtual-platform-template-wip_nho-09.jpg",
-          "link": ""
-        }
-      ]
+      "images": []
     },
     {
       "title": "Mid Left",
@@ -78,19 +73,19 @@
       ]
     },
     {
-      "images": [
-        {
-          "image": "/img/fnvirtual-platform-template-wip_nho-22.jpg",
-          "link": "https://sustainability.fb.com/"
-        }
-      ]
-    },
-    {
       "title": "Top Left",
       "images": [
         {
           "image": "/img/emoji_gif_470.gif",
           "link": "https://www.facebook.com/community/"
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "image": "/img/fnvirtual-platform-template-wip_nho-22.jpg",
+          "link": "https://sustainability.fb.com/"
         }
       ]
     }
