@@ -51,6 +51,14 @@
   },
   "sponsors": [
     {
+      "images": [
+        {
+          "image": "/img/happy-hour_img_wbutton-10.jpg",
+          "link": "https://fncreative-adams.netlify.app/a/event/1357"
+        }
+      ]
+    },
+    {
       "title": "Top Left",
       "images": [
         {
@@ -64,14 +72,6 @@
         {
           "image": "/img/fnvirtual-platform-template-wip_nho-21.jpg",
           "link": "https://sustainability.fb.com/"
-        }
-      ]
-    },
-    {
-      "images": [
-        {
-          "image": "/img/happy-hour_img_wbutton-10.jpg",
-          "link": "https://fncreative-adams.netlify.app/a/event/1357"
         }
       ]
     },
@@ -90,6 +90,19 @@
         {
           "image": "/img/fnvirtual-platform-template-wip_nho-11.jpg",
           "link": ""
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "image": "/img/carousel_ad-25.jpg"
+        },
+        {
+          "image": "/img/carousel_ad-24.jpg"
+        },
+        {
+          "image": "/img/carousel_ad-26-25.jpg"
         }
       ]
     }
