@@ -64,15 +64,7 @@
       "images": [
         {
           "image": "/img/emoji_gif_484_frame.gif",
-          "link": "https://www.facebook.com/community/"
-        }
-      ]
-    },
-    {
-      "images": [
-        {
-          "image": "",
-          "link": "https://fncreative-adams.netlify.app/a/event/1357"
+          "link": ""
         }
       ]
     },
@@ -81,6 +73,14 @@
         {
           "image": "/img/fnvirtual-platform-template-wip_nho-21.jpg",
           "link": "https://sustainability.fb.com/"
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "image": "/img/happy-hour_img_wbutton-10.jpg",
+          "link": "https://fncreative-adams.netlify.app/a/event/1357"
         }
       ]
     },
