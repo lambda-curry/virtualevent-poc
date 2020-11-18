@@ -21,8 +21,8 @@ export const VirtualBoothPageTemplate = ({
     <div className="content">
       <h1>{title}</h1>
       <PageContent content={intro} />
-      <div class="columns is-mobile">
-        <div class="column is-half">
+      <div className="columns is-mobile">
+        <div className="column is-half">
           <h2>{columns.leftColumn.title}</h2>
           {columns.leftColumn.content}
           <br />
@@ -31,7 +31,7 @@ export const VirtualBoothPageTemplate = ({
             <img src={!!columns.leftColumn.image.childImageSharp ? columns.leftColumn.image.childImageSharp.fluid.src : columns.leftColumn.image} alt="Middle Tier" />
           </Zoom>          
         </div>
-        <div class="column is-half">
+        <div className="column is-half">
           <h2>{columns.rightColumn.title}</h2>
           {columns.rightColumn.content}
           <br />

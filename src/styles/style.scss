@@ -35,7 +35,7 @@ footer {
 
 #content-wrapper {
   padding-bottom: 3rem;
-  min-height: 71vh;
+  min-height: 95vh;
 }
 
 div.login-form {
@@ -100,6 +100,7 @@ h2 {
   padding-left: 0px;
   /* gutter size */
   background-clip: padding-box;
+
   .slick-slider {
     margin-bottom: -5px;
   }
@@ -115,11 +116,24 @@ h2 {
   }
 }
 
+.sponsor-carousel {
+  .slick-track {
+    display: flex;
+
+    .slick-slide {
+      display: flex;
+      height: auto;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
 .talk {
 
   &__break {
     background-color: $color_secondary;
-    min-height: 71vh !important;
+    min-height: 92vh !important;
     width: 100%;
     padding: 0 3rem;
 
@@ -253,9 +267,9 @@ h2 {
   }
 }
 
-.schedule-container-home {  
+.schedule-container-home {
   margin-top: 15px;
-  position: static;  
+  position: static;
   overflow-y: auto;
   overflow-x: hidden;
   padding-bottom: 10px;

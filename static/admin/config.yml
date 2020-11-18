@@ -23,6 +23,12 @@ collections:
         name: "generalSettings"
         fields:
           - {label: "Favicon", name: favicon, widget: image}
+          - {label: "Widgets", name: widgets, widget: object, fields: [
+              {label: "Chat", name: chat, widget: object, fields: [
+                {label: "Show QA", name: showQA, widget: boolean, required: false, default: false},
+                {label: "Show Help", name: showHelp, widget: boolean, required: false, default: false},
+              ]}
+            ]}
       - file: "src/content/ads.json"
         label: "Advertisement"
         name: "ads"
@@ -49,41 +55,43 @@ collections:
         fields:
           - {label: "Tiers", name: "tiers", widget: list, fields: [
               {label: "Tier", name: "name", widget: string},
+              {label: "Widget Title", name: "widgetTitle", widget: string, required: false},
               {label: "ID", name: "id", widget: ncw-id, prefix: tier, hidden: true},
-              {label: "Badge", name: "badge", widget: image, required: false},
+              {label: "Badge", name: "badge", widget: image, required: false, default: ''},
               {label: "Lobby", name: "lobby", widget: object, fields: [
-                {label: "Lobby Template", name: "lobbyTemplate", widget: select, required: false, options: [
+                {label: "Lobby Template", name: "lobbyTemplate", widget: select, required: false, default: 'small-images', options: [
                   { label: "Big Images", value: "big-images" },
                   { label: "Small Images", value: "small-images" },
                   { label: "Horizontal Images", value: "horizontal-images" },
+                  { label: "Carousel", value: "carousel" },
                 ]},
-                {label: "Display", name: display, widget: boolean, required: false}
+                {label: "Display", name: display, widget: boolean, required: false, default: false}
               ]},
               {label: "Sponsor Page", name: "sponsorPage", widget: object, fields: [
-                {label: "Sponsor Page Template", name: "sponsorTemplate", widget: select, options: [
+                {label: "Sponsor Page Template", name: "sponsorTemplate", widget: select, required: false, default: 'small-header', options: [
                   { label: "Big Header", value: "big-header" },
                   { label: "Small Header", value: "small-header" },
                 ]},
-                {label: "Disqus", name: disqus, widget: boolean, required: false},
-                {label: "Live Event", name: liveEvent, widget: boolean, required: false},
-                {label: "Schedule", name: schedule, widget: boolean, required: false},
-                {label: "Banner", name: banner, widget: boolean, required: false}
+                {label: "Disqus", name: disqus, widget: boolean, required: false, default: false},
+                {label: "Live Event", name: liveEvent, widget: boolean, required: false, default: false},
+                {label: "Schedule", name: schedule, widget: boolean, required: false, default: false},
+                {label: "Banner", name: banner, widget: boolean, required: false, default: false}
               ]},
-              {label: "Sponsor Hall Size", name: "expoHallSize", widget: select, required: true, options: [
+              {label: "Sponsor Hall Size", name: "expoHallSize", widget: select, required: false, default: 'medium', options: [
                 { label: "Large Images", value: "large" },
                 { label: "Medium Images", value: "medium" },
                 { label: "Small Images", value: "small" },
               ]},
-              {label: "In Event Template", name: "eventTemplate", widget: select, required: false, options: [
+              {label: "In Event Template", name: "eventTemplate", widget: select, required: false, default: 'small-images', options: [
                 { label: "Big Images", value: "big-images" },
                 { label: "Small Images", value: "small-images" },
                 { label: "Horizontal Images", value: "horizontal-images" },
               ]},
             ]}
-          - {label: "Header Sponsor Hall", name: imageHeader, widget: image}
+          - {label: "Header Sponsor Hall", name: imageHeader, widget: image, required: false, default: ''}
           - {label: "Lobby Button", name: lobbyButton, widget: object, fields: [
-              {label: "Text", name: "text", widget: string, required: false},
-              {label: "Link", name: "link", widget: string, required: false}
+              {label: "Text", name: "text", widget: string, required: false, default: ''},
+              {label: "Link", name: "link", widget: string, required: false, default: ''}
             ]}
       - file: "src/content/navbar.json"
         label: "Navbar"
@@ -254,6 +262,7 @@ collections:
                 {label: "Marquee Text", name: "marquee", widget: string, required: false },
                 {label: "Sponsor Color", name: "sponsorColor", widget: string, required: false },
                 {label: "Logo", name: "logo", widget: image },
+                {label: "Advertise Image", name: "advertiseImage", widget: image, required: false, default: '' },
                 {label: "External Link", name: "externalLink", widget: string, required: false },
                 {label: "Social Networks", name: "socialNetworks", widget: list, fields: [
                   {label: "Icon", name: "icon", widget: string},
