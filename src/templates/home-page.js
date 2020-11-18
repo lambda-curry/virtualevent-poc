@@ -75,7 +75,7 @@ export const HomePageTemplate = class extends React.Component {
                 landscape={HomeSettings.centerColumn.schedule.showAllEvents}
                 yourSchedule={false}
                 showNav={false}
-                showAllEvents={HomeSettings.centerColumn.schedule.showAllEvents}
+                showAllEvents={true}
                 onRef={addWidgetRef}
                 updateCallback={updateWidgets}
                 title={HomeSettings.centerColumn.schedule.showAllEvents ? "Full Schedule" : "Up Next"}
@@ -94,6 +94,8 @@ export const HomePageTemplate = class extends React.Component {
                   accessToken={loggedUser.accessToken}
                   title="Featured Speakers"
                   bigPics={false}
+                  featured={true}
+                  date={null}
                 />
               }
               <AdvertiseComponent section='lobby' column="center" />
@@ -127,15 +129,15 @@ const OrchestedTemplate = withOrchestra(HomePageTemplate);
 
 const HomePage = (
   {
+    location,
     loggedUser,
     user,
     getUserProfile,
     getDisqusSSO
   }
-) => {
-
+) => {  
   return (
-    <Layout>
+    <Layout location={location}>
       <AttendanceTracker
           sourceName="LOBBY"
           summitId={SummitObject.summit.id}

@@ -116,6 +116,24 @@
   }
 }
 
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    margin-bottom: 2rem;
+  }
+
+  a {
+    width: 100%;
+    text-align: center;
+  }
+
+  img {
+    margin: 1rem auto;
+  }
+}
+
 @media (min-width: 1921px) {
   .gold-container {
     flex-direction: row;
