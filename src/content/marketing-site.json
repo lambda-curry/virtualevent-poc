@@ -78,15 +78,6 @@
       ]
     },
     {
-      "title": "Top Left",
-      "images": [
-        {
-          "image": "/img/emoji_gif_484.gif",
-          "link": "https://www.facebook.com/community/"
-        }
-      ]
-    },
-    {
       "images": [
         {
           "image": "/img/fnvirtual-platform-template-wip_nho-22.jpg",
@@ -98,8 +89,8 @@
       "title": "Top Left",
       "images": [
         {
-          "image": "",
-          "link": ""
+          "image": "/img/emoji_gif_470.gif",
+          "link": "https://www.facebook.com/community/"
         }
       ]
     }
