@@ -2,6 +2,4 @@
 templateKey: custom-page
 title: Help
 ---
-YOU DECIDE!
-
-Whether this goes to our tech support group, your internal events team, the registration folks, or all of the above, having a simple “help” tab in the top navigation ensures your attendees have a direct link to someone who can assist immediately.
+Please check your email for two emails, a Login emial verification, and a ticket confirmation email.  They will arrive about 5 minutes apart.  If you have any questions, please email [Stephen@sjp.vegas](mailto:Stephen@sjp.vegas)
