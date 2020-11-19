@@ -61,12 +61,12 @@
       {
         "icon": "fa-facebook",
         "link": "/footer-content/",
-        "display": true
+        "display": false
       },
       {
         "icon": "fa-twitter",
         "link": "/footer-content/",
-        "display": true
+        "display": false
       }
     ]
   },
