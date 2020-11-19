@@ -5706,6 +5706,11 @@ draft-js@>=0.10.0:
     immutable "~3.7.4"
     object-assign "^4.1.1"
 
+dropzone@^5.7.2:
+  version "5.7.2"
+  resolved "https://registry.yarnpkg.com/dropzone/-/dropzone-5.7.2.tgz#91bee1572dda515d40901da304bc79dddf309b4c"
+  integrity sha512-m217bJHtf0J1IiKn4Tv6mnu1h5QvQNBnKZ39gma7hzGQhIZMxYq1vYEHs4AVd4ThFwmALys+52NAOD4zdLTG4w==
+
 duplexer3@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
@@ -10374,10 +10379,10 @@ linkifyjs@^2.1.9:
   resolved "https://registry.yarnpkg.com/linkifyjs/-/linkifyjs-2.1.9.tgz#af06e45a2866ff06c4766582590d098a4d584702"
   integrity sha512-74ivurkK6WHvHFozVaGtQWV38FzBwSTGNmJolEgFp7QgR2bl6ArUWlvT4GcHKbPe1z3nWYi+VUdDZk16zDOVug==
 
-live-event-widget@^1.0.48:
-  version "1.0.50"
-  resolved "https://registry.yarnpkg.com/live-event-widget/-/live-event-widget-1.0.50.tgz#be326fd8e362ee63bac3bae6462d081c7eb13803"
-  integrity sha512-fyW4TO8r/fbkcF1XsJf23/nAqgNCeX2cANdQsAlJi+cRZSiUQY/UsujQC94H0C+TJPDT0WmZbC0kh7BaufZ0mQ==
+live-event-widget@^1.0.52:
+  version "1.0.52"
+  resolved "https://registry.yarnpkg.com/live-event-widget/-/live-event-widget-1.0.52.tgz#f9f8cc5d3af6946adf248e2bcc38353f4d86012b"
+  integrity sha512-PsjNIHJDN+j4L+Rf0rJjV+ixCOyaAD1iBG6z2wy3jp4eb/FiEgcFAdENKMfwvrGABXJnsyjqSMKddKCUcIhK4Q==
   dependencies:
     svg-url-loader "^6.0.0"
 
@@ -15513,11 +15518,12 @@ saxes@^5.0.0:
   dependencies:
     xmlchars "^2.2.0"
 
-schedule-lite@^1.0.79:
-  version "1.0.83"
-  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.83.tgz#73f046428a92a3cdb284a79cfb87d9b707a47951"
-  integrity sha512-JJPUUCKTvqS9vdQZO3m63/N3ulx8tb1vGXVdUT1XjUcw5qFX5uClSDuzvF5WUhLQHUdA/E3uMgRmbNtpBZj7nQ==
+schedule-lite@^1.0.84:
+  version "1.0.84"
+  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.84.tgz#e879a75339028e55cf69767e0777e7968358b417"
+  integrity sha512-d3k5KPPLNog10v+fTGEmmkPC03l+2PE3yRXtBZ1Jf7pYcmjdOA1nWSQGni10bkPRyXxB3foPHNObZrLC3tz/sw==
   dependencies:
+    dropzone "^5.7.2"
     pure-react-carousel "^1.27.4"
 
 scheduler@^0.18.0:
