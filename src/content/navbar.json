@@ -3,32 +3,32 @@
     {
       "title": "Lobby",
       "link": "/a/",
-      "display": true
+      "display": false
     },
     {
       "title": "Schedule",
       "link": "/a/schedule",
-      "display": true
+      "display": false
     },
     {
       "title": "About the event",
       "link": "/about-event",
-      "display": true
+      "display": false
     },
     {
       "title": "Who we are",
       "link": "/who-we-are",
-      "display": true
+      "display": false
     },
     {
       "title": "Past events",
       "link": "/past-events",
-      "display": true
+      "display": false
     },
     {
       "title": "Contact",
       "link": "/contact",
-      "display": true
+      "display": false
     },
     {
       "title": "Help",
