@@ -1,1 +1,18 @@
-{"centerColumn":{"schedule":{"showAllEvents":false},"speakers":{"showTodaySpeakers":false,"showFeatureSpeakers":false}},"homeHero":{"title":"YOCO Summit.  Live Now!","subTitle":"virtual · pacific time","image":"/img/hero-man-with-headphones.jpg","copy":"<h2><strong>YOCO Summit Live NOW!</strong></h2>\r\n<h2>from San Jose, CA</h2>"},"schedule_default_image":"https://fntech.sfo2.cdn.digitaloceanspaces.com/17/OCP20TW-Session-Thumbnail-110920-OCP.png"}
+{
+  "centerColumn": {
+    "schedule": {
+      "showAllEvents": true
+    },
+    "speakers": {
+      "showTodaySpeakers": true,
+      "showFeatureSpeakers": false
+    }
+  },
+  "homeHero": {
+    "title": "New Hire Orientation",
+    "subTitle": "Welcome!",
+    "image": "/img/fbmicro_lobby-header-1.png",
+    "copy": ""
+  },
+  "schedule_default_image": "https://fntech.sfo2.cdn.digitaloceanspaces.com/17/OCP20TW-Session-Thumbnail-110920-OCP.png"
+}
