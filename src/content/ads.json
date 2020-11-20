@@ -4,29 +4,33 @@
       "section": "lobby",
       "columnAds": [
         {
-          "image": "/img/yoco-sponsor-ads-medium-tilted.png",
+          "image": "/img/fbmicro_ad-tile-1-enviro.png",
           "button": {
-            "link": "/virtual-booth/"
+            "link": "https://sustainability.fb.com"
           },
           "column": "left"
         },
         {
-          "image": "/img/yoco-sponsor-ads-large-carbonclean-vert.png",
+          "image": "/img/fbmicro_ad-tile-2-diversity.png",
           "button": {
-            "text": "Learn more",
-            "link": "/virtual-booth/"
+            "text": "",
+            "link": "https://diversity.fb.com"
           },
           "column": "right",
           "id": null
         },
         {
-          "image": "/img/ad_subscribe.png",
+          "image": "/img/fbmicro_ad-tile-3-safety.png",
           "button": {
             "text": "",
-            "link": "/virtual-booth/"
+            "link": "https://www.workplace.com/resources/news-updates/employee-safety"
           },
           "column": "right",
           "id": null
+        },
+        {
+          "image": "/img/fbmicro_ad-tile-people-2.png",
+          "column": "left"
         }
       ]
     },
