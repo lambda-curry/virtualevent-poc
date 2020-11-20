@@ -4,13 +4,6 @@
       "section": "lobby",
       "columnAds": [
         {
-          "image": "/img/fbmicro_ad-tile-1-enviro.png",
-          "button": {
-            "link": "https://sustainability.fb.com"
-          },
-          "column": "left"
-        },
-        {
           "image": "/img/fbmicro_ad-tile-2-diversity.png",
           "button": {
             "text": "",
@@ -29,15 +22,30 @@
           "id": null
         },
         {
-          "image": "/img/fbmicro_ad-tile-people-4.png",
-          "column": "left"
-        },
-        {
           "image": "/img/fbmicro_ad-tile-people-2.png",
           "column": "left"
         },
         {
+          "image": "/img/fbmicro_ad-tile-people-4.png",
+          "column": "left"
+        },
+        {
+          "image": "/img/fbmicro_ad-tile-1-enviro.png",
+          "button": {
+            "link": "https://sustainability.fb.com"
+          },
+          "column": "left"
+        },
+        {
           "image": "/img/fbmicro_ad-tile-people-6.png",
+          "column": "left"
+        },
+        {
+          "image": "/img/fbmicro_ad-tile-people-5.png",
+          "column": "left"
+        },
+        {
+          "image": "/img/fbmicro_ad-tile-people-1.png",
           "column": "left"
         }
       ]
