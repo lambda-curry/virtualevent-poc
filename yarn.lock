@@ -17056,10 +17056,10 @@ terser@^4.1.2:
     source-map "~0.6.1"
     source-map-support "~0.5.12"
 
-test-module-gatsby-compat@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/test-module-gatsby-compat/-/test-module-gatsby-compat-1.0.3.tgz#af50021a559267ee09c78339a6a64626e3249069"
-  integrity sha512-iosEcjVYHp9wqXQeYiBSqv3RMyPXO7tVd7RrA3FX0ffRVOsEMupL7Ekyb7AtU/834qbjmhKKGappogK7iatyVg==
+test-module-gatsby-compat@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/test-module-gatsby-compat/-/test-module-gatsby-compat-1.0.7.tgz#fe0f7cd32118329fa9b914e35f18aa7b29c79592"
+  integrity sha512-s0A3kqUciXFq4TNgnv/wXUow6z752ysGNiWYKjiGd7NKJ3tBlQdE1ZMY7mBoLdvs2TlReIolY0yZUoFRsD4G3g==
   dependencies:
     svg-url-loader "^6.0.0"
 
