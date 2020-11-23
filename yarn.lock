@@ -5706,6 +5706,11 @@ draft-js@>=0.10.0:
     immutable "~3.7.4"
     object-assign "^4.1.1"
 
+dropzone@^5.7.2:
+  version "5.7.2"
+  resolved "https://registry.yarnpkg.com/dropzone/-/dropzone-5.7.2.tgz#91bee1572dda515d40901da304bc79dddf309b4c"
+  integrity sha512-m217bJHtf0J1IiKn4Tv6mnu1h5QvQNBnKZ39gma7hzGQhIZMxYq1vYEHs4AVd4ThFwmALys+52NAOD4zdLTG4w==
+
 duplexer3@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/duplexer3/-/duplexer3-0.1.4.tgz#ee01dd1cac0ed3cbc7fdbea37dc0a8f1ce002ce2"
@@ -15513,11 +15518,12 @@ saxes@^5.0.0:
   dependencies:
     xmlchars "^2.2.0"
 
-schedule-lite@^1.0.79:
-  version "1.0.81"
-  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.81.tgz#3c67e46135ecf9a59f9fa37438836b0d3cecea0e"
-  integrity sha512-ExGGi7XHwBo3doATyQGdJimfBMOS3vTxBmKhV1TBrDB35BqD4fmeY7lEQWuj8n5tYeST0NvRb1IqN2FF1XCVig==
+schedule-lite@^1.0.84:
+  version "1.0.84"
+  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.84.tgz#e879a75339028e55cf69767e0777e7968358b417"
+  integrity sha512-d3k5KPPLNog10v+fTGEmmkPC03l+2PE3yRXtBZ1Jf7pYcmjdOA1nWSQGni10bkPRyXxB3foPHNObZrLC3tz/sw==
   dependencies:
+    dropzone "^5.7.2"
     pure-react-carousel "^1.27.4"
 
 scheduler@^0.18.0:
