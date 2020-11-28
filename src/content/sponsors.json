@@ -442,7 +442,7 @@
           "title": "Virtual Industry Party",
           "companyId": 22,
           "id": 24,
-          "usesSponsorPage": true
+          "usesSponsorPage": false
         }
       ]
     },
