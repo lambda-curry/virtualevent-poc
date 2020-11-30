@@ -232,6 +232,12 @@
                 "name": "Rashaad Newsome: ICON",
                 "order": 26,
                 "link": "/a/event/1347"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Mike Habs: Round Trip",
+                "order": 28,
+                "link": "/a/event/"
               }
             ],
             "links": [
