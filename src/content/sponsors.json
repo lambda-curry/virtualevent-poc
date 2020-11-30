@@ -158,7 +158,7 @@
               {
                 "class_name": "PresentationVideo",
                 "name": "Deborah Anderson: Save My Missing Sisters",
-                "order": 10,
+                "order": 2,
                 "link": "/a/event/1300"
               },
               {
@@ -169,68 +169,68 @@
               },
               {
                 "class_name": "PresentationVideo",
-                "link": "/a/event/1305",
-                "name": "Claudia Meyer",
-                "order": 6
-              },
-              {
-                "class_name": "PresentationVideo",
                 "name": "Danielle Parsons: Ferrofluid",
-                "order": 8,
+                "order": 6,
                 "link": "/a/event/1295"
               },
               {
                 "class_name": "PresentationVideo",
+                "link": "/a/event/1305",
+                "name": "Claudia Meyer",
+                "order": 8
+              },
+              {
+                "class_name": "PresentationVideo",
                 "name": "Carlos Luna James: MGOGLKTKO",
-                "order": 12,
+                "order": 10,
                 "link": "/a/event/1302"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Joseph Ryba: Becoming",
-                "order": 14,
+                "order": 12,
                 "link": "/a/event/1304"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Nicky Giraffe: Audition for a Role in my Own Life",
-                "order": 16,
+                "order": 14,
                 "link": "/a/event/1303"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Jam Sutton: Rituals: Megalithomania",
-                "order": 18,
+                "order": 16,
                 "link": "/a/event/1301"
               },
               {
                 "class_name": "PresentationVideo",
-                "order": 20,
+                "order": 18,
                 "link": "/a/event/1331",
                 "name": "Kiyan Forootan: Gene-Sys"
               },
               {
                 "class_name": "PresentationVideo",
-                "order": 22,
+                "order": 20,
                 "link": "/a/event/1332",
                 "name": "David Stenbeck: Ultrahavn"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Djeneba Aduayom: Black Gold",
-                "order": 24,
+                "order": 22,
                 "link": "/a/event/1296"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Esteban Diacono: Social Interactions",
-                "order": 26,
+                "order": 24,
                 "link": "/a/event/1297"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Rashaad Newsome: ICON",
-                "order": 1,
+                "order": 26,
                 "link": "/a/event/1347"
               }
             ],
