@@ -312,6 +312,12 @@
                 "name": "Rashaad Newsome: ICON",
                 "order": 25,
                 "link": "http://rashaadnewsome.com"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Mike Habs: Round Trip",
+                "order": 27,
+                "link": "http://www.mikehabs.com"
               }
             ]
           },
