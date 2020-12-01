@@ -149,6 +149,12 @@
                 "name": "Capitol Royale: Chris Baseford on Dolby Atmos Music Panning for Rock & More",
                 "order": 20,
                 "link": "/a/event/1350"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Capitol Royale: New Music Breaks ",
+                "order": 21,
+                "link": "/a/event/1351"
               }
             ]
           },
