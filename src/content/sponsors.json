@@ -131,6 +131,24 @@
                 "name": "Capitol Royale: Behind the Record: SOS MUSIC Vol. 1 in Dolby Atmos with Maddy Maia and Tottie",
                 "order": 17,
                 "link": "/a/event/1321"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Capitol Royale: Anatomy of Screen Music - PINAR TOPRAK and SHIE ROZOW",
+                "order": 18,
+                "link": "/a/event/1322"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Capitol Royale: Joseph Black - New Slang",
+                "order": 19,
+                "link": "/a/event/1323"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Capitol Royale: Chris Baseford on Dolby Atmos Music Panning for Rock & More",
+                "order": 20,
+                "link": "/a/event/1350"
               }
             ]
           },
