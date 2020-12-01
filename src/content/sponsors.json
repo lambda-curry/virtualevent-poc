@@ -155,6 +155,18 @@
                 "name": "Capitol Royale: New Music Breaks ",
                 "order": 21,
                 "link": "/a/event/1351"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Capitol Royale: Anatomy of Screen Music - Benjamin Wallfisch & David Krystal ",
+                "order": 22,
+                "link": "/a/event/1353"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "order": 23,
+                "link": "/a/event/1354",
+                "name": "Capitol Royale: New Slang - Kito"
               }
             ]
           },
