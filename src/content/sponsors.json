@@ -117,14 +117,20 @@
               {
                 "class_name": "PresentationVideo",
                 "link": "/a/event/1319",
-                "name": "Capitol Royale: Mark Binder on Building Dolby Atmos Sound Stages (VOD)",
+                "name": "Capitol Royale: Mark Binder on Building Dolby Atmos Sound Stages",
                 "order": 15
               },
               {
                 "class_name": "PresentationVideo",
-                "name": "Capitol Royale: New Music Break (VOD)",
+                "name": "Capitol Royale: New Music Break ",
                 "order": 16,
                 "link": "/a/event/1320"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Capitol Royale: Behind the Record: SOS MUSIC Vol. 1 in Dolby Atmos with Maddy Maia and Tottie",
+                "order": 17,
+                "link": "/a/event/1321"
               }
             ]
           },
