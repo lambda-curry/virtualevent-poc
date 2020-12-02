@@ -418,6 +418,38 @@
                 "name": "Susan Sandler: Visit Instagram PopUpSummer! ",
                 "order": 5
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/if2020-shiftsessions-mikemcgee-williambartlett.pdf",
+                "name": "Mike McGee & William Bartlett: Framestore",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/if2020-shiftsessions-susansadler.pdf",
+                "name": " Susan Sandler: Pop-Up Survivor Workshop",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/if2020-shiftsessions-johnmacinnes.pdf",
+                "name": "John MacInnes: Real-Time Shorts Challenge",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/if2020-shiftsessions-austinawang.pdf",
+                "order": 7,
+                "name": "Austina Wang: Swimmy"
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/if2020-shiftsessions-alexanderson.pdf",
+                "order": 8,
+                "name": "Alex Anderson: A (Software) Bug’s Life: How a Glitch in the Code Revolutionized Live Animation"
+              }
             ]
           },
           "columnAds": [
