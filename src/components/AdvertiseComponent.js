@@ -53,8 +53,8 @@ const AdvertiseComponent = ({ section, column, id }) => {
                 </div>
                 {ad.image && <div className={styles.containerImage} style={{ backgroundImage: `url(${ad.image})` }}></div>}
               </div>
-              :
-              <div className={`${styles.sponsorContainer} sponsor-container`} key={index}>
+              :              
+              <div className={`${index === 0 ? styles.firstSponsorContainer : styles.sponsorContainer} sponsor-container`} key={index}>
                 {!ad.button?.link &&
                   <img src={ad.image} alt="sponsor" />
                 }
