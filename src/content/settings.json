@@ -1,5 +1,5 @@
 {
-  "favicon": "/img/favicon.svg",
+  "favicon": "/img/favicon.png",
   "widgets": {
     "chat": {
       "showQA": false,
