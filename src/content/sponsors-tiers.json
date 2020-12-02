@@ -3,39 +3,70 @@
     {
       "id": "tier-cYGYq5-ae",
       "name": "Gold",
+      "widgetTitle": "Gold Sponsors",
       "badge": "/img/gold.png",
       "lobby": {
         "lobbyTemplate": "big-images",
         "display": true
       },
-      "sponsorTemplate": "big-header",
-      "eventTemplate": ""
+      "sponsorPage": {
+        "sponsorTemplate": "big-header",
+        "widgets": {
+          "disqus": true,
+          "liveEvent": true,
+          "schedule": true,
+          "banner": true
+        }
+      },
+      "eventTemplate": "",
+      "expoHallSize": "large"
     },
     {
       "id": "tier-DHcI3dWGk",
       "name": "Silver",
+      "widgetTitle": "Silver Sponsors",
       "badge": "/img/silver.png",
       "lobby": {
         "lobbyTemplate": "big-images",
         "display": true
       },
-      "sponsorTemplate": "big-header",
-      "eventTemplate": ""
+      "sponsorPage": {
+        "sponsorTemplate": "big-header",
+        "widgets": {
+          "disqus": true,
+          "liveEvent": true,
+          "schedule": true,
+          "banner": true
+        }
+      },
+      "eventTemplate": "",
+      "expoHallSize": "medium"
     },
     {
       "id": "tier-U_wEwGX8a",
       "name": "Bronze",
+      "widgetTitle": "Bronze Sponsors",
       "badge": "/img/bronze.png",
       "lobby": {
         "lobbyTemplate": "small-images",
         "display": true
       },
-      "sponsorTemplate": "small-header",
-      "eventTemplate": ""
+      "sponsorPage": {
+        "sponsorTemplate": "small-header",
+        "widgets": {
+          "disqus": true,
+          "liveEvent": true,
+          "schedule": true,
+          "banner": true
+        }
+      },
+      "eventTemplate": "",
+      "expoHallSize": "small"
     }
   ],
+  "imageHeader": "/img/jumbotron.jpg",
   "lobbyButton": {
     "text": "View all",
-    "link": "/virtual-booth/"
+    "link": "/a/sponsors/"
   }
 }

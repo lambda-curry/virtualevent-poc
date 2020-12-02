@@ -7,6 +7,7 @@ import Layout from '../components/Layout'
 import withOrchestra from "../utils/widgetOrchestra";
 
 import SummitObject from '../content/summit.json'
+import HomeSettings from '../content/home-settings.json'
 
 import LobbyHeroComponent from '../components/LobbyHeroComponent'
 import AdvertiseComponent from '../components/AdvertiseComponent'
@@ -18,6 +19,8 @@ import SponsorComponent from '../components/SponsorComponent'
 import SimpleChatWidgetComponent from '../components/SimpleChatWidgetComponent'
 
 import { getDisqusSSO, getUserProfile } from '../actions/user-actions'
+import envVariables from "../utils/envVariables";
+import {AttendanceTracker} from "openstack-uicore-foundation/lib/components";
 
 export const HomePageTemplate = class extends React.Component {
 
@@ -56,6 +59,7 @@ export const HomePageTemplate = class extends React.Component {
               <h2><b>Today's Sessions</b></h2>
               <LiveEventWidgetComponent
                 onEventClick={(ev) => this.onEventChange(ev)}
+                style={{marginBottom: '15px'}}
               />
               <DisqusComponent
                 page="lobby"
@@ -68,24 +72,32 @@ export const HomePageTemplate = class extends React.Component {
                 accessToken={loggedUser.accessToken}
                 onEventClick={(ev) => this.onEventChange(ev)}
                 onViewAllEventsClick={() => this.onViewAllEventsClick()}
-                landscape={false}
+                landscape={HomeSettings.centerColumn.schedule.showAllEvents}
                 yourSchedule={false}
                 showNav={false}
+                showAllEvents={true}
                 onRef={addWidgetRef}
                 updateCallback={updateWidgets}
-                title={"Up Next"}
-                eventCount={4}
+                title={HomeSettings.centerColumn.schedule.showAllEvents ? "Full Schedule" : "Up Next"}
+                eventCount={HomeSettings.centerColumn.schedule.showAllEvents ? 100 : 4}
+                className={HomeSettings.centerColumn.schedule.showAllEvents ? "schedule-container-home" : ""}
               />
-              <SpeakersWidgetComponent
-                accessToken={loggedUser.accessToken}
-                title="Today's Speakers"
-                bigPics={true}
-              />
-              <SpeakersWidgetComponent
-                accessToken={loggedUser.accessToken}
-                title="Featured Speakers"
-                bigPics={false}
-              />
+              {HomeSettings.centerColumn.speakers.showTodaySpeakers &&
+                <SpeakersWidgetComponent
+                  accessToken={loggedUser.accessToken}
+                  title="Today's Speakers"
+                  bigPics={true}
+                />
+              }
+              {HomeSettings.centerColumn.speakers.showFeatureSpeakers &&
+                <SpeakersWidgetComponent
+                  accessToken={loggedUser.accessToken}
+                  title="Featured Speakers"
+                  bigPics={false}
+                  featured={true}
+                  date={null}
+                />
+              }
               <AdvertiseComponent section='lobby' column="center" />
             </div>
             <div className="column is-one-quarter pb-6">
@@ -117,15 +129,21 @@ const OrchestedTemplate = withOrchestra(HomePageTemplate);
 
 const HomePage = (
   {
+    location,
     loggedUser,
     user,
     getUserProfile,
     getDisqusSSO
   }
-) => {
-
+) => {  
   return (
-    <Layout>
+    <Layout location={location}>
+      <AttendanceTracker
+          sourceName="LOBBY"
+          summitId={SummitObject.summit.id}
+          apiBaseUrl={envVariables.SUMMIT_API_BASE_URL}
+          accessToken={loggedUser.accessToken}
+      />
       <OrchestedTemplate
         loggedUser={loggedUser}
         user={user}

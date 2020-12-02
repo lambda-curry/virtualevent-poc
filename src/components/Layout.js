@@ -6,13 +6,14 @@ import ClockComponent from '../components/ClockComponent'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 
+import GeneralSettings from '../content/settings.json'
 import SummitObject from '../content/summit.json'
 
 // import "../styles/all.scss"
 // import "../styles/palette.scss"
 import "../styles/bulma.scss"
 
-const TemplateWrapper = ({ children, marketing }) => {
+const TemplateWrapper = ({ children, location, marketing }) => {
 
   const { title, description } = useSiteMetadata();
   const { summit } = SummitObject;
@@ -47,8 +48,8 @@ const TemplateWrapper = ({ children, marketing }) => {
         <link
           rel="icon"
           type="image/png"
-          href={`${withPrefix('/')}img/favicon.png`}
-          sizes="16x16"
+          href={`${withPrefix('/')}${GeneralSettings.favicon.substring(1)}`}
+          sizes="32x32"
         />
 
         <meta name="theme-color" content="#fff" />
@@ -63,7 +64,7 @@ const TemplateWrapper = ({ children, marketing }) => {
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
       </Helmet>
-      <Header />
+      <Header location={location} />
       <ClockComponent summit={summit} display={isFocus} />
       <div id="content-wrapper">{children}</div>
       <Footer marketing={marketing} />

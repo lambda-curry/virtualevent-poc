@@ -8,7 +8,7 @@ import Content from '../content/ads.json'
 
 const AdvertiseComponent = ({ section, column, id }) => {
 
-  const sectionAds = Content.ads.find(ad => ad.section === section).columns.find(c => c.column === column).columnAds;
+  const sectionAds = Content.ads.find(ad => ad.section === section)?.columnAds.filter(c => c.column === column) || [];
 
   if (sectionAds.length > 0) {
     return (
@@ -20,7 +20,7 @@ const AdvertiseComponent = ({ section, column, id }) => {
                 null
                 :
                 <div className={`${styles.sponsorContainer} sponsor-container`} key={index}>
-                  {!ad.button &&
+                  {!ad.button?.link &&
                     <img src={ad.image} alt="sponsor" />
                   }
                   {!ad.button?.text && ad.button?.link &&
@@ -53,9 +53,9 @@ const AdvertiseComponent = ({ section, column, id }) => {
                 </div>
                 {ad.image && <div className={styles.containerImage} style={{ backgroundImage: `url(${ad.image})` }}></div>}
               </div>
-              :
-              <div className={`${styles.sponsorContainer} sponsor-container`} key={index}>
-                {!ad.button &&
+              :              
+              <div className={`${index === 0 ? styles.firstSponsorContainer : styles.sponsorContainer} sponsor-container`} key={index}>
+                {!ad.button?.link &&
                   <img src={ad.image} alt="sponsor" />
                 }
                 {!ad.button?.text && ad.button?.link &&

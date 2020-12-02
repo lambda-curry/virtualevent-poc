@@ -6,11 +6,12 @@ import { connect } from 'react-redux'
 import SponsorHeader from '../components/SponsorHeader'
 import LiveEventWidgetComponent from '../components/LiveEventWidgetComponent'
 import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
-import AdvertiseComponent from '../components/AdvertiseComponent'
+import AdvertiseSponsorsComponent from '../components/AdvertiseSponsorsComponent'
 import DocumentsComponent from '../components/DocumentsComponent'
 import DisqusComponent from '../components/DisqusComponent'
 import SponsorBanner from '../components/SponsorBanner'
 import HeroComponent from '../components/HeroComponent'
+import Link from '../components/Link'
 
 import SummitObject from '../content/summit.json'
 import Sponsors from '../content/sponsors.json'
@@ -19,6 +20,13 @@ import SponsorsTiers from '../content/sponsors-tiers.json'
 import Layout from '../components/Layout'
 
 import styles from '../styles/sponsor-page.module.scss'
+import envVariables from "../utils/envVariables";
+import { AttendanceTracker } from "openstack-uicore-foundation/lib/components";
+
+import { scanBadge } from '../actions/user-actions'
+import { getDisqusSSO } from '../actions/user-actions'
+
+import MarkdownIt from "markdown-it";
 
 export const SponsorPageTemplate = class extends React.Component {
 
@@ -27,6 +35,8 @@ export const SponsorPageTemplate = class extends React.Component {
 
     this.state = {
       sponsor: null,
+      notFound: null,
+      parsedIntro: null,
       tier: null
     }
   }
@@ -34,9 +44,21 @@ export const SponsorPageTemplate = class extends React.Component {
   componentWillMount() {
     const { sponsorId } = this.props;
     const sponsor = Sponsors.tierSponsors.map(t => t.sponsors.find(s => s.id === parseInt(sponsorId))).filter(e => e !== undefined)[0];
-    const tier = Sponsors.tierSponsors.find(t => t.sponsors.find(s => s === sponsor)).tier[0];
-    const tierData = SponsorsTiers.tiers.find(t => t.id === tier.value);
-    if (sponsor) this.setState({ sponsor: sponsor, tier: tierData });
+    if (!sponsor) {
+      this.setState({ notFound: true });
+    } else {
+      const tier = Sponsors.tierSponsors.find(t => t.sponsors.find(s => s === sponsor)).tier[0];
+      const tierData = SponsorsTiers.tiers.find(t => t.id === tier.value);
+      const parser = new MarkdownIt({
+        html: false,
+        breaks: true,
+        linkify: true,
+        xhtmlOut: true,
+        typographer: true,
+      });
+      const parsedIntro = parser.render(sponsor.intro);
+      if (sponsor) this.setState({ sponsor: sponsor, tier: tierData, parsedIntro: parsedIntro });
+    }
   }
 
   onEventChange = (ev) => {
@@ -46,117 +68,95 @@ export const SponsorPageTemplate = class extends React.Component {
     }
   }
 
+  onBadgeScan = () => {    
+    const { sponsor: { sponsorId } } = this.state;
+    this.props.scanBadge(sponsorId);
+  }
+
+  onViewAllEventsClick() {
+    navigate('/a/schedule')
+  }
+
   render() {
     const { loggedUser, user } = this.props;
-    const { sponsor, tier } = this.state;
+    const { sponsor, tier, notFound, parsedIntro } = this.state;
     let { summit } = SummitObject;
-    
-    const mocketDocuments = {
-      slides: [
-        {
-          id: 55244,
-          created: 1596072520,
-          last_edited: 1596072520,
-          name: "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html",
-          description: null,
-          display_on_site: false,
-          featured: false,
-          order: 2,
-          presentation_id: 24533,
-          class_name: "PresentationSlide",
-          link: "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html"
-        }
-      ],
-      links: [
-        {
-          id: 55243,
-          created: 1596072520,
-          last_edited: 1596072520,
-          name: "http://relaxdiego.com/2017/05/swampup-2017-slides.html",
-          description: null,
-          display_on_site: false,
-          featured: false,
-          order: 1,
-          presentation_id: 24533,
-          class_name: "PresentationLink",
-          link: "http://relaxdiego.com/2017/05/swampup-2017-slides.html"
-        }
-      ],
-      videos: [
-        {
-          id: 55245,
-          created: 1596072520,
-          last_edited: 1596072520,
-          name: "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html",
-          description: null,
-          display_on_site: false,
-          featured: false,
-          order: 3,
-          presentation_id: 24533,
-          class_name: "PresentationVideo",
-          youtube_id: "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html"
-        }
-      ],
-    }
 
-    if (!sponsor) {
-      return <HeroComponent title="Sponsor not found" redirectTo="/a/" />
+    if (notFound) {
+      return <HeroComponent title="Sponsor not found" redirectTo="/a/sponsors" />
     } else {
+      const { disqus, liveEvent, schedule, banner } = tier.sponsorPage.widgets || {};
       return (
         <>
-          <SponsorHeader sponsor={sponsor} tier={tier} />
-          <section className={`section px-0 ${tier.sponsorTemplate === 'big-header' ? 'pt-5' : 'pt-0'} pb-0`}>
-            <div className="columns mx-0 my-0 is-multiline">
-              {tier.sponsorTemplate === 'big-header' ?
-                <React.Fragment>
-                  <div className="column is-three-quarters px-5 py-0">
-                    <h1>{sponsor.title}</h1>
-                    <span>
-                      {sponsor.intro}
-                    </span>
-                  </div>
-                  <div className="column is-one-quarter px-5 py-0">
-                    <DisqusComponent disqusSSO={user.disqusSSO} className={styles.disqusContainerSponsor} summit={summit} title="" />
-                  </div>
-                </React.Fragment>
-                :
-                <React.Fragment>
-                  <div className={`column is-half px-5 py-0 ${styles.introHalf}`}>
-                    <h1>{sponsor.title}</h1>
-                    <span>
-                      {sponsor.intro}
-                    </span>
-                  </div>
-                  <div className="column is-half px-0 py-0">
-                    <img src={sponsor.pageImage} />
-                  </div>
-                </React.Fragment>
-              }
+          <AttendanceTracker
+            sourceName="SPONSOR"
+            sourceId={sponsor.sponsorId}
+            summitId={summit.id}
+            apiBaseUrl={envVariables.SUMMIT_API_BASE_URL}
+            accessToken={loggedUser.accessToken}
+          />
+          <SponsorHeader sponsor={sponsor} tier={tier} scanBadge={() => this.onBadgeScan()} />
+          <section className={`section px-0 ${tier.sponsorPage.sponsorTemplate === 'big-header' ? 'pt-5' : 'pt-0'} pb-0`}>
+            {sponsor.sideImage &&
+              <div className="columns mx-0 mt-0 mb-6">
+                <div className={`column is-half px-5 py-0 ${styles.introHalf}`}>
+                  <h1>{sponsor.title}</h1>
+                  <span dangerouslySetInnerHTML={{ __html: parsedIntro }} />
+                </div>
+                <div className="column is-half px-0 py-0">
+                  <img src={sponsor.sideImage} className={styles.sideImage} />
+                </div>
+              </div>
+            }
+            <div className="columns mx-0 my-0">
               <div className="column is-three-quarters px-5 py-0">
-                <LiveEventWidgetComponent
-                  onEventClick={(ev) => this.onEventChange(ev)}
-                />
+                {!sponsor.sideImage &&
+                  <div className={styles.sponsorIntro}>
+                    <h1>{sponsor.title}</h1>
+                    <span dangerouslySetInnerHTML={{ __html: parsedIntro }} />
+                  </div>
+                }
+                {liveEvent &&
+                  <LiveEventWidgetComponent
+                    onEventClick={(ev) => this.onEventChange(ev)}
+                    sponsorId={sponsor.companyId}
+                    showSponsor={sponsor.companyId ? true : false}
+                  />
+                }
+                {schedule &&
+                  <ScheduleLiteComponent
+                    accessToken={loggedUser.accessToken}
+                    onEventClick={(ev) => this.onEventChange(ev)}
+                    onViewAllEventsClick={() => this.onViewAllEventsClick()}
+                    landscape={false}
+                    yourSchedule={false}
+                    showNav={false}
+                    showAllEvents={false}
+                    eventCount={3}
+                    sponsorId={sponsor.companyId}
+                  />
+                }
+                {banner && <SponsorBanner sponsor={sponsor} bgColor={sponsor.sponsorColor} scanBadge={() => this.onBadgeScan()} />}
               </div>
               <div className="column is-one-quarter px-5 py-0">
-                <DocumentsComponent event={mocketDocuments} sponsor={true} />
-              </div>
-              <div className="column is-three-quarters px-5 py-0">
-                <ScheduleLiteComponent
-                  accessToken={loggedUser.accessToken}
-                  onEventClick={(ev) => this.onEventChange(ev)}
-                  onViewAllEventsClick={() => this.onViewAllEventsClick()}
-                  landscape={false}
-                  yourSchedule={false}
-                  showNav={false}
-                  showAllEvents={false}
-                  eventCount={3}
-                />
-              </div>
-              <div className="column is-one-quarter px-5 py-0">
-                <AdvertiseComponent section='lobby' column="left" style={{ marginTop: '2em' }} />
-              </div>
-              <div className="column is-three-quarters px-5 py-0">
-                <SponsorBanner />
+                {sponsor.chatLink &&
+                  <div className={styles.videoChatButton}>
+                    <Link className={styles.link} to={sponsor.chatLink}>
+                      <button className={`${styles.button} button is-large`} style={{ backgroundColor: `${sponsor.sponsorColor}` }}>
+                        <b>LIVE VIDEO CHAT!</b>
+                      </button>
+                    </Link>
+                  </div>
+                }
+                {disqus &&
+                  <DisqusComponent disqusSSO={user.disqusSSO} className={styles.disqusContainerSponsor} summit={summit} title="" sponsor={sponsor} />
+                }
+                {sponsor.documents &&
+                  <DocumentsComponent event={sponsor.documents} />
+                }
+                {sponsor.columnAds &&
+                  <AdvertiseSponsorsComponent ads={sponsor.columnAds} style={{ marginTop: '2em' }} />
+                }
               </div>
             </div>
           </section>
@@ -168,20 +168,23 @@ export const SponsorPageTemplate = class extends React.Component {
 
 const SponsorPage = (
   {
+    location,
     loggedUser,
     sponsorId,
     user,
-    getDisqusSSO
+    getDisqusSSO,
+    scanBadge
   }
 ) => {
 
   return (
-    <Layout>
+    <Layout location={location}>
       <SponsorPageTemplate
         loggedUser={loggedUser}
         sponsorId={sponsorId}
         user={user}
         getDisqusSSO={getDisqusSSO}
+        scanBadge={scanBadge}
       />
     </Layout>
   )
@@ -192,6 +195,7 @@ SponsorPage.propTypes = {
   sponsorId: PropTypes.string,
   user: PropTypes.object,
   getDisqusSSO: PropTypes.func,
+  scanBadge: PropTypes.func,
 }
 
 SponsorPageTemplate.propTypes = {
@@ -199,6 +203,7 @@ SponsorPageTemplate.propTypes = {
   sponsorId: PropTypes.string,
   user: PropTypes.object,
   getDisqusSSO: PropTypes.func,
+  scanBadge: PropTypes.func,
 }
 
 const mapStateToProps = (
@@ -207,9 +212,8 @@ const mapStateToProps = (
     userState,
   }
 ) => ({
-
   loggedUser: loggedUserState,
   user: userState,
 })
 
-export default connect(mapStateToProps, {})(SponsorPage);
+export default connect(mapStateToProps, { scanBadge, getDisqusSSO })(SponsorPage);
