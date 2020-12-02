@@ -486,17 +486,6 @@
           "id": 23,
           "email": "hello@infinityfestival.com ",
           "usesSponsorPage": true
-        },
-        {
-          "externalLink": "https://www.eventbrite.com/e/infinity-festival-virtual-industry-party-tickets-129792122733?aff=eemailordconf&utm_campaign=order_confirm&utm_medium=email&ref=eemailordconf&utm_source=eventbrite&utm_term=viewevent",
-          "logo": "/img/if2020-lobby-virtualmixer.png",
-          "name": "Virtual Industry Party",
-          "advertiseImage": "",
-          "sponsorId": 24,
-          "title": "Virtual Industry Party",
-          "companyId": 22,
-          "id": 24,
-          "usesSponsorPage": false
         }
       ]
     },
