@@ -154,6 +154,7 @@ collections:
               {label: "Image", name: image, widget: image, required: false},
               {label: "Copy", name: copy, widget: text, required: false}
             ]}
+          - {label: "Featured Event - Live Event Widget", name: live_now_featured_event_id, widget: number, required: false, default: null}
   - name: "marketing"
     label: "Marketing Site"
     editor:
