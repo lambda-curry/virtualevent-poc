@@ -18,6 +18,16 @@
           "title": "Sponsor Carousel Test 1 ",
           "companyId": 1,
           "id": 1
+        },
+        {
+          "advertiseImage": "",
+          "name": "Carousel Test Sponsor 2",
+          "id": 2,
+          "sponsorId": 3,
+          "companyId": 2,
+          "title": "Sponsor Test Carousel 2",
+          "intro": "This is a test",
+          "logo": "/img/logo-middle-tier-systemsquared.png"
         }
       ]
     }
