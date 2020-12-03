@@ -163,19 +163,19 @@ div.column:first-of-type {
     }
 
     h1 {
-      font-size: 6rem;
+      font-size: calc(50px + (50 - 42) * (100vw - 250px) / (1080 - 250));
       font-weight: bold;
       margin: 6px 0 6px;
     }
 
-    h2 {
-      font-size: 5rem;
+    h2 {      
+      font-size: calc(40px + (40 - 36) * (100vw - 250px) / (1080 - 20));
       font-weight: normal;
       margin-bottom: 6px;
     }
 
     h4 {
-      font-size: 2.2rem;
+      font-size: calc(22px + (22 - 14) * (100vw - 250px) / (1080 - 250));
       font-weight: bold;
       margin-top: 5px;
     }
@@ -285,11 +285,14 @@ div.column:first-of-type {
   .hero-events {
     .hero-body {
       padding: 2rem 1.5rem;
+
       .hero-event-container {
         flex-direction: column;
+
         .subtitle {
           display: inline-block;
-        }        
+        }
+
         .date {
           text-align: center;
         }
@@ -300,11 +303,11 @@ div.column:first-of-type {
 
 @media (max-width: 890px) {
   .hero-events {
-    .hero-body {      
-      .hero-event-container {        
-        .subtitle {          
+    .hero-body {
+      .hero-event-container {
+        .subtitle {
           padding-left: 0;
-        }        
+        }
       }
     }
   }
