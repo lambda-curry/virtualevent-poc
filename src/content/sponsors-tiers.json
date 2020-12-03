@@ -2,11 +2,11 @@
   "tiers": [
     {
       "id": "tier-cYGYq5-ae",
-      "name": "Gold",
-      "widgetTitle": "Gold Sponsors",
+      "name": "Carousel Test",
+      "widgetTitle": "Test Carousel",
       "badge": "/img/gold.png",
       "lobby": {
-        "lobbyTemplate": "big-images",
+        "lobbyTemplate": "carousel",
         "display": true
       },
       "sponsorPage": {
