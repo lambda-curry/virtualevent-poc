@@ -53,7 +53,7 @@ export const HomePageTemplate = class extends React.Component {
             <div className="column is-one-quarter">
               <h2><b>Community</b></h2>
               <SponsorComponent page='lobby'/>
-              <AdvertiseComponent section='lobby' column="left" style={{ marginTop: '2em' }} />
+              <AdvertiseComponent section='lobby' column="left" />
             </div>
             <div className="column is-half">
               <h2><b>Today's Sessions</b></h2>
