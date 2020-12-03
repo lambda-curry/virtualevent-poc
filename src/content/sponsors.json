@@ -1,3 +1,25 @@
 {
-  "tierSponsors": []
+  "tierSponsors": [
+    {
+      "tier": [
+        {
+          "value": "tier-cYGYq5-ae",
+          "label": "Carousel Test"
+        }
+      ],
+      "sponsors": [
+        {
+          "marquee": "Testing 1, 2, 3 ",
+          "logo": "/img/logo-top-tier-fntech.png",
+          "name": "Carousel Test Sponsor 1",
+          "intro": "This is a test",
+          "advertiseImage": "",
+          "sponsorId": 2,
+          "title": "Sponsor Carousel Test 1 ",
+          "companyId": 1,
+          "id": 1
+        }
+      ]
+    }
+  ]
 }
