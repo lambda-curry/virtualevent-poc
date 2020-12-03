@@ -2,68 +2,42 @@
   "ads": [
     {
       "section": "lobby",
-      "columns": [
+      "columnAds": [
         {
-          "column": "left",
-          "columnAds": [
-            {
-              "image": "/img/yoco-sponsor-ads-medium-tilted.png",
-              "button": {
-                "link": "/virtual-booth/"
-              }
-            }
-          ]
+          "image": "/img/yoco-sponsor-ads-medium-tilted.png",
+          "button": {
+            "link": "/virtual-booth/"
+          },
+          "column": "left"
         },
         {
-          "column": "center",
-          "columnAds": []
+          "image": "/img/yoco-sponsor-ads-large-carbonclean-vert.png",
+          "button": {
+            "text": "Learn more",
+            "link": "/virtual-booth/"
+          },
+          "column": "right"
         },
         {
-          "column": "right",
-          "columnAds": [
-            {
-              "image": "/img/yoco-sponsor-ads-large-carbonclean-vert.png",
-              "button": {
-                "text": "",
-                "link": "/virtual-booth/"
-              },
-              "id": null
-            },
-            {
-              "image": "/img/ad_subscribe.png",
-              "button": {
-                "text": "Learn More",
-                "link": "/virtual-booth/"
-              },
-              "id": null
-            }
-          ]
+          "image": "/img/ad_subscribe.png",
+          "button": {
+            "text": "",
+            "link": "/virtual-booth/"
+          },
+          "column": "right"
         }
       ]
     },
     {
       "section": "event",
-      "columns": [
+      "columnAds": [
         {
-          "column": "left",
-          "columnAds": [
-            {
-              "image": "/img/yoco-sponsor-ads-medium-flow.png",
-              "button": {
-                "text": "Learn more",
-                "link": "/virtual-booth/"
-              },
-              "id": null
-            }
-          ]
-        },
-        {
-          "column": "center",
-          "columnAds": []
-        },
-        {
-          "column": "right",
-          "columnAds": []
+          "image": "/img/yoco-sponsor-ads-medium-flow.png",
+          "button": {
+            "text": "Learn more",
+            "link": "/virtual-booth/"
+          },
+          "column": "left"
         }
       ]
     }
