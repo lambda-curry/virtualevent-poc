@@ -10,14 +10,18 @@
       "sponsors": [
         {
           "marquee": "Testing 1, 2, 3 ",
+          "externalLink": "",
+          "sponsorColor": "#000000",
           "logo": "/img/logo-top-tier-fntech.png",
           "name": "Carousel Test Sponsor 1",
           "intro": "This is a test",
+          "headerImage": "/img/3header-r.png",
           "advertiseImage": "",
           "sponsorId": 2,
           "title": "Sponsor Carousel Test 1 ",
           "companyId": 1,
-          "id": 1
+          "id": 1,
+          "usesSponsorPage": true
         },
         {
           "advertiseImage": "",
