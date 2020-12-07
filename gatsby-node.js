@@ -65,6 +65,19 @@ exports.onPreBootstrap = async () => {
     console.log('Saved!');
   });
 
+  let homeSettings = JSON.parse(fs.readFileSync('src/content/home-settings.json'));
+
+  marketingData.map((item) => {
+    if (item.key.startsWith('schedule_default_image')) {
+      homeSettings[item.key] = item.value;
+    }
+  });
+
+  fs.writeFileSync('src/content/home-settings.json', JSON.stringify(homeSettings), 'utf8', function (err) {
+    if (err) throw err;
+    console.log('Saved!');
+  });
+
 }
 
 // makes Summit logo optional for graphql queries
@@ -104,11 +117,6 @@ exports.sourceNodes = async ({
   ).then((response) => response.data)
     .catch(e => console.log('ERROR: ', e));
 
-  const events = await axios.get(
-    `${process.env.GATSBY_SUMMIT_API_BASE_URL}/api/public/v1/summits/${process.env.GATSBY_SUMMIT_ID}/events/published?expand=rsvp_template%2C+type%2C+track%2C+location%2C+location.venue%2C+location.floor%2C+speakers%2C+moderator%2C+sponsors%2C+groups&page=1&per_page=100&order=%2Bstart_date`
-  ).then((response) => response.data.data)
-    .catch(e => console.log('ERROR: ', e));
-
   const summitObject = { summit }
 
   fs.writeFileSync('src/content/summit.json', JSON.stringify(summitObject), 'utf8', function (err) {
@@ -134,28 +142,6 @@ exports.sourceNodes = async ({
 
   const node = Object.assign({}, summit, nodeMeta)
   createNode(node)
-
-  for (const event of events) {
-    const nodeContent = JSON.stringify(event)
-
-    const nodeMeta = {
-      ...event,
-      timezone: summit.time_zone_id,
-      id: createNodeId(`event-${event.id}`),
-      event_id: event.id,
-      parent: null,
-      children: [],
-      internal: {
-        type: `Event`,
-        mediaType: `application/json`,
-        content: nodeContent,
-        contentDigest: createContentDigest(event)
-      }
-    }
-
-    const node = Object.assign({}, event, nodeMeta)
-    createNode(node)
-  }
 }
 
 exports.createPages = ({ actions, graphql }) => {

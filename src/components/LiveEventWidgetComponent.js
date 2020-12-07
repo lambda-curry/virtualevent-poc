@@ -6,20 +6,19 @@ import envVariables from '../utils/envVariables';
 // these two libraries are client-side only
 import LiveEventWidget from 'live-event-widget/dist';
 import 'live-event-widget/dist/index.css';
+import HomeSettings from "../content/home-settings";
 
 const LiveEventWidgetComponent = class extends React.Component {
 
   render() {
 
     const widgetProps = {
-      //apiBaseUrl: envVariables.SUMMIT_API_BASE_URL,
-      //marketingApiBaseUrl: envVariables.MARKETING_API_BASE_URL,
-      //summitId: parseInt(envVariables.SUMMIT_ID),
-      apiBaseUrl: 'https://api.fnvirtual.app',
-      marketingApiBaseUrl: 'https://marketing-api.fnvirtual.app',
-      summitId: 12,
+      apiBaseUrl: envVariables.SUMMIT_API_BASE_URL,
+      marketingApiBaseUrl: envVariables.MARKETING_API_BASE_URL,
+      summitId: parseInt(envVariables.SUMMIT_ID),
+      featuredEventId: HomeSettings.live_now_featured_event_id,
       title: "",
-      featuredRoomId: 21
+      defaultImage: HomeSettings.schedule_default_image
     };
 
     return (

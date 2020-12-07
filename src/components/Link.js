@@ -9,6 +9,7 @@ const Link = ({ children, to, activeClassName, partiallyActive, ...other }) => {
   // will start with exactly one slash, and that anything else is external.
   const internal = /^\/(?!\/)/.test(to)
   // Use Gatsby Link for internal links, and <a> for others
+  const email = /\S+@\S+\.\S+/.test(to);
   if (internal) {
     return (
       <GatsbyLink
@@ -19,6 +20,13 @@ const Link = ({ children, to, activeClassName, partiallyActive, ...other }) => {
       >
         {children}
       </GatsbyLink>
+    )
+  }
+  if (email) {
+    return (
+      <a href={`mailto:${to}`} {...other}>
+        {children}
+      </a>
     )
   }
   return (
