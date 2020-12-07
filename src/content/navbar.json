@@ -39,6 +39,11 @@
       "title": "Test Page",
       "link": "/test-page",
       "display": true
+    },
+    {
+      "title": "Family of Apps",
+      "link": "/a/sponsors/",
+      "display": true
     }
   ]
 }
