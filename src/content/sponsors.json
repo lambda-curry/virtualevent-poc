@@ -167,6 +167,36 @@
                 "order": 23,
                 "link": "/a/event/1354",
                 "name": "Capitol Royale: New Slang - Kito"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "order": 24,
+                "link": "/a/event/1356",
+                "name": "Capitol Royale: Dave Hampton on Working with Prince & Dolby Atmos Education"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "order": 25,
+                "link": "/a/event/1358",
+                "name": "Capitol Royale: New Music Breaks "
+              },
+              {
+                "class_name": "PresentationVideo",
+                "order": 26,
+                "link": "/a/event/1352",
+                "name": "Capitol Royale: Behind the Record: Pearl Jam – Gigaton in Dolby Atmos with Josh Evans and Nick Rives"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "order": 27,
+                "link": "/a/event/1360",
+                "name": "Capitol Royale: Anatomy of Screen Music - EMERALD FENNELL & ANTHONY WILLIS"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "order": 28,
+                "link": "/a/event/1361",
+                "name": "Capitol Royale: New Slang - Toosi"
               }
             ]
           },
