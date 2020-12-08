@@ -10374,10 +10374,10 @@ linkifyjs@^2.1.9:
   resolved "https://registry.yarnpkg.com/linkifyjs/-/linkifyjs-2.1.9.tgz#af06e45a2866ff06c4766582590d098a4d584702"
   integrity sha512-74ivurkK6WHvHFozVaGtQWV38FzBwSTGNmJolEgFp7QgR2bl6ArUWlvT4GcHKbPe1z3nWYi+VUdDZk16zDOVug==
 
-live-event-widget@^1.0.48:
-  version "1.0.49"
-  resolved "https://registry.yarnpkg.com/live-event-widget/-/live-event-widget-1.0.49.tgz#d7be9cd94ad6c063b38da673a9e9b0d8f893338f"
-  integrity sha512-S1XghUb7QS6hq+sKDo/onuwdMhFaTcsmDtKnkdJeF3s2efuI/7Mi3k7Y4JrmD+dP+y+bzjCX1eUZ/Ex6Xj9yZA==
+live-event-widget-test-packaging@^1.0.53:
+  version "1.0.53"
+  resolved "https://registry.yarnpkg.com/live-event-widget-test-packaging/-/live-event-widget-test-packaging-1.0.53.tgz#b3a0d1bd4b2ea26a15a796cfef0d8f25d0ef39f5"
+  integrity sha512-tP/SqgrFcaS+FsrgWJ6N1RH7aUiVbyJHqv7s6QuN/Ho0qQgjvuY9qQQsnrAlhHfxndIT4y+ySR7FllNDV7phpQ==
   dependencies:
     svg-url-loader "^6.0.0"
 
@@ -15513,10 +15513,10 @@ saxes@^5.0.0:
   dependencies:
     xmlchars "^2.2.0"
 
-schedule-lite@^1.0.79:
-  version "1.0.81"
-  resolved "https://registry.yarnpkg.com/schedule-lite/-/schedule-lite-1.0.81.tgz#3c67e46135ecf9a59f9fa37438836b0d3cecea0e"
-  integrity sha512-ExGGi7XHwBo3doATyQGdJimfBMOS3vTxBmKhV1TBrDB35BqD4fmeY7lEQWuj8n5tYeST0NvRb1IqN2FF1XCVig==
+schedule-lite-test-packaging@^1.0.83:
+  version "1.0.83"
+  resolved "https://registry.yarnpkg.com/schedule-lite-test-packaging/-/schedule-lite-test-packaging-1.0.83.tgz#6c8719a03bc6d518b33dbcf75c37d042508462e6"
+  integrity sha512-vcybpwlq3dwx8tZiW2w6E40GgEJh9gJt3JMIYHNVptaai1hgGpiOHjeXoXz2pfUk8tw5ITX+BTtenkdB3Y2EDQ==
   dependencies:
     pure-react-carousel "^1.27.4"
 
@@ -15864,10 +15864,10 @@ signal-exit@^3.0.0, signal-exit@^3.0.2, signal-exit@^3.0.3:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.3.tgz#a1410c2edd8f077b08b4e253c8eacfcaf057461c"
   integrity sha512-VUJ49FC8U1OxwZLxIbTTrDvLnf/6TDgxZcK8wxR8zs13xpx7xbG60ndBlhNrFi2EMuFRoeDoJO7wthSLq42EjA==
 
-simple-chat-widget@^1.0.27:
-  version "1.0.27"
-  resolved "https://registry.yarnpkg.com/simple-chat-widget/-/simple-chat-widget-1.0.27.tgz#66616744188c24f025ca536c99d6a07c957f42c6"
-  integrity sha512-oQII5gUxh35cXexB9q1aj2zLhT2EhNq7So/nzBYw0DX6qJbIYkBcJ5r5BvzImMoyRSpWJe9GP2jKmvwUFQVOCg==
+simple-chat-widget-test-packaging@^1.0.30:
+  version "1.0.30"
+  resolved "https://registry.yarnpkg.com/simple-chat-widget-test-packaging/-/simple-chat-widget-test-packaging-1.0.30.tgz#e7a962f94509eb8a89265ae780c676bfeb69c310"
+  integrity sha512-qLT04w2sbgdAG/jodJGeY1R7aMcC+0QSYm0la24IA990UVPS31Ht6vCZ2XlwPOpOnumrbr8mF2y2cycq5Ysvuw==
 
 simple-concat@^1.0.0:
   version "1.0.0"
@@ -16277,10 +16277,10 @@ spdy@^4.0.2:
     select-hose "^2.0.0"
     spdy-transport "^3.0.0"
 
-speakers-widget@^1.0.14:
-  version "1.0.15"
-  resolved "https://registry.yarnpkg.com/speakers-widget/-/speakers-widget-1.0.15.tgz#fb10a06000deb515f53af32d239cc8abf515c92d"
-  integrity sha512-D5wHbLm26xs+yE2EODPIC0OGAWG6PdLFVU1y2uG52ymlUUIOwafk5PlYHY+Xye9HcEevYFe9uIslBAuPNB9Onw==
+speakers-widget-test-packaging@^1.0.16:
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/speakers-widget-test-packaging/-/speakers-widget-test-packaging-1.0.16.tgz#0da893592ed3b0ec2ef7aa18c6e36546858e67da"
+  integrity sha512-mBmyJxbDOEhc1nmPu0uOmsrd9Zb9O/qcbV9nKD8JRrC2i5+gz6Uv4uNESCqMxGqgHuEsY7fB+gDaOihqH+lPBA==
 
 split-on-first@^1.0.0:
   version "1.1.0"
@@ -17082,13 +17082,6 @@ terser@^4.1.2:
     commander "^2.20.0"
     source-map "~0.6.1"
     source-map-support "~0.5.12"
-
-test-module-gatsby-compat@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/test-module-gatsby-compat/-/test-module-gatsby-compat-1.0.7.tgz#fe0f7cd32118329fa9b914e35f18aa7b29c79592"
-  integrity sha512-s0A3kqUciXFq4TNgnv/wXUow6z752ysGNiWYKjiGd7NKJ3tBlQdE1ZMY7mBoLdvs2TlReIolY0yZUoFRsD4G3g==
-  dependencies:
-    svg-url-loader "^6.0.0"
 
 text-table@0.2.0, text-table@^0.2.0:
   version "0.2.0"
