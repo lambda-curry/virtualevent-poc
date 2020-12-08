@@ -199,12 +199,6 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "name": "Deborah Anderson: Save My Missing Sisters",
-                "order": 2,
-                "link": "/a/event/1300"
-              },
-              {
-                "class_name": "PresentationVideo",
                 "name": "Cara Lee: CHiLL_Adrift",
                 "order": 4,
                 "link": "/a/event/1299"
@@ -280,15 +274,15 @@
                 "name": "Mike Habs: Round Trip",
                 "order": 28,
                 "link": "/a/event/1372"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Deborah Anderson: Save My Missing Sisters",
+                "order": 29,
+                "link": "/a/event/1300"
               }
             ],
             "links": [
-              {
-                "class_name": "PresentationLink",
-                "order": 1,
-                "name": "Visit Artist: Deborah Anderson",
-                "link": "https://womenofthewhitebuffalo.com/home/"
-              },
               {
                 "class_name": "PresentationLink",
                 "name": "Visit Artist: Cara Lee",
@@ -366,6 +360,12 @@
                 "name": "Mike Habs: Round Trip",
                 "order": 27,
                 "link": "http://www.mikehabs.com"
+              },
+              {
+                "class_name": "PresentationLink",
+                "order": 30,
+                "name": "Visit Artist: Deborah Anderson",
+                "link": "https://womenofthewhitebuffalo.com/home/"
               }
             ]
           },
