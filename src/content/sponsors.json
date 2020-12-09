@@ -811,13 +811,19 @@
               {
                 "class_name": "PresentationLink",
                 "link": "https://twitter.com/Intel",
-                "name": "Follow us on Twitter ",
-                "order": 1
+                "name": "Follow us on Twitter",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Intel Company Information",
+                "order": 1,
+                "link": "www.intel.com"
               }
             ]
           },
           "id": 14,
-          "usesSponsorPage": false
+          "usesSponsorPage": true
         }
       ]
     },
