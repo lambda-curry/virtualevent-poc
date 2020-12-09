@@ -1,5 +1,9 @@
 @import './colors.scss';
 
+.first-container {
+  margin-top: 0px !important;
+}
+
 .big-image-container {
   display: flex;
   flex-direction: column;
@@ -52,6 +56,7 @@
     background-color: $color_secondary;
     color: $color_text_light;
     border: 0px;
+    margin-bottom: 2em;
   }
 }
 
