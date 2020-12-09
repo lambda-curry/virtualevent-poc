@@ -1,5 +1,9 @@
 @import './colors.scss';
 
+.first-container {
+  margin-top: 0px !important;
+}
+
 .big-image-container {
   display: flex;
   flex-direction: column;
