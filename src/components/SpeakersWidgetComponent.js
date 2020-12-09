@@ -6,8 +6,8 @@ import envVariables from '../utils/envVariables';
 import expiredToken from '../utils/expiredToken';
 
 // these two libraries are client-side only
-import SpeakersWidget from 'speakers-widget/dist';
-import 'speakers-widget/dist/index.css';
+import SpeakersWidget from 'speakers-widget-test-packaging';
+import 'speakers-widget-test-packaging/index.css';
 
 const SpeakersWidgetComponent = class extends React.Component {
 

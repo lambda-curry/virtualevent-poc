@@ -28,7 +28,7 @@ const SponsorComponent = ({ page }) => {
                 return null
               } else {
                 return (
-                  <div className={styles.bigImageContainer} key={tierIndex}>
+                  <div className={`${tierIndex === 0 ? styles.firstContainer : ''} ${styles.bigImageContainer}`} key={tierIndex}>
                     <span><b>{tier.widgetTitle}</b></span>
                     {sponsors.map((sponsor, index) => {
                       return (
@@ -54,7 +54,7 @@ const SponsorComponent = ({ page }) => {
                 return null
               } else {
                 return (
-                  <div className={styles.smallImageContainer} key={tierIndex}>
+                  <div className={`${tierIndex === 0 ? styles.firstContainer : ''} ${styles.smallImageContainer}`} key={tierIndex}>
                     <span><b>{tier.widgetTitle}</b></span>
                     {sponsors.map((sponsor, index) => {
                       return (
@@ -82,7 +82,7 @@ const SponsorComponent = ({ page }) => {
             }
             case 'horizontal-images': {
               return (
-                <div className={`${styles.horizontalContainer} px-6`} key={tierIndex}>
+                <div className={`${tierIndex === 0 ? styles.firstContainer : ''} ${styles.horizontalContainer} px-6`} key={tierIndex}>
                   {sponsors.map((sponsor, index) => {
                     return (
                       sponsor.externalLink ?
@@ -158,7 +158,7 @@ const SponsorComponent = ({ page }) => {
                   slidesToScroll: 1
                 };
                 return (
-                  <div className={styles.carouselContainer} key={tierIndex}>
+                  <div className={`${tierIndex === 0 ? styles.firstContainer : ''} ${styles.carouselContainer}`} key={tierIndex}>
                     <span style={{ marginBottom: '0' }}><b>{tier.widgetTitle}</b></span>
                     <Slider {...sliderSettings}>
                       {sponsors.map((sponsor, index) => {
