@@ -9,7 +9,7 @@
       ],
       "sponsors": [
         {
-          "marquee": "Your text here!",
+          "marquee": "Your text here! (150-characters max)",
           "sponsorColor": "#5b9b92",
           "logo": "/img/logo-top-tier-wherehol.png",
           "name": "Wherehol",
@@ -24,6 +24,7 @@
             }
           ],
           "id": 1,
+          "email": "sponsorservices@fntech.com",
           "usesSponsorPage": true
         },
         {
@@ -52,10 +53,22 @@
       "tier": [
         {
           "value": "tier-DHcI3dWGk",
-          "label": "Silver"
+          "label": "Middle-Tier Sponsors"
         }
       ],
       "sponsors": [
+        {
+          "marquee": "Your text here! (150-characters max)",
+          "sponsorColor": "#7e78c6",
+          "logo": "/img/Logo-Top-Tier-Mobility.png",
+          "name": "Mobility",
+          "intro": "Sponsor Description (1000-character max) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
+          "headerVideo": "",
+          "headerImage": "",
+          "title": "Mobility",
+          "id": 11,
+          "email": "sponsorservices@fntech.com"
+        },
         {
           "id": 4,
           "name": "System Squared",
@@ -125,16 +138,6 @@
           "logo": "/img/logo-middle-tier-seeingeye.png",
           "headerImage": "",
           "headerVideo": ""
-        },
-        {
-          "id": 11,
-          "name": "OpenTech",
-          "title": "",
-          "intro": "",
-          "marquee": "",
-          "logo": "/img/logo-top-tier-opentech.png",
-          "headerImage": "",
-          "headerVideo": ""
         }
       ]
     },
@@ -142,7 +145,7 @@
       "tier": [
         {
           "value": "tier-U_wEwGX8a",
-          "label": "Bronze"
+          "label": "Lower-Tier Sponsors"
         }
       ],
       "sponsors": []
