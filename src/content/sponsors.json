@@ -4,37 +4,45 @@
       "tier": [
         {
           "value": "tier-cYGYq5-ae",
-          "label": "Gold"
+          "label": "Top-Tier Sponsors"
         }
       ],
       "sponsors": [
         {
+          "marquee": "Your text here!",
+          "sponsorColor": "#5b9b92",
+          "logo": "/img/logo-top-tier-wherehol.png",
+          "name": "Wherehol",
+          "intro": "Sponsor Description (1000-character max) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
+          "headerVideo": "",
+          "headerImage": "/img/yoco-summit-wherehol-header.png",
+          "headerImageMobile": "/img/yoco-summit-wherehol-header-mobile.png",
+          "title": "Wherehol",
+          "columnAds": [
+            {
+              "image": "/img/yoco-sponsor-ads-large-wherehol-vert.png"
+            }
+          ],
           "id": 1,
-          "name": "flow",
-          "title": "",
-          "intro": "",
-          "marquee": "",
-          "logo": "/img/yoco-sponsor-ads-medium-treva.png",
-          "headerImage": "",
-          "headerVideo": ""
+          "usesSponsorPage": true
         },
         {
           "id": 2,
-          "name": "tilted",
+          "name": "Apex",
           "title": "",
           "intro": "",
           "marquee": "",
-          "logo": "/img/yoco-sponsor-ads-medium-flightpath.png",
+          "logo": "/img/Logo-Top-Tier-Apex.png",
           "headerImage": "",
           "headerVideo": ""
         },
         {
           "id": 3,
-          "name": "treva",
+          "name": "Flightpath",
           "title": "",
           "intro": "",
           "marquee": "",
-          "logo": "/img/yoco-sponsor-ads-medium-topographic.png",
+          "logo": "/img/Logo-Top-Tier-Flightpath.png",
           "headerImage": "",
           "headerVideo": ""
         }
