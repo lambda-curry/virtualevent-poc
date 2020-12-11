@@ -25,7 +25,7 @@
           ],
           "id": 1,
           "email": "sponsorservices@fntech.com",
-          "usesSponsorPage": true
+          "usesSponsorPage": false
         },
         {
           "id": 2,
@@ -74,7 +74,7 @@
           ],
           "id": 11,
           "email": "sponsorservices@fntech.com",
-          "usesSponsorPage": true
+          "usesSponsorPage": false
         },
         {
           "id": 4,
@@ -173,7 +173,7 @@
           ],
           "id": 20,
           "email": "sponsorservices@fntech.com",
-          "usesSponsorPage": true
+          "usesSponsorPage": false
         },
         {
           "advertiseImage": "",
