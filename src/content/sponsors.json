@@ -204,6 +204,18 @@
           "name": "Tilted",
           "id": 26,
           "logo": "/img/logo-lower-tier-tilted.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Triad",
+          "id": 27,
+          "logo": "/img/logo-lower-tier-triad.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "CleanTech",
+          "id": 30,
+          "logo": "/img/logo-lower-tier-cleantech.png"
         }
       ]
     }
