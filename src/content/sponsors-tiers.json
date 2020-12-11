@@ -2,8 +2,8 @@
   "tiers": [
     {
       "id": "tier-cYGYq5-ae",
-      "name": "Gold",
-      "widgetTitle": "Gold Sponsors",
+      "name": "Top-Tier Sponsors",
+      "widgetTitle": "Top-Tier Sponsors",
       "badge": "/img/gold.png",
       "lobby": {
         "lobbyTemplate": "big-images",
@@ -23,15 +23,15 @@
     },
     {
       "id": "tier-DHcI3dWGk",
-      "name": "Silver",
-      "widgetTitle": "Silver Sponsors",
+      "name": "Middle-Tier Sponsors",
+      "widgetTitle": "Middle-Tier Sponsors",
       "badge": "/img/silver.png",
       "lobby": {
-        "lobbyTemplate": "big-images",
+        "lobbyTemplate": "small-images",
         "display": true
       },
       "sponsorPage": {
-        "sponsorTemplate": "big-header",
+        "sponsorTemplate": "small-header",
         "widgets": {
           "disqus": true,
           "liveEvent": true,
@@ -44,8 +44,8 @@
     },
     {
       "id": "tier-U_wEwGX8a",
-      "name": "Bronze",
-      "widgetTitle": "Bronze Sponsors",
+      "name": "Lower-Tier Sponsors",
+      "widgetTitle": "Lower-Tier Sponsors",
       "badge": "/img/bronze.png",
       "lobby": {
         "lobbyTemplate": "small-images",
