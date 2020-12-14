@@ -5,8 +5,8 @@ import envVariables from '../utils/envVariables';
 import expiredToken from '../utils/expiredToken';
 
 // these two libraries are client-side only
-import ScheduleLite from 'schedule-lite-test-packaging';
-import 'schedule-lite-test-packaging/index.css';
+import ScheduleLite from 'schedule-lite';
+import 'schedule-lite/index.css';
 
 import HomeSettings from '../content/home-settings.json'
 
