@@ -215,7 +215,7 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Featured Artist: Cara Lee ",
+          "marquee": "Featured Artist: Danielle Parson ",
           "sponsorColor": "#ff00a3",
           "logo": "/img/if2020-artist-nav_v2.png",
           "name": "ART+TECH Gallery ",
@@ -230,7 +230,7 @@
               {
                 "class_name": "PresentationVideo",
                 "name": "Cara Lee: CHiLL_Adrift",
-                "order": 4,
+                "order": 32,
                 "link": "/a/event/1299"
               },
               {
@@ -308,7 +308,7 @@
               {
                 "class_name": "PresentationVideo",
                 "name": "Deborah Anderson: Save My Missing Sisters",
-                "order": 29,
+                "order": 30,
                 "link": "/a/event/1300"
               }
             ],
@@ -316,7 +316,7 @@
               {
                 "class_name": "PresentationLink",
                 "name": "Visit Artist: Cara Lee",
-                "order": 3,
+                "order": 31,
                 "link": "https://www.caraleeproject.com"
               },
               {
@@ -393,7 +393,7 @@
               },
               {
                 "class_name": "PresentationLink",
-                "order": 30,
+                "order": 29,
                 "name": "Visit Artist: Deborah Anderson",
                 "link": "https://womenofthewhitebuffalo.com/home/"
               }
