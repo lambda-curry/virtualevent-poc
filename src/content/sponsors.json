@@ -820,6 +820,20 @@
                 "order": 1,
                 "link": "www.intel.com"
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/evercoast-intel-verizon.pdf",
+                "name": "Evercoast + Intel + Verizon",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/if_dec20.pdf",
+                "name": "WHAT’S DIFFERENT: IMMERSIVE CHALLENGES",
+                "order": 2
+              }
             ]
           },
           "id": 14,
