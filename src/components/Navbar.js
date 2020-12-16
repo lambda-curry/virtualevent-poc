@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-
+import { navigate } from 'gatsby'
 import styles from '../styles/navbar.module.scss';
 
 import LogoutButton from './LogoutButton';
@@ -52,13 +52,17 @@ const Navbar = class extends React.Component {
     this.props.updateProfile(profile)
   }
 
-  handleTogglePopup = (profile) => {
+  handleTogglePopup = (profile) => {    
     if (profile) {
       document.body.classList.add('is-clipped');
     } else {
       document.body.classList.remove('is-clipped');
     }
     this.setState({ showProfile: profile })
+  }
+
+  goToProfile = () => {
+    navigate('/a/profile');
   }
 
   render() {
