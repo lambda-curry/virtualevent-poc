@@ -1,0 +1,153 @@
+@import "bulma/sass/utilities/_all.sass";
+@import "bulma/sass/elements/button.sass";
+@import "bulma/sass/form/_all.sass";
+
+@import './colors.scss';
+
+.full-profile {
+    align-items: flex-start;
+
+    >div {
+        &:not(:nth-of-type(2)) {
+            border: 1px solid #d3d3d3;
+            padding: 10px 20px;
+        }
+
+        &:nth-of-type(2) {
+            padding: 0;
+        }
+
+        &:not(:first-of-type) {
+            margin-left: 20px;
+        }
+    }
+
+    .profile-picture {
+        display: flex;
+        justify-content: center;
+        margin-top: 28px;        
+
+        img {
+            cursor: pointer;
+            height: 200px;
+            width: 200px;
+            border-radius: 10px;
+        }
+    }
+
+    .image-upload {
+        position: absolute;
+        top: 14.2%;
+        left: 13%;
+
+        >input {
+            display: none;
+        }
+
+        .picture-icon {
+            color: #ffffff;
+            z-index: 100;
+            cursor: pointer;
+        }
+    }
+
+    .form-container {
+        border: 1px solid #d3d3d3;
+        padding: 10px 20px;
+
+        &:not(:first-of-type) {
+            margin-top: 20px;
+        }
+
+        .header {
+            font-size: 18px;
+            line-height: 22px;
+            color: $color_text_dark;
+            font-weight: bold;
+            margin: 0 -20px;
+            padding: 0 15px 10px;
+            width: calc(100% + 40px);
+            border-bottom: 1px solid #d3d3d3;
+        }
+
+        .form {
+            .input-row {
+                margin: 15px 0;
+
+                .input-field {
+                    display: flex;
+                    flex-direction: column;
+
+                    b {
+                        font-size: 14px;
+                        line-height: 20px;
+                        margin-bottom: 5px;
+                    }
+
+                    .textarea {
+                        font-size: 16px;
+                    }
+
+                    .select {
+                        display: flex;
+                        select {
+                            width: 100%;
+                        }
+                    }                    
+                }
+            }
+        }
+
+        .checkbox {
+            input[type=checkbox] {
+                margin: -3px 8px 0px;
+                vertical-align: middle;
+            }
+        }        
+
+        .buttons {
+            display: flex;
+            margin: 15px 0;
+
+            button {
+                width: 48%;
+                height: 5.5rem;
+
+                &:last-of-type {
+                    color: #ffffff;
+                    border-color: #ffffff;
+                    background-color: $color_primary;
+                    margin-left: 2%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .full-profile {
+        align-items: flex-start;
+
+        >div {
+            &:not(:nth-of-type(2)) {
+                border: 1px solid #d3d3d3;
+                padding: 10px 20px;
+            }
+
+            &:nth-of-type(2) {
+                padding: 0;
+            }
+
+            &:not(:first-of-type) {
+                margin-top: 20px;
+                margin-left: 0px;
+            }
+        }
+
+        .image-upload {
+            position: absolute;
+            top: 9.3%;
+            left: 47%;
+        }
+    }
+}
