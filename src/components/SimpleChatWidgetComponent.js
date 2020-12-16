@@ -6,8 +6,8 @@ import envVariables from '../utils/envVariables';
 import GeneralSettings from '../content/settings.json'
 
 // these two libraries are client-side only
-import SimpleChatWidget from 'simple-chat-widget/dist';
-import 'simple-chat-widget/dist/index.css';
+import SimpleChatWidget from 'simple-chat-widget';
+import 'simple-chat-widget/index.css';
 
 const SimpleChatWidgetComponent = class extends React.Component {
 

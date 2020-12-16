@@ -168,5 +168,6 @@ export const updateProfile = (profile) => (dispatch, getState) => {
     profile,
     customErrorHandler
   )(params)(dispatch)
-    .then(() => dispatch(getIDPProfile()));
+    .then(() => dispatch(getIDPProfile()))
+    .catch(() => dispatch(dispatch(createAction(STOP_LOADING_IDP_PROFILE))));
 }
