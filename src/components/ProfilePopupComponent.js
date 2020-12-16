@@ -7,7 +7,7 @@ import { AjaxLoader } from "openstack-uicore-foundation/lib/components";
 
 import { create_UUID } from '../utils/uuidGenerator'
 
-const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfile, changePicture, changeProfile }) => {
+const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfile, changePicture, changeProfile, fromFullProfile }) => {
 
   const editorRef = useRef(null);
 
@@ -94,7 +94,7 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
     <div className={`${styles.modal} ${showProfile ? styles.isActive : ''}`}>
       <div className={`${styles.modalBackground}`} onClick={() => closePopup()}></div>
       <div className={`${styles.modalCard} ${styles.profilePopup}`}>
-        <AjaxLoader relative={true} color={'#ffffff'} show={ idpLoading } size={ 120 }/>
+        <AjaxLoader relative={true} color={'#ffffff'} show={idpLoading} size={120} />
         <header className={`${styles.modalCardHead}`}>
           <p className={`${styles.modalCardTitle}`}>Edit profile</p>
           <i onClick={() => closePopup()} className={`${styles.closeIcon} fa fa-times icon is-large`}></i>
@@ -118,7 +118,7 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
                 crossOrigin="anonymous"
               />
               <div className={styles.imageUpload}>
-                <label for="file-input">
+                <label htmlFor="file-input">
                   <i className={`${styles.pictureIcon} fa fa-2x fa-camera icon is-large`}></i>
                 </label>
                 <input name="newImage" id="file-input" type="file" accept=".jpg,.jpeg,.png" onChange={handleNewImage} />
@@ -152,6 +152,7 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
 
             </div>
           </div>
+          {!fromFullProfile &&
           <div className={styles.modalCardForm}>
             <div className={styles.title}>Profile Info</div>
             <div className={styles.form}>
@@ -191,6 +192,7 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
               </div>
             </div>
           </div>
+          }
         </section>
         <footer className={`${styles.modalCardFoot}`}>
           <button onClick={() => closePopup()} className="button is-large">Discard</button>

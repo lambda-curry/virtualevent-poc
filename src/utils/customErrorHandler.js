@@ -6,10 +6,21 @@ import Swal from 'sweetalert2';
 export const customErrorHandler = (err, res) => (dispatch, state) => {
   let code = err.status;
   dispatch(stopLoading());
+  let msg = '';
   switch (code) {
     case 401:
       console.log('authErrorHandler 401 - re login');
       expiredToken(err);
+      break;
+    case 412:      
+      for (var [key, value] of Object.entries(err.response.body.messages)) {
+        if (isNaN(key)) {
+          msg += key + ': ';
+        }
+
+        msg += value + '<br>';
+      }      
+      Swal.fire("Validation error", msg, "warning");
       break;
     default:
       break;
