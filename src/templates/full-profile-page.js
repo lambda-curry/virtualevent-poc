@@ -55,36 +55,39 @@ export const FullProfilePageTemplate = ({ loggedUser, user, getIDPProfile, updat
     const [image, setImage] = useState(null);
 
     useEffect(() => {
-        getIDPProfile();
-        setImage(user.idpProfile.picture)
-        setPersonalProfile({
-            firstName: user.idpProfile.given_name,
-            lastName: user.idpProfile.family_name,
-            company: user.idpProfile.company || '',
-            email: user.idpProfile.email || '',
-            birthday: user.idpProfile.birthdate?.date ? moment(user.idpProfile.birthdate.date).valueOf() / 1000 : null,
-            gender: user.idpProfile.gender || '',
-            specifyGender: '',
-            irc: user.idpProfile.irc || '',
-            github: user.idpProfile.github_user || '',
-            twitter: user.idpProfile.twitter_user || '',
-            linkedin: user.idpProfile.linked_in_profile || '',
-            identifier: user.idpProfile.nickname || '',
-            language: user.idpProfile.locale || ''
-        });
-        // setShowFullName(undefined);
-        // setShowPicture(undefined);
-        // setShowEmail(undefined);
-        setBio(user.idpProfile.bio || '');
-        setAddress({
-            street: user.idpProfile.street_address || '',
-            floor: user.idpProfile.street_address2 || '',
-            city: user.idpProfile.locality || '',
-            state: user.idpProfile.region || '',
-            zipCode: user.idpProfile.postal_code || '',
-            country: user.idpProfile.country || '',
-            phone: user.idpProfile.phone_number || ''
-        });
+        if (!user.idpProfile) {
+            getIDPProfile();
+        } else {
+            setImage(user.idpProfile.picture)
+            setPersonalProfile({
+                firstName: user.idpProfile.given_name || '',
+                lastName: user.idpProfile.family_name || '',
+                company: user.idpProfile.company || '',
+                email: user.idpProfile.email || '',
+                birthday: user.idpProfile.birthdate?.date ? moment(user.idpProfile.birthdate.date).valueOf() / 1000 : null,
+                gender: user.idpProfile.gender || '',
+                specifyGender: '',
+                irc: user.idpProfile.irc || '',
+                github: user.idpProfile.github_user || '',
+                twitter: user.idpProfile.twitter_user || '',
+                linkedin: user.idpProfile.linked_in_profile || '',
+                identifier: user.idpProfile.nickname || '',
+                language: user.idpProfile.locale || ''
+            });
+            // setShowFullName(undefined);
+            // setShowPicture(undefined);
+            // setShowEmail(undefined);
+            setBio(user.idpProfile.bio || '');
+            setAddress({
+                street: user.idpProfile.street_address || '',
+                floor: user.idpProfile.street_address2 || '',
+                city: user.idpProfile.locality || '',
+                state: user.idpProfile.region || '',
+                zipCode: user.idpProfile.postal_code || '',
+                country: user.idpProfile.country || '',
+                phone: user.idpProfile.phone_number || ''
+            });
+        }
         return () => {
             setPersonalProfile({
                 firstName: '',
@@ -92,7 +95,7 @@ export const FullProfilePageTemplate = ({ loggedUser, user, getIDPProfile, updat
                 company: ''
             });
         };
-    }, []);
+    }, [user.idpProfile]);
 
     const handlePictureUpdate = (picture) => {
         updateProfilePicture(picture);
@@ -150,7 +153,6 @@ export const FullProfilePageTemplate = ({ loggedUser, user, getIDPProfile, updat
     }
 
     const discardChanges = (state) => {
-        console.log('state', state);
         switch (state) {
             case 'profile':
                 setPersonalProfile({
@@ -205,7 +207,7 @@ export const FullProfilePageTemplate = ({ loggedUser, user, getIDPProfile, updat
                             {personalProfile.firstName} {personalProfile.lastName}
                         </h3>
                         <h4>
-                            @{user.idpProfile.nickname}
+                            @{user.idpProfile?.nickname}
                         </h4>
                     </div>
                     <div className="column">
@@ -288,18 +290,21 @@ export const FullProfilePageTemplate = ({ loggedUser, user, getIDPProfile, updat
                                     </div>
                                 </div>
                                 {personalProfile.gender === 'Specify' &&
-                                    <div className={`columns is-mobile ${styles.inputRow}`}>
-                                        <div className={`column is-half ${styles.inputField}`}>
-                                            <b>Specify gender</b>
-                                            <input
-                                                className={`${styles.input} ${styles.isLarge}`}
-                                                type="text"
-                                                placeholder="Specify your gender"
-                                                onChange={e => setPersonalProfile({ ...personalProfile, specifyGender: e.target.value })}
-                                                value={personalProfile.specifyGender}
-                                            />
+                                    <>
+                                        <div className={`columns is-mobile ${styles.inputRow}`}>
+                                            <div className={`column is-half ${styles.inputField}`}></div>                                        
+                                            <div className={`column is-half ${styles.inputField}`}>
+                                                <b>Specify gender</b>
+                                                <input
+                                                    className={`${styles.input} ${styles.isLarge}`}
+                                                    type="text"
+                                                    placeholder="Specify your gender"
+                                                    onChange={e => setPersonalProfile({ ...personalProfile, specifyGender: e.target.value })}
+                                                    value={personalProfile.specifyGender}
+                                                />
+                                            </div>
                                         </div>
-                                    </div>
+                                    </>
                                 }
                                 <div className={`columns is-mobile ${styles.inputRow}`}>
                                     <div className={`column is-half ${styles.inputField}`}>
