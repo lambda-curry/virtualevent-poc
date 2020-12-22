@@ -215,7 +215,7 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Featured Artist: Danielle Parsons ",
+          "marquee": "Featured Artist: Kiyan Forootan",
           "sponsorColor": "#ff00a3",
           "logo": "/img/if2020-artist-nav_v2.png",
           "name": "ART+TECH Gallery ",
@@ -315,9 +315,9 @@
             "links": [
               {
                 "class_name": "PresentationLink",
-                "name": "Visit Artist: Cara Lee",
-                "order": 31,
-                "link": "https://www.caraleeproject.com"
+                "order": 3,
+                "name": "Visit Artist: Kiyan Forootan",
+                "link": "https://www.instagram.com/kiyanforootan/?hl=en"
               },
               {
                 "class_name": "PresentationLink",
@@ -357,12 +357,6 @@
               },
               {
                 "class_name": "PresentationLink",
-                "order": 17,
-                "name": "Visit Artist: Kiyan Forootan",
-                "link": "https://www.instagram.com/kiyanforootan/?hl=en"
-              },
-              {
-                "class_name": "PresentationLink",
                 "link": "https://www.jennsingergallery.com/davidstenbeck",
                 "name": "Visit Artist: David Stenbeck",
                 "order": 19
@@ -396,6 +390,12 @@
                 "order": 29,
                 "name": "Visit Artist: Deborah Anderson",
                 "link": "https://womenofthewhitebuffalo.com/home/"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Visit Artist: Cara Lee",
+                "order": 31,
+                "link": "https://www.caraleeproject.com"
               }
             ]
           },
