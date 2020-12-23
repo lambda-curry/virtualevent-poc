@@ -109,12 +109,42 @@
       ],
       "sponsors": [
         {
-          "id": 4,
-          "name": "System Squared",
+          "id": 8,
+          "name": "Curtin",
           "title": "",
           "intro": "",
           "marquee": "",
-          "logo": "/img/logo-middle-tier-systemsquared.png",
+          "logo": "/img/logo-middle-tier-curtin.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 9,
+          "name": "FNTECH",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/logo-middle-tier-fntech.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 7,
+          "name": "Hughston",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/logo-middle-tier-hughston.png",
+          "headerImage": "",
+          "headerVideo": ""
+        },
+        {
+          "id": 10,
+          "name": "Seeing Eye",
+          "title": "",
+          "intro": "",
+          "marquee": "",
+          "logo": "/img/logo-middle-tier-seeingeye.png",
           "headerImage": "",
           "headerVideo": ""
         },
@@ -137,46 +167,6 @@
           "logo": "/img/logo-middle-tier-hyved.png",
           "headerImage": "",
           "headerVideo": ""
-        },
-        {
-          "id": 7,
-          "name": "Hughston",
-          "title": "",
-          "intro": "",
-          "marquee": "",
-          "logo": "/img/logo-middle-tier-hughston.png",
-          "headerImage": "",
-          "headerVideo": ""
-        },
-        {
-          "id": 8,
-          "name": "Curtin",
-          "title": "",
-          "intro": "",
-          "marquee": "",
-          "logo": "/img/logo-middle-tier-curtin.png",
-          "headerImage": "",
-          "headerVideo": ""
-        },
-        {
-          "id": 9,
-          "name": "FNTECH",
-          "title": "",
-          "intro": "",
-          "marquee": "",
-          "logo": "/img/logo-middle-tier-fntech.png",
-          "headerImage": "",
-          "headerVideo": ""
-        },
-        {
-          "id": 10,
-          "name": "Seeing Eye",
-          "title": "",
-          "intro": "",
-          "marquee": "",
-          "logo": "/img/logo-middle-tier-seeingeye.png",
-          "headerImage": "",
-          "headerVideo": ""
         }
       ]
     },
@@ -188,25 +178,6 @@
         }
       ],
       "sponsors": [
-        {
-          "marquee": " Your text here! (150-characters max)",
-          "sponsorColor": "#e9ad55",
-          "logo": "/img/logo-middle-tier-treva_demo.png",
-          "name": "Treva",
-          "intro": "Sponsor Description (1000-character max) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
-          "headerImage": "/img/yoco-summit-treva-header.png",
-          "headerImageMobile": "/img/yoco-summit-treva-header-mobile.png",
-          "advertiseImage": "",
-          "title": "Treva",
-          "columnAds": [
-            {
-              "image": "/img/yoco-summit-treva-space1.png"
-            }
-          ],
-          "id": 20,
-          "email": "sponsorservices@fntech.com",
-          "usesSponsorPage": true
-        },
         {
           "advertiseImage": "",
           "name": "Topographic",
@@ -242,12 +213,6 @@
           "name": "Triad",
           "id": 27,
           "logo": "/img/logo-lower-tier-triad.png"
-        },
-        {
-          "advertiseImage": "",
-          "name": "CleanTech",
-          "id": 30,
-          "logo": "/img/logo-lower-tier-cleantech.png"
         }
       ]
     }
