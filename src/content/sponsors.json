@@ -204,7 +204,7 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Featured Artist: Kiyan Forootan",
+          "marquee": "Featured Artist: Claudia Meyer",
           "sponsorColor": "#ff00a3",
           "logo": "/img/if2020-artist-nav_v2.png",
           "name": "ART+TECH Gallery ",
@@ -218,21 +218,15 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "name": "Cara Lee: CHiLL_Adrift",
-                "order": 32,
-                "link": "/a/event/1299"
+                "link": "/a/event/1305",
+                "name": "Claudia Meyer",
+                "order": 2
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Danielle Parsons: Ferrofluid",
                 "order": 6,
                 "link": "/a/event/1295"
-              },
-              {
-                "class_name": "PresentationVideo",
-                "link": "/a/event/1305",
-                "name": "Claudia Meyer",
-                "order": 8
               },
               {
                 "class_name": "PresentationVideo",
@@ -299,9 +293,21 @@
                 "name": "Deborah Anderson: Save My Missing Sisters",
                 "order": 30,
                 "link": "/a/event/1300"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Cara Lee: CHiLL_Adrift",
+                "order": 32,
+                "link": "/a/event/1299"
               }
             ],
             "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "Visit Artist: Claudia Meyer",
+                "link": "http://claudiameyer.com",
+                "order": 1
+              },
               {
                 "class_name": "PresentationLink",
                 "order": 3,
@@ -313,12 +319,6 @@
                 "link": "https://wonderscience.com",
                 "name": "Visit Artist: Danielle Parsons",
                 "order": 5
-              },
-              {
-                "class_name": "PresentationLink",
-                "name": "Visit Artist: Claudia Meyer",
-                "link": "http://claudiameyer.com",
-                "order": 7
               },
               {
                 "class_name": "PresentationLink",
