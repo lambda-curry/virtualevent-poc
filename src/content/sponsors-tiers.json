@@ -1,6 +1,25 @@
 {
   "tiers": [
     {
+      "badge": "",
+      "lobby": {
+        "lobbyTemplate": "big-images",
+        "display": true
+      },
+      "sponsorPage": {
+        "sponsorTemplate": "big-header",
+        "disqus": false,
+        "liveEvent": false,
+        "schedule": false,
+        "banner": false
+      },
+      "expoHallSize": "large",
+      "eventTemplate": null,
+      "id": "tier-u6BujQJEe",
+      "name": "Demo-Tier Sponsors ",
+      "widgetTitle": "Demo-Tier Sponsors "
+    },
+    {
       "id": "tier-cYGYq5-ae",
       "name": "Top-Tier Sponsors",
       "widgetTitle": "Top-Tier Sponsors",
