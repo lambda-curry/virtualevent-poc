@@ -7,7 +7,7 @@
         "display": true
       },
       "sponsorPage": {
-        "sponsorTemplate": "big-header",
+        "sponsorTemplate": "small-header",
         "disqus": false,
         "liveEvent": false,
         "schedule": false,
