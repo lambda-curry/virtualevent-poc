@@ -27,7 +27,7 @@
           ],
           "id": 1,
           "email": "sponsorservices@fntech.com",
-          "usesSponsorPage": false
+          "usesSponsorPage": true
         },
         {
           "marquee": "Your text here! (150-characters max)",
