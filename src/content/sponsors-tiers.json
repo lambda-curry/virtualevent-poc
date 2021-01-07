@@ -22,7 +22,7 @@
       "id": "tier-cYGYq5-ae",
       "name": "Top-Tier Sponsors",
       "widgetTitle": "Top-Tier Sponsors",
-      "badge": "/img/gold.png",
+      "badge": "",
       "lobby": {
         "lobbyTemplate": "big-images",
         "display": true
@@ -43,7 +43,7 @@
       "id": "tier-DHcI3dWGk",
       "name": "Middle-Tier Sponsors",
       "widgetTitle": "Middle-Tier Sponsors",
-      "badge": "/img/silver.png",
+      "badge": "",
       "lobby": {
         "lobbyTemplate": "small-images",
         "display": true
@@ -64,7 +64,7 @@
       "id": "tier-U_wEwGX8a",
       "name": "Lower-Tier Sponsors",
       "widgetTitle": "Lower-Tier Sponsors",
-      "badge": "/img/bronze.png",
+      "badge": "",
       "lobby": {
         "lobbyTemplate": "small-images",
         "display": true
