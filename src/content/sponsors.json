@@ -15,7 +15,7 @@
           "name": "Wherehol",
           "intro": "Sponsor Description (1000-character max) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
           "headerVideo": " https://fntech.sfo2.cdn.digitaloceanspaces.com/Yoco/YOCO-Summit-Wherehol-Header-Video.mp4",
-          "headerImage": "",
+          "headerImage": "/img/yoco-summit-wherehol-header.png",
           "headerImageMobile": "/img/yoco-summit-wherehol-header-mobile.png",
           "chatLink": "",
           "advertiseImage": "",
@@ -140,25 +140,6 @@
         }
       ],
       "sponsors": [
-        {
-          "marquee": "Your text here! (150-characters max)",
-          "sponsorColor": " #e9ad55",
-          "logo": "/img/logo-middle-tier-treva_demo.png",
-          "name": "Treva",
-          "intro": "Sponsor Description (1000-character max) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
-          "headerImage": "/img/yoco-summit-treva-header.png",
-          "headerImageMobile": "/img/yoco-summit-treva-header-mobile.png",
-          "advertiseImage": "",
-          "title": "Treva",
-          "columnAds": [
-            {
-              "image": "/img/yoco-summit-treva-space1.png"
-            }
-          ],
-          "id": 3,
-          "email": "sponsorservices@fntech.com",
-          "usesSponsorPage": true
-        },
         {
           "advertiseImage": "",
           "name": "Topographic",
