@@ -13,8 +13,8 @@
         "schedule": false,
         "banner": false
       },
-      "expoHallSize": "medium",
-      "eventTemplate": "small-images",
+      "expoHallSize": "large",
+      "eventTemplate": null,
       "id": "tier-qLIgzTIDw",
       "name": "Demo-Tier Sponsors"
     },
