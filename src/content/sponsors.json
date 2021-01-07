@@ -3,8 +3,8 @@
     {
       "tier": [
         {
-          "value": "tier-qLIgzTIDw",
-          "label": "Demo-Tier Sponsors"
+          "value": "tier-cYGYq5-ae",
+          "label": "Top-Tier Sponsors"
         }
       ],
       "sponsors": [
@@ -65,38 +65,18 @@
           "id": 20,
           "email": "sponsorservices@fntech.com",
           "usesSponsorPage": false
-        }
-      ]
-    },
-    {
-      "tier": [
-        {
-          "value": "tier-cYGYq5-ae",
-          "label": "Top-Tier Sponsors"
-        }
-      ],
-      "sponsors": [
-        {
-          "marquee": "",
-          "logo": "/img/Logo-Top-Tier-Flightpath.png",
-          "name": "Flightpath",
-          "intro": "",
-          "headerVideo": "",
-          "headerImage": "",
-          "title": "",
-          "id": 3,
-          "usesSponsorPage": false
         },
         {
-          "marquee": "",
-          "logo": "/img/Logo-Top-Tier-Apex.png",
+          "advertiseImage": "",
+          "name": "Flightpath",
+          "logo": "/img/Logo-Top-Tier-Flightpath.png",
+          "id": 4
+        },
+        {
+          "advertiseImage": "",
           "name": "Apex",
-          "intro": "",
-          "headerVideo": "",
-          "headerImage": "",
-          "title": "",
-          "id": 2,
-          "usesSponsorPage": false
+          "logo": "/img/Logo-Top-Tier-Apex.png",
+          "id": 5
         }
       ]
     },
