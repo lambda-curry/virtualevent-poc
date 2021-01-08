@@ -52,7 +52,7 @@
       "sponsors": [
         {
           "marquee": "Your text here! (150-characters max)",
-          "sideImage": "/img/yoco-summit-mobility-space1.png",
+          "sideImage": "",
           "sponsorColor": "#7e78c6",
           "logo": "/img/logo-lower-tier-mobility_demo.png",
           "name": "Mobility",
@@ -63,6 +63,11 @@
           "sponsorId": 28,
           "title": "Mobility",
           "companyId": 26,
+          "columnAds": [
+            {
+              "image": "/img/yoco-summit-mobility-space1.png"
+            }
+          ],
           "id": 26,
           "email": "sponsorservices@fntech.com",
           "usesSponsorPage": true
