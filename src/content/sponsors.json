@@ -20,6 +20,22 @@
           "sponsorId": 27,
           "title": "Wherehol",
           "companyId": 25,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "FNTECH Website",
+                "link": "https://www.fntech.com",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "FNTECH Instagram ",
+                "link": "https://www.instagram.com/fntech/?hl=en",
+                "order": 2
+              }
+            ]
+          },
           "columnAds": [
             {
               "image": "/img/yoco-sponsor-ads-large-wherehol-vert.png"
@@ -64,6 +80,22 @@
           "sponsorId": 28,
           "title": "Mobility",
           "companyId": 26,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "FNTECH Website",
+                "link": "https://www.fntech.com",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "FNTECH Instagram",
+                "link": "https://www.instagram.com/fntech/?hl=en",
+                "order": 2
+              }
+            ]
+          },
           "columnAds": [
             {
               "image": "/img/yoco-summit-mobility-space1.png"
@@ -155,6 +187,22 @@
           "sponsorId": 29,
           "title": "Treva",
           "companyId": 27,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "FNTECH Website",
+                "order": 1,
+                "link": "https://www.fntech.com"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "FNTECH Instagram",
+                "link": "https://www.instagram.com/fntech/?hl=en",
+                "order": 2
+              }
+            ]
+          },
           "columnAds": [
             {
               "image": "/img/yoco-sponsor-ads-medium-treva.png"
