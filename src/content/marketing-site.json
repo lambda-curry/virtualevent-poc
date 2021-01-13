@@ -53,14 +53,14 @@
     {
       "images": [
         {
-          "image": "/img/happyhour.jpg"
+          "image": "/img/happyhour_1.jpg"
         }
       ]
     },
     {
       "images": [
         {
-          "image": "/img/diversity.jpg",
+          "image": "/img/happyhour_2.jpg",
           "link": "https://www.facebook.com/careers/facebook-life/diversity"
         }
       ]
@@ -68,7 +68,23 @@
     {
       "images": [
         {
-          "image": "/img/sustainability.jpg",
+          "image": "/img/diversity_1.jpg",
+          "link": "https://www.facebook.com/careers/facebook-life/diversity"
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "image": "/img/diversity_2.jpg",
+          "link": "https://www.facebook.com/careers/facebook-life/diversity"
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "image": "/img/sustainability_1.jpg",
           "link": "https://sustainability.fb.com/"
         }
       ]
@@ -76,7 +92,22 @@
     {
       "images": [
         {
-          "image": "/img/upcoming.jpg"
+          "image": "/img/sustainability_2.jpg",
+          "link": "https://sustainability.fb.com/"
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "image": "/img/upcoming-events_1.jpg"
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "image": "/img/upcoming-events_2.jpg"
         }
       ]
     }
