@@ -16,33 +16,13 @@
       "display": true
     },
     {
-      "title": "Who we are",
-      "link": "/who-we-are",
-      "display": true
-    },
-    {
-      "title": "Past events",
-      "link": "/past-events",
-      "display": true
-    },
-    {
-      "title": "Contact",
-      "link": "/contact",
-      "display": true
-    },
-    {
-      "title": "Help",
-      "link": "/help",
-      "display": true
-    },
-    {
-      "title": "Test Page",
-      "link": "/test-page",
-      "display": true
-    },
-    {
-      "title": "Family of Apps",
+      "title": "Resources",
       "link": "/a/sponsors/",
+      "display": true
+    },
+    {
+      "title": "Breakout Group Stones",
+      "link": "/a/breakout-group-stones",
       "display": true
     }
   ]
