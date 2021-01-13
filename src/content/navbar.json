@@ -11,16 +11,6 @@
       "display": true
     },
     {
-      "title": "About the event",
-      "link": "/about-event",
-      "display": true
-    },
-    {
-      "title": "Resources",
-      "link": "/a/sponsors/",
-      "display": true
-    },
-    {
       "title": "Breakout Group Stones",
       "link": "/a/breakout-group-stones",
       "display": true
@@ -28,6 +18,11 @@
     {
       "title": "Breakout Group Beatles",
       "link": "/a/breakout-group-beatles",
+      "display": true
+    },
+    {
+      "title": "Resources",
+      "link": "/a/sponsors/",
       "display": true
     }
   ]
