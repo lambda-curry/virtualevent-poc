@@ -4,7 +4,7 @@
       "section": "lobby",
       "columnAds": [
         {
-          "image": "/img/cs_484asset-7.png",
+          "image": "/img/community_1asset-8.png",
           "button": {
             "link": "https://www.facebook.com/community/",
             "text": "Facebook Community"
@@ -12,13 +12,20 @@
           "column": "left"
         },
         {
-          "image": "/img/happy-hour_lobby-10.jpg",
+          "image": "/img/community_2asset-9.png",
           "button": {
             "text": "Learn more",
-            "link": "https://fncreative-adams.netlify.app/a/event/1357"
+            "link": ""
           },
           "column": "left",
           "id": null
+        },
+        {
+          "image": "/img/community_3asset-10.png",
+          "button": {
+            "text": "Learn more"
+          },
+          "column": "left"
         }
       ]
     },
