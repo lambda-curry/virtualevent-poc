@@ -6,7 +6,7 @@
       "widgetTitle": "",
       "badge": "",
       "lobby": {
-        "lobbyTemplate": "carousel",
+        "lobbyTemplate": "big-images",
         "display": true
       },
       "sponsorPage": {
