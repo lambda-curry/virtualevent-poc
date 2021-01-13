@@ -30,7 +30,7 @@
   },
   "leftColumn": {
     "schedule": {
-      "display": false,
+      "display": true,
       "title": "Full Schedule"
     },
     "disqus": {
