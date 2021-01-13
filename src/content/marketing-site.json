@@ -53,56 +53,30 @@
     {
       "images": [
         {
-          "image": "/img/happy-hour_img_wbutton-10.jpg",
-          "link": "https://fncreative-adams.netlify.app/a/event/1357"
-        }
-      ]
-    },
-    {
-      "title": "Top Left",
-      "images": [
-        {
-          "image": "/img/emoji_gif_484_frame.gif",
-          "link": ""
+          "image": "/img/happyhour.jpg"
         }
       ]
     },
     {
       "images": [
         {
-          "image": "/img/fnvirtual-platform-template-wip_nho-21.jpg",
+          "image": "/img/diversity.jpg",
+          "link": "https://www.facebook.com/careers/facebook-life/diversity"
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "image": "/img/sustainability.jpg",
           "link": "https://sustainability.fb.com/"
         }
       ]
     },
     {
-      "title": "Mid Left",
       "images": [
         {
-          "image": "/img/fnvirtual-platform-template-wip_nho-18.jpg",
-          "link": "https://diversity.fb.com/"
-        }
-      ]
-    },
-    {
-      "title": "Top Left",
-      "images": [
-        {
-          "image": "/img/fnvirtual-platform-template-wip_nho-11.jpg",
-          "link": ""
-        }
-      ]
-    },
-    {
-      "images": [
-        {
-          "image": "/img/carousel_ad-25.jpg"
-        },
-        {
-          "image": "/img/carousel_ad-24.jpg"
-        },
-        {
-          "image": "/img/carousel_ad-26-25.jpg"
+          "image": "/img/upcoming.jpg"
         }
       ]
     }
