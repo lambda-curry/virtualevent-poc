@@ -25,7 +25,7 @@
   ],
   "imageHeader": "/img/fbmicro_sp-header.png",
   "lobbyButton": {
-    "text": "View all",
+    "text": "",
     "link": "/a/sponsors/"
   }
 }
