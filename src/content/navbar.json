@@ -11,16 +11,6 @@
       "display": true
     },
     {
-      "title": "About the event",
-      "link": "/about-event",
-      "display": true
-    },
-    {
-      "title": "Who we are",
-      "link": "/who-we-are",
-      "display": true
-    },
-    {
       "title": "Past events",
       "link": "/past-events",
       "display": true
@@ -31,8 +21,8 @@
       "display": true
     },
     {
-      "title": "Help",
-      "link": "/help",
+      "title": "Resources",
+      "link": "/resources",
       "display": true
     }
   ]
