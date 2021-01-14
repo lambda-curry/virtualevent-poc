@@ -42,7 +42,7 @@
     },
     {
       "title": "My Profile",
-      "link": "https://idp.fntech.com/accounts/user/profile",
+      "link": "/profile",
       "display": true
     }
   ]
