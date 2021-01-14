@@ -46,6 +46,14 @@
           "usesSponsorPage": true
         },
         {
+          "advertiseImage": "",
+          "name": "Curtain Convention Center Services ",
+          "logo": "/img/logo-middle-tier-curtin.png",
+          "id": 31,
+          "sponsorId": 33,
+          "companyId": 31
+        },
+        {
           "marquee": "We Design. We Build. We Print. We Install.",
           "sponsorColor": "#ff7500 ",
           "logo": "/img/dvc-logo-968x968.png",
@@ -77,6 +85,11 @@
               }
             ]
           },
+          "columnAds": [
+            {
+              "image": "/img/dvc-logo-968x968.png"
+            }
+          ],
           "id": 28,
           "email": "davids@dandreavisual.com"
         },
@@ -103,14 +116,6 @@
           "id": 30,
           "sponsorId": 32,
           "companyId": 30
-        },
-        {
-          "advertiseImage": "",
-          "name": "Curtain Convention Center Services ",
-          "logo": "/img/logo-middle-tier-curtin.png",
-          "id": 31,
-          "sponsorId": 33,
-          "companyId": 31
         }
       ]
     },
