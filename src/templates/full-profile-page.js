@@ -37,9 +37,9 @@ export const FullProfilePageTemplate = ({ loggedUser, user, getIDPProfile, updat
         language: ''
     })
 
-    // const [showFullName, setShowFullName] = useState(undefined)
-    // const [showPicture, setShowPicture] = useState(undefined)
-    // const [showEmail, setShowEmail] = useState(undefined)
+    const [showFullName, setShowFullName] = useState(undefined)
+    const [showPicture, setShowPicture] = useState(undefined)
+    const [showEmail, setShowEmail] = useState(undefined)
     const [bio, setBio] = useState('')
 
     const [address, setAddress] = useState({
@@ -66,7 +66,7 @@ export const FullProfilePageTemplate = ({ loggedUser, user, getIDPProfile, updat
                 email: user.idpProfile.email || '',
                 birthday: user.idpProfile.birthdate?.date ? moment(user.idpProfile.birthdate.date).valueOf() / 1000 : null,
                 gender: user.idpProfile.gender || '',
-                specifyGender: '',
+                specifyGender: user.idpProfile.gender_specify,
                 irc: user.idpProfile.irc || '',
                 github: user.idpProfile.github_user || '',
                 twitter: user.idpProfile.twitter_user || '',
@@ -74,9 +74,9 @@ export const FullProfilePageTemplate = ({ loggedUser, user, getIDPProfile, updat
                 identifier: user.idpProfile.nickname || '',
                 language: user.idpProfile.locale || ''
             });
-            // setShowFullName(undefined);
-            // setShowPicture(undefined);
-            // setShowEmail(undefined);
+            setShowFullName(user.idpProfile.public_profile_show_fullname);
+            setShowPicture(user.idpProfile.public_profile_show_photo);
+            setShowEmail(user.idpProfile.public_profile_show_email);
             setBio(user.idpProfile.bio || '');
             setAddress({
                 street: user.idpProfile.street_address || '',
@@ -119,9 +119,9 @@ export const FullProfilePageTemplate = ({ loggedUser, user, getIDPProfile, updat
                 linked_in_profile: personalProfile.linkedin,
                 identifier: personalProfile.identifier,
                 language: personalProfile.language,
-                // public_profile_show_fullname: showFullName,
-                // public_profile_show_photo: showPicture,
-                // public_profile_show_email: showEmail,
+                public_profile_show_fullname: showFullName,
+                public_profile_show_photo: showPicture,
+                public_profile_show_email: showEmail,
                 bio: bio,
                 address1: address.street,
                 address2: address.floor,
@@ -130,7 +130,7 @@ export const FullProfilePageTemplate = ({ loggedUser, user, getIDPProfile, updat
                 post_code: address.zipCode,
                 country_iso_code: address.country,
                 phone_number: address.phone,
-            }
+            }            
             updateProfile(newProfile);
         }
     }
@@ -162,7 +162,7 @@ export const FullProfilePageTemplate = ({ loggedUser, user, getIDPProfile, updat
                     email: user.idpProfile.email || '',
                     birthday: user.idpProfile.birthdate?.date ? moment(user.idpProfile.birthdate.date).valueOf() / 1000 : null,
                     gender: user.idpProfile.gender || '',
-                    specifyGender: '',
+                    specifyGender: user.idpProfile.gender_specify,
                     irc: user.idpProfile.irc || '',
                     github: user.idpProfile.github_user || '',
                     twitter: user.idpProfile.twitter_user || '',
@@ -170,9 +170,9 @@ export const FullProfilePageTemplate = ({ loggedUser, user, getIDPProfile, updat
                     identifier: user.idpProfile.nickname || '',
                     language: user.idpProfile.locale || ''
                 });
-                // setShowFullName(undefined);
-                // setShowPicture(undefined);
-                // setShowEmail(undefined);   
+                setShowFullName(user.idpProfile.public_profile_show_fullname);
+                setShowPicture(user.idpProfile.public_profile_show_photo);
+                setShowEmail(user.idpProfile.public_profile_show_email);
                 break;
             case 'bio':
                 setBio(user.idpProfile.bio || '');
@@ -201,6 +201,11 @@ export const FullProfilePageTemplate = ({ loggedUser, user, getIDPProfile, updat
                     <div className="column is-3">
                         <div className={styles.profilePicture} onClick={() => handleTogglePopup(!showProfile)}>
                             <img src={image} />
+                            <div className={styles.imageUpload}>
+                                <label for="file-input">
+                                    <i className={`${styles.pictureIcon} fa fa-2x fa-pencil icon is-large`}></i>
+                                </label>
+                            </div>
                         </div>
                         <h3>
                             Hello, <br />
@@ -292,7 +297,7 @@ export const FullProfilePageTemplate = ({ loggedUser, user, getIDPProfile, updat
                                 {personalProfile.gender === 'Specify' &&
                                     <>
                                         <div className={`columns is-mobile ${styles.inputRow}`}>
-                                            <div className={`column is-half ${styles.inputField}`}></div>                                        
+                                            <div className={`column is-half ${styles.inputField}`}></div>
                                             <div className={`column is-half ${styles.inputField}`}>
                                                 <b>Specify gender</b>
                                                 <input
@@ -370,23 +375,27 @@ export const FullProfilePageTemplate = ({ loggedUser, user, getIDPProfile, updat
                                     </div>
                                 </div>
                             </div>
-                            {/* <label className={styles.checkbox}>
-                                    <input type="checkbox" value={showFullName} onChange={e => setShowFullName(e.target.value)} />
+                            <label className={styles.checkbox}>
+                                <input type="checkbox" value={showFullName} onChange={e => setShowFullName(e.target.value)} />
                                 Show full name on public profile
                                 </label>
-                                <br />
-                                <label className={styles.checkbox}>
-                                    <input type="checkbox" value={showPicture} onChange={e => setShowPicture(e.target.value)} />
+                            <br />
+                            <label className={styles.checkbox}>
+                                <input type="checkbox" value={showPicture} onChange={e => setShowPicture(e.target.value)} />
                                 Show picture on public profile
                                 </label>
-                                <br />
-                                <label className={styles.checkbox}>
-                                    <input type="checkbox" value={showEmail} onChange={e => setShowEmail(e.target.value)} />
+                            <br />
+                            <label className={styles.checkbox}>
+                                <input type="checkbox" value={showEmail} onChange={e => setShowEmail(e.target.value)} />
                                 Show email on public profile
-                                </label> */}
-                            <div className={styles.buttons}>
-                                <button className="button is-large" onClick={() => discardChanges('profile')}>Discard</button>
-                                <button className="button is-large" onClick={() => handleProfileUpdate()}>Update</button>
+                                </label>
+                            <div className={`columns is-mobile ${styles.buttons}`}>
+                                <div className={`column is-half`}>
+                                    <button className={`button is-large ${styles.profileButton}`} onClick={() => discardChanges('profile')}>Discard</button>
+                                </div>
+                                <div className={`column is-half`}>
+                                    <button className="button is-large" onClick={() => handleProfileUpdate()}>Update</button>
+                                </div>
                             </div>
                         </div>
                         <div className={styles.formContainer}>
@@ -405,9 +414,13 @@ export const FullProfilePageTemplate = ({ loggedUser, user, getIDPProfile, updat
                                     </div>
                                 </div>
                             </div>
-                            <div className={styles.buttons}>
-                                <button className="button is-large" onClick={() => discardChanges('bio')}>Discard</button>
-                                <button className="button is-large" onClick={() => handleProfileUpdate()}>Update</button>
+                            <div className={`columns is-mobile ${styles.buttons}`}>
+                                <div className={`column is-half`}>
+                                    <button className={`button is-large ${styles.profileButton}`} onClick={() => discardChanges('bio')}>Discard</button>
+                                </div>
+                                <div className={`column is-half`}>
+                                    <button className="button is-large" onClick={() => handleProfileUpdate()}>Update</button>
+                                </div>
                             </div>
                         </div>
                         <div className={styles.formContainer}>
@@ -489,9 +502,13 @@ export const FullProfilePageTemplate = ({ loggedUser, user, getIDPProfile, updat
                                     </div>
                                 </div>
                             </div>
-                            <div className={styles.buttons}>
-                                <button className="button is-large" onClick={() => discardChanges('address')}>Discard</button>
-                                <button className="button is-large" onClick={() => handleProfileUpdate()}>Update</button>
+                            <div className={`columns is-mobile ${styles.buttons}`}>
+                                <div className={`column is-half`}>
+                                    <button className={`button is-large ${styles.profileButton}`} onClick={() => discardChanges('address')}>Discard</button>
+                                </div>
+                                <div className={`column is-half`}>
+                                    <button className="button is-large" onClick={() => handleProfileUpdate()}>Update</button>
+                                </div>
                             </div>
                         </div>
                     </div>
