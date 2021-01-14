@@ -24,6 +24,11 @@
       "title": "Resources",
       "link": "/virtual-booth/",
       "display": true
+    },
+    {
+      "title": "Resources (sponsor page) ",
+      "link": "https://fncreative-adams.netlify.app/a/sponsors/",
+      "display": true
     }
   ]
 }
