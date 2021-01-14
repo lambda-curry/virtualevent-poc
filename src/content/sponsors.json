@@ -106,46 +106,6 @@
           "usesSponsorPage": true
         },
         {
-          "id": 8,
-          "name": "Curtin",
-          "title": "",
-          "intro": "",
-          "marquee": "",
-          "logo": "/img/logo-middle-tier-curtin.png",
-          "headerImage": "",
-          "headerVideo": ""
-        },
-        {
-          "id": 9,
-          "name": "FNTECH",
-          "title": "",
-          "intro": "",
-          "marquee": "",
-          "logo": "/img/logo-middle-tier-fntech.png",
-          "headerImage": "",
-          "headerVideo": ""
-        },
-        {
-          "id": 7,
-          "name": "Hughston",
-          "title": "",
-          "intro": "",
-          "marquee": "",
-          "logo": "/img/logo-middle-tier-hughston.png",
-          "headerImage": "",
-          "headerVideo": ""
-        },
-        {
-          "id": 10,
-          "name": "Seeing Eye",
-          "title": "",
-          "intro": "",
-          "marquee": "",
-          "logo": "/img/logo-middle-tier-seeingeye.png",
-          "headerImage": "",
-          "headerVideo": ""
-        },
-        {
           "id": 5,
           "name": "GameHub",
           "title": "",
@@ -164,6 +124,12 @@
           "logo": "/img/logo-middle-tier-hyved.png",
           "headerImage": "",
           "headerVideo": ""
+        },
+        {
+          "advertiseImage": "",
+          "name": "Flightpath",
+          "id": 4,
+          "logo": "/img/Logo-Top-Tier-Flightpath.png"
         }
       ]
     },
