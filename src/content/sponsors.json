@@ -44,6 +44,41 @@
           "id": 25,
           "email": "sponsorservices@fntech.com",
           "usesSponsorPage": true
+        },
+        {
+          "marquee": "We Design. We Build. We Print. We Install.",
+          "sponsorColor": "#ff7500 ",
+          "logo": "/img/dvc-logo-968x968.png",
+          "name": "DVC",
+          "intro": "## **The DVC Story**\n\nExperience, immersion, innovation and unparalleled customer experience. Those are just a few of the impressive traits D’Andrea Visual Communications (DVC) has created for some of the most impressive brands on the globe.\\\n\\\nWe began as D’Andrea Graphic Communications in 2005 as a premier lithographic\\\nprinter in Los Angeles, CA. Since then, we’ve expanded our vision in-house with grand format printing and custom fabrication. DVC is now a complete visual communications producer for Fortune 500 brands as well as unique start-ups.\\\n\\\nUltimately, our goal is to create visual marketing materials that enhance your brand and get noticed. We do it efficiently, and effectively. All this and more thanks to a dream team of sales experts, project managers, designers, engineers, craftsman, and installers.\\\n\\\nDVC is [minority-owned](http://dandreavisual.com/diversity/), G7 and FSC® certified company.",
+          "advertiseImage": "",
+          "sponsorId": 30,
+          "title": "Curtin Convention Services ",
+          "companyId": 28,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.instagram.com/dandreavisual/",
+                "name": "D'Andrea Visual Instagram ",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/3645194/admin/ ",
+                "order": 2,
+                "name": "D'Andrea Visual Linkedin "
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "D'Andrea Visual Facebook ",
+                "order": 3,
+                "link": "https://www.facebook.com/DAndrea-Visual-Communications-661492027204833/ "
+              }
+            ]
+          },
+          "id": 28,
+          "email": "davids@dandreavisual.com"
         }
       ]
     },
