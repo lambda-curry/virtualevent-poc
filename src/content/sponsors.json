@@ -79,6 +79,38 @@
           },
           "id": 28,
           "email": "davids@dandreavisual.com"
+        },
+        {
+          "advertiseImage": "",
+          "name": "FNTECH",
+          "logo": "/img/logo-top-tier-fntech.png",
+          "sponsorId": 7,
+          "id": 4,
+          "companyId": 4
+        },
+        {
+          "advertiseImage": "",
+          "name": "Seeing Eye Lighting Design",
+          "logo": "/img/logo-middle-tier-seeingeye.png",
+          "id": 29,
+          "companyId": 29,
+          "sponsorId": 31
+        },
+        {
+          "advertiseImage": "",
+          "name": "Hughston Engineering",
+          "logo": "/img/logo-middle-tier-hughston.png",
+          "id": 30,
+          "sponsorId": 32,
+          "companyId": 30
+        },
+        {
+          "advertiseImage": "",
+          "name": "Curtain Convention Center Services ",
+          "logo": "/img/logo-middle-tier-curtin.png",
+          "id": 31,
+          "sponsorId": 33,
+          "companyId": 31
         }
       ]
     },
