@@ -7,7 +7,14 @@
           "label": "Gold"
         }
       ],
-      "sponsors": []
+      "sponsors": [
+        {
+          "advertiseImage": "",
+          "name": "TEST",
+          "id": 1,
+          "logo": "/img/gold.png"
+        }
+      ]
     },
     {
       "tier": [
