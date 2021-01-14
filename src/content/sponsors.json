@@ -9,10 +9,18 @@
       ],
       "sponsors": [
         {
-          "advertiseImage": "",
-          "name": "TEST",
+          "marquee": "RESOURCES",
+          "sponsorColor": "#1877f2",
+          "logo": "/img/gold.png",
+          "name": "Resources",
+          "headerImage": "/img/hr.jpeg",
+          "advertiseImage": "/img/hr.jpeg",
+          "title": "Resources",
+          "documents": {
+            "slides": []
+          },
           "id": 1,
-          "logo": "/img/gold.png"
+          "usesSponsorPage": true
         }
       ]
     },
