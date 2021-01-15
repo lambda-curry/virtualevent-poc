@@ -42,7 +42,7 @@
     },
     {
       "title": "My Profile",
-      "link": "/profile",
+      "link": "/a/profile",
       "display": true
     }
   ]
