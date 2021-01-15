@@ -29,7 +29,9 @@ const SponsorComponent = ({ page }) => {
               } else {
                 return (
                   <div className={`${tierIndex === 0 ? styles.firstContainer : ''} ${styles.bigImageContainer}`} key={tierIndex}>
-                    <span><b>{tier.widgetTitle}</b></span>
+                    {tier.widgetTitle &&
+                      <span><b>{tier.widgetTitle}</b></span>
+                    }
                     {sponsors.map((sponsor, index) => {
                       return (
                         sponsor.externalLink ?
@@ -55,7 +57,9 @@ const SponsorComponent = ({ page }) => {
               } else {
                 return (
                   <div className={`${tierIndex === 0 ? styles.firstContainer : ''} ${styles.smallImageContainer}`} key={tierIndex}>
-                    <span><b>{tier.widgetTitle}</b></span>
+                    {tier.widgetTitle &&
+                      <span><b>{tier.widgetTitle}</b></span>
+                    }
                     {sponsors.map((sponsor, index) => {
                       return (
                         sponsor.externalLink ?
@@ -159,7 +163,9 @@ const SponsorComponent = ({ page }) => {
                 };
                 return (
                   <div className={`${tierIndex === 0 ? styles.firstContainer : ''} ${styles.carouselContainer}`} key={tierIndex}>
-                    <span style={{ marginBottom: '0' }}><b>{tier.widgetTitle}</b></span>
+                    {tier.widgetTitle &&
+                      <span style={{ marginBottom: '0' }}><b>{tier.widgetTitle}</b></span>
+                    }
                     <Slider {...sliderSettings}>
                       {sponsors.map((sponsor, index) => {
                         return (
