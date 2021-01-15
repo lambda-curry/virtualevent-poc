@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import { navigate } from 'gatsby'
 import { connect } from 'react-redux'
 
+import { getAccessToken } from 'openstack-uicore-foundation/lib/methods';
+
 import SponsorHeader from '../components/SponsorHeader'
 import LiveEventWidgetComponent from '../components/LiveEventWidgetComponent'
 import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
