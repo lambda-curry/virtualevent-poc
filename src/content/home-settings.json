@@ -11,7 +11,8 @@
   "homeHero": {
     "title": "New Hire Orientation",
     "subTitle": "live now!",
-    "image": "/img/leadership-01.jpg",
+    "image": "/img/leadership-02-01.jpg",
     "copy": "Welcome to Facebook! "
-  }
+  },
+  "live_now_featured_event_id": 1
 }
