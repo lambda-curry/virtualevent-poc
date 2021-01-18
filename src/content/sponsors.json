@@ -11,36 +11,26 @@
         {
           "marquee": "RESOURCES",
           "sponsorColor": "#1877f2",
-          "logo": "/img/gold.png",
+          "logo": "/img/fb-wordmark-01.png",
           "name": "Resources",
-          "headerImage": "/img/hr.jpeg",
+          "intro": "**Resources**\n\n\n\n![Test]( \"Test\")",
+          "headerImage": "/img/leadership-updated.jpg",
           "advertiseImage": "/img/hr.jpeg",
           "title": "Resources",
           "documents": {
-            "slides": []
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/documents/",
+                "name": "HR",
+                "order": 1
+              }
+            ]
           },
           "id": 1,
           "usesSponsorPage": true
         }
       ]
-    },
-    {
-      "tier": [
-        {
-          "value": "tier-DHcI3dWGk",
-          "label": "Silver"
-        }
-      ],
-      "sponsors": []
-    },
-    {
-      "tier": [
-        {
-          "value": "tier-U_wEwGX8a",
-          "label": "Bronze"
-        }
-      ],
-      "sponsors": []
     }
   ]
 }
