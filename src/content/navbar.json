@@ -11,17 +11,7 @@
       "display": true
     },
     {
-      "title": "Contact",
-      "link": "/contact",
-      "display": true
-    },
-    {
       "title": "Resources",
-      "link": "/virtual-booth/",
-      "display": true
-    },
-    {
-      "title": "Resources (sponsor page) ",
       "link": "https://fncreative-adams.netlify.app/a/sponsors/",
       "display": true
     },
@@ -29,6 +19,11 @@
       "title": "FAQ",
       "display": true,
       "link": "/faq"
+    },
+    {
+      "title": "Contact",
+      "link": "/contact",
+      "display": true
     }
   ]
 }
