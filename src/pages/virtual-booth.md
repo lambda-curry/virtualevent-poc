@@ -1,23 +1,52 @@
 ---
 templateKey: virtual-booth-page
-title: 'Virtual Booth'
-intro: >-
-  Hello! Sponsor ads and logos can link out to any sponsor-related page or back to the sponsor’s virtual sponsor booth page.
+title: Resources
+intro: |-
+  Welcome to Facebook!
+
   <br/><br/>
-  Two samples of virtual sponsor booth layouts are shown below. 
 columns:
   leftColumn:
-    title: TOP-TIER SPONSOR PAGE
-    content: >-
-      All the bells and whistles: promotional videos and images; scrolling ticker messaging; links to documents, URLs, and social media sites, featured upcoming event  sessions   (hand selected by the sponsor), interactive chat, lead retrieval, meeting scheduling, and more! 
-    image: /img/YOCO-GoldSponsor-Page-Mock-960.jpg
+    title: LEARN
+    content: >
+      Here you will find all the tools and videos you need to begin your
+      Facebook journey!
+
+
+      <br/><br/>
+
+
+      <a href="https://www.google.com/">Training Videos</a>
+
+
+      <br/><br/>
+
+
+      <a href="url">Onboarding Documents</a>
+    image: /img/community_3asset-11.png
   rightColumn:
-    title: MIDDLE-TIER SPONSOR PAGE
+    title: EXPLORE
     content: >-
-      Perhaps a static image header, brief company intro, fewer documents/links, etc. 
-    image: /img/YOCO-SilverSponsor-Page-Mock-960.jpg
-endText: >-
-  As the client, you set the parameters. Your sponsorship features drive the layout … and if you’re unsure exactly what you want to offer, our creative and logistic pros are here to help walk you through the process!  
-  <br/><br/>
-  With our flexible system, the sky’s the limit! Let us help make your sponsors happy! 
+      Explore Facebook Campus in Menlo Park, as well as what the Bay Area has to
+      offer.
+
+      <br/><br/>
+
+
+      <a href="https://www.businessinsider.com/maps-of-facebooks-massive-new-9000-employee-campus-2011-4">Campus Maps</a>
+
+
+      <br/><br/>
+
+
+      <a href="https://www.facebook.com/careers/locations">Wordwide Campuses</a>
+
+
+      <br/><br/>
+
+
+      <a href="https://www.visitcalifornia.com/uk/region/discover-san-francisco-bay-area">Bay Area Highlights</a>
+    image: /img/community_3asset-12.png
+endText: End Text
 ---
+Body
