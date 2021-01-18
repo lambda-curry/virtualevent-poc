@@ -3,8 +3,8 @@
     {
       "id": "tier-cYGYq5-ae",
       "name": "Gold",
-      "widgetTitle": "Gold Sponsors",
-      "badge": "/img/gold.png",
+      "widgetTitle": "LEARN",
+      "badge": "/img/community_3asset-11.png",
       "lobby": {
         "lobbyTemplate": "big-images",
         "display": true
@@ -64,9 +64,9 @@
       "expoHallSize": "small"
     }
   ],
-  "imageHeader": "/img/jumbotron.jpg",
+  "imageHeader": "/img/hr.jpeg",
   "lobbyButton": {
-    "text": "View all",
+    "text": "Resources",
     "link": "/a/sponsors/"
   }
 }
