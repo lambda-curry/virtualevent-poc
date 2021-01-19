@@ -50,6 +50,65 @@
           },
           "id": 1,
           "usesSponsorPage": true
+        },
+        {
+          "marquee": "RESOURCES - EXPLORE",
+          "sponsorColor": "#87c9e1",
+          "logo": "/img/exploreasset-16.png",
+          "name": "Explore",
+          "headerImage": "/img/carousel_img-14.jpg",
+          "advertiseImage": "",
+          "documents": {
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/documents/",
+                "name": "Campus Maps",
+                "order": 0
+              }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "Worldwide Campuses",
+                "order": 2,
+                "link": "https://www.facebook.com/careers/locations"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Bay Area Highlights",
+                "order": 1,
+                "link": "https://www.visitcalifornia.com/uk/region/discover-san-francisco-bay-area"
+              }
+            ]
+          },
+          "id": 2,
+          "usesSponsorPage": true
+        },
+        {
+          "advertiseImage": "",
+          "name": "Connect",
+          "logo": "/img/exploreasset-17.png",
+          "sponsorColor": "#e9953e",
+          "marquee": "RESOURCES - CONNECT",
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "Upcoming Events",
+                "order": 1,
+                "link": "www.google.com"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Facebook Groups",
+                "order": 1,
+                "link": "www.google.com"
+              }
+            ]
+          },
+          "usesSponsorPage": true,
+          "id": 2
         }
       ]
     },
@@ -114,6 +173,14 @@
           "sponsorColor": "#1877f2",
           "marquee": "Resources - Connect",
           "headerImage": "/img/culture-posters.png"
+        }
+      ]
+    },
+    {
+      "tier": [
+        {
+          "value": "tier-DHcI3dWGk",
+          "label": "Silver"
         }
       ]
     }
