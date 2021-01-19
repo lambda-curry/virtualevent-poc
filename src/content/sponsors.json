@@ -11,19 +11,39 @@
         {
           "marquee": "RESOURCES",
           "sponsorColor": "#1877f2",
-          "logo": "/img/fb-wordmark-01.png",
+          "logo": "/img/community_3asset-11.png",
           "name": "Resources",
           "intro": "**Resources**\n\n\n\n![Test]( \"Test\")",
-          "headerImage": "/img/leadership-updated.jpg",
-          "advertiseImage": "/img/hr.jpeg",
+          "headerImage": "/img/hr_3.jpg",
+          "advertiseImage": "/img/hr_3.jpg",
           "title": "Resources",
           "documents": {
             "slides": [
               {
                 "class_name": "PresentationSlide",
                 "link": "/documents/",
-                "name": "HR",
+                "name": "Human Resources Form",
                 "order": 1
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/documents/",
+                "name": "Employee Handbook",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/documents/",
+                "name": "Sexual Harassment Acknowledgement",
+                "order": 5
+              }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "Welcome Video",
+                "order": 2,
+                "link": "www.google.com"
               }
             ]
           },
