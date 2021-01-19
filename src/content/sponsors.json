@@ -61,11 +61,38 @@
       ],
       "sponsors": [
         {
-          "advertiseImage": "",
-          "name": "Explore",
+          "marquee": "Resources - Explore",
+          "sponsorColor": "#1877f2",
           "logo": "/img/exploreasset-16.png",
-          "usesSponsorPage": true,
-          "id": 2
+          "name": "Explore",
+          "headerImage": "/img/carousel_img-14.jpg",
+          "advertiseImage": "",
+          "documents": {
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/documents/",
+                "name": "Campus Maps",
+                "order": 1
+              }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "Worldwide Campuses",
+                "order": 2,
+                "link": "https://www.facebook.com/careers/locations"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Bay Area Highlights",
+                "order": 3,
+                "link": "https://www.visitcalifornia.com/uk/region/discover-san-francisco-bay-area"
+              }
+            ]
+          },
+          "id": 2,
+          "usesSponsorPage": true
         }
       ]
     },
@@ -82,7 +109,10 @@
           "name": "Connect",
           "usesSponsorPage": true,
           "logo": "/img/exploreasset-17.png",
-          "id": 3
+          "id": 3,
+          "sponsorColor": "#1877f2",
+          "marquee": "Resources - Connect",
+          "headerImage": "/img/culture-posters.png"
         }
       ]
     }
