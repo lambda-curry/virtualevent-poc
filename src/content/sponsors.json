@@ -9,14 +9,14 @@
       ],
       "sponsors": [
         {
-          "marquee": "LEARN",
+          "marquee": "Resources - Learn",
           "sponsorColor": "#1877f2",
           "logo": "/img/learnasset-15.png",
           "name": "Learn",
-          "intro": "**LEARN**\n\n![Test]( \"Test\")",
-          "headerImage": "/img/hr_3.jpg",
-          "advertiseImage": "/img/hr_3.jpg",
-          "title": "Resources",
+          "intro": "\n\n![]()",
+          "headerImage": "/img/learn_conference-table-01.jpg",
+          "advertiseImage": "",
+          "title": "",
           "documents": {
             "slides": [
               {
