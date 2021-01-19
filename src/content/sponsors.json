@@ -9,11 +9,11 @@
       ],
       "sponsors": [
         {
-          "marquee": "RESOURCES",
+          "marquee": "LEARN",
           "sponsorColor": "#1877f2",
-          "logo": "/img/community_3asset-11.png",
-          "name": "Resources",
-          "intro": "**Resources**\n\n\n\n![Test]( \"Test\")",
+          "logo": "/img/learnasset-15.png",
+          "name": "Learn",
+          "intro": "**LEARN**\n\n![Test]( \"Test\")",
           "headerImage": "/img/hr_3.jpg",
           "advertiseImage": "/img/hr_3.jpg",
           "title": "Resources",
@@ -49,6 +49,40 @@
           },
           "id": 1,
           "usesSponsorPage": true
+        }
+      ]
+    },
+    {
+      "tier": [
+        {
+          "value": "tier-cYGYq5-ae",
+          "label": "Gold"
+        }
+      ],
+      "sponsors": [
+        {
+          "advertiseImage": "",
+          "name": "Explore",
+          "logo": "/img/exploreasset-16.png",
+          "usesSponsorPage": true,
+          "id": 2
+        }
+      ]
+    },
+    {
+      "tier": [
+        {
+          "value": "tier-cYGYq5-ae",
+          "label": "Gold"
+        }
+      ],
+      "sponsors": [
+        {
+          "advertiseImage": "",
+          "name": "Connect",
+          "usesSponsorPage": true,
+          "logo": "/img/exploreasset-17.png",
+          "id": 3
         }
       ]
     }
