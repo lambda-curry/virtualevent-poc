@@ -9,23 +9,16 @@
             "link": "https://www.facebook.com/community/",
             "text": "Facebook Community"
           },
-          "column": "left"
+          "column": "right"
         },
         {
           "image": "/img/community_2asset-9.png",
           "button": {
             "text": "Learn more",
-            "link": "https://fncreative-adams.netlify.app/virtual-booth/"
+            "link": "https://www.facebook.com/community/"
           },
-          "column": "left",
+          "column": "right",
           "id": null
-        },
-        {
-          "image": "/img/community_3asset-10.png",
-          "button": {
-            "text": "Learn more"
-          },
-          "column": "left"
         }
       ]
     },
