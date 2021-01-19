@@ -24,6 +24,11 @@
       "title": "Contact",
       "link": "/contact",
       "display": true
+    },
+    {
+      "title": "Bootcamps",
+      "link": "/bootcamps",
+      "display": true
     }
   ]
 }
