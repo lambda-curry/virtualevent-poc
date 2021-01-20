@@ -2,7 +2,7 @@
   "heroBanner": {
     "title": "New Hire Orientation",
     "subTitle": "Welcome!",
-    "date": "January 3, 2021 ",
+    "date": "March 1–3, 2021 ",
     "time": "",
     "dateLayout": false,
     "buttons": {
@@ -31,11 +31,11 @@
   "leftColumn": {
     "schedule": {
       "display": true,
-      "title": "Full Schedule"
+      "title": "Schedule of Events"
     },
     "disqus": {
       "display": false,
-      "title": "Join the conversation 2"
+      "title": ""
     },
     "image": {
       "display": false,
