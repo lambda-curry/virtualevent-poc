@@ -84,7 +84,7 @@
             ]
           },
           "id": 2,
-          "usesSponsorPage": false
+          "usesSponsorPage": true
         },
         {
           "marquee": "RESOURCES - CONNECT",
