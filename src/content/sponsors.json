@@ -51,7 +51,8 @@
           "logo": "/img/logo-middle-tier-curtin.png",
           "id": 31,
           "sponsorId": 33,
-          "companyId": 31
+          "companyId": 31,
+          "usesSponsorPage": true
         },
         {
           "marquee": "We Design. We Build. We Print. We Install.",
