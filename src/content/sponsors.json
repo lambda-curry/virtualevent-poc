@@ -18,7 +18,9 @@
           "headerImage": "/img/team_1080passet-2.png",
           "socialNetworks": [],
           "advertiseImage": "/img/securityasset-24.png",
+          "sponsorId": 2,
           "title": "",
+          "companyId": 1,
           "documents": {
             "slides": [
               {
@@ -53,12 +55,14 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "name": "Explore ",
-          "id": 4,
           "marquee": "RESOURCES - EXPLORE",
           "sponsorColor": "#87c9e1",
           "logo": "/img/exploreasset-16.png",
+          "name": "Explore ",
+          "advertiseImage": "",
+          "sponsorId": 6,
+          "companyId": 4,
+          "id": 4,
           "usesSponsorPage": true
         },
         {
@@ -68,7 +72,8 @@
           "name": "Connect",
           "headerImage": "/img/culture-posters.png",
           "advertiseImage": "",
-          "companyId": "",
+          "sponsorId": 7,
+          "companyId": 5,
           "documents": {
             "links": [
               {
