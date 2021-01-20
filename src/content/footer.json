@@ -49,6 +49,16 @@
           "link": "/footer-content/"
         }
       ]
+    },
+    {
+      "title": "Help",
+      "display": true,
+      "items": [
+        {
+          "title": "FAQ",
+          "link": "https://fncreative-adams.netlify.app/faq"
+        }
+      ]
     }
   ],
   "logo": {
