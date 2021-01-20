@@ -19,6 +19,11 @@
       "title": "Resources",
       "link": "/a/sponsor/1-resources",
       "display": true
+    },
+    {
+      "title": "Explore",
+      "link": "/a/sponsor/2-explore",
+      "display": true
     }
   ]
 }
