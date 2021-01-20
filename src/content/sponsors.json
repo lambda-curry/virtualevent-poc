@@ -53,6 +53,15 @@
           "usesSponsorPage": true
         },
         {
+          "advertiseImage": "",
+          "name": "Explore ",
+          "id": 4,
+          "marquee": "RESOURCES - EXPLORE",
+          "sponsorColor": "#87c9e1",
+          "logo": "/img/exploreasset-16.png",
+          "usesSponsorPage": true
+        },
+        {
           "marquee": "RESOURCES - CONNECT",
           "sponsorColor": "#e9953e",
           "logo": "/img/exploreasset-17.png",
@@ -76,16 +85,7 @@
               }
             ]
           },
-          "id": 3,
-          "usesSponsorPage": true
-        },
-        {
-          "advertiseImage": "",
-          "name": "Explore ",
-          "id": 4,
-          "marquee": "RESOURCES - EXPLORE",
-          "sponsorColor": "#87c9e1",
-          "logo": "/img/exploreasset-16.png",
+          "id": 5,
           "usesSponsorPage": true
         }
       ]
