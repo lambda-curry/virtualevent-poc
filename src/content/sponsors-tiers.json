@@ -20,48 +20,6 @@
       },
       "eventTemplate": "",
       "expoHallSize": "large"
-    },
-    {
-      "id": "tier-DHcI3dWGk",
-      "name": "Silver",
-      "widgetTitle": "Silver Sponsors",
-      "badge": "/img/silver.png",
-      "lobby": {
-        "lobbyTemplate": "big-images",
-        "display": true
-      },
-      "sponsorPage": {
-        "sponsorTemplate": "big-header",
-        "widgets": {
-          "disqus": true,
-          "liveEvent": true,
-          "schedule": true,
-          "banner": true
-        }
-      },
-      "eventTemplate": "",
-      "expoHallSize": "medium"
-    },
-    {
-      "id": "tier-U_wEwGX8a",
-      "name": "Bronze",
-      "widgetTitle": "Bronze Sponsors",
-      "badge": "/img/bronze.png",
-      "lobby": {
-        "lobbyTemplate": "small-images",
-        "display": true
-      },
-      "sponsorPage": {
-        "sponsorTemplate": "small-header",
-        "widgets": {
-          "disqus": true,
-          "liveEvent": true,
-          "schedule": true,
-          "banner": true
-        }
-      },
-      "eventTemplate": "",
-      "expoHallSize": "small"
     }
   ],
   "imageHeader": "/img/hr_1.jpg",
