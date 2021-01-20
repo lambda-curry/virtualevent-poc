@@ -18,9 +18,9 @@
           "headerImage": "/img/team_1080passet-2.png",
           "socialNetworks": [],
           "advertiseImage": "/img/securityasset-24.png",
-          "sponsorId": 2,
+          "sponsorId": "",
           "title": "",
-          "companyId": 1,
+          "companyId": "",
           "documents": {
             "slides": [
               {
@@ -59,9 +59,10 @@
           "sponsorColor": "#87c9e1",
           "logo": "/img/exploreasset-16.png",
           "name": "Explore ",
+          "headerImage": "/img/36270137_186490865323774_7608838266296467456_n.png",
           "advertiseImage": "",
-          "sponsorId": 6,
-          "companyId": 4,
+          "sponsorId": "",
+          "companyId": "",
           "id": 4,
           "usesSponsorPage": true
         },
@@ -72,8 +73,8 @@
           "name": "Connect",
           "headerImage": "/img/culture-posters.png",
           "advertiseImage": "",
-          "sponsorId": 7,
-          "companyId": 5,
+          "sponsorId": "",
+          "companyId": "",
           "documents": {
             "links": [
               {
