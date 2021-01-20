@@ -57,7 +57,7 @@
           "sponsorColor": "#87c9e1",
           "logo": "/img/exploreasset-16.png",
           "name": "Explore",
-          "headerImage": "",
+          "headerImage": "/img/fnvirtual-platform-template-wip_nho-13.png",
           "advertiseImage": "",
           "documents": {
             "slides": [
@@ -87,11 +87,12 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "name": "Connect",
-          "logo": "/img/exploreasset-17.png",
-          "sponsorColor": "#e9953e",
           "marquee": "RESOURCES - CONNECT",
+          "sponsorColor": "#e9953e",
+          "logo": "/img/exploreasset-17.png",
+          "name": "Connect",
+          "advertiseImage": "",
+          "companyId": "",
           "documents": {
             "links": [
               {
@@ -108,8 +109,8 @@
               }
             ]
           },
-          "usesSponsorPage": true,
-          "id": 3
+          "id": 3,
+          "usesSponsorPage": true
         }
       ]
     }
