@@ -76,17 +76,7 @@
     },
     {
       "section": "event",
-      "columnAds": [
-        {
-          "image": "/img/yoco-sponsor-ads-medium-flow.png",
-          "button": {
-            "text": "Learn more",
-            "link": "/virtual-booth/"
-          },
-          "column": "left",
-          "id": null
-        }
-      ]
+      "columnAds": []
     }
   ]
 }
