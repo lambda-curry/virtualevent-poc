@@ -7,7 +7,7 @@
           "image": "/img/fbmicro_assets_button-security.png",
           "button": {
             "link": "https://www.facebook.com/careers/",
-            "text": "Security"
+            "text": ""
           },
           "column": "left"
         },
@@ -15,7 +15,7 @@
           "image": "/img/fbmicro_assets_button-legal.png",
           "button": {
             "link": "https://www.facebook.com/careers/",
-            "text": "Legal"
+            "text": ""
           },
           "column": "left"
         },
@@ -23,7 +23,7 @@
           "image": "/img/fbmicro_assets_button-hr.png",
           "button": {
             "link": "https://www.facebook.com/careers/",
-            "text": "Human Resources"
+            "text": ""
           },
           "column": "left"
         },
