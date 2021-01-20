@@ -77,6 +77,11 @@
         "icon": "fa-twitter",
         "link": "/footer-content/",
         "display": true
+      },
+      {
+        "icon": "fa-linkedin",
+        "link": "/footer-content/",
+        "display": true
       }
     ]
   },
