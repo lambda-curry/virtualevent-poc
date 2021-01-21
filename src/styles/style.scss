@@ -1,8 +1,17 @@
 @import './colors.scss';
 
+@font-face {
+  font-family: 'FreigSanLFProBoo';
+  src: url('/fonts/FreigSanLFProBoo.otf') format('otf');
+}
+@font-face {
+  font-family: 'FreigSanLFProMed';
+  src: url('/fonts/FreigSanLFProMed.otf') format('otf');
+}
+
 html,
 body {
-  font-family: 'Nunito Sans', sans-serif !important;
+  font-family: 'FreigSanLFProBoo', sans-serif !important;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -60,7 +69,7 @@ div.content {
 div.title {
   font-weight: 700 !important;
   color: #333333 !important;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'FreigSanLFProBoo', sans-serif;
 }
 
 h2 {
@@ -229,7 +238,7 @@ h2 {
 
 .outerWrapper___lGus2 {
   .widget-title {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'FreigSanLFProBoo', sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 33px;
@@ -239,7 +248,7 @@ h2 {
 }
 
 .widget-title {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'FreigSanLFProBoo', sans-serif;
   font-size: 18px !important;
 }
 
