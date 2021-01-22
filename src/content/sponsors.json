@@ -103,7 +103,7 @@
           "sponsorId": 7,
           "id": 4,
           "companyId": 4,
-          "externalLink": "https://yoco.fnvirtual.app/virtual-booth/ "
+          "externalLink": "/virtual-booth/"
         },
         {
           "advertiseImage": "",
@@ -112,7 +112,7 @@
           "id": 29,
           "companyId": 29,
           "sponsorId": 31,
-          "externalLink": "https://yoco.fnvirtual.app/virtual-booth/ "
+          "externalLink": "/virtual-booth/"
         },
         {
           "advertiseImage": "",
@@ -121,7 +121,7 @@
           "id": 30,
           "sponsorId": 32,
           "companyId": 30,
-          "externalLink": "https://yoco.fnvirtual.app/virtual-booth/ "
+          "externalLink": "/virtual-booth/"
         }
       ]
     },
@@ -173,7 +173,7 @@
         },
         {
           "marquee": "",
-          "externalLink": "https://yoco.fnvirtual.app/virtual-booth/ ",
+          "externalLink": "/virtual-booth/",
           "logo": "/img/logo-middle-tier-gamehub.png",
           "name": "GameHub",
           "intro": "",
@@ -184,7 +184,7 @@
         },
         {
           "marquee": "",
-          "externalLink": "https://yoco.fnvirtual.app/virtual-booth/ ",
+          "externalLink": "/virtual-booth/",
           "logo": "/img/logo-middle-tier-hyved.png",
           "name": "Hyved",
           "intro": "",
@@ -198,7 +198,7 @@
           "name": "Flightpath",
           "id": 4,
           "logo": "/img/Logo-Top-Tier-Flightpath.png",
-          "externalLink": "https://yoco.fnvirtual.app/virtual-booth/ "
+          "externalLink": "/virtual-booth/"
         }
       ]
     },
