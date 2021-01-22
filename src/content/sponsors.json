@@ -46,13 +46,48 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "name": "Curtain Convention Center Services ",
+          "marquee": "Curtin works for you daily – Everyday is our show day. Curtin settles for nothing less – Excellence is our standard. Curtin helps you look your best – Exhibiting is our forté.",
+          "sponsorColor": "#10069F",
           "logo": "/img/logo-middle-tier-curtin.png",
-          "id": 31,
+          "name": "Curtain Convention Center Services ",
+          "intro": "Curtin Convention honors the simple philosophy of providing the highest level of customized event services for our valued clients.\n\nCurtin’s decades of experience in the event and expo industry provides us with the solid foundation of logistical expertise to exceed our partners’ expectations in providing first class service for trade shows, corporate events and special events.",
+          "headerImage": "/img/fnvirtual-yoco-curtin-headerimage.png",
+          "headerImageMobile": "/img/fnvirtual-yoco-curtin-headerimage-mobile.png",
+          "advertiseImage": "",
           "sponsorId": 33,
+          "title": "EXHIBITING EXCELLENCE EVERYDAY—CURTIN CONVENTION & EXPOSITION SERVICES, INC.",
           "companyId": 31,
-          "usesSponsorPage": false
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "LinkedIN",
+                "order": 1,
+                "link": "https://www.linkedin.com/company/curtin-convention-exposition-services-inc/"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/curtinconvention",
+                "order": 2,
+                "name": "Facebook"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https:www.instagram.com/curtinconvention/",
+                "order": 3,
+                "name": "Instagram"
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "link": "http://www.curtinconvention.com/blog",
+              "image": "/img/fnvirtual-yoco-curtin-space1.png"
+            }
+          ],
+          "id": 31,
+          "email": "info@curtinconvention.com",
+          "usesSponsorPage": true
         },
         {
           "marquee": "We Design. We Build. We Print. We Install.",
