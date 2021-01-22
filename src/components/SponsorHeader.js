@@ -34,20 +34,27 @@ const SponsorHeader = ({ sponsor, tier, scanBadge }) => {
 
   return (
     <section className={styles.hero}>
-      <div className={`${isMobile ? styles.heroSponsorMobile : styles.heroSponsor}`}
-        style={{
-          backgroundImage: `url(${isMobile ? sponsor.headerImageMobile : sponsor.headerImage})`,
-          paddingBottom: `${tier.sponsorPage.sponsorTemplate === 'big-header' ? '27.77%' : '13.88%'}`,
-          maxHeight: `${tier.sponsorPage.sponsorTemplate === 'big-header' ? '400px' : '200px'}`
-        }}>
+      <div className={`${isMobile ? styles.heroSponsorMobile : styles.heroSponsor}`}>
+        {!sponsor.headerVideo &&
+          <div className={styles.heroSponsorImageBg} style={{
+            backgroundImage: `url(${isMobile ? sponsor.headerImageMobile : sponsor.headerImage})`,
+            paddingBottom: `${isMobile ? '82.77%' : tier.sponsorPage.sponsorTemplate === 'big-header' ? '27.77%' : '18.88%'}`,
+            maxHeight: `${tier.sponsorPage.sponsorTemplate === 'big-header' ? '400px' : '200px'}`
+          }}></div>
+        }
         {sponsor.headerVideo &&
-          <div ref={videoParentRef} dangerouslySetInnerHTML={{
-            __html: `
+          <div ref={videoParentRef}
+            style={{
+              paddingBottom: `${tier.sponsorPage.sponsorTemplate === 'big-header' ? '27.77%' : '18.88%'}`,
+              maxHeight: `${tier.sponsorPage.sponsorTemplate === 'big-header' ? '400px' : '200px'}`
+            }}
+            dangerouslySetInnerHTML={{
+              __html: `
               <video class=${styles.heroVideo} preload="auto" autoPlay loop muted playsinline>
                 <source src=${sponsor.headerVideo} type="video/mp4" />
               </video>
               `
-          }} />
+            }} />
         }
         <div className={`${styles.heroBody}`}>
           <div className={`${styles.heroSponsorContainer}`}>
