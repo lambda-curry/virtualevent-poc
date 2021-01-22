@@ -104,6 +104,11 @@
           align-items: center;
         }
       }
+
+      .link-profile {
+        margin: 15px 50px;
+        display: block;
+      }
     }
   }
 
@@ -140,6 +145,7 @@
 
       .modal-card-body {
         overflow: none;
+
         .modal-card-picture {
           .picture {
             .image-upload {
