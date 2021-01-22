@@ -102,7 +102,8 @@
           "logo": "/img/logo-middle-tier-fntech.png",
           "sponsorId": 7,
           "id": 4,
-          "companyId": 4
+          "companyId": 4,
+          "externalLink": "https://yoco.fnvirtual.app/virtual-booth/ "
         },
         {
           "advertiseImage": "",
@@ -110,7 +111,8 @@
           "logo": "/img/logo-middle-tier-seeingeye.png",
           "id": 29,
           "companyId": 29,
-          "sponsorId": 31
+          "sponsorId": 31,
+          "externalLink": "https://yoco.fnvirtual.app/virtual-booth/ "
         },
         {
           "advertiseImage": "",
@@ -118,7 +120,8 @@
           "logo": "/img/logo-middle-tier-hughston.png",
           "id": 30,
           "sponsorId": 32,
-          "companyId": 30
+          "companyId": 30,
+          "externalLink": "https://yoco.fnvirtual.app/virtual-booth/ "
         }
       ]
     },
@@ -169,36 +172,33 @@
           "usesSponsorPage": true
         },
         {
-          "id": 5,
-          "name": "GameHub",
-          "title": "",
-          "intro": "",
           "marquee": "",
+          "externalLink": "https://yoco.fnvirtual.app/virtual-booth/ ",
           "logo": "/img/logo-middle-tier-gamehub.png",
+          "name": "GameHub",
+          "intro": "",
+          "headerVideo": "",
           "headerImage": "",
-          "headerVideo": ""
+          "title": "",
+          "id": 5
         },
         {
-          "id": 6,
-          "name": "Hyved",
-          "title": "",
-          "intro": "",
           "marquee": "",
+          "externalLink": "https://yoco.fnvirtual.app/virtual-booth/ ",
           "logo": "/img/logo-middle-tier-hyved.png",
+          "name": "Hyved",
+          "intro": "",
+          "headerVideo": "",
           "headerImage": "",
-          "headerVideo": ""
+          "title": "",
+          "id": 6
         },
         {
           "advertiseImage": "",
           "name": "Flightpath",
           "id": 4,
-          "logo": "/img/Logo-Top-Tier-Flightpath.png"
-        },
-        {
-          "advertiseImage": "",
-          "name": "Apex",
-          "id": 5,
-          "logo": "/img/Logo-Top-Tier-Apex.png"
+          "logo": "/img/Logo-Top-Tier-Flightpath.png",
+          "externalLink": "https://yoco.fnvirtual.app/virtual-booth/ "
         }
       ]
     },
@@ -251,37 +251,22 @@
           "advertiseImage": "",
           "name": "Topographic",
           "logo": "/img/logo-lower-tier-topographic.png",
-          "id": 21
+          "id": 21,
+          "externalLink": "https://yoco.fnvirtual.app/virtual-booth/ "
         },
         {
           "advertiseImage": "",
           "name": "OpenTech",
           "logo": "/img/logo-top-tier-opentech.png",
-          "id": 22
-        },
-        {
-          "advertiseImage": "",
-          "name": "Sycamore",
-          "logo": "/img/Logo-Top-Tier-Sycamore.png",
-          "id": 23
-        },
-        {
-          "advertiseImage": "",
-          "name": "Link",
-          "logo": "/img/logo-lower-tier-link.png",
-          "id": 24
+          "id": 22,
+          "externalLink": "https://yoco.fnvirtual.app/virtual-booth/ "
         },
         {
           "advertiseImage": "",
           "name": "Tilted",
           "id": 26,
-          "logo": "/img/logo-lower-tier-tilted.png"
-        },
-        {
-          "advertiseImage": "",
-          "name": "Triad",
-          "id": 27,
-          "logo": "/img/logo-lower-tier-triad.png"
+          "logo": "/img/logo-lower-tier-tilted.png",
+          "externalLink": "https://yoco.fnvirtual.app/virtual-booth/ "
         }
       ]
     }
