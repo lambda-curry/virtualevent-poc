@@ -83,6 +83,32 @@
                 "order": 1,
                 "link": "https:www.curtinconvention.com"
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/covid-19-curtin-offerings.pdf",
+                "name": "COVID-19 Curtin Offerings",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/safetyprotocol.pdf",
+                "name": "Curtin Safety Protocol",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/postcard.testimonials.pdf",
+                "name": "Curtin Testimonials",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/references.insert.1.29.pdf",
+                "name": "Curtin References",
+                "order": 4
+              }
             ]
           },
           "columnAds": [
