@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
+import { navigate } from 'gatsby'
 import AvatarEditor from 'react-avatar-editor'
 
 import styles from '../styles/profile.module.scss'
@@ -153,45 +154,46 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
             </div>
           </div>
           {!fromFullProfile &&
-          <div className={styles.modalCardForm}>
-            <div className={styles.title}>Profile Info</div>
-            <div className={styles.form}>
-              <div className={`columns is-mobile ${styles.inputRow}`}>
-                <div className='column is-one-quarter'>First Name</div>
-                <div className='column is-two-thirds'>
-                  <input
-                    className={`${styles.input} ${styles.isMedium}`}
-                    type="text"
-                    placeholder="First Name"
-                    onChange={e => setFirstName(e.target.value)}
-                    value={firstName} />
+            <div className={styles.modalCardForm}>
+              <div className={styles.title}>Profile Info</div>
+              <div className={styles.form}>
+                <div className={`columns is-mobile ${styles.inputRow}`}>
+                  <div className='column is-one-quarter'>First Name</div>
+                  <div className='column is-two-thirds'>
+                    <input
+                      className={`${styles.input} ${styles.isMedium}`}
+                      type="text"
+                      placeholder="First Name"
+                      onChange={e => setFirstName(e.target.value)}
+                      value={firstName} />
+                  </div>
+                </div>
+                <div className={`columns is-mobile ${styles.inputRow}`}>
+                  <div className='column is-one-quarter'>Last Name</div>
+                  <div className='column is-two-thirds'>
+                    <input
+                      className={`${styles.input} ${styles.isMedium}`}
+                      type="text"
+                      placeholder="Last Name"
+                      onChange={e => setLastName(e.target.value)}
+                      value={lastName} />
+                  </div>
+                </div>
+                <div className={`columns is-mobile ${styles.inputRow}`}>
+                  <div className='column is-one-quarter'>Company</div>
+                  <div className='column is-two-thirds'>
+                    <input
+                      className={`${styles.input} ${styles.isMedium}`}
+                      type="text"
+                      placeholder="Company"
+                      onChange={e => setCompany(e.target.value)}
+                      value={company}
+                    />
+                  </div>
                 </div>
               </div>
-              <div className={`columns is-mobile ${styles.inputRow}`}>
-                <div className='column is-one-quarter'>Last Name</div>
-                <div className='column is-two-thirds'>
-                  <input
-                    className={`${styles.input} ${styles.isMedium}`}
-                    type="text"
-                    placeholder="Last Name"
-                    onChange={e => setLastName(e.target.value)}
-                    value={lastName} />
-                </div>
-              </div>
-              <div className={`columns is-mobile ${styles.inputRow}`}>
-                <div className='column is-one-quarter'>Company</div>
-                <div className='column is-two-thirds'>
-                  <input
-                    className={`${styles.input} ${styles.isMedium}`}
-                    type="text"
-                    placeholder="Company"
-                    onChange={e => setCompany(e.target.value)}
-                    value={company}
-                  />
-                </div>
-              </div>
+              <a className={styles.linkProfile} onClick={() => navigate('/a/profile')}>Go to Full Profile</a>
             </div>
-          </div>
           }
         </section>
         <footer className={`${styles.modalCardFoot}`}>
