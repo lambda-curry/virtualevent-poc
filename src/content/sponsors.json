@@ -61,21 +61,27 @@
             "links": [
               {
                 "class_name": "PresentationLink",
-                "name": "LinkedIN",
-                "order": 1,
+                "name": "Curtin's LinkedIN",
+                "order": 2,
                 "link": "https://www.linkedin.com/company/curtin-convention-exposition-services-inc/"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.facebook.com/curtinconvention",
-                "order": 2,
-                "name": "Facebook"
+                "order": 3,
+                "name": "Curtin's Facebook"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https:www.instagram.com/curtinconvention/",
-                "order": 3,
-                "name": "Instagram"
+                "order": 4,
+                "name": "Curtin's Instagram"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Curtin's Website ",
+                "order": 1,
+                "link": "https:www.curtinconvention.com"
               }
             ]
           },
