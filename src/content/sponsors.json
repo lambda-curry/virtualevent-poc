@@ -252,21 +252,21 @@
           "name": "Topographic",
           "logo": "/img/logo-lower-tier-topographic.png",
           "id": 21,
-          "externalLink": "https://yoco.fnvirtual.app/virtual-booth/ "
+          "externalLink": "/virtual-booth/"
         },
         {
           "advertiseImage": "",
           "name": "OpenTech",
           "logo": "/img/logo-top-tier-opentech.png",
           "id": 22,
-          "externalLink": "https://yoco.fnvirtual.app/virtual-booth/ "
+          "externalLink": "/virtual-booth/"
         },
         {
           "advertiseImage": "",
           "name": "Tilted",
           "id": 26,
           "logo": "/img/logo-lower-tier-tilted.png",
-          "externalLink": "https://yoco.fnvirtual.app/virtual-booth/ "
+          "externalLink": "/virtual-booth/"
         }
       ]
     }
