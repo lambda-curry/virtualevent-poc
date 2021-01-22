@@ -43,13 +43,18 @@ const SponsorHeader = ({ sponsor, tier, scanBadge }) => {
           }}></div>
         }
         {sponsor.headerVideo &&
-          <div ref={videoParentRef} dangerouslySetInnerHTML={{
-            __html: `
+          <div ref={videoParentRef}
+            style={{
+              paddingBottom: `${tier.sponsorPage.sponsorTemplate === 'big-header' ? '27.77%' : '18.88%'}`,
+              maxHeight: `${tier.sponsorPage.sponsorTemplate === 'big-header' ? '400px' : '200px'}`
+            }}
+            dangerouslySetInnerHTML={{
+              __html: `
               <video class=${styles.heroVideo} preload="auto" autoPlay loop muted playsinline>
                 <source src=${sponsor.headerVideo} type="video/mp4" />
               </video>
               `
-          }} />
+            }} />
         }
         <div className={`${styles.heroBody}`}>
           <div className={`${styles.heroSponsorContainer}`}>
