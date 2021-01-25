@@ -9,13 +9,14 @@
       ],
       "sponsors": [
         {
-          "marquee": "Give people the power to build community and bring the world closer together.",
+          "marquee": "Give people the power to build community and bring the world closer together",
           "externalLink": "",
           "sponsorColor": "#344854",
           "logo": "/img/fbmicro_sp-resource-lobby.png",
           "name": "Resources",
-          "intro": "## Here you will find all the tools and vidoes you need to begin your Facebook journey!\n\n## [Training Videos](https://about.fb.com/company-info/)\n\n## [Onboarding Documents](https://about.fb.com/company-info/)\n\n\n\n![Facebook Life](/img/fbmicro_sp-resources-collage.png \"Facebook Life\")\n\n\n\nFacebook is proud to be an Equal Employment Opportunity and Affirmative Action employer. We do not discriminate based upon race, religion, color, national origin, sex (including pregnancy, childbirth, reproductive health decisions, or related medical conditions), sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with a disability, genetic information, political views or activity, or other applicable legally protected characteristics. You may view our Equal Employment Opportunity notice here. We also consider qualified applicants with criminal histories, consistent with applicable federal, state and local law. You may view Facebook's Pay Transparency Policy, Equal Employment Opportunity is the Law notice, and Notice to Applicants for Employment and Employees by clicking on their corresponding links. Additionally, Facebook participates in the E-Verify program in certain locations, as required by law.\n\n> ##### Facebook is committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures. If you need assistance or an accommodation due to a disability, you may contact us at [accommodations-ext@fb.com.](mailto:accommodations-ext@fb.com)",
+          "intro": "## Resources\n\n### Here you will find all the tools and vidoes you need to begin your Facebook journey!\n\n\n\n## [Training Videos](https://about.fb.com/company-info/)\n\n## [Onboarding Documents](https://about.fb.com/company-info/)\n\n\n\n![Facebook Life](/img/fbmicro_sp-resources-collage.png \"Facebook Life\")\n\n\n\nFacebook is proud to be an Equal Employment Opportunity and Affirmative Action employer. We do not discriminate based upon race, religion, color, national origin, sex (including pregnancy, childbirth, reproductive health decisions, or related medical conditions), sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with a disability, genetic information, political views or activity, or other applicable legally protected characteristics. You may view our Equal Employment Opportunity notice here. We also consider qualified applicants with criminal histories, consistent with applicable federal, state and local law. You may view Facebook's Pay Transparency Policy, Equal Employment Opportunity is the Law notice, and Notice to Applicants for Employment and Employees by clicking on their corresponding links. Additionally, Facebook participates in the E-Verify program in certain locations, as required by law.\n\n> ##### Facebook is committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures. If you need assistance or an accommodation due to a disability, you may contact us at [accommodations-ext@fb.com.](mailto:accommodations-ext@fb.com)",
           "headerImage": "/img/fbmicro_sp-header-1440x400.png",
+          "headerImageMobile": "/img/fbmicro_sp-header-768x250.png",
           "socialNetworks": [],
           "advertiseImage": "",
           "sponsorId": 2,
@@ -55,19 +56,21 @@
           "columnAds": [
             {
               "image": "/img/fbmicro_ad-tile-3-safety.png",
-              "text": ""
+              "text": "",
+              "link": "https://www.facebook.com/careers/"
             }
           ],
           "id": 1,
           "usesSponsorPage": true
         },
         {
-          "marquee": "Give people the power to build community and bring the world closer together.",
+          "marquee": "Give people the power to build community and bring the world closer together",
           "sponsorColor": "#008acb",
           "logo": "/img/fbmicro_sp-explore-lobby.png",
           "name": "Explore",
           "intro": "# Your Facebook Life\n\n#### Explore Facebook Campus in Menlo Park, as well as what the beautiful Bay Area has to offer.\n\n## [Campus Maps](https://about.fb.com/company-info/)\n\n## [Worldwide Campuses](https://about.fb.com/company-info/)\n\n## [Bay Area Highlights](https://about.fb.com/company-info/)\n\n## [Facebook Culture](https://www.facebook.com/careers/facebook-life/)\n\n\n\n![Facebook Campus](/img/fbmicro_sp-explore-campus-ii.png \"Facebook Campus\")\n\n#### **Why Facebook?**\n\n#### Facebook is defined by our unique culture – one that rewards impact. We encourage our people to be bold and solve the problems they care most about. Facebook employees work in small teams that move fast and iterate to develop new products. Together, we help others build stronger communities—and we're just getting started.",
           "headerImage": "/img/fbmicro_sp-explore-campus.png",
+          "headerImageMobile": "/img/fbmicro_sp-2-campus-header-mobile.png",
           "advertiseImage": "",
           "documents": {
             "links": [
@@ -93,7 +96,8 @@
           },
           "columnAds": [
             {
-              "image": "/img/fbmicro_connect-call-out.png"
+              "image": "/img/fbmicro_connect-call-out.png",
+              "link": "https://www.facebook.com/careers/facebook-life/"
             }
           ],
           "id": 2
