@@ -28,6 +28,10 @@
           "column": "left"
         },
         {
+          "image": "/img/fbmicro_events-sq-call-out.png",
+          "column": "left"
+        },
+        {
           "image": "/img/fbmicro_ad-tile-2-diversity.png",
           "button": {
             "text": "",
@@ -71,6 +75,10 @@
         {
           "image": "/img/fbmicro_ad-tile-people-1.png",
           "column": "left"
+        },
+        {
+          "image": "/img/fbmicro_groups-sq-call-out.png",
+          "column": "right"
         }
       ]
     },
