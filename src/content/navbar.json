@@ -15,7 +15,8 @@
     {
       "title": "My Schedule",
       "link": "/a/my-schedule",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     },
     {
       "title": "About the event",
