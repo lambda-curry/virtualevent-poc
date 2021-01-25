@@ -4,7 +4,7 @@
       "title": "Lobby",
       "link": "/a/",
       "display": true,
-      "requiresAuth": false
+      "requiresAuth": true
     },
     {
       "title": "Schedule",
@@ -16,19 +16,19 @@
       "title": "Bootcamp",
       "link": "/bootcamp",
       "display": true,
-      "requiresAuth": false
+      "requiresAuth": true
     },
     {
       "title": "Resources",
       "link": "/a/sponsor/1-resources",
       "display": true,
-      "requiresAuth": false
+      "requiresAuth": true
     },
     {
       "title": "Explore",
       "link": "/a/sponsor/2-explore",
       "display": true,
-      "requiresAuth": false
+      "requiresAuth": true
     },
     {
       "title": "FAQ",
