@@ -1,10 +1,8 @@
 ---
 templateKey: custom-page
 requiresAuth: false
-title: " "
+title: Bootcamp – Day 3 – March, 3, 9:00AM
 ---
-# Bootcamp – Day 3 – March, 3, 9:00AM
-
 ![group](/img/fbmicro_bo-people-stones.png "group")
 
 #### Please have all your systems  and devices calibrated before the session begins. Contact your team lead for assistance. **<br>**
@@ -12,18 +10,18 @@ title: " "
 ### **[Bootcamp for Coding](https://about.fb.com/company-info/)**
 
 * #### Lorem ipsum dolor sit amet
-* #### Consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+* #### Consectetur adipiscing elit, sed do eiusmod tempor incididunt
 * #### Ut labore et dolore magna aliqua. Ut enim ad minim veniam
 
 ### **[Bootcamp for Marketing](https://about.fb.com/company-info/)**
 
-* #### Quis nostrud exercitation 
+* #### Quis nostrud exercitation
 * #### Ullamco laboris nisi ut aliquip ex ea commodo consequat
 * #### Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
 
 ### **[Bootcamp for Security](https://about.fb.com/company-info/)**
 
-* #### Adipiscing elit 
+* #### Adipiscing elit
 * #### Ut enim ad minim veniam
 
 ### **[Bootcamp for Sales](https://about.fb.com/company-info/)**
