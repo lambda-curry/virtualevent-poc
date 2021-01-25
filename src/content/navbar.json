@@ -12,7 +12,7 @@
     },
     {
       "title": "Bootcamps",
-      "link": "/breakout-group-stones",
+      "link": "/a/breakout-group-stones",
       "display": true
     },
     {
@@ -23,6 +23,11 @@
     {
       "title": "Explore",
       "link": "/a/sponsor/2-explore",
+      "display": true
+    },
+    {
+      "title": "FAQ",
+      "link": "/a/faq",
       "display": true
     }
   ]
