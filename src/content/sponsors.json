@@ -96,6 +96,40 @@
           "usesSponsorPage": true
         }
       ]
+    },
+    {
+      "tier": [
+        {
+          "value": "tier-PWS0TN02Z",
+          "label": "Silver"
+        }
+      ],
+      "sponsors": [
+        {
+          "advertiseImage": "",
+          "name": "Security",
+          "sponsorId": 4,
+          "externalLink": "https://www.facebook.com/careers/areas-of-work/security/?p[teams][0]=Security&teams[0]=Security",
+          "logo": "/img/sponsor-logos_silver-01.png",
+          "id": 4
+        },
+        {
+          "advertiseImage": "",
+          "name": "Legal",
+          "id": 5,
+          "externalLink": "https://www.facebook.com/careers/areas-of-work/legal/?p[teams][0]=Legal%2C%20Finance%2C%20Facilities%20%26%20Admin&teams[0]=Legal%2C%20Finance%2C%20Facilities%20%26%20Admin",
+          "logo": "/img/sponsor-logos_silver-02.png",
+          "sponsorId": 4
+        },
+        {
+          "advertiseImage": "",
+          "name": "HR",
+          "id": 6,
+          "logo": "/img/sponsor-logos_silver-03.png",
+          "externalLink": "https://www.facebook.com/careers/areas-of-work/people/?p[teams][0]=People%20%26%20Recruiting&teams[0]=People%20%26%20Recruiting",
+          "sponsorId": 6
+        }
+      ]
     }
   ]
 }
