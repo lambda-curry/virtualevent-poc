@@ -3,12 +3,14 @@
     {
       "title": "Lobby",
       "link": "/a/",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     },
     {
       "title": "Schedule",
       "link": "/a/schedule",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     },
     {
       "title": "My Schedule",
@@ -18,27 +20,32 @@
     {
       "title": "About the event",
       "link": "/about-event",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     },
     {
       "title": "Who we are",
       "link": "/who-we-are",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     },
     {
       "title": "Past events",
       "link": "/past-events",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     },
     {
       "title": "Contact",
       "link": "/contact",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     },
     {
       "title": "Help",
       "link": "/help",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     }
   ]
 }
