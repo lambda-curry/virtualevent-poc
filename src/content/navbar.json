@@ -20,13 +20,13 @@
     },
     {
       "title": "Resources",
-      "link": "/sponsor/1-resources",
+      "link": "/a/sponsor/1-resources",
       "display": true,
       "requiresAuth": false
     },
     {
       "title": "Explore",
-      "link": "/sponsor/2-explore",
+      "link": "/a/sponsor/2-explore",
       "display": true,
       "requiresAuth": false
     },
