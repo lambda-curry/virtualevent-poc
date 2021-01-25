@@ -4,21 +4,28 @@
       "section": "lobby",
       "columnAds": [
         {
-          "image": "/img/community_1asset-8.png",
+          "image": "/img/lobby_ad1asset-18.png",
           "button": {
-            "link": "https://www.facebook.com/community/",
-            "text": "Facebook Community"
+            "link": "https://about.fb.com/news/2020/12/data-for-good-new-tools-to-help-small-businesses-and-communities-during-the-covid-19-pandemic/",
+            "text": ""
           },
           "column": "right"
         },
         {
-          "image": "/img/community_2asset-9.png",
+          "image": "/img/lobby_ad2asset-19.png",
           "button": {
-            "text": "Learn more",
-            "link": "https://www.facebook.com/community/"
+            "text": "",
+            "link": "https://about.fb.com/"
           },
-          "column": "right",
+          "column": "left",
           "id": null
+        },
+        {
+          "image": "/img/lobby_ad3asset-21.png",
+          "button": {
+            "link": "https://www.facebook.com/careers/areas-of-work/security/?p[teams][0]=Security&teams[0]=Security"
+          },
+          "column": "left"
         }
       ]
     },
