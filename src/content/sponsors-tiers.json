@@ -24,7 +24,7 @@
     {
       "badge": "",
       "lobby": {
-        "lobbyTemplate": "small-images",
+        "lobbyTemplate": "big-images",
         "display": true
       },
       "sponsorPage": {
