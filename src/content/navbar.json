@@ -1,34 +1,39 @@
 {
-  "items": [
-    {
+  "items": [{
       "title": "Lobby",
       "link": "/a/",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     },
     {
       "title": "Schedule",
       "link": "/a/schedule",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     },
     {
       "title": "Resources",
       "link": "/a/sponsors",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     },
     {
       "title": "FAQ",
+      "link": "/faq",
       "display": true,
-      "link": "/faq"
+      "requiresAuth": false
     },
     {
       "title": "Contact",
       "link": "/contact",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     },
     {
       "title": "Bootcamps",
       "link": "/bootcamp-sessions",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     }
   ]
 }
