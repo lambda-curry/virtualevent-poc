@@ -9,12 +9,12 @@
       ],
       "sponsors": [
         {
-          "marquee": "Resources",
+          "marquee": "Give people the power to build community and bring the world closer together.",
           "externalLink": "",
           "sponsorColor": "#344854",
           "logo": "/img/fbmicro_sp-resource-lobby.png",
           "name": "Resources",
-          "intro": "# **Give people the power to build community and bring the world closer together.**\n\n#### Here you will find all the tools and vidoes you need to begin your Facebook journey!\n\n## [Training Videos](https://about.fb.com/company-info/)\n\n## [Onboarding Documents](https://about.fb.com/company-info/)\n\n![Facebook Life](/img/fbmicro_sp-resources-collage.png \"Facebook Life\")\n\n\n\nFacebook is proud to be an Equal Employment Opportunity and Affirmative Action employer. We do not discriminate based upon race, religion, color, national origin, sex (including pregnancy, childbirth, reproductive health decisions, or related medical conditions), sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with a disability, genetic information, political views or activity, or other applicable legally protected characteristics. You may view our Equal Employment Opportunity notice here. We also consider qualified applicants with criminal histories, consistent with applicable federal, state and local law. You may view Facebook's Pay Transparency Policy, Equal Employment Opportunity is the Law notice, and Notice to Applicants for Employment and Employees by clicking on their corresponding links. Additionally, Facebook participates in the E-Verify program in certain locations, as required by law.\n\n> ###### Facebook is committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures. If you need assistance or an accommodation due to a disability, you may contact us at [accommodations-ext@fb.com.](mailto:accommodations-ext@fb.com)",
+          "intro": "## Here you will find all the tools and vidoes you need to begin your Facebook journey!\n\n## [Training Videos](https://about.fb.com/company-info/)\n\n## [Onboarding Documents](https://about.fb.com/company-info/)\n\n\n\n![Facebook Life](/img/fbmicro_sp-resources-collage.png \"Facebook Life\")\n\n\n\nFacebook is proud to be an Equal Employment Opportunity and Affirmative Action employer. We do not discriminate based upon race, religion, color, national origin, sex (including pregnancy, childbirth, reproductive health decisions, or related medical conditions), sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with a disability, genetic information, political views or activity, or other applicable legally protected characteristics. You may view our Equal Employment Opportunity notice here. We also consider qualified applicants with criminal histories, consistent with applicable federal, state and local law. You may view Facebook's Pay Transparency Policy, Equal Employment Opportunity is the Law notice, and Notice to Applicants for Employment and Employees by clicking on their corresponding links. Additionally, Facebook participates in the E-Verify program in certain locations, as required by law.\n\n> ##### Facebook is committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures. If you need assistance or an accommodation due to a disability, you may contact us at [accommodations-ext@fb.com.](mailto:accommodations-ext@fb.com)",
           "headerImage": "/img/fbmicro_sp-header-1440x400.png",
           "socialNetworks": [],
           "advertiseImage": "",
@@ -62,7 +62,7 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "explore",
+          "marquee": "Give people the power to build community and bring the world closer together.",
           "sponsorColor": "#008acb",
           "logo": "/img/fbmicro_sp-explore-lobby.png",
           "name": "Explore",
@@ -91,6 +91,11 @@
               }
             ]
           },
+          "columnAds": [
+            {
+              "image": "/img/fbmicro_connect-call-out.png"
+            }
+          ],
           "id": 2
         }
       ]
