@@ -1,62 +1,34 @@
 {
   "columns": [
     {
-      "title": "The Event",
+      "title": "New Hire Orientation",
       "display": true,
       "items": [
         {
-          "title": "All Projects",
-          "link": "/footer-content/"
+          "title": "Schedule",
+          "link": "/a/schedule"
         },
         {
-          "title": "Host a project",
-          "link": "/footer-content/"
+          "title": "Bootcamp",
+          "link": "/bootcamp/sessions"
         },
         {
-          "title": "Services",
-          "link": "/footer-content/"
+          "title": "Resources",
+          "link": "a/sponsors"
         }
       ]
     },
     {
-      "title": "The Vision",
+      "title": "Facebook",
       "display": true,
       "items": [
         {
           "title": "About",
-          "link": "/footer-content/"
+          "link": "https://about.fb.com/"
         },
         {
-          "title": "Supporters",
-          "link": "/footer-content/"
-        }
-      ]
-    },
-    {
-      "title": "Membership",
-      "display": false,
-      "items": [
-        {
-          "title": "Corporate members",
-          "link": "/footer-content/"
-        },
-        {
-          "title": "Join us",
-          "link": "/footer-content/"
-        },
-        {
-          "title": "Services",
-          "link": "/footer-content/"
-        }
-      ]
-    },
-    {
-      "title": "Help",
-      "display": true,
-      "items": [
-        {
-          "title": "FAQ",
-          "link": "https://fncreative-adams.netlify.app/faq"
+          "title": "Careers",
+          "link": "https://www.facebook.com/careers/"
         }
       ]
     }
@@ -81,6 +53,16 @@
       {
         "icon": "fa-linkedin",
         "link": "/footer-content/",
+        "display": true
+      },
+      {
+        "icon": "fa-youtube",
+        "link": "https://www.youtube.com/facebook",
+        "display": true
+      },
+      {
+        "icon": "fa-instagram",
+        "link": "https://www.instagram.com/facebook/",
         "display": true
       }
     ]
