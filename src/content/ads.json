@@ -29,7 +29,17 @@
         },
         {
           "image": "/img/fbmicro_events-sq-call-out.png",
-          "column": "left"
+          "column": "left",
+          "button": {
+            "link": "https://about.fb.com/company-info/"
+          }
+        },
+        {
+          "image": "/img/fbmicro_groups-sq-call-out.png",
+          "column": "right",
+          "button": {
+            "link": "https://about.fb.com/company-info/"
+          }
         },
         {
           "image": "/img/fbmicro_ad-tile-2-diversity.png",
@@ -71,14 +81,6 @@
         {
           "image": "/img/fbmicro_ad-tile-people-5.png",
           "column": "left"
-        },
-        {
-          "image": "/img/fbmicro_ad-tile-people-1.png",
-          "column": "left"
-        },
-        {
-          "image": "/img/fbmicro_groups-sq-call-out.png",
-          "column": "right"
         }
       ]
     },
