@@ -1,5 +1,6 @@
 ---
 templateKey: custom-page
+requiresAuth: false
 title: " "
 ---
 # Bootcamp – Day 3 – March, 3, 9:00AM

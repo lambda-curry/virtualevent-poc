@@ -1,5 +1,6 @@
 ---
 templateKey: custom-page
+requiresAuth: false
 title: Frequently Asked Questions About FNvirtual Event Platform
 ---
 **Q. What internet browsers do you suggest for your platform?**

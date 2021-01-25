@@ -3,32 +3,38 @@
     {
       "title": "Lobby",
       "link": "/a/",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     },
     {
       "title": "Schedule",
       "link": "/a/schedule",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     },
     {
       "title": "Bootcamp",
       "link": "/bootcamp",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     },
     {
       "title": "Resources",
       "link": "/a/sponsor/1-resources",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     },
     {
       "title": "Explore",
       "link": "/a/sponsor/2-explore",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     },
     {
       "title": "FAQ",
       "link": "/faq",
-      "display": true
+      "display": true,
+      "requiresAuth": false
     }
   ]
 }
