@@ -64,7 +64,7 @@
           "sponsorId": 35,
           "companyId": 33,
           "columnAds": [],
-          "id": 2,
+          "id": 1,
           "usesSponsorPage": true
         },
         {
@@ -92,7 +92,7 @@
               }
             ]
           },
-          "id": 3,
+          "id": 1,
           "usesSponsorPage": true
         }
       ]
