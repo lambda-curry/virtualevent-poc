@@ -61,7 +61,7 @@
           "name": "Explore ",
           "headerImage": "/img/learn_conference-table-01.jpg",
           "advertiseImage": "",
-          "sponsorId": "",
+          "sponsorId": 35,
           "companyId": "",
           "columnAds": [],
           "id": 4,
@@ -74,7 +74,7 @@
           "name": "Connect",
           "headerImage": "/img/culture-posters.png",
           "advertiseImage": "",
-          "sponsorId": "",
+          "sponsorId": 36,
           "companyId": "",
           "documents": {
             "links": [
