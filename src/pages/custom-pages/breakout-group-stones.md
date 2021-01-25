@@ -1,12 +1,14 @@
 ---
 templateKey: custom-page
-title: Day 3 – Bootcamps
+title: Bootcamps – Day 3, March 3, 9:00AM
 ---
+
+
 ![bar](/img/fbmicro_bo-bar-blue-stones.png "bar")
 
 ![group](/img/fbmicro_bo-people-stones.png "group")
 
-#### **<br>**
+Please have all your systems  and devices calibrated before the session begins. Contact your team lead for assistance. **<br>**
 
 ### **[Bootcamp for Coding](https://about.fb.com/company-info/)**
 
