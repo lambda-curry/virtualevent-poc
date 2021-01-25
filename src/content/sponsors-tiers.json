@@ -20,9 +20,27 @@
       },
       "eventTemplate": "",
       "expoHallSize": "large"
+    },
+    {
+      "badge": "",
+      "lobby": {
+        "lobbyTemplate": "small-images",
+        "display": true
+      },
+      "sponsorPage": {
+        "sponsorTemplate": "small-header",
+        "disqus": false,
+        "liveEvent": false,
+        "schedule": false,
+        "banner": false
+      },
+      "expoHallSize": "medium",
+      "eventTemplate": "small-images",
+      "id": "tier-PWS0TN02Z",
+      "name": "Silver"
     }
   ],
-  "imageHeader": "/img/hr_1.jpg",
+  "imageHeader": "",
   "lobbyButton": {
     "text": "",
     "link": ""
