@@ -63,7 +63,7 @@
           "advertiseImage": "",
           "name": "Explore",
           "id": 2,
-          "intro": "# **Your Facebook Life**\n\n![campus](/img/fbmicro_sp-2-campus.png \"campus\")\n\n## [City of Menlo Park](https://www.menlopark.org)\n\n## [Culture](https://www.facebook.com/careers/facebook-life/)",
+          "intro": "# **Your Facebook Life**\n\n\n\n## [City of Menlo Park](https://www.menlopark.org)\n\n## [Culture](https://www.facebook.com/careers/facebook-life/)",
           "marquee": "explore",
           "logo": "/img/fbmicro_sp-explore-logo.png",
           "documents": {
@@ -87,7 +87,8 @@
                 "order": 2
               }
             ]
-          }
+          },
+          "headerImage": "/img/fbmicro_sp-explore-campus.png"
         }
       ]
     }
