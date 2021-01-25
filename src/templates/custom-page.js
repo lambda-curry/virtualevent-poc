@@ -1,7 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import { Redirect } from '@reach/router'
 import Layout from '../components/Layout'
+import { connect } from 'react-redux'
 import Content, { HTMLContent } from '../components/Content'
 
 export const CustomPageTemplate = ({
@@ -25,8 +27,12 @@ CustomPageTemplate.propTypes = {
   contentComponent: PropTypes.func,
 }
 
-const CustomPage = ({ data }) => {
+const CustomPage = ({ data, isLoggedUser }) => {
   const { frontmatter, html } = data.markdownRemark
+
+  if (frontmatter.requiresAuth && !isLoggedUser) {
+    return <Redirect to='/' noThrow />
+  }
 
   return (
     <Layout>
@@ -45,9 +51,14 @@ CustomPage.propTypes = {
       frontmatter: PropTypes.object,
     }),
   }),
+  isLoggedUser: PropTypes.bool,
 }
 
-export default CustomPage
+const mapStateToProps = ({ loggedUserState }) => ({  
+  isLoggedUser: loggedUserState.isLoggedUser,
+})
+
+export default connect(mapStateToProps, null)(CustomPage)
 
 export const customPageQuery = graphql`
   query CustomPageTemplate($id: String!) {    
@@ -55,6 +66,7 @@ export const customPageQuery = graphql`
       html
       frontmatter {        
         title
+        requiresAuth
       }
     }
   }
