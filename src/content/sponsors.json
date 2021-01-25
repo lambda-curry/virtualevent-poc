@@ -62,9 +62,9 @@
           "headerImage": "/img/learn_conference-table-01.jpg",
           "advertiseImage": "",
           "sponsorId": 35,
-          "companyId": "",
+          "companyId": 33,
           "columnAds": [],
-          "id": 4,
+          "id": 33,
           "usesSponsorPage": true
         },
         {
@@ -75,7 +75,7 @@
           "headerImage": "/img/culture-posters.png",
           "advertiseImage": "",
           "sponsorId": 36,
-          "companyId": "",
+          "companyId": 34,
           "documents": {
             "links": [
               {
@@ -92,7 +92,7 @@
               }
             ]
           },
-          "id": 5,
+          "id": 34,
           "usesSponsorPage": true
         }
       ]
