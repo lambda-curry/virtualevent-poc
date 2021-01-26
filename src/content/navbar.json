@@ -1,5 +1,6 @@
 {
-  "items": [{
+  "items": [
+    {
       "title": "Lobby",
       "link": "/a/",
       "display": true,
@@ -15,7 +16,7 @@
       "title": "Resources",
       "link": "/a/sponsors",
       "display": true,
-      "requiresAuth": false
+      "requiresAuth": true
     },
     {
       "title": "FAQ",
