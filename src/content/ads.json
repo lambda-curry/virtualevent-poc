@@ -33,6 +33,13 @@
             "link": "https://about.fb.com/"
           },
           "column": "right"
+        },
+        {
+          "button": {
+            "link": "https://portal.facebook.com/products/portal-mini/"
+          },
+          "column": "right",
+          "image": "/img/lobby_adasset-23.png"
         }
       ]
     },
