@@ -25,12 +25,6 @@
       "requiresAuth": false
     },
     {
-      "title": "Contact",
-      "link": "/contact",
-      "display": true,
-      "requiresAuth": false
-    },
-    {
       "title": "Bootcamps",
       "link": "/bootcamp-sessions",
       "display": true,
