@@ -7,38 +7,70 @@ requiresAuth: false
 
 # **Facebook Design**
 
-### 3432 Members
+##### 3432 Members
 
-Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+Bootcamp Descripton Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
 
 ### [JOIN GROUP](https://about.fb.com/company-info/)
+
+<br>
+
+<br>
+
+<br>
+
+<br>
 
 ![](/img/bootcamp_1asset-2.png)
 
 # **Design Tools**
 
-### 432 Members
+##### 432 Members
 
-Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+Bootcamp Descripton Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
 
 ### [JOIN GROUP](https://about.fb.com/company-info/)
+
+<br>
+
+<br>
+
+<br>
+
+<br>
 
 ![](/img/bootcamp_1asset-3.png)
 
 # **Product Designers of n00b Class 9.15.2020**
 
-### 45 Members
+##### 45 Members
 
-Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+Bootcamp Descripton Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
 
 ### [JOIN GROUP](https://about.fb.com/company-info/)
 
-![](/img/bootcamp_1asset-4.png)
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+![](/img/bootcamp_1asset-8.png)
 
 # **Seattle Design People**
 
-### 612 Members
+##### 612 Members
 
-Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+Bootcamp Descripton Lorem ipsum dolor sit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
 
 ### [JOIN GROUP](https://about.fb.com/company-info/)
+
+<br>
+
+<br>
+
+<br>
+
+<br>
