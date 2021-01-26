@@ -51,11 +51,18 @@
               }
             ]
           },
+          "columnAds": [
+            {
+              "image": "/img/securityasset-24.png",
+              "link": "https://about.fb.com/actions/protecting-privacy-and-security/?utm_source=ads&utm_medium=GS&utm_content=489243000413&utm_campaign=2021Q1"
+            }
+          ],
           "id": 1,
           "usesSponsorPage": true
         },
         {
           "marquee": "Explore Facebook life and the Bay Area",
+          "externalLink": "https://about.fb.com/actions/protecting-privacy-and-security/?utm_source=ads&utm_medium=GS&utm_content=489243000413&utm_campaign=2021Q1",
           "sponsorColor": "#f7941d",
           "logo": "/img/lobby_adasset-26.png",
           "name": "Explore ",
@@ -65,7 +72,12 @@
           "sponsorId": 35,
           "title": "",
           "companyId": 33,
-          "columnAds": [],
+          "columnAds": [
+            {
+              "image": "/img/lobby_adasset-23.png",
+              "link": "https://portal.facebook.com/products/portal-mini/"
+            }
+          ],
           "id": 33,
           "usesSponsorPage": true
         },
@@ -96,6 +108,12 @@
               }
             ]
           },
+          "columnAds": [
+            {
+              "image": "/img/happyhour_2.jpg",
+              "link": "https://fncreative-adams.netlify.app/a/event/1446"
+            }
+          ],
           "id": 34,
           "usesSponsorPage": true
         }
