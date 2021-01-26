@@ -26,6 +26,13 @@
             "link": "https://www.facebook.com/careers/areas-of-work/security/?p[teams][0]=Security&teams[0]=Security"
           },
           "column": "left"
+        },
+        {
+          "image": "/img/lobby_ad3asset-22.png",
+          "button": {
+            "link": "https://about.fb.com/"
+          },
+          "column": "right"
         }
       ]
     },
