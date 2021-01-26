@@ -74,9 +74,11 @@
           "sponsorColor": "#e9953e",
           "logo": "/img/exploreasset-17.png",
           "name": "Connect",
+          "intro": "Test",
           "headerImage": "/img/culture-posters.png",
           "advertiseImage": "",
           "sponsorId": 36,
+          "title": "Connect",
           "companyId": 34,
           "documents": {
             "links": [
