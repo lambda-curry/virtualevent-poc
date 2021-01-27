@@ -21,6 +21,24 @@
       },
       "eventTemplate": "",
       "expoHallSize": "large"
+    },
+    {
+      "badge": "",
+      "lobby": {
+        "lobbyTemplate": "big-images",
+        "display": true
+      },
+      "sponsorPage": {
+        "sponsorTemplate": "big-header",
+        "disqus": false,
+        "liveEvent": false,
+        "schedule": false,
+        "banner": false
+      },
+      "expoHallSize": "large",
+      "eventTemplate": "small-images",
+      "id": "tier-ynzbf-O-2",
+      "name": "Resource Secondary"
     }
   ],
   "imageHeader": "/img/fbmicro_sp-header-1440x600.png",
