@@ -30,7 +30,7 @@
         "display": true
       },
       "sponsorPage": {
-        "sponsorTemplate": "small-header",
+        "sponsorTemplate": "big-header",
         "disqus": false,
         "liveEvent": false,
         "schedule": false,
