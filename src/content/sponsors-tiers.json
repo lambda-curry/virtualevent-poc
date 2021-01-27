@@ -34,7 +34,7 @@
         "schedule": false,
         "banner": false
       },
-      "expoHallSize": "medium",
+      "expoHallSize": null,
       "eventTemplate": "small-images",
       "id": "tier-PWS0TN02Z",
       "name": "Silver"
