@@ -17,7 +17,8 @@
           "schedule": true,
           "banner": true
         },
-        "banner": false
+        "banner": true,
+        "schedule": true
       },
       "eventTemplate": "",
       "expoHallSize": "large"
