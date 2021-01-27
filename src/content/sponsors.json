@@ -112,6 +112,37 @@
           "logo": "/img/fbmicro_sp-logo-connect.png"
         }
       ]
+    },
+    {
+      "tier": [
+        {
+          "value": "tier-cYGYq5-ae",
+          "label": "Carousel Test"
+        }
+      ],
+      "sponsors": [
+        {
+          "advertiseImage": "",
+          "name": "Security",
+          "id": 4,
+          "externalLink": "https://about.fb.com/actions/protecting-privacy-and-security/",
+          "logo": "/img/fbmicro_sp-logo-security.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Legal",
+          "id": 5,
+          "logo": "/img/fbmicro_sp-logo-legal.png",
+          "externalLink": "https://www.facebook.com/careers/areas-of-work/legal/?p[teams][0]=Legal%2C%20Finance%2C%20Facilities%20%26%20Admin&teams[0]=Legal%2C%20Finance%2C%20Facilities%20%26%20Admin"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Human Resources",
+          "id": 6,
+          "logo": "/img/fbmicro_sp-logo-hr.png",
+          "externalLink": "https://www.facebook.com/careers/areas-of-work/people/?p[teams][0]=People%20%26%20Recruiting&teams[0]=People%20%26%20Recruiting"
+        }
+      ]
     }
   ]
 }
