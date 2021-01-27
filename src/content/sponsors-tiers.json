@@ -16,7 +16,8 @@
           "liveEvent": true,
           "schedule": true,
           "banner": true
-        }
+        },
+        "banner": false
       },
       "eventTemplate": "",
       "expoHallSize": "large"
