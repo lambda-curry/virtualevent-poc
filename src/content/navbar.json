@@ -27,7 +27,7 @@
     {
       "title": "Explore",
       "link": "/a/sponsor/2-explore",
-      "display": true,
+      "display": false,
       "requiresAuth": true
     },
     {
