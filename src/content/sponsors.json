@@ -162,7 +162,8 @@
           },
           "columnAds": [
             {
-              "image": "/img/dvc-logo-968x968.png"
+              "image": "/img/dvc-logo-968x968.png",
+              "link": "https://dandreavisual.com/contact-us/ "
             }
           ],
           "id": 28,
