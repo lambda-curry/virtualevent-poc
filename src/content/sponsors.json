@@ -144,19 +144,25 @@
                 "class_name": "PresentationLink",
                 "link": "https://www.instagram.com/dandreavisual/",
                 "name": "D'Andrea Visual Instagram ",
-                "order": 1
+                "order": 2
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.linkedin.com/company/3645194/admin/ ",
-                "order": 2,
+                "order": 3,
                 "name": "D'Andrea Visual Linkedin "
               },
               {
                 "class_name": "PresentationLink",
                 "name": "D'Andrea Visual Facebook ",
-                "order": 3,
+                "order": 4,
                 "link": "https://www.facebook.com/DAndrea-Visual-Communications-661492027204833/ "
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://dandreavisual.com/contact-us/ ",
+                "order": 1,
+                "name": "D'Andrea Visual Website "
               }
             ]
           },
