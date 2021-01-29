@@ -119,7 +119,7 @@
           ],
           "id": 31,
           "email": "info@curtinconvention.com",
-          "usesSponsorPage": false
+          "usesSponsorPage": true
         },
         {
           "marquee": "We Design. We Build. We Print. We Install.",
@@ -161,7 +161,7 @@
           ],
           "id": 28,
           "email": "davids@dandreavisual.com",
-          "usesSponsorPage": false
+          "usesSponsorPage": true
         },
         {
           "advertiseImage": "",
