@@ -61,6 +61,12 @@
             "links": [
               {
                 "class_name": "PresentationLink",
+                "name": "Curtin's Website ",
+                "order": 1,
+                "link": "https:www.curtinconvention.com"
+              },
+              {
+                "class_name": "PresentationLink",
                 "name": "Curtin's LinkedIN",
                 "order": 2,
                 "link": "https://www.linkedin.com/company/curtin-convention-exposition-services-inc/"
@@ -76,12 +82,6 @@
                 "link": "https:www.instagram.com/curtinconvention/",
                 "order": 4,
                 "name": "Curtin's Instagram"
-              },
-              {
-                "class_name": "PresentationLink",
-                "name": "Curtin's Website ",
-                "order": 1,
-                "link": "https:www.curtinconvention.com"
               }
             ],
             "slides": [
