@@ -82,6 +82,12 @@
                 "link": "https:www.instagram.com/curtinconvention/",
                 "order": 4,
                 "name": "Curtin's Instagram"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Curtin's Blog",
+                "order": 5,
+                "link": "http://www.curtinconvention.com/blog"
               }
             ],
             "slides": [
@@ -113,7 +119,7 @@
           },
           "columnAds": [
             {
-              "link": "www.curtinconvention.com",
+              "link": "http://www.curtinconvention.com",
               "image": "/img/fnvirtual-yoco-curtin-space1.png"
             }
           ],
