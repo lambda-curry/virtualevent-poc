@@ -70,7 +70,7 @@ export const SponsorPageTemplate = class extends React.Component {
     }
   }
 
-  onBadgeScan = () => {    
+  onBadgeScan = () => {
     const { sponsor: { sponsorId } } = this.state;
     this.props.scanBadge(sponsorId);
   }
@@ -102,8 +102,8 @@ export const SponsorPageTemplate = class extends React.Component {
             {sponsor.sideImage &&
               <div className="columns mx-0 mt-0 mb-6">
                 <div className={`column is-half px-5 py-0 ${styles.introHalf}`}>
-                  <h1>{sponsor.title}</h1>
-                  <span dangerouslySetInnerHTML={{ __html: parsedIntro }} />
+                  {sponsor.title && <h1>{sponsor.title}</h1>}
+                  {sponsor.intro && <span dangerouslySetInnerHTML={{ __html: parsedIntro }} />}
                 </div>
                 <div className="column is-half px-0 py-0">
                   <img src={sponsor.sideImage} className={styles.sideImage} />
@@ -114,8 +114,8 @@ export const SponsorPageTemplate = class extends React.Component {
               <div className="column is-three-quarters px-5 py-0">
                 {!sponsor.sideImage &&
                   <div className={styles.sponsorIntro}>
-                    <h1>{sponsor.title}</h1>
-                    <span dangerouslySetInnerHTML={{ __html: parsedIntro }} />
+                    {sponsor.title && <h1>{sponsor.title}</h1>}
+                    {sponsor.intro && <span dangerouslySetInnerHTML={{ __html: parsedIntro }} />}
                   </div>
                 }
                 {liveEvent &&
