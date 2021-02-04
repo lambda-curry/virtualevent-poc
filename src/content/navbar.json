@@ -16,7 +16,7 @@
       "title": "Sponsors ",
       "link": "/a/sponsors/",
       "display": true,
-      "requiresAuth": false
+      "requiresAuth": true
     },
     {
       "title": "About the event",
