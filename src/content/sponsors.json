@@ -230,7 +230,7 @@
           ],
           "id": 4,
           "email": "info@fntech.com",
-          "usesSponsorPage": true
+          "usesSponsorPage": false
         },
         {
           "advertiseImage": "",
