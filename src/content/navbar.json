@@ -52,7 +52,7 @@
       "title": "My Profile",
       "link": "/a/profile",
       "display": true,
-      "requiresAuth": false
+      "requiresAuth": true
     }
   ]
 }
