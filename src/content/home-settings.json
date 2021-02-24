@@ -1,1 +1,19 @@
-{"centerColumn":{"schedule":{"showAllEvents":false},"speakers":{"showTodaySpeakers":false,"showFeatureSpeakers":true}},"homeHero":{"title":"Infinity Festival","subTitle":"VIRTUAL IN 2020","image":"/img/1_hollywood-sign_grayscale_v2a_edit.png","copy":""},"schedule_default_image":"https://fntech.sfo2.cdn.digitaloceanspaces.com/22/IF2020-Default-SessionThumbnail.png"}
+{
+  "centerColumn": {
+    "schedule": {
+      "showAllEvents": false
+    },
+    "speakers": {
+      "showTodaySpeakers": false,
+      "showFeatureSpeakers": true
+    }
+  },
+  "homeHero": {
+    "title": "Infinity Festival",
+    "subTitle": "VIRTUAL IN 2020",
+    "image": "/img/1_hollywood-sign_grayscale_v2a_edit.png",
+    "copy": ""
+  },
+  "schedule_default_image": "https://fntech.sfo2.cdn.digitaloceanspaces.com/22/IF2020-Default-SessionThumbnail.png",
+  "live_now_featured_event_id": 1373
+}
