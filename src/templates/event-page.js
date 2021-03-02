@@ -20,13 +20,12 @@ import SponsorComponent from '../components/SponsorComponent'
 import NoTalkComponent from '../components/NoTalkComponent'
 import HeroComponent from '../components/HeroComponent'
 import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
+import AttendanceTrackerComponent from '../components/AttendanceTrackerComponent'
 
 import { getEventById } from '../actions/event-actions'
 import { getDisqusSSO } from '../actions/user-actions'
 
-import { PHASES } from '../utils/phasesUtils';
-
-import { AttendanceTracker } from "openstack-uicore-foundation/lib/components";
+import { PHASES } from '../utils/phasesUtils'
 
 export const EventPageTemplate = class extends React.Component {
 
@@ -80,7 +79,7 @@ export const EventPageTemplate = class extends React.Component {
   }
 
   render() {
-    const { loggedUser, event, eventId, eventsPhases, user, loading } = this.props;
+    const { event, eventId, eventsPhases, user, loading } = this.props;
     const { firstRender } = this.state;
     let { summit } = SummitObject;
     let currentEvent = eventsPhases.find(e => e.id == eventId);
@@ -95,7 +94,7 @@ export const EventPageTemplate = class extends React.Component {
     } else {
       if (event) {
         return (
-          <>
+          <React.Fragment>
             {/* <EventHeroComponent /> */}
             <section className="section px-0 py-0" style={{ marginBottom: event.class_name !== 'Presentation' || eventStarted < PHASES.DURING || !event.streaming_url ? '-3rem' : '' }}>
               <div className="columns is-gapless">
@@ -135,7 +134,6 @@ export const EventPageTemplate = class extends React.Component {
                       </div>
                     }
                     <ScheduleLiteComponent
-                      accessToken={loggedUser.accessToken}
                       onEventClick={(ev) => this.onEventChange(ev)}
                       onViewAllEventsClick={() => this.onViewAllEventsClick()}
                       landscape={true}
@@ -149,13 +147,13 @@ export const EventPageTemplate = class extends React.Component {
                   </div>
                   <div className="column px-0 py-0 is-one-quarter is-full-mobile">
                     <DocumentsComponent event={event} />
-                    <SimpleChatWidgetComponent accessToken={loggedUser.accessToken} />
+                    <SimpleChatWidgetComponent />
                     <AdvertiseComponent section='event' column="right" />
                   </div>
                 </div>
               </section>
             }
-          </>
+          </React.Fragment>
         )
       } else {
         return <HeroComponent title="Loading event" />
@@ -166,7 +164,6 @@ export const EventPageTemplate = class extends React.Component {
 
 const EventPage = (
   {
-    loggedUser,
     location,
     loading,
     event,
@@ -181,17 +178,13 @@ const EventPage = (
   return (
     <Layout location={location}>
       {event && event.id &&
-        <AttendanceTracker
+        <AttendanceTrackerComponent
           key={`att-tracker-${event.id}`}
           sourceId={event.id}
           sourceName="EVENT"
-          summitId={SummitObject.summit.id}
-          apiBaseUrl={envVariables.SUMMIT_API_BASE_URL}
-          accessToken={loggedUser.accessToken}
         />
       }
       <EventPageTemplate
-        loggedUser={loggedUser}
         event={event}
         loading={loading}
         eventId={eventId}
@@ -205,7 +198,6 @@ const EventPage = (
 }
 
 EventPage.propTypes = {
-  loggedUser: PropTypes.object,
   loading: PropTypes.bool,
   event: PropTypes.object,
   eventId: PropTypes.string,
@@ -216,7 +208,6 @@ EventPage.propTypes = {
 }
 
 EventPageTemplate.propTypes = {
-  loggedUser: PropTypes.object,
   event: PropTypes.object,
   loading: PropTypes.bool,
   eventId: PropTypes.string,
@@ -228,14 +219,12 @@ EventPageTemplate.propTypes = {
 
 const mapStateToProps = (
   {
-    loggedUserState,
     eventState,
     userState,
     clockState,
   }
 ) => ({
 
-  loggedUser: loggedUserState,
   loading: eventState.loading,
   event: eventState.event,
   eventsPhases: clockState.events_phases,

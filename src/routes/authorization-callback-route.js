@@ -33,19 +33,9 @@ class AuthorizationCallbackRoute extends AbstractAuthorizationCallbackRoute {
 
   _redirect2Error(error) {
     return (
-      <div render={props => {
-        return <Redirect to={`/error?error=${error}`} />
-      }} />
+      <div render={props => { return <Redirect to={`/error?error=${error}`} /> }} />
     )
   }
 }
 
-const mapStateToProps = ({ loggedUserState }) => ({
-  accessToken: loggedUserState.accessToken,
-  idToken: loggedUserState.idToken,
-  sessionState: loggedUserState.sessionState,
-})
-
-export default connect(mapStateToProps, {
-  getIDPProfile
-})(AuthorizationCallbackRoute)
+export default connect(null, { getIDPProfile })(AuthorizationCallbackRoute)
