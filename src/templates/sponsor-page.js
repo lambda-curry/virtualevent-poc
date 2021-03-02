@@ -6,6 +6,7 @@ import { connect } from 'react-redux'
 import { getAccessToken } from 'openstack-uicore-foundation/lib/methods';
 
 import SponsorHeader from '../components/SponsorHeader'
+import AttendanceTrackerComponent from '../components/AttendanceTrackerComponent'
 import LiveEventWidgetComponent from '../components/LiveEventWidgetComponent'
 import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
 import AdvertiseSponsorsComponent from '../components/AdvertiseSponsorsComponent'
@@ -23,7 +24,6 @@ import Layout from '../components/Layout'
 
 import styles from '../styles/sponsor-page.module.scss'
 import envVariables from "../utils/envVariables";
-import { AttendanceTracker } from "openstack-uicore-foundation/lib/components";
 
 import { scanBadge } from '../actions/user-actions'
 import { getDisqusSSO } from '../actions/user-actions'
@@ -80,7 +80,7 @@ export const SponsorPageTemplate = class extends React.Component {
   }
 
   render() {
-    const { loggedUser, user } = this.props;
+    const { user } = this.props;
     const { sponsor, tier, notFound, parsedIntro } = this.state;
     let { summit } = SummitObject;
 
@@ -89,13 +89,10 @@ export const SponsorPageTemplate = class extends React.Component {
     } else {
       const { disqus, liveEvent, schedule, banner } = tier.sponsorPage.widgets || {};
       return (
-        <>
-          <AttendanceTracker
+        <React.Fragment>
+          <AttendanceTrackerComponent
             sourceName="SPONSOR"
             sourceId={sponsor.sponsorId}
-            summitId={summit.id}
-            apiBaseUrl={envVariables.SUMMIT_API_BASE_URL}
-            accessToken={loggedUser.accessToken}
           />
           <SponsorHeader sponsor={sponsor} tier={tier} scanBadge={() => this.onBadgeScan()} />
           <section className={`section px-0 ${tier.sponsorPage.sponsorTemplate === 'big-header' ? 'pt-5' : 'pt-0'} pb-0`}>
@@ -127,7 +124,6 @@ export const SponsorPageTemplate = class extends React.Component {
                 }
                 {schedule &&
                   <ScheduleLiteComponent
-                    accessToken={loggedUser.accessToken}
                     onEventClick={(ev) => this.onEventChange(ev)}
                     onViewAllEventsClick={() => this.onViewAllEventsClick()}
                     landscape={false}
@@ -162,7 +158,7 @@ export const SponsorPageTemplate = class extends React.Component {
               </div>
             </div>
           </section>
-        </>
+        </React.Fragment>
       )
     }
   }
@@ -171,51 +167,39 @@ export const SponsorPageTemplate = class extends React.Component {
 const SponsorPage = (
   {
     location,
-    loggedUser,
-    sponsorId,
     user,
     getDisqusSSO,
-    scanBadge
+    scanBadge,
+    sponsorId
   }
 ) => {
 
   return (
     <Layout location={location}>
       <SponsorPageTemplate
-        loggedUser={loggedUser}
-        sponsorId={sponsorId}
         user={user}
         getDisqusSSO={getDisqusSSO}
         scanBadge={scanBadge}
+        sponsorId={sponsorId}
       />
     </Layout>
   )
 }
 
 SponsorPage.propTypes = {
-  loggedUser: PropTypes.object,
-  sponsorId: PropTypes.string,
   user: PropTypes.object,
   getDisqusSSO: PropTypes.func,
   scanBadge: PropTypes.func,
+  sponsorId: PropTypes.string,
 }
 
 SponsorPageTemplate.propTypes = {
-  loggedUser: PropTypes.object,
-  sponsorId: PropTypes.string,
   user: PropTypes.object,
   getDisqusSSO: PropTypes.func,
   scanBadge: PropTypes.func,
+  sponsorId: PropTypes.string,
 }
 
-const mapStateToProps = (
-  {
-    loggedUserState,
-    userState,
-  }
-) => ({
-  loggedUser: loggedUserState,
-  user: userState,
-})
+const mapStateToProps = ({ userState }) => ({ user: userState })
 
 export default connect(mapStateToProps, { scanBadge, getDisqusSSO })(SponsorPage);

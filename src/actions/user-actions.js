@@ -1,4 +1,5 @@
 import {
+  getAccessToken,
   getRequest,
   postRequest,
   deleteRequest,
@@ -28,9 +29,9 @@ export const SCAN_BADGE                = 'SCAN_BADGE';
 export const SCAN_BADGE_SUCCESS        = 'SCAN_BADGE_SUCCESS';
 export const SCAN_BADGE_ERROR          = 'SCAN_BADGE_ERROR';
 
-export const getDisqusSSO = () => (dispatch, getState) => {
+export const getDisqusSSO = () => async (dispatch, getState) => {
 
-  let { loggedUserState: { accessToken } } = getState();
+  const accessToken = await getAccessToken();
 
   return getRequest(
     null,
@@ -44,9 +45,9 @@ export const getDisqusSSO = () => (dispatch, getState) => {
   });
 }
 
-export const getRocketChatSSO = () => (dispatch, getState) => {
+export const getRocketChatSSO = () => async (dispatch, getState) => {
 
-  let { loggedUserState: { accessToken } } = getState();
+  const accessToken = await getAccessToken();
 
   dispatch(startLoading());
 
@@ -64,9 +65,9 @@ export const getRocketChatSSO = () => (dispatch, getState) => {
   });
 }
 
-export const getUserProfile = () => (dispatch, getState) => {
+export const getUserProfile = () => async (dispatch, getState) => {
 
-  let { loggedUserState: { accessToken } } = getState();
+  const accessToken = await getAccessToken();
 
   if (!accessToken) return Promise.resolve();
 
@@ -83,9 +84,9 @@ export const getUserProfile = () => (dispatch, getState) => {
   )(params)(dispatch).then(() => dispatch(dispatch(createAction(STOP_LOADING_PROFILE))));
 }
 
-export const scanBadge = (sponsorId) => (dispatch, getState) => {
+export const scanBadge = (sponsorId) => async (dispatch, getState) => {
 
-  let { loggedUserState: { accessToken } } = getState();
+  const accessToken = await getAccessToken();
   
   if (!accessToken) return Promise.resolve();
   
@@ -113,9 +114,9 @@ export const scanBadge = (sponsorId) => (dispatch, getState) => {
     });
 }
 
-export const getIDPProfile = () => (dispatch, getState) => {
+export const getIDPProfile = () => async (dispatch, getState) => {
 
-  let { loggedUserState: { accessToken } } = getState();
+  const accessToken = await getAccessToken();
 
   if (!accessToken) return Promise.resolve();
 
@@ -132,8 +133,9 @@ export const getIDPProfile = () => (dispatch, getState) => {
     .then(() => dispatch(dispatch(createAction(STOP_LOADING_IDP_PROFILE))));
 }
 
-export const updateProfilePicture = (pic) => (dispatch, getState) => {
-  let { loggedUserState: { accessToken } } = getState();
+export const updateProfilePicture = (pic) => async (dispatch, getState) => {
+
+  const accessToken = await getAccessToken();
 
   if (!accessToken) return Promise.resolve();
 
@@ -152,8 +154,9 @@ export const updateProfilePicture = (pic) => (dispatch, getState) => {
     .then(() => dispatch(getIDPProfile()));
 }
 
-export const updateProfile = (profile) => (dispatch, getState) => {
-  let { loggedUserState: { accessToken } } = getState();
+export const updateProfile = (profile) => async (dispatch, getState) => {
+  
+  const accessToken = await getAccessToken();
 
   if (!accessToken) return Promise.resolve();
 

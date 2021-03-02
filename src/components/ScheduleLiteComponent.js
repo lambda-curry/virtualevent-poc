@@ -1,18 +1,21 @@
 import React from "react"
 import { Helmet } from 'react-helmet'
 
-import envVariables from '../utils/envVariables';
-import expiredToken from '../utils/expiredToken';
-
 // these two libraries are client-side only
 import ScheduleLite from 'schedule-lite';
 import 'schedule-lite/index.css';
 
+import withAccessToken from "../utils/withAccessToken";
+
+import envVariables from '../utils/envVariables';
+import expiredToken from '../utils/expiredToken';
 import HomeSettings from '../content/home-settings.json'
 
-const ScheduleComponent = class extends React.Component {
+const ScheduleLiteComponent = class extends React.Component {
 
   render() {
+
+    const { className } = this.props;
 
     const scheduleProps = {
       apiBaseUrl: envVariables.SUMMIT_API_BASE_URL,
@@ -27,8 +30,6 @@ const ScheduleComponent = class extends React.Component {
       defaultImage: HomeSettings.schedule_default_image
     };
 
-    const { className } = this.props;
-
     return (
       <React.Fragment>
         <Helmet>
@@ -42,4 +43,4 @@ const ScheduleComponent = class extends React.Component {
   }
 }
 
-export default ScheduleComponent
+export default withAccessToken(ScheduleLiteComponent)

@@ -2,23 +2,19 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { navigate } from 'gatsby'
 import { connect } from 'react-redux'
+
 import Layout from '../components/Layout'
-import ScheduleLiteComponent from "../components/ScheduleLiteComponent";
+import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
+import AttendanceTrackerComponent from '../components/AttendanceTrackerComponent'
 
 import { PHASES } from '../utils/phasesUtils'
 
-import SummitObject from '../content/summit.json'
-import envVariables from "../utils/envVariables";
-import {AttendanceTracker} from "openstack-uicore-foundation/lib/components";
-
-const SchedulePage = ({summit_phase, isLoggedUser, loggedUser, mySchedule, location}) => {
-
-  let { summit } = SummitObject;
+const SchedulePage = ({summitPhase, isLoggedUser, loggedUser, mySchedule, location}) => {
 
   let title = mySchedule ? 'My Schedule' : 'Schedule';
 
   let scheduleProps = {}
-  if (isLoggedUser && summit_phase !== PHASES.BEFORE) {
+  if (isLoggedUser && summitPhase !== PHASES.BEFORE) {
     scheduleProps = { ...scheduleProps,
       onEventClick: (ev) => navigate(`/a/event/${ev.id}`),
     }
@@ -31,7 +27,6 @@ const SchedulePage = ({summit_phase, isLoggedUser, loggedUser, mySchedule, locat
         <hr/>
         <ScheduleLiteComponent
           {...scheduleProps}
-          accessToken={loggedUser.accessToken}
           landscape={true}
           showNav={true}
           showFilters={true}
@@ -41,25 +36,19 @@ const SchedulePage = ({summit_phase, isLoggedUser, loggedUser, mySchedule, locat
           showDetails={true}
         />
       </div>
-      <AttendanceTracker
-          summitId={summit.id}
-          apiBaseUrl={envVariables.SUMMIT_API_BASE_URL}
-          accessToken={loggedUser.accessToken}
-      />
+      <AttendanceTrackerComponent />
     </Layout>
   )
 }
 
 SchedulePage.propTypes = {
-  summit_phase: PropTypes.number,
+  summitPhase: PropTypes.number,
   isLoggedUser: PropTypes.bool,
-  loggedUser: PropTypes.object,
 }
 
 const mapStateToProps = ({ clockState, loggedUserState }) => ({
-  summit_phase: clockState.summit_phase,
-  isLoggedUser: loggedUserState.isLoggedUser,
-  loggedUser: loggedUserState,
+  summitPhase: clockState.summit_phase,
+  isLoggedUser: loggedUserState.isLoggedUser
 });
 
 export default connect(

@@ -1,11 +1,11 @@
 import React from "react"
 import { Helmet } from 'react-helmet'
 
-import envVariables from '../utils/envVariables';
-
 // these two libraries are client-side only
 import LiveEventWidget from 'live-event-widget';
 import 'live-event-widget/index.css';
+
+import envVariables from '../utils/envVariables';
 import HomeSettings from "../content/home-settings";
 
 const LiveEventWidgetComponent = class extends React.Component {
@@ -21,14 +21,14 @@ const LiveEventWidgetComponent = class extends React.Component {
     };
 
     return (
-      <>
+      <React.Fragment>
         <Helmet>
           <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/1.0.2/awesome-bootstrap-checkbox.min.css" />
         </Helmet>
         <div>
           <LiveEventWidget {...widgetProps} {...this.props} />
         </div>
-      </>
+      </React.Fragment>
     )
   }
 }
