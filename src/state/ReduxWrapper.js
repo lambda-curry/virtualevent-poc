@@ -35,14 +35,7 @@ const composeEnhancers = typeof window === 'object' && window.__REDUX_DEVTOOLS_E
 
 const store = createStore(persistedReducers, composeEnhancers(applyMiddleware(thunk)));
 
-const onRehydrateComplete = () => {
-  // repopulate access token on global access variable
-  if (typeof window === 'object') {
-    window.accessToken = store.getState().loggedUserState.accessToken;
-    window.idToken = store.getState().loggedUserState.idToken;
-    window.sessionState = store.getState().loggedUserState.sessionState;
-  }
-}
+const onRehydrateComplete = () => {}
 
 const persistor = persistStore(store, null, onRehydrateComplete);
 
