@@ -11,11 +11,12 @@ import withOrchestra from "../utils/widgetOrchestra";
 import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
 import ProfilePopupComponent from '../components/ProfilePopupComponent'
 
-import { updateProfilePicture, updateProfile, getIDPProfile } from '../actions/user-actions'
+import { updateProfilePicture, updateProfile, getIDPProfile, updatePassword } from '../actions/user-actions'
 
 import styles from '../styles/full-profile.module.scss'
+import ChangePasswordComponent from '../components/ChangePasswordComponent';
 
-export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, updateProfilePicture, addWidgetRef, updateWidgets }) => {
+export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, updateProfilePicture, updatePassword, addWidgetRef, updateWidgets }) => {
 
     const [showProfile, setShowProfile] = useState(false);
     const [personalProfile, setPersonalProfile] = useState({
@@ -54,6 +55,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
     const [image, setImage] = useState(null);
 
     useEffect(() => {
+        handleTogglePopup();
         if (!user.idpProfile) {
             getIDPProfile();
         } else {
@@ -135,9 +137,18 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                 post_code: address.zipCode,
                 country_iso_code: address.country,
                 phone_number: address.phone,
-            }            
+            }
             updateProfile(newProfile);
         }
+    }
+
+    const handlePasswordUpdate = (current_password, password, password_confirmation) => {
+        const passwordObject = {
+            current_password,
+            password,
+            password_confirmation
+        }
+        updatePassword(passwordObject);
     }
 
     const handleTogglePopup = (profile) => {
@@ -224,6 +235,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                         <h4>
                             @{user.idpProfile?.nickname}
                         </h4>
+                        <ChangePasswordComponent updatePassword={handlePasswordUpdate} />
                     </div>
                     <div className="column">
                         <div className={styles.formContainer}>
@@ -591,6 +603,7 @@ const FullProfilePage = (
         getIDPProfile,
         updateProfile,
         updateProfilePicture,
+        updatePassword,
     }
 ) => {
     return (
@@ -599,7 +612,8 @@ const FullProfilePage = (
                 user={user}
                 getIDPProfile={getIDPProfile}
                 updateProfile={updateProfile}
-                updateProfilePicture={updateProfilePicture} />
+                updateProfilePicture={updateProfilePicture}
+                updatePassword={updatePassword} />
         </Layout>
     )
 }
@@ -609,6 +623,7 @@ FullProfilePage.propTypes = {
     getIDPProfile: PropTypes.func,
     updateProfile: PropTypes.func,
     updateProfilePicture: PropTypes.func,
+    updatePassword: PropTypes.func
 }
 
 FullProfilePageTemplate.propTypes = {
@@ -616,6 +631,7 @@ FullProfilePageTemplate.propTypes = {
     getIDPProfile: PropTypes.func,
     updateProfile: PropTypes.func,
     updateProfilePicture: PropTypes.func,
+    updatePassword: PropTypes.func
 }
 
 const mapStateToProps = ({ userState }) => ({
@@ -626,6 +642,7 @@ export default connect(mapStateToProps,
     {
         getIDPProfile,
         updateProfile,
-        updateProfilePicture
+        updateProfilePicture,
+        updatePassword
     }
 )(FullProfilePage);
