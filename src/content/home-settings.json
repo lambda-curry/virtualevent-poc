@@ -1,8 +1,5 @@
 {
   "centerColumn": {
-    "schedule": {
-      "showAllEvents": false
-    },
     "speakers": {
       "showTodaySpeakers": false,
       "showFeatureSpeakers": true
