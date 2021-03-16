@@ -13,6 +13,7 @@ import {
 import Swal from 'sweetalert2';
 
 import { customErrorHandler, customBadgeHandler } from '../utils/customErrorHandler';
+import { isAuthorizedUser } from '../utils/authorizedGroups';
 
 export const GET_DISQUS_SSO            = 'GET_DISQUS_SSO';
 export const GET_ROCKETCHAT_SSO        = 'GET_ROCKETCHAT_SSO';
@@ -20,6 +21,9 @@ export const GET_USER_PROFILE          = 'GET_USER_PROFILE';
 export const REQUEST_USER_PROFILE      = 'REQUEST_USER_PROFILE';
 export const START_LOADING_PROFILE     = 'START_LOADING_PROFILE';
 export const STOP_LOADING_PROFILE      = 'STOP_LOADING_PROFILE';
+export const UPDATE_PASSWORD           = 'UPDATE_PASSWORD';
+export const SET_AUTHORIZED_USER       = 'SET_AUTHORIZED_USER';
+export const SET_USER_TICKET           = 'SET_USER_TICKET';
 export const UPDATE_PROFILE_PIC        = 'UPDATE_PROFILE_PIC';
 export const START_LOADING_IDP_PROFILE = 'START_LOADING_IDP_PROFILE';
 export const STOP_LOADING_IDP_PROFILE  = 'STOP_LOADING_IDP_PROFILE';
@@ -81,7 +85,24 @@ export const getUserProfile = () => async (dispatch, getState) => {
     createAction(GET_USER_PROFILE),
     `${window.SUMMIT_API_BASE_URL}/api/v1/summits/${window.SUMMIT_ID}/members/me`,
     customErrorHandler
-  )(params)(dispatch).then(() => dispatch(dispatch(createAction(STOP_LOADING_PROFILE))));
+  )(params)(dispatch).then(() => {
+    dispatch(setAuthorization());
+    dispatch(setUserTicket());
+    dispatch(getIDPProfile());
+    return dispatch(createAction(STOP_LOADING_PROFILE)());
+  });
+}
+
+const setAuthorization = () => (dispatch, getState) => {  
+  const { userState: { userProfile } } = getState();
+  const isAuthorized = isAuthorizedUser(userProfile.groups)
+  return dispatch(createAction(SET_AUTHORIZED_USER)(isAuthorized));
+}
+
+const setUserTicket = () => (dispatch, getState) => {  
+  const { userState: { userProfile } } = getState();
+  const hasTicket = userProfile.summit_tickets?.length > 0;
+  return dispatch(createAction(SET_USER_TICKET)(hasTicket));
 }
 
 export const scanBadge = (sponsorId) => async (dispatch, getState) => {
@@ -130,7 +151,8 @@ export const getIDPProfile = () => async (dispatch, getState) => {
     `${window.IDP_BASE_URL}/api/v1/users/me`,
     customErrorHandler
   )(params)(dispatch)
-    .then(() => dispatch(dispatch(createAction(STOP_LOADING_IDP_PROFILE))));
+    .then(() => dispatch(createAction(STOP_LOADING_IDP_PROFILE)()))
+    .catch(() => dispatch(createAction(STOP_LOADING_IDP_PROFILE)()));
 }
 
 export const updateProfilePicture = (pic) => async (dispatch, getState) => {
@@ -151,7 +173,8 @@ export const updateProfilePicture = (pic) => async (dispatch, getState) => {
     {},
     customErrorHandler,
   )(params)(dispatch)
-    .then(() => dispatch(getIDPProfile()));
+    .then(() => dispatch(getIDPProfile()))
+    .catch(() => dispatch(createAction(STOP_LOADING_IDP_PROFILE)()));
 }
 
 export const updateProfile = (profile) => async (dispatch, getState) => {
@@ -172,5 +195,29 @@ export const updateProfile = (profile) => async (dispatch, getState) => {
     customErrorHandler
   )(params)(dispatch)
     .then(() => dispatch(getIDPProfile()))
-    .catch(() => dispatch(dispatch(createAction(STOP_LOADING_IDP_PROFILE))));
+    .catch(() => dispatch(createAction(STOP_LOADING_IDP_PROFILE)()));
+}
+
+export const updatePassword = (password) => async (dispatch) => {  
+  const accessToken = await getAccessToken();
+
+  if (!accessToken) return Promise.resolve();
+
+  let params = {
+    access_token: accessToken,
+  };
+
+  putRequest(
+    createAction(START_LOADING_IDP_PROFILE),
+    createAction(UPDATE_PASSWORD),
+    `${window.IDP_BASE_URL}/api/v1/users/me`,
+    password,
+    customErrorHandler
+  )(params)(dispatch)
+    .then(() => {
+      dispatch(createAction(STOP_LOADING_IDP_PROFILE)());
+      let msg = 'Password Updated';
+      Swal.fire("Success", msg, "success");
+    })
+    .catch(() => dispatch(createAction(STOP_LOADING_IDP_PROFILE)()));
 }

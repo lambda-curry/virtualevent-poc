@@ -17,21 +17,21 @@ jobs:
           target_branch: dev-yoco
           github_token: ${{ github.token }}
 
-      - name: Merge dev-yoco -> prod-yoco
-        uses: devmasx/merge-branch@v1.3.1
-        with:
-          type: now
-          from_branch: dev-yoco
-          target_branch: prod-yoco
-          github_token: ${{ github.token }}
-
-      - name: Merge master -> prod-tier1
-        uses: devmasx/merge-branch@v1.3.1
-        with:
-          type: now
-          from_branch: master
-          target_branch: prod-tier_1_default
-          github_token: ${{ github.token }}
+#      - name: Merge dev-yoco -> prod-yoco
+#        uses: devmasx/merge-branch@v1.3.1
+#        with:
+#          type: now
+#          from_branch: dev-yoco
+#          target_branch: prod-yoco
+#          github_token: ${{ github.token }}
+#
+#      - name: Merge master -> prod-tier1
+#        uses: devmasx/merge-branch@v1.3.1
+#        with:
+#          type: now
+#          from_branch: master
+#          target_branch: prod-tier_1_default
+#          github_token: ${{ github.token }}
 
       - name: The job has failed
         uses: 8398a7/action-slack@v3

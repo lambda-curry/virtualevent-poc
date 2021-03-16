@@ -21,7 +21,7 @@ import AttendanceTrackerComponent from '../components/AttendanceTrackerComponent
 
 import { getDisqusSSO, getUserProfile } from '../actions/user-actions'
 
-import envVariables from "../utils/envVariables";
+import { envVariables } from "../utils/envVariables";
 
 export const HomePageTemplate = class extends React.Component {
 
@@ -73,16 +73,15 @@ export const HomePageTemplate = class extends React.Component {
               <ScheduleLiteComponent
                 onEventClick={(ev) => this.onEventChange(ev)}
                 onViewAllEventsClick={() => this.onViewAllEventsClick()}
-                landscape={HomeSettings.centerColumn.schedule.showAllEvents}
+                landscape={false}
                 yourSchedule={false}
                 showNav={false}
                 showAllEvents={true}
                 onRef={addWidgetRef}
                 updateCallback={updateWidgets}
-                title={HomeSettings.centerColumn.schedule.showAllEvents ? "Full Schedule" : "Up Next"}
-                eventCount={HomeSettings.centerColumn.schedule.showAllEvents ? 100 : 4}
-                className={HomeSettings.centerColumn.schedule.showAllEvents ? "schedule-container-home" : ""}
-              />
+                title="Up Next"
+                eventCount={4}
+                />
               {HomeSettings.centerColumn.speakers.showTodaySpeakers &&
                 <SpeakersWidgetComponent
                   title="Today's Speakers"

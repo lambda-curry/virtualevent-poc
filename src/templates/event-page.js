@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { navigate } from 'gatsby'
 import { connect } from 'react-redux'
 
-import envVariables from '../utils/envVariables';
+import { envVariables } from '../utils/envVariables';
 import SummitObject from '../content/summit.json'
 
 import Layout from '../components/Layout'
