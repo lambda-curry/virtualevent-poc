@@ -5,7 +5,7 @@ import 'videojs-mux';
 
 import 'video.js/dist/video-js.css';
 
-import envVariables from '../utils/envVariables'
+import { getEnvVariable, MUX_ENV_KEY } from '../utils/envVariables'
 
 class VideoJSPlayer extends React.Component {
   componentDidMount() {
@@ -13,12 +13,12 @@ class VideoJSPlayer extends React.Component {
 
     let plugins = {}
 
-    if (envVariables.MUX_ENV_KEY) {
+    if (getEnvVariable(MUX_ENV_KEY)) {
       plugins = { ...plugins,
         mux: {
           debug: false,
           data: {
-            env_key: envVariables.MUX_ENV_KEY,
+            env_key: getEnvVariable(MUX_ENV_KEY),
             video_title: title,
             sub_property_id: namespace,
             /* Metadata

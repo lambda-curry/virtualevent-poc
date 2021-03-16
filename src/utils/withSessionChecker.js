@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-import envVariables from "./envVariables";
+import { getEnvVariable, OAUTH2_CLIENT_ID, IDP_BASE_URL } from "./envVariables";
 import { OPSessionChecker } from "openstack-uicore-foundation/lib/components";
 
 const withSessionChecker = (WrappedComponent) => (props) => {
@@ -10,8 +10,8 @@ const withSessionChecker = (WrappedComponent) => (props) => {
     }
     return (
       <OPSessionChecker
-        clientId={envVariables.OAUTH2_CLIENT_ID}
-        idpBaseUrl={envVariables.IDP_BASE_URL}
+        clientId={getEnvVariable(OAUTH2_CLIENT_ID)}
+        idpBaseUrl={getEnvVariable(IDP_BASE_URL)}
       />
     );
   };

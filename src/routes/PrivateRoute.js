@@ -7,11 +7,7 @@ import { PHASES } from '../utils/phasesUtils'
 import { getUserProfile } from "../actions/user-actions";
 import HeroComponent from '../components/HeroComponent'
 
-const PrivateRoute = ({ component: Component, isLoggedIn, location, eventId, user: { loading, userProfile }, summit_phase, getUserProfile, ...rest }) => {
-
-  const [hasTicket, setHasTicket] = useState(null);
-  const [isAuthorized, setIsAuthorized] = useState(null);
-  const [updatingUserProfile, setUpdatingUserProfile] = useState(null);
+const PrivateRoute = ({ component: Component, isLoggedIn, location, eventId, user: { loading, userProfile, hasTicket, isAuthorized }, summit_phase, getUserProfile, ...rest }) => {  
 
   useEffect(() => {
    
@@ -19,20 +15,6 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, eventId, use
 
     if (userProfile === null) {
       getUserProfile();
-      return;
-    } else if (updatingUserProfile) {
-      setUpdatingUserProfile(false);
-    }
-
-    if (hasTicket === null || isAuthorized === null || updatingUserProfile === true) {
-      setIsAuthorized(() => isAuthorizedUser(userProfile.groups));
-      setHasTicket(() => userProfile.summit_tickets?.length > 0);
-      return;
-    }
-
-    if (isAuthorized === false && hasTicket === false && updatingUserProfile === null) {
-      getUserProfile();
-      setUpdatingUserProfile(true);
       return;
     }
   }, [userProfile, hasTicket, isAuthorized]);
@@ -46,8 +28,7 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, eventId, use
     return null
   }
 
-  if (loading || userProfile === null || hasTicket === null || isAuthorized === null || 
-    (hasTicket === false && isAuthorized === false && updatingUserProfile !== false)) {
+  if (loading || userProfile === null || hasTicket === null || isAuthorized === null) {
     return (
       <HeroComponent
         title="Checking credentials..."

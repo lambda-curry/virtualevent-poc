@@ -7,7 +7,7 @@ import 'speakers-widget/index.css';
 
 import withAccessToken from "../utils/withAccessToken";
 
-import envVariables from '../utils/envVariables';
+import { getEnvVariable, SUMMIT_API_BASE_URL,  MARKETING_API_BASE_URL, SUMMIT_ID } from '../utils/envVariables';
 import expiredToken from '../utils/expiredToken';
 
 const SpeakersWidgetComponent = class extends React.Component {
@@ -20,9 +20,9 @@ const SpeakersWidgetComponent = class extends React.Component {
 
     const widgetProps = {
       accessToken: accessToken,
-      apiBaseUrl: envVariables.SUMMIT_API_BASE_URL,
-      marketingApiBaseUrl: envVariables.MARKETING_API_BASE_URL,
-      summitId: parseInt(envVariables.SUMMIT_ID),
+      apiBaseUrl: getEnvVariable(SUMMIT_API_BASE_URL),
+      marketingApiBaseUrl: getEnvVariable(MARKETING_API_BASE_URL),
+      summitId: parseInt(getEnvVariable(SUMMIT_ID)),
       date: now,
       onAuthError: (err, res) => expiredToken(err),
       ...props

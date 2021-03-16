@@ -26,8 +26,6 @@ import SummitObject from '../content/summit.json'
 import { getDisqusSSO } from '../actions/user-actions'
 
 import styles from "../styles/marketing.module.scss"
-import envVariables from "../utils/envVariables";
-
 
 export const MarketingPageTemplate = class extends React.Component {
 

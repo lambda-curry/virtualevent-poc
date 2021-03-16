@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet'
 import LiveEventWidget from 'live-event-widget';
 import 'live-event-widget/index.css';
 
-import envVariables from '../utils/envVariables';
+import { getEnvVariable, SUMMIT_API_BASE_URL, MARKETING_API_BASE_URL, SUMMIT_ID } from '../utils/envVariables';
 import HomeSettings from "../content/home-settings";
 
 const LiveEventWidgetComponent = class extends React.Component {
@@ -13,9 +13,9 @@ const LiveEventWidgetComponent = class extends React.Component {
   render() {
 
     const widgetProps = {
-      apiBaseUrl: envVariables.SUMMIT_API_BASE_URL,
-      marketingApiBaseUrl: envVariables.MARKETING_API_BASE_URL,
-      summitId: parseInt(envVariables.SUMMIT_ID),
+      apiBaseUrl: getEnvVariable(SUMMIT_API_BASE_URL),
+      marketingApiBaseUrl: getEnvVariable(MARKETING_API_BASE_URL),
+      summitId: parseInt(getEnvVariable(SUMMIT_ID)),
       title: "",
       defaultImage: HomeSettings.schedule_default_image
     };

@@ -358,6 +358,28 @@ h2 {
   background: rgba(0, 0, 0, 0.8) !important;
 }
 
+@media (max-width: 1430px) {
+  .join-zoom-container {
+    span {
+      font-size: 22px;
+    }
+
+    button {
+      padding-left: 3em;
+      padding-right: 3em;
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 978px) {
+  #marketing-slider {
+    .slick-track {
+      height: 520px;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   div.login-form {
     width: auto;
@@ -369,7 +391,7 @@ h2 {
 
   #marketing-slider {
     .slick-track {
-      height: auto;
+      height: 250px;
     }
   }
 
@@ -392,28 +414,6 @@ h2 {
       padding-left: 2em;
       padding-right: 2em;
       font-size: 16px;
-    }
-  }
-}
-
-@media (max-width: 978px) {
-  #marketing-slider {
-    .slick-track {
-      height: 520px;
-    }
-  }
-}
-
-@media (max-width: 1430px) {
-  .join-zoom-container {
-    span {
-      font-size: 22px;
-    }
-
-    button {
-      padding-left: 3em;
-      padding-right: 3em;
-      font-size: 18px;
     }
   }
 }

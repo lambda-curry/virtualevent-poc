@@ -5,17 +5,20 @@ import { connect } from 'react-redux'
 import { AjaxLoader, CountryInput, LanguageInput, DateTimePicker } from 'openstack-uicore-foundation/lib/components'
 import moment from "moment-timezone";
 
+import Swal from 'sweetalert2';
+
 import Layout from '../components/Layout'
 import withOrchestra from "../utils/widgetOrchestra";
 
 import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
 import ProfilePopupComponent from '../components/ProfilePopupComponent'
 
-import { updateProfilePicture, updateProfile, getIDPProfile } from '../actions/user-actions'
+import { updateProfilePicture, updateProfile, getIDPProfile, updatePassword } from '../actions/user-actions'
 
 import styles from '../styles/full-profile.module.scss'
+import ChangePasswordComponent from '../components/ChangePasswordComponent';
 
-export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, updateProfilePicture, addWidgetRef, updateWidgets }) => {
+export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, updateProfilePicture, updatePassword, addWidgetRef, updateWidgets }) => {
 
     const [showProfile, setShowProfile] = useState(false);
     const [personalProfile, setPersonalProfile] = useState({
@@ -54,6 +57,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
     const [image, setImage] = useState(null);
 
     useEffect(() => {
+        handleTogglePopup();
         if (!user.idpProfile) {
             getIDPProfile();
         } else {
@@ -72,7 +76,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                 specifyGender: user.idpProfile.gender_specify,
                 irc: user.idpProfile.irc || '',
                 github: user.idpProfile.github_user || '',
-                twitter: user.idpProfile.twitter_user || '',
+                twitter: user.idpProfile.twitter_name || '',
                 linkedin: user.idpProfile.linked_in_profile || '',
                 language: user.idpProfile.locale || ''
             });
@@ -104,40 +108,54 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
         updateProfilePicture(picture);
     }
 
-    const handleProfileUpdate = (profile) => {
-        if (profile) {
-            updateProfile(profile)
+    const handleProfileUpdate = (fromPopup) => {
+        if (fromPopup) {
+            updateProfile(fromPopup)
         } else {
-            const newProfile = {
-                first_name: personalProfile.firstName,
-                last_name: personalProfile.lastName,
-                identifier: personalProfile.identifier,
-                email: personalProfile.email,
-                company: personalProfile.company,
-                job_title: personalProfile.jobTitle,
-                birthday: personalProfile.birthday?.unix(),
-                gender: personalProfile.gender,
-                gender_specify: personalProfile.gender === 'Specify' ? personalProfile.specifyGender : null,
-                github_user: personalProfile.github,
-                irc: personalProfile.irc,
-                linked_in_profile: personalProfile.linkedin,
-                twitter_name: personalProfile.twitter,
-                language: personalProfile.language,
-                public_profile_show_fullname: showFullName,
-                //public_profile_show_photo: showPicture,
-                public_profile_show_email: showEmail,
-                bio: bio,
-                statement_of_interest: statementOfInterest,
-                address1: address.street,
-                address2: address.floor,
-                city: address.city,
-                state: address.state,
-                post_code: address.zipCode,
-                country_iso_code: address.country,
-                phone_number: address.phone,
-            }            
-            updateProfile(newProfile);
+            if (!personalProfile.firstName || !personalProfile.lastName || !personalProfile.identifier || !personalProfile.email) {
+                const msg = `Required field missing`;
+                Swal.fire("Validation error", msg, "warning");
+            } else {
+                const newProfile = {
+                    first_name: personalProfile.firstName,
+                    last_name: personalProfile.lastName,
+                    identifier: personalProfile.identifier,
+                    email: personalProfile.email,
+                    company: personalProfile.company,
+                    job_title: personalProfile.jobTitle,
+                    birthday: personalProfile.birthday?.unix(),
+                    gender: personalProfile.gender,
+                    gender_specify: personalProfile.gender === 'Specify' ? personalProfile.specifyGender : null,
+                    github_user: personalProfile.github,
+                    irc: personalProfile.irc,
+                    linked_in_profile: personalProfile.linkedin,
+                    twitter_name: personalProfile.twitter,
+                    language: personalProfile.language,
+                    public_profile_show_fullname: showFullName,
+                    //public_profile_show_photo: showPicture,
+                    public_profile_show_email: showEmail,
+                    bio: bio,
+                    statement_of_interest: statementOfInterest,
+                    address1: address.street,
+                    address2: address.floor,
+                    city: address.city,
+                    state: address.state,
+                    post_code: address.zipCode,
+                    country_iso_code: address.country,
+                    phone_number: address.phone,
+                }
+                updateProfile(newProfile);
+            }
         }
+    }
+
+    const handlePasswordUpdate = (current_password, password, password_confirmation) => {
+        const passwordObject = {
+            current_password,
+            password,
+            password_confirmation
+        }
+        updatePassword(passwordObject);
     }
 
     const handleTogglePopup = (profile) => {
@@ -219,11 +237,12 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                         </div>
                         <h3>
                             Hello, <br />
-                            {personalProfile.firstName} {personalProfile.lastName}
+                            {user.idpProfile.given_name} {user.idpProfile.family_name}
                         </h3>
                         <h4>
                             @{user.idpProfile?.nickname}
                         </h4>
+                        <ChangePasswordComponent updatePassword={handlePasswordUpdate} />
                     </div>
                     <div className="column">
                         <div className={styles.formContainer}>
@@ -233,7 +252,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                                     <div className={`column is-half ${styles.inputField}`}>
                                         <b>First Name *</b>
                                         <input
-                                            className={`${styles.input} ${styles.isLarge}`}
+                                            className={`${styles.input} ${styles.isLarge} ${!personalProfile.firstName ? styles.isDanger : ''}`}
                                             type="text"
                                             placeholder="First Name"
                                             onChange={e => setPersonalProfile({ ...personalProfile, firstName: e.target.value })}
@@ -243,7 +262,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                                     <div className={`column is-half ${styles.inputField}`}>
                                         <b>Last Name *</b>
                                         <input
-                                            className={`${styles.input} ${styles.isLarge}`}
+                                            className={`${styles.input} ${styles.isLarge} ${!personalProfile.lastName ? styles.isDanger : ''}`}
                                             type="text"
                                             placeholder="Last Name"
                                             onChange={e => setPersonalProfile({ ...personalProfile, lastName: e.target.value })}
@@ -255,7 +274,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                                     <div className={`column is-half ${styles.inputField}`}>
                                         <b>Identifier *</b>
                                         <input
-                                            className={`${styles.input} ${styles.isLarge}`}
+                                            className={`${styles.input} ${styles.isLarge} ${!personalProfile.identifier ? styles.isDanger : ''}`}
                                             type="text"
                                             placeholder="Identifier"
                                             onChange={e => setPersonalProfile({ ...personalProfile, identifier: e.target.value })}
@@ -265,7 +284,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                                     <div className={`column is-half ${styles.inputField}`}>
                                         <b>Email *</b>
                                         <input
-                                            className={`${styles.input} ${styles.isLarge}`}
+                                            className={`${styles.input} ${styles.isLarge} ${!personalProfile.email ? styles.isDanger : ''}`}
                                             type="text"
                                             placeholder="Email"
                                             onChange={e => setPersonalProfile({ ...personalProfile, email: e.target.value })}
@@ -591,6 +610,7 @@ const FullProfilePage = (
         getIDPProfile,
         updateProfile,
         updateProfilePicture,
+        updatePassword,
     }
 ) => {
     return (
@@ -599,7 +619,8 @@ const FullProfilePage = (
                 user={user}
                 getIDPProfile={getIDPProfile}
                 updateProfile={updateProfile}
-                updateProfilePicture={updateProfilePicture} />
+                updateProfilePicture={updateProfilePicture}
+                updatePassword={updatePassword} />
         </Layout>
     )
 }
@@ -609,6 +630,7 @@ FullProfilePage.propTypes = {
     getIDPProfile: PropTypes.func,
     updateProfile: PropTypes.func,
     updateProfilePicture: PropTypes.func,
+    updatePassword: PropTypes.func
 }
 
 FullProfilePageTemplate.propTypes = {
@@ -616,6 +638,7 @@ FullProfilePageTemplate.propTypes = {
     getIDPProfile: PropTypes.func,
     updateProfile: PropTypes.func,
     updateProfilePicture: PropTypes.func,
+    updatePassword: PropTypes.func
 }
 
 const mapStateToProps = ({ userState }) => ({
@@ -626,6 +649,7 @@ export default connect(mapStateToProps,
     {
         getIDPProfile,
         updateProfile,
-        updateProfilePicture
+        updateProfilePicture,
+        updatePassword
     }
 )(FullProfilePage);
