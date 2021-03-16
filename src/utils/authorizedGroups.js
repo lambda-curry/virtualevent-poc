@@ -1,9 +1,9 @@
-import envVariables from '../utils/envVariables';
+import { getEnvVariable, AUTHZ_USER_GROUPS, AUTHZ_SESSION_BADGE } from './envVariables';
 
-let authorizedGroups = envVariables.AUTHZ_USER_GROUPS;
+let authorizedGroups = getEnvVariable(AUTHZ_USER_GROUPS);
     authorizedGroups = authorizedGroups && authorizedGroups !== '' ? authorizedGroups.split(' ') : [];
 
-let authorizedSessionPerBadge = envVariables.AUTHZ_SESSION_BADGE;
+let authorizedSessionPerBadge = getEnvVariable(AUTHZ_SESSION_BADGE);
     authorizedSessionPerBadge = authorizedSessionPerBadge && authorizedSessionPerBadge !== '' ? authorizedSessionPerBadge.split('|').map((session => {
       let id = session.split(':')[0];
       let values = session.split(':')[1].split(',');

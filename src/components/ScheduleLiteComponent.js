@@ -7,7 +7,7 @@ import 'schedule-lite/index.css';
 
 import withAccessToken from "../utils/withAccessToken";
 
-import envVariables from '../utils/envVariables';
+import { getEnvVariable, SUMMIT_API_BASE_URL, MARKETING_API_BASE_URL, SUMMIT_ID } from '../utils/envVariables';
 import expiredToken from '../utils/expiredToken';
 import HomeSettings from '../content/home-settings.json'
 
@@ -18,13 +18,13 @@ const ScheduleLiteComponent = class extends React.Component {
     const { className } = this.props;
 
     const scheduleProps = {
-      apiBaseUrl: envVariables.SUMMIT_API_BASE_URL,
-      marketingApiBaseUrl: envVariables.MARKETING_API_BASE_URL,
+      apiBaseUrl: getEnvVariable(SUMMIT_API_BASE_URL),
+      marketingApiBaseUrl: getEnvVariable(MARKETING_API_BASE_URL),
       eventBaseUrl: "/a/event",
       trackBaseUrl: "/a/tracks",
       speakerBaseUrl: "/a/speakers",
       roomBaseUrl: "/a/rooms",
-      summitId: parseInt(envVariables.SUMMIT_ID),
+      summitId: parseInt(getEnvVariable(SUMMIT_ID)),
       onAuthError: (err, res) => expiredToken(err),
       onRef: ref => this.child = ref,
       defaultImage: HomeSettings.schedule_default_image

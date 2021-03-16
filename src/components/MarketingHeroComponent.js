@@ -9,7 +9,7 @@ import MarketingSite from '../content/marketing-site.json'
 import { PHASES } from '../utils/phasesUtils';
 import styles from '../styles/lobby-hero.module.scss'
 
-import envVariables from '../utils/envVariables'
+import { getEnvVariable, AUTHORIZED_DEFAULT_PATH, REGISTRATION_BASE_URL } from '../utils/envVariables'
 
 import Link from '../components/Link'
 
@@ -17,7 +17,7 @@ class MarketingHeroComponent extends React.Component {
 
   getBackURL = () => {
     let { location } = this.props;    
-    let defaultLocation = envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/';
+    let defaultLocation = getEnvVariable(AUTHORIZED_DEFAULT_PATH) ? getEnvVariable(AUTHORIZED_DEFAULT_PATH) : '/a/';
     let backUrl = location.state?.backUrl ? location.state.backUrl : defaultLocation;    
     return URI.encode(backUrl);    
   }
@@ -58,7 +58,7 @@ class MarketingHeroComponent extends React.Component {
                 <h4>{MarketingSite.heroBanner.time}</h4>
                 <div className={styles.heroButtons}>
                   {summit_phase >= PHASES.DURING && isLoggedUser ?
-                    <Link className={styles.link} to={`${envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/'}`}>
+                    <Link className={styles.link} to={`${getEnvVariable(AUTHORIZED_DEFAULT_PATH) ? getEnvVariable(AUTHORIZED_DEFAULT_PATH) : '/a/'}`}>
                       <button className={`${styles.button} button is-large`}>
                         <i className={`fa fa-2x fa-sign-in icon is-large`}></i>
                         <b>Enter</b>
@@ -67,7 +67,7 @@ class MarketingHeroComponent extends React.Component {
                     :
                     <React.Fragment>
                       {MarketingSite.heroBanner.buttons.registerButton.display &&
-                        <a className={styles.link} href={`${envVariables.REGISTRATION_BASE_URL}/a/${summit.slug}/`} target="_blank" rel="noreferrer">
+                        <a className={styles.link} href={`${getEnvVariable(REGISTRATION_BASE_URL)}/a/${summit.slug}/`} target="_blank" rel="noreferrer">
                           <button className={`${styles.button} button is-large`}>
                             <i className={`fa fa-2x fa-edit icon is-large`}></i>
                             <b>{MarketingSite.heroBanner.buttons.registerButton.text}</b>

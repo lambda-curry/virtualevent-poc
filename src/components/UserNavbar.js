@@ -8,7 +8,7 @@ import ProfilePopupComponent from './ProfilePopupComponent';
 
 import { updateProfilePicture, updateProfile } from '../actions/user-actions'
 
-import envVariables from '../utils/envVariables'
+import { getEnvVariable, AUTHORIZED_DEFAULT_PATH } from '../utils/envVariables'
 
 const UserNavbar = class extends React.Component {
   constructor(props) {
@@ -62,7 +62,7 @@ const UserNavbar = class extends React.Component {
     let { isLoggedUser, userProfile } = this.props;
     let { showProfile } = this.state;
 
-    let defaultPath = envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/';
+    let defaultPath = getEnvVariable(AUTHORIZED_DEFAULT_PATH) ? getEnvVariable(AUTHORIZED_DEFAULT_PATH) : '/a/';
 
     return (
       <nav className={`${styles.navbar} ${styles.userNavbar}`} role="navigation" aria-label="main navigation">

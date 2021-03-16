@@ -5,6 +5,8 @@ import { connect } from 'react-redux'
 import { AjaxLoader, CountryInput, LanguageInput, DateTimePicker } from 'openstack-uicore-foundation/lib/components'
 import moment from "moment-timezone";
 
+import Swal from 'sweetalert2';
+
 import Layout from '../components/Layout'
 import withOrchestra from "../utils/widgetOrchestra";
 
@@ -74,7 +76,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                 specifyGender: user.idpProfile.gender_specify,
                 irc: user.idpProfile.irc || '',
                 github: user.idpProfile.github_user || '',
-                twitter: user.idpProfile.twitter_user || '',
+                twitter: user.idpProfile.twitter_name || '',
                 linkedin: user.idpProfile.linked_in_profile || '',
                 language: user.idpProfile.locale || ''
             });
@@ -106,39 +108,44 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
         updateProfilePicture(picture);
     }
 
-    const handleProfileUpdate = (profile) => {
-        if (profile) {
-            updateProfile(profile)
+    const handleProfileUpdate = (fromPopup) => {
+        if (fromPopup) {
+            updateProfile(fromPopup)
         } else {
-            const newProfile = {
-                first_name: personalProfile.firstName,
-                last_name: personalProfile.lastName,
-                identifier: personalProfile.identifier,
-                email: personalProfile.email,
-                company: personalProfile.company,
-                job_title: personalProfile.jobTitle,
-                birthday: personalProfile.birthday?.unix(),
-                gender: personalProfile.gender,
-                gender_specify: personalProfile.gender === 'Specify' ? personalProfile.specifyGender : null,
-                github_user: personalProfile.github,
-                irc: personalProfile.irc,
-                linked_in_profile: personalProfile.linkedin,
-                twitter_name: personalProfile.twitter,
-                language: personalProfile.language,
-                public_profile_show_fullname: showFullName,
-                //public_profile_show_photo: showPicture,
-                public_profile_show_email: showEmail,
-                bio: bio,
-                statement_of_interest: statementOfInterest,
-                address1: address.street,
-                address2: address.floor,
-                city: address.city,
-                state: address.state,
-                post_code: address.zipCode,
-                country_iso_code: address.country,
-                phone_number: address.phone,
+            if (!personalProfile.firstName || !personalProfile.lastName || !personalProfile.identifier || !personalProfile.email) {
+                const msg = `Required field missing`;
+                Swal.fire("Validation error", msg, "warning");
+            } else {
+                const newProfile = {
+                    first_name: personalProfile.firstName,
+                    last_name: personalProfile.lastName,
+                    identifier: personalProfile.identifier,
+                    email: personalProfile.email,
+                    company: personalProfile.company,
+                    job_title: personalProfile.jobTitle,
+                    birthday: personalProfile.birthday?.unix(),
+                    gender: personalProfile.gender,
+                    gender_specify: personalProfile.gender === 'Specify' ? personalProfile.specifyGender : null,
+                    github_user: personalProfile.github,
+                    irc: personalProfile.irc,
+                    linked_in_profile: personalProfile.linkedin,
+                    twitter_name: personalProfile.twitter,
+                    language: personalProfile.language,
+                    public_profile_show_fullname: showFullName,
+                    //public_profile_show_photo: showPicture,
+                    public_profile_show_email: showEmail,
+                    bio: bio,
+                    statement_of_interest: statementOfInterest,
+                    address1: address.street,
+                    address2: address.floor,
+                    city: address.city,
+                    state: address.state,
+                    post_code: address.zipCode,
+                    country_iso_code: address.country,
+                    phone_number: address.phone,
+                }
+                updateProfile(newProfile);
             }
-            updateProfile(newProfile);
         }
     }
 
@@ -230,7 +237,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                         </div>
                         <h3>
                             Hello, <br />
-                            {personalProfile.firstName} {personalProfile.lastName}
+                            {user.idpProfile.given_name} {user.idpProfile.family_name}
                         </h3>
                         <h4>
                             @{user.idpProfile?.nickname}
@@ -245,7 +252,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                                     <div className={`column is-half ${styles.inputField}`}>
                                         <b>First Name *</b>
                                         <input
-                                            className={`${styles.input} ${styles.isLarge}`}
+                                            className={`${styles.input} ${styles.isLarge} ${!personalProfile.firstName ? styles.isDanger : ''}`}
                                             type="text"
                                             placeholder="First Name"
                                             onChange={e => setPersonalProfile({ ...personalProfile, firstName: e.target.value })}
@@ -255,7 +262,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                                     <div className={`column is-half ${styles.inputField}`}>
                                         <b>Last Name *</b>
                                         <input
-                                            className={`${styles.input} ${styles.isLarge}`}
+                                            className={`${styles.input} ${styles.isLarge} ${!personalProfile.lastName ? styles.isDanger : ''}`}
                                             type="text"
                                             placeholder="Last Name"
                                             onChange={e => setPersonalProfile({ ...personalProfile, lastName: e.target.value })}
@@ -267,7 +274,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                                     <div className={`column is-half ${styles.inputField}`}>
                                         <b>Identifier *</b>
                                         <input
-                                            className={`${styles.input} ${styles.isLarge}`}
+                                            className={`${styles.input} ${styles.isLarge} ${!personalProfile.identifier ? styles.isDanger : ''}`}
                                             type="text"
                                             placeholder="Identifier"
                                             onChange={e => setPersonalProfile({ ...personalProfile, identifier: e.target.value })}
@@ -277,7 +284,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                                     <div className={`column is-half ${styles.inputField}`}>
                                         <b>Email *</b>
                                         <input
-                                            className={`${styles.input} ${styles.isLarge}`}
+                                            className={`${styles.input} ${styles.isLarge} ${!personalProfile.email ? styles.isDanger : ''}`}
                                             type="text"
                                             placeholder="Email"
                                             onChange={e => setPersonalProfile({ ...personalProfile, email: e.target.value })}

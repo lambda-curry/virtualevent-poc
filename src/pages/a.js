@@ -17,7 +17,7 @@ import PublicRoute from "../routes/PublicRoute"
 
 import withSessionChecker from "../utils/withSessionChecker"
 
-const App = ({ isLoggedUser, user, summit_phase }) => {  
+const App = ({ isLoggedUser, user, summit_phase }) => {
   return (
     <Location>
       {({ location }) => (
