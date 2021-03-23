@@ -33,7 +33,7 @@ export const SCAN_BADGE                = 'SCAN_BADGE';
 export const SCAN_BADGE_SUCCESS        = 'SCAN_BADGE_SUCCESS';
 export const SCAN_BADGE_ERROR          = 'SCAN_BADGE_ERROR';
 
-export const getDisqusSSO = () => async (dispatch, getState) => {
+export const getDisqusSSO = () => async (dispatch) => {
 
   const accessToken = await getAccessToken();
 
@@ -43,33 +43,27 @@ export const getDisqusSSO = () => async (dispatch, getState) => {
     `${window.IDP_BASE_URL}/api/v1/sso/disqus/fnvirtual-poc/profile?access_token=${accessToken}`,
     customErrorHandler
   )({})(dispatch).then(() => {
-  }
-  ).catch(e => {
+  }).catch(e => {
     return (e);
   });
 }
 
-export const getRocketChatSSO = () => async (dispatch, getState) => {
+export const getRocketChatSSO = () => async (dispatch) => {
 
   const accessToken = await getAccessToken();
 
-  dispatch(startLoading());
-
   return getRequest(
-    dispatch(startLoading()),
+    null,
     createAction(GET_ROCKETCHAT_SSO),
     `${window.IDP_BASE_URL}/api/v1/sso/rocket-chat/fnvirtual-poc/profile?access_token=${accessToken}`,
     customErrorHandler
   )({})(dispatch).then(() => {
-    dispatch(stopLoading());
-  }
-  ).catch(e => {
-    dispatch(stopLoading());
+  }).catch(e => {
     return (e);
   });
 }
 
-export const getUserProfile = () => async (dispatch, getState) => {
+export const getUserProfile = () => async (dispatch) => {
 
   const accessToken = await getAccessToken();
 
@@ -80,8 +74,10 @@ export const getUserProfile = () => async (dispatch, getState) => {
     expand: 'groups,summit_tickets,summit_tickets.badge,summit_tickets.badge.features,summit_tickets.badge.type'
   };
 
+  dispatch(startLoading());
+
   return getRequest(
-    createAction(START_LOADING_PROFILE),
+    null,
     createAction(GET_USER_PROFILE),
     `${window.SUMMIT_API_BASE_URL}/api/v1/summits/${window.SUMMIT_ID}/members/me`,
     customErrorHandler
@@ -105,7 +101,7 @@ const setUserTicket = () => (dispatch, getState) => {
   return dispatch(createAction(SET_USER_TICKET)(hasTicket));
 }
 
-export const scanBadge = (sponsorId) => async (dispatch, getState) => {
+export const scanBadge = (sponsorId) => async (dispatch) => {
 
   const accessToken = await getAccessToken();
   
@@ -130,12 +126,11 @@ export const scanBadge = (sponsorId) => async (dispatch, getState) => {
     })
     .catch(e => {
         dispatch(createAction(SCAN_BADGE_ERROR)(e));
-        dispatch(stopLoading());
         return (e);
     });
 }
 
-export const getIDPProfile = () => async (dispatch, getState) => {
+export const getIDPProfile = () => async (dispatch) => {
 
   const accessToken = await getAccessToken();
 
@@ -145,8 +140,10 @@ export const getIDPProfile = () => async (dispatch, getState) => {
     access_token: accessToken,
   };
 
+  dispatch(createAction(START_LOADING_IDP_PROFILE)());
+
   getRequest(
-    createAction(START_LOADING_IDP_PROFILE),
+    null,
     createAction(GET_IDP_PROFILE),
     `${window.IDP_BASE_URL}/api/v1/users/me`,
     customErrorHandler
@@ -155,7 +152,7 @@ export const getIDPProfile = () => async (dispatch, getState) => {
     .catch(() => dispatch(createAction(STOP_LOADING_IDP_PROFILE)()));
 }
 
-export const updateProfilePicture = (pic) => async (dispatch, getState) => {
+export const updateProfilePicture = (pic) => async (dispatch) => {
 
   const accessToken = await getAccessToken();
 
@@ -165,8 +162,10 @@ export const updateProfilePicture = (pic) => async (dispatch, getState) => {
     access_token: accessToken,
   };
 
+  dispatch(createAction(START_LOADING_IDP_PROFILE)());
+
   putFile(
-    createAction(START_LOADING_IDP_PROFILE),
+    null,
     createAction(UPDATE_PROFILE_PIC),
     `${window.IDP_BASE_URL}/api/v1/users/me/pic`,
     pic,
@@ -177,7 +176,7 @@ export const updateProfilePicture = (pic) => async (dispatch, getState) => {
     .catch(() => dispatch(createAction(STOP_LOADING_IDP_PROFILE)()));
 }
 
-export const updateProfile = (profile) => async (dispatch, getState) => {
+export const updateProfile = (profile) => async (dispatch) => {
   
   const accessToken = await getAccessToken();
 
@@ -187,8 +186,10 @@ export const updateProfile = (profile) => async (dispatch, getState) => {
     access_token: accessToken,
   };
 
+  dispatch(createAction(START_LOADING_IDP_PROFILE)());
+
   putRequest(
-    createAction(START_LOADING_IDP_PROFILE),
+    null,
     createAction(UPDATE_IDP_PROFILE),
     `${window.IDP_BASE_URL}/api/v1/users/me`,
     profile,
@@ -199,6 +200,7 @@ export const updateProfile = (profile) => async (dispatch, getState) => {
 }
 
 export const updatePassword = (password) => async (dispatch) => {  
+
   const accessToken = await getAccessToken();
 
   if (!accessToken) return Promise.resolve();
@@ -207,8 +209,10 @@ export const updatePassword = (password) => async (dispatch) => {
     access_token: accessToken,
   };
 
+  dispatch(createAction(START_LOADING_IDP_PROFILE)());
+
   putRequest(
-    createAction(START_LOADING_IDP_PROFILE),
+    null,
     createAction(UPDATE_PASSWORD),
     `${window.IDP_BASE_URL}/api/v1/users/me`,
     password,

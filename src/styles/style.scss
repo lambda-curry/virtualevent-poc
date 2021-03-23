@@ -71,16 +71,39 @@ h2 {
   display: flex;
 }
 
-.video-player {
-  width: calc(75% - 20px);
+.vjs-modal-dialog .vjs-modal-dialog-content {
+  padding: 0;
 
-  .no-video {
-    height: 720px;
-    display: grid;
-    justify-content: center;
-    align-content: center;
+  .video-error {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    .hero {
+      background-color: $color_secondary;
+      align-self: center;
+      width: 100%;
+      height: 100%;
+
+      .hero-body {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        div {
+          margin-left: 3rem;
+
+          h1 {
+            color: white;
+            font-size: 3.5rem;
+          }
+        }
+      }
+    }
   }
 }
+
+
 
 #marketing-slider {
   .slick-track {

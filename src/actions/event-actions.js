@@ -15,11 +15,11 @@ import { LOGOUT_USER } from "openstack-uicore-foundation/lib/actions";
 export const GET_EVENT_DATA         = 'GET_EVENT_DATA';
 export const GET_EVENT_DATA_ERROR   = 'GET_EVENT_DATA_ERROR';
 
-export const handleResetReducers = () => (dispatch, getState) => {
+export const handleResetReducers = () => (dispatch) => {
   dispatch(createAction(LOGOUT_USER)({}));
 }
 
-export const getEventById = (eventId) => async (dispatch, getState) => {
+export const getEventById = (eventId) => async (dispatch) => {
 
   const accessToken = await getAccessToken();
 
@@ -30,8 +30,10 @@ export const getEventById = (eventId) => async (dispatch, getState) => {
       expand: 'track,location,location.venue,location.floor,speakers,slides,links,videos,media_uploads'
   };
 
+  dispatch(startLoading())
+
   return getRequest(
-    dispatch(startLoading()),
+    null,
     createAction(GET_EVENT_DATA),
     `${window.SUMMIT_API_BASE_URL}/api/v1/summits/${window.SUMMIT_ID}/events/${eventId}/published`,
     customErrorHandler
@@ -39,7 +41,7 @@ export const getEventById = (eventId) => async (dispatch, getState) => {
     dispatch(stopLoading());
   }).catch(e => {
     dispatch(stopLoading());
-    dispatch(createAction(GET_EVENT_DATA_ERROR)({}))
+    dispatch(createAction(GET_EVENT_DATA_ERROR)(e));
     return (e);
   });
 }

@@ -21,7 +21,7 @@ export const UPDATE_CLOCK = 'UPDATE_CLOCK';
 export const GET_TIME_NOW = 'GET_TIME_NOW';
 export const TIME_NOW = 'TIME_NOW';
 
-export const updateClock = (timestamp) => (dispatch, getState) => {
+export const updateClock = (timestamp) => (dispatch) => {
 
   dispatch(createAction(UPDATE_CLOCK)({ timestamp }));
   dispatch(updateSummitPhase());
