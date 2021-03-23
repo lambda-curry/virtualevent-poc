@@ -79,11 +79,12 @@ export const EventPageTemplate = class extends React.Component {
   }
 
   render() {
-    const { event, eventId, eventsPhases, user, loading } = this.props;
+    const { event, eventId, eventsPhases, user, loading, nowUtc } = this.props;
     const { firstRender } = this.state;
     let { summit } = SummitObject;
     let currentEvent = eventsPhases.find(e => e.id == eventId);
     let eventStarted = currentEvent && currentEvent.phase !== null ? currentEvent.phase : null;
+    let firstHalf = currentEvent?.phase === 0 ? nowUtc < ((event?.start_date + event?.end_date) / 2) ? true : false : null;
 
     if (!firstRender && !loading && !event) {
       return <HeroComponent title="Event not found" redirectTo="/a/schedule" />
@@ -100,7 +101,7 @@ export const EventPageTemplate = class extends React.Component {
               <div className="columns is-gapless">
                 {eventStarted >= PHASES.DURING && event.streaming_url ?
                   <div className="column is-three-quarters px-0 py-0">
-                    <VideoComponent url={event.streaming_url} title={event.title} namespace={summit.name} />
+                    <VideoComponent url={event.streaming_url} title={event.title} namespace={summit.name} firstHalf={firstHalf}/>
                     {event.meeting_url &&
                       <VideoBanner event={event} />
                     }
@@ -170,6 +171,7 @@ const EventPage = (
     eventId,
     user,
     eventsPhases,
+    nowUtc,
     getEventById,
     getDisqusSSO
   }
@@ -190,6 +192,7 @@ const EventPage = (
         eventId={eventId}
         user={user}
         eventsPhases={eventsPhases}
+        nowUtc={nowUtc}
         getEventById={getEventById}
         getDisqusSSO={getDisqusSSO}
       />
@@ -228,6 +231,7 @@ const mapStateToProps = (
   loading: eventState.loading,
   event: eventState.event,
   eventsPhases: clockState.events_phases,
+  nowUtc: clockState.nowUtc,
   user: userState,
 })
 
