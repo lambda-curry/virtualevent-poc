@@ -9,7 +9,7 @@ import { getEnvVariable, MUX_ENV_KEY } from '../utils/envVariables'
 
 class VideoJSPlayer extends React.Component {
   componentDidMount() {
-    const { title, namespace } = this.props;
+    const { title, namespace, firstHalf } = this.props;
 
     let plugins = {}
 
@@ -37,9 +37,78 @@ class VideoJSPlayer extends React.Component {
       plugins: plugins,
       ...this.props,
     };
-    this.player = videojs(this.videoNode, options, function onPlayerReady() {
-      // console.log('onPlayerReady', this);
-    });
+
+    const onPlayerReady = () => {          
+      const src = this.player.src();
+      let reloadPlayer = null;
+      let modal = null;
+      let isLive = null;
+
+      this.player.on('error', () => {
+        const videoError = this.player.error();        
+        if (firstHalf !== null && videoError.code === 2 || videoError.code === 4) {
+          if (reloadPlayer === null) {
+            this.player.errorDisplay.close();
+            modal = this.player.createModal();
+            modal.closeable(false);
+            let newElement = document.createElement('div');
+            newElement.classList.add('video-error');
+            let message = firstHalf ? 'Video stream will begin momentarily...' : 'VOD will be available soon.';
+            newElement.innerHTML = `
+              <section class="hero">
+                <div class="hero-body">
+                  <div class='has-text-centered'}>
+                    <h1 class="title">${message}</h1> 
+                  </div>
+                </div>
+              </section>
+              `
+            modal.content(newElement);
+            modal.fill();
+            if (firstHalf) {
+              reloadPlayer = setInterval(() => {
+                // reload player
+                this.player.load();
+                this.player.src(src);
+                this.player.reset();
+              }, 60000);
+            }
+          }
+        }
+      });
+
+      this.player.on('playing', () => {        
+        if (reloadPlayer) clearInterval(reloadPlayer);
+        if (modal) modal.dispose();                
+        if (this.player.duration() === Infinity) {
+          isLive = true;
+        };
+      });
+
+      this.player.on('ended', () => {        
+        if (isLive) {
+          this.player.pause();
+          modal = this.player.createModal();
+          modal.closeable(false);
+          let newElement = document.createElement('div');
+          newElement.classList.add('video-error');
+          let message = 'VOD will be available soon';
+          newElement.innerHTML = `
+            <section class="hero">
+              <div class="hero-body">
+                <div class='has-text-centered'}>
+                  <h1 class="title">${message}</h1>               
+                </div>
+              </div>
+            </section>
+            `
+          modal.content(newElement);
+          modal.fill();
+        }
+      });
+    }
+
+    this.player = videojs(this.videoNode, options, onPlayerReady);
   }
 
   componentWillUnmount() {

@@ -16,7 +16,7 @@ const VideoComponent = class extends React.Component {
   }
 
   render() {
-    const { url, title, namespace } = this.props;
+    const { url, title, namespace, firstHalf } = this.props;
 
     if (url) {
       if (this.checkLiveVideo(url)) {
@@ -31,7 +31,7 @@ const VideoComponent = class extends React.Component {
           playsInline: true
         }
         return (
-          <VideoJSPlayer title={title} namespace={namespace} {...videoJsOptions} />
+          <VideoJSPlayer title={title} namespace={namespace} firstHalf={firstHalf} {...videoJsOptions} />
         )
       } else {
         const videoJsOptions = {
