@@ -4,6 +4,7 @@ const path = require('path')
 const fs = require("fs")
 const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
+const { ClientCredentials } = require('simple-oauth2');
 
 const myEnv = require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
@@ -13,9 +14,9 @@ exports.onPreBootstrap = async () => {
 
   let marketingData;
 
-  let params = {    
+  let params = {
     per_page: 100,
-};
+  };
 
   const colours = await axios.get(
     `${process.env.GATSBY_MARKETING_API_BASE_URL}/api/public/v1/config-values/all/shows/${process.env.GATSBY_SUMMIT_ID}`, { params }
@@ -74,6 +75,70 @@ exports.onPreBootstrap = async () => {
   });
 
   fs.writeFileSync('src/content/home-settings.json', JSON.stringify(homeSettings), 'utf8', function (err) {
+    if (err) throw err;
+    console.log('Saved!');
+  });
+
+  // Private API endpoints
+
+  const config = {
+    client: {
+      id: process.env.GATSBY_OAUTH2_CLIENT_ID_BUILD,
+      secret: process.env.GATSBY_OAUTH2_CLIENT_SECRET_BUILD
+    },
+    auth: {
+      tokenHost: process.env.GATSBY_IDP_BASE_URL,
+      tokenPath: process.env.GATSBY_OAUTH_TOKEN_PATH
+    },
+    options: {
+      authorizationMethod: 'header'
+    }
+  };
+
+  const getAccessToken = async () => {
+    const client = new ClientCredentials(config);
+
+    const tokenParams = {
+      scope: 'https://api.dev.fnopen.com/summits/read'
+    };
+
+    try {
+      const accessToken = await client.getToken(tokenParams);
+      return accessToken;
+    } catch (error) {
+      console.log('Access Token error', error.message);
+    }
+  }
+
+  const accessToken = await getAccessToken().then((token) => token.token.access_token);
+
+  const allEvents = await axios.get(
+    `${process.env.GATSBY_SUMMIT_API_BASE_URL}/api/v1/summits/${process.env.GATSBY_SUMMIT_ID}/events/published`,
+    {
+      params: { 
+        access_token: accessToken,
+        per_page: 100,
+        expand: 'type, track, location, location.venue, location.floor, speakers, moderator, sponsors, current_attendance',
+      }
+    }).then((response) => response.data)
+    .catch(e => console.log('ERROR: ', e));
+
+  fs.writeFileSync('src/content/events.json', JSON.stringify(allEvents), 'utf8', function (err) {
+    if (err) throw err;
+    console.log('Saved!');
+  });
+
+  const allSpeakers = await axios.get(
+    `${process.env.GATSBY_SUMMIT_API_BASE_URL}/api/v1/summits/${process.env.GATSBY_SUMMIT_ID}/speakers/on-schedule`,
+    {
+      params: { 
+        access_token: accessToken,
+        per_page: 100,        
+      }
+    }).then((response) => response.data)
+    .catch(e => console.log('ERROR: ', e));
+
+  fs.writeFileSync('src/content/speakers.json', JSON.stringify(allSpeakers), 'utf8', function (err) {
     if (err) throw err;
     console.log('Saved!');
   });

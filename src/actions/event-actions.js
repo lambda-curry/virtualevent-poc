@@ -3,7 +3,7 @@ import {
   getRequest,
   createAction,
   stopLoading,
-  startLoading,  
+  startLoading,
 } from 'openstack-uicore-foundation/lib/methods';
 
 // import Swal from 'sweetalert2';
@@ -21,27 +21,36 @@ export const handleResetReducers = () => (dispatch) => {
 
 export const getEventById = (eventId) => async (dispatch) => {
 
-  const accessToken = await getAccessToken();
+  dispatch(startLoading());
 
-  if (!accessToken) return Promise.resolve();
+  let { eventState: { allEvents } } = getState();
+  const event = allEvents.find(ev => ev.id === parseInt(eventId));
 
-  let params = {
-      access_token: accessToken,      
+  if (event) {
+    dispatch(createAction(GET_EVENT_DATA)({ event }));
+    dispatch(stopLoading());
+  } else {
+    const accessToken = await getAccessToken();
+    if (!accessToken) {
+      dispatch(stopLoading());
+      return Promise.resolve();
+    }
+    let params = {
+      access_token: accessToken,
       expand: 'track,location,location.venue,location.floor,speakers,slides,links,videos,media_uploads'
-  };
-
-  dispatch(startLoading())
-
-  return getRequest(
-    null,
-    createAction(GET_EVENT_DATA),
-    `${window.SUMMIT_API_BASE_URL}/api/v1/summits/${window.SUMMIT_ID}/events/${eventId}/published`,
-    customErrorHandler
-  )(params)(dispatch).then(() => {
-    dispatch(stopLoading());
-  }).catch(e => {
-    dispatch(stopLoading());
-    dispatch(createAction(GET_EVENT_DATA_ERROR)(e));
-    return (e);
-  });
+    };
+    
+    return getRequest(
+      null,
+      createAction(GET_EVENT_DATA),
+      `${window.SUMMIT_API_BASE_URL}/api/v1/summits/${window.SUMMIT_ID}/events/${eventId}/published`,
+      customErrorHandler
+    )(params)(dispatch).then(() => {
+      dispatch(stopLoading());
+    }).catch(e => {
+      dispatch(stopLoading());
+      dispatch(createAction(GET_EVENT_DATA_ERROR)(e))
+      return (e);
+    });
+  }
 }
