@@ -19,7 +19,7 @@ export const handleResetReducers = () => (dispatch) => {
   dispatch(createAction(LOGOUT_USER)({}));
 }
 
-export const getEventById = (eventId) => async (dispatch) => {
+export const getEventById = (eventId) => async (dispatch, getState) => {
 
   dispatch(startLoading());
 
