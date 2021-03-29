@@ -99,7 +99,7 @@ exports.onPreBootstrap = async () => {
     const client = new ClientCredentials(config);
 
     const tokenParams = {
-      scope: 'https://api.dev.fnopen.com/summits/read'
+      scope: process.env.GATSBY_BUILD_SCOPES
     };
 
     try {
