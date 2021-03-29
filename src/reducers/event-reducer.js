@@ -1,3 +1,5 @@
+import EventObject from '../content/events.json';
+
 import { START_LOADING, STOP_LOADING, LOGOUT_USER } from "openstack-uicore-foundation/lib/actions";
 
 import { GET_EVENT_DATA, GET_EVENT_DATA_ERROR } from '../actions/event-actions'
@@ -5,6 +7,7 @@ import { GET_EVENT_DATA, GET_EVENT_DATA_ERROR } from '../actions/event-actions'
 const DEFAULT_STATE = {
   loading: false,
   event: null,
+  allEvents: EventObject.data
 }
 
 const eventReducer = (state = DEFAULT_STATE, action) => {
@@ -18,7 +21,7 @@ const eventReducer = (state = DEFAULT_STATE, action) => {
     case STOP_LOADING:
       return { ...state, loading: false };
     case GET_EVENT_DATA:
-      const event = payload.response;
+      const event = payload.response || payload.event;      
       return { ...state, loading: false, event: event };
     case GET_EVENT_DATA_ERROR: {
       return { ...state, loading: false, event: null }
