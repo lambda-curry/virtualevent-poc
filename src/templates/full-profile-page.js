@@ -172,7 +172,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
     }
 
     const onViewAllEventsClick = () => {
-        navigate('/a/schedule')
+        navigate('/a/my-schedule')
     }
 
     const discardChanges = (state) => {
