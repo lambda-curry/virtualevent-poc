@@ -18,7 +18,7 @@
     "codemirror": "^5.55.0",
     "core-js": "^2.6.11",
     "cross-env": "^7.0.3",
-    "disqus-react": "^1.0.8",
+    "disqus-react": "1.0.10",
     "dotenv": "^8.2.0",
     "dropzone": "^5.7.2",
     "font-awesome": "^4.7.0",
