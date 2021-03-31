@@ -42,6 +42,10 @@ export const HomePageTemplate = class extends React.Component {
     navigate('/a/schedule')
   }
 
+  onViewAllMyEventsClick() {
+    navigate('/a/my-schedule')
+  }
+
   render() {
     const { user, addWidgetRef, updateWidgets } = this.props;
     let { summit } = SummitObject;
@@ -103,7 +107,7 @@ export const HomePageTemplate = class extends React.Component {
               <SimpleChatWidgetComponent title="Private Chat" />
               <ScheduleLiteComponent
                 onEventClick={(ev) => this.onEventChange(ev)}
-                onViewAllEventsClick={() => this.onViewAllEventsClick()}
+                onViewAllEventsClick={() => this.onViewAllMyEventsClick()}
                 title='My Schedule'
                 landscape={true}
                 yourSchedule={true}
