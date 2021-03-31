@@ -53,7 +53,7 @@ class VideoJSPlayer extends React.Component {
             modal.closeable(false);
             let newElement = document.createElement('div');
             newElement.classList.add('video-error');
-            let message = firstHalf ? 'Video stream will begin momentarily...' : 'VOD will be available soon.';
+            let message = firstHalf ? 'This video stream will begin momentarily. Please standby.' : 'This video will be available on-demand shortly.<br>Please locate this session in the schedule feature.';
             newElement.innerHTML = `
               <section class="hero">
                 <div class="hero-body">
