@@ -54,7 +54,9 @@
           "headerImage": "/img/yoco_ad-a-header-static-image.jpg",
           "headerImageMobile": "/img/yoco_ad-a-header-static-mobile.jpg",
           "advertiseImage": "",
+          "sponsorId": 37,
           "title": "The Drake Group, Inc.",
+          "companyId": 35,
           "documents": {
             "links": [
               {
@@ -89,7 +91,7 @@
               "image": "/img/yoco_ad-a-sponsor-ad_emp.png"
             }
           ],
-          "id": 1,
+          "id": 35,
           "email": "info@adanda.net",
           "usesSponsorPage": true
         },
