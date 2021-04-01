@@ -251,6 +251,52 @@
           "sponsorId": 32,
           "companyId": 30,
           "externalLink": "/virtual-booth/"
+        },
+        {
+          "marquee": "The best private security firm you’ve never heard of.",
+          "sponsorColor": "#484848",
+          "logo": "/img/yoco_ad-a-sponsor-ad_home.jpg",
+          "name": "Anthony Drake & Associates",
+          "intro": "Founded in 2018 as The Drake Group, Inc. (TDG, Inc.), Anthony “Tony” Drake and his managers provide over fifty years of combined experience in all things “serve and protect”. While 2020 was a difficult year for us all, we were blessed to welcome exciting growth, making it possible to expand TDG, Inc. and re-brand our security arm as Anthony Drake & Associates, otherwise known as AD&A.  With security companies being a dime a dozen in densely populated tourist destinations such as Los Angeles--our birthplace--we here at AD&A strive to stand out from the crowd, proving that it is in fact possible to command the presence and confidence of a professional private security detail coupled with the excellent customer service and approachability of a public servant. AD&A is proudly owned and operated by former and active Law Enforcement and U.S. Military Veterans.",
+          "headerImage": "/img/yoco_ad-a-header-static-image.jpg",
+          "advertiseImage": "",
+          "title": "The Drake Group, Inc.",
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.adanda.net",
+                "name": "Anthony Drake Associates Website  ",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/anthony-drake-associates/",
+                "order": 4,
+                "name": "Anthony Drake Associates Linkedin"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "\\https://www.instagram.com/anthonydrakeandassociates/",
+                "order": 2,
+                "name": "Anthony Drake Associates Instagram "
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Anthony Drake Associates Facebook",
+                "order": 3,
+                "link": "https://www.facebook.com/anthonydrakeandassociates"
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "link": "https://www.adanda.net/join-us",
+              "image": "/img/yoco_ad-a-sponsor-ad_emp.png"
+            }
+          ],
+          "id": 1,
+          "usesSponsorPage": true
         }
       ]
     },
