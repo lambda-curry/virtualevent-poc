@@ -9,13 +9,14 @@ import AttendanceTrackerComponent from '../components/AttendanceTrackerComponent
 
 import { PHASES } from '../utils/phasesUtils'
 
-const SchedulePage = ({summitPhase, isLoggedUser, loggedUser, mySchedule, location}) => {
+const SchedulePage = ({ summitPhase, isLoggedUser, loggedUser, mySchedule, location }) => {
 
   let title = mySchedule ? 'My Schedule' : 'Schedule';
 
   let scheduleProps = {}
   if (isLoggedUser && summitPhase !== PHASES.BEFORE) {
-    scheduleProps = { ...scheduleProps,
+    scheduleProps = {
+      ...scheduleProps,
       onEventClick: (ev) => navigate(`/a/event/${ev.id}`),
     }
   }
@@ -23,8 +24,8 @@ const SchedulePage = ({summitPhase, isLoggedUser, loggedUser, mySchedule, locati
   return (
     <Layout location={location}>
       <div className="container">
-        <h1>{ title }</h1>
-        <hr/>
+        <h1>{title}</h1>
+        <hr />
         <ScheduleLiteComponent
           {...scheduleProps}
           landscape={true}
@@ -33,6 +34,7 @@ const SchedulePage = ({summitPhase, isLoggedUser, loggedUser, mySchedule, locati
           showAllEvents={true}
           yourSchedule={mySchedule}
           eventCount={100}
+          updateCallback={ev => console.log('event updated', ev)}
           showDetails={true}
         />
       </div>
