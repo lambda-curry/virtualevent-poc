@@ -54,7 +54,7 @@ module.exports = {
             options: {
               name: 'uploads',
             },
-          },          
+          },
           {
             resolve: 'gatsby-remark-copy-linked-files',
             options: {

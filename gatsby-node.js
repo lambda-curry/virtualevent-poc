@@ -106,37 +106,135 @@ exports.onPreBootstrap = async () => {
       const accessToken = await client.getToken(tokenParams);
       return accessToken;
     } catch (error) {
-      console.log('Access Token error', error.message);
+      console.log('Access Token error', error);
     }
   }
 
-  const accessToken = await getAccessToken().then((token) => token.token.access_token);
+  const accessToken = await getAccessToken().then((token) => {
+    return token.token.access_token
+  });
 
-  const allEvents = await axios.get(
+  let events_page = 1;
+  let events_last_page = 0;
+
+  let allEvents = await axios.get(
     `${process.env.GATSBY_SUMMIT_API_BASE_URL}/api/v1/summits/${process.env.GATSBY_SUMMIT_ID}/events/published`,
     {
-      params: { 
+      params: {
         access_token: accessToken,
-        per_page: 100,
-        expand: 'type, track, location, location.venue, location.floor, speakers, moderator, sponsors, current_attendance',
+        per_page: 50,
+        page: events_page,
+        expand: 'slides, links, videos, media_uploads type, track, location, location.venue, location.floor, speakers, moderator, sponsors, current_attendance, groups, rsvp_template',
       }
-    }).then((response) => response.data)
+    }).then((response) => {
+      events_last_page = response.data.last_page;
+      return response.data.data;
+    })
     .catch(e => console.log('ERROR: ', e));
+
+  while (events_last_page > 1 && events_page <= events_last_page) {
+    events_page++;
+    newEvents = await axios.get(
+      `${process.env.GATSBY_SUMMIT_API_BASE_URL}/api/v1/summits/${process.env.GATSBY_SUMMIT_ID}/events/published`,
+      {
+        params: {
+          access_token: accessToken,
+          per_page: 50,
+          page: events_page,
+          expand: 'slides, links, videos, media_uploads type, track, location, location.venue, location.floor, speakers, moderator, sponsors, current_attendance, groups, rsvp_template',
+        }
+      }).then((response) => {
+        allEvents = [...allEvents, ...response.data.data];
+        return response.data;
+      })
+      .catch(e => console.log('ERROR: ', e));
+  }
 
   fs.writeFileSync('src/content/events.json', JSON.stringify(allEvents), 'utf8', function (err) {
     if (err) throw err;
     console.log('Saved!');
   });
 
-  const allSpeakers = await axios.get(
+
+  // Fetch Speakers
+
+  // Get Featured Speakers
+
+  let featured_speakers_page = 1;
+  let featured_speakers_last_page = 0;
+
+  let featuredSpeakers = await axios.get(
     `${process.env.GATSBY_SUMMIT_API_BASE_URL}/api/v1/summits/${process.env.GATSBY_SUMMIT_ID}/speakers/on-schedule`,
     {
-      params: { 
+      params: {
         access_token: accessToken,
-        per_page: 100,        
+        page: featured_speakers_page,
+        per_page: 30,
+        'filter[]': 'featured==true',
       }
-    }).then((response) => response.data)
+    }).then((response) => {
+      featured_speakers_last_page = response.data.last_page;
+      return response.data.data;
+    })
     .catch(e => console.log('ERROR: ', e));
+
+  while (featured_speakers_last_page > 1 && featured_speakers_page <= featured_speakers_last_page) {
+    featured_speakers_page++;
+    newSpeakers = await axios.get(
+      `${process.env.GATSBY_SUMMIT_API_BASE_URL}/api/v1/summits/${process.env.GATSBY_SUMMIT_ID}/speakers/on-schedule`,
+      {
+        params: {
+          access_token: accessToken,
+          page: featured_speakers_page,
+          per_page: 30,
+          'filter[]': 'featured==true',
+        }
+      }).then((response) => {
+        featuredSpeakers = [...featuredSpeakers, ...response.data.data];
+        return response.data;
+      })
+      .catch(e => console.log('ERROR: ', e));
+  }
+
+  featuredSpeakers = featuredSpeakers.map(speaker => ({ ...speaker, featured: true }));
+
+  let speakers_page = 1;
+  let speakers_last_page = 0;
+
+  let allSpeakers = await axios.get(
+    `${process.env.GATSBY_SUMMIT_API_BASE_URL}/api/v1/summits/${process.env.GATSBY_SUMMIT_ID}/speakers/on-schedule`,
+    {
+      params: {
+        access_token: accessToken,
+        page: speakers_page,
+        per_page: 30,
+      }
+    }).then((response) => {
+      speakers_last_page = response.data.last_page;
+      return response.data.data;
+    })
+    .catch(e => console.log('ERROR: ', e));
+
+  while (speakers_last_page > 1 && speakers_page <= speakers_last_page) {
+    speakers_page++;
+    newSpeakers = await axios.get(
+      `${process.env.GATSBY_SUMMIT_API_BASE_URL}/api/v1/summits/${process.env.GATSBY_SUMMIT_ID}/speakers/on-schedule`,
+      {
+        params: {
+          access_token: accessToken,
+          page: speakers_page,
+          per_page: 30,
+        }
+      }).then((response) => {
+        allSpeakers = [...allSpeakers, ...response.data.data];
+        return response.data;
+      })
+      .catch(e => console.log('ERROR: ', e));
+  }
+
+  allSpeakers = allSpeakers.filter(speaker => featuredSpeakers.every(s => s.id !== speaker.id));
+
+  allSpeakers = [...allSpeakers, ...featuredSpeakers];
 
   fs.writeFileSync('src/content/speakers.json', JSON.stringify(allSpeakers), 'utf8', function (err) {
     if (err) throw err;
