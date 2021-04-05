@@ -1,5 +1,7 @@
 import React from "react"
 import { Helmet } from 'react-helmet'
+import { connect } from "react-redux";
+import axios from 'axios'
 
 // these two libraries are client-side only
 import ScheduleLite from 'schedule-lite';
@@ -8,26 +10,61 @@ import 'schedule-lite/index.css';
 import withAccessToken from "../utils/withAccessToken";
 
 import { getEnvVariable, SUMMIT_API_BASE_URL, MARKETING_API_BASE_URL, SUMMIT_ID } from '../utils/envVariables';
-import expiredToken from '../utils/expiredToken';
+
 import HomeSettings from '../content/home-settings.json'
+import EventsData from '../content/events.json'
+import SummitData from '../content/summit.json'
+import MarketingData from '../content/colors.json'
+
+import { addToSchedule, removeFromSchedule } from '../actions/user-actions';
 
 const ScheduleLiteComponent = class extends React.Component {
 
   render() {
 
-    const { className } = this.props;
+    const { className, userProfile, accessToken } = this.props;
 
     const scheduleProps = {
-      apiBaseUrl: getEnvVariable(SUMMIT_API_BASE_URL),
-      marketingApiBaseUrl: getEnvVariable(MARKETING_API_BASE_URL),
       eventBaseUrl: "/a/event",
       trackBaseUrl: "/a/tracks",
       speakerBaseUrl: "/a/speakers",
       roomBaseUrl: "/a/rooms",
       summitId: parseInt(getEnvVariable(SUMMIT_ID)),
-      onAuthError: (err, res) => expiredToken(err),
       onRef: ref => this.child = ref,
-      defaultImage: HomeSettings.schedule_default_image
+      defaultImage: HomeSettings.schedule_default_image,
+      eventsData: EventsData,
+      summitData: SummitData.summit,
+      marketingData: MarketingData.colors,
+      userProfile: userProfile,
+      eventCallback: (action, event) => {
+        const url = `${getEnvVariable(SUMMIT_API_BASE_URL)}/api/v1/summits/${getEnvVariable(SUMMIT_ID)}/members/me/schedule/${event.id}`;
+        switch (action) {
+          case 'ADDED_TO_SCHEDULE': {
+            const request = axios.post(
+              url, { access_token: accessToken }
+            ).then(() => {
+              this.props.addToSchedule(event);
+              return event;
+            }).catch(e => {
+              console.log('ERROR: ', e)
+              return e;
+            });
+            return request;
+          }
+          case 'REMOVED_FROM_SCHEDULE': {
+            const request = axios.delete(
+              url, { data: { access_token: accessToken } }
+            ).then(() => {
+              this.props.removeFromSchedule(event);
+              return event;
+            }).catch(e => {
+              console.log('ERROR: ', e)
+              return e;
+            });
+            return request;
+          }
+        }
+      }
     };
 
     return (
@@ -43,4 +80,8 @@ const ScheduleLiteComponent = class extends React.Component {
   }
 }
 
-export default withAccessToken(ScheduleLiteComponent)
+const mapStateToProps = ({ userState }) => ({
+  userProfile: userState.userProfile
+})
+
+export default connect(mapStateToProps, { addToSchedule, removeFromSchedule })(withAccessToken(ScheduleLiteComponent))

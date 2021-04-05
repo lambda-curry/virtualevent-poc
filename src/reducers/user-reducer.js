@@ -10,7 +10,9 @@ import {
   SET_AUTHORIZED_USER,
   SET_USER_TICKET,
   START_LOADING_IDP_PROFILE,
-  STOP_LOADING_IDP_PROFILE
+  STOP_LOADING_IDP_PROFILE,
+  ADD_TO_SCHEDULE,
+  REMOVE_FROM_SCHEDULE
 } from '../actions/user-actions'
 
 const DEFAULT_STATE = {
@@ -46,6 +48,12 @@ const userReducer = (state = DEFAULT_STATE, action) => {
       return { ...state, hasTicket: payload }
     case GET_IDP_PROFILE:
       return { ...state, idpProfile: payload.response }
+    case ADD_TO_SCHEDULE: {      
+      return { ...state, userProfile: { ...state.userProfile, schedule_summit_events: [...state.userProfile.schedule_summit_events, payload] } }
+    }
+    case REMOVE_FROM_SCHEDULE: {      
+      return { ...state, userProfile: { ...state.userProfile, schedule_summit_events: [...state.userProfile.schedule_summit_events.filter(ev => ev.id !== payload.id)] } }
+    }
     case GET_DISQUS_SSO:
       const disqus = payload.response;
       return { ...state, loading: false, disqusSSO: disqus };
