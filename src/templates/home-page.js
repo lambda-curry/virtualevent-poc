@@ -61,7 +61,7 @@ export const HomePageTemplate = class extends React.Component {
               <AdvertiseComponent section='lobby' column="left" />
             </div>
             <div className="column is-half">
-              <h2><b>Today's Sessions</b></h2>
+              <h2><b>Today</b></h2>
               <LiveEventWidgetComponent
                 featuredEventId={HomeSettings.live_now_featured_event_id}
                 onEventClick={(ev) => this.onEventChange(ev)}
