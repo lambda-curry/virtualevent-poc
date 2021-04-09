@@ -46,7 +46,7 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "The best private security firm you’ve never heard of.",
+          "marquee": "  The best private security firm you've never heard of. ",
           "sponsorColor": "#484848",
           "logo": "/img/yoco_ad-a-sponsor-ad_home.jpg",
           "name": "Anthony Drake & Associates",
@@ -62,24 +62,24 @@
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.adanda.net",
-                "name": "Anthony Drake Associates Website  ",
+                "name": "Anthony Drake & Associates Website  ",
                 "order": 1
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.linkedin.com/company/anthony-drake-associates/",
                 "order": 4,
-                "name": "Anthony Drake Associates Linkedin"
+                "name": "Anthony Drake & Associates Linkedin"
               },
               {
                 "class_name": "PresentationLink",
-                "link": "\\https://www.instagram.com/anthonydrakeandassociates/",
+                "link": "https://www.instagram.com/anthonydrakeandassociates/",
                 "order": 2,
-                "name": "Anthony Drake Associates Instagram "
+                "name": "Anthony Drake & Associates Instagram "
               },
               {
                 "class_name": "PresentationLink",
-                "name": "Anthony Drake Associates Facebook",
+                "name": "Anthony Drake & Associates Facebook",
                 "order": 3,
                 "link": "https://www.facebook.com/anthonydrakeandassociates"
               }
