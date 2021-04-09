@@ -97,7 +97,7 @@ const SponsorHeader = ({ sponsor, tier, scanBadge }) => {
         <div className={`${tier.sponsorPage.sponsorTemplate === 'big-header' ? styles.bottomBar : styles.bottomBarSmall}`} style={{ backgroundColor: `${sponsor.sponsorColor}` }}>
           <div className={styles.track}>
             <div>
-              {`${sponsor.marquee} / `.repeat(100).slice(0, 459)}
+              {`${sponsor.marquee} ${sponsor.marqueeDelineator ?? ''} `.repeat(100).slice(0, 459)}
             </div>
           </div>
         </div>

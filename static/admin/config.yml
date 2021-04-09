@@ -260,6 +260,7 @@ collections:
                 {label: "Contact Email", name: "email", widget: string, required: false },
                 {label: "Live Video Chat Link", name: "chatLink", widget: string, required: false },
                 {label: "Marquee Text", name: "marquee", widget: string, required: false },
+                {label: "Marquee Delineator", name: "marqueeDelineator", widget: string, required: false },
                 {label: "Sponsor Color", name: "sponsorColor", widget: string, required: false },
                 {label: "Logo", name: "logo", widget: image },
                 {label: "Advertise Image", name: "advertiseImage", widget: image, required: false, default: '' },
