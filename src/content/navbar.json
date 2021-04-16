@@ -4,7 +4,7 @@
       "title": "Lobby",
       "link": "/a/",
       "display": true,
-      "requiresAuth": false
+      "requiresAuth": true
     },
     {
       "title": "Schedule",
