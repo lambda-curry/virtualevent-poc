@@ -55,7 +55,7 @@
           "headerImageMobile": "/img/yoco_ad-a-header-static-mobile.jpg",
           "advertiseImage": "",
           "sponsorId": 37,
-          "title": "The Drake Group, Inc.",
+          "title": "Anthony Drake & Associates",
           "companyId": 35,
           "documents": {
             "links": [
@@ -88,7 +88,7 @@
           "columnAds": [
             {
               "link": "https://www.adanda.net/join-us",
-              "image": "/img/yoco_ad-a-sponsor-ad_emp.png"
+              "image": "/img/yoco_ad-a-sponsor-ad_home.jpg"
             }
           ],
           "id": 35,
