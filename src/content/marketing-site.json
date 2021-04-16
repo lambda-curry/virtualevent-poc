@@ -1,7 +1,7 @@
 {
   "heroBanner": {
-    "title": "Hybridalive!",
-    "subTitle": "",
+    "title": "HYBRIDALIVE!",
+    "subTitle": "  ",
     "date": "Virtual Events with H&X / TLS",
     "time": "",
     "dateLayout": false,
@@ -71,19 +71,19 @@
       ]
     },
     {
-      "title": "Mid Left",
+      "title": "Top Left",
       "images": [
         {
-          "image": "/img/tls-ad-484-x-968.png",
+          "image": "/img/tls-ad-484-x-484.png",
           "link": ""
         }
       ]
     },
     {
-      "title": "Top Left",
+      "title": "Mid Left",
       "images": [
         {
-          "image": "/img/tls-ad-484-x-484.png",
+          "image": "/img/tls-ad-484-x-968.png",
           "link": ""
         }
       ]
