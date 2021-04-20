@@ -4,77 +4,52 @@
       "tier": [
         {
           "value": "tier-cYGYq5-ae",
-          "label": "Gold"
+          "label": "Top-Tier"
         }
       ],
       "sponsors": [
         {
           "sponsor_id": 8,
-          "marquee": "Huawei - Smart Technologies",
+          "marquee": "Bringing art, community, and virtual reality together. (150-characters max) ",
           "sideImage": "",
           "externalLink": "",
-          "sponsorColor": "",
-          "logo": "/img/sponsors/headline/logo_huawei.png",
-          "name": "WHEREHOL",
-          "intro": "**Lorem ipsum dolor sit amet**, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. *Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.*",
-          "headerVideo": "/img/world.mp4",
-          "headerImage": "/img/sponsors/headline/header_logo_headline.png",
-          "socialNetworks": [
-            {
-              "icon": "fa-facebook",
-              "link": "/footer-content/",
-              "display": true
-            },
-            {
-              "icon": "fa-twitter",
-              "link": "/footer-content/",
-              "display": true
-            },
-            {
-              "icon": "fa-linkedin",
-              "link": "/footer-content/",
-              "display": true
-            }
-          ],
+          "sponsorColor": "#5b9b92",
+          "logo": "/img/logo-top-tier-wherehol_hybridalive.png",
+          "name": "Wherehol",
+          "intro": "***Company Description (1000-character max):*** Since 2017, Wherehol has been at the forefront of virtual reality technology, developing dynamic and immersive experiences for all audiences. Our newest endeavor—VR for Great—brings art, community, and virtual reality together to create an experience like none other. Our intuitive products allow users to dive head first into any art collection and be completely immersed in content creation. Pushing the typical boundaries of VR, Wherehol has partnered with scores of international artists to bring a fresh, new, art-first twist to the virtual world.",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/Yoco/YOCO-Summit-Wherehol-Header-Video-2.mp4",
+          "headerImage": "",
+          "headerImageMobile": "/img/unknown-1.png",
+          "socialNetworks": [],
           "chatLink": "",
-          "sponsorId": 8,
+          "sponsorId": 27,
           "title": "Wherehol",
-          "companyId": 9,
+          "companyId": 25,
           "documents": {
-            "slides": [
-              {
-                "name": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html",
-                "order": 2,
-                "class_name": "PresentationSlide",
-                "link": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html"
-              }
-            ],
+            "slides": [],
             "links": [
               {
-                "name": "http://relaxdiego.com/2017/05/swampup-2017-slides.html",
-                "order": 1,
                 "class_name": "PresentationLink",
-                "link": "http://relaxdiego.com/2017/05/swampup-2017-slides.html"
+                "name": "FNTECH Website",
+                "order": 1,
+                "link": "https://www.fntech.com"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "FNTECH Instagram ",
+                "link": "https://www.instagram.com/fntech/?hl=en",
+                "order": 2
               }
             ],
-            "videos": [
-              {
-                "name": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html",
-                "order": 3,
-                "class_name": "PresentationVideo",
-                "link": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html"
-              }
-            ]
+            "videos": []
           },
           "columnAds": [
             {
-              "image": "/img/yoco-sponsor-ads-medium-flow.png",
-              "button": "",
-              "link": "/virtual-booth/"
+              "image": "/img/unknown-1.png"
             }
           ],
-          "id": 1,
-          "email": "huawei@huawei.com",
+          "id": 25,
+          "email": "sponsorservices@fntech.com",
           "usesSponsorPage": true
         }
       ]
@@ -83,159 +58,19 @@
       "tier": [
         {
           "value": "tier-DHcI3dWGk",
-          "label": "Silver"
+          "label": "Middle-Tier"
         }
       ],
-      "sponsors": [
-        {
-          "sponsor_id": 8,
-          "marquee": "CISCO Shapes the Future of Technology",
-          "sideImage": "",
-          "externalLink": "",
-          "sponsorColor": "",
-          "logo": "/img/sponsors/premier/logo_cisco.png",
-          "name": "CISCO",
-          "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
-          "headerVideo": "",
-          "headerImage": "/img/sponsors/premier/header_logo_premier.png",
-          "socialNetworks": [
-            {
-              "icon": "fa-facebook",
-              "link": "/footer-content/",
-              "display": true
-            },
-            {
-              "icon": "fa-twitter",
-              "link": "/footer-content/",
-              "display": true
-            },
-            {
-              "icon": "fa-linkedin",
-              "link": "/footer-content/",
-              "display": true
-            }
-          ],
-          "chatLink": "",
-          "sponsorId": 8,
-          "title": "We are CISCO",
-          "companyId": 9,
-          "documents": {
-            "slides": [
-              {
-                "name": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html",
-                "order": 2,
-                "class_name": "PresentationSlide",
-                "link": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html"
-              }
-            ],
-            "links": [
-              {
-                "name": "http://relaxdiego.com/2017/05/swampup-2017-slides.html",
-                "order": 1,
-                "class_name": "PresentationLink",
-                "link": "http://relaxdiego.com/2017/05/swampup-2017-slides.html"
-              }
-            ],
-            "videos": [
-              {
-                "name": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html",
-                "order": 3,
-                "class_name": "PresentationVideo",
-                "link": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html"
-              }
-            ]
-          },
-          "columnAds": [
-            {
-              "image": "/img/yoco-sponsor-ads-medium-flow.png",
-              "button": "",
-              "link": "/virtual-booth/"
-            }
-          ],
-          "id": 2,
-          "email": "huawei@huawei.com",
-          "usesSponsorPage": true
-        }
-      ]
+      "sponsors": []
     },
     {
       "tier": [
         {
           "value": "tier-U_wEwGX8a",
-          "label": "Bronze"
+          "label": "Lower-Tier"
         }
       ],
-      "sponsors": [
-        {
-          "sponsor_id": 8,
-          "marquee": "ZTE Shapes the Future of Technology",
-          "sideImage": "/img/sponsors/exhibitor/immage.png",
-          "externalLink": "",
-          "sponsorColor": "",
-          "logo": "/img/sponsors/exhibitor/logo_ZTE.png",
-          "name": "ZTE",
-          "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
-          "headerVideo": "",
-          "headerImage": "/img/sponsors/exhibitor/header_logo_exhibitor.png",
-          "socialNetworks": [
-            {
-              "icon": "fa-facebook",
-              "link": "/footer-content/",
-              "display": true
-            },
-            {
-              "icon": "fa-twitter",
-              "link": "/footer-content/",
-              "display": true
-            },
-            {
-              "icon": "fa-linkedin",
-              "link": "/footer-content/",
-              "display": true
-            }
-          ],
-          "chatLink": "",
-          "sponsorId": 8,
-          "title": "We are ZTE",
-          "companyId": 9,
-          "documents": {
-            "slides": [
-              {
-                "name": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html",
-                "order": 2,
-                "class_name": "PresentationSlide",
-                "link": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html"
-              }
-            ],
-            "links": [
-              {
-                "name": "http://relaxdiego.com/2017/05/swampup-2017-slides.html",
-                "order": 1,
-                "class_name": "PresentationLink",
-                "link": "http://relaxdiego.com/2017/05/swampup-2017-slides.html"
-              }
-            ],
-            "videos": [
-              {
-                "name": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html",
-                "order": 3,
-                "class_name": "PresentationVideo",
-                "link": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html"
-              }
-            ]
-          },
-          "columnAds": [
-            {
-              "image": "/img/yoco-sponsor-ads-medium-flow.png",
-              "button": "",
-              "link": "/virtual-booth/"
-            }
-          ],
-          "id": 3,
-          "email": "huawei@huawei.com",
-          "usesSponsorPage": true
-        }
-      ]
+      "sponsors": []
     }
   ]
 }
