@@ -116,7 +116,50 @@
           "label": "Middle-Tier"
         }
       ],
-      "sponsors": []
+      "sponsors": [
+        {
+          "marquee": "We delivered 5G first. Are you ready for what’s next? (150-characters max)",
+          "sponsorColor": "#7e78c6",
+          "logo": "/img/logo-lower-tier-mobility_hybridalive.png",
+          "name": "Mobility",
+          "intro": "***Company Description (1000-character max):*** At Mobility, we offer voice, data and video services across our award-winning network, keeping security and reliability at the core of our services. With 5G now blanketing the nation, only Mobility is able to link-up with thousands of mobile hubs in microseconds, ensuring your connections are delivered at near lightning speed. Using innovative communication coding and cutting-edge hardware, our technologies allow customers to connect across around the world faster and more efficiently than even we dreamed possible. And not only are we working toward a faster future, we are committed to making it a more sustainable planet. As you’ve seen in our recent ads and social media posts, reducing Mobility’s carbon footprint is at the top of our list ensuring future generations have a brighter, safer and more connected experience with Mobility.",
+          "headerImage": "/img/unknown-5.png",
+          "headerImageMobile": "/img/unknown-6.png",
+          "advertiseImage": "",
+          "sponsorId": 28,
+          "title": "Mobility",
+          "companyId": 26,
+          "columnAds": [
+            {
+              "image": "/img/yoco-sponsor-ads-large-mobility-vert-new.png"
+            }
+          ],
+          "id": 26,
+          "email": "sponsorservices@fntech.com",
+          "usesSponsorPage": true
+        },
+        {
+          "advertiseImage": "",
+          "name": "Gamehub",
+          "externalLink": "/virtual-booth/",
+          "logo": "/img/logo-top-tier-gamehub.png",
+          "id": 5
+        },
+        {
+          "advertiseImage": "",
+          "name": "Hyved",
+          "id": 6,
+          "externalLink": "/virtual-booth/",
+          "logo": "/img/logo-middle-tier-hyved.png"
+        },
+        {
+          "advertiseImage": "",
+          "externalLink": "/virtual-booth/",
+          "id": 7,
+          "name": "Flightpath",
+          "logo": "/img/Logo-Top-Tier-Flightpath.png"
+        }
+      ]
     },
     {
       "tier": [
