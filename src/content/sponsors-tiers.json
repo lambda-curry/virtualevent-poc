@@ -2,9 +2,9 @@
   "tiers": [
     {
       "id": "tier-cYGYq5-ae",
-      "name": "Gold",
-      "widgetTitle": "Gold Sponsors",
-      "badge": "/img/gold.png",
+      "name": "Top-Tier",
+      "widgetTitle": "Top-Tier Sponsors",
+      "badge": "",
       "lobby": {
         "lobbyTemplate": "big-images",
         "display": true
@@ -23,11 +23,11 @@
     },
     {
       "id": "tier-DHcI3dWGk",
-      "name": "Silver",
-      "widgetTitle": "Silver Sponsors",
-      "badge": "/img/silver.png",
+      "name": "Middle-Tier",
+      "widgetTitle": "Middle-Tier Sponsors",
+      "badge": "",
       "lobby": {
-        "lobbyTemplate": "big-images",
+        "lobbyTemplate": "small-images",
         "display": true
       },
       "sponsorPage": {
@@ -44,9 +44,9 @@
     },
     {
       "id": "tier-U_wEwGX8a",
-      "name": "Bronze",
-      "widgetTitle": "Bronze Sponsors",
-      "badge": "/img/bronze.png",
+      "name": "Lower-Tier",
+      "widgetTitle": "Lower-Tier Sponsors",
+      "badge": "",
       "lobby": {
         "lobbyTemplate": "small-images",
         "display": true
@@ -64,7 +64,7 @@
       "expoHallSize": "small"
     }
   ],
-  "imageHeader": "/img/jumbotron.jpg",
+  "imageHeader": "/img/unknown.png",
   "lobbyButton": {
     "text": "View all",
     "link": "/a/sponsors/"
