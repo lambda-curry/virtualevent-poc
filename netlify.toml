@@ -2,13 +2,7 @@
   publish = "public"
   command = "npm run build"
 [context.branch-deploy]
-  ignore = '''
-  if echo $BRANCH | grep "^feature" ;
-    then return 1
-  else
-    return 0
-  fi
-  '''
+  ignore = "bash ./netlify-build-ignore.sh"
 [build.environment]
   NODE_VERSION = "12"
   YARN_VERSION = "1.22.4"
