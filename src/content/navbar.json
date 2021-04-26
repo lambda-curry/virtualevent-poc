@@ -13,6 +13,12 @@
       "requiresAuth": false
     },
     {
+      "requiresAuth": true,
+      "title": "Sponsors",
+      "link": "/a/sponsors/",
+      "display": true
+    },
+    {
       "title": "About the event",
       "link": "/about-event",
       "display": true,
