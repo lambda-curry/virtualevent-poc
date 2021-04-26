@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if echo $HEAD | grep "^feature";
-  then return 1
+  then exit 1
 else
-  return 0
+  exit 0
 fi
