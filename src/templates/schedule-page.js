@@ -31,7 +31,7 @@ const SchedulePage = ({ summitPhase, isLoggedUser, loggedUser, mySchedule, locat
           landscape={true}
           showNav={true}
           showFilters={true}
-          showAllEvents={true}
+          showAllEvents={false}
           yourSchedule={mySchedule}
           eventCount={100}
           updateCallback={ev => console.log('event updated', ev)}
