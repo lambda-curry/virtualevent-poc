@@ -5,19 +5,31 @@
       "columnAds": [
         {
           "image": "/img/tls-ad-484-x-968_v2.png",
-          "column": "right"
+          "column": "right",
+          "button": {
+            "link": "https://tlsproductionsinc.com"
+          }
         },
         {
           "image": "/img/h-x-ad-484-x-968_v2.png",
-          "column": "left"
+          "column": "left",
+          "button": {
+            "link": "https://hxusa.com"
+          }
         },
         {
           "image": "/img/yoco-sponsor-ads-medium-wherehol_hybridalive.png",
-          "column": "left"
+          "column": "right",
+          "button": {
+            "link": "/a/sponsor/25-wherehol"
+          }
         },
         {
           "image": "/img/yoco-summit-treva-space1.png",
-          "column": "right"
+          "column": "right",
+          "button": {
+            "link": "/a/sponsor/27-treva"
+          }
         }
       ]
     },
