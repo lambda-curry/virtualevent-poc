@@ -1,8 +1,10 @@
 ---
 templateKey: custom-page
-requiresAuth: false
 title: Contact
+requiresAuth: false
 ---
-YOU DECIDE!
+If you would like more information or have questions, please contact us. 
 
-This can be your company contact info, the event group, a combination (like your info and your brand partners or top sponsors), or a totally different set of details that you’d like linked to your top navigation. Flexibility is what we’re all about!
+**TLS Productions, Inc.       [info@tlsproductionsinc.com](mailto:info@tlsproductionsinc.com)**
+
+**H&X Technologies       [info@hxusa.com](mailto:info@hxusa.com)**
