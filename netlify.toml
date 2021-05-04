@@ -1,6 +1,8 @@
 [build]
   publish = "public"
   command = "npm run build"
+[context.branch-deploy]
+  ignore = "bash ./netlify-build-ignore.sh"
 [build.environment]
   NODE_VERSION = "12"
   YARN_VERSION = "1.22.4"
