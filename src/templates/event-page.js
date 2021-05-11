@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { navigate } from 'gatsby'
 import { connect } from 'react-redux'
 
-import { envVariables } from '../utils/envVariables';
 import SummitObject from '../content/summit.json'
 
 import Layout from '../components/Layout'
@@ -19,7 +18,7 @@ import VideoBanner from '../components/VideoBanner'
 import SponsorComponent from '../components/SponsorComponent'
 import NoTalkComponent from '../components/NoTalkComponent'
 import HeroComponent from '../components/HeroComponent'
-import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
+import UpcomingEventsComponent from "../components/UpcomingEventsComponent";
 import AttendanceTrackerComponent from '../components/AttendanceTrackerComponent'
 
 import { getEventById } from '../actions/event-actions'
@@ -134,13 +133,9 @@ export const EventPageTemplate = class extends React.Component {
                         <Etherpad className="talk__etherpad" etherpad_link={event.etherpad_link} userName={user.userProfile.first_name} />
                       </div>
                     }
-                    <ScheduleLiteComponent
+                    <UpcomingEventsComponent
                       onEventClick={(ev) => this.onEventChange(ev)}
                       onViewAllEventsClick={() => this.onViewAllEventsClick()}
-                      landscape={true}
-                      yourSchedule={false}
-                      showFilters={false}
-                      showNav={false}
                       trackId={event.track ? event.track.id : null}
                       eventCount={3}
                       title={event.track ? `Up Next on ${event.track.name}` : 'Up Next'}

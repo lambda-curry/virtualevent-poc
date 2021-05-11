@@ -4,7 +4,7 @@ import { navigate } from 'gatsby'
 import { connect } from 'react-redux'
 
 import Layout from '../components/Layout'
-import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
+import LiteScheduleComponent from '../components/LiteScheduleComponent'
 import AttendanceTrackerComponent from '../components/AttendanceTrackerComponent'
 
 import { PHASES } from '../utils/phasesUtils'
@@ -26,15 +26,11 @@ const SchedulePage = ({ summitPhase, isLoggedUser, loggedUser, mySchedule, locat
       <div className="container">
         <h1>{title}</h1>
         <hr />
-        <ScheduleLiteComponent
+        <LiteScheduleComponent
           {...scheduleProps}
-          landscape={true}
-          showNav={true}
-          showFilters={true}
+          showSearch={true}
           showAllEvents={true}
           yourSchedule={mySchedule}
-          eventCount={100}
-          updateCallback={ev => console.log('event updated', ev)}
           showDetails={true}
         />
       </div>

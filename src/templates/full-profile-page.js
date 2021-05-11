@@ -10,15 +10,15 @@ import Swal from 'sweetalert2';
 import Layout from '../components/Layout'
 import withOrchestra from "../utils/widgetOrchestra";
 
-import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
+import LiteScheduleComponent from '../components/LiteScheduleComponent'
 import ProfilePopupComponent from '../components/ProfilePopupComponent'
+import ChangePasswordComponent from '../components/ChangePasswordComponent';
 
 import { updateProfilePicture, updateProfile, getIDPProfile, updatePassword } from '../actions/user-actions'
 
 import styles from '../styles/full-profile.module.scss'
-import ChangePasswordComponent from '../components/ChangePasswordComponent';
 
-export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, updateProfilePicture, updatePassword, addWidgetRef, updateWidgets }) => {
+export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, updateProfilePicture, updatePassword}) => {
 
     const [showProfile, setShowProfile] = useState(false);
     const [personalProfile, setPersonalProfile] = useState({
@@ -571,17 +571,13 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                     </div>
                     <div className="column is-3">
                         <div className={styles.header}>My Schedule</div>
-                        <ScheduleLiteComponent
+                        <LiteScheduleComponent
                             onEventClick={(ev) => onEventChange(ev)}
                             onViewAllEventsClick={() => onViewAllEventsClick()}
                             title=''
-                            landscape={true}
                             yourSchedule={true}
                             showNav={true}
                             eventCount={10}
-                            slotCount={1}
-                            onRef={addWidgetRef}
-                            updateCallback={updateWidgets}
                         />
                     </div>
                 </div>

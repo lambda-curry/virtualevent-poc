@@ -8,7 +8,7 @@ import { getAccessToken } from 'openstack-uicore-foundation/lib/methods';
 import SponsorHeader from '../components/SponsorHeader'
 import AttendanceTrackerComponent from '../components/AttendanceTrackerComponent'
 import LiveEventWidgetComponent from '../components/LiveEventWidgetComponent'
-import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
+import UpcomingEventsComponent from '../components/UpcomingEventsComponent'
 import AdvertiseSponsorsComponent from '../components/AdvertiseSponsorsComponent'
 import DocumentsComponent from '../components/DocumentsComponent'
 import DisqusComponent from '../components/DisqusComponent'
@@ -118,17 +118,13 @@ export const SponsorPageTemplate = class extends React.Component {
                   <LiveEventWidgetComponent
                     onEventClick={(ev) => this.onEventChange(ev)}
                     sponsorId={sponsor.companyId}
-                    showSponsor={sponsor.companyId ? true : false}
+                    showSponsor={!!sponsor.companyId}
                   />
                 }
                 {schedule &&
-                  <ScheduleLiteComponent
+                  <UpcomingEventsComponent
                     onEventClick={(ev) => this.onEventChange(ev)}
                     onViewAllEventsClick={() => this.onViewAllEventsClick()}
-                    landscape={false}
-                    yourSchedule={false}
-                    showNav={false}
-                    showAllEvents={false}
                     eventCount={3}
                     sponsorId={sponsor.companyId}
                   />
