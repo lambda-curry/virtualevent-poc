@@ -9,7 +9,7 @@ import Slider from "react-slick"
 import Layout from '../components/Layout'
 import AttendanceTrackerComponent from '../components/AttendanceTrackerComponent'
 import MarketingHeroComponent from '../components/MarketingHeroComponent'
-import LiteScheduleComponent from '../components/LiteScheduleComponent'
+import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
 import DisqusComponent from '../components/DisqusComponent'
 
 import Content, { HTMLContent } from '../components/Content'
@@ -39,10 +39,11 @@ export const MarketingPageTemplate = class extends React.Component {
     let { content, contentComponent, summit_phase, user, isLoggedUser, location } = this.props;
     let { summit } = SummitObject;
 
-    const PageContent = contentComponent || Content;
+    const PageContent = contentComponent || Content
 
-    let scheduleProps = {};
-    if (MarketingSite.leftColumn.schedule && isLoggedUser && summit_phase !== PHASES.BEFORE) {
+    let scheduleProps = {}
+    if (MarketingSite.leftColumn.schedule &&
+      isLoggedUser && summit_phase !== PHASES.BEFORE) {
       scheduleProps = {
         ...scheduleProps,
         onEventClick: (ev) => navigate(`/a/event/${ev.id}`),
@@ -68,10 +69,12 @@ export const MarketingPageTemplate = class extends React.Component {
             {MarketingSite.leftColumn.schedule.display &&
               <React.Fragment>
                 <h2><b>{MarketingSite.leftColumn.schedule.title}</b></h2>
-                <LiteScheduleComponent
+                <ScheduleLiteComponent
                   {...scheduleProps}
                   page="marketing-site"
+                  landscape={true}
                   showAllEvents={true}
+                  eventCount={100}
                 />
               </React.Fragment>
             }

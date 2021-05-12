@@ -11,8 +11,7 @@ import HomeSettings from '../content/home-settings.json'
 
 import LobbyHeroComponent from '../components/LobbyHeroComponent'
 import AdvertiseComponent from '../components/AdvertiseComponent'
-import LiteScheduleComponent from '../components/LiteScheduleComponent'
-import UpcomingEventsComponent from '../components/UpcomingEventsComponent'
+import ScheduleLiteComponent from '../components/ScheduleLiteComponent'
 import DisqusComponent from '../components/DisqusComponent'
 import LiveEventWidgetComponent from '../components/LiveEventWidgetComponent'
 import SpeakersWidgetComponent from '../components/SpeakersWidgetComponent'
@@ -22,6 +21,7 @@ import AttendanceTrackerComponent from '../components/AttendanceTrackerComponent
 
 import { getDisqusSSO, getUserProfile } from '../actions/user-actions'
 
+import { envVariables } from "../utils/envVariables";
 
 export const HomePageTemplate = class extends React.Component {
 
@@ -47,7 +47,7 @@ export const HomePageTemplate = class extends React.Component {
   }
 
   render() {
-    const { user } = this.props;
+    const { user, addWidgetRef, updateWidgets } = this.props;
     let { summit } = SummitObject;
 
     return (
@@ -74,10 +74,15 @@ export const HomePageTemplate = class extends React.Component {
                 className="disqus-container-home"
                 title="Public conversation"
               />
-              <UpcomingEventsComponent
+              <ScheduleLiteComponent
                 onEventClick={(ev) => this.onEventChange(ev)}
                 onViewAllEventsClick={() => this.onViewAllEventsClick()}
+                landscape={false}
+                yourSchedule={false}
+                showNav={false}
                 showAllEvents={true}
+                onRef={addWidgetRef}
+                updateCallback={updateWidgets}
                 title="Up Next"
                 eventCount={4}
                 />
@@ -100,13 +105,17 @@ export const HomePageTemplate = class extends React.Component {
             <div className="column is-one-quarter pb-6">
               <h2><b>My Info</b></h2>
               <SimpleChatWidgetComponent title="Private Chat" />
-              <LiteScheduleComponent
+              <ScheduleLiteComponent
                 onEventClick={(ev) => this.onEventChange(ev)}
                 onViewAllEventsClick={() => this.onViewAllMyEventsClick()}
                 title='My Schedule'
+                landscape={true}
                 yourSchedule={true}
                 showNav={true}
                 eventCount={10}
+                slotCount={1}
+                onRef={addWidgetRef}
+                updateCallback={updateWidgets}
               />
               <AdvertiseComponent section='lobby' column="right" />
             </div>
