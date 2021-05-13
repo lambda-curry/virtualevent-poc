@@ -11,9 +11,9 @@ Contact us: [info@tlsproductionsinc.com](mailto:info@tlsproductionsinc.com)
 
 Follow us: 
 
-* Facebook: [www.facebook.com/tlsproductionsinc](https://www.facebook.com/tlsproductionsinc)
+* Facebook: [facebook.com/tlsproductionsinc](https://www.facebook.com/tlsproductionsinc)
 * Twitter: [twitter.com/TLSProductions](https://twitter.com/TLSProductions)
-* Instagram: [www.instagram.com/tlsproductionsinc](https://www.instagram.com/tlsproductionsinc/)
+* Instagram: [instagram.com/tlsproductionsinc](https://www.instagram.com/tlsproductionsinc/)
 * Vimeo: [vimeo.com/tlsproductionsinc](https://vimeo.com/tlsproductionsinc)
 
 \--
@@ -26,7 +26,7 @@ Contact us: [info@hxusa.com](mailto:info@hxusa.com)
 
 Follow us: 
 
-* Facebook: [www.facebook.com/HXTechnologiesInc](https://www.facebook.com/HXTechnologiesInc)
+* Facebook: [facebook.com/HXTechnologiesInc](https://www.facebook.com/HXTechnologiesInc)
 * Twitter: [twitter.com/hxtech](https://twitter.com/hxtech)
-* Instagram: [www.instagram.com/hxusa](https://www.instagram.com/hxusa/)
+* Instagram: [instagram.com/hxusa](https://www.instagram.com/hxusa/)
 * Vimeo: [vimeo.com/hxusa](https://vimeo.com/hxusa)
