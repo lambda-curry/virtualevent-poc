@@ -83,6 +83,26 @@
                 "order": 3,
                 "link": "https://www.facebook.com/anthonydrakeandassociates"
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/la-county-health-dept-covid-19-certificate-copy.pdf",
+                "name": "LA County Health Dept- COVID-19 Certificate",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/lacdh-certificate.pdf",
+                "name": "LACDH Certificate",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/who-certificate.pdf",
+                "name": "WHO Certificate",
+                "order": 3
+              }
             ]
           },
           "columnAds": [
