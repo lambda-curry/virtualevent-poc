@@ -23,7 +23,6 @@ import SponsorsTiers from '../content/sponsors-tiers.json'
 import Layout from '../components/Layout'
 
 import styles from '../styles/sponsor-page.module.scss'
-import envVariables from "../utils/envVariables";
 
 import { scanBadge } from '../actions/user-actions'
 import { getDisqusSSO } from '../actions/user-actions'

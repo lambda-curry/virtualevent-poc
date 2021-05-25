@@ -3,13 +3,13 @@ import URI from "urijs"
 
 import { doLogin } from 'openstack-uicore-foundation/lib/methods'
 
-import envVariables from '../utils/envVariables'
+import { getEnvVariable, AUTHORIZED_DEFAULT_PATH } from '../utils/envVariables'
 
 const LoginButton = class extends React.Component {
 
   getBackURL() {
     let { location } = this.props;
-    let defaultLocation = envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/';
+    let defaultLocation = getEnvVariable(AUTHORIZED_DEFAULT_PATH) ? getEnvVariable(AUTHORIZED_DEFAULT_PATH) : '/a/';
     let backUrl = location.state?.backUrl ? location.state.backUrl : defaultLocation;    
     return URI.encode(backUrl);
   }

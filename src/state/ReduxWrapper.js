@@ -5,6 +5,7 @@ import { loggedUserReducer } from 'openstack-uicore-foundation/lib/reducers';
 import eventReducer from '../reducers/event-reducer'
 import summitReducer from '../reducers/summit-reducer'
 import userReducer from '../reducers/user-reducer'
+import scheduleReducer from '../reducers/schedule-reducer'
 import clockReducer from '../reducers/clock-reducer'
 
 import thunk from 'redux-thunk';
@@ -28,6 +29,7 @@ const persistedReducers = persistCombineReducers(config, {
   eventState: eventReducer,
   summitState: summitReducer,
   userState: userReducer,
+  scheduleState: scheduleReducer,
   clockState: clockReducer
 });
 

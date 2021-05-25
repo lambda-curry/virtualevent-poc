@@ -21,7 +21,7 @@ import AttendanceTrackerComponent from '../components/AttendanceTrackerComponent
 
 import { getDisqusSSO, getUserProfile } from '../actions/user-actions'
 
-import envVariables from "../utils/envVariables";
+import { envVariables } from "../utils/envVariables";
 
 export const HomePageTemplate = class extends React.Component {
 
@@ -42,6 +42,10 @@ export const HomePageTemplate = class extends React.Component {
     navigate('/a/schedule')
   }
 
+  onViewAllMyEventsClick() {
+    navigate('/a/my-schedule')
+  }
+
   render() {
     const { user, addWidgetRef, updateWidgets } = this.props;
     let { summit } = SummitObject;
@@ -57,7 +61,7 @@ export const HomePageTemplate = class extends React.Component {
               <AdvertiseComponent section='lobby' column="left" />
             </div>
             <div className="column is-half">
-              <h2><b>Today's Sessions</b></h2>
+              <h2><b>Today</b></h2>
               <LiveEventWidgetComponent
                 featuredEventId={HomeSettings.live_now_featured_event_id}
                 onEventClick={(ev) => this.onEventChange(ev)}
@@ -73,16 +77,15 @@ export const HomePageTemplate = class extends React.Component {
               <ScheduleLiteComponent
                 onEventClick={(ev) => this.onEventChange(ev)}
                 onViewAllEventsClick={() => this.onViewAllEventsClick()}
-                landscape={HomeSettings.centerColumn.schedule.showAllEvents}
+                landscape={false}
                 yourSchedule={false}
                 showNav={false}
                 showAllEvents={true}
                 onRef={addWidgetRef}
                 updateCallback={updateWidgets}
-                title={HomeSettings.centerColumn.schedule.showAllEvents ? "Full Schedule" : "Up Next"}
-                eventCount={HomeSettings.centerColumn.schedule.showAllEvents ? 100 : 4}
-                className={HomeSettings.centerColumn.schedule.showAllEvents ? "schedule-container-home" : ""}
-              />
+                title="Up Next"
+                eventCount={4}
+                />
               {HomeSettings.centerColumn.speakers.showTodaySpeakers &&
                 <SpeakersWidgetComponent
                   title="Today's Speakers"
@@ -104,7 +107,7 @@ export const HomePageTemplate = class extends React.Component {
               <SimpleChatWidgetComponent title="Private Chat" />
               <ScheduleLiteComponent
                 onEventClick={(ev) => this.onEventChange(ev)}
-                onViewAllEventsClick={() => this.onViewAllEventsClick()}
+                onViewAllEventsClick={() => this.onViewAllMyEventsClick()}
                 title='My Schedule'
                 landscape={true}
                 yourSchedule={true}

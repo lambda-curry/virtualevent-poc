@@ -86,7 +86,7 @@ div.column:first-of-type {
       width: 100%;
       z-index: 1;
       margin-left: 0;
-      min-height: 150px;
+      min-height: 190px;
     }
   }
 }
@@ -351,7 +351,7 @@ div.column:first-of-type {
         .hero-marketing-container {
           transform: none;
           margin-left: 0;
-          height: auto;
+          height: 320px;
         }
       }
 
@@ -360,6 +360,9 @@ div.column:first-of-type {
         z-index: 1;
         margin-left: 0;
         min-height: 150px;
+        .image-slider {
+          height: 320px;
+        }
       }
     }
   }

@@ -2,16 +2,14 @@ import React, { useState, useEffect } from "react"
 import { connect } from 'react-redux'
 import { navigate } from "gatsby"
 
-import { isAuthorizedUser, isAuthorizedBadge } from '../utils/authorizedGroups';
+import { isAuthorizedBadge } from '../utils/authorizedGroups';
 import { PHASES } from '../utils/phasesUtils'
 import { getUserProfile } from "../actions/user-actions";
 import HeroComponent from '../components/HeroComponent'
 
-const PrivateRoute = ({ component: Component, isLoggedIn, location, eventId, user: { loading, userProfile }, summit_phase, getUserProfile, ...rest }) => {
+const PrivateRoute = ({ component: Component, isLoggedIn, location, eventId, user: { loading, userProfile, hasTicket, isAuthorized }, summit_phase, getUserProfile, ...rest }) => {
 
-  const [hasTicket, setHasTicket] = useState(null);
-  const [isAuthorized, setIsAuthorized] = useState(null);
-  const [updatingUserProfile, setUpdatingUserProfile] = useState(null);
+  const [userRevalidation, setUserRevalidation] = useState(null);
 
   useEffect(() => {
    
@@ -20,20 +18,16 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, eventId, use
     if (userProfile === null) {
       getUserProfile();
       return;
-    } else if (updatingUserProfile) {
-      setUpdatingUserProfile(false);
+    } else if (userRevalidation) {
+      setUserRevalidation(false);
     }
 
-    if (hasTicket === null || isAuthorized === null || updatingUserProfile === true) {
-      setIsAuthorized(() => isAuthorizedUser(userProfile.groups));
-      setHasTicket(() => userProfile.summit_tickets?.length > 0);
-      return;
-    }
-
-    if (isAuthorized === false && hasTicket === false && updatingUserProfile === null) {
+    if (userRevalidation === null && (isAuthorized === false && hasTicket === false)) {
       getUserProfile();
-      setUpdatingUserProfile(true);
+      setUserRevalidation(true);
       return;
+    } else {
+      setUserRevalidation(false);
     }
   }, [userProfile, hasTicket, isAuthorized]);
 
@@ -46,8 +40,8 @@ const PrivateRoute = ({ component: Component, isLoggedIn, location, eventId, use
     return null
   }
 
-  if (loading || userProfile === null || hasTicket === null || isAuthorized === null || 
-    (hasTicket === false && isAuthorized === false && updatingUserProfile !== false)) {
+  if (loading || userProfile === null || hasTicket === null || isAuthorized === null || userRevalidation === null ||
+      (hasTicket === false && isAuthorized === false && userRevalidation === true)) {
     return (
       <HeroComponent
         title="Checking credentials..."

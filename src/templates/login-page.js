@@ -5,12 +5,12 @@ import { navigate } from "gatsby"
 import Layout from '../components/Layout'
 import LoginButton from '../components/LoginButton'
 
-import envVariables from '../utils/envVariables'
+import { getEnvVariable, AUTHORIZED_DEFAULT_PATH } from '../utils/envVariables'
 
 export const LoginPageTemplate = ({ loggedUserState, location }) => {
 
   if (loggedUserState.isLoggedUser) {
-    let defaultPath = envVariables.AUTHORIZED_DEFAULT_PATH ? envVariables.AUTHORIZED_DEFAULT_PATH : '/a/';
+    let defaultPath = getEnvVariable(AUTHORIZED_DEFAULT_PATH) ? getEnvVariable(AUTHORIZED_DEFAULT_PATH) : '/a/';
     navigate(defaultPath);
     return null
   }

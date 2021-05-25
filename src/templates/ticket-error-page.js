@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { navigate } from 'gatsby'
 
-import envVariables from '../utils/envVariables'
+import { getEnvVariable, REGISTRATION_BASE_URL } from '../utils/envVariables'
 
 import SummitObject from '../content/summit.json'
 import HeroComponent from '../components/HeroComponent'
@@ -22,16 +22,16 @@ export const TicketErrorPageTemplate = class extends React.Component {
   redirect() {
     const { error } = this.state;
 
-    if (envVariables.REGISTRATION_BASE_URL) {
+    if (getEnvVariable(REGISTRATION_BASE_URL)) {
 
       let targetUrl = null;
       switch (error) {
         case 'no-ticket':
           const { summit: { slug } } = SummitObject
-          targetUrl = `${envVariables.REGISTRATION_BASE_URL}/a/${slug}/`;
+          targetUrl = `${getEnvVariable(REGISTRATION_BASE_URL)}/a/${slug}/`;
           break;
         case 'incomplete':
-          targetUrl = `${envVariables.REGISTRATION_BASE_URL}/a/tickets`;
+          targetUrl = `${getEnvVariable(REGISTRATION_BASE_URL)}/a/tickets`;
           break;
         default:
           break;
@@ -71,7 +71,7 @@ export const TicketErrorPageTemplate = class extends React.Component {
   getRedirectMessage() {
     const { error } = this.state;
 
-    return error && envVariables.REGISTRATION_BASE_URL ?
+    return error && getEnvVariable(REGISTRATION_BASE_URL) ?
       'You will be redirected to registration.' : '';
   }
 

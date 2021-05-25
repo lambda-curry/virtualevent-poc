@@ -56,15 +56,6 @@ module.exports = {
             },
           },
           {
-            resolve: 'gatsby-remark-images',
-            options: {
-              // It's important to specify the maxWidth (in pixels) of
-              // the content container as this plugin uses this as the
-              // base for generating different widths of each image.
-              maxWidth: 2048,
-            },
-          },
-          {
             resolve: 'gatsby-remark-copy-linked-files',
             options: {
               destinationDir: 'static',
@@ -77,12 +68,6 @@ module.exports = {
       resolve: `gatsby-plugin-create-client-paths`,
       options: { prefixes: [`/auth/*`, `/a/*`] },
     },
-    // {
-    //   resolve: `gatsby-plugin-disqus`,
-    //   options: {
-    //     shortname: `fnvirtual-poc`
-    //   }
-    // },
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {

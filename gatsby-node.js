@@ -4,6 +4,7 @@ const path = require('path')
 const fs = require("fs")
 const { createFilePath } = require('gatsby-source-filesystem')
 const { fmImagesToRelative } = require('gatsby-remark-relative-images')
+const { ClientCredentials } = require('simple-oauth2');
 
 const myEnv = require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
@@ -13,9 +14,9 @@ exports.onPreBootstrap = async () => {
 
   let marketingData;
 
-  let params = {    
+  let params = {
     per_page: 100,
-};
+  };
 
   const colours = await axios.get(
     `${process.env.GATSBY_MARKETING_API_BASE_URL}/api/public/v1/config-values/all/shows/${process.env.GATSBY_SUMMIT_ID}`, { params }
@@ -74,6 +75,168 @@ exports.onPreBootstrap = async () => {
   });
 
   fs.writeFileSync('src/content/home-settings.json', JSON.stringify(homeSettings), 'utf8', function (err) {
+    if (err) throw err;
+    console.log('Saved!');
+  });
+
+  // Private API endpoints
+
+  const config = {
+    client: {
+      id: process.env.GATSBY_OAUTH2_CLIENT_ID_BUILD,
+      secret: process.env.GATSBY_OAUTH2_CLIENT_SECRET_BUILD
+    },
+    auth: {
+      tokenHost: process.env.GATSBY_IDP_BASE_URL,
+      tokenPath: process.env.GATSBY_OAUTH_TOKEN_PATH
+    },
+    options: {
+      authorizationMethod: 'header'
+    }
+  };
+
+  const getAccessToken = async () => {
+    const client = new ClientCredentials(config);
+
+    const tokenParams = {
+      scope: process.env.GATSBY_BUILD_SCOPES
+    };
+
+    try {
+      const accessToken = await client.getToken(tokenParams);
+      return accessToken;
+    } catch (error) {
+      console.log('Access Token error', error);
+    }
+  }
+
+  const accessToken = await getAccessToken().then((token) => {
+    return token.token.access_token
+  });
+
+  let events_page = 1;
+  let events_last_page = 0;
+
+  let allEvents = await axios.get(
+    `${process.env.GATSBY_SUMMIT_API_BASE_URL}/api/v1/summits/${process.env.GATSBY_SUMMIT_ID}/events/published`,
+    {
+      params: {
+        access_token: accessToken,
+        per_page: 50,
+        page: events_page,
+        expand: 'slides, links, videos, media_uploads type, track, location, location.venue, location.floor, speakers, moderator, sponsors, current_attendance, groups, rsvp_template',
+      }
+    }).then((response) => {
+      events_last_page = response.data.last_page;
+      return response.data.data;
+    })
+    .catch(e => console.log('ERROR: ', e));
+
+  while (events_last_page > 1 && events_page <= events_last_page) {
+    events_page++;
+    newEvents = await axios.get(
+      `${process.env.GATSBY_SUMMIT_API_BASE_URL}/api/v1/summits/${process.env.GATSBY_SUMMIT_ID}/events/published`,
+      {
+        params: {
+          access_token: accessToken,
+          per_page: 50,
+          page: events_page,
+          expand: 'slides, links, videos, media_uploads type, track, location, location.venue, location.floor, speakers, moderator, sponsors, current_attendance, groups, rsvp_template',
+        }
+      }).then((response) => {
+        allEvents = [...allEvents, ...response.data.data];
+        return response.data;
+      })
+      .catch(e => console.log('ERROR: ', e));
+  }
+
+  fs.writeFileSync('src/content/events.json', JSON.stringify(allEvents), 'utf8', function (err) {
+    if (err) throw err;
+    console.log('Saved!');
+  });
+
+
+  // Fetch Speakers
+
+  // Get Featured Speakers
+
+  let featured_speakers_page = 1;
+  let featured_speakers_last_page = 0;
+
+  let featuredSpeakers = await axios.get(
+    `${process.env.GATSBY_SUMMIT_API_BASE_URL}/api/v1/summits/${process.env.GATSBY_SUMMIT_ID}/speakers/on-schedule`,
+    {
+      params: {
+        access_token: accessToken,
+        page: featured_speakers_page,
+        per_page: 30,
+        'filter[]': 'featured==true',
+      }
+    }).then((response) => {
+      featured_speakers_last_page = response.data.last_page;
+      return response.data.data;
+    })
+    .catch(e => console.log('ERROR: ', e));
+
+  while (featured_speakers_last_page > 1 && featured_speakers_page <= featured_speakers_last_page) {
+    featured_speakers_page++;
+    newSpeakers = await axios.get(
+      `${process.env.GATSBY_SUMMIT_API_BASE_URL}/api/v1/summits/${process.env.GATSBY_SUMMIT_ID}/speakers/on-schedule`,
+      {
+        params: {
+          access_token: accessToken,
+          page: featured_speakers_page,
+          per_page: 30,
+          'filter[]': 'featured==true',
+        }
+      }).then((response) => {
+        featuredSpeakers = [...featuredSpeakers, ...response.data.data];
+        return response.data;
+      })
+      .catch(e => console.log('ERROR: ', e));
+  }
+
+  featuredSpeakers = featuredSpeakers.map(speaker => ({ ...speaker, featured: true }));
+
+  let speakers_page = 1;
+  let speakers_last_page = 0;
+
+  let allSpeakers = await axios.get(
+    `${process.env.GATSBY_SUMMIT_API_BASE_URL}/api/v1/summits/${process.env.GATSBY_SUMMIT_ID}/speakers/on-schedule`,
+    {
+      params: {
+        access_token: accessToken,
+        page: speakers_page,
+        per_page: 30,
+      }
+    }).then((response) => {
+      speakers_last_page = response.data.last_page;
+      return response.data.data;
+    })
+    .catch(e => console.log('ERROR: ', e));
+
+  while (speakers_last_page > 1 && speakers_page <= speakers_last_page) {
+    speakers_page++;
+    newSpeakers = await axios.get(
+      `${process.env.GATSBY_SUMMIT_API_BASE_URL}/api/v1/summits/${process.env.GATSBY_SUMMIT_ID}/speakers/on-schedule`,
+      {
+        params: {
+          access_token: accessToken,
+          page: speakers_page,
+          per_page: 30,
+        }
+      }).then((response) => {
+        allSpeakers = [...allSpeakers, ...response.data.data];
+        return response.data;
+      })
+      .catch(e => console.log('ERROR: ', e));
+  }
+
+  allSpeakers = allSpeakers.filter(speaker => featuredSpeakers.every(s => s.id !== speaker.id));
+
+  allSpeakers = [...allSpeakers, ...featuredSpeakers];
+
+  fs.writeFileSync('src/content/speakers.json', JSON.stringify(allSpeakers), 'utf8', function (err) {
     if (err) throw err;
     console.log('Saved!');
   });

@@ -5,26 +5,22 @@ import { connect } from "react-redux";
 import SpeakersWidget from 'speakers-widget';
 import 'speakers-widget/index.css';
 
-import withAccessToken from "../utils/withAccessToken";
-
-import envVariables from '../utils/envVariables';
-import expiredToken from '../utils/expiredToken';
+import EventsData from '../content/events.json'
+import SpeakersData from '../content/speakers.json'
+import MarketingData from '../content/colors.json'
 
 const SpeakersWidgetComponent = class extends React.Component {
 
   render() {
 
-    const { accessToken, now, ...props } = this.props;
-
-    if (accessToken == null) return null
+    const { now, ...props } = this.props;
 
     const widgetProps = {
-      accessToken: accessToken,
-      apiBaseUrl: envVariables.SUMMIT_API_BASE_URL,
-      marketingApiBaseUrl: envVariables.MARKETING_API_BASE_URL,
-      summitId: parseInt(envVariables.SUMMIT_ID),
       date: now,
-      onAuthError: (err, res) => expiredToken(err),
+      // featured: true,
+      speakersData: SpeakersData,
+      eventsData: EventsData,
+      marketingData: MarketingData.colors,
       ...props
     };
 
@@ -45,4 +41,4 @@ const mapStateToProps = ({ clockState }) => ({
   now: clockState.nowUtc
 })
 
-export default withAccessToken(connect(mapStateToProps, {})(SpeakersWidgetComponent))
+export default connect(mapStateToProps, null)(SpeakersWidgetComponent)

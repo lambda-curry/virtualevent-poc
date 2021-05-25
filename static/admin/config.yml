@@ -141,9 +141,6 @@ collections:
         label: "Lobby Settings"
         fields:
           - {label: "Center Column", name: "centerColumn", widget: object, fields: [
-              {label: "Schedule", name: "schedule", widget: object, fields: [
-                {label: "Show all events", name: "showAllEvents", widget: boolean, required: false}
-              ]},
               {label: "Speakers", name: "speakers", widget: object, fields: [
                 {label: "Show Today Speakers", name: "showTodaySpeakers", widget: boolean, required: false},
                 {label: "Show Feature Speakers", name: "showFeatureSpeakers", widget: boolean, required: false}

@@ -4,7 +4,7 @@ import withAccessToken from "../utils/withAccessToken";
 
 import { AttendanceTracker } from "openstack-uicore-foundation/lib/components";
 
-import envVariables from '../utils/envVariables';
+import { getEnvVariable, SUMMIT_API_BASE_URL, SUMMIT_ID } from '../utils/envVariables';
 
 const AttendanceTrackerComponent = class extends React.Component {
 
@@ -16,8 +16,8 @@ const AttendanceTrackerComponent = class extends React.Component {
 
     const widgetProps = {
       accessToken: accessToken,
-      apiBaseUrl: envVariables.SUMMIT_API_BASE_URL,
-      summitId: parseInt(envVariables.SUMMIT_ID),
+      apiBaseUrl: getEnvVariable(SUMMIT_API_BASE_URL),
+      summitId: parseInt(getEnvVariable(SUMMIT_ID)),
       ...this.props
     };
 
