@@ -88,14 +88,14 @@
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/la-county-health-dept-covid-19-certificate-copy.pdf",
-                "name": "LA County Health Dept- COVID-19 Certificate",
-                "order": 2
+                "name": "Health Education Services Certificate",
+                "order": 1
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/lacdh-certificate.pdf",
-                "name": "LACDH Certificate",
-                "order": 1
+                "name": "L.A. County Dept. of Public Health Certificate",
+                "order": 2
               },
               {
                 "class_name": "PresentationSlide",
@@ -107,8 +107,8 @@
           },
           "columnAds": [
             {
-              "link": "www.adanda.net",
-              "image": "/img/master-ad-a-logo_tight.png"
+              "link": "https://www.adanda.net/join-us",
+              "image": "/img/yoco_ad-a-sponsor-ad_emp.png"
             }
           ],
           "id": 35,
