@@ -87,8 +87,8 @@
           },
           "columnAds": [
             {
-              "link": "https://www.adanda.net/join-us",
-              "image": "www.adanda.net"
+              "link": "www.adanda.net",
+              "image": "/img/master-ad-a-logo_tight.png"
             }
           ],
           "id": 35,
