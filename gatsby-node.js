@@ -150,7 +150,9 @@ exports.onPreBootstrap = async () => {
       .catch(e => console.log('ERROR: ', e));
   }
 
-  fs.writeFileSync('src/content/events.json', JSON.stringify(allEvents), 'utf8', function (err) {
+  const eventFile = { build_time: parseInt(new Date().getTime() / 1000), events: [...allEvents] }
+
+  fs.writeFileSync('src/content/events.json', JSON.stringify(eventFile), 'utf8', function (err) {
     if (err) throw err;
     console.log('Saved!');
   });
