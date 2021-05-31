@@ -19,7 +19,7 @@ const SpeakersWidgetComponent = class extends React.Component {
       date: now,
       // featured: true,
       speakersData: SpeakersData,
-      eventsData: EventsData,
+      eventsData: EventsData.events,
       marketingData: MarketingData.colors,
       ...props
     };

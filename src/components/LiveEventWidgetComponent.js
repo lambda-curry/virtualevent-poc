@@ -17,7 +17,7 @@ const LiveEventWidgetComponent = class extends React.Component {
     const widgetProps = {
       title: "",
       defaultImage: HomeSettings.schedule_default_image,
-      eventsData: EventsData,
+      eventsData: EventsData.events,
       summitData: SummitData.summit,
       marketingData: MarketingData.colors,
     };

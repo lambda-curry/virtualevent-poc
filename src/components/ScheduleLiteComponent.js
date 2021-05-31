@@ -32,7 +32,7 @@ const ScheduleLiteComponent = class extends React.Component {
       summitId: parseInt(getEnvVariable(SUMMIT_ID)),
       onRef: ref => this.child = ref,
       defaultImage: HomeSettings.schedule_default_image,
-      eventsData: EventsData,
+      eventsData: EventsData.events,
       summitData: SummitData.summit,
       marketingData: MarketingData.colors,
       userProfile: userProfile,
