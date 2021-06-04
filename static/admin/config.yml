@@ -1,6 +1,6 @@
 backend:
   name: github
-  branch: feature/schedule_revamp
+  branch: prod-ocpglobal2021
   repo: fntechgit/virtualevent-poc
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
