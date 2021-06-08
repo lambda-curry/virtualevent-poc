@@ -7,7 +7,7 @@
       "requiresAuth": false
     },
     {
-      "title": "About the event",
+      "title": "About the Event",
       "link": "/about-event",
       "display": true,
       "requiresAuth": false
