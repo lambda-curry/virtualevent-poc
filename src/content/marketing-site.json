@@ -1,1 +1,95 @@
-{"heroBanner":{"title":"Hero Title Text","subTitle":"Subtitle Text","date":"Date Title ","time":"","dateLayout":false,"buttons":{"registerButton":{"text":"Register now","display":true},"loginButton":{"text":"Log in","display":true}},"background":"","images":[{"image":"/img/flavor_wheel.jpg"}]},"leftColumn":{"schedule":{"display":true,"title":"Full Event Schedule"},"disqus":{"display":false,"title":"Join the conversation"},"image":{"display":false,"title":"Image","src":"/img/yoco-sponsor-ads-large-wherehol-vert.png"}},"sponsors":[{"title":"Top Left","images":[{"image":"/img/yoco-sponsor-ads-large-wherehol-vert.png","link":""},{"image":"/img/yoco-sponsor-ads-large-wherehol-vert.png","link":""},{"image":"/img/yoco-sponsor-ads-large-wherehol-vert.png","link":""}]},{"title":"Top Right","images":[{"image":"/img/yoco-sponsor-ads-medium-tilted.png","link":""}]},{"title":"Mid Left","images":[{"image":"/img/yoco-sponsor-ads-large-mobility-vert-new.png","link":""}]},{"title":"Top Left","images":[{"image":"/img/yoco-sponsor-ads-large-apex-vert.png","link":""}]},{},{"title":"Top Left","images":[{"image":"/img/yoco-sponsor-ads-medium-treva.png","link":""}]}],"summit_delta_start_time":"900"}
+{
+  "heroBanner": {
+    "title": "OCP Global Summit",
+    "subTitle": "Open Possibilities",
+    "date": "November 9-10, 2021",
+    "time": "",
+    "dateLayout": false,
+    "buttons": {
+      "registerButton": {
+        "text": "Register now",
+        "display": true
+      },
+      "loginButton": {
+        "text": "Log in",
+        "display": true
+      }
+    },
+    "background": "/img/ocp21glo_fnv_marketingpage_header-left.png",
+    "images": [
+      {
+        "image": "/img/ocp21glo_fnv_marketingpage_header-right.png"
+      }
+    ]
+  },
+  "leftColumn": {
+    "schedule": {
+      "display": true,
+      "title": "Full Event Schedule"
+    },
+    "disqus": {
+      "display": false,
+      "title": "Join the conversation"
+    },
+    "image": {
+      "display": false,
+      "title": "Image",
+      "src": "/img/yoco-sponsor-ads-large-wherehol-vert.png"
+    }
+  },
+  "sponsors": [
+    {
+      "title": "Top Left",
+      "images": [
+        {
+          "image": "/img/ocp21glo_fnv_marketingpage_space1.png",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "title": "Top Right",
+      "images": [
+        {
+          "image": "/img/ocp21glo_fnv_marketingpage_space2.png",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "title": "Mid Left",
+      "images": [
+        {
+          "image": "/img/ocp21glo_fnv_marketingpage_space3.png",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "title": "Top Left",
+      "images": [
+        {
+          "image": "/img/ocp21glo_fnv_marketingpage_space4.png",
+          "link": ""
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "image": "/img/ocp21glo_fnv_marketingpage_space5.png"
+        }
+      ]
+    },
+    {
+      "title": "Top Left",
+      "images": [
+        {
+          "image": "/img/ocp21glo_fnv_marketingpage_space6.png",
+          "link": ""
+        }
+      ]
+    }
+  ],
+  "summit_delta_start_time": "900"
+}
