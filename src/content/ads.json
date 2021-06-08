@@ -4,26 +4,17 @@
       "section": "lobby",
       "columnAds": [
         {
-          "image": "/img/yoco-sponsor-ads-medium-tilted.png",
+          "image": "/img/ocp21glo_fnv_marketingpage_space1.png",
           "button": {
-            "link": "/virtual-booth/"
+            "link": ""
           },
           "column": "left"
         },
         {
-          "image": "/img/yoco-sponsor-ads-large-carbonclean-vert.png",
-          "button": {
-            "text": "Learn more",
-            "link": "/virtual-booth/"
-          },
-          "column": "right",
-          "id": null
-        },
-        {
-          "image": "/img/ad_subscribe.png",
+          "image": "/img/ocp21glo_fnv_marketingpage_space1.png",
           "button": {
             "text": "",
-            "link": "/virtual-booth/"
+            "link": ""
           },
           "column": "right",
           "id": null
