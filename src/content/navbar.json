@@ -7,26 +7,26 @@
       "requiresAuth": false
     },
     {
-      "title": "Schedule",
-      "link": "/a/schedule",
-      "display": true,
-      "requiresAuth": false
-    },
-    {
       "title": "About the event",
       "link": "/about-event",
       "display": true,
       "requiresAuth": false
     },
     {
-      "title": "Who we are",
-      "link": "/who-we-are",
+      "title": "Registration",
+      "link": "/registration",
       "display": true,
       "requiresAuth": false
     },
     {
-      "title": "Past events",
-      "link": "/past-events",
+      "title": "Schedule",
+      "link": "/a/schedule",
+      "display": true,
+      "requiresAuth": false
+    },
+    {
+      "title": "Travel",
+      "link": "/travel",
       "display": true,
       "requiresAuth": false
     },
@@ -37,10 +37,15 @@
       "requiresAuth": false
     },
     {
-      "title": "Help",
-      "link": "/help",
-      "display": true,
-      "requiresAuth": false
+      "requiresAuth": false,
+      "title": "FAQ",
+      "link": "/FAQ",
+      "display": true
+    },
+    {
+      "requiresAuth": false,
+      "title": "My Profile",
+      "link": "/my-profile"
     }
   ]
 }
