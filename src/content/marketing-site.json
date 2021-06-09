@@ -1,7 +1,7 @@
 {
   "heroBanner": {
     "title": "OCP Global Summit",
-    "subTitle": "Open Possibilities",
+    "subTitle": "",
     "date": "November 9-10, 2021",
     "time": "",
     "dateLayout": false,
@@ -15,10 +15,10 @@
         "display": true
       }
     },
-    "background": "/img/ocp21glo_fnv_marketingpage_header-left.png",
+    "background": "/img/ocp21glo_fnv_marketingpage_header-left_v2.png",
     "images": [
       {
-        "image": "/img/ocp21glo_fnv_marketingpage_header-right.png"
+        "image": "/img/ocp21glo_fnv_marketingpage_header-right_v2.png"
       }
     ]
   },
