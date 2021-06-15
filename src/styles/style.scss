@@ -282,12 +282,16 @@ h2 {
   overflow-x: hidden;
   max-height: 1500px;
 
-  >span {
+  span.navbar-brand {
+    background-color: #fff;
     border-bottom: 1px solid #eee;
     padding-left: 15px !important;
     margin-right: -15px;
     margin-left: -15px;
     width: 110%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
   }
 }
 
