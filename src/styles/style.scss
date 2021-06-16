@@ -275,23 +275,19 @@ h2 {
 }
 
 .disqus-container-home {
-  padding: 0 15px;
-  position: static;
   border: 1px solid #eee;
-  overflow-y: auto;
-  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
   max-height: 1500px;
 
   span.navbar-brand {
     background-color: #fff;
     border-bottom: 1px solid #eee;
-    padding-left: 15px !important;
-    margin-right: -15px;
-    margin-left: -15px;
-    width: 110%;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
+  }
+  #disqus_thread {
+    overflow: scroll;
+    margin-top: -10px;
+    padding: 0 15px;
   }
 }
 
