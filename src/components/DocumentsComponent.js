@@ -26,13 +26,14 @@ const DocumentsComponent = ({ event }) => {
     }
   });
 
-  if (sortedMaterials.length > 0) {
+  if (sortedMaterials.length > 0 && sortedMaterials.some(m => m.display_on_site === true)) {
     return (
       <div>
         <div className={`${styles.docsContainer}`} style={{ marginTop: '1em' }}>
           <div className={`navbar-brand ${styles.title}`}>Media/Links</div>
           <hr />
           {sortedMaterials.map((material, index) => {
+            if (material.display_on_site === true) {
               let faIcon = 'fa-link';
               switch (material.class_name) {
                 case 'PresentationSlide':
@@ -78,8 +79,9 @@ const DocumentsComponent = ({ event }) => {
                   <hr />
                 </React.Fragment>
               )
-            })
+            }
           }
+          )}
         </div>
       </div>
     )
