@@ -294,7 +294,26 @@
                 "link": "https://www.youtube.com/watch?v=9m4ZbIbO1-U "
               }
             ],
-            "videos": []
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "WE SPEAK EVENTS: In-person, virtual and everything in-between.",
+                "order": 6,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/Yoco/FNTECH_Sponsor_Assets/FNTECH_Video1_FINAL_fix.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "“Have Sponsors? Look no further!”",
+                "order": 7,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/Yoco/FNTECH_Sponsor_Assets/FNTECH_Video2_V3.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "FNstudios at Your Service",
+                "order": 8,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/Yoco/FNTECH_Sponsor_Assets/FNTECH_Video3_V4.mp4"
+              }
+            ]
           },
           "columnAds": [
             {
