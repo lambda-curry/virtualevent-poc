@@ -257,6 +257,7 @@
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/Yoco/FNTECH%20animated%20logo_Black_012021.mp4",
           "headerImage": "",
           "headerImageMobile": "/img/fnvirtual-yoco-fntech-headerimage-mobile.png",
+          "chatLink": "https://global.gotomeeting.com/join/287912437 ",
           "advertiseImage": "",
           "sponsorId": 7,
           "companyId": 4,
@@ -291,6 +292,20 @@
                 "name": "Oculus Connect 6 with FNTECH",
                 "order": 5,
                 "link": "https://www.youtube.com/watch?v=9m4ZbIbO1-U "
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "FNstudios Video",
+                "order": 1,
+                "link": "https://youtu.be/gkUoBQ9hrSw"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "We Speak Events",
+                "order": 1,
+                "link": "https://youtu.be/6V1jMcgj4-g"
               }
             ]
           },
