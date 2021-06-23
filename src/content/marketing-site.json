@@ -2,7 +2,7 @@
   "heroBanner": {
     "title": "OCP Global Summit",
     "subTitle": "",
-    "date": "OPEN POSSIBILITIES.",
+    "date": "",
     "time": "November 9-10, 2021",
     "dateLayout": false,
     "buttons": {
@@ -32,9 +32,9 @@
       "title": "Join the conversation"
     },
     "image": {
-      "display": false,
-      "title": "Image",
-      "src": "/img/yoco-sponsor-ads-large-wherehol-vert.png"
+      "display": true,
+      "title": "Event schedule coming soon!",
+      "src": ""
     }
   },
   "sponsors": [
