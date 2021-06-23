@@ -294,20 +294,7 @@
                 "link": "https://www.youtube.com/watch?v=9m4ZbIbO1-U "
               }
             ],
-            "videos": [
-              {
-                "class_name": "PresentationVideo",
-                "name": "FNstudios Video",
-                "order": 1,
-                "link": "https://youtu.be/gkUoBQ9hrSw"
-              },
-              {
-                "class_name": "PresentationVideo",
-                "name": "We Speak Events",
-                "order": 1,
-                "link": "https://youtu.be/6V1jMcgj4-g"
-              }
-            ]
+            "videos": []
           },
           "columnAds": [
             {
