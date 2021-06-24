@@ -87,19 +87,19 @@
             "slides": [
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/la-county-health-dept-covid-19-certificate-copy.pdf",
+                "link": "/img/yoco-hes-certificate.pdf",
                 "name": "Health Education Services Certificate",
                 "order": 5
               },
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/lacdh-certificate.pdf",
+                "link": "/img/yoco-lac-certificate.pdf",
                 "name": "L.A. County Dept. of Public Health Certificate",
                 "order": 6
               },
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/who-certificate.pdf",
+                "link": "/img/yoco-who-certificate.pdf",
                 "name": "WHO Certificate",
                 "order": 7
               }
