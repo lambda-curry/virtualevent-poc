@@ -14,7 +14,7 @@
     },
     {
       "title": "Registration",
-      "link": "/Registration",
+      "link": "/Reg",
       "display": true,
       "requiresAuth": false
     },
