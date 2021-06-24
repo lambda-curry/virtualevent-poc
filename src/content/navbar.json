@@ -39,7 +39,7 @@
     {
       "requiresAuth": false,
       "title": "FAQ",
-      "link": "/FAQ",
+      "link": "/faq",
       "display": true
     },
     {
