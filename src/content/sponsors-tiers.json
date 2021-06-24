@@ -2,9 +2,9 @@
   "tiers": [
     {
       "id": "tier-cYGYq5-ae",
-      "name": "Gold",
-      "widgetTitle": "Gold Sponsors",
-      "badge": "/img/gold.png",
+      "name": "Diamond",
+      "widgetTitle": "Diamond Sponsors",
+      "badge": "",
       "lobby": {
         "lobbyTemplate": "big-images",
         "display": true
@@ -23,9 +23,9 @@
     },
     {
       "id": "tier-DHcI3dWGk",
-      "name": "Silver",
-      "widgetTitle": "Silver Sponsors",
-      "badge": "/img/silver.png",
+      "name": "Emerald",
+      "widgetTitle": "Emerald Sponsors",
+      "badge": "",
       "lobby": {
         "lobbyTemplate": "big-images",
         "display": true
@@ -44,11 +44,11 @@
     },
     {
       "id": "tier-U_wEwGX8a",
-      "name": "Bronze",
-      "widgetTitle": "Bronze Sponsors",
-      "badge": "/img/bronze.png",
+      "name": "Ruby",
+      "widgetTitle": "Ruby Sponsors",
+      "badge": "",
       "lobby": {
-        "lobbyTemplate": "small-images",
+        "lobbyTemplate": "big-images",
         "display": true
       },
       "sponsorPage": {
@@ -62,9 +62,65 @@
       },
       "eventTemplate": "",
       "expoHallSize": "small"
+    },
+    {
+      "badge": "",
+      "lobby": {
+        "lobbyTemplate": "big-images",
+        "display": false
+      },
+      "sponsorPage": {
+        "sponsorTemplate": "small-header",
+        "disqus": false,
+        "liveEvent": false,
+        "schedule": false,
+        "banner": false
+      },
+      "expoHallSize": "medium",
+      "eventTemplate": "small-images",
+      "id": "tier-Wqd0Qqef7",
+      "name": "Sapphire",
+      "widgetTitle": "Sapphire Sponsors"
+    },
+    {
+      "badge": "",
+      "lobby": {
+        "lobbyTemplate": "big-images",
+        "display": false
+      },
+      "sponsorPage": {
+        "sponsorTemplate": "small-header",
+        "disqus": false,
+        "liveEvent": false,
+        "schedule": false,
+        "banner": false
+      },
+      "expoHallSize": "medium",
+      "eventTemplate": "small-images",
+      "id": "tier-x0OjdDZTs",
+      "name": "Topaz",
+      "widgetTitle": "Topaz "
+    },
+    {
+      "badge": "",
+      "lobby": {
+        "lobbyTemplate": "small-images",
+        "display": false
+      },
+      "sponsorPage": {
+        "sponsorTemplate": "small-header",
+        "disqus": false,
+        "liveEvent": false,
+        "schedule": false,
+        "banner": false
+      },
+      "expoHallSize": "medium",
+      "eventTemplate": "small-images",
+      "id": "tier-1BXGYJADL",
+      "name": "Misc Sponsors"
     }
   ],
-  "imageHeader": "/img/jumbotron.jpg",
+  "imageHeader": "/img/ocp21glo_expolandingpage_header_062421.png",
   "lobbyButton": {
     "text": "View all",
     "link": "/a/sponsors/"
