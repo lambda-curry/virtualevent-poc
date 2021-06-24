@@ -18,4 +18,4 @@ San Jose, CA 95113
 **Hotels**\
 Check back soon for links to our OCP hotel room blocks!
 
-![](/img/5be413b49634c8549c9c814ccf230b985c20a6eb.jpg)
+![](/img/5be413b49634c8549c9c814ccf230b985c20a6eb-2.jpg)
