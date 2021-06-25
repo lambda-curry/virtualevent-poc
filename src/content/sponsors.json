@@ -238,8 +238,8 @@
           "headerImage": "",
           "headerImageMobile": "/img/fnvirtual-yoco-fntech-headerimage-mobile.png",
           "advertiseImage": "",
-          "sponsorId": 7,
-          "companyId": 4,
+          "sponsorId": 14,
+          "companyId": 11,
           "documents": {
             "links": [
               {
@@ -280,7 +280,7 @@
               "image": "/img/fnvirtual-yoco-fntech-space1.png"
             }
           ],
-          "id": 4,
+          "id": 14,
           "email": "info@fntech.com",
           "usesSponsorPage": true
         },
