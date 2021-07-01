@@ -2,8 +2,8 @@
   "heroBanner": {
     "title": "OCP Global Summit",
     "subTitle": "OPEN POSSIBILITIES.",
-    "date": "",
-    "time": "November 9-10, 2021",
+    "date": "November 9-10, 2021",
+    "time": "",
     "dateLayout": false,
     "buttons": {
       "registerButton": {
@@ -24,15 +24,15 @@
   },
   "leftColumn": {
     "schedule": {
-      "display": false,
-      "title": "Full Event Schedule"
+      "display": true,
+      "title": "Event Schedule"
     },
     "disqus": {
       "display": false,
       "title": "Join the conversation"
     },
     "image": {
-      "display": true,
+      "display": false,
       "title": "Event schedule coming soon!",
       "src": ""
     }
