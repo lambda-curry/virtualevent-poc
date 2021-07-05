@@ -187,20 +187,20 @@ div.column:first-of-type {
     }
 
     .date {
-      transform: skew(-25deg);
-      width: max-content;
+      //transform: skew(-25deg);
+      //width: max-content;
       padding: 0.5rem 0;
-      margin-left: -3em;
+      //margin-left: -3em;
 
       div {
-        transform: skew(25deg);
+        //transform: skew(25deg);
         font-size: 3rem;
         font-weight: bold;
         color: $color_text_light;
         letter-spacing: 0.1rem;
       }
 
-      div:before {
+      /*div:before {
         content: "";
         margin-right: 1.4em;
       }
@@ -208,7 +208,7 @@ div.column:first-of-type {
       div:after {
         content: "";
         margin-left: 1.5em;
-      }
+      }*/
     }
 
     .right-column {
