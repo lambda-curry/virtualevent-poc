@@ -351,7 +351,7 @@ div.column:first-of-type {
         .hero-marketing-container {
           transform: none;
           margin-left: 0;
-          height: 320px;
+          height: auto;
         }
       }
 
@@ -361,7 +361,7 @@ div.column:first-of-type {
         margin-left: 0;
         min-height: 150px;
         .image-slider {
-          height: 320px;
+          height: auto;
         }
       }
     }
