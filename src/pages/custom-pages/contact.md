@@ -1,6 +1,6 @@
 ---
 templateKey: custom-page
-title: Contact
+title: CONTACT
 requiresAuth: false
 ---
 Contact info coming soon!
