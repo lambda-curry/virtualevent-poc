@@ -1,6 +1,6 @@
 ---
 templateKey: custom-page
-title: Travel
+title: TRAVEL
 requiresAuth: false
 ---
 **COVID-19 Regulations**\
