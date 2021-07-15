@@ -1,37 +1,43 @@
 {
   "items": [
     {
-      "title": "Lobby",
+      "title": "LOBBY",
       "link": "/a/",
       "display": true,
       "requiresAuth": true
     },
     {
-      "title": "About the Event",
+      "title": "ABOUT THE EVENT",
       "link": "/about-event",
       "display": true,
       "requiresAuth": false
     },
     {
-      "title": "Registration",
+      "title": "REGISTRATION",
       "link": "/reg",
       "display": true,
       "requiresAuth": false
     },
     {
-      "title": "Schedule",
+      "title": "SCHEDULE",
       "link": "/a/schedule",
       "display": true,
       "requiresAuth": false
     },
     {
-      "title": "Travel",
+      "requiresAuth": false,
+      "title": "SPONSORSHIP",
+      "link": "/sponsorship",
+      "display": true
+    },
+    {
+      "title": "TRAVEL",
       "link": "/travel",
       "display": true,
       "requiresAuth": false
     },
     {
-      "title": "Contact",
+      "title": "CONTACT",
       "link": "/contact",
       "display": true,
       "requiresAuth": false
@@ -45,7 +51,8 @@
     {
       "requiresAuth": false,
       "title": "My Profile",
-      "link": "/my-profile"
+      "link": "/my-profile",
+      "display": false
     }
   ]
 }
