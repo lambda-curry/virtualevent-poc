@@ -20,7 +20,7 @@ The OCP Global Summit will be a hybrid event, meaning all in-person content will
 \
 **The OCP Summit features:**
 
-![Summit Features](/img/ocp21glo_ocpwebsite_summitfeatures_062421.png)
+![Summit Features](/img/ocp21glo_ocpwebsite_summitfeatures-071521.png)
 
 **\#OCPSummit21**
 
