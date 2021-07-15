@@ -1,8 +1,8 @@
 {
   "heroBanner": {
     "title": "OCP Global Summit",
-    "subTitle": "Simultaneously happening in-person and online",
-    "date": "November 9-10, 2021",
+    "subTitle": "November 9-10, 2021",
+    "date": "Happening online and in-person",
     "time": "",
     "dateLayout": false,
     "buttons": {
@@ -43,7 +43,7 @@
       "images": [
         {
           "image": "/img/ocp21glo_fnv_marketingpage_space1.png",
-          "link": ""
+          "link": "https://ocpcareercenter.mysmartjobboard.com/"
         }
       ]
     },
@@ -52,7 +52,7 @@
       "images": [
         {
           "image": "/img/ocp21glo_fnv_marketingpage_space2.png",
-          "link": ""
+          "link": "https://www.opencompute.org/summit/regional-summit"
         }
       ]
     },
@@ -61,7 +61,7 @@
       "images": [
         {
           "image": "/img/ocp21glo_fnv_marketingpage_space3.png",
-          "link": ""
+          "link": "https://www.opencompute.org/membership/how-to-join"
         }
       ]
     },
@@ -70,14 +70,15 @@
       "images": [
         {
           "image": "/img/ocp21glo_fnv_marketingpage_space4.png",
-          "link": ""
+          "link": "https://www.opencompute.org/summit/regional-summit"
         }
       ]
     },
     {
       "images": [
         {
-          "image": "/img/ocp21glo_fnv_marketingpage_space5.png"
+          "image": "/img/ocp21glo_fnv_marketingpage_space5.png",
+          "link": "https://www.opencompute.org/solutions"
         }
       ]
     },
