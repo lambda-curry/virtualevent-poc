@@ -60,22 +60,22 @@
     "networks": [
       {
         "icon": "fa-facebook",
-        "link": "/footer-content/",
+        "link": "https://www.facebook.com/groups/opencompute/",
+        "display": true
+      },
+      {
+        "icon": "fa-linkedin-square",
+        "link": "https://www.linkedin.com/groups/4152886/",
         "display": true
       },
       {
         "icon": "fa-twitter",
-        "link": "/footer-content/",
+        "link": "https://twitter.com/Opencomputeprj/",
         "display": true
       },
       {
-        "icon": "fa-linkedin",
-        "link": "/footer-content/",
-        "display": true
-      },
-      {
-        "link": "/footer-content/",
-        "icon": "TEST",
+        "link": "https://www.youtube.com/user/OpenComputeProject",
+        "icon": "fa-youtube",
         "display": true
       }
     ]
