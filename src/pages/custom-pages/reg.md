@@ -1,6 +1,6 @@
 ---
 templateKey: custom-page
-title: Registration
+title: REGISTRATION
 requiresAuth: false
 ---
 ![Registration Options Grid](/img/ocp21g-registration_options_070721.png)
