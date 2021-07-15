@@ -1,6 +1,6 @@
 ---
 templateKey: custom-page
-title: Help
+title: HELP
 requiresAuth: false
 ---
 **EVENT TECH SUPPORT**\
@@ -8,6 +8,8 @@ requiresAuth: false
 
 **EVENT REGISTRATION ISSUES**\
 [registration@opencompute.org](mailto:registration@opencompute.org)
+
+
 
 #### OCP QUESTIONS
 
