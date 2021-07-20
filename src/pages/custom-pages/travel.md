@@ -12,7 +12,7 @@ OCP, FNTECH, and Team San Jose are not responsible for any expenses incurred sho
 
 <br>
 
-**Event Venue**: \
+**Event Venue**\
 San Jose Convention Center\
 150 W San Carlos Street\
 San Jose, CA 95113
