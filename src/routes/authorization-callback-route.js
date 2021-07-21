@@ -33,6 +33,7 @@ class AuthorizationCallbackRoute extends AbstractAuthorizationCallbackRoute {
   
   _redirect2Error(error) {
     console.log(`AuthorizationCallbackRoute error ${error}`);
+    if (error.includes('access_denied')) return <Redirect to={'/'} />;
     return <Redirect to={`/error?error=${error}`} />;
   }
 }
