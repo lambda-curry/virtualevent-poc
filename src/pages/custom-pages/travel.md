@@ -6,7 +6,7 @@ requiresAuth: false
 OCP is working very closely with Team San Jose to incorporate new health and safety features to ensure both attendee and sponsor experiences are safe, comfortable and productive. OCP is committed to creating a secure and supportive environment for our Community to return to in-person meetings, including:
 
 * An expo hall that has been extended to allow for greater separation of booths with wider walkways.
-* Session rooms to be set to reduced capacity to incorporate distanced seating
+* Session rooms to be set to reduced capacity to incorporate distanced seating.
 * Reusable masks and hand sanitizer bottles distributed at registration.
 * Extensive cleaning of all surfaces.
 
@@ -28,7 +28,7 @@ Looking for things to do in San Jose? Visit their [travel page](https://www.san
 
 **<br>**
 
-**Hotels**
+## **Hotels**
 
 **The Marriott** - $249/night\
 Last day to book: 10/20*\
