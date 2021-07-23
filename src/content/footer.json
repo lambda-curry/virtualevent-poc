@@ -1,52 +1,68 @@
 {
   "columns": [
     {
-      "title": "The Event",
-      "display": true,
-      "items": [
-        {
-          "title": "All Projects",
-          "link": "/footer-content/"
-        },
-        {
-          "title": "Host a project",
-          "link": "/footer-content/"
-        },
-        {
-          "title": "Services",
-          "link": "/footer-content/"
-        }
-      ]
-    },
-    {
-      "title": "The Vision",
+      "title": "OCP",
       "display": true,
       "items": [
         {
           "title": "About",
-          "link": "/footer-content/"
+          "link": "https://www.opencompute.org/about"
         },
         {
-          "title": "Supporters",
-          "link": "/footer-content/"
+          "title": "Foundation Staff",
+          "link": "https://www.opencompute.org/about/foundation-staff"
+        },
+        {
+          "title": "Membership",
+          "link": "https://www.opencompute.org/membership"
+        },
+        {
+          "title": "Blog",
+          "link": "https://www.opencompute.org/blog"
         }
       ]
     },
     {
-      "title": "Membership",
+      "title": "EVENTS",
+      "display": true,
+      "items": [
+        {
+          "title": "Global Summit",
+          "link": "https://www.opencompute.org/summit/global-summit"
+        },
+        {
+          "title": "Regional Summit",
+          "link": "https://www.opencompute.org/summit/regional-summit"
+        },
+        {
+          "title": "Future Technologies Symposium",
+          "link": "https://www.opencompute.org/summit/ocp-future-technologies-symposium"
+        },
+        {
+          "title": "Event Archives",
+          "link": "https://www.opencompute.org/events/past-events"
+        }
+      ]
+    },
+    {
+      "title": "COMMUNITY",
       "display": false,
       "items": [
         {
-          "title": "Corporate members",
-          "link": "/footer-content/"
+          "title": "Marketplace",
+          "link": "https://www.opencompute.org/products"
         },
         {
-          "title": "Join us",
-          "link": "/footer-content/"
+          "title": "Projects",
+          "link": "https://www.opencompute.org/projects"
         },
         {
-          "title": "Services",
-          "link": "/footer-content/"
+          "title": "Solution Providers",
+          "link": "https://www.opencompute.org/sp"
+        },
+        {
+          "title": "Contributions",
+          "link": "https://www.opencompute.org/contributions"
         }
       ]
     }
@@ -55,7 +71,7 @@
     "display": false
   },
   "social": {
-    "title": "Follow Us",
+    "title": "FOLLOW US",
     "display": true,
     "networks": [
       {
