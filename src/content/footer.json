@@ -46,7 +46,7 @@
     },
     {
       "title": "COMMUNITY",
-      "display": false,
+      "display": true,
       "items": [
         {
           "title": "Marketplace",
