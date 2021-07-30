@@ -23,5 +23,3 @@ The OCP Global Summit will be a hybrid event, meaning all in-person content will
 ![Summit Features](/img/ocp21glo_ocpwebsite_summitfeatures-071521.png)
 
 **\#OCPSummit21**
-
-*[Click here](https://www.opencompute.org/blog/questions-about-the-upcoming-ocp-global-summit) for some answers to common questions regarding the in-person Summit and our contingency plans.*
