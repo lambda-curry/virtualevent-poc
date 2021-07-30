@@ -51,7 +51,7 @@ A. The information you provide as a speaker/presenter through FNspeaker.mgmt wil
 
 **Q. I forgot my FNid login/password**
 
-A. Please visit [https://idp.fntech.com](https://idp.fntech.com/).
+A. Please visit <a href="https://idp.fntech.com" target="_blank">https://idp.fntech.com</a>.
 
 * Choose “Forgot Password?”. Follow the process to receive your password.
 * You will receive an email—at whatever email address you used to create your FNid—which will allow you to reset your password.
@@ -60,13 +60,13 @@ A. Please visit [https://idp.fntech.com](https://idp.fntech.com/).
 
 **Q. I’m having trouble with my FNid. Who should I contact?**
 
-A. For tech support, please email [support@fntech.com](<>)
+A. For tech support, please email <a href="mailto:support@fntech.com">support@fntech.com</a>
 
 –
 
 **Q. I’m having trouble registering for an event. Who should I contact?**
 
-A. For FNregistration support, please email [registration@fntech.com](<>)
+A. For FNregistration support, please email <a href="mailto:registration@fntech.com">registration@fntech.com</a>.
 
 –
 
@@ -75,8 +75,8 @@ A. For FNregistration support, please email [registration@fntech.com](<>)
 A. After you registered/purchased your ticket, you should have received an Order Confirmation email that contained your virtual ticket.
 
 * If you don’t remember receiving your Order Confirmation email, please check your Junk/Spam folder for an email from registration@fntech.com
-* Alternatively, you can find your ticket in the “My Tickets” page in FNregistration. You may use your FNid to log in here <https://registration.fntech.com/a/member/orders>
-* For additional FNregistration support, please email [registration@fntech.com](<>)
+* Alternatively, you can find your ticket in the “My Tickets” page in FNregistration. You may use your FNid to log in here <a href="https://registration.fntech.com/a/member/orders" target="_blank">https://registration.fntech.com/a/member/orders</a>
+* For additional FNregistration support, please email [](<>)<a href="mailto:registration@fntech.com">registration@fntech.com</a>
 
 –
 
@@ -91,8 +91,8 @@ A. If you registered with your FNid, you can simply log in using those credentia
 A. You can access your order from the Order Confirmation email you received at the address you provided during the registration process.
 
 * If you don’t remember receiving your Order Confirmation email, please check your Junk folder for an email from registration@fntech.com
-* Alternatively, you can find your ticket in the “My Tickets” page in FNregistration. You may use your FNid to log in here <https://registration.fntech.com/a/member/orders>
-* For additional FNregistration support, please email [registration@fntech.com](<>)
+* Alternatively, you can find your ticket in the “My Tickets” page in FNregistration. You may use your FNid to log in here [](https://registration.fntech.com/a/member/orders)<a href="https://registration.fntech.com/a/member/orders" target="_blank">https://registration.fntech.com/a/member/orders</a>
+* For additional FNregistration support, please email [](<>)<a href="mailto:registration@fntech.com">registration@fntech.com</a>
 
 –
 
@@ -111,7 +111,7 @@ A. First, log out of the website and log back in using your FNid. (The log out b
 
 * Next, you may need to clear your cache. Websites often ‘cache’ information so they load faster the next time you visit. This can occasionally cause issues, like a ‘white screen’ or an error code.
 * Disable third party cookie blockers, privacy shields, and/or ad blocking plugins
-* If you are still having trouble, please email [support@fntech.com](<>) and provide the following info: (1) the browser and browser version you are using, (2) what page you’re having trouble with, and (3) the event you are trying to access.
+* If you are still having trouble, please email <a href="mailto:support@fntech.com">support@fntech.com</a> and provide the following info: (1) the browser and browser version you are using, (2) what page you’re having trouble with, and (3) the event you are trying to access.
 
 –
 
@@ -135,4 +135,4 @@ A. Open your internet browser. Then…
 
 **Q. I’m interested in using FNvirtual for an event. Who should I contact?**
 
-A. Please email [govirtual@fntech.com](<>). We’d love to collaborate with you!
+A. Please email <a href="mailto:govirtual@fntech.com">govirtual@fntech.com</a>. We’d love to collaborate with you!
