@@ -15,7 +15,7 @@ However, nothing can replace the face-to-face interaction of a conference that b
 
 As OCP celebrates its 10th anniversary, this year will be different. We will be implementing new procedures in order to keep attendees safe during the event. We will need to keep our physical distance, and continue to maintain healthy habits. But we are creating new ways to collaborate with fellow attendees, including those that cannot yet attend in person, who can now participate virtually. 
 
-The OCP Global Summit will be a hybrid event, meaning all in-person content will be live-streamed to our online platform, [FNvirtual](https://www.fntech.com/fnvirtual-event-platform/). Visit the [registration page](https://www.opencompute.org/summit/global-summit/registration) to see the various options for participating in this year’s Summit.
+The OCP Global Summit will be a hybrid event, meaning all in-person content will be live-streamed to our online platform, <a href="https://www.fntech.com/fnvirtual-event-platform/" target="_blank")>FNvirtual</a>. Visit the [registration page](https://www.opencompute.org/summit/global-summit/registration) to see the various options for participating in this year’s Summit.
 
 \
 **The OCP Summit features:**
