@@ -122,7 +122,7 @@ export const scanBadge = (sponsorId) => async (dispatch) => {
     // entity
   )(params)(dispatch)
     .then((payload) => {
-      let msg = 'Badge scan successful';
+      let msg = 'Thanks for sharing your info!';
       Swal.fire("Success", msg, "success");
       return (payload)
     })
