@@ -31,22 +31,22 @@ Looking for things to do in San Jose? Visit their [travel page](https://www.san
 ## **Hotels**
 
 **The Marriott** - $249/night\
-Last day to book: 10/20*\
+Last day to book: 10/20†\
 [Click here](https://book.passkey.com/go/OCP2021SJ) to reserve a room.
 
 **The Hilton** - $229/night\
-Last day to book: 10/15*\
+Last day to book: 10/15†\
 [Click here](https://www.hilton.com/en/hi/groups/personalized/S/SJCSHHF-OCP-20211106/index.jhtml?WT.mc_id=POG) to reserve a room.
 
 **The Westin** - $209/night\
-Last day to book: 10/25*\
+Last day to book: 10/25†\
 [Click here](https://www.marriott.com/events/start.mi?id=1623187491706&key=GRP) to reserve a room.
 
 **Hyatt Place** - $219/night\
-Last day to book: 10/15*\
+Last day to book: 10/15†\
 [Click here](https://www.hyatt.com/en-US/group-booking/SJCZJ/G-OCPG) to reserve a room.
 
-*\*or when they sell out of OCP rooms, whichever comes first. Please review the cancellation policy for your selected hotel before booking. They vary based on the property.*
+†*or when they sell out of OCP rooms, whichever comes first. Please review the cancellation policy for your selected hotel before booking. They vary based on the property.*
 
 **<br>**
 
