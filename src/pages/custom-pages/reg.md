@@ -3,7 +3,7 @@ templateKey: custom-page
 title: REGISTRATION
 requiresAuth: false
 ---
-![Registration Options Grid](/img/ocp21g-registration_options_072921.png)
+![Registration Options Grid](/img/ocp21g-registration_options_073021.png)
 
 Registration for the 2021 OCP Global Summit will open Monday, August 2.\
 This year's event will be a hybrid format, so we will offer both in-person and virtual options.\
@@ -15,7 +15,7 @@ General Registration: $599  (Sept 1-30)\
 Late & Onsite Registration: $799  (Oct 1 - Nov 10)
 
 **VIRTUAL**\
-Virtual - All Access:  $199 (Aug 2 - Nov 30)\
+Virtual - All Access:  $199 (Aug 2 - Feb 1)\
 Virtual - Limited:  Free
 
 *We encourage you to register early so that we can plan accordingly with any new safety regulations.* 
