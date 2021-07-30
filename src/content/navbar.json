@@ -8,7 +8,7 @@
     },
     {
       "title": "ABOUT THE EVENT",
-      "link": "/about-event",
+      "link": "/a/about-event",
       "display": true,
       "requiresAuth": false
     },
