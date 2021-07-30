@@ -17,6 +17,8 @@ OCP Solution Provider Program: [solutionproviders@opencompute.org](<>)
 
 Press Inquiries: [press@opencompute.org](<>)
 
+
+
 <br>
 
 #### **OCP MAILING ADDRESS**
@@ -26,8 +28,6 @@ Press Inquiries: [press@opencompute.org](<>)
 Austin, TX 78750
 
 <br>
-
-
 
 #### CALL OCP
 
