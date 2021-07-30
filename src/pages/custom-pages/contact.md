@@ -7,15 +7,15 @@ requiresAuth: false
 
 Event Registration: <a href = "mailto: registration@opencompute.org">registration@opencompute.org</a>
 
-Event Sponsorship: [sponsor@opencompute.org](<>)
+Event Sponsorship: <a href = "mailto: sponsor@opencompute.org">sponsor@opencompute.org</a>
 
-Upcoming Events: [events@opencompute.org](<>)
+Upcoming Events: <a href = "mailto: events@opencompute.org">events@opencompute.org</a>
 
-OCP Membership: [membership@opencompute.org](<>)
+OCP Membership: <a href = "mailto: membership@opencompute.org">membership@opencompute.org</a>
 
-OCP Solution Provider Program: [solutionproviders@opencompute.org](<>)
+OCP Solution Provider Program: <a href = "mailto: solutionproviders@opencompute.org">solutionproviders@opencompute.org</a>
 
-Press Inquiries: [press@opencompute.org](<>)
+Press Inquiries: <a href = "mailto: press@opencompute.org">press@opencompute.org</a>
 
 <br>
 
