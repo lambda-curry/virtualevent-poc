@@ -7,7 +7,7 @@ requiresAuth: false
 
 The 2021 OCP Global Summit will be held November 9-10, 2021 at the San Jose Convention Center. The annual Summit brings together thousands of key decision makers, executives, engineers, developers and suppliers. OCP’s collaboration model is being applied beyond the data center, helping to advance the telecom industry & EDGE infrastructure. 
 
-*The 2021 Summit Theme is **Open Possibilities.***
+\*The 2021 Summit Theme is **Open Possibilities.***
 
 The worldwide COVID-19 outbreak has impacted all of us in many ways. Our industry stepped up and met the new and increasingly demanding needs placed on technology infrastructures to create a “new normal” that makes connecting to people worldwide simple and creates opportunities to collaborate across channels seemingly effortlessly.
 
@@ -23,5 +23,3 @@ The OCP Global Summit will be a hybrid event, meaning all in-person content will
 ![Summit Features](/img/ocp21glo_ocpwebsite_summitfeatures_062421.png)
 
 **\#OCPSummit21**
-
-*[Click here](https://www.opencompute.org/blog/questions-about-the-upcoming-ocp-global-summit) for some answers to common questions regarding the in-person Summit and our contingency plans.*
