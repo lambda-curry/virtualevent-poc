@@ -3,7 +3,7 @@ templateKey: custom-page
 title: REGISTRATION
 requiresAuth: false
 ---
-![Registration Options Grid](/img/ocp21g-registration_options_073021.png)
+![Registration Options Grid](/img/ocp21g-registration_options_073021_v2-1080px.png)
 
 Registration for the 2021 OCP Global Summit will open Monday, August 2.\
 This year's event will be a hybrid format, so we will offer both in-person and virtual options.\
