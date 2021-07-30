@@ -24,4 +24,4 @@ Virtual - Limited:  Free
 
 In-person tickets: Cancel on or before Sept 30, full refund. Cancel after Sept 30, no refund. Refund requests must go through the FNvirtual registration system or emailed to registration@opencompute.org. No refunds for virtual tickets. 
 
-[Click here](https://forms.gle/YeW3awXhZRAs66Xo7) to apply for a media pass.
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSehNzzYKO6FtzncM3Gt1ODQIRMv5NCUfX3zl8qXf3ltMlneDg/viewform" target="_blank">Click here</a> to apply for a media pass.
