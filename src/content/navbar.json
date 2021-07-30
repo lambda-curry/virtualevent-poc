@@ -8,7 +8,7 @@
     },
     {
       "title": "ABOUT THE EVENT",
-      "link": "/about-event",
+      "link": "https://2021ocpglobal.fnvirtual.app/about-event",
       "display": true,
       "requiresAuth": false
     },
