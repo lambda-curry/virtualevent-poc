@@ -13,7 +13,7 @@ OCP is working very closely with Team San Jose to incorporate new health and saf
 **COVID-19 Regulations**\
 OCP will follow all county, state and federal rules and regulations regarding travel and meetings at the time of the 2021 OCP Global Summit. During the registration process, OCP attendees will be asked to acknowledge and take responsibility for adhering to any and all travel and public participation regulations.
 
-Please visit the San Jose Convention Center <a href="https://www.sanjose.org/sanjoselove/travel">travel webpage</a> and the California <a href="https://covid19.ca.gov/safely-reopening/" target="_blank">regulations site</a>  to see the latest updates regarding travel and meeting requirements. 
+Please visit the San Jose Convention Center <a href="https://www.sanjose.org/sanjoselove/travel" target="_blank">travel webpage</a> and the California <a href="https://covid19.ca.gov/safely-reopening/" target="_blank">regulations site</a>  to see the latest updates regarding travel and meeting requirements. 
 
 OCP, FNTECH, and Team San Jose are not responsible for any expenses incurred should an attendee be denied entry into the country, state, or event, including but not limited to: airfare, hotel, meals, and event registration fees.
 
@@ -44,9 +44,7 @@ Last day to book: 10/25\*\*\
 
 **Hyatt Place** - $219/night\
 Last day to book: 10/15\*\*\
-<a href="hhttps://www.hyatt.com/en-US/group-booking/SJCZJ/G-OCPG" target="_blank">Click here</a> to reserve a room.
-
-
+<a href="https://www.hyatt.com/en-US/group-booking/SJCZJ/G-OCPG" target="_blank">Click here</a> to reserve a room.
 
 \*\**or when they sell out of OCP rooms, whichever comes first. Please review the cancellation policy for your selected hotel before booking. They vary based on the property.*
 
