@@ -17,7 +17,7 @@ As OCP celebrates its 10th anniversary, this year will be different. We will be 
 
 The OCP Global Summit will be a hybrid event, meaning all in-person content will be live-streamed to our online platform, <a href="https://www.fntech.com/fnvirtual-event-platform/" target="_blank">FNvirtual</a>.
 
-Visit the <a href="https://www.opencompute.org/summit/global-summit/registration" target="_blank">registration page</a> [](https://www.opencompute.org/summit/global-summit/registration)to see the various options for participating in this year’s Summit.
+Visit the <a href="https://www.opencompute.org/summit/global-summit/registration" target="_blank">registration page</a> to see the various options for participating in this year’s Summit.
 
 \
 **The OCP Summit features:**
