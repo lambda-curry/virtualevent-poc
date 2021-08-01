@@ -13,7 +13,7 @@ OCP is working very closely with Team San Jose to incorporate new health and saf
 **COVID-19 Regulations**\
 OCP will follow all county, state and federal rules and regulations regarding travel and meetings at the time of the 2021 OCP Global Summit. During the registration process, OCP attendees will be asked to acknowledge and take responsibility for adhering to any and all travel and public participation regulations.
 
-Please visit the San Jose Convention Center <a href="https://www.sanjose.org/sanjoselove/travel" target="_blank">travel webpage</a> and the California <a href="https://covid19.ca.gov/safely-reopening/" target="_blank">regulations site</a>  to see the latest updates regarding travel and meeting requirements. 
+Please visit the San Jose Convention Center <a href="https://www.sanjose.org/sanjoselove/travel" target="_blank">travel webpage</a> and the California <a href="https://covid19.ca.gov/safely-reopening/" target="_blank">regulations site</a> to see the latest updates regarding travel and meeting requirements. 
 
 OCP, FNTECH, and Team San Jose are not responsible for any expenses incurred should an attendee be denied entry into the country, state, or event, including but not limited to: airfare, hotel, meals, and event registration fees.
 
