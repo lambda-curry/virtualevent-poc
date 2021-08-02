@@ -12,7 +12,7 @@
       },
       "loginButton": {
         "text": "Log in",
-        "display": true
+        "display": false
       }
     },
     "background": "/img/ocp21glo_fnv_marketingpage_header-left_v2.png",
