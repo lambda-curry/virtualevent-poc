@@ -5,6 +5,10 @@ requiresAuth: false
 ---
 ![Registration Options Grid](/img/ocp21g-registration_options_073021_v2-1280px.png)
 
+
+
+<a href="https://www.opencompute.org/summit/global-summit/registration" target="_blank">Click here to register!</a>
+
 Registration for the 2021 OCP Global Summit will open Monday, August 2.\
 This year's event will be a hybrid format, so we will offer both in-person and virtual options.\
 Please see below for rates and deadlines.
@@ -22,6 +26,6 @@ Virtual - Limited:  Free
 
 **Cancellation Policy**
 
-In-person tickets: Cancel on or before Sept 30, full refund. Cancel after Sept 30, no refund. Refund requests must go through the FNvirtual registration system or emailed to registration@opencompute.org. No refunds for virtual tickets. 
+In-person tickets: Cancel on or before Sept 30, full refund. Cancel after Sept 30, no refund. Refund requests must go through the FNvirtual registration system or emailed to [registration@opencompute.org](<mailto: registration@opencompute.org>). No refunds for virtual tickets. 
 
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSehNzzYKO6FtzncM3Gt1ODQIRMv5NCUfX3zl8qXf3ltMlneDg/viewform" target="_blank">Click here</a> to apply for a media pass.
