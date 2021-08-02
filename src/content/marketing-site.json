@@ -24,7 +24,7 @@
   },
   "leftColumn": {
     "schedule": {
-      "display": true,
+      "display": false,
       "title": "Event Schedule"
     },
     "disqus": {
@@ -32,9 +32,9 @@
       "title": "Join the conversation"
     },
     "image": {
-      "display": false,
-      "title": "Event schedule coming soon!",
-      "src": ""
+      "display": true,
+      "title": "Event Schedule",
+      "src": "/img/ocp21glo-fnv-schedule-graphic.png"
     }
   },
   "sponsors": [
