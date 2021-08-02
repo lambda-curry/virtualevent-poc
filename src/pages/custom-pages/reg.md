@@ -5,9 +5,7 @@ requiresAuth: false
 ---
 ![Registration Options Grid](/img/ocp21g-registration_options_073021_v2-1280px.png)
 
-
-
-<a href="https://www.opencompute.org/summit/global-summit/registration" target="_blank">Click here to register!</a>
+<a href="https://registration.fnvirtual.app/a/2021ocpglo/register/start" target="_blank">Click here to register!</a>
 
 Registration for the 2021 OCP Global Summit will open Monday, August 2.\
 This year's event will be a hybrid format, so we will offer both in-person and virtual options.\
