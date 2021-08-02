@@ -12,7 +12,8 @@ import sponsorReducer from "../reducers/sponsor-reducer";
 import {applyMiddleware, compose, createStore} from "redux";
 import thunk from "redux-thunk";
 
-const clientId = typeof window === 'object' ? window.OAUTH2_CLIENT_ID : process.env.OAUTH2_CLIENT_ID;
+// get from process.env bc window is not set yet
+const clientId =  process.env.GATSBY_OAUTH2_CLIENT_ID;
 
 const config = {
     key: `root_${clientId}`,

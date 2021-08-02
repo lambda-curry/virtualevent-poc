@@ -13,7 +13,7 @@ import RegistrationLiteWidget from 'summit-registration-lite/dist';
 import { FragmentParser } from "openstack-uicore-foundation/lib/components";
 
 import { doLogin, passwordlessStart } from 'openstack-uicore-foundation/lib/methods'
-import { getEnvVariable, SUMMIT_API_BASE_URL } from '../utils/envVariables'
+import { getEnvVariable, SUMMIT_API_BASE_URL, OAUTH2_CLIENT_ID} from '../utils/envVariables'
 
 import { getUserProfile, setPasswordlessLogin, setUserOrder } from "../actions/user-actions";
 import { getThirdPartyProviders } from "../actions/base-actions";
@@ -92,6 +92,7 @@ const RegistrationLiteComponent = ({
 
     const widgetProps = {
         apiBaseUrl: getEnvVariable(SUMMIT_API_BASE_URL),
+        clientId: getEnvVariable(OAUTH2_CLIENT_ID),
         summitData: summit,
         profileData: registrationProfile,
         marketingData: colorSettings,
@@ -114,7 +115,8 @@ const RegistrationLiteComponent = ({
         goToEvent: () => navigate('/a/'),
         onPurchaseComplete: (order) => {
             window.setTimeout(() => setUserOrder(order), 5000);
-        }
+        },
+        inPersonDisclaimer: siteSettings?.registration_in_person_disclaimer
     };
 
     const { registerButton } = siteSettings.heroBanner.buttons;

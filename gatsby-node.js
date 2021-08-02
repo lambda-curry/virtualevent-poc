@@ -63,6 +63,7 @@ exports.onPreBootstrap = async () => {
     }
     if (key === 'SCHEDULE_EVENT_COLOR_ORIGIN') filterSettings.color_source = value.toLowerCase();
     if (key === 'schedule_default_image') homeSettings.schedule_default_image = value;
+    if( key === 'registration_in_person_disclaimer') marketingSite[key] = value;
   });
 
   globalSettings.lastBuild = Date.now();

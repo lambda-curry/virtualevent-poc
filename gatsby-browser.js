@@ -1,8 +1,6 @@
 import ReduxWrapper from "./src/state/ReduxWrapper"
 import colors from './src/content/colors.json'
 
-export const wrapRootElement = ReduxWrapper;
-
 window.IDP_BASE_URL = process.env.GATSBY_IDP_BASE_URL;
 window.SUMMIT_API_BASE_URL = process.env.GATSBY_SUMMIT_API_BASE_URL;
 window.API_BASE_URL = process.env.GATSBY_SUMMIT_API_BASE_URL;
@@ -21,6 +19,9 @@ window.MUX_ENV_KEY = process.env.GATSBY_MUX_ENV_KEY;
 window.SUPABASE_URL = process.env.GATSBY_SUPABASE_URL;
 window.SUPABASE_KEY = process.env.GATSBY_SUPABASE_KEY;
 window.CHAT_API_BASE_URL = process.env.GATSBY_CHAT_API_BASE_URL;
+
+
+export const wrapRootElement = ReduxWrapper;
 
 export const onClientEntry = () => {
   // var set at document level
