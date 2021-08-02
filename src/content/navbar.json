@@ -21,7 +21,7 @@
     {
       "title": "SCHEDULE",
       "link": "/a/schedule",
-      "display": true,
+      "display": false,
       "requiresAuth": false
     },
     {
