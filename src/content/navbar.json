@@ -53,6 +53,11 @@
       "title": "My Profile",
       "link": "/my-profile",
       "display": false
+    },
+    {
+      "requiresAuth": true,
+      "title": "My Orders / Tickets",
+      "link": "https://registration.fnvirtual.app/a/member/orders"
     }
   ]
 }
