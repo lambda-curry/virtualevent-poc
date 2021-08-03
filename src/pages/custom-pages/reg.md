@@ -7,7 +7,7 @@ requiresAuth: false
 
 <a href="https://registration.fnvirtual.app/a/2021ocpglo/register/start" target="_blank">Click here to register!</a>
 
-Registration for the 2021 OCP Global Summit will open Monday, August 2.\
+Registration for the 2021 OCP Global Summit is now open!\
 This year's event will be a hybrid format, so we will offer both in-person and virtual options.\
 Please see below for rates and deadlines.
 
