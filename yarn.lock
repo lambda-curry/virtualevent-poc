@@ -10903,10 +10903,10 @@ linkifyjs@^2.1.9:
   resolved "https://registry.yarnpkg.com/linkifyjs/-/linkifyjs-2.1.9.tgz#af06e45a2866ff06c4766582590d098a4d584702"
   integrity sha512-74ivurkK6WHvHFozVaGtQWV38FzBwSTGNmJolEgFp7QgR2bl6ArUWlvT4GcHKbPe1z3nWYi+VUdDZk16zDOVug==
 
-lite-schedule-widget@^1.0.11:
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/lite-schedule-widget/-/lite-schedule-widget-1.0.11.tgz#3dab22e2c402f7986a67d64129d5aaced5d773aa"
-  integrity sha512-BpBnxpgFS25rBhenb7cGP0txBlpgEQZOOD3WhjGLEVSqdI1Q7v32R0Sf3kTyUk+6YVbSM+TrYWNhCP0v/fknmg==
+lite-schedule-widget@^1.0.12:
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/lite-schedule-widget/-/lite-schedule-widget-1.0.12.tgz#aff919fd7f4ed8a8ffbc813c32cfd3058dac0164"
+  integrity sha512-F1uHikYqw4lGKOD+r3jVB6iHEGFm0VD6xABvmjxZ5hZZGy8uqjqL+irVX2WpXHjVxQRK2WcsyPeIe1B4Mqb1vg==
   dependencies:
     pure-react-carousel "^1.27.4"
     use-fit-text "^2.4.0"
@@ -13009,10 +13009,10 @@ open@^7.0.3:
     is-docker "^2.0.0"
     is-wsl "^2.1.1"
 
-openstack-uicore-foundation@^3.0.34:
-  version "3.0.34"
-  resolved "https://registry.yarnpkg.com/openstack-uicore-foundation/-/openstack-uicore-foundation-3.0.34.tgz#f4fc7bed66f117c4530a70a46405a4686200d880"
-  integrity sha512-qrua5aI1DddZMBTxD+9ECst8ISZ7cjOp1NbQxdJFyglRpfaeVUngPJF8KC9Bd7rjWRblLI/re1JbjRncOloZ9Q==
+openstack-uicore-foundation@^3.0.36:
+  version "3.0.36"
+  resolved "https://registry.yarnpkg.com/openstack-uicore-foundation/-/openstack-uicore-foundation-3.0.36.tgz#da8fcd498cb474d07203b5c9429bdde285716d91"
+  integrity sha512-w+j3K6aDNedyISxK+jGfeAuBN/z0v2z53qVPTw+vycRf89v70E2k68gP7s1FNod4S3yviYzZjj2FSXWV6EczXQ==
 
 opentracing@^0.14.4:
   version "0.14.5"
@@ -17638,10 +17638,10 @@ sudo-prompt@^8.2.0:
   resolved "https://registry.yarnpkg.com/sudo-prompt/-/sudo-prompt-8.2.5.tgz#cc5ef3769a134bb94b24a631cc09628d4d53603e"
   integrity sha512-rlBo3HU/1zAJUrkY6jNxDOC9eVYliG6nS4JA8u8KAshITd07tafMc/Br7xQwCSseXwJ2iCcHCE8SNWX3q8Z+kw==
 
-summit-registration-lite@^1.0.52:
-  version "1.0.52"
-  resolved "https://registry.yarnpkg.com/summit-registration-lite/-/summit-registration-lite-1.0.52.tgz#5f87d6e7860267f281aaeda949c2d7ba45ab7713"
-  integrity sha512-3O2yqbuiwyECLlJ5srlEp4M56XHIOIFugmvmdLCGUQwZ0ha6EFwnogK7Le1sNUegZz0tzaDmmNiiDWJfsiLVMQ==
+summit-registration-lite@^1.0.54:
+  version "1.0.54"
+  resolved "https://registry.yarnpkg.com/summit-registration-lite/-/summit-registration-lite-1.0.54.tgz#a7ac1439b2802883c55358920b1b655c5f002509"
+  integrity sha512-M9SSBbaYv+19UpbNme2UfuqnFMvXVwLc90DQhRGF2yi95jovSbRh0W0yS7RtYat1WTjL3Y401KWkOhG1je5dog==
   dependencies:
     "@stripe/react-stripe-js" "^1.4.1"
     "@stripe/stripe-js" "^1.15.0"

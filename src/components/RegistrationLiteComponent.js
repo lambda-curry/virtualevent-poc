@@ -101,7 +101,7 @@ const RegistrationLiteComponent = ({
         authUser: (provider) => onClickLogin(provider),
         getPasswordlessCode: getPasswordlessCode,
         loginWithCode: async (code, email) => await loginPasswordless(code, email),
-        getAccessToken: async () => await getAccessToken(),
+        getAccessToken: getAccessToken,
         closeWidget: async () => {
             // reload user profile
             await getUserProfile();
