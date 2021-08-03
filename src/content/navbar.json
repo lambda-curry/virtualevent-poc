@@ -57,7 +57,8 @@
     {
       "requiresAuth": true,
       "title": "My Orders / Tickets",
-      "link": "https://registration.fnvirtual.app/a/member/orders"
+      "link": "https://registration.fnvirtual.app/a/member/orders",
+      "display": true
     }
   ]
 }
