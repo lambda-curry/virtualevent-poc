@@ -25,6 +25,10 @@ const PrivateRoute = ({
     return (hasTicket || isAuthorized)
   }
 
+  const userCanByPassAuthz = () => {
+    return isAuthorized;
+  }
+
   const userIsReady = () => {
     // we have an user profile , its not reloading it and we are not fetching it
     return userProfile && !fetchingUserProfile;
@@ -58,7 +62,7 @@ const PrivateRoute = ({
   }
 
   // if summit didnt started yet ...
-  if (!userIsAuthz() && summit_phase === PHASES.BEFORE) {
+  if (!userCanByPassAuthz() && summit_phase === PHASES.BEFORE) {
     return (
         <HeroComponent
             title="Its not yet show time!"

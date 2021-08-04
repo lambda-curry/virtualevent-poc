@@ -37,7 +37,7 @@ class MarketingHeroComponent extends React.Component {
     if (summit_phase >= PHASES.DURING && isLoggedUser) {
       return (
         <>
-        {registerButton.display && !userProfile?.summit_tickets?.length > 0 &&
+        {registerButton.display &&
         (
           <span className={styles.link}>
             <RegistrationLiteComponent location={this.props.location} />
@@ -55,7 +55,7 @@ class MarketingHeroComponent extends React.Component {
 
     return (
         <>
-          {registerButton.display && !userProfile?.summit_tickets?.length > 0 &&
+          {registerButton.display &&
           (
             <span className={styles.link}>
               <RegistrationLiteComponent location={this.props.location} />
