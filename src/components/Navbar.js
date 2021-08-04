@@ -85,7 +85,11 @@ const Navbar = class extends React.Component {
             <div className={styles.navbarStart} />
             <div className={styles.navbarEnd}>
               {Content.items.map((item, index) => {
-                const showItem = item.link.startsWith('/a/schedule') || !item.requiresAuth || !item.link.startsWith('/a/') || isLoggedUser;
+                // we assume that all pages under /a/* requires auth except /a/schedule
+                // item.requiresAuth allows to mark specific pages that are not under /a/* pattern.
+                const showItem = item.link.startsWith('/a/schedule') ||
+                    ( item.requiresAuth && isLoggedUser ) ||
+                    ( item.link.startsWith('/a/') && isLoggedUser)
                 return (
                     item.display && showItem &&
                     <div className={styles.navbarItem} key={index}>
