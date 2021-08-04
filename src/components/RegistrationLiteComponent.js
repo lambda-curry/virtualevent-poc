@@ -36,6 +36,9 @@ const RegistrationLiteComponent = ({
     siteSettings }) => {
 
     const [isActive, setIsActive] = useState(false);
+    // this variable let to know to the widget that should not show
+    // the message with already have a ticket if its a recent purchase.
+    const [isRecentPurchase, setIsRecentPurchase] = useState(false);
 
     useEffect(() => {
         const fragmentParser = new FragmentParser();
@@ -99,7 +102,8 @@ const RegistrationLiteComponent = ({
         marketingData: colorSettings,
         loginOptions: formatThirdPartyProviders(thirdPartyProviders),
         loading: loadingProfile || loadingIDP,
-        ticketOwned: userProfile?.summit_tickets?.length > 0,
+        // only show info if its not a recent purchase
+        ticketOwned: !isRecentPurchase && userProfile?.summit_tickets?.length > 0,
         authUser: (provider) => onClickLogin(provider),
         getPasswordlessCode: getPasswordlessCode,
         loginWithCode: async (code, email) => await loginPasswordless(code, email),
@@ -117,7 +121,9 @@ const RegistrationLiteComponent = ({
         goToEvent: () => navigate('/a/'),
         goToRegistration: () => navigate(`${getEnvVariable(REGISTRATION_BASE_URL)}/a/${summit.slug}`),
         onPurchaseComplete: (order) => {
-            window.setTimeout(() => setUserOrder(order), 5000);
+            // we are informing that we did a purchase recently to widget
+            setIsRecentPurchase(true);
+            setUserOrder(order);
         },
         inPersonDisclaimer: siteSettings?.registration_in_person_disclaimer
     };

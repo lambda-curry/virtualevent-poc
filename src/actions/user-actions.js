@@ -133,7 +133,7 @@ export const requireExtraQuestions = () => (dispatch, getState) => {
 
   const requiredExtraQuestions = summit.order_extra_questions.filter(q => q.mandatory === true);
 
-  if (requiredExtraQuestions.length > 0 && userProfile) {
+  if (requiredExtraQuestions.length > 0 && userProfile && userProfile.summit_tickets.length > 0) {
     const ticketExtraQuestions = userProfile?.summit_tickets[0]?.owner?.extra_questions || [];
     if (ticketExtraQuestions.length > 0) {
       return !requiredExtraQuestions.every(q => {
