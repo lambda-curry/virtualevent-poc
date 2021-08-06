@@ -38,7 +38,7 @@ export const isAuthorizedBadge = (session, summit_tickets) => {
     return authzSession.authorizedBadges.some(b => {
       return badges.includes(parseInt(b))
     });
-  } else {
-    return badges.length > 0;
   }
+  // we are allowed to enter
+  return true;
 } 
