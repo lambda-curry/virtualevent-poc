@@ -10,13 +10,13 @@ export const getUserBadges = (summit_tickets) => {
   let badges = [];
 
   if (summit_tickets) {
-    summit_tickets.filter(t => t.badge).map(t => {
-      t.badge.features.map(feature => {
-        if (!badges.some(e => e === feature.id)) {
-          badges.push(feature.id);
-        }
-      })
-    });
+      summit_tickets.filter(t => t.badge).map(t => {
+          t.badge.features.forEach(feature => {
+              if (!badges.some(e => e === feature.id)) {
+                  badges.push(feature.id);
+              }
+          })
+      });
   }
 
   return badges;
@@ -33,12 +33,12 @@ export const isAuthorizedBadge = (session, summit_tickets) => {
 
   let badges = getUserBadges(summit_tickets);
 
-  const authzSession = authorizedSessionPerBadge.find(s => s.sessionId === session)
+  const authzSession = authorizedSessionPerBadge.find(s => s.sessionId === session);
   if (authzSession) {
-    return authzSession.authorizedBadges.some(b => {
-      return badges.includes(parseInt(b))
-    });
+      return authzSession.authorizedBadges.some(b => {
+          return badges.includes(parseInt(b))
+      });
   }
   // we are allowed to enter
   return true;
-} 
+};
