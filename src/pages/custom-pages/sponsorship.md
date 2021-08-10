@@ -3,7 +3,7 @@ templateKey: custom-page
 title: SPONSORSHIP
 requiresAuth: false
 ---
-We are currently accepting sponsorship contracts for the 2021 OCP Global Summit on November 9-10! Please review the prospectus below for the available opportunities. All spots and booth spaces are awarded on a first-signed, first-served basis. 
+We are currently accepting sponsorship contracts for the 2021 OCP Global Summit on November 8-10! Please review the prospectus below for the available opportunities. All spots and booth spaces are awarded on a first-signed, first-served basis. 
 
 <a href="https://146a55aca6f00848c565-a7635525d40ac1c70300198708936b4e.ssl.cf1.rackcdn.com/images/cae94a8f1e6118f51edd52c8727443fb952fd2d8.pdf" target="_blank">Click here </a>for the sponsor prospectus. 
 
