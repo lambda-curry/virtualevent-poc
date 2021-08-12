@@ -1,1 +1,16 @@
-{"centerColumn":{"speakers":{"showTodaySpeakers":false,"showFeatureSpeakers":false}},"homeHero":{"title":"YOCO Summit.  Live Now!","subTitle":"virtual · pacific time","image":"/img/hero-man-with-headphones.jpg","copy":"<h2><strong>YOCO Summit Live NOW!</strong></h2>\r\n<h2>from San Jose, CA</h2>"},"schedule_default_image":"https://fntech.sfo2.cdn.digitaloceanspaces.com/17/OCP20TW-Session-Thumbnail-110920-OCP.png","live_now_featured_event_id":null}
+{
+  "centerColumn": {
+    "speakers": {
+      "showTodaySpeakers": false,
+      "showFeatureSpeakers": false
+    }
+  },
+  "homeHero": {
+    "title": "Powering Experiences",
+    "subTitle": "The Magic of Memory",
+    "image": "/img/samsumg-fnv-header2_reflected.png",
+    "copy": ""
+  },
+  "schedule_default_image": "https://fntech.sfo2.cdn.digitaloceanspaces.com/17/OCP20TW-Session-Thumbnail-110920-OCP.png",
+  "live_now_featured_event_id": null
+}
