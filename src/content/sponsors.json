@@ -4,21 +4,21 @@
       "tier": [
         {
           "value": "tier-cYGYq5-ae",
-          "label": "Gold"
+          "label": "Customers"
         }
       ],
       "sponsors": [
         {
           "sponsor_id": 8,
-          "marquee": "Huawei - Smart Technologies",
+          "marquee": "This is your sponsor page ticker text.",
           "sideImage": "",
           "externalLink": "",
-          "sponsorColor": "",
-          "logo": "/img/sponsors/headline/logo_huawei.png",
-          "name": "Huawei",
+          "sponsorColor": "#097AEF",
+          "logo": "/img/samsung-sponsor-logo-fb.png",
+          "name": "Facebook",
           "intro": "**Lorem ipsum dolor sit amet**, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. *Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.*",
-          "headerVideo": "/img/world.mp4",
-          "headerImage": "/img/sponsors/headline/header_logo_headline.png",
+          "headerVideo": "",
+          "headerImage": "/img/samsung-sponsor-logo-fb.png",
           "socialNetworks": [
             {
               "icon": "fa-facebook",
@@ -38,66 +38,77 @@
           ],
           "chatLink": "",
           "sponsorId": 8,
-          "title": "We are Huawei",
+          "title": "Facebook",
           "companyId": 9,
           "documents": {
             "slides": [
               {
-                "name": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html",
-                "order": 2,
+                "name": "Facebook URL",
+                "order": 1,
                 "class_name": "PresentationSlide",
-                "link": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html"
+                "link": "https://www.facebook.com"
               }
             ],
             "links": [
               {
-                "name": "http://relaxdiego.com/2017/05/swampup-2017-slides.html",
-                "order": 1,
+                "name": "Facebook Document",
+                "order": 2,
                 "class_name": "PresentationLink",
-                "link": "http://relaxdiego.com/2017/05/swampup-2017-slides.html"
+                "link": "https://www.facebook.com"
               }
             ],
             "videos": [
               {
-                "name": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html",
+                "name": "Facebook Video ",
                 "order": 3,
                 "class_name": "PresentationVideo",
-                "link": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html"
+                "link": "https://www.facebook.com"
               }
             ]
           },
-          "columnAds": [
-            {
-              "image": "/img/yoco-sponsor-ads-medium-flow.png",
-              "button": "",
-              "link": "/virtual-booth/"
-            }
-          ],
+          "columnAds": [],
           "id": 1,
-          "email": "huawei@huawei.com",
+          "email": "support@fntech.com",
           "usesSponsorPage": true
+        },
+        {
+          "advertiseImage": "",
+          "name": "Intel",
+          "title": "Intel",
+          "logo": "/img/samsung-sponsor-logo-intel.png",
+          "email": "support@fntech.com",
+          "sponsorColor": "49A8E1",
+          "id": 2
+        },
+        {
+          "advertiseImage": "",
+          "name": "NVIDIA",
+          "email": "Support@fntech.com",
+          "sponsorColor": "85B537",
+          "logo": "/img/samsung-sponsor-logo-nvida.png",
+          "id": 3
         }
       ]
     },
     {
       "tier": [
         {
-          "value": "tier-DHcI3dWGk",
-          "label": "Silver"
+          "value": "tier-cYGYq5-ae",
+          "label": "Customers"
         }
       ],
       "sponsors": [
         {
           "sponsor_id": 8,
-          "marquee": "CISCO Shapes the Future of Technology",
+          "marquee": "This is your sponsor ticker text.",
           "sideImage": "",
           "externalLink": "",
-          "sponsorColor": "",
-          "logo": "/img/sponsors/premier/logo_cisco.png",
-          "name": "CISCO",
+          "sponsorColor": "#49A8E1",
+          "logo": "/img/samsung-sponsor-logo-intel.png",
+          "name": "Intel",
           "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
           "headerVideo": "",
-          "headerImage": "/img/sponsors/premier/header_logo_premier.png",
+          "headerImage": "/img/samsung-sponsor-logo-intel.png",
           "socialNetworks": [
             {
               "icon": "fa-facebook",
@@ -117,43 +128,16 @@
           ],
           "chatLink": "",
           "sponsorId": 8,
-          "title": "We are CISCO",
+          "title": "Intel",
           "companyId": 9,
           "documents": {
-            "slides": [
-              {
-                "name": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html",
-                "order": 2,
-                "class_name": "PresentationSlide",
-                "link": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html"
-              }
-            ],
-            "links": [
-              {
-                "name": "http://relaxdiego.com/2017/05/swampup-2017-slides.html",
-                "order": 1,
-                "class_name": "PresentationLink",
-                "link": "http://relaxdiego.com/2017/05/swampup-2017-slides.html"
-              }
-            ],
-            "videos": [
-              {
-                "name": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html",
-                "order": 3,
-                "class_name": "PresentationVideo",
-                "link": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html"
-              }
-            ]
+            "slides": [],
+            "links": [],
+            "videos": []
           },
-          "columnAds": [
-            {
-              "image": "/img/yoco-sponsor-ads-medium-flow.png",
-              "button": "",
-              "link": "/virtual-booth/"
-            }
-          ],
+          "columnAds": [],
           "id": 2,
-          "email": "huawei@huawei.com",
+          "email": "support@fntech.com",
           "usesSponsorPage": true
         }
       ]
@@ -161,22 +145,22 @@
     {
       "tier": [
         {
-          "value": "tier-U_wEwGX8a",
-          "label": "Bronze"
+          "value": "tier-cYGYq5-ae",
+          "label": "Customers"
         }
       ],
       "sponsors": [
         {
           "sponsor_id": 8,
-          "marquee": "ZTE Shapes the Future of Technology",
-          "sideImage": "/img/sponsors/exhibitor/immage.png",
+          "marquee": "This is your sponsor ticker text.",
+          "sideImage": "",
           "externalLink": "",
-          "sponsorColor": "",
-          "logo": "/img/sponsors/exhibitor/logo_ZTE.png",
-          "name": "ZTE",
+          "sponsorColor": "#85B537",
+          "logo": "/img/samsung-sponsor-logo-nvida.png",
+          "name": "NVIDIA",
           "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
           "headerVideo": "",
-          "headerImage": "/img/sponsors/exhibitor/header_logo_exhibitor.png",
+          "headerImage": "/img/samsung-sponsor-logo-nvida.png",
           "socialNetworks": [
             {
               "icon": "fa-facebook",
@@ -196,43 +180,16 @@
           ],
           "chatLink": "",
           "sponsorId": 8,
-          "title": "We are ZTE",
+          "title": "NVIDIA",
           "companyId": 9,
           "documents": {
-            "slides": [
-              {
-                "name": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html",
-                "order": 2,
-                "class_name": "PresentationSlide",
-                "link": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html"
-              }
-            ],
-            "links": [
-              {
-                "name": "http://relaxdiego.com/2017/05/swampup-2017-slides.html",
-                "order": 1,
-                "class_name": "PresentationLink",
-                "link": "http://relaxdiego.com/2017/05/swampup-2017-slides.html"
-              }
-            ],
-            "videos": [
-              {
-                "name": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html",
-                "order": 3,
-                "class_name": "PresentationVideo",
-                "link": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html"
-              }
-            ]
+            "slides": [],
+            "links": [],
+            "videos": []
           },
-          "columnAds": [
-            {
-              "image": "/img/yoco-sponsor-ads-medium-flow.png",
-              "button": "",
-              "link": "/virtual-booth/"
-            }
-          ],
+          "columnAds": [],
           "id": 3,
-          "email": "huawei@huawei.com",
+          "email": "support@fntech.com",
           "usesSponsorPage": true
         }
       ]
