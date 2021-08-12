@@ -6,7 +6,7 @@ import styles from '../styles/lobby-hero.module.scss'
 const LobbyHeroComponent = ({homeSettings}) => (
   <section className="hero">
     <div className={`${styles.heroColumns} columns`}>
-      <div className={`${styles.leftColumn} column is-6 is-black`}>
+      <div className={`${styles.leftColumn} column is-black`}>
         <div className={`${styles.heroContainer} hero-body`}>
           <div className="container">
             <h1 className="title">
@@ -19,7 +19,7 @@ const LobbyHeroComponent = ({homeSettings}) => (
         </div>
       </div>
       <div className={`${styles.midColumn} column is-1 is-info`} />
-      <div className={`${styles.rightColumn} column is-6 is-danger`} style={{ backgroundImage: `url(${homeSettings.homeHero.image})` }} />
+      <div className={`${styles.rightColumn} column is-danger`} style={{ backgroundImage: `url(${homeSettings.homeHero.image})` }} />
     </div>
   </section>
 );

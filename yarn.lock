@@ -10931,10 +10931,10 @@ lite-schedule-widget@^1.0.12:
     pure-react-carousel "^1.27.4"
     use-fit-text "^2.4.0"
 
-live-event-widget@^2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/live-event-widget/-/live-event-widget-2.0.4.tgz#150737f110261e7f69e81b6614b1e18ead693eb4"
-  integrity sha512-wsn5uHBHqRUn80OELunJSZ7x4wLg43uLHcjlXH78lrR2XpP2P2/uQ1M0IoChtlGDb9/f4JMKBTo4DLVZwNVEbA==
+live-event-widget@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/live-event-widget/-/live-event-widget-2.0.6.tgz#c1ee92ed611f08857195073b249b36eb8ee345ec"
+  integrity sha512-KfKkvZon4es/Af4RCWJWHvKBh1RmyKA8hoT5DJ1n13Kqn6xwc9qzwoXll9a7YeXmEaTFRbYHYXzFKUvS11gewQ==
   dependencies:
     svg-url-loader "^6.0.0"
 

@@ -116,15 +116,21 @@ class MarketingHeroComponent extends React.Component {
             </div>
           </div>
           <div className={`${styles.rightColumn} column is-6 px-0`} id="marketing-slider">
-            <Slider {...sliderSettings}>
-              {siteSettings.heroBanner.images.map((img, index) => {
-                return (
-                  <div key={index}>
-                    <div className={styles.imageSlider} style={{ backgroundImage: `url(${img.image})` }} />
-                  </div>
-                );
-              })}
-            </Slider>
+            {siteSettings.heroBanner.images.length > 0 ?
+              <Slider {...sliderSettings}>
+                {siteSettings.heroBanner.images.map((img, index) => {
+                  return (
+                    <div key={index}>
+                      <div className={styles.imageSlider} style={{ backgroundImage: `url(${img.image})` }} />
+                    </div>
+                  );
+                })}
+              </Slider>
+              :
+              <div>
+                <div className={styles.imageSlider} style={{ backgroundImage: `url(${siteSettings.heroBanner.images[0].image})` }} />
+              </div>
+            }
           </div>
         </div>
       </section>
