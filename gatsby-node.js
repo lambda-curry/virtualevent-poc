@@ -113,9 +113,7 @@ exports.onPreBootstrap = async () => {
     }
   };
 
-  const accessToken = await getAccessToken().then((token) => {
-    return token.token.access_token
-  });
+  const accessToken = await getAccessToken().then(({token}) => token.access_token);
 
   let events_page = 1;
   let events_last_page = 0;
