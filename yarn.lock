@@ -7660,10 +7660,10 @@ fstream@^1.0.0, fstream@^1.0.12:
     mkdirp ">=0.5 0"
     rimraf "2"
 
-full-schedule-widget@^1.1.5:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/full-schedule-widget/-/full-schedule-widget-1.1.5.tgz#f17b16c44bb9a9e41c887b1b34a2f2e0232e5238"
-  integrity sha512-rqjTAN/COmM2+OMniPVEtt831E2uJJYHnJlruecmXmmvLvg/a7MlR2MvapKhYl8Iz6ZfPjc9wi2GydPZm9+jRw==
+full-schedule-widget@^1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/full-schedule-widget/-/full-schedule-widget-1.1.7.tgz#a89ef63ee2463378acbd58297e24a183506ab6e1"
+  integrity sha512-4CRxkHO3mzgUe0hqB+Pw360lDYV+1jQfNQKj2k4DiuTyfk9cJeTBESOG4AiqZD+/wEP3tOCC6PYs2oCYZi4VVQ==
   dependencies:
     pure-react-carousel "^1.27.4"
 
@@ -16305,10 +16305,10 @@ saxes@^5.0.1:
   dependencies:
     xmlchars "^2.2.0"
 
-schedule-filter-widget@^1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/schedule-filter-widget/-/schedule-filter-widget-1.0.9.tgz#f32d9030ecea8af879b2a188980596609b522746"
-  integrity sha512-wJT6Ax8LY0nk8u2cGf39DijZkFEY0Tbe0YCxr51wb/mcR8d7u4ZLzuMiQBtQn/UR6FsPYsncdpvo25DW3H1zAQ==
+schedule-filter-widget@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/schedule-filter-widget/-/schedule-filter-widget-1.1.0.tgz#765f03170ecee2c367dcd7c8c2b275e5be63a098"
+  integrity sha512-T0iaeUTo2VUt1v9zDuyEp72DqNKtNIwYvbPSuyNOqa9CZk7k3S2g3b3Q3F0qMj7Cd4mNKq3YpM3mWXb0ZC+bnw==
   dependencies:
     dropzone "^5.9.2"
     react-spring "^9.1.2"
