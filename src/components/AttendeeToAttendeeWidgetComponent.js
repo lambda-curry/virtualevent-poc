@@ -31,6 +31,7 @@ export const AttendeesWidget = ({ user, event, location }) => {
   const ocrRef = useRef();
 
   useEffect(() => {
+    if(!user) return;
     const fragmentParser = new FragmentParser();
     const starHelpChatParam = fragmentParser.getParam("starthelpchat");
     const starQAChatParam = fragmentParser.getParam("startqachat");
