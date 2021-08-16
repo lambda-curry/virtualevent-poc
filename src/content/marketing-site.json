@@ -3,7 +3,7 @@
     "title": "Powering Experiences",
     "subTitle": "The Magic of Memory",
     "date": "",
-    "time": "TECH DAY @OCP  |  NOV 8. |  1PM-5PM",
+    "time": "TECH DAY @OCP  |  NOV. 8 |  1PM-5PM",
     "dateLayout": false,
     "buttons": {
       "registerButton": {
@@ -32,9 +32,9 @@
       "title": "Join the conversation"
     },
     "image": {
-      "display": false,
-      "title": "Image",
-      "src": "/img/yoco-sponsor-ads-large-wherehol-vert.png"
+      "display": true,
+      "title": "",
+      "src": "/img/samsumg-fnv-leftcolumn-image.png"
     }
   },
   "sponsors": [
