@@ -89,6 +89,52 @@
           "id": 3
         }
       ]
+    },
+    {
+      "tier": [
+        {
+          "value": "tier-DHcI3dWGk",
+          "label": "Companies"
+        }
+      ],
+      "sponsors": [
+        {
+          "advertiseImage": "",
+          "name": "IBM",
+          "id": 1,
+          "sponsorId": 1,
+          "companyId": 1,
+          "title": "IBM",
+          "logo": "/img/samsung-sponsor-logo-ibm.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Cadence",
+          "id": 1,
+          "sponsorId": 1,
+          "companyId": 1,
+          "title": "Cadence",
+          "logo": "/img/samsung-sponsor-logo-cadence.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Cisco",
+          "id": 1,
+          "sponsorId": 1,
+          "companyId": 1,
+          "title": "Cisco",
+          "logo": "/img/samsung-sponsor-logo-cisco.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Qualcomm",
+          "id": 11,
+          "sponsorId": 1,
+          "companyId": 1,
+          "title": "Qualcomm",
+          "logo": "/img/samsung-sponsor-logo-qualcomm.png"
+        }
+      ]
     }
   ]
 }
