@@ -79,12 +79,13 @@
       ],
       "sponsors": [
         {
-          "marquee": "Experience Center 1 custom tag line",
+          "marquee": "Experience Center 1 text",
           "sponsorColor": "#343895",
-          "logo": "/img/ocp21glo_fnv_experiencecenter-lobbybutton.png",
+          "logo": "/img/ocp21glo_fnv_experiencecenter1-logo.png",
           "name": "Experience Center 1",
           "intro": "Experience Center 1 Description",
-          "headerImage": "/img/ocp21glo_fnv_experiencecenterlandingpage_header.png",
+          "headerImage": "/img/ocp21glo_fnv_experiencecenter1-header.png",
+          "headerImageMobile": "/img/ocp21glo_fnv_experiencecenter1-mobileheader.png",
           "advertiseImage": "",
           "sponsorId": 1,
           "title": "Experience Center 1",
@@ -100,6 +101,34 @@
             ]
           },
           "id": 1,
+          "email": "support@fntech.com",
+          "usesSponsorPage": true
+        },
+        {
+          "marquee": "Experience Center 2 Custom Text",
+          "sponsorColor": "#343B95",
+          "logo": "/img/ocp21glo_fnv_experiencecenter2-logo.png",
+          "name": "Experience Center 2",
+          "intro": "Experience Center 2 Description",
+          "headerImage": "/img/ocp21glo_fnv_experiencecenter2-header.png",
+          "headerImageMobile": "/img/ocp21glo_fnv_experiencecenter2-mobileheader.png",
+          "advertiseImage": "",
+          "title": "Experience Center 2",
+          "id": 2,
+          "email": "support@fntech.com",
+          "usesSponsorPage": true
+        },
+        {
+          "marquee": "Experience Center 3 Text",
+          "sponsorColor": "#343B95",
+          "logo": "/img/ocp21glo_fnv_experiencecenter3-logo.png",
+          "name": "Experience Center 3",
+          "intro": "Experience Center 3 Description",
+          "headerImage": "/img/ocp21glo_fnv_experiencecenter3-header.png",
+          "headerImageMobile": "/img/ocp21glo_fnv_experiencecenter3-mobileheader.png",
+          "advertiseImage": "",
+          "title": "Experience Center 3",
+          "id": 3,
           "email": "support@fntech.com",
           "usesSponsorPage": true
         }
@@ -124,7 +153,8 @@
           "sponsorId": 1,
           "companyId": 1,
           "id": 1,
-          "email": "support@fntech.com"
+          "email": "support@fntech.com",
+          "usesSponsorPage": true
         }
       ]
     }
