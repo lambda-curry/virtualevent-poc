@@ -114,12 +114,17 @@
       ],
       "sponsors": [
         {
-          "advertiseImage": "",
+          "marquee": "Custom Symposium ticker text",
+          "sponsorColor": "#343B95",
+          "logo": "/img/ocp21glo_fnv_experiencecenter-lobbybutton.png",
           "name": "Symposium",
-          "id": 1,
+          "intro": "Symposium description, we will want to insert where to view Symposium posters at the in-person event.",
+          "headerImage": "/img/ocp21glo_fnv_symposium_header.png",
+          "advertiseImage": "",
           "sponsorId": 1,
           "companyId": 1,
-          "logo": "/img/ocp21glo_fnv_experiencecenter-lobbybutton.png"
+          "id": 1,
+          "email": "support@fntech.com"
         }
       ]
     }
