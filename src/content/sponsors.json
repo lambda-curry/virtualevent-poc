@@ -259,8 +259,8 @@
           "headerImageMobile": "/img/fnvirtual-yoco-fntech-headerimage-mobile.png",
           "chatLink": "https://global.gotomeeting.com/join/287912437 ",
           "advertiseImage": "",
-          "sponsorId": 14,
-          "companyId": 11,
+          "sponsorId": 7,
+          "companyId": 4,
           "documents": {
             "links": [
               {
@@ -321,7 +321,7 @@
               "image": "/img/fnvirtual-yoco-fntech-space1.png"
             }
           ],
-          "id": 14,
+          "id": 4,
           "email": "info@fntech.com",
           "usesSponsorPage": true
         },
