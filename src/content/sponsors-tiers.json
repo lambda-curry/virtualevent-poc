@@ -18,8 +18,8 @@
           "banner": true
         }
       },
-      "eventTemplate": "",
-      "expoHallSize": "large"
+      "eventTemplate": "big-images",
+      "expoHallSize": "medium"
     },
     {
       "id": "tier-DHcI3dWGk",
@@ -108,16 +108,34 @@
         "display": false
       },
       "sponsorPage": {
-        "sponsorTemplate": "small-header",
-        "disqus": false,
-        "liveEvent": false,
+        "sponsorTemplate": "big-header",
+        "disqus": true,
+        "liveEvent": true,
         "schedule": false,
-        "banner": false
+        "banner": true
       },
       "expoHallSize": "medium",
       "eventTemplate": "small-images",
       "id": "tier-1BXGYJADL",
-      "name": "Misc Sponsors"
+      "name": "Experience Center"
+    },
+    {
+      "badge": "",
+      "lobby": {
+        "lobbyTemplate": "small-images",
+        "display": false
+      },
+      "sponsorPage": {
+        "sponsorTemplate": "big-header",
+        "disqus": true,
+        "liveEvent": true,
+        "schedule": true,
+        "banner": true
+      },
+      "expoHallSize": "medium",
+      "eventTemplate": "small-images",
+      "id": "tier-09OJgMcMH",
+      "name": "Symposium"
     }
   ],
   "imageHeader": "/img/ocp21glo_expolandingpage_header_062421.png",
