@@ -4,19 +4,19 @@
       "section": "lobby",
       "columnAds": [
         {
-          "image": "/img/ocp21glo_fnv_marketingpage_space1.png",
+          "image": "/img/ocp21glo_fnv_experiencecenter-lobbybutton.png",
           "button": {
-            "link": ""
+            "link": "https://2021ocpglobal.fnvirtual.app/a/sponsors/"
           },
           "column": "left"
         },
         {
-          "image": "/img/ocp21glo_fnv_marketingpage_space1.png",
+          "image": "/img/ocp21glo_fnv_symposium_logo.png",
           "button": {
             "text": "",
             "link": ""
           },
-          "column": "right",
+          "column": "left",
           "id": null
         }
       ]
