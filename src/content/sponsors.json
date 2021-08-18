@@ -145,7 +145,7 @@
         {
           "marquee": "Custom Symposium ticker text",
           "sponsorColor": "#343B95",
-          "logo": "/img/ocp21glo_fnv_experiencecenter-lobbybutton.png",
+          "logo": "/img/ocp21glo_fnv_symposium_logo.png",
           "name": "Symposium",
           "intro": "Symposium description, we will want to insert where to view Symposium posters at the in-person event.",
           "headerImage": "/img/ocp21glo_fnv_symposium_header.png",
