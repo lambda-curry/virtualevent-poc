@@ -74,10 +74,36 @@
       "tier": [
         {
           "value": "tier-1BXGYJADL",
-          "label": "Misc Sponsors"
+          "label": "Experience Center"
         }
       ],
-      "sponsors": []
+      "sponsors": [
+        {
+          "marquee": "The in-person Experience Center is located in the Expo Hall ",
+          "sponsorColor": "#343895",
+          "logo": "/img/ocp21glo_fnv_experiencecenter-lobbybutton.png",
+          "name": "Experience Center",
+          "intro": "This is the experience center!",
+          "headerImage": "/img/ocp21glo_fnv_experiencecenterlandingpage_header.png",
+          "advertiseImage": "",
+          "sponsorId": 1,
+          "title": "Welcome to the Experience Center",
+          "companyId": 1,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "Experience Center 1",
+                "order": 1,
+                "link": "https://www.fntech.com"
+              }
+            ]
+          },
+          "id": 1,
+          "email": "support@fntech.com",
+          "usesSponsorPage": true
+        }
+      ]
     }
   ]
 }
