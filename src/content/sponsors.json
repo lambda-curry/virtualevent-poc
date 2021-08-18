@@ -21,16 +21,16 @@
           "headerImage": "/img/ocp21glo_fnv_sponsor_headerimage-toptier.png",
           "socialNetworks": [],
           "chatLink": "",
-          "sponsorId": "",
+          "sponsorId": 45,
           "title": "FNTECH",
-          "companyId": "",
+          "companyId": 4,
           "documents": {
             "slides": [],
             "links": [],
             "videos": []
           },
           "columnAds": [],
-          "id": 1,
+          "id": 4,
           "email": "",
           "usesSponsorPage": true
         }
