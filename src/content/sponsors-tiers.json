@@ -132,8 +132,8 @@
         "schedule": true,
         "banner": true
       },
-      "expoHallSize": "medium",
-      "eventTemplate": "small-images",
+      "expoHallSize": "small",
+      "eventTemplate": null,
       "id": "tier-09OJgMcMH",
       "name": "Symposium"
     }
