@@ -79,21 +79,21 @@
       ],
       "sponsors": [
         {
-          "marquee": "The in-person Experience Center is located in the Expo Hall ",
+          "marquee": "Experience Center 1 custom tag line",
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_experiencecenter-lobbybutton.png",
-          "name": "Experience Center",
-          "intro": "This is the experience center!",
+          "name": "Experience Center 1",
+          "intro": "Experience Center 1 Description",
           "headerImage": "/img/ocp21glo_fnv_experiencecenterlandingpage_header.png",
           "advertiseImage": "",
           "sponsorId": 1,
-          "title": "Welcome to the Experience Center",
+          "title": "Experience Center 1",
           "companyId": 1,
           "documents": {
             "links": [
               {
                 "class_name": "PresentationLink",
-                "name": "Experience Center 1",
+                "name": "Experience Center 1 Link 1",
                 "order": 1,
                 "link": "https://www.fntech.com"
               }
@@ -102,6 +102,24 @@
           "id": 1,
           "email": "support@fntech.com",
           "usesSponsorPage": true
+        }
+      ]
+    },
+    {
+      "tier": [
+        {
+          "value": "tier-09OJgMcMH",
+          "label": "Symposium"
+        }
+      ],
+      "sponsors": [
+        {
+          "advertiseImage": "",
+          "name": "Symposium",
+          "id": 1,
+          "sponsorId": 1,
+          "companyId": 1,
+          "logo": "/img/ocp21glo_fnv_experiencecenter-lobbybutton.png"
         }
       ]
     }
