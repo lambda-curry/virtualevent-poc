@@ -1,8 +1,8 @@
 {
   "centerColumn": {
     "speakers": {
-      "showTodaySpeakers": false,
-      "showFeatureSpeakers": false
+      "showTodaySpeakers": true,
+      "showFeatureSpeakers": true
     }
   },
   "homeHero": {
