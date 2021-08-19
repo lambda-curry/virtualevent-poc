@@ -38,13 +38,11 @@ Last day to book: 10/15*\
 
 **Nearby Airports**
 
-**SJO -** Norman Y. Mineta San Jose International Airport\
+**SJC -** Norman Y. Mineta San Jose International Airport\
 5 miles
 
 **SFO -** San Francisco International Airport \
 35 miles 
-
-
 
 **<br>**
 
