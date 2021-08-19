@@ -19,6 +19,18 @@
       "requiresAuth": false
     },
     {
+      "requiresAuth": false,
+      "title": "HEALTH & SAFETY",
+      "link": "/health-and-safety",
+      "display": true
+    },
+    {
+      "title": "TRAVEL",
+      "link": "/travel",
+      "display": true,
+      "requiresAuth": false
+    },
+    {
       "title": "SCHEDULE",
       "link": "/a/schedule",
       "display": false,
@@ -29,12 +41,6 @@
       "title": "SPONSORSHIP",
       "link": "/sponsorship",
       "display": true
-    },
-    {
-      "title": "TRAVEL",
-      "link": "/travel",
-      "display": true,
-      "requiresAuth": false
     },
     {
       "title": "CONTACT",
