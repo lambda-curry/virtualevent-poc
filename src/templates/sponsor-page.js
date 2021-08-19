@@ -36,7 +36,8 @@ export const SponsorPageTemplate = class extends React.Component {
 
   componentWillMount() {
     const { sponsorId, sponsors, tiers } = this.props;
-    const sponsor = sponsors.map(t => t.sponsors.find(s => s.id === parseInt(sponsorId))).filter(e => e !== undefined)[0];
+    const sponsor = sponsors.map(t => t.sponsors?.find(s => s.id === parseInt(sponsorId)))
+      .filter(e => e !== undefined)[0];
     if (!sponsor) {
       this.setState({ notFound: true });
     } else {
