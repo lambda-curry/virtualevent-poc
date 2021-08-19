@@ -120,6 +120,17 @@
           "id": 1,
           "email": "rajeev@opencompute.org",
           "usesSponsorPage": true
+        },
+        {
+          "logo": "/img/ocp21glo_fnv_experiencecenter1-logo.png",
+          "name": "Experience Center 1 ",
+          "intro": "EC 1",
+          "headerImage": "/img/ocp21glo_fnv_experiencecenter1-header.png",
+          "advertiseImage": "",
+          "sponsorId": 6,
+          "companyId": 6,
+          "id": 6,
+          "usesSponsorPage": true
         }
       ]
     },
