@@ -1,19 +1,42 @@
+@import "bulma/sass/utilities/_all.sass";
+@import "bulma/sass/elements/button.sass";
+@import "bulma/sass/form/_all.sass";
+
+@import "./colors.scss";
+
 .question-wrapper {
-    margin: 15px 0;
-    display: flex;    
-    align-content: center;    
+  margin: 15px 0;
+  display: flex;
+  align-content: center;
 }
 
 .button-save {
-    float: right;
-    margin-top: 20px;
+  float: right;
+  margin-top: 20px;
 }
 
 .disclaimer {
-    margin: 25px 5px 0 5px;
-    >div {        
-        b {
-            margin-left: 5px;
-        }
-    }    
+  margin: 25px 5px 0 5px;
+  > div {
+    b {
+      margin-left: 5px;
+    }
+  }
+}
+.form {
+  margin-bottom: 30px;
+  .input-row {
+    margin: 15px 0;
+
+    .input-field {
+      display: flex;
+      flex-direction: column;
+
+      b {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 5px;
+      }      
+    }
+  }
 }
