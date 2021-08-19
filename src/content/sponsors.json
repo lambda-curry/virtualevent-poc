@@ -79,16 +79,16 @@
       ],
       "sponsors": [
         {
-          "marquee": "Experience Center 1 text",
+          "marquee": "OCP Experience Center: Community Showcase",
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_experiencecenter1-logo.png",
-          "name": "Experience Center",
-          "intro": "Experience Center 1 Description",
+          "name": "Experience Center (MAIN) ",
+          "intro": "The Experience Center at the OCP Global Summit is a dedicated space for the Community to showcase their hardware designs, architecture and software solutions on OCP-recognized hardware platforms. The OCP Experience Center was established in 2019 to provide new ways for OCP members to showcase best-in-class product demos, both live and static. The initiative was launched at the OCP Global and Regional (European) Summits last year, and they were among the most popular attractions. Not only do the partners get a chance to showcase their OCP Accepted™ and OCP Inspired™ product offerings, they also get a chance to receive feedback from Summit attendees. The OCP Experience Center offers Summit attendees a chance to explore products and their piece-parts, and see through the software solutions that have been built primarily for the platforms being demonstrated.",
           "headerImage": "/img/ocp21glo_fnv_experiencecenter1-header.png",
           "headerImageMobile": "/img/ocp21glo_fnv_experiencecenter1-mobileheader.png",
           "advertiseImage": "",
           "sponsorId": 1,
-          "title": "Experience Center 1",
+          "title": "Experience Center ",
           "companyId": 1,
           "documents": {
             "links": [
@@ -100,8 +100,13 @@
               }
             ]
           },
+          "columnAds": [
+            {
+              "image": "/img/ocp21glo_fnv_experiencecenter1-logo.png"
+            }
+          ],
           "id": 1,
-          "email": "support@fntech.com",
+          "email": "rajeev@opencompute.org",
           "usesSponsorPage": true
         }
       ]
