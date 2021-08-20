@@ -133,7 +133,7 @@ export const requireExtraQuestions = () => (dispatch, getState) => {
 
   const owner = userProfile?.summit_tickets[0]?.owner || null;  
   if (!owner.first_name || !owner.last_name || !owner.company || !owner.email) return false;
-  const disclaimer = summit.registration_disclaimer_mandatory ? userProfile?.summit_tickets[0]?.disclaimer_accepted || null : true;
+  const disclaimer = summit.registration_disclaimer_mandatory ? owner.disclaimer_accepted || null : true;
   if (!disclaimer) return false;
   const requiredExtraQuestions = summit.order_extra_questions.filter(q => q.mandatory === true);
   if (requiredExtraQuestions.length > 0 && userProfile && userProfile.summit_tickets.length > 0) {
