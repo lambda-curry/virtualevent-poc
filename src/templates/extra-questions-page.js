@@ -48,7 +48,11 @@ export const ExtraQuestionsPageTemplate = ({ user, summit, saveExtraQuestions })
     }
 
     const checkAttendeeInformation = () => {
-        return Object.keys(owner).every((k) => !!owner[k]);
+        return !!owner.first_name && !!owner.last_name && !!owner.company && !!owner.email
+    }
+
+    const checkMandatoryDisclaimer = () => {
+        return summit.registration_disclaimer_mandatory ? disclaimer : true;
     }
 
     const toggleDisclaimer = () => setDisclaimer(!disclaimer);
@@ -148,7 +152,14 @@ export const ExtraQuestionsPageTemplate = ({ user, summit, saveExtraQuestions })
                             <span dangerouslySetInnerHTML={{ __html: summit.registration_disclaimer_content }} />
                         </div>
                     </div>
-                    <button className={`${styles.buttonSave} button is-large`} disabled={!mandatoryQuestionsAnswered() && !checkAttendeeInformation()} onClick={() => saveExtraQuestions(answers, owner, disclaimer)}>
+                    <button
+                        className={`${styles.buttonSave} button is-large`}
+                        disabled={
+                            !checkAttendeeInformation() ||
+                            !checkMandatoryDisclaimer() ||
+                            !mandatoryQuestionsAnswered()}
+                        onClick={() => saveExtraQuestions(answers, owner, disclaimer)}
+                    >
                         Save and Continue
                     </button>
                 </div>
