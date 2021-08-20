@@ -107,12 +107,12 @@ const getFilteredEvents = (events, filters, summitTimezone) => {
     }
 
     if (filters.speakers?.values.length > 0) {
-      valid = ev.speakers.some(s => filters.speakers.values.includes(s.id)) || filters.speakers.values.includes(ev.moderator?.id);
+      valid = ev.speakers?.some(s => filters.speakers.values.includes(s.id)) || filters.speakers.values.includes(ev.moderator?.id);
       if (!valid) return false;
     }
 
     if (filters.tags?.values.length > 0) {
-      valid = ev.tags.some(t => filters.tags.values.includes(t.id));
+      valid = ev.tags?.some(t => filters.tags.values.includes(t.id));
       if (!valid) return false;
     }
 
@@ -122,7 +122,7 @@ const getFilteredEvents = (events, filters, summitTimezone) => {
     }
 
     if (filters.track_groups?.values.length > 0) {
-      valid = ev.track.track_groups.some(tg => filters.track_groups.values.includes(tg));
+      valid = ev.track?.track_groups.some(tg => filters.track_groups.values.includes(tg));
       if (!valid) return false;
     }
 
