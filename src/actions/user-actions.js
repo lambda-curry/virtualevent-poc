@@ -131,8 +131,11 @@ export const requireExtraQuestions = () => (dispatch, getState) => {
   const { summitState : { summit }} = getState();
   const { userState: { userProfile } } = getState();
 
+  const owner = userProfile?.summit_tickets[0]?.owner || null;  
+  if (!owner.first_name || !owner.last_name || !owner.company || !owner.email) return true;
+  const disclaimer = summit.registration_disclaimer_mandatory ? owner.disclaimer_accepted : true;
+  if (!disclaimer) return true;
   const requiredExtraQuestions = summit.order_extra_questions.filter(q => q.mandatory === true);
-
   if (requiredExtraQuestions.length > 0 && userProfile && userProfile.summit_tickets.length > 0) {
     const ticketExtraQuestions = userProfile?.summit_tickets[0]?.owner?.extra_questions || [];
     if (ticketExtraQuestions.length > 0) {
@@ -297,11 +300,9 @@ export const updatePassword = (password) => async (dispatch) => {
     .catch(() => dispatch(createAction(STOP_LOADING_IDP_PROFILE)()));
 }
 
-export const saveExtraQuestions = (extra_questions, disclaimer) => async (dispatch, getState) => {
+export const saveExtraQuestions = (extra_questions, owner, disclaimer) => async (dispatch, getState) => {
 
   const { userState: { userProfile: { summit_tickets } } } = getState();
-
-  const { owner } = summit_tickets[0];
 
   const extraQuestionsAnswers = extra_questions.map(q => {
     return { question_id: q.id, answer: `${q.value}` }
