@@ -4,34 +4,45 @@
       "section": "lobby",
       "columnAds": [
         {
-          "image": "/img/ocp21glo_fnv_experiencecenter-lobbybutton.png",
+          "image": "/img/ocp21glo_fnv_lobby_button-experiencecenter.png",
           "button": {
             "link": "https://2021ocpglobal.fnvirtual.app/a/sponsors/"
           },
           "column": "left"
         },
         {
-          "image": "/img/ocp21glo_fnv_symposium_logo.png",
+          "image": "/img/ocp21glo_fnv_lobby_button-sym.png",
           "button": {
             "text": "",
             "link": ""
           },
           "column": "left",
           "id": null
-        }
-      ]
-    },
-    {
-      "section": "event",
-      "columnAds": [
+        },
         {
-          "image": "/img/yoco-sponsor-ads-medium-flow.png",
+          "image": "/img/ocp21glo_fnv_lobby_button-basecamp.png",
+          "column": "left"
+        },
+        {
+          "image": "/img/ocp21glo_fnv_lobby_button-careercenter.png",
           "button": {
-            "text": "Learn more",
-            "link": "/virtual-booth/"
+            "link": "https://ocpcareercenter.mysmartjobboard.com/"
           },
-          "column": "left",
-          "id": null
+          "column": "right"
+        },
+        {
+          "image": "/img/ocp21glo_fnv_lobby_button-marketplace.png",
+          "button": {
+            "link": "https://www.opencompute.org/solutions"
+          },
+          "column": "right"
+        },
+        {
+          "image": "/img/ocp21glo_fnv_lobby_button-join.png",
+          "button": {
+            "link": "https://www.opencompute.org/membership/how-to-join"
+          },
+          "column": "right"
         }
       ]
     }
