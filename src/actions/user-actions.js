@@ -135,6 +135,11 @@ export const requireExtraQuestions = () => (dispatch, getState) => {
 
   if (requiredExtraQuestions.length > 0 && userProfile && userProfile.summit_tickets.length > 0) {
     const ticketExtraQuestions = userProfile?.summit_tickets[0]?.owner?.extra_questions || [];
+    const disclaimer = summit.registration_disclaimer_mandatory ? userProfile?.summit_tickets[0]?.disclaimer_accepted || null : true;
+    const owner = userProfile?.summit_tickets[0]?.owner || null;
+    if (!disclaimer || !owner || !Object.keys(owner).every((k) => !!owner[k])) {
+      return false
+    }
     if (ticketExtraQuestions.length > 0) {
       return !requiredExtraQuestions.every(q => {
         const answer = ticketExtraQuestions.find(answer => answer.question_id === q.id);
