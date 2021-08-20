@@ -43,7 +43,26 @@
           "label": "Emerald"
         }
       ],
-      "sponsors": []
+      "sponsors": [
+        {
+          "advertiseImage": "",
+          "name": "QCT",
+          "id": 1,
+          "title": "QCT",
+          "intro": "QCT",
+          "sponsorColor": "QCT",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-qct.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Wiywynn",
+          "id": 1,
+          "title": "Wiywynn",
+          "intro": "Wiywynn",
+          "marquee": "Wiywynn",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-wiwynn.png"
+        }
+      ]
     },
     {
       "tier": [
@@ -60,6 +79,18 @@
           "value": "tier-Wqd0Qqef7",
           "label": "Sapphire"
         }
+      ],
+      "sponsors": [
+        {
+          "advertiseImage": "",
+          "name": "Edgecore Networks",
+          "id": 1,
+          "title": "Edgecore Networks",
+          "intro": "Edgecore Networks",
+          "sponsorColor": "",
+          "marquee": "Edgecore Networks",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-edgecore.png"
+        }
       ]
     },
     {
@@ -67,6 +98,18 @@
         {
           "value": "tier-x0OjdDZTs",
           "label": "Topaz"
+        }
+      ],
+      "sponsors": [
+        {
+          "advertiseImage": "",
+          "name": "TE Connectivity",
+          "id": 1,
+          "title": "TE Connectivity",
+          "intro": "TE Connectivity",
+          "marquee": "TE Connectivity",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-teconnectivity.png",
+          "usesSponsorPage": true
         }
       ]
     },
