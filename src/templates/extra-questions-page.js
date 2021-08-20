@@ -81,16 +81,7 @@ export const ExtraQuestionsPageTemplate = ({ user, summit, saveExtraQuestions })
                         <div className={`columns is-mobile ${styles.inputRow}`}>
                             <div className='column is-one-third'>Ticket assigned to email</div>
                             <div className='column is-two-thirds'>
-                                {ticket.owner.email ?
-                                    owner.email
-                                    :
-                                    <input
-                                        className={`${styles.input} ${styles.isMedium}`}
-                                        type="text"
-                                        placeholder="Email"
-                                        onChange={e => setOwner({ ...owner, email: e.target.value })}
-                                        value={owner.email} />
-                                }
+                                {owner.email}
                             </div>
                         </div>
                         <div className={`columns is-mobile ${styles.inputRow}`}>
