@@ -32,7 +32,7 @@
       "title": "Join the conversation"
     },
     "image": {
-      "display": false,
+      "display": true,
       "title": "EVENT SCHEDULE",
       "src": "/img/ocp21glo-fnv-highlevelschedule.jpg"
     }
