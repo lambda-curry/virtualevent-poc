@@ -40,7 +40,7 @@
       "requiresAuth": true,
       "title": "MY SCHEDULE",
       "link": "/a/my-schedule",
-      "display": true
+      "display": false
     },
     {
       "requiresAuth": false,
