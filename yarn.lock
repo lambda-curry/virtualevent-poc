@@ -19804,3 +19804,11 @@ zwitch@^1.0.0:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/zwitch/-/zwitch-1.0.5.tgz#d11d7381ffed16b742f6af7b3f223d5cd9fe9920"
   integrity sha512-V50KMwwzqJV0NpZIZFwfOD5/lyny3WlSzRiXgA0G7VUnRlqttta1L6UQIHzd6EuBY/cHGfwTIck7w1yH6Q5zUw==
+
+"@vimeo/player@^2.16.0":
+  version "2.16.0"
+  resolved "https://registry.yarnpkg.com/@vimeo/player/-/player-2.16.0.tgz#30f0d307c5acc2790d6ba0da335670334a643e76"
+  integrity sha512-LjswQcTFkeceRZouK0ipWqZiCCTyuzMEhnB0K9DaNYIrfuZ+VTyJv6cHS60/P4Pw8D0a9PGQYekb2P0ZwbBsrA==
+  dependencies:
+    native-promise-only "0.8.1"
+    weakmap-polyfill "2.0.1"
