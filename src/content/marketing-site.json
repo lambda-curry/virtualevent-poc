@@ -24,15 +24,15 @@
   },
   "leftColumn": {
     "schedule": {
-      "display": false,
-      "title": "Event Schedule"
+      "display": true,
+      "title": "EVENT SCHEDULE"
     },
     "disqus": {
       "display": false,
       "title": "Join the conversation"
     },
     "image": {
-      "display": true,
+      "display": false,
       "title": "Event Schedule",
       "src": "/img/ocp21glo-fnv-schedule-graphic.png"
     }
