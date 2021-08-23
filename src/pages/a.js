@@ -15,6 +15,7 @@ import PrivateRoute from '../routes/PrivateRoute'
 import PublicRoute from "../routes/PublicRoute"
 import withSessionChecker from "../utils/withSessionChecker"
 import extraQuestionsPage from "../templates/extra-questions-page"
+import MySchedulePage from "../templates/my-schedule-page";
 
 const App = ({ isLoggedUser, user, summit_phase, lastBuild, syncData }) => {
 
@@ -35,8 +36,7 @@ const App = ({ isLoggedUser, user, summit_phase, lastBuild, syncData }) => {
           <PrivateRoute path="/profile" summit_phase={summit_phase} component={FullProfilePage} isLoggedIn={isLoggedUser} user={user} location={location} />
           <PrivateRoute path="/extra-questions" component={extraQuestionsPage} isLoggedIn={isLoggedUser} user={user} location={location} />
           <PublicRoute path="/schedule" component={SchedulePage} location={location} />
-          <PublicRoute path="/my-schedule" component={SchedulePage} mySchedule={true} location={location} />
-          <LoginPage path="/login" location={location} />
+          <PublicRoute path="/my-schedule" component={MySchedulePage} location={location} summit_phase={summit_phase} isLoggedIn={isLoggedUser} />
         </Router>
       )}
     </Location>
