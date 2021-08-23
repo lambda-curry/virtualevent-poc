@@ -131,7 +131,9 @@ export const requireExtraQuestions = () => (dispatch, getState) => {
   const { summitState : { summit }} = getState();
   const { userState: { userProfile } } = getState();
 
-  const owner = userProfile?.summit_tickets[0]?.owner || null;  
+  const owner = userProfile?.summit_tickets[0]?.owner || null;
+  // if user does not have an attendee then we dont require extra questions
+  if(!owner) return false;
   if (!owner.first_name || !owner.last_name || !owner.company || !owner.email) return true;
   const disclaimer = summit.registration_disclaimer_mandatory ? owner.disclaimer_accepted : true;
   if (!disclaimer) return true;
