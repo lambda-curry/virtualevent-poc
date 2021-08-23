@@ -33,14 +33,14 @@
     {
       "title": "SCHEDULE",
       "link": "/a/schedule",
-      "display": false,
+      "display": true,
       "requiresAuth": false
     },
     {
       "requiresAuth": true,
       "title": "MY SCHEDULE",
       "link": "/a/my-schedule",
-      "display": false
+      "display": true
     },
     {
       "requiresAuth": false,
