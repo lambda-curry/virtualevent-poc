@@ -37,6 +37,12 @@
       "requiresAuth": false
     },
     {
+      "requiresAuth": true,
+      "title": "MY SCHEDULE",
+      "link": "/a/my-schedule",
+      "display": true
+    },
+    {
       "requiresAuth": false,
       "title": "SPONSORSHIP",
       "link": "/sponsorship",
@@ -53,12 +59,6 @@
       "title": "FAQ",
       "link": "/faq",
       "display": true
-    },
-    {
-      "requiresAuth": false,
-      "title": "My Profile",
-      "link": "/my-profile",
-      "display": false
     },
     {
       "requiresAuth": true,
