@@ -1,0 +1,10 @@
+
+@media (min-width: 768px) {
+  .filter-container {
+    overflow-y: scroll;
+    position: fixed;
+    right: 50px;
+    margin-top: 15px;
+    height: 94vh;
+  }
+}
