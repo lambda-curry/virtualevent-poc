@@ -36,7 +36,7 @@ const App = ({ isLoggedUser, user, summit_phase, lastBuild, syncData }) => {
           <PrivateRoute path="/profile" summit_phase={summit_phase} component={FullProfilePage} isLoggedIn={isLoggedUser} user={user} location={location} />
           <PrivateRoute path="/extra-questions" component={extraQuestionsPage} isLoggedIn={isLoggedUser} user={user} location={location} />
           <PublicRoute path="/schedule" component={SchedulePage} location={location} />
-          <PrivateRoute path="/my-schedule" component={MySchedulePage} location={location} summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user}/>
+          <PublicRoute path="/my-schedule" component={MySchedulePage} location={location} summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user}/>
         </Router>
       )}
     </Location>
