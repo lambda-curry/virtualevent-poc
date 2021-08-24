@@ -145,7 +145,8 @@
           },
           "columnAds": [
             {
-              "image": "/img/ocp21glo_fnv_experiencecenter1-logo.png"
+              "image": "/img/ocp21glo_fnv_experiencecenter1-logo.png",
+              "link": "https://2021ocpglobal.fnvirtual.app/a/sponsor/37-experience-center-1-"
             },
             {
               "image": "/img/ocp21glo_fnv_experiencecenter2-logo.png"
