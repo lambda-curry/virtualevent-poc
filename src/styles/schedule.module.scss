@@ -8,3 +8,9 @@
     height: 94vh;
   }
 }
+
+@media (max-width: 768px) {
+    .filter-container {
+        height: auto !important;
+    }
+}
