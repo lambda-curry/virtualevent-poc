@@ -112,7 +112,7 @@
               "image": "/img/yoco_ad-a-sponsor-ad_emp.png"
             }
           ],
-          "id": 35,
+          "id": 37,
           "email": "info@adanda.net",
           "usesSponsorPage": true
         },
@@ -194,7 +194,7 @@
               "image": "/img/fnvirtual-yoco-curtin-space1.png"
             }
           ],
-          "id": 31,
+          "id": 33,
           "email": "info@curtinconvention.com",
           "usesSponsorPage": true
         },
@@ -244,7 +244,7 @@
               "link": "https://dandreavisual.com/contact-us/ "
             }
           ],
-          "id": 28,
+          "id": 30,
           "email": "davids@dandreavisual.com",
           "usesSponsorPage": true
         },
@@ -330,7 +330,7 @@
           "advertiseImage": "",
           "name": "Hughston Engineering",
           "logo": "/img/logo-middle-tier-hughston.png",
-          "id": 30,
+          "id": 32,
           "sponsorId": 32,
           "companyId": 30,
           "externalLink": "/virtual-booth/",
@@ -340,7 +340,7 @@
           "advertiseImage": "",
           "name": "Seeing Eye Lighting Design",
           "logo": "/img/logo-middle-tier-seeingeye.png",
-          "id": 29,
+          "id": 31,
           "companyId": 29,
           "sponsorId": 31,
           "externalLink": "/virtual-booth/"
@@ -389,7 +389,7 @@
               "image": "/img/yoco-summit-mobility-space1.png"
             }
           ],
-          "id": 26,
+          "id": 28,
           "email": "sponsorservices@fntech.com",
           "usesSponsorPage": true
         },
@@ -465,7 +465,7 @@
               "image": "/img/yoco-sponsor-ads-medium-treva.png"
             }
           ],
-          "id": 27,
+          "id": 29,
           "email": "sponsorservices@fntech.com",
           "usesSponsorPage": true
         },
