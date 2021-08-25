@@ -33,6 +33,15 @@
           "id": 47,
           "email": "",
           "usesSponsorPage": true
+        },
+        {
+          "advertiseImage": "",
+          "name": "Inspur ",
+          "id": 53,
+          "sponsorId": 53,
+          "companyId": 38,
+          "title": "Inspur ",
+          "logo": "/img/inspur_inspur-logo.png_blue_484x484.png"
         }
       ]
     },
@@ -105,6 +114,26 @@
           "id": 51,
           "sponsorId": 51,
           "companyId": 47
+        },
+        {
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-penguin.png",
+          "name": "Penguin Computing ",
+          "advertiseImage": "",
+          "sponsorId": 54,
+          "title": "Penguin Computing",
+          "companyId": 49,
+          "documents": {
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/penguin_computing_truehpc-solution-brief-intel_cooling_power_update-v4.pdf",
+                "order": 1,
+                "name": "TrueHPC with Scyld ClusterWare Driving innovation with ready-to-run HPC"
+              }
+            ]
+          },
+          "id": 54,
+          "usesSponsorPage": true
         }
       ]
     },
