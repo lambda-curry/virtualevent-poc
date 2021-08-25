@@ -53,17 +53,19 @@
           "sponsorId": 48,
           "title": "QCT",
           "companyId": 42,
-          "id": 48
+          "id": 48,
+          "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "name": "Wiywynn",
-          "id": 49,
-          "title": "Wiywynn",
-          "intro": "Wiywynn",
           "marquee": "Wiywynn",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-wiwynn.png",
-          "sponsorId": 49
+          "name": "Wiywynn",
+          "intro": "Wiywynn",
+          "advertiseImage": "",
+          "sponsorId": 49,
+          "title": "Wiywynn",
+          "id": 49,
+          "usesSponsorPage": true
         }
       ]
     },
