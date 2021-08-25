@@ -35,13 +35,44 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "name": "Inspur ",
-          "id": 53,
-          "sponsorId": 53,
-          "companyId": 38,
-          "title": "Inspur ",
+          "marquee": "Visit Inspur booth# B23 to see our latest innovations in OCP that balance efficiency and power, optimized for enterprise, cloud, and AI.",
           "logo": "/img/inspur_inspur-logo.png_blue_484x484.png",
+          "name": "Inspur ",
+          "intro": "Inspur is a leading provider of data center infrastructure, cloud computing, and AI solutions, ranking among the world’s top 3 server manufacturers. As a platinum member of OCP and legacy member of other open data center communities, Inspur is a longtime contributor of open reference architectures and is committed to the development and advocacy of open standards. Through engineering and innovation, Inspur delivers cutting-edge hardware designs and solutions to address challenges across many different technology sectors.",
+          "advertiseImage": "",
+          "sponsorId": 53,
+          "title": "Inspur ",
+          "companyId": 38,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/InspurUS/",
+                "name": "Inspur on Facebook",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/inspursystems",
+                "order": 2,
+                "name": "Inspur on Twitter "
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/inspursystems/",
+                "order": 3,
+                "name": "Linkedin"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/c/InspurSystems",
+                "order": 4,
+                "name": "YouTube"
+              }
+            ]
+          },
+          "id": 53,
+          "email": "sales@inspursystems.com",
           "usesSponsorPage": true
         }
       ]
@@ -58,7 +89,7 @@
           "sponsorColor": "QCT",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-qct.png",
           "name": "QCT",
-          "intro": "QCT",
+          "intro": "Quanta Cloud Technology (QCT) is a global datacenter solution provider. We combine the efficiency of hyperscale hardware with infrastructure software from a diversity of industry leaders to solve next-generation datacenter design and operation challenges. QCT serves cloud service providers, telecoms and enterprises running public, hybrid and private clouds. Product lines include hyper-converged and software-defined datacenter solutions as well as servers, storage, switches, integrated racks with a diverse ecosystem of hardware component and software partners. QCT designs, manufactures, integrates and services cutting edge offerings via its own global network. The parent of QCT is Quanta Computer, Inc., a Fortune Global 500 corporation.",
           "advertiseImage": "",
           "sponsorId": 48,
           "title": "QCT",
@@ -69,11 +100,11 @@
         {
           "marquee": "Wiywynn",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-wiwynn.png",
-          "name": "Wiywynn",
+          "name": "Wiwynn Corporation",
           "intro": "Wiywynn",
           "advertiseImage": "",
           "sponsorId": 49,
-          "title": "Wiywynn",
+          "title": "Wiwynn Corporation",
           "id": 49,
           "usesSponsorPage": true
         }
@@ -101,12 +132,14 @@
           "sponsorColor": "",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-edgecore.png",
           "name": "Edgecore Networks",
-          "intro": "Edgecore Networks",
+          "intro": "Edgecore Networks Corporation is a wholly owned subsidiary of Accton Technology Corporation, the leading network ODM. Edgecore Networks delivers wired and wireless networking products and solutions through channel partners and system integrators worldwide for Data Center, Service Provider, Enterprise and SMB customers. Edgecore Networks is the leader in open networking, providing a full line of open 1G-400G Ethernet OCP Accepted™ switches, core routers, cell site gateways, virtual PON OLTs, packet transponders, and Wi-Fi access points that offer choice of commercial and open source NOS and SDN software.",
           "advertiseImage": "",
           "sponsorId": 50,
           "title": "Edgecore Networks",
           "companyId": 46,
-          "id": 50
+          "id": 50,
+          "email": "sales@edge-core.com",
+          "usesSponsorPage": true
         },
         {
           "advertiseImage": "",
@@ -114,11 +147,14 @@
           "logo": "/img/ocp21glo_fnv_sponsorlogo-bizlink.png",
           "id": 51,
           "sponsorId": 51,
-          "companyId": 47
+          "companyId": 47,
+          "usesSponsorPage": true
         },
         {
+          "marquee": "Expanding the world's vision of what is possible!",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-penguin.png",
           "name": "Penguin Computing ",
+          "intro": "Penguin Computing specializes in custom, innovative, open solutions for AI, HPC, Data Center, and the Cloud. Penguin Computing provides hardware and software solutions built on both 19” and 21” OCP infrastructures. Founded twenty years ago by the team that created the original beowulf cluster, Penguin Computing has been integral to the development of modern HPC and data center technologies. Today, Penguin Computing focuses on four key areas, High-performance Computing, Artificial Intelligence, Software-defined Storage, and Cloud Computing solutions.",
           "advertiseImage": "",
           "sponsorId": 54,
           "title": "Penguin Computing",
@@ -130,6 +166,32 @@
                 "link": "/img/penguin_computing_truehpc-solution-brief-intel_cooling_power_update-v4.pdf",
                 "order": 1,
                 "name": "TrueHPC with Scyld ClusterWare Driving innovation with ready-to-run HPC"
+              }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.penguincomputing.com/",
+                "name": "Penguin Computing Website ",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/penguin-computing",
+                "order": 2,
+                "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/channel/UCgvb_EhxI5hG_PttNqDoj4Q",
+                "order": 3,
+                "name": "YouTube"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/PenguinHPC",
+                "order": 4,
+                "name": "Twitter "
               }
             ]
           },
@@ -150,7 +212,7 @@
           "marquee": "TE Connectivity",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-teconnectivity.png",
           "name": "TE Connectivity",
-          "intro": "TE Connectivity",
+          "intro": "TE Connectivity is a global industrial technology leader creating a safer, sustainable, productive and connected future. Their broad range of connectivity and sensor solutions, proven in the harshest environments, enable advancements in transportation, industrial applications, medical technology, energy, data communications and the home. With approximately 80,000 employees, including more than 7,500 engineers, working alongside customers in approximately 140 countries, TE ensures that EVERY CONNECTION COUNTS.",
           "advertiseImage": "",
           "sponsorId": 52,
           "title": "TE Connectivity",
