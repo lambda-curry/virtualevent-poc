@@ -57,9 +57,9 @@
           "advertiseImage": "",
           "sponsorId": 44,
           "title": "",
-          "companyId": "",
+          "companyId": 4,
           "columnAds": [],
-          "id": 4,
+          "id": 44,
           "email": "info@fntech.com",
           "usesSponsorPage": true
         }
