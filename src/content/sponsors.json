@@ -117,13 +117,15 @@
       ],
       "sponsors": [
         {
-          "advertiseImage": "",
-          "name": "TE Connectivity",
-          "id": 1,
-          "title": "TE Connectivity",
-          "intro": "TE Connectivity",
           "marquee": "TE Connectivity",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-teconnectivity.png",
+          "name": "TE Connectivity",
+          "intro": "TE Connectivity",
+          "advertiseImage": "",
+          "sponsorId": 52,
+          "title": "TE Connectivity",
+          "companyId": 48,
+          "id": 52,
           "usesSponsorPage": true
         }
       ]
