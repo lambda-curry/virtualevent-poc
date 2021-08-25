@@ -37,7 +37,7 @@
         {
           "marquee": "Visit Inspur booth# B23 to see our latest innovations in OCP that balance efficiency and power, optimized for enterprise, cloud, and AI.",
           "logo": "/img/inspur_inspur-logo.png_blue_484x484.png",
-          "name": "Inspur ",
+          "name": "Inspur",
           "intro": "Inspur is a leading provider of data center infrastructure, cloud computing, and AI solutions, ranking among the world’s top 3 server manufacturers. As a platinum member of OCP and legacy member of other open data center communities, Inspur is a longtime contributor of open reference architectures and is committed to the development and advocacy of open standards. Through engineering and innovation, Inspur delivers cutting-edge hardware designs and solutions to address challenges across many different technology sectors.",
           "advertiseImage": "",
           "sponsorId": 53,
@@ -153,7 +153,7 @@
         {
           "marquee": "Expanding the world's vision of what is possible!",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-penguin.png",
-          "name": "Penguin Computing ",
+          "name": "Penguin Computing",
           "intro": "Penguin Computing specializes in custom, innovative, open solutions for AI, HPC, Data Center, and the Cloud. Penguin Computing provides hardware and software solutions built on both 19” and 21” OCP infrastructures. Founded twenty years ago by the team that created the original beowulf cluster, Penguin Computing has been integral to the development of modern HPC and data center technologies. Today, Penguin Computing focuses on four key areas, High-performance Computing, Artificial Intelligence, Software-defined Storage, and Cloud Computing solutions.",
           "advertiseImage": "",
           "sponsorId": 54,
