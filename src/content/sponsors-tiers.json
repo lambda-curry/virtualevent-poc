@@ -19,7 +19,7 @@
         }
       },
       "eventTemplate": "big-images",
-      "expoHallSize": null
+      "expoHallSize": "large"
     },
     {
       "id": "tier-DHcI3dWGk",
@@ -61,7 +61,7 @@
         }
       },
       "eventTemplate": "",
-      "expoHallSize": "small"
+      "expoHallSize": "medium"
     },
     {
       "badge": "",
@@ -114,7 +114,7 @@
         "schedule": false,
         "banner": true
       },
-      "expoHallSize": "small",
+      "expoHallSize": "medium",
       "eventTemplate": null,
       "id": "tier-1BXGYJADL",
       "name": "Experience Center"
@@ -132,7 +132,7 @@
         "schedule": true,
         "banner": true
       },
-      "expoHallSize": "small",
+      "expoHallSize": "medium",
       "eventTemplate": null,
       "id": "tier-09OJgMcMH",
       "name": "Symposium"
