@@ -41,7 +41,8 @@
           "sponsorId": 53,
           "companyId": 38,
           "title": "Inspur ",
-          "logo": "/img/inspur_inspur-logo.png_blue_484x484.png"
+          "logo": "/img/inspur_inspur-logo.png_blue_484x484.png",
+          "usesSponsorPage": true
         }
       ]
     },
