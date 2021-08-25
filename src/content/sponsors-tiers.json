@@ -52,7 +52,7 @@
         "display": true
       },
       "sponsorPage": {
-        "sponsorTemplate": "small-header",
+        "sponsorTemplate": "big-header",
         "widgets": {
           "disqus": true,
           "liveEvent": true,
@@ -70,14 +70,14 @@
         "display": false
       },
       "sponsorPage": {
-        "sponsorTemplate": "small-header",
+        "sponsorTemplate": "big-header",
         "disqus": false,
         "liveEvent": false,
         "schedule": false,
         "banner": false
       },
       "expoHallSize": "medium",
-      "eventTemplate": "small-images",
+      "eventTemplate": null,
       "id": "tier-Wqd0Qqef7",
       "name": "Sapphire",
       "widgetTitle": "Sapphire Sponsors"
@@ -89,14 +89,14 @@
         "display": false
       },
       "sponsorPage": {
-        "sponsorTemplate": "small-header",
+        "sponsorTemplate": "big-header",
         "disqus": false,
         "liveEvent": false,
         "schedule": false,
         "banner": false
       },
       "expoHallSize": "medium",
-      "eventTemplate": "small-images",
+      "eventTemplate": null,
       "id": "tier-x0OjdDZTs",
       "name": "Topaz",
       "widgetTitle": "Topaz "
