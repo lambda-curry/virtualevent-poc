@@ -18,7 +18,7 @@
           "socialNetworks": [],
           "sponsorId": 24,
           "title": "Top-Tier Sponsor Test ",
-          "companyId": "",
+          "companyId": 22,
           "documents": {
             "links": [
               {
@@ -43,7 +43,7 @@
               "link": "fntech.com"
             }
           ],
-          "id": 22,
+          "id": 24,
           "email": "support@fntech.com",
           "usesSponsorPage": true
         },
@@ -114,7 +114,7 @@
               "link": "https://fntech.com"
             }
           ],
-          "id": 23,
+          "id": 25,
           "email": "support@fntech.com",
           "usesSponsorPage": true
         }
@@ -169,7 +169,7 @@
               "link": "https://www.fntech.com"
             }
           ],
-          "id": 24,
+          "id": 26,
           "email": "support@fntech.com",
           "usesSponsorPage": true
         }
