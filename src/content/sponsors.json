@@ -23,14 +23,14 @@
           "chatLink": "",
           "sponsorId": 47,
           "title": "FNTECH",
-          "companyId": "",
+          "companyId": 4,
           "documents": {
             "slides": [],
             "links": [],
             "videos": []
           },
           "columnAds": [],
-          "id": 4,
+          "id": 47,
           "email": "",
           "usesSponsorPage": true
         }
@@ -50,19 +50,20 @@
           "name": "QCT",
           "intro": "QCT",
           "advertiseImage": "",
-          "sponsorId": 48,
+          "sponsorId": 42,
           "title": "QCT",
           "companyId": 42,
-          "id": 42
+          "id": 48
         },
         {
           "advertiseImage": "",
           "name": "Wiywynn",
-          "id": 1,
+          "id": 49,
           "title": "Wiywynn",
           "intro": "Wiywynn",
           "marquee": "Wiywynn",
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-wiwynn.png"
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-wiwynn.png",
+          "sponsorId": 49
         }
       ]
     },
@@ -93,13 +94,15 @@
           "sponsorId": 50,
           "title": "Edgecore Networks",
           "companyId": 46,
-          "id": 46
+          "id": 50
         },
         {
           "advertiseImage": "",
           "name": "BizLink Technology, Inc.",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-bizlink.png",
-          "id": 47
+          "id": 51,
+          "sponsorId": 51,
+          "companyId": 47
         }
       ]
     },
