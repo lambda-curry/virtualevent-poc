@@ -21,7 +21,7 @@
           "headerImage": "/img/ocp21glo_fnv_sponsor_headerimage-toptier.png",
           "socialNetworks": [],
           "chatLink": "",
-          "sponsorId": "",
+          "sponsorId": 47,
           "title": "FNTECH",
           "companyId": "",
           "documents": {
@@ -45,13 +45,15 @@
       ],
       "sponsors": [
         {
-          "advertiseImage": "",
-          "name": "QCT",
-          "id": 1,
-          "title": "QCT",
-          "intro": "QCT",
           "sponsorColor": "QCT",
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-qct.png"
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-qct.png",
+          "name": "QCT",
+          "intro": "QCT",
+          "advertiseImage": "",
+          "sponsorId": 48,
+          "title": "QCT",
+          "companyId": 42,
+          "id": 42
         },
         {
           "advertiseImage": "",
@@ -82,14 +84,22 @@
       ],
       "sponsors": [
         {
-          "advertiseImage": "",
-          "name": "Edgecore Networks",
-          "id": 1,
-          "title": "Edgecore Networks",
-          "intro": "Edgecore Networks",
-          "sponsorColor": "",
           "marquee": "Edgecore Networks",
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-edgecore.png"
+          "sponsorColor": "",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-edgecore.png",
+          "name": "Edgecore Networks",
+          "intro": "Edgecore Networks",
+          "advertiseImage": "",
+          "sponsorId": 50,
+          "title": "Edgecore Networks",
+          "companyId": 46,
+          "id": 46
+        },
+        {
+          "advertiseImage": "",
+          "name": "BizLink Technology, Inc.",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-bizlink.png",
+          "id": 47
         }
       ]
     },
