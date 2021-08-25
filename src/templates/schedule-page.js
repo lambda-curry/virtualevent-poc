@@ -28,7 +28,7 @@ const SchedulePage = ({ summitPhase, isLoggedUser, location }) => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const handleScroll = () => {
     const position = window.pageYOffset;
-    setScrollPosition(position);
+    if(position < 70) setScrollPosition(position);
   };
 
   useEffect(() => {
@@ -49,8 +49,7 @@ const SchedulePage = ({ summitPhase, isLoggedUser, location }) => {
           <div
             className={`column is-one-quarter px-6 pt-0 pb-6 ${styles.filterContainer}`}
             style={{
-              top: scrollPosition < 70 ? 70 - scrollPosition : 0,
-              height: Math.ceil(((window.document.documentElement.scrollHeight - scrollPosition) - window.innerHeight) / 10) < 23 ? `${73 + Math.ceil(((window.document.documentElement.scrollHeight - scrollPosition) - window.innerHeight) / 10)}vh` : '94vh'
+              top: 70 - scrollPosition,              
             }}>
             <ScheduleFilters />
           </div>
