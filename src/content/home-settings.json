@@ -1,14 +1,14 @@
 {
   "centerColumn": {
     "speakers": {
-      "showTodaySpeakers": false,
+      "showTodaySpeakers": true,
       "showFeatureSpeakers": false
     }
   },
   "homeHero": {
     "title": "INFINITY FESTIVAL 2021",
-    "subTitle": "In-person and online!",
-    "image": "/img/hero-man-with-headphones.jpg",
+    "subTitle": "IN-PERSON AND ONLINE",
+    "image": "/img/if2021_fnv_marketingpage_header-right-2.png",
     "copy": ""
   },
   "schedule_default_image": "https://fntech.sfo2.cdn.digitaloceanspaces.com/17/OCP20TW-Session-Thumbnail-110920-OCP.png",
