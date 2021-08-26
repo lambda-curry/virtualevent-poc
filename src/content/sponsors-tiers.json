@@ -114,7 +114,7 @@
         "schedule": false,
         "banner": true
       },
-      "expoHallSize": "medium",
+      "expoHallSize": null,
       "eventTemplate": null,
       "id": "tier-1BXGYJADL",
       "name": "Experience Center"
@@ -129,10 +129,10 @@
         "sponsorTemplate": "big-header",
         "disqus": true,
         "liveEvent": true,
-        "schedule": true,
+        "schedule": false,
         "banner": true
       },
-      "expoHallSize": "medium",
+      "expoHallSize": null,
       "eventTemplate": null,
       "id": "tier-09OJgMcMH",
       "name": "Symposium"
