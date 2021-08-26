@@ -24,16 +24,20 @@ const SchedulePage = ({ summitPhase, isLoggedUser, location }) => {
     }
   }
 
-
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [headerHeight, setHeaderHeight] = useState(70);
+
   const handleScroll = () => {
     const position = window.pageYOffset;
-    if(position < 70) setScrollPosition(position);
+    const header = document.querySelector('header')
+    if(header){
+      setHeaderHeight(header.clientHeight);
+    }
+    if(position < headerHeight) setScrollPosition(position);
   };
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll, { passive: true });
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -49,7 +53,7 @@ const SchedulePage = ({ summitPhase, isLoggedUser, location }) => {
           <div
             className={`column is-one-quarter px-6 pt-0 pb-6 ${styles.filterContainer}`}
             style={{
-              top: 70 - scrollPosition,              
+              top: headerHeight - scrollPosition,
             }}>
             <ScheduleFilters />
           </div>
