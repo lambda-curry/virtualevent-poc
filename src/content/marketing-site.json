@@ -1,8 +1,8 @@
 {
   "heroBanner": {
     "title": "INFINITY FESTIVAL 2021",
-    "subTitle": "ONLINE AND IN-PERSON",
-    "date": "NOVEMBER 2–4, 2021",
+    "subTitle": "IN-PERSON AND ONLINE",
+    "date": "COMING NOVEMBER 2–4, 2021",
     "time": "",
     "dateLayout": false,
     "buttons": {
@@ -15,17 +15,23 @@
         "display": true
       }
     },
-    "background": "",
+    "background": "/img/if2021_fnv_marketingpage_header-left.png",
     "images": [
       {
-        "image": "/img/flavor_wheel.jpg"
+        "image": "/img/if2021_fnv_marketingpage_header-right-2.png"
+      },
+      {
+        "image": "/img/if2021_fnv_marketingpage_header-right-3.png"
+      },
+      {
+        "image": "/img/if2021_fnv_marketingpage_header-right-4.png"
       }
     ]
   },
   "leftColumn": {
     "schedule": {
       "display": true,
-      "title": "Full Event Schedule"
+      "title": "Event Schedule"
     },
     "disqus": {
       "display": false,
@@ -34,7 +40,7 @@
     "image": {
       "display": false,
       "title": "Image",
-      "src": "/img/yoco-sponsor-ads-large-wherehol-vert.png"
+      "src": ""
     }
   },
   "sponsors": [
@@ -42,16 +48,7 @@
       "title": "Top Left",
       "images": [
         {
-          "image": "/img/yoco-sponsor-ads-large-wherehol-vert.png",
-          "link": ""
-        },
-        {
-          "image": "/img/yoco-sponsor-ads-large-wherehol-vert.png",
-          "link": ""
-        },
-        {
-          "image": "/img/yoco-sponsor-ads-large-wherehol-vert.png",
-          "link": ""
+          "image": "/img/if2021_fnv_marketingpage_space1.png"
         }
       ]
     },
@@ -59,7 +56,7 @@
       "title": "Top Right",
       "images": [
         {
-          "image": "/img/yoco-sponsor-ads-medium-tilted.png",
+          "image": "/img/if2021_fnv_marketingpage_space2.png",
           "link": ""
         }
       ]
@@ -68,7 +65,7 @@
       "title": "Mid Left",
       "images": [
         {
-          "image": "/img/yoco-sponsor-ads-large-mobility-vert-new.png",
+          "image": "/img/if2021_fnv_marketingpage_space3.png",
           "link": ""
         }
       ]
@@ -77,18 +74,24 @@
       "title": "Top Left",
       "images": [
         {
-          "image": "/img/yoco-sponsor-ads-large-apex-vert.png",
+          "image": "/img/if2021_fnv_marketingpage_space4.png",
           "link": ""
         }
       ]
     },
-    {},
     {
       "title": "Top Left",
       "images": [
         {
-          "image": "/img/yoco-sponsor-ads-medium-treva.png",
+          "image": "/img/if2021_fnv_marketingpage_space5.png",
           "link": ""
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "image": "/img/if2021_fnv_marketingpage_space6.png"
         }
       ]
     }
