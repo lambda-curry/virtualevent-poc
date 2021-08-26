@@ -247,41 +247,28 @@
         {
           "marquee": "OCP Experience Center: Community Showcase",
           "sponsorColor": "#343895",
-          "logo": "/img/ocp21glo_fnv_experiencecenter1-logo.png",
+          "logo": "/img/ocp21glo_fnv_expc-header.png",
           "name": "Experience Center (MAIN) ",
-          "intro": "The Experience Center at the OCP Global Summit is a dedicated space for the Community to showcase their hardware designs, architecture and software solutions on OCP-recognized hardware platforms. The OCP Experience Center was established in 2019 to provide new ways for OCP members to showcase best-in-class product demos, both live and static. The initiative was launched at the OCP Global and Regional (European) Summits last year, and they were among the most popular attractions. Not only do the partners get a chance to showcase their OCP Accepted™ and OCP Inspired™ product offerings, they also get a chance to receive feedback from Summit attendees. The OCP Experience Center offers Summit attendees a chance to explore products and their piece-parts, and see through the software solutions that have been built primarily for the platforms being demonstrated.",
-          "headerImage": "/img/ocp21glo_fnv_experiencecenter1-header.png",
-          "headerImageMobile": "/img/ocp21glo_fnv_experiencecenter1-mobileheader.png",
+          "intro": "The Experience Center at the OCP Global Summit is a dedicated space for the Community to showcase their hardware designs, architecture and software solutions on OCP-recognized hardware platforms. The OCP Experience Center was established in 2019 to provide new ways for OCP members to showcase best-in-class product demos, both live and static. The initiative was launched at the OCP Global and Regional (European) Summits last year, and they were among the most popular attractions. Not only do the partners get a chance to showcase their OCP Accepted™ and OCP Inspired™ product offerings, they also get a chance to receive feedback from Summit attendees. The OCP Experience Center offers Summit attendees a chance to explore products and their piece-parts, and see through the software solutions that have been built primarily for the platforms being demonstrated.\n\n\n\nTo explore all each Experience Center's content, in the right column, click the center you want to learn more about!",
+          "headerImage": "/img/ocp21glo_fnv_expc-header.png",
+          "headerImageMobile": "/img/ocp21glo_fnv_experiencecenter5-mobileheader.png",
           "advertiseImage": "",
           "sponsorId": "",
           "title": "Experience Center ",
           "companyId": "",
           "documents": {
-            "links": [
-              {
-                "class_name": "PresentationLink",
-                "name": "Experience Center 1 Link 1",
-                "order": 1,
-                "link": "https://www.fntech.com"
-              }
-            ]
+            "links": []
           },
           "columnAds": [
             {
-              "image": "/img/ocp21glo_fnv_experiencecenter1-logo.png",
+              "image": "/img/ocp21glo_fnv_expc-lobbybutton-mgmthard.png",
               "link": "https://2021ocpglobal.fnvirtual.app/a/sponsor/37-experience-center-1-"
             },
             {
-              "image": "/img/ocp21glo_fnv_experiencecenter2-logo.png"
+              "image": "/img/ocp21glo_fnv_expc-lobbybutton-osf.png"
             },
             {
-              "image": "/img/ocp21glo_fnv_experiencecenter3-logo.png"
-            },
-            {
-              "image": "/img/ocp21glo_fnv_experiencecenter4-logo.png"
-            },
-            {
-              "image": "/img/ocp21glo_fnv_experiencecenter5-logo.png"
+              "image": "/img/ocp21glo_fnv_expc-lobbybutton-tap.png"
             }
           ],
           "id": 36,
@@ -289,15 +276,35 @@
           "usesSponsorPage": true
         },
         {
-          "logo": "/img/ocp21glo_fnv_experiencecenter1-logo.png",
-          "name": "Experience Center 1 ",
-          "intro": "EC 1",
-          "headerImage": "/img/ocp21glo_fnv_experiencecenter1-header.png",
+          "logo": "/img/ocp21glo_fnv_expc-lobbybutton-mgmthard.png",
+          "name": "Hardware Management Experience Center ",
+          "intro": "Hardware Management Experience Center \n\nParticipating companies are XXXX, XXXX, and XXXX",
+          "headerImage": "/img/ocp21glo_fnv_expc-header-mgmthard.png",
+          "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-mgmthard.png",
           "advertiseImage": "",
           "sponsorId": "",
+          "title": "Explore more about Hardware Management",
           "companyId": "",
           "id": 37,
           "usesSponsorPage": true
+        },
+        {
+          "advertiseImage": "",
+          "name": "Open System Firmware (OSF)",
+          "id": 37,
+          "title": "Open System Firmware (OSF) Experience Center ",
+          "intro": "Open System Firmware (OSF) Experience Center \n\nParticipating companies are XXXX, XXXX, and XXXX",
+          "logo": "/img/ocp21glo_fnv_expc-lobbybutton-osf.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "TAP",
+          "id": 37,
+          "title": "TAP",
+          "intro": "TAP Experience Center\n\nParticipating Companies are XXXS, XXXX, XXXX, and XXXX",
+          "logo": "/img/ocp21glo_fnv_expc-lobbybutton-tap.png",
+          "headerImage": "/img/ocp21glo_fnv_expc-header-tap.png",
+          "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-tap.png"
         }
       ]
     },
