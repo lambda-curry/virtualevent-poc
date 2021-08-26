@@ -11,17 +11,17 @@
         {
           "sponsor_id": 8,
           "marquee": "",
-          "sideImage": "/img/ocp21glo_fnv_experiencecenter1-logo.png",
-          "externalLink": "https://www.fntech.com",
+          "sideImage": "",
+          "externalLink": "",
           "sponsorColor": "",
           "logo": "/img/ocp21glo_fnv_sponsor-logo.png",
           "name": "FNTECH",
-          "intro": "[TEST SPONSOR PAGE:](https://www.fntech.com) This sponsor is participating in the in-person event in San Jose, CA. You can find them at booth number 45 or reach them via chat using the “Contact Us” button above.\n\n![Experience Center 1](/img/ocp21glo_fnv_lobby_button-experiencecenter.png \"Experience Center 1\")\n\n![Experience Center 2](/img/ocp21glo_fnv_lobby_button-sym.png \"Experience Center 2\")\n\n![Experience Center 4](/img/ocp21glo_fnv_experiencecenter4-logo.png \"Experience Center 4\")\n\n![Experience Center 3](/img/ocp21glo_fnv_experiencecenter3-logo.png \"Experience Center 3\")",
+          "intro": "[TEST SPONSOR PAGE:](https://www.fntech.com) This sponsor is participating in the in-person event in San Jose, CA. You can find them at booth number 45 or reach them via chat using the “Contact Us” button above.\n\n[Experience Center 1](https://www.fntech.com)\n\n[Experience Center 2](https://www.fntech.com)\n\nExperience Center 3\n\nExperience Center 4\n\nExperience Center 5\n\nExperience Center 6\n\nExperience Center 7\n\nExperience Center 8\n\nExperience Center 9",
           "headerVideo": "",
           "headerImage": "/img/ocp21glo_fnv_sponsor_headerimage-toptier.png",
           "socialNetworks": [],
           "chatLink": "",
-          "advertiseImage": "/img/ocp21glo_fnv_lobby_button-experiencecenter.png",
+          "advertiseImage": "",
           "sponsorId": 47,
           "title": "FNTECH",
           "companyId": 4,
@@ -30,7 +30,20 @@
             "links": [],
             "videos": []
           },
-          "columnAds": [],
+          "columnAds": [
+            {
+              "image": "/img/ocp21glo_fnv_lobby_button-basecamp.png",
+              "link": "https://www.fntech.com"
+            },
+            {
+              "image": "/img/ocp21glo_fnv_experiencecenter1-logo.png",
+              "link": "https://www.fntech.com"
+            },
+            {
+              "image": "/img/ocp21glo_fnv_lobby_button-careercenter.png",
+              "link": "https://www.fntech.com"
+            }
+          ],
           "id": 47,
           "email": "",
           "usesSponsorPage": true
