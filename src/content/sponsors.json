@@ -11,8 +11,8 @@
         {
           "sponsor_id": 8,
           "marquee": "",
-          "sideImage": "",
-          "externalLink": "",
+          "sideImage": "/img/ocp21glo_fnv_experiencecenter1-logo.png",
+          "externalLink": "https://www.fntech.com",
           "sponsorColor": "",
           "logo": "/img/ocp21glo_fnv_sponsor-logo.png",
           "name": "FNTECH",
@@ -21,6 +21,7 @@
           "headerImage": "/img/ocp21glo_fnv_sponsor_headerimage-toptier.png",
           "socialNetworks": [],
           "chatLink": "",
+          "advertiseImage": "/img/ocp21glo_fnv_lobby_button-experiencecenter.png",
           "sponsorId": 47,
           "title": "FNTECH",
           "companyId": 4,
