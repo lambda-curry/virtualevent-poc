@@ -1,1 +1,10 @@
-{"lastBuild":1628264711003,"favicon":"/img/favicon.svg","widgets":{"chat":{"showQA":false,"showHelp":false}}}
+{
+  "lastBuild": 1628264711003,
+  "favicon": "/img/if2021-fnv-favicon.png",
+  "widgets": {
+    "chat": {
+      "showQA": false,
+      "showHelp": false
+    }
+  }
+}
