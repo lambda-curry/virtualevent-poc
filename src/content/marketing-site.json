@@ -30,7 +30,7 @@
   },
   "leftColumn": {
     "schedule": {
-      "display": true,
+      "display": false,
       "title": "Event Schedule"
     },
     "disqus": {
