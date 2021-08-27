@@ -2,8 +2,8 @@
   "tiers": [
     {
       "id": "tier-cYGYq5-ae",
-      "name": "Sponsors",
-      "widgetTitle": "",
+      "name": "Title Sponsor",
+      "widgetTitle": "Title Sponsors",
       "badge": "",
       "lobby": {
         "lobbyTemplate": "big-images",
