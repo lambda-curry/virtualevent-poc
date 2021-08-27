@@ -2,9 +2,9 @@
   "tiers": [
     {
       "id": "tier-cYGYq5-ae",
-      "name": "Gold",
-      "widgetTitle": "Gold Sponsors",
-      "badge": "/img/gold.png",
+      "name": "Sponsors",
+      "widgetTitle": "",
+      "badge": "",
       "lobby": {
         "lobbyTemplate": "big-images",
         "display": true
@@ -16,55 +16,38 @@
           "liveEvent": true,
           "schedule": true,
           "banner": true
-        }
-      },
-      "eventTemplate": "",
-      "expoHallSize": "large"
-    },
-    {
-      "id": "tier-DHcI3dWGk",
-      "name": "Silver",
-      "widgetTitle": "Silver Sponsors",
-      "badge": "/img/silver.png",
-      "lobby": {
-        "lobbyTemplate": "big-images",
-        "display": true
-      },
-      "sponsorPage": {
-        "sponsorTemplate": "big-header",
-        "widgets": {
-          "disqus": true,
-          "liveEvent": true,
-          "schedule": true,
-          "banner": true
-        }
+        },
+        "disqus": true,
+        "liveEvent": true
       },
       "eventTemplate": "",
       "expoHallSize": "medium"
     },
     {
-      "id": "tier-U_wEwGX8a",
-      "name": "Bronze",
-      "widgetTitle": "Bronze Sponsors",
-      "badge": "/img/bronze.png",
+      "id": "tier-DHcI3dWGk",
+      "name": "ART+TECH",
+      "widgetTitle": "ART+TECH",
+      "badge": "",
       "lobby": {
         "lobbyTemplate": "small-images",
         "display": true
       },
       "sponsorPage": {
-        "sponsorTemplate": "small-header",
+        "sponsorTemplate": "big-header",
         "widgets": {
           "disqus": true,
           "liveEvent": true,
           "schedule": true,
           "banner": true
-        }
+        },
+        "disqus": true,
+        "liveEvent": true
       },
       "eventTemplate": "",
-      "expoHallSize": "small"
+      "expoHallSize": "medium"
     }
   ],
-  "imageHeader": "/img/jumbotron.jpg",
+  "imageHeader": "/img/if2021_fnv_expohall-header.png",
   "lobbyButton": {
     "text": "View all",
     "link": "/a/sponsors/"
