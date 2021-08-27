@@ -277,10 +277,10 @@
         },
         {
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-mgmthard.png",
-          "name": "Hardware Management Experience Center",
+          "name": "Hardware Management",
           "intro": "Hardware Management Experience Center \n\nParticipating companies are XXXX, XXXX, and XXXX",
           "headerImage": "/img/ocp21glo_fnv_expc-header-mgmthard.png",
-          "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-mgmthard.png",
+          "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-hardwaremgmt.png",
           "advertiseImage": "",
           "sponsorId": "",
           "title": "Explore more about Hardware Management",
@@ -300,14 +300,48 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "name": "TAP",
-          "id": 37,
-          "title": "Explore more about TAP",
-          "intro": "TAP Experience Center\n\nParticipating Companies are XXXX, XXXX, XXXX, and XXXX",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-tap.png",
+          "name": "TAP",
+          "intro": "TAP Experience Center\n\nParticipating Companies are XXXX, XXXX, XXXX, and XXXX",
           "headerImage": "/img/ocp21glo_fnv_expc-header-tap.png",
-          "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-tap.png"
+          "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-tap.png",
+          "advertiseImage": "",
+          "title": "Explore more about TAP",
+          "id": 37,
+          "usesSponsorPage": true
+        },
+        {
+          "logo": "/img/ocp21glo_fnv_expc-lobbybutton-networking.png",
+          "name": "Networking",
+          "intro": "Networking Experience Center \n\nParticipating companies are XX, XX, and XX",
+          "headerImage": "/img/ocp21glo_fnv_expc-header-networking.png",
+          "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-networking.png",
+          "advertiseImage": "",
+          "title": "Explore more about Networking",
+          "id": 37,
+          "usesSponsorPage": true
+        },
+        {
+          "logo": "/img/ocp21glo_fnv_expc-lobbybutton-telco.png",
+          "name": "Telco",
+          "intro": "Telco Experience Center \n\nParticipating companies are XXXX, XXXX, and XXXX",
+          "headerImage": "/img/ocp21glo_fnv_expc-header-telco.png",
+          "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-telco.png",
+          "advertiseImage": "",
+          "title": "Explore more about Telco",
+          "id": 37,
+          "usesSponsorPage": true
+        },
+        {
+          "logo": "/img/ocp21glo_fnv_expc-lobbybutton-server.png",
+          "name": "Server",
+          "intro": "Server Experience Center\n\nParticipating Companies are XXXX, XXXX, XXXX, and XXXX",
+          "headerImage": "/img/ocp21glo_fnv_expc-header-server.png",
+          "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-server.png",
+          "advertiseImage": "",
+          "title": "Explore more about Server",
+          "id": 37,
+          "usesSponsorPage": true
         }
       ]
     },
