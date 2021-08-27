@@ -251,7 +251,7 @@
           "name": "Experience Center (MAIN) ",
           "intro": "The Experience Center at the OCP Global Summit is a dedicated space for the Community to showcase their hardware designs, architecture and software solutions on OCP-recognized hardware platforms. The OCP Experience Center was established in 2019 to provide new ways for OCP members to showcase best-in-class product demos, both live and static. The initiative was launched at the OCP Global and Regional (European) Summits last year, and they were among the most popular attractions. Not only do the partners get a chance to showcase their OCP Accepted™ and OCP Inspired™ product offerings, they also get a chance to receive feedback from Summit attendees. The OCP Experience Center offers Summit attendees a chance to explore products and their piece-parts, and see through the software solutions that have been built primarily for the platforms being demonstrated.\n\n\n\nTo explore all each Experience Center's content, in the right column, click the center you want to learn more about!",
           "headerImage": "/img/ocp21glo_fnv_expc-header.png",
-          "headerImageMobile": "/img/ocp21glo_fnv_experiencecenter5-mobileheader.png",
+          "headerImageMobile": "",
           "advertiseImage": "",
           "sponsorId": "",
           "title": "Experience Center ",
@@ -277,7 +277,7 @@
         },
         {
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-mgmthard.png",
-          "name": "Hardware Management Experience Center ",
+          "name": "Hardware Management Experience Center",
           "intro": "Hardware Management Experience Center \n\nParticipating companies are XXXX, XXXX, and XXXX",
           "headerImage": "/img/ocp21glo_fnv_expc-header-mgmthard.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-mgmthard.png",
@@ -289,19 +289,22 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "name": "Open System Firmware (OSF)",
-          "id": 37,
-          "title": "Open System Firmware (OSF) Experience Center ",
+          "logo": "/img/ocp21glo_fnv_expc-lobbybutton-osf.png",
+          "name": "Open System Firmware",
           "intro": "Open System Firmware (OSF) Experience Center \n\nParticipating companies are XXXX, XXXX, and XXXX",
-          "logo": "/img/ocp21glo_fnv_expc-lobbybutton-osf.png"
+          "headerImage": "/img/ocp21glo_fnv_expc-header-osf.png",
+          "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-osf.png",
+          "advertiseImage": "",
+          "title": "Explore more about Open System Firmware",
+          "id": 37,
+          "usesSponsorPage": true
         },
         {
           "advertiseImage": "",
           "name": "TAP",
           "id": 37,
-          "title": "TAP",
-          "intro": "TAP Experience Center\n\nParticipating Companies are XXXS, XXXX, XXXX, and XXXX",
+          "title": "Explore more about TAP",
+          "intro": "TAP Experience Center\n\nParticipating Companies are XXXX, XXXX, XXXX, and XXXX",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-tap.png",
           "headerImage": "/img/ocp21glo_fnv_expc-header-tap.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-tap.png"
