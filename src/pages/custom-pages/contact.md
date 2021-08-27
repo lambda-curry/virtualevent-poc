@@ -1,8 +1,6 @@
 ---
 templateKey: custom-page
+title: Contact Us
 requiresAuth: false
-title: Contact
 ---
-YOU DECIDE!
-
-This can be your company contact info, the event group, a combination (like your info and your brand partners or top sponsors), or a totally different set of details that you’d like linked to your top navigation. Flexibility is what we’re all about!
+Have a question? Looking for more info? Hit us up at [hello@infinityfestival.com](mailto:hello@infinityfestival.com). We’d love to hear from you!
