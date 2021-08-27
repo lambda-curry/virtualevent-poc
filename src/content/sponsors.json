@@ -4,78 +4,24 @@
       "tier": [
         {
           "value": "tier-cYGYq5-ae",
-          "label": "Gold"
+          "label": "Title Sponsor"
         }
       ],
-      "sponsors": [
+      "sponsors": []
+    },
+    {
+      "tier": [
         {
-          "sponsor_id": 8,
-          "marquee": "Huawei - Smart Technologies",
-          "sideImage": "",
-          "externalLink": "",
-          "sponsorColor": "",
-          "logo": "/img/sponsors/headline/logo_huawei.png",
-          "name": "Huawei",
-          "intro": "**Lorem ipsum dolor sit amet**, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. *Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.*",
-          "headerVideo": "/img/world.mp4",
-          "headerImage": "/img/sponsors/headline/header_logo_headline.png",
-          "socialNetworks": [
-            {
-              "icon": "fa-facebook",
-              "link": "/footer-content/",
-              "display": true
-            },
-            {
-              "icon": "fa-twitter",
-              "link": "/footer-content/",
-              "display": true
-            },
-            {
-              "icon": "fa-linkedin",
-              "link": "/footer-content/",
-              "display": true
-            }
-          ],
-          "chatLink": "",
-          "sponsorId": 8,
-          "title": "We are Huawei",
-          "companyId": 9,
-          "documents": {
-            "slides": [
-              {
-                "name": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html",
-                "order": 2,
-                "class_name": "PresentationSlide",
-                "link": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html"
-              }
-            ],
-            "links": [
-              {
-                "name": "http://relaxdiego.com/2017/05/swampup-2017-slides.html",
-                "order": 1,
-                "class_name": "PresentationLink",
-                "link": "http://relaxdiego.com/2017/05/swampup-2017-slides.html"
-              }
-            ],
-            "videos": [
-              {
-                "name": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html",
-                "order": 3,
-                "class_name": "PresentationVideo",
-                "link": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html"
-              }
-            ]
-          },
-          "columnAds": [
-            {
-              "image": "/img/yoco-sponsor-ads-medium-flow.png",
-              "button": "",
-              "link": "/virtual-booth/"
-            }
-          ],
-          "id": 1,
-          "email": "huawei@huawei.com",
-          "usesSponsorPage": true
+          "value": "tier-p1bCv1Utu",
+          "label": "Presenting Sponsor"
+        }
+      ]
+    },
+    {
+      "tier": [
+        {
+          "value": "tier-V4shOCleS",
+          "label": "Executive Producers"
         }
       ]
     },
@@ -83,156 +29,21 @@
       "tier": [
         {
           "value": "tier-DHcI3dWGk",
-          "label": "Silver"
+          "label": "ART+TECH"
         }
       ],
       "sponsors": [
         {
-          "sponsor_id": 8,
-          "marquee": "CISCO Shapes the Future of Technology",
-          "sideImage": "",
-          "externalLink": "",
-          "sponsorColor": "",
-          "logo": "/img/sponsors/premier/logo_cisco.png",
-          "name": "CISCO",
-          "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
-          "headerVideo": "",
-          "headerImage": "/img/sponsors/premier/header_logo_premier.png",
-          "socialNetworks": [
-            {
-              "icon": "fa-facebook",
-              "link": "/footer-content/",
-              "display": true
-            },
-            {
-              "icon": "fa-twitter",
-              "link": "/footer-content/",
-              "display": true
-            },
-            {
-              "icon": "fa-linkedin",
-              "link": "/footer-content/",
-              "display": true
-            }
-          ],
-          "chatLink": "",
-          "sponsorId": 8,
-          "title": "We are CISCO",
-          "companyId": 9,
-          "documents": {
-            "slides": [
-              {
-                "name": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html",
-                "order": 2,
-                "class_name": "PresentationSlide",
-                "link": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html"
-              }
-            ],
-            "links": [
-              {
-                "name": "http://relaxdiego.com/2017/05/swampup-2017-slides.html",
-                "order": 1,
-                "class_name": "PresentationLink",
-                "link": "http://relaxdiego.com/2017/05/swampup-2017-slides.html"
-              }
-            ],
-            "videos": [
-              {
-                "name": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html",
-                "order": 3,
-                "class_name": "PresentationVideo",
-                "link": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html"
-              }
-            ]
-          },
-          "columnAds": [
-            {
-              "image": "/img/yoco-sponsor-ads-medium-flow.png",
-              "button": "",
-              "link": "/virtual-booth/"
-            }
-          ],
-          "id": 2,
-          "email": "huawei@huawei.com",
-          "usesSponsorPage": true
-        }
-      ]
-    },
-    {
-      "tier": [
-        {
-          "value": "tier-U_wEwGX8a",
-          "label": "Bronze"
-        }
-      ],
-      "sponsors": [
-        {
-          "sponsor_id": 8,
-          "marquee": "ZTE Shapes the Future of Technology",
-          "sideImage": "/img/sponsors/exhibitor/immage.png",
-          "externalLink": "",
-          "sponsorColor": "",
-          "logo": "/img/sponsors/exhibitor/logo_ZTE.png",
-          "name": "ZTE",
-          "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget ipsum tempor lorem interdum volutpat eu et elit. Sed eleifend justo et semper ultrices. Fusce porta ut sapien at posuere. Donec placerat, lacus eget imperdiet maximus, nunc lectus viverra ligula, in sodales tortor justo vel sem. Vestibulum eleifend, nibh a dapibus rhoncus, tortor dui venenatis enim, ac euismod augue velit at justo. Cras porta lacus est, nec rhoncus augue luctus quis. Pellentesque justo risus, scelerisque laoreet tortor quis, vehicula volutpat ipsum.",
-          "headerVideo": "",
-          "headerImage": "/img/sponsors/exhibitor/header_logo_exhibitor.png",
-          "socialNetworks": [
-            {
-              "icon": "fa-facebook",
-              "link": "/footer-content/",
-              "display": true
-            },
-            {
-              "icon": "fa-twitter",
-              "link": "/footer-content/",
-              "display": true
-            },
-            {
-              "icon": "fa-linkedin",
-              "link": "/footer-content/",
-              "display": true
-            }
-          ],
-          "chatLink": "",
-          "sponsorId": 8,
-          "title": "We are ZTE",
-          "companyId": 9,
-          "documents": {
-            "slides": [
-              {
-                "name": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html",
-                "order": 2,
-                "class_name": "PresentationSlide",
-                "link": "http://relaxdiego.com/2018/02/jenkins-on-jenkins-shared-libraries.html"
-              }
-            ],
-            "links": [
-              {
-                "name": "http://relaxdiego.com/2017/05/swampup-2017-slides.html",
-                "order": 1,
-                "class_name": "PresentationLink",
-                "link": "http://relaxdiego.com/2017/05/swampup-2017-slides.html"
-              }
-            ],
-            "videos": [
-              {
-                "name": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html",
-                "order": 3,
-                "class_name": "PresentationVideo",
-                "link": "http://relaxdiego.com/2018/08/keeping-continuous-integration-continuous.html"
-              }
-            ]
-          },
-          "columnAds": [
-            {
-              "image": "/img/yoco-sponsor-ads-medium-flow.png",
-              "button": "",
-              "link": "/virtual-booth/"
-            }
-          ],
-          "id": 3,
-          "email": "huawei@huawei.com",
+          "sponsorColor": "AA06F7",
+          "logo": "/img/if2021_fnv-arttech-logo.png",
+          "name": "ART+TECH",
+          "intro": "Art is made possible through technology. From the invention of the paintbrush to computer-programmed augmented reality, artists have always used technology to translate a creative thought into a physical work of art. The ART+TECH space at Infinity Festival showcases the incredible resources, advanced technology and incredible imagination of today’s cutting-edge artists.\n\nART+TECH includes internationally known artists working in mediums ranging from traditional video to advanced modern techniques including AR, AI and VR – all redefining the unlimited vision of the creative world. Infinity Festival supports the art community in all its forms. For additional information on our featured artists, please reference the list on the right side of this page.",
+          "headerImage": "/img/if2021_fnv-arttech-header.png",
+          "headerImageMobile": "/img/if2021_fnv-arttech-header-mobile.png",
+          "advertiseImage": "",
+          "title": "ART+TECH",
+          "id": 1,
+          "email": "adam@infinityfestival.com ",
           "usesSponsorPage": true
         }
       ]
