@@ -15,7 +15,7 @@ const SponsorComponent = ({ page, sponsorsState, tiers, lobbyButton }) => {
         const sponsors = s.sponsors;
         const tier = tiers.find(t => t.id === s.tier[0].value);
         const template = page === 'lobby' ? tier.lobby.lobbyTemplate : page === 'event' ? tier.eventTemplate : 'expo-hall';
-
+        if(!tier) return  null;
         if (sponsors?.length > 0) {
           renderButton = true;
           switch (template) {
