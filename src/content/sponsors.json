@@ -269,6 +269,21 @@
             },
             {
               "image": "/img/ocp21glo_fnv_expc-lobbybutton-tap.png"
+            },
+            {
+              "image": "/img/ocp21glo_fnv_expc-lobbybutton-networking.png"
+            },
+            {
+              "image": "/img/ocp21glo_fnv_expc-lobbybutton-telco.png"
+            },
+            {
+              "image": "/img/ocp21glo_fnv_expc-lobbybutton-server.png"
+            },
+            {
+              "image": "/img/ocp21glo_fnv_expc-lobbybutton-oai.png"
+            },
+            {
+              "image": "/img/ocp21glo_fnv_expc-lobbybutton-storage.png"
             }
           ],
           "id": 36,
