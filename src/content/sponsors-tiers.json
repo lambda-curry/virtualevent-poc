@@ -24,6 +24,44 @@
       "expoHallSize": "medium"
     },
     {
+      "badge": "",
+      "lobby": {
+        "lobbyTemplate": "big-images",
+        "display": false
+      },
+      "sponsorPage": {
+        "sponsorTemplate": "big-header",
+        "disqus": true,
+        "liveEvent": true,
+        "schedule": false,
+        "banner": false
+      },
+      "expoHallSize": "medium",
+      "eventTemplate": null,
+      "id": "tier-p1bCv1Utu",
+      "name": "Presenting Sponsor",
+      "widgetTitle": "Presenting Sponsor"
+    },
+    {
+      "badge": "",
+      "lobby": {
+        "lobbyTemplate": "big-images",
+        "display": false
+      },
+      "sponsorPage": {
+        "sponsorTemplate": "big-header",
+        "disqus": true,
+        "liveEvent": true,
+        "schedule": false,
+        "banner": false
+      },
+      "expoHallSize": "medium",
+      "eventTemplate": null,
+      "id": "tier-V4shOCleS",
+      "name": "Executive Producers",
+      "widgetTitle": "Executive Producers"
+    },
+    {
       "id": "tier-DHcI3dWGk",
       "name": "ART+TECH",
       "widgetTitle": "ART+TECH",
