@@ -45,16 +45,12 @@ const SchedulePage = ({ summitPhase, isLoggedUser, location }) => {
 
   return (
     <Layout location={location}>
-      <div className="container" style={{ position: "static" }}>
+      <div className="container">
         <div className="columns">
           <div className="column is-three-quarters px-6 pt-6 pb-0">
             <FullSchedule {...scheduleProps} />
           </div>
-          <div
-            className={`column is-one-quarter px-6 pt-0 pb-6 ${styles.filterContainer}`}
-            style={{
-              top: headerHeight - scrollPosition,
-            }}>
+          <div className={`column is-one-quarter px-6 pt-0 pb-6 ${styles.filterContainer}`} style={{ top: headerHeight - scrollPosition }}>
             <ScheduleFilters />
           </div>
         </div>
