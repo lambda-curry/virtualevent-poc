@@ -19,16 +19,10 @@
       "requiresAuth": false
     },
     {
-      "title": "Who we are",
-      "link": "/who-we-are",
+      "title": "Sponsors",
+      "link": "/a/sponsor",
       "display": true,
-      "requiresAuth": false
-    },
-    {
-      "title": "Past events",
-      "link": "/past-events",
-      "display": true,
-      "requiresAuth": false
+      "requiresAuth": true
     },
     {
       "title": "Contact",
