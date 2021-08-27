@@ -357,6 +357,39 @@
           "title": "Explore more about Server",
           "id": 37,
           "usesSponsorPage": true
+        },
+        {
+          "logo": "/img/ocp21glo_fnv_expc-lobbybutton-oai.png",
+          "name": "OAI",
+          "intro": "OAI Experience Center\n\nParticipating companies are XXXX, XXXX, and XXXX",
+          "headerImage": "/img/ocp21glo_fnv_expc-header-oai.png",
+          "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-oai.png",
+          "advertiseImage": "",
+          "title": "Explore more about OAI",
+          "id": 37,
+          "usesSponsorPage": true
+        },
+        {
+          "logo": "/img/ocp21glo_fnv_expc-lobbybutton-test.png",
+          "name": "Test and Validation",
+          "intro": "Test and Validation Experience Center\n\nParticipating companies are XXXX, XXXX, and XXXX",
+          "headerImage": "/img/ocp21glo_fnv_expc-header-test.png",
+          "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-test.png",
+          "advertiseImage": "",
+          "title": "Explore more about Test and Validation",
+          "id": 37,
+          "usesSponsorPage": true
+        },
+        {
+          "logo": "/img/ocp21glo_fnv_expc-lobbybutton-storage.png",
+          "name": "Storage",
+          "intro": "Storage Experience Center\n\nParticipating companies are XXXX, XXXX, and XXXX",
+          "headerImage": "/img/ocp21glo_fnv_expc-header-storage.png",
+          "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-storage.png",
+          "advertiseImage": "",
+          "title": "Explore more about Storage",
+          "id": 37,
+          "usesSponsorPage": true
         }
       ]
     },
