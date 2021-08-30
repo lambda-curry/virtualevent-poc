@@ -253,7 +253,7 @@
           "headerImage": "/img/ocp21glo_fnv_expc-header.png",
           "headerImageMobile": "",
           "advertiseImage": "",
-          "sponsorId": 87,
+          "sponsorId": 88,
           "title": "Experience Center ",
           "companyId": 36,
           "documents": {
@@ -308,7 +308,7 @@
               "link": "/a/sponsor/60-ocp-future-technologies-symposium"
             }
           ],
-          "id": 87,
+          "id": 88,
           "email": "rajeev@opencompute.org",
           "usesSponsorPage": true
         },
@@ -345,8 +345,9 @@
           "headerImage": "/img/ocp21glo_fnv_expc-header-tap.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-tap.png",
           "advertiseImage": "",
+          "sponsorId": 87,
           "title": "Explore more about TAP",
-          "id": 39,
+          "id": 87,
           "usesSponsorPage": true
         },
         {
