@@ -136,6 +136,24 @@
       "eventTemplate": null,
       "id": "tier-09OJgMcMH",
       "name": "Symposium"
+    },
+    {
+      "badge": "",
+      "lobby": {
+        "lobbyTemplate": "small-images",
+        "display": false
+      },
+      "sponsorPage": {
+        "sponsorTemplate": "big-header",
+        "disqus": true,
+        "liveEvent": true,
+        "schedule": false,
+        "banner": false
+      },
+      "expoHallSize": null,
+      "eventTemplate": null,
+      "id": "tier-2HSCp6Cce",
+      "name": "Basecamp"
     }
   ],
   "imageHeader": "/img/ocp21glo_expolandingpage_header_062421.png",
