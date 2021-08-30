@@ -415,14 +415,16 @@
         {
           "marquee": "Custom Symposium ticker text",
           "sponsorColor": "#343B95",
-          "logo": "/img/ocp21glo_fnv_symposium_logo2.png",
+          "logo": "/img/ocp21glo_fnv_sym-logo.png",
           "name": "Symposium",
-          "intro": "Symposium description, we will want to insert where to view Symposium posters at the in-person event.",
-          "headerImage": "/img/ocp21glo_fnv_symposium_header.png",
+          "intro": "Symposium description, we will want to insert where to view Symposium posters at the in-person event.\n\n\n\n**Check out the symposium posters in the Media and Links box to the right!**",
+          "headerImage": "/img/ocp21glo_fnv_sym-header.png",
+          "headerImageMobile": "/img/ocp21glo_fnv_sym-header-mobile.png",
           "advertiseImage": "",
-          "sponsorId": 1,
-          "companyId": 1,
-          "id": 1,
+          "sponsorId": "",
+          "title": "OCP Future Technologies Symposium ",
+          "companyId": "",
+          "id": 30,
           "email": "support@fntech.com",
           "usesSponsorPage": true
         }
