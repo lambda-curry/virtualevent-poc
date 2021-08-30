@@ -269,43 +269,39 @@
           "columnAds": [
             {
               "image": "/img/ocp21glo_fnv_expc-lobbybutton-mgmthard.png",
-              "link": "/a/sponsor/37-hardware-management"
+              "link": ""
             },
             {
               "image": "/img/ocp21glo_fnv_expc-lobbybutton-osf.png",
-              "link": "/a/sponsor/38-open-system-firmware"
+              "link": ""
             },
             {
               "image": "/img/ocp21glo_fnv_expc-lobbybutton-tap.png",
-              "link": "/a/sponsor/39-tap"
+              "link": ""
             },
             {
               "image": "/img/ocp21glo_fnv_expc-lobbybutton-networking.png",
-              "link": "/a/sponsor/40-networking"
+              "link": ""
             },
             {
               "image": "/img/ocp21glo_fnv_expc-lobbybutton-telco.png",
-              "link": "/a/sponsor/41-telco"
+              "link": ""
             },
             {
               "image": "/img/ocp21glo_fnv_expc-lobbybutton-server.png",
-              "link": "/a/sponsor/42-server"
+              "link": ""
             },
             {
               "image": "/img/ocp21glo_fnv_expc-lobbybutton-oai.png",
-              "link": "/a/sponsor/43-oai"
+              "link": ""
             },
             {
               "image": "/img/ocp21glo_fnv_expc-lobbybutton-test.png",
-              "link": "/a/sponsor/44-test-and-validation"
+              "link": ""
             },
             {
               "image": "/img/ocp21glo_fnv_expc-lobbybutton-storage.png",
-              "link": "/a/sponsor/45-storage"
-            },
-            {
-              "image": "/img/ocp21glo_fnv_sym-logo.png",
-              "link": "/a/sponsor/60-ocp-future-technologies-symposium"
+              "link": ""
             }
           ],
           "id": 88,
