@@ -347,6 +347,7 @@
           "advertiseImage": "",
           "sponsorId": 87,
           "title": "Explore more about TAP",
+          "companyId": 73,
           "id": 87,
           "usesSponsorPage": true
         },
@@ -357,8 +358,10 @@
           "headerImage": "/img/ocp21glo_fnv_expc-header-networking.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-networking.png",
           "advertiseImage": "",
+          "sponsorId": 89,
           "title": "Explore more about Networking",
-          "id": 40,
+          "companyId": 75,
+          "id": 89,
           "usesSponsorPage": true
         },
         {
@@ -368,8 +371,10 @@
           "headerImage": "/img/ocp21glo_fnv_expc-header-telco.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-telco.png",
           "advertiseImage": "",
+          "sponsorId": 90,
           "title": "Explore more about Telco",
-          "id": 41,
+          "companyId": 76,
+          "id": 90,
           "usesSponsorPage": true
         },
         {
@@ -379,8 +384,10 @@
           "headerImage": "/img/ocp21glo_fnv_expc-header-server.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-server.png",
           "advertiseImage": "",
+          "sponsorId": 91,
           "title": "Explore more about Server",
-          "id": 42,
+          "companyId": 77,
+          "id": 91,
           "usesSponsorPage": true
         },
         {
@@ -390,8 +397,10 @@
           "headerImage": "/img/ocp21glo_fnv_expc-header-oai.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-oai.png",
           "advertiseImage": "",
+          "sponsorId": 92,
           "title": "Explore more about OAI",
-          "id": 43,
+          "companyId": 78,
+          "id": 92,
           "usesSponsorPage": true
         },
         {
@@ -401,8 +410,10 @@
           "headerImage": "/img/ocp21glo_fnv_expc-header-test.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-test.png",
           "advertiseImage": "",
+          "sponsorId": 93,
           "title": "Explore more about Test and Validation",
-          "id": 44,
+          "companyId": 79,
+          "id": 93,
           "usesSponsorPage": true
         },
         {
@@ -412,8 +423,10 @@
           "headerImage": "/img/ocp21glo_fnv_expc-header-storage.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-storage.png",
           "advertiseImage": "",
+          "sponsorId": 94,
           "title": "Explore more about Storage",
-          "id": 45,
+          "companyId": 80,
+          "id": 94,
           "usesSponsorPage": true
         }
       ]
