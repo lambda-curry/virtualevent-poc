@@ -429,6 +429,27 @@
           "usesSponsorPage": true
         }
       ]
+    },
+    {
+      "tier": [
+        {
+          "value": "tier-2HSCp6Cce",
+          "label": "Basecamp"
+        }
+      ],
+      "sponsors": [
+        {
+          "logo": "/img/ocp21glo_fnv_base-logo.png",
+          "name": "OCP Basecamp",
+          "intro": "OCP Basecamp description, we will want to insert where to Basecamp is at the live event posters at the in-person event.",
+          "headerImage": "/img/ocp21glo_fnv_base-header.png",
+          "headerImageMobile": "/img/ocp21glo_fnv_base-header-mobile.png",
+          "advertiseImage": "",
+          "title": "OCP Basecamp",
+          "id": 65,
+          "usesSponsorPage": true
+        }
+      ]
     }
   ]
 }
