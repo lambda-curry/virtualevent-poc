@@ -262,15 +262,15 @@
           "columnAds": [
             {
               "image": "/img/ocp21glo_fnv_expc-lobbybutton-mgmthard.png",
-              "link": "/a/sponsor/37-hardware-management"
+              "link": "/37-hardware-management"
             },
             {
               "image": "/img/ocp21glo_fnv_expc-lobbybutton-osf.png",
-              "link": "/a/sponsor/38-open-system-firmware"
+              "link": "/38-open-system-firmware"
             },
             {
               "image": "/img/ocp21glo_fnv_expc-lobbybutton-tap.png",
-              "link": "/a/sponsor/39-tap"
+              "link": "/39-tap"
             },
             {
               "image": "/img/ocp21glo_fnv_expc-lobbybutton-networking.png",
