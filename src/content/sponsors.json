@@ -448,10 +448,10 @@
           "headerImage": "/img/ocp21glo_fnv_sym-header.png",
           "headerImageMobile": "/img/ocp21glo_fnv_sym-header-mobile.png",
           "advertiseImage": "",
-          "sponsorId": "",
+          "sponsorId": 96,
           "title": "OCP Future Technologies Symposium ",
-          "companyId": "",
-          "id": 60,
+          "companyId": 82,
+          "id": 96,
           "email": "support@fntech.com",
           "usesSponsorPage": true
         }
@@ -472,8 +472,10 @@
           "headerImage": "/img/ocp21glo_fnv_base-header.png",
           "headerImageMobile": "/img/ocp21glo_fnv_base-header-mobile.png",
           "advertiseImage": "",
+          "sponsorId": 95,
           "title": "OCP Basecamp",
-          "id": 65,
+          "companyId": 81,
+          "id": 95,
           "usesSponsorPage": true
         }
       ]
