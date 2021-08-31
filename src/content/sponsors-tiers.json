@@ -126,9 +126,9 @@
       "sponsorPage": {
         "sponsorTemplate": "big-header",
         "disqus": false,
-        "liveEvent": true,
+        "liveEvent": false,
         "schedule": false,
-        "banner": true
+        "banner": false
       },
       "expoHallSize": null,
       "eventTemplate": null,
@@ -143,10 +143,10 @@
       },
       "sponsorPage": {
         "sponsorTemplate": "big-header",
-        "disqus": true,
-        "liveEvent": true,
+        "disqus": false,
+        "liveEvent": false,
         "schedule": false,
-        "banner": true
+        "banner": false
       },
       "expoHallSize": null,
       "eventTemplate": null,
