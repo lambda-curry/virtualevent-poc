@@ -27,7 +27,7 @@
       "badge": "",
       "lobby": {
         "lobbyTemplate": "big-images",
-        "display": false
+        "display": true
       },
       "sponsorPage": {
         "sponsorTemplate": "big-header",
@@ -36,7 +36,7 @@
         "schedule": false,
         "banner": false
       },
-      "expoHallSize": "medium",
+      "expoHallSize": null,
       "eventTemplate": null,
       "id": "tier-p1bCv1Utu",
       "name": "Presenting Sponsor",
@@ -46,7 +46,7 @@
       "badge": "",
       "lobby": {
         "lobbyTemplate": "big-images",
-        "display": false
+        "display": true
       },
       "sponsorPage": {
         "sponsorTemplate": "big-header",
@@ -55,7 +55,7 @@
         "schedule": false,
         "banner": false
       },
-      "expoHallSize": "medium",
+      "expoHallSize": "large",
       "eventTemplate": null,
       "id": "tier-V4shOCleS",
       "name": "Executive Producers",
