@@ -14,14 +14,17 @@
           "image": "/img/ocp21glo_fnv_lobby_button-symp.png",
           "button": {
             "text": "",
-            "link": ""
+            "link": "/a/sponsor/96-ocp-future-technologies-symposium"
           },
           "column": "left",
           "id": null
         },
         {
           "image": "/img/ocp21glo_fnv_lobby_button-basecamp.png",
-          "column": "left"
+          "column": "left",
+          "button": {
+            "link": "/a/sponsor/95-ocp-basecamp"
+          }
         },
         {
           "image": "/img/ocp21glo_fnv_lobby_button-careercenter.png",
