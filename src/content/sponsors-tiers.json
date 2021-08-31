@@ -161,8 +161,8 @@
       },
       "sponsorPage": {
         "sponsorTemplate": "big-header",
-        "disqus": true,
-        "liveEvent": true,
+        "disqus": false,
+        "liveEvent": false,
         "schedule": false,
         "banner": false
       },
