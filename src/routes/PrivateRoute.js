@@ -19,29 +19,39 @@ const PrivateRoute = ({
                         requireExtraQuestions,
                         ...rest }) => {
 
-  const [fetchingUserProfile, setFetchingUserProfile] = useState(isLoggedIn);
+  const [reFetchedUserProfile, setReFetchedUserProfile] = useState(false);
 
-  const userIsAuthz = () => {
-    return (hasTicket || isAuthorized)
+  const userIsReady = () => {
+    // we have an user profile
+    return userProfile;
   }
 
   const userCanByPassAuthz = () => {
     return isAuthorized;
   }
 
-  const userIsReady = () => {
-    // we have an user profile , its not reloading it and we are not fetching it
-    return userProfile && !fetchingUserProfile;
+  const userIsAuthz = () => {
+    return (hasTicket || userCanByPassAuthz())
+  }
+
+  const mustRevalidatingCredentials = () => {
+      return !userIsAuthz() && !reFetchedUserProfile;
   }
 
   useEffect(() => {
     if (!isLoggedIn) return;
+
+    if(!userProfile){
+      getUserProfile();
+      return;
+    }
     // if the user is not authz and we accessing a private route , get fresh data to recheck
     // authz condition ( new tickets / new groups ) after every render of the route
-    if(fetchingUserProfile) {
-      getUserProfile().then(() => setFetchingUserProfile(false));
+    if(!reFetchedUserProfile && !hasTicket && !isAuthorized) {
+      setReFetchedUserProfile(true);
+      getUserProfile();
     }
-  }, [fetchingUserProfile, getUserProfile, isLoggedIn ]);
+  }, [reFetchedUserProfile, isLoggedIn, hasTicket, isAuthorized, userProfile]);
 
   if (!isLoggedIn) {
     navigate('/', {
@@ -52,13 +62,25 @@ const PrivateRoute = ({
     return null
   }
 
-  // we are checking credentials if userProfile is being loading yet
-  if (!userIsReady()) {
+  // we are checking credentials if userProfile is being loading yet or
+  // if we are refetching the user profile to check new data ( user currently is not a authz
+  if (!userIsReady() || mustRevalidatingCredentials() ) {
     return (
       <HeroComponent
         title="Checking credentials..."
       />
     )
+  }
+
+
+  // if we are not authorized
+  if (!userIsAuthz() && location.pathname !== "/a/extra-questions") {
+    navigate('/authz/ticket', {
+      state: {
+        error: 'no-ticket'
+      }
+    })
+    return null
   }
 
   // if summit didnt started yet ...
@@ -71,18 +93,8 @@ const PrivateRoute = ({
     )
   }
 
-  // if we are not authorized
-  if (!userIsAuthz() && location.pathname !== "/a/extra-questions") {
-    navigate('/authz/ticket', {
-      state: {
-        error: 'no-ticket'
-      }
-    })
-    return null
-  }
-
   if (requireExtraQuestions()) {
-    // of we already on extra questions page just render the component
+    // we already on extra questions page just render the component
     if (location.pathname === "/a/extra-questions") {
       return (<Component location={location} eventId={eventId} {...rest} />);
     }
