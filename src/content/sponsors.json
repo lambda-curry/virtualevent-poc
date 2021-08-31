@@ -257,23 +257,16 @@
           "title": "Experience Center ",
           "companyId": 36,
           "documents": {
-            "links": [
-              {
-                "class_name": "PresentationLink",
-                "name": "Storage Experience Center",
-                "link": "/a/sponsor/94-storage",
-                "order": 1
-              }
-            ]
+            "links": []
           },
           "columnAds": [
             {
               "image": "/img/ocp21glo_fnv_expc-lobbybutton-mgmthard.png",
-              "link": "/a/sponsor/85-hardware-management"
+              "link": "https://2021ocpglobal.fnvirtual.app/a/sponsor/85-hardware-management"
             },
             {
               "image": "/img/ocp21glo_fnv_expc-lobbybutton-osf.png",
-              "link": "/a/sponsor/86-open-system-firmware"
+              "link": "https://2021ocpglobal.fnvirtual.app/a/sponsor/86-open-system-firmware"
             },
             {
               "image": "/img/ocp21glo_fnv_expc-lobbybutton-tap.png",
