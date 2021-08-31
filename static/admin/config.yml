@@ -67,6 +67,14 @@ collections:
                 ]},
                 {label: "Display", name: display, widget: boolean, required: false, default: false}
               ]},
+              {label: "Expo Hall Page", name: "expoHallPage", widget: object, fields: [
+                {label: "Expo Hall Template", name: "expoHallTemplate", widget: select, required: false, default: 'medium-images', options: [
+                  { label: "Big Images", value: "big-images" },
+                  { label: "Medium Images", value: "medium-images" },
+                  { label: "Small Images", value: "small-images" },
+                ]},
+                {label: "Display", name: display, widget: boolean, required: false, default: false}
+              ]},
               {label: "Sponsor Page", name: "sponsorPage", widget: object, fields: [
                 {label: "Sponsor Page Template", name: "sponsorTemplate", widget: select, required: false, default: 'small-header', options: [
                   { label: "Big Header", value: "big-header" },
@@ -76,11 +84,6 @@ collections:
                 {label: "Live Event", name: liveEvent, widget: boolean, required: false, default: false},
                 {label: "Schedule", name: schedule, widget: boolean, required: false, default: false},
                 {label: "Banner", name: banner, widget: boolean, required: false, default: false}
-              ]},
-              {label: "Sponsor Hall Size", name: "expoHallSize", widget: select, required: false, default: 'medium', options: [
-                { label: "Large Images", value: "large" },
-                { label: "Medium Images", value: "medium" },
-                { label: "Small Images", value: "small" },
               ]},
               {label: "In Event Template", name: "eventTemplate", widget: select, required: false, default: 'small-images', options: [
                 { label: "Big Images", value: "big-images" },
