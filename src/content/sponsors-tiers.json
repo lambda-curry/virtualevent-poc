@@ -21,7 +21,7 @@
       },
       "expoHallPage": {
         "expoHallTemplate": "big-images",
-        "display": false
+        "display": true
       },
       "id": "tier-cYGYq5-ae"
     },
