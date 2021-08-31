@@ -13,7 +13,7 @@
       },
       "name": "Diamond",
       "expoHallSize": "large",
-      "eventTemplate": "big-images",
+      "eventTemplate": null,
       "widgetTitle": "Diamond Sponsors",
       "lobby": {
         "lobbyTemplate": "big-images",
@@ -37,7 +37,7 @@
         }
       },
       "name": "Emerald",
-      "expoHallSize": "medium",
+      "expoHallSize": "large",
       "eventTemplate": "",
       "widgetTitle": "Emerald Sponsors",
       "lobby": {
