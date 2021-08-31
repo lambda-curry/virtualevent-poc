@@ -261,7 +261,7 @@
               {
                 "class_name": "PresentationLink",
                 "name": "Storage Experience Center",
-                "link": "/a/sponsor/45-storage",
+                "link": "/a/sponsor/94-storage",
                 "order": 1
               }
             ]
@@ -273,7 +273,7 @@
             },
             {
               "image": "/img/ocp21glo_fnv_expc-lobbybutton-osf.png",
-              "link": "a/sponsor/86-open-system-firmware"
+              "link": "/a/sponsor/86-open-system-firmware"
             },
             {
               "image": "/img/ocp21glo_fnv_expc-lobbybutton-tap.png",
