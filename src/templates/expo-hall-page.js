@@ -1,22 +1,22 @@
 import React from 'react'
 
+import { connect } from "react-redux";
+
 import Layout from '../components/Layout'
 import SponsorComponent from '../components/SponsorComponent'
 import AttendanceTrackerComponent from '../components/AttendanceTrackerComponent'
 
-import Tiers from '../content/sponsors-tiers.json'
-
-const ExpoHallPage = ({ location }) => {
+const ExpoHallPage = ({ location, imageHeader }) => {
 
   return (
     <Layout location={location}>
       <AttendanceTrackerComponent />
-      <section className="hero is-large sponsors-header" style={{backgroundImage: `url(${Tiers.imageHeader})`}}>
-        <div className="hero-body">
-          <div className="container">
+        <section className="hero is-large sponsors-header" style={{ backgroundImage: `url(${imageHeader})` }}>
+          <div className="hero-body">
+            <div className="container">
+            </div>
           </div>
-        </div>
-      </section>
+        </section>      
       <section className="section px-6 py-6">
         <SponsorComponent />
       </section>
@@ -24,4 +24,8 @@ const ExpoHallPage = ({ location }) => {
   )
 }
 
-export default ExpoHallPage
+const mapStateToProps = ({ sponsorState }) => ({
+  imageHeader: sponsorState.imageHeader
+});
+
+export default connect(mapStateToProps, {})(ExpoHallPage);

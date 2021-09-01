@@ -37,13 +37,14 @@ const TemplateWrapper = ({ children, location, marketing, summit, favicon }) => 
         <html lang="en" />
         <title>{`${summit.name} - ${title}`}</title>
         <meta name="description" content={description} />
-
-        <link
-          rel="icon"
-          type="image/png"
-          href={`${withPrefix('/')}${favicon.substring(1)}`}
-          sizes="32x32"
-        />
+        {favicon &&
+          <link
+              rel="icon"
+              type="image/png"
+              href={`${withPrefix('/')}${favicon.substring(1)}`}
+              sizes="32x32"
+          />
+        }
 
         <meta name="theme-color" content="#fff" />
 

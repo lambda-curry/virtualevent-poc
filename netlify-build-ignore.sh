@@ -1,6 +1,8 @@
 #!/bin/bash
 
-if echo $HEAD | grep "^feature";
+if [ $HEAD == "main" ];
+  then exit 1
+elif echo $HEAD | grep "^feature";
   then exit 1
 elif echo $HEAD | grep "^hotfix";
   then exit 1
