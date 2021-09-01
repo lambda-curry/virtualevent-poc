@@ -73,7 +73,7 @@ const SponsorHeader = ({ sponsor, tier, scanBadge }) => {
                     <i className={`${styles.volumeButton} fa fa-2x ${isMuted ? 'fa-volume-off' : 'fa-volume-up'} icon is-large`} />
                   </button>
                 }
-                <img alt="badge" src={tier.badge} />
+                {tier.badge && <img alt="badge" src={tier.badge} />}
               </div>
               <div className={`${tier.sponsorPage.sponsorTemplate === 'big-header' ? styles.buttons : styles.buttonsSmall}`}>
                 <Link className={styles.link} onClick={scanBadge}>

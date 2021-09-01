@@ -1,0 +1,17 @@
+
+@media (min-width: 768px) {
+  .filter-container {
+    overflow-y: auto;
+    position: fixed;
+    right: 50px;
+    margin-top: 15px;
+    /* 262px is the footer height */
+    height: calc(100vh - 262px);
+  }
+}
+
+@media (max-width: 768px) {
+    .filter-container {
+        height: auto !important;
+    }
+}

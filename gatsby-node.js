@@ -57,7 +57,13 @@ exports.onPreBootstrap = async () => {
     if (key.startsWith('summit_')) marketingSite[key] = value;
     if (key.startsWith('SCHEDULE_FILTER_BY_')) {
       const filterKey = key.substr(0, key.lastIndexOf('_')).substr(19).toLowerCase();
-      if (key.includes('_ENABLED')) filterSettings[filterKey].enabled = (value === '1');
+      if (!filterSettings[filterKey]) {
+        filterSettings[filterKey] = {label: '', values: [], enabled: false};
+      }
+      if (key.includes('_ENABLED')) {
+        filterSettings[filterKey].enabled = (value === '1');
+        console.log(`Adding Filter ${filterKey}: ${(value === '1') ? 'enabled' : 'disabled'}`);
+      }
       if (key.includes('_LABEL')) filterSettings[filterKey].label = value;
       filterSettings[filterKey].values = [];
     }
