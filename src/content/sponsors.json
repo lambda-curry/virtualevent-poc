@@ -133,6 +133,39 @@
           "companyId": 1,
           "title": "Qualcomm",
           "logo": "/img/samsung-sponsor-logo-qualcomm.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Microsoft",
+          "id": 1,
+          "sponsorId": 1,
+          "companyId": 1,
+          "title": "",
+          "logo": "/img/samsung-sponsor-logo-microsoft.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Arm",
+          "id": 1,
+          "sponsorId": 1,
+          "companyId": 1,
+          "logo": "/img/samsung-sponsor-logo-arm.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "AMD",
+          "id": 1,
+          "sponsorId": 1,
+          "companyId": 1,
+          "logo": "/img/samsung-sponsor-logo-amd.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Ericsson",
+          "id": 1,
+          "sponsorId": 1,
+          "companyId": 1,
+          "logo": "/img/samsung-sponsor-logo-ericsson.png"
         }
       ]
     }
