@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { navigate } from 'gatsby'
 import { connect } from 'react-redux'
@@ -8,7 +8,6 @@ import FullSchedule from '../components/FullSchedule'
 import ScheduleFilters from "../components/ScheduleFilters";
 import AttendanceTrackerComponent from '../components/AttendanceTrackerComponent'
 
-import styles from '../styles/schedule.module.scss'
 
 import { PHASES } from '../utils/phasesUtils'
 
@@ -24,33 +23,14 @@ const SchedulePage = ({ summitPhase, isLoggedUser, location }) => {
     }
   }
 
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const [headerHeight, setHeaderHeight] = useState(70);
-
-  const handleScroll = () => {
-    const position = window.pageYOffset;
-    const header = document.querySelector('header')
-    if(header){
-      setHeaderHeight(header.clientHeight);
-    }
-    if(position < headerHeight) setScrollPosition(position);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
     <Layout location={location}>
-      <div className="container">
+      <div className="container" style={{position: "static"}}>
         <div className="columns">
           <div className="column is-three-quarters px-6 pt-6 pb-0">
             <FullSchedule {...scheduleProps} />
           </div>
-          <div className={`column is-one-quarter px-6 pt-0 pb-6 ${styles.filterContainer}`} style={{ top: headerHeight - scrollPosition }}>
+          <div className="column is-one-quarter px-6 pt-6 pb-0">
             <ScheduleFilters />
           </div>
         </div>
