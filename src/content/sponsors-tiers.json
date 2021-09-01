@@ -9,7 +9,8 @@
           "liveEvent": true,
           "schedule": true,
           "banner": true
-        }
+        },
+        "disqus": false
       },
       "name": "Diamond",
       "expoHallSize": "large",
@@ -125,10 +126,10 @@
       },
       "sponsorPage": {
         "sponsorTemplate": "big-header",
-        "disqus": false,
+        "disqus": true,
         "liveEvent": false,
         "schedule": false,
-        "banner": false
+        "banner": true
       },
       "expoHallSize": null,
       "eventTemplate": null,
