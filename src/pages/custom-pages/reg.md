@@ -3,7 +3,7 @@ templateKey: custom-page
 title: REGISTRATION
 requiresAuth: false
 ---
-![Registration Options Grid](/img/ocp21g-registration_options_083021.png)
+![Registration Options Grid](/img/ocp21g-registration_options_090121.png)
 
 <a href="https://registration.fnvirtual.app/a/2021ocpglo/register/start" target="_blank">Click here to register!</a>
 
