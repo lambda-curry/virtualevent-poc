@@ -4,14 +4,14 @@
       "section": "lobby",
       "columnAds": [
         {
-          "image": "/img/samsumg-fnv-lobby-space3.png",
+          "image": "/img/samsumg-fnv-lobby-space3_v2.png",
           "button": {
             "link": "/virtual-booth/"
           },
           "column": "left"
         },
         {
-          "image": "/img/samsumg-fnv-lobby-space2.png",
+          "image": "/img/samsumg-fnv-lobby-space2_v2.png",
           "button": {
             "text": "",
             "link": "/virtual-booth/"
@@ -20,10 +20,6 @@
           "id": null
         }
       ]
-    },
-    {
-      "section": "event",
-      "columnAds": []
     }
   ]
 }
