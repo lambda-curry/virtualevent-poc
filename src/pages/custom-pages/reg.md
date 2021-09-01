@@ -3,7 +3,7 @@ templateKey: custom-page
 title: REGISTRATION
 requiresAuth: false
 ---
-![Registration Options Grid](/img/ocp21g-registration_options_073021_v2-1280px.png)
+![Registration Options Grid](/img/ocp21g-registration_options_083021.png)
 
 <a href="https://registration.fnvirtual.app/a/2021ocpglo/register/start" target="_blank">Click here to register!</a>
 
@@ -12,9 +12,8 @@ This year's event will be a hybrid format, so we will offer both in-person and v
 Please see below for rates and deadlines.
 
 **IN-PERSON**\
-Early Bird Registration: $499  (Aug. 2–31, 2021)\
-General Registration: $599  (Sept. 1–30, 2021)\
-Late & Onsite Registration: $799  (Oct. 1–Nov. 10, 2021)
+Early Bird Registration: $499  (Aug. 2–Sept. 30, 2021)\
+General Registration: $599  (Sept. 1–Nov. 10, 2021)
 
 **VIRTUAL**\
 Virtual - All Access:  $199 (Aug. 2–Feb. 1)\
