@@ -132,7 +132,9 @@ export const MarketingPageTemplate = class extends React.Component {
                     </Slider>
                   )
                 } else {
-                  return null;
+                  return (
+                    <div className={'single'} key={index}></div>
+                  )
                 }
               })}
             </Masonry>
