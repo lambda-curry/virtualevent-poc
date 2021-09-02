@@ -15,7 +15,7 @@
       "name": "Diamond",
       "expoHallSize": "large",
       "eventTemplate": null,
-      "widgetTitle": "Diamond Sponsors",
+      "widgetTitle": "",
       "lobby": {
         "lobbyTemplate": "carousel",
         "display": true
@@ -40,9 +40,9 @@
       "name": "Emerald",
       "expoHallSize": "large",
       "eventTemplate": "",
-      "widgetTitle": "Emerald Sponsors",
+      "widgetTitle": "",
       "lobby": {
-        "lobbyTemplate": "big-images",
+        "lobbyTemplate": "carousel",
         "display": true
       },
       "expoHallPage": {
@@ -65,9 +65,9 @@
       "name": "Ruby",
       "expoHallSize": "medium",
       "eventTemplate": "",
-      "widgetTitle": "Ruby Sponsors",
+      "widgetTitle": "",
       "lobby": {
-        "lobbyTemplate": "big-images",
+        "lobbyTemplate": "carousel",
         "display": true
       },
       "expoHallPage": {
