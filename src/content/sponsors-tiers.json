@@ -17,7 +17,7 @@
       "eventTemplate": null,
       "widgetTitle": "Diamond Sponsors",
       "lobby": {
-        "lobbyTemplate": "big-images",
+        "lobbyTemplate": "carousel",
         "display": true
       },
       "expoHallPage": {
