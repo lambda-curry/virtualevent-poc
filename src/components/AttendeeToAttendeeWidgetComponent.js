@@ -92,14 +92,14 @@ export const AttendeesWidget = ({ user, event, location }) => {
       idpUserId: sub.toString(),
       email: email,
       hasPermission: (permission) => {
+        const isAdmin =  groups &&
+            groups.map((g) => g.code).filter((g) => adminGroups.includes(g))
+                .length > 0;
         switch (permission) {
           case permissions.MANAGE_ROOMS:
-            return (
-              groups &&
-              groups.map((g) => g.code).filter((g) => adminGroups.includes(g))
-                .length > 0
-            );
+            return isAdmin;
           case permissions.CHAT:
+            if(isAdmin) return true;
             const accessLevels = summit_tickets
               .flatMap((x) => x.badge.type.access_levels)
               .filter(
