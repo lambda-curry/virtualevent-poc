@@ -1,6 +1,6 @@
 backend:
   name: github
-  branch: prod-yoco
+  branch: dev-yoco
   repo: fntechgit/virtualevent-poc
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
