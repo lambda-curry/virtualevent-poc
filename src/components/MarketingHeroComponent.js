@@ -30,7 +30,7 @@ class MarketingHeroComponent extends React.Component {
   };
 
   getButtons = () => {
-    const { summit_phase, isLoggedUser, siteSettings, userProfile } = this.props;
+    const { summit_phase, isLoggedUser, siteSettings } = this.props;
     const path = getEnvVariable(AUTHORIZED_DEFAULT_PATH) || '/a/';
     const {registerButton, loginButton} = siteSettings.heroBanner.buttons;
 

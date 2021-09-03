@@ -51,7 +51,7 @@ const PrivateRoute = ({
       setReFetchedUserProfile(true);
       getUserProfile();
     }
-  }, [reFetchedUserProfile, isLoggedIn, hasTicket, isAuthorized, userProfile]);
+  }, [reFetchedUserProfile, isLoggedIn, hasTicket, isAuthorized, userProfile, getUserProfile]);
 
   if (!isLoggedIn) {
     navigate('/', {
