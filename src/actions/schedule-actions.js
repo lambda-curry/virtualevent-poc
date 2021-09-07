@@ -3,34 +3,34 @@ import { FragmentParser } from "openstack-uicore-foundation/lib/components";
 
 import {pickBy, isEqual, isEmpty} from "lodash";
 
-export const UPDATE_EVENTS      = 'UPDATE_EVENTS';
 export const UPDATE_FILTER      = 'UPDATE_FILTER';
 export const UPDATE_FILTERS     = 'UPDATE_FILTERS';
 export const CHANGE_VIEW        = 'CHANGE_VIEW';
 
+export const MY_SCHEDULE_UPDATE_FILTER      = 'MY_SCHEDULE_UPDATE_FILTER';
+export const MY_SCHEDULE_UPDATE_FILTERS     = 'MY_SCHEDULE_UPDATE_FILTERS';
+
 const fragmentParser = new FragmentParser();
 
-export const updateFilter = (filter) => (dispatch, getState) => {
-    dispatch(createAction(UPDATE_FILTER)({...filter}))
+export const updateFilter = (filter, action = UPDATE_FILTER) => (dispatch) => {
+    dispatch(createAction(action)({...filter}))
 };
 
-export const updateFiltersFromHash = () => (dispatch, getState) => {
+export const updateFiltersFromHash = (filters, actionCallback = UPDATE_FILTERS) => (dispatch) => {
     const qsFilters = fragmentParser.getParams();
 
     // escape if no hash
     if (isEmpty(qsFilters)) return null;
 
-    const {scheduleState} = getState();
-    const {filters: storedFilters} = scheduleState;
-    const filterKeys = Object.keys(storedFilters);
+    const filterKeys = Object.keys(filters);
     const newFilters = {};
 
     // remove any query vars that are not filters
     const normalizedFilters =  pickBy(qsFilters, (value, key) => filterKeys.includes(key));
 
     // populate state filters with hash values
-    Object.keys(storedFilters).forEach(key => {
-        newFilters[key] = {...storedFilters[key]}; // copy label and rest of props
+    Object.keys(filters).forEach(key => {
+        newFilters[key] = {...filters[key]}; // copy label and rest of props
         const newValues = normalizedFilters[key] ? normalizedFilters[key].split(',') : [];
         newFilters[key].values = newValues.map(val => {
             if (isNaN(val)) return val;
@@ -39,8 +39,8 @@ export const updateFiltersFromHash = () => (dispatch, getState) => {
     });
 
     // only update if filters have changed
-    if (!isEqual(newFilters, storedFilters)) {
-        dispatch(createAction(UPDATE_FILTERS)({filters: newFilters, view: qsFilters.view}));
+    if (!isEqual(newFilters, filters)) {
+        dispatch(createAction(actionCallback)({filters: newFilters, view: qsFilters.view}));
     }
 
     // clear hash

@@ -5,6 +5,7 @@ import eventReducer from "../reducers/event-reducer";
 import summitReducer from "../reducers/summit-reducer";
 import userReducer from "../reducers/user-reducer";
 import scheduleReducer from "../reducers/schedule-reducer";
+import myScheduleReducer from "../reducers/my-schedule-reducer";
 import clockReducer from "../reducers/clock-reducer";
 import speakerReducer from "../reducers/speaker-reducer";
 import settingReducer from "../reducers/setting-reducer";
@@ -26,15 +27,25 @@ const persistedReducers = persistCombineReducers(config, {
     summitState: summitReducer,
     userState: userReducer,
     scheduleState: scheduleReducer,
+    myScheduleState: myScheduleReducer,
     speakerState: speakerReducer,
     clockState: clockReducer,
     settingState: settingReducer,
     sponsorState: sponsorReducer
 });
 
+function appendLoggedUser({ getState }) {
+    return next => action => {
+        const {userState: {userProfile}} = getState();
+        // Call the next dispatch method in the middleware chain.
+        action.userProfile = userProfile;
+        return next(action);
+    }
+}
+
 const composeEnhancers = typeof window === 'object' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : compose;
 
-const store = createStore(persistedReducers, composeEnhancers(applyMiddleware(thunk)));
+const store = createStore(persistedReducers, composeEnhancers(applyMiddleware(appendLoggedUser, thunk)));
 
 const onRehydrateComplete = () => {};
 
