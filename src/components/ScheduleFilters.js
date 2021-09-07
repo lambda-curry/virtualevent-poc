@@ -1,44 +1,28 @@
-import React, {useEffect} from "react";
-import { connect } from "react-redux";
-import {pickBy} from 'lodash';
+import React, {useEffect, useState} from "react";
 import { Helmet } from "react-helmet";
-import { updateFilter, updateFiltersFromHash } from "../actions/schedule-actions";
 import Filters from "schedule-filter-widget/dist";
+
 import "schedule-filter-widget/dist/index.css";
 
-const ScheduleFilters = ({
-  className,
-  summit,
-  events,
-  allEvents,
-  filters,
-  colorSource,
-  colorSettings,
-  updateFilter,
-  updateFiltersFromHash,
-  ...rest
-}) => {
-  const enabledFilters = pickBy(filters, value => value.enabled);
+const ScheduleFilters = ({ className, ...rest}) => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [headerHeight, setHeaderHeight] = useState(70);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    const header = document.querySelector('header')
+    if(header){
+      setHeaderHeight(header.clientHeight);
+    }
+    if(position < headerHeight) setScrollPosition(position);
+  };
 
   useEffect(() => {
-    updateFiltersFromHash();
-  });
-
-  if (!summit) return null;
-
-  const componentProps = {
-    title: "Filter by",
-    summit,
-    events,
-    allEvents,
-    filters: enabledFilters,
-    triggerAction: (action, payload) => {
-      updateFilter(payload);
-    },
-    marketingSettings: colorSettings,
-    colorSource: colorSource,
-    ...rest,
-  };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <>
@@ -49,20 +33,11 @@ const ScheduleFilters = ({
           href="https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/1.0.2/awesome-bootstrap-checkbox.min.css"
         />
       </Helmet>
-      <div className={className || "filter-container"}>
-        <Filters {...componentProps} />
+      <div className={className || "filter-container"} style={{ top: headerHeight - scrollPosition }}>
+        <Filters title="Filter by" {...rest} />
       </div>
     </>
   );
 };
 
-const mapStateToProps = ({ summitState, scheduleState, settingState }) => ({
-  events: scheduleState.events,
-  allEvents: scheduleState.allEvents,
-  filters: scheduleState.filters,
-  colorSource: scheduleState.colorSource,
-  summit: summitState.summit,
-  colorSettings: settingState.colorSettings,
-});
-
-export default connect(mapStateToProps, { updateFilter, updateFiltersFromHash })(ScheduleFilters);
+export default ScheduleFilters;
