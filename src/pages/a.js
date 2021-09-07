@@ -11,11 +11,12 @@ import SchedulePage from "../templates/schedule-page";
 import SponsorPage from "../templates/sponsor-page"
 import ExpoHallPage from "../templates/expo-hall-page"
 import FullProfilePage from "../templates/full-profile-page"
-import PrivateRoute from '../routes/PrivateRoute'
-import PublicRoute from "../routes/PublicRoute"
+import WithAuthRoute from '../routes/WithAuthRoute'
 import withSessionChecker from "../utils/withSessionChecker"
-import extraQuestionsPage from "../templates/extra-questions-page"
+import ExtraQuestionsPage from "../templates/extra-questions-page"
 import MySchedulePage from "../templates/my-schedule-page";
+import ShowOpenRoute from "../routes/ShowOpenRoute";
+import WithBadgeRoute from "../routes/WithBadgeRoute";
 
 const App = ({ isLoggedUser, user, summit_phase, lastBuild, syncData }) => {
 
@@ -29,14 +30,20 @@ const App = ({ isLoggedUser, user, summit_phase, lastBuild, syncData }) => {
     <Location>
       {({ location }) => (
         <Router basepath="/a" >
-          <PrivateRoute path="/" summit_phase={summit_phase} component={HomePage} isLoggedIn={isLoggedUser} user={user} location={location} />
-          <PrivateRoute path="/event/:eventId" summit_phase={summit_phase} component={EventPage} isLoggedIn={isLoggedUser} user={user} location={location} />
-          <PrivateRoute path="/sponsor/:sponsorId" summit_phase={summit_phase} component={SponsorPage} isLoggedIn={isLoggedUser} user={user} location={location} />
-          <PrivateRoute path="/sponsors/" summit_phase={summit_phase} component={ExpoHallPage} isLoggedIn={isLoggedUser} user={user} location={location} />
-          <PrivateRoute path="/profile" summit_phase={summit_phase} component={FullProfilePage} isLoggedIn={isLoggedUser} user={user} location={location} />
-          <PrivateRoute path="/extra-questions" component={extraQuestionsPage} isLoggedIn={isLoggedUser} user={user} location={location} />
-          <PublicRoute path="/schedule" component={SchedulePage} location={location} />
-          <PublicRoute path="/my-schedule" component={MySchedulePage} location={location} summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user}/>
+          <SchedulePage path="/schedule" location={location} />
+          <WithAuthRoute path="/" summit_phase={summit_phase} component={HomePage} isLoggedIn={isLoggedUser} user={user} location={location}>
+            <HomePage path="/" isLoggedIn={isLoggedUser} user={user} location={location} />
+            <MySchedulePage path="/my-schedule" location={location} summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user}/>
+            <ExtraQuestionsPage path="/" isLoggedIn={isLoggedUser} user={user} location={location} />
+            <ShowOpenRoute path="/">
+              <WithBadgeRoute path="/event/:eventId">
+                <EventPage path="/" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location} />
+              </WithBadgeRoute>
+              <SponsorPage path="/sponsor/:sponsorId" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location} />
+              <ExpoHallPage path="/sponsors/" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location} />
+              <FullProfilePage path="/profile" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location} />
+            </ShowOpenRoute>
+          </WithAuthRoute>
         </Router>
       )}
     </Location>
