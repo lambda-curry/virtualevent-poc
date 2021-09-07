@@ -58,7 +58,7 @@ export const AttendeesWidget = ({ user, event, location }) => {
       ocrRef.current.openChatRoom(openChatRoomParam);
     }
     setLoading(false);
-  }, [user]);
+  }, [user, idpProfile, userProfile]);
 
   if (loading) return <div style={{ margin: "20px auto", position: "relative" }}>Loading...</div>;
 

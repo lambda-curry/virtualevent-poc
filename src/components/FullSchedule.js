@@ -1,8 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
-import { addToSchedule, removeFromSchedule } from "../actions/user-actions";
-import { getShareLink, callAction } from "../actions/schedule-actions";
-import {needsLogin} from "../utils/alerts";
+import { needsLogin } from "../utils/alerts";
+import {addToSchedule, removeFromSchedule} from "../actions/user-actions";
+import {callAction} from "../actions/schedule-actions";
 
 // these two libraries are client-side only
 import Schedule from "full-schedule-widget/dist";
@@ -10,10 +10,6 @@ import "full-schedule-widget/dist/index.css";
 
 const FullSchedule = ({
   summit,
-  events,
-  filters,
-  view,
-  colorSource,
   className,
   userProfile,
   colorSettings,
@@ -23,16 +19,17 @@ const FullSchedule = ({
   callAction,
   ...rest
 }) => {
-
-  if (!summit) return null;
-
   const componentProps = {
     title: "Schedule",
-    events: events,
-    summit: summit,
-    view: view,
+    summit,
     marketingSettings: colorSettings,
-    userProfile: userProfile,
+    userProfile,
+    withThumbs: false,
+    defaultImage: homeSettings.schedule_default_image,
+    showSendEmail: false,
+    onStartChat: null,
+    onEventClick: () => {},
+    needsLogin: needsLogin,
     triggerAction: (action, payload) => {
       switch (action) {
         case "ADDED_TO_SCHEDULE": {
@@ -45,37 +42,24 @@ const FullSchedule = ({
           return callAction(action, payload);
       }
     },
-    colorSource: colorSource,
-    withThumbs: false,
-    defaultImage: homeSettings.schedule_default_image,
-    getShareLink: () => getShareLink(filters, view),
-    showSendEmail: false,
-    onStartChat: null,
-    onEventClick: () => {},
-    needsLogin: needsLogin,
     ...rest,
   };
 
   return (
-      <div className={className || "schedule-container"}>
-        <Schedule {...componentProps} />
-      </div>
+    <div className={className || "schedule-container"}>
+      <Schedule {...componentProps} />
+    </div>
   );
 };
 
-const mapStateToProps = ({ userState, summitState, scheduleState, settingState }) => ({
+const mapStateToProps = ({ userState, settingState }) => ({
   userProfile: userState.userProfile,
   colorSettings: settingState.colorSettings,
   homeSettings: settingState.homeSettings,
-  summit: summitState.summit,
-  events: scheduleState.events,
-  filters: scheduleState.filters,
-  view: scheduleState.view,
-  colorSource: scheduleState.colorSource,
 });
 
 export default connect(mapStateToProps, {
   addToSchedule,
   removeFromSchedule,
-  callAction
+  callAction,
 })(FullSchedule);

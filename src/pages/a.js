@@ -4,7 +4,6 @@ import { connect } from 'react-redux'
 import { syncData } from '../actions/base-actions';
 import settings from '../content/settings';
 
-import LoginPage from "../templates/login-page"
 import HomePage from "../templates/home-page"
 import EventPage from "../templates/event-page"
 import SchedulePage from "../templates/schedule-page";
