@@ -15,14 +15,14 @@ export const ExtraQuestionsPageTemplate = ({ user, summit, saveExtraQuestions })
     const extraQuestions = summit.order_extra_questions.sort((a, b) => (a.order > b.order) ? 1 : -1);
     const userAnswers = ticket ? ticket.owner.extra_questions : [];
     const [owner, setOwner] = useState({
-        email: ticket.owner.email || '',
-        first_name: ticket.owner.first_name || '',
-        last_name: ticket.owner.last_name || '',
-        company: ticket.owner.company || '',
-    });;
+        email: ticket?.owner.email || '',
+        first_name: ticket?.owner.first_name || '',
+        last_name: ticket?.owner.last_name || '',
+        company: ticket?.owner.company || '',
+    });
 
     // calculate state initial values
-    const [disclaimer, setDisclaimer] = useState(ticket ? ticket.owner.disclaimer_accepted : false);
+    const [disclaimer, setDisclaimer] = useState(ticket?.owner?.disclaimer_accepted || false);
     const [answers, setAnswers] = useState(extraQuestions.map(question => {
         const userAnswer = userAnswers.filter(a => a.question_id === question.id);
         let newAnswer = { name: question.name, id: question.id, value: '' };

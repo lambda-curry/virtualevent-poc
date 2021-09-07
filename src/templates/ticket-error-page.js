@@ -83,10 +83,10 @@ export const TicketErrorPageTemplate = class extends React.Component {
           subtitle={this.getRedirectMessage()}
         />
       )
-    } else {
-      navigate('/');
-      return null
     }
+
+    navigate('/');
+    return null
   }
 };
 
