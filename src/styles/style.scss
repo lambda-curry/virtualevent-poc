@@ -1,9 +1,19 @@
 @import './colors.scss';
 @import './global-classes';
 
+@font-face {
+  font-family: 'SamsungSharpSans';
+  src: local('SamsungSharpSans-Bold'), url(../../static/fonts/SamsungSharpSans-Bold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'SamsungSharpSans';
+  src: local('SamsungSharpSans-Medium'), url(../../static/fonts/SamsungSharpSans-Medium.otf) format('opentype');
+}
+
 html,
 body {
-  font-family: "Nunito Sans", sans-serif !important;
+  font-family: "SamsungSharpSans", sans-serif !important;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -97,7 +107,7 @@ div.content {
 div.title {
   font-weight: 700 !important;
   color: #333333 !important;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "SamsungSharpSans", sans-serif;
 }
 
 h2 {
@@ -284,7 +294,7 @@ h2 {
 
 .outerWrapper___lGus2 {
   .widget-title {
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "SamsungSharpSans", sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 33px;

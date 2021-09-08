@@ -163,9 +163,9 @@ div.column:first-of-type {
     }
 
     h1 {
-      font-size: calc(50px + (50 - 42) * (100vw - 250px) / (1080 - 250));
+      font-size: calc(46px + (50 - 42) * (100vw - 250px) / (1080 - 250));
       font-weight: bold;
-      margin: 6px 0 6px;
+      margin: 0px 0 12px;
     }
 
     h2 {
