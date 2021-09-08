@@ -44,20 +44,29 @@ export const updateSummitPhase = () => (dispatch, getState) => {
 
 export const updateEventsPhase = () => (dispatch, getState) => {
 
+  // get current activity and check phase
   const { eventState: { event }, clockState: { nowUtc, events_phases } } = getState();
 
-  if (event && event.id) {
-    const newEvent = { id: event.id, start_date: event.start_date, end_date: event.end_date, phase: null };
+  if (event?.id) {
+    const newEvent = {
+      id: event.id,
+      start_date: event.start_date,
+      end_date: event.end_date,
+      phase: null
+    };
 
+    // if phase for the event is not calculated then create a new empty
     if (!events_phases.some(event => event.id === newEvent.id)) {
       dispatch(createAction(EVENT_PHASE_ADD)(newEvent));
     }
   }
 
+  // on the previous calculated ones , recalculate the advance
   events_phases.forEach(event => {
-    const eventPhase = getEventPhase(event, nowUtc);
-    if (event.phase !== eventPhase) {
-      switch (eventPhase) {
+    const newPhase = getEventPhase(event, nowUtc);
+    // if has change the phase
+    if (event.phase !== newPhase) {
+      switch (newPhase) {
         case PHASES.BEFORE: {
           const updatedEvent = { ...event, phase: PHASES.BEFORE };
           dispatch(createAction(EVENT_PHASE_BEFORE)(updatedEvent));
