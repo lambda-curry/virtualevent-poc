@@ -33,8 +33,13 @@ const userReducer = (state = DEFAULT_STATE, action) => {
   const { type, payload } = action
   switch (type) {
     case RESET_STATE:
-    case LOGOUT_USER:
+    case LOGOUT_USER: {
+      // see https://stackoverflow.com/questions/35622588/how-to-reset-the-state-of-a-redux-store/35641992#35641992
+      if (typeof window !== 'undefined') {
+        window.localStorage.clear();
+      }
       return DEFAULT_STATE;
+    }
     case START_LOADING_PROFILE:
       return { ...state, loading: true };
     case STOP_LOADING_PROFILE:
