@@ -33,18 +33,12 @@ const myScheduleReducer = (state = DEFAULT_STATE, action) => {
     case LOGOUT_USER:
       return DEFAULT_STATE;
     case SYNC_DATA: {
-      const {filters: currentFilters} = state;
+      // new filter could have new keys, or less keys that current one .... so its the source of truth
       const newFilters = {...filters};
-
-      Object.entries(currentFilters).forEach(([key, value]) => {
-        value.enabled = newFilters[key].enabled;
-        value.label = newFilters[key].label;
-      });
-
       const myEvents = filterMyEvents(userProfile, eventsData);
-      const events = getFilteredEvents(myEvents, currentFilters, summitTimeZoneId);
+      const events = getFilteredEvents(myEvents, newFilters, summitTimeZoneId);
 
-      return {...state, allEvents: eventsData, filters: currentFilters, colorSource: color_source, events};
+      return {...state, allEvents: eventsData, filters: newFilters, colorSource: color_source, events};
     }
     case MY_SCHEDULE_UPDATE_FILTER: {
       const {type, values} = payload;
