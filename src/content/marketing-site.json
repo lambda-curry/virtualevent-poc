@@ -18,13 +18,34 @@
     "background": "",
     "images": [
       {
-        "image": "/img/if2021_fnv_marketingpage_header-right-3.png"
+        "image": "/img/monolith-awards.jpeg"
       },
       {
-        "image": "/img/if2021_fnv_marketingpage_header-right-2.png"
+        "image": "/img/people-in-session.jpeg"
       },
       {
-        "image": "/img/if2021_fnv_marketingpage_header-right-4.png"
+        "image": "/img/pint-house.jpg"
+      },
+      {
+        "image": "/img/podcast.jpeg"
+      },
+      {
+        "image": "/img/rob-legato.jpeg"
+      },
+      {
+        "image": "/img/step-and-repeat.png"
+      },
+      {
+        "image": "/img/the-dream-hotel.jpg"
+      },
+      {
+        "image": "/img/vr-peeps.jpg"
+      },
+      {
+        "image": "/img/vr-peeps2.jpg"
+      },
+      {
+        "image": "/img/women-s-panel.jpeg"
       }
     ]
   },
