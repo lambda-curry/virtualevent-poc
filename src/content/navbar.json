@@ -20,7 +20,7 @@
     },
     {
       "title": "Sponsors",
-      "link": "/a/sponsor",
+      "link": "/a/sponsorship",
       "display": true,
       "requiresAuth": true
     },
