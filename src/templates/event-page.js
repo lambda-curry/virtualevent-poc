@@ -16,7 +16,7 @@ import HeroComponent from "../components/HeroComponent";
 import UpcomingEventsComponent from "../components/UpcomingEventsComponent";
 import AccessTracker, { AttendeesWidget } from "../components/AttendeeToAttendeeWidgetComponent"
 import AttendanceTrackerComponent from "../components/AttendanceTrackerComponent";
-
+import { PHASES } from '../utils/phasesUtils';
 import { getEventById } from "../actions/event-actions";
 import { getDisqusSSO } from "../actions/user-actions";
 
@@ -39,7 +39,7 @@ export const EventPageTemplate = class extends React.Component {
 
   onEventChange(ev) {
     const { eventId } = this.props;
-    if (eventId !== `${ev.id}`) {
+    if (parseInt(eventId) !== parseInt(ev.id)) {
       navigate(`/a/event/${ev.id}`);
     }
   }
@@ -49,22 +49,27 @@ export const EventPageTemplate = class extends React.Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    const { loading, eventId, event } = this.props;
+    const { loading, eventId, event, eventsPhases } = this.props;
     if (loading !== nextProps.loading) return true;
     if (eventId !== nextProps.eventId) return true;
     if (event?.id !== nextProps.event?.id) return true;
-    return false;
+    // compare current event phase with next one
+    const currentPhase = eventsPhases.find((e) => parseInt(e.id) === parseInt(eventId))?.phase;
+    const nextCurrentPhase = nextProps.eventsPhases.find(
+        (e) => parseInt(e.id) === parseInt(eventId)
+    )?.phase;
+    const finishing = (currentPhase === PHASES.DURING && nextCurrentPhase === PHASES.AFTER);
+    return (currentPhase !== nextCurrentPhase && !finishing);
   }
 
-
   render() {
-    const { event, user, loading, nowUtc, summit } = this.props;
 
-    const eventStarted = event && event.start_date > nowUtc;
-    const firstHalf =  nowUtc < (event?.start_date + event?.end_date) / 2;
-    const isOngoing = event && event.start_date > nowUtc && nowUtc > event.end_date;
+    const { event, user, loading, nowUtc, summit, eventsPhases, eventId } = this.props;
+    // get current event phase
+    const currentPhase = eventsPhases.find((e) => parseInt(e.id) === parseInt(eventId))?.phase;
+    const firstHalf = currentPhase === PHASES.DURING ? nowUtc < ((event?.start_date + event?.end_date) / 2) : false;
 
-    if (loading) {
+    if (loading || !currentPhase) {
       return <HeroComponent title="Loading event" />;
     }
 
@@ -80,14 +85,14 @@ export const EventPageTemplate = class extends React.Component {
               style={{
                 marginBottom:
                   event.class_name !== "Presentation" ||
-                  !isOngoing ||
+                  currentPhase < PHASES.DURING  ||
                   !event.streaming_url
                     ? "-3rem"
                     : "",
               }}
             >
               <div className="columns is-gapless">
-                {event.streaming_url ? (
+                {currentPhase >= PHASES.DURING && event.streaming_url ? (
                   <div className="column is-three-quarters px-0 py-0">
                     <VideoComponent
                       url={event.streaming_url}
@@ -100,7 +105,7 @@ export const EventPageTemplate = class extends React.Component {
                 ) : (
                   <div className="column is-three-quarters px-0 py-0 is-full-mobile">
                     <NoTalkComponent
-                      eventStarted={eventStarted}
+                      currentEventPhase={currentPhase}
                       event={event}
                       summit={summit}
                     />
@@ -128,7 +133,7 @@ export const EventPageTemplate = class extends React.Component {
                   <div className="column is-three-quarters is-full-mobile">
                     <div className="px-5 py-5">
                       <TalkComponent
-                        eventStarted={eventStarted}
+                        currentEventPhase={currentPhase}
                         event={event}
                         summit={summit}
                       />
@@ -239,9 +244,10 @@ EventPageTemplate.propTypes = {
 const mapStateToProps = ({eventState, summitState, userState, clockState}) => ({
   loading: eventState.loading,
   event: eventState.event,
-  nowUtc: clockState.nowUtc,
   user: userState,
-  summit: summitState.summit
+  summit: summitState.summit,
+  eventsPhases: clockState.events_phases,
+  nowUtc: clockState.nowUtc,
 });
 
 export default connect(mapStateToProps, {
