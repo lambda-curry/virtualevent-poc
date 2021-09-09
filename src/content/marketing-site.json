@@ -30,7 +30,7 @@
   },
   "leftColumn": {
     "schedule": {
-      "display": false,
+      "display": true,
       "title": "Event Schedule"
     },
     "disqus": {
@@ -57,7 +57,7 @@
       "images": [
         {
           "image": "/img/if2021_fnv_marketingpage_space2.png",
-          "link": ""
+          "link": "https://infinityfestival.com"
         }
       ]
     },
