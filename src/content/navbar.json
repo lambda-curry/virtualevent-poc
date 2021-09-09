@@ -19,7 +19,7 @@
       "requiresAuth": false
     },
     {
-      "title": "Sponsors",
+      "title": "Sponsor IF",
       "link": "/a/sponsorship",
       "display": true,
       "requiresAuth": true
@@ -31,8 +31,8 @@
       "requiresAuth": false
     },
     {
-      "title": "Help",
-      "link": "/help",
+      "title": "Tech Support",
+      "link": "/tech-support",
       "display": true,
       "requiresAuth": false
     }
