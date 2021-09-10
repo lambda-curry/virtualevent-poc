@@ -140,9 +140,19 @@ export const AttendeesWidget = ({ user, event, location }) => {
 
 const AccessTracker = ({ user, isLoggedUser }) => {
   const trackerRef = useRef();
+  
+  useEffect(() => {
+    if (!isLoggedUser) {
+      trackerRef.current.signOut();
+    }
+  }, [isLoggedUser]);
 
-  const { email, first_name, last_name, bio, summit_tickets } =
-    user.userProfile || {};
+  if (!user || !user.userProfile || !user.idpProfile) {
+    console.log('A2A tracker - cannot track user')
+    return null;
+  }
+
+  const { email, first_name, last_name, bio, summit_tickets } = user.userProfile;
   const {
     picture,
     company,
@@ -153,7 +163,8 @@ const AccessTracker = ({ user, isLoggedUser }) => {
     twitter_name,
     wechat_user,
     public_profile_show_email,
-  } = user.idpProfile || {};
+  } = user.idpProfile;
+  
   const widgetProps = {
     user: {
       idpUserId: sub,
@@ -179,12 +190,6 @@ const AccessTracker = ({ user, isLoggedUser }) => {
     summitId: parseInt(getEnvVariable(SUMMIT_ID)),
     ...sbAuthProps,
   };
-
-  useEffect(() => {
-    if (!isLoggedUser) {
-      trackerRef.current.signOut();
-    }
-  }, [isLoggedUser]);
 
   return <Tracker {...widgetProps} ref={trackerRef} />;
 };
