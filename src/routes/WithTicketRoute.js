@@ -1,7 +1,5 @@
 import React from "react";
 import { connect } from "react-redux";
-import { navigate } from "gatsby";
-
 import HeroComponent from "../components/HeroComponent";
 
 const WithTicketRoute = ({ children, location, userProfile, hasTicket, isAuthorized }) => {
