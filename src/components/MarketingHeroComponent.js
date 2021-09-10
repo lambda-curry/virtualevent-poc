@@ -128,7 +128,7 @@ const MarketingHeroComponent = ({ siteSettings, summit_phase, isLoggedUser, loca
           </div>
         </div>
         <div className={`${styles.rightColumn} column is-6 px-0`} id="marketing-slider" ref={sliderRef}>
-          {siteSettings.heroBanner.images.length > 0 ?
+          {siteSettings.heroBanner.images.length > 1 ?
             <Slider {...sliderSettings}>
               {siteSettings.heroBanner.images.map((img, index) => {
                 return (
