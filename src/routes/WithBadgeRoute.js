@@ -1,7 +1,5 @@
 import React from "react";
 import { connect } from "react-redux";
-import { navigate } from "gatsby";
-
 import { isAuthorizedBadge } from "../utils/authorizedGroups";
 import HeroComponent from "../components/HeroComponent";
 

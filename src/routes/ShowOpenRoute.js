@@ -11,6 +11,7 @@ const ShowOpenRoute = ({
   summit_phase,
   requireExtraQuestions,
 }) => {
+
   const userCanByPassAuthz = () => {
     return isAuthorized;
   };

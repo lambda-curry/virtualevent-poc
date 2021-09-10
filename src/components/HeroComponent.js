@@ -1,7 +1,7 @@
 import React from "react"
 import { navigate } from "gatsby"
 
-const HeroComponent = ({ title, subtitle, event, redirectTo, options = null }) => {
+const HeroComponent = ({ title, subtitle, event, redirectTo, options = {} }) => {
 
   if (redirectTo) {
     setTimeout(() => {
