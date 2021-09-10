@@ -20,9 +20,9 @@
     },
     {
       "title": "Sponsor IF",
-      "link": "/a/sponsorship",
+      "link": "/sponsorship",
       "display": true,
-      "requiresAuth": true
+      "requiresAuth": false
     },
     {
       "title": "Contact",
