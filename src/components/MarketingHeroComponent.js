@@ -16,7 +16,7 @@ import styles from "../styles/lobby-hero.module.scss";
 const MarketingHeroComponent = ({ siteSettings, summit_phase, isLoggedUser, location }) => {
 
   const sliderRef = useRef(null);
-  const [sliderHeight, setSliderHeight] = useState(null);
+  const [sliderHeight, setSliderHeight] = useState(424);
 
   const onResize = () => {
     setSliderHeight(sliderRef.current.clientHeight);
