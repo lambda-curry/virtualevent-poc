@@ -80,10 +80,12 @@ collections:
                   { label: "Big Header", value: "big-header" },
                   { label: "Small Header", value: "small-header" },
                 ]},
-                {label: "Disqus", name: disqus, widget: boolean, required: false, default: false},
-                {label: "Live Event", name: liveEvent, widget: boolean, required: false, default: false},
-                {label: "Schedule", name: schedule, widget: boolean, required: false, default: false},
-                {label: "Banner", name: banner, widget: boolean, required: false, default: false}
+                {label: "Widgets", name: "widgets", widget: object, fields: [
+                  {label: "Disqus", name: disqus, widget: boolean, required: false, default: false},
+                  {label: "Live Event", name: liveEvent, widget: boolean, required: false, default: false},
+                  {label: "Schedule", name: schedule, widget: boolean, required: false, default: false},
+                  {label: "Banner", name: banner, widget: boolean, required: false, default: false}
+                ]}
               ]},
               {label: "In Event Template", name: "eventTemplate", widget: select, required: false, default: 'small-images', options: [
                 { label: "Big Images", value: "big-images" },
