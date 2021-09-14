@@ -11,11 +11,11 @@
         "display": true
       },
       "loginButton": {
-        "text": "Event Log in",
+        "text": "Log in",
         "display": true
       }
     },
-    "background": "",
+    "background": "/img/if2021_fnv_marketingpage_header-left_black.png",
     "images": [
       {
         "image": "/img/monolith-awards.jpeg"
