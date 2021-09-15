@@ -35,8 +35,8 @@ class AuthorizationCallbackRoute extends AbstractAuthorizationCallbackRoute {
     if (
         error.includes('access_denied') ||
         error.includes('consent_required')
-    ) return <Redirect to={'/'} />;
-    return <Redirect to={`/error?error=${error}`} />;
+    ) return <Redirect to={'/'} noThrow />;
+    return <Redirect to={`/error?error=${error}`} noThrow/>;
   }
 }
 
