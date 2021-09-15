@@ -35,6 +35,36 @@ export const SponsorPageTemplate = class extends React.Component {
   }
 
   componentWillMount() {
+    this.setSponsor();
+  }
+
+  componentDidUpdate(prevProps) {
+    const { sponsorId } = this.props;
+    const { sponsorId: prevSponsorId } = prevProps;
+    // sponsor id came as param at uri    
+    if (sponsorId !== prevSponsorId) {
+      this.setSponsor();
+    }
+  }
+
+
+  onEventChange = (ev) => {
+    const { eventId } = this.props;
+    if (eventId !== `${ev.id}`) {
+      navigate(`/a/event/${ev.id}`);
+    }
+  };
+
+  onBadgeScan = () => {
+    const { sponsor: { sponsorId } } = this.state;
+    this.props.scanBadge(sponsorId);
+  };
+
+  onViewAllEventsClick() {
+    navigate('/a/schedule')
+  }
+
+  setSponsor = () => {
     const { sponsorId, sponsors, tiers } = this.props;
     const sponsor = sponsors.map(t => t.sponsors?.find(s => s.id === parseInt(sponsorId)))
       .filter(e => e !== undefined)[0];
@@ -53,22 +83,6 @@ export const SponsorPageTemplate = class extends React.Component {
       const parsedIntro = parser.render(sponsor.intro);
       if (sponsor) this.setState({ sponsor: sponsor, tier: tierData, parsedIntro: parsedIntro });
     }
-  }
-
-  onEventChange = (ev) => {
-    const { eventId } = this.props;
-    if (eventId !== `${ev.id}`) {
-      navigate(`/a/event/${ev.id}`);
-    }
-  };
-
-  onBadgeScan = () => {
-    const { sponsor: { sponsorId } } = this.state;
-    this.props.scanBadge(sponsorId);
-  };
-
-  onViewAllEventsClick() {
-    navigate('/a/schedule')
   }
 
   render() {
