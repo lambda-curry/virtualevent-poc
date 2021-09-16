@@ -126,10 +126,10 @@
       },
       "sponsorPage": {
         "sponsorTemplate": "big-header",
-        "disqus": true,
+        "disqus": false,
         "liveEvent": false,
         "schedule": false,
-        "banner": true
+        "banner": false
       },
       "expoHallSize": null,
       "eventTemplate": null,
