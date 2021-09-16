@@ -9,46 +9,6 @@
       ],
       "sponsors": [
         {
-          "sponsor_id": 8,
-          "marquee": "",
-          "sideImage": "",
-          "externalLink": "",
-          "sponsorColor": "",
-          "logo": "/img/ocp21glo_fnv_sponsor-logo.png",
-          "name": "FNTECH",
-          "intro": "[TEST SPONSOR PAGE:](https://www.fntech.com) This sponsor is participating in the in-person event in San Jose, CA. You can find them at booth number 45 or reach them via chat using the “Contact Us” button above.",
-          "headerVideo": "",
-          "headerImage": "/img/ocp21glo_fnv_sponsor_headerimage-toptier.png",
-          "socialNetworks": [],
-          "chatLink": "",
-          "advertiseImage": "/img/ocp21glo_fnv_lobby_space1.png",
-          "sponsorId": 47,
-          "title": "FNTECH",
-          "companyId": 4,
-          "documents": {
-            "slides": [],
-            "links": [],
-            "videos": []
-          },
-          "columnAds": [
-            {
-              "image": "/img/ocp21glo_fnv_lobby_button-basecamp.png",
-              "link": "https://www.fntech.com"
-            },
-            {
-              "image": "/img/ocp21glo_fnv_experiencecenter1-logo.png",
-              "link": "https://www.fntech.com"
-            },
-            {
-              "image": "/img/ocp21glo_fnv_lobby_button-careercenter.png",
-              "link": "https://www.fntech.com"
-            }
-          ],
-          "id": 47,
-          "email": "",
-          "usesSponsorPage": true
-        },
-        {
           "marquee": "Visit Inspur booth #B23 to see our latest innovations in OCP that balance efficiency and power, optimized for enterprise, cloud, and AI.",
           "externalLink": "https://www.opencompute.org",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-inspur.png",
