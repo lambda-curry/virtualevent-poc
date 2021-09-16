@@ -51,29 +51,37 @@ exports.onPreBootstrap = async () => {
   const filterSettings = fs.existsSync(filtersFilepath) ? JSON.parse(fs.readFileSync(filtersFilepath)) : {};
   const globalSettings = fs.existsSync(settingsFilepath) ? JSON.parse(fs.readFileSync(settingsFilepath)) : {};
   // here we will store the filter keys from marketing api ...
-  const filterKeysFromMarketingData = [];
-
+  const filterKeysFromMarketingData = {};
+  // default value
+  filterSettings.color_source = '';
   marketingData.map(({key, value}) => {
     if (key.startsWith('color_')) colorSettings[key] = value;
     if (key.startsWith('disqus_')) disqusSettings[key] = value;
     if (key.startsWith('summit_')) marketingSite[key] = value;
     if (key.startsWith('SCHEDULE_FILTER_BY_')) {
+      console.log(`marketingData ${key}`);
       const filterKey = key.substr(0, key.lastIndexOf('_')).substr(19).toLowerCase();
       if (!filterSettings[filterKey]) {
         filterSettings[filterKey] = {label: '', values: [], enabled: false};
       }
-      // store it to check it later
-      filterKeysFromMarketingData[filterKey] = filterKey;
-      // set it by default off
-      filterSettings[filterKey].enabled = false;
+
+      if(!filterKeysFromMarketingData.hasOwnProperty(filterKey)) {
+          filterKeysFromMarketingData[filterKey] = false;
+      }
+
       if (key.includes('_ENABLED')) {
         filterSettings[filterKey].enabled = (value === '1');
-        console.log(`Adding Filter ${filterKey}: ${(value === '1') ? 'enabled' : 'disabled'}`);
+        filterKeysFromMarketingData[filterKey] = filterSettings[filterKey].enabled;
+        console.log(`filterSettings Adding Filter ${filterKey}: ${(value === '1') ? 'enabled' : 'disabled'}`);
       }
+
       if (key.includes('_LABEL')) filterSettings[filterKey].label = value;
       filterSettings[filterKey].values = [];
     }
-    if (key === 'SCHEDULE_EVENT_COLOR_ORIGIN') filterSettings.color_source = value.toLowerCase();
+    if (key === 'SCHEDULE_EVENT_COLOR_ORIGIN') {
+      filterSettings.color_source = value.toLowerCase();
+      console.log(`filterSettings filterSettings.color_source ${filterSettings.color_source}`)
+    }
     if (key === 'schedule_default_image') homeSettings.schedule_default_image = value;
     if( key === 'registration_in_person_disclaimer') marketingSite[key] = value;
   });
@@ -84,8 +92,16 @@ exports.onPreBootstrap = async () => {
 
   Object.entries(filterSettings).forEach(([key, value]) => {
      // check if filter came at marketing api
-     if(!filterKeysFromMarketingData[key])
-        filterSettings[key].enabled = false;
+     if(key === 'color_source') return;
+    console.log(`filterSettings ${key} initial value ${filterSettings[key].enabled}`);
+    if(!filterKeysFromMarketingData.hasOwnProperty(key)) {
+       console.log(`filterSettings ${key} setting off`);
+       filterSettings[key].enabled = false;
+       console.log(`filterSettings ${key} final value ${filterSettings[key].enabled}`);
+       return;
+     }
+     filterSettings[key].enabled = filterKeysFromMarketingData[key];
+     console.log(`filterSettings ${key} final value ${filterSettings[key].enabled}`);
   });
 
   //
