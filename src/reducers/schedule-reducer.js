@@ -1,7 +1,7 @@
 import summitData from '../content/summit.json';
 import eventsData from '../content/events.json';
 import filtersData from '../content/filters.json';
-
+import {syncFilters} from "../utils/filterUtils";
 import {getFilteredEvents} from '../utils/schedule';
 import { LOGOUT_USER } from "openstack-uicore-foundation/lib/actions";
 import { UPDATE_FILTER, UPDATE_FILTERS, CHANGE_VIEW } from '../actions/schedule-actions'
@@ -30,9 +30,9 @@ const scheduleReducer = (state = DEFAULT_STATE, action) => {
     case SYNC_DATA: {
       const {filters: currentFilters} = state;
       // new filter could have new keys, or less keys that current one .... so its the source of truth
-      const newFilters = {...filters};
+      const newFilters =  syncFilters({...filters}, currentFilters);
       const events = getFilteredEvents(eventsData, newFilters, summitTimeZoneId);
-      return {...state, allEvents: eventsData, filters: newFilters, colorSource: color_source, events};
+      return {...state, allEvents: eventsData, filters:newFilters, colorSource: color_source, events};
     }
     case GET_EVENT_DATA: {
       const {allEvents} = state;
