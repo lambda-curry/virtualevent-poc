@@ -412,6 +412,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                                         <b>Language</b>
                                         <LanguageInput
                                             onChange={e => setPersonalProfile({ ...personalProfile, language: e.target.value })}
+                                            className={styles.dropdown}
                                             value={personalProfile.language}
                                         />
                                     </div>
@@ -543,6 +544,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                                         <b>Country</b>
                                         <CountryInput
                                             onChange={e => setAddress({ ...address, country: e.target.value })}
+                                            className={styles.dropdown}
                                             value={address.country}
                                         />
                                     </div>
