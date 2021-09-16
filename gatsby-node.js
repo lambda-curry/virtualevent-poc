@@ -50,6 +50,8 @@ exports.onPreBootstrap = async () => {
   const homeSettings = fs.existsSync(homeFilepath) ? JSON.parse(fs.readFileSync(homeFilepath)) : {};
   const filterSettings = fs.existsSync(filtersFilepath) ? JSON.parse(fs.readFileSync(filtersFilepath)) : {};
   const globalSettings = fs.existsSync(settingsFilepath) ? JSON.parse(fs.readFileSync(settingsFilepath)) : {};
+  // here we will store the filter keys from marketing api ...
+  const filterKeysFromMarketingData = [];
 
   marketingData.map(({key, value}) => {
     if (key.startsWith('color_')) colorSettings[key] = value;
@@ -60,6 +62,10 @@ exports.onPreBootstrap = async () => {
       if (!filterSettings[filterKey]) {
         filterSettings[filterKey] = {label: '', values: [], enabled: false};
       }
+      // store it to check it later
+      filterKeysFromMarketingData[filterKey] = filterKey;
+      // set it by default off
+      filterSettings[filterKey].enabled = false;
       if (key.includes('_ENABLED')) {
         filterSettings[filterKey].enabled = (value === '1');
         console.log(`Adding Filter ${filterKey}: ${(value === '1') ? 'enabled' : 'disabled'}`);
@@ -71,6 +77,18 @@ exports.onPreBootstrap = async () => {
     if (key === 'schedule_default_image') homeSettings.schedule_default_image = value;
     if( key === 'registration_in_person_disclaimer') marketingSite[key] = value;
   });
+
+  // now check using the original json file of filters
+  // is the filter setting didnt came from marketing api
+  // and filter does exists on json file, then should be turned off
+
+  Object.entries(filterSettings).forEach(([key, value]) => {
+     // check if filter came at marketing api
+     if(!filterKeysFromMarketingData[key])
+        filterSettings[key].enabled = false;
+  });
+
+  //
 
   globalSettings.lastBuild = Date.now();
 
