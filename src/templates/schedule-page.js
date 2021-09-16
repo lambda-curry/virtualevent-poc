@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import PropTypes from "prop-types";
 import { pickBy } from "lodash";
 import { navigate } from "gatsby";
@@ -8,8 +8,11 @@ import Layout from "../components/Layout";
 import FullSchedule from "../components/FullSchedule";
 import ScheduleFilters from "../components/ScheduleFilters";
 import AttendanceTrackerComponent from "../components/AttendanceTrackerComponent";
-
 import { PHASES } from "../utils/phasesUtils";
+import FilterButton from "../components/FilterButton";
+
+import styles from "../styles/full-schedule.module.scss";
+
 
 const SchedulePage = ({
   summit,
@@ -25,6 +28,7 @@ const SchedulePage = ({
   updateFilter,
   updateFiltersFromHash,
 }) => {
+  const [showFilters, setShowfilters] = useState(false);
 
   // @see https://reactjs.org/docs/hooks-faq.html#is-there-something-like-instance-variables
   // @see https://reactjs.org/docs/hooks-faq.html#why-am-i-seeing-stale-props-or-state-inside-my-function
@@ -83,14 +87,15 @@ const SchedulePage = ({
 
   return (
     <Layout location={location}>
-      <div className="container" style={{position: "static"}}>
-        <div className="columns">
-          <div className="column is-three-quarters px-6 pt-6 pb-0">
+      <div className="container">
+        <div className={`${styles.wrapper} ${showFilters ? styles.showFilters : ""}`}>
+          <div className={styles.scheduleWrapper}>
             <FullSchedule {...scheduleProps} />
           </div>
-          <div className="column is-one-quarter px-6 pt-6 pb-0">
+          <div className={styles.filterWrapper}>
             <ScheduleFilters {...filterProps} />
           </div>
+          <FilterButton open={showFilters} onClick={() => setShowfilters(!showFilters)} />
         </div>
       </div>
       <AttendanceTrackerComponent />

@@ -1,28 +1,12 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
+import { pickBy } from "lodash";
 import { Helmet } from "react-helmet";
 import Filters from "schedule-filter-widget/dist";
-
 import "schedule-filter-widget/dist/index.css";
+import styles from "../styles/full-schedule.module.scss";
 
-const ScheduleFilters = ({ className, ...rest}) => {
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const [headerHeight, setHeaderHeight] = useState(70);
-
-  const handleScroll = () => {
-    const position = window.pageYOffset;
-    const header = document.querySelector('header')
-    if(header){
-      setHeaderHeight(header.clientHeight);
-    }
-    if(position < headerHeight) setScrollPosition(position);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+const ScheduleFilters = ({ className, filters, ...rest }) => {
+  const enabledFilters = pickBy(filters, (value) => value.enabled);
 
   return (
     <>
@@ -33,8 +17,8 @@ const ScheduleFilters = ({ className, ...rest}) => {
           href="https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/1.0.2/awesome-bootstrap-checkbox.min.css"
         />
       </Helmet>
-      <div className={className || "filter-container"} style={{ top: headerHeight - scrollPosition }}>
-        <Filters title="Filter by" {...rest} />
+      <div className={styles.filters}>
+        <Filters title="Filter by" filters={enabledFilters} {...rest} />
       </div>
     </>
   );
