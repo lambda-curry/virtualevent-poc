@@ -70,9 +70,10 @@ export const getFilteredEvents = (events, filters, summitTimezone) => {
     }
 
     if (filters.company?.values.length > 0) {
-      valid = ev.speakers?.some(s => filters.company.values.includes(s.company)) ||
-          filters.company.values.includes(ev.moderator?.company) ||
-          ev.sponsors?.some(s => filters.company.values.includes(s.name));
+      const lowerCaseCompanies = filters.company.values;
+      valid = ev.speakers?.some(s => lowerCaseCompanies.includes(s.company?.toLowerCase())) ||
+          lowerCaseCompanies.includes(ev.moderator?.company?.toLowerCase()) ||
+          ev.sponsors?.some(s => lowerCaseCompanies.includes(s.name.toLowerCase()));
 
       if (!valid) return false;
     }
