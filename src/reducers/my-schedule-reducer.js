@@ -7,6 +7,7 @@ import { LOGOUT_USER } from "openstack-uicore-foundation/lib/actions";
 import { MY_SCHEDULE_UPDATE_FILTER, MY_SCHEDULE_UPDATE_FILTERS } from '../actions/schedule-actions'
 import { RESET_STATE, SYNC_DATA } from '../actions/base-actions';
 import {ADD_TO_SCHEDULE, REMOVE_FROM_SCHEDULE} from "../actions/user-actions";
+import {syncFilters} from "../utils/filterUtils";
 
 const {color_source, ...filters} = filtersData;
 
@@ -34,7 +35,8 @@ const myScheduleReducer = (state = DEFAULT_STATE, action) => {
       return DEFAULT_STATE;
     case SYNC_DATA: {
       // new filter could have new keys, or less keys that current one .... so its the source of truth
-      const newFilters = {...filters};
+      const {filters: currentFilters} = state;
+      const newFilters = syncFilters({...filters}, currentFilters);
       const myEvents = filterMyEvents(userProfile, eventsData);
       const events = getFilteredEvents(myEvents, newFilters, summitTimeZoneId);
 
