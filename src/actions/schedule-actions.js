@@ -31,11 +31,16 @@ export const updateFiltersFromHash = (filters, actionCallback = UPDATE_FILTERS) 
     // populate state filters with hash values
     Object.keys(filters).forEach(key => {
         newFilters[key] = {...filters[key]}; // copy label and rest of props
-        const newValues = normalizedFilters[key] ? normalizedFilters[key].split(',') : [];
-        newFilters[key].values = newValues.map(val => {
-            if (isNaN(val)) return val;
-            return parseInt(val);
-        })
+
+        if (key === 'title') {
+            newFilters[key].values = normalizedFilters[key] ? decodeURIComponent(normalizedFilters[key]) : '';
+        } else {
+            const newValues = normalizedFilters[key] ? normalizedFilters[key].split(',') : [];
+            newFilters[key].values = newValues.map(val => {
+                if (isNaN(val)) return decodeURIComponent(val);
+                return parseInt(val);
+            })
+        }
     });
 
     // only update if filters have changed
@@ -56,7 +61,8 @@ export const getShareLink = (filters, view) => {
 
     Object.entries(filters).forEach(([key, value]) => {
         if(value.values.length > 0) {
-            hashVars.push(`${key}=${value.values.join(',')}`)
+            const hashValue = Array.isArray(value.values) ? value.values.join(',') : value.values;
+            hashVars.push(`${key}=${hashValue}`)
         }
     });
 
