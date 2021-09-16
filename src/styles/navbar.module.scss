@@ -109,7 +109,13 @@
 }
 
 @media (max-width: 1023px) {
+  :global(#content-wrapper) {
+    margin-top: 7.25rem;
+  }
+
   .navbar {
+    position: fixed;
+    width: 100%;
 
     .navbar-mobile {
       display: flex;
@@ -124,6 +130,7 @@
 
     .navbar-burger {
       color: $color_text_light;
+      margin-right: 15px;
     }
 
     .navbar-menu {

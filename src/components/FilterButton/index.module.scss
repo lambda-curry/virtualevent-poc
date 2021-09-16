@@ -1,0 +1,27 @@
+.filterButton {
+  position: fixed;
+  top: 7.25rem;
+  left: -15px;
+  background-color: #f6f6f6;
+  color: #6c6c6c;
+  border: none;
+  height: 50px;
+  width: calc(100% + 30px);
+  font-size: 18px;
+  z-index: 12;
+  cursor: pointer;
+
+  i {
+    margin-right: 10px;
+  }
+
+  @media (min-width: 992px) {
+    display: none;
+  }
+
+  &.open {
+    background-color: white;
+    text-align: left;
+    padding-left: 20px;
+  }
+}
