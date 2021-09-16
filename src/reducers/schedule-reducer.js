@@ -61,7 +61,6 @@ const scheduleReducer = (state = DEFAULT_STATE, action) => {
       const {filters, view} = payload;
       const {allEvents} = state;
 
-
       // update events
       const events = getFilteredEvents(allEvents, filters, summitTimeZoneId);
 
