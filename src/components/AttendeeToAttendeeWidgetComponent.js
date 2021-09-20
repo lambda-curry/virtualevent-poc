@@ -162,13 +162,15 @@ const AccessTracker = ({ user, isLoggedUser }) => {
     linked_in_profile,
     twitter_name,
     wechat_user,
+    public_profile_show_fullname,
     public_profile_show_email,
+    public_profile_allow_chat_with_me
   } = user.idpProfile;
-  
+
   const widgetProps = {
     user: {
       idpUserId: sub,
-      fullName: `${first_name} ${last_name}`,
+      fullName: public_profile_show_fullname ? `${first_name} ${last_name}` : `${first_name}`,
       email: email,
       company: company,
       title: job_title,
@@ -186,6 +188,7 @@ const AccessTracker = ({ user, isLoggedUser }) => {
           .filter((v, i, a) => a.map((item) => item.id).indexOf(v.id) === i),
       bio: bio,
       showEmail: public_profile_show_email,
+      allowChatWithMe: public_profile_allow_chat_with_me ?? true
     },
     summitId: parseInt(getEnvVariable(SUMMIT_ID)),
     ...sbAuthProps,
