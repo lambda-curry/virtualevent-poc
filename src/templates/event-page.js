@@ -69,7 +69,8 @@ export const EventPageTemplate = class extends React.Component {
     const currentPhase = eventsPhases.find((e) => parseInt(e.id) === parseInt(eventId))?.phase;
     const firstHalf = currentPhase === PHASES.DURING ? nowUtc < ((event?.start_date + event?.end_date) / 2) : false;
 
-    if (loading || !currentPhase) {
+    // if event is loading or we are still calculating the current phase ...
+    if (loading || currentPhase === undefined) {
       return <HeroComponent title="Loading event" />;
     }
 
