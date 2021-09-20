@@ -14,7 +14,7 @@ Anyone experiencing COVID symptoms within 14 days of the event is kindly asked t
 **Proof of COVID-19 Vaccination: REQUIRED**
 
 * All attendees, exhibitors, partners, speakers, and crew members will need to show proof of COVID-19 vaccination in order to attend the Infinity Festival. 
-* Each attendee will need to be fully vaccinated with a vaccine approved (or approved for emergency use) by the FDA or World Health Organization (WHO). [A list of approved vaccines can be found here.  ](https://covid19.trackvaccines.org/agency/who/)If you have opted for a vaccination series (which requires more than one shot), you must receive your last vaccine no later than 14 days prior to the event. 
+* Each attendee will need to be fully vaccinated with a vaccine approved (or approved for emergency use) by the FDA or World Health Organization (WHO). <a href="https://covid19.trackvaccines.org/agency/who/" target=”_blank”>A list of approved vaccines can be found here.</a> If you have opted for a vaccination series (which requires more than one shot), you must receive your last vaccine no later than 14 days prior to the event. 
 * **Infinity Festival** **will ask to see proof of vaccination upon registration/check-in** onsite at Goya Studios. The name on your proof of vaccine card must match your valid government ID card (i.e., state driver’s license, passport, etc.). 
 * The Infinity Festival will not offer COVID testing for attendees. 
 * At this time, the Infinity Festival will not accept proof of antibodies (recent COVID infection) in place of a vaccine. 
