@@ -25,6 +25,12 @@
       "requiresAuth": false
     },
     {
+      "requiresAuth": false,
+      "title": "Health & Safety",
+      "link": "/health-and-safety",
+      "display": true
+    },
+    {
       "title": "Contact",
       "link": "/contact",
       "display": true,
