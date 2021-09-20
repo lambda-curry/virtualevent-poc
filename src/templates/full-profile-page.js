@@ -38,9 +38,9 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
         language: ''
     });
 
-    const [showFullName, setShowFullName] = useState(undefined);
+    const [showFullName, setShowFullName] = useState(false);
     //const [showPicture, setShowPicture] = useState(undefined)
-    const [showEmail, setShowEmail] = useState(undefined);
+    const [showEmail, setShowEmail] = useState(false);
     const [bio, setBio] = useState('');
     const [statementOfInterest, setStatementOfInterest] = useState('');
 
@@ -419,7 +419,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                                 </div>
                             </div>
                             <label className={styles.checkbox}>
-                                <input type="checkbox" value={showFullName} onChange={e => setShowFullName(e.target.value)} />
+                                <input type="checkbox" checked={showFullName} onChange={e => setShowFullName(e.target.checked)} />
                                 Show full name on public profile
                                 </label>
                             <br />
@@ -431,7 +431,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                             <br />
                             */}
                             <label className={styles.checkbox}>
-                                <input type="checkbox" value={showEmail} onChange={e => setShowEmail(e.target.value)} />
+                                <input type="checkbox" checked={showEmail} onChange={e => setShowEmail(e.target.checked)} />
                                 Show email on public profile
                                 </label>
                             <div className={`columns is-mobile ${styles.buttons}`}>
