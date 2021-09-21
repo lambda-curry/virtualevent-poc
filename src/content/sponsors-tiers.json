@@ -46,7 +46,7 @@
         "display": true
       },
       "expoHallPage": {
-        "expoHallTemplate": "medium-images",
+        "expoHallTemplate": "big-images",
         "display": true
       },
       "id": "tier-DHcI3dWGk"
@@ -107,10 +107,6 @@
     },
     {
       "badge": "",
-      "lobby": {
-        "lobbyTemplate": "big-images",
-        "display": false
-      },
       "sponsorPage": {
         "sponsorTemplate": "big-header",
         "disqus": false,
@@ -124,11 +120,42 @@
           "banner": true
         }
       },
+      "name": "Topaz",
       "expoHallSize": "medium",
       "eventTemplate": null,
-      "id": "tier-x0OjdDZTs",
-      "name": "Topaz",
-      "widgetTitle": "Topaz "
+      "widgetTitle": "Topaz ",
+      "lobby": {
+        "lobbyTemplate": "big-images",
+        "display": false
+      },
+      "expoHallPage": {
+        "display": true,
+        "expoHallTemplate": "medium-images"
+      },
+      "id": "tier-x0OjdDZTs"
+    },
+    {
+      "badge": "",
+      "lobby": {
+        "lobbyTemplate": "small-images",
+        "display": false
+      },
+      "expoHallPage": {
+        "expoHallTemplate": "medium-images",
+        "display": true
+      },
+      "sponsorPage": {
+        "sponsorTemplate": "big-header",
+        "widgets": {
+          "disqus": true,
+          "liveEvent": true,
+          "schedule": true,
+          "banner": true
+        }
+      },
+      "eventTemplate": "small-images",
+      "id": "tier-yeJ3xH65E",
+      "name": "Start-up, Virtual Only, Non-profits "
     },
     {
       "badge": "",
@@ -152,7 +179,10 @@
       "expoHallSize": null,
       "eventTemplate": null,
       "id": "tier-1BXGYJADL",
-      "name": "Experience Center"
+      "name": "Experience Center",
+      "expoHallPage": {
+        "display": false
+      }
     },
     {
       "badge": "",
@@ -200,7 +230,10 @@
       "expoHallSize": null,
       "eventTemplate": null,
       "id": "tier-2HSCp6Cce",
-      "name": "Basecamp"
+      "name": "Basecamp",
+      "expoHallPage": {
+        "display": false
+      }
     }
   ],
   "imageHeader": "/img/ocp21glo_expolandingpage_header_062421.png",
