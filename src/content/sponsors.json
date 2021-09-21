@@ -13,7 +13,7 @@
           "name": "Ampere Computing",
           "id": 58,
           "sponsorId": 58,
-          "logo": "/img/ocp21glo_fnv_lobby_space1a.png"
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
         },
         {
           "advertiseImage": "",
@@ -70,7 +70,7 @@
           "name": "Intel",
           "id": 59,
           "sponsorId": 59,
-          "logo": "/img/ocp21glo_fnv_lobby_space1a.png"
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
         },
         {
           "marquee": "Energy isn't the only renewable resource.",
@@ -156,6 +156,20 @@
           "companyId": 43,
           "id": 49,
           "usesSponsorPage": true
+        },
+        {
+          "advertiseImage": "",
+          "name": "Xilinx",
+          "id": 61,
+          "sponsorId": 61,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "ZT Systems",
+          "id": 62,
+          "sponsorId": 62,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
         }
       ]
     },
@@ -166,7 +180,91 @@
           "label": "Ruby"
         }
       ],
-      "sponsors": []
+      "sponsors": [
+        {
+          "advertiseImage": "",
+          "name": "Rittal",
+          "id": 63,
+          "sponsorId": 63,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Credo",
+          "id": 64,
+          "sponsorId": 64,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "SK hynix",
+          "id": 65,
+          "sponsorId": 65,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Flex",
+          "id": 67,
+          "sponsorId": 67,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        },
+        {
+          "marquee": "Ensuring the continuity of today’s and tomorrow’s vital applications.",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-vertiv.png",
+          "name": "Vertiv",
+          "intro": "Nearly all aspects of our lives involve the use of technology. It is how we work and play and do anything in between. This connectivity or use of data is built into the very fabric of our society. It is vital to human progress. Vertiv believes there is a better way to meet this accelerating demand for data — one driven by passion and innovation. As industry experts, we collaborate with our customers to envision and build future-ready infrastructures. We leverage our portfolio of hardware, software, analytics, and services, to ensure our customers’ vital applications run continuously, perform optimally, and scale with business needs.",
+          "advertiseImage": "",
+          "sponsorId": 68,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/vertiv/",
+                "order": 1,
+                "name": "Linkedin"
+              }
+            ]
+          },
+          "id": 68,
+          "usesSponsorPage": false
+        },
+        {
+          "advertiseImage": "",
+          "name": "AMI",
+          "id": 69,
+          "sponsorId": 69,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Arrcus, Inc.",
+          "id": 70,
+          "sponsorId": 70,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "KIOXIA America, Inc.",
+          "id": 71,
+          "sponsorId": 71,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "bp",
+          "id": 72,
+          "sponsorId": 72,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Pliops",
+          "id": 97,
+          "sponsorId": 97,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        }
+      ]
     },
     {
       "tier": [
@@ -176,6 +274,37 @@
         }
       ],
       "sponsors": [
+        {
+          "advertiseImage": "",
+          "name": "Advanced Energy ",
+          "id": 74,
+          "sponsorId": 74,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Amphenol",
+          "id": 75,
+          "sponsorId": 75,
+          "logo": "/img/amphenol_amphenol_blue-002-.png",
+          "email": "Lorri.Bupp@amphenol-icc.com"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Arm Inc.",
+          "id": 77,
+          "sponsorId": 77,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "BizLink Technology, Inc.",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-bizlink.png",
+          "id": 51,
+          "sponsorId": 51,
+          "companyId": 47,
+          "usesSponsorPage": true
+        },
         {
           "marquee": "Edgecore Networks",
           "sponsorColor": "",
@@ -192,12 +321,11 @@
         },
         {
           "advertiseImage": "",
-          "name": "BizLink Technology, Inc.",
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-bizlink.png",
-          "id": 51,
-          "sponsorId": 51,
-          "companyId": 47,
-          "usesSponsorPage": true
+          "name": "Hewlett Packard Enterprise",
+          "id": 76,
+          "sponsorId": 76,
+          "title": "Hewlett Packard Enterprise",
+          "logo": "/img/hpe_hpe_rgb_pos_logo_484x484.png"
         },
         {
           "marquee": "Expanding the world's vision of what is possible!",
@@ -246,6 +374,76 @@
           },
           "id": 54,
           "usesSponsorPage": true
+        },
+        {
+          "advertiseImage": "",
+          "name": "Samtec",
+          "id": 73,
+          "sponsorId": 73,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Silicon Motion",
+          "id": 78,
+          "sponsorId": 78,
+          "logo": "/img/silicon_motion_logo01_png_t.png",
+          "email": "chloe.lee@siliconmotiom.com"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Keysight Technologies",
+          "id": 79,
+          "sponsorId": 79,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "3M Company",
+          "id": 80,
+          "sponsorId": 80,
+          "title": "3M Company",
+          "logo": "/img/3m_picture1.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Scaleflux",
+          "id": 81,
+          "sponsorId": 81,
+          "email": "",
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Super Micro Computer, Inc.",
+          "id": 82,
+          "sponsorId": 82,
+          "email": "desireem@supermicro.com",
+          "intro": "Supermicro® (NASDAQ: SMCI), the leading innovator in high-performance, high-efficiency server technology is a premier provider of advanced Server Building Block Solutions® for Data Center, Cloud Computing, Enterprise IT, Hadoop/Big Data, HPC and Embedded Systems worldwide. Supermicro is committed to protecting the environment through its “We Keep IT Green®” initiative and provides customers with the most energy-efficient, environmentally-friendly solutions available on the market. Visit www.supermicro.com for details and follow Supermicro on Facebook and Twitter.",
+          "title": "Super Micro Computer, Inc.",
+          "logo": "/img/super_micro_computer_inc_supermicro_greenc_newlogo_whitebackground.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Lattice Semiconductor",
+          "id": 83,
+          "sponsorId": 83,
+          "title": "Lattice Semiconductor",
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Ragile Networks",
+          "id": 84,
+          "sponsorId": 84,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Cisco",
+          "id": 98,
+          "sponsorId": 98,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
         }
       ]
     },
@@ -258,7 +456,7 @@
       ],
       "sponsors": [
         {
-          "marquee": "TE Connectivity",
+          "marquee": "ENABLING NEXT GENERATION ARCHITECTURE.",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-teconnectivity.png",
           "name": "TE Connectivity",
           "intro": "TE Connectivity is a global industrial technology leader creating a safer, sustainable, productive and connected future. Their broad range of connectivity and sensor solutions, proven in the harshest environments, enable advancements in transportation, industrial applications, medical technology, energy, data communications and the home. With approximately 80,000 employees, including more than 7,500 engineers, working alongside customers in approximately 140 countries, TE ensures that EVERY CONNECTION COUNTS.",
@@ -267,7 +465,62 @@
           "title": "TE Connectivity",
           "companyId": 48,
           "id": 52,
+          "email": "ocp@te.com",
           "usesSponsorPage": true
+        },
+        {
+          "advertiseImage": "",
+          "name": "Submer",
+          "id": 99,
+          "sponsorId": 99,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "MiTAC Computing Technology",
+          "id": 100,
+          "sponsorId": 100,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        },
+        {
+          "marquee": "DriveNets builds networks like cloud, over a fully virtualized cloud-native architecture - scalable, demand-responsive and innovations-ready. ",
+          "sponsorColor": "#0556FF",
+          "logo": "/img/drivenets_divenets-logo-484x484.png",
+          "name": "DriveNets",
+          "intro": "DriveNets is a leader in cloud-native networking software and network disaggregation solutions. Founded in 2015 and based in Israel, DriveNets offers communications service providers (CSPs) and cloud providers a radical new way to build networks, substantially growing their profitability by changing their technological and economic models. DriveNets’ solution – Network Cloud – adapts the architectural model of cloud to telco-grade networking. Network Cloud is a cloud-native software that runs over a shared physical infrastructure of standard white-boxes, radically simplifying the network’s operations, offering telco-scale performance and elasticity at a much lower cost.",
+          "advertiseImage": "",
+          "sponsorId": 102,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/drivenets",
+                "name": "Twitter.com",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/drivenets",
+                "name": "Linkedin",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/c/DriveNets",
+                "name": "Youtube",
+                "order": 3
+              }
+            ]
+          },
+          "id": 102,
+          "email": "gsmoreno@drivenets.com"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Pluribus Networks",
+          "id": 103,
+          "sponsorId": 103,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
         }
       ]
     },
