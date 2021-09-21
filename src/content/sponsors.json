@@ -620,6 +620,13 @@
           "id": 115,
           "sponsorId": 115,
           "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "SDIA",
+          "id": 113,
+          "sponsorId": 113,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
         }
       ]
     },
