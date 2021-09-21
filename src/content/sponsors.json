@@ -559,6 +559,23 @@
           "id": 107,
           "sponsorId": 107,
           "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "NVIDIA",
+          "id": 108,
+          "sponsorId": 108,
+          "intro": "NVIDIA’s invention of the GPU sparked the PC gaming market. The company’s pioneering work in accelerated computing—a supercharged form of computing at the intersection of computer graphics, high performance computing and AI—is reshaping trillion-dollar industries, such as transportation, healthcare and manufacturing, and fueling the growth of many others.",
+          "sponsorColor": "#76B900",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-nvidia.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Juniper Networks",
+          "id": 66,
+          "sponsorId": 66,
+          "email": "nkoskenniemi@juniper.net",
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
         }
       ]
     },
