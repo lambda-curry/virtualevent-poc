@@ -100,7 +100,7 @@ export const MarketingPageTemplate = class extends React.Component {
               breakpointCols={2}
               className="my-masonry-grid"
               columnClassName="my-masonry-grid_column">
-              {siteSettings.sponsors.map((item, index) => {
+              {siteSettings.sponsors.sort((a, b) => a.order - b.order).map((item, index) => {
                 if (item.images && item.images.length === 1) {
                   return (
                     <div className={'single'} key={index}>
