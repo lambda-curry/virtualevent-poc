@@ -83,7 +83,13 @@
         "disqus": false,
         "liveEvent": false,
         "schedule": false,
-        "banner": false
+        "banner": false,
+        "widgets": {
+          "disqus": true,
+          "liveEvent": true,
+          "schedule": true,
+          "banner": true
+        }
       },
       "name": "Sapphire",
       "expoHallSize": "medium",
@@ -110,7 +116,13 @@
         "disqus": false,
         "liveEvent": false,
         "schedule": false,
-        "banner": false
+        "banner": false,
+        "widgets": {
+          "disqus": true,
+          "liveEvent": true,
+          "schedule": true,
+          "banner": true
+        }
       },
       "expoHallSize": "medium",
       "eventTemplate": null,
@@ -129,7 +141,13 @@
         "disqus": false,
         "liveEvent": false,
         "schedule": false,
-        "banner": false
+        "banner": false,
+        "widgets": {
+          "disqus": true,
+          "banner": true,
+          "schedule": true,
+          "liveEvent": true
+        }
       },
       "expoHallSize": null,
       "eventTemplate": null,
@@ -147,7 +165,13 @@
         "disqus": false,
         "liveEvent": false,
         "schedule": false,
-        "banner": false
+        "banner": false,
+        "widgets": {
+          "disqus": true,
+          "liveEvent": true,
+          "schedule": true,
+          "banner": true
+        }
       },
       "expoHallSize": null,
       "eventTemplate": null,
@@ -165,7 +189,13 @@
         "disqus": false,
         "liveEvent": false,
         "schedule": false,
-        "banner": false
+        "banner": false,
+        "widgets": {
+          "disqus": true,
+          "liveEvent": true,
+          "schedule": true,
+          "banner": true
+        }
       },
       "expoHallSize": null,
       "eventTemplate": null,
