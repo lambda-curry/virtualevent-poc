@@ -258,6 +258,7 @@ collections:
                 {label: "External ID", name: "id", widget: number },
                 {label: "Sponsor ID", name: "sponsorId", widget: number, required: false },
                 {label: "Company ID", name: "companyId", widget: number, required: false },
+                {label: "Featured Event ID", name: "featuredEventId", widget: number, required: false },
                 {label: "Title", name: "title", widget: string, required: false },
                 {label: "Intro", name: "intro", widget: markdown, required: false },
                 {label: "Contact Email", name: "email", widget: string, required: false },
