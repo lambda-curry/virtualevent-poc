@@ -583,6 +583,21 @@
           "id": 109,
           "sponsorId": 109,
           "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Micron",
+          "companyId": 103,
+          "id": 116,
+          "sponsorId": 116,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "DMFT",
+          "id": 110,
+          "sponsorId": 110,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
         }
       ]
     },
