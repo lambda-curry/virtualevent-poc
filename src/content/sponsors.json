@@ -605,6 +605,13 @@
           "id": 111,
           "sponsorId": 111,
           "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "AFCOM",
+          "id": 112,
+          "sponsorId": 112,
+          "logo": "/img/omdia_afcom_afcom_logo_rgb.png"
         }
       ]
     },
