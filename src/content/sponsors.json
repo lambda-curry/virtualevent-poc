@@ -9,6 +9,21 @@
       ],
       "sponsors": [
         {
+          "advertiseImage": "",
+          "name": "Ampere Computing",
+          "id": 58,
+          "sponsorId": 58,
+          "logo": "/img/ocp21glo_fnv_lobby_space1a.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Facebook ",
+          "logo": "/img/facebook_fbmonogram.png",
+          "id": 55,
+          "sponsorId": 54,
+          "title": "Facebook"
+        },
+        {
           "marquee": "Visit Inspur booth #B23 to see our latest innovations in OCP that balance efficiency and power, optimized for enterprise, cloud, and AI.",
           "externalLink": "",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-inspur.png",
@@ -51,6 +66,13 @@
           "usesSponsorPage": true
         },
         {
+          "advertiseImage": "",
+          "name": "Intel",
+          "id": 59,
+          "sponsorId": 59,
+          "logo": "/img/ocp21glo_fnv_lobby_space1a.png"
+        },
+        {
           "marquee": "Energy isn't the only renewable resource.",
           "sponsorColor": "#00B6E0",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-itrenew.png",
@@ -78,6 +100,27 @@
           },
           "id": 57,
           "email": "karim.azar@itrenew.com",
+          "usesSponsorPage": true
+        },
+        {
+          "advertiseImage": "",
+          "name": "Microsoft",
+          "id": 56,
+          "sponsorId": 56,
+          "title": "Microsoft ",
+          "logo": "/img/if2020-microsoft-logo.png"
+        },
+        {
+          "marquee": "POWERING EXPERIENCES. See what the world can do. ",
+          "sponsorColor": "#000000",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-samsung.png",
+          "name": "Samsung ",
+          "intro": "Samsung Semiconductor, Inc., based in a new state-of-the-art headquarters in the heart of Silicon Valley is a multi-billion dollar subsidiary of Samsung Electronics Corp. The organization provides the world’s most advanced technology for use in smartphones, consumer electronics, computing platforms, and other devices that people use every day. Among the products researched, developed, and/or sold by Samsung DSA are state-of-the-art memory, logic, solid-state drives, host-based software, LED components, and LCD/OLED displays, which are enabling today’s most connected digital devices",
+          "headerImage": "/img/ocp21glo-fnv-sponsorbooth-samsung-header.png",
+          "advertiseImage": "",
+          "sponsorId": 60,
+          "id": 60,
+          "email": "events@ssi.samsung.com",
           "usesSponsorPage": true
         }
       ]
