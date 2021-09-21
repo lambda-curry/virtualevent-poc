@@ -295,6 +295,7 @@
         },
         {
           "marquee": "Total solution packaged with Linuxboot, Coreboot, OpenBMC along with BIOS on OCP hardware.",
+          "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-osf.png",
           "name": "Open System Firmware",
           "intro": "Participating companies are Facebook, Intel, AMI and ITRenew.\n\nDemo's Include: \n\n1. Wiwynn DeltaLake with coreboot + LinuxBoot +OpenBMC \n\n2. Monolake (Existing older platform) with coreboot + LinuxBoot +OpenBMC \n\n3. MinPlatform (one of the OSF stacks) Demo \n\n4. TiogaPass with Aptio Open Edition. \n\n5. ARM LBBR or SBBR (Server based boot requirements) \n\n6. Supermicro Ice Lake with MinPlatform",
@@ -309,6 +310,7 @@
         },
         {
           "marquee": "Showcase total management capabilities including firmware updates, profile capabilities, building MegaRAC and test. ",
+          "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-mgmthard.png",
           "name": "Hardware Management",
           "intro": "Participating companies are Intel, Edgecore, AMI and Lattice Semiconductor\n\nDescribe: Showcase management capabilities. Show OpenRMC 1.1 firmware updates, group operations etc. \n\nOCP Prescribed: Showcase baseline/server profiles. Focus on Reset, Inventory, LocationLED Implement: Experience building OpenBMC (?), MegaRAC (AMI), OpenRMC (Inspur/Wiwynn) Experience Device Manager (Edge-core) Experience the HW Mgmt Modules (RunBMC, SCM 1.0, SCM 2.0) (Intel) \n\nConform: Experience running the tests specified in supplier checklist. Tests based on Redfish service validator, interface validator, interop-validator",
@@ -323,6 +325,7 @@
         },
         {
           "marquee": "Machine synchronization by data packets will be shown along with performance of time protocols with the OCP time card. ",
+          "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-tap.png",
           "name": "TAP",
           "intro": "Participating Companies are Facebook and NVIDIA.\n\n**Live Demo**: \"Synchronizing machines by data packets” Performance of NTP vs PTP w or w/o time card. Time Synchronized Database throughput. Using Time Card, Atomic Clock, GPS \n\n**Static Demo**: Announcing the Open Time Server Ref-Arch Time Card, NIC, How to get started",
@@ -337,6 +340,7 @@
         },
         {
           "marquee": "DDC orchestration with a live and a static demo.",
+          "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-networking.png",
           "name": "Networking",
           "intro": "Participating companies are Credo, DriveNets, and UFISpace.\n\n**Live Demo:** \"DDC Orchestration\" > Remotely Controlling a large DDC Cluster install in Israel \n\n**Static Demo:** 350Tb Jericho2C+ Cluster w/MACSEC > Hyperscale sized routing platform",
@@ -351,6 +355,7 @@
         },
         {
           "marquee": "Peering router demo showcasing a small VDR cluster peering with two BGP peers.",
+          "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-telco.png",
           "name": "Telco",
           "intro": "Participating companies are Arrcus, UFISpace and Credo.\n\nVirtualized Distributed Router (VDR) Small Cluster leveraging UfiSpace hardware platforms based on Broadcom J2/Ramon \n\n**Live Demo:** Show case Arrcus peering fabric; an interconnect to various servce providers, CDNs",
@@ -364,6 +369,7 @@
           "usesSponsorPage": true
         },
         {
+          "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-server.png",
           "name": "Server",
           "intro": "Server Experience Center\n\nParticipating Companies are XXXX, XXXX, XXXX, and XXXX\n\nIn the OCP NIC 3.0 experience center, our goal is to show demonstrations covering physical, logical, and functional aspects of OCP NIC 3.0 specification. Overall, we have planned seven demonstrations. We have two demonstrations showing interface sandbox with a Small Form Factor (SFF) as well as a Tall SFF NIC product respectively. We will be showing a mechanical fit-test fixture that can be used to check a physical card's compliance with OCP NIC 3.0 specification. There will be a demonstration of connectivity and manageability features of OCP NIC 3.0 specification on a Multi-Host NIC with hosts running timing and TCP applications. We also plan to showcase Fiber channel HBA in OCP NIC 3.0 form factor and a server with 12 OCP NIC 3.0 compliant slots. Finally, we will be tying both OCP NIC 3.0 and device attestation specifications by showing the attestation of OCP NIC 3.0 compliant Ethernet NIC using Secure Protocol Data Model (SPDM), one of the attestation protocols recommended by the OCP security project.",
@@ -377,6 +383,7 @@
           "usesSponsorPage": true
         },
         {
+          "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-oai.png",
           "name": "OAI",
           "intro": "OAI Experience Center\n\nParticipating companies are XXXX, XXXX, and XXXX",
@@ -390,6 +397,8 @@
           "usesSponsorPage": true
         },
         {
+          "marquee": "",
+          "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-test.png",
           "name": "Test and Validation",
           "intro": "Test and Validation Experience Center\n\nParticipating companies are XXXX, XXXX, and XXXX",
@@ -403,6 +412,7 @@
           "usesSponsorPage": true
         },
         {
+          "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-storage.png",
           "name": "Storage",
           "intro": "Storage Experience Center\n\nParticipating companies are XXXX, XXXX, and XXXX",
@@ -427,7 +437,7 @@
       "sponsors": [
         {
           "marquee": "Custom Symposium ticker text",
-          "sponsorColor": "#343B95",
+          "sponsorColor": "#00B189",
           "logo": "/img/ocp21glo_fnv_sym-logo.png",
           "name": "OCP Future Technologies Symposium",
           "intro": "Symposium description, we will want to insert where to view Symposium posters at the in-person event.\n\n\n\n**Check out the symposium posters in the Media and Links box to the right!**",
@@ -452,6 +462,7 @@
       ],
       "sponsors": [
         {
+          "sponsorColor": "#c7ef33",
           "logo": "/img/ocp21glo_fnv_base-logo.png",
           "name": "OCP Basecamp",
           "intro": "OCP Basecamp description, we will want to insert where to Basecamp is at the live event posters at the in-person event.",
