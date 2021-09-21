@@ -611,7 +611,15 @@
           "name": "AFCOM",
           "id": 112,
           "sponsorId": 112,
-          "logo": "/img/omdia_afcom_afcom_logo_rgb.png"
+          "logo": "/img/omdia_afcom_afcom_logo_rgb.png",
+          "usesSponsorPage": true
+        },
+        {
+          "advertiseImage": "",
+          "name": "OpenCAPI Consortium",
+          "id": 115,
+          "sponsorId": 115,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
         }
       ]
     },
