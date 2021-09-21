@@ -627,6 +627,13 @@
           "id": 113,
           "sponsorId": 113,
           "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        },
+        {
+          "advertiseImage": "",
+          "name": "OpenPOWER Foundation",
+          "id": 114,
+          "sponsorId": 114,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
         }
       ]
     },
