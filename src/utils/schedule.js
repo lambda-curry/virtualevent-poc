@@ -35,7 +35,7 @@ export const getFilteredEvents = (events, filters, summitTimezone) => {
     }
 
     if (filters.level?.values.length > 0) {
-      valid = filters.level.values.includes(ev.level);
+      valid = filters.level.values.includes(ev.level.toLowerCase());
       if (!valid) return false;
     }
 

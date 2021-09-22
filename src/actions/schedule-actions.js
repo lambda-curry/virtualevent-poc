@@ -16,7 +16,7 @@ export const updateFilter = (filter, action = UPDATE_FILTER) => (dispatch) => {
     dispatch(createAction(action)({...filter}))
 };
 
-export const updateFiltersFromHash = (filters, actionCallback = UPDATE_FILTERS) => (dispatch) => {
+export const updateFiltersFromHash = (filters, view, actionCallback = UPDATE_FILTERS) => (dispatch) => {
     const qsFilters = fragmentParser.getParams();
 
     // escape if no hash
@@ -44,7 +44,7 @@ export const updateFiltersFromHash = (filters, actionCallback = UPDATE_FILTERS) 
     });
 
     // only update if filters have changed
-    if (!isEqual(newFilters, filters)) {
+    if (!isEqual(newFilters, filters) || view !== qsFilters.view) {
         dispatch(createAction(actionCallback)({filters: newFilters, view: qsFilters.view}));
     }
 

@@ -59,10 +59,11 @@ exports.onPreBootstrap = async () => {
     if (key.startsWith('disqus_')) disqusSettings[key] = value;
     if (key.startsWith('summit_')) marketingSite[key] = value;
     if (key.startsWith('SCHEDULE_FILTER_BY_')) {
-      console.log(`marketingData ${key}`);
       const filterKey = key.substr(0, key.lastIndexOf('_')).substr(19).toLowerCase();
+      const defaultValues = filterKey === 'title' ? '' : [];
+
       if (!filterSettings[filterKey]) {
-        filterSettings[filterKey] = {label: '', values: [], enabled: false};
+        filterSettings[filterKey] = {label: '', values: defaultValues, enabled: false};
       }
 
       if(!filterKeysFromMarketingData.hasOwnProperty(filterKey)) {
@@ -76,7 +77,7 @@ exports.onPreBootstrap = async () => {
       }
 
       if (key.includes('_LABEL')) filterSettings[filterKey].label = value;
-      filterSettings[filterKey].values = [];
+      filterSettings[filterKey].values = defaultValues;
     }
     if (key === 'SCHEDULE_EVENT_COLOR_ORIGIN') {
       filterSettings.color_source = value.toLowerCase();
@@ -93,15 +94,11 @@ exports.onPreBootstrap = async () => {
   Object.entries(filterSettings).forEach(([key, value]) => {
      // check if filter came at marketing api
      if(key === 'color_source') return;
-    console.log(`filterSettings ${key} initial value ${filterSettings[key].enabled}`);
     if(!filterKeysFromMarketingData.hasOwnProperty(key)) {
-       console.log(`filterSettings ${key} setting off`);
        filterSettings[key].enabled = false;
-       console.log(`filterSettings ${key} final value ${filterSettings[key].enabled}`);
        return;
      }
      filterSettings[key].enabled = filterKeysFromMarketingData[key];
-     console.log(`filterSettings ${key} final value ${filterSettings[key].enabled}`);
   });
 
   //
