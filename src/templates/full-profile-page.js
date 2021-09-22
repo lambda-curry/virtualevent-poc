@@ -39,7 +39,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
     });
 
     const [showFullName, setShowFullName] = useState(false);
-    //const [showPicture, setShowPicture] = useState(undefined)
+    const [allowChatWithMe, setAllowChatWithMe] = useState(false)
     const [showEmail, setShowEmail] = useState(false);
     const [bio, setBio] = useState('');
     const [statementOfInterest, setStatementOfInterest] = useState('');
@@ -81,7 +81,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                 language: user.idpProfile.locale || ''
             });
             setShowFullName(user.idpProfile.public_profile_show_fullname);
-            //setShowPicture(user.idpProfile.public_profile_show_photo);
+            setAllowChatWithMe(user.idpProfile.public_profile_allow_chat_with_me);
             setShowEmail(user.idpProfile.public_profile_show_email);
             setBio(user.idpProfile.bio || '');
             setStatementOfInterest(user.idpProfile.statement_of_interest || '');
@@ -132,7 +132,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                     twitter_name: personalProfile.twitter,
                     language: personalProfile.language,
                     public_profile_show_fullname: showFullName,
-                    //public_profile_show_photo: showPicture,
+                    public_profile_allow_chat_with_me: allowChatWithMe,
                     public_profile_show_email: showEmail,
                     bio: bio,
                     statement_of_interest: statementOfInterest,
@@ -197,7 +197,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                     language: user.idpProfile.locale || ''
                 });
                 setShowFullName(user.idpProfile.public_profile_show_fullname);
-                //setShowPicture(user.idpProfile.public_profile_show_photo);
+                setAllowChatWithMe(user.idpProfile.public_profile_allow_chat_with_me);
                 setShowEmail(user.idpProfile.public_profile_show_email);
                 break;
             case 'bio':
@@ -421,19 +421,17 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                             <label className={styles.checkbox}>
                                 <input type="checkbox" checked={showFullName} onChange={e => setShowFullName(e.target.checked)} />
                                 Show full name on public profile
-                                </label>
+                            </label>
                             <br />
-                            {/*
-                            <label className={styles.checkbox}>
-                                <input type="checkbox" value={showPicture} onChange={e => setShowPicture(e.target.value)} />
-                                Show picture on public profile
-                                </label>
-                            <br />
-                            */}
                             <label className={styles.checkbox}>
                                 <input type="checkbox" checked={showEmail} onChange={e => setShowEmail(e.target.checked)} />
                                 Show email on public profile
                                 </label>
+                            <br />
+                            <label className={styles.checkbox}>
+                                <input type="checkbox" value={allowChatWithMe} onChange={e => setAllowChatWithMe(e.target.checked)} />
+                                Allow people to chat with me ?
+                            </label>
                             <div className={`columns is-mobile ${styles.buttons}`}>
                                 <div className={`column is-half`}>
                                     <button className={`button is-large ${styles.profileButton}`} onClick={() => discardChanges('profile')}>Discard</button>
