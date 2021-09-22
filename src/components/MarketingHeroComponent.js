@@ -28,7 +28,7 @@ const MarketingHeroComponent = ({ siteSettings, summit_phase, isLoggedUser, loca
     return () => {
       window.removeEventListener("resize", onResize);
     };
-  });
+  }, []);
 
   const getBackURL = () => {
     let defaultLocation = getEnvVariable(AUTHORIZED_DEFAULT_PATH)
