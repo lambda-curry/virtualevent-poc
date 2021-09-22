@@ -70,7 +70,10 @@
           "name": "Intel",
           "id": 59,
           "sponsorId": 59,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+          "logo": "/img/image001.png",
+          "intro": "![It Starts Here. It Begins Now. When Hardware, Software & Ideas Come Together, Technology Makes An Authentic Human Impact. Leading On Policy, Diversity, Inclusion & Sustainability to Create Value for Everyone. Product Specs. Compare Processors.](/img/image001.png)",
+          "marquee": "Reimagining Intel in the World.",
+          "usesSponsorPage": true
         },
         {
           "marquee": "Energy isn't the only renewable resource.",
