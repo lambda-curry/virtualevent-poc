@@ -373,6 +373,21 @@ export const getScheduleSyncLink = () => async (dispatch) => {
   )(params)(dispatch);
 };
 
-export const setUserOrder = (order) => (dispatch) => {
+export const setUserOrder = (order) => (dispatch) => Promise.resolve().then(() => {
   return dispatch(createAction(SET_USER_ORDER)(order));
+})
+
+export const checkOrderData = (order) => (dispatch, getState) => {
+
+  const { userState: { idpProfile: { company, given_name, family_name } } } = getState();
+  const { owner_company, owner_first_name, owner_last_name } = order;
+
+  if (owner_company !== company || owner_first_name !== given_name || owner_last_name !== family_name) {
+      const newProfile = {
+          first_name: owner_first_name,
+          last_name: owner_last_name,
+          company: owner_company
+      };
+      dispatch(updateProfile(newProfile));
+  }
 }

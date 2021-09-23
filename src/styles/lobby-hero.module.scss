@@ -321,6 +321,11 @@ div.column:first-of-type {
           height: 520px;
           padding: 2rem 1.5rem;
 
+          .hero-buttons {
+            display: flex;
+            flex-direction: column;
+          }
+
           .link {
             margin-bottom: 1rem;
             display: inline-block;
