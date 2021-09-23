@@ -15,7 +15,7 @@ import { FragmentParser } from "openstack-uicore-foundation/lib/components";
 import { doLogin, passwordlessStart } from 'openstack-uicore-foundation/lib/methods'
 import { getEnvVariable, SUMMIT_API_BASE_URL, OAUTH2_CLIENT_ID, REGISTRATION_BASE_URL } from '../utils/envVariables'
 
-import { getUserProfile, setPasswordlessLogin, setUserOrder } from "../actions/user-actions";
+import { getUserProfile, setPasswordlessLogin, setUserOrder, checkOrderData } from "../actions/user-actions";
 import { getThirdPartyProviders } from "../actions/base-actions";
 
 import 'summit-registration-lite/dist/index.css';
@@ -29,6 +29,7 @@ const RegistrationLiteComponent = ({
     getUserProfile,
     setPasswordlessLogin,
     setUserOrder,
+    checkOrderData,
     loadingProfile,
     loadingIDP,
     summit,
@@ -121,7 +122,8 @@ const RegistrationLiteComponent = ({
         onPurchaseComplete: (order) => {
             // we are informing that we did a purchase recently to widget
             setIsRecentPurchase(true);
-            setUserOrder(order);
+            // check if it's necesary to update profile
+            setUserOrder(order).then(_ => checkOrderData(order));
         },
         inPersonDisclaimer: siteSettings?.registration_in_person_disclaimer
     };
@@ -160,4 +162,5 @@ export default connect(mapStateToProps, {
     getUserProfile,
     setPasswordlessLogin,
     setUserOrder,
+    checkOrderData
 })(RegistrationLiteComponent)
