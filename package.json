@@ -9,7 +9,11 @@
     "@types/googlemaps": "^3.39.9",
     "@types/markerclustererplus": "^2.1.33",
     "@types/react": "^16.9.42",
+<<<<<<< HEAD
     "attendee-to-attendee-widget": "^1.1.89",
+=======
+    "attendee-to-attendee-widget": "^1.1.88",
+>>>>>>> ce204f196a80f51f454cddbf61be8b3a643432b2
     "awesome-bootstrap-checkbox": "^1.0.1",
     "axios": "^0.19.2",
     "blob-polyfill": "^4.0.20200601",
