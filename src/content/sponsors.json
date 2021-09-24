@@ -620,7 +620,8 @@
           "sponsorId": 112,
           "logo": "/img/omdia_afcom_afcom_logo_rgb.png",
           "usesSponsorPage": true,
-          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/omdia_afcom_AFCOM%20boilerplate%20slides%20-%20general.mp4"
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/omdia_afcom_AFCOM%20boilerplate%20slides%20-%20general.mp4",
+          "companyId": 98
         },
         {
           "advertiseImage": "",
