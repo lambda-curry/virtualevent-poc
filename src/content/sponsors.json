@@ -252,7 +252,9 @@
           "name": "KIOXIA America, Inc.",
           "id": 71,
           "sponsorId": 71,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/kioxia_america_inc_KIOXIA_KIC%20Corporate%202021-SSD_60sec_v2-NoAudio.mp4",
+          "usesSponsorPage": true
         },
         {
           "advertiseImage": "",
@@ -464,6 +466,7 @@
           "logo": "/img/ocp21glo_fnv_sponsorlogo-teconnectivity.png",
           "name": "TE Connectivity",
           "intro": "TE Connectivity is a global industrial technology leader creating a safer, sustainable, productive and connected future. Their broad range of connectivity and sensor solutions, proven in the harshest environments, enable advancements in transportation, industrial applications, medical technology, energy, data communications and the home. With approximately 80,000 employees, including more than 7,500 engineers, working alongside customers in approximately 140 countries, TE ensures that EVERY CONNECTION COUNTS.",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/te_connectivity_BrandVideo.mp4",
           "advertiseImage": "",
           "sponsorId": 52,
           "title": "TE Connectivity",
@@ -616,7 +619,8 @@
           "id": 112,
           "sponsorId": 112,
           "logo": "/img/omdia_afcom_afcom_logo_rgb.png",
-          "usesSponsorPage": true
+          "usesSponsorPage": true,
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/omdia_afcom_AFCOM%20boilerplate%20slides%20-%20general.mp4"
         },
         {
           "advertiseImage": "",
