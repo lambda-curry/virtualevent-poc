@@ -652,6 +652,7 @@
           "sideImage": "",
           "logo": "/img/omdia_afcom_afcom_logo_rgb.png",
           "name": "AFCOM",
+          "intro": "`This is sample text for a sponsor intro.`",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/omdia_afcom_AFCOM%20boilerplate%20slides%20-%20general.mp4",
           "advertiseImage": "",
           "sponsorId": 112,
