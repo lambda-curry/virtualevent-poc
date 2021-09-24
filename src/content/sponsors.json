@@ -248,12 +248,45 @@
           "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
         },
         {
-          "advertiseImage": "",
-          "name": "KIOXIA America",
-          "id": 71,
-          "sponsorId": 71,
+          "marquee": "Visit the New KIOXIA Virtual Experience Center at https://www.vrexhibitdesign.com/AEM/kioxia/VRshowroom/",
           "logo": "/img/kioxia_america_inc_kioxia_logo_silver.png",
+          "name": "KIOXIA",
+          "intro": "KIOXIA America, Inc. is the U.S.-based subsidiary of KIOXIA Corporation, a leading worldwide supplier of flash memory and solid state drives (SSDs). From the invention of flash memory to today’s breakthrough BiCS FLASH™ 3D technology, KIOXIA continues to pioneer cutting-edge memory technology and shape the future of storage in high-density applications, including advanced smartphones, PCs, SSDs, automotive, and data centers.",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/kioxia_america_inc_KIOXIA_KIC%20Corporate%202021-SSD_60sec_v2-NoAudio.mp4",
+          "advertiseImage": "",
+          "sponsorId": 71,
+          "title": "KIOXIA",
+          "companyId": 58,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/kioxiaamerica",
+                "order": 1,
+                "name": "YouTube "
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/kioxia-america-inc/",
+                "order": 2,
+                "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/KioxiaAmerica",
+                "name": "Twitter",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.instagram.com/Kioxia_US/",
+                "order": 4,
+                "name": "Instagram "
+              }
+            ]
+          },
+          "id": 71,
+          "email": "ailang.ford@kioxia.com",
           "usesSponsorPage": true
         },
         {
