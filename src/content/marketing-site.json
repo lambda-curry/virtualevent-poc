@@ -51,7 +51,7 @@
   },
   "leftColumn": {
     "schedule": {
-      "display": true,
+      "display": false,
       "title": "Event Schedule"
     },
     "disqus": {
@@ -59,9 +59,9 @@
       "title": "Join the conversation"
     },
     "image": {
-      "display": false,
-      "title": "Image",
-      "src": ""
+      "display": true,
+      "title": "",
+      "src": "/img/if2021_fnv_marketingpage_schedule_v2.png"
     }
   },
   "sponsors": [
