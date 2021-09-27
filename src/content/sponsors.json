@@ -357,14 +357,16 @@
           "name": "AMI",
           "id": 69,
           "sponsorId": 69,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 56
         },
         {
           "advertiseImage": "",
           "name": "Arrcus",
           "id": 70,
           "sponsorId": 70,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 57
         },
         {
           "marquee": "Visit the New KIOXIA Virtual Experience Center at https://www.vrexhibitdesign.com/AEM/kioxia/VRshowroom/",
