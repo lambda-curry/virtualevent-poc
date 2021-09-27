@@ -67,13 +67,14 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "name": "Intel",
-          "id": 59,
-          "sponsorId": 59,
-          "logo": "/img/intel_logo-classicblue-3000px.png",
-          "intro": "",
           "marquee": "Reimagining Intel in the World.",
+          "logo": "/img/intel_logo-classicblue-3000px.png",
+          "name": "Intel",
+          "intro": "",
+          "advertiseImage": "",
+          "sponsorId": 59,
+          "companyId": 1,
+          "id": 59,
           "usesSponsorPage": true
         },
         {
