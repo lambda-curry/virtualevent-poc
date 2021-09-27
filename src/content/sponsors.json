@@ -792,6 +792,52 @@
       ],
       "sponsors": [
         {
+          "sideImage": "",
+          "logo": "/img/omdia_afcom_afcom_logo_rgb.png",
+          "name": "AFCOM",
+          "intro": "`This is sample text for a sponsor intro.`",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/omdia_afcom_AFCOM%20boilerplate%20slides%20-%20general.mp4",
+          "advertiseImage": "",
+          "sponsorId": 112,
+          "companyId": 98,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/afcom",
+                "name": "Twitter ",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/groups/41479/",
+                "order": 2,
+                "name": "Linkedin"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/DataCenterWorld/",
+                "order": 3,
+                "name": "Facebook"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/channel/UCFANU4hY2_8LJerzuDq5xiA",
+                "order": 4,
+                "name": "Youtube"
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "link": "https://afcom.com/Public/Member_Resources/Educational_Webinars/Public/Resource_Center/Webinars_Public.aspx?hkey=496c0097-b9cd-44a5-b950-775383d1ffe0",
+              "image": "/img/omdia_afcom_p1_62156_dcw21_web_ads_afcom_webinars_336x280.jpg"
+            }
+          ],
+          "id": 112,
+          "usesSponsorPage": true
+        },
+        {
           "advertiseImage": "",
           "name": "FADU",
           "id": 105,
@@ -863,53 +909,8 @@
           "name": "ONF",
           "id": 111,
           "sponsorId": 111,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
-        },
-        {
-          "sideImage": "",
-          "logo": "/img/omdia_afcom_afcom_logo_rgb.png",
-          "name": "AFCOM",
-          "intro": "`This is sample text for a sponsor intro.`",
-          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/omdia_afcom_AFCOM%20boilerplate%20slides%20-%20general.mp4",
-          "advertiseImage": "",
-          "sponsorId": 112,
-          "companyId": 98,
-          "documents": {
-            "links": [
-              {
-                "class_name": "PresentationLink",
-                "link": "https://twitter.com/afcom",
-                "name": "Twitter ",
-                "order": 1
-              },
-              {
-                "class_name": "PresentationLink",
-                "link": "https://www.linkedin.com/groups/41479/",
-                "order": 2,
-                "name": "Linkedin"
-              },
-              {
-                "class_name": "PresentationLink",
-                "link": "https://www.facebook.com/DataCenterWorld/",
-                "order": 3,
-                "name": "Facebook"
-              },
-              {
-                "class_name": "PresentationLink",
-                "link": "https://www.youtube.com/channel/UCFANU4hY2_8LJerzuDq5xiA",
-                "order": 4,
-                "name": "Youtube"
-              }
-            ]
-          },
-          "columnAds": [
-            {
-              "link": "https://afcom.com/Public/Member_Resources/Educational_Webinars/Public/Resource_Center/Webinars_Public.aspx?hkey=496c0097-b9cd-44a5-b950-775383d1ffe0",
-              "image": "/img/omdia_afcom_p1_62156_dcw21_web_ads_afcom_webinars_336x280.jpg"
-            }
-          ],
-          "id": 112,
-          "usesSponsorPage": true
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "usesSponsorPage": false
         },
         {
           "advertiseImage": "",
