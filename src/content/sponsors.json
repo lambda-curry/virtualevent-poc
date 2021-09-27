@@ -299,14 +299,28 @@
           "name": "Credo",
           "id": 64,
           "sponsorId": 64,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 51
         },
         {
-          "advertiseImage": "",
+          "logo": "/img/sk_hynix_virtual-booth-logo.png",
           "name": "SK hynix",
-          "id": 65,
+          "intro": "SK hynix is the world's top tier semiconductor supplier, offering DRAM, NAND Flash Memory, and CMOS Image Sensor for a wide range of distinguished customers globally. SK hynix ranks third in the global semiconductor industry and second in the storage semiconductor industry.",
+          "advertiseImage": "",
           "sponsorId": 65,
-          "logo": "/img/sk_hynix_virtual-booth-logo.png"
+          "companyId": 52,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/sk-hynix/",
+                "name": "LinkedIn",
+                "order": 1
+              }
+            ]
+          },
+          "id": 65,
+          "usesSponsorPage": true
         },
         {
           "advertiseImage": "",
