@@ -462,7 +462,8 @@
           "name": "Arm",
           "id": 77,
           "sponsorId": 77,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 64
         },
         {
           "advertiseImage": "",
@@ -475,7 +476,7 @@
           "intro": "TEST"
         },
         {
-          "marquee": "Edgecore Networks",
+          "marquee": "12.8Tb User Programmable Switches, 5G Ready Cell Site Gateways, Scalable Fixed Broadband Aggregation.",
           "sponsorColor": "",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-edgecore.png",
           "name": "Edgecore Networks",
@@ -484,6 +485,43 @@
           "sponsorId": 50,
           "title": "Edgecore Networks",
           "companyId": 46,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/edge-core-networks",
+                "name": "LinkedIn",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/EdgecoreNetworks/",
+                "name": "Facebook",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/EdgecoreNetwork",
+                "name": "Twitter",
+                "order": 3
+              }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/edgecore_networks_high-performance-programmable-400g-100g-switch-solution.pdf",
+                "name": "High-Performance, Programmable 400G & 100G Switch Solution",
+                "order": 5
+              }
+            ],
+            "videos": []
+          },
+          "columnAds": [
+            {
+              "image": "/img/edgecore_networks_2021-ocp-global-summit-484-sonic-logo-2.jpg",
+              "link": "https://www.edge-core.com/productsList.php?cls=509&cls2=510"
+            }
+          ],
           "id": 50,
           "email": "sales@edge-core.com",
           "usesSponsorPage": true
