@@ -19,6 +19,13 @@ export const updateFilter = (filter, action = UPDATE_FILTER) => (dispatch) => {
 export const updateFiltersFromHash = (filters, view, actionCallback = UPDATE_FILTERS) => (dispatch) => {
     const qsFilters = fragmentParser.getParams();
 
+    // clear hash
+    fragmentParser.clearParams();
+
+    if (typeof window !== 'undefined') {
+        window.history.replaceState(null, null, ' ');
+    }
+
     // escape if no hash
     if (isEmpty(qsFilters)) return null;
 
@@ -46,13 +53,6 @@ export const updateFiltersFromHash = (filters, view, actionCallback = UPDATE_FIL
     // only update if filters have changed
     if (!isEqual(newFilters, filters) || view !== qsFilters.view) {
         dispatch(createAction(actionCallback)({filters: newFilters, view: qsFilters.view}));
-    }
-
-    // clear hash
-    fragmentParser.clearParams();
-
-    if (typeof window !== 'undefined') {
-        window.history.replaceState(null, null, ' ');
     }
 };
 
