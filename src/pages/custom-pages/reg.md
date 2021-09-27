@@ -23,6 +23,6 @@ Virtual - Limited:  Free
 
 **Cancellation Policy**
 
-IN-PERSON TICKETS: Cancel on or before Sept. 30, 2021, for a full refund. Should you cancel after Sept. 30, 2021, you will not receive a refund. Refund requests must be made through the FNvirtual registration system or via email at [registration@opencompute.org](<>). VIRTUAL TICKETS: Refunds will not be issued for this ticket type.
+IN-PERSON TICKETS: Cancel on or before Sept. 30, 2021 to receive a full refund. You may also downgrade your ticket before Sept. 30. Should you cancel or downgrade after Sept. 30, 2021, you will not receive a refund. Refund requests must be made through the FNvirtual registration system or via email at [registration@opencompute.org](https://2021ocpglobal.fnvirtual.app/reg/). VIRTUAL TICKETS: Refunds will not be issued for virtual tickets.
 
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSehNzzYKO6FtzncM3Gt1ODQIRMv5NCUfX3zl8qXf3ltMlneDg/viewform" target="_blank">Click here</a> to apply for a media pass.
