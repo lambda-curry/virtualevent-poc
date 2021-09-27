@@ -3,8 +3,8 @@
     {
       "title": "Lobby",
       "link": "/a/",
-      "display": true,
-      "requiresAuth": false
+      "display": false,
+      "requiresAuth": true
     },
     {
       "title": "Schedule",
