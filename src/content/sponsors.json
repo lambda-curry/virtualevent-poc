@@ -9,20 +9,26 @@
       ],
       "sponsors": [
         {
-          "advertiseImage": "",
-          "name": "Ampere Computing",
-          "id": 58,
-          "sponsorId": 58,
           "logo": "/img/34519842.png",
-          "intro": ""
+          "name": "Ampere Computing",
+          "intro": "TEST",
+          "advertiseImage": "",
+          "sponsorId": 58,
+          "title": "Ampere Computing",
+          "companyId": 41,
+          "id": 58,
+          "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "name": "Facebook ",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-facebook.png",
-          "id": 55,
+          "name": "Facebook ",
+          "intro": "TEST",
+          "advertiseImage": "",
           "sponsorId": 54,
-          "title": "Facebook"
+          "title": "Facebook",
+          "companyId": 5,
+          "id": 55,
+          "usesSponsorPage": true
         },
         {
           "marquee": "Visit Inspur booth #B23 to see our latest innovations in OCP that balance efficiency and power, optimized for enterprise, cloud, and AI.",
@@ -108,12 +114,15 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
+          "logo": "/img/if2020-microsoft-logo.png",
           "name": "Microsoft",
-          "id": 56,
+          "intro": "test",
+          "advertiseImage": "",
           "sponsorId": 56,
           "title": "Microsoft ",
-          "logo": "/img/if2020-microsoft-logo.png"
+          "companyId": 10,
+          "id": 56,
+          "usesSponsorPage": true
         },
         {
           "marquee": "POWERING EXPERIENCES. See what the world can do. ",
@@ -125,6 +134,7 @@
           "headerImageMobile": "/img/ocp21glo-fnv-sponsorbooth-samsung-header-mobile.png",
           "advertiseImage": "",
           "sponsorId": 60,
+          "companyId": 40,
           "id": 60,
           "email": "events@ssi.samsung.com",
           "usesSponsorPage": true
@@ -490,6 +500,7 @@
           "advertiseImage": "",
           "sponsorId": 82,
           "title": "Super Micro Computer, Inc.",
+          "companyId": 69,
           "id": 82,
           "email": "desireem@supermicro.com",
           "usesSponsorPage": true
