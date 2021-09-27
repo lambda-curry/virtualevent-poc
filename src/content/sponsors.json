@@ -642,7 +642,8 @@
           "name": "Keysight Technologies",
           "id": 79,
           "sponsorId": 79,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 66
         },
         {
           "advertiseImage": "",
@@ -650,7 +651,8 @@
           "id": 80,
           "sponsorId": 80,
           "title": "3M Company",
-          "logo": "/img/3m_picture1.png"
+          "logo": "/img/3m_picture1.png",
+          "companyId": 67
         },
         {
           "advertiseImage": "",
