@@ -572,6 +572,8 @@
           "logo": "/img/ocp21glo_fnv_sponsorlogo-penguin.png",
           "name": "Penguin Computing",
           "intro": "Penguin Computing specializes in custom, innovative, open solutions for AI, HPC, Data Center, and the Cloud. Penguin Computing provides hardware and software solutions built on both 19” and 21” OCP infrastructures. Founded twenty years ago by the team that created the original beowulf cluster, Penguin Computing has been integral to the development of modern HPC and data center technologies. Today, Penguin Computing focuses on four key areas, High-performance Computing, Artificial Intelligence, Software-defined Storage, and Cloud Computing solutions.",
+          "headerImage": "/img/penguin_computing_expanding-word-vision-of-what-s-possible-banner-2-.jpg",
+          "headerImageMobile": "/img/penguin_computing_expanding-word-vision-of-what-s-possible-banner-2-.jpg",
           "advertiseImage": "",
           "sponsorId": 54,
           "title": "Penguin Computing",
@@ -660,7 +662,8 @@
           "id": 81,
           "sponsorId": 81,
           "email": "",
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 68
         },
         {
           "logo": "/img/super_micro_computer_inc_supermicro_greenc_newlogo_whitebackground.png",
@@ -680,21 +683,24 @@
           "id": 83,
           "sponsorId": 83,
           "title": "Lattice Semiconductor",
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 70
         },
         {
           "advertiseImage": "",
           "name": "Ragile Networks",
           "id": 84,
           "sponsorId": 84,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 71
         },
         {
           "advertiseImage": "",
           "name": "Cisco",
           "id": 98,
           "sponsorId": 98,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 84
         }
       ]
     },
@@ -725,7 +731,8 @@
           "name": "Submer",
           "id": 99,
           "sponsorId": 99,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 85
         },
         {
           "advertiseImage": "",
