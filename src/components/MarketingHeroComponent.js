@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { connect } from "react-redux";
 import Slider from "react-slick";
 import URI from "urijs";
@@ -13,9 +13,24 @@ import RegistrationLiteComponent from "./RegistrationLiteComponent";
 
 import styles from "../styles/lobby-hero.module.scss";
 
-class MarketingHeroComponent extends React.Component {
-  getBackURL = () => {
-    let { location } = this.props;
+const MarketingHeroComponent = ({ siteSettings, summit_phase, isLoggedUser, location }) => {
+
+  const sliderRef = useRef(null);
+  const [sliderHeight, setSliderHeight] = useState(424);
+
+  const onResize = () => {
+    setSliderHeight(sliderRef.current.clientHeight);
+  };
+
+  useEffect(() => {
+    onResize();
+    window.addEventListener("resize", onResize, { passive: true });
+    return () => {
+      window.removeEventListener("resize", onResize);
+    };
+  }, []);
+
+  const getBackURL = () => {
     let defaultLocation = getEnvVariable(AUTHORIZED_DEFAULT_PATH)
       ? getEnvVariable(AUTHORIZED_DEFAULT_PATH)
       : "/a/";
@@ -25,117 +40,113 @@ class MarketingHeroComponent extends React.Component {
     return URI.encode(backUrl);
   };
 
-  onClickLogin = () => {
-    doLogin(this.getBackURL());
+  const onClickLogin = () => {
+    doLogin(getBackURL());
   };
 
-  getButtons = () => {
-    const { summit_phase, isLoggedUser, siteSettings, userProfile } = this.props;
+  const getButtons = () => {
+
     const path = getEnvVariable(AUTHORIZED_DEFAULT_PATH) || '/a/';
-    const {registerButton, loginButton} = siteSettings.heroBanner.buttons;
+    const { registerButton, loginButton } = siteSettings.heroBanner.buttons;
 
     if (summit_phase >= PHASES.DURING && isLoggedUser) {
       return (
         <>
-        {registerButton.display &&
-        (
-          <span className={styles.link}>
-            <RegistrationLiteComponent location={this.props.location} />
-          </span>
-        )}
-        <Link className={styles.link} to={path}>
-          <button className={`${styles.button} button is-large`}>
-            <i className={`fa fa-2x fa-sign-in icon is-large`} />
-            <b>Enter</b>
-          </button>
-        </Link>
+          {registerButton.display &&
+            (
+              <span className={styles.link}>
+                <RegistrationLiteComponent location={location} />
+              </span>
+            )}
+          <Link className={styles.link} to={path}>
+            <button className={`${styles.button} button is-large`}>
+              <i className={`fa fa-2x fa-sign-in icon is-large`} />
+              <b>Enter</b>
+            </button>
+          </Link>
         </>
       );
     }
 
     return (
-        <>
-          {registerButton.display &&
+      <>
+        {registerButton.display &&
           (
             <span className={styles.link}>
-              <RegistrationLiteComponent location={this.props.location} />
+              <RegistrationLiteComponent location={location} />
             </span>
           )}
-          {loginButton.display && !isLoggedUser && (
-              <button className={`${styles.button} button is-large`} onClick={() => this.onClickLogin()}>
-                <i className={`fa fa-2x fa-sign-in icon is-large`} />
-                <b>{loginButton.text}</b>
-              </button>
-          )}
-        </>
+        {loginButton.display && !isLoggedUser && (
+          <button className={`${styles.button} button is-large`} onClick={() => onClickLogin()}>
+            <i className={`fa fa-2x fa-sign-in icon is-large`} />
+            <b>{loginButton.text}</b>
+          </button>
+        )}
+      </>
     );
   };
 
-  render() {
-    const { siteSettings } = this.props;
+  const sliderSettings = {
+    autoplay: true,
+    autoplaySpeed: 5000,
+    infinite: true,
+    dots: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
-    const sliderSettings = {
-      autoplay: true,
-      autoplaySpeed: 5000,
-      infinite: true,
-      dots: false,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-    };
-
-    return (
-      <section className={styles.heroMarketing}>
-        <div className={`${styles.heroMarketingColumns} columns is-gapless`}>
-          <div
-            className={`${styles.leftColumn} column is-6 is-black`}
-            style={{
-              backgroundImage: siteSettings.heroBanner.background
-                ? `url(${siteSettings.heroBanner.background})`
-                : "",
-            }}
-          >
-            <div className={`${styles.heroMarketingContainer} hero-body`}>
-              <div className="container">
-                <h1 className="title">{siteSettings.heroBanner.title}</h1>
-                <h2 className="subtitle">{siteSettings.heroBanner.subTitle}</h2>
-                <div
-                  className={styles.date}
-                  style={{
-                    backgroundColor: siteSettings.heroBanner.dateLayout
-                      ? "var(--color_secondary)"
-                      : "",
-                  }}
-                >
-                  <div>{siteSettings.heroBanner.date}</div>
-                </div>
-                <h4>{siteSettings.heroBanner.time}</h4>
-                <div className={styles.heroButtons}>                  
-                  {this.getButtons()}
-                </div>
+  return (
+    <section className={styles.heroMarketing}>
+      <div className={`${styles.heroMarketingColumns} columns is-gapless`}>
+        <div
+          className={`${styles.leftColumn} column is-6 is-black`}
+          style={{
+            backgroundImage: siteSettings.heroBanner.background
+              ? `url(${siteSettings.heroBanner.background})`
+              : "",
+          }}
+        >
+          <div className={`${styles.heroMarketingContainer} hero-body`}>
+            <div className="container">
+              <h1 className="title">{siteSettings.heroBanner.title}</h1>
+              <h2 className="subtitle">{siteSettings.heroBanner.subTitle}</h2>
+              <div
+                className={styles.date}
+                style={{
+                  backgroundColor: siteSettings.heroBanner.dateLayout
+                    ? "var(--color_secondary)"
+                    : "",
+                }}
+              >
+                <div>{siteSettings.heroBanner.date}</div>
+              </div>
+              <h4>{siteSettings.heroBanner.time}</h4>
+              <div className={styles.heroButtons}>
+                {getButtons()}
               </div>
             </div>
           </div>
-          <div className={`${styles.rightColumn} column is-6 px-0`} id="marketing-slider">
-            {siteSettings.heroBanner.images.length > 0 ?
-              <Slider {...sliderSettings}>
-                {siteSettings.heroBanner.images.map((img, index) => {
-                  return (
-                    <div key={index}>
-                      <div className={styles.imageSlider} style={{ backgroundImage: `url(${img.image})` }} />
-                    </div>
-                  );
-                })}
-              </Slider>
-              :
-              <div>
-                <div className={styles.imageSlider} style={{ backgroundImage: `url(${siteSettings.heroBanner.images[0].image})` }} />
-              </div>
-            }
-          </div>
         </div>
-      </section>
-    );
-  }
+        <div className={`${styles.rightColumn} column is-6 px-0`} id="marketing-slider" ref={sliderRef}>
+          {siteSettings.heroBanner.images.length > 1 ?
+            <Slider {...sliderSettings}>
+              {siteSettings.heroBanner.images.map((img, index) => {
+                return (
+                  <div key={index}>
+                    <div className={styles.imageSlider} style={{ backgroundImage: `url(${img.image})`, height: sliderHeight, marginBottom: -6 }} />
+                  </div>
+                );
+              })}
+            </Slider>
+            :
+            <div className={styles.singleImage}>
+              <img src={siteSettings.heroBanner.images[0].image} />
+            </div>
+          }
+        </div>
+      </div>
+    </section>
+  );
 }
 
 const mapStateToProps = ({ clockState, settingState, userState }) => ({
