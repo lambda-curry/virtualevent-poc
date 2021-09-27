@@ -527,12 +527,45 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
+          "marquee": "ENABLING SECURITY AT THE SPEED OF DIGITAL TRANSFORMATION.",
+          "logo": "/img/hpe_hpe_rgb_pos_logo_484x484.png",
           "name": "Hewlett Packard Enterprise",
-          "id": 76,
+          "intro": "Hewlett Packard Enterprise is the global edge-to-cloud company that helps organizations accelerate outcomes by unlocking value from all of their data, everywhere. Built on decades of reimagining the future and innovating to advance the way people live and work, HPE delivers unique, open and intelligent technology solutions delivered as a service – spanning Compute, Storage, Software, Intelligent Edge, High Performance Computing and Mission Critical Solutions – with a consistent experience across all clouds and edges, designed to help customers develop new business models, engage in new ways, and increase operational performance. For more information, visit: www.hpe.com.",
+          "advertiseImage": "",
           "sponsorId": 76,
           "title": "Hewlett Packard Enterprise",
-          "logo": "/img/hpe_hpe_rgb_pos_logo_484x484.png"
+          "companyId": 63,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "http://www.youtube.com/hpe",
+                "name": "Youtube",
+                "order": 4
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/hewlett-packard-enterprise/mycompany/",
+                "order": 1,
+                "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/hpe",
+                "name": "Twitter",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "http://facebook.com/hewlettpackardenterprise",
+                "order": 3,
+                "name": "Facebook"
+              }
+            ]
+          },
+          "id": 76,
+          "email": "OCP2021@hpe.com",
+          "usesSponsorPage": true
         },
         {
           "marquee": "Expanding the world's vision of what is possible!",
@@ -580,6 +613,7 @@
             ]
           },
           "id": 54,
+          "email": "kwah@penguincomputing.com",
           "usesSponsorPage": true
         },
         {
