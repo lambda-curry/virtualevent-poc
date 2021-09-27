@@ -416,14 +416,16 @@
           "name": "bp",
           "id": 72,
           "sponsorId": 72,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 59
         },
         {
           "advertiseImage": "",
           "name": "Pliops",
           "id": 97,
           "sponsorId": 97,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 83
         }
       ]
     },
@@ -440,15 +442,20 @@
           "name": "Advanced Energy ",
           "id": 74,
           "sponsorId": 74,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 61
         },
         {
-          "advertiseImage": "",
-          "name": "Amphenol",
-          "id": 75,
-          "sponsorId": 75,
           "logo": "/img/amphenol_amphenol_blue-002-.png",
-          "email": "Lorri.Bupp@amphenol-icc.com"
+          "name": "AMPHENOL",
+          "intro": "AMPHENOL",
+          "advertiseImage": "",
+          "sponsorId": 75,
+          "title": "AMPHENOL",
+          "companyId": 62,
+          "id": 75,
+          "email": "Lorri.Bupp@amphenol-icc.com",
+          "usesSponsorPage": true
         },
         {
           "advertiseImage": "",
