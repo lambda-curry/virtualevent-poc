@@ -257,11 +257,42 @@
       ],
       "sponsors": [
         {
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "name": "Rittal North America",
           "advertiseImage": "",
-          "name": "Rittal",
-          "id": 63,
           "sponsorId": 63,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+          "companyId": 50,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/RittalNorthAmerica",
+                "name": "Facebook",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/rittalnorthamerica/",
+                "name": "LinkedIn",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/RittalNA",
+                "name": "Twitter",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/c/RittalCorporation",
+                "order": 4,
+                "name": "Youtube"
+              }
+            ]
+          },
+          "id": 63,
+          "email": "rittal@rittal.us",
+          "usesSponsorPage": true
         },
         {
           "advertiseImage": "",
