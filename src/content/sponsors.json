@@ -13,7 +13,8 @@
           "name": "Ampere Computing",
           "id": 58,
           "sponsorId": 58,
-          "logo": "/img/34519842.png"
+          "logo": "/img/34519842.png",
+          "intro": ""
         },
         {
           "advertiseImage": "",
@@ -146,6 +147,34 @@
           "sponsorId": 48,
           "title": "QCT",
           "companyId": 42,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/quantacloudtechnology/",
+                "order": 1,
+                "name": "Facebook"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/qct/",
+                "name": "Linked In",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/QuantaQCT",
+                "order": 3,
+                "name": "Twitter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/user/QuantaQCT",
+                "order": 4,
+                "name": "Youtube"
+              }
+            ]
+          },
           "id": 48,
           "usesSponsorPage": true
         },
