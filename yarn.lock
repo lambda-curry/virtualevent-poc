@@ -16315,10 +16315,10 @@ saxes@^5.0.1:
   dependencies:
     xmlchars "^2.2.0"
 
-schedule-filter-widget@^1.1.7:
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/schedule-filter-widget/-/schedule-filter-widget-1.1.7.tgz#eb969712a8a4d4239f618f95ed54540510dd415c"
-  integrity sha512-kkLRJpKdRWjAsVPN42oHQ6MPOz2UA5GveIt8aAVtITPlRtfBD1hCwwSh1CICBukiQSwyQe2F56O72j502nfl5w==
+schedule-filter-widget@^1.1.8:
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/schedule-filter-widget/-/schedule-filter-widget-1.1.8.tgz#2b07c7a5233ea7b3224eccf8fe2026c75e150c0b"
+  integrity sha512-ATy5rjRGViH+tpNG7bmE6FWTXpWk8xe6lwCVWTc1GiwEtDIR60ZnkzA6rzIzk+JK9gnTMS+eGKZVKEM4Sn7imA==
   dependencies:
     dropzone "^5.9.2"
     react-spring "^9.1.2"
