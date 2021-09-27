@@ -466,6 +466,7 @@
             }
           ],
           "id": 29,
+          "showLogoInEventPage": true,
           "email": "sponsorservices@fntech.com",
           "usesSponsorPage": true
         },
