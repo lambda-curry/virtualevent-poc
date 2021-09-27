@@ -207,14 +207,44 @@
           "name": "Xilinx",
           "id": 61,
           "sponsorId": 61,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 44
         },
         {
-          "advertiseImage": "",
+          "marquee": "ZT Systems: We Speak Hyperscale™ - the industry leading provider of purpose-built server hardware solutions from the cloud to the 5G network edge.",
+          "sponsorColor": "#E24307",
+          "logo": "/img/zt_systems_zt_systems_logo-cmyk-vertical.png",
           "name": "ZT Systems",
-          "id": 62,
+          "intro": "ZT Systems is a leading supplier of compute, storage, and accelerator solutions for hyperscale, 5G, and edge computing applications. A trusted design, manufacturing, and logistics partner with over 25 years of experience, ZT serves data center operators from enterprise organizations to the largest cloud and telecommunications providers. Headquartered in Secaucus, NJ with global manufacturing spanning the US, EMEA and APAC, ZT deploys and supports integrated rack-level solutions worldwide. Through close, confidential customer engagement, ZT leverages deep experience with hyperscale and edge computing workloads and supply chain considerations to develop application-tailored solutions. Flexible, purpose-built manufacturing capabilities enable ZT to sustain high quality while accommodating the dynamic nature of hyperscale. ZT’s commitment to operational excellence is demonstrated by a strong track record of on-time delivery.",
+          "advertiseImage": "",
           "sponsorId": 62,
-          "logo": "/img/zt_systems_zt_systems_logo-cmyk-vertical.png"
+          "title": "ZT Systems",
+          "companyId": 45,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/ZTSystems",
+                "name": "twitter",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/ZTSystems",
+                "order": 2,
+                "name": "Facebook"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/zt-systems",
+                "order": 3,
+                "name": "LinkedIn"
+              }
+            ]
+          },
+          "id": 62,
+          "email": "sales@ztsystems.com",
+          "usesSponsorPage": true
         }
       ]
     },
