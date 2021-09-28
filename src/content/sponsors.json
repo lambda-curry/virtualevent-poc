@@ -877,7 +877,8 @@
           "sponsorId": 108,
           "intro": "NVIDIA’s invention of the GPU sparked the PC gaming market. The company’s pioneering work in accelerated computing—a supercharged form of computing at the intersection of computer graphics, high performance computing and AI—is reshaping trillion-dollar industries, such as transportation, healthcare and manufacturing, and fueling the growth of many others.",
           "sponsorColor": "#76B900",
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-nvidia.png"
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-nvidia.png",
+          "companyId": 94
         },
         {
           "advertiseImage": "",
