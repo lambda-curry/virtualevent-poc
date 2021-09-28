@@ -205,7 +205,6 @@ collections:
             ]}
           - {label: "Sponsors", name: "sponsors", widget: list, fields: [
               {label: "Name", name: title, widget: hidden},
-              {label: "Order", name: order, widget: number},
               {label: "Images", name: "images", widget: list, fields: [
                 {label: "Image", name: "image", widget: image, required: false},
                 {label: "Link", name: "link", widget: string, required: false}

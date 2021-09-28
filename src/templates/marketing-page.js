@@ -96,11 +96,14 @@ export const MarketingPageTemplate = class extends React.Component {
             }
           </div>
           <div className="column is-half px-0 pb-0">
+            {/* The mansonry lib generates the grid using 2 images per row
+            in some cases, like with images that takes double the space of a single images,
+            dummy items would be needed to achieve the desired grid */}
             <Masonry
               breakpointCols={2}
               className="my-masonry-grid"
               columnClassName="my-masonry-grid_column">
-              {siteSettings.sponsors.sort((a, b) => a.order - b.order).map((item, index) => {
+              {siteSettings.sponsors.map((item, index) => {
                 if (item.images && item.images.length === 1) {
                   return (
                     <div className={'single'} key={index}>
