@@ -894,7 +894,8 @@
           "name": "Circle B",
           "id": 109,
           "sponsorId": 109,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 95
         },
         {
           "advertiseImage": "",
