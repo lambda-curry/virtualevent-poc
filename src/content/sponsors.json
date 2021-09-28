@@ -886,7 +886,8 @@
           "id": 66,
           "sponsorId": 66,
           "email": "nkoskenniemi@juniper.net",
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 53
         },
         {
           "advertiseImage": "",
