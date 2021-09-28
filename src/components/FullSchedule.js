@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { needsLogin } from "../utils/alerts";
 import {addToSchedule, removeFromSchedule} from "../actions/user-actions";
-import {callAction} from "../actions/schedule-actions";
+import {callAction, getShareLink} from "../actions/schedule-actions";
 
 // these two libraries are client-side only
 import Schedule from "full-schedule-widget/dist";
@@ -17,6 +17,8 @@ const FullSchedule = ({
   addToSchedule,
   removeFromSchedule,
   callAction,
+  filters,
+  view,
   ...rest
 }) => {
   const componentProps = {
@@ -28,6 +30,9 @@ const FullSchedule = ({
     defaultImage: homeSettings.schedule_default_image,
     showSendEmail: false,
     onStartChat: null,
+    shareLink: getShareLink(filters, view),
+    filters,
+    view,
     onEventClick: () => {},
     needsLogin: needsLogin,
     triggerAction: (action, payload) => {

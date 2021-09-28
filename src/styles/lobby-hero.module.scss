@@ -215,8 +215,16 @@ div.column:first-of-type {
     .right-column {
       z-index: 1;
 
+      .single-image {
+        height: 100%;
+        img {
+          height: 100%;
+          object-fit: cover;
+          object-position: right;
+        }
+      }
+
       .image-slider {
-        height: 424px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
