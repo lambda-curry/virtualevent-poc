@@ -851,14 +851,16 @@
           "name": "Kameleon Security",
           "id": 104,
           "sponsorId": 104,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 90
         },
         {
           "advertiseImage": "",
           "name": "MSP Disposal",
           "id": 106,
           "sponsorId": 106,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 92
         },
         {
           "advertiseImage": "",
