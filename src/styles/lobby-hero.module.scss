@@ -136,7 +136,8 @@ div.column:first-of-type {
         background-color: #fff;
         color: #6d6e71;
 
-        b, i {
+        b,
+        i {
           color: inherit;
         }
       }
@@ -343,6 +344,10 @@ div.column:first-of-type {
 }
 
 @media (max-width: 768px) {
+  .hero-container {
+    height: auto;
+  }
+  
   .hero-marketing {
     .hero-marketing-columns {
       .left-column {
