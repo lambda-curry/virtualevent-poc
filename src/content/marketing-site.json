@@ -7,7 +7,7 @@
     "dateLayout": false,
     "buttons": {
       "registerButton": {
-        "text": "TICKETS & REGISTRATION",
+        "text": "GET TICKETS",
         "display": true
       },
       "loginButton": {
