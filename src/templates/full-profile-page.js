@@ -429,7 +429,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                                 </label>
                             <br />
                             <label className={styles.checkbox}>
-                                <input type="checkbox" value={allowChatWithMe} onChange={e => setAllowChatWithMe(e.target.checked)} />
+                                <input type="checkbox" checked={allowChatWithMe} onChange={e => setAllowChatWithMe(e.target.checked)} />
                                 Allow people to chat with me ?
                             </label>
                             <div className={`columns is-mobile ${styles.buttons}`}>
