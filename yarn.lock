@@ -10919,10 +10919,10 @@ linkifyjs@^2.1.9:
   resolved "https://registry.yarnpkg.com/linkifyjs/-/linkifyjs-2.1.9.tgz#af06e45a2866ff06c4766582590d098a4d584702"
   integrity sha512-74ivurkK6WHvHFozVaGtQWV38FzBwSTGNmJolEgFp7QgR2bl6ArUWlvT4GcHKbPe1z3nWYi+VUdDZk16zDOVug==
 
-lite-schedule-widget@^1.0.13:
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/lite-schedule-widget/-/lite-schedule-widget-1.0.13.tgz#3a2c899ba35fcd04d35d4d13fad1015d708a2a41"
-  integrity sha512-RycGHB5z/QeV1NR4D8mnbaQI5MIbPVWUABKhXM4KpISRsDBiOGF0xWstbs0Aia4FjHoNAxtIiy9ttr88JRrfRA==
+lite-schedule-widget@^1.0.14:
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/lite-schedule-widget/-/lite-schedule-widget-1.0.14.tgz#c567caa60609b09161e0c837d0eb3633bfc0c482"
+  integrity sha512-nKzYSv6QxsiS+jlZJp0BBVQptsx775p5X9WpVFUrpiJ5ZyN+n5BBx89odcxY3hE5UGNbRz9R+heo81w+q7/Bcg==
   dependencies:
     pure-react-carousel "^1.27.4"
     use-fit-text "^2.4.0"
