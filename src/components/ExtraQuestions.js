@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Input, Dropdown, RadioList, CheckboxList, RawHTML } from 'openstack-uicore-foundation/lib/components'
 import styles from '../styles/extra-questions.module.scss'
 
-const ExtraQuestions = ({ question, handleChange, getAnswer }) => {    
+const ExtraQuestions = ({ question, handleChange, getAnswer }) => {
 
     let questionValues = question.values;
 
@@ -48,10 +48,12 @@ const ExtraQuestions = ({ question, handleChange, getAnswer }) => {
         case 'CheckBox':
             return (
                 <div key={question.id} className={`${styles.questionWrapper} columns`}>
-                    <div className="column is-one-third"><RawHTML>{htmlLabel}</RawHTML></div>
-                    <div className="column is-two-thirds">
+                    <div className="column is-1">
                         <input type="checkbox" id={`${question.id}`} checked={(getAnswer(question) === "true")}
                             onChange={handleChange} />
+                    </div>
+                    <div className="column is-11">
+                        <RawHTML className={styles.questionCheckbox}>{htmlLabel}</RawHTML>
                     </div>
                 </div>
 

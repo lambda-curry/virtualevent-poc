@@ -144,11 +144,9 @@ export const ExtraQuestionsPageTemplate = ({ user, summit, saveExtraQuestions })
                         })}
                     </div>
                     <div className={`columns ${styles.disclaimer}`}>
-                        <div className="column is-1">
+                        <div className="column is-12">
                             <input type="checkbox" checked={disclaimer} onChange={toggleDisclaimer} />
                             <b>{summit.registration_disclaimer_mandatory ? '*' : ''}</b>
-                        </div>
-                        <div className="column is-11">
                             <span dangerouslySetInnerHTML={{ __html: summit.registration_disclaimer_content }} />
                         </div>
                     </div>
