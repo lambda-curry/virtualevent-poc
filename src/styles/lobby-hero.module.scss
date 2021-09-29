@@ -351,6 +351,10 @@ div.column:first-of-type {
 }
 
 @media (max-width: 768px) {
+  .hero-container {
+    height: auto;
+  }
+
   .hero-marketing {
     .hero-marketing-columns {
       .left-column {
