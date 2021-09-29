@@ -6,7 +6,6 @@ import { getSponsorURL } from '../utils/urlFormating'
 
 import styles from '../styles/sponsor.module.scss'
 
-
 const SponsorComponent = ({ page, sponsorsState, tiers, lobbyButton }) => {
   let renderButton = false;
   return (
@@ -57,6 +56,7 @@ const SponsorComponent = ({ page, sponsorsState, tiers, lobbyButton }) => {
                       <span><b>{tier.widgetTitle}</b></span>
                     }
                     {sponsors.map((sponsor, index) => {
+                      if (!sponsor.showLogoInEventPage) return null
                       return (
                         sponsor.externalLink ?
                           <div className={styles.imageBox} key={`${s.tier.label}-${index}`}>
