@@ -303,5 +303,6 @@ collections:
                 {label: "Mobile Header Image", name: "headerImageMobile", widget: image, required: false },
                 {label: "Side Image", name: "sideImage", widget: image, required: false },
                 {label: "Video Header", name: "headerVideo", widget: string, required: false },
+                {label: "Show Logo in Event Page", name: "showLogoInEventPage", widget: boolean, required: false, default: true },
               ]}              
             ]}
