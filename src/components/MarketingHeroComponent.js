@@ -115,9 +115,21 @@ const MarketingHeroComponent = ({ siteSettings, summit_phase, isLoggedUser, loca
                   backgroundColor: siteSettings.heroBanner.dateLayout
                     ? "var(--color_secondary)"
                     : "",
+                  display: siteSettings.heroBanner.dateLayout
+                    ? ""
+                    : "inline",
+                  transform: siteSettings.heroBanner.dateLayout
+                    ? "skew(-25deg)"
+                    : "skew(0deg)",
                 }}
               >
-                <div>{siteSettings.heroBanner.date}</div>
+                {siteSettings.heroBanner.dateLayout ?
+                <div style={{transform: "skew(25deg)"}}>{siteSettings.heroBanner.date}</div>
+                :
+                <div style={{transform: "skew(0deg)"}}>
+                  <span>{siteSettings.heroBanner.date}</span>
+                </div>
+                }
               </div>
               <h4>{siteSettings.heroBanner.time}</h4>
               <div className={styles.heroButtons}>
