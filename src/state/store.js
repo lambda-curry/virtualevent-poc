@@ -14,10 +14,10 @@ import {applyMiddleware, compose, createStore} from "redux";
 import thunk from "redux-thunk";
 
 // get from process.env bc window is not set yet
-const clientId =  process.env.GATSBY_OAUTH2_CLIENT_ID;
-
+const clientId = process.env.GATSBY_OAUTH2_CLIENT_ID;
+const summitID = process.env.GATSBY_SUMMIT_ID;
 const config = {
-    key: `root_${clientId}`,
+    key: `root_${clientId}_${summitID}`,
     storage: localforage,
 };
 
