@@ -260,8 +260,10 @@
         {
           "logo": "/img/rittal_gmbh_co_kg_rittallogo_484x484.png",
           "name": "Rittal North America",
+          "intro": "Rittal North America",
           "advertiseImage": "",
           "sponsorId": 63,
+          "title": "Rittal North America",
           "companyId": 50,
           "documents": {
             "links": [
