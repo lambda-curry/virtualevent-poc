@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-
 import Layout from '../components/Layout'
 import ExtraQuestions from '../components/ExtraQuestions'
 
 import { saveExtraQuestions } from '../actions/user-actions'
 
 import styles from '../styles/extra-questions.module.scss'
+import {navigate} from "gatsby";
 
 export const ExtraQuestionsPageTemplate = ({ user, summit, saveExtraQuestions }) => {
 
@@ -75,6 +75,11 @@ export const ExtraQuestionsPageTemplate = ({ user, summit, saveExtraQuestions })
     }
 
     const getAnswer = (question) => answers.find(a => a.id === question.id).value;
+
+    if(!ticket){
+        navigate('/');
+        return null;
+    }
 
     return (
         <>
