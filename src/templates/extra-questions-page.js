@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-
 import Layout from '../components/Layout'
 import ExtraQuestions from '../components/ExtraQuestions'
 
 import { saveExtraQuestions } from '../actions/user-actions'
 
 import styles from '../styles/extra-questions.module.scss'
+import {navigate} from "gatsby";
 
 export const ExtraQuestionsPageTemplate = ({ user, summit, saveExtraQuestions }) => {
 
@@ -75,6 +75,11 @@ export const ExtraQuestionsPageTemplate = ({ user, summit, saveExtraQuestions })
     }
 
     const getAnswer = (question) => answers.find(a => a.id === question.id).value;
+
+    if(!ticket){
+        navigate('/');
+        return null;
+    }
 
     return (
         <>
@@ -144,11 +149,9 @@ export const ExtraQuestionsPageTemplate = ({ user, summit, saveExtraQuestions })
                         })}
                     </div>
                     <div className={`columns ${styles.disclaimer}`}>
-                        <div className="column is-1">
+                        <div className="column is-12">
                             <input type="checkbox" checked={disclaimer} onChange={toggleDisclaimer} />
                             <b>{summit.registration_disclaimer_mandatory ? '*' : ''}</b>
-                        </div>
-                        <div className="column is-11">
                             <span dangerouslySetInnerHTML={{ __html: summit.registration_disclaimer_content }} />
                         </div>
                     </div>
