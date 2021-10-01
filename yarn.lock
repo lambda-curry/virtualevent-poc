@@ -12476,10 +12476,10 @@ open@^7.0.3:
     is-docker "^2.0.0"
     is-wsl "^2.1.1"
 
-openstack-uicore-foundation@3.0.8:
-  version "3.0.8"
-  resolved "https://registry.yarnpkg.com/openstack-uicore-foundation/-/openstack-uicore-foundation-3.0.8.tgz#2905c5e8ebf7aa80d8613dbd1929d380699d6dd6"
-  integrity sha512-ipc/6UbYa50kL6P8EuiCkTmsOeDB0CRGNvlG/YDRZbW7muwd3xjl0gCLeENG3kmzBrV5FGK09dv0gnJdR1J8iA==
+openstack-uicore-foundation@3.0.36:
+  version "3.0.36"
+  resolved "https://registry.yarnpkg.com/openstack-uicore-foundation/-/openstack-uicore-foundation-3.0.36.tgz#da8fcd498cb474d07203b5c9429bdde285716d91"
+  integrity sha512-w+j3K6aDNedyISxK+jGfeAuBN/z0v2z53qVPTw+vycRf89v70E2k68gP7s1FNod4S3yviYzZjj2FSXWV6EczXQ==
 
 opentracing@^0.14.4:
   version "0.14.5"
@@ -14193,7 +14193,7 @@ react-dom@^15.4.2:
     object-assign "^4.1.0"
     prop-types "^15.5.10"
 
-react-dom@^16.2.0, react-dom@^16.4.1, react-dom@^16.8.4:
+react-dom@^16.2.0, react-dom@^16.8.4:
   version "16.14.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.14.0.tgz#7ad838ec29a777fb3c75c3a190f661cf92ab8b89"
   integrity sha512-1gCeQXDLoIqMgqD3IO2Ah9bnf0w9kzhwN5q4FGnHZ67hBm9yePzB5JJAIQCc8x3pFnNlwFq4RidZggNAAkzWWw==
@@ -14542,10 +14542,10 @@ react-router@5.2.0:
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
 
-react-rte-ref-fix@^0.16.2:
-  version "0.16.2"
-  resolved "https://registry.yarnpkg.com/react-rte-ref-fix/-/react-rte-ref-fix-0.16.2.tgz#7d3f314eaca573bd61c46d7e5b8943078af7bed3"
-  integrity sha512-Mm8SHppTeVv/z5IUN+IdaARas3CTOE8j691FbDnOCofnlO6U2es6EqNHDVO6lcXv/VLzUOEWldZ8E8VqL/1XRQ==
+react-rte@^0.16.3:
+  version "0.16.3"
+  resolved "https://registry.yarnpkg.com/react-rte/-/react-rte-0.16.3.tgz#27a069800a281b57c35b063c0e53eb04657af08f"
+  integrity sha512-IDZtdd+jjtd8zqrlEeO+DdujANdM9cy7o5AAKKzcSoW77r7U5PVicpkuWu5as3rzWRqlfQqPpjXq/PEFTRTmNA==
   dependencies:
     babel-runtime "^6.23.0"
     class-autobind "^0.1.4"
@@ -14557,8 +14557,6 @@ react-rte-ref-fix@^0.16.2:
     draft-js-import-markdown ">=0.3.0"
     draft-js-utils ">=0.2.0"
     immutable "^3.8.1"
-    react "^16.4.1"
-    react-dom "^16.4.1"
 
 react-scroll-sync@^0.8.0:
   version "0.8.0"
@@ -14782,7 +14780,7 @@ react@^15.4.2:
     object-assign "^4.1.0"
     prop-types "^15.5.10"
 
-react@^16.1.0, react@^16.2.0, react@^16.4.1, react@^16.8.4, react@^16.8.6:
+react@^16.1.0, react@^16.2.0, react@^16.8.4, react@^16.8.6:
   version "16.14.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.14.0.tgz#94d776ddd0aaa37da3eda8fc5b6b18a4c9a3114d"
   integrity sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==
