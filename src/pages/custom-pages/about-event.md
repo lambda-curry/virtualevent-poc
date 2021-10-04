@@ -10,3 +10,29 @@ Although we weren’t able to plan a live event due to the COVID-19 pandemic in 
 For 2021, the Infinity Festival is excited to bring together the best of both worlds – in-person and virtual events – in one fantastic hybrid experience this November. The in-person portion will be held in several adjacent Hollywood locations; the online component will be presented through the easy-to-use FNvirtual event platform. The festival will continue its theme of “story enabled by technology” with an entirely new slate of innovative programming, including industry-leading speakers, panel discussions, an exhibition hall, innovation labs, a fine art gallery and more, each with an emerging-tech focus. We hope to see you there!
 
 Secure your tickets today by clicking the log in the top left corner, and hitting "Get Tickets Now" on the homepage. For additional information, please visit <a href="https://www.infinityfestival.com" target="_blank">infinityfestival.com</a>
+
+</br>
+
+</br>
+
+##### Festival Venue: 
+
+**Goya Studios**
+
+<a href="https://www.google.se/maps/place/Goya+Studios+Sound+Stage/@34.0995434,-118.3323659,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2bf3a3816ffc9:0x6b63c0db302472d7!8m2!3d34.099539!4d-118.3301825" target="_blank"> 1541 N Cahuenga Blvd, Los Angeles, CA 90028</a>
+
+**Dream Hotel** 
+
+<a href="https://www.google.se/maps/place/6417+Selma+Ave,+Los+Angeles,+CA+90028/@34.100152,-118.3323674,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2bf3bb55a2eff:0x8997182163286899!8m2!3d34.100152!4d-118.3301787?shorturl=1" target="_blank">6417 Selma Avenue Hollywood, CA 90028</a>
+
+</br>
+
+
+
+##### Hotels:
+
+Dream Hotel 
+
+<a href="https://www.google.se/maps/place/6417+Selma+Ave,+Los+Angeles,+CA+90028/@34.100152,-118.3323674,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2bf3bb55a2eff:0x8997182163286899!8m2!3d34.100152!4d-118.3301787?shorturl=1" target="_blank">6417 Selma Avenue Hollywood, CA 90028</a>
+
+<a href="https://be.synxis.com/?adult=1&arrive=2021-11-03&chain=16978&child=0&currency=USD&depart=2021-11-04&hotel=66060&level=hotel&locale=en-US&promo=INFINITYFEST21&rooms=1" target="_blank">Click here</a> to book special IF room rates
