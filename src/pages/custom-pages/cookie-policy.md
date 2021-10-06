@@ -1,7 +1,7 @@
 ---
 templateKey: custom-page
 title: Cookie Policy
-requiresAuth: false
+userRequirement: NONE
 ---
 FNTECH, Inc., (“FNTECH”) and our partners use cookies or similar technologies to analyze trends, administer and track users’ movements during your visit to our website or use of our Services, and gather information about you, where you access our website or Services, and how you use our Products and services.
 

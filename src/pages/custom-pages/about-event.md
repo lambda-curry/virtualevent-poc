@@ -1,7 +1,7 @@
 ---
 templateKey: custom-page
 title: About Infinity Festival
-requiresAuth: false
+userRequirement: NONE
 ---
 **Infinity Festival Hollywood** is the place where Hollywood meets Silicon Valley. The festival, a multi-day annual event held in Los Angeles, celebrates “Story Enabled by Technology,” bringing together Hollywood’s finest storytelling talent with the innovative creators of Silicon Valley’s cutting-edge technology. The event began in 2018 in Beverly Hills, where the Paley Center served as the festival hub, with screenings and special events held in various theaters and locations around the area. The festival gained momentum, and in 2019 moved into the heart of Hollywood at Goya Studios and the Dream Hotel, as well as the Dolby Theater and other Hollywood venues. 
 

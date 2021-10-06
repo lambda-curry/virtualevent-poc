@@ -1,7 +1,7 @@
 ---
 templateKey: custom-page
 title: Health and Safety
-requiresAuth: false
+userRequirement: NONE
 ---
 #### **Health Protocols for Those Planning to Attend In-Person**
 

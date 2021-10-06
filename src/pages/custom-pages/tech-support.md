@@ -1,7 +1,7 @@
 ---
 templateKey: custom-page
 title: Tech Support
-requiresAuth: false
+userRequirement: NONE
 ---
 For FNid or FNvirtual event platform tech support, please email the FNTECH support team at <a href="mailto:support@fntech.com" target=”_blank”>support@fntech.com</a>. 
 

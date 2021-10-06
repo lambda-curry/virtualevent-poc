@@ -1,7 +1,7 @@
 ---
 templateKey: custom-page
 title: FAQ
-requiresAuth: true
+userRequirement: NONE
 ---
 **Q. What internet browsers do you suggest for your platform?**
 
