@@ -1,7 +1,7 @@
 ---
 templateKey: custom-page
 title: HELP
-requiresAuth: false
+userRequirement: NONE
 ---
 **EVENT TECH SUPPORT**\
 [support@fntech.com](mailto:support@fntech.com)

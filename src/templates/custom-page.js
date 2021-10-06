@@ -27,10 +27,10 @@ CustomPageTemplate.propTypes = {
   contentComponent: PropTypes.func,
 }
 
-const CustomPage = ({ data, isLoggedUser }) => {
-  const { frontmatter, html } = data.markdownRemark
+const CustomPage = ({ data, isLoggedUser, hasTicket }) => {
+  const { frontmatter: {title, userRequirement}, html } = data.markdownRemark
 
-  if (frontmatter.requiresAuth && !isLoggedUser) {
+  if ((userRequirement === 'LOGGGED_IN' && !isLoggedUser) || (userRequirement === 'HAS_TICKET' && !hasTicket)) {
     return <Redirect to='/' noThrow />
   }
 
@@ -38,7 +38,7 @@ const CustomPage = ({ data, isLoggedUser }) => {
     <Layout>
       <CustomPageTemplate
         contentComponent={HTMLContent}
-        title={frontmatter.title}
+        title={title}
         content={html}
       />
     </Layout>
@@ -52,11 +52,13 @@ CustomPage.propTypes = {
     }),
   }),
   isLoggedUser: PropTypes.bool,
-}
+  hasTicket: PropTypes.bool,
+};
 
-const mapStateToProps = ({ loggedUserState }) => ({  
+const mapStateToProps = ({ loggedUserState, userState }) => ({
   isLoggedUser: loggedUserState.isLoggedUser,
-})
+  hasTicket: userState.hasTicket
+});
 
 export default connect(mapStateToProps, null)(CustomPage)
 
@@ -66,7 +68,7 @@ export const customPageQuery = graphql`
       html
       frontmatter {        
         title
-        requiresAuth
+        userRequirement
       }
     }
   }

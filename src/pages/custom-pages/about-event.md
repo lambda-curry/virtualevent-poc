@@ -1,7 +1,7 @@
 ---
 templateKey: custom-page
 title: ABOUT THE EVENT
-requiresAuth: false
+userRequirement: NONE
 ---
 ## 2021 OCP Global Summit Overview 
 

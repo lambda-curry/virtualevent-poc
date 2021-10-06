@@ -1,7 +1,7 @@
 ---
 templateKey: custom-page
 title: CONTACT
-requiresAuth: false
+userRequirement: NONE
 ---
 <br>
 

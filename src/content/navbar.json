@@ -4,67 +4,78 @@
       "title": "LOBBY",
       "link": "/a/",
       "display": true,
-      "requiresAuth": true
+      "requiresAuth": true,
+      "pageRestriction": ["ANY"]
     },
     {
       "title": "ABOUT THE EVENT",
       "link": "/about-event",
       "display": true,
-      "requiresAuth": false
+      "requiresAuth": false,
+      "pageRestriction": ["ANY"]
     },
     {
       "title": "REGISTRATION",
       "link": "/reg",
       "display": true,
-      "requiresAuth": false
+      "requiresAuth": false,
+      "pageRestriction": ["ANY"]
     },
     {
       "requiresAuth": false,
       "title": "HEALTH & SAFETY",
       "link": "/health-and-safety",
-      "display": true
+      "display": true,
+      "pageRestriction": ["ANY"]
     },
     {
       "title": "TRAVEL",
       "link": "/travel",
       "display": true,
-      "requiresAuth": false
+      "requiresAuth": false,
+      "pageRestriction": ["ANY"]
     },
     {
       "title": "SCHEDULE",
       "link": "/a/schedule",
       "display": true,
-      "requiresAuth": false
+      "requiresAuth": false,
+      "pageRestriction": ["ANY"]
     },
     {
       "requiresAuth": true,
       "title": "MY SCHEDULE",
       "link": "/a/my-schedule",
-      "display": true
+      "display": true,
+      "pageRestriction": ["ANY"]
     },
     {
       "requiresAuth": false,
       "title": "SPONSORSHIP",
       "link": "/sponsorship",
-      "display": true
+      "display": true,
+      "pageRestriction": ["ANY"]
     },
     {
       "title": "CONTACT",
       "link": "/contact",
       "display": true,
-      "requiresAuth": false
+      "requiresAuth": false,
+      "pageRestriction": ["ANY"]
     },
     {
       "requiresAuth": false,
       "title": "FAQ",
       "link": "/faq",
-      "display": true
+      "display": true,
+      "pageRestriction": ["ANY"]
     },
     {
       "requiresAuth": true,
       "title": "MY ORDERS / TICKETS",
       "link": "https://registration.fnvirtual.app/a/member/orders",
-      "display": true
+      "display": true,
+      "pageRestriction": ["ANY"]
     }
   ]
 }

@@ -40,7 +40,7 @@ const WithAuthRoute = ({
     if (!fetchedUserProfile && !userIsAuthz()) {
       getUserProfile().then( _ => setFetchedUserProfile(true))
     }
-  }, [fetchedUserProfile, isLoggedIn, hasTicket, isAuthorized, userProfile, getUserProfile]);
+  }, [fetchedUserProfile, isLoggedIn, hasTicket, isAuthorized, userProfile, getUserProfile, userIsAuthz]);
 
   if (!isLoggedIn) {
     navigate("/", {state: { backUrl: `${location.pathname}`,},});
