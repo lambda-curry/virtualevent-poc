@@ -1,7 +1,7 @@
 backend:
   name: github
   branch: refactor-nav
-  repo: fntechgit/virtualevent-poc
+  repo: main
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
