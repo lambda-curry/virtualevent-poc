@@ -1,7 +1,7 @@
 backend:
   name: github
-  branch: main
-  repo: fntechgit/virtualevent-poc
+  branch: refactor-nav
+  repo: main
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
@@ -107,6 +107,7 @@ collections:
               {label: "Link", name: "link", widget: string},
               {label: "Display", name: "display", widget: boolean, required: false},
               {label: "Requires Auth?", name: "requiresAuth", widget: boolean, required: false, default: false},
+              {label: "Show only on page", name: "pageRestriction", widget: select, multiple: true, default: ["ANY"], options: ["ANY", "MARKETING", "LOBBY", "EVENT"]},
             ]}
       - file: "src/content/footer.json"
         label: "Footer"
@@ -242,7 +243,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "custom-page"}
       - {label: Title, name: title, widget: string}
-      - {label: "Requires Auth?", name: requiresAuth, widget: boolean, required: false, default: false}
+      - {label: "User Requirement", name: userRequirement, widget: select, options: ["NONE", "LOGGED_IN", "HAS_TICKET"], default: "NONE"}
       - {label: "Body", name: body, widget: markdown}
   - name: "sponsors"
     label: "Sponsors Data"
