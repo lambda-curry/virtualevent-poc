@@ -11,7 +11,7 @@
         "display": true
       },
       "loginButton": {
-        "text": "Event Log in",
+        "text": "EVENT LOG IN",
         "display": true
       }
     },
@@ -86,7 +86,7 @@
       "title": "Mid Left",
       "images": [
         {
-          "image": "/img/if2021_fnv_marketingpage_space3_v2.png",
+          "image": "/img/if2021_fnv_marketingpage_space3.png",
           "link": ""
         }
       ]
