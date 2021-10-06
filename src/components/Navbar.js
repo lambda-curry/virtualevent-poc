@@ -17,6 +17,7 @@ const Navbar = ({
   summit,
   updateProfilePicture,
   updateProfile,
+  location
 }) => {
   const [active, setActive] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
@@ -38,10 +39,10 @@ const Navbar = ({
   // we assume that all pages under /a/* requires auth except /a/schedule
   // item.requiresAuth allows to mark specific pages that are not under /a/* pattern.
   const showItem = (item) => {
-    const passPageRestriction = !item.pageRestriction || item.pageRestriction === 'ANY' ||
-        (item.pageRestriction === 'EVENT' && item.link.startsWith("/a/event")) ||
-        (item.pageRestriction === 'MARKETING' && item.link === "/") ||
-        (item.pageRestriction === 'LOBBY' && item.link === "/a/");
+    const passPageRestriction = !item.pageRestriction || item.pageRestriction.includes('ANY') ||
+        (item.pageRestriction.includes('EVENT') && location.pathname.startsWith("/a/event")) ||
+        (item.pageRestriction.includes('MARKETING') && location.pathname === "/") ||
+        (item.pageRestriction.includes('LOBBY') && location.pathname === "/a/");
 
     return item.display && (!item.requiresAuth || isLoggedUser) && passPageRestriction;
   };

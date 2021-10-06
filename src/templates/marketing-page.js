@@ -158,7 +158,7 @@ const MarketingPage = ({ summit, location, data, summit_phase, user, isLoggedUse
   const { html } = data.markdownRemark;
 
   return (
-    <Layout marketing={true}>
+    <Layout marketing={true} location={location}>
       <MarketingPageTemplate
         contentComponent={HTMLContent}
         content={html}
