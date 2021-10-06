@@ -152,7 +152,7 @@ const MarketingHeroComponent = ({ siteSettings, summit_phase, isLoggedUser, loca
             </Slider>
             :
             <div className={styles.singleImage}>
-              <img src={siteSettings.heroBanner.images[0].image} />
+              <img alt="" src={siteSettings.heroBanner.images[0].image} />
             </div>
           }
         </div>

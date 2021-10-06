@@ -1,6 +1,6 @@
 ---
 templateKey: custom-page
-requiresAuth: false
+userRequirement: NONE
 title: Contact
 ---
 YOU DECIDE!
