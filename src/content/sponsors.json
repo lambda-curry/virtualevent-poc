@@ -215,105 +215,6 @@
       ],
       "sponsors": [
         {
-          "logo": "/img/rittal_gmbh_co_kg_rittallogo_484x484.png",
-          "name": "Rittal North America",
-          "intro": "Rittal North America",
-          "advertiseImage": "",
-          "sponsorId": 63,
-          "title": "Rittal North America",
-          "companyId": 50,
-          "documents": {
-            "links": [
-              {
-                "class_name": "PresentationLink",
-                "link": "https://www.facebook.com/RittalNorthAmerica",
-                "name": "Facebook",
-                "order": 1
-              },
-              {
-                "class_name": "PresentationLink",
-                "link": "https://www.linkedin.com/company/rittalnorthamerica/",
-                "name": "LinkedIn",
-                "order": 2
-              },
-              {
-                "class_name": "PresentationLink",
-                "link": "https://twitter.com/RittalNA",
-                "name": "Twitter",
-                "order": 3
-              },
-              {
-                "class_name": "PresentationLink",
-                "link": "https://www.youtube.com/c/RittalCorporation",
-                "order": 4,
-                "name": "Youtube"
-              }
-            ]
-          },
-          "id": 63,
-          "email": "rittal@rittal.us",
-          "usesSponsorPage": true
-        },
-        {
-          "advertiseImage": "",
-          "name": "Credo",
-          "id": 64,
-          "sponsorId": 64,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 51
-        },
-        {
-          "logo": "/img/sk_hynix_virtual-booth-logo.png",
-          "name": "SK hynix",
-          "intro": "SK hynix is the world's top tier semiconductor supplier, offering DRAM, NAND Flash Memory, and CMOS Image Sensor for a wide range of distinguished customers globally. SK hynix ranks third in the global semiconductor industry and second in the storage semiconductor industry.",
-          "advertiseImage": "",
-          "sponsorId": 65,
-          "companyId": 52,
-          "documents": {
-            "links": [
-              {
-                "class_name": "PresentationLink",
-                "link": "https://www.linkedin.com/company/sk-hynix/",
-                "name": "LinkedIn",
-                "order": 1
-              }
-            ]
-          },
-          "id": 65,
-          "usesSponsorPage": true
-        },
-        {
-          "advertiseImage": "",
-          "name": "Flex",
-          "id": 67,
-          "sponsorId": 67,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 54,
-          "usesSponsorPage": false
-        },
-        {
-          "marquee": "Ensuring the continuity of today’s and tomorrow’s vital applications.",
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-vertiv.png",
-          "name": "Vertiv",
-          "intro": "Nearly all aspects of our lives involve the use of technology. It is how we work and play and do anything in between. This connectivity or use of data is built into the very fabric of our society. It is vital to human progress. Vertiv believes there is a better way to meet this accelerating demand for data — one driven by passion and innovation. As industry experts, we collaborate with our customers to envision and build future-ready infrastructures. We leverage our portfolio of hardware, software, analytics, and services, to ensure our customers’ vital applications run continuously, perform optimally, and scale with business needs.",
-          "advertiseImage": "",
-          "sponsorId": 68,
-          "title": "Vertiv",
-          "companyId": 55,
-          "documents": {
-            "links": [
-              {
-                "class_name": "PresentationLink",
-                "link": "https://www.linkedin.com/company/vertiv/",
-                "order": 1,
-                "name": "Linkedin"
-              }
-            ]
-          },
-          "id": 68,
-          "usesSponsorPage": true
-        },
-        {
           "advertiseImage": "",
           "name": "AMI",
           "id": 69,
@@ -328,6 +229,31 @@
           "sponsorId": 70,
           "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
           "companyId": 57
+        },
+        {
+          "advertiseImage": "",
+          "name": "bp",
+          "id": 72,
+          "sponsorId": 72,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 59
+        },
+        {
+          "advertiseImage": "",
+          "name": "Credo",
+          "id": 64,
+          "sponsorId": 64,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 51
+        },
+        {
+          "advertiseImage": "",
+          "name": "Flex",
+          "id": 67,
+          "sponsorId": 67,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 54,
+          "usesSponsorPage": false
         },
         {
           "marquee": "Visit the New KIOXIA Virtual Experience Center at https://www.vrexhibitdesign.com/AEM/kioxia/VRshowroom/",
@@ -374,19 +300,93 @@
         },
         {
           "advertiseImage": "",
-          "name": "bp",
-          "id": 72,
-          "sponsorId": 72,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 59
-        },
-        {
-          "advertiseImage": "",
           "name": "Pliops",
           "id": 97,
           "sponsorId": 97,
           "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
           "companyId": 83
+        },
+        {
+          "logo": "/img/rittal_gmbh_co_kg_rittallogo_484x484.png",
+          "name": "Rittal North America",
+          "intro": "Rittal North America",
+          "advertiseImage": "",
+          "sponsorId": 63,
+          "title": "Rittal North America",
+          "companyId": 50,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/RittalNorthAmerica",
+                "name": "Facebook",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/rittalnorthamerica/",
+                "name": "LinkedIn",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/RittalNA",
+                "name": "Twitter",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/c/RittalCorporation",
+                "order": 4,
+                "name": "Youtube"
+              }
+            ]
+          },
+          "id": 63,
+          "email": "rittal@rittal.us",
+          "usesSponsorPage": true
+        },
+        {
+          "logo": "/img/sk_hynix_virtual-booth-logo.png",
+          "name": "SK hynix",
+          "intro": "SK hynix is the world's top tier semiconductor supplier, offering DRAM, NAND Flash Memory, and CMOS Image Sensor for a wide range of distinguished customers globally. SK hynix ranks third in the global semiconductor industry and second in the storage semiconductor industry.",
+          "advertiseImage": "",
+          "sponsorId": 65,
+          "companyId": 52,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/sk-hynix/",
+                "name": "LinkedIn",
+                "order": 1
+              }
+            ]
+          },
+          "id": 65,
+          "usesSponsorPage": true
+        },
+        {
+          "marquee": "Ensuring the continuity of today’s and tomorrow’s vital applications.",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-vertiv.png",
+          "name": "Vertiv",
+          "intro": "Nearly all aspects of our lives involve the use of technology. It is how we work and play and do anything in between. This connectivity or use of data is built into the very fabric of our society. It is vital to human progress. Vertiv believes there is a better way to meet this accelerating demand for data — one driven by passion and innovation. As industry experts, we collaborate with our customers to envision and build future-ready infrastructures. We leverage our portfolio of hardware, software, analytics, and services, to ensure our customers’ vital applications run continuously, perform optimally, and scale with business needs.",
+          "advertiseImage": "",
+          "sponsorId": 68,
+          "title": "Vertiv",
+          "companyId": 55,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/vertiv/",
+                "order": 1,
+                "name": "Linkedin"
+              }
+            ]
+          },
+          "id": 68,
+          "usesSponsorPage": true
         }
       ]
     },
@@ -398,6 +398,15 @@
         }
       ],
       "sponsors": [
+        {
+          "advertiseImage": "",
+          "name": "3M Company",
+          "id": 80,
+          "sponsorId": 80,
+          "title": "3M Company",
+          "logo": "/img/3m_picture1.png",
+          "companyId": 67
+        },
         {
           "advertiseImage": "",
           "name": "Advanced Energy ",
@@ -435,6 +444,14 @@
           "companyId": 47,
           "usesSponsorPage": true,
           "intro": "TEST"
+        },
+        {
+          "advertiseImage": "",
+          "name": "Cisco",
+          "id": 98,
+          "sponsorId": 98,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 84
         },
         {
           "marquee": "12.8Tb User Programmable Switches, 5G Ready Cell Site Gateways, Scalable Fixed Broadband Aggregation.",
@@ -529,6 +546,23 @@
           "usesSponsorPage": true
         },
         {
+          "advertiseImage": "",
+          "name": "Keysight Technologies",
+          "id": 79,
+          "sponsorId": 79,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 66
+        },
+        {
+          "advertiseImage": "",
+          "name": "Lattice Semiconductor",
+          "id": 83,
+          "sponsorId": 83,
+          "title": "Lattice Semiconductor",
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 70
+        },
+        {
           "marquee": "Expanding the world's vision of what is possible!",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-penguin.png",
           "name": "Penguin Computing",
@@ -581,11 +615,28 @@
         },
         {
           "advertiseImage": "",
+          "name": "Ragile Networks",
+          "id": 84,
+          "sponsorId": 84,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 71
+        },
+        {
+          "advertiseImage": "",
           "name": "Samtec",
           "id": 73,
           "sponsorId": 73,
           "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
           "companyId": 60
+        },
+        {
+          "advertiseImage": "",
+          "name": "Scaleflux",
+          "id": 81,
+          "sponsorId": 81,
+          "email": "",
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 68
         },
         {
           "marquee": "Innovation in Enterprise Flash Storage.",
@@ -601,32 +652,6 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "name": "Keysight Technologies",
-          "id": 79,
-          "sponsorId": 79,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 66
-        },
-        {
-          "advertiseImage": "",
-          "name": "3M Company",
-          "id": 80,
-          "sponsorId": 80,
-          "title": "3M Company",
-          "logo": "/img/3m_picture1.png",
-          "companyId": 67
-        },
-        {
-          "advertiseImage": "",
-          "name": "Scaleflux",
-          "id": 81,
-          "sponsorId": 81,
-          "email": "",
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 68
-        },
-        {
           "logo": "/img/super_micro_computer_inc_supermicro_greenc_newlogo_whitebackground.png",
           "name": "Super Micro Computer",
           "intro": "Supermicro® (NASDAQ: SMCI), the leading innovator in high-performance, high-efficiency server technology is a premier provider of advanced Server Building Block Solutions® for Data Center, Cloud Computing, Enterprise IT, Hadoop/Big Data, HPC and Embedded Systems worldwide. Supermicro is committed to protecting the environment through its “We Keep IT Green®” initiative and provides customers with the most energy-efficient, environmentally-friendly solutions available on the market. Visit www.supermicro.com for details and follow Supermicro on Facebook and Twitter.",
@@ -637,31 +662,6 @@
           "id": 82,
           "email": "desireem@supermicro.com",
           "usesSponsorPage": true
-        },
-        {
-          "advertiseImage": "",
-          "name": "Lattice Semiconductor",
-          "id": 83,
-          "sponsorId": 83,
-          "title": "Lattice Semiconductor",
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 70
-        },
-        {
-          "advertiseImage": "",
-          "name": "Ragile Networks",
-          "id": 84,
-          "sponsorId": 84,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 71
-        },
-        {
-          "advertiseImage": "",
-          "name": "Cisco",
-          "id": 98,
-          "sponsorId": 98,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 84
         }
       ]
     },
