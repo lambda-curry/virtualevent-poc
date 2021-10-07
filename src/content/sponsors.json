@@ -222,9 +222,59 @@
           "advertiseImage": "",
           "sponsorId": 48,
           "companyId": 42,
+          "columnAds": [],
           "id": 48,
           "showLogoInEventPage": true,
-          "email": "yaping.kitamura@qct.io"
+          "email": "yaping.kitamura@qct.io",
+          "usesSponsorPage": true
+        },
+        {
+          "marquee": "Visit Wiwynn at C2! Check out Wiwynn next generation OCP 21”/19” and Open Edge solutions. Executive Track starts at 2:00pm and Expo Hall Talk at 3:10pm 9th Nov, be there!",
+          "sponsorColor": "#adcf2a",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-wiwynn.png",
+          "name": "Wiwynn Corporation",
+          "intro": "Wiwynn is an innovative cloud IT infrastructure provider of computing, storage products, and rack solutions. We are committed to the best TCO and workload optimization for data centers and telecoms, and actively participate in OCP, ORAN Alliance, ONF, and TIP for 5G/Edge solutions.",
+          "headerImageMobile": "/img/wiwynn_corporation_mobile_welcome_page_20211007.jpg",
+          "advertiseImage": "/img/wiwynn_corporation_main_page_ad_20211007.jpg",
+          "sponsorId": 49,
+          "companyId": 43,
+          "columnAds": [
+            {
+              "image": "/img/wiwynn_corporation_sponsorad_20210928.jpg",
+              "link": "https://www.wiwynn.com/"
+            }
+          ],
+          "id": 49,
+          "showLogoInEventPage": true,
+          "email": "Sales@wiwynn.com",
+          "usesSponsorPage": true
+        },
+        {
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "name": "Xilinx",
+          "intro": "Xilinx delivers the Adaptive Platform for accelerated computing. Our Adaptive SoCs, accelerator cards, and FPGAs give leading-edge companies the freedom to innovate and deploy, rapidly. We partner with our customers to create scalable, differentiated and intelligent solutions from the cloud to the edge. In a world where the pace of change is accelerating, more and more innovators trust Xilinx to help them get to market faster, and with optimal efficiency and performance. For more information, visit www.xilinx.com.",
+          "advertiseImage": "",
+          "sponsorId": 61,
+          "title": "Xilinx",
+          "companyId": 44,
+          "id": 61,
+          "showLogoInEventPage": true,
+          "usesSponsorPage": true
+        },
+        {
+          "marquee": "ZT Systems: We Speak Hyperscale™ - the industry leading provider of purpose-built server hardware solutions from the cloud to the 5G network edge.",
+          "sponsorColor": "#E24307",
+          "logo": "/img/zt_systems_zt_systems_logo-cmyk-vertical.png",
+          "name": "ZT Systems",
+          "intro": "ZT Systems is a leading supplier of compute, storage, and accelerator solutions for hyperscale, 5G, and edge computing applications. A trusted design, manufacturing, and logistics partner with over 25 years of experience, ZT serves data center operators from enterprise organizations to the largest cloud and telecommunications providers. Headquartered in Secaucus, NJ with global manufacturing spanning the US, EMEA and APAC, ZT deploys and supports integrated rack-level solutions worldwide. Through close, confidential customer engagement, ZT leverages deep experience with hyperscale and edge computing workloads and supply chain considerations to develop application-tailored solutions. Flexible, purpose-built manufacturing capabilities enable ZT to sustain high quality while accommodating the dynamic nature of hyperscale. ZT’s commitment to operational excellence is demonstrated by a strong track record of on-time delivery.",
+          "advertiseImage": "",
+          "sponsorId": 62,
+          "title": "",
+          "companyId": 45,
+          "id": 62,
+          "showLogoInEventPage": true,
+          "email": "sales@ztsystems.com",
+          "usesSponsorPage": true
         }
       ]
     },
