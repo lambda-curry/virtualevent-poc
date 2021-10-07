@@ -124,6 +124,36 @@
                 "link": "/img/itrenew_circular-model-chart-updated.pdf",
                 "name": "Circular model chart",
                 "order": 6
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/itrenew_kubernetes_optimized_sesame_by_itrenew_datasheet.pdf",
+                "order": 7,
+                "name": "Kubernetes O by ITRenew Datasheet "
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/itrenew_hyper-converged_optimized_sesame_by_itrenew_datasheet.pdf",
+                "order": 8,
+                "name": "Hyper Converged Optimized Sesame by ITRenew Datasheet"
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/itrenew_ai-ml_optimized_sesame-by-itrenew_datasheet.pdf",
+                "name": "AI-ML Optimized Sesame by ITRenew Datasheet",
+                "order": 9
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/itrenew_edge_optimized_sesame_by_itrenew_datasheet.pdf",
+                "name": "Edge Optimized Sesame by ITRenew Datasheet",
+                "order": 10
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/itrenew_itrenew_new_data_center_models_final.pdf",
+                "name": "ITRenew New Data Center Models",
+                "order": 11
               }
             ]
           },
