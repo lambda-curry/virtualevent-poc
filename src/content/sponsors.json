@@ -793,8 +793,12 @@
           "logo": "/img/ocp21glo_fnv_sponsorlogo-drivenets.png",
           "name": "DriveNets",
           "intro": "DriveNets is a leader in cloud-native networking software and network disaggregation solutions. Founded in 2015 and based in Israel, DriveNets offers communications service providers (CSPs) and cloud providers a radical new way to build networks, substantially growing their profitability by changing their technological and economic models. DriveNets’ solution – Network Cloud – adapts the architectural model of cloud to telco-grade networking. Network Cloud is a cloud-native software that runs over a shared physical infrastructure of standard white-boxes, radically simplifying the network’s operations, offering telco-scale performance and elasticity at a much lower cost.",
+          "headerImage": "/img/drivenets_drivenets-ocp-1440x400.png",
+          "headerImageMobile": "/img/drivenets_drivenets-ocp-768x250.png",
+          "chatLink": "https://drivenets.zoom.us/j/95353949825?pwd=S0JBRW1IV0JqL3dKb0JGb0lxajF3dz09",
           "advertiseImage": "",
           "sponsorId": 102,
+          "companyId": 88,
           "documents": {
             "links": [
               {
@@ -817,8 +821,15 @@
               }
             ]
           },
+          "columnAds": [
+            {
+              "image": "/img/drivenets_ocp-virtual-clickable-sponsor-ad.png",
+              "link": "https://drivenets.com/resources/advancing-the-capacity-of-distributed-disaggregated-routers-ddc/"
+            }
+          ],
           "id": 102,
-          "email": "gsmoreno@drivenets.com"
+          "email": "gsmoreno@drivenets.com",
+          "usesSponsorPage": true
         },
         {
           "advertiseImage": "",
