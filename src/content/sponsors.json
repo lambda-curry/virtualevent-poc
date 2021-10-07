@@ -836,7 +836,8 @@
           "name": "Pluribus Networks",
           "id": 103,
           "sponsorId": 103,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 89
         }
       ]
     },
