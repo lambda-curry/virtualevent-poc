@@ -33,7 +33,7 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Visit Inspur booth #B23 to see our latest innovations in OCP that balance efficiency and power, optimized for enterprise, cloud, and AI.",
+          "marquee": "Visit Inspur booth# B23 to see our latest innovations in OCP that balance efficiency and power, optimized for enterprise, cloud, and AI.",
           "externalLink": "",
           "sponsorColor": "#0271E4",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-inspur.png",
@@ -78,7 +78,7 @@
         {
           "marquee": "Reimagining Intel in the World.",
           "logo": "/img/intel_logo-classicblue-3000px.png",
-          "name": "Intel",
+          "name": "Intel Corporation",
           "intro": "",
           "advertiseImage": "",
           "sponsorId": 59,
