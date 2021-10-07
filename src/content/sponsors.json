@@ -333,7 +333,8 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Visit the New KIOXIA Virtual Experience Center at https://www.vrexhibitdesign.com/AEM/kioxia/VRshowroom/",
+          "marquee": "Visit the New KIOXIA Virtual Experience Center",
+          "sponsorColor": "#1ABCEF",
           "logo": "/img/kioxia_america_inc_kioxia_logo_silver.png",
           "name": "KIOXIA",
           "intro": "KIOXIA America, Inc. is the U.S.-based subsidiary of KIOXIA Corporation, a leading worldwide supplier of flash memory and solid state drives (SSDs). From the invention of flash memory to today’s breakthrough BiCS FLASH™ 3D technology, KIOXIA continues to pioneer cutting-edge memory technology and shape the future of storage in high-density applications, including advanced smartphones, PCs, SSDs, automotive, and data centers.",
