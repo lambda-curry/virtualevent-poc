@@ -1015,12 +1015,15 @@
           "usesSponsorPage": true
         },
         {
+          "marquee": "The SDIA is the leading platform for driving sustainability in the digital sector.",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-sdia.png",
+          "name": "Sustainable Digital Infrastructure Alliance (SDIA)",
           "advertiseImage": "",
-          "name": "SDIA",
-          "id": 113,
           "sponsorId": 113,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 100
+          "companyId": 100,
+          "id": 113,
+          "email": "michael.oghia@sdialliance.org",
+          "usesSponsorPage": true
         },
         {
           "marquee": "OpenPOWER Foundation - Supporting the Open, Free, Proven, Performant POWER Instruction Set Architecture",
