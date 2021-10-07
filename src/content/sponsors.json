@@ -780,6 +780,19 @@
           "id": 82,
           "email": "desireem@supermicro.com",
           "usesSponsorPage": true
+        },
+        {
+          "marquee": "Innovator In Electronics",
+          "featuredEventId": "",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-murata.png",
+          "name": "Murata",
+          "intro": "Murata Manufacturing Co., Ltd. is a worldwide leader in the design, manufacture and sale of ceramic-based passive electronic components and solutions, communication modules and power supply modules. Murata is committed to the development of advanced electronic materials and leading edge, multi-functional, high-density modules. The company has employees and manufacturing facilities throughout the world. For more information, visit Murata’s website at www.murata.com.",
+          "advertiseImage": "",
+          "sponsorId": 118,
+          "companyId": 105,
+          "id": 118,
+          "showLogoInEventPage": true,
+          "email": "amy.talley@murata.com"
         }
       ]
     },
