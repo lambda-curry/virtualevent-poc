@@ -995,14 +995,17 @@
           "companyId": 92
         },
         {
-          "advertiseImage": "",
-          "name": "NVIDIA",
-          "id": 108,
-          "sponsorId": 108,
-          "intro": "NVIDIA’s invention of the GPU sparked the PC gaming market. The company’s pioneering work in accelerated computing—a supercharged form of computing at the intersection of computer graphics, high performance computing and AI—is reshaping trillion-dollar industries, such as transportation, healthcare and manufacturing, and fueling the growth of many others.",
+          "marquee": "The data center is the new unit of computing. Explore NVIDIA’s software-defined, hardware-accelerated networking solutions that are making it happen.",
           "sponsorColor": "#76B900",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-nvidia.png",
-          "companyId": 94
+          "name": "NVIDIA",
+          "intro": "NVIDIA’s invention of the GPU sparked the PC gaming market. The company’s pioneering work in accelerated computing—a supercharged form of computing at the intersection of computer graphics, high performance computing and AI—is reshaping trillion-dollar industries, such as transportation, healthcare and manufacturing, and fueling the growth of many others.",
+          "advertiseImage": "",
+          "sponsorId": 108,
+          "companyId": 94,
+          "id": 108,
+          "email": "networking@nvidia.com",
+          "usesSponsorPage": true
         },
         {
           "advertiseImage": "",
