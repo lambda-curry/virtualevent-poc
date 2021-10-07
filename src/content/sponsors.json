@@ -444,9 +444,15 @@
               },
               {
                 "class_name": "PresentationLink",
-                "name": "Nes",
+                "name": "News",
                 "link": "https://news.skhynix.com/",
                 "order": 2
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "YouTube",
+                "order": 3,
+                "link": "https://www.youtube.com/channel/UC6pwdpqcG1_vgcKBxUcvGtA"
               }
             ]
           },
