@@ -426,6 +426,15 @@
           "usesSponsorPage": true
         },
         {
+          "advertiseImage": "",
+          "showLogoInEventPage": true,
+          "name": "Sims Lifecycle Services",
+          "companyId": 104,
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-simslifecycle.png",
+          "id": 117,
+          "sponsorId": 117
+        },
+        {
           "marquee": "SK hynix is aimed at leading future industries of the Data Era and ultimately creating greener, healthier, and more prosperous societies.",
           "sponsorColor": "#EA002C",
           "logo": "/img/sk_hynix_virtual-booth-logo.png",
@@ -480,6 +489,7 @@
             ]
           },
           "id": 68,
+          "showLogoInEventPage": false,
           "usesSponsorPage": true
         }
       ]
@@ -808,7 +818,8 @@
           "name": "MiTAC Computing Technology",
           "id": 100,
           "sponsorId": 100,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+          "logo": "/img/mitac_horizontal_mitac_logo_color.png",
+          "companyId": 86
         },
         {
           "marquee": "DriveNets builds networks like cloud, over a fully virtualized cloud-native architecture - scalable, demand-responsive and innovations-ready. ",
