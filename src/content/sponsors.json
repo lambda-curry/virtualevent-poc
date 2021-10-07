@@ -426,9 +426,11 @@
           "usesSponsorPage": true
         },
         {
+          "marquee": "SK hynix is aimed at leading future industries of the Data Era and ultimately creating greener, healthier, and more prosperous societies.",
+          "sponsorColor": "#EA002C",
           "logo": "/img/sk_hynix_virtual-booth-logo.png",
           "name": "SK hynix",
-          "intro": "SK hynix is the world's top tier semiconductor supplier, offering DRAM, NAND Flash Memory, and CMOS Image Sensor for a wide range of distinguished customers globally. SK hynix ranks third in the global semiconductor industry and second in the storage semiconductor industry.",
+          "intro": "SK hynix seeks to propel the semiconductor industry forward with global tech leadership, and provide a future of greater value to stakeholders to create a better world with information and communication technology. As the world’s third largest chipmaker with know-how and customer trust built over more than 38 years, SK hynix continues delivering on a comprehensive range of memory semiconductor solutions from DRAM and NAND Flash to CMOS image sensors. The company’s advanced memory technologies are driving critical innovations of the Fourth Industrial Revolution such as Big data, AI, Machine Learning, IoT, and Robotics. Moreover, SK hynix is aiming higher with the new “Mem4EST (Memory Forest)” initiative to quickly respond to future changes in the ICT ecosystem. With robust ESG management that accounts for value to the environment, societies, and future generations, SK hynix will continue to build competence and success around the globe.",
           "advertiseImage": "",
           "sponsorId": 65,
           "companyId": 52,
@@ -439,10 +441,17 @@
                 "link": "https://www.linkedin.com/company/sk-hynix/",
                 "name": "LinkedIn",
                 "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Nes",
+                "link": "https://news.skhynix.com/",
+                "order": 2
               }
             ]
           },
           "id": 65,
+          "email": "suna.shin@sk.com",
           "usesSponsorPage": true
         },
         {
