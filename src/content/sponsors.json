@@ -726,6 +726,12 @@
           "advertiseImage": "",
           "sponsorId": 78,
           "companyId": 65,
+          "columnAds": [
+            {
+              "image": "/img/silicon_motion_ad-banner_484x484_final.jpg",
+              "link": "https://www.siliconmotion.com/products/enterprise/detail"
+            }
+          ],
           "id": 78,
           "email": "chloe.lee@siliconmotiom.com",
           "usesSponsorPage": true
