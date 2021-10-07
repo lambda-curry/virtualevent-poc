@@ -168,13 +168,23 @@
           "usesSponsorPage": true
         },
         {
+          "marquee": "Welcome to the Microsoft Azure booth. Open hardware for a sustainable future. Learn more at aka.ms/OCP2021.",
+          "sponsorColor": "#50E6FF",
           "logo": "/img/microsoft_microsoft-logo-484x484.png",
           "name": "Microsoft",
-          "intro": "test",
+          "intro": "Microsoft enables digital transformation for the era of an intelligent cloud and an intelligent edge. Its mission is to empower every person and every organization on the planet to achieve more.",
+          "headerImage": "/img/microsoft_microsoft-ocp-virtual-booth-1440x400.png",
+          "headerImageMobile": "/img/microsoft_microsoft-ocp-virtual-booth-768x250.png",
           "advertiseImage": "",
           "sponsorId": 56,
           "title": "Microsoft ",
           "companyId": 10,
+          "columnAds": [
+            {
+              "image": "/img/microsoft_microsoft-ocp-sponsorad-484x484.png",
+              "link": "aka.ms/OCP2021"
+            }
+          ],
           "id": 56,
           "usesSponsorPage": true
         },
