@@ -1017,13 +1017,18 @@
           "companyId": 100
         },
         {
-          "advertiseImage": "",
+          "marquee": "OpenPOWER Foundation - Supporting the Open, Free, Proven, Performant POWER Instruction Set Architecture",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-openpowerfoundation.png",
           "name": "OpenPOWER Foundation",
-          "id": 114,
+          "intro": "The OpenPOWER Foundation is a non-profit organization supporting the free and open RISC based instruction set architecture. We enable open community collaboration, technology advancements in the OpenPOWER ecosystem, and visibility of OpenPOWER member successes.",
+          "headerImage": "/img/openpower_openpower_welcome.png",
+          "advertiseImage": "",
           "sponsorId": 114,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 1010,
-          "title": "OpenPOWER Foundation"
+          "title": "OpenPOWER Foundation",
+          "companyId": 101,
+          "id": 114,
+          "email": "info@openpowerfoundation.org",
+          "usesSponsorPage": true
         }
       ]
     },
