@@ -212,6 +212,20 @@
           "value": "tier-DHcI3dWGk",
           "label": "Emerald"
         }
+      ],
+      "sponsors": [
+        {
+          "marquee": "Infrastructure for Your Digital Transformation : Smart, Speedy, Scaling and Ready.",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-qct.png",
+          "name": "QCT",
+          "intro": "Quanta Cloud Technology (QCT) is a global datacenter solution provider. We combine the efficiency of hyperscale hardware with infrastructure software from a diversity of industry leaders to solve next-generation datacenter design and operation challenges. QCT serves cloud service providers, telecoms and enterprises running public, hybrid and private clouds. Product lines include hyper-converged and software-defined datacenter solutions as well as servers, storage, switches, integrated racks with a diverse ecosystem of hardware component and software partners. QCT designs, manufactures, integrates and services cutting edge offerings via its own global network. The parent of QCT is Quanta Computer, Inc., a Fortune Global 500 corporation.",
+          "advertiseImage": "",
+          "sponsorId": 48,
+          "companyId": 42,
+          "id": 48,
+          "showLogoInEventPage": true,
+          "email": "yaping.kitamura@qct.io"
+        }
       ]
     },
     {
