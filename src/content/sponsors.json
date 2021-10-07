@@ -385,9 +385,10 @@
           "companyId": 83
         },
         {
-          "logo": "/img/rittal_gmbh_co_kg_rittallogo_484x484.png",
+          "marquee": "Open Hardware. Open Solution. Open Future.",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-rittal.png",
           "name": "Rittal North America",
-          "intro": "Rittal North America",
+          "intro": "Rittal North America is the U.S. subsidiary of Rittal GmbH & Co. KG, the world’s largest manufacturer of industrial and IT enclosures, racks and accessories, including climate control and power management systems for industrial, data center, outdoor and hybrid applications. Rittal's off-the-shelf standard, modified standard and custom-engineered products are recognized throughout the world as innovative, high quality solutions for practically any industrial or IT infrastructure application — from single enclosures to comprehensive, mission critical systems.",
           "advertiseImage": "",
           "sponsorId": 63,
           "title": "Rittal North America",
