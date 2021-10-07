@@ -87,8 +87,9 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Energy isn't the only renewable resource.",
-          "sponsorColor": "#00B6E0",
+          "marquee": "Energy isn't the only renewable resource™",
+          "sideImage": "",
+          "sponsorColor": "#343548",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-itrenew.png",
           "name": "ITRenew",
           "intro": "ITRenew, the Circular Cloud leader, is a multinational corporation creating circularity models and second lives for some of the most advanced data centre technology on the planet. With sustainably sourced products and services that power cloud and enterprise data centres, edge infrastructure, AI/ML, embedded and industrial systems worldwide, ITRenew is opening up billions in new financial opportunity across the ecosystem, slashing e-waste and CO2 impact, and making hyperscale hardware accessible to and affordable for all.",
@@ -110,8 +111,28 @@
                 "name": "Twitter ",
                 "order": 2
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/itrenew_itrenew_introducing_sesame_by_itrenew.pdf",
+                "name": "Introducing Sesame by ITRenew",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/itrenew_circular-model-chart-updated.pdf",
+                "name": "Circular model chart",
+                "order": 6
+              }
             ]
           },
+          "columnAds": [
+            {
+              "image": "/img/itrenew_itrenew_ocp_virtualboothad_v3.png",
+              "link": "https://www.itrenew.com"
+            }
+          ],
           "id": 57,
           "email": "karim.azar@itrenew.com",
           "usesSponsorPage": true
