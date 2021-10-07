@@ -920,11 +920,44 @@
         },
         {
           "advertiseImage": "",
+          "name": "Circle B",
+          "id": 109,
+          "sponsorId": 109,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 95
+        },
+        {
+          "advertiseImage": "",
+          "name": "DMFT",
+          "id": 110,
+          "sponsorId": 110,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "usesSponsorPage": false
+        },
+        {
+          "advertiseImage": "",
           "name": "FADU",
           "id": 105,
           "sponsorId": 105,
           "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
           "companyId": 91
+        },
+        {
+          "advertiseImage": "",
+          "name": "HYVE Solutions ",
+          "id": 107,
+          "sponsorId": 107,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 93
+        },
+        {
+          "advertiseImage": "",
+          "name": "Juniper Networks",
+          "id": 66,
+          "sponsorId": 66,
+          "email": "nkoskenniemi@juniper.net",
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 53
         },
         {
           "advertiseImage": "",
@@ -944,14 +977,6 @@
         },
         {
           "advertiseImage": "",
-          "name": "HYVE Solutions ",
-          "id": 107,
-          "sponsorId": 107,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 93
-        },
-        {
-          "advertiseImage": "",
           "name": "NVIDIA",
           "id": 108,
           "sponsorId": 108,
@@ -959,23 +984,6 @@
           "sponsorColor": "#76B900",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-nvidia.png",
           "companyId": 94
-        },
-        {
-          "advertiseImage": "",
-          "name": "Juniper Networks",
-          "id": 66,
-          "sponsorId": 66,
-          "email": "nkoskenniemi@juniper.net",
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 53
-        },
-        {
-          "advertiseImage": "",
-          "name": "Circle B",
-          "id": 109,
-          "sponsorId": 109,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 95
         },
         {
           "advertiseImage": "",
@@ -987,26 +995,24 @@
         },
         {
           "advertiseImage": "",
-          "name": "DMFT",
-          "id": 110,
-          "sponsorId": 110,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "usesSponsorPage": false
-        },
-        {
-          "advertiseImage": "",
           "name": "ONF",
           "id": 111,
           "sponsorId": 111,
           "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "usesSponsorPage": false
+          "usesSponsorPage": false,
+          "companyId": 97
         },
         {
-          "advertiseImage": "",
+          "marquee": "Welcome from OpenCAPI. Visit our booth and opencapi.org to learn how OpenCAPI and OMI can help you build faster and more efficient memory systems.",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-opencapi.png",
           "name": "OpenCAPI Consortium",
-          "id": 115,
+          "intro": "OpenCAPI Consortium The purpose of the OpenCAPI Consortium is to create an open coherent high performance bus interface based on a new bus standard called Open Coherent Accelerator Processor Interface (OpenCAPI) and develop the ecosystem that utilizes this interface. This initiative is being driven by the emerging accelerated computing and advanced memory/storage solutions that have introduced significant system bottlenecks in today’s current open bus protocols and requires a technical solution that is openly available. The member collaboration define an open bus protocol standard that starts from the microprocessor interface on up to any accelerators, memory/storage solutions, bridge chips that enable further interaction with additional protocols, and potentially others. These open bus protocol standards have been made available publicly at the consortium website.",
+          "advertiseImage": "",
           "sponsorId": 115,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+          "companyId": 99,
+          "id": 115,
+          "email": "rszabo@opencapi.org",
+          "usesSponsorPage": true
         },
         {
           "advertiseImage": "",
