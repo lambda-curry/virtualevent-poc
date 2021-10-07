@@ -952,14 +952,6 @@
         },
         {
           "advertiseImage": "",
-          "name": "DMFT",
-          "id": 110,
-          "sponsorId": 110,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "usesSponsorPage": false
-        },
-        {
-          "advertiseImage": "",
           "name": "FADU",
           "id": 105,
           "sponsorId": 105,
@@ -975,13 +967,16 @@
           "companyId": 93
         },
         {
-          "advertiseImage": "",
-          "name": "Juniper Networks",
-          "id": 66,
-          "sponsorId": 66,
-          "email": "nkoskenniemi@juniper.net",
+          "marquee": "Advancing the Open Community. Visit Juniper’s virtual booth to see how we are advancing SONiC and addressing its management challenges.",
           "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 53
+          "name": "Juniper Networks",
+          "intro": "Advancing the Open Community. Visit Juniper’s virtual booth to see how we are advancing SONiC and addressing its management challenges.",
+          "advertiseImage": "",
+          "sponsorId": 66,
+          "companyId": 53,
+          "id": 66,
+          "email": "nkoskenniemi@juniper.net",
+          "usesSponsorPage": true
         },
         {
           "advertiseImage": "",
