@@ -523,7 +523,8 @@
           "id": 98,
           "sponsorId": 98,
           "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 84
+          "companyId": 84,
+          "usesSponsorPage": true
         },
         {
           "marquee": "12.8Tb User Programmable Switches, 5G Ready Cell Site Gateways, Scalable Fixed Broadband Aggregation.",
@@ -623,7 +624,8 @@
           "id": 79,
           "sponsorId": 79,
           "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 66
+          "companyId": 66,
+          "usesSponsorPage": true
         },
         {
           "advertiseImage": "",
@@ -632,7 +634,8 @@
           "sponsorId": 83,
           "title": "Lattice Semiconductor",
           "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 70
+          "companyId": 70,
+          "usesSponsorPage": true
         },
         {
           "marquee": "Expanding the world's vision of what is possible!",
@@ -681,6 +684,7 @@
               }
             ]
           },
+          "columnAds": [],
           "id": 54,
           "email": "kwah@penguincomputing.com",
           "usesSponsorPage": true
@@ -694,12 +698,15 @@
           "companyId": 71
         },
         {
-          "advertiseImage": "",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-samtec-.png",
           "name": "Samtec",
-          "id": 73,
+          "intro": "Samtec is exhibiting in-person at the Global Summit in San Jose, CA. You can find us at booth A22 or reach us through the \"contact us\" button above.",
+          "advertiseImage": "",
           "sponsorId": 73,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 60
+          "companyId": 60,
+          "id": 73,
+          "email": "jignesh.shah@samtec.com",
+          "usesSponsorPage": true
         },
         {
           "advertiseImage": "",
