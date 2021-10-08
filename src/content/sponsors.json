@@ -11,7 +11,7 @@
         {
           "advertiseImage": "",
           "showLogoInEventPage": true,
-          "name": "Diamond",
+          "name": "Diamond Level",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-diamond.png",
           "id": 119
         },
@@ -223,6 +223,13 @@
       ],
       "sponsors": [
         {
+          "advertiseImage": "",
+          "showLogoInEventPage": true,
+          "name": "Emerald Level ",
+          "id": 120,
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-emerald.png"
+        },
+        {
           "marquee": "Infrastructure for Your Digital Transformation : Smart, Speedy, Scaling and Ready.",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-qct.png",
           "name": "QCT",
@@ -294,6 +301,13 @@
         }
       ],
       "sponsors": [
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": true,
+          "name": "Ruby Level",
+          "id": 121,
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-ruby.png"
+        },
         {
           "advertiseImage": "",
           "name": "AMI",
