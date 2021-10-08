@@ -63,6 +63,11 @@ export const EventPageTemplate = class extends React.Component {
     return (currentPhase !== nextCurrentPhase && !finishing);
   }
 
+  canRenderVideo = (currentPhase) => {
+    const {event} = this.props;
+    return (currentPhase >= PHASES.DURING || event.streaming_type === 'VOD') && event.streaming_url;
+  };
+
   render() {
 
     const { event, user, loading, nowUtc, summit, eventsPhases, eventId, location } = this.props;
@@ -95,7 +100,7 @@ export const EventPageTemplate = class extends React.Component {
               }}
             >
               <div className="columns is-gapless">
-                {currentPhase >= PHASES.DURING && event.streaming_url ? (
+                {this.canRenderVideo(currentPhase) ? (
                   <div className="column is-three-quarters px-0 py-0">
                     <VideoComponent
                       url={event.streaming_url}
