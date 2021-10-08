@@ -9,6 +9,13 @@
       ],
       "sponsors": [
         {
+          "advertiseImage": "",
+          "showLogoInEventPage": true,
+          "name": "Diamond",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-diamond.png",
+          "id": 119
+        },
+        {
           "logo": "/img/34519842.png",
           "name": "Ampere Computing",
           "intro": "TEST",
@@ -201,6 +208,7 @@
           "title": "Samsung ",
           "companyId": 40,
           "id": 60,
+          "showLogoInEventPage": false,
           "email": "events@ssi.samsung.com",
           "usesSponsorPage": true
         }
