@@ -3,7 +3,7 @@ templateKey: custom-page
 title: California Privacy Rights Statement
 requiresAuth: false
 ---
-This California Privacy Rights Statement (this “Statement”) explains how FNTECH, Inc. and its affiliates ("FNTECH," "we," "us," or "our") collect, use, and share Personal Information of California residents in our capacity as a “business” under the California Consumer Privacy Act of 2018 (CCPA). This Statement also explains California residents’ rights under the CCPA and California Civil Code section 1798.83 (the "Shine the Light law”).
+This California Privacy Rights Statement (this “Statement”) explains how FNTECH, Inc. and its affiliates ("FNTECH," "we," "us," or "our") collect, use, and share Personal Information of California residents in our capacity as a “business” under the California Consumer Privacy Act of 2018 (CCPA). This Statement also explains California residents’ rights under the CCPA and California Civil Code section 1798.83 (the "Shine the Light law”). 
 
 FNTECH collects “Personal Information” as defined by the CCPA, including your name, email address, records of your visits to our webpage, internet browsing history, geolocation data, your address. FNTECH does not collect information exempted from the scope of the CCPA, Personal Information we collect from individuals acting in their capacities as representatives of organizations solely in the context of conducting due diligence regarding, or providing or receiving a product or service to or from, such organizations, or Personal Information we collect, use, and share on behalf of our customers as a "service provider" under the CCPA for purposes of providing our services to them.
 
