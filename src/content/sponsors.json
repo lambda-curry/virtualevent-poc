@@ -321,12 +321,18 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
+          "marquee": "Discover the Power of One with Arrcus Connected Edge (ACE) - One Simple Network, One Scalable Architecture, One Seamless Experience",
+          "sponsorColor": "#045DA3",
+          "logo": "/img/arrcus_inc_arrcus-logo-tagline-484x484.png",
           "name": "Arrcus",
-          "id": 70,
+          "intro": "Arrcus was founded to enhance business efficiency through superior network connectivity. The Arrcus Connected Edge (ACE) platform offers best-in-class networking with the most flexible consumption model at the lowest total cost of ownership. The Arrcus team consists of world-class technologists who have an unparalleled record in shipping industry-leading networking products, complemented by industry thought leaders, operating executives, strategic partners, and top-tier VCs. For more information, go to www.arrcus.com or follow @arrcusinc.",
+          "chatLink": "https://arrcus.zoom.us/j/98109522847?pwd=bC9vRjA4NmI2UUVmRmJiQ0h5YkEzZz09",
+          "advertiseImage": "",
           "sponsorId": 70,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 57
+          "companyId": 57,
+          "id": 70,
+          "email": "bradb@arrcus.com",
+          "usesSponsorPage": true
         },
         {
           "advertiseImage": "",
