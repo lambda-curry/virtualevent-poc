@@ -201,8 +201,9 @@ div.column:first-of-type {
       }
 
       span {
-        margin: 0 -1.5em;
-        transform: skew(-25deg);
+        /* these styles should not be at OCP */
+        //margin: 0 -1.5em;
+        //transform: skew(-25deg);
         display: inline;
       }
 
