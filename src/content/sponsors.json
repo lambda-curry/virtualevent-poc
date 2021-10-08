@@ -353,7 +353,7 @@
           "companyId": 51
         },
         {
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "logo": "/img/flex_virtual-sponsor-logo.png",
           "name": "Flex",
           "intro": "Flex is the manufacturing partner of choice that helps a diverse customer base design and build products that improve the world. Through the collective strength of a global workforce across 30 countries and responsible, sustainable operations, Flex delivers technology innovation, supply chain, and manufacturing solutions to various industries and end markets. For more information, visit flex.com.",
           "advertiseImage": "",
@@ -837,36 +837,6 @@
       ],
       "sponsors": [
         {
-          "marquee": "ENABLING NEXT GENERATION ARCHITECTURE.",
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-teconnectivity.png",
-          "name": "TE Connectivity",
-          "intro": "TE Connectivity is a global industrial technology leader creating a safer, sustainable, productive and connected future. Their broad range of connectivity and sensor solutions, proven in the harshest environments, enable advancements in transportation, industrial applications, medical technology, energy, data communications and the home. With approximately 80,000 employees, including more than 7,500 engineers, working alongside customers in approximately 140 countries, TE ensures that EVERY CONNECTION COUNTS.",
-          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/te_connectivity_BrandVideo.mp4",
-          "advertiseImage": "",
-          "sponsorId": 52,
-          "title": "TE Connectivity",
-          "companyId": 48,
-          "id": 52,
-          "email": "ocp@te.com",
-          "usesSponsorPage": true
-        },
-        {
-          "advertiseImage": "",
-          "name": "Submer",
-          "id": 99,
-          "sponsorId": 99,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 85
-        },
-        {
-          "advertiseImage": "",
-          "name": "MiTAC Computing Technology",
-          "id": 100,
-          "sponsorId": 100,
-          "logo": "/img/mitac_horizontal_mitac_logo_color.png",
-          "companyId": 86
-        },
-        {
           "marquee": "DriveNets builds networks like cloud, over a fully virtualized cloud-native architecture - scalable, demand-responsive and innovations-ready. ",
           "sponsorColor": "#0556FF",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-drivenets.png",
@@ -912,11 +882,42 @@
         },
         {
           "advertiseImage": "",
+          "name": "MiTAC Computing Technology",
+          "id": 100,
+          "sponsorId": 100,
+          "logo": "/img/mitac_horizontal_mitac_logo_color.png",
+          "companyId": 86,
+          "usesSponsorPage": false
+        },
+        {
+          "advertiseImage": "",
+          "name": "Submer",
+          "id": 99,
+          "sponsorId": 99,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 85
+        },
+        {
+          "advertiseImage": "",
           "name": "Pluribus Networks",
           "id": 103,
           "sponsorId": 103,
           "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
           "companyId": 89
+        },
+        {
+          "marquee": "ENABLING NEXT GENERATION ARCHITECTURE.",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-teconnectivity.png",
+          "name": "TE Connectivity",
+          "intro": "TE Connectivity is a global industrial technology leader creating a safer, sustainable, productive and connected future. Their broad range of connectivity and sensor solutions, proven in the harshest environments, enable advancements in transportation, industrial applications, medical technology, energy, data communications and the home. With approximately 80,000 employees, including more than 7,500 engineers, working alongside customers in approximately 140 countries, TE ensures that EVERY CONNECTION COUNTS.",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/te_connectivity_BrandVideo.mp4",
+          "advertiseImage": "",
+          "sponsorId": 52,
+          "title": "TE Connectivity",
+          "companyId": 48,
+          "id": 52,
+          "email": "ocp@te.com",
+          "usesSponsorPage": true
         }
       ]
     },
