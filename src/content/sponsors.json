@@ -309,12 +309,16 @@
           "logo": "/img/ocp21glo_fnv_sponsorlogo-ruby.png"
         },
         {
-          "advertiseImage": "",
+          "logo": "/img/ami_ami-logo_484x484.png",
           "name": "AMI",
-          "id": 69,
+          "intro": "AMI",
+          "advertiseImage": "",
           "sponsorId": 69,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 56
+          "title": "AMI",
+          "companyId": 56,
+          "id": 69,
+          "email": "marketing@ami.com",
+          "usesSponsorPage": true
         },
         {
           "advertiseImage": "",
