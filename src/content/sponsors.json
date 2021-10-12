@@ -1310,18 +1310,22 @@
           "name": "Circle B",
           "id": 109,
           "sponsorId": 109,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-circleb.png",
           "companyId": 95,
           "usesSponsorPage": false
         },
         {
-          "advertiseImage": "",
+          "marquee": "Hyve Solutions Unveils Building Blocks for Hyperscale Infrastructure -- Original Design Manufacturer among first to deliver ORv3-based server line",
+          "sponsorColor": "#72BF44",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-hyve.png",
           "name": "HYVE Solutions ",
-          "id": 107,
+          "intro": "Hyve Solutions is a leader in the design to worldwide deployment of hyperscale digital infrastructures. In partnership with customers, Hyve leverages deep-seated industry experience and strong vendor partnerships to design and deliver purpose-built server, storage, and networking solutions to meet datacenter demands for today and beyond. Hyve Solutions is a wholly owned subsidiary of SYNNEX Corporation (NYSE: SNX). For more information about Hyve Solutions, visit hyvesolutions.com, email sales@hyvesolutions.com or call (855) 869-6973.",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/hyve_solutions_Hyve_OCP2021_AnimatedWelcomeBanner.mp4",
+          "advertiseImage": "",
           "sponsorId": 107,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
           "companyId": 93,
-          "usesSponsorPage": false
+          "id": 107,
+          "usesSponsorPage": true
         },
         {
           "marquee": "Advancing Interoperability. Visit Juniper’s virtual booth to see how we are advancing SONiC and addressing its management challenges.",
