@@ -449,6 +449,18 @@
           "usesSponsorPage": true
         },
         {
+          "marquee": "The vision of LITEON Technology is being the “Best Partner in Opto-Electronic, Eco-Friendly and Intelligent Technologies.",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-liteon.png",
+          "name": "LITEON",
+          "intro": "Founded in 1975, and being the first listed electronics company in Taiwan, LITEON is a world-leading provider in optoelectronic components and key electronic modules. In recent years, with its actively deployment in the fields of cloud computing, automotive electronics, 5G, AIoT, optoelectronics, etc., cultivation of smart industries, coupled with development of new business opportunities and products required for smart life and smart cities, LITEON continues to use its professionalism, rich industrial experience, high-quality products and services, and global operations bases, and become the preferred best partner of global customers for developing innovation and application of smart technology. For over four decades, LITEON produces products that are used in a broad range of applications, such as cloud computing, automotive electronics, optoelectronics, LED/lighting, smart healthcare, computers, communications, industry and consumer electronics while concentrating on establishing a competitive advantage in mass production to maximize the returns from a diverse product portfolio to realize profitable growths through resource integration and management; LITEON’s main business strategy focuses on increasing resource utilization, automation, production optimization, and streamlined processes for better productivity and efficiency; in the long-term, the focus is on realizing profitability, maintaining stable operations as well as enhancing the return of shareholders’ equity to take root in the sustainable operation of a century-old enterprise.",
+          "advertiseImage": "",
+          "sponsorId": 120,
+          "companyId": 108,
+          "id": 120,
+          "showLogoInEventPage": true,
+          "usesSponsorPage": true
+        },
+        {
           "advertiseImage": "",
           "name": "Pliops",
           "id": 97,
@@ -562,18 +574,6 @@
           },
           "id": 68,
           "showLogoInEventPage": false,
-          "usesSponsorPage": true
-        },
-        {
-          "marquee": "The vision of LITEON Technology is being the “Best Partner in Opto-Electronic, Eco-Friendly and Intelligent Technologies.",
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-liteon.png",
-          "name": "LITEON",
-          "intro": "Founded in 1975, and being the first listed electronics company in Taiwan, LITEON is a world-leading provider in optoelectronic components and key electronic modules. In recent years, with its actively deployment in the fields of cloud computing, automotive electronics, 5G, AIoT, optoelectronics, etc., cultivation of smart industries, coupled with development of new business opportunities and products required for smart life and smart cities, LITEON continues to use its professionalism, rich industrial experience, high-quality products and services, and global operations bases, and become the preferred best partner of global customers for developing innovation and application of smart technology. For over four decades, LITEON produces products that are used in a broad range of applications, such as cloud computing, automotive electronics, optoelectronics, LED/lighting, smart healthcare, computers, communications, industry and consumer electronics while concentrating on establishing a competitive advantage in mass production to maximize the returns from a diverse product portfolio to realize profitable growths through resource integration and management; LITEON’s main business strategy focuses on increasing resource utilization, automation, production optimization, and streamlined processes for better productivity and efficiency; in the long-term, the focus is on realizing profitability, maintaining stable operations as well as enhancing the return of shareholders’ equity to take root in the sustainable operation of a century-old enterprise.",
-          "advertiseImage": "",
-          "sponsorId": 120,
-          "companyId": 108,
-          "id": 120,
-          "showLogoInEventPage": true,
           "usesSponsorPage": true
         }
       ]
@@ -877,6 +877,14 @@
           "id": 118,
           "showLogoInEventPage": true,
           "email": "amy.talley@murata.com"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": true,
+          "name": "Sapphire",
+          "id": 121,
+          "sponsorId": 121,
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-sapphire.png"
         }
       ]
     },
