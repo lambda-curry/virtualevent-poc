@@ -465,12 +465,16 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
+          "marquee": "With the Pliops Extreme Data Processor you can achieve: • Up to 10x Higher Performance • Up to 6x More Capacity • Up to 5x Lower Cost.",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-pliops.png",
           "name": "Pliops",
-          "id": 97,
+          "intro": "Today’s explosive data growth and rapidly expanding application workloads threaten to overwhelm datacenters, preventing organizations from harnessing the AI/ML, 5G, big data analytics, IoT, and other modern applications they need to achieve their business goals. The breakthrough Pliops Extreme Data Processor (XDP), delivered on an easy-to-deploy, low-profile PCIe card, overcomes storage inefficiencies to massively accelerate performance and dramatically reduce overall infrastructure costs for these data-hungry, storage-intensive applications. By radically simplifying the way data is processed and flash storage is managed, Pliops multiplies the effectiveness of organizations’ infrastructure investments by exponentially increasing datacenter performance, reliability, capacity, and efficiency.",
+          "headerImage": "/img/pliops_ocp-header-3.png",
+          "advertiseImage": "",
           "sponsorId": 97,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 83
+          "companyId": 83,
+          "id": 97,
+          "usesSponsorPage": true
         },
         {
           "marquee": "Open Hardware. Open Solution. Open Future.",
