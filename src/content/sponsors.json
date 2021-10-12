@@ -818,10 +818,33 @@
           "name": "ZT Systems",
           "intro": "ZT Systems is a leading supplier of compute, storage, and accelerator solutions for hyperscale, 5G, and edge computing applications. A trusted design, manufacturing, and logistics partner with over 25 years of experience, ZT serves data center operators from enterprise organizations to the largest cloud and telecommunications providers. Headquartered in Secaucus, NJ with global manufacturing spanning the US, EMEA and APAC, ZT deploys and supports integrated rack-level solutions worldwide. Through close, confidential customer engagement, ZT leverages deep experience with hyperscale and edge computing workloads and supply chain considerations to develop application-tailored solutions. Flexible, purpose-built manufacturing capabilities enable ZT to sustain high quality while accommodating the dynamic nature of hyperscale. ZT’s commitment to operational excellence is demonstrated by a strong track record of on-time delivery.",
           "headerImage": "/img/zt_systems_zt-systems-static-image.jpg",
+          "headerImageMobile": "/img/zt_systems_zt-systems-mobile-version-image.jpg",
           "advertiseImage": "",
           "sponsorId": 62,
           "title": "",
           "companyId": 45,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/ZTSystems",
+                "name": "Twitter",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/ZTSystems",
+                "name": "Facebook ",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/zt-systems",
+                "name": "Linkedin",
+                "order": 3
+              }
+            ]
+          },
           "id": 62,
           "showLogoInEventPage": true,
           "email": "sales@ztsystems.com",
