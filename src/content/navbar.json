@@ -6,7 +6,7 @@
       "display": true,
       "requiresAuth": true,
       "pageRestriction": [
-        "ANY"
+        "MARKETING"
       ]
     },
     {
