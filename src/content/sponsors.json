@@ -1006,7 +1006,7 @@
       "sponsors": [
         {
           "advertiseImage": "",
-          "showLogoInEventPage": true,
+          "showLogoInEventPage": false,
           "name": "Start-Up",
           "companyId": 111,
           "id": 123,
@@ -1036,6 +1036,28 @@
           "sponsorId": 106,
           "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
           "companyId": 92
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Virtual Only",
+          "companyId": 113,
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-virtual.png",
+          "id": 125,
+          "sponsorId": 125
+        },
+        {
+          "marquee": "Immersion cooling redefined for future ready datacentres | Immersed Computing®",
+          "sponsorColor": "#ff4444",
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "name": "Aspteritas",
+          "intro": "Asperitas provides cutting edge immersion cooling solutions for datacentres globally. Since the research and development phase, there have been collaborations with an extensive ecosystem of partners, like Shell. Shell is an international energy company with expertise in the exploration, production and refining of oil and natural gas, and the manufacturing and marketing of chemicals. Their immersion cooling fluid has been used to accelerate Asperitas’ mission for sustainable datacentres.",
+          "advertiseImage": "",
+          "sponsorId": 124,
+          "companyId": 112,
+          "id": 124,
+          "showLogoInEventPage": false,
+          "usesSponsorPage": true
         },
         {
           "advertiseImage": "",
@@ -1127,6 +1149,14 @@
           "usesSponsorPage": true
         },
         {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Non-profit",
+          "id": 126,
+          "sponsorId": 126,
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-nonprofit.png"
+        },
+        {
           "sideImage": "",
           "logo": "/img/omdia_afcom_afcom_logo_rgb.png",
           "name": "AFCOM",
@@ -1173,15 +1203,6 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "name": "ONF",
-          "id": 111,
-          "sponsorId": 111,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "usesSponsorPage": false,
-          "companyId": 97
-        },
-        {
           "marquee": "Welcome from OpenCAPI. Visit our booth and opencapi.org to learn how OpenCAPI and OMI can help you build faster and more efficient memory systems.",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-opencapi.png",
           "name": "OpenCAPI Consortium",
@@ -1194,17 +1215,13 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "The SDIA is the leading platform for driving sustainability in the digital sector.",
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-sdia.png",
-          "name": "Sustainable Digital Infrastructure Alliance (SDIA)",
-          "intro": "The SDIA is the leading platform for driving sustainability in the digital sector",
-          "headerImage": "/img/sdia_1626338587676.jpeg",
           "advertiseImage": "",
-          "sponsorId": 113,
-          "companyId": 100,
-          "id": 113,
-          "email": "michael.oghia@sdialliance.org",
-          "usesSponsorPage": true
+          "name": "ONF",
+          "id": 111,
+          "sponsorId": 111,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "usesSponsorPage": false,
+          "companyId": 97
         },
         {
           "marquee": "OpenPOWER Foundation - Supporting the Open, Free, Proven, Performant POWER Instruction Set Architecture",
@@ -1222,16 +1239,31 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Immersion cooling redefined for future ready datacentres | Immersed Computing®",
-          "sponsorColor": "#ff4444",
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "name": "Aspteritas",
-          "intro": "Asperitas provides cutting edge immersion cooling solutions for datacentres globally. Since the research and development phase, there have been collaborations with an extensive ecosystem of partners, like Shell. Shell is an international energy company with expertise in the exploration, production and refining of oil and natural gas, and the manufacturing and marketing of chemicals. Their immersion cooling fluid has been used to accelerate Asperitas’ mission for sustainable datacentres.",
+          "marquee": "The SDIA is the leading platform for driving sustainability in the digital sector.",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-sdia.png",
+          "name": "Sustainable Digital Infrastructure Alliance (SDIA)",
+          "intro": "The SDIA is the leading platform for driving sustainability in the digital sector",
+          "headerImage": "/img/sdia_1626338587676.jpeg",
           "advertiseImage": "",
-          "sponsorId": 124,
-          "companyId": 112,
-          "id": 124,
-          "showLogoInEventPage": true
+          "sponsorId": 113,
+          "companyId": 100,
+          "id": 113,
+          "email": "michael.oghia@sdialliance.org",
+          "usesSponsorPage": true
+        },
+        {
+          "marquee": "Open source and standards for Cloud, Computational Storage, Data Management, Next Generation Storage Management, NVMe-oF, Persistent Memory, SSDs, Connectors, Transceivers, and Form Factors",
+          "sponsorColor": "#54237f",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-snia.png",
+          "name": "SNIA",
+          "intro": "The Storage Networking Industry Association (SNIA) is a non-profit global organization dedicated to developing standards and education programs to advance storage and information technology. Over 185 companies and 2,500 member volunteers collaborate on open source and standards in the technology areas of next generation storage management, computational storage, persistent memory, solid state drives, connectors, transceivers, form factors, and more. Visit us at www.snia.org.",
+          "headerImage": "/img/snia_ocp21virtualboothtop.jpg",
+          "advertiseImage": "",
+          "sponsorId": 127,
+          "companyId": 115,
+          "id": 127,
+          "showLogoInEventPage": false,
+          "usesSponsorPage": true
         }
       ]
     },
