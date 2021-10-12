@@ -163,6 +163,29 @@
         "lobbyTemplate": "small-images",
         "display": false
       },
+      "expoHallPage": {
+        "expoHallTemplate": "medium-images",
+        "display": true
+      },
+      "sponsorPage": {
+        "sponsorTemplate": "big-header",
+        "widgets": {
+          "disqus": true,
+          "liveEvent": true,
+          "schedule": true,
+          "banner": true
+        }
+      },
+      "eventTemplate": "small-images",
+      "id": "tier-hY171qXmS",
+      "name": "OpenSource Partners "
+    },
+    {
+      "badge": "",
+      "lobby": {
+        "lobbyTemplate": "small-images",
+        "display": false
+      },
       "sponsorPage": {
         "sponsorTemplate": "big-header",
         "disqus": false,
