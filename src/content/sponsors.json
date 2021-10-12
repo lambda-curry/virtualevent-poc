@@ -111,6 +111,20 @@
                 "order": 4,
                 "name": "Datacenters"
               }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_Infra%20Hardware_who%20we%20are.mov",
+                "order": 4,
+                "name": "Infra Hardware Who Are We "
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_fb%20covid%20final.mp4",
+                "order": 5,
+                "name": "Facebook Covid Video"
+              }
             ]
           },
           "columnAds": [
