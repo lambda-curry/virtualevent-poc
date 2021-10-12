@@ -609,7 +609,7 @@
           "companyId": 42,
           "columnAds": [],
           "id": 48,
-          "showLogoInEventPage": true,
+          "showLogoInEventPage": false,
           "email": "yaping.kitamura@qct.io",
           "usesSponsorPage": true
         },
