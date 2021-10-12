@@ -1203,6 +1203,8 @@
           "logo": "/img/ocp21glo_fnv_sponsorlogo-fadu.png",
           "name": "FADU Technology",
           "intro": "FADU is a fabless start up focusing on advancing Flash storage technology. We are dedicated to developing and deploying a new architecture for SSD controllers and storage products that meets the explosively increasing diverse data demands placed on enterprise datacenters. We believe that existing solutions, with their legacy ties to the past, are unable to meet both performance and power requirements to support real-time, cloud based, connected applications. FADU’s global team, comprised of seasoned storage architects, ASIC experts and SSD engineers, is charting the course for the industry. We are addressing all aspects of the Flash-based enterprise storage solution – very lower power, ultra-high performance, rich feature set, solid reliability and a superior QOS. FADU is shipping PCIe Gen 3 and PCIe Gen 4 SSDs with PCIe Gen 5 being readied for market adoption in 2022. FADU is a member of the Open Compute Project.",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/fadu_technology_inc_Fadu%20OCP%20Virtual%20Booth%20Welcome%20Banner.mp4",
+          "headerImageMobile": "/img/fadu_technology_inc_fadu768x250.png",
           "advertiseImage": "",
           "sponsorId": 105,
           "companyId": 91,
