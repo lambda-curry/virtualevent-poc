@@ -1172,6 +1172,78 @@
     {
       "tier": [
         {
+          "value": "tier-yeJ3xH65E",
+          "label": "Start-up"
+        }
+      ],
+      "sponsors": [
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Start-up",
+          "id": 123,
+          "sponsorId": 123,
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-startup.png"
+        },
+        {
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-kameleonsecurity.png",
+          "name": "Kameleon Security",
+          "intro": "Kameleon Security is exhibiting in-person at the Global Summit in San Jose, CA. You can find us at booth C26 or reach us through the \"contact us\" button above.",
+          "advertiseImage": "",
+          "sponsorId": 104,
+          "companyId": 90,
+          "id": 104,
+          "showLogoInEventPage": false,
+          "email": "info@kameleonsec.com",
+          "usesSponsorPage": true
+        },
+        {
+          "marquee": "FADU is leading the industry with the lowest power, highest sustainable QoS Enterprise Storage Solutions for Gen 4 and beyond. Visit www.fadutec.com.",
+          "sponsorColor": "#000000",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-fadu.png",
+          "name": "FADU Technology",
+          "intro": "FADU is a fabless start up focusing on advancing Flash storage technology. We are dedicated to developing and deploying a new architecture for SSD controllers and storage products that meets the explosively increasing diverse data demands placed on enterprise datacenters. We believe that existing solutions, with their legacy ties to the past, are unable to meet both performance and power requirements to support real-time, cloud based, connected applications. FADU’s global team, comprised of seasoned storage architects, ASIC experts and SSD engineers, is charting the course for the industry. We are addressing all aspects of the Flash-based enterprise storage solution – very lower power, ultra-high performance, rich feature set, solid reliability and a superior QOS. FADU is shipping PCIe Gen 3 and PCIe Gen 4 SSDs with PCIe Gen 5 being readied for market adoption in 2022. FADU is a member of the Open Compute Project.",
+          "advertiseImage": "",
+          "sponsorId": 105,
+          "companyId": 91,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/fadutec",
+                "order": 1,
+                "name": "LinkedINn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/channel/UCD4vg_GQnEoC9bqqqtWkxgQ/featured",
+                "order": 2,
+                "name": "YouTube "
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/channel/UCD4vg_GQnEoC9bqqqtWkxgQ/feature",
+                "order": 3,
+                "name": "YouTube "
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "link": "www.fadutec.com",
+              "image": "/img/fadu_technology_inc_faduad484x484.png"
+            }
+          ],
+          "id": 105,
+          "showLogoInEventPage": true,
+          "email": "anu.murthy@fadutec.com",
+          "usesSponsorPage": true
+        }
+      ]
+    },
+    {
+      "tier": [
+        {
           "value": "tier-QZN1QfFuo",
           "label": "Virtual Only"
         }
@@ -1214,7 +1286,8 @@
           "id": 107,
           "sponsorId": 107,
           "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 93
+          "companyId": 93,
+          "usesSponsorPage": false
         },
         {
           "marquee": "Advancing Interoperability. Visit Juniper’s virtual booth to see how we are advancing SONiC and addressing its management challenges.",
