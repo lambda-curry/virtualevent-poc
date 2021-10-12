@@ -383,6 +383,14 @@
                 "name": "ITRenew New Data Center Models",
                 "order": 10
               }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/itrenew_itrenew_2603501665.mp4",
+                "order": 11,
+                "name": "ITRenew"
+              }
             ]
           },
           "columnAds": [
