@@ -1228,6 +1228,28 @@
                 "order": 3,
                 "name": "YouTube "
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/fadu_technology_inc_fadu-intro-brochure-101021.pdf",
+                "name": "FADU: OEM SERVER & STORAGE AND HYPERSCALE CLOUD STORAGE",
+                "order": 4
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/fadu_technology_inc_fadu-gen3-gen4-solutions-101021.pdf",
+                "name": "FADU: Gen4 High- Performance SSD",
+                "order": 5
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/fadu_technology_inc_E1.S%20Delta%20Video%20Edits%2010-2021.mp4",
+                "order": 6,
+                "name": "Delta Video"
+              }
             ]
           },
           "columnAds": [
@@ -1237,7 +1259,7 @@
             }
           ],
           "id": 105,
-          "showLogoInEventPage": true,
+          "showLogoInEventPage": false,
           "email": "anu.murthy@fadutec.com",
           "usesSponsorPage": true
         }
