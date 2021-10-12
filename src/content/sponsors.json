@@ -31,8 +31,14 @@
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/ampere_computing_altra_pb_v1.20_20210921.pdf",
-                "name": "Ampere Computing Altra PB",
+                "name": "Ampere® Altra® 64-Bit Multi-Core Arm® Processor",
                 "order": 4
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/ampere_computing_altra_max_rev_a1_pb_v0.60_20210921.pdf",
+                "name": "Ampere® Altra Max™ 64-Bit Multi-Core Arm® Processor",
+                "order": 5
               }
             ],
             "links": [
