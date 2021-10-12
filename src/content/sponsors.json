@@ -603,13 +603,15 @@
           "logo": "/img/ocp21glo_fnv_sponsorlogo-sapphire.png"
         },
         {
-          "advertiseImage": "",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-3m_v2.png",
           "name": "3M Company",
-          "id": 80,
+          "intro": "Meeting the demands of today’s data hungry world while keeping your data center connected and performing efficiently and reliably is no small feat. 3M has solutions in liquid immersion cooling, advanced fiber optic and copper twin axial technology that are designed to bring flexibility, performance and cost and energy efficiency to the data centers of today and tomorrow while reducing footprint. Chat with us to learn more.",
+          "advertiseImage": "",
           "sponsorId": 80,
           "title": "3M Company",
-          "logo": "/img/3m_picture1.png",
-          "companyId": 67
+          "companyId": 67,
+          "id": 80,
+          "usesSponsorPage": true
         },
         {
           "advertiseImage": "",
