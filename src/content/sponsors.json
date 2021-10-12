@@ -304,7 +304,7 @@
           "usesSponsorPage": true
         },
         {
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "logo": "/img/xilinx-logo.png",
           "name": "Xilinx",
           "intro": "Xilinx delivers the Adaptive Platform for accelerated computing. Our Adaptive SoCs, accelerator cards, and FPGAs give leading-edge companies the freedom to innovate and deploy, rapidly. We partner with our customers to create scalable, differentiated and intelligent solutions from the cloud to the edge. In a world where the pace of change is accelerating, more and more innovators trust Xilinx to help them get to market faster, and with optimal efficiency and performance. For more information, visit www.xilinx.com.",
           "advertiseImage": "",
