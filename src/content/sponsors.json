@@ -350,6 +350,26 @@
                 "order": 4,
                 "name": "Youtube"
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/microsoft_liquid-immersion-cooling.pdf",
+                "name": "Microsoft Liquid Immersion - Real tech ready to power the future of AI",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/microsoft_clean-fuels.pdf",
+                "name": "Microsoft Clean Fuels - On the road to net-zero, green backup is a big step forward",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/microsoft_grid-interactive-batteries.pdf",
+                "name": "Microsoft Grid Interactive Batteries - How small steps power big sustainability goals",
+                "order": 7
+              }
             ]
           },
           "columnAds": [
