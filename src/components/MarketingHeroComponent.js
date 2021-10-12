@@ -151,8 +151,7 @@ const MarketingHeroComponent = ({ siteSettings, summit_phase, isLoggedUser, loca
               })}
             </Slider>
             :
-            <div className={styles.singleImage}>
-              <img src={siteSettings.heroBanner.images[0].image} />
+            <div className={styles.singleImage} style={{ backgroundImage: `url(${siteSettings.heroBanner.images[0].image})`}} >              
             </div>
           }
         </div>

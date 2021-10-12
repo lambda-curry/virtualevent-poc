@@ -80,10 +80,12 @@ collections:
                   { label: "Big Header", value: "big-header" },
                   { label: "Small Header", value: "small-header" },
                 ]},
-                {label: "Disqus", name: disqus, widget: boolean, required: false, default: false},
-                {label: "Live Event", name: liveEvent, widget: boolean, required: false, default: false},
-                {label: "Schedule", name: schedule, widget: boolean, required: false, default: false},
-                {label: "Banner", name: banner, widget: boolean, required: false, default: false}
+                {label: "Widgets", name: "widgets", widget: object, fields: [
+                  {label: "Disqus", name: disqus, widget: boolean, required: false, default: false},
+                  {label: "Live Event", name: liveEvent, widget: boolean, required: false, default: false},
+                  {label: "Schedule", name: schedule, widget: boolean, required: false, default: false},
+                  {label: "Banner", name: banner, widget: boolean, required: false, default: false}
+                ]}
               ]},
               {label: "In Event Template", name: "eventTemplate", widget: select, required: false, default: 'small-images', options: [
                 { label: "Big Images", value: "big-images" },
@@ -105,6 +107,7 @@ collections:
               {label: "Link", name: "link", widget: string},
               {label: "Display", name: "display", widget: boolean, required: false},
               {label: "Requires Auth?", name: "requiresAuth", widget: boolean, required: false, default: false},
+              {label: "Show only on page", name: "pageRestriction", widget: select, multiple: true, default: ["ANY"], options: ["ANY", "MARKETING", "LOBBY", "EVENT"]},
             ]}
       - file: "src/content/footer.json"
         label: "Footer"
@@ -240,7 +243,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "custom-page"}
       - {label: Title, name: title, widget: string}
-      - {label: "Requires Auth?", name: requiresAuth, widget: boolean, required: false, default: false}
+      - {label: "User Requirement", name: userRequirement, widget: select, options: ["NONE", "LOGGED_IN", "HAS_TICKET"], default: "NONE"}
       - {label: "Body", name: body, widget: markdown}
   - name: "sponsors"
     label: "Sponsors Data"
