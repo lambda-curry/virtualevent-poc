@@ -517,6 +517,66 @@
           "sponsorId": 60,
           "title": "Samsung ",
           "companyId": 40,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://samsungsemiconductor-us.com/where-latency-dares-not-tread-how-high-powered-ssds-enable-novel-storage-architecture/ ",
+                "name": "Dropbox",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://samsungsemiconductor-us.com/compute-power-to-the-people-democratizing-ai-a-conversation-with-ai-visionaries-from-sambanova-systems/ ",
+                "name": "DDR5 (Sambanova)",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.samsungsemiconstory.com/global/samsung-unveils-industry-first-memory-module-incorporating-new-cxl-interconnect-standard/",
+                "name": "CXL press release",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "HBM White Paper site (w/ HBM2e content)",
+                "order": 4,
+                "name": "https://samsungsemiconductor-us.com/hbm/"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "HBM-PIM (Aquabolt-XL)",
+                "order": 5,
+                "link": "https://news.samsung.com/us/samsung-hbm-pim-in-memory-processing-wider-range-applications/ "
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "ZNS",
+                "order": 7,
+                "link": "https://news.samsung.com/global/samsung-introduces-its-first-zns-ssd-with-maximized-user-capacity-and-enhanced-lifespan"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://samsungsemiconductor-us.com/smartssd-archive/pdf/SmartSSD_ProductBrief_13.pdf",
+                "order": 8,
+                "name": "SmartSSD "
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "HPOS",
+                "order": 10,
+                "link": "https://vimeo.com/veruspro/review/626803390/4d0e47b389"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://www.samsung.com/semiconductor/newsroom/events/samsung-calls-for-developmental-collaboration-to-usher-in-a-new-era-of-data/",
+                "order": 11,
+                "name": " GSA conference video on memory advancements"
+              }
+            ]
+          },
           "id": 60,
           "showLogoInEventPage": false,
           "email": "events@ssi.samsung.com",
