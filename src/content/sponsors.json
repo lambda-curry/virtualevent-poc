@@ -181,14 +181,44 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Reimagining Intel in the World.",
+          "marquee": "Shaping the Future of Technology.",
+          "sponsorColor": "#0068B5",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-intel.png",
           "name": "Intel Corporation",
-          "intro": "",
+          "intro": "Intel creates world-changing technology that enriches the lives of every person on earth. We are inspired to drive innovation that makes the world safer, builds healthy and vibrant communities, and increases productivity. We harnesses our reach around the globe to better society, business and the planet by pushing ourselves and our industry peers to be more responsible, inclusive and sustainable.",
           "advertiseImage": "",
           "sponsorId": 59,
           "companyId": 1,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.reddit.com/r/intel/",
+                "order": 1,
+                "name": "Reddit"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/IntelBusiness?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+                "order": 2,
+                "name": "Twitter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/showcase/intel-business/",
+                "order": 3,
+                "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/IntelBusiness/",
+                "order": 4,
+                "name": "Facebook"
+              }
+            ]
+          },
           "id": 59,
+          "email": "ocp_intel@intel.com",
           "usesSponsorPage": true
         },
         {
