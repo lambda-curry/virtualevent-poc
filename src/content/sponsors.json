@@ -1001,13 +1001,49 @@
           "companyId": 93
         },
         {
-          "marquee": "Advancing the Open Community. Visit Juniper’s virtual booth to see how we are advancing SONiC and addressing its management challenges.",
+          "marquee": "Advancing Interoperability. Visit Juniper’s virtual booth to see how we are advancing SONiC and addressing its management challenges.",
           "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
           "name": "Juniper Networks",
-          "intro": "Advancing the Open Community. Visit Juniper’s virtual booth to see how we are advancing SONiC and addressing its management challenges.",
+          "intro": "At Juniper, we strive to deliver network experiences that transform how people connect, work and live. By challenging the inherent complexity in the Cloud + 5G + AI era, our solutions power the connections that matter most - from education to healthcare to secure banking. Our commitment is to advance real outcomes for network teams and every individual they serve. It’s that simple.",
           "advertiseImage": "",
           "sponsorId": 66,
           "companyId": 53,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/JuniperNetworks/",
+                "name": "Facebook",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/juniper-networks",
+                "name": "LinkedIn",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/JuniperNetworks/",
+                "name": "Twitter",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/user/JuniperNetworks",
+                "name": "YouTube",
+                "order": 4
+              }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/juniper_networks_futuriom-juniper-and-apstra-up-the-sonic-ante.pdf",
+                "name": "Futuriom Juniper and apstra up the sonic ante",
+                "order": 5
+              }
+            ]
+          },
           "id": 66,
           "email": "nkoskenniemi@juniper.net",
           "usesSponsorPage": true
