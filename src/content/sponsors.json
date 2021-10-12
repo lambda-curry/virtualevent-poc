@@ -129,6 +129,7 @@
           "logo": "/img/ocp21glo_fnv_sponsorlogo-inspur.png",
           "name": "Inspur",
           "intro": "Inspur is a leading provider of data center infrastructure, cloud computing, and AI solutions, ranking among the world’s top 3 server manufacturers. As a platinum member of OCP and legacy member of other open data center communities, Inspur is a longtime contributor of open reference architectures and is committed to the development and advocacy of open standards. Through engineering and innovation, Inspur delivers cutting-edge hardware designs and solutions to address challenges across many different technology sectors.",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/inspur_OCP%20Global_Welcome%20Promo%20Video.mov",
           "headerImageMobile": "/img/inspur_mobilebanner_768x250.jpg",
           "advertiseImage": "/img/inspur_diamondvirtuallobbyad_484x484.jpg",
           "sponsorId": 53,
