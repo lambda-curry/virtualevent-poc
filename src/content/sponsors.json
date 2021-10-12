@@ -1172,45 +1172,11 @@
     {
       "tier": [
         {
-          "value": "tier-yeJ3xH65E",
-          "label": "Start-up, Virtual Only, Non-profits "
+          "value": "tier-QZN1QfFuo",
+          "label": "Virtual Only"
         }
       ],
       "sponsors": [
-        {
-          "advertiseImage": "",
-          "showLogoInEventPage": false,
-          "name": "Start-Up",
-          "companyId": 111,
-          "id": 123,
-          "sponsorId": 123,
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-startup.png"
-        },
-        {
-          "advertiseImage": "",
-          "name": "FADU",
-          "id": 105,
-          "sponsorId": 105,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 91
-        },
-        {
-          "advertiseImage": "",
-          "name": "Kameleon Security",
-          "id": 104,
-          "sponsorId": 104,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 90
-        },
-        {
-          "advertiseImage": "",
-          "name": "MSP Disposal",
-          "id": 106,
-          "sponsorId": 106,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 92,
-          "usesSponsorPage": false
-        },
         {
           "advertiseImage": "",
           "showLogoInEventPage": false,
@@ -1320,123 +1286,6 @@
           "companyId": 103,
           "id": 116,
           "email": "micron_storage@micron.com",
-          "usesSponsorPage": true
-        },
-        {
-          "advertiseImage": "",
-          "showLogoInEventPage": false,
-          "name": "Non-profit",
-          "id": 126,
-          "sponsorId": 126,
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-nonprofit.png"
-        },
-        {
-          "sideImage": "",
-          "logo": "/img/omdia_afcom_afcom_logo_rgb.png",
-          "name": "AFCOM",
-          "intro": "`This is sample text for a sponsor intro.`",
-          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/omdia_afcom_AFCOM%20boilerplate%20slides%20-%20general.mp4",
-          "advertiseImage": "",
-          "sponsorId": 112,
-          "companyId": 98,
-          "documents": {
-            "links": [
-              {
-                "class_name": "PresentationLink",
-                "link": "https://twitter.com/afcom",
-                "name": "Twitter ",
-                "order": 1
-              },
-              {
-                "class_name": "PresentationLink",
-                "link": "https://www.linkedin.com/groups/41479/",
-                "order": 2,
-                "name": "Linkedin"
-              },
-              {
-                "class_name": "PresentationLink",
-                "link": "https://www.facebook.com/DataCenterWorld/",
-                "order": 3,
-                "name": "Facebook"
-              },
-              {
-                "class_name": "PresentationLink",
-                "link": "https://www.youtube.com/channel/UCFANU4hY2_8LJerzuDq5xiA",
-                "order": 4,
-                "name": "Youtube"
-              }
-            ]
-          },
-          "columnAds": [
-            {
-              "link": "https://afcom.com/Public/Member_Resources/Educational_Webinars/Public/Resource_Center/Webinars_Public.aspx?hkey=496c0097-b9cd-44a5-b950-775383d1ffe0",
-              "image": "/img/omdia_afcom_p1_62156_dcw21_web_ads_afcom_webinars_336x280.jpg"
-            }
-          ],
-          "id": 112,
-          "usesSponsorPage": true
-        },
-        {
-          "marquee": "Welcome from OpenCAPI. Visit our booth and opencapi.org to learn how OpenCAPI and OMI can help you build faster and more efficient memory systems.",
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-opencapi.png",
-          "name": "OpenCAPI Consortium",
-          "intro": "OpenCAPI Consortium The purpose of the OpenCAPI Consortium is to create an open coherent high performance bus interface based on a new bus standard called Open Coherent Accelerator Processor Interface (OpenCAPI) and develop the ecosystem that utilizes this interface. This initiative is being driven by the emerging accelerated computing and advanced memory/storage solutions that have introduced significant system bottlenecks in today’s current open bus protocols and requires a technical solution that is openly available. The member collaboration define an open bus protocol standard that starts from the microprocessor interface on up to any accelerators, memory/storage solutions, bridge chips that enable further interaction with additional protocols, and potentially others. These open bus protocol standards have been made available publicly at the consortium website.",
-          "advertiseImage": "",
-          "sponsorId": 115,
-          "companyId": 99,
-          "id": 115,
-          "email": "rszabo@opencapi.org",
-          "usesSponsorPage": true
-        },
-        {
-          "advertiseImage": "",
-          "name": "ONF",
-          "id": 111,
-          "sponsorId": 111,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "usesSponsorPage": false,
-          "companyId": 97
-        },
-        {
-          "marquee": "OpenPOWER Foundation - Supporting the Open, Free, Proven, Performant POWER Instruction Set Architecture",
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-openpowerfoundation.png",
-          "name": "OpenPOWER Foundation",
-          "intro": "The OpenPOWER Foundation is a non-profit organization supporting the free and open RISC based instruction set architecture. We enable open community collaboration, technology advancements in the OpenPOWER ecosystem, and visibility of OpenPOWER member successes.",
-          "headerImage": "/img/openpower_openpower_welcome.png",
-          "advertiseImage": "",
-          "sponsorId": 114,
-          "title": "OpenPOWER Foundation",
-          "companyId": 101,
-          "id": 114,
-          "showLogoInEventPage": false,
-          "email": "info@openpowerfoundation.org",
-          "usesSponsorPage": true
-        },
-        {
-          "marquee": "Open source and standards for Cloud, Computational Storage, Data Management, Next Generation Storage Management, NVMe-oF, Persistent Memory, SSDs, Connectors, Transceivers, and Form Factors",
-          "sponsorColor": "#54237f",
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-snia.png",
-          "name": "SNIA",
-          "intro": "The Storage Networking Industry Association (SNIA) is a non-profit global organization dedicated to developing standards and education programs to advance storage and information technology. Over 185 companies and 2,500 member volunteers collaborate on open source and standards in the technology areas of next generation storage management, computational storage, persistent memory, solid state drives, connectors, transceivers, form factors, and more. Visit us at www.snia.org.",
-          "headerImage": "/img/snia_ocp21virtualboothtop.jpg",
-          "advertiseImage": "",
-          "sponsorId": 127,
-          "companyId": 115,
-          "id": 127,
-          "showLogoInEventPage": false,
-          "usesSponsorPage": true
-        },
-        {
-          "marquee": "The SDIA is the leading platform for driving sustainability in the digital sector.",
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-sdia.png",
-          "name": "Sustainable Digital Infrastructure Alliance (SDIA)",
-          "intro": "The SDIA is the leading platform for driving sustainability in the digital sector",
-          "headerImage": "/img/sdia_1626338587676.jpeg",
-          "advertiseImage": "",
-          "sponsorId": 113,
-          "companyId": 100,
-          "id": 113,
-          "email": "michael.oghia@sdialliance.org",
           "usesSponsorPage": true
         }
       ]
