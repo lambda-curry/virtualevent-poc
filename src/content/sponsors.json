@@ -203,6 +203,18 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/inspur_Branding_Inspur%202020%20Business%20Performance.mp4",
                 "name": "Inspur 2020 Business Performance",
                 "order": 9
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/inspur_Use%20Case_Inspur%20Container%20Datacenter.mp4",
+                "name": "Use Case Inspur Container Datacenter",
+                "order": 10
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/inspur_Product%20Insider_NF5180M6_%201U%202-Socket%20General%20Purpose%20Open%20Compute%20Server.mp4",
+                "order": 11,
+                "name": "Product Insider NF5180M6 1U 2-Socket General Purpose Open Compute Server"
               }
             ]
           },
