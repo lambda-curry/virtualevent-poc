@@ -665,10 +665,66 @@
           "advertiseImage": "/img/wiwynn_corporation_main_page_ad_20211007.jpg",
           "sponsorId": 49,
           "companyId": 43,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/wiwynn",
+                "name": "LinkedIn",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/WiwynnCorporation",
+                "order": 2,
+                "name": "Facebook"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/c/Wiwynn",
+                "order": 3,
+                "name": "Youtube"
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/wiwynn_corporation_SV310G4_1080p_20210419.mp4",
+                "name": "Wiwynn Corporation Video",
+                "order": 4
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Wiwynn Corporation Vide",
+                "order": 5,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/wiwynn_corporation_ES200_20210406.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/wiwynn_corporation_EP100+EP120_1014.mp4",
+                "name": "Wiwynn Corporation Video",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/wiwynn_corporation_tank_Confidential.mp4",
+                "order": 7,
+                "name": "Wiwynn Corporation Video"
+              }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/wiwynn_corporation_datasheet-sv7100g4_210917_internal.pdf",
+                "name": "Wiwynn Corporation Datasheet ",
+                "order": 4
+              }
+            ]
+          },
           "columnAds": [
             {
               "image": "/img/wiwynn_corporation_sponsorad_20210928.jpg",
-              "link": "https://www.wiwynn.com/"
+              "link": "https://www.wiwynn.com"
             }
           ],
           "id": 49,
