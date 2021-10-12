@@ -642,6 +642,20 @@
                 "order": 5,
                 "name": "Youtube"
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/qct_d53xq-2u_20210702.pdf",
+                "name": "QuantaGrid D53XQ-2U",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/qct_qct-product-portfolio_v13_20210726.pdf",
+                "name": "QCT Product Portfolio",
+                "order": 2
+              }
             ]
           },
           "columnAds": [
@@ -764,8 +778,37 @@
           "sponsorId": 61,
           "title": "Xilinx",
           "companyId": 44,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/xilinx",
+                "name": "Linkedin",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/user/XilinxInc",
+                "name": "Youtube",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/XilinxInc",
+                "name": "Twitter",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/XilinxInc",
+                "name": "Facebook",
+                "order": 4
+              }
+            ]
+          },
           "id": 61,
-          "showLogoInEventPage": true,
+          "showLogoInEventPage": false,
+          "email": "sales@xilinx.com",
           "usesSponsorPage": true
         },
         {
