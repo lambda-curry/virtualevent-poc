@@ -370,6 +370,12 @@
                 "link": "/img/microsoft_grid-interactive-batteries.pdf",
                 "name": "Microsoft Grid Interactive Batteries - How small steps power big sustainability goals",
                 "order": 7
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/microsoft_the-carbon-benefits-of-cloud-computing.pdf",
+                "order": 8,
+                "name": "The carbon benefits of cloud computing."
               }
             ]
           },
