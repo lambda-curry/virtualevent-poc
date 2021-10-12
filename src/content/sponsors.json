@@ -1497,6 +1497,25 @@
     {
       "tier": [
         {
+          "value": "tier-XGUrqHNzZ",
+          "label": "Media Partners "
+        }
+      ],
+      "sponsors": [
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Media ",
+          "id": 129,
+          "sponsorId": 129,
+          "companyId": 117,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+        }
+      ]
+    },
+    {
+      "tier": [
+        {
           "value": "tier-1BXGYJADL",
           "label": "Experience Center"
         }
