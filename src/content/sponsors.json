@@ -1053,7 +1053,8 @@
           "id": 106,
           "sponsorId": 106,
           "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 92
+          "companyId": 92,
+          "usesSponsorPage": false
         },
         {
           "advertiseImage": "",
