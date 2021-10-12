@@ -320,10 +320,38 @@
           "intro": "Microsoft enables digital transformation for the era of an intelligent cloud and an intelligent edge. Its mission is to empower every person and every organization on the planet to achieve more.",
           "headerImage": "/img/microsoft_microsoft-ocp-virtual-booth-1440x400.png",
           "headerImageMobile": "/img/microsoft_microsoft-ocp-virtual-booth-768x250.png",
-          "advertiseImage": "",
+          "advertiseImage": "/img/microsoft_microsoft-ocp-sponsorad-484x484.png",
           "sponsorId": 56,
           "title": "Microsoft ",
           "companyId": 10,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/Azure",
+                "order": 1,
+                "name": "Twitter Azure"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/microsoft",
+                "order": 2,
+                "name": "Twitter Microsoft"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/microsoft/",
+                "order": 3,
+                "name": "Linked"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/channel/UC0m-80FnNY2Qb7obvTL_2fA",
+                "order": 4,
+                "name": "Youtube"
+              }
+            ]
+          },
           "columnAds": [
             {
               "image": "/img/microsoft_microsoft-ocp-sponsorad-484x484.png",
@@ -331,6 +359,7 @@
             }
           ],
           "id": 56,
+          "email": "OCP2021.microsoft.com",
           "usesSponsorPage": true
         },
         {
