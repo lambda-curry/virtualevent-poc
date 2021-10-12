@@ -588,6 +588,14 @@
       "sponsors": [
         {
           "advertiseImage": "",
+          "showLogoInEventPage": true,
+          "name": "Sapphire",
+          "id": 121,
+          "sponsorId": 121,
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-sapphire.png"
+        },
+        {
+          "advertiseImage": "",
           "name": "3M Company",
           "id": 80,
           "sponsorId": 80,
@@ -755,6 +763,19 @@
           "usesSponsorPage": true
         },
         {
+          "marquee": "Innovator In Electronics",
+          "featuredEventId": "",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-murata.png",
+          "name": "Murata",
+          "intro": "Murata Manufacturing Co., Ltd. is a worldwide leader in the design, manufacture and sale of ceramic-based passive electronic components and solutions, communication modules and power supply modules. Murata is committed to the development of advanced electronic materials and leading edge, multi-functional, high-density modules. The company has employees and manufacturing facilities throughout the world. For more information, visit Murata’s website at www.murata.com.",
+          "advertiseImage": "",
+          "sponsorId": 118,
+          "companyId": 105,
+          "id": 118,
+          "showLogoInEventPage": true,
+          "email": "amy.talley@murata.com"
+        },
+        {
           "marquee": "Expanding the world's vision of what is possible!",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-penguin.png",
           "name": "Penguin Computing",
@@ -862,29 +883,9 @@
           "title": "Super Micro Computer, Inc.",
           "companyId": 69,
           "id": 82,
+          "showLogoInEventPage": false,
           "email": "desireem@supermicro.com",
           "usesSponsorPage": true
-        },
-        {
-          "marquee": "Innovator In Electronics",
-          "featuredEventId": "",
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-murata.png",
-          "name": "Murata",
-          "intro": "Murata Manufacturing Co., Ltd. is a worldwide leader in the design, manufacture and sale of ceramic-based passive electronic components and solutions, communication modules and power supply modules. Murata is committed to the development of advanced electronic materials and leading edge, multi-functional, high-density modules. The company has employees and manufacturing facilities throughout the world. For more information, visit Murata’s website at www.murata.com.",
-          "advertiseImage": "",
-          "sponsorId": 118,
-          "companyId": 105,
-          "id": 118,
-          "showLogoInEventPage": true,
-          "email": "amy.talley@murata.com"
-        },
-        {
-          "advertiseImage": "",
-          "showLogoInEventPage": true,
-          "name": "Sapphire",
-          "id": 121,
-          "sponsorId": 121,
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-sapphire.png"
         }
       ]
     },
@@ -977,6 +978,19 @@
           "companyId": 48,
           "id": 52,
           "email": "ocp@te.com",
+          "usesSponsorPage": true
+        },
+        {
+          "marquee": "Single Phase Immersion Cooling Fluids: Designed with the Data Center Industry in mind",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-fuchslubricants.png",
+          "name": "FUCHS LUBRICANTS CO.",
+          "intro": "FUCHS is a global leader in the development and production of comprehensive lubricant solutions, products, and services. Our RENOLIN Fluids for Electronic Component Cooling (FECC) were designed with the needs of the data center in mind. Switching to our single-phase immersion cooling can help your plant increase power rack density, reduce energy usage, reduce CO2 emissions, and cut operational costs. The RENOLIN FECC product line includes both mineral oils and synthetic fluids. Our products are safe, reliable and offer: • Excellent dielectric properties • Great heat conductivity • Protection against corrosion • Compatibility with common IT materials FUCHS provides customers with efficient, sustainable, and innovative solutions driven by our global distribution network, CO2-neutral production, and cutting-edge technology. Our commitment to research and development enables us to provide solutions for the ever-changing needs of the data center industry.",
+          "headerImage": "/img/fuchs_lubricants_co_immersion-cooling_web-banner-01.png",
+          "advertiseImage": "",
+          "sponsorId": 122,
+          "companyId": 110,
+          "id": 122,
+          "showLogoInEventPage": true,
           "usesSponsorPage": true
         }
       ]
