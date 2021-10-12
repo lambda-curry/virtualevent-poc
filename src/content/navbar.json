@@ -6,7 +6,7 @@
       "display": true,
       "requiresAuth": true,
       "pageRestriction": [
-        "MARKETING"
+        "LOBBY"
       ]
     },
     {
