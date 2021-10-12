@@ -72,14 +72,52 @@
           "usesSponsorPage": true
         },
         {
+          "marquee": "Being virtual doesn’t mean you can’t see our latest hardware designs for yourself. Explore our designs on Oculus or in your browser below!",
           "sponsorColor": "#67788A",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-facebook.png",
           "name": "Facebook ",
           "intro": "Founded in 2004, Facebook’s mission is to give people the power to build community and bring the world closer together. Over 2 billion people use Facebook, Instagram, WhatsApp, or Messenger every month to stay connected with friends and family, to discover what’s going on in the world, and to share and express what matters to them.",
-          "advertiseImage": "",
+          "headerImage": "/img/facebook_virtualboothheader_fb_ocp2021.png",
+          "headerImageMobile": "/img/facebook_virtualboothheader_mobile_fb_ocp2021.png",
+          "advertiseImage": "/img/facebook_lobbyad_ocp2021.png",
           "sponsorId": 54,
           "title": "Facebook",
           "companyId": 5,
+          "documents": {
+            "slides": [],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/careers/",
+                "order": 1,
+                "name": "Careers @ Facebook"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://about.facebook.com/",
+                "order": 2,
+                "name": "About Facebook"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://engineering.fb.com/",
+                "order": 3,
+                "name": "Engineering @ Facebook"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://datacenters.fb.com/",
+                "order": 4,
+                "name": "Datacenters"
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "link": "http://fbhardwarespotlight.com/",
+              "image": "/img/facebook_virtual-booth_sponsoredad_ocp2021.png"
+            }
+          ],
           "id": 55,
           "email": "natking@fb.com",
           "usesSponsorPage": true
