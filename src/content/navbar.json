@@ -6,7 +6,7 @@
       "display": true,
       "requiresAuth": true,
       "pageRestriction": [
-        "LOBBY"
+        "ANY"
       ]
     },
     {
@@ -15,7 +15,7 @@
       "display": true,
       "requiresAuth": false,
       "pageRestriction": [
-        "ANY"
+        "MARKETING"
       ]
     },
     {
