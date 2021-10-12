@@ -272,6 +272,7 @@
           "intro": "Intel creates world-changing technology that enriches the lives of every person on earth. We are inspired to drive innovation that makes the world safer, builds healthy and vibrant communities, and increases productivity. We harnesses our reach around the globe to better society, business and the planet by pushing ourselves and our industry peers to be more responsible, inclusive and sustainable.",
           "advertiseImage": "/img/intel_logo-classicblue-3000px.png",
           "sponsorId": 59,
+          "title": "Intel Corporation",
           "companyId": 1,
           "documents": {
             "links": [
@@ -607,6 +608,7 @@
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/qct_%28FINAL%29%20Bloomberg_QCT%2030s%20W%20SUBS_HD1080p.mp4",
           "advertiseImage": "/img/qct_qct-logo-core-vertical-rgb-nomargin.png",
           "sponsorId": 48,
+          "title": "QCT",
           "companyId": 42,
           "documents": {
             "videos": [
@@ -678,6 +680,7 @@
           "headerImageMobile": "/img/wiwynn_corporation_mobile_welcome_page_20211007.jpg",
           "advertiseImage": "/img/wiwynn_corporation_main_page_ad_20211007.jpg",
           "sponsorId": 49,
+          "title": "Wiwynn Corporation",
           "companyId": 43,
           "documents": {
             "links": [
@@ -766,7 +769,7 @@
             }
           ],
           "id": 49,
-          "showLogoInEventPage": true,
+          "showLogoInEventPage": false,
           "email": "Sales@wiwynn.com",
           "usesSponsorPage": true
         },
@@ -821,7 +824,7 @@
           "headerImageMobile": "/img/zt_systems_zt-systems-mobile-version-image.jpg",
           "advertiseImage": "",
           "sponsorId": 62,
-          "title": "",
+          "title": "ZT Systems",
           "companyId": 45,
           "documents": {
             "links": [
@@ -846,7 +849,7 @@
             ]
           },
           "id": 62,
-          "showLogoInEventPage": true,
+          "showLogoInEventPage": false,
           "email": "sales@ztsystems.com",
           "usesSponsorPage": true
         }
