@@ -862,7 +862,7 @@
           "id": 81,
           "sponsorId": 81,
           "email": "",
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-scaleflux.png",
           "companyId": 68
         },
         {
@@ -907,6 +907,14 @@
         }
       ],
       "sponsors": [
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Topaz",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-topaz.png",
+          "id": 128,
+          "sponsorId": 128
+        },
         {
           "marquee": "DriveNets builds networks like cloud, over a fully virtualized cloud-native architecture - scalable, demand-responsive and innovations-ready. ",
           "sponsorColor": "#0556FF",
