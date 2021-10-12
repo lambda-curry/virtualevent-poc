@@ -124,6 +124,12 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_fb%20covid%20final.mp4",
                 "order": 5,
                 "name": "Facebook Covid Video"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_facebook%20inspired%20final.mov",
+                "order": 7,
+                "name": "Facebook Inspired"
               }
             ]
           },
