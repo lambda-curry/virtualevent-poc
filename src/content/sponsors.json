@@ -16,13 +16,52 @@
           "id": 119
         },
         {
-          "logo": "/img/34519842.png",
+          "marquee": "The World's First Cloud Native Processor - Now with 128 Cores!",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-ampere.png",
           "name": "Ampere Computing",
-          "intro": "TEST",
+          "intro": "Ampere is designing the future of hyperscale cloud and edge computing with the world's first cloud native processor. Built for the cloud with a modern 64-bit Arm server-based architecture, Ampere gives customers the freedom to accelerate the delivery of all cloud computing applications. With industry-leading performance, power efficiency and scalability, Ampere’s Altra® family of processors are designed to deliver on predictable performance, high scalability and power efficiency.",
+          "headerImage": "/img/ampere_computing_virtualbooth_header-1-.png",
+          "headerImageMobile": "/img/ampere_computing_opc_virtualmobilebanner_2.png",
           "advertiseImage": "",
           "sponsorId": 58,
-          "title": "Ampere Computing",
+          "title": "Ampere",
           "companyId": 41,
+          "documents": {
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/ampere_computing_altra_pb_v1.20_20210921.pdf",
+                "name": "Ampere Computing Altra PB",
+                "order": 4
+              }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/AmpereComputing",
+                "name": "Twitter",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/amperecomp",
+                "order": 2,
+                "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/AmpereComputing",
+                "name": "Facebook",
+                "order": 3
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "image": "/img/ampere_computing_ampere-hiring-graphic-v2-01_square-3a.png",
+              "link": "https://amperecomputing.com/jobs/"
+            }
+          ],
           "id": 58,
           "usesSponsorPage": true
         },
