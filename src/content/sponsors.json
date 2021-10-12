@@ -942,6 +942,19 @@
           "usesSponsorPage": true
         },
         {
+          "marquee": "Single Phase Immersion Cooling Fluids: Designed with the Data Center Industry in mind",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-fuchslubricants.png",
+          "name": "FUCHS LUBRICANTS CO.",
+          "intro": "FUCHS is a global leader in the development and production of comprehensive lubricant solutions, products, and services. Our RENOLIN Fluids for Electronic Component Cooling (FECC) were designed with the needs of the data center in mind. Switching to our single-phase immersion cooling can help your plant increase power rack density, reduce energy usage, reduce CO2 emissions, and cut operational costs. The RENOLIN FECC product line includes both mineral oils and synthetic fluids. Our products are safe, reliable and offer: • Excellent dielectric properties • Great heat conductivity • Protection against corrosion • Compatibility with common IT materials FUCHS provides customers with efficient, sustainable, and innovative solutions driven by our global distribution network, CO2-neutral production, and cutting-edge technology. Our commitment to research and development enables us to provide solutions for the ever-changing needs of the data center industry.",
+          "headerImage": "/img/fuchs_lubricants_co_immersion-cooling_web-banner-01.png",
+          "advertiseImage": "",
+          "sponsorId": 122,
+          "companyId": 110,
+          "id": 122,
+          "showLogoInEventPage": true,
+          "usesSponsorPage": true
+        },
+        {
           "advertiseImage": "",
           "name": "MiTAC Computing Technology",
           "id": 100,
@@ -977,20 +990,8 @@
           "title": "TE Connectivity",
           "companyId": 48,
           "id": 52,
+          "showLogoInEventPage": false,
           "email": "ocp@te.com",
-          "usesSponsorPage": true
-        },
-        {
-          "marquee": "Single Phase Immersion Cooling Fluids: Designed with the Data Center Industry in mind",
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-fuchslubricants.png",
-          "name": "FUCHS LUBRICANTS CO.",
-          "intro": "FUCHS is a global leader in the development and production of comprehensive lubricant solutions, products, and services. Our RENOLIN Fluids for Electronic Component Cooling (FECC) were designed with the needs of the data center in mind. Switching to our single-phase immersion cooling can help your plant increase power rack density, reduce energy usage, reduce CO2 emissions, and cut operational costs. The RENOLIN FECC product line includes both mineral oils and synthetic fluids. Our products are safe, reliable and offer: • Excellent dielectric properties • Great heat conductivity • Protection against corrosion • Compatibility with common IT materials FUCHS provides customers with efficient, sustainable, and innovative solutions driven by our global distribution network, CO2-neutral production, and cutting-edge technology. Our commitment to research and development enables us to provide solutions for the ever-changing needs of the data center industry.",
-          "headerImage": "/img/fuchs_lubricants_co_immersion-cooling_web-banner-01.png",
-          "advertiseImage": "",
-          "sponsorId": 122,
-          "companyId": 110,
-          "id": 122,
-          "showLogoInEventPage": true,
           "usesSponsorPage": true
         }
       ]
@@ -1004,58 +1005,13 @@
       ],
       "sponsors": [
         {
-          "sideImage": "",
-          "logo": "/img/omdia_afcom_afcom_logo_rgb.png",
-          "name": "AFCOM",
-          "intro": "`This is sample text for a sponsor intro.`",
-          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/omdia_afcom_AFCOM%20boilerplate%20slides%20-%20general.mp4",
           "advertiseImage": "",
-          "sponsorId": 112,
-          "companyId": 98,
-          "documents": {
-            "links": [
-              {
-                "class_name": "PresentationLink",
-                "link": "https://twitter.com/afcom",
-                "name": "Twitter ",
-                "order": 1
-              },
-              {
-                "class_name": "PresentationLink",
-                "link": "https://www.linkedin.com/groups/41479/",
-                "order": 2,
-                "name": "Linkedin"
-              },
-              {
-                "class_name": "PresentationLink",
-                "link": "https://www.facebook.com/DataCenterWorld/",
-                "order": 3,
-                "name": "Facebook"
-              },
-              {
-                "class_name": "PresentationLink",
-                "link": "https://www.youtube.com/channel/UCFANU4hY2_8LJerzuDq5xiA",
-                "order": 4,
-                "name": "Youtube"
-              }
-            ]
-          },
-          "columnAds": [
-            {
-              "link": "https://afcom.com/Public/Member_Resources/Educational_Webinars/Public/Resource_Center/Webinars_Public.aspx?hkey=496c0097-b9cd-44a5-b950-775383d1ffe0",
-              "image": "/img/omdia_afcom_p1_62156_dcw21_web_ads_afcom_webinars_336x280.jpg"
-            }
-          ],
-          "id": 112,
-          "usesSponsorPage": true
-        },
-        {
-          "advertiseImage": "",
-          "name": "Circle B",
-          "id": 109,
-          "sponsorId": 109,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 95
+          "showLogoInEventPage": true,
+          "name": "Start-Up",
+          "companyId": 111,
+          "id": 123,
+          "sponsorId": 123,
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-startup.png"
         },
         {
           "advertiseImage": "",
@@ -1064,6 +1020,31 @@
           "sponsorId": 105,
           "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
           "companyId": 91
+        },
+        {
+          "advertiseImage": "",
+          "name": "Kameleon Security",
+          "id": 104,
+          "sponsorId": 104,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 90
+        },
+        {
+          "advertiseImage": "",
+          "name": "MSP Disposal",
+          "id": 106,
+          "sponsorId": 106,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 92
+        },
+        {
+          "advertiseImage": "",
+          "name": "Circle B",
+          "id": 109,
+          "sponsorId": 109,
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "companyId": 95,
+          "usesSponsorPage": false
         },
         {
           "advertiseImage": "",
@@ -1122,22 +1103,6 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "name": "Kameleon Security",
-          "id": 104,
-          "sponsorId": 104,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 90
-        },
-        {
-          "advertiseImage": "",
-          "name": "MSP Disposal",
-          "id": 106,
-          "sponsorId": 106,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
-          "companyId": 92
-        },
-        {
           "marquee": "The data center is the new unit of computing. Explore NVIDIA’s software-defined, hardware-accelerated networking solutions that are making it happen.",
           "sponsorColor": "#76B900",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-nvidia.png",
@@ -1159,6 +1124,52 @@
           "companyId": 103,
           "id": 116,
           "email": "micron_storage@micron.com",
+          "usesSponsorPage": true
+        },
+        {
+          "sideImage": "",
+          "logo": "/img/omdia_afcom_afcom_logo_rgb.png",
+          "name": "AFCOM",
+          "intro": "`This is sample text for a sponsor intro.`",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/omdia_afcom_AFCOM%20boilerplate%20slides%20-%20general.mp4",
+          "advertiseImage": "",
+          "sponsorId": 112,
+          "companyId": 98,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/afcom",
+                "name": "Twitter ",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/groups/41479/",
+                "order": 2,
+                "name": "Linkedin"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/DataCenterWorld/",
+                "order": 3,
+                "name": "Facebook"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/channel/UCFANU4hY2_8LJerzuDq5xiA",
+                "order": 4,
+                "name": "Youtube"
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "link": "https://afcom.com/Public/Member_Resources/Educational_Webinars/Public/Resource_Center/Webinars_Public.aspx?hkey=496c0097-b9cd-44a5-b950-775383d1ffe0",
+              "image": "/img/omdia_afcom_p1_62156_dcw21_web_ads_afcom_webinars_336x280.jpg"
+            }
+          ],
+          "id": 112,
           "usesSponsorPage": true
         },
         {
@@ -1206,8 +1217,21 @@
           "title": "OpenPOWER Foundation",
           "companyId": 101,
           "id": 114,
+          "showLogoInEventPage": false,
           "email": "info@openpowerfoundation.org",
           "usesSponsorPage": true
+        },
+        {
+          "marquee": "Immersion cooling redefined for future ready datacentres | Immersed Computing®",
+          "sponsorColor": "#ff4444",
+          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "name": "Aspteritas",
+          "intro": "Asperitas provides cutting edge immersion cooling solutions for datacentres globally. Since the research and development phase, there have been collaborations with an extensive ecosystem of partners, like Shell. Shell is an international energy company with expertise in the exploration, production and refining of oil and natural gas, and the manufacturing and marketing of chemicals. Their immersion cooling fluid has been used to accelerate Asperitas’ mission for sustainable datacentres.",
+          "advertiseImage": "",
+          "sponsorId": 124,
+          "companyId": 112,
+          "id": 124,
+          "showLogoInEventPage": true
         }
       ]
     },
