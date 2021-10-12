@@ -1389,9 +1389,10 @@
           "usesSponsorPage": true
         },
         {
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-micron.png",
           "name": "Micron",
           "intro": "We are an industry leader in innovative memory and storage solutions transforming how the world uses information to enrich life for all. With a relentless focus on our customers, technology leadership, and manufacturing and operational excellence, Micron delivers a rich portfolio of high-performance DRAM, NAND and NOR memory and storage products through our Micron® and Crucial® brands. Every day, the innovations that our people create fuel the data economy, enabling advances in artificial intelligence and 5G applications that unleash opportunities — from the data center to the intelligent edge and across the client and mobile user experience. To learn more about Micron Technology, Inc., visit micron.com.",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/micron_MICRON%20DATA%20LIVES_30%20Feel%20Alive2%2050mb%20%281%29.mp4",
           "advertiseImage": "",
           "sponsorId": 116,
           "companyId": 103,
