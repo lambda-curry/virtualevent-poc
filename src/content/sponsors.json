@@ -125,11 +125,12 @@
         {
           "marquee": "Visit Inspur booth# B23 to see our latest innovations in OCP that balance efficiency and power, optimized for enterprise, cloud, and AI.",
           "externalLink": "",
-          "sponsorColor": "#0271E4",
+          "sponsorColor": "HEX #0271E4",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-inspur.png",
           "name": "Inspur",
           "intro": "Inspur is a leading provider of data center infrastructure, cloud computing, and AI solutions, ranking among the world’s top 3 server manufacturers. As a platinum member of OCP and legacy member of other open data center communities, Inspur is a longtime contributor of open reference architectures and is committed to the development and advocacy of open standards. Through engineering and innovation, Inspur delivers cutting-edge hardware designs and solutions to address challenges across many different technology sectors.",
-          "advertiseImage": "/img/ocp21glo_fnv_lobby_space1a.png",
+          "headerImageMobile": "/img/inspur_mobilebanner_768x250.jpg",
+          "advertiseImage": "/img/inspur_diamondvirtuallobbyad_484x484.jpg",
           "sponsorId": 53,
           "title": "Inspur ",
           "companyId": 38,
@@ -159,8 +160,22 @@
                 "order": 4,
                 "name": "YouTube"
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/inspur_ocp-2021-product-digital-handout.pdf",
+                "order": 5,
+                "name": "Inspur Product Details "
+              }
             ]
           },
+          "columnAds": [
+            {
+              "link": "www.inspursystems.com",
+              "image": "/img/inspur_clickablesponsorad_484x484.jpg"
+            }
+          ],
           "id": 53,
           "email": "sales@inspursystems.com",
           "usesSponsorPage": true
