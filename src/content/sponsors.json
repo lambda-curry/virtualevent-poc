@@ -1400,6 +1400,103 @@
     {
       "tier": [
         {
+          "value": "tier-hY171qXmS",
+          "label": "OpenSource Partners "
+        }
+      ],
+      "sponsors": [
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Open Source Parn",
+          "companyId": 114,
+          "id": 126,
+          "sponsorId": 126,
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-opensource.png"
+        },
+        {
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-opensource.png",
+          "name": "ONF ",
+          "intro": "https://opennetworking.org",
+          "advertiseImage": "",
+          "sponsorId": 111,
+          "companyId": 97,
+          "id": 111,
+          "showLogoInEventPage": false,
+          "usesSponsorPage": true
+        },
+        {
+          "marquee": "Welcome from OpenCAPI. Visit our booth and opencapi.org to learn how OpenCAPI and OMI can help you build faster and more efficient memory systems.",
+          "sideImage": "",
+          "sponsorColor": "#009183",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-opencapi.png",
+          "name": "OpenCAPI Consortium",
+          "intro": "OpenCAPI Consortium The purpose of the OpenCAPI Consortium is to create an open coherent high performance bus interface based on a new bus standard called Open Coherent Accelerator Processor Interface (OpenCAPI) and develop the ecosystem that utilizes this interface. This initiative is being driven by the emerging accelerated computing and advanced memory/storage solutions that have introduced significant system bottlenecks in today’s current open bus protocols and requires a technical solution that is openly available. The member collaboration define an open bus protocol standard that starts from the microprocessor interface on up to any accelerators, memory/storage solutions, bridge chips that enable further interaction with additional protocols, and potentially others. These open bus protocol standards have been made available publicly at the consortium website.",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/opencapi_consortium_OpenCAPI%20Virtual%20Booth%20OCP%202021%20Nov_v4.mp4",
+          "headerImageMobile": "/img/opencapi_consortium_virtual-welcome-static-image.png",
+          "advertiseImage": "",
+          "sponsorId": 115,
+          "companyId": 99,
+          "columnAds": [
+            {
+              "image": "/img/opencapi_consortium_virtual-sponsor-ad.omi.png",
+              "link": "www.openmemoryinterface.org"
+            }
+          ],
+          "id": 115,
+          "showLogoInEventPage": false,
+          "email": "rszabo@opencapi.org",
+          "usesSponsorPage": true
+        },
+        {
+          "marquee": "OpenPOWER Foundation - Supporting the Open, Free, Proven, Performant POWER Instruction Set Architecture",
+          "sponsorColor": "#2685AE",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-openpowerfoundation.png",
+          "name": "OpenPOWER Foundation",
+          "intro": "The OpenPOWER Foundation is a non-profit organization supporting the free and open RISC based instruction set architecture. We enable open community collaboration, technology advancements in the OpenPOWER ecosystem, and visibility of OpenPOWER member successes.",
+          "headerImage": "/img/openpower_openpower_welcome.png",
+          "headerImageMobile": "/img/openpower_openpower_welcome_mobile.png",
+          "advertiseImage": "",
+          "sponsorId": 114,
+          "companyId": 101,
+          "id": 114,
+          "showLogoInEventPage": false,
+          "usesSponsorPage": true
+        },
+        {
+          "marquee": "The SDIA is the leading platform for driving sustainability in the digital sector.",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-sdia.png",
+          "name": "Sustainable Digital Infrastructure Alliance (SDIA)",
+          "headerImage": "/img/sdia_1626338587676.jpeg",
+          "headerImageMobile": "/img/sdia_1626338587676.jpeg",
+          "advertiseImage": "",
+          "sponsorId": 113,
+          "companyId": 100,
+          "id": 113,
+          "showLogoInEventPage": false,
+          "email": "michael.oghia@sdialliance.org",
+          "usesSponsorPage": true
+        },
+        {
+          "marquee": "Open source and standards for Cloud, Computational Storage, Data Management, Next Generation Storage Management, NVMe-oF, Persistent Memory, SSDs, Connectors, Transceivers, and Form Factors.",
+          "sponsorColor": "#54237f",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-snia.png",
+          "name": "SNIA",
+          "intro": "The Storage Networking Industry Association (SNIA) is a non-profit global organization dedicated to developing standards and education programs to advance storage and information technology. Over 185 companies and 2,500 member volunteers collaborate on open source and standards in the technology areas of next generation storage management, computational storage, persistent memory, solid state drives, connectors, transceivers, form factors, and more. Visit us at www.snia.org.",
+          "headerImage": "/img/snia_ocp21virtualboothtop.jpg",
+          "headerImageMobile": "/img/snia_sniawelcomeimage_ocp.jpg",
+          "advertiseImage": "",
+          "sponsorId": 7127,
+          "companyId": 115,
+          "id": 12,
+          "showLogoInEventPage": false,
+          "usesSponsorPage": true
+        }
+      ]
+    },
+    {
+      "tier": [
+        {
           "value": "tier-1BXGYJADL",
           "label": "Experience Center"
         }
