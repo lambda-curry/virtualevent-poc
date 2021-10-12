@@ -130,6 +130,12 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_facebook%20inspired%20final.mov",
                 "order": 7,
                 "name": "Facebook Inspired"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_CXL%20Demo.mov",
+                "order": 8,
+                "name": "CXL Demo"
               }
             ]
           },
