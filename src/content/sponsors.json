@@ -1011,6 +1011,66 @@
           "sponsorId": 67,
           "title": "Flex",
           "companyId": 54,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/flexintl/",
+                "order": 1,
+                "name": "Linkedin"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/flexintl?lang=en",
+                "order": 2,
+                "name": "Twitter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/FlexCorporate/",
+                "order": 3,
+                "name": "Facebook"
+              },
+              {
+                "class_name": "PresentationLink",
+                "order": 4,
+                "link": "https://www.youtube.com/channel/UCD54KOJpqopWD8KX3dd3a9A",
+                "name": "YouTube"
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/flex_Agility%20for%20your%20business.mp4",
+                "order": 5,
+                "name": "Agility for your business"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Providing Capabilities that Help Transform Industries",
+                "order": 6,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/flex_Providing%20Capabilities%20that%20Help%20Transform%20Industries_English_1.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Creative the Intelligence Platform",
+                "order": 7,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/flex_Creative%20the%20Intelligence%20Platform_English.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "The trusted, global supply chain partner",
+                "order": 8,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/flex_The%20trusted,%20global%20supply%20chain%20partner_English.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Delivering a Digitized Supply Chain",
+                "order": 9,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/flex_Delivering%20a%20Digitized%20Supply%20Chain_English.mp4"
+              }
+            ]
+          },
           "id": 67,
           "email": "kara.cushman@flex.com",
           "usesSponsorPage": true
