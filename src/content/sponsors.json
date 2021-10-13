@@ -1353,7 +1353,9 @@
           "id": 77,
           "sponsorId": 77,
           "logo": "/img/ocp21glo_fnv_sponsorlogo-arm.png",
-          "companyId": 64
+          "companyId": 64,
+          "usesSponsorPage": true,
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arm_OCP%20Virtual%20Booth%20Arm%20Neoverse%20Video.mp4"
         },
         {
           "advertiseImage": "",
@@ -1860,6 +1862,7 @@
           "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png",
           "name": "Aspteritas",
           "intro": "Asperitas provides cutting edge immersion cooling solutions for datacentres globally. Since the research and development phase, there have been collaborations with an extensive ecosystem of partners, like Shell. Shell is an international energy company with expertise in the exploration, production and refining of oil and natural gas, and the manufacturing and marketing of chemicals. Their immersion cooling fluid has been used to accelerate Asperitas’ mission for sustainable datacentres.",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/asperitas_and_shell_ocp%20animation-02.mp4",
           "advertiseImage": "",
           "sponsorId": 124,
           "companyId": 112,
