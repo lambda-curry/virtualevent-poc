@@ -51,7 +51,8 @@
       "display": true,
       "requiresAuth": false,
       "pageRestriction": [
-        "EVENT"
+        "EVENT",
+        "MARKETING"
       ]
     },
     {
