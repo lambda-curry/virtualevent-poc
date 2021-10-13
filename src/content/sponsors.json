@@ -1152,7 +1152,9 @@
           "logo": "/img/sk_hynix_virtual-booth-logo.png",
           "name": "SK hynix",
           "intro": "SK hynix seeks to propel the semiconductor industry forward with global tech leadership, and provide a future of greater value to stakeholders to create a better world with information and communication technology. As the world’s third largest chipmaker with know-how and customer trust built over more than 38 years, SK hynix continues delivering on a comprehensive range of memory semiconductor solutions from DRAM and NAND Flash to CMOS image sensors. The company’s advanced memory technologies are driving critical innovations of the Fourth Industrial Revolution such as Big data, AI, Machine Learning, IoT, and Robotics. Moreover, SK hynix is aiming higher with the new “Mem4EST (Memory Forest)” initiative to quickly respond to future changes in the ICT ecosystem. With robust ESG management that accounts for value to the environment, societies, and future generations, SK hynix will continue to build competence and success around the globe.",
-          "advertiseImage": "",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/sk_hynix_Welcome%20Promo%20Video_SK%20hynix.mp4",
+          "headerImageMobile": "/img/sk_hynix_mobile-static-image_sk-hynix.jpg",
+          "advertiseImage": "/img/sk_hynix_virtual-lobby-ad_sk-hynix.jpg",
           "sponsorId": 65,
           "companyId": 52,
           "documents": {
@@ -1174,11 +1176,55 @@
                 "name": "YouTube",
                 "order": 3,
                 "link": "https://www.youtube.com/channel/UC6pwdpqcG1_vgcKBxUcvGtA"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.skhynix.com/",
+                "name": "Learn more about SK hynix ",
+                "order": 4
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/sk_hynix_1.%20SK%20hynix%E2%80%99s%20Commitment%20to%20ESG%20%5BtVK8aWPeaow%5D.mp4",
+                "order": 9,
+                "name": "SK hynix’s Commitment to ESG"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/sk_hynix_2.%20Overview%20of%20SK%20Group%20and%20SK%20hynix.mp4",
+                "order": 10,
+                "name": " Overview of SK Group and SK hynix"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/sk_hynix_4.%20Maximize%20Value%20of%20your%20server%20from%20the%20core,%20SK%20hynix%20%5BUKWHU6OECA4%5D.mp4",
+                "order": 11,
+                "name": " SK hynix Solutions are designed for your datacenter "
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/sk_hynix_5.%20Search%20for%20the%20Next-generation%20Memory,%20DDR5%20%5Bo3zAgsW_8RA%5D.mp4",
+                "name": "Maximize Value of your server from the core, SK hynix ",
+                "order": 12
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/sk_hynix_6.%20Data%20Processing%20and%20Storage%20for%205G%20Networks,%20SK%20hynix%20%5BEAGdyg7_NIo%5D.mp4",
+                "order": 13,
+                "name": "Search for the Next-generation Memory, DDR5 "
               }
             ]
           },
+          "columnAds": [
+            {
+              "image": "/img/sk_hynix_clickable-sponsor-ad_sk-hynix.jpg",
+              "link": "https://product.skhynix.com/"
+            }
+          ],
           "id": 65,
-          "email": "suna.shin@sk.com",
+          "email": "megan.lee@us.skhynix.com",
           "usesSponsorPage": true
         },
         {
