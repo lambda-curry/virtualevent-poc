@@ -1603,14 +1603,6 @@
         },
         {
           "advertiseImage": "",
-          "name": "Submer",
-          "id": 99,
-          "sponsorId": 99,
-          "logo": "/img/904078ed88a252dd352f74e386e57792d81563de.png",
-          "companyId": 85
-        },
-        {
-          "advertiseImage": "",
           "name": "Pluribus Networks",
           "id": 103,
           "sponsorId": 103,
@@ -1618,6 +1610,15 @@
           "companyId": 89,
           "intro": "Pluribus Networks delivers highly scalable, automated and cost-efficient data center network solutions based on the principles of disaggregation and controllerless SDN automation. The Linux-based Netvisor® ONE operating system and the Adaptive Cloud Fabric™ controllerless SDN software have been purpose built to deliver radically automated networking along with superior economics by leveraging white box switches including Pluribus’ own Freedom™ Series of switches. The Adaptive Cloud Fabric controllerless SDN architecture is optimized to deliver a modern network fabric underlay and overlay across data center sites to support distributed cloud with rich services, automated operations, intrinsic security, comprehensive visibility and no single point of failure. Pluribus is deployed by more than 350 customers, including more than 100 tier one mobile network operators, in mission critical networks around the globe. Visit Pluribus Networks to learn more.",
           "usesSponsorPage": true
+        },
+        {
+          "advertiseImage": "",
+          "name": "Submer",
+          "id": 99,
+          "sponsorId": 99,
+          "logo": "/img/904078ed88a252dd352f74e386e57792d81563de.png",
+          "companyId": 85,
+          "usesSponsorPage": false
         },
         {
           "marquee": "ENABLING NEXT GENERATION ARCHITECTURE.",
