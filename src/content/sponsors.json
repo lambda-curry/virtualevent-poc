@@ -913,6 +913,7 @@
           "name": "Credo",
           "intro": "Credo is a leading provider of high-performance serial connectivity solutions for the hyperscale datacenter, 5G carrier, enterprise networking, artificial intelligence, and high-performance computing markets. Credo's solutions deliver the bandwidth, scalability, and end-to-end signal integrity for next-generation platforms requiring 25G, 50G, and 100G signal lane-rate connectivity for 100G, 200G, 400G, and 800G port enabled networks. Credo pioneered Active Electrical Cables (AECs) to solve to connectivity challenges of reach and volume facing DACs and the reliability and power hurdles of AOCs as speeds reached 400G and beyond. The cables, which integrate retimers and gearboxes in the connectors, have enabled new generations of data center architectures including distributed disaggregated chassis and NIC-to-Dual TOR implementations. Credo has 4 families of AECs in production including: SPAN AECs, CLOS AECs, SHIFT AECs, and SWITCH AECs. Learn more at https://www.credodemi.com/hiwire.",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/credo_Credo%2060s%20OCP%20Virtual%20Banner.mp4",
+          "headerImageMobile": "/img/credo_credo-768x250.png",
           "advertiseImage": "/img/credo_experiencecenterad484x484.png",
           "sponsorId": 64,
           "companyId": 51,
@@ -1000,6 +1001,8 @@
           "usesSponsorPage": true
         },
         {
+          "marquee": "The most innovative companies choose Flex as the manufacturing partner of choice that helps them create extraordinary products that improve people’s lives.",
+          "sponsorColor": "#005486",
           "logo": "/img/flex_virtual-sponsor-logo.png",
           "name": "Flex",
           "intro": "Flex is the manufacturing partner of choice that helps a diverse customer base design and build products that improve the world. Through the collective strength of a global workforce across 30 countries and responsible, sustainable operations, Flex delivers technology innovation, supply chain, and manufacturing solutions to various industries and end markets. For more information, visit flex.com.",
@@ -1316,6 +1319,7 @@
           "logo": "/img/ocp21glo_fnv_sponsorlogo-3m_v2.png",
           "name": "3M Company",
           "intro": "Meeting the demands of today’s data hungry world while keeping your data center connected and performing efficiently and reliably is no small feat. 3M has solutions in liquid immersion cooling, advanced fiber optic and copper twin axial technology that are designed to bring flexibility, performance and cost and energy efficiency to the data centers of today and tomorrow while reducing footprint. Chat with us to learn more.",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/3m_201019-Novec-Tank-Teaser-Final.mp4",
           "advertiseImage": "",
           "sponsorId": 80,
           "title": "3M Company",
