@@ -907,14 +907,95 @@
           "intro": "bp"
         },
         {
-          "marquee": "Credo Active Electrical Cables provide 28G, 56G, and 112G per lane PAM4 connectivity for distributed disaggregated chassis and NIC-to-Dual TOR racks.",
+          "marquee": "Moving Tagline - 150 Character Max\tCredo Active Electrical Cables provide 28G, 56G, and 112G per lane PAM4 connectivity for distributed disaggregated chassis and NIC-to-Dual TOR racks.",
           "sponsorColor": "#000000",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-credo.png",
           "name": "Credo",
           "intro": "Credo is a leading provider of high-performance serial connectivity solutions for the hyperscale datacenter, 5G carrier, enterprise networking, artificial intelligence, and high-performance computing markets. Credo's solutions deliver the bandwidth, scalability, and end-to-end signal integrity for next-generation platforms requiring 25G, 50G, and 100G signal lane-rate connectivity for 100G, 200G, 400G, and 800G port enabled networks. Credo pioneered Active Electrical Cables (AECs) to solve to connectivity challenges of reach and volume facing DACs and the reliability and power hurdles of AOCs as speeds reached 400G and beyond. The cables, which integrate retimers and gearboxes in the connectors, have enabled new generations of data center architectures including distributed disaggregated chassis and NIC-to-Dual TOR implementations. Credo has 4 families of AECs in production including: SPAN AECs, CLOS AECs, SHIFT AECs, and SWITCH AECs. Learn more at https://www.credodemi.com/hiwire.",
-          "advertiseImage": "",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/credo_Credo%2060s%20OCP%20Virtual%20Banner.mp4",
+          "advertiseImage": "/img/credo_experiencecenterad484x484.png",
           "sponsorId": 64,
           "companyId": 51,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/credo-semiconductor",
+                "order": 1,
+                "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/credosemi",
+                "order": 2,
+                "name": "Twitter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/channel/UCJR9X28THl0S87fDUe0oPfA",
+                "order": 3,
+                "name": "Youtube"
+              }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/credo_credo_hiwire_overview_brochure070820211.pdf",
+                "order": 5,
+                "name": "HiWire™ Active Electrical Cables"
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/credo_credo_hiwire_ddc_solution_brief_345tb_jerico2c-ramon_06282021.pdf",
+                "name": "Distributed, Disaggregated Chassis (DDC) CLOS",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/credo_credo_hiwire_lp_clos_800g_-8x106g-_qsfp-dd_pam4_to_800g_-8x106g-_qsfp-dd...-1-.pdf",
+                "name": "LP CLOS AEC Specification",
+                "order": 7
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/credo_credo_hiwire_lp_switch_200g_qsfp56_pam4_to_two_200g_qsfp56_pam4_10112021....pdf",
+                "name": "LP SWITCH AEC Specification",
+                "order": 8
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/credo_350Tb%20Jericho2c+%20DDC%20Introduction.mp4",
+                "order": 9,
+                "name": "350Tb Jericho2c+ DDC Introductio"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/credo_Credo%20HiWire%20AEC%20for%20DDC%20Applications.mp4",
+                "order": 10,
+                "name": "Credo HiWire AEC for DDC Application"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/credo_800G%20AEC%20v%20DAC%20in%20400T%20Switch%20Swap%20Demo.mp4",
+                "order": 11,
+                "name": "800G AEC v DAC in 400T Switch Swap Demo"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/credo_Webinar%20-%20EN%20-%20Credo-MSFT%20Dual%20TOR.mp4",
+                "order": 12,
+                "name": "Webinar - EN - Credo-MSFT Dual TOR"
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "image": "/img/credo_credoad484x484.png",
+              "link": "https://www.credosemi.com/hiwire"
+            }
+          ],
           "id": 64,
           "usesSponsorPage": true
         },
