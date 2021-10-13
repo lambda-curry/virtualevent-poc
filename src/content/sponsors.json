@@ -1509,6 +1509,7 @@
           "logo": "/img/ocp21glo_fnv_sponsorlogo-penguin.png",
           "name": "Penguin Computing",
           "intro": "Penguin Computing specializes in custom, innovative, open solutions for AI, HPC, Data Center, and the Cloud. Penguin Computing provides hardware and software solutions built on both 19” and 21” OCP infrastructures. Founded twenty years ago by the team that created the original beowulf cluster, Penguin Computing has been integral to the development of modern HPC and data center technologies. Today, Penguin Computing focuses on four key areas, High-performance Computing, Artificial Intelligence, Software-defined Storage, and Cloud Computing solutions.",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/penguin_computing_Customized%20Solutions%20-%20Gemini%20Man%20Storage%20by%20Penguin%20Computing.mp4",
           "headerImage": "/img/penguin_computing_expanding-word-vision-of-what-s-possible-banner-2-.jpg",
           "headerImageMobile": "/img/penguin_computing_expanding-word-vision-of-what-s-possible-banner-2-.jpg",
           "advertiseImage": "",
@@ -1698,7 +1699,8 @@
           "sponsorId": 100,
           "logo": "/img/mitac_horizontal_mitac_logo_color.png",
           "companyId": 86,
-          "usesSponsorPage": false
+          "usesSponsorPage": true,
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/mitac_MiTAC%205G.mp4"
         },
         {
           "advertiseImage": "",
