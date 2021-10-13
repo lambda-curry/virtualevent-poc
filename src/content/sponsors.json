@@ -1400,6 +1400,32 @@
                 "name": "Brand",
                 "order": 12
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/vertiv_vertiv-adx-ecosystem-br-en-na-av-20200-web_332109_0.pdf",
+                "name": "Vertiv™ Avocent® ADX Ecosystem",
+                "order": 4
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/vertiv_vertiv-avocent-adx-rack-manager-ds-en-na-av-20202-web.pdf",
+                "name": "Vertiv™ Avocent® ADX Rack Manager",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/vertiv_vertiv-avocent-adx-ecosystem-application-brief-sl-70798.pdf",
+                "name": "Maximizing the Edge Computing Opportunity with Centralized IT Management",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/vertiv_vertiv-vr-rack-selection-guide-ct-en-na-sl-11367-r0920-web.pdf",
+                "order": 8,
+                "name": "Vertiv™ VR Rack"
+              }
             ]
           },
           "columnAds": [
