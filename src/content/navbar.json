@@ -6,18 +6,16 @@
       "display": true,
       "requiresAuth": true,
       "pageRestriction": [
-        "ANY"
+        "MARKETING"
       ]
     },
     {
       "title": "Schedule",
       "link": "/a/schedule",
       "display": true,
-      "requiresAuth": true,
+      "requiresAuth": false,
       "pageRestriction": [
-        "LOBBY",
-        "EVENT",
-        "MARKETING"
+        "EVENT"
       ]
     },
     {
@@ -35,7 +33,7 @@
       "display": true,
       "requiresAuth": true,
       "pageRestriction": [
-        "ANY"
+        "EVENT"
       ]
     },
     {
@@ -44,7 +42,7 @@
       "display": true,
       "requiresAuth": false,
       "pageRestriction": [
-        "ANY"
+        "EVENT"
       ]
     },
     {
@@ -53,7 +51,7 @@
       "display": true,
       "requiresAuth": false,
       "pageRestriction": [
-        "ANY"
+        "EVENT"
       ]
     },
     {
@@ -62,7 +60,7 @@
       "display": true,
       "requiresAuth": false,
       "pageRestriction": [
-        "ANY"
+        "EVENT"
       ]
     },
     {
@@ -71,7 +69,7 @@
       "display": true,
       "requiresAuth": false,
       "pageRestriction": [
-        "ANY"
+        "EVENT"
       ]
     },
     {
@@ -80,7 +78,7 @@
       "display": true,
       "requiresAuth": true,
       "pageRestriction": [
-        "ANY"
+        "EVENT"
       ]
     }
   ]
