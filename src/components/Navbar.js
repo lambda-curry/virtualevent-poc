@@ -36,13 +36,16 @@ const Navbar = ({
     setShowProfile(!showProfile);
   };
 
-  // we assume that all pages under /a/* requires auth except /a/schedule
+// we assume that all pages under /a/* requires auth except /a/schedule
   // item.requiresAuth allows to mark specific pages that are not under /a/* pattern.
   const showItem = (item) => {
+    // check if we have location defined, if so use the path name , else if window is defined use the window.location
+    // as a fallback
+    const currentPath = location ? location.pathname: (typeof window !== "undefined" ? window.location.pathname: "");
     const passPageRestriction = !item.pageRestriction || item.pageRestriction.includes('ANY') ||
-        (item.pageRestriction.includes('EVENT') && location.pathname.startsWith("/a/event")) ||
-        (item.pageRestriction.includes('MARKETING') && location.pathname === "/") ||
-        (item.pageRestriction.includes('LOBBY') && location.pathname === "/a/");
+        (item.pageRestriction.includes('EVENT') && currentPath.startsWith("/a/event")) ||
+        (item.pageRestriction.includes('MARKETING') && currentPath === "/") ||
+        (item.pageRestriction.includes('LOBBY') && currentPath === "/a/");
 
     return item.display && (!item.requiresAuth || isLoggedUser) && passPageRestriction;
   };
