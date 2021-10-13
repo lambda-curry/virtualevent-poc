@@ -1338,11 +1338,13 @@
         },
         {
           "marquee": "Ensuring the continuity of today’s and tomorrow’s vital applications.",
+          "sponsorColor": "#fe5b1b",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-vertiv.png",
           "name": "Vertiv",
           "intro": "Nearly all aspects of our lives involve the use of technology. It is how we work and play and do anything in between. This connectivity or use of data is built into the very fabric of our society. It is vital to human progress. Vertiv believes there is a better way to meet this accelerating demand for data — one driven by passion and innovation. As industry experts, we collaborate with our customers to envision and build future-ready infrastructures. We leverage our portfolio of hardware, software, analytics, and services, to ensure our customers’ vital applications run continuously, perform optimally, and scale with business needs.",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/vertiv_Brand-Video-for-Events.mp4",
-          "advertiseImage": "",
+          "headerImageMobile": "/img/vertiv_ocp_welcome_static-image_768-x-250_mobile.png",
+          "advertiseImage": "/img/vertiv_ocp_virtual_ad_468x468.png",
           "sponsorId": 68,
           "title": "Vertiv",
           "companyId": 55,
@@ -1353,9 +1355,59 @@
                 "link": "https://www.linkedin.com/company/vertiv/",
                 "order": 1,
                 "name": "Linkedin"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.instagram.com/vertiv/",
+                "order": 2,
+                "name": "Instagram"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.instagram.com/vertiv_na/",
+                "order": 3,
+                "name": "Instagram NA"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/vertiv_na/",
+                "order": 4,
+                "name": "Twitter"
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/vertiv_Vertiv-Avocent-ADX-Ecosystem-Product-Video.mp4",
+                "name": "Vertiv-Avocent-ADX-Ecosystem-Product-Video",
+                "order": 9
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/vertiv_Vertiv%20Geist%20rPDU.mp4",
+                "name": "Vertiv Geist rPDU",
+                "order": 10
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/vertiv_vertiv_geist_updu_4.mp4",
+                "name": "vertiv_geist_updu",
+                "order": 11
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/vertiv_Brand-Video-for-Events.mp4",
+                "name": "Brand",
+                "order": 12
               }
             ]
           },
+          "columnAds": [
+            {
+              "link": "https://www.vertiv.com/en-us/about/vertiv-and-the-open-compute-project/",
+              "image": "/img/vertiv_ocp_virtual_ad_468x468.png"
+            }
+          ],
           "id": 68,
           "showLogoInEventPage": false,
           "usesSponsorPage": true
