@@ -1563,7 +1563,9 @@
           "id": 84,
           "sponsorId": 84,
           "logo": "/img/ocp21glo_fnv_sponsorlogo-ragilenetworks.png",
-          "companyId": 71
+          "companyId": 71,
+          "usesSponsorPage": true,
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/ragile_networks_Welcome%20Video.mp4"
         },
         {
           "logo": "/img/ocp21glo_fnv_sponsorlogo-samtec-.png",
