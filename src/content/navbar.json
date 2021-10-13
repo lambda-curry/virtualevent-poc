@@ -15,7 +15,7 @@
       "display": true,
       "requiresAuth": false,
       "pageRestriction": [
-        "EVENT"
+        "ANY"
       ]
     },
     {
