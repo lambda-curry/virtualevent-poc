@@ -80,7 +80,7 @@ export const SponsorPageTemplate = class extends React.Component {
         xhtmlOut: true,
         typographer: true,
       });
-      const parsedIntro = parser.render(sponsor.intro);
+      const parsedIntro = parser.render(sponsor.intro ?? '');
       if (sponsor) this.setState({ sponsor: sponsor, tier: tierData, parsedIntro: parsedIntro });
     }
   }
