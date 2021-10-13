@@ -49,7 +49,7 @@
       "title": "Past events",
       "link": "/past-events",
       "display": true,
-      "requiresAuth": false,
+      "requiresAuth": true,
       "pageRestriction": [
         "EVENT",
         "MARKETING"
