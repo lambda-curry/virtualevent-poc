@@ -1477,7 +1477,8 @@
           "sponsorId": 79,
           "logo": "/img/ocp21glo_fnv_sponsorlogo-keysighttechnologies.png",
           "companyId": 66,
-          "usesSponsorPage": true
+          "usesSponsorPage": true,
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/keysight_technologies_welcome.mp4"
         },
         {
           "advertiseImage": "",
