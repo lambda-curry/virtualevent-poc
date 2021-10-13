@@ -13,10 +13,11 @@
       "title": "Schedule",
       "link": "/a/schedule",
       "display": true,
-      "requiresAuth": false,
+      "requiresAuth": true,
       "pageRestriction": [
         "LOBBY",
-        "EVENT"
+        "EVENT",
+        "MARKETING"
       ]
     },
     {
