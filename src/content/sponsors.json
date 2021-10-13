@@ -1188,32 +1188,76 @@
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/sk_hynix_1.%20SK%20hynix%E2%80%99s%20Commitment%20to%20ESG%20%5BtVK8aWPeaow%5D.mp4",
-                "order": 9,
+                "order": 11,
                 "name": "SK hynix’s Commitment to ESG"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/sk_hynix_2.%20Overview%20of%20SK%20Group%20and%20SK%20hynix.mp4",
-                "order": 10,
+                "order": 12,
                 "name": " Overview of SK Group and SK hynix"
               },
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/sk_hynix_4.%20Maximize%20Value%20of%20your%20server%20from%20the%20core,%20SK%20hynix%20%5BUKWHU6OECA4%5D.mp4",
-                "order": 11,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/sk_hynix_3.%20SK%20hynix%20Solutions%20are%20designed%20for%20your%20datacenter%20%5BtWiPFBzCBf4%5D.mp4",
+                "order": 13,
                 "name": " SK hynix Solutions are designed for your datacenter "
               },
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/sk_hynix_5.%20Search%20for%20the%20Next-generation%20Memory,%20DDR5%20%5Bo3zAgsW_8RA%5D.mp4",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/sk_hynix_4.%20Maximize%20Value%20of%20your%20server%20from%20the%20core,%20SK%20hynix%20%5BUKWHU6OECA4%5D.mp4",
                 "name": "Maximize Value of your server from the core, SK hynix ",
-                "order": 12
+                "order": 14
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/sk_hynix_5.%20Search%20for%20the%20Next-generation%20Memory,%20DDR5%20%5Bo3zAgsW_8RA%5D.mp4",
+                "order": 15,
+                "name": "Search for the Next-generation Memory, DDR5 "
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/sk_hynix_6.%20Data%20Processing%20and%20Storage%20for%205G%20Networks,%20SK%20hynix%20%5BEAGdyg7_NIo%5D.mp4",
-                "order": 13,
-                "name": "Search for the Next-generation Memory, DDR5 "
+                "order": 16,
+                "name": "Data Processing and Storage for 5G Networks, SK hynix "
+              }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/sk_hynix_1.-poster_memory-forest.pdf",
+                "name": "Poster_Memory Forest",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/sk_hynix_2.-brochure_computational-memory-solution.pdf",
+                "name": "Brochure_Computational Memory Solution",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/sk_hynix_3.-whitepaper_computational-memory-solution-for-data-centric-computing-system_rv_1008.pdf",
+                "name": "Whitepaper_Computational Memory Solution for Data-Centric Computing System_rv_1008",
+                "order": 7
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/sk_hynix_4.-whitepaper_sk-hynix-develops-pcie-gen4-enterprise-ssd-portfolio.pdf",
+                "name": "Whitepaper_SK hynix Develops PCIe Gen4 Enterprise SSD Portfoli",
+                "order": 8
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/sk_hynix_5.-brochure_high-density-module-for-large-data-computing-needs.pdf",
+                "name": "Brochure_High-density Module for Large Data-Computing Needs",
+                "order": 9
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/sk_hynix_6.-whitepaper_computational-memory-solution_smarter-memory-to-enhance-data-analytics-system.pdf",
+                "name": " Whitepaper_Computational Memory Solution_Smarter Memory to Enhance Data Analytics System",
+                "order": 10
               }
             ]
           },
