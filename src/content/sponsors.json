@@ -1579,13 +1579,15 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "name": "Scaleflux",
-          "id": 81,
-          "sponsorId": 81,
-          "email": "",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-scaleflux.png",
-          "companyId": 68
+          "name": "Scaleflux",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/scaleflux_combined-_1.mp4",
+          "advertiseImage": "",
+          "sponsorId": 81,
+          "companyId": 68,
+          "id": 81,
+          "email": "",
+          "usesSponsorPage": true
         },
         {
           "marquee": "Innovation in Enterprise Flash Storage.",
