@@ -2428,13 +2428,15 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "showLogoInEventPage": true,
+          "logo": "/img/ri.se.png",
           "name": "RISE ",
+          "intro": "RI.SE",
+          "advertiseImage": "",
+          "sponsorId": 132,
           "companyId": 120,
           "id": 132,
-          "sponsorId": 132,
-          "logo": "/img/ri.se.png"
+          "showLogoInEventPage": true,
+          "usesSponsorPage": true
         }
       ]
     },
