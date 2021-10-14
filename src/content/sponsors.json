@@ -919,6 +919,12 @@
                 "link": "/img/ami_ami_ocpsummit-infographic_q4-2021.pdf",
                 "order": 5,
                 "name": "AMI OCP Summit infographic"
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/ami_megarac_oe_data_sheet_ocp-summit2021.pdf",
+                "name": "MegaRAC OE Data Sheet OCP Summit2021",
+                "order": 6
               }
             ]
           },
