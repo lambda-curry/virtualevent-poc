@@ -1009,6 +1009,44 @@
                 "name": "Arrcus BGP-EVPN Solution Brief",
                 "order": 10
               }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arrcus_inc_Arrcus%20Company%20Overview.mp4",
+                "name": "Arrcus Company Overview",
+                "order": 10
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arrcus_inc_Arrcus%20-%20Enabling%20NaaS%20for%205G%20Mobile%20and%20Edge.mp4",
+                "order": 11,
+                "name": "Arrcus - Enabling NaaS for 5G Mobile and Edge"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arrcus_inc_Arrcus%20Open%20MLAG%20Demo.mp4",
+                "order": 12,
+                "name": "Arrcus Open MLAG Dem"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arrcus_inc_Introducing%20Arrcus%20VDR%20-%20The%20Virtualized%20Distributed%20Router.mp4",
+                "order": 13,
+                "name": "Introducing Arrcus VDR - The Virtualized Distributed Router"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arrcus_inc_Arrcus%20VDR%20-%20Building%20Blocks.mp4",
+                "order": 14,
+                "name": "Arrcus VDR - Building Block"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arrcus_inc_Introducing%20Arrcus%20MCN%20Platform.mp4",
+                "name": "Introducing Arrcus MCN Platform",
+                "order": 15
+              }
             ]
           },
           "columnAds": [
