@@ -2426,6 +2426,15 @@
           "id": 116,
           "email": "micron_storage@micron.com",
           "usesSponsorPage": true
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": true,
+          "name": "RISE ",
+          "companyId": 120,
+          "id": 132,
+          "sponsorId": 132,
+          "logo": "/img/ri.se.png"
         }
       ]
     },
