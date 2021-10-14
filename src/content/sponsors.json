@@ -597,8 +597,10 @@
           "advertiseImage": "",
           "showLogoInEventPage": true,
           "name": "Emerald Level ",
-          "id": 120,
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-emerald.png"
+          "id": 130,
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-emerald.png",
+          "sponsorId": 130,
+          "companyId": 118
         },
         {
           "marquee": "Infrastructure for Your Digital Transformation : Smart, Speedy, Scaling and Ready.",
@@ -867,8 +869,9 @@
           "advertiseImage": "",
           "showLogoInEventPage": true,
           "name": "Ruby Level",
-          "id": 121,
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-ruby.png"
+          "id": 131,
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-ruby.png",
+          "sponsorId": 131
         },
         {
           "marquee": "THE OPEN WORLD STARTS ON AMI. Our foundational technologies are how the world's machines Power Up, Stay On, and Run Secure.",
@@ -883,6 +886,42 @@
           "sponsorId": 69,
           "title": "AMI",
           "companyId": 56,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/AMI_PR",
+                "order": 1,
+                "name": "Twitter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/ami",
+                "order": 2,
+                "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/channel/UC12o28faFg9c-3SDGn5rMew",
+                "order": 3,
+                "name": "Youtube"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/AMI-112144290374420",
+                "order": 4,
+                "name": "Facebook"
+              }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/ami_ami_ocpsummit-infographic_q4-2021.pdf",
+                "order": 5,
+                "name": "AMI OCP Summit infographic"
+              }
+            ]
+          },
           "id": 69,
           "email": "marketing@ami.com",
           "usesSponsorPage": true
@@ -2135,7 +2174,7 @@
         {
           "advertiseImage": "",
           "showLogoInEventPage": false,
-          "name": "Open Source Parn",
+          "name": "Open Source Partner",
           "companyId": 114,
           "id": 126,
           "sponsorId": 126,
@@ -2236,7 +2275,7 @@
           "id": 129,
           "sponsorId": 129,
           "companyId": 117,
-          "logo": "/img/ocp21glo_fnv_sponsor-logo-placeholder.png"
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-media.png"
         }
       ]
     },
