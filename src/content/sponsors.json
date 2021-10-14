@@ -1519,7 +1519,8 @@
           "companyId": 104,
           "logo": "/img/ocp21glo_fnv_sponsorlogo-simslifecycle.png",
           "id": 117,
-          "sponsorId": 117
+          "sponsorId": 117,
+          "usesSponsorPage": true
         },
         {
           "marquee": "SK hynix is aimed at leading future industries of the Data Era and ultimately creating greener, healthier, and more prosperous societies.",
@@ -2544,17 +2545,7 @@
           "label": "Media Partners "
         }
       ],
-      "sponsors": [
-        {
-          "advertiseImage": "",
-          "showLogoInEventPage": false,
-          "name": "Media ",
-          "id": 129,
-          "sponsorId": 129,
-          "companyId": 117,
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-media.png"
-        }
-      ]
+      "sponsors": []
     },
     {
       "tier": [
