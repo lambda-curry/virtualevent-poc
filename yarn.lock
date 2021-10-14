@@ -3369,10 +3369,10 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-attendee-to-attendee-widget@^1.1.97:
-  version "1.1.97"
-  resolved "https://registry.yarnpkg.com/attendee-to-attendee-widget/-/attendee-to-attendee-widget-1.1.97.tgz#179c04cf80bec6a4288875d4f06cc1b9873c137c"
-  integrity sha512-0EC3GBVTlD6YTvuIJUibGGAyKUSZlHjKcb5mk4c58Ecvol3Ii5NbloiZgdT+oPnnkuOuyNEu+MtTP0oGN8MIxQ==
+attendee-to-attendee-widget@^1.1.101:
+  version "1.1.101"
+  resolved "https://registry.yarnpkg.com/attendee-to-attendee-widget/-/attendee-to-attendee-widget-1.1.101.tgz#14c1befda1a483fb94d25be8af6639c4ac1dc921"
+  integrity sha512-KcZhVQTvzjr8Hy8vm1iifZJTVW9m5SDOaxkrOv9ljnctHOUnbft4dlBp5ZibnxWLJ2BaGM+XLFxwhcVH2abeUA==
   dependencies:
     "@supabase/supabase-js" "^1.22.6"
     bulma "^0.9.2"
@@ -3386,7 +3386,7 @@ attendee-to-attendee-widget@^1.1.97:
     react-markdown "^6.0.2"
     react-tooltip "^4.2.19"
     rehype-raw "^5.1.0"
-    stream-chat "4.2.0"
+    stream-chat "2.12.0"
     stream-chat-react "3.2.2"
     yup "^0.32.9"
 
@@ -7507,7 +7507,7 @@ forever-agent@~0.6.1:
   resolved "https://registry.yarnpkg.com/forever-agent/-/forever-agent-0.6.1.tgz#fbc71f0c41adeb37f96c577ad1ed42d8fdacca91"
   integrity sha1-+8cfDEGt6zf5bFd60e1C2P2sypE=
 
-form-data@4.0.0, form-data@^4.0.0:
+form-data@4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/form-data/-/form-data-4.0.0.tgz#93919daeaf361ee529584b9b31664dc12c9fa452"
   integrity sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==
@@ -17295,22 +17295,7 @@ stream-chat-react@3.2.2:
     textarea-caret "^3.1.0"
     uuid "^8.3.1"
 
-stream-chat@4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/stream-chat/-/stream-chat-4.2.0.tgz#1ccf93d2e9e79708d876eabd421c5008beaf6da7"
-  integrity sha512-wfm6VwXfLSTBO1f4JN6J5SvRV8fFza0Wxqq8zcW1acLJtMAVZ2+vfLOwws86PKexRNeoe8dHSC/sIRhoAEpr+Q==
-  dependencies:
-    "@babel/runtime" "^7.13.10"
-    "@types/jsonwebtoken" "^8.5.0"
-    "@types/ws" "^7.4.0"
-    axios "^0.21.1"
-    base64-js "^1.5.1"
-    form-data "^4.0.0"
-    isomorphic-ws "^4.0.1"
-    jsonwebtoken "^8.5.1"
-    ws "^7.4.4"
-
-stream-chat@^2.7.2:
+stream-chat@2.12.0, stream-chat@^2.7.2:
   version "2.12.0"
   resolved "https://registry.yarnpkg.com/stream-chat/-/stream-chat-2.12.0.tgz#c188f9f92d7290df1004e386c7e2338c4633b99a"
   integrity sha512-FT6kNlN0WpeVmduWF7YHsbclY9dUDm2Ge0BcRFb284miCQ6w7C3xp7PZWHjM/+ormEuFZwERVaxuAkWN1+yOsQ==
@@ -19537,11 +19522,6 @@ ws@^6.2.1:
   integrity sha512-zmhltoSR8u1cnDsD43TX59mzoMZsLKqUweyYBAIvTngR3shc0W6aOZylZmq/7hqyVxPdi+5Ud2QInblgyE72fw==
   dependencies:
     async-limiter "~1.0.0"
-
-ws@^7.4.4:
-  version "7.5.5"
-  resolved "https://registry.yarnpkg.com/ws/-/ws-7.5.5.tgz#8b4bc4af518cfabd0473ae4f99144287b33eb881"
-  integrity sha512-BAkMFcAzl8as1G/hArkxOxq3G7pjUqQ3gzYbLL0/5zNkph70e+lCoxBGnm6AW1+/aiNeV4fnKqZ8m4GZewmH2w==
 
 ws@~7.4.2:
   version "7.4.6"
