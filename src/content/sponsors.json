@@ -942,6 +942,22 @@
           "advertiseImage": "",
           "sponsorId": 70,
           "companyId": 57,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/arrcusinc",
+                "order": 1,
+                "name": "Twitter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/arrcus-inc",
+                "order": 2,
+                "name": "LinkedIN"
+              }
+            ]
+          },
           "id": 70,
           "email": "bradb@arrcus.com",
           "usesSponsorPage": true
