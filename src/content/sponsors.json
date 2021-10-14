@@ -134,8 +134,20 @@
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_CXL%20Demo.mov",
-                "order": 8,
+                "order": 10,
                 "name": "CXL Demo"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_FACEBOOK_DATACENTER_OCTOBER_11_2016.mov",
+                "name": "FACEBOOK_DATACENTER_OCTOBER",
+                "order": 8
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_Hardware%20Engineering%20at%20Facebook.mp4",
+                "name": "Hardware Engineering at Facebook",
+                "order": 9
               }
             ]
           },
