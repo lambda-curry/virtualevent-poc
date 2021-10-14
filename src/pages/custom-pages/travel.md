@@ -2,6 +2,7 @@
 templateKey: custom-page
 title: TRAVEL
 requiresAuth: false
+userRequirement: NONE
 ---
 ## **Venue and Hotels**
 
@@ -29,10 +30,6 @@ Last day to book: 10/15*\
 **The Westin** - $209/night\
 Last day to book: 10/25*\
 <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1623187491706&key=GRP&app=resvlink" target="_blank">Click here</a> to reserve a room.
-
-**Hyatt Place** - $219/night\
-Last day to book: 10/15*\
-<a href="https://www.hyatt.com/en-US/group-booking/SJCZJ/G-OCPG" target="_blank">Click here</a> to reserve a room.
 
 \**or when they sell out of OCP rooms, whichever comes first. Please review the cancellation policy for your selected hotel before booking. They vary based on the property.*
 
