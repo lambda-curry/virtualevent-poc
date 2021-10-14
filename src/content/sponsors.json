@@ -1246,6 +1246,32 @@
                 "name": "KIOXIA_KumoScale_Product_Overview_Brief",
                 "order": 7
               }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "XD6",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/kioxia_america_inc_XD6_720p_Fin_001.mp4",
+                "order": 9
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/kioxia_america_inc_Kioxia_XD6_v5_UCv7.mp4",
+                "name": "Kioxia_XD6",
+                "order": 10
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/kioxia_america_inc_KumoScale_demo_voiceover_v5.mp4",
+                "order": 11,
+                "name": "KumoScale_demo_"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/kioxia_america_inc_KIOXIA_PCIe_Next_Gen_Now%20%281%29.mp4",
+                "order": 12,
+                "name": "KIOXIA_PCIe_Next_Gen"
+              }
             ]
           },
           "id": 71,
@@ -1262,6 +1288,16 @@
           "advertiseImage": "",
           "sponsorId": 120,
           "companyId": 108,
+          "documents": {
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/liteon_LiteON_PSS_final.mp4",
+                "order": 5,
+                "name": "Video #1 "
+              }
+            ]
+          },
           "id": 120,
           "showLogoInEventPage": true,
           "email": "jason.yang@liteon.com",
