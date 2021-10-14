@@ -959,6 +959,44 @@
                 "order": 2,
                 "name": "LinkedIN"
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/arrcus_inc_arrcus-ip-clos-networks-white-paper.pdf",
+                "name": "Arrcus IP Clos Networks White Paper",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/arrcus_inc_arrcus-open-mlag-solution-brief.pdf",
+                "name": "Arrcus Open MLAG Solution Brief",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/arrcus_inc_arrcus-l3vpn-over-srv6-solution-brief.pdf",
+                "name": "Arrcus L3VPN over SRv6 Solution Brief",
+                "order": 7
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/arrcus_inc_arrcus-vdr-solution-brief.pdf",
+                "name": "Arrcus VDR Solution Brief",
+                "order": 8
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/arrcus_inc_arrcus-mcn-solution-brief.pdf",
+                "name": "Arrcus MCN Solution Brief",
+                "order": 9
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/arrcus_inc_arrcus-bgp-evpn-solution-brief.pdf",
+                "name": "Arrcus BGP-EVPN Solution Brief",
+                "order": 10
+              }
             ]
           },
           "columnAds": [
