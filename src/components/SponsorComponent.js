@@ -1,5 +1,5 @@
 import React from 'react'
-import {connect} from "react-redux";
+import { connect } from "react-redux";
 import Slider from "react-slick";
 import Link from '../components/Link'
 import { getSponsorURL } from '../utils/urlFormating'
@@ -13,7 +13,7 @@ const SponsorComponent = ({ page, sponsorsState, tiers, lobbyButton }) => {
       {sponsorsState.map((s, tierIndex) => {
         const sponsors = s.sponsors;
         const tier = tiers.find(t => t.id === s.tier[0].value);
-        if(!tier) return null;
+        if (!tier) return null;
         const template = page === 'lobby' ? tier.lobby.lobbyTemplate : page === 'event' ? tier.eventTemplate : 'expo-hall';
         if (sponsors?.length > 0) {
           renderButton = true;
@@ -122,23 +122,23 @@ const SponsorComponent = ({ page, sponsorsState, tiers, lobbyButton }) => {
                           </Link>
                         </div>
                         : sponsor.usesSponsorPage ?
-                        <div className={`
+                          <div className={`
                           ${styles.imageBox} 
                           ${tier.expoHallPage?.expoHallTemplate === 'big-images' ? styles.large : tier.expoHallPage?.expoHallTemplate === 'medium-images' ? styles.medium : styles.small}`}
-                          key={`${s.tier.label}-${index}`}
-                        >
-                          <Link to={`/a/sponsor/${getSponsorURL(sponsor.id, sponsor.name)}`}>
+                            key={`${s.tier.label}-${index}`}
+                          >
+                            <Link to={`/a/sponsor/${getSponsorURL(sponsor.id, sponsor.name)}`}>
+                              <img src={sponsor.logo} alt={sponsor.name} />
+                            </Link>
+                          </div>
+                          :
+                          <div className={`
+                          ${styles.imageBox} 
+                          ${tier.expoHallPage?.expoHallTemplate === 'big-images' ? styles.large : tier.expoHallPage?.expoHallTemplate === 'medium-images' ? styles.medium : styles.small}`}
+                            key={`${s.tier.label}-${index}`}
+                          >
                             <img src={sponsor.logo} alt={sponsor.name} />
-                          </Link>
-                        </div>
-                        :
-                        <div className={`
-                          ${styles.imageBox} 
-                          ${tier.expoHallPage?.expoHallTemplate === 'big-images' ? styles.large : tier.expoHallPage?.expoHallTemplate === 'medium-images' ? styles.medium : styles.small}`}
-                          key={`${s.tier.label}-${index}`}
-                        >
-                          <img src={sponsor.logo} alt={sponsor.name} />
-                        </div>
+                          </div>
                     )
                   })}
                 </div>
@@ -175,7 +175,9 @@ const SponsorComponent = ({ page, sponsorsState, tiers, lobbyButton }) => {
                                 <img src={sponsor.advertiseImage ? sponsor.advertiseImage : sponsor.logo} alt={sponsor.name} />
                               </Link>
                               :
-                              <img src={sponsor.advertiseImage ? sponsor.advertiseImage : sponsor.logo} alt={sponsor.name} />
+                              <Link>
+                                <img src={sponsor.advertiseImage ? sponsor.advertiseImage : sponsor.logo} alt={sponsor.name} />
+                              </Link>
                         )
                       })}
                     </Slider>
