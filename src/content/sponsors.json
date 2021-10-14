@@ -1354,15 +1354,104 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "With the Pliops Extreme Data Processor you can achieve: • Up to 10x Higher Performance • Up to 6x More Capacity • Up to 5x Lower Cost.",
+          "marquee": "With the Pliops Extreme Data Processor you can achieve: • Up to 10x Higher Performance • Up to 6x More Capacity • Up to 5x Lower Cost",
+          "sponsorColor": "#A748E5",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-pliops.png",
           "name": "Pliops",
           "intro": "Today’s explosive data growth and rapidly expanding application workloads threaten to overwhelm datacenters, preventing organizations from harnessing the AI/ML, 5G, big data analytics, IoT, and other modern applications they need to achieve their business goals. The breakthrough Pliops Extreme Data Processor (XDP), delivered on an easy-to-deploy, low-profile PCIe card, overcomes storage inefficiencies to massively accelerate performance and dramatically reduce overall infrastructure costs for these data-hungry, storage-intensive applications. By radically simplifying the way data is processed and flash storage is managed, Pliops multiplies the effectiveness of organizations’ infrastructure investments by exponentially increasing datacenter performance, reliability, capacity, and efficiency.",
           "headerImage": "/img/pliops_ocp-header-3.png",
+          "chatLink": "https://us02web.zoom.us/j/84553093001?pwd=eXQ3OWdpeUVIQ1dZTC83OWE2bjdJZz09",
           "advertiseImage": "",
           "sponsorId": 97,
           "companyId": 83,
+          "documents": {
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/pliops_Pliops%20Extreme%20Data%20Processor%20Explained.mp4",
+                "name": "Pliops Extreme Data Processor Explained",
+                "order": 13
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/pliops_Pliops%20-%20Four%20Pillars.mp4",
+                "name": "Pliops - Four Pillars",
+                "order": 14
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/pliops_Pliops%20-%20Western%20Digital.mp4",
+                "name": "Pliops - Western Digital",
+                "order": 15
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/pliops_Pliops%20-%20Nvidia.mp4",
+                "order": 18,
+                "name": "Pliops - Nvidia"
+              }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/pliops",
+                "order": 1,
+                "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/PliopsLtd",
+                "order": 2,
+                "name": "Twitter"
+              }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/pliops_pliops_solutionbrief_xdp_091421.pdf",
+                "name": "Pliops Solution Brief",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/pliops_pliops_datasheet_xdp_082421.pdf",
+                "name": "Pliops Data Sheet",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/pliops_pliops_solutionbrief_drivefailureprotection_072221.pdf",
+                "name": "Pliops Solution Brief Drive Failure Protection",
+                "order": 7
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/pliops_pliops_solutionbrief_mariadb_072221.pdf",
+                "name": "Pliops Solution Brief Maria",
+                "order": 8
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/pliops_pliops_solutionbrief_rocksdb_072221.pdf",
+                "name": "Pliops_SolutionBrief_Rocks",
+                "order": 9
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/pliops_pliops_casestudy_saas_072221.pdf",
+                "name": "Pliops_CaseStudy_SaaS",
+                "order": 10
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "link": "https://pliops.com/request-a-demo/",
+              "image": "/img/pliops_ocp-ad-3.jpg"
+            }
+          ],
           "id": 97,
+          "email": "info@pliops.com",
           "usesSponsorPage": true
         },
         {
