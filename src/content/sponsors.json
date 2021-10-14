@@ -1196,7 +1196,7 @@
           "intro": "KIOXIA America, Inc. is the U.S.-based subsidiary of KIOXIA Corporation, a leading worldwide supplier of flash memory and solid state drives (SSDs). From the invention of flash memory to today’s breakthrough BiCS FLASH™ 3D technology, KIOXIA continues to pioneer cutting-edge memory technology and shape the future of storage in high-density applications, including advanced smartphones, PCs, SSDs, automotive, and data centers.",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/kioxia_america_inc_KIOXIA_KIC%20Corporate%202021-SSD_60sec_v2-NoAudio.mp4",
           "headerImageMobile": "/img/kioxia_america_inc_together_we_elevate_the_digital_world_cm6_cd6_768x250.png",
-          "advertiseImage": "",
+          "advertiseImage": "/img/kioxia_america_inc_ocp_2021_challenge_impossible_together_484x484px.jpg",
           "sponsorId": 71,
           "title": "KIOXIA",
           "companyId": 58,
@@ -1225,6 +1225,26 @@
                 "link": "https://www.instagram.com/Kioxia_US/",
                 "order": 4,
                 "name": "Instagram "
+              }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/kioxia_america_inc_kioxia_nextgennow_infographic_v1.1_-letter-.pdf",
+                "name": "KIOXIA_NextGenNow_Infographic",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/kioxia_america_inc_kioxia_edsff_intro_white_paper_v1_3_kai.pdf",
+                "name": "KIOXIA_EDSFF_Intro_White_Paper",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/kioxia_america_inc_kioxia_kumoscale_product_overview_brief_v1.pdf",
+                "name": "KIOXIA_KumoScale_Product_Overview_Brief",
+                "order": 7
               }
             ]
           },
