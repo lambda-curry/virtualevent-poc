@@ -1514,7 +1514,7 @@
         },
         {
           "advertiseImage": "",
-          "showLogoInEventPage": true,
+          "showLogoInEventPage": false,
           "name": "Sims Lifecycle Services",
           "companyId": 104,
           "logo": "/img/ocp21glo_fnv_sponsorlogo-simslifecycle.png",
