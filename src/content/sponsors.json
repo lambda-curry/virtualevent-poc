@@ -938,9 +938,12 @@
           "logo": "/img/arrcus_inc_arrcus-logo-tagline-484x484.png",
           "name": "Arrcus",
           "intro": "Arrcus was founded to enhance business efficiency through superior network connectivity. The Arrcus Connected Edge (ACE) platform offers best-in-class networking with the most flexible consumption model at the lowest total cost of ownership. The Arrcus team consists of world-class technologists who have an unparalleled record in shipping industry-leading networking products, complemented by industry thought leaders, operating executives, strategic partners, and top-tier VCs. For more information, go to www.arrcus.com or follow @arrcusinc.",
+          "headerImage": "/img/arrcus_inc_arrcus-ocp-welcome-static-image.png",
+          "headerImageMobile": "/img/arrcus_inc_arrcus-ocp-mobile-static-image.png",
           "chatLink": "https://arrcus.zoom.us/j/98109522847?pwd=bC9vRjA4NmI2UUVmRmJiQ0h5YkEzZz09",
           "advertiseImage": "",
           "sponsorId": 70,
+          "title": "Arrcus",
           "companyId": 57,
           "documents": {
             "links": [
@@ -958,6 +961,12 @@
               }
             ]
           },
+          "columnAds": [
+            {
+              "image": "/img/arrcus_inc_arrcus-ocp-virtual-sponsor-ad.png",
+              "link": "https://www.arrcus.com"
+            }
+          ],
           "id": 70,
           "email": "bradb@arrcus.com",
           "usesSponsorPage": true
