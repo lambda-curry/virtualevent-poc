@@ -1513,13 +1513,18 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "showLogoInEventPage": false,
-          "name": "Sims Lifecycle Services",
-          "companyId": 104,
+          "marquee": "SLS is a global leader in data center hardware circularity, IT asset disposition and electronics recycling.",
+          "sponsorColor": "#4F758B",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-simslifecycle.png",
-          "id": 117,
+          "name": "Sims Lifecycle Services",
+          "intro": "https://www.simslifecycle.com/about-us/",
+          "advertiseImage": "",
           "sponsorId": 117,
+          "title": "Sims Lifecycle Services",
+          "companyId": 104,
+          "id": 117,
+          "showLogoInEventPage": false,
+          "email": "info.national@simsmm.com",
           "usesSponsorPage": true
         },
         {
