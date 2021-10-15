@@ -1,7 +1,6 @@
 import {
   getEnvVariable,
   AUTHZ_USER_GROUPS,
-  AUTHZ_SESSION_BADGE,
 } from "./envVariables";
 
 export const isAuthorizedUser = (groups) => {
@@ -15,54 +14,28 @@ export const isAuthorizedUser = (groups) => {
     : false;
 };
 
-export const getUserBadges = (summit_tickets) => {
-  let badges = [];
-
-  if (summit_tickets) {
-    summit_tickets
-      .filter((t) => t.badge)
-      .forEach((t) => {
-        t.badge.features.forEach((feature) => {
-          if (!badges.some((e) => e === feature.id)) {
-            badges.push(feature.id);
-          }
-        });
-      });
-  }
-
-  return badges;
+const getUserBadgeFeatureIds = (summit_tickets) => {
+    return summit_tickets?.reduce((result, item) => {
+        const newFeatureIds = item?.badge?.features?.map(f => f.id).filter(fid => !result.includes(fid)) || [];
+        return [...result, ...newFeatureIds];
+    }, []) || [];
 };
 
-export const userHasAccessLevel = (summitTickets, accessLevel) => {
-  if (summitTickets) {
-    return summitTickets
-      .some(t => t?.badge?.type?.access_levels.map(al => al.name).includes(accessLevel));
-  }
-
-  return false;
+const getUserAccessLevelIds = (summit_tickets) => {
+    return summit_tickets?.reduce((result, item) => {
+        const newAccessLevels = item?.badge?.type?.access_levels?.map(al => al.id).filter(aln => !result.includes(aln)) || [];
+        return [...result, ...newAccessLevels];
+    }, []) || [];
 };
 
-export const isAuthorizedBadge = (session, summit_tickets) => {
-  let authorizedSessionPerBadge = getEnvVariable(AUTHZ_SESSION_BADGE);
-  authorizedSessionPerBadge =
-    authorizedSessionPerBadge && authorizedSessionPerBadge !== ""
-      ? authorizedSessionPerBadge.split("|").map((session) => {
-          const id = session.split(":")[0];
-          const values = session.split(":")[1].split(",");
-          return { sessionId: id, authorizedBadges: values };
-        })
-      : [];
+export const isAuthorizedBadge = (event, summit_tickets) => {
+    let allowed = true;
+    const userAccessLevels = getUserAccessLevelIds(summit_tickets);
+    const trackAccessLevelIds = event?.track?.allowed_access_levels.map(aal => aal.id) || [];
 
-  let badges = getUserBadges(summit_tickets);
+    if (trackAccessLevelIds.length > 0) {
+        allowed = trackAccessLevelIds.some(tal => userAccessLevels.includes(tal));
+    }
 
-  const authzSession = authorizedSessionPerBadge.find(
-    (s) => s.sessionId === session
-  );
-  if (authzSession) {
-    return authzSession.authorizedBadges.some((b) => {
-      return badges.includes(parseInt(b));
-    });
-  }
-  // we are allowed to enter
-  return true;
+    return allowed;
 };
