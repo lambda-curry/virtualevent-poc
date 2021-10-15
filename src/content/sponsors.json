@@ -1911,6 +1911,32 @@
                 "link": "/img/advanced_energy_eng-aep-dcdc-lga-9.07.pdf",
                 "name": "ENG-AEP-DCDC",
                 "order": 7
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/advanced_energy_en-aep-dcdc-powermodules-brochure.pdf",
+                "name": "en-aep-dcdc-powermodules-brochure",
+                "order": 8
+              }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/advancedenergy",
+                "order": 1,
+                "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/advenergy",
+                "order": 2,
+                "name": "Twitter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/advenergyinc/",
+                "order": 3,
+                "name": "Facebook"
               }
             ]
           },
