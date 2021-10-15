@@ -1872,12 +1872,31 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "name": "Advanced Energy ",
-          "id": 74,
-          "sponsorId": 74,
+          "marquee": "Advanced Energy's Data Center Power Solutions - Accelerate and Enhance the Capabilities of Your OCP System",
+          "sponsorColor": "#2d6aa8",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-advancedenergy.png",
-          "companyId": 61
+          "name": "Advanced Energy",
+          "intro": "As one of the largest power supply companies in the world, Advanced Energy has many years of experience in designing and manufacturing advanced power solutions for data center, enterprise, telecom, industrial, and medical applications. We have an unmatched ability to design power conversion solutions for your specific needs. Advanced Energy's innovations for hyperscale and cloud computing data centers focus on optimizing efficiency and power density to reduce the total cost of ownership. Contact your Advanced Energy sales representative to learn how you can reduce operating costs for your data center. Our dedicated research and development and operations teams ensure swift deployment and stable operations for your program needs.",
+          "headerImage": "/img/advanced_energy_2021_ocp_banner_1440x400_v3_1008.png",
+          "headerImageMobile": "/img/advanced_energy_2021_ocp_banner_765x250_v1_1008.png",
+          "chatLink": "https://direct.lc.chat/5963291/",
+          "advertiseImage": "",
+          "sponsorId": 74,
+          "title": "Advanced Energy",
+          "companyId": 61,
+          "documents": {
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/advanced_energy_Andy_Brown_Final_Takes-7.mp4",
+                "order": 10,
+                "name": "Video #4"
+              }
+            ]
+          },
+          "id": 74,
+          "email": "powersales@aei.com",
+          "usesSponsorPage": true
         },
         {
           "logo": "/img/amphenol_amphenol_blue-002-.png",
@@ -2149,6 +2168,12 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/penguin_computing_Gemini%20Man%20Case%20Study%20-%20SDS%20Storage%20with%20Penguin%20Computing.mp4",
                 "name": "Gemini Man Case Study - SDS Storage with Penguin Computing",
                 "order": 9
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Digital Transformation for HPC and AI",
+                "order": 10,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/penguin_computing_Digital%20Transformation%20for%20HPC%20and%20AI.mp4"
               }
             ]
           },
