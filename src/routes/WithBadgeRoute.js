@@ -5,7 +5,8 @@ import HeroComponent from "../components/HeroComponent";
 import {getEventById} from "../actions/event-actions";
 
 const WithBadgeRoute = ({ children, location, eventId, event, loading, userProfile, hasTicket, isAuthorized, getEventById }) => {
-  const hasBadgeForEvent = eventId && userProfile && isAuthorizedBadge(event, userProfile.summit_tickets);
+  // if user is Authorized then bypass the badge checking
+  const hasBadgeForEvent = isAuthorized || (eventId && userProfile && isAuthorizedBadge(event, userProfile.summit_tickets));
   const userIsAuthz = hasTicket || isAuthorized;
   const needsToLoadEvent = eventId && eventId != event?.id;
 
