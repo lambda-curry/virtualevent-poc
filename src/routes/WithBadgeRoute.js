@@ -1,11 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { connect } from "react-redux";
 import { isAuthorizedBadge } from "../utils/authorizedGroups";
 import HeroComponent from "../components/HeroComponent";
+import {getEventById} from "../actions/event-actions";
 
-const WithBadgeRoute = ({ children, location, eventId, userProfile, hasTicket, isAuthorized }) => {
-  const hasBadgeForEvent = eventId && userProfile && isAuthorizedBadge(eventId, userProfile.summit_tickets);
+const WithBadgeRoute = ({ children, location, eventId, event, loading, userProfile, hasTicket, isAuthorized, getEventById }) => {
+  const hasBadgeForEvent = eventId && userProfile && isAuthorizedBadge(event, userProfile.summit_tickets);
   const userIsAuthz = hasTicket || isAuthorized;
+  const needsToLoadEvent = eventId && eventId != event?.id;
 
   const getTitle = () => {
     if (!userIsAuthz)
@@ -16,6 +18,16 @@ const WithBadgeRoute = ({ children, location, eventId, userProfile, hasTicket, i
       return "Sorry. You need a special badge to view this session.";
   };
 
+  useEffect(() => {
+    if (eventId) {
+      getEventById(eventId);
+    }
+  }, eventId);
+
+  if (loading || needsToLoadEvent) {
+    return <HeroComponent title="Loading event" />;
+  }
+
   if (!userIsAuthz || !hasBadgeForEvent) {
     return <HeroComponent title={getTitle()} redirectTo={location.state?.previousUrl || "/"}/>;
   }
@@ -23,10 +35,12 @@ const WithBadgeRoute = ({ children, location, eventId, userProfile, hasTicket, i
   return children;
 };
 
-const mapStateToProps = ({ userState }) => ({
+const mapStateToProps = ({ userState, eventState }) => ({
   userProfile: userState.userProfile,
   hasTicket: userState.hasTicket,
   isAuthorized: userState.isAuthorized,
+  event: eventState.event,
+  loading: eventState.loading,
 });
 
-export default connect(mapStateToProps)(WithBadgeRoute);
+export default connect(mapStateToProps, {getEventById})(WithBadgeRoute);
