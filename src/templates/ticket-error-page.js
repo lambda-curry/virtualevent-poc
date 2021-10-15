@@ -1,116 +1,132 @@
 import React from 'react'
 import {connect} from "react-redux";
 import PropTypes from 'prop-types'
-import { navigate } from 'gatsby'
-import { getEnvVariable, REGISTRATION_BASE_URL } from '../utils/envVariables'
+import {navigate} from 'gatsby'
+import {getEnvVariable, REGISTRATION_BASE_URL} from '../utils/envVariables'
 import HeroComponent from '../components/HeroComponent'
 
 export const TicketErrorPageTemplate = class extends React.Component {
 
-  constructor(props) {
-    super(props);
+    constructor(props) {
+        super(props);
 
-    const { location } = this.props;
+        const {location} = this.props;
 
-    this.state = {
-      error: location.state?.error
-    }
-  }
-
-  redirect() {
-    const { error } = this.state;
-
-    if (getEnvVariable(REGISTRATION_BASE_URL)) {
-
-      let targetUrl = null;
-      switch (error) {
-        case 'no-ticket':
-          targetUrl = `/#registration=1`;
-          break;
-        case 'incomplete':
-          targetUrl = `/a/extra-questions`;
-          break;
-        default:
-          break;
-      }
-
-      setTimeout(() => {
-        window.location.href = targetUrl;
-      }, 5000);
-
-    } else {
-
-      setTimeout(() => {
-        navigate('/')
-      }, 5000);
-    }
-  }
-
-  getErrorMessage() {
-    const { error } = this.state;
-
-    let message = '';
-
-    switch (error) {
-      case 'no-ticket':
-        message = 'I’m sorry you are not registered for this event.';
-        break;
-      case 'incomplete':
-        message = 'You have not answered questions required to join the event.';
-        break;
-      default:
-        break;
+        this.state = {
+            error: location.state?.error
+        }
     }
 
-    return message;
-  }
+    redirect() {
+        const {error} = this.state;
 
-  getRedirectMessage() {
-    const { error } = this.state;
+        if (getEnvVariable(REGISTRATION_BASE_URL)) {
 
-    return error && getEnvVariable(REGISTRATION_BASE_URL) ?
-      'You will be redirected to registration.' : '';
-  }
+            let targetUrl = null;
 
-  render() {
-    const { error } = this.state;
+            switch (error) {
+                case 'no-access':
+                    targetUrl = `/auth/logout`;
+                    break
+                case 'no-ticket':
+                    targetUrl = `/#registration=1`;
+                    break;
+                case 'incomplete':
+                    targetUrl = `/a/extra-questions`;
+                    break;
+                default:
+                    break;
+            }
 
-    if (error) {
-      this.redirect();
-      return (
-        <HeroComponent
-          title={this.getErrorMessage()}
-          subtitle={this.getRedirectMessage()}
-        />
-      )
+            setTimeout(() => {
+                if (targetUrl)
+                    window.location.href = targetUrl;
+            }, 5000);
+
+            return;
+        }
+
+        setTimeout(() => {
+            navigate('/')
+        }, 5000);
     }
 
-    navigate('/');
-    return null
-  }
+    getErrorMessage() {
+        const {error} = this.state;
+
+        let message = '';
+
+        switch (error) {
+            case 'no-access':
+                message = 'I’m sorry your badge does not allow to access to this event.';
+                break;
+            case 'no-ticket':
+                message = 'I’m sorry you are not registered for this event.';
+                break;
+            case 'incomplete':
+                message = 'You have not answered questions required to join the event.';
+                break;
+            default:
+                break;
+        }
+
+        return message;
+    }
+
+    getRedirectMessage() {
+        const {error} = this.state;
+        let message = '';
+        switch (error) {
+            case 'no-access':
+                message = 'You will be logged out.';
+                break;
+            default:
+                message = getEnvVariable(REGISTRATION_BASE_URL) ? 'You will be redirected to registration.' : '';
+                break;
+        }
+
+        return message;
+    }
+
+    render() {
+        const {error} = this.state;
+
+        if (error) {
+            this.redirect();
+            return (
+                <HeroComponent
+                    title={this.getErrorMessage()}
+                    subtitle={this.getRedirectMessage()}
+                />
+            )
+        }
+
+        navigate('/');
+        return null
+    }
 };
 
 TicketErrorPageTemplate.propTypes = {
-  location: PropTypes.object,
+    location: PropTypes.object,
 };
 
-const TicketErrorPage = ({ location, summit }) => {
+const TicketErrorPage = ({location, summit}) => {
 
-  return (
-    <TicketErrorPageTemplate
-      location={location}
-      summit={summit}
-    />
-  )
+    return (
+        <TicketErrorPageTemplate
+            location={location}
+            summit={summit}
+        />
+    )
 
 };
 
 TicketErrorPage.propTypes = {
-  location: PropTypes.object,
+    location: PropTypes.object,
 };
 
-const mapStateToProps = ({ summitState }) => ({
-  summit: summitState.summit,
+const mapStateToProps = ({summitState}) => ({
+    summit: summitState.summit,
 });
 
 export default connect(mapStateToProps, {})(TicketErrorPage);

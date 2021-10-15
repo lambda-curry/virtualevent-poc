@@ -1,76 +1,78 @@
-import React, { useEffect, useState } from "react";
-import { connect } from "react-redux";
-import { navigate } from "gatsby";
-import { getUserProfile, requireExtraQuestions } from "../actions/user-actions";
+import React, {useEffect, useState, useMemo} from "react";
+import {connect} from "react-redux";
+import {navigate} from "gatsby";
+import {getUserProfile, requireExtraQuestions} from "../actions/user-actions";
 import HeroComponent from "../components/HeroComponent";
 import {userHasAccessLevel} from "../utils/authorizedGroups";
 
 const WithAuthRoute = ({
-  children,
-  isLoggedIn,
-  location,
-  userProfile,
-  hasTicket,
-  isAuthorized,
-  getUserProfile,
-}) => {
-  const [fetchedUserProfile, setFetchedUserProfile] = useState(false);
+                           children,
+                           isLoggedIn,
+                           location,
+                           userProfile,
+                           hasTicket,
+                           isAuthorized,
+                           getUserProfile,
+                       }) => {
+    const [fetchedUserProfile, setFetchedUserProfile] = useState(false);
+    // we store this calculation to use it later
+    const hasVirtualBadge = useMemo(() =>
+        userHasAccessLevel(userProfile.summit_tickets, 'VIRTUAL'), [userProfile]);
 
-  const userIsReady = () => {
-    // we have an user profile
-    return !!userProfile;
-  };
+    const userIsReady = () => {
+        // we have an user profile
+        return !!userProfile;
+    };
 
-  const userIsAuthz = () => {
-    const hasVirtualBadge = userHasAccessLevel(userProfile.summit_tickets, 'VIRTUAL');
-    return isAuthorized || (hasTicket && hasVirtualBadge);
-  };
+    const userIsAuthz = () => {
+        return isAuthorized || (hasTicket && hasVirtualBadge);
+    };
 
-  const checkingCredentials = () => {
-    return !userIsAuthz() && !fetchedUserProfile;
-  };
+    const checkingCredentials = () => {
+        return !userIsAuthz() && !fetchedUserProfile;
+    };
 
-  useEffect(() => {
-    if (!isLoggedIn) return;
+    useEffect(() => {
+        if (!isLoggedIn) return;
 
-    if (!userProfile) {
-      getUserProfile();
-      return;
+        if (!userProfile) {
+            getUserProfile();
+            return;
+        }
+        // if the user is not authz and we accessing a private route , get fresh data to recheck
+        // authz condition ( new tickets / new groups ) after every render of the route
+        if (!fetchedUserProfile && !userIsAuthz()) {
+            getUserProfile().then(_ => setFetchedUserProfile(true))
+        }
+    }, [fetchedUserProfile, isLoggedIn, hasTicket, isAuthorized, userProfile, getUserProfile, userIsAuthz]);
+
+    if (!isLoggedIn) {
+        navigate("/", {state: {backUrl: `${location.pathname}`,},});
+        return null;
     }
-    // if the user is not authz and we accessing a private route , get fresh data to recheck
-    // authz condition ( new tickets / new groups ) after every render of the route
-    if (!fetchedUserProfile && !userIsAuthz()) {
-      getUserProfile().then( _ => setFetchedUserProfile(true))
+
+    // we are checking credentials if userProfile is being loading yet or
+    // if we are refetching the user profile to check new data ( user currently is not a authz
+    if (!userIsReady() || checkingCredentials()) {
+        return <HeroComponent title="Checking credentials..."/>;
     }
-  }, [fetchedUserProfile, isLoggedIn, hasTicket, isAuthorized, userProfile, getUserProfile, userIsAuthz]);
 
-  if (!isLoggedIn) {
-    navigate("/", {state: { backUrl: `${location.pathname}`,},});
-    return null;
-  }
+    // has no ticket -> redirect
+    if (!userIsAuthz()) {
+        const options = {state: {error: hasTicket && !hasVirtualBadge ? 'no-access' : 'no-ticket'}};
+        return <HeroComponent title="Checking credentials..." redirectTo="/authz/ticket" options={options}/>;
+    }
 
-  // we are checking credentials if userProfile is being loading yet or
-  // if we are refetching the user profile to check new data ( user currently is not a authz
-  if (!userIsReady() || checkingCredentials()) {
-    return <HeroComponent title="Checking credentials..." />;
-  }
-
-  // has no ticket -> redirect
-  if (!userIsAuthz()) {
-    const options = { state: {error: 'no-ticket'}};
-    return <HeroComponent title="Checking credentials..." redirectTo="/authz/ticket" options={options} />;
-  }
-
-  return children;
+    return children;
 };
 
-const mapStateToProps = ({ userState }) => ({
-  userProfile: userState.userProfile,
-  isAuthorized: userState.isAuthorized,
-  hasTicket: userState.hasTicket,
+const mapStateToProps = ({userState}) => ({
+    userProfile: userState.userProfile,
+    isAuthorized: userState.isAuthorized,
+    hasTicket: userState.hasTicket,
 });
 
 export default connect(mapStateToProps, {
-  getUserProfile,
-  requireExtraQuestions,
+    getUserProfile,
+    requireExtraQuestions,
 })(WithAuthRoute);
