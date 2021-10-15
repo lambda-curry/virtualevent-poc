@@ -2786,7 +2786,7 @@
           "sponsorId": 132,
           "companyId": 120,
           "id": 132,
-          "showLogoInEventPage": true,
+          "showLogoInEventPage": false,
           "usesSponsorPage": true
         }
       ]
