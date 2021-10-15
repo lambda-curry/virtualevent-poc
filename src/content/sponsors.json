@@ -1300,12 +1300,6 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "name": "XD6",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/kioxia_america_inc_XD6_720p_Fin_001.mp4",
-                "order": 9
-              },
-              {
-                "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/kioxia_america_inc_Kioxia_XD6_v5_UCv7.mp4",
                 "name": "Kioxia_XD6",
                 "order": 10
