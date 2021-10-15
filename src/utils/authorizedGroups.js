@@ -1,7 +1,6 @@
 import {
   getEnvVariable,
   AUTHZ_USER_GROUPS,
-  AUTHZ_SESSION_BADGE,
 } from "./envVariables";
 
 export const isAuthorizedUser = (groups) => {
@@ -29,35 +28,13 @@ const getUserAccessLevelIds = (summit_tickets) => {
     }, []) || [];
 };
 
-const processAuthSessionBadge = () => {
-    const authSessionBadgeEnv = getEnvVariable(AUTHZ_SESSION_BADGE) || "";
-
-    if (!authSessionBadgeEnv) return [];
-
-    return authSessionBadgeEnv
-        .split("|")
-        .map(item => {
-            const itemArray = item?.split(":");
-            const eventId = parseInt(itemArray[0]);
-            const featuresNeeded = itemArray[1].split(",").map(parseInt);
-            return { eventId, featuresNeeded };
-        });
-}
-
 export const isAuthorizedBadge = (event, summit_tickets) => {
     let allowed = true;
-    const userFeatures = getUserBadgeFeatureIds(summit_tickets);
     const userAccessLevels = getUserAccessLevelIds(summit_tickets);
-    const badgeGatedEvents = processAuthSessionBadge(); // TODO move this out of here and run only once
-    const authzSession = badgeGatedEvents.find(ev => ev.eventId === event?.id);
     const trackAccessLevelIds = event?.track?.allowed_access_levels.map(aal => aal.id) || [];
 
-    if (authzSession) {
-        allowed = authzSession.featuresNeeded.some(featId => userFeatures.includes(featId));
-    }
-
     if (trackAccessLevelIds.length > 0) {
-        allowed = allowed && trackAccessLevelIds.some(tal => userAccessLevels.includes(tal));
+        allowed = trackAccessLevelIds.some(tal => userAccessLevels.includes(tal));
     }
 
     return allowed;
