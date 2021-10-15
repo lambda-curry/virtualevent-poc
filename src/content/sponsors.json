@@ -277,11 +277,11 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Shaping the Future of Technology.                        Shaping the Future of Technology.        ",
+          "marquee": "Shaping the Future of Technology.         ",
           "sponsorColor": "#0068B5",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-intel.png",
           "name": "Intel Corporation",
-          "intro": "![](/img/ocp21glo_fnv_sponsorlogo-intel.png)\n\nIntel creates world-changing technology that enriches the lives of every person on earth. We are inspired to drive innovation that makes the world safer, builds healthy and vibrant communities, and increases productivity. We harnesses our reach around the globe to better society, business and the planet by pushing ourselves and our industry peers to be more responsible, inclusive and sustainable.",
+          "intro": "![]()\n\nIntel creates world-changing technology that enriches the lives of every person on earth. We are inspired to drive innovation that makes the world safer, builds healthy and vibrant communities, and increases productivity. We harnesses our reach around the globe to better society, business and the planet by pushing ourselves and our industry peers to be more responsible, inclusive and sustainable.",
           "advertiseImage": "/img/ocp21glo_fnv_sponsorlogo-intel.png",
           "sponsorId": 59,
           "title": "",
