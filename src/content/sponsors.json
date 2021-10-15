@@ -2637,14 +2637,15 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "showLogoInEventPage": true,
+          "logo": "/img/msp-disposal.png",
           "name": "Minus Technology ",
+          "intro": "https://www.mspdisposal.com",
+          "advertiseImage": "",
+          "sponsorId": 106,
           "companyId": 92,
           "id": 106,
-          "sponsorId": 106,
-          "intro": "https://www.mspdisposal.com",
-          "logo": "/img/msp-disposal.png"
+          "showLogoInEventPage": false,
+          "usesSponsorPage": false
         }
       ]
     },
