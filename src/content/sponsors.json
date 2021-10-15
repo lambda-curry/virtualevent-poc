@@ -575,20 +575,7 @@
                 "name": "SmartSSD "
               }
             ],
-            "videos": [
-              {
-                "class_name": "PresentationVideo",
-                "name": "HPOS",
-                "order": 10,
-                "link": "https://vimeo.com/veruspro/review/626803390/4d0e47b389"
-              },
-              {
-                "class_name": "PresentationVideo",
-                "link": "https://www.samsung.com/semiconductor/newsroom/events/samsung-calls-for-developmental-collaboration-to-usher-in-a-new-era-of-data/",
-                "order": 11,
-                "name": " GSA conference video on memory advancements"
-              }
-            ]
+            "videos": []
           },
           "id": 60,
           "showLogoInEventPage": false,
