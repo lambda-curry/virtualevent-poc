@@ -1967,6 +1967,18 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/edgecore_networks_EdgeCore_SONiC_0527_Final_42mb.mp4",
                 "order": 10,
                 "name": "EdgeCore SONiC"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/edgecore_networks_Cell%20site%20gateway%20CF%202021_ocp_tp_49mb.mp4",
+                "order": 11,
+                "name": "Cell site gateway"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/edgecore_networks_DCS810%20AS9516-32D%20video%20OK_.mp4",
+                "order": 12,
+                "name": "DCS810 AS9516-32D"
               }
             ]
           },
