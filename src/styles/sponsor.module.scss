@@ -2,6 +2,9 @@
 
 .first-container {
   margin-top: 0px !important;
+  &.carousel-container {
+    padding-top: 1px;
+  }
 }
 
 .big-image-container {
@@ -135,9 +138,10 @@
     width: 100%;
     text-align: center;
   }
-
-  img {
-    margin: 1rem auto;
+  &:not(:first-of-type) {
+    img {
+      margin: 1rem auto;
+    }
   }
 }
 
