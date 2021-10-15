@@ -1522,6 +1522,34 @@
           "sponsorId": 117,
           "title": "Sims Lifecycle Services",
           "companyId": 104,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/simslifecycleservices",
+                "order": 1,
+                "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/SimsLifecycle",
+                "order": 2,
+                "name": "Twitter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/SimsLifecycleServices",
+                "order": 3,
+                "name": "Facebook"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.instagram.com/simslifecycle/",
+                "order": 4,
+                "name": "Instagram"
+              }
+            ]
+          },
           "id": 117,
           "showLogoInEventPage": false,
           "email": "info.national@simsmm.com",
