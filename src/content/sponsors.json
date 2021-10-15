@@ -1367,6 +1367,38 @@
                 "order": 3,
                 "name": "Youtube"
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/liteon_liteon-company-profile-e-for-online-exhibition.pdf",
+                "name": "LITEON-Company Profile-E for online exhibition",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/liteon_power-supply.pdf",
+                "name": "Power Supply",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/liteon_power-shelves.pdf",
+                "name": "Power Shelves",
+                "order": 7
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/liteon_battery-backup.pdf",
+                "name": "Battery Backup",
+                "order": 8
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/liteon_racks.pdf",
+                "name": "Racks",
+                "order": 9
+              }
             ]
           },
           "columnAds": [
