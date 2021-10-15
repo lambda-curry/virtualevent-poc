@@ -1911,14 +1911,24 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "name": "Arm",
-          "id": 77,
-          "sponsorId": 77,
           "logo": "/img/ocp21glo_fnv_sponsorlogo-arm.png",
+          "name": "Arm",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arm_OCP%20Virtual%20Booth%20Arm%20Neoverse%20Video.mp4",
+          "advertiseImage": "",
+          "sponsorId": 77,
           "companyId": 64,
-          "usesSponsorPage": true,
-          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arm_OCP%20Virtual%20Booth%20Arm%20Neoverse%20Video.mp4"
+          "documents": {
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arm_Arm%20SystemReady%20Technical%20Team%20Q&A.mp4",
+                "order": 10,
+                "name": "4"
+              }
+            ]
+          },
+          "id": 77,
+          "usesSponsorPage": true
         },
         {
           "logo": "/img/ocp21glo_fnv_sponsorlogo-bizlink.png",
