@@ -1337,6 +1337,7 @@
           "chatLink": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzM2YTYzN2MtMWVlNS00NTcyLTkzYmUtMWFiNDE3MWQ3OGY1%40thread.v2/0?context=%7b%22Tid%22%3a%225a7a259b-6730-404b-bc25-5c6c773229ca%22%2c%22Oid%22%3a%22ac94ec4e-84dd-4015-bb14-48b7bfb7ac3e%22%7d",
           "advertiseImage": "",
           "sponsorId": 120,
+          "title": "LITEON",
           "companyId": 108,
           "documents": {
             "videos": [
@@ -1345,6 +1346,14 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/liteon_LiteON_PSS_final.mp4",
                 "order": 5,
                 "name": "Video #1 "
+              }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/start/join?trk=login_reg_redirect&session_redirect=%2Fcompany-beta%2F15701%2F",
+                "order": 1,
+                "name": "LinkedIn"
               }
             ]
           },
