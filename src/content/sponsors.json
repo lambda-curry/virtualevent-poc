@@ -1902,14 +1902,32 @@
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arm_OCP%20Virtual%20Booth%20Arm%20Neoverse%20Video.mp4"
         },
         {
-          "advertiseImage": "",
-          "name": "BizLink Technology",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-bizlink.png",
-          "id": 51,
+          "name": "BizLink Technology, Inc.",
+          "intro": "BizLink, founded in 1996, is headquartered in Silicon Valley, USA. Our mission is to make interconnection easier and to become the leading global interconnect solution supplier. We support industries that are environmentally conscious and improve quality of life through providing essential components, wire harnesses, and cables to a wide variety of industries such as IT and CE, Motor Vehicle, Electrical Appliances, Medical Equipment, Industrial, Optical Fiber Communications, and Solar. Our vertically integrated business model includes manufacturing sites in the United States, Mexico, Slovakia, Serbia, China, Malaysia, and Singapore. BizLink incorporates state-of-the-art facilities, advanced manufacturing processes, and professional research and development capabilities. Our global R&D and service teams in America, Europe, and Asia strive to keep collaborating closely with customers to turn their innovative ideas into reality.",
+          "advertiseImage": "",
           "sponsorId": 51,
+          "title": "BizLink Technology, Inc.",
           "companyId": 47,
-          "usesSponsorPage": true,
-          "intro": "TEST"
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/bizlink-technology-inc-/",
+                "order": 1,
+                "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/user/Bizlink1996",
+                "order": 2,
+                "name": "YouTube"
+              }
+            ]
+          },
+          "id": 51,
+          "email": "OCPSummit@bizlinktech.com",
+          "usesSponsorPage": true
         },
         {
           "advertiseImage": "",
