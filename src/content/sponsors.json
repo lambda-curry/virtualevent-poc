@@ -2142,6 +2142,14 @@
                 "order": 4,
                 "name": "Twitter "
               }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/penguin_computing_Gemini%20Man%20Case%20Study%20-%20SDS%20Storage%20with%20Penguin%20Computing.mp4",
+                "name": "Gemini Man Case Study - SDS Storage with Penguin Computing",
+                "order": 9
+              }
             ]
           },
           "columnAds": [],
