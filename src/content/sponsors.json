@@ -167,7 +167,7 @@
           "sponsorColor": "#0271E4",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-inspur.png",
           "name": "Inspur",
-          "intro": "Inspur is a leading provider of data center infrastructure, cloud computing, and AI solutions, ranking among the world’s top 3 server manufacturers. As a platinum member of OCP and legacy member of other open data center communities, Inspur is a longtime contributor of open reference architectures and is committed to the development and advocacy of open standards. Through engineering and innovation, Inspur delivers cutting-edge hardware designs and solutions to address challenges across many different technology sectors.",
+          "intro": "## Inspur is a leading provider of data center infrastructure, cloud computing, and AI solutions, ranking among the world’s top 3 server manufacturers. As a platinum member of OCP and legacy member of other open data center communities, Inspur is a longtime contributor of open reference architectures and is committed to the development and advocacy of open standards. Through engineering and innovation, Inspur delivers cutting-edge hardware designs and solutions to address challenges across many different technology sectors.",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/inspur_OCP%20Global_Welcome%20Promo%20Video.mov",
           "headerImageMobile": "/img/inspur_mobilebanner_768x250.jpg",
           "advertiseImage": "/img/inspur_diamondvirtuallobbyad_484x484.jpg",
@@ -254,14 +254,14 @@
               },
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/inspur_Capability_Inspur%20Intelligent%20Factory.mp4",
-                "order": 18,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/inspur_Product%20Detail_Inspur%204S%20NF8260M5%20Optimized%20Solution%20for%20Redis%20Workload.mp4",
+                "order": 19,
                 "name": "Product Detail_Inspur 4S NF8260M5 Optimized Solution for Redis Workload"
               },
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/inspur_Product%20Detail_Inspur%204S%20NF8260M5%20Optimized%20Solution%20for%20Redis%20Workload.mp4",
-                "order": 19,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/inspur_Use%20Case_Protecting%20Asian%20Elephants%20in%20the%20Wild.mp4",
+                "order": 20,
                 "name": "Use Case_Protecting Asian Elephants in the Wild"
               }
             ]
