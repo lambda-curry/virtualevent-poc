@@ -1892,8 +1892,34 @@
                 "order": 10,
                 "name": "Video #4"
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/advanced_energy_eng-ep-data_center_brochure-255-01-7.14.pdf",
+                "name": "ENG-EP-Data_Center_Brochure",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/advanced_energy_eng-crps-brochure-265-01-7.09_web.pdf",
+                "name": "ENG-CRPS-Brochure",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/advanced_energy_eng-aep-dcdc-lga-9.07.pdf",
+                "name": "ENG-AEP-DCDC",
+                "order": 7
+              }
             ]
           },
+          "columnAds": [
+            {
+              "link": "https://www.artesyn.com/solutions/datacenter-infrastructure",
+              "image": "/img/advanced_energy_2021_ocp_banner_968x968_v1_1008.png"
+            }
+          ],
           "id": 74,
           "email": "powersales@aei.com",
           "usesSponsorPage": true
