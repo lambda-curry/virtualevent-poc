@@ -1888,9 +1888,21 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/advanced_energy_Harry_Soin_Final_Takes-4.mp4",
+                "name": "Harry Soin Video",
+                "order": 10
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/advanced_energy_Richard_Caubang-Final_Takes-5.mp4",
+                "name": "Richard Caubang Video",
+                "order": 11
+              },
+              {
+                "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/advanced_energy_Andy_Brown_Final_Takes-7.mp4",
-                "order": 10,
-                "name": "Video #4"
+                "order": 12,
+                "name": "Andy Brown Video"
               }
             ],
             "slides": [
