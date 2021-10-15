@@ -11,7 +11,6 @@ export const SCOPES                       = 'SCOPES';
 export const MARKETING_API_BASE_URL       = 'MARKETING_API_BASE_URL';
 export const REGISTRATION_BASE_URL        = 'REGISTRATION_BASE_URL';
 export const AUTHZ_USER_GROUPS            = 'AUTHZ_USER_GROUPS';
-export const AUTHZ_SESSION_BADGE          = 'AUTHZ_SESSION_BADGE';
 export const AUTHORIZED_DEFAULT_PATH      = 'AUTHORIZED_DEFAULT_PATH';
 export const STREAM_IO_API_KEY            = 'STREAM_IO_API_KEY';
 export const STREAM_IO_SSO_SLUG           = 'STREAM_IO_SSO_SLUG';
