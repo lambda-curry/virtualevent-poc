@@ -1239,7 +1239,7 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Visit the New KIOXIA Virtual Experience Center",
+          "marquee": "Visit the New KIOXIA Virtual Experience Center! ",
           "sponsorColor": "#1ABCEF",
           "logo": "/img/kioxia_america_inc_kioxia_logo_silver.png",
           "name": "KIOXIA",
@@ -1324,6 +1324,12 @@
               }
             ]
           },
+          "columnAds": [
+            {
+              "image": "/img/kioxia_america_inc_vec_banner.png",
+              "link": "https://www.vrexhibitdesign.com/AEM/kioxia/VEC/"
+            }
+          ],
           "id": 71,
           "email": "ailang.ford@kioxia.com",
           "usesSponsorPage": true
