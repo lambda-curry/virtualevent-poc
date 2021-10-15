@@ -2141,9 +2141,27 @@
             "slides": [
               {
                 "class_name": "PresentationSlide",
+                "link": "/img/penguin_computing_truehpc-solution-brief.pdf",
+                "order": 5,
+                "name": "TrueHPC Solution Brief"
+              },
+              {
+                "class_name": "PresentationSlide",
                 "link": "/img/penguin_computing_truehpc-solution-brief-intel_cooling_power_update-v4.pdf",
-                "order": 1,
-                "name": "TrueHPC with Scyld ClusterWare Driving innovation with ready-to-run HPC"
+                "name": "TrueHPC Solution Brief Intel_Cooling_Power",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/penguin_computing_relionxo1222e-datasheet.pdf",
+                "name": "relionxo1222e-datasheet",
+                "order": 7
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/penguin_computing_smart-kestral™-fpga-accelerator-with-intel®-optane™-technical-brief.pdf",
+                "name": "SMART Kestral™ FPGA Accelerator with Intel® Optane™ Technical Brie",
+                "order": 8
               }
             ],
             "links": [
