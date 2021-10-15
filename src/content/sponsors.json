@@ -2167,6 +2167,16 @@
           "advertiseImage": "",
           "sponsorId": 78,
           "companyId": 65,
+          "documents": {
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/silicon_motion_FlashGo%20NVMe%20AFA%20Solution.mp4",
+                "name": "Video #4",
+                "order": 10
+              }
+            ]
+          },
           "columnAds": [
             {
               "image": "/img/silicon_motion_ad-banner_484x484_final.jpg",
