@@ -1959,6 +1959,12 @@
                 "link": "/img/edgecore_networks_high-performance-programmable-400g-100g-switch-solution.pdf",
                 "name": "High-Performance, Programmable 400G & 100G Switch Solution",
                 "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/edgecore_networks_brochure_telco.pdf",
+                "name": "brochure_telco",
+                "order": 6
               }
             ],
             "videos": [
