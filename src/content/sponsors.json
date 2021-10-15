@@ -1979,6 +1979,12 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/edgecore_networks_DCS810%20AS9516-32D%20video%20OK_.mp4",
                 "order": 12,
                 "name": "DCS810 AS9516-32D"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "EC OCP presentation",
+                "order": 13,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/edgecore_networks_EC%20OCP%2015%20mins%20presentation%20FHD_2_s.mp4"
               }
             ]
           },
