@@ -1961,7 +1961,14 @@
                 "order": 5
               }
             ],
-            "videos": []
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/edgecore_networks_EdgeCore_SONiC_0527_Final_42mb.mp4",
+                "order": 10,
+                "name": "EdgeCore SONiC"
+              }
+            ]
           },
           "columnAds": [
             {
