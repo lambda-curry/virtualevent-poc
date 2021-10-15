@@ -14,11 +14,13 @@ export const isAuthorizedUser = (groups) => {
     : false;
 };
 
-const getUserBadgeFeatureIds = (summit_tickets) => {
-    return summit_tickets?.reduce((result, item) => {
-        const newFeatureIds = item?.badge?.features?.map(f => f.id).filter(fid => !result.includes(fid)) || [];
-        return [...result, ...newFeatureIds];
-    }, []) || [];
+export const userHasAccessLevel = (summitTickets, accessLevel) => {
+    if (summitTickets) {
+        return summitTickets
+            .some(t => t?.badge?.type?.access_levels.map(al => al.name).includes(accessLevel));
+    }
+
+    return false;
 };
 
 const getUserAccessLevelIds = (summit_tickets) => {
