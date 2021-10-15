@@ -114,6 +114,7 @@
             }
           ],
           "id": 37,
+          "showLogoInEventPage": true,
           "email": "info@adanda.net",
           "usesSponsorPage": true
         },
