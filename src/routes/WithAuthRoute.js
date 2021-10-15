@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { navigate } from "gatsby";
 import { getUserProfile, requireExtraQuestions } from "../actions/user-actions";
 import HeroComponent from "../components/HeroComponent";
+import {userHasAccessLevel} from "../utils/authorizedGroups";
 
 const WithAuthRoute = ({
   children,
@@ -21,7 +22,8 @@ const WithAuthRoute = ({
   };
 
   const userIsAuthz = () => {
-    return hasTicket || isAuthorized;
+    const hasVirtualBadge = userHasAccessLevel(userProfile.summit_tickets, 'VIRTUAL');
+    return isAuthorized || (hasTicket && hasVirtualBadge);
   };
 
   const checkingCredentials = () => {
