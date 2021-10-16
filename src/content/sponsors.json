@@ -2210,16 +2210,47 @@
           "usesSponsorPage": true
         },
         {
+          "marquee": "Modernize your testing with a shift-left approach. Ixia test solutions help you validate early in every phase.",
           "sponsorColor": "#871518",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-keysighttechnologies.png",
           "name": "Keysight Technologies",
           "intro": "Keysight delivers advanced design and validation solutions to help accelerate innovation to connect and secure the world. Our Ixia network and security test solutions bring tomorrow’s technology products to market faster across the development lifecycle, in design simulation, prototype validation, automated software testing, and network performance optimization, and visibility in chipset and chipset and device manufacturing, enterprise, service provider, and cloud environments. We offer a powerful combination of innovative solutions and trusted insight to move testing ‘further to the left’. Testing earlier and more often ensures faster time to market with high-quality end products. Join the world’s leading innovators that already rely on Keysight to validate their network and security products, from concept to operation.",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/keysight_technologies_welcome.mp4",
+          "chatLink": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGYxZGQ1NjktNTYxMy00YmU2LWFiMzQtMDE0ZmQ5M2ZmMDAx%40thread.v2/0?context=%7b%22Tid%22%3a%2263545f27-3232-4d74-a44d-cdd457063402%22%2c%22Oid%22%3a%22790a8c90-2135-40cc-a315-5ffe9de3ff7e%22%7d",
           "advertiseImage": "",
           "sponsorId": 79,
           "title": "Keysight Technologies",
           "companyId": 66,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/keysight",
+                "order": 1,
+                "name": "Facebook"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/keysight-technologies",
+                "order": 2,
+                "name": "LinkedIN"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.twitter.com/keysightnews",
+                "order": 3,
+                "name": "Twitter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/user/keysight",
+                "order": 4,
+                "name": "Youtube"
+              }
+            ]
+          },
           "id": 79,
+          "email": "manodipto.ghose@keysight.com",
           "usesSponsorPage": true
         },
         {
