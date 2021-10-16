@@ -2670,13 +2670,36 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "name": "Circle B",
-          "id": 109,
-          "sponsorId": 109,
           "logo": "/img/ocp21glo_fnv_sponsorlogo-circleb.png",
+          "name": "Circle B",
+          "advertiseImage": "",
+          "sponsorId": 109,
           "companyId": 95,
-          "usesSponsorPage": false
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/circle-b",
+                "order": 1,
+                "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/c/CircleB",
+                "order": 2,
+                "name": "Youtube"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/CircleB_eu",
+                "order": 3,
+                "name": "Twitter"
+              }
+            ]
+          },
+          "id": 109,
+          "email": "info@circleb.eu",
+          "usesSponsorPage": true
         },
         {
           "marquee": "Hyve Solutions Unveils Building Blocks for Hyperscale Infrastructure -- Original Design Manufacturer among first to deliver ORv3-based server line",
