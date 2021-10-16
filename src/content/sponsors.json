@@ -2847,9 +2847,33 @@
                 "name": "Facebook",
                 "order": 1,
                 "link": "https://www.facebook.com/hyvesolutions"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/hyvesolutions",
+                "order": 2,
+                "name": "Twitter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/hyve-solutions",
+                "order": 3,
+                "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/HyveSolutions",
+                "name": "Youtube",
+                "order": 4
               }
             ]
           },
+          "columnAds": [
+            {
+              "link": "www.hyvesolutions.com",
+              "image": "/img/hyve_solutions_hyve_ocp2021_banner_ad_968x968.jpg"
+            }
+          ],
           "id": 107,
           "email": "sales@hyvesolutions.com",
           "usesSponsorPage": true
