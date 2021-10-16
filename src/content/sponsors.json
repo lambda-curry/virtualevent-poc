@@ -2957,6 +2957,28 @@
           "advertiseImage": "",
           "sponsorId": 113,
           "companyId": 100,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://sdialliance.org",
+                "order": 1,
+                "name": "Learn More "
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/sdialliance",
+                "order": 2,
+                "name": "Twiiter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://linkedin.com/company/sustainable-digital-infrastructure-alliance/",
+                "order": 3,
+                "name": "LinkedIn"
+              }
+            ]
+          },
           "id": 113,
           "showLogoInEventPage": false,
           "email": "michael.oghia@sdialliance.org",
