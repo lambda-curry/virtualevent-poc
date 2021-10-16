@@ -20,12 +20,12 @@
           "sponsorColor": "#FE391D",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-ampere.png",
           "name": "Ampere Computing",
-          "intro": "#### Ampere is designing the future of hyperscale cloud and edge computing with the world's first cloud native processor. Built for the cloud with a modern 64-bit Arm server-based architecture, Ampere gives customers the freedom to accelerate the delivery of all cloud computing applications. With industry-leading performance, power efficiency and scalability, Ampere’s Altra® family of processors are designed to deliver on predictable performance, high scalability and power efficiency.\n\n![]()",
+          "intro": "#### Ampere is designing the future of hyperscale cloud and edge computing with the world's first cloud native processor. Built for the cloud with a modern 64-bit Arm server-based architecture, Ampere gives customers the freedom to accelerate the delivery of all cloud computing applications. With industry-leading performance, power efficiency and scalability, Ampere’s Altra® family of processors are designed to deliver on predictable performance, high scalability and power efficiency.",
           "headerImage": "/img/ampere_computing_virtualbooth_header-1-.png",
           "headerImageMobile": "/img/ampere_computing_opc_virtualmobilebanner_2.png",
           "advertiseImage": "/img/ampere_computing_ampere-hiring-graphic-v2-01_square-3a.png",
           "sponsorId": 58,
-          "title": "Ampere",
+          "title": "",
           "companyId": 41,
           "documents": {
             "slides": [
@@ -324,7 +324,7 @@
           "sponsorColor": "#343548",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-itrenew.png",
           "name": "ITRenew",
-          "intro": "ITRenew, the Circular Cloud leader, is a multinational corporation creating circularity models and second lives for some of the most advanced data centre technology on the planet. With sustainably sourced products and services that power cloud and enterprise data centres, edge infrastructure, AI/ML, embedded and industrial systems worldwide, ITRenew is opening up billions in new financial opportunity across the ecosystem, slashing e-waste and CO2 impact, and making hyperscale hardware accessible to and affordable for all.",
+          "intro": "#### ITRenew, the Circular Cloud leader, is a multinational corporation creating circularity models and second lives for some of the most advanced data centre technology on the planet. With sustainably sourced products and services that power cloud and enterprise data centres, edge infrastructure, AI/ML, embedded and industrial systems worldwide, ITRenew is opening up billions in new financial opportunity across the ecosystem, slashing e-waste and CO2 impact, and making hyperscale hardware accessible to and affordable for all.",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/itrenew_ITRenew_1%20OCP%20video%20Version%209.mp4",
           "headerImageMobile": "/img/itrenew_ocpmobilestatic-2-.png",
           "chatLink": "https://bit.ly/itrenew-open",
