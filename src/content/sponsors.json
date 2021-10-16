@@ -2969,13 +2969,29 @@
                 "class_name": "PresentationLink",
                 "link": "https://twitter.com/sdialliance",
                 "order": 2,
-                "name": "Twiiter"
+                "name": "Twitter"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://linkedin.com/company/sustainable-digital-infrastructure-alliance/",
                 "order": 3,
                 "name": "LinkedIn"
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "Introduction to SDIA",
+                "order": 9,
+                "name": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/sdia_Introduction%20to%20SDIA.mp4"
+              }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/sdia_about-sdia.pdf",
+                "name": "About SDIA",
+                "order": 5
               }
             ]
           },
