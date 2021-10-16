@@ -2553,6 +2553,7 @@
         },
         {
           "marquee": "Single Phase Immersion Cooling Fluids: Designed with the Data Center Industry in mind",
+          "sponsorColor": "##004e9e",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-fuchslubricants.png",
           "name": "FUCHS LUBRICANTS CO.",
           "intro": "FUCHS is a global leader in the development and production of comprehensive lubricant solutions, products, and services. Our RENOLIN Fluids for Electronic Component Cooling (FECC) were designed with the needs of the data center in mind. Switching to our single-phase immersion cooling can help your plant increase power rack density, reduce energy usage, reduce CO2 emissions, and cut operational costs. The RENOLIN FECC product line includes both mineral oils and synthetic fluids. Our products are safe, reliable and offer: • Excellent dielectric properties • Great heat conductivity • Protection against corrosion • Compatibility with common IT materials FUCHS provides customers with efficient, sustainable, and innovative solutions driven by our global distribution network, CO2-neutral production, and cutting-edge technology. Our commitment to research and development enables us to provide solutions for the ever-changing needs of the data center industry.",
@@ -2563,6 +2564,7 @@
           "companyId": 110,
           "id": 122,
           "showLogoInEventPage": false,
+          "email": "Paul.Lindsey@fuchs.com",
           "usesSponsorPage": true
         },
         {
