@@ -2210,14 +2210,17 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "name": "Keysight Technologies",
-          "id": 79,
-          "sponsorId": 79,
+          "sponsorColor": "#871518",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-keysighttechnologies.png",
+          "name": "Keysight Technologies",
+          "intro": "Keysight delivers advanced design and validation solutions to help accelerate innovation to connect and secure the world. Our Ixia network and security test solutions bring tomorrow’s technology products to market faster across the development lifecycle, in design simulation, prototype validation, automated software testing, and network performance optimization, and visibility in chipset and chipset and device manufacturing, enterprise, service provider, and cloud environments. We offer a powerful combination of innovative solutions and trusted insight to move testing ‘further to the left’. Testing earlier and more often ensures faster time to market with high-quality end products. Join the world’s leading innovators that already rely on Keysight to validate their network and security products, from concept to operation.",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/keysight_technologies_welcome.mp4",
+          "advertiseImage": "",
+          "sponsorId": 79,
+          "title": "Keysight Technologies",
           "companyId": 66,
-          "usesSponsorPage": true,
-          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/keysight_technologies_welcome.mp4"
+          "id": 79,
+          "usesSponsorPage": true
         },
         {
           "advertiseImage": "",
