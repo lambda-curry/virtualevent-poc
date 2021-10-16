@@ -2891,10 +2891,54 @@
           "intro": "We are an industry leader in innovative memory and storage solutions transforming how the world uses information to enrich life for all. With a relentless focus on our customers, technology leadership, and manufacturing and operational excellence, Micron delivers a rich portfolio of high-performance DRAM, NAND and NOR memory and storage products through our Micron® and Crucial® brands. Every day, the innovations that our people create fuel the data economy, enabling advances in artificial intelligence and 5G applications that unleash opportunities — from the data center to the intelligent edge and across the client and mobile user experience. To learn more about Micron Technology, Inc., visit micron.com.",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/micron_MICRON%20DATA%20LIVES_30%20Feel%20Alive2%2050mb%20%281%29.mp4",
           "headerImageMobile": "/img/micron_screen-shot-2021-10-07-at-2.12.21-pm.png",
+          "chatLink": "https://micron.zoom.us/j/96661062106?pwd=d0RmbUVzNEhNMkxzaTh0UGVLNGJ5dz09",
           "advertiseImage": "",
           "sponsorId": 116,
           "title": "Micron",
           "companyId": 103,
+          "documents": {
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/micron_SSD%20Data%20Center%20Portfolio%20Video.mp4",
+                "name": "SSD Data Center Portfolio Video",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/micron_Micron%20DDR5-%20Next-generation%20memory%20transforming%20data%20into%20insight.mp4",
+                "order": 6,
+                "name": "Micron DDR5- Next-generation memory transforming data into insight"
+              }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/MicronTechUSA/",
+                "order": 1,
+                "name": "Facebook"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/microntech",
+                "order": 2,
+                "name": "Twitter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/3690",
+                "order": 3,
+                "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/user/MicronTechnology",
+                "order": 4,
+                "name": "Youtube"
+              }
+            ]
+          },
+          "columnAds": [],
           "id": 116,
           "email": "micron_storage@micron.com",
           "usesSponsorPage": true
