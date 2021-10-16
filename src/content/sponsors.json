@@ -2558,10 +2558,33 @@
           "name": "FUCHS LUBRICANTS CO.",
           "intro": "FUCHS is a global leader in the development and production of comprehensive lubricant solutions, products, and services. Our RENOLIN Fluids for Electronic Component Cooling (FECC) were designed with the needs of the data center in mind. Switching to our single-phase immersion cooling can help your plant increase power rack density, reduce energy usage, reduce CO2 emissions, and cut operational costs. The RENOLIN FECC product line includes both mineral oils and synthetic fluids. Our products are safe, reliable and offer: • Excellent dielectric properties • Great heat conductivity • Protection against corrosion • Compatibility with common IT materials FUCHS provides customers with efficient, sustainable, and innovative solutions driven by our global distribution network, CO2-neutral production, and cutting-edge technology. Our commitment to research and development enables us to provide solutions for the ever-changing needs of the data center industry.",
           "headerImage": "/img/fuchs_lubricants_co_immersion-cooling_web-banner-01.png",
+          "headerImageMobile": "/img/fuchs_lubricants_co_immersion-cooling_web-banner_mobile-01.png",
           "advertiseImage": "",
           "sponsorId": 122,
           "title": "FUCHS LUBRICANTS CO.",
           "companyId": 110,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/fuchs-lubricants",
+                "order": 1,
+                "name": "Link"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/channel/UCKIcyzRUCcvuMFKRl1G7cUw",
+                "order": 2,
+                "name": "Youtube"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/fuchslubricantsco",
+                "order": 3,
+                "name": "Facebook"
+              }
+            ]
+          },
           "id": 122,
           "showLogoInEventPage": false,
           "email": "Paul.Lindsey@fuchs.com",
@@ -2861,12 +2884,16 @@
           "usesSponsorPage": true
         },
         {
+          "marquee": "Micron is where data lives",
+          "sponsorColor": "#0090DA",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-micron.png",
           "name": "Micron",
           "intro": "We are an industry leader in innovative memory and storage solutions transforming how the world uses information to enrich life for all. With a relentless focus on our customers, technology leadership, and manufacturing and operational excellence, Micron delivers a rich portfolio of high-performance DRAM, NAND and NOR memory and storage products through our Micron® and Crucial® brands. Every day, the innovations that our people create fuel the data economy, enabling advances in artificial intelligence and 5G applications that unleash opportunities — from the data center to the intelligent edge and across the client and mobile user experience. To learn more about Micron Technology, Inc., visit micron.com.",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/micron_MICRON%20DATA%20LIVES_30%20Feel%20Alive2%2050mb%20%281%29.mp4",
+          "headerImageMobile": "/img/micron_screen-shot-2021-10-07-at-2.12.21-pm.png",
           "advertiseImage": "",
           "sponsorId": 116,
+          "title": "Micron",
           "companyId": 103,
           "id": 116,
           "email": "micron_storage@micron.com",
