@@ -2809,16 +2809,27 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Hyve Solutions Unveils Building Blocks for Hyperscale Infrastructure -- Original Design Manufacturer among first to deliver ORv3-based server line",
+          "marquee": "Hyve Solutions Unveils Building Blocks for Hyperscale Infrastructure -- Original Design Manufacturer among first to deliver ORv3-based server line.",
           "sponsorColor": "#72BF44",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-hyve.png",
-          "name": "HYVE Solutions ",
-          "intro": "Hyve Solutions is a leader in the design to worldwide deployment of hyperscale digital infrastructures. In partnership with customers, Hyve leverages deep-seated industry experience and strong vendor partnerships to design and deliver purpose-built server, storage, and networking solutions to meet datacenter demands for today and beyond. Hyve Solutions is a wholly owned subsidiary of SYNNEX Corporation (NYSE: SNX). For more information about Hyve Solutions, visit hyvesolutions.com, email sales@hyvesolutions.com or call (855) 869-6973.",
+          "name": "Hyve Solutions",
+          "intro": "#### Hyve Solutions is a leader in the design to worldwide deployment of hyperscale digital infrastructures. In partnership with customers, Hyve leverages deep-seated industry experience and strong vendor partnerships to design and deliver purpose-built server, storage, and networking solutions to meet datacenter demands for today and beyond. Hyve Solutions is a wholly owned subsidiary of SYNNEX Corporation (NYSE: SNX). For more information about Hyve Solutions, visit hyvesolutions.com, email sales@hyvesolutions.com or call (855) 869-6973.",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/hyve_solutions_Hyve_OCP2021_AnimatedWelcomeBanner.mp4",
           "advertiseImage": "",
           "sponsorId": 107,
           "companyId": 93,
+          "documents": {
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/hyve_solutions_ocp_orv3_whitepaper.pdf",
+                "name": "BUILDING BLOCKS FOR TOMORROW’S TOP-EFFICIENCY INFRASTRUCTURE: Introducing Hyve Solutions Modified ORv3 Portfolio",
+                "order": 5
+              }
+            ]
+          },
           "id": 107,
+          "email": "sales@hyvesolutions.com",
           "usesSponsorPage": true
         },
         {
