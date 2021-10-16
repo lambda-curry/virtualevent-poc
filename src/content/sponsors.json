@@ -2249,6 +2249,12 @@
               }
             ]
           },
+          "columnAds": [
+            {
+              "image": "/img/keysight_technologies_clickable-sponsor-ad-484x484px.png",
+              "link": "http://keysight.com/"
+            }
+          ],
           "id": 79,
           "email": "manodipto.ghose@keysight.com",
           "usesSponsorPage": true
