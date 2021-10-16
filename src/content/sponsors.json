@@ -2826,6 +2826,28 @@
                 "name": "BUILDING BLOCKS FOR TOMORROW’S TOP-EFFICIENCY INFRASTRUCTURE: Introducing Hyve Solutions Modified ORv3 Portfolio",
                 "order": 5
               }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "ORv3 Intro",
+                "order": 8,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/hyve_solutions_ORv3%20Intro.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Hyve Hugs",
+                "order": 9,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/hyve_solutions_Hyve_Hugs.mp4"
+              }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "Facebook",
+                "order": 1,
+                "link": "https://www.facebook.com/hyvesolutions"
+              }
             ]
           },
           "id": 107,
