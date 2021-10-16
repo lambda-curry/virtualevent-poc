@@ -126,7 +126,7 @@ export const AttendeesWidget = ({ user, event, location }) => {
           case permissions.CHAT:
             if(isAdmin) return true;
             const accessLevels = summit_tickets
-              .flatMap((x) => x.badge.type.access_levels)
+              .flatMap((x) => x.badge?.type.access_levels)
               .filter(
                 (v, i, a) => a.map((item) => item.id).indexOf(v.id) === i
               ); //distinct
