@@ -2936,6 +2936,14 @@
                 "order": 4,
                 "name": "Youtube"
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/micron_7400_nvme_ssd_product_brief.pdf",
+                "name": "Micron® 7400 SSD With NVMe™",
+                "order": 5
+              }
             ]
           },
           "columnAds": [],
