@@ -5,6 +5,18 @@ import {getUserProfile, requireExtraQuestions} from "../actions/user-actions";
 import HeroComponent from "../components/HeroComponent";
 import {userHasAccessLevel} from "../utils/authorizedGroups";
 
+/**
+ *
+ * @param children
+ * @param isLoggedIn
+ * @param location
+ * @param userProfile
+ * @param hasTicket
+ * @param isAuthorized
+ * @param getUserProfile
+ * @returns {JSX.Element|null|*}
+ * @constructor
+ */
 const WithAuthRoute = ({
                            children,
                            isLoggedIn,
@@ -15,9 +27,11 @@ const WithAuthRoute = ({
                            getUserProfile,
                        }) => {
     const [fetchedUserProfile, setFetchedUserProfile] = useState(false);
+
     // we store this calculation to use it later
     const hasVirtualBadge = useMemo(() =>
-        userProfile ? userHasAccessLevel(userProfile.summit_tickets, 'VIRTUAL'): false, [userProfile]);
+        userProfile ? userHasAccessLevel(userProfile.summit_tickets, 'VIRTUAL') : false,
+        [userProfile, hasTicket]);
 
     const userIsReady = () => {
         // we have an user profile
@@ -52,7 +66,7 @@ const WithAuthRoute = ({
     }
 
     // we are checking credentials if userProfile is being loading yet or
-    // if we are refetching the user profile to check new data ( user currently is not a authz
+    // if we are re-fetching the user profile to check new data ( user currently is not a authz
     if (!userIsReady() || checkingCredentials()) {
         return <HeroComponent title="Checking credentials..."/>;
     }
