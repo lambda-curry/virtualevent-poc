@@ -2037,6 +2037,26 @@
                 "order": 10,
                 "name": "4"
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/arm_the-total-economic-impact™-of-arm-neoverse.pdf",
+                "name": "The Total Economic Impact™ Of Arm Neoverse",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/arm_emerging-compute-continuum-drives-edge-computing.pdf",
+                "name": "Emerging Compute Continuum Drives Edge Computing",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/arm_how-5g-and-edge-computing-advance-iot-value.pdf",
+                "name": "How 5G and Edge Computing Advance IoT Value",
+                "order": 7
+              }
             ]
           },
           "id": 77,
