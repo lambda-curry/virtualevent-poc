@@ -2519,13 +2519,45 @@
           "usesSponsorPage": true
         },
         {
+          "marquee": "AI from Datacenter to Edge.",
+          "sponsorColor": "#003A70",
           "logo": "/img/super_micro_computer_inc_supermicro_greenc_newlogo_whitebackground.png",
-          "name": "Super Micro Computer",
+          "name": "Super Micro Computer, Inc.",
           "intro": "Supermicro® (NASDAQ: SMCI), the leading innovator in high-performance, high-efficiency server technology is a premier provider of advanced Server Building Block Solutions® for Data Center, Cloud Computing, Enterprise IT, Hadoop/Big Data, HPC and Embedded Systems worldwide. Supermicro is committed to protecting the environment through its “We Keep IT Green®” initiative and provides customers with the most energy-efficient, environmentally-friendly solutions available on the market. Visit www.supermicro.com for details and follow Supermicro on Facebook and Twitter.",
+          "headerImage": "/img/super_micro_computer_inc_35_2021-ocpglobalsummit_virtualbooth_768x250px.jpg",
+          "headerImageMobile": "/img/super_micro_computer_inc_35_2021-ocpglobalsummit_virtualbooth_768x250px.jpg",
           "advertiseImage": "",
           "sponsorId": 82,
           "title": "Super Micro Computer, Inc.",
           "companyId": 69,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/Supermicro/",
+                "order": 1,
+                "name": "Facebook"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/Supermicro_SMCI",
+                "order": 2,
+                "name": "Twitter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedlin.com/company/supermicro",
+                "order": 3,
+                "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/user/SupermicroUTube",
+                "order": 4,
+                "name": "Youtube"
+              }
+            ]
+          },
           "id": 82,
           "showLogoInEventPage": false,
           "email": "desireem@supermicro.com",
