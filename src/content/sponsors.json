@@ -2558,6 +2558,12 @@
               }
             ]
           },
+          "columnAds": [
+            {
+              "link": "www.supermicro.com/X12",
+              "image": "/img/super_micro_computer_inc_03_ads_2021_x12bestclass_r03-1_968x968px.jpg"
+            }
+          ],
           "id": 82,
           "showLogoInEventPage": false,
           "email": "desireem@supermicro.com",
