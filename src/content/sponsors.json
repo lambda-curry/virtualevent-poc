@@ -1871,6 +1871,26 @@
                 "order": 2,
                 "name": "Youtube"
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/3m_3m-expanded-beam-optical-brochure.pdf",
+                "name": "3M Expanded Beam Optical Brochure",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/3m_3m-high-speed-cable-flyer.pdf",
+                "name": "3M High Speed Cable Flyer",
+                "order": 7
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/3m_3m-immersion-cooling-brochure-and-product-line-cards.pdf",
+                "name": "3M Immersion Cooling Brochure and Product Line Cards",
+                "order": 5
+              }
             ]
           },
           "id": 80,
