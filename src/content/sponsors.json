@@ -2583,6 +2583,32 @@
                 "name": "Video #3",
                 "order": 13
               }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/siliconmotion/",
+                "order": 1,
+                "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/channel/UCB4_AXjqQV_LgCRlNgzsctQ",
+                "order": 2,
+                "name": "YouTube"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/silicon_motion",
+                "order": 3,
+                "name": "Twitter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/profile.php?id=100063887982393",
+                "order": 4,
+                "name": "Facebook"
+              }
             ]
           },
           "columnAds": [
