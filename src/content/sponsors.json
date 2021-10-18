@@ -2057,6 +2057,14 @@
                 "name": "How 5G and Edge Computing Advance IoT Value",
                 "order": 7
               }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/arm/",
+                "order": 1,
+                "name": "LinkedIn"
+              }
             ]
           },
           "id": 77,
