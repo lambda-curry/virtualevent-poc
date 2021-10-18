@@ -3200,9 +3200,9 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "link": "Introduction to SDIA",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/sdia_Introduction%20to%20SDIA.mp4",
                 "order": 9,
-                "name": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/sdia_Introduction%20to%20SDIA.mp4"
+                "name": "Introduction to SDIA"
               }
             ],
             "slides": [
