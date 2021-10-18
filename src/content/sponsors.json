@@ -1891,6 +1891,20 @@
                 "name": "3M Immersion Cooling Brochure and Product Line Cards",
                 "order": 5
               }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "201019-Novec-Tank-Teaser-Final",
+                "order": 10,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/3m_201019-Novec-Tank-Teaser-Final.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "3M Expanded Beam Optical",
+                "order": 11,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/3m_3M%20Expanded%20Beam%20Optical.mp4"
+              }
             ]
           },
           "columnAds": [],
