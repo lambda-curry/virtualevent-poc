@@ -12,12 +12,12 @@ export const customErrorHandler = (err, res) => (dispatch, state) => {
       console.log('authErrorHandler 401 - re login');
       expiredToken(err);
       break;
-    case 412:      
-      for (var [key, value] of Object.entries(err.response.body.messages)) {
+    case 412:
+      debugger;
+      for (let [key, value] of Object.entries(err.response.body.errors)) {
         if (isNaN(key)) {
           msg += key + ': ';
         }
-
         msg += value + '<br>';
       }      
       Swal.fire("Validation error", msg, "warning");

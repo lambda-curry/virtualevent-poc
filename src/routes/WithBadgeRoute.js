@@ -23,7 +23,7 @@ const WithBadgeRoute = ({ children, location, eventId, event, loading, userProfi
     if (eventId) {
       getEventById(eventId);
     }
-  }, eventId);
+  }, [eventId]);
 
   if (loading || needsToLoadEvent) {
     return <HeroComponent title="Loading event" />;
