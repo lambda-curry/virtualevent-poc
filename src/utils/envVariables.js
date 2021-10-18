@@ -13,7 +13,6 @@ export const REGISTRATION_BASE_URL        = 'REGISTRATION_BASE_URL';
 export const AUTHZ_USER_GROUPS            = 'AUTHZ_USER_GROUPS';
 export const AUTHORIZED_DEFAULT_PATH      = 'AUTHORIZED_DEFAULT_PATH';
 export const STREAM_IO_API_KEY            = 'STREAM_IO_API_KEY';
-export const STREAM_IO_SSO_SLUG           = 'STREAM_IO_SSO_SLUG';
 export const MUX_ENV_KEY                  = 'MUX_ENV_KEY';
 export const SUPABASE_URL 				  = "SUPABASE_URL";
 export const SUPABASE_KEY 				  = "SUPABASE_KEY";
