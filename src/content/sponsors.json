@@ -3162,9 +3162,39 @@
           "headerImageMobile": "/img/openpower_openpower_welcome_mobile.png",
           "advertiseImage": "",
           "sponsorId": 114,
+          "title": "OpenPOWER Foundation",
           "companyId": 101,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/openpowerorg",
+                "order": 1,
+                "name": "Twitter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/openpower",
+                "order": 2,
+                "name": "Facebook"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/channel/UCNVcHm09eXVbvUzZkQs0_Sg",
+                "order": 3,
+                "name": "Youtube"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://join.slack.com/t/openpowerfoundation/shared_invite/zt-9l4fabj6-C55eMvBqAPTbzlDS1b7bzQ",
+                "order": 4,
+                "name": "Slack"
+              }
+            ]
+          },
           "id": 114,
           "showLogoInEventPage": false,
+          "email": "info@openpowerfoundation.org",
           "usesSponsorPage": true
         },
         {
