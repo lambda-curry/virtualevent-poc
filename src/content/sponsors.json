@@ -2033,9 +2033,21 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "name": "Arm SystemReady Technical Team Q&A",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arm_lvc21-115.mp4",
                 "order": 8,
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arm_Arm%20SystemReady%20Technical%20Team%20Q&A.mp4"
+                "name": "lvc21-115"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arm_Magma%20EPC%20&%20Local%20Break-out%20Edge%20running%20Object%20Detection%20ML%20workload.mp4",
+                "order": 9,
+                "name": "Magma EPC & Local Break-out Edge running Object Detection ML workload"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arm_Arm%20SystemReady%20Technical%20Team%20Q&A.mp4",
+                "order": 10,
+                "name": "Arm SystemReady Technical Team Q&A"
               }
             ],
             "slides": [
