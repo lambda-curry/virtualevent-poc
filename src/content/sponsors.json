@@ -2681,13 +2681,47 @@
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/mitac_MiTAC%205G.mp4"
         },
         {
-          "advertiseImage": "",
-          "name": "Pluribus Networks",
-          "id": 103,
-          "sponsorId": 103,
+          "marquee": "Pluribus Adaptive Cloud Fabric delivers powerful networking solutions that are extremely simple to deploy and operate. It’s Cloud Networking–simplified.",
+          "sponsorColor": "#8ec341",
           "logo": "/img/8147da3fe0210702f64d70873a767ae696582820.png",
-          "companyId": 89,
+          "name": "Pluribus Networks",
           "intro": "Pluribus Networks delivers highly scalable, automated and cost-efficient data center network solutions based on the principles of disaggregation and controllerless SDN automation. The Linux-based Netvisor® ONE operating system and the Adaptive Cloud Fabric™ controllerless SDN software have been purpose built to deliver radically automated networking along with superior economics by leveraging white box switches including Pluribus’ own Freedom™ Series of switches. The Adaptive Cloud Fabric controllerless SDN architecture is optimized to deliver a modern network fabric underlay and overlay across data center sites to support distributed cloud with rich services, automated operations, intrinsic security, comprehensive visibility and no single point of failure. Pluribus is deployed by more than 350 customers, including more than 100 tier one mobile network operators, in mission critical networks around the globe. Visit Pluribus Networks to learn more.",
+          "advertiseImage": "",
+          "sponsorId": 103,
+          "title": "Pluribus Networks",
+          "companyId": 89,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/pluribus-networks/",
+                "order": 1,
+                "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/pluribusnet",
+                "name": "Twitter",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/pluribusnetworks/",
+                "order": 3,
+                "name": "Facebook"
+              }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/pluribus_networks_pn-po-pluribus_adaptive_cloud_fabric_product_overview.pdf",
+                "name": "Pluribus Adaptive Cloud Fabric Product Overview",
+                "order": 5
+              }
+            ]
+          },
+          "id": 103,
+          "email": "jsangha@pluribusnetworks.com",
           "usesSponsorPage": true
         },
         {
