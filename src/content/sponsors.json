@@ -3190,6 +3190,20 @@
                 "order": 4,
                 "name": "Slack"
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/openpower_librebmc-for-ocp-long-presentation-v1.8.pdf",
+                "name": "LibreBMC for OCP long presentation",
+                "order": 4
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/openpower_opf_promo.pdf",
+                "name": "OPF Promo",
+                "order": 5
+              }
             ]
           },
           "id": 114,
