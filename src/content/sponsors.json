@@ -2033,9 +2033,9 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arm_Arm%20SystemReady%20Technical%20Team%20Q&A.mp4",
-                "order": 10,
-                "name": "4"
+                "name": "Arm SystemReady Technical Team Q&A",
+                "order": 8,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arm_Arm%20SystemReady%20Technical%20Team%20Q&A.mp4"
               }
             ],
             "slides": [
@@ -2064,9 +2064,27 @@
                 "link": "https://www.linkedin.com/company/arm/",
                 "order": 1,
                 "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/Arm",
+                "order": 2,
+                "name": "Twitter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/channel/UCHUAckhCfRom2EHDGxwhfOg",
+                "order": 3,
+                "name": "Youtube"
               }
             ]
           },
+          "columnAds": [
+            {
+              "link": "https://www.arm.com/solutions/infrastructure",
+              "image": "/img/arm_square-for-virtual-booth_v1.png"
+            }
+          ],
           "id": 77,
           "email": "steve.demski@arm.com",
           "usesSponsorPage": true
