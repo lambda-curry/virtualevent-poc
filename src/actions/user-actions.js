@@ -391,3 +391,24 @@ export const checkOrderData = (order) => (dispatch, getState) => {
       dispatch(updateProfile(newProfile));
   }
 }
+
+/**
+ * Peform virtual checking at show time for the current attendee
+ * @param attendee
+ * @returns {function(*=, *): *}
+ */
+export const doVirtualCheckIn = (attendee) =>  async (dispatch, getState) => {
+  const accessToken = await getAccessToken();
+
+  let params = {
+    access_token: accessToken,
+  };
+
+  return putRequest(
+      null,
+      createAction(UPDATE_EXTRA_QUESTIONS),
+      `${window.API_BASE_URL}/api/v1/summits/${attendee.summit_id}/attendees/${attendee.id}/virtual-check-in`,
+      {},
+      customErrorHandler
+  )(params)(dispatch);
+};
