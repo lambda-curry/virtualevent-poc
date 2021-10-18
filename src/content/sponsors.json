@@ -2340,6 +2340,22 @@
                 "order": 3,
                 "name": "Twitter"
               }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/murata_OCP%20Datacenter%20Solutions%20Video.mp4",
+                "order": 5,
+                "name": "OCP Datacenter Solutions"
+              }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/murata_murata-data-center-brochure.pdf",
+                "name": "Murata Data Center",
+                "order": 4
+              }
             ]
           },
           "id": 118,
