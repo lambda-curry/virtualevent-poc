@@ -2609,6 +2609,32 @@
                 "order": 4,
                 "name": "Facebook"
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/silicon_motion_2nd-generation-16-channel-high-performance-nvme-controller_sm8266.pdf",
+                "name": "2nd Generation 16 Channel High Performance NVMe Controller_SM8266",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/silicon_motion_enabling-the-highest-capacity-sata-data-center-storage_sm2271.pdf",
+                "name": "Enabling the Highest Capacity SATA Data Center Storage_SM2271",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/silicon_motion_single-chip-ssd-solution-for-boot-drives_ferrissd.pdf",
+                "name": "Single-Chip SSD Solution for Boot Drives_FerriSSD",
+                "order": 7
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/silicon_motion_flashgo-nvme-afa-software-defined-storage-solution.pdf",
+                "name": "FlashGo NVMe AFA & Software Defined Storage Solution",
+                "order": 8
+              }
             ]
           },
           "columnAds": [
