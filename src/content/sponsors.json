@@ -3058,20 +3058,26 @@
               {
                 "class_name": "PresentationLink",
                 "link": "https://twitter.com/NVIDIANetworkng",
-                "name": "Twitter",
+                "name": "Twitter NVIDIA Networking",
                 "order": 1
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.linkedin.com/showcase/nvidianetworking/",
                 "order": 2,
-                "name": "LinkedIn"
+                "name": "LinkedIn  "
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.facebook.com/NVIDIANetworking/",
                 "order": 3,
                 "name": "Facebook"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/NVIDIADC",
+                "order": 4,
+                "name": "Twitter NVIDIA Data Center"
               }
             ]
           },
