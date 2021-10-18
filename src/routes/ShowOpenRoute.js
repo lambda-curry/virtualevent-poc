@@ -1,16 +1,41 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { connect } from "react-redux";
 
 import { PHASES } from "../utils/phasesUtils";
-import { getUserProfile, requireExtraQuestions } from "../actions/user-actions";
+import { requireExtraQuestions, doVirtualCheckIn } from "../actions/user-actions";
 import HeroComponent from "../components/HeroComponent";
 
+/**
+ *
+ * @param children
+ * @param isAuthorized
+ * @param summit_phase
+ * @param requireExtraQuestions
+ * @param hasTicket
+ * @param userProfile
+ * @param doVirtualCheckIn
+ * @returns {JSX.Element|*}
+ * @constructor
+ */
 const ShowOpenRoute = ({
   children,
   isAuthorized,
   summit_phase,
   requireExtraQuestions,
+  hasTicket,
+  userProfile,
+  doVirtualCheckIn
 }) => {
+
+  // if we are at show time, and we have an attendee, perform virtual check-in
+  useEffect(() => {
+    if(hasTicket && summit_phase === PHASES.DURING){
+      // verify if we have an attendee , and if so do the virtual check in
+      let attendee = userProfile?.summit_tickets[0]?.owner || null;
+      if(attendee)
+        doVirtualCheckIn(attendee);
+    }
+  },[summit_phase, hasTicket, userProfile]);
 
   const userCanByPassAuthz = () => {
     return isAuthorized;
@@ -35,9 +60,11 @@ const ShowOpenRoute = ({
 
 const mapStateToProps = ({ userState }) => ({
   isAuthorized: userState.isAuthorized,
+  hasTicket: userState.hasTicket,
+  userProfile: userState.userProfile,
 });
 
 export default connect(mapStateToProps, {
-  getUserProfile,
   requireExtraQuestions,
+  doVirtualCheckIn
 })(ShowOpenRoute);
