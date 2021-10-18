@@ -3087,7 +3087,7 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Micron is where data lives",
+          "marquee": "         Micron is where data lives.",
           "sponsorColor": "#0090DA",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-micron.png",
           "name": "Micron",
