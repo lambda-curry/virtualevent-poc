@@ -2313,12 +2313,35 @@
         {
           "marquee": "The future relies on technology…technology relies on Murata.",
           "featuredEventId": "",
+          "sponsorColor": "#525B5C",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-murata.png",
           "name": "Murata",
           "intro": "#### Murata Manufacturing Co., Ltd. is a worldwide leader in the design, manufacture and sale of ceramic-based passive electronic components and solutions, communication modules and power supply modules. Murata is committed to the development of advanced electronic materials and leading edge, multi-functional, high-density modules. The company has employees and manufacturing facilities throughout the world. For more information, visit Murata’s website at www.murata.com.",
           "advertiseImage": "",
           "sponsorId": 118,
           "companyId": 105,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/murata-electronics",
+                "name": "LinkedIn",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/MurataElectronics",
+                "name": "Facebook",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/murata_na",
+                "order": 3,
+                "name": "Twitter"
+              }
+            ]
+          },
           "id": 118,
           "showLogoInEventPage": true,
           "email": "amy.talley@murata.com",
