@@ -3053,6 +3053,28 @@
           "advertiseImage": "",
           "sponsorId": 108,
           "companyId": 94,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/NVIDIANetworkng",
+                "name": "Twitter",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/showcase/nvidianetworking/",
+                "order": 2,
+                "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/NVIDIANetworking/",
+                "order": 3,
+                "name": "Facebook"
+              }
+            ]
+          },
           "id": 108,
           "email": "networking@nvidia.com",
           "usesSponsorPage": true
