@@ -2574,13 +2574,13 @@
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/silicon_motion_FlashGo%20NVMe%20AFA%20Solution.mp4",
-                "name": "Video #4",
+                "name": "FlashGo NVMe AFA Solution",
                 "order": 14
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/silicon_motion_Single-Chip%20SSD%20Solution%20for%20Boot%20Drives_FerriSSD.mp4",
-                "name": "Video #3",
+                "name": "Single-Chip SSD Solution for Boot Drives FerriSSD",
                 "order": 13
               }
             ],
