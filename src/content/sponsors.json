@@ -3171,10 +3171,12 @@
           "marquee": "The SDIA is the leading platform for driving sustainability in the digital sector.",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-sdia.png",
           "name": "Sustainable Digital Infrastructure Alliance (SDIA)",
+          "intro": "#### Established in 2019 and co-based in Germany and the Netherlands, the Sustainable Digital Infrastructure Alliance e.V. (SDIA) is a nonprofit network that aims to drive collaboration across industries to enable a thriving digital ecosystem without negative impacts on the environment through competitive and sustainable digital infrastructure. With its network of more than 65 members and partners, SDIA works to make the infrastructure powering the digital economy sustainable, while ensuring it remains open and accessible to everyone. Its Roadmap to Sustainable Digital Infrastructure by 2030 is the primary mechanism that enables all stakeholders from across the value chain to connect, benchmark, and deliver sustainability. It is meant to offer a holistic, systems-thinking approach to solving the challenges facing ICT sustainability, ranging from energy supply and data centers to fiber-optic networks and software.",
           "headerImage": "/img/sdia_1626338587676.jpeg",
           "headerImageMobile": "/img/sdia_1626338587676.jpeg",
           "advertiseImage": "",
           "sponsorId": 113,
+          "title": "Sustainable Digital Infrastructure Alliance (SDIA)",
           "companyId": 100,
           "documents": {
             "links": [
