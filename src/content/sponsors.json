@@ -3443,8 +3443,28 @@
                 "name": "bluefield-2-dpu-datasheet-1609240-r3",
                 "order": 5
               }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "1382327-VMW20-Lightning-Demo-Embedded",
+                "order": 8,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/nvidia_1382327-VMW20-Lightning-Demo-Embedded.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/nvidia_1569691_EGXHero_50MBs.mp4",
+                "name": "1569691_EGXHero_50MBs",
+                "order": 9
+              }
             ]
           },
+          "columnAds": [
+            {
+              "link": "https://www.nvidia.com/en-us/networking/",
+              "image": "/img/nvidia_project-monterey-ocp-2021-virtual-booth-sponsorship-1950471-booth-images-sponsor-ad-484x484-1-.jpg"
+            }
+          ],
           "id": 108,
           "email": "networking@nvidia.com",
           "usesSponsorPage": true
