@@ -10931,7 +10931,7 @@ lite-schedule-widget@^1.0.14:
 live-event-widget@^2.0.9:
   version "2.0.9"
   resolved "https://registry.yarnpkg.com/live-event-widget/-/live-event-widget-2.0.9.tgz#6dc594367470834350a9a06a0e5cdc77a64220a1"
-  integrity sha512-JpJ6dfoUjIBUhgBPwFMVtrmDZfsaNMmjRzoUNx6chIF0gwGoA28HgpW6MKQmAXnSL45ESUL/8CRIfRciGHXJZwA==
+  integrity sha512-JpJ6doUjIBUhgBPwFMVtrmDZfsaNMmjRzoUNx6chIF0gwGoA28HgpW6MKQmAXnSL45ESUL/8CRIfRciGHXJZwA==
   dependencies:
     svg-url-loader "^6.0.0"
 
