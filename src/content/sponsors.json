@@ -3039,14 +3039,58 @@
         },
         {
           "marquee": "ENABLING NEXT GENERATION ARCHITECTURE.",
+          "sponsorColor": "#E98300",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-teconnectivity.png",
           "name": "TE Connectivity",
           "intro": "TE Connectivity is a global industrial technology leader creating a safer, sustainable, productive and connected future. Their broad range of connectivity and sensor solutions, proven in the harshest environments, enable advancements in transportation, industrial applications, medical technology, energy, data communications and the home. With approximately 80,000 employees, including more than 7,500 engineers, working alongside customers in approximately 140 countries, TE ensures that EVERY CONNECTION COUNTS.",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/te_connectivity_BrandVideo.mp4",
+          "headerImageMobile": "/img/te_connectivity_virtual-mobile-static-image.png",
           "advertiseImage": "",
           "sponsorId": 52,
           "title": "TE Connectivity",
           "companyId": 48,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/te-connectivity",
+                "order": 1,
+                "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "http://instagram.com/teconnectivity",
+                "order": 2,
+                "name": "Instagram"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/teconnectivity",
+                "name": "Youtube",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/teconnectivity",
+                "order": 4,
+                "name": "Twitter"
+              }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/te_connectivity_2021-company-portfolio.pdf",
+                "name": "2021 TE Connectivity Company Portfolio",
+                "order": 5
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "link": "https://www.te.com/usa-en/campaigns/consumer-solutions/ocp-event.html?te_bu=Dat&te_type=oth&te_campaign=oth_usa_dnd-oth-amr-vev-ocpvirtualevent2021_sma-2197_14&elqCampaignId=117220",
+              "image": "/img/te_connectivity_ocp-968px-x-968px.jpg"
+            }
+          ],
           "id": 52,
           "showLogoInEventPage": false,
           "email": "ocp@te.com",
