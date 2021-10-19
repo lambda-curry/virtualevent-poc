@@ -2170,9 +2170,10 @@
           "name": "Cisco",
           "id": 98,
           "sponsorId": 98,
-          "logo": "/img/5ff37a55c30ef8ddf658a694d19baf8e903b39e8.png",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-cisco.png",
           "companyId": 84,
-          "usesSponsorPage": true
+          "usesSponsorPage": true,
+          "intro": "Cisco is exhibiting in-person at the Global Summit in San Jose, CA. You can find us at booth A3 or reach us through the \"contact us\" button above."
         },
         {
           "marquee": "12.8Tb User Programmable Switches, 5G Ready Cell Site Gateways, Scalable Fixed Broadband Aggregation.",
