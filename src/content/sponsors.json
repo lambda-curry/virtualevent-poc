@@ -3813,7 +3813,36 @@
           "label": "Media Partners "
         }
       ],
-      "sponsors": []
+      "sponsors": [
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "FNTECH ",
+          "id": 47,
+          "sponsorId": 47,
+          "companyId": 3,
+          "logo": "/img/fntech_wht_logo_rgb_1-color-black_1920px.png",
+          "usesSponsorPage": true
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": true,
+          "name": "Dave Sims ",
+          "companyId": 121,
+          "id": 133,
+          "sponsorId": 132,
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-davesimsmedia.png"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": true,
+          "name": "Afcom ",
+          "id": 112,
+          "sponsorId": 112,
+          "companyId": 98,
+          "logo": "/img/omdia_afcom_afcom_logo_rgb.png"
+        }
+      ]
     },
     {
       "tier": [
