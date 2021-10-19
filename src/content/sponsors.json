@@ -2583,6 +2583,32 @@
                 "order": 1,
                 "name": "LinkedIn"
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/ragile_networks_ragile-networks-for-ocp-virtual-booth.pdf",
+                "name": "Ragile Networks for OCP Virtual Booth",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/ragile_networks_ra-b6930-64qc-data-sheet.pdf",
+                "name": "RA-B6930-64QC Data Sheet",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/ragile_networks_ra-b6520-48c8qc-data-sheet.pdf",
+                "name": "RA-B6520-48C8QC Data Sheet",
+                "order": 7
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/ragile_networks_ra-b6920-32qc2x-data-sheet.pdf",
+                "name": "RA-B6920-32QC2X-Data Sheet",
+                "order": 8
+              }
             ]
           },
           "columnAds": [
