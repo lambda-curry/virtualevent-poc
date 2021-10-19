@@ -36,8 +36,17 @@ export const AttendeesWidget = ({ user, event, location }) => {
   const ocrRef = useRef();
 
   const { userProfile, idpProfile } = user || {};
-  const { email, groups, summit_tickets } = userProfile || {};
-  const { sub } = idpProfile || {};
+  const { email, groups, first_name, last_name, bio, summit_tickets } = userProfile || {};
+  const {
+    picture,
+    company,
+    job_title,
+    sub,
+    github_user,
+    linked_in_profile,
+    twitter_name,
+    wechat_user,
+    public_profile_show_fullname } = idpProfile || {};
 
   useEffect(() => {
     if (!user || !userProfile || !idpProfile) return;
@@ -47,17 +56,17 @@ export const AttendeesWidget = ({ user, event, location }) => {
     const starDirectChatParam = fragmentParser.getParam("startdirectchat");
     const openChatRoomParam = fragmentParser.getParam("openchatroom");
 
-    if (starHelpChatParam) {
+    if (starHelpChatParam && shcRef.current) {
       shcRef.current.startHelpChat();
-    } else if (starQAChatParam) {
+    } else if (starQAChatParam && sqacRef.current) {
       sqacRef.current.startQAChat();
-    } else if (starDirectChatParam) {
+    } else if (starDirectChatParam && sdcRef.current) {
       sdcRef.current.startDirectChat(starDirectChatParam);
-    } else if (openChatRoomParam) {
+    } else if (openChatRoomParam && ocrRef.current) {
       ocrRef.current.openChatRoom(openChatRoomParam);
     }
     setLoading(false);
-  }, [user]);
+  }, [user, idpProfile, userProfile]);
 
   if (loading) return <div style={{ margin: "20px auto", position: "relative" }}>Loading...</div>;
 
@@ -88,7 +97,23 @@ export const AttendeesWidget = ({ user, event, location }) => {
     user: {
       id: sub.toString(),
       idpUserId: sub.toString(),
+      fullName: public_profile_show_fullname ? `${first_name} ${last_name}` : `${first_name}`,
       email: email,
+      company: company,
+      title: job_title,
+      picUrl: picture,
+      socialInfo: {
+        githubUser: github_user,
+        linkedInProfile: linked_in_profile,
+        twitterName: twitter_name,
+        wechatUser: wechat_user,
+      },
+      getBadgeFeatures: () =>
+          summit_tickets
+              .filter((st) => st.badge)
+              .flatMap((st) => st.badge.features)
+              .filter((v, i, a) => a.map((item) => item.id).indexOf(v.id) === i),
+      bio: bio,
       hasPermission: (permission) => {
         const isAdmin =  groups &&
             groups.map((g) => g.code).filter((g) => adminGroups.includes(g))
@@ -99,18 +124,18 @@ export const AttendeesWidget = ({ user, event, location }) => {
           case permissions.CHAT:
             if(isAdmin) return true;
             const accessLevels = summit_tickets
-              .flatMap((x) => x.badge?.type.access_levels)
-              .filter(
-                (v, i, a) => a.map((item) => item.id).indexOf(v.id) === i
-              ); //distinct
+                .flatMap((x) => x.badge?.type.access_levels)
+                .filter(
+                    (v, i, a) => a.map((item) => item.id).indexOf(v.id) === i
+                ); //distinct
             if (accessLevels && accessLevels.length > 0) {
               const canChat = accessLevels
-                .filter((a) => a.name)
-                .map((a) => a.name.toUpperCase())
-                .includes("CHAT");
+                  .filter((a) => a.name)
+                  .map((a) => a.name.toUpperCase())
+                  .includes("CHAT");
               console.log(
-                "AL",
-                accessLevels.map((a) => a.name)
+                  "AL",
+                  accessLevels.map((a) => a.name)
               );
               return canChat;
             }
@@ -127,18 +152,18 @@ export const AttendeesWidget = ({ user, event, location }) => {
   };
 
   return (
-    <div style={{ margin: "20px auto", position: "relative" }}>
-      <AttendeeToAttendeeContainer
-        {...widgetProps}
-        ref={{ sdcRef, shcRef, sqacRef, ocrRef }}
-      />
-    </div>
+      <div style={{ margin: "20px auto", position: "relative" }}>
+        <AttendeeToAttendeeContainer
+            {...widgetProps}
+            ref={{ sdcRef, shcRef, sqacRef, ocrRef }}
+        />
+      </div>
   );
 };
 
 const AccessTracker = ({ user, isLoggedUser }) => {
   const trackerRef = useRef();
-  
+
   useEffect(() => {
     if (!isLoggedUser) {
       trackerRef.current.signOut();
@@ -180,10 +205,10 @@ const AccessTracker = ({ user, isLoggedUser }) => {
         wechatUser: wechat_user,
       },
       getBadgeFeatures: () =>
-        summit_tickets
-          .filter((st) => st.badge)
-          .flatMap((st) => st.badge.features)
-          .filter((v, i, a) => a.map((item) => item.id).indexOf(v.id) === i),
+          summit_tickets
+              .filter((st) => st.badge)
+              .flatMap((st) => st.badge.features)
+              .filter((v, i, a) => a.map((item) => item.id).indexOf(v.id) === i),
       bio: bio,
       showEmail: public_profile_show_email,
       allowChatWithMe: public_profile_allow_chat_with_me ?? true
