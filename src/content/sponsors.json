@@ -2876,6 +2876,34 @@
                 "name": "Youtube",
                 "order": 3
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/drivenets_white-paper-introducing-network-cloud-jul-2021.pdf",
+                "name": "White Paper Introducing Network Cloud Jul 2021",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/drivenets_white-paper-multiservice-maximizing-infrastructure-utilization-2-3-.pdf",
+                "name": "White Paper-Multiservice-Maximizing Infrastructure Utilization",
+                "order": 6
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "DriveNets Network Cloud",
+                "order": 8,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/drivenets_DriveNets%20Network%20Cloud-2.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/drivenets_DriveNets%20Network%20Orchestrator.mp4",
+                "order": 9,
+                "name": "DriveNets Network Orchestrator"
+              }
             ]
           },
           "columnAds": [
