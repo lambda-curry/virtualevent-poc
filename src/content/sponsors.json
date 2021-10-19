@@ -3401,6 +3401,7 @@
           "intro": "NVIDIA’s invention of the GPU sparked the PC gaming market. The company’s pioneering work in accelerated computing—a supercharged form of computing at the intersection of computer graphics, high performance computing and AI—is reshaping trillion-dollar industries, such as transportation, healthcare and manufacturing, and fueling the growth of many others.",
           "advertiseImage": "",
           "sponsorId": 108,
+          "title": "NVIDIA",
           "companyId": 94,
           "documents": {
             "links": [
@@ -3427,6 +3428,20 @@
                 "link": "https://twitter.com/NVIDIADC",
                 "order": 4,
                 "name": "Twitter NVIDIA Data Center"
+              }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/nvidia_pb-connectx-6-dx-en-card.pdf",
+                "name": "pb connectx 6-dx-en-card",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/nvidia_bluefield-2-dpu-datasheet-1609240-r3.pdf",
+                "name": "bluefield-2-dpu-datasheet-1609240-r3",
+                "order": 5
               }
             ]
           },
