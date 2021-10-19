@@ -3817,11 +3817,11 @@
         {
           "advertiseImage": "",
           "showLogoInEventPage": false,
-          "name": "FNTECH ",
-          "id": 47,
-          "sponsorId": 47,
-          "companyId": 3,
-          "logo": "/img/fntech_wht_logo_rgb_1-color-black_1920px.png",
+          "name": "Afcom ",
+          "id": 112,
+          "sponsorId": 112,
+          "companyId": 98,
+          "logo": "/img/omdia_afcom_afcom_logo_rgb.png",
           "usesSponsorPage": true
         },
         {
@@ -3837,11 +3837,11 @@
         {
           "advertiseImage": "",
           "showLogoInEventPage": false,
-          "name": "Afcom ",
-          "id": 112,
-          "sponsorId": 112,
-          "companyId": 98,
-          "logo": "/img/omdia_afcom_afcom_logo_rgb.png",
+          "name": "FNTECH ",
+          "id": 47,
+          "sponsorId": 47,
+          "companyId": 3,
+          "logo": "/img/fntech_wht_logo_rgb_1-color-black_1920px.png",
           "usesSponsorPage": true
         }
       ]
