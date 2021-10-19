@@ -2609,6 +2609,14 @@
                 "name": "RA-B6920-32QC2X-Data Sheet",
                 "order": 8
               }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/ragile_networks_Company%20Introduction.mp4",
+                "order": 9,
+                "name": "About Ragile Networks "
+              }
             ]
           },
           "columnAds": [
