@@ -2564,14 +2564,29 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "name": "Ragile Networks",
-          "id": 84,
-          "sponsorId": 84,
+          "marquee": "Building Real Open Networks With White Box and SONiC Integrated Solutions. Open Networking With Vision and Precesion",
+          "sponsorColor": "#28283c",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-ragilenetworks.png",
+          "name": "Ragile Networks, Inc.",
+          "intro": "#### Ragile Networks Inc. specializes in providing products and solutions for data center networks. Its name “Ragile” consists of two parts: the letter “R” refers to the first letter of “rapid”, while the second part is the word “agile”. This represents the company's commitment to providing customers with “fast, agile and open” products and services. With a number of R&D and manufacturing centers around the world, and industry-leading professional R&D and testing teams, Ragile has a deep understanding and rich experience in the R&D of technologies such as NOS, ASIC and SDK. With a precise understanding of customer needs in the data center scenario and a strong technological innovation capability, Ragile aims to provide the industry's most complete portfolio of data center network products and solutions for its global customers, including a full series of 25/50/100/200/400GbE-based bare metal data center switches. On top of that, Ragile dedicates itself to ensuring delivery and providing professional services for Hyperscale data center networks. Looking to the future, Ragile will bring more open, agile network experiences to each organization and individual, helping users achieve digital transformation and giving them an edge in the market.",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/ragile_networks_Welcome%20Video.mp4",
+          "advertiseImage": "",
+          "sponsorId": 84,
+          "title": "Ragile Networks, Inc.",
           "companyId": 71,
-          "usesSponsorPage": true,
-          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/ragile_networks_Welcome%20Video.mp4"
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/ragile-networks",
+                "order": 1,
+                "name": "LinkedIn"
+              }
+            ]
+          },
+          "id": 84,
+          "email": "kevin.yao@ragilenetworks.com",
+          "usesSponsorPage": true
         },
         {
           "logo": "/img/ocp21glo_fnv_sponsorlogo-samtec-.png",
