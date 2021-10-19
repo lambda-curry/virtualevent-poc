@@ -3277,6 +3277,14 @@
                 "order": 4,
                 "name": "Twitter"
               }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/asperitas_and_shell_Asperitas-Promo-HD1080p.mp4",
+                "order": 10,
+                "name": "Asperitas Promo"
+              }
             ]
           },
           "columnAds": [
