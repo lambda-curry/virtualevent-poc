@@ -3232,10 +3232,59 @@
           "name": "Asperitas and Shell",
           "intro": "Asperitas provides cutting edge immersion cooling solutions for datacentres globally. Since the research and development phase, there have been collaborations with an extensive ecosystem of partners, like Shell. Shell is an international energy company with expertise in the exploration, production and refining of oil and natural gas, and the manufacturing and marketing of chemicals. Their immersion cooling fluid has been used to accelerate Asperitas’ mission for sustainable datacentres.",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/asperitas_and_shell_ocp%20animation-02.mp4",
+          "headerImageMobile": "/img/asperitas_and_shell_screenshot-animation.png",
           "advertiseImage": "",
           "sponsorId": 124,
           "title": "Asperitas and Shell",
           "companyId": 112,
+          "documents": {
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/asperitas_and_shell_asperitas_immersed_computing.pdf",
+                "name": "Asperitas Immersed Computing",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/asperitas_and_shell_shell-immersion-cooling-solutions-brochure.pdf",
+                "name": "Shell Immersion Cooling Solutions Brochure",
+                "order": 6
+              }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "www.linkedin.com/company/asperitas",
+                "order": 1,
+                "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "www.facebook.com/ImmersedComputing",
+                "order": 2,
+                "name": "Facebook "
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.instagram.com/asperitas_ic/",
+                "order": 3,
+                "name": "Instagram"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/Asperitas_IC",
+                "order": 4,
+                "name": "Twitter"
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "link": "www.asperitas.com",
+              "image": "/img/asperitas_and_shell_advert-02.png"
+            }
+          ],
           "id": 124,
           "showLogoInEventPage": false,
           "email": "info@asperitas.com",
