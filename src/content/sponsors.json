@@ -4066,11 +4066,32 @@
                 "order": 6,
                 "name": "YouTube: Oculus Connect event recap "
               }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "WE SPEAK EVENTS: In-person, virtual and everything in-between.",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/Yoco/FNTECH_Sponsor_Assets/FNTECH_Video1_FINAL_fix.mp4",
+                "order": 7
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Have Sponsors? Look no further!",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/Yoco/FNTECH_Sponsor_Assets/FNTECH_Video2_V3.mp4",
+                "order": 8
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "FNstudios at Your Service",
+                "order": 9,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/Yoco/FNTECH_Sponsor_Assets/FNTECH_Video3_V4.mp4"
+              }
             ]
           },
           "columnAds": [
             {
-              "image": "/img/fnvirtual-yoco-fntech-space1.png"
+              "image": "/img/fnvirtual-yoco-fntech-space1.png",
+              "link": "https://www.fntech.com/green-planet-initiative/ "
             }
           ],
           "id": 47,
