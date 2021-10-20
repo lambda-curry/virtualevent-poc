@@ -3911,6 +3911,15 @@
       ],
       "sponsors": [
         {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Media Sponsors",
+          "companyId": 117,
+          "id": 128,
+          "sponsorId": 129,
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-media.png"
+        },
+        {
           "logo": "/img/omdia_afcom_afcom_logo_rgb.png",
           "name": "AFCOM",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/omdia_afcom_AFCOM%20boilerplate%20slides%20-%20general.mp4",
@@ -4023,15 +4032,6 @@
           "companyId": 3,
           "logo": "/img/fntech_wht_logo_rgb_1-color-black_1920px.png",
           "usesSponsorPage": true
-        },
-        {
-          "advertiseImage": "",
-          "showLogoInEventPage": false,
-          "name": "Media Sponsors",
-          "companyId": 117,
-          "id": 128,
-          "sponsorId": 129,
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-media.png"
         }
       ]
     },
