@@ -4367,18 +4367,20 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Peering router demo showcasing a small VDR cluster peering with two BGP peers.",
+          "marquee": "Discover the Power of One with Arrcus Connected Edge (ACE) - One Simple Network, One Scalable Architecture, One Seamless Experience.",
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-telco.png",
-          "name": "Telco",
-          "intro": "Participating companies are Arrcus, UFISpace and Credo.\n\nVirtualized Distributed Router (VDR) Small Cluster leveraging UfiSpace hardware platforms based on Broadcom J2/Ramon \n\n**Live Demo:** Show case Arrcus peering fabric; an interconnect to various servce providers, CDNs",
+          "name": "TELCO",
+          "intro": "### Arrcus peering edge fabric demonstration with a small VDR (virtualized distributed router) cluster.",
           "headerImage": "/img/ocp21glo_fnv_expc-header-telco.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-telco.png",
+          "chatLink": "https://arrcus.zoom.us/j/98109522847?pwd=bC9vRjA4NmI2UUVmRmJiQ0h5YkEzZz09",
           "advertiseImage": "",
           "sponsorId": 90,
-          "title": "Explore more about Telco",
+          "title": "Explore more about TELCO Station",
           "companyId": 76,
           "id": 90,
+          "email": "adithya@arrcus.com",
           "usesSponsorPage": true
         },
         {
