@@ -4219,7 +4219,7 @@
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-osf.png",
           "name": "OPEN SYSTEM FIRMWARE (OSF)",
-          "intro": "Demo's Include:  \n\n* Wiwynn DeltaLake with coreboot + LinuxBoot +OpenBMC  \n* Monolake (Existing older platform) with coreboot + LinuxBoot +OpenBMC \n* MinPlatform (one of the OSF stacks) Demo\n* TiogaPass with Aptio Open Edition.  \n* ARM and Ampere LBBR (LinuxBoot) + SBBR (UEFI) + OpenBMC demo \n* Supermicro Ice Lake with MinPlatform",
+          "intro": "#### Demo's Include:  \n\n* #### Wiwynn DeltaLake with coreboot + LinuxBoot +OpenBMC  \n* #### Monolake (Existing older platform) with coreboot + LinuxBoot +OpenBMC \n* #### MinPlatform (one of the OSF stacks) Demo\n* #### TiogaPass with Aptio Open Edition.  \n* #### ARM and Ampere LBBR (LinuxBoot) + SBBR (UEFI) + OpenBMC demo \n* #### Supermicro Ice Lake with MinPlatform",
           "headerImage": "/img/ocp21glo_fnv_expc-header-osf.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-osf.png",
           "advertiseImage": "",
@@ -4244,7 +4244,7 @@
             },
             {
               "image": "/img/ocp21glo_fnv_expc-button-main.png",
-              "link": "/sponsor/88-experience-center-(main)-"
+              "link": "/a/sponsor/88-experience-center-(main)-"
             }
           ],
           "id": 86,
