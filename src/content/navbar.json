@@ -19,6 +19,14 @@
       ]
     },
     {
+      "requiresAuth": true,
+      "pageRestriction": [
+        "ANY"
+      ],
+      "title": "My Schedule",
+      "link": "/a/my-schedule"
+    },
+    {
       "title": "About the event",
       "link": "/about-event",
       "display": true,
@@ -62,14 +70,6 @@
       "pageRestriction": [
         "ANY"
       ]
-    },
-    {
-      "requiresAuth": true,
-      "pageRestriction": [
-        "ANY"
-      ],
-      "title": "My Schedule",
-      "link": "/a/my-schedule"
     }
   ]
 }
