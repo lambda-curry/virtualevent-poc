@@ -4030,7 +4030,8 @@
           "sponsorColor": "#0C64C8",
           "logo": "/img/fntech_wht_logo_rgb_1-color-black_1920px.png",
           "name": "FNTECH ",
-          "intro": "**WE SPEAK EVENTS: In-person, virtual, and everything in-between.**\\\nOver the past 20+ years, we’ve successfully partnered with top-tier companies like Apple, Facebook, Wells Fargo, Vans, and Volcom on events of all sizes, types and budgets. Domestic and abroad. Intimate and straightforward to extremely complex and expansive. We have two large headquarters—one in the Northern California Bay Area and another in Southern California, which includes a virtual reality lab, 3D printing hub, and robust wood/metal fabrication shop. We’re a people-first company, which to us means treating every employee, client, vendor, partner, and community member with honesty, integrity, and respect. It’s part of our corporate ethos. People power our mission and we are eternally grateful to know and work with some of the best in the business. And as always, we make sure to have a lot of fun along the way. For more FNinfo, visit us at [fntech.com](http://fntech.com/).",
+          "intro": "**WE SPEAK EVENTS: In-person, virtual, and everything in-between.**\\\nOver the past 20+ years, we’ve successfully partnered with top-tier companies like Apple, Facebook, Open Compute Project, Wells Fargo, Vans, and Volcom on events of all sizes, types and budgets. Domestic and abroad. Intimate and straightforward to extremely complex and expansive. We have two large headquarters—one in the Northern California Bay Area and another in Southern California, which includes a virtual reality lab, 3D printing hub, and robust wood/metal fabrication shop. We’re a people-first company, which to us means treating every employee, client, vendor, partner, and community member with honesty, integrity, and respect. It’s part of our corporate ethos. People power our mission and we are eternally grateful to know and work with some of the best in the business. And as always, we make sure to have a lot of fun along the way. For more FNinfo, visit us at [fntech.com](http://fntech.com/).",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/Yoco/FNTECH%20animated%20logo_Black_012021.mp4",
           "headerImageMobile": "/img/fnvirtual-yoco-fntech-headerimage-mobile.png",
           "advertiseImage": "",
           "sponsorId": 47,
@@ -4093,7 +4094,7 @@
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/fntech_fnvirtual-1-pager-121520.pdf",
-                "name": "FNtech: WHAT WE DO",
+                "name": "FNvirtual Overview",
                 "order": 1
               }
             ]
