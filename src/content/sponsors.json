@@ -4086,6 +4086,14 @@
                 "order": 9,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/Yoco/FNTECH_Sponsor_Assets/FNTECH_Video3_V4.mp4"
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/fntech_fnvirtual-1-pager-121520.pdf",
+                "name": "FNtech: WHAT WE DO",
+                "order": 1
+              }
             ]
           },
           "columnAds": [
