@@ -3258,11 +3258,11 @@
           "sponsorId": 125
         },
         {
-          "marquee": "Immersion cooling redefined for future ready datacentres | Immersed Computing®",
+          "marquee": "Immersion cooling redefined for future ready datacentres | Immersed Computing®.",
           "sponsorColor": "#ff4444",
           "logo": "/img/asperitas_and_shell_joint-logo_transparent.png",
           "name": "Asperitas and Shell",
-          "intro": "Asperitas provides cutting edge immersion cooling solutions for datacentres globally. Since the research and development phase, there have been collaborations with an extensive ecosystem of partners, like Shell. Shell is an international energy company with expertise in the exploration, production and refining of oil and natural gas, and the manufacturing and marketing of chemicals. Their immersion cooling fluid has been used to accelerate Asperitas’ mission for sustainable datacentres.",
+          "intro": "#### Asperitas provides cutting edge immersion cooling solutions for datacentres globally. Since the research and development phase, there have been collaborations with an extensive ecosystem of partners, like Shell. Shell is an international energy company with expertise in the exploration, production and refining of oil and natural gas, and the manufacturing and marketing of chemicals. Their immersion cooling fluid has been used to accelerate Asperitas’ mission for sustainable datacentres.",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/asperitas_and_shell_ocp%20animation-02.mp4",
           "headerImageMobile": "/img/asperitas_and_shell_screenshot-animation.png",
           "advertiseImage": "",
@@ -3331,10 +3331,14 @@
           "usesSponsorPage": true
         },
         {
+          "marquee": "Building Revolutionary IT Infrastructures.",
+          "sponsorColor": "#FF5A2D",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-circleb.png",
           "name": "Circle B",
+          "intro": "#### Since 2012, Circle B has brought Open Compute Project (OCP) hardware to the European market. Committed to making hyperscale-quality infrastructure available to any organization, we take pride in helping our customers reduce their carbon footprint while saving on energy and maintenance costs. In 2019, Circle B joined Taurus Group, a leading IT hardware distribution company based in The Netherlands. With established distribution channels across Europe, Taurus was the ideal partner to help Circle B fulfill its vision of making OCP hardware widely available to the European market. Today, Circle B has customers across the continent, including Eastern Europe and Russia. We provide a full design-to-implementation product customized with OS and software—plus a comprehensive suite of managed services to ensure every customer gets the maximum possible business value from their investment.",
           "advertiseImage": "",
           "sponsorId": 109,
+          "title": "Circle B",
           "companyId": 95,
           "documents": {
             "links": [
