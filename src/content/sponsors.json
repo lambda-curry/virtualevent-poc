@@ -3680,6 +3680,20 @@
                 "order": 2,
                 "name": "ICS Workshop - Decoupling Compute from Memory, Storage & IO with OMI - Master "
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/opencapi_consortium_opencapi-omi-adapters-devices-2021-nov_v4.pdf",
+                "name": "2021-04-18 Objective Analysis-Coughlin - The Future of Low Latency Memory - White Paper",
+                "order": 4
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/opencapi_consortium_2021-04-18-objective-analysis-coughlin-the-future-of-low-latency-memory-white-paper.pdf",
+                "name": "OpenCAPI-OMI Adapters-Devices 2021 Nov_v4",
+                "order": 3
+              }
             ]
           },
           "columnAds": [
