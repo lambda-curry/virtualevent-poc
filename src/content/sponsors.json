@@ -4421,6 +4421,16 @@
               }
             ]
           },
+          "columnAds": [
+            {
+              "image": "/img/ocp21glo_fnv_expc-button-telco-partners.png",
+              "link": "/sponsors"
+            },
+            {
+              "image": "/img/ocp21glo_fnv_expc-button-main.png",
+              "link": "/sponsor/88-experience-center-(main)-"
+            }
+          ],
           "id": 90,
           "email": "adithya@arrcus.com",
           "usesSponsorPage": true
