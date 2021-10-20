@@ -83,15 +83,6 @@
       "link": "/a/maps"
     },
     {
-      "requiresAuth": false,
-      "title": "SPONSORSHIP",
-      "link": "/sponsorship",
-      "display": true,
-      "pageRestriction": [
-        "MARKETING"
-      ]
-    },
-    {
       "title": "CONTACT",
       "link": "/contact",
       "display": true,
