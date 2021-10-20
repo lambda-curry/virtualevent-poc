@@ -20,7 +20,7 @@ const SchedulePage = ({
   isLoggedUser,
   location,
   events,
-  allEvents,
+  allScheduleEvents,
   filters,
   view,
   colorSource,
@@ -33,7 +33,7 @@ const SchedulePage = ({
   const filterProps = {
     summit,
     events,
-    allEvents,
+    allEvents: allScheduleEvents,
     filters: pickBy(filters, (value) => value.enabled),
     triggerAction: (action, payload) => {
       updateFilter(payload);
@@ -98,7 +98,7 @@ const mapStateToProps = ({
   summitPhase: clockState.summit_phase,
   isLoggedUser: loggedUserState.isLoggedUser,
   events: scheduleState.events,
-  allEvents: scheduleState.allEvents,
+  allScheduleEvents: scheduleState.allScheduleEvents,
   filters: scheduleState.filters,
   view: scheduleState.view,
   colorSource: scheduleState.colorSource,

@@ -17,6 +17,7 @@ window.MUX_ENV_KEY = process.env.GATSBY_MUX_ENV_KEY;
 window.SUPABASE_URL = process.env.GATSBY_SUPABASE_URL;
 window.SUPABASE_KEY = process.env.GATSBY_SUPABASE_KEY;
 window.CHAT_API_BASE_URL = process.env.GATSBY_CHAT_API_BASE_URL;
+window.SCHEDULE_EXCLUDING_TAGS = process.env.GATSBY_SCHEDULE_EXCLUDING_TAGS;
 
 
 export const wrapRootElement = ReduxWrapper;
