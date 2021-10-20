@@ -4262,6 +4262,16 @@
           "sponsorId": 85,
           "title": "Explore more about Hardware Management Station ",
           "companyId": 37,
+          "columnAds": [
+            {
+              "image": "/img/ocp21glo_fnv_expc-button-hw-partners.png",
+              "link": "/sponsor/85-hardware-management"
+            },
+            {
+              "image": "/img/ocp21glo_fnv_expc-button-main.png",
+              "link": "/sponsor/88-experience-center-(main)-"
+            }
+          ],
           "id": 85,
           "usesSponsorPage": true
         },
