@@ -3873,6 +3873,20 @@
                 "order": 4,
                 "name": "Facebook"
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/snia_snia_bizdev_infographic5.21.pdf",
+                "name": "SNIA BizDev Infographic",
+                "order": 4
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/snia_smi_infographic_final.pdf",
+                "name": "SMI Infographic",
+                "order": 5
+              }
             ]
           },
           "columnAds": [
