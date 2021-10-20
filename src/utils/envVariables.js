@@ -17,3 +17,4 @@ export const MUX_ENV_KEY                  = 'MUX_ENV_KEY';
 export const SUPABASE_URL 				  = "SUPABASE_URL";
 export const SUPABASE_KEY 				  = "SUPABASE_KEY";
 export const CHAT_API_BASE_URL 			  = "CHAT_API_BASE_URL";
+export const SCHEDULE_EXCLUDING_TAGS      = "SCHEDULE_EXCLUDING_TAGS";
