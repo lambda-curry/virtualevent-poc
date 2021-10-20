@@ -4405,6 +4405,20 @@
                 "name": "Arrcus Open MLAG Solution Brief",
                 "order": 4
               }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/telco_Introducing%20Arrcus%20VDR%20-%20The%20Virtualized%20Distributed%20Router.mp4",
+                "order": 5,
+                "name": "Introducing Arrcus VDR - The Virtualized Distributed Router."
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/telco_Arrcus%20VDR%20-%20Building%20Blocks.mp4",
+                "order": 6,
+                "name": "Arrcus VDR - Building Blocks."
+              }
             ]
           },
           "id": 90,
