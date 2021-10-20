@@ -2178,21 +2178,22 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "name": "Cisco",
-          "id": 98,
-          "sponsorId": 98,
           "logo": "/img/ocp21glo_fnv_sponsorlogo-cisco.png",
+          "name": "Cisco",
+          "intro": "Cisco is exhibiting in-person at the Global Summit in San Jose, CA. You can find us at booth A3 or reach us through the \"contact us\" button above.",
+          "advertiseImage": "",
+          "sponsorId": 98,
+          "title": "Cisco",
           "companyId": 84,
-          "usesSponsorPage": true,
-          "intro": "Cisco is exhibiting in-person at the Global Summit in San Jose, CA. You can find us at booth A3 or reach us through the \"contact us\" button above."
+          "id": 98,
+          "usesSponsorPage": true
         },
         {
           "marquee": "12.8Tb User Programmable Switches, 5G Ready Cell Site Gateways, Scalable Fixed Broadband Aggregation.",
           "sponsorColor": "#284974",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-edgecore.png",
           "name": "Edgecore Networks",
-          "intro": "Edgecore Networks Corporation is a wholly owned subsidiary of Accton Technology Corporation, the leading network ODM. Edgecore Networks delivers wired and wireless networking products and solutions through channel partners and system integrators worldwide for Data Center, Service Provider, Enterprise and SMB customers. Edgecore Networks is the leader in open networking, providing a full line of open 1G-400G Ethernet OCP Accepted™ switches, core routers, cell site gateways, virtual PON OLTs, packet transponders, and Wi-Fi access points that offer choice of commercial and open source NOS and SDN software.",
+          "intro": "#### Edgecore Networks Corporation is a wholly owned subsidiary of Accton Technology Corporation, the leading network ODM. Edgecore Networks delivers wired and wireless networking products and solutions through channel partners and system integrators worldwide for Data Center, Service Provider, Enterprise and SMB customers. Edgecore Networks is the leader in open networking, providing a full line of open 1G-400G Ethernet OCP Accepted™ switches, core routers, cell site gateways, virtual PON OLTs, packet transponders, and Wi-Fi access points that offer choice of commercial and open source NOS and SDN software.",
           "headerImage": "/img/edgecore_networks_welcome_1_1440x400.jpg",
           "headerImageMobile": "/img/edgecore_networks_welcome_mobile_768x250.jpg",
           "advertiseImage": "",
