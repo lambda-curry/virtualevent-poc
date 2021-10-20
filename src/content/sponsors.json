@@ -3141,6 +3141,7 @@
           "logo": "/img/ocp21glo_fnv_sponsorlogo-startup.png"
         },
         {
+          "marquee": "Visit us at booth C26.",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-kameleonsecurity.png",
           "name": "Kameleon Security",
           "intro": "Kameleon Security is exhibiting in-person at the Global Summit in San Jose, CA. You can find us at booth C26 or reach us through the \"contact us\" button above.",
@@ -3148,6 +3149,7 @@
           "headerImageMobile": "/img/ocp21glo_fnv_nocontent-kameleon-header-mobile.png",
           "advertiseImage": "",
           "sponsorId": 104,
+          "title": "Kameleon Security",
           "companyId": 90,
           "id": 104,
           "showLogoInEventPage": false,
@@ -3222,11 +3224,15 @@
           "usesSponsorPage": true
         },
         {
+          "marquee": "Sign Up Now! “Experts in Obsolete Technology”. Join our MSP Recruiting Platform & start hiring help today! Earn Extra Cash when its time to Dispose of your Retired Hardware! Call us for white glove service on data removal.",
+          "sponsorColor": "#B21921",
           "logo": "/img/msp-disposal.png",
           "name": "Minus Technology ",
-          "intro": "https://www.mspdisposal.com",
+          "intro": "#### MSP Disposal is a worldwide e-waste company with a core focus on MSPs. We offer a revenue-generating process for MSP’s end-users retired hardware disposal and data removal while our program is zero cost to the MSP. We also have an MSP focused Recruiting Platform, this platform creates a pipeline of candidates that meet your technical hiring needs. \n\n#### Sign Up Now! “Experts in Obsolete Technology”. Join our MSP Recruiting Platform & start hiring help today! Earn Extra Cash when its time to Dispose of your Retired Hardware! Call us for white glove service on data removal.",
+          "chatLink": "https://us02web.zoom.us/j/5057903350",
           "advertiseImage": "",
           "sponsorId": 106,
+          "title": "Minus Technology ",
           "companyId": 92,
           "id": 106,
           "showLogoInEventPage": false,
