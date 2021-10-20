@@ -74,6 +74,15 @@
       "display": true
     },
     {
+      "requiresAuth": true,
+      "pageRestriction": [
+        "LOBBY",
+        "EVENT"
+      ],
+      "title": "MAPS",
+      "link": "/a/maps"
+    },
+    {
       "requiresAuth": false,
       "title": "SPONSORSHIP",
       "link": "/sponsorship",
@@ -108,15 +117,6 @@
       "pageRestriction": [
         "ANY"
       ]
-    },
-    {
-      "requiresAuth": true,
-      "pageRestriction": [
-        "LOBBY",
-        "EVENT"
-      ],
-      "title": "MAPS",
-      "link": "/a/maps"
     }
   ]
 }
