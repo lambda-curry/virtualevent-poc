@@ -3912,7 +3912,7 @@
       "sponsors": [
         {
           "logo": "/img/omdia_afcom_afcom_logo_rgb.png",
-          "name": "Afcom ",
+          "name": "AFCOM",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/omdia_afcom_AFCOM%20boilerplate%20slides%20-%20general.mp4",
           "advertiseImage": "",
           "sponsorId": 112,
@@ -3956,13 +3956,55 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "showLogoInEventPage": false,
-          "name": "Dave Sims ",
-          "companyId": 121,
-          "id": 133,
-          "sponsorId": 132,
+          "marquee": "Strategic Storytelling - Distill Ideas. Create Impact. Inspire Action.",
+          "sponsorColor": "#f79e12",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-davesimsmedia.png",
+          "name": "Dave Sims Media",
+          "intro": "Dave Sims Media is a team of socially-conscious and driven artists, designers, and creative thinkers specializing in high-quality video production, graphic design, and branding. We work with businesses across the world to elevate their companies, products, employees, and services by crafting strategic branding campaigns, mission-driven video content, and visionary design to build authentic and meaningful connections with your audiences.",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/dave_sims_media_Dave%20Sims%20Media%20Banner.mp4",
+          "chatLink": "https://us02web.zoom.us/j/*******693?pwd=Unk1cnpoRnJvVHJEbUl3aEZtZ1dCUT09",
+          "advertiseImage": "",
+          "sponsorId": 133,
+          "companyId": 121,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/davesimsmedia",
+                "order": 1,
+                "name": "Facebook"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://vimeo.com/user43295787/videos",
+                "order": 2,
+                "name": "Vimeo"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.instagram.com/davesimsmedia/",
+                "order": 3,
+                "name": "Instagram"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/dave-sims-media/",
+                "order": 4,
+                "name": "LinkedIn"
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/dave_sims_media_Facebook%20in%20the%20Face%20of%20Covid%20_%20Dave%20Sims%20Media.mp4",
+                "name": "Facebook in the Face of Covid",
+                "order": 5
+              }
+            ]
+          },
+          "id": 133,
+          "showLogoInEventPage": false,
+          "email": "info@davesimsmedia.com",
           "usesSponsorPage": true
         },
         {
