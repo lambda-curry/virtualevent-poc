@@ -3828,11 +3828,62 @@
           "intro": "The Storage Networking Industry Association (SNIA) is a non-profit global organization dedicated to developing standards and education programs to advance storage and information technology. Over 185 companies and 2,500 member volunteers collaborate on open source and standards in the technology areas of next generation storage management, computational storage, persistent memory, solid state drives, connectors, transceivers, form factors, and more. Visit us at www.snia.org.",
           "headerImage": "/img/snia_ocp21virtualboothtop.jpg",
           "headerImageMobile": "/img/snia_sniawelcomeimage_ocp.jpg",
+          "chatLink": "https://zoom.us/j/6927138946?pwd=eXlvQy9Jdzd6ZmFUU1Qra2ROanhRdz09",
           "advertiseImage": "",
           "sponsorId": 127,
+          "title": "SNIA",
           "companyId": 115,
+          "documents": {
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "SNIA Swordfish demo for OCP",
+                "order": 6,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/snia_SNIA%20Swordfish%20demo%20for%20OCP.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/snia_SNIA_What-is-computational-storage.mp4",
+                "order": 7,
+                "name": "SNIA What-is-computational-storage."
+              }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/user/SNIAVideo",
+                "name": "Youtube",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/SNIA",
+                "order": 2,
+                "name": "Twitter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/snia/",
+                "order": 3,
+                "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/SNIA.ORG/",
+                "order": 4,
+                "name": "Facebook"
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "link": "https://www.snia.org/forums/smi/swordfish",
+              "image": "/img/snia_ocp21virtualad.jpg"
+            }
+          ],
           "id": 127,
           "showLogoInEventPage": false,
+          "email": "marty.foltyn@snia.org",
           "usesSponsorPage": true
         }
       ]
