@@ -2,7 +2,7 @@ import summitData from '../content/summit.json';
 import eventsData from '../content/events.json';
 import filtersData from '../content/filters.json';
 import {syncFilters} from "../utils/filterUtils";
-import {getFilteredEvents} from '../utils/schedule';
+import {getFilteredEvents, filterEventsByTags} from '../utils/schedule';
 import {LOGOUT_USER} from "openstack-uicore-foundation/lib/actions";
 import {UPDATE_FILTER, UPDATE_FILTERS, CHANGE_VIEW} from '../actions/schedule-actions'
 import {RESET_STATE, SYNC_DATA} from '../actions/base-actions';
@@ -15,8 +15,9 @@ const summitTimeZoneId = summitData.summit.time_zone_id;  // TODO use reducer da
 const DEFAULT_STATE = {
     filters: filters,
     colorSource: color_source,
-    events: eventsData,
     allEvents: eventsData,
+    allScheduleEvents: filterEventsByTags(eventsData),
+    events: filterEventsByTags(eventsData),
     view: 'calendar'
 };
 
@@ -31,8 +32,9 @@ const scheduleReducer = (state = DEFAULT_STATE, action) => {
             const {filters: currentFilters} = state;
             // new filter could have new keys, or less keys that current one .... so its the source of truth
             const newFilters = syncFilters({...filters}, currentFilters);
-            const events = getFilteredEvents(eventsData, newFilters, summitTimeZoneId);
-            return {...state, allEvents: eventsData, filters: newFilters, colorSource: color_source, events};
+            const allScheduleEvents = filterEventsByTags(eventsData);
+            const events = getFilteredEvents(allScheduleEvents, newFilters, summitTimeZoneId);
+            return {...state, allEvents: eventsData, filters: newFilters, colorSource: color_source, events, allScheduleEvents};
         }
         case GET_EVENT_DATA: {
             const {allEvents} = state;
@@ -52,20 +54,20 @@ const scheduleReducer = (state = DEFAULT_STATE, action) => {
         }
         case UPDATE_FILTER: {
             const {type, values} = payload;
-            const {filters, allEvents} = state;
+            const {filters, allScheduleEvents} = state;
             filters[type].values = values;
 
             // update events
-            const events = getFilteredEvents(allEvents, filters, summitTimeZoneId);
+            const events = getFilteredEvents(allScheduleEvents, filters, summitTimeZoneId);
 
             return {...state, filters, events}
         }
         case UPDATE_FILTERS: {
             const {filters, view} = payload;
-            const {allEvents} = state;
+            const {allScheduleEvents} = state;
 
             // update events
-            const events = getFilteredEvents(allEvents, filters, summitTimeZoneId);
+            const events = getFilteredEvents(allScheduleEvents, filters, summitTimeZoneId);
 
             return {...state, filters, events, view}
         }

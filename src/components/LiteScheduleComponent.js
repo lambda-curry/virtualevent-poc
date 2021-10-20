@@ -16,7 +16,7 @@ const LiteScheduleComponent = ({
     page,
     addToSchedule,
     removeFromSchedule,
-    allEvents,
+    allScheduleEvents,
     summit,
     ...rest
 }) => {
@@ -24,7 +24,7 @@ const LiteScheduleComponent = ({
 
     const componentProps = {
         defaultImage: homeSettings.schedule_default_image,
-        eventsData: allEvents,
+        eventsData: allScheduleEvents,
         summitData: summit,
         marketingData: colorSettings,
         userProfile: userProfile,
@@ -58,7 +58,7 @@ const LiteScheduleComponent = ({
 
 const mapStateToProps = ({userState, summitState, scheduleState, settingState}) => ({
     userProfile: userState.userProfile,
-    allEvents: scheduleState.allEvents,
+    allScheduleEvents: scheduleState.allScheduleEvents,
     summit: summitState.summit,
     colorSettings: settingState.colorSettings,
     homeSettings: settingState.homeSettings
