@@ -4265,7 +4265,7 @@
           "columnAds": [
             {
               "image": "/img/ocp21glo_fnv_expc-button-hw-partners.png",
-              "link": "/sponsor/85-hardware-management"
+              "link": "/sponsors"
             },
             {
               "image": "/img/ocp21glo_fnv_expc-button-main.png",
@@ -4309,6 +4309,16 @@
               }
             ]
           },
+          "columnAds": [
+            {
+              "image": "/img/ocp21glo_fnv_expc-button-tap-partners.png",
+              "link": "/sponsors"
+            },
+            {
+              "image": "/img/ocp21glo_fnv_expc-button-main.png",
+              "link": "/sponsor/88-experience-center-(main)-"
+            }
+          ],
           "id": 87,
           "usesSponsorPage": true
         },
