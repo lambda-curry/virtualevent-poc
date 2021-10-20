@@ -4162,7 +4162,7 @@
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-header.png",
           "name": "Experience Center (MAIN) ",
-          "intro": "The Experience Center at the OCP Global Summit is a dedicated space for the Community to showcase their hardware designs, architecture and software solutions on OCP-recognized hardware platforms. The OCP Experience Center was established in 2019 to provide new ways for OCP members to showcase best-in-class product demos, both live and static. The initiative was launched at the OCP Global and Regional (European) Summits last year, and they were among the most popular attractions. Not only do the partners get a chance to showcase their OCP Accepted™ and OCP Inspired™ product offerings, they also get a chance to receive feedback from Summit attendees. The OCP Experience Center offers Summit attendees a chance to explore products and their piece-parts, and see through the software solutions that have been built primarily for the platforms being demonstrated.\n\n**To explore all each Experience Center's content, in the right column, click the center you want to learn more about!**\n\n**[Hardware Management Center](/a/sponsor/85-hardware-management)**\n\n**[Open System Firmware](/a/sponsor/86-open-system-firmware)**\n\n**[Tap Center ](/a/sponsor/87-tap)**\n\n**[Networking Center ](/a/sponsor/89-networking)** \n\n**[Telco Center](/a/sponsor/90-telco)**\n\n**[Server Center ](/a/sponsor/91-server)**\n\n**[OAI Center](/a/sponsor/92-oai)**\n\n**[Test and Validation Center ](/a/sponsor/93-test-and-validation)**\n\n**[Storage Experience Center](/a/sponsor/94-storage)**",
+          "intro": "The Experience Center at the OCP Global Summit is a dedicated space for the Community to showcase their hardware designs, architecture and software solutions on OCP-recognized hardware platforms. The OCP Experience Center was established in 2019 to provide new ways for OCP members to showcase best-in-class product demos, both live and static. The initiative was launched at the OCP Global and Regional (European) Summits last year, and they were among the most popular attractions. Not only do the partners get a chance to showcase their OCP Accepted™ and OCP Inspired™ product offerings, they also get a chance to receive feedback from Summit attendees. The OCP Experience Center offers Summit attendees a chance to explore products and their piece-parts, and see through the software solutions that have been built primarily for the platforms being demonstrated.\n\n**To explore all each Experience Center's content, in the right column, click the center you want to learn more about!**\n\n**[Open System Firmware](/a/sponsor/86-open-system-firmware)**\n\n**[Hardware Management Center](/a/sponsor/85-hardware-management)**\n\n**[Tap Center ](/a/sponsor/87-tap)**\n\n**[Networking Center ](/a/sponsor/89-networking)** \n\n**[Telco Center](/a/sponsor/90-telco)**\n\n**[Server Center ](/a/sponsor/91-server)**\n\n**[OAI Center](/a/sponsor/92-oai)**\n\n**[Test and Validation Center ](/a/sponsor/93-test-and-validation)**\n\n**[Storage Experience Center](/a/sponsor/94-storage)**",
           "headerImage": "/img/ocp21glo_fnv_expc-header.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-main.png",
           "advertiseImage": "",
@@ -4436,15 +4436,16 @@
           "usesSponsorPage": true
         },
         {
+          "marquee": "OCP NIC Showcase (Systems, NICs, Add-in cards, Ecosystem).",
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-server.png",
-          "name": "Server",
-          "intro": "Server Experience Center\n\nParticipating Companies are XXXX, XXXX, XXXX, and XXXX\n\nIn the OCP NIC 3.0 experience center, our goal is to show demonstrations covering physical, logical, and functional aspects of OCP NIC 3.0 specification. Overall, we have planned seven demonstrations. We have two demonstrations showing interface sandbox with a Small Form Factor (SFF) as well as a Tall SFF NIC product respectively. We will be showing a mechanical fit-test fixture that can be used to check a physical card's compliance with OCP NIC 3.0 specification. There will be a demonstration of connectivity and manageability features of OCP NIC 3.0 specification on a Multi-Host NIC with hosts running timing and TCP applications. We also plan to showcase Fiber channel HBA in OCP NIC 3.0 form factor and a server with 12 OCP NIC 3.0 compliant slots. Finally, we will be tying both OCP NIC 3.0 and device attestation specifications by showing the attestation of OCP NIC 3.0 compliant Ethernet NIC using Secure Protocol Data Model (SPDM), one of the attestation protocols recommended by the OCP security project.",
+          "name": "Server - NIC",
+          "intro": "OCP NIC (Systems, NICs, Add-in cards, Ecosystem) \n\n1. OCP NIC 3.0 Multi-Host Connectivity and Manageability (Broadcom) \n\n2. OCP NIC 3.0 Device Attestation Using SPDM (Broadcom & Facebook) \n\n3. Zion: Host with up to 12 OCP NIC 3.0 slots (Facebook) \n\n4. Mechanical Fit-test fixture (OCP NIC sub-group) \n\n5. OCP NIC 3.0 Fiberchannel HBA (OCP NIC sub-group) \n\n6. OCP NIC 3.0 in Tall Small Form Factor (TSFF) (Nvidia) \n\n7. Interface Sandbox with SFF Slots (TE Connectivity)",
           "headerImage": "/img/ocp21glo_fnv_expc-header-server.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-server.png",
           "advertiseImage": "",
           "sponsorId": 91,
-          "title": "Explore more about Server",
+          "title": "Explore more about Server -  NIC Station",
           "companyId": 77,
           "id": 91,
           "usesSponsorPage": true
