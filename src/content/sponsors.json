@@ -3962,6 +3962,7 @@
           "name": "Dave Sims Media",
           "intro": "Dave Sims Media is a team of socially-conscious and driven artists, designers, and creative thinkers specializing in high-quality video production, graphic design, and branding. We work with businesses across the world to elevate their companies, products, employees, and services by crafting strategic branding campaigns, mission-driven video content, and visionary design to build authentic and meaningful connections with your audiences.",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/dave_sims_media_Dave%20Sims%20Media%20Banner.mp4",
+          "headerImageMobile": "/img/dave_sims_media_dsm-logo-768x250.png",
           "chatLink": "https://us02web.zoom.us/j/*******693?pwd=Unk1cnpoRnJvVHJEbUl3aEZtZ1dCUT09",
           "advertiseImage": "",
           "sponsorId": 133,
@@ -3999,6 +4000,12 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/dave_sims_media_Facebook%20in%20the%20Face%20of%20Covid%20_%20Dave%20Sims%20Media.mp4",
                 "name": "Facebook in the Face of Covid",
                 "order": 5
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Facebook HWE",
+                "order": 6,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/dave_sims_media_facebook%20hwe.mp4.mp4"
               }
             ]
           },
