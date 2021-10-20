@@ -2428,13 +2428,15 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
+          "marquee": "Low Power Leader and Secure Solution Provider.",
+          "logo": "/img/346be1c870abff03f27309b2e27b9fbe1cd54dec.png",
           "name": "Lattice Semiconductor",
-          "id": 83,
+          "intro": "#### Lattice Semiconductor (NASDAQ: LSCC) is the low power programmable leader. We solve customer problems across the network, from the Edge to the Cloud, in the growing communications, computing, industrial, automotive and consumer markets. Our technology, long-standing relationships, and commitment to world-class support lets our customers quickly and easily unleash their innovation to create a smart, secure and connected world.",
+          "advertiseImage": "",
           "sponsorId": 83,
           "title": "Lattice Semiconductor",
-          "logo": "/img/346be1c870abff03f27309b2e27b9fbe1cd54dec.png",
           "companyId": 70,
+          "id": 83,
           "usesSponsorPage": true
         },
         {
