@@ -4379,6 +4379,34 @@
           "sponsorId": 90,
           "title": "Explore more about TELCO Station",
           "companyId": 76,
+          "documents": {
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/telco_arrcus-vdr-solution-brief.pdf",
+                "name": "Arrcus VDR Solution Brief",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/telco_arrcus-l3vpn-over-srv6-solution-brief.pdf",
+                "name": "Arrcus L3VPN over SRv6 Solution Brief",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/telco_arrcus-ip-clos-networks-white-paper.pdf",
+                "order": 3,
+                "name": "Arrcus IP Clos Networks White Paper"
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/tap_ocp-tap-vision-1-.pdf",
+                "name": "Arrcus Open MLAG Solution Brief",
+                "order": 4
+              }
+            ]
+          },
           "id": 90,
           "email": "adithya@arrcus.com",
           "usesSponsorPage": true
