@@ -5,77 +5,109 @@
       "link": "/a/",
       "display": true,
       "requiresAuth": true,
-      "pageRestriction": ["ANY"]
+      "pageRestriction": [
+        "ANY"
+      ]
     },
     {
       "title": "ABOUT THE EVENT",
       "link": "/about-event",
       "display": true,
       "requiresAuth": false,
-      "pageRestriction": ["ANY"]
+      "pageRestriction": [
+        "ANY"
+      ]
     },
     {
       "title": "REGISTRATION",
       "link": "/reg",
       "display": true,
       "requiresAuth": false,
-      "pageRestriction": ["ANY"]
+      "pageRestriction": [
+        "MARKETING"
+      ]
     },
     {
       "requiresAuth": false,
       "title": "HEALTH & SAFETY",
       "link": "/health-and-safety",
       "display": true,
-      "pageRestriction": ["ANY"]
+      "pageRestriction": [
+        "ANY"
+      ]
     },
     {
       "title": "TRAVEL",
       "link": "/travel",
       "display": true,
       "requiresAuth": false,
-      "pageRestriction": ["ANY"]
+      "pageRestriction": [
+        "MARKETING"
+      ]
     },
     {
       "title": "SCHEDULE",
       "link": "/a/schedule",
       "display": true,
       "requiresAuth": false,
-      "pageRestriction": ["ANY"]
+      "pageRestriction": [
+        "ANY"
+      ]
     },
     {
       "requiresAuth": true,
       "title": "MY SCHEDULE",
       "link": "/a/my-schedule",
       "display": true,
-      "pageRestriction": ["ANY"]
+      "pageRestriction": [
+        "ANY"
+      ]
+    },
+    {
+      "requiresAuth": true,
+      "pageRestriction": [
+        "LOBBY",
+        "EVENT"
+      ],
+      "title": "SPONSORS",
+      "link": "/a/sponsors",
+      "display": true
     },
     {
       "requiresAuth": false,
       "title": "SPONSORSHIP",
       "link": "/sponsorship",
       "display": true,
-      "pageRestriction": ["ANY"]
+      "pageRestriction": [
+        "MARKETING"
+      ]
     },
     {
       "title": "CONTACT",
       "link": "/contact",
       "display": true,
       "requiresAuth": false,
-      "pageRestriction": ["ANY"]
+      "pageRestriction": [
+        "ANY"
+      ]
     },
     {
       "requiresAuth": false,
       "title": "FAQ",
       "link": "/faq",
       "display": true,
-      "pageRestriction": ["ANY"]
+      "pageRestriction": [
+        "ANY"
+      ]
     },
     {
       "requiresAuth": true,
       "title": "MY ORDERS / TICKETS",
       "link": "https://registration.fnvirtual.app/a/member/orders",
       "display": true,
-      "pageRestriction": ["ANY"]
+      "pageRestriction": [
+        "ANY"
+      ]
     }
   ]
 }
