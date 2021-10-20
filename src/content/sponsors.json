@@ -4505,20 +4505,39 @@
           "sponsorId": 93,
           "title": "Explore more about Test and Validation Station",
           "companyId": 79,
+          "columnAds": [
+            {
+              "image": "/img/ocp21glo_fnv_expc-button-test-partners.png"
+            },
+            {
+              "image": "/img/ocp21glo_fnv_expc-button-main.png",
+              "link": "/a/sponsor/88-experience-center-(main)-"
+            }
+          ],
           "id": 93,
           "usesSponsorPage": true
         },
         {
+          "marquee": "Showcase E1.S 15mm - Acoustic Surrogate  and NVMe HDD.",
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-storage.png",
           "name": "Storage",
-          "intro": "Storage Experience Center\n\nParticipating companies are XXXX, XXXX, and XXXX",
+          "intro": "Highlight systems that are using E1.S. There are around 7 SSD vendors.\n\n* Supermicro will showcase their server (with NIC 3.0) which supports E1.S 15mm\n* Viking will also showcase the HW \n\n**Accoustic Surrogare concept:** \n\n* BASED on the OCP accepted spec. Users will come to know how it is built and used. \n\n**NVMe HDD:**\n\n* A live demo of an NVMe HDD will be shown that is based on the OCP NVMe HDD specification.",
           "headerImage": "/img/ocp21glo_fnv_expc-header-storage.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-storage.png",
           "advertiseImage": "",
           "sponsorId": 94,
           "title": "Explore more about Storage",
           "companyId": 80,
+          "columnAds": [
+            {
+              "image": "/img/ocp21glo_fnv_expc-button-storage-partners.png"
+            },
+            {
+              "image": "/img/ocp21glo_fnv_expc-button-main.png",
+              "link": "/a/sponsor/88-experience-center-(main)-"
+            }
+          ],
           "id": 94,
           "usesSponsorPage": true
         }
