@@ -27,10 +27,6 @@ Last day to book: 10/27*\
 Last day to book: 10/29*\
 <a href="https://www.hilton.com/en/hi/groups/personalized/S/SJCSHHF-OCP-20211106/index.jhtml?WT.mc_id=POG" target="_blank">Click here</a> to reserve a room.
 
-**The Westin** - $209/night\
-Last day to book: 10/28*\
-<a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1623187491706&key=GRP&app=resvlink" target="_blank">Click here</a> to reserve a room.
-
 \**or when they sell out of OCP rooms, whichever comes first. Please review the cancellation policy for your selected hotel before booking. They vary based on the property.*
 
 **Nearby Airports**
