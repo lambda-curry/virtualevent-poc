@@ -3699,7 +3699,7 @@
           "columnAds": [
             {
               "image": "/img/opencapi_consortium_virtual-sponsor-ad.omi.png",
-              "link": "www.openmemoryinterface.org"
+              "link": "https://openmemoryinterface.org/"
             }
           ],
           "id": 115,
@@ -3829,9 +3829,9 @@
           "headerImage": "/img/snia_ocp21virtualboothtop.jpg",
           "headerImageMobile": "/img/snia_sniawelcomeimage_ocp.jpg",
           "advertiseImage": "",
-          "sponsorId": 7127,
+          "sponsorId": 127,
           "companyId": 115,
-          "id": 12,
+          "id": 127,
           "showLogoInEventPage": false,
           "usesSponsorPage": true
         }
