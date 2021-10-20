@@ -4255,7 +4255,7 @@
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-mgmthard.png",
           "name": "HARDWARE MANAGEMENT ",
-          "intro": "**Experiences:**  \n\n**Device Manager** managing multiple OCP platforms and real-time switch trouble-shooting. \n\nBuild and installation of **MegaRAC OpenEdition.**\n\nHardware management modules based on **RunBMC** and **DC-SCM 2.0** specifications.\n\nRunning the **OCP Conformance Test Suite** with OCP profiles and understanding the results file.",
+          "intro": "#### **Device Manager** managing multiple OCP platforms and real-time switch trouble-shooting. \n\n#### Build and installation of **MegaRAC OpenEdition.**\n\n#### Hardware management modules based on **RunBMC** and **DC-SCM 2.0** specifications.\n\n#### Running the **OCP Conformance Test Suite** with OCP profiles and understanding the results file.",
           "headerImage": "/img/ocp21glo_fnv_expc-header-hardwaremgmt.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-networking.png",
           "advertiseImage": "",
@@ -4269,7 +4269,7 @@
             },
             {
               "image": "/img/ocp21glo_fnv_expc-button-main.png",
-              "link": "/sponsor/88-experience-center-(main)-"
+              "link": "/a/sponsor/88-experience-center-(main)-"
             }
           ],
           "id": 85,
@@ -4280,7 +4280,7 @@
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-tap.png",
           "name": "Time Appliance Project (TAP)",
-          "intro": "**Live Demo**: \"Synchronizing machines by data packets” Performance of NTP vs PTP w or w/o time card. Time Synchronized Database throughput. Using Time Card, Atomic Clock, GPS.\n\n**Static Demo**: Announcing the Open Time Server Ref-Arch Time Card, NIC, How to get started.",
+          "intro": "#### **Live Demo**: \"Synchronizing machines by data packets” Performance of NTP vs PTP w or w/o time card. Time Synchronized Database throughput. Using Time Card, Atomic Clock, GPS.\n\n#### **Static Demo**: Announcing the Open Time Server Ref-Arch Time Card, NIC, How to get started.",
           "headerImage": "/img/ocp21glo_fnv_expc-header-tap.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-tap.png",
           "advertiseImage": "",
@@ -4316,7 +4316,7 @@
             },
             {
               "image": "/img/ocp21glo_fnv_expc-button-main.png",
-              "link": "/sponsor/88-experience-center-(main)-"
+              "link": "/a/sponsor/88-experience-center-(main)-"
             }
           ],
           "id": 87,
@@ -4440,7 +4440,7 @@
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-server.png",
           "name": "Server - NIC",
-          "intro": "OCP NIC (Systems, NICs, Add-in cards, Ecosystem) \n\n1. OCP NIC 3.0 Multi-Host Connectivity and Manageability (Broadcom) \n\n2. OCP NIC 3.0 Device Attestation Using SPDM (Broadcom & Facebook) \n\n3. Zion: Host with up to 12 OCP NIC 3.0 slots (Facebook) \n\n4. Mechanical Fit-test fixture (OCP NIC sub-group) \n\n5. OCP NIC 3.0 Fiberchannel HBA (OCP NIC sub-group) \n\n6. OCP NIC 3.0 in Tall Small Form Factor (TSFF) (Nvidia) \n\n7. Interface Sandbox with SFF Slots (TE Connectivity)",
+          "intro": "#### OCP NIC (Systems, NICs, Add-in cards, Ecosystem) \n\n* #### OCP NIC 3.0 Multi-Host Connectivity and Manageability (Broadcom) \n* #### OCP NIC 3.0 Device Attestation Using SPDM (Broadcom & Facebook) \n* #### Zion: Host with up to 12 OCP NIC 3.0 slots (Facebook) \n* #### Mechanical Fit-test fixture (OCP NIC sub-group) \n* #### OCP NIC 3.0 Fiberchannel HBA (OCP NIC sub-group) \n* #### OCP NIC 3.0 in Tall Small Form Factor (TSFF) (Nvidia) \n* #### Interface Sandbox with SFF Slots (TE Connectivity)",
           "headerImage": "/img/ocp21glo_fnv_expc-header-server.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-server.png",
           "advertiseImage": "",
@@ -4527,7 +4527,7 @@
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-storage.png",
           "advertiseImage": "",
           "sponsorId": 94,
-          "title": "Explore more about Storage",
+          "title": "Explore more about Storage Station",
           "companyId": 80,
           "columnAds": [
             {
