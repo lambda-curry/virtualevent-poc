@@ -108,6 +108,15 @@
       "pageRestriction": [
         "ANY"
       ]
+    },
+    {
+      "requiresAuth": true,
+      "pageRestriction": [
+        "LOBBY",
+        "EVENT"
+      ],
+      "title": "MAPS",
+      "link": "/a/maps"
     }
   ]
 }
