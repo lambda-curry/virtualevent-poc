@@ -4174,12 +4174,12 @@
           },
           "columnAds": [
             {
-              "image": "/img/ocp21glo_fnv_expc-lobbybutton-mgmthard.png",
-              "link": "/a/sponsor/85-hardware-management"
-            },
-            {
               "image": "/img/ocp21glo_fnv_expc-lobbybutton-osf.png",
               "link": "/a/sponsor/86-open-system-firmware"
+            },
+            {
+              "image": "/img/ocp21glo_fnv_expc-lobbybutton-mgmthard.png",
+              "link": "/a/sponsor/85-hardware-management"
             },
             {
               "image": "/img/ocp21glo_fnv_expc-lobbybutton-tap.png",
@@ -4240,11 +4240,11 @@
           "columnAds": [
             {
               "image": "/img/ocp21glo_fnv_expc-button-osf-partners.png",
-              "link": "a/sponsors"
+              "link": "/sponsors"
             },
             {
               "image": "/img/ocp21glo_fnv_expc-button-main.png",
-              "link": "a/sponsor/88-experience-center-(main)-"
+              "link": "sponsor/88-experience-center-(main)-"
             }
           ],
           "id": 86,
