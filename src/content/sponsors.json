@@ -3920,11 +3920,13 @@
           "logo": "/img/ocp21glo_fnv_sponsorlogo-media.png"
         },
         {
-          "logo": "/img/omdia_afcom_afcom_logo_rgb.png",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-omdia_afcom.png",
           "name": "AFCOM",
+          "intro": "AFCOM",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/omdia_afcom_AFCOM%20boilerplate%20slides%20-%20general.mp4",
           "advertiseImage": "",
           "sponsorId": 112,
+          "title": "AFCOM",
           "companyId": 98,
           "documents": {
             "links": [
