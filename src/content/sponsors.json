@@ -4276,17 +4276,39 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Machine synchronization by data packets will be shown along with performance of time protocols with the OCP time card. ",
+          "marquee": "Showcase data center precision time synchronization using OCP Time Server and Time Cards.",
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-tap.png",
-          "name": "TAP",
-          "intro": "Participating Companies are Facebook and NVIDIA.\n\n**Live Demo**: \"Synchronizing machines by data packets” Performance of NTP vs PTP w or w/o time card. Time Synchronized Database throughput. Using Time Card, Atomic Clock, GPS \n\n**Static Demo**: Announcing the Open Time Server Ref-Arch Time Card, NIC, How to get started",
+          "name": "Time Appliance Project (TAP)",
+          "intro": "**Live Demo**: \"Synchronizing machines by data packets” Performance of NTP vs PTP w or w/o time card. Time Synchronized Database throughput. Using Time Card, Atomic Clock, GPS.\n\n**Static Demo**: Announcing the Open Time Server Ref-Arch Time Card, NIC, How to get started.",
           "headerImage": "/img/ocp21glo_fnv_expc-header-tap.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-tap.png",
           "advertiseImage": "",
           "sponsorId": 87,
-          "title": "Explore more about TAP Station",
+          "title": "Explore more about Time Appliance Project (TAP) Station",
           "companyId": 73,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/watch?v=JK3eTGkX6qY&t=286s",
+                "name": "Why is this PCIe Card RADIOACTIVE?",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/watch?v=tU0xC1ynaT8",
+                "order": 2,
+                "name": "The most accurate Raspberry Pi atomic clock IN THE WORLD!"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/watch?v=YKApDtJjXU4",
+                "order": 3,
+                "name": "Put An Atomic Clock in Your PC - Open Source Time Card"
+              }
+            ]
+          },
           "id": 87,
           "usesSponsorPage": true
         },
