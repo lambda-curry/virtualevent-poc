@@ -1,12 +1,16 @@
-import moment from 'moment-timezone'
-import {epochToMomentTimeZone} from "openstack-uicore-foundation/lib/methods";
-import {isString} from "lodash";
+import moment from "moment-timezone";
+import { epochToMomentTimeZone } from "openstack-uicore-foundation/lib/methods";
+import { isString } from "lodash";
+import { getEnvVariable, SCHEDULE_EXCLUDING_TAGS } from "./envVariables";
 
 const groupByDay = (events) => {
   let groupedEvents = [];
   events.forEach((e, index) => {
-    const day = moment.unix(e.start_date).format('MM/DD/YYYY');
-    groupedEvents[day] = groupedEvents[day] && groupedEvents[day].length > 0 ? [e, ...groupedEvents[day]] : [e];
+    const day = moment.unix(e.start_date).format("MM/DD/YYYY");
+    groupedEvents[day] =
+      groupedEvents[day] && groupedEvents[day].length > 0
+        ? [e, ...groupedEvents[day]]
+        : [e];
   });
   return groupedEvents;
 };
@@ -14,7 +18,7 @@ const groupByDay = (events) => {
 const sortSchedule = (events) => {
   return events.map((day, index) => {
     return day.sort((a, b) => a.id - b.id);
-  })
+  });
 };
 
 export const sortEvents = (events) => {
@@ -23,13 +27,26 @@ export const sortEvents = (events) => {
   return sortedEvents;
 };
 
-export const getFilteredEvents = (events, filters, summitTimezone) => {
+export const filterEventsByTags = (events) => {
+  const excludingTagsVar = getEnvVariable(SCHEDULE_EXCLUDING_TAGS);
+  const excludingTags = excludingTagsVar?.split("|") || null;
+  return excludingTags
+      ? events.filter(
+          (ev) =>
+              !ev.tags.map((t) => t.tag).some((tag) => excludingTags.includes(tag))
+      )
+      : events;
+};
 
-  return events.filter(ev => {
+export const getFilteredEvents = (events, filters, summitTimezone) => {
+  return events.filter((ev) => {
     let valid = true;
 
     if (filters.date?.values.length > 0) {
-      const dateString = epochToMomentTimeZone(ev.start_date, summitTimezone).format('YYYY-MM-DD');
+      const dateString = epochToMomentTimeZone(
+        ev.start_date,
+        summitTimezone
+      ).format("YYYY-MM-DD");
       valid = filters.date.values.includes(dateString);
       if (!valid) return false;
     }
@@ -45,12 +62,14 @@ export const getFilteredEvents = (events, filters, summitTimezone) => {
     }
 
     if (filters.speakers?.values.length > 0) {
-      valid = ev.speakers?.some(s => filters.speakers.values.includes(s.id)) || filters.speakers.values.includes(ev.moderator?.id);
+      valid =
+        ev.speakers?.some((s) => filters.speakers.values.includes(s.id)) ||
+        filters.speakers.values.includes(ev.moderator?.id);
       if (!valid) return false;
     }
 
     if (filters.tags?.values.length > 0) {
-      valid = ev.tags?.some(t => filters.tags.values.includes(t.id));
+      valid = ev.tags?.some((t) => filters.tags.values.includes(t.id));
       if (!valid) return false;
     }
 
@@ -60,7 +79,9 @@ export const getFilteredEvents = (events, filters, summitTimezone) => {
     }
 
     if (filters.track_groups?.values.length > 0) {
-      valid = ev.track?.track_groups.some(tg => filters.track_groups.values.includes(tg));
+      valid = ev.track?.track_groups.some((tg) =>
+        filters.track_groups.values.includes(tg)
+      );
       if (!valid) return false;
     }
 
@@ -71,15 +92,22 @@ export const getFilteredEvents = (events, filters, summitTimezone) => {
 
     if (filters.company?.values.length > 0) {
       const lowerCaseCompanies = filters.company.values;
-      valid = ev.speakers?.some(s => lowerCaseCompanies.includes(s.company?.toLowerCase())) ||
-          lowerCaseCompanies.includes(ev.moderator?.company?.toLowerCase()) ||
-          ev.sponsors?.some(s => lowerCaseCompanies.includes(s.name.toLowerCase()));
+      valid =
+        ev.speakers?.some((s) =>
+          lowerCaseCompanies.includes(s.company?.toLowerCase())
+        ) ||
+        lowerCaseCompanies.includes(ev.moderator?.company?.toLowerCase()) ||
+        ev.sponsors?.some((s) =>
+          lowerCaseCompanies.includes(s.name.toLowerCase())
+        );
 
       if (!valid) return false;
     }
 
     if (filters.title?.values && isString(filters.title.values)) {
-      valid = ev.title.toLowerCase().includes(filters.title.values.toLowerCase());
+      valid = ev.title
+        .toLowerCase()
+        .includes(filters.title.values.toLowerCase());
       if (!valid) return false;
     }
 
