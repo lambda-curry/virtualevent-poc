@@ -3843,6 +3843,15 @@
           "companyId": 3,
           "logo": "/img/fntech_wht_logo_rgb_1-color-black_1920px.png",
           "usesSponsorPage": true
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Media Sponsors",
+          "companyId": 117,
+          "id": 128,
+          "sponsorId": 129,
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-media.png"
         }
       ]
     },
