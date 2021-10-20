@@ -2875,6 +2875,7 @@
           "chatLink": "https://drivenets.zoom.us/j/95353949825?pwd=S0JBRW1IV0JqL3dKb0JGb0lxajF3dz09",
           "advertiseImage": "",
           "sponsorId": 102,
+          "title": "DriveNets",
           "companyId": 88,
           "documents": {
             "links": [
@@ -2937,7 +2938,7 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Single Phase Immersion Cooling Fluids: Designed with the Data Center Industry in mind",
+          "marquee": "Single Phase Immersion Cooling Fluids: Designed with the Data Center Industry in mind.",
           "sponsorColor": "#004e9e",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-fuchslubricants.png",
           "name": "FUCHS LUBRICANTS CO.",
@@ -2982,7 +2983,7 @@
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/mitac_MiTAC%205G.mp4",
           "advertiseImage": "",
           "sponsorId": 100,
-          "title": "MiTAC Computing Technology Corporation",
+          "title": "MiTAC Computing Technology Corporation.",
           "companyId": 86,
           "documents": {
             "videos": [
@@ -3049,12 +3050,17 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "name": "Submer",
-          "id": 99,
-          "sponsorId": 99,
+          "marquee": "Enabling cooling and automation for data & energy-intense environments through highly-efficient & sustainable technologies:Datacenters that make sense.",
+          "sponsorColor": "#00BDD7",
           "logo": "/img/904078ed88a252dd352f74e386e57792d81563de.png",
+          "name": "Submer",
+          "intro": "#### Submer began in 2015, with the idea of challenging what it means to be a ‘traditional’ datacenter means. Today, Submer’s state-of-the-art solutions designed for Datacenters, Cloud and Edge computing are purpose built to future-proof their infrastructure, addressing challenges of heat-reuse, net-zero water and site selection. Submer is the perfect partner for enterprises and datacenters wishing to implement solutions that help their datacenters make sense. We enable next generation cooling and automation for data & energy-intense environments by integrating our pristine, highly-efficient & sustainable technologies. Solving the challenges of today and powering the use cases of the future.",
+          "advertiseImage": "",
+          "sponsorId": 99,
+          "title": "Submer",
           "companyId": 85,
+          "id": 99,
+          "email": "na-team@submer.com",
           "usesSponsorPage": false
         },
         {
