@@ -80,7 +80,8 @@
         "EVENT"
       ],
       "title": "MAPS",
-      "link": "/a/maps"
+      "link": "/a/maps",
+      "display": true
     },
     {
       "title": "CONTACT",
