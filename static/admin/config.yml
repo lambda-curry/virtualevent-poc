@@ -1,12 +1,7 @@
 backend:
   name: github
-<<<<<<< HEAD
   branch: prod-infinityfestival2021
   repo: fntechgit/virtualevent-poc
-=======
-  branch: refactor-nav
-  repo: main
->>>>>>> 69e2facd (Refactor nav - hasTicket and pageRestrictions (#138))
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
