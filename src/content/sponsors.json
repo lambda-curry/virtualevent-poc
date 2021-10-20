@@ -3664,7 +3664,24 @@
           "headerImageMobile": "/img/opencapi_consortium_virtual-welcome-static-image.png",
           "advertiseImage": "",
           "sponsorId": 115,
+          "title": "OpenCAPI Consortium",
           "companyId": 99,
+          "documents": {
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "PSI_experience",
+                "order": 1,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/opencapi_consortium_PSI_experience_Oct21.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/opencapi_consortium_ICS%20Workshop%20-%20Decoupling%20Compute%20from%20Memory,%20Storage%20&%20IO%20with%20OMI%20-%20Master%20%281%29.mp4",
+                "order": 2,
+                "name": "ICS Workshop - Decoupling Compute from Memory, Storage & IO with OMI - Master "
+              }
+            ]
+          },
           "columnAds": [
             {
               "image": "/img/opencapi_consortium_virtual-sponsor-ad.omi.png",
