@@ -1917,7 +1917,7 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Advanced Energy's Data Center Power Solutions - Accelerate and Enhance the Capabilities of Your OCP System",
+          "marquee": "Advanced Energy's Data Center Power Solutions - Accelerate and Enhance the Capabilities of Your OCP System.",
           "sponsorColor": "#2d6aa8",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-advancedenergy.png",
           "name": "Advanced Energy",
@@ -2141,9 +2141,12 @@
           "usesSponsorPage": true
         },
         {
+          "marquee": "As a global leader in interconnect solutions, BizLink is committed to enabling reliable interconnection in a digital world. This year we are excited to showcase our high-speed interconnect, power and optics solutions for data centers including DAC, HiWire™ Active Electrical Cables (AEC), AOC, optical transceivers, high-density optical tray and cassette, and high power solutions at the OCP Global Summit.",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-bizlink.png",
           "name": "BizLink Technology, Inc.",
           "intro": "BizLink, founded in 1996, is headquartered in Silicon Valley, USA. Our mission is to make interconnection easier and to become the leading global interconnect solution supplier. We support industries that are environmentally conscious and improve quality of life through providing essential components, wire harnesses, and cables to a wide variety of industries such as IT and CE, Motor Vehicle, Electrical Appliances, Medical Equipment, Industrial, Optical Fiber Communications, and Solar. Our vertically integrated business model includes manufacturing sites in the United States, Mexico, Slovakia, Serbia, China, Malaysia, and Singapore. BizLink incorporates state-of-the-art facilities, advanced manufacturing processes, and professional research and development capabilities. Our global R&D and service teams in America, Europe, and Asia strive to keep collaborating closely with customers to turn their innovative ideas into reality.",
+          "headerImage": "/img/bizlink_technology_inc_static-image-banner_1440x400.jpg",
+          "headerImageMobile": "/img/bizlink_technology_inc_static-image-banner_768x250.jpg",
           "advertiseImage": "",
           "sponsorId": 51,
           "title": "BizLink Technology, Inc.",
@@ -2164,6 +2167,12 @@
               }
             ]
           },
+          "columnAds": [
+            {
+              "image": "/img/bizlink_technology_inc_static-image-banner_484x484.jpg",
+              "link": "https://www.bizlinktech.com/products/index/501/Data+Centers+%26+Servers"
+            }
+          ],
           "id": 51,
           "email": "OCPSummit@bizlinktech.com",
           "usesSponsorPage": true
