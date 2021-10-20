@@ -5,49 +5,71 @@
       "link": "/a/",
       "display": false,
       "requiresAuth": true,
-      "pageRestriction": ["ANY"]
+      "pageRestriction": [
+        "ANY"
+      ]
     },
     {
       "title": "Schedule",
       "link": "/a/schedule",
       "display": true,
       "requiresAuth": false,
-      "pageRestriction": ["ANY"]
+      "pageRestriction": [
+        "ANY"
+      ]
     },
     {
       "title": "About the event",
       "link": "/about-event",
       "display": true,
       "requiresAuth": false,
-      "pageRestriction": ["ANY"]
+      "pageRestriction": [
+        "ANY"
+      ]
     },
     {
       "title": "Sponsor IF",
       "link": "/sponsorship",
       "display": true,
       "requiresAuth": false,
-      "pageRestriction": ["ANY"]
+      "pageRestriction": [
+        "ANY"
+      ]
     },
     {
       "requiresAuth": false,
       "title": "Health & Safety",
       "link": "/health-and-safety",
       "display": true,
-      "pageRestriction": ["ANY"]
+      "pageRestriction": [
+        "ANY"
+      ]
     },
     {
       "title": "Contact",
       "link": "/contact",
       "display": true,
       "requiresAuth": false,
-      "pageRestriction": ["ANY"]
+      "pageRestriction": [
+        "ANY"
+      ]
     },
     {
       "title": "Tech Support",
       "link": "/tech-support",
       "display": true,
       "requiresAuth": false,
-      "pageRestriction": ["ANY"]
+      "pageRestriction": [
+        "ANY"
+      ]
+    },
+    {
+      "requiresAuth": true,
+      "pageRestriction": [
+        "ANY"
+      ],
+      "title": "My Schedule",
+      "link": "/a/my-schedule"
     }
   ]
 }
