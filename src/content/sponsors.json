@@ -4251,11 +4251,11 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Showcase total management capabilities including firmware updates, profile capabilities, building MegaRAC and test. ",
+          "marquee": "Showcase management hardware and software, including Device Manager, MegaRAC OpenEdition contributions, DC-SCM 2.0/RunBMC hardware, and testing conformance with OCP Profiles.",
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-mgmthard.png",
-          "name": "Hardware Management",
-          "intro": "Participating companies are Intel, Edgecore, AMI and Lattice Semiconductor\n\nDescribe: Showcase management capabilities. Show OpenRMC 1.1 firmware updates, group operations etc. \n\nOCP Prescribed: Showcase baseline/server profiles. Focus on Reset, Inventory, LocationLED Implement: Experience building OpenBMC (?), MegaRAC (AMI), OpenRMC (Inspur/Wiwynn) Experience Device Manager (Edge-core) Experience the HW Mgmt Modules (RunBMC, SCM 1.0, SCM 2.0) (Intel) \n\nConform: Experience running the tests specified in supplier checklist. Tests based on Redfish service validator, interface validator, interop-validator",
+          "name": "HARDWARE MANAGEMENT ",
+          "intro": "**Experiences:**  \n\n**Device Manager** managing multiple OCP platforms and real-time switch trouble-shooting. \n\nBuild and installation of **MegaRAC OpenEdition.**\n\nHardware management modules based on **RunBMC** and **DC-SCM 2.0** specifications.\n\nRunning the **OCP Conformance Test Suite** with OCP profiles and understanding the results file.",
           "headerImage": "/img/ocp21glo_fnv_expc-header-hardwaremgmt.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-networking.png",
           "advertiseImage": "",
