@@ -4265,7 +4265,7 @@
           "columnAds": [
             {
               "image": "/img/ocp21glo_fnv_expc-button-hw-partners.png",
-              "link": "/sponsors"
+              "link": ""
             },
             {
               "image": "/img/ocp21glo_fnv_expc-button-main.png",
@@ -4312,7 +4312,7 @@
           "columnAds": [
             {
               "image": "/img/ocp21glo_fnv_expc-button-tap-partners.png",
-              "link": "/sponsors"
+              "link": ""
             },
             {
               "image": "/img/ocp21glo_fnv_expc-button-main.png",
@@ -4355,7 +4355,7 @@
           "columnAds": [
             {
               "image": "/img/ocp21glo_fnv_expc-button-networking-partners.png",
-              "link": "/sponsors"
+              "link": ""
             },
             {
               "image": "/img/ocp21glo_fnv_expc-button-main.png",
@@ -4424,7 +4424,7 @@
           "columnAds": [
             {
               "image": "/img/ocp21glo_fnv_expc-button-telco-partners.png",
-              "link": "/sponsors"
+              "link": ""
             },
             {
               "image": "/img/ocp21glo_fnv_expc-button-main.png",
@@ -4451,16 +4451,45 @@
           "usesSponsorPage": true
         },
         {
+          "marquee": "Wiwynn - Live Demo - Two-Phase Immersion Cooling Solution for OAI Server.",
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-oai.png",
-          "name": "OAI",
-          "intro": "OAI Experience Center\n\nParticipating companies are XXXX, XXXX, and XXXX",
+          "name": "SERVER - Open Accelerator Infrastructure (OAI)",
+          "intro": "# Showcase OAI capabilities on different hardware platforms.",
           "headerImage": "/img/ocp21glo_fnv_expc-header-oai.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-oai.png",
+          "chatLink": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzQwMzY3ODAtMzMzNS00OWU4LTgzMTYtZGQyZThmY2U2YWZi%40thread.v2/0?context=%7b%22Tid%22%3a%22da6e0628-fc83-4caf-9dd2-73061cbab167%22%2c%22Oid%22%3a%222bee0da6-f1d1-4006-8960-edaad6a10af5%22%7d",
           "advertiseImage": "",
           "sponsorId": 92,
-          "title": "Explore more about OAI",
+          "title": "Explore more about SERVER - Open Accelerator Infrastructure (OAI)",
           "companyId": 78,
+          "documents": {
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/open_accelerator_infrastructure_oai_ops_2021.10.12-oai-005-.pdf",
+                "name": "OPS_2021.10.12 OAI",
+                "order": 1
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/open_accelerator_infrastructure_oai_Wiwynn%20OAI_Demo.mp4",
+                "order": 2,
+                "name": "Wiwynn OAI Demo"
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "image": "/img/ocp21glo_fnv_expc-button-oai-partners.png"
+            },
+            {
+              "image": "/img/ocp21glo_fnv_expc-button-main.png",
+              "link": "/a/sponsor/88-experience-center-(main)-"
+            }
+          ],
           "id": 92,
           "usesSponsorPage": true
         },
