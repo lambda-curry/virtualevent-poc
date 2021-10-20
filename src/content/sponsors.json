@@ -4158,7 +4158,7 @@
       ],
       "sponsors": [
         {
-          "marquee": "OCP Experience Center: Community Showcase",
+          "marquee": "OCP Experience Center: Community Showcase.",
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-header.png",
           "name": "Experience Center (MAIN) ",
@@ -4323,18 +4323,47 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "DDC orchestration with a live and a static demo.",
+          "marquee": "Credo, DriveNets &UfiSpace are demonstrating the world’s largest distributed disaggregated chassis implementation – a 350Tb Jericho2c+ 3-rack cluster.",
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-networking.png",
           "name": "Networking",
-          "intro": "Participating companies are Credo, DriveNets, and UFISpace.\n\n**Live Demo:** \"DDC Orchestration\" > Remotely Controlling a large DDC Cluster install in Israel \n\n**Static Demo:** 350Tb Jericho2C+ Cluster w/MACSEC > Hyperscale sized routing platform",
+          "intro": "DDCs have become core to Hyperscale Data Center and Telco design, enabling commodity white box hardware to be mated with open source or 3rd party software to build a flexible, scalable solution without the high cost and proprietary lockin of a chassis. Credo, DreiveNets, and UfiSpace came together at OCP 2020 to demonstrate the world’s first working DDC implementation – a 96Tb Jericho design. For OCP 2021, the trio of DDC-enablers has implemented the world’s largest DDC implementation, a 3-rack 350Tb Jercicho2c+ cluster, again using software from DriveNets, hardware from UfiSpace, and AEC cables from Credo. The new implementation shows the scalability and low power management of the architecture. Information on the 350Tb implementation can be found at https://www.credosemi.com/hiwire-350tb-ddc.",
           "headerImage": "/img/ocp21glo_fnv_expc-header-networking.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-networking.png",
           "advertiseImage": "",
           "sponsorId": 89,
-          "title": "Explore more about Networking",
+          "title": "Explore more about Networking Station",
           "companyId": 75,
+          "documents": {
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/networking_credo_hiwire_ddc_solution_brief_345tb_jerico2c-ramon.pdf",
+                "name": "Credo HiWire DDC Solution Brief 345Tb Jerico2C+Ramon",
+                "order": 1
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/networking_350Tb%20Jericho2c+%20DDC%20Introduction.mp4",
+                "order": 2,
+                "name": "350Tb Jericho2c+ DDC Introduction"
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "image": "/img/ocp21glo_fnv_expc-button-networking-partners.png",
+              "link": "/sponsors"
+            },
+            {
+              "image": "/img/ocp21glo_fnv_expc-button-main.png",
+              "link": "/sponsor/88-experience-center-(main)-"
+            }
+          ],
           "id": 89,
+          "email": "don.barnetson@credosemi.com",
           "usesSponsorPage": true
         },
         {
