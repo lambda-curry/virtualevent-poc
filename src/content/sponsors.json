@@ -1047,14 +1047,15 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "name": "bp",
-          "id": 72,
-          "sponsorId": 72,
           "logo": "/img/ocp21glo_fnv_sponsorlogo-bp.png",
+          "name": "bp",
+          "intro": "bp",
+          "advertiseImage": "",
+          "sponsorId": 72,
+          "title": "bp",
           "companyId": 59,
-          "usesSponsorPage": true,
-          "intro": "bp"
+          "id": 72,
+          "usesSponsorPage": true
         },
         {
           "marquee": "Moving Tagline - 150 Character Max\tCredo Active Electrical Cables provide 28G, 56G, and 112G per lane PAM4 connectivity for distributed disaggregated chassis and NIC-to-Dual TOR racks.",
@@ -1401,7 +1402,7 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "With the Pliops Extreme Data Processor you can achieve: • Up to 10x Higher Performance • Up to 6x More Capacity • Up to 5x Lower Cost",
+          "marquee": "With the Pliops Extreme Data Processor you can achieve: • Up to 10x Higher Performance • Up to 6x More Capacity • Up to 5x Lower Cost.",
           "sponsorColor": "#A748E5",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-pliops.png",
           "name": "Pliops",
@@ -1410,6 +1411,7 @@
           "chatLink": "https://us02web.zoom.us/j/84553093001?pwd=eXQ3OWdpeUVIQ1dZTC83OWE2bjdJZz09",
           "advertiseImage": "",
           "sponsorId": 97,
+          "title": "Pliops",
           "companyId": 83,
           "documents": {
             "videos": [
@@ -1612,6 +1614,7 @@
           "headerImageMobile": "/img/sk_hynix_mobile-static-image_sk-hynix.jpg",
           "advertiseImage": "/img/sk_hynix_virtual-lobby-ad_sk-hynix.jpg",
           "sponsorId": 65,
+          "title": "SK hynix",
           "companyId": 52,
           "documents": {
             "links": [
