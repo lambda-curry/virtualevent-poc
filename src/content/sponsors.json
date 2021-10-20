@@ -4025,6 +4025,7 @@
         },
         {
           "marquee": "Production + Event Management + Creative. ",
+          "sponsorColor": "#0C64C8",
           "logo": "/img/fntech_wht_logo_rgb_1-color-black_1920px.png",
           "name": "FNTECH ",
           "intro": "**WE SPEAK EVENTS: In-person, virtual, and everything in-between.**\\\nOver the past 20+ years, we’ve successfully partnered with top-tier companies like Apple, Facebook, Wells Fargo, Vans, and Volcom on events of all sizes, types and budgets. Domestic and abroad. Intimate and straightforward to extremely complex and expansive. We have two large headquarters—one in the Northern California Bay Area and another in Southern California, which includes a virtual reality lab, 3D printing hub, and robust wood/metal fabrication shop. We’re a people-first company, which to us means treating every employee, client, vendor, partner, and community member with honesty, integrity, and respect. It’s part of our corporate ethos. People power our mission and we are eternally grateful to know and work with some of the best in the business. And as always, we make sure to have a lot of fun along the way. For more FNinfo, visit us at [fntech.com](http://fntech.com/).",
@@ -4033,6 +4034,40 @@
           "sponsorId": 47,
           "title": "FNTECH",
           "companyId": 4,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "Follow FNTECH on Instagram",
+                "order": 2,
+                "link": "https://www.instagram.com/fntech/?hl=en"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Follow FNTECH on Facebook",
+                "link": "https://www.facebook.com/FNTECH/",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/fntech?lang=en ",
+                "order": 4,
+                "name": "Follow FNTECH on Twitter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "YouTube: F8 event recap",
+                "order": 5,
+                "link": "https://www.youtube.com/watch?v=PBSZAfsTa3o"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/watch?v=9m4ZbIbO1-U ",
+                "order": 6,
+                "name": "YouTube: Oculus Connect event recap "
+              }
+            ]
+          },
           "columnAds": [
             {
               "image": "/img/fnvirtual-yoco-fntech-space1.png"
