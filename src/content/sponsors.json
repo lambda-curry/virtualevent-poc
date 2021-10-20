@@ -4218,14 +4218,35 @@
           "marquee": "Total solution packaged with Linuxboot, Coreboot, OpenBMC along with BIOS on OCP hardware.",
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-osf.png",
-          "name": "Open System Firmware",
-          "intro": "Participating companies are Facebook, Intel, AMI and ITRenew.\n\nDemo's Include: \n\n1. Wiwynn DeltaLake with coreboot + LinuxBoot +OpenBMC \n\n2. Monolake (Existing older platform) with coreboot + LinuxBoot +OpenBMC \n\n3. MinPlatform (one of the OSF stacks) Demo \n\n4. TiogaPass with Aptio Open Edition. \n\n5. ARM LBBR or SBBR (Server based boot requirements) \n\n6. Supermicro Ice Lake with MinPlatform",
+          "name": "OPEN SYSTEM FIRMWARE (OSF)",
+          "intro": "Demo's Include:  \n\n* Wiwynn DeltaLake with coreboot + LinuxBoot +OpenBMC  \n* Monolake (Existing older platform) with coreboot + LinuxBoot +OpenBMC \n* MinPlatform (one of the OSF stacks) Demo\n* TiogaPass with Aptio Open Edition.  \n* ARM and Ampere LBBR (LinuxBoot) + SBBR (UEFI) + OpenBMC demo \n* Supermicro Ice Lake with MinPlatform",
           "headerImage": "/img/ocp21glo_fnv_expc-header-osf.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-osf.png",
           "advertiseImage": "",
           "sponsorId": 86,
-          "title": "Explore more about Open System Firmware Station ",
+          "title": "Explore more about Open System Firmware (OSF) Station ",
           "companyId": 72,
+          "documents": {
+            "videos": [],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/arm-linuxboot-lbbr.pdf",
+                "name": "LinuxBoot resources and PoCs / repositories published by Arm",
+                "order": 5
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "image": "/img/ocp21glo_fnv_expc-button-osf-partners.png",
+              "link": "a/sponsors"
+            },
+            {
+              "image": "/img/ocp21glo_fnv_expc-button-main.png",
+              "link": "a/sponsor/88-experience-center-(main)-"
+            }
+          ],
           "id": 86,
           "usesSponsorPage": true
         },
