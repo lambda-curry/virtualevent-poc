@@ -3042,7 +3042,7 @@
           "sponsorColor": "#8ec341",
           "logo": "/img/8147da3fe0210702f64d70873a767ae696582820.png",
           "name": "Pluribus Networks",
-          "intro": "#### Pluribus Networks delivers highly scalable, automated and cost-efficient data center network solutions based on the principles of disaggregation and controllerless SDN automation. The Linux-based Netvisor® ONE operating system and the Adaptive Cloud Fabric™ controllerless SDN software have been purpose built to deliver radically automated networking along with superior economics by leveraging white box switches including Pluribus’ own Freedom™ Series of switches. The Adaptive Cloud Fabric controllerless SDN architecture is optimized to deliver a modern network fabric underlay and overlay across data center sites to support distributed cloud with rich services, automated operations, intrinsic security, comprehensive visibility and no single point of failure. Pluribus is deployed by more than 350 customers, including more than 100 tier one mobile network operators, in mission critical networks around the globe. Visit Pluribus Networks to learn more.",
+          "intro": "#### Pluribus delivers data center network switching and monitoring fabrics that radically simplify operations and lower costs. Built on a foundation of open networking, our unique controllerless software-defined networking (SDN) architecture incorporates network automation, virtualization, segmentation, visibility and analytics in a comprehensive, cost-effective and easy-to-use solution that works right out of the box. Whether modernizing a leaf-spine network in a single software-defined data center, deploying data center interconnect to create a unified network fabric across a multi-site data center, building a distributed cloud in edge computing environments, automating your lab environment or intelligently steering traffic to monitoring tools, Pluribus Adaptive Cloud Fabric™ delivers powerful solutions that are extremely simple to deploy and operate. Pluribus is deployed by more than 350 customers, including more than 100 tier one mobile network operators around the globe.",
           "advertiseImage": "",
           "sponsorId": 103,
           "title": "Pluribus Networks",
@@ -3074,6 +3074,26 @@
                 "link": "/img/pluribus_networks_pn-po-pluribus_adaptive_cloud_fabric_product_overview.pdf",
                 "name": "Pluribus Adaptive Cloud Fabric Product Overview",
                 "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/pluribus_networks_ebook-dc-network-automation-simplified.pdf",
+                "name": "eBook - DC Network Automation Simplified",
+                "order": 2
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/pluribus_networks_Pluribus%20Explainer%20Video.mp4",
+                "order": 10,
+                "name": "Pluribus Explainer "
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Creval",
+                "order": 11,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/pluribus_networks_Creval_FINAL.mp4"
               }
             ]
           },
