@@ -27,10 +27,14 @@ CustomPageTemplate.propTypes = {
   contentComponent: PropTypes.func,
 }
 
-const CustomPage = ({ data, isLoggedUser, hasTicket }) => {
+const CustomPage = ({ data, isLoggedUser, hasTicket, isAuthorized }) => {
   const { frontmatter: {title, userRequirement}, html } = data.markdownRemark
-
-  if ((userRequirement === 'LOGGGED_IN' && !isLoggedUser) || (userRequirement === 'HAS_TICKET' && !hasTicket)) {
+  // if isAuthorized byoass the AUTHZ check
+  if (
+      !isAuthorized &&
+      (
+          (userRequirement === 'LOGGGED_IN' && !isLoggedUser) || (userRequirement === 'HAS_TICKET' && !hasTicket)
+      )) {
     return <Redirect to='/' noThrow />
   }
 
@@ -57,7 +61,8 @@ CustomPage.propTypes = {
 
 const mapStateToProps = ({ loggedUserState, userState }) => ({
   isLoggedUser: loggedUserState.isLoggedUser,
-  hasTicket: userState.hasTicket
+  hasTicket: userState.hasTicket,
+  isAuthorized: userState.isAuthorized,
 });
 
 export default connect(mapStateToProps, null)(CustomPage)
