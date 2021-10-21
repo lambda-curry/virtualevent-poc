@@ -4323,7 +4323,7 @@
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-osf.png",
           "name": "OPEN SYSTEM FIRMWARE (OSF)",
-          "intro": "#### Demo's Include:  \n\n* #### Wiwynn DeltaLake with coreboot + LinuxBoot +OpenBMC  \n* #### Monolake (Existing older platform) with coreboot + LinuxBoot +OpenBMC \n* #### MinPlatform (one of the OSF stacks) Demo\n* #### TiogaPass with Aptio Open Edition.  \n* #### ARM and Ampere LBBR (LinuxBoot) + SBBR (UEFI) + OpenBMC demo \n* #### Supermicro Ice Lake with MinPlatform",
+          "intro": "### **Open Systems Firmware (OSF) - They will demonstrate a total solution packaged with Linuxboot, Coreboot, OpenBMC along with BIOS on OCP hardware.** \n\n### **OSF will showcase the following demos:**\n\n* ### Wiwynn DeltaLake with coreboot + LinuxBoot +OpenBMC\n* ### Monolake (Existing older platform) with coreboot + LinuxBoot +OpenBMC\n* ### MinPlatform (one of the OSF stacks) Demo\n* ### TiogaPass with Aptio Open Edition.\n* ### ARM and Ampere LBBR (LinuxBoot) + SBBR (UEFI) + OpenBMC demo\n* ### Supermicro Ice Lake with MinPlatform",
           "headerImage": "/img/ocp21glo_fnv_expc-header-osf.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-osf.png",
           "advertiseImage": "",
