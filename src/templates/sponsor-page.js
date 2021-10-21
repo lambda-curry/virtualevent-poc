@@ -17,7 +17,7 @@ import Layout from '../components/Layout'
 import { scanBadge } from '../actions/user-actions'
 import { getDisqusSSO } from '../actions/user-actions'
 import MarkdownIt from "markdown-it";
-
+import { getEnvVariable, LIVE_EVENT_THUMBNAIL_GIF_CAPTURE_STARTS } from "../utils/envVariables";
 import styles from '../styles/sponsor-page.module.scss'
 
 
@@ -126,6 +126,7 @@ export const SponsorPageTemplate = class extends React.Component {
                       sponsorId={sponsor.companyId}
                       showSponsor={!!sponsor.companyId}
                       featuredEventId={sponsor.featuredEventId}
+                      streamThumbnailGifCaptureStarts={parseInt(getEnvVariable(LIVE_EVENT_THUMBNAIL_GIF_CAPTURE_STARTS))}
                   />
                   }
                   {schedule &&
