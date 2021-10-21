@@ -24,7 +24,7 @@
       "display": true,
       "requiresAuth": true,
       "pageRestriction": [
-        "EVENT"
+        "ACTIVITY"
       ]
     },
     {
@@ -70,7 +70,7 @@
       "requiresAuth": false,
       "pageRestriction": [
         "LOBBY",
-        "EVENT"
+        "ACTIVITY"
       ]
     },
     {
