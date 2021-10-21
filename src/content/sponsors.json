@@ -4359,7 +4359,7 @@
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-mgmthard.png",
           "name": "HARDWARE MANAGEMENT ",
-          "intro": "#### **Device Manager** managing multiple OCP platforms and real-time switch trouble-shooting. \n\n#### Build and installation of **MegaRAC OpenEdition.**\n\n#### Hardware management modules based on **RunBMC** and **DC-SCM 2.0** specifications.\n\n#### Running the **OCP Conformance Test Suite** with OCP profiles and understanding the results file.",
+          "intro": "### **Hardware Management: The team will showcase total management capabilities including firmware updates, profile capabilities, building MegaRAC and test.** \n\n#### **Device Manager** managing multiple OCP platforms and real-time switch trouble-shooting.\n\n#### Build and installation of **MegaRAC OpenEdition.**\n\n#### Hardware management modules based on **RunBMC** and **DC-SCM 2.0** specifications.\n\n#### Running the **OCP Conformance Test Suite** with OCP profiles and understanding the results file.",
           "headerImage": "/img/ocp21glo_fnv_expc-header-hardwaremgmt.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-networking.png",
           "advertiseImage": "",
