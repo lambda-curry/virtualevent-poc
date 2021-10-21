@@ -4254,7 +4254,7 @@
       ],
       "sponsors": [
         {
-          "marquee": "OCP Experience Center: Community Showcase.",
+          "marquee": "Community Showcase.",
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-header.png",
           "name": "Experience Center (MAIN) ",
@@ -4266,7 +4266,15 @@
           "title": "Experience Center ",
           "companyId": 36,
           "documents": {
-            "links": []
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.opencompute.org/blog/preview-of-the-experience-center-at-the-upcoming-ocp-global-summit",
+                "order": 1,
+                "name": "Preview of the Experience Center at the upcoming OCP Global Summit!"
+              }
+            ],
+            "slides": []
           },
           "columnAds": [
             {
