@@ -107,7 +107,7 @@ collections:
               {label: "Link", name: "link", widget: string},
               {label: "Display", name: "display", widget: boolean, required: false},
               {label: "Requires Auth?", name: "requiresAuth", widget: boolean, required: false, default: false},
-              {label: "Show only on page", name: "pageRestriction", widget: select, multiple: true, default: ["ANY"], options: ["ANY", "MARKETING", "LOBBY", "EVENT"]},
+              {label: "Show only on page", name: "pageRestriction", widget: select, multiple: true, default: ["ANY"], options: ["ANY", "MARKETING", "LOBBY", "ACTIVITY", "SHOW"]},
             ]}
       - file: "src/content/footer.json"
         label: "Footer"

@@ -48,7 +48,7 @@
       "requiresAuth": true,
       "pageRestriction": [
         "LOBBY",
-        "EVENT"
+        "ACTIVITY"
       ],
       "title": "Sponsors",
       "link": "/a/sponsors",
@@ -58,7 +58,7 @@
       "requiresAuth": true,
       "pageRestriction": [
         "LOBBY",
-        "EVENT"
+        "ACTIVITY"
       ],
       "title": "Map",
       "link": "/map",
