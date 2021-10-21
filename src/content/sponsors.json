@@ -104,6 +104,16 @@
           "companyId": 11,
           "logo": "/img/if2020-phasetwo-logo-484x484.png",
           "usesSponsorPage": true
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Intel",
+          "id": 137,
+          "sponsorId": 136,
+          "companyId": 1,
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-intel.png",
+          "usesSponsorPage": true
         }
       ]
     },
