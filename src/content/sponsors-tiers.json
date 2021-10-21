@@ -1,14 +1,7 @@
 {
   "tiers": [
     {
-      "id": "tier-cYGYq5-ae",
-      "name": "Title Sponsor",
-      "widgetTitle": "Title Sponsors",
       "badge": "",
-      "lobby": {
-        "lobbyTemplate": "big-images",
-        "display": true
-      },
       "sponsorPage": {
         "sponsorTemplate": "big-header",
         "widgets": {
@@ -20,27 +13,48 @@
         "disqus": true,
         "liveEvent": true
       },
+      "name": "Title Sponsor",
+      "expoHallSize": "medium",
       "eventTemplate": "",
-      "expoHallSize": "medium"
-    },
-    {
-      "badge": "",
+      "widgetTitle": "Title Sponsors",
       "lobby": {
         "lobbyTemplate": "big-images",
         "display": true
       },
+      "expoHallPage": {
+        "display": true,
+        "expoHallTemplate": "big-images"
+      },
+      "id": "tier-cYGYq5-ae"
+    },
+    {
+      "badge": "",
       "sponsorPage": {
         "sponsorTemplate": "big-header",
         "disqus": true,
         "liveEvent": true,
         "schedule": false,
-        "banner": false
+        "banner": false,
+        "widgets": {
+          "liveEvent": true,
+          "disqus": true,
+          "schedule": true,
+          "banner": true
+        }
       },
+      "name": "Presenting Sponsor",
       "expoHallSize": null,
       "eventTemplate": null,
-      "id": "tier-p1bCv1Utu",
-      "name": "Presenting Sponsor",
-      "widgetTitle": "Presenting Sponsor"
+      "widgetTitle": "Presenting Sponsor",
+      "lobby": {
+        "lobbyTemplate": "big-images",
+        "display": true
+      },
+      "expoHallPage": {
+        "expoHallTemplate": "big-images",
+        "display": true
+      },
+      "id": "tier-p1bCv1Utu"
     },
     {
       "badge": "",
@@ -48,18 +62,76 @@
         "lobbyTemplate": "big-images",
         "display": true
       },
+      "expoHallPage": {
+        "expoHallTemplate": "big-images",
+        "display": true
+      },
+      "sponsorPage": {
+        "sponsorTemplate": "big-header",
+        "widgets": {
+          "disqus": true,
+          "liveEvent": true,
+          "schedule": true,
+          "banner": true
+        }
+      },
+      "eventTemplate": null,
+      "id": "tier-AG93rC7mW",
+      "name": "Co-Presenting Sponsor ",
+      "widgetTitle": "Co-Presenting Sponsor "
+    },
+    {
+      "badge": "",
       "sponsorPage": {
         "sponsorTemplate": "big-header",
         "disqus": true,
         "liveEvent": true,
         "schedule": false,
-        "banner": false
+        "banner": false,
+        "widgets": {
+          "disqus": true,
+          "liveEvent": true,
+          "schedule": true,
+          "banner": true
+        }
       },
+      "name": "Executive Producers",
       "expoHallSize": "large",
       "eventTemplate": null,
-      "id": "tier-V4shOCleS",
-      "name": "Executive Producers",
-      "widgetTitle": "Executive Producers"
+      "widgetTitle": "Executive Producers",
+      "lobby": {
+        "lobbyTemplate": "big-images",
+        "display": true
+      },
+      "expoHallPage": {
+        "expoHallTemplate": "big-images",
+        "display": true
+      },
+      "id": "tier-V4shOCleS"
+    },
+    {
+      "badge": "",
+      "lobby": {
+        "lobbyTemplate": "small-images",
+        "display": false
+      },
+      "expoHallPage": {
+        "expoHallTemplate": "medium-images",
+        "display": false
+      },
+      "sponsorPage": {
+        "sponsorTemplate": "small-header",
+        "widgets": {
+          "disqus": false,
+          "liveEvent": false,
+          "schedule": false,
+          "banner": false
+        }
+      },
+      "eventTemplate": "small-images",
+      "id": "tier-NuSAAomFm",
+      "name": "Producer Sponsor ",
+      "widgetTitle": "Producer Sponsor "
     },
     {
       "id": "tier-DHcI3dWGk",
