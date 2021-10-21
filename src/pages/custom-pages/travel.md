@@ -1,7 +1,6 @@
 ---
 templateKey: custom-page
 title: TRAVEL
-requiresAuth: false
 userRequirement: NONE
 ---
 ## **Venue and Hotels**

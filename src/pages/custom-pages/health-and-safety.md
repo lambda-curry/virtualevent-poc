@@ -1,7 +1,6 @@
 ---
 templateKey: custom-page
 title: HEALTH AND SAFETY
-requiresAuth: false
 userRequirement: NONE
 ---
 **Updated: Oct 19, 2021**

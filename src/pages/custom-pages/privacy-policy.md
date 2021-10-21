@@ -1,7 +1,7 @@
 ---
 templateKey: custom-page
 title: Privacy Policy
-requiresAuth: false
+userRequirement: NONE
 ---
 FNTECH, a California Corporation, and its affiliates (“FNTECH”, “we”, “us” or “our”) is committed to protecting your privacy and ensuring you have a positive experience when you use our virtual conferencing and communication services (the “Services”), visit our webpages, interact with us on social media, or attend a FNTECH sponsored event offline or online. This Statement explains FNTECH’s practices when we process your “personal data,” which is information that relates to an identified or identifiable individual. To “process” or “processing” means any use of personal data including, transferring, collecting, recording, storing, using, analyzing, combining, disclosing or deleting it.
 
