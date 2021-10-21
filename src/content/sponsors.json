@@ -64,6 +64,16 @@
           "id": 138,
           "showLogoInEventPage": false,
           "usesSponsorPage": true
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Microsoft ",
+          "id": 139,
+          "sponsorId": 139,
+          "companyId": 9,
+          "logo": "/img/if2020-microsoft-logo.png",
+          "usesSponsorPage": true
         }
       ]
     },
