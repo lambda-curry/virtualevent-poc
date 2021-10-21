@@ -277,7 +277,7 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "         Shaping the Future of Technology.         ",
+          "marquee": "       ",
           "sponsorColor": "#0068B5",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-intel.png",
           "name": "Intel Corporation",
@@ -311,6 +311,14 @@
                 "link": "https://www.facebook.com/IntelBusiness/",
                 "order": 4,
                 "name": "Facebook"
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/intel_Open%20Compute%20Project%20NIC%203.0.mp4",
+                "name": "Open Compute Project NIC 3.0",
+                "order": 10
               }
             ]
           },
