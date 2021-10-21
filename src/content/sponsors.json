@@ -4194,11 +4194,11 @@
               "link": "/a/sponsor/90-telco"
             },
             {
-              "image": "/img/ocp21glo_fnv_expc-lobbybutton-server.png",
+              "image": "/img/ocp21glo_fnv_expc-lobbybutton-server_102121.png",
               "link": "/a/sponsor/91-server"
             },
             {
-              "image": "/img/ocp21glo_fnv_expc-lobbybutton-oai.png",
+              "image": "/img/ocp21glo_fnv_expc-lobbybutton-oai_102121.png",
               "link": "/a/sponsor/92-oai"
             },
             {
@@ -4441,7 +4441,7 @@
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-server.png",
           "name": "Server - NIC",
           "intro": "#### OCP NIC (Systems, NICs, Add-in cards, Ecosystem) \n\n* #### OCP NIC 3.0 Multi-Host Connectivity and Manageability (Broadcom) \n* #### OCP NIC 3.0 Device Attestation Using SPDM (Broadcom & Facebook) \n* #### Zion: Host with up to 12 OCP NIC 3.0 slots (Facebook) \n* #### Mechanical Fit-test fixture (OCP NIC sub-group) \n* #### OCP NIC 3.0 Fiberchannel HBA (OCP NIC sub-group) \n* #### OCP NIC 3.0 in Tall Small Form Factor (TSFF) (Nvidia) \n* #### Interface Sandbox with SFF Slots (TE Connectivity)",
-          "headerImage": "/img/ocp21glo_fnv_expc-header-server.png",
+          "headerImage": "/img/ocp21glo_fnv_expc-header-server_102121.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-server.png",
           "advertiseImage": "",
           "sponsorId": 91,
