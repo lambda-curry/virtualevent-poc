@@ -282,6 +282,8 @@
           "logo": "/img/ocp21glo_fnv_sponsorlogo-intel.png",
           "name": "Intel Corporation",
           "intro": "![](/img/ocp21glo_fnv_sponsorpagelogo-intel.png)\n\n### Intel creates world-changing technology that enriches the lives of every person on earth. We are inspired to drive innovation that makes the world safer, builds healthy and vibrant communities, and increases productivity. We harnesses our reach around the globe to better society, business and the planet by pushing ourselves and our industry peers to be more responsible, inclusive and sustainable.",
+          "headerImage": "/img/intel_intel_shapingfuturetech_1440x400.jpg",
+          "headerImageMobile": "/img/intel_intel_shapingfuturetech_768x250.jpg",
           "advertiseImage": "/img/ocp21glo_fnv_sponsorlogo-intel.png",
           "sponsorId": 59,
           "title": "",
@@ -320,8 +322,28 @@
                 "name": "Open Compute Project NIC 3.0",
                 "order": 10
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/intel_intel-ethernet-network-adapters-for-ocp.pdf",
+                "name": "Intel Ethernet Network Adapters for OCP",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/intel_telling-intel-s-story-technology-for-good.pdf",
+                "name": "Telling Intel's Story - Technology for Good",
+                "order": 5
+              }
             ]
           },
+          "columnAds": [
+            {
+              "link": "https://jobs.intel.com/",
+              "image": "/img/intel_jobs-at-intel-graphic-v5.jpg"
+            }
+          ],
           "id": 59,
           "email": "ocp_intel@intel.com",
           "usesSponsorPage": true
