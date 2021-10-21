@@ -8,6 +8,12 @@ import { getEnvVariable, AUTHORIZED_DEFAULT_PATH } from "../utils/envVariables";
 import Content from "../content/navbar.json";
 
 import styles from "../styles/navbar.module.scss";
+const PAGE_RESTRICTION_ACTIVITY = 'ACTIVITY';
+const PAGE_RESTRICTION_MARKETING = 'MARKETING';
+const PAGE_RESTRICTION_LOBBY = 'LOBBY';
+const PAGE_RESTRICTION_ANY = 'ANY';
+const PAGE_RESTRICTION_SHOW = 'SHOW';
+
 
 const Navbar = ({
   isLoggedUser,
@@ -42,10 +48,18 @@ const Navbar = ({
     // check if we have location defined, if so use the path name , else if window is defined use the window.location
     // as a fallback
     const currentPath = location ? location.pathname: (typeof window !== "undefined" ? window.location.pathname: "");
-    const passPageRestriction = !item.pageRestriction || item.pageRestriction.includes('ANY') ||
-        (item.pageRestriction.includes('EVENT') && currentPath.startsWith("/a/event")) ||
-        (item.pageRestriction.includes('MARKETING') && currentPath === "/") ||
-        (item.pageRestriction.includes('LOBBY') && currentPath === "/a/");
+    const passPageRestriction = !item.pageRestriction || item.pageRestriction.includes(PAGE_RESTRICTION_ANY) ||
+        (item.pageRestriction.includes(PAGE_RESTRICTION_ACTIVITY) && currentPath.startsWith("/a/event")) ||
+        (item.pageRestriction.includes(PAGE_RESTRICTION_MARKETING) && currentPath === "/") ||
+        (item.pageRestriction.includes(PAGE_RESTRICTION_LOBBY) && currentPath === "/a/") ||
+        (item.pageRestriction.includes(PAGE_RESTRICTION_SHOW) &&
+            (
+                currentPath === "/a/" || // lobby
+                currentPath.startsWith("/a/event") || // activity
+                currentPath.startsWith("/a/sponsor") // expo hall or sponsor page
+            )
+        )
+    ;
 
     return item.display && (!item.requiresAuth || isLoggedUser) && passPageRestriction;
   };
