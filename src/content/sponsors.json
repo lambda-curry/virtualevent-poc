@@ -4240,11 +4240,11 @@
           "columnAds": [
             {
               "image": "/img/ocp21glo_fnv_expc-button-osf-partners.png",
-              "link": ""
+              "link": "/a/sponsors"
             },
             {
               "image": "/img/ocp21glo_fnv_expc-button-main.png",
-              "link": "/a/sponsor/88-experience-center-(main)-"
+              "link": "/a/sponsor/134-experience-center-(main)-"
             }
           ],
           "id": 86,
@@ -4312,11 +4312,11 @@
           "columnAds": [
             {
               "image": "/img/ocp21glo_fnv_expc-button-tap-partners.png",
-              "link": ""
+              "link": "/a/sponsors"
             },
             {
               "image": "/img/ocp21glo_fnv_expc-button-main.png",
-              "link": "/a/sponsor/88-experience-center-(main)-"
+              "link": "/a/sponsor/134-experience-center-(main)-"
             }
           ],
           "id": 87,
@@ -4355,11 +4355,11 @@
           "columnAds": [
             {
               "image": "/img/ocp21glo_fnv_expc-button-networking-partners.png",
-              "link": ""
+              "link": "/a/sponsors"
             },
             {
               "image": "/img/ocp21glo_fnv_expc-button-main.png",
-              "link": "/sponsor/88-experience-center-(main)-"
+              "link": "/a/sponsor/134-experience-center-(main)-"
             }
           ],
           "id": 89,
@@ -4424,11 +4424,11 @@
           "columnAds": [
             {
               "image": "/img/ocp21glo_fnv_expc-button-telco-partners.png",
-              "link": ""
+              "link": "/a/sponsors"
             },
             {
               "image": "/img/ocp21glo_fnv_expc-button-main.png",
-              "link": "/sponsor/88-experience-center-(main)-"
+              "link": "/a/sponsor/134-experience-center-(main)-"
             }
           ],
           "id": 90,
@@ -4447,6 +4447,16 @@
           "sponsorId": 91,
           "title": "Explore more about Server -  NIC Station",
           "companyId": 77,
+          "columnAds": [
+            {
+              "image": "/img/ocp21glo_fnv_expc-button-server-partners.png",
+              "link": "/a/sponsors"
+            },
+            {
+              "image": "/img/ocp21glo_fnv_expc-button-main.png",
+              "link": "/a/sponsor/134-experience-center-(main)-"
+            }
+          ],
           "id": 91,
           "usesSponsorPage": true
         },
@@ -4483,11 +4493,12 @@
           },
           "columnAds": [
             {
-              "image": "/img/ocp21glo_fnv_expc-button-oai-partners.png"
+              "image": "/img/ocp21glo_fnv_expc-button-oai-partners.png",
+              "link": "/a/sponsors"
             },
             {
               "image": "/img/ocp21glo_fnv_expc-button-main.png",
-              "link": "/a/sponsor/88-experience-center-(main)-"
+              "link": "/a/sponsor/134-experience-center-(main)-"
             }
           ],
           "id": 92,
@@ -4507,11 +4518,12 @@
           "companyId": 79,
           "columnAds": [
             {
-              "image": "/img/ocp21glo_fnv_expc-button-test-partners.png"
+              "image": "/img/ocp21glo_fnv_expc-button-test-partners.png",
+              "link": "/a/sponsors"
             },
             {
               "image": "/img/ocp21glo_fnv_expc-button-main.png",
-              "link": "/a/sponsor/88-experience-center-(main)-"
+              "link": "/a/sponsor/134-experience-center-(main)-"
             }
           ],
           "id": 93,
@@ -4531,11 +4543,12 @@
           "companyId": 80,
           "columnAds": [
             {
-              "image": "/img/ocp21glo_fnv_expc-button-storage-partners.png"
+              "image": "/img/ocp21glo_fnv_expc-button-storage-partners.png",
+              "link": "/a/sponsors"
             },
             {
               "image": "/img/ocp21glo_fnv_expc-button-main.png",
-              "link": "/a/sponsor/88-experience-center-(main)-"
+              "link": "/a/sponsor/134-experience-center-(main)-"
             }
           ],
           "id": 94,
