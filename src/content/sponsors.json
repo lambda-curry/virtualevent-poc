@@ -110,6 +110,26 @@
     {
       "tier": [
         {
+          "value": "tier-NcMQLWsxG",
+          "label": "Presenting Media Partner Sponsors"
+        }
+      ],
+      "sponsors": [
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Outfront Media",
+          "companyId": 16,
+          "id": 145,
+          "sponsorId": 144,
+          "logo": "/img/if2020-outfront-logo.png",
+          "usesSponsorPage": true
+        }
+      ]
+    },
+    {
+      "tier": [
+        {
           "value": "tier-DHcI3dWGk",
           "label": "ART+TECH"
         }
