@@ -17,7 +17,7 @@ window.MUX_ENV_KEY = process.env.GATSBY_MUX_ENV_KEY;
 window.SUPABASE_URL = process.env.GATSBY_SUPABASE_URL;
 window.SUPABASE_KEY = process.env.GATSBY_SUPABASE_KEY;
 window.CHAT_API_BASE_URL = process.env.GATSBY_CHAT_API_BASE_URL;
-
+window.LIVE_EVENT_THUMBNAIL_GIF_CAPTURE_STARTS = process.env.GATSBY_LIVE_EVENT_THUMBNAIL_GIF_CAPTURE_STARTS || 60;
 
 export const wrapRootElement = ReduxWrapper;
 
