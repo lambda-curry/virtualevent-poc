@@ -75,14 +75,75 @@
         }
       ],
       "sponsors": [
-        {
-          "advertiseImage": "",
-          "showLogoInEventPage": false,
-          "name": "Microsoft ",
-          "companyId": 10,
-          "id": 139,
-          "sponsorId": 139,
+        { 
+          "marquee": "Empowering your future of creativity, content, and experiences.",
+          "sponsorColor": "#0078d4",
           "logo": "/img/if2020-microsoft-logo.png",
+          "name": "Microsoft",
+          "intro": "Microsoft empowers media & entertainment organizations to achieve more through a trusted and secure platform supported by a comprehensive partner ecosystem with industry-leading solutions for content production, collaboration, content delivery, audience insights, and personalized experiences.",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/IF2020_Manual_Upload/Microsoft%20empowers%20Media%20&%20Entertainment.mp4",
+          "headerImage": "",
+          "headerImageMobile": "",
+          "sponsorId": 13,
+          "title": "Microsoft",
+          "companyId": 10,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/MSCloud",
+                "name": "Follow us on Twitter ",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Microsoft on Linkedin ",
+                "link": "https://www.linkedin.com/showcase/microsoft-cloud-platform/",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Intelligent Media and Entertainment",
+                "link": "https://www.microsoft.com/en-us/industry/media-entertainment",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Accelerate content production",
+                "order": 4,
+                "link": " https://www.microsoft.com/en-us/industry/media-entertainment/accelerate-content-production"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Modernize collaboration",
+                "link": "https://www.microsoft.com/en-us/industry/media-entertainment/modernize-collaboration",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Optimize content delivery",
+                "link": "https://www.microsoft.com/en-us/industry/media-entertainment/optimize-content-delivery",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Know your audience",
+                "order": 7,
+                "link": " https://www.microsoft.com/en-us/industry/media-entertainment/know-your-audience"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Monetize content and experiences",
+                "order": 8,
+                "link": "https://www.microsoft.com/en-us/industry/media-entertainment/monetize-content-and-experiences"
+              }
+            ],
+            "videos": [],
+            "slides": []
+          },
+          "columnAds": [],
+          "id": 13,
+          "email": "",
           "usesSponsorPage": true
         }
       ]
