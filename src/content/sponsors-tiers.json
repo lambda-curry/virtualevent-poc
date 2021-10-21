@@ -1,14 +1,7 @@
 {
   "tiers": [
     {
-      "id": "tier-cYGYq5-ae",
-      "name": "Top-Tier Sponsors",
-      "widgetTitle": "Top-Tier Sponsors",
       "badge": "",
-      "lobby": {
-        "lobbyTemplate": "big-images",
-        "display": true
-      },
       "sponsorPage": {
         "sponsorTemplate": "big-header",
         "widgets": {
@@ -18,8 +11,19 @@
           "banner": true
         }
       },
-      "eventTemplate": "",
-      "expoHallSize": "large"
+      "name": "Top-Tier Sponsors",
+      "expoHallSize": "large",
+      "eventTemplate": "small-images",
+      "widgetTitle": "Top-Tier Sponsors",
+      "lobby": {
+        "lobbyTemplate": "carousel",
+        "display": true
+      },
+      "expoHallPage": {
+        "expoHallTemplate": "medium-images",
+        "display": true
+      },
+      "id": "tier-cYGYq5-ae"
     },
     {
       "id": "tier-DHcI3dWGk",
