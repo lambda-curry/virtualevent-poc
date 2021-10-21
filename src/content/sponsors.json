@@ -3366,6 +3366,7 @@
           "logo": "/img/ocp21glo_fnv_sponsorlogo-circleb.png",
           "name": "Circle B",
           "intro": "#### Since 2012, Circle B has brought Open Compute Project (OCP) hardware to the European market. Committed to making hyperscale-quality infrastructure available to any organization, we take pride in helping our customers reduce their carbon footprint while saving on energy and maintenance costs. In 2019, Circle B joined Taurus Group, a leading IT hardware distribution company based in The Netherlands. With established distribution channels across Europe, Taurus was the ideal partner to help Circle B fulfill its vision of making OCP hardware widely available to the European market. Today, Circle B has customers across the continent, including Eastern Europe and Russia. We provide a full design-to-implementation product customized with OS and software—plus a comprehensive suite of managed services to ensure every customer gets the maximum possible business value from their investment.",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/circle_b_Welcome%20to%20the%20Circle%20B%20Booth.mp4",
           "advertiseImage": "",
           "sponsorId": 109,
           "title": "Circle B",
@@ -3390,8 +3391,28 @@
                 "order": 3,
                 "name": "Twitter"
               }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/circle_b_Ready%20to%20approach%20bare-metal%20cloud%20in%20a%20different%20way..mp4",
+                "order": 10,
+                "name": "Ready to approach bare-metal cloud in a different way."
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Inter-connected. The power of the OCP Infrastructure Solution.",
+                "order": 11,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/circle_b_Inter-connected.%20The%20power%20of%20the%20OCP%20Infrastructure%20Solution..mp4"
+              }
             ]
           },
+          "columnAds": [
+            {
+              "image": "/img/circle_b_final_484x484.png",
+              "link": "https://www.circleb.eu/"
+            }
+          ],
           "id": 109,
           "email": "info@circleb.eu",
           "usesSponsorPage": true
