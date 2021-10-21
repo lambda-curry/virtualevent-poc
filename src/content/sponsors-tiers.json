@@ -125,7 +125,7 @@
           "disqus": true,
           "liveEvent": true,
           "schedule": true,
-          "banner": false
+          "banner": true
         }
       },
       "eventTemplate": null,
