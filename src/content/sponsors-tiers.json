@@ -179,6 +179,29 @@
       },
       "eventTemplate": "",
       "expoHallSize": "medium"
+    },
+    {
+      "badge": "",
+      "lobby": {
+        "lobbyTemplate": "small-images",
+        "display": false
+      },
+      "expoHallPage": {
+        "expoHallTemplate": "small-images",
+        "display": true
+      },
+      "sponsorPage": {
+        "sponsorTemplate": "big-header",
+        "widgets": {
+          "disqus": true,
+          "liveEvent": true,
+          "schedule": true,
+          "banner": true
+        }
+      },
+      "eventTemplate": "small-images",
+      "id": "tier-ui66mrzTk",
+      "name": "Festival Exhibitors "
     }
   ],
   "imageHeader": "/img/if2021_fnv_expohall-header.png",
