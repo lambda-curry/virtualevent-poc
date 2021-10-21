@@ -23,7 +23,7 @@
           "intro": "![](/img/ocp21glo_fnv_sponsorpagelogo-ampere.png)\n\n### Ampere Computing is designing the future of hyperscale cloud and edge computing with the world's first cloud native processor. Built for the cloud with a modern 64-bit Arm server-based architecture, Ampere gives customers the freedom to accelerate the delivery of all cloud computing applications. With industry-leading performance, power efficiency and scalability, Ampere’s Altra® family of processors are designed to deliver on predictable performance, high scalability and power efficiency.",
           "headerImage": "/img/ampere_computing_virtualbooth_header-1-.png",
           "headerImageMobile": "/img/ocp21glo-mobile-ampere-test1.png",
-          "advertiseImage": "/img/ampere_computing_ampere-hiring-graphic-v2-01_square-3a.png",
+          "advertiseImage": "/img/ampere_computing_homepagead_light_v3.png",
           "sponsorId": 58,
           "title": "",
           "companyId": 41,
@@ -31,14 +31,14 @@
             "slides": [
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/ampere_computing_altra_pb_v1.20_20210921.pdf",
-                "name": "Ampere® Altra® 64-Bit Multi-Core Arm® Processor",
+                "link": "/img/ampere_computing_ampere®-altra-max.pdf",
+                "name": "Ampere® Altra Max",
                 "order": 4
               },
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/ampere_computing_altra_max_rev_a1_pb_v0.60_20210921.pdf",
-                "name": "Ampere® Altra Max™ 64-Bit Multi-Core Arm® Processor",
+                "link": "/img/ampere_computing_ampere®-altra®.pdf",
+                "name": "Ampere® Altra®",
                 "order": 5
               }
             ],
@@ -70,6 +70,7 @@
             }
           ],
           "id": 58,
+          "email": "info@amperecomputing.com",
           "usesSponsorPage": true
         },
         {
