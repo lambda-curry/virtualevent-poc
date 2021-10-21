@@ -75,7 +75,7 @@
         }
       ],
       "sponsors": [
-        { 
+        {
           "marquee": "Empowering your future of creativity, content, and experiences.",
           "sponsorColor": "#0078d4",
           "logo": "/img/if2020-microsoft-logo.png",
@@ -84,7 +84,7 @@
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/IF2020_Manual_Upload/Microsoft%20empowers%20Media%20&%20Entertainment.mp4",
           "headerImage": "",
           "headerImageMobile": "",
-          "sponsorId": 13,
+          "sponsorId": 139,
           "title": "Microsoft",
           "companyId": 10,
           "documents": {
@@ -142,7 +142,7 @@
             "slides": []
           },
           "columnAds": [],
-          "id": 13,
+          "id": 139,
           "email": "",
           "usesSponsorPage": true
         }
