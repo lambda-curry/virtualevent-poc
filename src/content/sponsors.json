@@ -30,6 +30,19 @@
           "value": "tier-p1bCv1Utu",
           "label": "Presenting Sponsor"
         }
+      ],
+      "sponsors": [
+        {
+          "logo": "/img/u_logo_black_rgb.png",
+          "name": "Unity",
+          "intro": "### From independent boutiques to global media producers, immersive agencies and location-based creators – studios around the world are harnessing the power of real-time 3D technology to speed up production, smooth workflow hurdles, and grow their creativity with Unity.",
+          "advertiseImage": "",
+          "sponsorId": 136,
+          "companyId": 11,
+          "id": 136,
+          "showLogoInEventPage": false,
+          "usesSponsorPage": true
+        }
       ]
     },
     {
@@ -60,6 +73,27 @@
           "id": 1,
           "email": "adam@infinityfestival.com ",
           "usesSponsorPage": true
+        }
+      ]
+    },
+    {
+      "tier": [
+        {
+          "value": "tier-AG93rC7mW",
+          "label": "Co-Presenting Sponsor "
+        }
+      ],
+      "sponsors": [
+        {
+          "logo": "/img/coresite_coresite_square_logo_rgb.png",
+          "name": "CoreSite Realty Corporation",
+          "intro": "CoreSite Realty Corporation (NYSE:COR) delivers secure, reliable, high-performance data center, cloud access and interconnection solutions to a growing customer ecosystem across eight key North American markets. More than 1,375 of the world’s leading enterprises, network operators, cloud providers, and supporting service providers choose CoreSite to connect, protect and optimize their performance-sensitive data, applications and computing workloads. Our scalable, flexible solutions and 460+ dedicated employees consistently deliver unmatched data center options — all of which leads to a best-in-class customer experience and lasting relationships.",
+          "advertiseImage": "",
+          "sponsorId": 138,
+          "title": "CoreSite Realty Corporation",
+          "companyId": 122,
+          "id": 138,
+          "showLogoInEventPage": true
         }
       ]
     }
