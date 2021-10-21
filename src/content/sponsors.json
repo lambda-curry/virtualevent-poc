@@ -3289,6 +3289,9 @@
           "sponsorId": 106,
           "title": "Minus Technology ",
           "companyId": 92,
+          "documents": {
+            "videos": []
+          },
           "id": 106,
           "showLogoInEventPage": false,
           "usesSponsorPage": true
