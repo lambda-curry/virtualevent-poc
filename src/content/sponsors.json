@@ -4420,7 +4420,7 @@
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-tap.png",
           "name": "Time Appliance Project (TAP)",
-          "intro": "### **Time Appliance Project (TAP): This group will showcase Machine synchronization by data packets will be shown along with performance of time protocols with the OCP time card.** \n\n### **Live Demo**: \"Synchronizing machines by data packets” Performance of NTP vs PTP w or w/o time card. Time Synchronized Database throughput. Using Time Card, Atomic Clock, GPS.\n\n### **Static Demo**: Announcing the Open Time Server Ref-Arch Time Card, NIC, How to get started.",
+          "intro": "## Showcase data center precision time synchronization using OCP Time Server and Time Cards.",
           "headerImage": "/img/ocp21glo_fnv_expc-header-tap.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-tap.png",
           "advertiseImage": "",
