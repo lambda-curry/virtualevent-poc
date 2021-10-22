@@ -4402,6 +4402,28 @@
           "sponsorId": 85,
           "title": "Explore more about Hardware Management Station ",
           "companyId": 37,
+          "documents": {
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "DC-SCM 2.0 Module Prototype Showcase",
+                "order": 1,
+                "link": "https://www.opencompute.org/"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "DC-SCM 2.0 LTPI Interface Demo",
+                "order": 2,
+                "link": "https://www.opencompute.org/"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "CycloneV RunBMC v2 Demo",
+                "order": 3,
+                "link": "https://www.opencompute.org/"
+              }
+            ]
+          },
           "columnAds": [
             {
               "image": "/img/ocp21glo_fnv_expc-button-hw-partners.png",
