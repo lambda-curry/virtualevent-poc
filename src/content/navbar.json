@@ -33,7 +33,7 @@
       "display": true,
       "requiresAuth": false,
       "pageRestriction": [
-        "ACTIVITY"
+        "SHOW"
       ]
     },
     {
