@@ -162,7 +162,7 @@
           "name": "Phase Two",
           "intro": "Phase Two in Culver City, CA is a flexible workspace curated around talented entrepreneurs and businesses working in technology, media and entertainment. We help people and businesses reach their next phase of growth by providing creative office solutions, personalized hospitality, and business support.",
           "headerImage": "/img/linkedindesign_template2020-v2-03.png",
-          "headerImageMobile": "/img/if2020-phase2-mobile-header.png",
+          "headerImageMobile": "",
           "advertiseImage": "",
           "sponsorId": 143,
           "title": "Phase Two",
@@ -185,12 +185,7 @@
               }
             ]
           },
-          "columnAds": [
-            {
-              "image": "/img/phase_two_phasetwo_ad1b.jpg",
-              "link": "https://phasetwo.spaces.nexudus.com/en/tour"
-            }
-          ],
+          "columnAds": [],
           "id": 143,
           "showLogoInEventPage": false,
           "email": "info@phasetwospace.com",
