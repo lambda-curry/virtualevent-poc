@@ -87,7 +87,6 @@
           "sponsorId": 139,
           "title": "Microsoft",
           "companyId": 10,
-          "showLogoInEventPage": true,          
           "documents": {
             "links": [
               {
@@ -141,6 +140,7 @@
             ]
           },
           "id": 139,
+          "showLogoInEventPage": true,
           "email": "",
           "usesSponsorPage": true
         }
@@ -155,21 +155,18 @@
       ],
       "sponsors": [
         {
-          "advertiseImage": "",
-          "showLogoInEventPage": false,
-          "name": "Phase Two",
-          "id": 143,
-          "sponsorId": 143,
-          "companyId": 11,
-          "logo": "/img/if2020-phasetwo-logo-484x484.png",
-          "usesSponsorPage": true,
           "marqueeColor": "#114776",
           "marquee": "",
           "sponsorColor": "#114776",
+          "logo": "/img/if2020-phasetwo-logo-484x484.png",
+          "name": "Phase Two",
           "intro": "Phase Two in Culver City, CA is a flexible workspace curated around talented entrepreneurs and businesses working in technology, media and entertainment. We help people and businesses reach their next phase of growth by providing creative office solutions, personalized hospitality, and business support.",
           "headerImage": "/img/linkedindesign_template2020-v2-03.png",
           "headerImageMobile": "/img/if2020-phase2-mobile-header.png",
+          "advertiseImage": "",
+          "sponsorId": 143,
           "title": "Phase Two",
+          "companyId": 11,
           "documents": {
             "videos": [
               {
@@ -194,14 +191,17 @@
               "link": "https://phasetwo.spaces.nexudus.com/en/tour"
             }
           ],
-          "email": "info@phasetwospace.com"           
+          "id": 143,
+          "showLogoInEventPage": false,
+          "email": "info@phasetwospace.com",
+          "usesSponsorPage": true
         },
         {
           "advertiseImage": "",
           "showLogoInEventPage": false,
           "name": "Intel",
           "id": 137,
-          "sponsorId": 136,
+          "sponsorId": 137,
           "companyId": 1,
           "logo": "/img/ocp21glo_fnv_sponsorlogo-intel.png",
           "usesSponsorPage": true
@@ -217,7 +217,6 @@
       ],
       "sponsors": [
         {
-          
           "marquee": "We leverage the power of technology, location, and creativity to make meaningful connections between brands and audiences.",
           "sponsorColor": "#64008F",
           "logo": "/img/if2020-outfront-logo.png",
@@ -225,7 +224,10 @@
           "intro": "OUTFRONT is embedded into the fabric of our cities and communities and trusted by the millions who engage with our media every day. We provide an integrated and targeted platform to connect brands to their desired audiences, as they live their lives through one of the largest and most diverse sets of billboard, transit, and mobile assets in North America. We are famous for incomparable impact and creativity of our medium, which drives engagement, fame, and trust. Our technology platform is fundamentally changing the ways advertisers engage audiences on-the-go.",
           "headerImage": "/img/banner-4.png",
           "headerImageMobile": "/img/if2020-outfront-mobile-header.png",
-          "title": "OUTFRONT - Presenting Media Partner of Infinity Festival 2020",
+          "advertiseImage": "",
+          "sponsorId": 144,
+          "title": "OUTFRONT - Presenting Media Partner of Infinity Festival 2021",
+          "companyId": 16,
           "documents": {
             "videos": [
               {
@@ -250,14 +252,9 @@
               "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/2020_SMM_Kickoff_External_Streaming.mp4"
             }
           ],
-          "id": 18,
-          "email": "sales@outfrontmedia.com",
-          "usesSponsorPage": true,
-          "advertiseImage": "",
-          "showLogoInEventPage": false,
-          "companyId": 16,
           "id": 145,
-          "sponsorId": 144,
+          "showLogoInEventPage": false,
+          "email": "sales@outfrontmedia.com",
           "usesSponsorPage": true
         }
       ]
