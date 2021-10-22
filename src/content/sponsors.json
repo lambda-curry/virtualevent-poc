@@ -259,12 +259,7 @@
               }
             ]
           },
-          "columnAds": [
-            {
-              "image": "/img/example.jpg",
-              "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/2020_SMM_Kickoff_External_Streaming.mp4"
-            }
-          ],
+          "columnAds": [],
           "id": 145,
           "showLogoInEventPage": false,
           "email": "sales@outfrontmedia.com",
