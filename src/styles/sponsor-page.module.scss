@@ -443,9 +443,12 @@
             }
 
             .buttons {
+              width: 12rem;
               display: flex;
-              flex-direction: column;
+              flex-direction: row;
               align-self: flex-end;
+              align-items: baseline;
+              justify-content: space-between;
 
               .link {
                 .button {
@@ -453,18 +456,19 @@
                   border-color: $color_secondary_contrast;
                   color: #fff;
                   height: 5rem;
-                  width: 25rem;
+                  width: 5rem;
 
                   i {
                     color: #fff;
                     height: 1em;
-                    width: 2.5em;
-                    margin-right: auto;
-                    font-size: 1.8em;
+                    width: 3em;
+                    margin: auto;
+                    font-size: 2.5em;
                   }
 
                   b {
-                    display: inline-block;
+                    //display: inline-block;
+                    display: none;
                     width: 100%;
                     text-align: center;
                   }
