@@ -87,6 +87,7 @@
           "sponsorId": 139,
           "title": "Microsoft",
           "companyId": 10,
+          "showLogoInEventPage": true,          
           "documents": {
             "links": [
               {
