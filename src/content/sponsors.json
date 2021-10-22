@@ -4447,6 +4447,32 @@
                 "order": 3,
                 "name": "Put An Atomic Clock in Your PC - Open Source Time Card"
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/tap_time-appliance-project_open-time-server.pdf",
+                "name": "Time Appliance Project Open Time Server",
+                "order": 4
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/tap_time-appliance-project_time-card.pdf",
+                "name": "Time-Appliance-Project_Time-Card",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/tap_time-appliance-project_dc-ptp-profile.pdf",
+                "name": "Time-Appliance-Project_DC-PTP-Profile",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/tap_ocp-tap-vision-1-.pdf",
+                "name": "OCP TAP vision ",
+                "order": 7
+              }
             ]
           },
           "columnAds": [
@@ -4460,6 +4486,7 @@
             }
           ],
           "id": 87,
+          "email": "elad@nvidia.com",
           "usesSponsorPage": true
         },
         {
