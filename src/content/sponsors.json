@@ -3337,9 +3337,10 @@
           "sponsorColor": "#ff4444",
           "logo": "/img/asperitas_and_shell_joint-logo_transparent.png",
           "name": "Asperitas and Shell",
-          "intro": "#### Asperitas provides cutting edge immersion cooling solutions for datacentres globally. Since the research and development phase, there have been collaborations with an extensive ecosystem of partners, like Shell. Shell is an international energy company with expertise in the exploration, production and refining of oil and natural gas, and the manufacturing and marketing of chemicals. Their immersion cooling fluid has been used to accelerate Asperitas’ mission for sustainable datacentres.",
+          "intro": "### Asperitas provides cutting edge immersion cooling solutions for datacentres globally. Since the research and development phase, there have been collaborations with an extensive ecosystem of partners, like Shell. Shell is an international energy company with expertise in the exploration, production and refining of oil and natural gas, and the manufacturing and marketing of chemicals. Their immersion cooling fluid has been used to accelerate Asperitas’ mission for sustainable datacentres. Schedule your demo here: http://www.calendly.com/asperitas/demo.",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/asperitas_and_shell_ocp%20animation-02.mp4",
           "headerImageMobile": "/img/asperitas_and_shell_screenshot-animation.png",
+          "chatLink": "http://www.calendly.com/asperitas/demo",
           "advertiseImage": "",
           "sponsorId": 124,
           "title": "Asperitas and Shell",
@@ -3391,6 +3392,12 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/asperitas_and_shell_Asperitas-Promo-HD1080p.mp4",
                 "order": 10,
                 "name": "Asperitas Promo"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/3m_3M%20TwinAx%20Cable%20Video.mp4",
+                "order": 11,
+                "name": "Shell Immersion Cooling"
               }
             ]
           },
