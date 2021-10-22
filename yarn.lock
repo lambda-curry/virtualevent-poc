@@ -10987,10 +10987,10 @@ lite-schedule-widget@^1.0.14:
     pure-react-carousel "^1.27.4"
     use-fit-text "^2.4.0"
 
-live-event-widget@^2.0.11:
-  version "2.0.11"
-  resolved "https://registry.yarnpkg.com/live-event-widget/-/live-event-widget-2.0.11.tgz#4b9dd6592744914b86d8e78df2bb81aa5e5a92fc"
-  integrity sha512-UrAIuuChG0Fuwxc9F7ynWjGYGM/x4Z2cpqDQbFW4cLVd9dlBuOS1Ai5V5WYshtr9B+PLNwkLTQxUqhKJyFQH9w==
+live-event-widget@^2.0.12:
+  version "2.0.12"
+  resolved "https://registry.yarnpkg.com/live-event-widget/-/live-event-widget-2.0.12.tgz#e1ec221a194f3eef8d64245b72d3871b1a6d951b"
+  integrity sha512-Z8/5SpzyBApgm3CCkRGsWjqy2VbbpWlhUmcL1N7fFRc5rrLW3AozjAA99U0LUFrkFm3tZ7Kfx1GmRy6XnFWsQA==
   dependencies:
     svg-url-loader "^6.0.0"
 
@@ -18855,10 +18855,10 @@ upath@^1.1.1:
   resolved "https://registry.yarnpkg.com/upath/-/upath-1.2.0.tgz#8f66dbcd55a883acdae4408af8b035a5044c1894"
   integrity sha512-aZwGpamFO61g3OlfT7OQCHqhGnW43ieH9WZeP7QxN/G/jS4jfqUkZxoryvJgVPEcrl5NL/ggHsSmLMHuH64Lhg==
 
-upcoming-events-widget@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/upcoming-events-widget/-/upcoming-events-widget-1.0.5.tgz#1ac862dd79ac0376d1b61a688c968e11d940cd98"
-  integrity sha512-5gfmOUtc6O2WbHlJbau0EcQ3zw0a0Zah+v5bVCr2Zf9bfDMPauY4+D32gqs7pi7rU3C5BfeWwMZeioDMnjxOrA==
+upcoming-events-widget@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/upcoming-events-widget/-/upcoming-events-widget-1.0.6.tgz#5a9e6b544d8c4d12ebae509c35cfa23b00f540a5"
+  integrity sha512-KMbGxFRRCWndXkWVV1qBowcUL3ME3U3hAmL7drjlTUVwQkz4wQvhr7mTcGpVJchHK0uOoXJ8AbOKKjZ5hQF7Vg==
   dependencies:
     pure-react-carousel "^1.27.4"
 
