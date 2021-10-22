@@ -3398,10 +3398,10 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-attendee-to-attendee-widget@^1.1.112:
-  version "1.1.112"
-  resolved "https://registry.yarnpkg.com/attendee-to-attendee-widget/-/attendee-to-attendee-widget-1.1.112.tgz#f5e0c7259bb81f0a1c1b0abed5c08143f0edcd0e"
-  integrity sha512-RZh5J7mOZ8tk3VVzIKLcqEG32x9Zzt5MY1oThRxPS+ZYyjmm7v07hWaSXRi9l/YqTfltGs9GqXp2dw+Ucl+m/w==
+attendee-to-attendee-widget@^1.1.115:
+  version "1.1.115"
+  resolved "https://registry.yarnpkg.com/attendee-to-attendee-widget/-/attendee-to-attendee-widget-1.1.115.tgz#bb839977c3716c33ea7fe68e7b0ca26aa1781efa"
+  integrity sha512-EN9E/EmEnqaf3n0qpGx/kIkaEc1Eej814SZ9pRkn2PSOpVvOxJ+u7pUfnROjWuxsA9QJ757A+1DZKWlqqAZhGg==
   dependencies:
     "@supabase/supabase-js" "^1.22.6"
     bulma "^0.9.2"
@@ -7704,10 +7704,10 @@ fstream@^1.0.0, fstream@^1.0.12:
     mkdirp ">=0.5 0"
     rimraf "2"
 
-full-schedule-widget@^1.1.24:
-  version "1.1.24"
-  resolved "https://registry.yarnpkg.com/full-schedule-widget/-/full-schedule-widget-1.1.24.tgz#4efaa95bf0671fb6b143520cdff071474e028569"
-  integrity sha512-6GZA9Q6tdHDNJVI9035bxYTAfMpaSvcCH/4rtufGKyHmd3HgWVgFgOXxHS1lAaXy+RK58HmC1XCCg7Q6gN4YOA==
+full-schedule-widget@^1.1.25:
+  version "1.1.25"
+  resolved "https://registry.yarnpkg.com/full-schedule-widget/-/full-schedule-widget-1.1.25.tgz#ba36b8c148c14f0edc1775b3cc942ff2504085e2"
+  integrity sha512-2St+LyUXYsTEiYmNwgNU/55NeX5xkNG4/ZwTYpCA7mcGtDlYqup0u36Vp/Lis6dh9gGE25Ls0KLWRcz4iqki4w==
   dependencies:
     pure-react-carousel "^1.27.4"
 
