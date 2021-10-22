@@ -1945,7 +1945,12 @@
               }
             ]
           },
-          "columnAds": [],
+          "columnAds": [
+            {
+              "link": "https://www.3m.com/3M/en_US/data-center-us/?utm_medium=redirect&utm_source=vanity-url&utm_campaign=3m.com/datacenters",
+              "image": "/img/3m_ocp-484x484-booth-graphics-final.jpg"
+            }
+          ],
           "id": 80,
           "email": "krowan@mmm.com",
           "usesSponsorPage": true
