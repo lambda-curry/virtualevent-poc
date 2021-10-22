@@ -1577,7 +1577,7 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/rittal_gmbh_co_kg_OCP_en.mp4",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/rittal_gmbh_co_kg_RM%20NG%20720p.mp4",
                 "order": 5,
                 "name": "Rittal OCP Video "
               }
@@ -1587,7 +1587,7 @@
           "columnAds": [
             {
               "image": "/img/rittal_gmbh_co_kg_10.7.21_sponsorad_968x968_us633-bn_v2.png",
-              "link": "https://www.rittal.com/com-en/Loesungen/Technologien-und-Trends/Direct-Chip-Cooling"
+              "link": "https://www.rittal.com/com-en/Solutions/Technologies-and-Trends/Direct-Chip-Cooling"
             }
           ],
           "id": 63,
