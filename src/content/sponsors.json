@@ -187,13 +187,47 @@
       ],
       "sponsors": [
         {
+          
+          "marquee": "We leverage the power of technology, location, and creativity to make meaningful connections between brands and audiences.",
+          "sponsorColor": "#64008F",
+          "logo": "/img/if2020-outfront-logo.png",
+          "name": "OUTFRONT",
+          "intro": "OUTFRONT is embedded into the fabric of our cities and communities and trusted by the millions who engage with our media every day. We provide an integrated and targeted platform to connect brands to their desired audiences, as they live their lives through one of the largest and most diverse sets of billboard, transit, and mobile assets in North America. We are famous for incomparable impact and creativity of our medium, which drives engagement, fame, and trust. Our technology platform is fundamentally changing the ways advertisers engage audiences on-the-go.",
+          "headerImage": "/img/banner-4.png",
+          "headerImageMobile": "/img/if2020-outfront-mobile-header.png",
+          "title": "OUTFRONT - Presenting Media Partner of Infinity Festival 2020",
+          "documents": {
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/Purpose%20Video.mp4",
+                "name": "Outfront Purpose",
+                "order": 1
+              }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/outfront-brand-one-sheet.pdf",
+                "order": 2,
+                "name": "OUTFRONT Brand Sheet"
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "image": "/img/example.jpg",
+              "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/_Sponsor%20Services%20Media%20Uploads/Infinity%20Festival%20Hollywood%20-%20Virtual/2020_SMM_Kickoff_External_Streaming.mp4"
+            }
+          ],
+          "id": 18,
+          "email": "sales@outfrontmedia.com",
+          "usesSponsorPage": true,
           "advertiseImage": "",
           "showLogoInEventPage": false,
-          "name": "Outfront Media",
           "companyId": 16,
           "id": 145,
           "sponsorId": 144,
-          "logo": "/img/if2020-outfront-logo.png",
           "usesSponsorPage": true
         }
       ]
