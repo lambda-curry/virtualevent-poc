@@ -158,29 +158,6 @@
       "widgetTitle": "Presenting Media Partner Sponsors"
     },
     {
-      "id": "tier-DHcI3dWGk",
-      "name": "ART+TECH",
-      "widgetTitle": "ART+TECH",
-      "badge": "",
-      "lobby": {
-        "lobbyTemplate": "small-images",
-        "display": true
-      },
-      "sponsorPage": {
-        "sponsorTemplate": "big-header",
-        "widgets": {
-          "disqus": true,
-          "liveEvent": true,
-          "schedule": true,
-          "banner": true
-        },
-        "disqus": true,
-        "liveEvent": true
-      },
-      "eventTemplate": "",
-      "expoHallSize": "medium"
-    },
-    {
       "badge": "",
       "lobby": {
         "lobbyTemplate": "small-images",
@@ -202,6 +179,32 @@
       "eventTemplate": null,
       "id": "tier-ui66mrzTk",
       "name": "Festival Exhibitors "
+    },
+    {
+      "badge": "",
+      "sponsorPage": {
+        "sponsorTemplate": "big-header",
+        "widgets": {
+          "disqus": true,
+          "liveEvent": true,
+          "schedule": true,
+          "banner": true
+        },
+        "disqus": true,
+        "liveEvent": true
+      },
+      "name": "ART+TECH",
+      "expoHallSize": "medium",
+      "eventTemplate": "",
+      "widgetTitle": "ART+TECH",
+      "lobby": {
+        "lobbyTemplate": "small-images",
+        "display": true
+      },
+      "expoHallPage": {
+        "display": false
+      },
+      "id": "tier-DHcI3dWGk"
     }
   ],
   "imageHeader": "/img/if2021_fnv_expohall-header.png",
