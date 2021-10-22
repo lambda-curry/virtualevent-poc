@@ -4647,6 +4647,12 @@
                 "link": "/img/open_accelerator_infrastructure_oai_ops_2021.10.12-oai-005-.pdf",
                 "name": "OPS_2021.10.12 OAI",
                 "order": 1
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/open_accelerator_infrastructure_oai_mm-pro-presentation-oct-2021_rev5.pdf",
+                "name": "MM Pro Presentation Oct 2021",
+                "order": 3
               }
             ],
             "videos": [
