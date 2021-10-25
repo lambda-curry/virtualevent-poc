@@ -3887,6 +3887,7 @@
         },
         {
           "marquee": "OpenPOWER Foundation - Supporting the Open, Free, Proven, Performant POWER Instruction Set Architecture",
+          "featuredEventId": 2280,
           "sponsorColor": "#2685AE",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-openpowerfoundation.png",
           "name": "OpenPOWER Foundation",
