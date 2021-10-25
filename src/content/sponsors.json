@@ -59,6 +59,20 @@
                 "order": 6,
                 "name": "NVIDIA Design and Visualization LinkedIn"
               }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/InfinityFestival2021/z_by_hp_ZbyHP_NVIDIA_Video_10.19.20.mp4",
+                "order": 8,
+                "name": "ZbyHP & NVIDIA Video"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "NVIDIA Omniverse",
+                "order": 9,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/InfinityFestival2021/z_by_hp_ZbyHP_NVIDIA_Video_10.19.20.mp4"
+              }
             ]
           },
           "id": 135,
