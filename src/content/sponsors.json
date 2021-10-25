@@ -92,9 +92,11 @@
       "sponsors": [
         {
           "marquee": "Create. Collaborate. Iterate. Unity is the platform of choice for your journey to real-time.",
-          "logo": "/img/u_logo_black_rgb.png",
+          "logo": "/img/if2021_fnv-logo-unity.png",
           "name": "Unity",
           "intro": "#### Unity is the world’s leading platform for creating and operating interactive, real-time 3D (RT3D) content. From independent boutiques to global media producers, studios around the world are harnessing the power of real-time rendering to speed up production, smooth workflow hurdles, and grow their creativity with Unity.",
+          "headerImage": "/img/if2021_fnv-header-unity.png",
+          "headerImageMobile": "/img/if2021_fnv-header-mobile-unity.png",
           "advertiseImage": "",
           "sponsorId": 136,
           "companyId": 11,
