@@ -2,6 +2,13 @@ import React from "react";
 import Link from "../components/Link";
 import styles from "../styles/documents.module.scss";
 
+/**
+ * This Component is used by activites and by sponsors
+ * please check on both places before change it
+ * @param event
+ * @returns {JSX.Element|null}
+ * @constructor
+ */
 const DocumentsComponent = ({ event }) => {
   const getMaterials = (event) => {
     const allMaterials = [
@@ -11,7 +18,8 @@ const DocumentsComponent = ({ event }) => {
       ...(event.media_uploads || []),
     ];
     return allMaterials
-      .filter((m) => m.display_on_site)
+        // on sponsors , materials does not has the property display_on_site
+      .filter((m) => m.hasOwnProperty('display_on_site') ? m.display_on_site : true)
       .sort((a, b) => a.order - b.order);
   };
 
