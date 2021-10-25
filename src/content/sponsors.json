@@ -3645,6 +3645,7 @@
         },
         {
           "marquee": "The data center is the new unit of computing. Explore NVIDIA’s software-defined, hardware-accelerated networking solutions that are making it happen.",
+          "featuredEventId": 2279,
           "sponsorColor": "#76B900",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-nvidia.png",
           "name": "NVIDIA",
