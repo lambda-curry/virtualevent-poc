@@ -636,6 +636,7 @@
         },
         {
           "marquee": "Infrastructure for Your Digital Transformation : Smart, Speedy, Scaling and Ready.",
+          "featuredEventId": 2315,
           "logo": "/img/ocp21glo_fnv_sponsorlogo-qct.png",
           "name": "QCT",
           "intro": "### Quanta Cloud Technology (QCT) is a global datacenter solution provider. We combine the efficiency of hyperscale hardware with infrastructure software from a diversity of industry leaders to solve next-generation datacenter design and operation challenges. QCT serves cloud service providers, telecoms and enterprises running public, hybrid and private clouds. Product lines include hyper-converged and software-defined datacenter solutions as well as servers, storage, switches, integrated racks with a diverse ecosystem of hardware component and software partners. QCT designs, manufactures, integrates and services cutting edge offerings via its own global network. The parent of QCT is Quanta Computer, Inc., a Fortune Global 500 corporation.",
@@ -1899,6 +1900,7 @@
         },
         {
           "marquee": "Welcome to 3M. Learn about our immersion cooling, copper interconnect and optical interconnect.",
+          "featuredEventId": 2314,
           "logo": "/img/ocp21glo_fnv_sponsorlogo-3m_v2.png",
           "name": "3M",
           "intro": "### Meeting the demands of today’s data hungry world while keeping your data center connected and performing efficiently and reliably is no small feat. 3M has solutions in liquid immersion cooling, advanced fiber optic and copper twin axial technology that are designed to bring flexibility, performance and cost and energy efficiency to the data centers of today and tomorrow while reducing footprint. Chat with us to learn more.",
@@ -2062,6 +2064,7 @@
         },
         {
           "marquee": "Amphenol provides a wide range of the most advanced interconnect solutions for modern Data Centers and all their components.",
+          "featuredEventId": 2317,
           "sponsorColor": "#0072C6",
           "logo": "/img/amphenol_amphenol_blue-002-.png",
           "name": "Amphenol",
@@ -2244,6 +2247,7 @@
         },
         {
           "marquee": "12.8Tb User Programmable Switches, 5G Ready Cell Site Gateways, Scalable Fixed Broadband Aggregation.",
+          "featuredEventId": 2320,
           "sponsorColor": "#284974",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-edgecore.png",
           "name": "Edgecore Networks",
@@ -2496,7 +2500,7 @@
         },
         {
           "marquee": "The future relies on technology…technology relies on Murata.",
-          "featuredEventId": "",
+          "featuredEventId": 2322,
           "sponsorColor": "#525B5C",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-murata.png",
           "name": "Murata",
@@ -2853,6 +2857,7 @@
         },
         {
           "marquee": "AI from Datacenter to Edge.",
+          "featuredEventId": 2319,
           "sponsorColor": "#003A70",
           "logo": "/img/super_micro_computer_inc_supermicro_greenc_newlogo_whitebackground.png",
           "name": "Super Micro Computer, Inc.",
@@ -3358,6 +3363,7 @@
         },
         {
           "marquee": "Immersion cooling redefined for future ready datacentres | Immersed Computing®.",
+          "featuredEventId": 2318,
           "sponsorColor": "#ff4444",
           "logo": "/img/asperitas_and_shell_joint-logo_transparent.png",
           "name": "Asperitas and Shell",
@@ -3438,6 +3444,7 @@
         },
         {
           "marquee": "Building Revolutionary IT Infrastructures.",
+          "featuredEventId": 2321,
           "sponsorColor": "#FF5A2D",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-circleb.png",
           "name": "Circle B",
@@ -4105,6 +4112,7 @@
           "logo": "/img/ocp21glo_fnv_sponsorlogo-media.png"
         },
         {
+          "featuredEventId": 2316,
           "logo": "/img/ocp21glo_fnv_sponsorlogo-omdia_afcom.png",
           "name": "AFCOM",
           "intro": "AFCOM",
