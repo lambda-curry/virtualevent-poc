@@ -293,6 +293,34 @@
           "sponsorId": 141,
           "title": "Equinix",
           "companyId": 124,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/equinix/",
+                "name": "LinkedIn",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": " https://www.youtube.com/c/equinix",
+                "order": 2,
+                "name": "YouTube"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/Equinix?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+                "order": 3,
+                "name": "Twitter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/Equinix/",
+                "order": 4,
+                "name": "Facebook"
+              }
+            ]
+          },
           "id": 141,
           "showLogoInEventPage": false,
           "usesSponsorPage": true
