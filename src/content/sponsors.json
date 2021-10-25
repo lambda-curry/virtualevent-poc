@@ -238,6 +238,16 @@
           "showLogoInEventPage": true,
           "email": "",
           "usesSponsorPage": true
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "intro": "Qualcomm is the world’s leading wireless technology innovator and the driving force behind the development, launch, and expansion of 5G. When we connected the phone to the internet, the mobile revolution was born. Today, our foundational technologies enable the mobile ecosystem and are found in every 3G, 4G and 5G smartphone. We bring the benefits of mobile to new industries, including automotive, the internet of things, and computing, and are leading the way to a world where everything and everyone can communicate and interact seamlessly. Qualcomm Incorporated includes our licensing business, QTL, and the vast majority of our patent portfolio. Qualcomm Technologies, Inc., a subsidiary of Qualcomm Incorporated, operates, along with its subsidiaries, substantially all of our engineering, research and development functions, and substantially all of our products and services businesses, including our QCT semiconductor business.",
+          "name": "Women in XR presented by Qualcomm",
+          "companyId": 123,
+          "id": 140,
+          "sponsorId": 140,
+          "logo": "/img/qualcomm.png"
         }
       ]
     },
