@@ -204,6 +204,74 @@
           "usesSponsorPage": true
         },
         {
+          "marquee": "Equinix Provides Digital-Ready Solutions for Content Digital Media.",
+          "sponsorColor": "#ED1C24",
+          "logo": "/img/equinix-vertical-black-outlined_300.png",
+          "name": "Equinix",
+          "intro": "#### Equinix is the digital platform for the world’s leading Media & Entertainment businesses allowing them to create, manage and distribute high-quality, on-demand content anywhere and bridge the virtual and physical worlds to their artists, creators, employees, end-users, and partners inside the most-interconnected data centers. In 52 markets across five continents, Equinix is where the Media & Entertainment ecosystem come together to digitize and create new opportunities to accelerate Content Creation, Content Management and Content Delivery. In a digital economy where Media & Entertainment business models are focusing on the end-user experience, interconnection is essential to survive. Equinix operates the only global interconnection platform, sparking new opportunities that are only possible when companies come together.",
+          "advertiseImage": "",
+          "sponsorId": 141,
+          "title": "Equinix",
+          "companyId": 124,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/equinix/",
+                "name": "LinkedIn",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": " https://www.youtube.com/c/equinix",
+                "order": 2,
+                "name": "YouTube"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/Equinix?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+                "order": 3,
+                "name": "Twitter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/Equinix/",
+                "order": 4,
+                "name": "Facebook"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://blog.equinix.com/blog/2020/08/31/how-red-bee-media-is-using-equinix-to-expand-access-to-its-content-distribution-platform/",
+                "name": "Blog - How Red Bee Media Is Using Equinix To Expand Access To Its Content Distribution Platform",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "i3D.net Uses Real-Time Data to Get Ahead in Gaming",
+                "order": 6,
+                "link": "https://blog.equinix.com/blog/2021/09/29/equinix-and-i3d-net-with-ubisoft-accelerate-global-online-gaming-growth/"
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://www.youtube.com/watch?app=desktop&v=PmrA6Uh0F24 ",
+                "name": "i3D.net Uses Real-Time Data to Get Ahead in Gaming",
+                "order": 7
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "image": "/img/infinity-content-and-media-festival-sponsor-ad_484x484-1-.jpg"
+            }
+          ],
+          "id": 141,
+          "showLogoInEventPage": false,
+          "email": "amer-info@equinix.com",
+          "usesSponsorPage": true
+        },
+        {
           "marquee": "Empowering your future of creativity, content, and experiences.",
           "sponsorColor": "#0078d4",
           "logo": "/img/if2020-microsoft-logo.png",
@@ -273,7 +341,7 @@
           "usesSponsorPage": true
         },
         {
-          "logo": "/img/qualcomm.png",
+          "logo": "/img/qualcomm-logo.png",
           "name": "Women in XR presented by Qualcomm",
           "intro": "Qualcomm is the world’s leading wireless technology innovator and the driving force behind the development, launch, and expansion of 5G. When we connected the phone to the internet, the mobile revolution was born. Today, our foundational technologies enable the mobile ecosystem and are found in every 3G, 4G and 5G smartphone. We bring the benefits of mobile to new industries, including automotive, the internet of things, and computing, and are leading the way to a world where everything and everyone can communicate and interact seamlessly. Qualcomm Incorporated includes our licensing business, QTL, and the vast majority of our patent portfolio. Qualcomm Technologies, Inc., a subsidiary of Qualcomm Incorporated, operates, along with its subsidiaries, substantially all of our engineering, research and development functions, and substantially all of our products and services businesses, including our QCT semiconductor business.",
           "advertiseImage": "",
@@ -282,74 +350,6 @@
           "id": 140,
           "showLogoInEventPage": false,
           "usesSponsorPage": false
-        },
-        {
-          "marquee": "Equinix Provides Digital-Ready Solutions for Content Digital Media.",
-          "sponsorColor": "#ED1C24",
-          "logo": "/img/equinix-vertical-black-outlined_300.png",
-          "name": "Equinix",
-          "intro": "#### Equinix is the digital platform for the world’s leading Media & Entertainment businesses allowing them to create, manage and distribute high-quality, on-demand content anywhere and bridge the virtual and physical worlds to their artists, creators, employees, end-users, and partners inside the most-interconnected data centers. In 52 markets across five continents, Equinix is where the Media & Entertainment ecosystem come together to digitize and create new opportunities to accelerate Content Creation, Content Management and Content Delivery. In a digital economy where Media & Entertainment business models are focusing on the end-user experience, interconnection is essential to survive. Equinix operates the only global interconnection platform, sparking new opportunities that are only possible when companies come together.",
-          "advertiseImage": "",
-          "sponsorId": 141,
-          "title": "Equinix",
-          "companyId": 124,
-          "documents": {
-            "links": [
-              {
-                "class_name": "PresentationLink",
-                "link": "https://www.linkedin.com/company/equinix/",
-                "name": "LinkedIn",
-                "order": 1
-              },
-              {
-                "class_name": "PresentationLink",
-                "link": " https://www.youtube.com/c/equinix",
-                "order": 2,
-                "name": "YouTube"
-              },
-              {
-                "class_name": "PresentationLink",
-                "link": "https://twitter.com/Equinix?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
-                "order": 3,
-                "name": "Twitter"
-              },
-              {
-                "class_name": "PresentationLink",
-                "link": "https://www.facebook.com/Equinix/",
-                "order": 4,
-                "name": "Facebook"
-              },
-              {
-                "class_name": "PresentationLink",
-                "link": "https://blog.equinix.com/blog/2020/08/31/how-red-bee-media-is-using-equinix-to-expand-access-to-its-content-distribution-platform/",
-                "name": "Blog - How Red Bee Media Is Using Equinix To Expand Access To Its Content Distribution Platform",
-                "order": 5
-              },
-              {
-                "class_name": "PresentationLink",
-                "name": "i3D.net Uses Real-Time Data to Get Ahead in Gaming",
-                "order": 6,
-                "link": "https://blog.equinix.com/blog/2021/09/29/equinix-and-i3d-net-with-ubisoft-accelerate-global-online-gaming-growth/"
-              }
-            ],
-            "videos": [
-              {
-                "class_name": "PresentationVideo",
-                "link": "https://www.youtube.com/watch?app=desktop&v=PmrA6Uh0F24 ",
-                "name": "i3D.net Uses Real-Time Data to Get Ahead in Gaming",
-                "order": 7
-              }
-            ]
-          },
-          "columnAds": [
-            {
-              "image": "/img/infinity-content-and-media-festival-sponsor-ad_484x484-1-.jpg"
-            }
-          ],
-          "id": 141,
-          "showLogoInEventPage": false,
-          "email": "amer-info@equinix.com",
-          "usesSponsorPage": true
         }
       ]
     },
@@ -361,6 +361,15 @@
         }
       ],
       "sponsors": [
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Evercast",
+          "companyId": 126,
+          "id": 144,
+          "sponsorId": 144,
+          "logo": "/img/evercast-logo.png"
+        },
         {
           "marquee": "Creating a World of Immersive Entertainment Without Limits…and with Petabytes of Data ",
           "sponsorColor": "#0068b5",
@@ -433,6 +442,15 @@
       ],
       "sponsors": [
         {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "IGN",
+          "companyId": 127,
+          "id": 146,
+          "sponsorId": 146,
+          "logo": "/img/ign-logo.png"
+        },
+        {
           "marquee": "We leverage the power of technology, location, and creativity to make meaningful connections between brands and audiences.",
           "sponsorColor": "#64008F",
           "logo": "/img/if2020-outfront-logo.png",
@@ -490,6 +508,15 @@
           "id": 1,
           "email": "adam@infinityfestival.com ",
           "usesSponsorPage": true
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Lighthouse Immersive & Immersive VanGogh Exhibit ",
+          "companyId": 128,
+          "id": 147,
+          "sponsorId": 147,
+          "logo": "/img/lh_horiz_red_rgb-white.png"
         }
       ]
     }
