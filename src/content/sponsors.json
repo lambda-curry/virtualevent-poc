@@ -1778,6 +1778,7 @@
         },
         {
           "marquee": "Ensuring the continuity of today’s and tomorrow’s vital applications.",
+          "featuredEventId": 2284,
           "sponsorColor": "#fe5b1b",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-vertiv.png",
           "name": "Vertiv",
@@ -3583,6 +3584,7 @@
         {
           "marquee": "Advancing Interoperability. Visit Juniper’s virtual booth to see how we are advancing SONiC and addressing its management challenges.",
           "externalLink": "",
+          "featuredEventId": 2312,
           "logo": "/img/267617bb4186f0ed242ad7a4fd3413c96a560b29.png",
           "name": "Juniper Networks",
           "intro": "#### At Juniper, we strive to deliver network experiences that transform how people connect, work and live. By challenging the inherent complexity in the Cloud + 5G + AI era, our solutions power the connections that matter most - from education to healthcare to secure banking. Our commitment is to advance real outcomes for network teams and every individual they serve. It’s that simple.",
@@ -4003,6 +4005,7 @@
         },
         {
           "marquee": "Open source and standards for Cloud, Computational Storage, Data Management, Next Generation Storage Management, NVMe-oF, Persistent Memory, SSDs, Connectors, Transceivers, and Form Factors.",
+          "featuredEventId": 2283,
           "sponsorColor": "#54237f",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-snia.png",
           "name": "SNIA",
