@@ -319,10 +319,24 @@
                 "order": 4,
                 "name": "Facebook"
               }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://www.youtube.com/watch?app=desktop&v=PmrA6Uh0F24 ",
+                "name": "i3D.net Uses Real-Time Data to Get Ahead in Gaming",
+                "order": 5
+              }
             ]
           },
+          "columnAds": [
+            {
+              "image": "/img/infinity-content-and-media-festival-sponsor-ad_484x484-1-.jpg"
+            }
+          ],
           "id": 141,
           "showLogoInEventPage": false,
+          "email": "amer-info@equinix.com",
           "usesSponsorPage": true
         }
       ]
