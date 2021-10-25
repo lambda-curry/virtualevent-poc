@@ -349,7 +349,7 @@
           "companyId": 123,
           "id": 140,
           "showLogoInEventPage": false,
-          "usesSponsorPage": false
+          "usesSponsorPage": true
         }
       ]
     },
