@@ -519,8 +519,10 @@
           "headerImage": "/img/if2021_fnv-arttech-header.png",
           "headerImageMobile": "/img/if2021_fnv-arttech-header-mobile.png",
           "advertiseImage": "",
+          "sponsorId": 148,
           "title": "ART+TECH",
-          "id": 1,
+          "companyId": 19,
+          "id": 148,
           "email": "adam@infinityfestival.com ",
           "usesSponsorPage": true
         },
