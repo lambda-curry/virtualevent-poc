@@ -13,11 +13,54 @@
           "sponsorColor": "#000000",
           "logo": "/img/z_by_hp_logos-black1-line.png",
           "name": "Z by HP ",
-          "intro": "HP Inc. creates technology that makes life better for everyone, everywhere. Through our portfolio of printers, PCs, 3D Printing Technologies, mobile devices, solutions, and services, we engineer experiences that amaze and enable workflows that are seamless. Z by HP workstation solutions powered by NVIDIA RTX are designed to empower creators and power users around the world, from artists, to engineers and data scientists and more. More information about Z by HP is available at www.hp.com/z",
+          "intro": "#### HP Inc. creates technology that makes life better for everyone, everywhere. Through our portfolio of printers, PCs, 3D Printing Technologies, mobile devices, solutions, and services, we engineer experiences that amaze and enable workflows that are seamless. Z by HP workstation solutions powered by NVIDIA RTX are designed to empower creators and power users around the world, from artists, to engineers and data scientists and more. More information about Z by HP is available at www.hp.com/z.",
           "headerImage": "/img/z_by_hp_intel_hp_z27xs_g3_4k_display_and_zbook_create_15_g7_clarendon_mulberry_geforce_columbia_brain_lifestyle_6567.jpg",
           "advertiseImage": "",
           "sponsorId": 135,
+          "title": "Z by HP ",
           "companyId": 8,
+          "documents": {
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/z_by_hp_m-e-brochure_nvidia.pdf",
+                "name": "Media & Entertainment Brochure",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/z_by_hp_1521018-omniverse-for-m-e-solution-showcase.pdf",
+                "name": "Omniverse for Media & Entertainment Solution Showcase",
+                "order": 1
+              }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/showcase/zbyhp/",
+                "order": 3,
+                "name": "Z by HP LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.instagram.com/zbyhp/",
+                "order": 4,
+                "name": "Instagram"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/NVIDIADesign",
+                "order": 5,
+                "name": "Twitter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/showcase/nvidia-design-and-visualization/",
+                "order": 6,
+                "name": "NVIDIA Design and Visualization LinkedIn"
+              }
+            ]
+          },
           "id": 135,
           "showLogoInEventPage": false,
           "usesSponsorPage": true
