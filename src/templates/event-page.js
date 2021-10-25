@@ -19,6 +19,7 @@ import AttendanceTrackerComponent from "../components/AttendanceTrackerComponent
 import { PHASES } from '../utils/phasesUtils';
 import { getEventById } from "../actions/event-actions";
 import { getDisqusSSO } from "../actions/user-actions";
+import URI from "urijs"
 
 export const EventPageTemplate = class extends React.Component {
 
@@ -64,10 +65,11 @@ export const EventPageTemplate = class extends React.Component {
 
   render() {
 
-    const { event, user, loading, nowUtc, summit, eventsPhases, eventId } = this.props;
+    const { event, user, loading, nowUtc, summit, eventsPhases, eventId, location } = this.props;
     // get current event phase
     const currentPhase = eventsPhases.find((e) => parseInt(e.id) === parseInt(eventId))?.phase;
     const firstHalf = currentPhase === PHASES.DURING ? nowUtc < ((event?.start_date + event?.end_date) / 2) : false;
+    const query = URI.parseQuery(location.search);
 
     // if event is loading or we are still calculating the current phase ...
     if (loading || currentPhase === undefined) {
@@ -100,6 +102,7 @@ export const EventPageTemplate = class extends React.Component {
                       title={event.title}
                       namespace={summit.name}
                       firstHalf={firstHalf}
+                      autoPlay={query.autostart === 'true'}
                     />
                     {event.meeting_url && <VideoBanner event={event} />}
                   </div>
@@ -215,6 +218,7 @@ const EventPage = ({
         user={user}
         eventsPhases={eventsPhases}
         nowUtc={nowUtc}
+        location={location}
         getEventById={getEventById}
         getDisqusSSO={getDisqusSSO}
       />
