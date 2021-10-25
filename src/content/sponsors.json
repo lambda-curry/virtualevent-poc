@@ -165,6 +165,7 @@
         {
           "marquee": "Visit Inspur booth# B23 to see our latest innovations in OCP that balance efficiency and power, optimized for enterprise, cloud, and AI.",
           "externalLink": "",
+          "featuredEventId": 2275,
           "sponsorColor": "#0271E4",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-inspur.png",
           "name": "Inspur",
@@ -352,6 +353,7 @@
         {
           "marquee": "Energy isn't the only renewable resource™",
           "sideImage": "",
+          "featuredEventId": 2276,
           "sponsorColor": "#343548",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-itrenew.png",
           "name": "ITRenew",
