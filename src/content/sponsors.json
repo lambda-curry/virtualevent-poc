@@ -4415,13 +4415,13 @@
                 "class_name": "PresentationVideo",
                 "name": "DC-SCM 2.0 LTPI Interface Demo",
                 "order": 2,
-                "link": "https://www.opencompute.org/"
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/hardware_management_Intel%20DC-SCM%202.0%20LTPI%20Demo%20MQ%20Disclaimers.mp4"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "CycloneV RunBMC v2 Demo",
                 "order": 3,
-                "link": "https://www.opencompute.org/"
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/hardware_management_Intel%20CycloneV%20RunBMC%20v2%20Demo.mp4"
               }
             ]
           },
@@ -4608,6 +4608,18 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/telco_Arrcus%20VDR%20-%20Building%20Blocks.mp4",
                 "order": 6,
                 "name": "Arrcus VDR - Building Blocks."
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/telco_Arrcus%20-%20Enabling%20NaaS%20for%205G%20Mobile%20and%20Edge.mp4",
+                "name": "Enabling NaaS for 5G Mobile and Edge.",
+                "order": 7
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Arrcus Company Overview",
+                "order": 8,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/telco_Arrcus%20Company%20Overview.mp4"
               }
             ]
           },
