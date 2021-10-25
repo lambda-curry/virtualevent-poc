@@ -76,14 +76,66 @@
       ],
       "sponsors": [
         {
+          "marquee": "Create. Collaborate. Iterate. Unity is the platform of choice for your journey to real-time.",
           "logo": "/img/u_logo_black_rgb.png",
           "name": "Unity",
-          "intro": "### From independent boutiques to global media producers, immersive agencies and location-based creators – studios around the world are harnessing the power of real-time 3D technology to speed up production, smooth workflow hurdles, and grow their creativity with Unity.",
+          "intro": "#### Unity is the world’s leading platform for creating and operating interactive, real-time 3D (RT3D) content. From independent boutiques to global media producers, studios around the world are harnessing the power of real-time rendering to speed up production, smooth workflow hurdles, and grow their creativity with Unity.",
           "advertiseImage": "",
           "sponsorId": 136,
           "companyId": 11,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/unity",
+                "order": 2,
+                "name": "Twitter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/unity3d",
+                "order": 3,
+                "name": "Facebook"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/unity-technologies/",
+                "order": 4,
+                "name": "LinkedIn"
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://www.youtube.com/watch?v=htNk2gz6oEw",
+                "name": "YouTube ",
+                "order": 4
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://www.youtube.com/watch?v=DpuUnNLZf5k",
+                "order": 4,
+                "name": "You Tube "
+              }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/unity_unitytechnology-industrytrends2021-mediaentertainment.pdf",
+                "name": "UnityTechnology IndustryTrends2021 MediaEntertainment",
+                "order": 1
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "link": "https://create.unity3d.com/top-2021-media-and-entertainment-trends",
+              "image": "/img/unity_logosquare.png"
+            }
+          ],
           "id": 136,
           "showLogoInEventPage": false,
+          "email": "info@unity3d.com",
           "usesSponsorPage": true
         }
       ]
