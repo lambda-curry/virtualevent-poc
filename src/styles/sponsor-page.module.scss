@@ -495,31 +495,29 @@
               }
 
               &-small {
+                width: 10rem;
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
                 align-self: flex-end;
+                align-items: baseline;
+                justify-content: space-between;
 
                 .link {
                   .button {
                     background-color: $color_secondary_contrast;
                     border-color: $color_secondary_contrast;
                     color: #fff;
-                    height: 3.5rem;
-                    width: 20rem;
+                    height: 4rem;
+                    width: 4rem;
 
                     i {
                       color: #fff;
-                      height: 1em;
-                      width: 2em;
-                      margin-right: auto;
-                      font-size: 1.5em;
+                      margin: auto;
+                      font-size: 1.9em;
                     }
 
                     b {
-                      display: inline-block;
-                      width: 100%;
-                      text-align: center;
-                      font-size: 14px;
+                      display: none;
                     }
 
                     &:hover,
