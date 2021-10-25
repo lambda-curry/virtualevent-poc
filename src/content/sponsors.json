@@ -248,6 +248,39 @@
           "id": 140,
           "sponsorId": 140,
           "logo": "/img/qualcomm.png"
+        },
+        {
+          "marquee": "You take care of the creativity. We'll handle the rest.",
+          "sponsorColor": "#30aba3",
+          "logo": "/img/c-c_r_stacked_gray.png",
+          "name": "Cast and Crew ",
+          "intro": "#### At Cast & Crew, we do what it takes to help our customers succeed. Having served the entertainment industry for decades, we are a production’s best ally, every step of the way. We solve problems. We provide expertise. We develop cloud workflows that make productions more efficient. Whether it’s for film, television, digital media, or live events, we help streamline production processes so our customers can more easily accomplish their goals. Along with our family of brands—CAPS, Checks & Balances, Final Draft, Media Services, and Sargent-Disc—we empower our customers with the freedom to focus on more important things. We'll be by your side at every step of the way, helping you get the most out of your production.",
+          "headerImage": "/img/festival-header-banner_1440x400-02.png",
+          "headerImageMobile": "/img/festival-header-banner_768x250-01.png",
+          "advertiseImage": "",
+          "sponsorId": 142,
+          "title": "Cast & Crew",
+          "companyId": 125,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/CastCrew/",
+                "name": "Facebook",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/CastAndCrewNews/",
+                "name": "Twitter",
+                "order": 2
+              }
+            ]
+          },
+          "id": 142,
+          "showLogoInEventPage": false,
+          "email": "Marketing.Communications@CastandCrew.com",
+          "usesSponsorPage": true
         }
       ]
     },
