@@ -11,10 +11,11 @@
         {
           "marquee": "Power your Breakthrough",
           "sponsorColor": "#000000",
-          "logo": "/img/z_by_hp_logos-black1-line.png",
+          "logo": "/img/if2021_fnv-logo-nvidia-zbyhp.png",
           "name": "Z by HP ",
           "intro": "#### HP Inc. creates technology that makes life better for everyone, everywhere. Through our portfolio of printers, PCs, 3D Printing Technologies, mobile devices, solutions, and services, we engineer experiences that amaze and enable workflows that are seamless. Z by HP workstation solutions powered by NVIDIA RTX are designed to empower creators and power users around the world, from artists, to engineers and data scientists and more. More information about Z by HP is available at www.hp.com/z.",
           "headerImage": "/img/untitled-1.jpg",
+          "headerImageMobile": "/img/if2021_fnv-header-mobile-nvidia-zbyhp.png",
           "advertiseImage": "",
           "sponsorId": 135,
           "title": "Z by HP ",
