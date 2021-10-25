@@ -171,6 +171,39 @@
       ],
       "sponsors": [
         {
+          "marquee": "You take care of the creativity. We'll handle the rest.",
+          "sponsorColor": "#30aba3",
+          "logo": "/img/c-c_r_stacked_gray.png",
+          "name": "Cast and Crew ",
+          "intro": "#### At Cast & Crew, we do what it takes to help our customers succeed. Having served the entertainment industry for decades, we are a production’s best ally, every step of the way. We solve problems. We provide expertise. We develop cloud workflows that make productions more efficient. Whether it’s for film, television, digital media, or live events, we help streamline production processes so our customers can more easily accomplish their goals. Along with our family of brands—CAPS, Checks & Balances, Final Draft, Media Services, and Sargent-Disc—we empower our customers with the freedom to focus on more important things. We'll be by your side at every step of the way, helping you get the most out of your production.",
+          "headerImage": "/img/festival-header-banner_1440x400-02.png",
+          "headerImageMobile": "/img/festival-header-banner_768x250-01.png",
+          "advertiseImage": "",
+          "sponsorId": 142,
+          "title": "Cast & Crew",
+          "companyId": 125,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/CastCrew/",
+                "name": "Facebook",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/CastAndCrewNews/",
+                "name": "Twitter",
+                "order": 2
+              }
+            ]
+          },
+          "id": 142,
+          "showLogoInEventPage": false,
+          "email": "Marketing.Communications@CastandCrew.com",
+          "usesSponsorPage": true
+        },
+        {
           "marquee": "Empowering your future of creativity, content, and experiences.",
           "sponsorColor": "#0078d4",
           "logo": "/img/if2020-microsoft-logo.png",
@@ -240,46 +273,28 @@
           "usesSponsorPage": true
         },
         {
-          "advertiseImage": "",
-          "showLogoInEventPage": false,
-          "intro": "Qualcomm is the world’s leading wireless technology innovator and the driving force behind the development, launch, and expansion of 5G. When we connected the phone to the internet, the mobile revolution was born. Today, our foundational technologies enable the mobile ecosystem and are found in every 3G, 4G and 5G smartphone. We bring the benefits of mobile to new industries, including automotive, the internet of things, and computing, and are leading the way to a world where everything and everyone can communicate and interact seamlessly. Qualcomm Incorporated includes our licensing business, QTL, and the vast majority of our patent portfolio. Qualcomm Technologies, Inc., a subsidiary of Qualcomm Incorporated, operates, along with its subsidiaries, substantially all of our engineering, research and development functions, and substantially all of our products and services businesses, including our QCT semiconductor business.",
+          "logo": "/img/qualcomm.png",
           "name": "Women in XR presented by Qualcomm",
+          "intro": "Qualcomm is the world’s leading wireless technology innovator and the driving force behind the development, launch, and expansion of 5G. When we connected the phone to the internet, the mobile revolution was born. Today, our foundational technologies enable the mobile ecosystem and are found in every 3G, 4G and 5G smartphone. We bring the benefits of mobile to new industries, including automotive, the internet of things, and computing, and are leading the way to a world where everything and everyone can communicate and interact seamlessly. Qualcomm Incorporated includes our licensing business, QTL, and the vast majority of our patent portfolio. Qualcomm Technologies, Inc., a subsidiary of Qualcomm Incorporated, operates, along with its subsidiaries, substantially all of our engineering, research and development functions, and substantially all of our products and services businesses, including our QCT semiconductor business.",
+          "advertiseImage": "",
+          "sponsorId": 140,
           "companyId": 123,
           "id": 140,
-          "sponsorId": 140,
-          "logo": "/img/qualcomm.png"
+          "showLogoInEventPage": false,
+          "usesSponsorPage": false
         },
         {
-          "marquee": "You take care of the creativity. We'll handle the rest.",
-          "sponsorColor": "#30aba3",
-          "logo": "/img/c-c_r_stacked_gray.png",
-          "name": "Cast and Crew ",
-          "intro": "#### At Cast & Crew, we do what it takes to help our customers succeed. Having served the entertainment industry for decades, we are a production’s best ally, every step of the way. We solve problems. We provide expertise. We develop cloud workflows that make productions more efficient. Whether it’s for film, television, digital media, or live events, we help streamline production processes so our customers can more easily accomplish their goals. Along with our family of brands—CAPS, Checks & Balances, Final Draft, Media Services, and Sargent-Disc—we empower our customers with the freedom to focus on more important things. We'll be by your side at every step of the way, helping you get the most out of your production.",
-          "headerImage": "/img/festival-header-banner_1440x400-02.png",
-          "headerImageMobile": "/img/festival-header-banner_768x250-01.png",
+          "marquee": "Equinix Provides Digital-Ready Solutions for Content Digital Media.",
+          "sponsorColor": "#ED1C24",
+          "logo": "/img/equinix-vertical-black-outlined_300.png",
+          "name": "Equinix",
+          "intro": "#### Equinix is the digital platform for the world’s leading Media & Entertainment businesses allowing them to create, manage and distribute high-quality, on-demand content anywhere and bridge the virtual and physical worlds to their artists, creators, employees, end-users, and partners inside the most-interconnected data centers. In 52 markets across five continents, Equinix is where the Media & Entertainment ecosystem come together to digitize and create new opportunities to accelerate Content Creation, Content Management and Content Delivery. In a digital economy where Media & Entertainment business models are focusing on the end-user experience, interconnection is essential to survive. Equinix operates the only global interconnection platform, sparking new opportunities that are only possible when companies come together.",
           "advertiseImage": "",
-          "sponsorId": 142,
-          "title": "Cast & Crew",
-          "companyId": 125,
-          "documents": {
-            "links": [
-              {
-                "class_name": "PresentationLink",
-                "link": "https://www.facebook.com/CastCrew/",
-                "name": "Facebook",
-                "order": 1
-              },
-              {
-                "class_name": "PresentationLink",
-                "link": "https://twitter.com/CastAndCrewNews/",
-                "name": "Twitter",
-                "order": 2
-              }
-            ]
-          },
-          "id": 142,
+          "sponsorId": 141,
+          "title": "Equinix",
+          "companyId": 124,
+          "id": 141,
           "showLogoInEventPage": false,
-          "email": "Marketing.Communications@CastandCrew.com",
           "usesSponsorPage": true
         }
       ]
