@@ -362,6 +362,30 @@
       ],
       "sponsors": [
         {
+          "marquee": "Creating a World of Immersive Entertainment Without Limits…and with Petabytes of Data ",
+          "sponsorColor": "#0068b5",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-intel.png",
+          "name": "Intel",
+          "intro": "# Intel\n\n**Our Purpose**\n\nWe create world-changing technology that enriches the lives of every person on earth.\n\n**We are inspired to:**\n\n* Drive innovation that makes the world safer, builds healthy and vibrant communities, and increases productivity.\n* Harness our reach around the globe to better society, business, and the planet.\n* Push ourselves and our industry peers to be more responsible, inclusive, and sustainable.\n* We have big ambitions, and a growing sense of urgency to work with others and address world challenges no one can tackle alone.\n\n**Vision**\n\nTo be the trusted performance leader that unleashes the potential of data.\n\n**Mission**\n\nWe engineer solutions for our customers’ greatest challenges with reliable, cloud to edge computing, inspired by Moore’s Law.",
+          "headerImage": "/img/if2020-intel-header-1440x200.png",
+          "advertiseImage": "",
+          "sponsorId": 137,
+          "companyId": 1,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/Intel",
+                "name": "Twitter",
+                "order": 1
+              }
+            ]
+          },
+          "id": 137,
+          "showLogoInEventPage": false,
+          "usesSponsorPage": false
+        },
+        {
           "marqueeColor": "#114776",
           "marquee": "",
           "sponsorColor": "#114776",
@@ -396,31 +420,7 @@
           "id": 143,
           "showLogoInEventPage": false,
           "email": "info@phasetwospace.com",
-          "usesSponsorPage": true
-        },
-        {
-          "marquee": "Creating a World of Immersive Entertainment Without Limits…and with Petabytes of Data ",
-          "sponsorColor": "#0068b5",
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-intel.png",
-          "name": "Intel",
-          "intro": "# Intel\n\n**Our Purpose**\n\nWe create world-changing technology that enriches the lives of every person on earth.\n\n**We are inspired to:**\n\n* Drive innovation that makes the world safer, builds healthy and vibrant communities, and increases productivity.\n* Harness our reach around the globe to better society, business, and the planet.\n* Push ourselves and our industry peers to be more responsible, inclusive, and sustainable.\n* We have big ambitions, and a growing sense of urgency to work with others and address world challenges no one can tackle alone.\n\n**Vision**\n\nTo be the trusted performance leader that unleashes the potential of data.\n\n**Mission**\n\nWe engineer solutions for our customers’ greatest challenges with reliable, cloud to edge computing, inspired by Moore’s Law.",
-          "headerImage": "/img/if2020-intel-header-1440x200.png",
-          "advertiseImage": "",
-          "sponsorId": 137,
-          "companyId": 1,
-          "documents": {
-            "links": [
-              {
-                "class_name": "PresentationLink",
-                "link": "https://twitter.com/Intel",
-                "name": "Twitter",
-                "order": 1
-              }
-            ]
-          },
-          "id": 137,
-          "showLogoInEventPage": false,
-          "usesSponsorPage": true
+          "usesSponsorPage": false
         }
       ]
     },
@@ -466,7 +466,7 @@
           "id": 145,
           "showLogoInEventPage": false,
           "email": "sales@outfrontmedia.com",
-          "usesSponsorPage": true
+          "usesSponsorPage": false
         }
       ]
     },
