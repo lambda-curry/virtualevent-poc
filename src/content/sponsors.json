@@ -100,6 +100,24 @@
           "id": 148,
           "showLogoInEventPage": true,
           "usesSponsorPage": true
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Women in XR",
+          "logo": "/img/if2021_fnv_lobby_button-art-tech_v2.png",
+          "id": 148,
+          "sponsorId": 148
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "ReKT Gaming",
+          "logo": "/img/if2021_fnv_lobby_button-art-tech_v2.png",
+          "usesSponsorPage": true,
+          "companyId": 130,
+          "id": 150,
+          "sponsorId": 150
         }
       ]
     },
