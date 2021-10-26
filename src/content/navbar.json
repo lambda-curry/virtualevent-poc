@@ -84,8 +84,8 @@
       "display": true
     },
     {
-      "title": "CONTACT",
-      "link": "/contact",
+      "title": "HELP",
+      "link": "/help",
       "display": true,
       "requiresAuth": false,
       "pageRestriction": [
