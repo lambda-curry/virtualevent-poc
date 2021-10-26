@@ -175,7 +175,7 @@ const SponsorComponent = ({ page, sponsorsState, tiers, lobbyButton }) => {
                                 <img src={sponsor.advertiseImage ? sponsor.advertiseImage : sponsor.logo} alt={sponsor.name} />
                               </Link>
                               :
-                              <Link>
+                              <Link key={`${s.tier.label}-${index}`}>
                                 <img src={sponsor.advertiseImage ? sponsor.advertiseImage : sponsor.logo} alt={sponsor.name} />
                               </Link>
                         )
