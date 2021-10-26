@@ -1,6 +1,6 @@
 ---
 templateKey: custom-page
 title: MAPS
-userRequirement: HAS_TICKET
+userRequirement: LOGGED_IN
 ---
-![OCP GLOBAL SUMMIT MAP](/img/ocp21glo_map_for_fnv.png)
+![OCP GLOBAL SUMMIT MAP](/img/ocp21glo_map_fnv.png)
