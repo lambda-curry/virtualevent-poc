@@ -221,50 +221,56 @@
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/inspur_Use%20Case_Inspur%20Container%20Datacenter.mp4",
-                "name": "Use Case Inspur Container Datacenter",
+                "name": "Use Case, Inspur Container Data Center",
                 "order": 10
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/inspur_Product%20Insider_NF5180M6_%201U%202-Socket%20General%20Purpose%20Open%20Compute%20Server.mp4",
                 "order": 11,
-                "name": "Product Insider NF5180M6 1U 2-Socket General Purpose Open Compute Server"
+                "name": "NF5180M6 | 1U 2-Socket General Purpose Open Compute Server"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/inspur_Product%20Insider_NF5280M6_%202U%202-Socket%20General%20Purpose%20Compute%20Server.mp4",
-                "order": 13,
-                "name": "Product Insider NF5280M6 2U 2-Socket General Purpose Compute Server"
+                "order": 12,
+                "name": "NF5280M6 | 2U 2-Socket General Purpose Compute Server"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/inspur_Interview_Performance%20Made%20Flexible_%20Inspur%20Intel.mp4",
-                "order": 14,
-                "name": "Interview Performance Made Flexible Inspur Intel"
+                "order": 13,
+                "name": "Performance Made Flexible, Inspur & Intel on Geekwire"
               },
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/inspur_OCP%20Global_PPT_Practice%20in%20solution%20of%20HD%20dynamics%20susceptibility_Inspur%20Cathy%20Wang.mp4",
-                "order": 16,
-                "name": "Capability_Inspur Trusted Supply Chain Component-System Traceability"
+                "name": "Inspur’s practice in solution of HDD acoustic susceptibility, Cathy Wang",
+                "order": 13,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/inspur_OCP%20Global_PPT_Practice%20in%20solution%20of%20HD%20dynamics%20susceptibility_Inspur%20Cathy%20Wang.mp4"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/inspur_Capability_Inspur%20Trusted%20Supply%20Chain%20Component-System%20Traceability.mp4",
-                "order": 17,
-                "name": "Capability_Inspur Intelligent Factory"
+                "order": 14,
+                "name": "Inspur Trusted Supply Chain Component, System Traceability"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/inspur_Capability_Inspur%20Intelligent%20Factory.mp4",
+                "order": 15,
+                "name": "Inspur Intelligent Factory"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/inspur_Product%20Detail_Inspur%204S%20NF8260M5%20Optimized%20Solution%20for%20Redis%20Workload.mp4",
-                "order": 19,
-                "name": "Product Detail_Inspur 4S NF8260M5 Optimized Solution for Redis Workload"
+                "order": 16,
+                "name": "Inspur 4S NF8260M5 Optimized Solution for Redis Workload"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/inspur_Use%20Case_Protecting%20Asian%20Elephants%20in%20the%20Wild.mp4",
-                "order": 20,
-                "name": "Use Case_Protecting Asian Elephants in the Wild"
+                "order": 17,
+                "name": "Use Case, Protecting Asian Elephants in the Wild"
               }
             ]
           },
