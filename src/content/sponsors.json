@@ -492,25 +492,49 @@
                 "link": "https://www.youtube.com/channel/UC0m-80FnNY2Qb7obvTL_2fA",
                 "order": 4,
                 "name": "YouTube – Microsoft Azure"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Microsoft OCP 2021 blog",
+                "link": "aka.ms/OCP2021",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": " https://aka.ms/msjobs_OCP",
+                "order": 6,
+                "name": "Microsoft Jobs "
+              },
+              {
+                "class_name": "PresentationLink",
+                "order": 7,
+                "name": "Microsoft Azure Sustainability",
+                "link": "https://azure.microsoft.com/en-us/global-infrastructure/sustainability/#overview"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Microsoft Datacenter Virtual Tour",
+                "order": 8,
+                "link": " https://news.microsoft.com/stories/microsoft-datacenter-tour/"
               }
             ],
             "slides": [
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/microsoft_liquid-immersion-cooling.pdf",
-                "name": "Microsoft Liquid Immersion - Real tech ready to power the future of AI",
+                "name": "Liquid Immersion - Real tech ready to power the future of AI",
                 "order": 5
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/microsoft_clean-fuels.pdf",
-                "name": "Microsoft Clean Fuels - On the road to net-zero, green backup is a big step forward",
+                "name": "Clean Fuels - On the road to net-zero, green backup is a big step forward",
                 "order": 6
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/microsoft_grid-interactive-batteries.pdf",
-                "name": "Microsoft Grid Interactive Batteries - How small steps power big sustainability goals",
+                "name": "Grid Interactive Batteries - How small steps power big sustainability goals",
                 "order": 7
               },
               {
@@ -537,13 +561,13 @@
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/microsoft_Microsoft%20Circular%20Centers.mp4",
                 "order": 11,
-                "name": "Building the world’s computer with Microsoft Datacenters"
+                "name": "Building the world’s computer with Microsoft datacenters"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/microsoft_Microsoft%20Azure%20Global%20Infrastructure.mp4",
                 "order": 12,
-                "name": "Microsoft Azure Global Infrastructure"
+                "name": "Microsoft Azure global infrastructure"
               }
             ]
           },
