@@ -29,6 +29,29 @@
     },
     {
       "badge": "",
+      "lobby": {
+        "lobbyTemplate": "small-images",
+        "display": true
+      },
+      "expoHallPage": {
+        "expoHallTemplate": "medium-images",
+        "display": false
+      },
+      "sponsorPage": {
+        "sponsorTemplate": "big-header",
+        "widgets": {
+          "disqus": true,
+          "liveEvent": true,
+          "schedule": true,
+          "banner": true
+        }
+      },
+      "eventTemplate": "small-images",
+      "id": "tier-ziDE_6pjp",
+      "name": "ART + TECH Gallery "
+    },
+    {
+      "badge": "",
       "sponsorPage": {
         "sponsorTemplate": "big-header",
         "disqus": true,
@@ -205,29 +228,6 @@
         "display": false
       },
       "id": "tier-DHcI3dWGk"
-    },
-    {
-      "badge": "",
-      "lobby": {
-        "lobbyTemplate": "small-images",
-        "display": false
-      },
-      "expoHallPage": {
-        "expoHallTemplate": "medium-images",
-        "display": false
-      },
-      "sponsorPage": {
-        "sponsorTemplate": "big-header",
-        "widgets": {
-          "disqus": true,
-          "liveEvent": true,
-          "schedule": true,
-          "banner": true
-        }
-      },
-      "eventTemplate": "small-images",
-      "id": "tier-ziDE_6pjp",
-      "name": "ART + TECH SPACE  "
     }
   ],
   "imageHeader": "/img/if2021_fnv_expohall-header.png",
