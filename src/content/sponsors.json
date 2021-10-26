@@ -933,6 +933,12 @@
                 "link": "/img/xilinx_inc_sssd-brief-final.pdf",
                 "name": "SSSD brief ",
                 "order": 6
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/xilinx_inc_u25-product-brief-22520-final.pdf",
+                "name": "U25 Product Brief 22520",
+                "order": 6
               }
             ]
           },
