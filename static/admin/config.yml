@@ -204,7 +204,10 @@ collections:
               ]},
             ]}
           - {label: "Sponsors", name: "sponsors", widget: list, fields: [
-              {label: "Name", name: title, widget: hidden, default: "Dummy Item"},
+              {label: "Size", name: size, widget: select, options: [
+                {label: "Single", value: 1}
+                {label: "Double", value: 2}
+              ]},
               {label: "Images", name: "images", widget: list, required: false, fields: [
                 {label: "Image", name: "image", widget: image, required: false},
                 {label: "Link", name: "link", widget: string, required: false}

@@ -11,7 +11,7 @@ import AttendanceTrackerComponent from '../components/AttendanceTrackerComponent
 import MarketingHeroComponent from '../components/MarketingHeroComponent'
 import LiteScheduleComponent from '../components/LiteScheduleComponent'
 import DisqusComponent from '../components/DisqusComponent'
-import {syncData} from '../actions/base-actions';
+import { syncData } from '../actions/base-actions';
 
 import Content, { HTMLContent } from '../components/Content'
 import Countdown from '../components/Countdown'
@@ -28,22 +28,40 @@ import '../styles/style.scss'
 export const MarketingPageTemplate = class extends React.Component {
 
   componentWillMount() {
-    const {siteSettings} = this.props;
+    const { siteSettings } = this.props;
     if (siteSettings.leftColumn.disqus && this.props.isLoggedUser) {
       this.props.getDisqusSSO();
     }
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
-    const {lastBuild, syncData} = this.props;
+    const { lastBuild, syncData } = this.props;
     if (!lastBuild || settings.lastBuild > lastBuild) {
       syncData();
     }
   }
 
+  formatMasonry = (masonry) => {
+    let leftColumn = 0, rightColumn = 0;
+    let dummyImage = false
+    masonry.map((image, index) => {
+      if (index + 1 === masonry.length) {
+        if (image.size + leftColumn !== rightColumn) {
+          dummyImage = true;
+        }
+      } else {
+        index % 2 === 0 ? leftColumn += image.size : rightColumn += image.size;
+      }
+    });
+    const newMasonry = dummyImage ? [...masonry.slice(0, masonry.length - 1), { title: 'Dummy Image' }, masonry[masonry.length - 1]] : masonry;    
+    return newMasonry;
+  }
+
   render() {
     const { content, contentComponent, summit_phase, user, isLoggedUser, location, summit, siteSettings } = this.props;
     const PageContent = contentComponent || Content;
+
+    const formattedMasonry = this.formatMasonry(siteSettings.sponsors);
 
     let scheduleProps = {};
     if (siteSettings.leftColumn.schedule && isLoggedUser && summit_phase !== PHASES.BEFORE) {
@@ -96,14 +114,11 @@ export const MarketingPageTemplate = class extends React.Component {
             }
           </div>
           <div className="column is-half px-0 pb-0">
-            {/* The mansonry lib generates the grid using 2 images per row
-            in some cases, like with images that takes double the space of a single images,
-            dummy items would be needed to achieve the desired grid */}
             <Masonry
               breakpointCols={2}
               className="my-masonry-grid"
               columnClassName="my-masonry-grid_column">
-              {siteSettings.sponsors.map((item, index) => {
+              {formattedMasonry.map((item, index) => {
                 if (item.images && item.images.length === 1) {
                   return (
                     <div className={'single'} key={index}>
@@ -161,7 +176,7 @@ const MarketingPage = ({ summit, location, data, summit_phase, user, isLoggedUse
   const { html } = data.markdownRemark;
 
   return (
-    <Layout marketing={true}>
+    <Layout marketing={true} location={location}>
       <MarketingPageTemplate
         contentComponent={HTMLContent}
         content={html}
