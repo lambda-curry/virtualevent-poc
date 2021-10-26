@@ -377,13 +377,19 @@
                 "class_name": "PresentationLink",
                 "link": "https://www.linkedin.com/company/itrenew/",
                 "name": "LinkedIn",
-                "order": 1
+                "order": 2
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://twitter.com/ITRenewInc",
                 "name": "Twitter ",
-                "order": 2
+                "order": 3
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://itrenew.typeform.com/to/Wt6wEQ",
+                "order": 1,
+                "name": "Chat with us"
               }
             ],
             "slides": [
