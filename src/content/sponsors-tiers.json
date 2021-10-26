@@ -16,7 +16,7 @@
       "name": "Title Sponsor",
       "expoHallSize": "medium",
       "eventTemplate": "",
-      "widgetTitle": "Title Sponsors",
+      "widgetTitle": "Click Below To Visit Title Sponsor",
       "lobby": {
         "lobbyTemplate": "big-images",
         "display": true
@@ -68,7 +68,7 @@
       "name": "Presenting Sponsor",
       "expoHallSize": null,
       "eventTemplate": null,
-      "widgetTitle": "Presenting Sponsor",
+      "widgetTitle": "Click Below To Visit Presenting Sponsor",
       "lobby": {
         "lobbyTemplate": "big-images",
         "display": true
@@ -101,7 +101,7 @@
       "eventTemplate": null,
       "id": "tier-AG93rC7mW",
       "name": "Co-Presenting Sponsor ",
-      "widgetTitle": "Co-Presenting Sponsor "
+      "widgetTitle": "Click Below To Visit  Co-Presenting Sponsor "
     },
     {
       "badge": "",
@@ -121,7 +121,7 @@
       "name": "Executive Producers",
       "expoHallSize": "large",
       "eventTemplate": null,
-      "widgetTitle": "Executive Producers",
+      "widgetTitle": "Click Below To Visit Executive Producers",
       "lobby": {
         "lobbyTemplate": "small-images",
         "display": true
@@ -154,7 +154,7 @@
       "eventTemplate": null,
       "id": "tier-NuSAAomFm",
       "name": "Producer Sponsor ",
-      "widgetTitle": "Producer Sponsor "
+      "widgetTitle": "Thank you Producer Sponsors "
     },
     {
       "badge": "",
@@ -178,7 +178,7 @@
       "eventTemplate": null,
       "id": "tier-NcMQLWsxG",
       "name": "Presenting Media Partner Sponsors",
-      "widgetTitle": "Presenting Media Partner Sponsors"
+      "widgetTitle": "Thank you Presenting Media Partner Sponsors"
     },
     {
       "badge": "",
@@ -219,7 +219,7 @@
       "name": "ART+TECH Sponsor",
       "expoHallSize": "medium",
       "eventTemplate": "",
-      "widgetTitle": "ART+TECH SPONSOR",
+      "widgetTitle": "Thank you ART+TECH SPONSOR",
       "lobby": {
         "lobbyTemplate": "small-images",
         "display": true
