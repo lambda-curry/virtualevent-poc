@@ -922,6 +922,12 @@
               }
             ]
           },
+          "columnAds": [
+            {
+              "image": "/img/xilinx_inc_brand-2153-ocp-sponsor.jpg",
+              "link": "https://www.xilinx.com/applications/data-center/network-acceleration/alveo-sn1000.html"
+            }
+          ],
           "id": 61,
           "showLogoInEventPage": false,
           "email": "sales@xilinx.com",
