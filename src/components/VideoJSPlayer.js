@@ -29,7 +29,7 @@ class VideoJSPlayer extends React.Component {
 
     const options = {
       html5: {
-        hls: {
+        vhs: {
           overrideNative: !videojs.browser.IS_SAFARI,
         },
       },
