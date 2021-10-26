@@ -472,26 +472,26 @@
               {
                 "class_name": "PresentationLink",
                 "link": "https://twitter.com/Azure",
-                "order": 1,
-                "name": "Twitter Azure"
+                "order": 2,
+                "name": "Twitter – Microsoft Azure"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://twitter.com/microsoft",
-                "order": 2,
-                "name": "Twitter Microsoft"
+                "order": 1,
+                "name": "Twitter – Microsoft"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.linkedin.com/company/microsoft/",
                 "order": 3,
-                "name": "Linked"
+                "name": "LinkedIn – Microsoft"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.youtube.com/channel/UC0m-80FnNY2Qb7obvTL_2fA",
                 "order": 4,
-                "name": "Youtube"
+                "name": "YouTube – Microsoft Azure"
               }
             ],
             "slides": [
