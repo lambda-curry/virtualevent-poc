@@ -396,49 +396,43 @@
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/itrenew_itrenew_introducing_sesame_by_itrenew.pdf",
-                "name": "Introducing Sesame by ITRenew",
+                "name": " Introducing Sesame by ITRenew",
                 "order": 3
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/itrenew_2021_itrenew-decommissioning_solutions_brief-final.pdf",
                 "order": 4,
-                "name": "Itrenew Solution"
-              },
-              {
-                "class_name": "PresentationSlide",
-                "link": "/img/itrenew_circular-model-chart-updated.pdf",
-                "name": "Circular model chart",
-                "order": 5
+                "name": "Secure Decommissioning by ITRenew"
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/itrenew_kubernetes_optimized_sesame_by_itrenew_datasheet.pdf",
                 "order": 6,
-                "name": "Kubernetes O by ITRenew Datasheet "
+                "name": "Sesame for Kubernetes"
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/itrenew_hyper-converged_optimized_sesame_by_itrenew_datasheet.pdf",
                 "order": 7,
-                "name": "Hyper Converged Optimized Sesame by ITRenew Datasheet"
+                "name": " Sesame for Hyperconverged"
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/itrenew_ai-ml_optimized_sesame-by-itrenew_datasheet.pdf",
-                "name": "AI-ML Optimized Sesame by ITRenew Datasheet",
+                "name": "  Sesame for AI/ML",
                 "order": 8
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/itrenew_edge_optimized_sesame_by_itrenew_datasheet.pdf",
-                "name": "Edge Optimized Sesame by ITRenew Datasheet",
+                "name": " Sesame for Edge Networks",
                 "order": 9
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/itrenew_itrenew_new_data_center_models_final.pdf",
-                "name": "ITRenew New Data Center Models",
+                "name": " Whitepaper: 3 Reasons Why to Adopt New Data Center Models",
                 "order": 10
               }
             ],
@@ -447,7 +441,7 @@
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/itrenew_itrenew_2603501665.mp4",
                 "order": 11,
-                "name": "ITRenew"
+                "name": "Sesame by ITRenew"
               }
             ]
           },
