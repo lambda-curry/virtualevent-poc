@@ -599,43 +599,67 @@
                 "class_name": "PresentationLink",
                 "link": "https://samsungsemiconductor-us.com/where-latency-dares-not-tread-how-high-powered-ssds-enable-novel-storage-architecture/ ",
                 "name": "Dropbox",
-                "order": 1
+                "order": 5
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://samsungsemiconductor-us.com/compute-power-to-the-people-democratizing-ai-a-conversation-with-ai-visionaries-from-sambanova-systems/ ",
                 "name": "DDR5 (Sambanova) ",
-                "order": 2
+                "order": 6
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.samsungsemiconstory.com/global/samsung-unveils-industry-first-memory-module-incorporating-new-cxl-interconnect-standard/",
                 "name": "CXL press release",
-                "order": 3
+                "order": 7
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://samsungsemiconductor-us.com/hbm/",
-                "order": 4,
+                "order": 8,
                 "name": "HBM White Paper site (w/ HBM2e content)"
               },
               {
                 "class_name": "PresentationLink",
                 "name": "HBM-PIM (Aquabolt-XL)",
-                "order": 5,
+                "order": 8,
                 "link": "https://news.samsung.com/us/samsung-hbm-pim-in-memory-processing-wider-range-applications/ "
               },
               {
                 "class_name": "PresentationLink",
                 "name": "ZNS",
-                "order": 7,
+                "order": 9,
                 "link": "https://news.samsung.com/global/samsung-introduces-its-first-zns-ssd-with-maximized-user-capacity-and-enhanced-lifespan"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://samsungsemiconductor-us.com/smartssd-archive/pdf/SmartSSD_ProductBrief_13.pdf",
-                "order": 8,
+                "order": 10,
                 "name": "SmartSSD "
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/samsungsemius/",
+                "order": 1,
+                "name": "Samsung - Facebook "
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/showcase/samsung-semiconductor-inc-/",
+                "order": 2,
+                "name": "Samsung - LinkedIn "
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/samsungsemius",
+                "order": 3,
+                "name": "@samsungsemius on Twitter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.instagram.com/samsungsemius/?hl=en",
+                "order": 4,
+                "name": "@samsungsemius on Instagram "
               }
             ],
             "videos": [
