@@ -528,6 +528,27 @@
           "logo": "/img/if2021_fnv-logo-lighthouse.png"
         }
       ]
+    },
+    {
+      "tier": [
+        {
+          "value": "tier-ziDE_6pjp",
+          "label": "ART + TECH SPACE  "
+        }
+      ],
+      "sponsors": [
+        {
+          "logo": "/img/if2021_fnv-arttech-logo.png",
+          "name": "Art + Tech ",
+          "headerImage": "/img/if2021_fnv-arttech-header.png",
+          "advertiseImage": "",
+          "sponsorId": 148,
+          "companyId": 19,
+          "id": 148,
+          "showLogoInEventPage": true,
+          "usesSponsorPage": true
+        }
+      ]
     }
   ]
 }
