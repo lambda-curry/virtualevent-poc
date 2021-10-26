@@ -604,7 +604,7 @@
               {
                 "class_name": "PresentationLink",
                 "link": "https://samsungsemiconductor-us.com/compute-power-to-the-people-democratizing-ai-a-conversation-with-ai-visionaries-from-sambanova-systems/ ",
-                "name": "DDR5 (Sambanova)",
+                "name": "DDR5 (Sambanova) ",
                 "order": 2
               },
               {
@@ -615,9 +615,9 @@
               },
               {
                 "class_name": "PresentationLink",
-                "link": "HBM White Paper site (w/ HBM2e content)",
+                "link": "https://samsungsemiconductor-us.com/hbm/",
                 "order": 4,
-                "name": "https://samsungsemiconductor-us.com/hbm/"
+                "name": "HBM White Paper site (w/ HBM2e content)"
               },
               {
                 "class_name": "PresentationLink",
@@ -638,11 +638,25 @@
                 "name": "SmartSSD "
               }
             ],
-            "videos": []
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://vimeo.com/veruspro/review/626803390/4d0e47b389",
+                "name": "HPOS",
+                "order": 9
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://www.samsung.com/semiconductor/newsroom/tech-leadership/samsung-calls-for-developmental-collaboration-to-usher-in-a-new-era-of-data/ ",
+                "name": " GSA conference video on memory advancements",
+                "order": 10
+              }
+            ]
           },
           "columnAds": [
             {
-              "image": "/img/td_ocp_ad_2.jpg"
+              "image": "/img/td_ocp_ad_2.jpg",
+              "link": "https://register.samsungtechday.com/?utm_source=ocp&utm_medium=email&utm_campaign=tech-day-2021"
             }
           ],
           "id": 60,
