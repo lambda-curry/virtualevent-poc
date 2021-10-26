@@ -110,7 +110,7 @@
                 "class_name": "PresentationLink",
                 "link": "https://datacenters.fb.com/",
                 "order": 4,
-                "name": "Datacenters"
+                "name": "Data Centers @ Facebook"
               }
             ],
             "videos": [
@@ -118,37 +118,37 @@
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_Infra%20Hardware_who%20we%20are.mov",
                 "order": 4,
-                "name": "Infra Hardware Who Are We "
+                "name": "Our Infra Hardware Team"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_fb%20covid%20final.mp4",
                 "order": 5,
-                "name": "Facebook Covid Video"
+                "name": "Building Hardware through a Pandemic"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_facebook%20inspired%20final.mov",
                 "order": 7,
-                "name": "Facebook Inspired"
-              },
-              {
-                "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_CXL%20Demo.mov",
-                "order": 10,
-                "name": "CXL Demo"
+                "name": "What Inspires Us"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_FACEBOOK_DATACENTER_OCTOBER_11_2016.mov",
-                "name": "FACEBOOK_DATACENTER_OCTOBER",
+                "name": "Our Data Center & OCP Journey",
                 "order": 8
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_Hardware%20Engineering%20at%20Facebook.mp4",
-                "name": "Hardware Engineering at Facebook",
+                "name": "The People behind the Hardware",
                 "order": 9
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_CXL%20Demo.mov",
+                "order": 10,
+                "name": "See CXL in action!"
               }
             ]
           },
