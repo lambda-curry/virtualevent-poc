@@ -19,8 +19,6 @@ const VideoComponent = class extends React.Component {
   render() {
     const {url, title, namespace, firstHalf, autoPlay} = this.props;
 
-    console.log(autoPlay, 'AUTO');
-
     let videoJsOptions = {
       autoplay: autoPlay,
       /*
@@ -28,7 +26,7 @@ const VideoComponent = class extends React.Component {
        (or the muted option, with Video.js).
        @see https://blog.videojs.com/autoplay-best-practices-with-video-js/
        */
-      muted: autoPlay ? true : false,
+      muted: !!autoPlay,
       controls: true,
       fluid: true,
       playsInline: true
