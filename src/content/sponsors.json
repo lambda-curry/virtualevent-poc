@@ -920,6 +920,20 @@
                 "name": "Facebook",
                 "order": 4
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/xilinx_inc_alveo-sn1000-smartnic-product-overview.pdf",
+                "name": "Alveo SN1000 SmartNIC - Product Overview",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/xilinx_inc_sssd-brief-final.pdf",
+                "name": "SSSD brief ",
+                "order": 6
+              }
             ]
           },
           "columnAds": [
