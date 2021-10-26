@@ -723,15 +723,27 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/qct_QCT%203rd%20Gen%20Servers%20Powered%20with%203rd%20Gen%20Intel%20Xeon%20Scalable%20Processors.mp4",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/qct_%28FINAL%29%20Bloomberg_QCT%2030s%20W%20SUBS_HD1080p.mp4",
+                "order": 1,
+                "name": "QCT Welcome Video "
+              },
+              {
+                "class_name": "PresentationVideo",
                 "name": "QCT 3rd Gen Servers Powered with 3rd Gen Intel Xeon Scalable Processors",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/qct_QCT%203rd%20Gen%20Servers%20Powered%20with%203rd%20Gen%20Intel%20Xeon%20Scalable%20Processors.mp4",
                 "order": 2
               },
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/qct_%28FINAL%29%20Bloomberg_QCT%2030s%20W%20SUBS_HD1080p.mp4",
-                "order": 1,
-                "name": "QCT Welcome Video "
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/qct_QCT%20with%20Intel%20to%20Create%20Next%20Generation%20DAOS-based%20Storage%20Systems%20for%20HPC.mp4",
+                "name": "QCT with Intel to Create Next Generation DAOS-based Storage Systems for HPC",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/qct_QCT%20%20QuantaGrid%20D53XQ-2U%20Performance%20World%20Record.mp4",
+                "order": 4,
+                "name": "QCT QuantaGrid D53XQ-2U Performance World Record"
               }
             ],
             "links": [
