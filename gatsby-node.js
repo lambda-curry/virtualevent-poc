@@ -35,7 +35,7 @@ const SSR_getEvents = async (baseUrl, summitId, accessToken, page) => {
       {
         params: {
           access_token: accessToken,
-          per_page: 50,
+          per_page: 20,
           page: page,
           expand: 'slides, links, videos, media_uploads, type, track, track.allowed_access_levels, location, location.venue, location.floor, speakers, moderator, sponsors, current_attendance, groups, rsvp_template, tags',
         }
