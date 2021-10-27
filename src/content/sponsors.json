@@ -207,18 +207,21 @@
       ],
       "sponsors": [
         {
+          "marquee": "Learn more about CoreSite below!",
           "sponsorColor": "#002639",
           "logo": "/img/if2021_fnv-logo-coresite.png",
           "name": "CoreSite Realty Corporation",
           "intro": "#### CoreSite Realty Corporation (NYSE:COR) delivers secure, reliable, high-performance data center, cloud access and interconnection solutions to a growing customer ecosystem across eight key North American markets. More than 1,375 of the world’s leading enterprises, network operators, cloud providers, and supporting service providers choose CoreSite to connect, protect and optimize their performance-sensitive data, applications and computing workloads. Our scalable, flexible solutions and 460+ dedicated employees consistently deliver unmatched data center options — all of which leads to a best-in-class customer experience and lasting relationships.",
           "headerImage": "/img/coresite_welcome1440x400.jpg",
           "headerImageMobile": "/img/coresite_welcome768x250.jpg",
+          "chatLink": "https://coresite.zoom.us/j/93037687076?pwd=QVNaeGNISjFSaHJKUENoVTV5SlJPdz09",
           "advertiseImage": "",
           "sponsorId": 138,
           "title": "CoreSite Realty Corporation",
           "companyId": 122,
           "id": 138,
           "showLogoInEventPage": false,
+          "email": "datacenters@coresite.com",
           "usesSponsorPage": true
         }
       ]
