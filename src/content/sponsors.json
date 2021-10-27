@@ -91,7 +91,7 @@
       ],
       "sponsors": [
         {
-          "logo": "/img/if2021_fnv_lobby_button-art-tech_v2.png",
+          "logo": "/img/if2021_fnv-arttech-lobby-button.png",
           "name": "Art + Tech ",
           "headerImage": "/img/if2021_fnv-arttech-header.png",
           "advertiseImage": "",
@@ -105,7 +105,7 @@
           "advertiseImage": "",
           "showLogoInEventPage": false,
           "name": "Women in XR",
-          "logo": "/img/if2021_fnv_lobby_button-art-tech_v2.png",
+          "logo": "/img/if2021_fnv-womeninxr-lobby-button.png",
           "id": 148,
           "sponsorId": 148,
           "externalLink": "/a/sponsor/140-women-in-xr-presented-by-qualcomm"
