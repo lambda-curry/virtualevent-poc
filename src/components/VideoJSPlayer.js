@@ -1,5 +1,6 @@
 import React from 'react'
 import videojs from 'video.js';
+import 'videojs-youtube'
 import 'videojs-mux';
 
 import 'video.js/dist/video-js.css';
