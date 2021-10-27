@@ -112,14 +112,16 @@
           "externalLink": "/a/sponsor/140-women-in-xr-presented-by-qualcomm"
         },
         {
-          "advertiseImage": "",
-          "showLogoInEventPage": false,
+          "logo": "/img/if2021_fnv-gamingcreatorzone-lobby-button.png",
           "name": "ReKT Gaming",
-          "logo": "/img/if2021_fnv_lobby_button-art-tech_v2.png",
-          "usesSponsorPage": true,
+          "headerImage": "/img/if2021_fnv-gamingcreatorzone-header.png",
+          "headerImageMobile": "/img/if2021_fnv-gamingcreatorzone-header-mobile.png",
+          "advertiseImage": "",
+          "sponsorId": 150,
           "companyId": 130,
           "id": 150,
-          "sponsorId": 150
+          "showLogoInEventPage": false,
+          "usesSponsorPage": true
         }
       ]
     },
