@@ -219,6 +219,22 @@
           "sponsorId": 138,
           "title": "CoreSite Realty Corporation",
           "companyId": 122,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/410519/admin/",
+                "order": 1,
+                "name": "CoreSite - LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/channel/UCMguHHRai0oyuWBF0KbN42A",
+                "order": 2,
+                "name": "CoreSite - YouTube"
+              }
+            ]
+          },
           "id": 138,
           "showLogoInEventPage": false,
           "email": "datacenters@coresite.com",
