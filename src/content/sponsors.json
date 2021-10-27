@@ -116,7 +116,7 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_Infra%20Hardware_who%20we%20are.mov",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_Infra%20Hardware_who%20we%20are.mp4",
                 "order": 4,
                 "name": "Our Infra Hardware Team"
               },
@@ -128,13 +128,13 @@
               },
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_facebook%20inspired%20final.mov",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_facebook%20inspired%20final.mp4",
                 "order": 7,
                 "name": "What Inspires Us"
               },
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_FACEBOOK_DATACENTER_OCTOBER_11_2016.mov",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_FACEBOOK_DATACENTER_OCTOBER_11_2016.mp4",
                 "name": "Our Data Center & OCP Journey",
                 "order": 8
               },
@@ -146,7 +146,7 @@
               },
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_CXL%20Demo.mov",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_CXL%20Demo.mp4",
                 "order": 10,
                 "name": "See CXL in action!"
               }
