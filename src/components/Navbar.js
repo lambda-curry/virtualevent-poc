@@ -56,7 +56,8 @@ const Navbar = ({
             (
                 currentPath === "/a/" || // lobby
                 currentPath.startsWith("/a/event") || // activity
-                currentPath.startsWith("/a/sponsor") // expo hall or sponsor page
+                currentPath.startsWith("/a/sponsor") || // expo hall or sponsor page
+                currentPath.startsWith("/a/schedule") // schedule
             )
         )
     ;
