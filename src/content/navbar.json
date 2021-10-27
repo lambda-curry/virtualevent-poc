@@ -32,7 +32,7 @@
       "display": true,
       "requiresAuth": false,
       "pageRestriction": [
-        "ANY"
+        "MARKETING"
       ]
     },
     {
@@ -41,8 +41,28 @@
       "display": true,
       "requiresAuth": false,
       "pageRestriction": [
-        "ANY"
+        "MARKETING"
       ]
+    },
+    {
+      "requiresAuth": true,
+      "pageRestriction": [
+        "LOBBY",
+        "EVENT"
+      ],
+      "title": "Sponsors",
+      "link": "/a/sponsors",
+      "display": true
+    },
+    {
+      "requiresAuth": true,
+      "pageRestriction": [
+        "LOBBY",
+        "EVENT"
+      ],
+      "title": "Map",
+      "link": "/a/map",
+      "display": true
     },
     {
       "requiresAuth": false,
