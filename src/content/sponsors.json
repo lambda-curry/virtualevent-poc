@@ -1064,27 +1064,27 @@
             "links": [
               {
                 "class_name": "PresentationLink",
-                "link": "https://twitter.com/AMI_PR",
+                "link": "https://ami.com/ocp-global-summit",
                 "order": 1,
-                "name": "Twitter"
+                "name": "AMI - Connect With Us. "
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/AMI_PR",
+                "order": 2,
+                "name": "@AMI_PR Twitter"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.linkedin.com/company/ami",
-                "order": 2,
-                "name": "LinkedIn"
+                "order": 3,
+                "name": "AMI - LinkedIn"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.youtube.com/channel/UC12o28faFg9c-3SDGn5rMew",
-                "order": 3,
-                "name": "Youtube"
-              },
-              {
-                "class_name": "PresentationLink",
-                "link": "https://ami.com/ocp-global-summit",
                 "order": 4,
-                "name": "Sign-Up Sheet"
+                "name": "AMI - YouTube"
               }
             ],
             "slides": [
