@@ -1056,7 +1056,7 @@
           "headerImage": "/img/ami_ocp-virtual-banner_2021_1440x400_rev3.png",
           "headerImageMobile": "/img/ami_ocp-virtual-banner_2021_768x250.png",
           "chatLink": "",
-          "advertiseImage": "",
+          "advertiseImage": "/img/ami_ami-ruby-lobby-ad_484x484.png",
           "sponsorId": 69,
           "title": "AMI",
           "companyId": 56,
@@ -1102,7 +1102,12 @@
               }
             ]
           },
-          "columnAds": [],
+          "columnAds": [
+            {
+              "link": "https://ami.com/ocp-global-summit",
+              "image": "/img/ami_ami-virtual-sponsor-ad_484x484.png"
+            }
+          ],
           "id": 69,
           "email": "marketing@ami.com",
           "usesSponsorPage": true
