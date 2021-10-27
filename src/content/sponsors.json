@@ -866,33 +866,39 @@
             "slides": [
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/wiwynn_corporation_datasheet-sv7100g4_210917_internal.pdf",
-                "name": "WiRack21 Server Wiwynn SV7100G4",
+                "link": "/img/wiwynn_corporation_datasheet-sv7100g4.pdf",
+                "name": "Datasheet - SV7100G4",
                 "order": 4
               },
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/wiwynn_corporation_datasheet-es200_210824_internal.pdf",
-                "name": "Edge Platform Wiwynn ES200",
+                "link": "/img/wiwynn_corporation_datasheet-sv310g4.pdf",
+                "name": "Datasheet - SV310G4",
                 "order": 5
               },
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/wiwynn_corporation_datasheet-sv302a_210630_internal.pdf",
+                "link": "/img/wiwynn_corporation_datasheet-sv302a.pdf",
                 "order": 6,
-                "name": "WiRack19 Server Wiwynn SV302A Series"
+                "name": "Datasheet - SV302A"
               },
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/wiwynn_corporation_datasheet-sv310g4_210507_internal.pdf",
-                "name": "WiRack19 Server Wiwynn SV310G4 Series",
+                "link": "/img/wiwynn_corporation_datasheet-ep100.pdf",
+                "name": "Datasheet - EP100",
                 "order": 7
               },
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/wiwynn_corporation_datasheet-sv328r_210930_internal.pdf",
-                "name": "WiRack19 Server Wiwynn SV328R 64-bit ARM Server",
+                "link": "/img/wiwynn_corporation_datasheet-es200.pdf",
+                "name": "Datasheet - ES200",
                 "order": 8
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/wiwynn_corporation_datasheet-sv328r.pdf",
+                "name": "Datasheet - SV328R",
+                "order": 9
               }
             ]
           },
