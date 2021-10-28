@@ -112,7 +112,7 @@
                 "class_name": "PresentationLink",
                 "name": "Visit Artist: Nicholas Biddle",
                 "link": "https://www.instagram.com/nickbiddleart/",
-                "order": 3
+                "order": 2
               },
               {
                 "class_name": "PresentationLink",
@@ -123,14 +123,20 @@
               {
                 "class_name": "PresentationLink",
                 "name": "Visit Artist: Kyoosang Choi",
-                "order": 3,
+                "order": 4,
                 "link": "https://monqmakereal.com/"
               },
               {
                 "class_name": "PresentationLink",
                 "name": "Visit Artist: Daniel Allen Cohen",
                 "link": "http://www.danielallencohen.com/",
-                "order": 4
+                "order": 5
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Visit Artist: Duel Diagnosis - Dave Navarro & PADHiA",
+                "order": 7,
+                "link": "https://dueldiagnosis.com/"
               }
             ]
           },
