@@ -1795,7 +1795,7 @@
           "intro": "#### Rittal North America is the U.S. subsidiary of Rittal GmbH & Co. KG, the world’s largest manufacturer of industrial and IT enclosures, racks and accessories, including climate control and power management systems for industrial, data center, outdoor and hybrid applications. Rittal's off-the-shelf standard, modified standard and custom-engineered products are recognized throughout the world as innovative, high quality solutions for practically any industrial or IT infrastructure application — from single enclosures to comprehensive, mission critical systems.",
           "headerImage": "/img/rittal_gmbh_co_kg_10.18.21_welcomestatic_1440x400_us633-bn3_v4.png",
           "headerImageMobile": "/img/rittal_gmbh_co_kg_10.18.21_welcomemobile_768x250_us633-bn2_v4.png",
-          "advertiseImage": "/img/rittal_gmbh_co_kg_10.12.21_sponsorad_968x968_us633-bn1_v4.png",
+          "advertiseImage": "/img/rittal_gmbh_co_kg_10.7.21_sponsorad_968x968_us633-bn_v2.png",
           "sponsorId": 63,
           "title": "Rittal North America",
           "companyId": 50,
@@ -1829,7 +1829,7 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/rittal_gmbh_co_kg_RM%20NG%20720p.mp4",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/rittal_gmbh_co_kg_OCP_en.mp4",
                 "order": 5,
                 "name": "Rittal OCP Video "
               }
