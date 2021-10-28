@@ -1103,6 +1103,32 @@
                 "name": "MegaRAC OE Data Sheet OCP Summit2021",
                 "order": 6
               }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/ami_20211012_01_AMI%20MegaRAC%20OpenEdition%20BMC%20OCP%20Repository.mp4",
+                "name": "AMI MegaRAC OpenEdition BMC OCP Repository",
+                "order": 7
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/ami_20211012_01_AMI%20MegaRAC%20OpenEdition%20BMC%20Checkout%20and%20Compiling.mp4",
+                "order": 8,
+                "name": "AMI MegaRAC OpenEdition BMC Checkout and Compiling"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/ami_20211012_01_AMI%20MegaRAC%20OpenEdition%20BMC%20WebUI%20Introduction.mp4",
+                "order": 9,
+                "name": "AMI MegaRAC OpenEdition BMC WebUI Introduction"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "AMI MegaRAC OpenEdition BMC Binary Image",
+                "order": 10,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/ami_20211012_01_AMI%20MegaRAC%20OpenEdition%20BMC%20Binary%20Image.mp4"
+              }
             ]
           },
           "columnAds": [
