@@ -191,6 +191,24 @@
                 "name": "Visit Artist: Reisig and Taylor",
                 "order": 14,
                 "link": "https://reisig-and-taylor.format.com/collage"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Visit Artist: Jam Sutton",
+                "order": 15,
+                "link": "https://www.jamsutton.studio/"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Tiffany Trenda",
+                "link": "https://www.tiffanytrenda.com/",
+                "order": 16
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Visit Artist: Paul Westacott",
+                "link": "https://www.paulwestacott.com/",
+                "order": 17
               }
             ]
           },
