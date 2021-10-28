@@ -91,13 +91,49 @@
       ],
       "sponsors": [
         {
+          "sponsorColor": "#FF0098",
           "logo": "/img/if2021_fnv-arttech-lobby-button.png",
           "name": "Art + Tech ",
+          "intro": "#### Art is made possible through technology. From the invention of the paintbrush to computer-programmed augmented reality, artists have always used technology to translate a creative thought into a physical work of art. The ART+TECH space at Infinity Festival showcases the incredible resources, advanced technology and incredible imagination of today’s cutting-edge artists.\n\n#### ART+TECH includes internationally known artists working in mediums ranging from traditional video to advanced modern techniques including AR, AI and VR – all redefining the unlimited vision of the creative world. Infinity Festival supports the art community in all its forms. For additional information on our featured artists, please reference the list on the right side of this page.",
           "headerImage": "/img/if2021_fnv-arttech-header.png",
           "headerImageMobile": "/img/if2021_fnv-arttech-header-mobile.png",
           "advertiseImage": "",
           "sponsorId": 148,
           "companyId": 19,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "Visit Artist: Marina Berlin",
+                "link": "https://www.marinaberlinart.com/",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Visit Artist: Nicholas Biddle",
+                "link": "https://www.instagram.com/nickbiddleart/",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Visit Artist: Vellum LA presents Nancy Baker Cahill",
+                "order": 3,
+                "link": "https://www.nancybakercahill.com/"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Visit Artist: Kyoosang Choi",
+                "order": 3,
+                "link": "https://monqmakereal.com/"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Visit Artist: Daniel Allen Cohen",
+                "link": "http://www.danielallencohen.com/",
+                "order": 4
+              }
+            ]
+          },
           "id": 148,
           "showLogoInEventPage": true,
           "usesSponsorPage": true
