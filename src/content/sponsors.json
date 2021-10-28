@@ -474,49 +474,49 @@
               {
                 "class_name": "PresentationLink",
                 "link": "https://twitter.com/Azure",
-                "order": 2,
+                "order": 13,
                 "name": "Twitter – Microsoft Azure"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://twitter.com/microsoft",
-                "order": 1,
+                "order": 14,
                 "name": "Twitter – Microsoft"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.linkedin.com/company/microsoft/",
-                "order": 3,
+                "order": 15,
                 "name": "LinkedIn – Microsoft"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.youtube.com/channel/UC0m-80FnNY2Qb7obvTL_2fA",
-                "order": 4,
+                "order": 16,
                 "name": "YouTube – Microsoft Azure"
               },
               {
                 "class_name": "PresentationLink",
                 "name": "Microsoft OCP 2021 blog",
                 "link": "aka.ms/OCP2021",
-                "order": 5
+                "order": 9
               },
               {
                 "class_name": "PresentationLink",
                 "link": " https://aka.ms/msjobs_OCP",
-                "order": 6,
+                "order": 10,
                 "name": "Microsoft Jobs "
               },
               {
                 "class_name": "PresentationLink",
-                "order": 7,
+                "order": 11,
                 "name": "Microsoft Azure Sustainability",
                 "link": "https://azure.microsoft.com/en-us/global-infrastructure/sustainability/#overview"
               },
               {
                 "class_name": "PresentationLink",
                 "name": "Microsoft Datacenter Virtual Tour",
-                "order": 8,
+                "order": 12,
                 "link": " https://news.microsoft.com/stories/microsoft-datacenter-tour/"
               }
             ],
@@ -525,24 +525,24 @@
                 "class_name": "PresentationSlide",
                 "link": "/img/microsoft_liquid-immersion-cooling.pdf",
                 "name": "Liquid Immersion - Real tech ready to power the future of AI",
-                "order": 5
+                "order": 1
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/microsoft_clean-fuels.pdf",
                 "name": "Clean Fuels - On the road to net-zero, green backup is a big step forward",
-                "order": 6
+                "order": 2
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/microsoft_grid-interactive-batteries.pdf",
                 "name": "Grid Interactive Batteries - How small steps power big sustainability goals",
-                "order": 7
+                "order": 3
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/microsoft_the-carbon-benefits-of-cloud-computing.pdf",
-                "order": 8,
+                "order": 4,
                 "name": "The carbon benefits of cloud computing."
               }
             ],
@@ -550,25 +550,25 @@
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/microsoft_Liquid%20Immersion%20Cooling.mp4",
-                "order": 9,
+                "order": 5,
                 "name": "Liquid Immersion Cooling"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/microsoft_Building%20the%20world%E2%80%99s%20computer%20with%20Microsoft%20Datacenters.mp4",
-                "order": 10,
+                "order": 6,
                 "name": "Microsoft Circular Centers"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/microsoft_Microsoft%20Circular%20Centers.mp4",
-                "order": 11,
+                "order": 7,
                 "name": "Building the world’s computer with Microsoft datacenters"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/microsoft_Microsoft%20Azure%20Global%20Infrastructure.mp4",
-                "order": 12,
+                "order": 8,
                 "name": "Microsoft Azure global infrastructure"
               }
             ]
