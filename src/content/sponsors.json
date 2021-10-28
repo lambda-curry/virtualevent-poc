@@ -1049,6 +1049,7 @@
         },
         {
           "marquee": "THE OPEN WORLD STARTS ON AMI. Our foundational technologies are how the world's machines Power Up, Stay On, and Run Secure.",
+          "featuredEventId": 2334,
           "sponsorColor": "#cc2027",
           "logo": "/img/ami_ami-logo_484x484.png",
           "name": "AMI",
@@ -3410,6 +3411,7 @@
         },
         {
           "marquee": "FADU is leading the industry with the lowest power, highest sustainable QoS Enterprise Storage Solutions for Gen 4 and beyond. Visit www.fadutec.com.",
+          "featuredEventId": 2335,
           "sponsorColor": "#000000",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-fadu.png",
           "name": "FADU Technology",
@@ -4314,6 +4316,7 @@
         },
         {
           "marquee": "Strategic Storytelling - Distill Ideas. Create Impact. Inspire Action.",
+          "featuredEventId": 2336,
           "sponsorColor": "#f79e12",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-davesimsmedia.png",
           "name": "Dave Sims Media",
