@@ -2387,6 +2387,7 @@
           "name": "Amphenol",
           "intro": "Amphenol ICC, a division of Amphenol Corporation, is a world leader in interconnect solutions for the Information, Communications and Commercial electronics markets. Amphenol Corporation is one of the world’s largest designers and manufacturers of electrical, electronic and fiber optic connectors and interconnect systems, antennas, sensors and sensor-based products and coaxial and high-speed specialty cable. Amphenol ICC has an expansive global presence in research and development, manufacturing, and sales. We design and manufacture a wide range of innovative connectors as well as cable assemblies and optical transceivers for diverse applications including server, storage, data center, networking, industrial, business equipment and automotive.",
           "headerImage": "/img/amphenol_ocp-welcome-image.jpg",
+          "headerImageMobile": "/img/amphenol_mobile-static-image.jpg",
           "advertiseImage": "",
           "sponsorId": 75,
           "title": "Amphenol",
