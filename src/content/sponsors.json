@@ -1319,6 +1319,7 @@
           "name": "Credo",
           "intro": "#### Credo is a leading provider of high-performance serial connectivity solutions for the hyperscale datacenter, 5G carrier, enterprise networking, artificial intelligence, and high-performance computing markets. Credo's solutions deliver the bandwidth, scalability, and end-to-end signal integrity for next-generation platforms requiring 25G, 50G, and 100G signal lane-rate connectivity for 100G, 200G, 400G, and 800G port enabled networks. Credo pioneered Active Electrical Cables (AECs) to solve to connectivity challenges of reach and volume facing DACs and the reliability and power hurdles of AOCs as speeds reached 400G and beyond. The cables, which integrate retimers and gearboxes in the connectors, have enabled new generations of data center architectures including distributed disaggregated chassis and NIC-to-Dual TOR implementations. Credo has 4 families of AECs in production including: SPAN AECs, CLOS AECs, SHIFT AECs, and SWITCH AECs. Learn more at https://www.credodemi.com/hiwire.",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/credo_Credo%2060s%20OCP%20Virtual%20Banner.mp4",
+          "headerImage": "/img/credo_credo-1440x400-banner.png",
           "headerImageMobile": "/img/credo_credo-768x250.png",
           "advertiseImage": "/img/credo_credo-square-ad-150150.png",
           "sponsorId": 64,
@@ -1330,19 +1331,19 @@
                 "class_name": "PresentationLink",
                 "link": "https://www.linkedin.com/company/credo-semiconductor",
                 "order": 1,
-                "name": "LinkedIn"
+                "name": "Credo - LinkedIn"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://twitter.com/credosemi",
                 "order": 2,
-                "name": "Twitter"
+                "name": "@credosemi - Twitter"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.youtube.com/channel/UCJR9X28THl0S87fDUe0oPfA",
                 "order": 3,
-                "name": "Youtube"
+                "name": "Credo - YouTube"
               }
             ],
             "slides": [
@@ -1360,14 +1361,14 @@
               },
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/credo_credo_hiwire_lp_clos_800g_-8x106g-_qsfp-dd_pam4_to_800g_-8x106g-_qsfp-dd...-1-.pdf",
-                "name": "LP CLOS AEC Specification",
+                "link": "/img/credo_credo_hiwire_lp_switch.pdf",
+                "name": "Credo HiWire LP SWITCH: LP SWITCH AEC Specification",
                 "order": 7
               },
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/credo_credo_hiwire_lp_switch_200g_qsfp56_pam4_to_two_200g_qsfp56_pam4_10112021....pdf",
-                "name": "LP SWITCH AEC Specification",
+                "link": "/img/credo_credo_hiwire_lp_clos.pdf",
+                "name": "Credo HiWire LP CLOS: LP CLOS AEC Specification",
                 "order": 8
               }
             ],
