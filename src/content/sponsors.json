@@ -2314,6 +2314,12 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/advanced_energy_Andy_Brown_Final_Takes-7.mp4",
                 "order": 12,
                 "name": "Andy Brown Video"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/advanced_energy_00%20-%20Advanced%20Energy%20v06.mp4",
+                "order": 13,
+                "name": "Advanced Energy"
               }
             ],
             "slides": [
