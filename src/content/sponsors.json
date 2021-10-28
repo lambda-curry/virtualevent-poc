@@ -2538,7 +2538,7 @@
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/edgecore_networks_brochure_telco.pdf",
-                "name": "brochure_telco",
+                "name": "Disaggregated and Open vBNG & DCSG Network Solutions",
                 "order": 6
               }
             ],
@@ -2546,25 +2546,25 @@
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/edgecore_networks_EdgeCore_SONiC_0527_Final_42mb.mp4",
-                "order": 10,
-                "name": "EdgeCore SONiC"
+                "order": 11,
+                "name": "SONiC Solution for Edgecore Open Platforms"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/edgecore_networks_Cell%20site%20gateway%20CF%202021_ocp_tp_49mb.mp4",
-                "order": 11,
-                "name": "Cell site gateway"
+                "order": 12,
+                "name": "Edgecore Disaggregated Cell Site Gateway Solutions for Mobile Network"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/edgecore_networks_DCS810%20AS9516-32D%20video%20OK_.mp4",
-                "order": 12,
-                "name": "DCS810 AS9516-32D"
+                "order": 13,
+                "name": "Edgecore 400G Programmable Data Center Switch - DCS810"
               },
               {
                 "class_name": "PresentationVideo",
-                "name": "EC OCP presentation",
-                "order": 13,
+                "name": "Edgecore OCP 2021 - Virtual Booth Solution Highlight",
+                "order": 10,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/edgecore_networks_EC%20OCP%2015%20mins%20presentation%20FHD_2_s.mp4"
               }
             ]
