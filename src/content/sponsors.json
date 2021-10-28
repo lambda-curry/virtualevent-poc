@@ -1173,44 +1173,44 @@
                 "class_name": "PresentationLink",
                 "link": "https://www.linkedin.com/company/arrcus-inc",
                 "order": 2,
-                "name": "LinkedIN"
+                "name": "LinkedIn"
               }
             ],
             "slides": [
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/arrcus_inc_arrcus-ip-clos-networks-white-paper.pdf",
-                "name": "Arrcus IP Clos Networks White Paper",
+                "name": "Arrcus IP Clos Networks",
                 "order": 5
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/arrcus_inc_arrcus-open-mlag-solution-brief.pdf",
-                "name": "Arrcus Open MLAG Solution Brief",
+                "name": "Arrcus Open MLAG",
                 "order": 6
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/arrcus_inc_arrcus-l3vpn-over-srv6-solution-brief.pdf",
-                "name": "Arrcus L3VPN over SRv6 Solution Brief",
+                "name": "Arrcus L3VPN over SRv6",
                 "order": 7
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/arrcus_inc_arrcus-vdr-solution-brief.pdf",
-                "name": "Arrcus VDR Solution Brief",
+                "name": "Arrcus Virtualized Distributed Router (VDR)",
                 "order": 8
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/arrcus_inc_arrcus-mcn-solution-brief.pdf",
-                "name": "Arrcus MCN Solution Brief",
+                "name": "Arrcus Multi-Cloud Networking",
                 "order": 9
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/arrcus_inc_arrcus-bgp-evpn-solution-brief.pdf",
-                "name": "Arrcus BGP-EVPN Solution Brief",
+                "name": "Arrcus BGP-EVPN",
                 "order": 10
               }
             ],
@@ -1219,7 +1219,7 @@
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arrcus_inc_Arrcus%20Company%20Overview.mp4",
                 "name": "Arrcus Company Overview",
-                "order": 10
+                "order": 11
               },
               {
                 "class_name": "PresentationVideo",
@@ -1254,7 +1254,7 @@
               {
                 "class_name": "PresentationVideo",
                 "name": "ArcOS EVPN VxLAN",
-                "order": 11,
+                "order": 13,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arrcus_inc_ArcOS%20EVPN%20VxLAN.mp4"
               }
             ]
