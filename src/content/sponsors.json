@@ -2688,13 +2688,13 @@
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/keysight_technologies_sonic-plugfest-2021-test-report-and-learning-summary.pdf",
-                "name": "SONiC-PlugFest-2021-Test-Report-and-Learning-Summary",
+                "name": "SONiC PlugFest 2021 Test Report and Learning Summary",
                 "order": 5
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/keysight_technologies_g800ge-osfp-800ge-layer-1-bert-and-kp4-fec-multiport-test-system.pdf",
-                "name": "G800GE-OSFP-800GE-Layer-1-BERT-and-KP4-FEC-Multiport-Test-System",
+                "name": "G800GE OSFP 800GE Layer 1 BERT and KP4 FEC Multiport Test System",
                 "order": 6
               },
               {
@@ -2706,7 +2706,7 @@
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/keysight_technologies_six-tests-you-need-now-for-hyperscale-networking.pdf",
-                "name": "Six-Tests-You-Need-Now-for-Hyperscale-Networking",
+                "name": "Six Tests You Need Now for Hyperscale Networking",
                 "order": 8
               }
             ],
@@ -2714,13 +2714,13 @@
               {
                 "class_name": "PresentationVideo",
                 "name": "SONiC-Final",
-                "order": 9,
+                "order": 1,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/keysight_technologies_SONiC-Final.mp4"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/keysight_technologies_DISE-OCP.mp4",
-                "order": 10,
+                "order": 2,
                 "name": "DISE-OCP"
               }
             ]
