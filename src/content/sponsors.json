@@ -3237,6 +3237,12 @@
                 "link": "/img/super_micro_computer_inc_brochure_superserver_x12.pdf",
                 "name": "SuperServer X12",
                 "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/super_micro_computer_inc_h12_clouddc_datasheet_v1.0.pdf",
+                "name": "H12 CloudDC Datasheet",
+                "order": 6
               }
             ]
           },
