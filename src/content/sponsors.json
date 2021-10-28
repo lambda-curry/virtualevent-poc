@@ -137,6 +137,60 @@
                 "name": "Visit Artist: Duel Diagnosis - Dave Navarro & PADHiA",
                 "order": 7,
                 "link": "https://dueldiagnosis.com/"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Visit Artist: Carlos Luna James",
+                "order": 8,
+                "link": "https://www.magogalaktiko.com/"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Visit Artist: Crypt Gallery presents King of Midtown",
+                "link": "https://www.thecryptgallerynyc.com/home",
+                "order": 9
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Visit Artist: Davey Leavitt",
+                "order": 10,
+                "link": "https://daveyleavitt.com/"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Visit Artist: Cara Lee",
+                "order": 11,
+                "link": "https://www.caraleeproject.com/"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Visit Artist: Giuseppe Lo Schiavo",
+                "order": 12,
+                "link": "https://www.giuseppeloschiavo.com/"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Visit Artist: Teek Van Thi Mach",
+                "order": 12,
+                "link": "https://teekmach.com/"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Visit Artist: Todd Newman",
+                "order": 13,
+                "link": "https://www.instagram.com/toddnewman/"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Visit Artist: Danielle Parsons",
+                "order": 14,
+                "link": "https://wonderscience.com/"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Visit Artist: Reisig and Taylor",
+                "order": 14,
+                "link": "https://reisig-and-taylor.format.com/collage"
               }
             ]
           },
