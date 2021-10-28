@@ -3269,6 +3269,18 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/super_micro_computer_inc_RedStone-2021%20final%20fixed.mp4",
                 "order": 10,
                 "name": "Red Stone"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "2U-2Node SuperMinute",
+                "order": 11,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/super_micro_computer_inc_2U-2Node%20SuperMinute%20rev3.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/super_micro_computer_inc_Hyper-E_final.mp4",
+                "order": 12,
+                "name": "Hyper-E"
               }
             ]
           },
