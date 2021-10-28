@@ -1231,7 +1231,7 @@
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arrcus_inc_Arrcus%20Open%20MLAG%20Demo.mp4",
                 "order": 13,
-                "name": "Arrcus Open MLAG Dem"
+                "name": "Arrcus Open MLAG"
               },
               {
                 "class_name": "PresentationVideo",
@@ -1243,7 +1243,7 @@
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arrcus_inc_Arrcus%20VDR%20-%20Building%20Blocks.mp4",
                 "order": 15,
-                "name": "Arrcus VDR - Building Block"
+                "name": "Arrcus VDR – Building Blocks"
               },
               {
                 "class_name": "PresentationVideo",
