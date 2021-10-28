@@ -1672,6 +1672,12 @@
                 "link": "/img/liteon_racks.pdf",
                 "name": "Racks",
                 "order": 9
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/liteon_ocp-2020-liteon-speaking-session-sam-ye.pdf",
+                "name": "OCP 2020 LITEON Speaking Session - Sam Ye",
+                "order": 10
               }
             ]
           },
