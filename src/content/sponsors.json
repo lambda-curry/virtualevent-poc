@@ -1710,9 +1710,9 @@
           "logo": "/img/ocp21glo_fnv_sponsorlogo-pliops.png",
           "name": "Pliops",
           "intro": "#### Today’s explosive data growth and rapidly expanding application workloads threaten to overwhelm datacenters, preventing organizations from harnessing the AI/ML, 5G, big data analytics, IoT, and other modern applications they need to achieve their business goals. The breakthrough Pliops Extreme Data Processor (XDP), delivered on an easy-to-deploy, low-profile PCIe card, overcomes storage inefficiencies to massively accelerate performance and dramatically reduce overall infrastructure costs for these data-hungry, storage-intensive applications. By radically simplifying the way data is processed and flash storage is managed, Pliops multiplies the effectiveness of organizations’ infrastructure investments by exponentially increasing datacenter performance, reliability, capacity, and efficiency.",
-          "headerImage": "/img/pliops_ocp-header-3.png",
+          "headerImage": "/img/pliops_multiply-the-effectivness-1440x400-.png",
           "chatLink": "https://us02web.zoom.us/j/84553093001?pwd=eXQ3OWdpeUVIQ1dZTC83OWE2bjdJZz09",
-          "advertiseImage": "",
+          "advertiseImage": "/img/pliops_frame_1846.jpg",
           "sponsorId": 97,
           "title": "Pliops",
           "companyId": 83,
@@ -1877,7 +1877,8 @@
           "sponsorColor": "#4F758B",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-simslifecycle.png",
           "name": "Sims Lifecycle Services",
-          "intro": "#### https://www.simslifecycle.com/about-us/",
+          "intro": "### Sims Lifecycle Services (SLS) provides solutions to major cloud providers and enterprises to extend the life of IT and electronic devices. By decommissioning IT and data center equipment, components and materials, SLS provides value in end-of-life assets, navigates ongoing technology shifts and securely and responsibly manages IT asset disposition. Whether reuse, reengineering, redeployment or recycling, the global services offered at SLS support the evolution of the electronics industry movement toward circularity. Clients benefit from data security, maximum IT value recovery, global compliance and sustainable IT use. As a responsible corporate citizen, and in alignment with the United Nations Sustainable Development Goals, we continuously seek new ways to contribute to the circular economy. For more information, visit www.simslifecycle.com.",
+          "headerImage": "/img/sims_lifecycle_services_microsoftteams-image-19-.png",
           "advertiseImage": "",
           "sponsorId": 117,
           "title": "Sims Lifecycle Services",
@@ -1908,8 +1909,22 @@
                 "order": 4,
                 "name": "Instagram"
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/sims_lifecycle_services_2020-checklist-for-selecting-a-decommissioning-vendor.pdf",
+                "name": "2020 Checklist for Selecting a Decommissioning Vendor",
+                "order": 5
+              }
             ]
           },
+          "columnAds": [
+            {
+              "link": "https://www.simslifecycle.com/business/itad/gartner/",
+              "image": "/img/sims_lifecycle_services_microsoftteams-image-17-.png"
+            }
+          ],
           "id": 117,
           "showLogoInEventPage": false,
           "email": "info.national@simsmm.com",
