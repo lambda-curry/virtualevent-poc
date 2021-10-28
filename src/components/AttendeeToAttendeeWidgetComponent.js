@@ -26,7 +26,7 @@ const sbAuthProps = {
 
 const adminGroups = ["administrators", "super-admins"];
 
-export const AttendeesWidget = ({ user, event, location }) => {
+export const AttendeesWidget = ({ user, event }) => {
   const [loading, setLoading] = useState(true);
 
   //Deep linking support
@@ -36,8 +36,13 @@ export const AttendeesWidget = ({ user, event, location }) => {
   const ocrRef = useRef();
 
   const { userProfile, idpProfile } = user || {};
-  const { email, groups, first_name, last_name, bio, summit_tickets } = userProfile || {};
+  const { summit_tickets } = userProfile || {};
   const { 
+    email, 
+    groups, 
+    bio,
+    given_name,
+    family_name,
     picture,
     company,
     job_title,
@@ -97,7 +102,7 @@ export const AttendeesWidget = ({ user, event, location }) => {
     user: {
       id: sub.toString(),
       idpUserId: sub.toString(),
-      fullName: public_profile_show_fullname ? `${first_name} ${last_name}` : `${first_name}`,
+      fullName: public_profile_show_fullname ? `${given_name} ${family_name}` : `${given_name}`,
       email: email,
       company: company,
       title: job_title,
@@ -116,7 +121,7 @@ export const AttendeesWidget = ({ user, event, location }) => {
       bio: bio,
       hasPermission: (permission) => {
         const isAdmin =  groups &&
-            groups.map((g) => g.code).filter((g) => adminGroups.includes(g))
+            groups.map((g) => g.slug).filter((g) => adminGroups.includes(g))
                 .length > 0;
         switch (permission) {
           case permissions.MANAGE_ROOMS:
@@ -175,8 +180,12 @@ const AccessTracker = ({ user, isLoggedUser }) => {
     return null;
   }
 
-  const { email, first_name, last_name, bio, summit_tickets } = user.userProfile;
+  const { summit_tickets } = user.userProfile;
   const {
+    bio,
+    given_name,
+    family_name,
+    email,
     picture,
     company,
     job_title,
@@ -193,7 +202,7 @@ const AccessTracker = ({ user, isLoggedUser }) => {
   const widgetProps = {
     user: {
       idpUserId: sub,
-      fullName: public_profile_show_fullname ? `${first_name} ${last_name}` : `${first_name}`,
+      fullName: public_profile_show_fullname ? `${given_name} ${family_name}` : `${given_name}`,
       email: email,
       company: company,
       title: job_title,
