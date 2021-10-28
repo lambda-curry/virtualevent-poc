@@ -1619,7 +1619,19 @@
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/liteon_LiteON_PSS_final.mp4",
                 "order": 5,
-                "name": "Video #1 "
+                "name": "LiteON"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "2035 E-Mobility Online Talk - LITEON Technology",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/liteon_%E3%80%902035%20E-Mobility%20Online%20Talk%E3%80%91-LITEON%20Technology%20%28720p%29.mp4",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/liteon_LITEON%20immersion%20power%20shelf%20live%20demo%20in%20Submer%20SmartPodX.MOV",
+                "order": 7,
+                "name": "LITEON immersion power shelf live demo in Submer SmartPodX"
               }
             ],
             "links": [
