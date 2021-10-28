@@ -1834,7 +1834,14 @@
                 "name": "Rittal OCP Video "
               }
             ],
-            "slides": []
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/20211027-rittal-zutacore-wp-dcc.pdf",
+                "name": "Rittal High Density Cooled-by-ZutaCore White Paper",
+                "order": 5
+              }
+            ]
           },
           "columnAds": [
             {
