@@ -3230,11 +3230,19 @@
                 "order": 4,
                 "name": "Youtube"
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/super_micro_computer_inc_brochure_superserver_x12.pdf",
+                "name": "SuperServer X12",
+                "order": 5
+              }
             ]
           },
           "columnAds": [
             {
-              "link": "www.supermicro.com/X12",
+              "link": "https://www.supermicro.com/en/products/x12",
               "image": "/img/super_micro_computer_inc_03_ads_2021_x12bestclass_r03-1_968x968px.jpg"
             }
           ],
