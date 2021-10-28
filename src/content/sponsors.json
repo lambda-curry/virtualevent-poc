@@ -2427,6 +2427,12 @@
               }
             ]
           },
+          "columnAds": [
+            {
+              "image": "/img/amphenol_ocp-virtual-ad-02.png",
+              "link": "https://www.amphenol-icc.com/applications/data-centers.html"
+            }
+          ],
           "id": 75,
           "email": "Lorri.Bupp@amphenol-icc.com",
           "usesSponsorPage": true
