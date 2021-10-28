@@ -67,7 +67,8 @@
       "requiresAuth": true,
       "pageRestriction": [
         "LOBBY",
-        "ACTIVITY"
+        "ACTIVITY",
+        "SHOW"
       ],
       "title": "SPONSORS",
       "link": "/a/sponsors",
@@ -77,7 +78,8 @@
       "requiresAuth": true,
       "pageRestriction": [
         "LOBBY",
-        "ACTIVITY"
+        "ACTIVITY",
+        "SHOW"
       ],
       "title": "MAPS",
       "link": "/maps",
