@@ -2226,14 +2226,14 @@
               {
                 "class_name": "PresentationLink",
                 "link": "www.youtube.com/3Melectronics",
-                "name": "YouTube",
+                "name": "YouTube 3M Electronics",
                 "order": 1
               },
               {
                 "class_name": "PresentationLink",
-                "link": "www.youtube.com/3MNovec",
+                "link": "https://www.youtube.com/user/3MNovec",
                 "order": 2,
-                "name": "Youtube"
+                "name": "YouTube 3M Novek"
               }
             ],
             "slides": [
