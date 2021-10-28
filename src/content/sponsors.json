@@ -1312,7 +1312,7 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Moving Tagline - 150 Character Max\tCredo Active Electrical Cables provide 28G, 56G, and 112G per lane PAM4 connectivity for distributed disaggregated chassis and NIC-to-Dual TOR racks.",
+          "marquee": "Credo Active Electrical Cables provide 28G, 56G, and 112G per lane PAM4 connectivity for distributed disaggregated chassis and NIC-to-Dual TOR racks.",
           "featuredEventId": 2340,
           "sponsorColor": "#000000",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-credo.png",
@@ -1320,7 +1320,7 @@
           "intro": "#### Credo is a leading provider of high-performance serial connectivity solutions for the hyperscale datacenter, 5G carrier, enterprise networking, artificial intelligence, and high-performance computing markets. Credo's solutions deliver the bandwidth, scalability, and end-to-end signal integrity for next-generation platforms requiring 25G, 50G, and 100G signal lane-rate connectivity for 100G, 200G, 400G, and 800G port enabled networks. Credo pioneered Active Electrical Cables (AECs) to solve to connectivity challenges of reach and volume facing DACs and the reliability and power hurdles of AOCs as speeds reached 400G and beyond. The cables, which integrate retimers and gearboxes in the connectors, have enabled new generations of data center architectures including distributed disaggregated chassis and NIC-to-Dual TOR implementations. Credo has 4 families of AECs in production including: SPAN AECs, CLOS AECs, SHIFT AECs, and SWITCH AECs. Learn more at https://www.credodemi.com/hiwire.",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/credo_Credo%2060s%20OCP%20Virtual%20Banner.mp4",
           "headerImageMobile": "/img/credo_credo-768x250.png",
-          "advertiseImage": "/img/credo_experiencecenterad484x484.png",
+          "advertiseImage": "/img/credo_credo-square-ad-150150.png",
           "sponsorId": 64,
           "title": "Credo",
           "companyId": 51,
