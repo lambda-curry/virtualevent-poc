@@ -1128,6 +1128,12 @@
                 "name": "AMI MegaRAC OpenEdition BMC Binary Image",
                 "order": 10,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/ami_20211012_01_AMI%20MegaRAC%20OpenEdition%20BMC%20Binary%20Image.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/ami_20211012_01_AMI%20MegRAC%20OpenEdition%20BMC%20Loadout%20and%20Launch.mp4",
+                "name": "AMI MegRAC OpenEdition BMC Loadout and Launch",
+                "order": 11
               }
             ]
           },
