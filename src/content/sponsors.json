@@ -1154,8 +1154,8 @@
           "logo": "/img/arrcus_inc_arrcus-logo-tagline-484x484.png",
           "name": "Arrcus",
           "intro": "### Arrcus was founded to enhance business efficiency through superior network connectivity. The Arrcus Connected Edge (ACE) platform offers best-in-class networking with the most flexible consumption model at the lowest total cost of ownership. The Arrcus team consists of world-class technologists who have an unparalleled record in shipping industry-leading networking products, complemented by industry thought leaders, operating executives, strategic partners, and top-tier VCs. For more information, go to www.arrcus.com or follow @arrcusinc.",
-          "headerImage": "/img/arrcus_inc_arrcus-ocp-welcome-static-image.png",
-          "headerImageMobile": "/img/arrcus_inc_arrcus-ocp-mobile-static-image.png",
+          "headerImage": "/img/arrcus_inc_arrcus-ocp-welcome-static-image-high-.jpg",
+          "headerImageMobile": "/img/arrcus_inc_arrcus-ocp-mobile-static-image-high-.jpg",
           "chatLink": "https://arrcus.zoom.us/j/98109522847?pwd=bC9vRjA4NmI2UUVmRmJiQ0h5YkEzZz09",
           "advertiseImage": "/img/arrcus_inc_arrcus-ocp-virtual-lobby-ad.png",
           "sponsorId": 70,
@@ -1224,38 +1224,44 @@
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arrcus_inc_Arrcus%20-%20Enabling%20NaaS%20for%205G%20Mobile%20and%20Edge.mp4",
-                "order": 11,
+                "order": 12,
                 "name": "Arrcus - Enabling NaaS for 5G Mobile and Edge"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arrcus_inc_Arrcus%20Open%20MLAG%20Demo.mp4",
-                "order": 12,
+                "order": 13,
                 "name": "Arrcus Open MLAG Dem"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arrcus_inc_Introducing%20Arrcus%20VDR%20-%20The%20Virtualized%20Distributed%20Router.mp4",
-                "order": 13,
+                "order": 14,
                 "name": "Introducing Arrcus VDR - The Virtualized Distributed Router"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arrcus_inc_Arrcus%20VDR%20-%20Building%20Blocks.mp4",
-                "order": 14,
+                "order": 15,
                 "name": "Arrcus VDR - Building Block"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arrcus_inc_Introducing%20Arrcus%20MCN%20Platform.mp4",
                 "name": "Introducing Arrcus MCN Platform",
-                "order": 15
+                "order": 16
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "ArcOS EVPN VxLAN",
+                "order": 11,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/arrcus_inc_ArcOS%20EVPN%20VxLAN.mp4"
               }
             ]
           },
           "columnAds": [
             {
-              "image": "/img/arrcus_inc_arrcus-ocp-virtual-sponsor-ad.png",
+              "image": "/img/arrcus_inc_arrcus-ocp-virtual-sponsor-ad-high-.jpg",
               "link": "https://www.arrcus.com"
             }
           ],
