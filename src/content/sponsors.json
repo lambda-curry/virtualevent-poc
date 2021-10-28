@@ -1917,6 +1917,36 @@
                 "link": "/img/sims_lifecycle_services_2020-checklist-for-selecting-a-decommissioning-vendor.pdf",
                 "name": "2020 Checklist for Selecting a Decommissioning Vendor",
                 "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/sims_lifecycle_services_2020-developing-sustainable-partnerships-case-study.pdf",
+                "name": "2020 Developing Sustainable Partnerships Case Study",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/sims_lifecycle_services_2020-global-data-center-decommissioning.pdf",
+                "name": "2020 Global Data Center Decommissioning",
+                "order": 7
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/sims_lifecycle_services_2021-five-ways-to-improve-itad.pdf",
+                "name": "2021 five ways to improve itad",
+                "order": 8
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/sims_lifecycle_services_data-center-inforgraphic.pdf",
+                "name": "Data Center Inforgraphic",
+                "order": 10
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/sims_lifecycle_services_circular-economy-white-paper.pdf",
+                "name": "circular economy white paper",
+                "order": 9
               }
             ]
           },
