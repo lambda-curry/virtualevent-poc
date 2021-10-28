@@ -77,9 +77,7 @@
     {
       "requiresAuth": true,
       "pageRestriction": [
-        "LOBBY",
-        "ACTIVITY",
-        "SHOW"
+        "ANY"
       ],
       "title": "MAPS",
       "link": "/maps",
