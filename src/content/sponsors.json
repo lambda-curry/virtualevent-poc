@@ -5059,19 +5059,19 @@
       ],
       "sponsors": [
         {
-          "marquee": "Custom Symposium ticker text",
+          "marquee": "Scroll down to see the Posters! ",
           "sponsorColor": "#00B189",
           "logo": "/img/ocp21glo_fnv_sym-logo.png",
           "name": "OCP Future Technologies Symposium",
-          "intro": "Symposium description, we will want to insert where to view Symposium posters at the in-person event.\n\n\n\n**Check out the symposium posters in the Media and Links box to the right!**",
+          "intro": "The objective of the OCP Future Technologies Symposium is to bring to the OCP Community a forward-looking funnel of technologies which focus on solving future problems facing the industry, and accelerate productization through partnerships and open source R&D. Also, it is a unique opportunity to expose a generation of up-and-coming, best-in-class students to the professional community for purposes of research, training and recruitment. The Global academic, startup and venture communities are invited to participate, as well as industrial organizations performing cutting-edge research related to data center technologies.\n\n### Mission\n\n**1. Innovation:** to bring to the OCP Community a forward-looking funnel of new technologies and accelerate their productization\n\n**2. Technology scale:** focus on technologies that can help grow, drive, and support the open hardware ecosystem in, near, and around the datacenter and beyond\n\n**3. People:** connect best-in-class researchers to the professional community for purposes of collaboration, training and recruitment\n\nBy year-end 2022, a key success metric is adoption. Adoption can be either OCP members adopting technologies from Symposium, or investing in research\n\n### Technology Focus Areas\n\n* **Sustainability and Data Center Efficiency**\n\n  * Topics leading to reducing the carbon footprint of the OCP industry by year 2030. Topics can be technology, policy, tools, organizational behaviors or other topics associated with this area. \n* **Power Delivery and Efficiency**\n\n  * Advanced platforms (Compute, Network, Storage, etc) spefically focused on increasing efficiency in these systems. Power efficiency is a common overarching problem from the data center industry and we'd like to hear the best ideas to increase capability while reducing overall power demand in our operations. Scope of this topic starts with power delivery through end node usage. \n* **High Performance and Hardware Acceleration**\n\n  * Scope of this track includes high performance computing, application-specific computing, hardware/software co-design, interconnects and enablers. As performance gains from CPUs slow down, our industry is leaning heavily towards performance-based systems and acceleration of functional computing. \n* **Networking**\n\n  * ​​​​​​​Networking continues to provide optimization opportunities for our industry including different approaches like architecture, fabric, topology and optical.",
           "headerImage": "/img/ocp21glo_fnv_sym-header.png",
           "headerImageMobile": "/img/ocp21glo_fnv_sym-header-mobile.png",
           "advertiseImage": "",
           "sponsorId": 96,
-          "title": "Scroll down to see the Posters! ",
+          "title": "2021 OCP Future Technologies Symposium",
           "companyId": 82,
           "id": 96,
-          "email": "",
+          "email": " lesya.dymyd@opencompute.org",
           "usesSponsorPage": true
         }
       ]
