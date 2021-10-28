@@ -286,6 +286,7 @@
         },
         {
           "marquee": "",
+          "featuredEventId": 2339,
           "sponsorColor": "#0068B5",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-intel.png",
           "name": "Intel Corporation",
@@ -359,7 +360,7 @@
         {
           "marquee": "",
           "sideImage": "",
-          "featuredEventId": 2276,
+          "featuredEventId": 2337,
           "sponsorColor": "#343548",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-itrenew.png",
           "name": "ITRenew",
@@ -457,6 +458,7 @@
         },
         {
           "marquee": "Welcome to the Microsoft booth. Open hardware for a sustainable future. Learn more at aka.ms/OCP2021.",
+          "featuredEventId": 2344,
           "sponsorColor": "#50E6FF",
           "logo": "/img/microsoft_microsoft-logo-484x484.png",
           "name": "Microsoft",
@@ -1243,6 +1245,7 @@
         },
         {
           "marquee": "Moving Tagline - 150 Character Max\tCredo Active Electrical Cables provide 28G, 56G, and 112G per lane PAM4 connectivity for distributed disaggregated chassis and NIC-to-Dual TOR racks.",
+          "featuredEventId": 2340,
           "sponsorColor": "#000000",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-credo.png",
           "name": "Credo",
@@ -3221,6 +3224,7 @@
         },
         {
           "marquee": "Pluribus Adaptive Cloud Fabric delivers powerful networking solutions that are extremely simple to deploy and operate. It’s Cloud Networking–simplified.",
+          "featuredEventId": 2338,
           "sponsorColor": "#8ec341",
           "logo": "/img/8147da3fe0210702f64d70873a767ae696582820.png",
           "name": "Pluribus Networks",
