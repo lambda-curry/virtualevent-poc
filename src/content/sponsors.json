@@ -3583,6 +3583,20 @@
                 "order": 2,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/mitac_mitac_s5.mp4"
               }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://youtu.be/AGbeaxKgWhs",
+                "order": 1,
+                "name": "MiTAC X86 Based Private 5G E2E O RAN Solution"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://youtu.be/bJAJ4gutbYo",
+                "name": "OCP MITAC: YouTube",
+                "order": 2
+              }
             ]
           },
           "id": 100,
