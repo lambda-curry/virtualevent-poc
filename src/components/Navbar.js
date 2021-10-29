@@ -6,6 +6,7 @@ import ProfilePopupComponent from "./ProfilePopupComponent";
 import { updateProfilePicture, updateProfile } from "../actions/user-actions";
 import { getEnvVariable, AUTHORIZED_DEFAULT_PATH } from "../utils/envVariables";
 import Content from "../content/navbar.json";
+import { PHASES } from "../utils/phasesUtils";
 
 import styles from "../styles/navbar.module.scss";
 const PAGE_RESTRICTION_ACTIVITY = 'ACTIVITY';
@@ -13,7 +14,7 @@ const PAGE_RESTRICTION_MARKETING = 'MARKETING';
 const PAGE_RESTRICTION_LOBBY = 'LOBBY';
 const PAGE_RESTRICTION_ANY = 'ANY';
 const PAGE_RESTRICTION_SHOW = 'SHOW';
-
+const PAGE_RESTRICTION_CUSTOM_PAGE = 'CUSTOM_PAGE';
 
 const Navbar = ({
   isLoggedUser,
@@ -23,7 +24,8 @@ const Navbar = ({
   summit,
   updateProfilePicture,
   updateProfile,
-  location
+  location,
+  summit_phase,
 }) => {
   const [active, setActive] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
@@ -42,26 +44,72 @@ const Navbar = ({
     setShowProfile(!showProfile);
   };
 
-// we assume that all pages under /a/* requires auth except /a/schedule
+  const isCustomPage = (path) => {
+    return !isMarketingPage(path) &&
+           !isShowPage(path) &&
+           !isProfilePage(path) &&
+           !isMySchedulePage(path) &&
+           !isExtraQuestionsPage(path);
+  }
+
+  const isMySchedulePage = (path) => {
+    return path.startsWith("/a/my-schedule");
+  }
+
+  const isProfilePage = (path) => {
+    return path.startsWith("/a/profile");
+  }
+
+  const isExtraQuestionsPage = (path) => {
+    return path.startsWith("/a/extra-questions");
+  }
+
+  const isMarketingPage = (path) => {
+      return path === '/';
+  }
+
+  const isLobbyPage = (path) => {
+    return path === '/a' || path === '/a/';
+  }
+
+  const isActivityPage = (path) => {
+    return path.startsWith("/a/event");
+  }
+
+  const isSponsorPage = (path) => {
+    return path.startsWith("/a/sponsor");
+  }
+
+  const isSchedulePage = (path) => {
+    return path.startsWith("/a/schedule");
+  }
+
+  const isShowPage = (path) => {
+    return isLobbyPage(path) || // lobby
+        isActivityPage(path) || // activity
+        isSponsorPage(path) || // expo hall or sponsor page
+        isSchedulePage(path);// schedule
+  }
+
+  // we assume that all pages under /a/* requires auth except /a/schedule
   // item.requiresAuth allows to mark specific pages that are not under /a/* pattern.
   const showItem = (item) => {
     // check if we have location defined, if so use the path name , else if window is defined use the window.location
     // as a fallback
     const currentPath = location ? location.pathname: (typeof window !== "undefined" ? window.location.pathname: "");
-    const passPageRestriction = !item.pageRestriction || item.pageRestriction.includes(PAGE_RESTRICTION_ANY) ||
-        (item.pageRestriction.includes(PAGE_RESTRICTION_ACTIVITY) && currentPath.startsWith("/a/event")) ||
-        (item.pageRestriction.includes(PAGE_RESTRICTION_MARKETING) && currentPath === "/") ||
-        (item.pageRestriction.includes(PAGE_RESTRICTION_LOBBY) && currentPath === "/a/") ||
-        (item.pageRestriction.includes(PAGE_RESTRICTION_SHOW) &&
-            (
-                currentPath === "/a/" || // lobby
-                currentPath.startsWith("/a/event") || // activity
-                currentPath.startsWith("/a/sponsor") // expo hall or sponsor page
-            )
-        )
-    ;
+    const passPageRestriction = !item.pageRestriction ||
+        item.link === currentPath || // if we are on the same page then show it
+        item.pageRestriction.includes(PAGE_RESTRICTION_ANY) ||
+        (item.pageRestriction.includes(PAGE_RESTRICTION_ACTIVITY) && isActivityPage(currentPath)) ||
+        (item.pageRestriction.includes(PAGE_RESTRICTION_MARKETING) && isMarketingPage(currentPath)) ||
+        (item.pageRestriction.includes(PAGE_RESTRICTION_LOBBY) && isLobbyPage(currentPath)) ||
+        (item.pageRestriction.includes(PAGE_RESTRICTION_SHOW) && isShowPage(currentPath)) ||
+        (item.pageRestriction.includes(PAGE_RESTRICTION_CUSTOM_PAGE) && isCustomPage(currentPath));
 
-    return item.display && (!item.requiresAuth || isLoggedUser) && passPageRestriction;
+    return item.display &&
+           (!item.requiresAuth || isLoggedUser) &&
+           (!item.showOnlyAtShowTime || summit_phase >= PHASES.DURING) &&
+           passPageRestriction;
   };
 
   const defaultPath = getEnvVariable(AUTHORIZED_DEFAULT_PATH)
@@ -139,8 +187,9 @@ const Navbar = ({
   );
 };
 
-const mapStateToProps = ({ summitState }) => ({
+const mapStateToProps = ({ summitState, clockState }) => ({
   summit: summitState.summit,
+  summit_phase: clockState.summit_phase,
 });
 
 export default connect(mapStateToProps, {

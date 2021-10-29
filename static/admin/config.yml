@@ -105,9 +105,10 @@ collections:
           - {label: "Navbar", name: "items", widget: list, fields: [
               {label: "Title", name: "title", widget: string},
               {label: "Link", name: "link", widget: string},
-              {label: "Display", name: "display", widget: boolean, required: false},
+              {label: "Display?", name: "display", widget: boolean, required: false},
               {label: "Requires Auth?", name: "requiresAuth", widget: boolean, required: false, default: false},
-              {label: "Show only on page", name: "pageRestriction", widget: select, multiple: true, default: ["ANY"], options: ["ANY", "MARKETING", "LOBBY", "ACTIVITY", "SHOW"]},
+              { label: "Show only at Show Time?", name: "showOnlyAtShowTime", widget: boolean, required: false, default: false },
+              {label: "Show only on page", name: "pageRestriction", widget: select, multiple: true, default: ["ANY"], options: ["ANY", "MARKETING", "LOBBY", "ACTIVITY", "SHOW", "CUSTOM_PAGE"]},
             ]}
       - file: "src/content/footer.json"
         label: "Footer"
