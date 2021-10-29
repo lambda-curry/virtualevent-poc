@@ -2934,7 +2934,7 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "The future relies on technology…technology relies on Murata.",
+          "marquee": "Powering Tomorrow: Murata's Data Center and Open Compute Solutions.",
           "featuredEventId": 2322,
           "sponsorColor": "#525B5C",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-murata.png",
@@ -2967,19 +2967,12 @@
                 "name": "Twitter"
               }
             ],
-            "videos": [
-              {
-                "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/murata_OCP%20Datacenter%20Solutions%20Video.mp4",
-                "order": 5,
-                "name": "OCP Datacenter Solutions"
-              }
-            ],
+            "videos": [],
             "slides": [
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/murata_murata-data-center-brochure.pdf",
-                "name": "Murata Data Center",
+                "name": "Murata Data Center Solutions",
                 "order": 4
               }
             ]
@@ -3451,19 +3444,19 @@
               {
                 "class_name": "PresentationLink",
                 "link": "https://twitter.com/drivenets",
-                "name": "Twitter.com",
+                "name": "Twitter",
                 "order": 1
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.linkedin.com/company/drivenets",
-                "name": "Linkedin",
+                "name": "LinkedIn",
                 "order": 2
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.youtube.com/c/DriveNets",
-                "name": "Youtube",
+                "name": "YouTube",
                 "order": 3
               }
             ],
