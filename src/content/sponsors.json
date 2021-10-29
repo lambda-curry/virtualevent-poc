@@ -3517,13 +3517,13 @@
                 "class_name": "PresentationLink",
                 "link": "https://www.linkedin.com/company/fuchs-lubricants",
                 "order": 1,
-                "name": "Link"
+                "name": "LinkedIn"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.youtube.com/channel/UCKIcyzRUCcvuMFKRl1G7cUw",
                 "order": 2,
-                "name": "Youtube"
+                "name": "YouTube"
               },
               {
                 "class_name": "PresentationLink",
@@ -3531,8 +3531,30 @@
                 "order": 3,
                 "name": "Facebook"
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/fuchs_lubricants_co_single-phase-immersion-cooling-fluids_brochure_us.pdf",
+                "name": "Single Phase Immersion Cooling Fluids",
+                "order": 4
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/fuchs_lubricants_co_OCP.mp4",
+                "order": 6,
+                "name": "FUCHS LUBRICANTS CO. @ OCP"
+              }
             ]
           },
+          "columnAds": [
+            {
+              "link": "https://www.fuchs.com/us/en/single-phase-immersion-cooling-fluids/",
+              "image": "/img/fuchs_lubricants_co_ad_renolin-fecc.jpg"
+            }
+          ],
           "id": 122,
           "showLogoInEventPage": false,
           "email": "Paul.Lindsey@fuchs.com",
