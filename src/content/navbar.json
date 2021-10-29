@@ -65,10 +65,10 @@
     },
     {
       "requiresAuth": true,
+      "showOnlyAtShowTime": true,
       "pageRestriction": [
-        "LOBBY",
-        "ACTIVITY",
-        "SHOW"
+        "SHOW",
+        "CUSTOM_PAGE"
       ],
       "title": "SPONSORS",
       "link": "/a/sponsors",
