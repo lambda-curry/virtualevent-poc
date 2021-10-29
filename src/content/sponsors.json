@@ -588,6 +588,12 @@
                 "name": "XR/VR/AR Reimagining reality as we know it.",
                 "order": 1,
                 "link": "https://www.qualcomm.com/products/xr-vr-ar"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.qualcomm.com/company/corporate-responsibility/our-people/inclusion-diversity",
+                "order": 2,
+                "name": "Qualcomm aims to build an inclusive environment where everyone feels like they’re part of the team."
               }
             ]
           },
