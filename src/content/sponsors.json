@@ -3736,6 +3736,12 @@
               }
             ]
           },
+          "columnAds": [
+            {
+              "link": "https://landing.submer.com/megapod_for_dc_builders?utm_source=opencompute.org%2F&utm_medium=virtual_booth&utm_campaign=OCP_Global_Summit_21",
+              "image": "/img/submer_nextgen_datacenters_submer_sponsor-ad-1-484x484-.png"
+            }
+          ],
           "id": 99,
           "email": "na-team@submer.com",
           "usesSponsorPage": true
