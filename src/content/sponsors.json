@@ -1148,7 +1148,7 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Discover the Power of One with Arrcus Connected Edge (ACE) - One Simple Network, One Scalable Architecture, One Seamless Experience",
+          "marquee": "Discover the Power of One with Arrcus Connected Edge (ACE) - One Simple Network, One Scalable Architecture, One Seamless Experience.",
           "featuredEventId": 2331,
           "sponsorColor": "#034882",
           "logo": "/img/arrcus_inc_arrcus-logo-tagline-484x484.png",
@@ -1191,26 +1191,26 @@
               },
               {
                 "class_name": "PresentationSlide",
+                "link": "/img/arrcus_inc_arrcus-bgp-evpn-solution-brief.pdf",
+                "name": "Arrcus BGP-EVPN",
+                "order": 7
+              },
+              {
+                "class_name": "PresentationSlide",
                 "link": "/img/arrcus_inc_arrcus-l3vpn-over-srv6-solution-brief.pdf",
                 "name": "Arrcus L3VPN over SRv6",
-                "order": 7
+                "order": 8
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/arrcus_inc_arrcus-vdr-solution-brief.pdf",
                 "name": "Arrcus Virtualized Distributed Router (VDR)",
-                "order": 8
+                "order": 9
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/arrcus_inc_arrcus-mcn-solution-brief.pdf",
                 "name": "Arrcus Multi-Cloud Networking",
-                "order": 9
-              },
-              {
-                "class_name": "PresentationSlide",
-                "link": "/img/arrcus_inc_arrcus-bgp-evpn-solution-brief.pdf",
-                "name": "Arrcus BGP-EVPN",
                 "order": 10
               }
             ],
@@ -1266,7 +1266,7 @@
             }
           ],
           "id": 70,
-          "email": "bradb@arrcus.com",
+          "email": "adithya@arrcus.com",
           "usesSponsorPage": true
         },
         {
