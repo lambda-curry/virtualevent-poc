@@ -5368,13 +5368,29 @@
           "sponsorColor": "#8Dc63f",
           "logo": "/img/ocp21glo_fnv_base-logo.png",
           "name": "OCP Basecamp",
-          "intro": "OCP Basecamp description, we will want to insert where to Basecamp is at the live event posters at the in-person event.",
+          "intro": "The Open Compute Project Foundation (OCP) was initiated in 2011 with a mission to apply the benefits of open source and open collaboration to hardware and rapidly increase the pace of innovation in, near and around the data center’s networking equipment, general purpose and GPU servers, storage devices and appliances, and scalable rack designs. OCP’s collaboration model is being applied beyond the data center, helping to advance the telecom industry & EDGE infrastructure.",
           "headerImage": "/img/ocp21glo_fnv_base-header.png",
           "headerImageMobile": "/img/ocp21glo_fnv_base-header-mobile.png",
           "advertiseImage": "",
           "sponsorId": 95,
           "title": "OCP Basecamp",
           "companyId": 81,
+          "documents": {
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/o04_ocp21glo_reg22-contract_8.5x11_final.pdf",
+                "name": "OCP Regional Summit 2022 Sponsor Contract",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/o05_ocp21glo_glo22_sponsor-contract_final.pdf",
+                "name": "OCP Global 2022 Sponsor Contract",
+                "order": 2
+              }
+            ]
+          },
           "id": 95,
           "usesSponsorPage": true
         }
