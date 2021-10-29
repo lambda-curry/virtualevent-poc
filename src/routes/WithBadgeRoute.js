@@ -16,7 +16,7 @@ const WithBadgeRoute = ({ children, location, eventId, event, loading, userProfi
     if (!eventId || !userProfile)
       return "Sorry. You are not authorized to view this session.";
     if (!hasBadgeForEvent)
-      return "Sorry. You need a special badge to view this session.";
+      return "Sorry, this content is only available for the Virtual All Access pass. Please register for this pass to view.";
   };
 
   useEffect(() => {
