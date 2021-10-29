@@ -2548,6 +2548,32 @@
                 "order": 2,
                 "name": "YouTube"
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/bizlink_technology_inc_brochure_bizlink-data-center-solutions_internal-cables_l.pdf",
+                "name": "BizLink Data Center Solution Internal Cables",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/documents/",
+                "name": "BizLink Data Center Solutions External Cables Transceivers Loopbacks",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/bizlink_technology_inc_brochure_bizlink-data-center-solutions_power-whips_dc-power-cables_high-power-connectors_l.pdf",
+                "name": "BizLink Data Center Solutions Power Whips DC Power Cables High-Power Connectors",
+                "order": 7
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/bizlink_technology_inc_bizlink-data-center-solutions_all.pdf",
+                "name": "BizLink Data Center Solutions",
+                "order": 8
+              }
             ]
           },
           "columnAds": [
