@@ -2591,11 +2591,30 @@
           "name": "Cisco",
           "intro": "Cisco is exhibiting in-person at the Global Summit in San Jose, CA. You can find us at booth A3 or reach us through the \"contact us\" button above.",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/cisco_ocp-intro-60%20sec.mp4",
+          "chatLink": "https://cisco.webex.com/cisco/j.php?MTID=mef3dd4fbab34b3a00235a742f7a10fed",
           "advertiseImage": "",
           "sponsorId": 98,
           "title": "Cisco",
           "companyId": 84,
+          "documents": {
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://xrdocs.io/ocp?media=virtualbooth",
+                "name": "Cisco @ OCP Learn More",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://twitter.com/xrdocs?media=virtualbooth",
+                "name": "@xrdocs Twitter",
+                "order": 2
+              }
+            ]
+          },
+          "columnAds": [],
           "id": 98,
+          "email": "ocpsp-external@cisco.com",
           "usesSponsorPage": true
         },
         {
@@ -2965,6 +2984,12 @@
               }
             ]
           },
+          "columnAds": [
+            {
+              "link": "https://www.murata.com/",
+              "image": "/img/murata_murata-ocp-1x1-banner.png"
+            }
+          ],
           "id": 118,
           "showLogoInEventPage": true,
           "email": "amy.talley@murata.com",
