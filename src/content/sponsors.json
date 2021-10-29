@@ -234,6 +234,23 @@
           "advertiseImage": "",
           "sponsorId": 150,
           "companyId": 130,
+          "documents": {
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/rekt-capabilities-oct-2021.pdf",
+                "name": "This is REKTGLOBAL: BUILT FOR GAMERS AND GEN Z",
+                "order": 1
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "image": "/img/rekt_logo_dark.png",
+              "link": " https://rektglobal.com/",
+              "text": ""
+            }
+          ],
           "id": 150,
           "showLogoInEventPage": false,
           "usesSponsorPage": true
