@@ -3199,15 +3199,27 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/silicon_motion_FlashGo%20NVMe%20AFA%20Solution.mp4",
-                "name": "FlashGo NVMe AFA Solution",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/silicon_motion_2021%20OCP%20Silicon%20Motion%20Product%20Portfolio%20for%20Enterprise%20and%20Data%20Center.mp4",
+                "name": "OCP Silicon Motion Product Portfolio for Enterprise and Data Center",
+                "order": 13
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/silicon_motion_2021%20OCP%20Silicon%20Motion%20Enterprise%20Flash%20Controller%20Demos.mp4",
+                "name": "OCP Silicon Motion Enterprise Flash Controller Demos",
                 "order": 14
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/silicon_motion_Single-Chip%20SSD%20Solution%20for%20Boot%20Drives_FerriSSD.mp4",
                 "name": "Single-Chip SSD Solution for Boot Drives FerriSSD",
-                "order": 13
+                "order": 15
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/silicon_motion_FlashGo%20NVMe%20AFA%20Solution.mp4",
+                "order": 16,
+                "name": "FlashGo NVMe AFA Solution"
               }
             ],
             "links": [
@@ -3240,19 +3252,19 @@
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/silicon_motion_2nd-generation-16-channel-high-performance-nvme-controller_sm8266.pdf",
-                "name": "2nd Generation 16 Channel High Performance NVMe Controller_SM8266",
+                "name": "2nd Generation 16 Channel High Performance NVMe Controller SM8266",
                 "order": 5
               },
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/silicon_motion_enabling-the-highest-capacity-sata-data-center-storage_sm2271.pdf",
+                "link": "/img/silicon_motion_sm2271_pb_en.pdf",
                 "name": "Enabling the Highest Capacity SATA Data Center Storage_SM2271",
                 "order": 6
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/silicon_motion_single-chip-ssd-solution-for-boot-drives_ferrissd.pdf",
-                "name": "Single-Chip SSD Solution for Boot Drives_FerriSSD",
+                "name": "Single-Chip SSD Solution for Boot Drives FerriSSD",
                 "order": 7
               },
               {
