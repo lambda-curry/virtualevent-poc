@@ -3694,6 +3694,46 @@
                 "order": 11,
                 "name": "Why Submer?"
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/submer_nextgen_datacenters_submer_brochure.pdf",
+                "name": "Submer Brochure",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/submer_nextgen_datacenters_ebook_what_makes_submers_smartcoolant_so_smart.pdf",
+                "name": "Ebook What Makes Submers SmartCoolant So Smart",
+                "order": 6
+              }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/submer/",
+                "order": 1,
+                "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/c/Submer",
+                "order": 2,
+                "name": "YouTube"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.instagram.com/submertech/",
+                "order": 3,
+                "name": "Instagram"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/submertech",
+                "order": 4,
+                "name": "Twitter"
+              }
             ]
           },
           "id": 99,
