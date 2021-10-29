@@ -3924,7 +3924,20 @@
           "title": "MSP Disposal ",
           "companyId": 92,
           "documents": {
-            "videos": [],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/minos_technology_MSP%20Disposal%20Intro%20-%20Taylor.mp4",
+                "order": 3,
+                "name": "MSP Disposal Intro "
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/minos_technology_Post%20Pickup%20Process%20+%20Customer%20Portal%20Features.mp4",
+                "order": 4,
+                "name": "Post Pickup Process + Customer Portal Features"
+              }
+            ],
             "links": [
               {
                 "class_name": "PresentationLink",
