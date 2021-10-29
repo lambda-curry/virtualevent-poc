@@ -3910,22 +3910,45 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Sign Up Now! “Experts in Obsolete Technology”. Join our MSP Recruiting Platform & start hiring help today! Earn Extra Cash when its time to Dispose of your Retired Hardware! Call us for white glove service on data removal.",
+          "marquee": "Welcome to our Booth! Want to make your company a revenue source? Scan your badge!",
           "sponsorColor": "#B21921",
           "logo": "/img/msp-disposal.png",
           "name": "MSP Disposal ",
-          "intro": "#### MSP Disposal is a worldwide e-waste company with a core focus on MSPs. We offer a revenue-generating process for MSP’s end-users retired hardware disposal and data removal while our program is zero cost to the MSP. We also have an MSP focused Recruiting Platform, this platform creates a pipeline of candidates that meet your technical hiring needs. \n\n#### Sign Up Now! “Experts in Obsolete Technology”. Join our MSP Recruiting Platform & start hiring help today! Earn Extra Cash when its time to Dispose of your Retired Hardware! Call us for white glove service on data removal.",
-          "headerVideo": "d",
-          "chatLink": "https://us02web.zoom.us/j/5057903350",
+          "intro": "### How do we do it? MSP Disposal is a global e-waste company that assists in server decommissioning to include data removal. Once interested in our services, we grant you access into our portal which tracks all revenue & data deletion certificates. Once a month, checks are sent to your attention for a percentage so you can hand off to your accounting department.",
+          "headerVideo": "",
+          "headerImage": "/img/minos_technology_static-image-1440-x-400.png",
+          "headerImageMobile": "/img/minos_technology_static-mobile-768-x-250.png",
+          "chatLink": "https://zoom.us/j/8527499865",
           "advertiseImage": "",
           "sponsorId": 106,
           "title": "MSP Disposal ",
           "companyId": 92,
           "documents": {
-            "videos": []
+            "videos": [],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/mspdisposal/",
+                "order": 1,
+                "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "www.instagram.com/mspdisposal",
+                "order": 2,
+                "name": "Instagram"
+              }
+            ]
           },
+          "columnAds": [
+            {
+              "link": "www.mspdisposal.com",
+              "image": "/img/minos_technology_untitled-design-1-.png"
+            }
+          ],
           "id": 106,
           "showLogoInEventPage": false,
+          "email": "sales@minostech.com",
           "usesSponsorPage": true
         }
       ]
