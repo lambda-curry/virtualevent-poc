@@ -2825,11 +2825,47 @@
           "name": "Lattice Semiconductor",
           "intro": "### Lattice Semiconductor (NASDAQ: LSCC) is the low power programmable leader. We solve customer problems across the network, from the Edge to the Cloud, in the growing communications, computing, industrial, automotive and consumer markets. Our technology, long-standing relationships, and commitment to world-class support lets our customers quickly and easily unleash their innovation to create a smart, secure and connected world.",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/lattice_semiconductor_US2635_Lattice_Semiconductors_CertusPro-NX_04_20210616_KT.mp4.mp4",
+          "headerImageMobile": "/img/lattice_semiconductor_shutterstock_1907689999.jpg",
           "advertiseImage": "",
           "sponsorId": 83,
           "title": "Lattice Semiconductor",
           "companyId": 70,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/latticesemi",
+                "name": "Twitter ",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/lattice-semiconductor/mycompany/verification/",
+                "name": "LinkedIn",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/latticesemi",
+                "name": "Facebook",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/user/latticesemiconductor",
+                "name": "YouTube ",
+                "order": 4
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "link": "https://www.latticesemi.com/",
+              "image": "/img/lattice_semiconductor_shutterstock_1907689999.jpg"
+            }
+          ],
           "id": 83,
+          "email": "marshall.goldberg@latticesemi.com",
           "usesSponsorPage": true
         },
         {
