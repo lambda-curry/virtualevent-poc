@@ -2856,6 +2856,26 @@
                 "name": "YouTube ",
                 "order": 4
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/lattice_semiconductor_psg_2021_i0211k_rev32.pdf",
+                "name": "PSG 2021",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/lattice_semiconductor_sentry-solutions-stack.pdf",
+                "name": "Sentry Solutions Stack",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/lattice_semiconductor_supplyguard_brochure-7-.pdf",
+                "name": "Supply Guard",
+                "order": 7
+              }
             ]
           },
           "columnAds": [
