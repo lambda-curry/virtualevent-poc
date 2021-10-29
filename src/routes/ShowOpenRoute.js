@@ -4,6 +4,8 @@ import { connect } from "react-redux";
 import { PHASES } from "../utils/phasesUtils";
 import { requireExtraQuestions, doVirtualCheckIn } from "../actions/user-actions";
 import HeroComponent from "../components/HeroComponent";
+import { FragmentParser } from "openstack-uicore-foundation/lib/components";
+import moment from "moment-timezone";
 
 /**
  *
@@ -41,8 +43,20 @@ const ShowOpenRoute = ({
     return isAuthorized;
   };
 
+  // if we are providing the now fragment param then let the clock
+  // component set it, so we need to bypass this next check
+  const fragmentParser = new FragmentParser();
+  const nowQS = fragmentParser.getParam('now');
+  let shouldBypassCheck = false;
+  if(nowQS) {
+    const momentQS = moment.tz(nowQS, 'YYYY-MM-DD,hh:mm:ss', 'UTC');
+    if (momentQS.isValid()) {
+      shouldBypassCheck = true;
+    }
+  }
+
   // if summit didnt started yet ...
-  if (!userCanByPassAuthz() && summit_phase === PHASES.BEFORE) {
+  if (!shouldBypassCheck && !userCanByPassAuthz() && summit_phase === PHASES.BEFORE) {
     return <HeroComponent title="Its not yet show time!" redirectTo="/" />;
   }
 
