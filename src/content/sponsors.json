@@ -239,8 +239,28 @@
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/rekt-capabilities-oct-2021.pdf",
-                "name": "This is REKTGLOBAL: BUILT FOR GAMERS AND GEN Z",
+                "name": "This is ReKTGLOBAL: BUILT FOR GAMERS AND GEN Z",
                 "order": 1
+              }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "Learn More about ReKTGlobal",
+                "link": "https://rektglobal.com/",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/ReKTGlobal/",
+                "order": 2,
+                "name": "ReKTGlobal: Facebook "
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/ReKTGlobal",
+                "order": 3,
+                "name": "@ReKTGlobal: Twitter "
               }
             ]
           },
