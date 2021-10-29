@@ -462,13 +462,19 @@
                 "class_name": "PresentationLink",
                 "link": "https://blog.equinix.com/blog/2020/08/31/how-red-bee-media-is-using-equinix-to-expand-access-to-its-content-distribution-platform/",
                 "name": "Blog - How Red Bee Media Is Using Equinix To Expand Access To Its Content Distribution Platform",
-                "order": 5
+                "order": 6
               },
               {
                 "class_name": "PresentationLink",
                 "name": "i3D.net Uses Real-Time Data to Get Ahead in Gaming",
-                "order": 6,
+                "order": 7,
                 "link": "https://blog.equinix.com/blog/2021/09/29/equinix-and-i3d-net-with-ubisoft-accelerate-global-online-gaming-growth/"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Teradici Equinix Solution Brief",
+                "order": 5,
+                "link": "https://equinix.itcurated.com/teradici-equinix-solution-brief"
               }
             ],
             "videos": [
