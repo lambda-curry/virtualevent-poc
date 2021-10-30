@@ -5507,6 +5507,30 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Symposium_Posters/20211011-Efficiency-High-Performance-Computing-Servers-Using-Liquid-Cooled-Compute-Pod-LCCP-1f474db7df0b78016fb37a25fc7fe958.pdf",
                 "name": "Energy Efficiency and Performance of High Performance Computing Servers Using Liquid Cooled Compute Pod (LCCP) - By Navin Raja Kuppusamy",
                 "order": 11
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2148/slides/OCP-Poster-Summit21-KR-0379f1570062048932afaaa6c9932c8d-6c5ff008404ffaeaddf5a95c5ddb4762.pdf",
+                "name": "Super-conductive Data-Center - By Karl Rabe, Viktor Stark",
+                "order": 12
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2149/slides/hantsch-2021-ocp-poster-rev1-5ae9b451fe3ffd4196ed2a4bfbf489de-f9b06eb79a9ef3c477050a83138c67c6.pdf",
+                "name": "Pushing the boundary conditions of data centers facilitates innovative circular economy approaches - By Leonie Banzer",
+                "order": 13
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2145/slides/OCP-Symposium-Poster-Berkeley-2021-rev3-a4a29f07ed1d2e7ff959eccb03302316-4485ce0ae9d3fa077cad7c931d8076ed.pdf",
+                "name": "Hybrid and Resonant Switched-Capacitor Converters: Achieving Ultra-Efficient and Compact 48 V Datacenter Power Delivery - By Ting Ge, Rose Abramson, Zichao Ye, Robert Pilawa-Podgurski",
+                "order": 14
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2146/slides/OCP21G-Symposium-Poster-ssen-r2-430c7d66075aa259f88a63211255e9ee-30fc045cc01175c5e946cc6e10f0d31b.pdf",
+                "name": "Medium Voltage Power Delivery Architecture for Data Centers - By Soumik Sen",
+                "order": 15
               }
             ],
             "links": [
