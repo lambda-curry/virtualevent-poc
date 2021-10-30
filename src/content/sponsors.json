@@ -5531,6 +5531,30 @@
                 "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2146/slides/OCP21G-Symposium-Poster-ssen-r2-430c7d66075aa259f88a63211255e9ee-30fc045cc01175c5e946cc6e10f0d31b.pdf",
                 "name": "Medium Voltage Power Delivery Architecture for Data Centers - By Soumik Sen",
                 "order": 15
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2147/slides/OCP21G-Symposium-Poster-Jaeil-Baek-e1b68f6ecfc1c7e15f136f6a8fb41c55-58e8e3b2295d6809eb0fc08ae73bbe69.pdf",
+                "name": "Vertical Stacked 48V-1V Voltage Regulator for Ultra High Current Microprocessors - By Jaeil Baek, Youssef Elasser, Minjie Chen",
+                "order": 16
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2137/slides/OCP21G-Symposium-proteanTecs-Poster2-Final-d1c8c5efe104fe7f63ea8b41f1a0d375-0cf6516add10d1c236c685102f390548.pdf",
+                "name": "Reliability of Cloud Scale Hardware Through Performance and Health Monitoring Using on-chip Telemetry - By Alex Burlak",
+                "order": 17
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2138/slides/Myrtle-Poster-5-bde138e4e0a0cdca451b997ea1f21485-41f5f80631da93d43753552a02a37c92.pdf",
+                "name": "Accelerating DLRM on an OCP M.2 Accelerator - By Tom Lagatta",
+                "order": 18
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2139/slides/OCP21G-Symposium-Poster-MahsaBayati-870b6847002db63d914b433ce2d4db7e-r2-9e2b5ed84aebe1e25db2970e6658ce87.pdf",
+                "name": "DSS: High I/O Bandwidth Disaggregated Object Storage System for AI Applications - By Mahsa Bayati",
+                "order": 19
               }
             ],
             "links": [
