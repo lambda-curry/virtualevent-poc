@@ -5489,6 +5489,32 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Symposium_Posters/ITRenew-OCP-Symposium-Poster-2-f2dcab68fc548340f0dcf3a4b2477554.pdf",
                 "name": "Keeping Cores Cool - Design Optimizations to Double The Density And Halve The Cost Of Your Data Center Computing - By Erik Riedel, Jean-Jacques Chanut",
                 "order": 7
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Symposium_Posters/OCP21G-Symposium-Poster-SogawaFinal2-a68d68e129a32f6dbc49cf006ed77e12.pdf",
+                "name": "Proposal of Real-Time Optimization Procedure for Air Conditioning Operation with Regression Prediction and Deep Reinforcement Learning on CFD Analysis Calibrated by Super Resolution Neural Network - By Yuki Sogawa, Natsuko Kobayashi, Morito Matsuoka",
+                "order": 8
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Symposium_Posters/OCP21G-Symposium-Poster-Flapmax-FINAL-0f6f29717f421be8cce52a44a996e2ac.pdf",
+                "name": "Towards Sustainable Energy-Efficient Data Centers in Africa - By Dave Ojika, Gaurav Kaul",
+                "order": 10
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Symposium_Posters/20211011-Efficiency-High-Performance-Computing-Servers-Using-Liquid-Cooled-Compute-Pod-LCCP-1f474db7df0b78016fb37a25fc7fe958.pdf",
+                "name": "Energy Efficiency and Performance of High Performance Computing Servers Using Liquid Cooled Compute Pod (LCCP) - By Navin Raja Kuppusamy",
+                "order": 11
+              }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "Proposal of Real-Time Optimization Procedure for Air Conditioning Operation with Regression Prediction and Deep Reinforcement Learning on CFD Analysis Calibrated by Super Resolution Neural Network - Audio File",
+                "order": 9,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Symposium_Posters/voice%201.mp3"
               }
             ]
           },
