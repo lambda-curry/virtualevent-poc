@@ -5446,6 +5446,22 @@
           "sponsorId": 96,
           "title": "2021 OCP Future Technologies Symposium",
           "companyId": 82,
+          "documents": {
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Symposium_Posters/OCP21G-Poster-v2-x1a-796f74e7dd81a6ed6d40e6646932ae04.pdf",
+                "name": "FPGA Based Implementation of Key Per IO Security Subsystem Class for NVMe SSD - By Jingchi Yang ",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Symposium_Posters/OCP21-AISSD-Poster-final-e72eab5ceb0d25993340df20fb20799f.pdf",
+                "name": "Can NAND Flash SSDs Meet the Needs of Recommendation Models for Inference? - By Marie Nguyen, Zongwang Li, Heekwon Park, Mehran Elyasi, Rekha Pitchumani",
+                "order": 2
+              }
+            ]
+          },
           "id": 96,
           "email": " lesya.dymyd@opencompute.org",
           "usesSponsorPage": true
