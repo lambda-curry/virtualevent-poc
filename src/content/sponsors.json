@@ -5459,6 +5459,18 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Symposium_Posters/OCP21-AISSD-Poster-final-e72eab5ceb0d25993340df20fb20799f.pdf",
                 "name": "Can NAND Flash SSDs Meet the Needs of Recommendation Models for Inference? - By Marie Nguyen, Zongwang Li, Heekwon Park, Mehran Elyasi, Rekha Pitchumani",
                 "order": 2
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Symposium_Posters/OCP21GDMT-Poster-7c40d03af1e4fd90bea3fe19131bdc16_r2.pdf",
+                "name": "136-GB/s Single Channel Wireline Data Transmission Using Discrete Multi-Tone with 8-b/s/Hz Spectral Efficiency. - By Naim Ben-Hamida",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Symposium_Posters/PartialSiPhEqualizationPoster-b7f7384a3a8bafc9e03dfaaf0be54a92.pdf",
+                "name": "Compensation of Silicon Photonics-Based Modulators for DCI Applications - By Naim Ben-Hamida",
+                "order": 4
               }
             ]
           },
