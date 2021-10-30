@@ -5555,6 +5555,36 @@
                 "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2139/slides/OCP21G-Symposium-Poster-MahsaBayati-870b6847002db63d914b433ce2d4db7e-r2-9e2b5ed84aebe1e25db2970e6658ce87.pdf",
                 "name": "DSS: High I/O Bandwidth Disaggregated Object Storage System for AI Applications - By Mahsa Bayati",
                 "order": 19
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2140/slides/OCP21G-Symposium-Poster-ScaleFlux-e2ef098c46d8b462495cef853a1840fa-a6b2426b20150851a28cf43e2fc6d918.pdf",
+                "name": "Accelerating Data Analytics with Computational Storage Drives - By Keith McKay, Yang Liu",
+                "order": 20
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2141/slides/200GPerLamdaPoster-OCPSymposium-NBH-ea46d6bf6e133c897e6a7ad11bf6f00e-ccce3c8acafb3bc8b2bba23457912fbc.pdf",
+                "name": "A path for 224Gb/s Solution for Intra Data Center Interconnect - By Naim Ben-Hamida",
+                "order": 21
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2142/slides/Telescent-OCP21G-Symposium-Poster-Submission-5d19b100b27f0b21fbac3e95d4fb4185-85a4eb37b0508bbe9997fb3a31ca46f5.pdf",
+                "name": "Automated Telemetry for Data Center Physical Fiber Layer Analysis - By Bob Shine",
+                "order": 22
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2143/slides/Avicena-OCP2021-poster-FINAL-174f69ecc794ed2ede7ff141e6c2c7f2-b2fad79b0361ed6e41333934d1839525.pdf",
+                "name": "Wide and parallel LED-based optical links using multi-core fiber for chip-to-chip communications - By Rob Kaiman",
+                "order": 23
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2144/slides/OCP21G-Symposium-Poster-TaihaiChen-AccelerComm-7Oct2021-b023d3c84770a2ce0e7a336929c9a383-r2-63ed415912cd53c91e57b1e6dd453c31.pdf",
+                "name": "Indoor/Outdoor 7.2x 5G O-RAN Standards Compliant Base Station Design Example - By Taihai Chen",
+                "order": 24
               }
             ],
             "links": [
