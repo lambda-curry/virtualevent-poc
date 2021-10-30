@@ -5471,6 +5471,24 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Symposium_Posters/PartialSiPhEqualizationPoster-b7f7384a3a8bafc9e03dfaaf0be54a92.pdf",
                 "name": "Compensation of Silicon Photonics-Based Modulators for DCI Applications - By Naim Ben-Hamida",
                 "order": 4
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Symposium_Posters/ocp2021.poster-f03f669410ff04eb30eef36a7bc7ab27.pdf",
+                "name": "Demonstration of Multimaster EtherCAT-based control plane for Optical netWorks (MEOW) - By Ryousei Takano",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Symposium_Posters/Poster-2021-rev.2-9da35f761cf56639042d02524c2d4178.pdf",
+                "name": "Design Process and Considerations for a 48 V to 12 V DC-DC Converter in Data Center Applications - By Mohamed Badawy",
+                "order": 6
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Symposium_Posters/ITRenew-OCP-Symposium-Poster-2-f2dcab68fc548340f0dcf3a4b2477554.pdf",
+                "name": "Keeping Cores Cool - Design Optimizations to Double The Density And Halve The Cost Of Your Data Center Computing - By Erik Riedel, Jean-Jacques Chanut",
+                "order": 7
               }
             ]
           },
