@@ -3,7 +3,7 @@
     {
       "title": "Lobby",
       "link": "/a/",
-      "display": false,
+      "display": true,
       "requiresAuth": true,
       "pageRestriction": [
         "ANY"
@@ -48,7 +48,8 @@
       "requiresAuth": true,
       "pageRestriction": [
         "LOBBY",
-        "ACTIVITY"
+        "ACTIVITY",
+        "CUSTOM_PAGE"
       ],
       "title": "Sponsors",
       "link": "/a/sponsors",
@@ -58,7 +59,8 @@
       "requiresAuth": true,
       "pageRestriction": [
         "LOBBY",
-        "ACTIVITY"
+        "ACTIVITY",
+        "CUSTOM_PAGE"
       ],
       "title": "Map",
       "link": "/map",
