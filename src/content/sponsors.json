@@ -4749,11 +4749,14 @@
           "logo": "/img/ocp21glo_fnv_sponsorlogo-media.png"
         },
         {
+          "marquee": "Advancing Data Centers & IT Professionals.",
           "featuredEventId": 2316,
+          "sponsorColor": "#045986",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-omdia_afcom.png",
           "name": "AFCOM",
-          "intro": "AFCOM",
+          "intro": "### Joining AFCOM is a commitment to your professional development as a data center and IT infrastructure professional. Not only will AFCOM membership benefit you but it will also benefit your company and the greater data center industry worldwide. AFCOM is the leading and longest-standing association in the data center industry. For over 40 years, AFCOM has been advancing the careers of data center and IT professionals, working diligently to help its members meet the growing demands facing our industry. Regardless if you are in sales, marketing, IT, operations, facilities, risk or design, a membership helps you stay current on industry information and trends to deliver ROI to your company while also improving your job performance, training and leadership development.",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/omdia_afcom_AFCOM%20boilerplate%20slides%20-%20general.mp4",
+          "headerImage": "/img/omdia_afcom_111670_dcw21_graphics_afcom_logosize_opencompute_1440x400.jpg",
           "advertiseImage": "",
           "sponsorId": 112,
           "title": "AFCOM",
@@ -4784,16 +4787,25 @@
                 "order": 4,
                 "name": "Youtube"
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/omdia_afcom_111235_dcw22_ad_fullpage_register_100code-compute.pdf",
+                "name": "Data Center World Registration '22",
+                "order": 5
+              }
             ]
           },
           "columnAds": [
             {
-              "link": "https://afcom.com/Public/Member_Resources/Educational_Webinars/Public/Resource_Center/Webinars_Public.aspx?hkey=496c0097-b9cd-44a5-b950-775383d1ffe0",
+              "link": "https://technology.informaengage.com/DCW_Subscribe",
               "image": "/img/omdia_afcom_p1_62156_dcw21_web_ads_afcom_webinars_336x280.jpg"
             }
           ],
           "id": 112,
           "showLogoInEventPage": false,
+          "email": "alicia.schap@informa.com",
           "usesSponsorPage": true
         },
         {
