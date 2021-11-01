@@ -4370,7 +4370,7 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "         Micron is where data lives.",
+          "marquee": "The Micron 7400 SSD is Micron’s first SSD designed for select OCP deployments and is available in EDSFF SSD form factors.",
           "featuredEventId": 2323,
           "sponsorColor": "#0090DA",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-micron.png",
@@ -4430,6 +4430,12 @@
                 "link": "/img/micron_7400_nvme_ssd_product_brief.pdf",
                 "name": "Micron® 7400 SSD With NVMe™",
                 "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/micron_7400_ssd_leads_data_center_transformation.pdf",
+                "name": "Micron 7400 SSD Leads Data Center Transformation",
+                "order": 6
               }
             ]
           },
