@@ -725,7 +725,7 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/qct_%28FINAL%29%20Bloomberg_QCT%2030s%20W%20SUBS_HD1080p.mp4",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/qct_20211021%20OCP%20GLO21%20Welcome%20video_final.mp4",
                 "order": 1,
                 "name": "QCT Welcome Video "
               },
@@ -4283,6 +4283,12 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/juniper_networks_Juniper%20+%20Keysight%20High%20Density%20MACsec%20Demo_Securing%20400G%20Data%20in%20Motion.mp4",
                 "order": 11,
                 "name": "Juniper + Keysight High Density MACsec Demo Securing 400G Data in Motion"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/juniper_networks_Disaggregation%20with%20one%20Junos%20Experience.mp4",
+                "order": 12,
+                "name": "Disaggregation with one Junos Experience"
               }
             ]
           },
