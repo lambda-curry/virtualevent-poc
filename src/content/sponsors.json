@@ -4050,6 +4050,12 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/3m_3M%20TwinAx%20Cable%20Video.mp4",
                 "order": 11,
                 "name": "Shell Immersion Cooling"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Asperitas FAQ",
+                "order": 112,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/asperitas_and_shell_Asperitas%20FAQ%20Episode%202%20Final.mp4"
               }
             ]
           },
