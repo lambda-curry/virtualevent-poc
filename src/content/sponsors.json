@@ -5121,6 +5121,20 @@
                 "name": "Instagram ",
                 "order": 6
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/ig-1.pdf",
+                "name": "InterGlobix Magazine Overview",
+                "order": 7
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/ig-2.pdf",
+                "name": "InterGlobix LLC, Company at a Glance",
+                "order": 8
+              }
             ]
           },
           "columnAds": [
