@@ -4543,6 +4543,7 @@
           "intro": "#### The OpenPOWER Foundation is a non-profit organization supporting the free and open RISC based instruction set architecture. We enable open community collaboration, technology advancements in the OpenPOWER ecosystem, and visibility of OpenPOWER member successes.",
           "headerImage": "/img/openpower_openpower_welcome.png",
           "headerImageMobile": "/img/openpower_openpower_welcome_mobile.png",
+          "chatLink": "https://zoom.us/j/3019473720",
           "advertiseImage": "",
           "sponsorId": 114,
           "title": "OpenPOWER Foundation",
@@ -4594,6 +4595,12 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/openpower_opc-librebmc-2021.mp4",
                 "order": 10,
                 "name": "opc-librebmc-2021"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Raptor OCP Virtual 2021",
+                "order": 11,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/openpower_Raptor_OCP_Virtual_2021.mp4"
               }
             ]
           },
