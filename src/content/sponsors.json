@@ -4333,15 +4333,15 @@
             "slides": [
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/nvidia_pb-connectx-6-dx-en-card.pdf",
-                "name": "pb connectx 6-dx-en-card",
+                "link": "/img/nvidia_connectx-6-dx-en-card-datasheet-1570187_r4.pdf",
+                "name": "Connectx 6 DX",
                 "order": 5
               },
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/nvidia_bluefield-2-dpu-datasheet-1609240-r3.pdf",
-                "name": "bluefield-2-dpu-datasheet-1609240-r3",
-                "order": 5
+                "link": "/img/nvidia_bluefield-2-dpu-datasheet-1609240_r4.pdf",
+                "name": "Bluefield 2 DPU datasheet",
+                "order": 6
               }
             ],
             "videos": [
