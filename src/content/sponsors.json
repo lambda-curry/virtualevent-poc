@@ -5147,6 +5147,16 @@
           "showLogoInEventPage": false,
           "email": "editor@interglobixmagazine.com",
           "usesSponsorPage": true
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "San Jose Convention Center ",
+          "companyId": 132,
+          "id": 152,
+          "sponsorId": 152,
+          "usesSponsorPage": true,
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-media.png"
         }
       ]
     },
