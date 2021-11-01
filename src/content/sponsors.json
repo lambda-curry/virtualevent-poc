@@ -3221,7 +3221,7 @@
           "sponsorColor": "#0077C8",
           "logo": "/img/silicon_motion_smi-logo-484.png",
           "name": "Silicon Motion",
-          "intro": "###### Silicon Motion Technology Corporation (NasdaqGS: SIMO) is the global leader in developing NAND ﬂash controllers for SSDs and other solid state storage devices. We have over 20 years of experience developing specialized processor ICs that manage NAND components and deliver market leading, high-performance storage solutions widely used in smartphones, PCs, data centers and commercial and industrial applications. We have one of the broadest portfolios of controller intellectual properties developed from our deep understanding of NAND characteristics, which enables us to design both unique, highly optimized configurable ICs plus related firmware controller platforms and complete turnkey controller solutions. With comprehensive knowledge of NAND characteristics, flexible ASIC/Firmware design capabilities and proprietary NANDXtend™ ECC technology which integrates error recovery functionality with a machine learning algorithms, SMI’s enterprise storage solutions deliver high performance, extended data retention and improved QoS. Additional information on Silicon Motion’s innovative and comprehensive Enterprise / Data Center product portfolio is available by clicking the link in the sidebar.",
+          "intro": "#### Silicon Motion Technology Corporation (NasdaqGS: SIMO) is the global leader in developing NAND ﬂash controllers for SSDs and other solid state storage devices. We have over 20 years of experience developing specialized processor ICs that manage NAND components and deliver market leading, high-performance storage solutions widely used in smartphones, PCs, data centers and commercial and industrial applications. We have one of the broadest portfolios of controller intellectual properties developed from our deep understanding of NAND characteristics, which enables us to design both unique, highly optimized configurable ICs plus related firmware controller platforms and complete turnkey controller solutions. With comprehensive knowledge of NAND characteristics, flexible ASIC/Firmware design capabilities and proprietary NANDXtend™ ECC technology which integrates error recovery functionality with a machine learning algorithms, SMI’s enterprise storage solutions deliver high performance, extended data retention and improved QoS. Additional information on Silicon Motion’s innovative and comprehensive Enterprise / Data Center product portfolio is available by clicking the link in the sidebar.",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/silicon_motion_welcome%20video_ok.mov.mp4",
           "advertiseImage": "",
           "sponsorId": 78,
@@ -4909,6 +4909,49 @@
           "usesSponsorPage": true
         },
         {
+          "marquee": "Join our Digital Community.",
+          "logo": "/img/x_data_centre_magazine_datacentre_logo.png",
+          "name": "Data Centre Magazine",
+          "intro": "### Data Centre Magazine is the ‘Digital Community’ for the global big data and cloud industry. Data Centre Magazine covers smart Information Technology, Automation, Critical Environments, AI, Networking and Data Centres - connecting the world’s largest community of data executives. Data Centre Magazine focuses on data centre news, key data centre interviews, data centre videos, along with an ever-expanding range of focused data centre white papers and webinars.",
+          "headerImage": "/img/x_data_centre_magazine_webp.net-resizeimage-2-.jpg",
+          "advertiseImage": "",
+          "sponsorId": 153,
+          "title": "Data Centre Magazine",
+          "companyId": 133,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/data-centres-magazine/mycompany/?viewAsMember=true",
+                "order": 1,
+                "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/DataCentre_Mag3",
+                "order": 2,
+                "name": "Twitter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.instagram.com/datacentremag/",
+                "order": 3,
+                "name": "Instagram "
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.youtube.com/channel/UCT6q7FjsL4YvcmMpRwPStUg",
+                "order": 4,
+                "name": "YouTube"
+              }
+            ]
+          },
+          "id": 153,
+          "showLogoInEventPage": false,
+          "email": "lewis.vaughan@bizclikmedia.com",
+          "usesSponsorPage": true
+        },
+        {
           "marquee": "Strategic Storytelling - Distill Ideas. Create Impact. Inspire Action.",
           "featuredEventId": 2336,
           "sponsorColor": "#f79e12",
@@ -5157,21 +5200,6 @@
           "sponsorId": 152,
           "usesSponsorPage": true,
           "logo": "/img/ocp21glo_fnv_sponsorlogo-media.png"
-        },
-        {
-          "marquee": "Join our Digital Community.",
-          "logo": "/img/x_data_centre_magazine_datacentre_logo.png",
-          "name": "Data Centre Magazine",
-          "intro": "### Data Centre Magazine is the ‘Digital Community’ for the global big data and cloud industry. Data Centre Magazine covers smart Information Technology, Automation, Critical Environments, AI, Networking and Data Centres - connecting the world’s largest community of data executives. Data Centre Magazine focuses on data centre news, key data centre interviews, data centre videos, along with an ever-expanding range of focused data centre white papers and webinars.",
-          "headerImage": "/img/x_data_centre_magazine_webp.net-resizeimage-2-.jpg",
-          "advertiseImage": "",
-          "sponsorId": 153,
-          "title": "Data Centre Magazine",
-          "companyId": 133,
-          "id": 153,
-          "showLogoInEventPage": false,
-          "email": "lewis.vaughan@bizclikmedia.com",
-          "usesSponsorPage": false
         }
       ]
     },
