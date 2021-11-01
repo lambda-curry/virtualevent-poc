@@ -2225,7 +2225,7 @@
             "links": [
               {
                 "class_name": "PresentationLink",
-                "link": "www.youtube.com/3Melectronics",
+                "link": "https://www.youtube.com/3Melectronics",
                 "name": "YouTube 3M Electronics",
                 "order": 1
               },
