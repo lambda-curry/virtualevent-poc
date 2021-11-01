@@ -5157,6 +5157,21 @@
           "sponsorId": 152,
           "usesSponsorPage": true,
           "logo": "/img/ocp21glo_fnv_sponsorlogo-media.png"
+        },
+        {
+          "marquee": "Join our Digital Community.",
+          "logo": "/img/x_data_centre_magazine_datacentre_logo.png",
+          "name": "Data Centre Magazine",
+          "intro": "### Data Centre Magazine is the ‘Digital Community’ for the global big data and cloud industry. Data Centre Magazine covers smart Information Technology, Automation, Critical Environments, AI, Networking and Data Centres - connecting the world’s largest community of data executives. Data Centre Magazine focuses on data centre news, key data centre interviews, data centre videos, along with an ever-expanding range of focused data centre white papers and webinars.",
+          "headerImage": "/img/x_data_centre_magazine_webp.net-resizeimage-2-.jpg",
+          "advertiseImage": "",
+          "sponsorId": 153,
+          "title": "Data Centre Magazine",
+          "companyId": 133,
+          "id": 153,
+          "showLogoInEventPage": false,
+          "email": "lewis.vaughan@bizclikmedia.com",
+          "usesSponsorPage": false
         }
       ]
     },
