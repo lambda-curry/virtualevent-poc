@@ -4462,14 +4462,25 @@
           "usesSponsorPage": true
         },
         {
+          "marquee": "Solve the growing digital energy demand with Energy Borrowing - Watch the RISE Case Study: Performance Evaluation of the Nexalus Liquid Cooled OCP. ",
+          "sponsorColor": "#0E4D64",
           "logo": "/img/ri.se.png",
           "name": "RISE ",
-          "intro": "RI.SE",
+          "intro": "### The leading data center research facility in Europe. The RISE ICE (Infrastructure and Cloud research & test Environment) data center is a testbed focusing on digitalization and IT infrastructure. The research center coordinates national research projects as well as the testing and development of all features in the technology stack; the infrastructure and building of data centers, edge and cloud applications, IT architecture and machine learning. The ICE mission is to put Sweden at the forefront in the fields of effective data center solutions, edge computing, cloud applications and data analysis in a bid to help produce global solutions to global problems.",
+          "headerImage": "/img/1-banner-1440x400.png",
+          "headerImageMobile": "/img/1-banner-768x250.png",
           "advertiseImage": "",
           "sponsorId": 132,
           "companyId": 120,
+          "columnAds": [
+            {
+              "link": "https://www.ri.se/en/ice-datacenter",
+              "image": "/img/11-square-graphic.png"
+            }
+          ],
           "id": 132,
           "showLogoInEventPage": false,
+          "email": " jon.summers@ri.se",
           "usesSponsorPage": true
         }
       ]
