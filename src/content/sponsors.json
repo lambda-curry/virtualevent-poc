@@ -4473,6 +4473,34 @@
           "sponsorId": 132,
           "title": "RISE ICE",
           "companyId": 120,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "Instagram",
+                "link": "https://www.instagram.com/risesweden/",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://twitter.com/risesweden",
+                "order": 2,
+                "name": "Twitter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/RISEResearchInstitutesofSwedenAB/",
+                "order": 3,
+                "name": "Facebook"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/rise-research-institutes-of-sweden/ ",
+                "name": "LinkedIN",
+                "order": 4
+              }
+            ]
+          },
           "columnAds": [
             {
               "link": "https://www.ri.se/en/ice-datacenter",
