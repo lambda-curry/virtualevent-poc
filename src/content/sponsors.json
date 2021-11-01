@@ -4482,6 +4482,7 @@
         {
           "marquee": "Welcome from OpenCAPI. Visit our booth and opencapi.org to learn how OpenCAPI and OMI can help you build faster and more efficient memory systems.",
           "sideImage": "",
+          "featuredEventId": 2356,
           "sponsorColor": "#009183",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-opencapi.png",
           "name": "OpenCAPI Consortium",
