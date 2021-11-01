@@ -4439,7 +4439,12 @@
               }
             ]
           },
-          "columnAds": [],
+          "columnAds": [
+            {
+              "image": "/img/micron_micron-graphic-ad.png",
+              "link": "https://www.micron.com/products/ssd/product-lines/7400"
+            }
+          ],
           "id": 116,
           "email": "micron_storage@micron.com",
           "usesSponsorPage": true
