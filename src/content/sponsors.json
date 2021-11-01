@@ -4962,8 +4962,28 @@
                 "order": 6,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/dave_sims_media_facebook%20hwe.mp4.mp4"
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/dave_sims_media_dave-sims-media-digital-brochure.pdf",
+                "name": "Dave Sims Media - Digital Brochure",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/dave_sims_media_dsm-ocp-ad.pdf",
+                "name": "Dave Sims Media -  OCP",
+                "order": 4
+              }
             ]
           },
+          "columnAds": [
+            {
+              "link": "https://fb.watch/8T7sSjedb2/",
+              "image": "/img/dave_sims_media_resized-dsm-ocp-ad.jpg"
+            }
+          ],
           "id": 133,
           "showLogoInEventPage": false,
           "email": "info@davesimsmedia.com",
@@ -5053,6 +5073,65 @@
           "id": 47,
           "showLogoInEventPage": false,
           "email": "info@fntech.com",
+          "usesSponsorPage": true
+        },
+        {
+          "marquee": "Premier global digital infrastructure industry publication. Your official guide to the latest trends in Data Centers, Connectivity, Luxury & Lifestyle.",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-media.png",
+          "name": "InterGlobix",
+          "advertiseImage": "",
+          "sponsorId": 151,
+          "title": "InterGlobix",
+          "companyId": 131,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://youtu.be/JSz1FPNZi64 ",
+                "name": "InterGlobix Magazine Seventh Issue Launch",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://youtu.be/SjQCRqhgBeA",
+                "name": "InterGlobix Magazine Sixth Issue Launch",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.linkedin.com/company/interglobixmag",
+                "order": 3,
+                "name": "LinkedIn"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/interglobixmag",
+                "name": "Facebook",
+                "order": 4
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.twitter.com/interglobixmag",
+                "order": 5,
+                "name": "Twitter"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.instagram.com/interglobixmag",
+                "name": "Instagram ",
+                "order": 6
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "link": " www.interglobixmagazine.com",
+              "image": "/img/1x1ad_final.jpg"
+            }
+          ],
+          "id": 151,
+          "showLogoInEventPage": false,
+          "email": "editor@interglobixmagazine.com",
           "usesSponsorPage": true
         }
       ]
