@@ -4219,6 +4219,7 @@
           "name": "Juniper Networks",
           "intro": "#### At Juniper, we strive to deliver network experiences that transform how people connect, work and live. By challenging the inherent complexity in the Cloud + 5G + AI era, our solutions power the connections that matter most - from education to healthcare to secure banking. Our commitment is to advance real outcomes for network teams and every individual they serve. It’s that simple.",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/juniper_networks_Disaggregation%20with%20One%20Junos%20Experience.mp4",
+          "headerImage": "/img/juniper_networks_210517-1_event_ocp-event-support_topb_1440x400.png",
           "advertiseImage": "",
           "sponsorId": 66,
           "title": "Juniper Networks",
@@ -4256,14 +4257,26 @@
                 "link": "/img/juniper_networks_futuriom-juniper-and-apstra-up-the-sonic-ante.pdf",
                 "name": "Futuriom Juniper and apstra up the sonic ante",
                 "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/juniper_networks_apstra-4.0_flyer.pdf",
+                "name": "Apstra 4.0",
+                "order": 6
               }
             ],
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/juniper_networks_Juniper%20Sponsor%20ONUG.mp4",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/juniper_networks_Managing%20SONiC%20Data%20Center%20Fabrics%20with%20Juniper%20Apstra.mp4",
                 "order": 10,
-                "name": "Juniper Sponsor ONUG"
+                "name": "Managing SONiC Data Center Fabrics with Juniper Apstra."
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/juniper_networks_Juniper%20+%20Keysight%20High%20Density%20MACsec%20Demo_Securing%20400G%20Data%20in%20Motion.mp4",
+                "order": 11,
+                "name": "Juniper + Keysight High Density MACsec Demo Securing 400G Data in Motion"
               }
             ]
           },
