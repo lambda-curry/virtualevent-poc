@@ -26,7 +26,7 @@ const sbAuthProps = {
 
 const adminGroups = ["administrators", "super-admins"];
 
-export const AttendeesWidget = ({ user, event, location }) => {
+export const AttendeesWidget = ({ user, event }) => {
   const [loading, setLoading] = useState(true);
 
   //Deep linking support
@@ -36,12 +36,17 @@ export const AttendeesWidget = ({ user, event, location }) => {
   const ocrRef = useRef();
 
   const { userProfile, idpProfile } = user || {};
-  const { email, groups, first_name, last_name, bio, summit_tickets } = userProfile || {};
-  const {
+  const { summit_tickets } = userProfile || {};
+  const { 
+    email, 
+    groups, 
+    bio,
+    given_name,
+    family_name,
     picture,
     company,
     job_title,
-    sub,
+    sub, 
     github_user,
     linked_in_profile,
     twitter_name,
@@ -97,7 +102,7 @@ export const AttendeesWidget = ({ user, event, location }) => {
     user: {
       id: sub.toString(),
       idpUserId: sub.toString(),
-      fullName: public_profile_show_fullname ? `${first_name} ${last_name}` : `${first_name}`,
+      fullName: public_profile_show_fullname ? `${given_name} ${family_name}` : `${given_name}`,
       email: email,
       company: company,
       title: job_title,
@@ -109,14 +114,14 @@ export const AttendeesWidget = ({ user, event, location }) => {
         wechatUser: wechat_user,
       },
       getBadgeFeatures: () =>
-          summit_tickets
-              .filter((st) => st.badge)
-              .flatMap((st) => st.badge.features)
-              .filter((v, i, a) => a.map((item) => item.id).indexOf(v.id) === i),
+        summit_tickets
+          .filter((st) => st.badge)
+          .flatMap((st) => st.badge.features)
+          .filter((v, i, a) => a.map((item) => item.id).indexOf(v.id) === i),
       bio: bio,
       hasPermission: (permission) => {
         const isAdmin =  groups &&
-            groups.map((g) => g.code).filter((g) => adminGroups.includes(g))
+            groups.map((g) => g.slug).filter((g) => adminGroups.includes(g))
                 .length > 0;
         switch (permission) {
           case permissions.MANAGE_ROOMS:
@@ -124,18 +129,18 @@ export const AttendeesWidget = ({ user, event, location }) => {
           case permissions.CHAT:
             if(isAdmin) return true;
             const accessLevels = summit_tickets
-                .flatMap((x) => x.badge?.type.access_levels)
-                .filter(
-                    (v, i, a) => a.map((item) => item.id).indexOf(v.id) === i
-                ); //distinct
+              .flatMap((x) => x.badge?.type.access_levels)
+              .filter(
+                (v, i, a) => a.map((item) => item.id).indexOf(v.id) === i
+              ); //distinct
             if (accessLevels && accessLevels.length > 0) {
               const canChat = accessLevels
-                  .filter((a) => a.name)
-                  .map((a) => a.name.toUpperCase())
-                  .includes("CHAT");
+                .filter((a) => a.name)
+                .map((a) => a.name.toUpperCase())
+                .includes("CHAT");
               console.log(
-                  "AL",
-                  accessLevels.map((a) => a.name)
+                "AL",
+                accessLevels.map((a) => a.name)
               );
               return canChat;
             }
@@ -152,18 +157,18 @@ export const AttendeesWidget = ({ user, event, location }) => {
   };
 
   return (
-      <div style={{ margin: "20px auto", position: "relative" }}>
-        <AttendeeToAttendeeContainer
-            {...widgetProps}
-            ref={{ sdcRef, shcRef, sqacRef, ocrRef }}
-        />
-      </div>
+    <div style={{ margin: "20px auto", position: "relative" }}>
+      <AttendeeToAttendeeContainer
+        {...widgetProps}
+        ref={{ sdcRef, shcRef, sqacRef, ocrRef }}
+      />
+    </div>
   );
 };
 
 const AccessTracker = ({ user, isLoggedUser }) => {
   const trackerRef = useRef();
-
+  
   useEffect(() => {
     if (!isLoggedUser) {
       trackerRef.current.signOut();
@@ -175,8 +180,12 @@ const AccessTracker = ({ user, isLoggedUser }) => {
     return null;
   }
 
-  const { email, first_name, last_name, bio, summit_tickets } = user.userProfile;
+  const { summit_tickets } = user.userProfile;
   const {
+    bio,
+    given_name,
+    family_name,
+    email,
     picture,
     company,
     job_title,
@@ -193,7 +202,7 @@ const AccessTracker = ({ user, isLoggedUser }) => {
   const widgetProps = {
     user: {
       idpUserId: sub,
-      fullName: public_profile_show_fullname ? `${first_name} ${last_name}` : `${first_name}`,
+      fullName: public_profile_show_fullname ? `${given_name} ${family_name}` : `${given_name}`,
       email: email,
       company: company,
       title: job_title,
@@ -205,10 +214,10 @@ const AccessTracker = ({ user, isLoggedUser }) => {
         wechatUser: wechat_user,
       },
       getBadgeFeatures: () =>
-          summit_tickets
-              .filter((st) => st.badge)
-              .flatMap((st) => st.badge.features)
-              .filter((v, i, a) => a.map((item) => item.id).indexOf(v.id) === i),
+        summit_tickets
+          .filter((st) => st.badge)
+          .flatMap((st) => st.badge.features)
+          .filter((v, i, a) => a.map((item) => item.id).indexOf(v.id) === i),
       bio: bio,
       showEmail: public_profile_show_email,
       allowChatWithMe: public_profile_allow_chat_with_me ?? true
