@@ -4577,8 +4577,8 @@
             "slides": [
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/openpower_librebmc-for-ocp-long-presentation-v1.8.pdf",
-                "name": "LibreBMC for OCP long presentation",
+                "link": "/img/openpower_librebmc-for-ocp-long-presentation-v1.9.pdf",
+                "name": "LibreBMC for OCP ",
                 "order": 4
               },
               {
@@ -4587,8 +4587,22 @@
                 "name": "OPF Promo",
                 "order": 5
               }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/openpower_opc-librebmc-2021.mp4",
+                "order": 10,
+                "name": "opc-librebmc-2021"
+              }
             ]
           },
+          "columnAds": [
+            {
+              "link": "https://openpowerfoundation.org/membership/how-to-join/",
+              "image": "/img/openpower_join_opf.jpg"
+            }
+          ],
           "id": 114,
           "showLogoInEventPage": false,
           "email": "info@openpowerfoundation.org",
