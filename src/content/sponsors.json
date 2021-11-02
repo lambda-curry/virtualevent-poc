@@ -5933,6 +5933,14 @@
                 "order": 9,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Symposium_Posters/voice%201.mp3"
               }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "Towards Sustainable Energy-Efficient Data Centers in Africa - By Dave Ojika, Gaurav Kaul - Video",
+                "order": 11,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Symposium_Posters/Flampmax-Symposium-Recording-d7014d896806a9f991655eb00e1fdbd8.MP4"
+              }
             ]
           },
           "id": 96,
