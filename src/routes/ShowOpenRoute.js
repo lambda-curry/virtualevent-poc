@@ -43,6 +43,10 @@ const ShowOpenRoute = ({
     return isAuthorized;
   };
 
+  // if summit_phase wasn't initialized yet (eg: due to a delay in the reducer), 
+  // this render shouldn't continue
+  if (summit_phase === null) return null;
+
   // if we are providing the now fragment param then let the clock
   // component set it, so we need to bypass this next check
   const fragmentParser = new FragmentParser();
