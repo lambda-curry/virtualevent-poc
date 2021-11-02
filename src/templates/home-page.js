@@ -46,6 +46,8 @@ export const HomePageTemplate = class extends React.Component {
   }
 
   render() {
+    console.log('HomePageTemplate::render');
+
     const { user, summit, homeSettings } = this.props;
 
     return (

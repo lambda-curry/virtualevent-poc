@@ -57,6 +57,7 @@ const ShowOpenRoute = ({
 
   // if summit didnt started yet ...
   if (!shouldBypassCheck && !userCanByPassAuthz() && summit_phase === PHASES.BEFORE) {
+    console.log('ShowOpenRoute::rendering no show time')
     return <HeroComponent title="Its not yet show time!" redirectTo="/" />;
   }
 
@@ -68,6 +69,7 @@ const ShowOpenRoute = ({
       />
     );
   }
+  console.log('ShowOpenRoute::rendering children');
 
   return children;
 };
