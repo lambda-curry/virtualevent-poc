@@ -5544,7 +5544,7 @@
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-telco.png",
           "name": "TELCO",
-          "intro": "### Arrcus peering edge fabric demonstration with a small VDR (virtualized distributed router) cluster.",
+          "intro": "### As businesses rapidly move towards a flexible, intelligently orchestrated future enabled by technologies as 5G, multi-cloud, and edge computing, they require solutions that advance their infrastructure in a scalable, reliable, and flexible manner. The Arrcus virtualized distributed router (VDR) solution addresses the challenging needs of these organizations by providing seamless connectivity for workloads across on-premise, multi-cloud, and edge environments and enabing simplified manageability and operations compared to monolithic chassis-based solutions while also offering disruptive economic benefits.\n\n### VDR is powered by ArcOS, the resilient microservices-based network operating system and leverages its industry-leading route scale and convergence times.\n\n###  Check out our peering edge fabric demonstration with a small VDR cluster built on Jericho2- and Ramon-based platforms.",
           "headerImage": "/img/ocp21glo_fnv_expc-header-telco.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-telco.png",
           "chatLink": "https://arrcus.zoom.us/j/98109522847?pwd=bC9vRjA4NmI2UUVmRmJiQ0h5YkEzZz09",
