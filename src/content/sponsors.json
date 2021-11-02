@@ -82,7 +82,7 @@
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Welcome%20Promo%20Video.mp4",
           "headerImage": "",
           "headerImageMobile": "",
-          "advertiseImage": "/img/facebook_lobbyad_ocp2021.png",
+          "advertiseImage": "/img/virtual-lobby-ad.png",
           "sponsorId": 55,
           "title": "",
           "companyId": 5,
@@ -93,25 +93,25 @@
                 "class_name": "PresentationLink",
                 "link": "https://www.facebook.com/careers/",
                 "order": 1,
-                "name": "Careers @ Facebook"
+                "name": "Careers @ Meta"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://about.facebook.com/",
                 "order": 2,
-                "name": "About Facebook"
+                "name": "About Meta"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://engineering.fb.com/",
                 "order": 3,
-                "name": "Engineering @ Facebook"
+                "name": "Engineering @ Meta"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://datacenters.fb.com/",
                 "order": 4,
-                "name": "Data Centers @ Facebook"
+                "name": "Data Centers @ Meta"
               }
             ],
             "videos": [
