@@ -141,13 +141,13 @@
               },
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_Hardware%20Engineering%20at%20Facebook.mp4",
-                "name": "The People behind the Hardware",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Hardware%20Engineering%20at%20Meta.mp4.mp4",
+                "name": "Hardware Engineering at Meta",
                 "order": 9
               },
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_CXL%20Demo.mp4",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/See%20CXL%20in%20Action%21.mp4",
                 "order": 10,
                 "name": "See CXL in action!"
               }
