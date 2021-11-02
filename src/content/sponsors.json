@@ -4514,6 +4514,14 @@
                 "name": "LinkedIN",
                 "order": 4
               }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/FIRESIDE%20CHAT%20-%20RI.SE%20&%20NEXALUS.mp4",
+                "order": 6,
+                "name": "Fireside Chat with RISE & Nexalus"
+              }
             ]
           },
           "columnAds": [
