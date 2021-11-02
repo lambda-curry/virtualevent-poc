@@ -415,7 +415,8 @@
           "headerVideo": "",
           "headerImage": "",
           "title": "",
-          "id": 6
+          "id": 6,
+          "showLogoInEventPage": true
         },
         {
           "advertiseImage": "",
