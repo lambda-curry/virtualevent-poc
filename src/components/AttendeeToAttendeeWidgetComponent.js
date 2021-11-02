@@ -150,7 +150,7 @@ export const AttendeesWidget = ({ user, event, location }) => {
     ...chatProps,
     ...sbAuthProps,
   };
-  console.log('AttendeesWidget::render')
+
   return (
       <div style={{ margin: "20px auto", position: "relative" }}>
         <AttendeeToAttendeeContainer
@@ -216,7 +216,7 @@ const AccessTracker = ({ user, isLoggedUser }) => {
     summitId: parseInt(getEnvVariable(SUMMIT_ID)),
     ...sbAuthProps,
   };
-  console.log('AccessTracker::render')
+
   return <Tracker {...widgetProps} ref={trackerRef} />;
 };
 
