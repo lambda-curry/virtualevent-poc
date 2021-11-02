@@ -5194,14 +5194,64 @@
           "usesSponsorPage": true
         },
         {
+          "marquee": "San Jose Inspires (sanjose.org and @visitsanjose).",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-media.png",
+          "name": "Visit San Jose",
+          "intro": "### San Jose is the heart of Silicon Valley and the gateway to the greater Bay Area. Located an hour in between San Francisco and Monterey, you will find inspiration at famous Silicon Valley landmarks, tech campuses and renowned universities. You can shop luxury trends at Santana Row, called, “The Rodeo Drive of Silicon Valley” and at Designer Row in Westfield Valley Fair, just steps away from each other. Indulge in a Michelin-starred Portuguese meal at ADEGA or savor the coveted La Victoria Taqueria orange sauce with your burrito. Don’t miss play at The Tech Interactive and then, unplug in the Big Basin Redwoods. Visit craft breweries, unique cocktail lounges or nearby Santa Cruz Mountains wineries to round off your iconic San Jose experience.",
           "advertiseImage": "",
-          "showLogoInEventPage": false,
-          "name": "San Jose Convention Center ",
-          "companyId": 132,
-          "id": 152,
           "sponsorId": 152,
-          "usesSponsorPage": true,
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-media.png"
+          "title": "Visit San Jose",
+          "companyId": 132,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": " https://sanjose.org/events/beyond-van-gogh-san-jose",
+                "name": "Beyond Van Gogh Exhibit ",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://sanjose.org/trip-ideas/itineraries/big-basin-hike-and-wine-adventure",
+                "name": "Hikes and Wine Itinerary",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": " https://www.casinom8trix.com",
+                "order": 3,
+                "name": "Casino Matrix"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://sanjose.org/trip-ideas/itineraries/history-tour",
+                "order": 4,
+                "name": "San Jose History Itinerary"
+              },
+              {
+                "class_name": "PresentationLink",
+                "order": 5,
+                "link": "https://sanjose.org/neighborhoods/santana-row",
+                "name": "Santana Row"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://sanjose.org/things-to-do/wineries",
+                "order": 6,
+                "name": "Wines! "
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.winchestermysteryhouse.com",
+                "name": "Winchester Mystery House",
+                "order": 7
+              }
+            ]
+          },
+          "id": 152,
+          "showLogoInEventPage": false,
+          "email": "lchmielewski@sanjose.org",
+          "usesSponsorPage": true
         }
       ]
     },
