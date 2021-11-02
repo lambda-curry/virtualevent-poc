@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet'
 import LiveEventWidget from 'live-event-widget/dist/index.js';
 import 'live-event-widget/dist/index.css';
 
-const LiveEventWidgetComponent = ({allEvents, summit, colorSettings, homeSettings, ...rest}) => {
+const LiveEventWidgetComponent = ({allEvents, summit, colorSettings, homeSettings, className = 'live-event-container', ...rest}) => {
 
     const widgetProps = {
         title: "",
@@ -22,7 +22,7 @@ const LiveEventWidgetComponent = ({allEvents, summit, colorSettings, homeSetting
             <Helmet>
                 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/1.0.2/awesome-bootstrap-checkbox.min.css" />
             </Helmet>
-            <div>
+            <div className={className}>
                 <LiveEventWidget {...widgetProps} />
             </div>
         </>
@@ -33,7 +33,7 @@ const mapStateToProps = ({ summitState, scheduleState, settingState }) => ({
     summit: summitState.summit,
     allEvents: scheduleState.allEvents,
     colorSettings: settingState.colorSettings,
-    homeSettings: settingState.homeSettings
+    homeSettings: settingState.homeSettings,
 });
 
 export default connect(mapStateToProps, { })(LiveEventWidgetComponent)
