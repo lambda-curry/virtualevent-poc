@@ -5204,7 +5204,7 @@
         },
         {
           "marquee": "San Jose Inspires (sanjose.org and @visitsanjose).",
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-visitsanjose.png",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-media.png",
           "name": "Visit San Jose",
           "intro": "### San Jose is the heart of Silicon Valley and the gateway to the greater Bay Area. Located an hour in between San Francisco and Monterey, you will find inspiration at famous Silicon Valley landmarks, tech campuses and renowned universities. You can shop luxury trends at Santana Row, called, “The Rodeo Drive of Silicon Valley” and at Designer Row in Westfield Valley Fair, just steps away from each other. Indulge in a Michelin-starred Portuguese meal at ADEGA or savor the coveted La Victoria Taqueria orange sauce with your burrito. Don’t miss play at The Tech Interactive and then, unplug in the Big Basin Redwoods. Visit craft breweries, unique cocktail lounges or nearby Santa Cruz Mountains wineries to round off your iconic San Jose experience.",
           "headerImage": "/img/tsj-sponsor-page-header_v2.jpeg",
@@ -5258,12 +5258,6 @@
               }
             ]
           },
-          "columnAds": [
-            {
-              "image": "/img/image.png",
-              "link": "https://www.sanjose.org/"
-            }
-          ],
           "id": 152,
           "showLogoInEventPage": false,
           "email": "lchmielewski@sanjose.org",
@@ -5845,85 +5839,85 @@
                 "class_name": "PresentationSlide",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Symposium_Posters/20211011-Efficiency-High-Performance-Computing-Servers-Using-Liquid-Cooled-Compute-Pod-LCCP-1f474db7df0b78016fb37a25fc7fe958.pdf",
                 "name": "Energy Efficiency and Performance of High Performance Computing Servers Using Liquid Cooled Compute Pod (LCCP) - By Navin Raja Kuppusamy",
-                "order": 11
+                "order": 12
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2148/slides/OCP-Poster-Summit21-KR-0379f1570062048932afaaa6c9932c8d-6c5ff008404ffaeaddf5a95c5ddb4762.pdf",
                 "name": "Super-conductive Data-Center - By Karl Rabe, Viktor Stark",
-                "order": 12
+                "order": 13
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2149/slides/hantsch-2021-ocp-poster-rev1-5ae9b451fe3ffd4196ed2a4bfbf489de-f9b06eb79a9ef3c477050a83138c67c6.pdf",
                 "name": "Pushing the boundary conditions of data centers facilitates innovative circular economy approaches - By Leonie Banzer",
-                "order": 13
+                "order": 14
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2145/slides/OCP-Symposium-Poster-Berkeley-2021-rev3-a4a29f07ed1d2e7ff959eccb03302316-4485ce0ae9d3fa077cad7c931d8076ed.pdf",
                 "name": "Hybrid and Resonant Switched-Capacitor Converters: Achieving Ultra-Efficient and Compact 48 V Datacenter Power Delivery - By Ting Ge, Rose Abramson, Zichao Ye, Robert Pilawa-Podgurski",
-                "order": 14
+                "order": 15
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2146/slides/OCP21G-Symposium-Poster-ssen-r2-430c7d66075aa259f88a63211255e9ee-30fc045cc01175c5e946cc6e10f0d31b.pdf",
                 "name": "Medium Voltage Power Delivery Architecture for Data Centers - By Soumik Sen",
-                "order": 15
+                "order": 16
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2147/slides/OCP21G-Symposium-Poster-Jaeil-Baek-e1b68f6ecfc1c7e15f136f6a8fb41c55-58e8e3b2295d6809eb0fc08ae73bbe69.pdf",
                 "name": "Vertical Stacked 48V-1V Voltage Regulator for Ultra High Current Microprocessors - By Jaeil Baek, Youssef Elasser, Minjie Chen",
-                "order": 16
+                "order": 17
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2137/slides/OCP21G-Symposium-proteanTecs-Poster2-Final-d1c8c5efe104fe7f63ea8b41f1a0d375-0cf6516add10d1c236c685102f390548.pdf",
                 "name": "Reliability of Cloud Scale Hardware Through Performance and Health Monitoring Using on-chip Telemetry - By Alex Burlak",
-                "order": 17
+                "order": 18
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2138/slides/Myrtle-Poster-5-bde138e4e0a0cdca451b997ea1f21485-41f5f80631da93d43753552a02a37c92.pdf",
                 "name": "Accelerating DLRM on an OCP M.2 Accelerator - By Tom Lagatta",
-                "order": 18
+                "order": 19
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2139/slides/OCP21G-Symposium-Poster-MahsaBayati-870b6847002db63d914b433ce2d4db7e-r2-9e2b5ed84aebe1e25db2970e6658ce87.pdf",
                 "name": "DSS: High I/O Bandwidth Disaggregated Object Storage System for AI Applications - By Mahsa Bayati",
-                "order": 19
+                "order": 20
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2140/slides/OCP21G-Symposium-Poster-ScaleFlux-e2ef098c46d8b462495cef853a1840fa-a6b2426b20150851a28cf43e2fc6d918.pdf",
                 "name": "Accelerating Data Analytics with Computational Storage Drives - By Keith McKay, Yang Liu",
-                "order": 20
+                "order": 21
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2141/slides/200GPerLamdaPoster-OCPSymposium-NBH-ea46d6bf6e133c897e6a7ad11bf6f00e-ccce3c8acafb3bc8b2bba23457912fbc.pdf",
                 "name": "A path for 224Gb/s Solution for Intra Data Center Interconnect - By Naim Ben-Hamida",
-                "order": 21
+                "order": 22
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2142/slides/Telescent-OCP21G-Symposium-Poster-Submission-5d19b100b27f0b21fbac3e95d4fb4185-85a4eb37b0508bbe9997fb3a31ca46f5.pdf",
                 "name": "Automated Telemetry for Data Center Physical Fiber Layer Analysis - By Bob Shine",
-                "order": 22
+                "order": 23
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2143/slides/Avicena-OCP2021-poster-FINAL-174f69ecc794ed2ede7ff141e6c2c7f2-b2fad79b0361ed6e41333934d1839525.pdf",
                 "name": "Wide and parallel LED-based optical links using multi-core fiber for chip-to-chip communications - By Rob Kaiman",
-                "order": 23
+                "order": 24
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "https://object-storage.public.mtl1.vexxhost.net/swift/v1/6e4619c416ff4bd19e1c087f27a43eea/assets-fn/summits/31/presentations/2144/slides/OCP21G-Symposium-Poster-TaihaiChen-AccelerComm-7Oct2021-b023d3c84770a2ce0e7a336929c9a383-r2-63ed415912cd53c91e57b1e6dd453c31.pdf",
                 "name": "Indoor/Outdoor 7.2x 5G O-RAN Standards Compliant Base Station Design Example - By Taihai Chen",
-                "order": 24
+                "order": 25
               }
             ],
             "links": [
@@ -5932,6 +5926,14 @@
                 "name": "Proposal of Real-Time Optimization Procedure for Air Conditioning Operation with Regression Prediction and Deep Reinforcement Learning on CFD Analysis Calibrated by Super Resolution Neural Network - Audio File",
                 "order": 9,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Symposium_Posters/voice%201.mp3"
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "Towards Sustainable Energy-Efficient Data Centers in Africa - By Dave Ojika, Gaurav Kaul",
+                "order": 11,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Symposium_Posters/Flampmax-Symposium-Recording-d7014d896806a9f991655eb00e1fdbd8.MP4"
               }
             ]
           },
