@@ -1482,8 +1482,8 @@
             "slides": [
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/flex_ocp-summit-brochure_cs_211021.pdf",
-                "name": "OCP Summit Brochure",
+                "link": "/img/5g-o-ran-solution-brief.pdf",
+                "name": "Flex Reference Designs Optimized for Private Cloud",
                 "order": 5
               },
               {
