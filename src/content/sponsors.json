@@ -74,96 +74,6 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Being virtual doesn’t mean you can’t see our latest hardware designs for yourself. Explore our designs on Oculus or in your browser below!",
-          "sponsorColor": "#67788A",
-          "logo": "/img/ocp21glo_fnv_sponsorlogo-meta.png",
-          "name": "Meta ",
-          "intro": "![](/img/ocp21glo_fnv_sponsorpagelogo-meta.png)\n\n### Meta builds technologies that help people connect, find communities, and grow businesses. When Facebook launched in 2004, it changed the way people connect. Apps like Messenger, Instagram and WhatsApp further empowered billions around the world. Now, Meta is moving beyond 2D screens toward immersive experiences like augmented and virtual reality to help build the next evolution in social technology.",
-          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Welcome%20Promo%20Video.mp4",
-          "headerImage": "",
-          "headerImageMobile": "",
-          "advertiseImage": "/img/virtual-lobby-ad.png",
-          "sponsorId": 55,
-          "title": "",
-          "companyId": 5,
-          "documents": {
-            "slides": [],
-            "links": [
-              {
-                "class_name": "PresentationLink",
-                "link": "https://www.facebook.com/careers/",
-                "order": 1,
-                "name": "Careers @ Meta"
-              },
-              {
-                "class_name": "PresentationLink",
-                "link": "https://about.facebook.com/",
-                "order": 2,
-                "name": "About Meta"
-              },
-              {
-                "class_name": "PresentationLink",
-                "link": "https://engineering.fb.com/",
-                "order": 3,
-                "name": "Engineering @ Meta"
-              },
-              {
-                "class_name": "PresentationLink",
-                "link": "https://datacenters.fb.com/",
-                "order": 4,
-                "name": "Data Centers @ Meta"
-              }
-            ],
-            "videos": [
-              {
-                "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Our%20Infra%20Hardware%20Team.mp4",
-                "order": 4,
-                "name": "Our Infra Hardware Team"
-              },
-              {
-                "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Building%20Hardware%20Through%20A%20Pandemic.mp4",
-                "order": 5,
-                "name": "Building Hardware through a Pandemic"
-              },
-              {
-                "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/What%20Inspires%20Us.mp4",
-                "order": 7,
-                "name": "What Inspires Us"
-              },
-              {
-                "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_FACEBOOK_DATACENTER_OCTOBER_11_2016.mp4",
-                "name": "Our Data Center & OCP Journey",
-                "order": 8
-              },
-              {
-                "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Hardware%20Engineering%20at%20Meta.mp4.mp4",
-                "name": "Hardware Engineering at Meta",
-                "order": 9
-              },
-              {
-                "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/See%20CXL%20in%20Action%21.mp4",
-                "order": 10,
-                "name": "See CXL in action!"
-              }
-            ]
-          },
-          "columnAds": [
-            {
-              "link": "",
-              "image": "/img/clickable-sponsor-space.png"
-            }
-          ],
-          "id": 55,
-          "email": "natking@fb.com",
-          "usesSponsorPage": true
-        },
-        {
           "marquee": "Visit Inspur booth# B23 to see our latest innovations in OCP that balance efficiency and power, optimized for enterprise, cloud, and AI.",
           "externalLink": "",
           "featuredEventId": 2275,
@@ -455,6 +365,96 @@
           ],
           "id": 57,
           "email": "karim.azar@itrenew.com",
+          "usesSponsorPage": true
+        },
+        {
+          "marquee": "Being virtual doesn’t mean you can’t see our latest hardware designs for yourself. Explore our designs on Oculus or in your browser below!",
+          "sponsorColor": "#67788A",
+          "logo": "/img/ocp21glo_fnv_sponsorlogo-meta.png",
+          "name": "Meta ",
+          "intro": "![](/img/ocp21glo_fnv_sponsorpagelogo-meta.png)\n\n### Meta builds technologies that help people connect, find communities, and grow businesses. When Facebook launched in 2004, it changed the way people connect. Apps like Messenger, Instagram and WhatsApp further empowered billions around the world. Now, Meta is moving beyond 2D screens toward immersive experiences like augmented and virtual reality to help build the next evolution in social technology.",
+          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Welcome%20Promo%20Video.mp4",
+          "headerImage": "",
+          "headerImageMobile": "",
+          "advertiseImage": "/img/virtual-lobby-ad.png",
+          "sponsorId": 55,
+          "title": "",
+          "companyId": 5,
+          "documents": {
+            "slides": [],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.facebook.com/careers/",
+                "order": 1,
+                "name": "Careers @ Meta"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://about.facebook.com/",
+                "order": 2,
+                "name": "About Meta"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://engineering.fb.com/",
+                "order": 3,
+                "name": "Engineering @ Meta"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://datacenters.fb.com/",
+                "order": 4,
+                "name": "Data Centers @ Meta"
+              }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Our%20Infra%20Hardware%20Team.mp4",
+                "order": 4,
+                "name": "Our Infra Hardware Team"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Building%20Hardware%20Through%20A%20Pandemic.mp4",
+                "order": 5,
+                "name": "Building Hardware through a Pandemic"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/What%20Inspires%20Us.mp4",
+                "order": 7,
+                "name": "What Inspires Us"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_FACEBOOK_DATACENTER_OCTOBER_11_2016.mp4",
+                "name": "Our Data Center & OCP Journey",
+                "order": 8
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Hardware%20Engineering%20at%20Meta.mp4.mp4",
+                "name": "Hardware Engineering at Meta",
+                "order": 9
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/See%20CXL%20in%20Action%21.mp4",
+                "order": 10,
+                "name": "See CXL in action!"
+              }
+            ]
+          },
+          "columnAds": [
+            {
+              "link": "",
+              "image": "/img/clickable-sponsor-space.png"
+            }
+          ],
+          "id": 55,
+          "email": "natking@fb.com",
           "usesSponsorPage": true
         },
         {
