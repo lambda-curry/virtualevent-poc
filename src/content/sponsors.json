@@ -117,7 +117,7 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_Infra%20Hardware_who%20we%20are.mp4",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Our%20Infra%20Hardware%20Team.mp4",
                 "order": 4,
                 "name": "Our Infra Hardware Team"
               },
@@ -129,7 +129,7 @@
               },
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/facebook_facebook%20inspired%20final.mp4",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/What%20Inspires%20Us.mp4",
                 "order": 7,
                 "name": "What Inspires Us"
               },
