@@ -4932,26 +4932,34 @@
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.linkedin.com/company/data-centres-magazine/mycompany/?viewAsMember=true",
-                "order": 1,
+                "order": 2,
                 "name": "LinkedIn"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://twitter.com/DataCentre_Mag3",
-                "order": 2,
+                "order": 3,
                 "name": "Twitter"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.instagram.com/datacentremag/",
-                "order": 3,
+                "order": 4,
                 "name": "Instagram "
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.youtube.com/channel/UCT6q7FjsL4YvcmMpRwPStUg",
-                "order": 4,
+                "order": 5,
                 "name": "YouTube"
+              }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/x_data_centre_magazine_datacentre-mediadeck-2022-final-1-.pdf",
+                "name": "DataCentre Media Deck 2022",
+                "order": 1
               }
             ]
           },
@@ -5193,7 +5201,7 @@
           },
           "columnAds": [
             {
-              "link": " www.interglobixmagazine.com",
+              "link": "https://www.interglobixmagazine.com",
               "image": "/img/1x1ad_final.jpg"
             }
           ],
@@ -5932,14 +5940,6 @@
                 "name": "Proposal of Real-Time Optimization Procedure for Air Conditioning Operation with Regression Prediction and Deep Reinforcement Learning on CFD Analysis Calibrated by Super Resolution Neural Network - Audio File",
                 "order": 9,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Symposium_Posters/voice%201.mp3"
-              }
-            ],
-            "videos": [
-              {
-                "class_name": "PresentationVideo",
-                "name": "Towards Sustainable Energy-Efficient Data Centers in Africa - By Dave Ojika, Gaurav Kaul - Video",
-                "order": 11,
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Symposium_Posters/Flampmax-Symposium-Recording-d7014d896806a9f991655eb00e1fdbd8.MP4"
               }
             ]
           },
