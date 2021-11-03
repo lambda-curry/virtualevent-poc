@@ -5586,6 +5586,7 @@
         },
         {
           "marquee": "Credo, DriveNets & UfiSpace are demonstrating the world’s largest distributed disaggregated chassis implementation – a 350Tb Jericho2c+ 3-rack cluster.",
+          "featuredEventId": 2263,
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-networking.png",
           "name": "Networking",
@@ -5643,6 +5644,7 @@
         },
         {
           "marquee": "Discover the Power of One with Arrcus Connected Edge (ACE) - One Simple Network, One Scalable Architecture, One Seamless Experience.",
+          "featuredEventId": 2264,
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-telco.png",
           "name": "TELCO",
@@ -5811,6 +5813,7 @@
         },
         {
           "marquee": "Test Executive Agnostic I/O Specification to Enable Portable Diagnostics on OCP Hardware.",
+          "featuredEventId": 2267,
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-test.png",
           "name": "Test and Validation",
