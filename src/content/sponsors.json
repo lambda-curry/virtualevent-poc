@@ -239,7 +239,7 @@
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/intel_Open%20Compute%20Project%20NIC%203.0.mp4",
-                "name": "Open Compute Project NIC 3.0",
+                "name": "PFR 3.0 on Archer City",
                 "order": 10
               }
             ],
@@ -5420,7 +5420,7 @@
                 "class_name": "PresentationVideo",
                 "name": "DC-SCM 2.0 Module Prototype Showcase",
                 "order": 1,
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/hardware_management_Intel%20DC-SCM%202.0%20Prototype%20Demo%20Disclaimers.mp4"
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/hardware_management_Intel%20DC-SCM%202.0%20Prototype%20Demo.mp4"
               },
               {
                 "class_name": "PresentationVideo",
