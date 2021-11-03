@@ -253,6 +253,18 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/intel_IPU%20-%20Transforming%20the%20Data%20Center%20of%20the%20Future%20presented%20by%20Brad%20Burres.mp4",
                 "order": 12,
                 "name": "Intel-Lubrizol Immersion Cooling Collaboration"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/intel_Hyve%20Solutions%27%20Modified%20ORv3%20Premier%20Server%20with%203rd%20Gen%20Intel%20Xeon%20Scalable%20Processors.mp4",
+                "name": "Inspur 2 Socket General Purpose Open Compute Server Powered by 3rd Generation Intel Xeon Scalable Processors",
+                "order": 13
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/intel_PFR%203.0%20on%20Archer%20City.mp4",
+                "order": 14,
+                "name": "Unpacking Carbon Footprints of Compute presented by John Miranda"
               }
             ],
             "slides": [
