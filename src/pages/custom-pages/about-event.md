@@ -15,7 +15,7 @@ Secure your tickets today by clicking the log in the top left corner, and hittin
 
 </br>
 
-##### Festival Venue: 
+##### Festival Venue:
 
 **Goya Studios**
 
@@ -27,12 +27,10 @@ Secure your tickets today by clicking the log in the top left corner, and hittin
 
 </br>
 
-
-
 ##### Hotels:
 
 **Dream Hotel** 
 
 <a href="https://www.google.se/maps/place/6417+Selma+Ave,+Los+Angeles,+CA+90028/@34.100152,-118.3323674,17z/data=!3m1!4b1!4m5!3m4!1s0x80c2bf3bb55a2eff:0x8997182163286899!8m2!3d34.100152!4d-118.3301787?shorturl=1" target="_blank">6417 Selma Avenue Hollywood, CA 90028</a>
 
-<a href="https://be.synxis.com/?adult=1&arrive=2021-11-03&chain=16978&child=0&currency=USD&depart=2021-11-04&hotel=66060&level=hotel&locale=en-US&promo=INFINITYFEST21&rooms=1" target="_blank">Click here</a> to book special IF room rates
+<a href="https://be.synxis.com/?adult=1&arrive=2021-11-03&chain=16978&child=0&currency=USD&depart=2021-11-04&hotel=66060&level=hotel&locale=en-US&promo=INFINITYFEST21&rooms=1" target="_blank">Click here</a> to book special IF room rates.
