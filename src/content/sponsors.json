@@ -4825,7 +4825,7 @@
           "sponsorColor": "#54237f",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-snia.png",
           "name": "SNIA",
-          "intro": "#### The Storage Networking Industry Association (SNIA) is a non-profit global organization dedicated to developing standards and education programs to advance storage and information technology. Over 185 companies and 2,500 member volunteers collaborate on open source and standards in the technology areas of next generation storage management, computational storage, persistent memory, solid state drives, connectors, transceivers, form factors, and more. Visit us at www.snia.org.",
+          "intro": "### The Storage Networking Industry Association (SNIA) is a non-profit global organization dedicated to developing standards and education programs to advance storage and information technology. Over 185 companies and 2,500 member volunteers collaborate on open source and standards in the technology areas of next generation storage management, computational storage, persistent memory, solid state drives, connectors, transceivers, form factors, and more. Visit us at <http://www.snia.org/ocp>.​",
           "headerImage": "/img/snia_ocp21virtualboothtop.jpg",
           "headerImageMobile": "/img/snia_sniawelcomeimage_ocp.jpg",
           "chatLink": "https://zoom.us/j/6927138946?pwd=eXlvQy9Jdzd6ZmFUU1Qra2ROanhRdz09",
@@ -4845,40 +4845,40 @@
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/snia_SNIA_What-is-computational-storage.mp4",
                 "order": 7,
-                "name": "SNIA What-is-computational-storage."
+                "name": "SNIA What is computational storage."
               }
             ],
             "links": [
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.youtube.com/user/SNIAVideo",
-                "name": "Youtube",
-                "order": 1
+                "name": "YouTube",
+                "order": 2
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://twitter.com/SNIA",
-                "order": 2,
+                "order": 3,
                 "name": "Twitter"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.linkedin.com/company/snia/",
-                "order": 3,
+                "order": 4,
                 "name": "LinkedIn"
               },
               {
                 "class_name": "PresentationLink",
-                "link": "https://www.facebook.com/SNIA.ORG/",
-                "order": 4,
-                "name": "Facebook"
+                "link": "https://www.snia.org/ocp",
+                "order": 1,
+                "name": "SNIA @ OCP Global Summit 2021"
               }
             ],
             "slides": [
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/snia_snia_bizdev_infographic5.21.pdf",
-                "name": "SNIA BizDev Infographic",
+                "name": "About SNIA Infographic",
                 "order": 4
               },
               {
