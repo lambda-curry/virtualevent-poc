@@ -2605,15 +2605,16 @@
           "title": "Cisco",
           "companyId": 84,
           "documents": {
-            "videos": [
+            "videos": [],
+            "links": [
               {
-                "class_name": "PresentationVideo",
-                "link": "https://xrdocs.io/ocp?media=virtualbooth",
+                "class_name": "PresentationLink",
                 "name": "Cisco @ OCP Learn More",
-                "order": 1
+                "order": 1,
+                "link": "https://xrdocs.io/ocp?media=virtualbooth"
               },
               {
-                "class_name": "PresentationVideo",
+                "class_name": "PresentationLink",
                 "link": "https://twitter.com/xrdocs?media=virtualbooth",
                 "name": "@xrdocs Twitter",
                 "order": 2
