@@ -241,6 +241,12 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/intel_Open%20Compute%20Project%20NIC%203.0.mp4",
                 "name": "PFR 3.0 on Archer City",
                 "order": 10
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/intel_Unpacking%20Carbon%20Footprints%20of%20Compute%20presented%20by%20John%20Miranda.mp4",
+                "order": 11,
+                "name": "Hyve Solutions’ Modified Orv3 Premier Server with 3rd Generation Intel Xeon Scalable Processors"
               }
             ],
             "slides": [
