@@ -379,18 +379,18 @@
                 "class_name": "PresentationLink",
                 "link": "https://www.linkedin.com/company/410519/admin/",
                 "order": 1,
-                "name": "CoreSite - LinkedIn"
+                "name": "CoreSite: LinkedIn"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.youtube.com/channel/UCMguHHRai0oyuWBF0KbN42A",
                 "order": 2,
-                "name": "CoreSite - YouTube"
+                "name": "CoreSite: YouTube"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://twitter.com/coresite",
-                "name": "@CoreSite - Twitter",
+                "name": "CoreSite: Twitter",
                 "order": 3
               }
             ],
@@ -398,7 +398,7 @@
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/coresite_coresite-5-reasons-colocation-is-essential.pdf",
-                "name": "Coresite 5 Reasons Colocation is Essential",
+                "name": "CorSite 5 Reasons Colocation is Essential",
                 "order": 4
               },
               {
