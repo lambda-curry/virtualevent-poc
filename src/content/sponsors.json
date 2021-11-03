@@ -276,21 +276,15 @@
             "slides": [
               {
                 "class_name": "PresentationSlide",
+                "link": "/img/intel_unpacking-carbon-in-compute-systems.pdf",
+                "name": "Unpacking Carbon in Compute Systems",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationSlide",
                 "link": "/img/intel_intel-ethernet-network-adapters-for-ocp.pdf",
                 "name": "Intel Ethernet Network Adapters for OCP",
-                "order": 6
-              },
-              {
-                "class_name": "PresentationSlide",
-                "link": "/img/intel_telling-intel-s-story-technology-for-good.pdf",
-                "name": "Telling Intel's Story - Technology for Good",
-                "order": 5
-              },
-              {
-                "class_name": "PresentationSlide",
-                "link": "/documents/",
-                "name": "Hyve Solutions’ Modified Orv3 Premier Server with 3rd Generation Intel Xeon Scalable Processors",
-                "order": 6
+                "order": 2
               }
             ]
           },
