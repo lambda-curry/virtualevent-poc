@@ -834,13 +834,13 @@
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/qct_d53x-1u_20210326.pdf",
-                "name": "D53X-1U 20210326",
+                "name": "D53X-1U datasheet",
                 "order": 5
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/qct_d53xq-2u_20210702.pdf",
-                "name": "D53XQ-2U 20210702",
+                "name": "D53XQ-2U datasheet",
                 "order": 6
               }
             ]
