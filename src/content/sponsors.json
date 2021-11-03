@@ -260,7 +260,7 @@
                 "class_name": "PresentationLink",
                 "link": "https://twitter.com/ReKTGlobal",
                 "order": 3,
-                "name": "@ReKTGlobal: Twitter "
+                "name": "ReKTGlobal: Twitter "
               }
             ]
           },
@@ -320,14 +320,14 @@
               {
                 "class_name": "PresentationVideo",
                 "link": "https://www.youtube.com/watch?v=htNk2gz6oEw",
-                "name": "YouTube ",
+                "name": "YouTube: Real-Time 3D",
                 "order": 4
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://www.youtube.com/watch?v=DpuUnNLZf5k",
                 "order": 4,
-                "name": "You Tube "
+                "name": "YouTube: Behind the Scenes "
               }
             ],
             "slides": [
