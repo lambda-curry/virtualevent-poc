@@ -5821,6 +5821,24 @@
           "sponsorId": 93,
           "title": "Explore more about Test and Validation Station",
           "companyId": 79,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://blog.opentap.io/opentap-white-paper-open-source-in-test-measurement/",
+                "name": "White Paper Open Source in test and measurement ",
+                "order": 1
+              }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/contest_1pager_gray_qr.pdf",
+                "name": "ConTest",
+                "order": 2
+              }
+            ]
+          },
           "columnAds": [
             {
               "image": "/img/ocp21glo_fnv_expc-button-test-partners.png",
