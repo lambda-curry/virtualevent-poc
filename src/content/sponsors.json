@@ -4044,13 +4044,13 @@
             "links": [
               {
                 "class_name": "PresentationLink",
-                "link": "www.linkedin.com/company/asperitas",
+                "link": "https://www.linkedin.com/company/asperitas",
                 "order": 1,
                 "name": "LinkedIn"
               },
               {
                 "class_name": "PresentationLink",
-                "link": "www.facebook.com/ImmersedComputing",
+                "link": "https://www.facebook.com/ImmersedComputing",
                 "order": 2,
                 "name": "Facebook "
               },
