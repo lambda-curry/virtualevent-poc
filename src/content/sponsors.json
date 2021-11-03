@@ -1852,6 +1852,12 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/rittal_gmbh_co_kg_OCP_en.mp4",
                 "order": 5,
                 "name": "Rittal OCP Video "
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Rittal_disclimer-hypercool-new-logo2.mp4",
+                "order": 6,
+                "name": "HyperCool - Direct-on-Chip, Waterless, Two-Phase Liquid Cooling (2PLC)"
               }
             ],
             "slides": [
