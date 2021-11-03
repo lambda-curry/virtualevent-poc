@@ -271,6 +271,18 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Intel_DEMO%20-%20Intel%20Lubrizol%20Immersion%20Cooling%20Collaboration.mp4",
                 "order": 15,
                 "name": "Open Compute Project NIC 3.0."
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Intel%20Tofino%20and%20SONiC%20based%20stateful%20Server%20Load%20Balancing%20at%201%20Tbps%20speeds.mp4",
+                "order": 17,
+                "name": "DEMO: OCP Intel Tofino and SONiC based stateful Server Load Balancing at >1 Tbps speeds"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Intel_co%20marketing.mp4",
+                "order": 16,
+                "name": "Inspur 2 Socket General Purpose Open Compute Server Powered by 3rd Generation Intel Xeon Scalable Processors "
               }
             ],
             "slides": [
