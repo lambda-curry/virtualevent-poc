@@ -550,13 +550,13 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/microsoft_Liquid%20Immersion%20Cooling.mp4",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Microsoft%20Liquid%20Cooling_Captioned.mp4",
                 "order": 5,
                 "name": "Liquid Immersion Cooling"
               },
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/microsoft_Building%20the%20world%E2%80%99s%20computer%20with%20Microsoft%20Datacenters.mp4",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Microsoft%20Circular%20Centers_Captioned.mp4",
                 "order": 6,
                 "name": "Microsoft Circular Centers"
               },
