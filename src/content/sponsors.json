@@ -783,18 +783,18 @@
                 "class_name": "PresentationVideo",
                 "name": "QCT 3rd Gen Servers Powered with 3rd Gen Intel Xeon Scalable Processors",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/qct_QCT%203rd%20Gen%20Servers%20Powered%20with%203rd%20Gen%20Intel%20Xeon%20Scalable%20Processors.mp4",
-                "order": 2
+                "order": 1
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/qct_QCT%20with%20Intel%20to%20Create%20Next%20Generation%20DAOS-based%20Storage%20Systems%20for%20HPC.mp4",
                 "name": "QCT with Intel to Create Next Generation DAOS-based Storage Systems for HPC",
-                "order": 3
+                "order": 2
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/qct_QCT%20%20QuantaGrid%20D53XQ-2U%20Performance%20World%20Record.mp4",
-                "order": 4,
+                "order": 3,
                 "name": "QCT QuantaGrid D53XQ-2U Performance World Record"
               }
             ],
@@ -802,25 +802,25 @@
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.facebook.com/quantacloudtechnology/",
-                "order": 1,
+                "order": 7,
                 "name": "Facebook"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.linkedin.com/company/qct/",
-                "order": 2,
+                "order": 8,
                 "name": "LinkedIn"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://twitter.com/QuantaQCT",
-                "order": 3,
+                "order": 9,
                 "name": "Twitter"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.youtube.com/user/QuantaQCT",
-                "order": 5,
+                "order": 10,
                 "name": "YouTube"
               }
             ],
@@ -829,19 +829,19 @@
                 "class_name": "PresentationSlide",
                 "link": "/img/qct_qct-product-portfolio.pdf",
                 "name": "QCT Product Portfolio",
-                "order": 5
+                "order": 4
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/qct_d53x-1u_20210326.pdf",
                 "name": "D53X-1U 20210326",
-                "order": 6
+                "order": 5
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/qct_d53xq-2u_20210702.pdf",
                 "name": "D53XQ-2U 20210702",
-                "order": 7
+                "order": 6
               }
             ]
           },
