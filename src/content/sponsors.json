@@ -5074,15 +5074,21 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/dave_sims_media_Facebook%20in%20the%20Face%20of%20Covid%20_%20Dave%20Sims%20Media.mp4",
-                "name": "Facebook in the Face of Covid",
+                "name": "Meta Infra Hardware: Who We are",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Our%20Infra%20Hardware%20Team.mp4",
                 "order": 5
               },
               {
                 "class_name": "PresentationVideo",
-                "name": "Facebook HWE",
+                "name": "Meta Building Remotely in a Pandemic",
                 "order": 6,
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/dave_sims_media_facebook%20hwe.mp4.mp4"
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Building%20Hardware%20Through%20A%20Pandemic.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Meta Infra Hardware: What inspires us",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/What%20Inspires%20Us.mp4",
+                "order": 7
               }
             ],
             "slides": [
