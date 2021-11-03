@@ -265,6 +265,12 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/intel_PFR%203.0%20on%20Archer%20City.mp4",
                 "order": 14,
                 "name": "Unpacking Carbon Footprints of Compute presented by John Miranda"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Intel_DEMO%20-%20Intel%20Lubrizol%20Immersion%20Cooling%20Collaboration.mp4",
+                "order": 15,
+                "name": "Open Compute Project NIC 3.0."
               }
             ],
             "slides": [
