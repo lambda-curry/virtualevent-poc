@@ -278,19 +278,37 @@
                 "class_name": "PresentationSlide",
                 "link": "/img/intel_unpacking-carbon-in-compute-systems.pdf",
                 "name": "Unpacking Carbon in Compute Systems",
-                "order": 1
+                "order": 3
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/intel_intel-ethernet-network-adapters-for-ocp.pdf",
                 "name": "Intel Ethernet Network Adapters for OCP",
-                "order": 2
+                "order": 4
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/intel_telling-intel-s-story-technology-for-good.pdf",
                 "name": "Telling Intel's Story - Technology for Good",
-                "order": 3
+                "order": 6
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/hyve-solutions-modified-orv3-server-with-intel-xeon-scalable-processors.pdf",
+                "name": "Hyve Solutions’ Modified Orv3 Premier Server with 3rd Generation Intel Xeon Scalable Processors",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/intel-hyve-at-ocp.pdf",
+                "name": " Intel & Hyve at OCP",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/intel-remote-priority-flow-control-remote-pfc-.pdf",
+                "name": " Intel Remote Priority Flow Control (Remote PFC)",
+                "order": 6
               }
             ]
           },
