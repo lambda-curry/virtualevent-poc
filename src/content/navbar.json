@@ -58,9 +58,7 @@
     {
       "requiresAuth": true,
       "pageRestriction": [
-        "LOBBY",
-        "ACTIVITY",
-        "CUSTOM_PAGE"
+        "ANY"
       ],
       "title": "Map",
       "link": "/map",
