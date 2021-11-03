@@ -5096,13 +5096,13 @@
                 "class_name": "PresentationSlide",
                 "link": "/img/dave_sims_media_dave-sims-media-digital-brochure.pdf",
                 "name": "Dave Sims Media - Digital Brochure",
-                "order": 5
+                "order": 8
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/dave_sims_media_dsm-ocp-ad.pdf",
                 "name": "Dave Sims Media -  OCP",
-                "order": 4
+                "order": 9
               }
             ]
           },
