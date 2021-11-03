@@ -440,27 +440,33 @@
             "links": [
               {
                 "class_name": "PresentationLink",
-                "link": "https://www.facebook.com/careers/",
+                "link": "https://about.facebook.com/meta/",
                 "order": 1,
-                "name": "Careers @ Meta"
-              },
-              {
-                "class_name": "PresentationLink",
-                "link": "https://about.facebook.com/",
-                "order": 2,
                 "name": "About Meta"
               },
               {
                 "class_name": "PresentationLink",
-                "link": "https://engineering.fb.com/",
-                "order": 3,
-                "name": "Engineering @ Meta"
+                "link": "https://about.fb.com/news/2021/10/facebook-company-is-now-meta/",
+                "order": 2,
+                "name": "Meta News"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://datacenters.fb.com/",
                 "order": 4,
                 "name": "Data Centers @ Meta"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://tech.fb.com/connect-2021-our-vision-for-the-metaverse/",
+                "name": "Our vision for the metaverse",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://engineering.fb.com/",
+                "order": 5,
+                "name": "Engineering @ Meta"
               }
             ],
             "videos": [
