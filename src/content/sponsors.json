@@ -5585,7 +5585,7 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Credo, DriveNets &UfiSpace are demonstrating the world’s largest distributed disaggregated chassis implementation – a 350Tb Jericho2c+ 3-rack cluster.",
+          "marquee": "Credo, DriveNets & UfiSpace are demonstrating the world’s largest distributed disaggregated chassis implementation – a 350Tb Jericho2c+ 3-rack cluster.",
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-networking.png",
           "name": "Networking",
@@ -5600,19 +5600,32 @@
             "slides": [
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/networking_credo_hiwire_ddc_solution_brief_345tb_jerico2c-ramon.pdf",
-                "name": "Credo HiWire DDC Solution Brief 345Tb Jerico2C+Ramon",
+                "link": "/img/networking_credo-ddc-solution-brief.pdf",
+                "name": "Credo DDC Solution Brief",
                 "order": 1
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/networking_drivenets-ddc-brochures.pdf",
+                "name": "DriveNets DDC Brochures",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/networking_ufispace-telecom-solutions-brochure-with-ddc-datasheets-1-.pdf",
+                "name": "UfiSpace Telecom Solutions Brochure with DDC Datasheets",
+                "order": 3
               }
             ],
             "videos": [
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/networking_350Tb%20Jericho2c+%20DDC%20Introduction.mp4",
-                "order": 2,
+                "order": 1,
                 "name": "350Tb Jericho2c+ DDC Introduction"
               }
-            ]
+            ],
+            "links": []
           },
           "columnAds": [
             {
