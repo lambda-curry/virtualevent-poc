@@ -3694,6 +3694,12 @@
               }
             ]
           },
+          "columnAds": [
+            {
+              "image": "/img/pluribus_networks_pn-ad-for-ocp.jpg",
+              "link": "https://go4.pluribusnetworks.com/ON-2021-StateofDataCenterNetworking_Regpage.html?_gl=1*tszjas*_gcl_aw*R0NMLjE2MjgwODc5MDUuRUFJYUlRb2JDaE1JNXMzTm9jS1g4Z0lWS3hMNUFCM0tIZzlORUFFWUFTQUFFZ0tOcnZEX0J3RQ."
+            }
+          ],
           "id": 103,
           "email": "jsangha@pluribusnetworks.com",
           "usesSponsorPage": true
