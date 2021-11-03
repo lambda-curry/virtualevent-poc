@@ -40,25 +40,25 @@
                 "class_name": "PresentationLink",
                 "link": "https://www.linkedin.com/showcase/zbyhp/",
                 "order": 3,
-                "name": "Z by HP LinkedIn"
+                "name": "Z by HP: LinkedIn"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.instagram.com/zbyhp/",
                 "order": 4,
-                "name": "Z by HP Instagram"
+                "name": "Z by HP: Instagram"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://twitter.com/NVIDIADesign",
                 "order": 5,
-                "name": "Z by HP Twitter"
+                "name": "Z by HP: Twitter"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.linkedin.com/showcase/nvidia-design-and-visualization/",
                 "order": 6,
-                "name": "NVIDIA Design and Visualization LinkedIn"
+                "name": "NVIDIA Design and Visualization: LinkedIn"
               }
             ],
             "videos": [
