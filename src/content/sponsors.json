@@ -2308,20 +2308,20 @@
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/advanced_energy_Harry_Soin_Final_Takes-Draft-8_subs.mp4",
-                "name": "Harry Soin Video",
+                "name": "Video – Getting to Hyperscale – Why It Takes",
                 "order": 10
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/advanced_energy_Richard_Caubang-Final_Takes-Draft-9_subs.mp4",
-                "name": "Richard Caubang Video",
+                "name": "Video – Building PSUs for Density and Consumption",
                 "order": 11
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/advanced_energy_Andy_Brown_Final_Takes-Draft-11_subs.mp4",
                 "order": 12,
-                "name": "Andy Brown Video"
+                "name": "Video – DC-DC Board Mount Power Conversion"
               },
               {
                 "class_name": "PresentationVideo",
@@ -2334,25 +2334,25 @@
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/advanced_energy_eng-ep-data_center_brochure-255-01-7.14.pdf",
-                "name": "ENG-EP-Data_Center_Brochure",
+                "name": "Data Center Power Solutions",
                 "order": 5
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/advanced_energy_eng-crps-brochure-265-01-7.09_web.pdf",
-                "name": "ENG-CRPS-Brochure",
+                "name": "CRPS Power Solutions",
                 "order": 6
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/advanced_energy_eng-aep-dcdc-lga-9.07.pdf",
-                "name": "ENG-AEP-DCDC",
+                "name": "LGA Series – Digital DC-DC Converter Module",
                 "order": 7
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/advanced_energy_en-aep-dcdc-powermodules-brochure.pdf",
-                "name": "en-aep-dcdc-powermodules-brochure",
+                "name": "Digital DC-DC Power Modules",
                 "order": 8
               }
             ],
