@@ -3524,6 +3524,7 @@
         },
         {
           "marquee": "Single Phase Immersion Cooling Fluids: Designed with the Data Center Industry in mind.",
+          "featuredEventId": 2365,
           "sponsorColor": "#004e9e",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-fuchslubricants.png",
           "name": "FUCHS LUBRICANTS CO.",
@@ -3563,14 +3564,7 @@
                 "order": 4
               }
             ],
-            "videos": [
-              {
-                "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/fuchs_lubricants_co_OCP.mp4",
-                "order": 6,
-                "name": "FUCHS LUBRICANTS CO. @ OCP"
-              }
-            ]
+            "videos": []
           },
           "columnAds": [
             {
