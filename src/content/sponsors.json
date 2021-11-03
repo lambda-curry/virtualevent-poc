@@ -5726,6 +5726,7 @@
         },
         {
           "marquee": "OCP NIC Showcase (Systems, NICs, Add-in cards, Ecosystem).",
+          "featuredEventId": 2265,
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-server.png",
           "name": "Server - NIC",
