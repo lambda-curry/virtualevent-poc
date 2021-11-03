@@ -285,6 +285,12 @@
                 "link": "/img/intel_intel-ethernet-network-adapters-for-ocp.pdf",
                 "name": "Intel Ethernet Network Adapters for OCP",
                 "order": 2
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/intel_telling-intel-s-story-technology-for-good.pdf",
+                "name": "Telling Intel's Story - Technology for Good",
+                "order": 3
               }
             ]
           },
