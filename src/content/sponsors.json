@@ -25,13 +25,13 @@
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/z_by_hp_m-e-brochure_nvidia.pdf",
-                "name": "Media & Entertainment Brochure",
+                "name": "NVIDIA Media & Entertainment Brochure",
                 "order": 1
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/z_by_hp_1521018-omniverse-for-m-e-solution-showcase.pdf",
-                "name": "Omniverse for Media & Entertainment Solution Showcase",
+                "name": "Z by HP Omniverse for Media & Entertainment Solution Showcase",
                 "order": 1
               }
             ],
@@ -46,13 +46,13 @@
                 "class_name": "PresentationLink",
                 "link": "https://www.instagram.com/zbyhp/",
                 "order": 4,
-                "name": "Instagram"
+                "name": "Z by HP Instagram"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://twitter.com/NVIDIADesign",
                 "order": 5,
-                "name": "Twitter"
+                "name": "Z by HP Twitter"
               },
               {
                 "class_name": "PresentationLink",
@@ -66,7 +66,7 @@
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/InfinityFestival2021/z_by_hp_ZbyHP_NVIDIA_Video_10.19.20.mp4",
                 "order": 8,
-                "name": "ZbyHP & NVIDIA Video"
+                "name": "Z by HP & NVIDIA Video"
               },
               {
                 "class_name": "PresentationVideo",
