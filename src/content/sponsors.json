@@ -247,6 +247,12 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/intel_Unpacking%20Carbon%20Footprints%20of%20Compute%20presented%20by%20John%20Miranda.mp4",
                 "order": 11,
                 "name": "Hyve Solutions’ Modified Orv3 Premier Server with 3rd Generation Intel Xeon Scalable Processors"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/intel_IPU%20-%20Transforming%20the%20Data%20Center%20of%20the%20Future%20presented%20by%20Brad%20Burres.mp4",
+                "order": 12,
+                "name": "Intel-Lubrizol Immersion Cooling Collaboration"
               }
             ],
             "slides": [
