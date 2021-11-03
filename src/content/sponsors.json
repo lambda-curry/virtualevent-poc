@@ -5464,6 +5464,7 @@
         },
         {
           "marquee": "Showcase management hardware and software, including Device Manager, MegaRAC OpenEdition contributions, DC-SCM 2.0/RunBMC hardware, and testing conformance with OCP Profiles.",
+          "featuredEventId": 2261,
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-mgmthard.png",
           "name": "HARDWARE MANAGEMENT ",
