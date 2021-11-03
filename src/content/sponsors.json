@@ -3622,6 +3622,12 @@
               }
             ]
           },
+          "columnAds": [
+            {
+              "image": "/img/mitac_computing_technology_corporation_home_ad_2021ocp.jpg",
+              "link": "https://mitacmct.com/"
+            }
+          ],
           "id": 100,
           "email": "Sales_enterprise@mic.com.tw",
           "usesSponsorPage": true
