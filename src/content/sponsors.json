@@ -1861,13 +1861,13 @@
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/pliops_pliops_solutionbrief_rocksdb_072221.pdf",
-                "name": "Pliops_SolutionBrief_Rocks",
+                "name": "Pliops Solution Brief Rocks",
                 "order": 9
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/pliops_pliops_casestudy_saas_072221.pdf",
-                "name": "Pliops_CaseStudy_SaaS",
+                "name": "Pliops Case Study SaaS",
                 "order": 10
               }
             ]
