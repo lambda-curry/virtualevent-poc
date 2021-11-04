@@ -4668,7 +4668,7 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "name": "PSI_experience",
+                "name": "PSI Experience",
                 "order": 1,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/opencapi_consortium_PSI_experience_Oct21.mp4"
               },
@@ -4683,14 +4683,22 @@
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/opencapi_consortium_opencapi-omi-adapters-devices-2021-nov_v4.pdf",
-                "name": "2021-04-18 Objective Analysis-Coughlin - The Future of Low Latency Memory - White Paper",
+                "name": "Objective Analysis Coughlin - The Future of Low Latency Memory ",
                 "order": 4
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/opencapi_consortium_2021-04-18-objective-analysis-coughlin-the-future-of-low-latency-memory-white-paper.pdf",
-                "name": "OpenCAPI-OMI Adapters-Devices 2021 Nov_v4",
+                "name": "OpenCAPI: OMI Adapters-Devices 2021 ",
                 "order": 3
+              }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "link": "https://youtu.be/CfYHjM5Gok8",
+                "name": "OpenCAPI: YouTube",
+                "order": 5
               }
             ]
           },
