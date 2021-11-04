@@ -1623,19 +1623,19 @@
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/kioxia_america_inc_kioxia_nextgennow_infographic_v1.1_-letter-.pdf",
-                "name": "KIOXIA_NextGenNow_Infographic",
+                "name": "KIOXIA Next Gen Now Infographic",
                 "order": 5
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/kioxia_america_inc_kioxia_edsff_intro_white_paper_v1_3_kai.pdf",
-                "name": "KIOXIA_EDSFF_Intro_White_Paper",
+                "name": "KIOXIA EDSFF Intro",
                 "order": 6
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/kioxia_america_inc_kioxia_kumoscale_product_overview_brief_v1.pdf",
-                "name": "KIOXIA_KumoScale_Product_Overview_Brief",
+                "name": "KIOXIA KumoScale Product Overview",
                 "order": 7
               }
             ],
@@ -1650,7 +1650,7 @@
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/kioxia_america_inc_KumoScale_demo_voiceover_v5.mp4",
                 "order": 11,
-                "name": "KumoScale demo"
+                "name": "KumoScale Demo"
               },
               {
                 "class_name": "PresentationVideo",
