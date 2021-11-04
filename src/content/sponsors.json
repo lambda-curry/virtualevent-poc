@@ -5466,7 +5466,14 @@
           "title": "Explore more about Open System Firmware (OSF) Station ",
           "companyId": 72,
           "documents": {
-            "videos": [],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Full-Video-CC-v1.mp4",
+                "name": "Aptio OpenEdition",
+                "order": 2
+              }
+            ],
             "slides": [
               {
                 "class_name": "PresentationSlide",
