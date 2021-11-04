@@ -3982,13 +3982,7 @@
                 "class_name": "PresentationLink",
                 "link": "https://www.youtube.com/channel/UCD4vg_GQnEoC9bqqqtWkxgQ/featured",
                 "order": 2,
-                "name": "YouTube "
-              },
-              {
-                "class_name": "PresentationLink",
-                "link": "https://www.youtube.com/channel/UCD4vg_GQnEoC9bqqqtWkxgQ/feature",
-                "order": 3,
-                "name": "YouTube "
+                "name": "YouTube FADU Technology"
               }
             ],
             "slides": [
