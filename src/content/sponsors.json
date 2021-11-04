@@ -4252,6 +4252,7 @@
           "name": "Hyve Solutions",
           "intro": "### Hyve Solutions is a leader in the design to worldwide deployment of hyperscale digital infrastructures. In partnership with customers, Hyve leverages deep-seated industry experience and strong vendor partnerships to design and deliver purpose-built server, storage, and networking solutions to meet datacenter demands for today and beyond. Hyve Solutions is a wholly owned subsidiary of SYNNEX Corporation (NYSE: SNX). For more information about Hyve Solutions, visit hyvesolutions.com, email sales@hyvesolutions.com or call (855) 869-6973.",
           "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/hyve_solutions_Hyve_OCP2021_AnimatedWelcomeBanner.mp4",
+          "chatLink": "https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_NDdkYzBlMmQtYmQ4ZC00OTkyLWJjZTEtMmJlZjY4Y2RhNTBl%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522972a0e27-c355-4fd7-9225-9266c8f332ac%2522%252c%2522Oid%2522%253a%252225aca743-3bcb-4ab4-a07f-80261f58db23%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=5305cabd-548b-4e48-bc85-f4e915126254&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true",
           "advertiseImage": "",
           "sponsorId": 107,
           "title": "Hyve Solutions ",
@@ -4268,13 +4269,13 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "name": "ORv3 Intro",
+                "name": "ORv3Intro to : Hyve’s Modified ORv3 Portfolio",
                 "order": 8,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/hyve_solutions_ORv3%20Intro.mp4"
               },
               {
                 "class_name": "PresentationVideo",
-                "name": "Hyve Hugs",
+                "name": "Hyve HUGS to : HUGS : Hyve Unified Global Services",
                 "order": 9,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/hyve_solutions_Hyve_Hugs.mp4"
               }
