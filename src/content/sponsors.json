@@ -757,6 +757,14 @@
                 "name": " GSA conference video on memory advancements",
                 "order": 13
               }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/online_promotion_ibof-v2_type1-and-type2.pdf",
+                "name": "iBoF V2_Type1 and Type2",
+                "order": 1
+              }
             ]
           },
           "columnAds": [
