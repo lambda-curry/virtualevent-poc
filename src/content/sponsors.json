@@ -2214,7 +2214,7 @@
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/vertiv_Vertiv-Avocent-ADX-Ecosystem-Product-Video.mp4",
-                "name": "Vertiv-Avocent-ADX-Ecosystem-Product-Video",
+                "name": "Vertiv Avocent ADX Ecosystem",
                 "order": 9
               },
               {
@@ -2226,14 +2226,14 @@
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/vertiv_vertiv_geist_updu_4.mp4",
-                "name": "vertiv_geist_updu",
+                "name": "Vertiv Geist updu",
                 "order": 11
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/vertiv_Brand-Video-for-Events.mp4",
-                "name": "Brand",
-                "order": 12
+                "name": "Vertiv Welcome",
+                "order": 1
               }
             ],
             "slides": [
