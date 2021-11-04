@@ -213,25 +213,25 @@
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.reddit.com/r/intel/",
-                "order": 15,
+                "order": 18,
                 "name": "Reddit"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://twitter.com/IntelBusiness?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
-                "order": 16,
+                "order": 19,
                 "name": "Twitter"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.linkedin.com/showcase/intel-business/",
-                "order": 17,
+                "order": 20,
                 "name": "LinkedIn"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.facebook.com/IntelBusiness/",
-                "order": 18,
+                "order": 21,
                 "name": "Facebook"
               }
             ],
@@ -264,25 +264,25 @@
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/intel_PFR%203.0%20on%20Archer%20City.mp4",
                 "order": 14,
-                "name": "Unpacking Carbon Footprints of Compute presented by John Miranda"
+                "name": "Demo: Unpacking Carbon Footprints of Compute presented by John Miranda"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Intel_DEMO%20-%20Intel%20Lubrizol%20Immersion%20Cooling%20Collaboration.mp4",
                 "order": 15,
-                "name": "Open Compute Project NIC 3.0."
+                "name": "Demo: Open Compute Project NIC 3.0."
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Intel%20Tofino%20and%20SONiC%20based%20stateful%20Server%20Load%20Balancing%20at%201%20Tbps%20speeds.mp4",
                 "order": 17,
-                "name": "DEMO: OCP Intel Tofino and SONiC based stateful Server Load Balancing at >1 Tbps speeds"
+                "name": "Demo: OCP Intel Tofino and SONiC based stateful Server Load Balancing at >1 Tbps speeds"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Intel_co%20marketing.mp4",
                 "order": 16,
-                "name": "Inspur 2 Socket General Purpose Open Compute Server Powered by 3rd Generation Intel Xeon Scalable Processors "
+                "name": "Demo: Inspur 2 Socket General Purpose Open Compute Server Powered by 3rd Generation Intel Xeon Scalable Processors "
               }
             ],
             "slides": [
@@ -4944,7 +4944,7 @@
           "logo": "/img/ocp21glo_fnv_sponsorlogo-omdia_afcom.png",
           "name": "AFCOM",
           "intro": "### Joining AFCOM is a commitment to your professional development as a data center and IT infrastructure professional. Not only will AFCOM membership benefit you but it will also benefit your company and the greater data center industry worldwide. AFCOM is the leading and longest-standing association in the data center industry. For over 40 years, AFCOM has been advancing the careers of data center and IT professionals, working diligently to help its members meet the growing demands facing our industry. Regardless if you are in sales, marketing, IT, operations, facilities, risk or design, a membership helps you stay current on industry information and trends to deliver ROI to your company while also improving your job performance, training and leadership development.",
-          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/omdia_afcom_AFCOM%20boilerplate%20slides%20-%20general.mp4",
+          "headerVideo": "",
           "headerImage": "/img/omdia_afcom_111670_dcw21_graphics_afcom_logosize_opencompute_1440x400.jpg",
           "advertiseImage": "",
           "sponsorId": 112,
