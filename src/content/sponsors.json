@@ -5472,6 +5472,12 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Full-Video-CC-v1.mp4",
                 "name": "Aptio OpenEdition",
                 "order": 2
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/OSF_LinuxBoot%20on%20Arm%20SBSA-QEMU.mp4",
+                "name": "Linuxboot on Arm SBSA-QEMU",
+                "order": 3
               }
             ],
             "slides": [
@@ -5770,7 +5776,7 @@
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-server.png",
           "name": "Server - NIC",
-          "intro": "#### OCP NIC (Systems, NICs, Add-in cards, Ecosystem) \n\n* #### OCP NIC 3.0 Multi-Host Connectivity and Manageability (Broadcom) \n* #### OCP NIC 3.0 Device Attestation Using SPDM (Broadcom & Facebook) \n* #### Zion: Host with up to 12 OCP NIC 3.0 slots (Facebook) \n* #### Mechanical Fit-test fixture (OCP NIC sub-group) \n* #### OCP NIC 3.0 Fiberchannel HBA (OCP NIC sub-group) \n* #### OCP NIC 3.0 in Tall Small Form Factor (TSFF) (Nvidia) \n* #### Interface Sandbox with SFF Slots (TE Connectivity)",
+          "intro": "#### OCP NIC (Systems, NICs, Add-in cards, Ecosystem)\n\n* #### OCP NIC 3.0 Multi-Host Connectivity and Manageability (Broadcom)\n* #### OCP NIC 3.0 Device Attestation Using SPDM (Broadcom & Meta)\n* #### Zion: Host with up to 12 OCP NIC 3.0 slots (Meta)\n* #### Mechanical Fit-test fixture (OCP NIC sub-group)\n* #### OCP NIC 3.0 Fiberchannel HBA (OCP NIC sub-group)\n* #### OCP NIC 3.0 in Tall Small Form Factor (TSFF) (Nvidia)\n* #### Interface Sandbox with SFF Slots (TE Connectivity)",
           "headerImage": "/img/ocp21glo_fnv_expc-header-server_102121.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-server.png",
           "advertiseImage": "",
