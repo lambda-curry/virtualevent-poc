@@ -736,6 +736,12 @@
                 "link": "https://www.instagram.com/samsungsemius/?hl=en",
                 "order": 4,
                 "name": "@samsungsemius on Instagram "
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Samsung Begins Mass Production of Data Center SSD Customized for Hyperscale Environments",
+                "link": "https://news.samsung.com/us/storage-memory-ssd-hyperscale-environments-data-center",
+                "order": 10
               }
             ],
             "videos": [
@@ -743,13 +749,13 @@
                 "class_name": "PresentationVideo",
                 "link": "https://vimeo.com/veruspro/review/626803390/4d0e47b389",
                 "name": "HPOS",
-                "order": 9
+                "order": 12
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://www.samsung.com/semiconductor/newsroom/tech-leadership/samsung-calls-for-developmental-collaboration-to-usher-in-a-new-era-of-data/ ",
                 "name": " GSA conference video on memory advancements",
-                "order": 10
+                "order": 13
               }
             ]
           },
