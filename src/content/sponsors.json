@@ -3670,13 +3670,13 @@
               {
                 "class_name": "PresentationVideo",
                 "name": "MiTAC X86-Based Private 5G E2E O-RAN Solution",
-                "order": 1,
+                "order": 3,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/mitac_MiTAC%20X86-Based%20Private%205G%20E2E%20O-RAN%20Solution.mp4"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "MITAC s5",
-                "order": 2,
+                "order": 4,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/mitac_mitac_s5.mp4"
               }
             ],
