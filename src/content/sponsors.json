@@ -3887,6 +3887,14 @@
                 "name": "2021 TE Connectivity Company Portfolio",
                 "order": 5
               }
+            ],
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/te_connectivity_External%20PCIe%20Solutions,%20Co-Packing%20Socket,%20High%20Speed%20IO.mp4",
+                "name": "External PCIe Solutions, Co-Packing Socket, High Speed IO",
+                "order": 6
+              }
             ]
           },
           "columnAds": [
