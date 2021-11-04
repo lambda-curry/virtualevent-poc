@@ -5521,6 +5521,12 @@
                 "name": "CycloneV RunBMC v2 Demo",
                 "order": 3,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/hardware_management_Intel%20CycloneV%20RunBMC%20v2%20Demo.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/AMI%20OE%20BMC-combined.mp4",
+                "order": 4,
+                "name": "MegaRAC OpenEdition"
               }
             ]
           },
