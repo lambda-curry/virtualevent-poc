@@ -4639,9 +4639,11 @@
           "logo": "/img/ocp21glo_fnv_sponsorlogo-opensource.png"
         },
         {
+          "marquee": "## ONF is exhibiting in-person at the Global Summit in San Jose, CA - You can find us at booth C17.",
           "logo": "/img/ocp21glo_fnv_sponsorlogo-onf.png",
           "name": "ONF ",
-          "intro": "https://opennetworking.org",
+          "intro": "## ONF is exhibiting in-person at the Global Summit in San Jose, CA. You can find us at booth C17 or reach us through the “scan my badge” button above.",
+          "headerImage": "/img/ocp21glo_fnv_nocontent-onf-header.png",
           "advertiseImage": "",
           "sponsorId": 111,
           "companyId": 97,
