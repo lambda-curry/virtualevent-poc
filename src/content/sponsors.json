@@ -3157,7 +3157,11 @@
               }
             ]
           },
-          "columnAds": [],
+          "columnAds": [
+            {
+              "image": "/img/penguin-new-banner-ad.png"
+            }
+          ],
           "id": 54,
           "email": "kwah@penguincomputing.com",
           "usesSponsorPage": true
