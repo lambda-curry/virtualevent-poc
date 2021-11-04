@@ -2487,13 +2487,13 @@
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.linkedin.com/company/amphenol-icc",
-                "name": "linkedin",
+                "name": "LinkedIn",
                 "order": 1
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.youtube.com/c/AmphenolICC",
-                "name": "Youtube",
+                "name": "YouTube",
                 "order": 2
               },
               {
