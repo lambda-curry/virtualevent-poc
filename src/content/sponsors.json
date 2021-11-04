@@ -2744,13 +2744,13 @@
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/edgecore_networks_Cell%20site%20gateway%20CF%202021_ocp_tp_49mb.mp4",
-                "order": 12,
+                "order": 13,
                 "name": "Edgecore Disaggregated Cell Site Gateway Solutions for Mobile Network"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/edgecore_networks_DCS810%20AS9516-32D%20video%20OK_.mp4",
-                "order": 13,
+                "order": 12,
                 "name": "Edgecore 400G Programmable Data Center Switch - DCS810"
               },
               {
