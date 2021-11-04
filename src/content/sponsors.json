@@ -4281,13 +4281,13 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "name": "ORv3Intro to : Hyve’s Modified ORv3 Portfolio",
+                "name": "Hyve’s Modified ORv3 Portfolio",
                 "order": 8,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/hyve_solutions_ORv3%20Intro.mp4"
               },
               {
                 "class_name": "PresentationVideo",
-                "name": "Hyve HUGS to : HUGS : Hyve Unified Global Services",
+                "name": "HUGS: Hyve Unified Global Services",
                 "order": 9,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/hyve_solutions_Hyve_Hugs.mp4"
               }
