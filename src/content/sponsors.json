@@ -213,25 +213,25 @@
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.reddit.com/r/intel/",
-                "order": 1,
+                "order": 15,
                 "name": "Reddit"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://twitter.com/IntelBusiness?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
-                "order": 2,
+                "order": 16,
                 "name": "Twitter"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.linkedin.com/showcase/intel-business/",
-                "order": 3,
+                "order": 17,
                 "name": "LinkedIn"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.facebook.com/IntelBusiness/",
-                "order": 4,
+                "order": 18,
                 "name": "Facebook"
               }
             ],
@@ -239,25 +239,25 @@
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/intel_Open%20Compute%20Project%20NIC%203.0.mp4",
-                "name": "PFR 3.0 on Archer City",
+                "name": "Demo: PFR 3.0 on Archer City",
                 "order": 10
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/intel_Unpacking%20Carbon%20Footprints%20of%20Compute%20presented%20by%20John%20Miranda.mp4",
                 "order": 11,
-                "name": "Hyve Solutions’ Modified Orv3 Premier Server with 3rd Generation Intel Xeon Scalable Processors"
+                "name": "Demo: Hyve Solutions’ Modified Orv3 Premier Server with 3rd Generation Intel Xeon Scalable Processors"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/intel_IPU%20-%20Transforming%20the%20Data%20Center%20of%20the%20Future%20presented%20by%20Brad%20Burres.mp4",
                 "order": 12,
-                "name": "Intel-Lubrizol Immersion Cooling Collaboration"
+                "name": "Demo: Intel-Lubrizol Immersion Cooling Collaboration"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/intel_Hyve%20Solutions%27%20Modified%20ORv3%20Premier%20Server%20with%203rd%20Gen%20Intel%20Xeon%20Scalable%20Processors.mp4",
-                "name": "Inspur 2 Socket General Purpose Open Compute Server Powered by 3rd Generation Intel Xeon Scalable Processors",
+                "name": "Demo: Inspur 2 Socket General Purpose Open Compute Server Powered by 3rd Generation Intel Xeon Scalable Processors",
                 "order": 13
               },
               {
