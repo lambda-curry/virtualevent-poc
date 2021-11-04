@@ -3139,15 +3139,15 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/penguin_computing_Gemini%20Man%20Case%20Study%20-%20SDS%20Storage%20with%20Penguin%20Computing.mp4",
-                "name": "Gemini Man Case Study - SDS Storage with Penguin Computing",
-                "order": 9
-              },
-              {
-                "class_name": "PresentationVideo",
                 "name": "Digital Transformation for HPC and AI",
                 "order": 10,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/penguin_computing_Digital%20Transformation%20for%20HPC%20and%20AI.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/penguin_computing_Customized%20Solutions%20-%20Gemini%20Man%20Storage%20by%20Penguin%20Computing.mp4",
+                "order": 9,
+                "name": "Gemini Man Case Study - SDS Storage with Penguin Computing"
               }
             ]
           },
