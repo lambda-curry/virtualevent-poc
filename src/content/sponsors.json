@@ -1549,12 +1549,6 @@
             "slides": [
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/5g-o-ran-solution-brief.pdf",
-                "name": "Flex Reference Designs Optimized for Private Cloud",
-                "order": 5
-              },
-              {
-                "class_name": "PresentationSlide",
                 "link": "/img/flex_powermodulesbrochure_ai_web.pdf",
                 "name": "Power Modules Brochure AI",
                 "order": 7
