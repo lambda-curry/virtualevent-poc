@@ -3153,7 +3153,8 @@
           },
           "columnAds": [
             {
-              "image": "/img/penguin-new-banner-ad.png"
+              "image": "/img/penguin-new-banner-ad.png",
+              "link": "https://www.penguincomputing.com/solutions/hpc/truehpc/"
             }
           ],
           "id": 54,
