@@ -674,44 +674,44 @@
               {
                 "class_name": "PresentationLink",
                 "link": "https://samsungsemiconductor-us.com/where-latency-dares-not-tread-how-high-powered-ssds-enable-novel-storage-architecture/ ",
-                "name": "Dropbox",
+                "name": "How High-Powered SSDs Enable Novel Storage Architecture",
                 "order": 5
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://samsungsemiconductor-us.com/compute-power-to-the-people-democratizing-ai-a-conversation-with-ai-visionaries-from-sambanova-systems/ ",
-                "name": "DDR5 (Sambanova) ",
+                "name": "A Conversation with AI Visionaries from SambaNova Systems",
                 "order": 6
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.samsungsemiconstory.com/global/samsung-unveils-industry-first-memory-module-incorporating-new-cxl-interconnect-standard/",
-                "name": "CXL press release",
+                "name": "Samsung Unveils Industry-First Memory Module Incorporating New CXL Interconnect Standard",
                 "order": 7
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://samsungsemiconductor-us.com/hbm/",
                 "order": 8,
-                "name": "HBM White Paper site (w/ HBM2e content)"
+                "name": "High Bandwidth Memory"
               },
               {
                 "class_name": "PresentationLink",
-                "name": "HBM-PIM (Aquabolt-XL)",
-                "order": 8,
+                "name": "Samsung Brings In-memory Processing Power to Wider Range of Applications",
+                "order": 9,
                 "link": "https://news.samsung.com/us/samsung-hbm-pim-in-memory-processing-wider-range-applications/ "
               },
               {
                 "class_name": "PresentationLink",
-                "name": "ZNS",
-                "order": 9,
+                "name": "Samsung Introduces Its First ZNS SSD With Maximized User Capacity and Enhanced Lifespan",
+                "order": 11,
                 "link": "https://news.samsung.com/global/samsung-introduces-its-first-zns-ssd-with-maximized-user-capacity-and-enhanced-lifespan"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://samsungsemiconductor-us.com/smartssd-archive/pdf/SmartSSD_ProductBrief_13.pdf",
                 "order": 10,
-                "name": "SmartSSD "
+                "name": "Samsung SmartSSD Computational Storage Drive"
               },
               {
                 "class_name": "PresentationLink",
