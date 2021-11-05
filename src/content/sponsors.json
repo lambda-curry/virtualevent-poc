@@ -750,6 +750,12 @@
                 "link": "https://www.samsung.com/semiconductor/newsroom/tech-leadership/samsung-calls-for-developmental-collaboration-to-usher-in-a-new-era-of-data/ ",
                 "name": " GSA conference video on memory advancements",
                 "order": 13
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Samsung_Online_Promotion_iBoF%20V2_Type1%20and%20Type2.mp4",
+                "order": 14,
+                "name": "iBoF V2_Type1 and Type2"
               }
             ],
             "slides": [
