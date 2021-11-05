@@ -5723,50 +5723,50 @@
                 "class_name": "PresentationSlide",
                 "link": "/img/telco_arrcus-vdr-solution-brief.pdf",
                 "name": "Arrcus VDR Solution Brief",
-                "order": 1
+                "order": 5
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/telco_arrcus-l3vpn-over-srv6-solution-brief.pdf",
                 "name": "Arrcus L3VPN over SRv6 Solution Brief",
-                "order": 2
+                "order": 6
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/telco_arrcus-ip-clos-networks-white-paper.pdf",
-                "order": 3,
+                "order": 7,
                 "name": "Arrcus IP Clos Networks White Paper"
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/tap_ocp-tap-vision-1-.pdf",
                 "name": "Arrcus Open MLAG Solution Brief",
-                "order": 4
+                "order": 8
               }
             ],
             "videos": [
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/telco_Introducing%20Arrcus%20VDR%20-%20The%20Virtualized%20Distributed%20Router.mp4",
-                "order": 5,
+                "order": 1,
                 "name": "Introducing Arrcus VDR - The Virtualized Distributed Router."
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/telco_Arrcus%20VDR%20-%20Building%20Blocks.mp4",
-                "order": 6,
+                "order": 2,
                 "name": "Arrcus VDR - Building Blocks."
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/telco_Arrcus%20-%20Enabling%20NaaS%20for%205G%20Mobile%20and%20Edge.mp4",
                 "name": "Enabling NaaS for 5G Mobile and Edge.",
-                "order": 7
+                "order": 3
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Arrcus Company Overview",
-                "order": 8,
+                "order": 4,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/telco_Arrcus%20Company%20Overview.mp4"
               }
             ]
