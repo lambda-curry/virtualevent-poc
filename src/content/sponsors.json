@@ -5829,12 +5829,6 @@
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/SERVER_NIC_NIC%203.0%20Interface%20Enabling%20Forward%20Compatibility%20%E2%80%93%20TE%20Connectivity%20%281%29.mp4",
                 "name": "Interface Enabling Forward Compatibilty - TE Connectivity ",
                 "order": 5
-              },
-              {
-                "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Documents/SERVER_NIC_OCP%203.0%20Multi-Host%20Demo_2021.pptx",
-                "name": "Multi-Host Demo",
-                "order": 6
               }
             ]
           },
