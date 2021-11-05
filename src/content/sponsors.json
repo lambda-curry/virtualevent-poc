@@ -4479,14 +4479,14 @@
             "videos": [
               {
                 "class_name": "PresentationVideo",
-                "name": "1382327-VMW20-Lightning-Demo-Embedded",
+                "name": "This is Enterprise Accelerated Computing ",
                 "order": 8,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/nvidia_1382327-VMW20-Lightning-Demo-Embedded.mp4"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/nvidia_1569691_EGXHero_50MBs.mp4",
-                "name": "1569691_EGXHero_50MBs",
+                "name": "VMWare Project Monterey",
                 "order": 9
               }
             ]
