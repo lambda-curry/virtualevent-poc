@@ -1051,20 +1051,20 @@
             "slides": [
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/xilinx_inc_alveo-sn1000-smartnic-product-overview.pdf",
-                "name": "Alveo SN1000 SmartNIC - Product Overview",
+                "link": "/img/xilinx-alveo-sn1000-product-brief.pdf",
+                "name": "Alveo SN1000 SmartNIC Product Brief",
                 "order": 5
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/xilinx_inc_sssd-brief-final.pdf",
-                "name": "SSSD brief ",
+                "name": "Samsung SmartSSD CSD Product Brief ",
                 "order": 6
               },
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/xilinx_inc_u25-product-brief-22520-final.pdf",
-                "name": "U25 Product Brief 22520",
+                "link": "/img/xilinx-u25n-product-brief.pdf",
+                "name": "Alveo U25N SmartNIC Product Brief ",
                 "order": 6
               }
             ]
