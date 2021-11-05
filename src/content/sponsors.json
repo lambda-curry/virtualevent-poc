@@ -269,20 +269,26 @@
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Intel_DEMO%20-%20Intel%20Lubrizol%20Immersion%20Cooling%20Collaboration.mp4",
-                "order": 15,
-                "name": "Demo: Open Compute Project NIC 3.0."
+                "order": 10,
+                "name": "Open Compute Project NIC 3.0."
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Intel%20Tofino%20and%20SONiC%20based%20stateful%20Server%20Load%20Balancing%20at%201%20Tbps%20speeds.mp4",
-                "order": 17,
-                "name": "Demo: OCP Intel Tofino and SONiC based stateful Server Load Balancing at >1 Tbps speeds"
+                "order": 11,
+                "name": "OCP Intel Tofino and SONiC based stateful Server Load Balancing at >1 Tbps speeds"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/Intel_co%20marketing.mp4",
                 "order": 16,
                 "name": "Demo: Inspur 2 Socket General Purpose Open Compute Server Powered by 3rd Generation Intel Xeon Scalable Processors "
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": " IPU - Transforming the Data Center of the Future",
+                "order": 9,
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/intel_IPU%20-%20Transforming%20the%20Data%20Center%20of%20the%20Future%20presented%20by%20Brad%20Burres.mp4"
               }
             ],
             "slides": [
@@ -296,13 +302,13 @@
                 "class_name": "PresentationSlide",
                 "link": "/img/intel_intel-ethernet-network-adapters-for-ocp.pdf",
                 "name": "Intel Ethernet Network Adapters for OCP",
-                "order": 4
+                "order": 12
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/intel_telling-intel-s-story-technology-for-good.pdf",
                 "name": "Telling Intel's Story - Technology for Good",
-                "order": 6
+                "order": 14
               },
               {
                 "class_name": "PresentationSlide",
@@ -320,7 +326,7 @@
                 "class_name": "PresentationSlide",
                 "link": "/img/intel-remote-priority-flow-control-remote-pfc-.pdf",
                 "name": " Intel Remote Priority Flow Control (Remote PFC)",
-                "order": 6
+                "order": 13
               }
             ]
           },
