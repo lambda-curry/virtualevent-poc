@@ -4494,13 +4494,13 @@
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/nvidia_connectx-6-dx-en-card-datasheet-1570187_r4.pdf",
-                "name": "Connectx 6 DX",
+                "name": "ConnectX-6 Dx",
                 "order": 5
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/nvidia_bluefield-2-dpu-datasheet-1609240_r4.pdf",
-                "name": "Bluefield 2 DPU datasheet",
+                "name": "BlueField-2 DPU",
                 "order": 6
               }
             ],
@@ -4522,7 +4522,7 @@
           "columnAds": [
             {
               "link": "https://www.nvidia.com/en-us/networking/",
-              "image": "/img/nvidia_project-monterey-ocp-2021-virtual-booth-sponsorship-1950471-booth-images-sponsor-ad-484x484-1-.jpg"
+              "image": "/img/project-monterey-ocp-2021-virtual-booth-sponsorship-1950471-booth-images-sponsor-ad-484x484-r2.jpg"
             }
           ],
           "id": 108,
