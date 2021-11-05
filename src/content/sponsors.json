@@ -5791,7 +5791,7 @@
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-server.png",
           "name": "Server - NIC",
-          "intro": "#### OCP NIC (Systems, NICs, Add-in cards, Ecosystem)\n\n* #### OCP NIC 3.0 Multi-Host Connectivity and Manageability (Broadcom)\n* #### OCP NIC 3.0 Device Attestation Using SPDM (Broadcom & Meta)\n* #### Zion: Host with up to 12 OCP NIC 3.0 slots (Meta)\n* #### Mechanical Fit-test fixture (OCP NIC sub-group)\n* #### OCP NIC 3.0 Fiberchannel HBA (OCP NIC sub-group)\n* #### OCP NIC 3.0 in Tall Small Form Factor (TSFF) (Nvidia)\n* #### Interface Sandbox with SFF Slots (TE Connectivity)",
+          "intro": "#### Demos include: \n\n* #### OCP NIC 3.0 Multi-Host Connectivity and Manageability (Broadcom)\n* #### OCP NIC 3.0 Device Attestation Using SPDM (Broadcom & Meta)\n* #### ZionEX: Host with up to 12 OCP NIC 3.0 slots (Meta)\n* #### Mechanical Fit-test fixture (OCP NIC sub-group)\n* #### OCP NIC 3.0 Fiberchannel HBA (OCP NIC sub-group)\n* #### OCP NIC 3.0 in Tall Small Form Factor (TSFF) (Nvidia)\n* #### Interface Sandbox with SFF Slots (TE Connectivity)\n* #### ODSA ODA board with OCP NIC (ODSA & OCP NIC sub-group)",
           "headerImage": "/img/ocp21glo_fnv_expc-header-server_102121.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-server.png",
           "advertiseImage": "",
@@ -5804,30 +5804,30 @@
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/NIC_Experience_Lab_MFT_Fixture_Glo21_Meta_Video1.mp4",
                 "order": 1,
-                "name": "MFT Fixture - Meta"
+                "name": "OCP NIC 3.0 Mechanical Fit Test Fixture – OCP NIC sub-group"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/NIC_Experience_Lab_SPDM_Demo_V3.mp4",
                 "order": 2,
-                "name": "SPDM Demo "
+                "name": "OCP NIC 3.0 Device Attestation using SPDM – Broadcom & Meta"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/NIC_Experience_Lab_ZionEX_Glo21_META_Video1.mp4",
                 "order": 3,
-                "name": "ZionEX"
+                "name": "ZionEX: Host with up to 12 OCP NIC 3.0 slots – Meta"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/SERVER_NIC_Multi-host_100g_Demo%20-%20Broadcom.mp4",
                 "order": 4,
-                "name": "Multi-host 100g Demo - Broadcom"
+                "name": "OCP NIC 3.0 Multi-host Connectivity and Manageability – Broadcom"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/SERVER_NIC_NIC%203.0%20Interface%20Enabling%20Forward%20Compatibility%20%E2%80%93%20TE%20Connectivity%20%281%29.mp4",
-                "name": "Interface Enabling Forward Compatibilty - TE Connectivity ",
+                "name": "Interface Sandbox with SFF slots – TE connectivity",
                 "order": 5
               }
             ]
