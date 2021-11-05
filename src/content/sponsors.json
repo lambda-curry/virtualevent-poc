@@ -3720,7 +3720,8 @@
           "logo": "/img/8147da3fe0210702f64d70873a767ae696582820.png",
           "name": "Pluribus Networks",
           "intro": "#### Pluribus delivers data center network switching and monitoring fabrics that radically simplify operations and lower costs. Built on a foundation of open networking, our unique controllerless software-defined networking (SDN) architecture incorporates network automation, virtualization, segmentation, visibility and analytics in a comprehensive, cost-effective and easy-to-use solution that works right out of the box. Whether modernizing a leaf-spine network in a single software-defined data center, deploying data center interconnect to create a unified network fabric across a multi-site data center, building a distributed cloud in edge computing environments, automating your lab environment or intelligently steering traffic to monitoring tools, Pluribus Adaptive Cloud Fabric™ delivers powerful solutions that are extremely simple to deploy and operate. Pluribus is deployed by more than 350 customers, including more than 100 tier one mobile network operators around the globe.",
-          "headerVideo": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/pluribus_networks_Pluribus%20Booth%20Video%20%28final%29.mp4",
+          "headerVideo": "",
+          "headerImage": "/img/pluribus_networks_untitled-for-static.png",
           "advertiseImage": "",
           "sponsorId": 103,
           "title": "Pluribus Networks",
@@ -3764,14 +3765,20 @@
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/pluribus_networks_Pluribus%20Explainer%20Video.mp4",
-                "order": 10,
+                "order": 11,
                 "name": "Pluribus Explainer "
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "Creval",
-                "order": 11,
+                "order": 12,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/pluribus_networks_Creval_FINAL.mp4"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/pluribus_networks_Pluribus%20Booth%20Video%20%28final%29.mp4",
+                "name": "Pluribus Welcome",
+                "order": 10
               }
             ]
           },
