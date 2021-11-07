@@ -5910,12 +5910,18 @@
                 "class_name": "PresentationSlide",
                 "link": "/img/open_accelerator_infrastructure_oai_mm-pro-presentation-oct-2021_rev5.pdf",
                 "name": "MM Pro Presentation Oct 2021",
-                "order": 3
+                "order": 2
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/inspur-mx1-system-introduction_20211105.pdf",
                 "name": "Inspur MX1 system introduction",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/server_oai-workstream_experience-center-test-fixture-detail-molex.pdf",
+                "name": "Experience Center OAI v1.5 Test System",
                 "order": 4
               }
             ],
@@ -5923,19 +5929,19 @@
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/open_accelerator_infrastructure_oai_Wiwynn%20OAI_Demo.mp4",
-                "order": 2,
+                "order": 5,
                 "name": "Wiwynn OAI Demo"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/open_accelerator_infrastructure_oai_Inspur%20-%20OAI%20reference%20system%20for%20Virtual%20Summit_Trim.mp4",
                 "name": "Inspur Video",
-                "order": 3
+                "order": 6
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/OAI%20Tank.mp4",
-                "order": 4,
+                "order": 7,
                 "name": "Tank"
               }
             ]
