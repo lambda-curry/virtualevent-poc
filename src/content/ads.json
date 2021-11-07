@@ -46,6 +46,13 @@
             "link": "https://www.opencompute.org/membership/how-to-join"
           },
           "column": "right"
+        },
+        {
+          "image": "/img/ocp21glo_fnv_lobby_button-virtualtour-v2.png",
+          "button": {
+            "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/OCP%20FNvirtual%20Tour%20video.mp4"
+          },
+          "column": "right"
         }
       ]
     }
