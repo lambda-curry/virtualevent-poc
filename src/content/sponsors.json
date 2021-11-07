@@ -5911,6 +5911,12 @@
                 "link": "/img/open_accelerator_infrastructure_oai_mm-pro-presentation-oct-2021_rev5.pdf",
                 "name": "MM Pro Presentation Oct 2021",
                 "order": 3
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/inspur-mx1-system-introduction_20211105.pdf",
+                "name": "Inspur MX1 system introduction",
+                "order": 4
               }
             ],
             "videos": [
