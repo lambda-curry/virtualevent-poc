@@ -5575,26 +5575,34 @@
               {
                 "class_name": "PresentationVideo",
                 "name": "DC-SCM 2.0 Module Prototype Showcase",
-                "order": 1,
+                "order": 2,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/hardware_management_Intel%20DC-SCM%202.0%20Prototype%20Demo.mp4"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "DC-SCM 2.0 LTPI Interface Demo",
-                "order": 2,
+                "order": 3,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/hardware_management_Intel%20DC-SCM%202.0%20LTPI%20Demo.mp4"
               },
               {
                 "class_name": "PresentationVideo",
                 "name": "CycloneV RunBMC v2 Demo",
-                "order": 3,
+                "order": 4,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/hardware_management_Intel%20CycloneV%20RunBMC%20v2%20Demo.mp4"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/AMI%20OE%20BMC-combined.mp4",
-                "order": 4,
+                "order": 5,
                 "name": "MegaRAC OpenEdition"
+              }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/ocp-device-manager-2021.pdf",
+                "name": "Edgecore Device Manager",
+                "order": 1
               }
             ]
           },
