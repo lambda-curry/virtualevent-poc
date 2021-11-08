@@ -5919,7 +5919,7 @@
           "intro": "# Showcase OAI capabilities on different hardware platforms.\n\n### There sequence of the demos is as follows:\n\n* ### Showcase Wiwynn OAI server (based on already available OAI OAM/UBB spec) with immersion cooling solution live demonstration\n* ### Showcase Inspur OAI server (based on OAI OAM/UBB spec, work in progress)\n* ### Liquid cooling (based on OAI OAM, Zion platform, work in progress)\n* ### Molex High speed connector (based on OAI UBB spec, work in progress)\n* ### Intel PVC OAM (based on OAI OAM spec, to be confirmed)",
           "headerImage": "/img/ocp21glo_fnv_expc-header-oai_102121.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-oai.png",
-          "chatLink": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzQwMzY3ODAtMzMzNS00OWU4LTgzMTYtZGQyZThmY2U2YWZi%40thread.v2/0?context=%7b%22Tid%22%3a%22da6e0628-fc83-4caf-9dd2-73061cbab167%22%2c%22Oid%22%3a%222bee0da6-f1d1-4006-8960-edaad6a10af5%22%7d",
+          "chatLink": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MmViMGYxNGYtYTgwYi00NTFiLThjNDktNDA3OTNlOWVjNzQz%40thread.v2/0?context=%7b%22Tid%22%3a%22da6e0628-fc83-4caf-9dd2-73061cbab167%22%2c%22Oid%22%3a%222bee0da6-f1d1-4006-8960-edaad6a10af5%22%7d",
           "advertiseImage": "",
           "sponsorId": 92,
           "title": "Explore more about SERVER - Open Accelerator Infrastructure (OAI)",
@@ -5930,44 +5930,44 @@
                 "class_name": "PresentationSlide",
                 "link": "/img/open_accelerator_infrastructure_oai_ops_2021.10.12-oai-005-.pdf",
                 "name": "OPS_2021.10.12 OAI",
-                "order": 1
+                "order": 4
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/open_accelerator_infrastructure_oai_mm-pro-presentation-oct-2021_rev5.pdf",
                 "name": "MM Pro Presentation Oct 2021",
-                "order": 2
+                "order": 5
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/inspur-mx1-system-introduction_20211105.pdf",
                 "name": "Inspur MX1 system introduction",
-                "order": 3
+                "order": 6
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/server_oai-workstream_experience-center-test-fixture-detail-molex.pdf",
                 "name": "Experience Center OAI v1.5 Test System",
-                "order": 4
+                "order": 7
               }
             ],
             "videos": [
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/open_accelerator_infrastructure_oai_Wiwynn%20OAI_Demo.mp4",
-                "order": 5,
+                "order": 1,
                 "name": "Wiwynn OAI Demo"
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/open_accelerator_infrastructure_oai_Inspur%20-%20OAI%20reference%20system%20for%20Virtual%20Summit_Trim.mp4",
                 "name": "Inspur Video",
-                "order": 6
+                "order": 2
               },
               {
                 "class_name": "PresentationVideo",
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/OAI%20Tank.mp4",
-                "order": 7,
+                "order": 3,
                 "name": "Tank"
               }
             ]
