@@ -2562,6 +2562,7 @@
           "intro": "#### Arm technology is at the heart of a computing and data revolution that is transforming the way people live and businesses operate. Our energy-efficient processor designs and software platforms have enabled advanced computing in more than 190 billion chips and our technologies securely power products from sensors to supercomputers. Arm Neoverse IP is powering cloud to edge infrastructure solutions. These include silicon from Ampere Computing (Altra/Altra Max), Amazon (AWS Graviton2), Marvell (ThunderX2, OCTEON 10), NVIDIA (BlueField), Intel (Mt. Evans), NXP (Layerscape) and others. These products power cloud & edge services from AWS, Microsoft, Oracle, FaceBook Connectivity, Cloudflare, Alibaba, Tencent, ByteDance, Equinix and others. Within the OCP community Arm is a contributor to open-source firmware projects including Tianocore/EDK2, LinuxBoot, OpenBMC, and OpenOCD. Arm’s contributions can be seen in Ampere Computing’s “Mt. Jade” reference platform, available from Wiwynn.",
           "headerVideo": "",
           "headerImage": "/img/arm_arm_ocp_2021_1440x440.jpg",
+          "headerImageMobile": "/img/ocp21glo_fnv_sponsorlogo-arm.jpg",
           "advertiseImage": "",
           "sponsorId": 77,
           "title": "Arm",
