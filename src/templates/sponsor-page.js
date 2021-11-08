@@ -36,6 +36,7 @@ export const SponsorPageTemplate = class extends React.Component {
 
   componentWillMount() {
     this.setSponsor();
+    this.props.getDisqusSSO();
   }
 
   componentDidUpdate(prevProps) {
