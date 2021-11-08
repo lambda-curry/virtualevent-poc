@@ -77,7 +77,6 @@ export const HomePageTemplate = class extends React.Component {
               <UpcomingEventsComponent
                 onEventClick={(ev) => this.onEventChange(ev)}
                 onViewAllEventsClick={() => this.onViewAllEventsClick()}
-                showAllEvents={false}
                 title="Up Next"
                 eventCount={4}
                 />

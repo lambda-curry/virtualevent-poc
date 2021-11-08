@@ -28,6 +28,7 @@ const UpcomingEventsComponent = ({
         summitData: summit,
         marketingData: colorSettings,
         userProfile: userProfile,
+        showAllEvents: true,
         triggerAction: (action, { event }) => {
             switch (action) {
                 case "ADDED_TO_SCHEDULE": {
