@@ -42,7 +42,8 @@
       "display": true,
       "requiresAuth": false,
       "pageRestriction": [
-        "MARKETING"
+        "MARKETING",
+        "CUSTOM_PAGE"
       ]
     },
     {
