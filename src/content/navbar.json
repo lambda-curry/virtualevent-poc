@@ -15,7 +15,7 @@
       "display": true,
       "requiresAuth": false,
       "pageRestriction": [
-        "ANY"
+        "MARKETING"
       ]
     },
     {
@@ -33,7 +33,7 @@
       "link": "/health-and-safety",
       "display": true,
       "pageRestriction": [
-        "ANY"
+        "MARKETING"
       ]
     },
     {
@@ -85,6 +85,28 @@
       "display": true
     },
     {
+      "requiresAuth": true,
+      "showOnlyAtShowTime": true,
+      "pageRestriction": [
+        "SHOW",
+        "CUSTOM_PAGE"
+      ],
+      "title": "EXPERIENCE CENTER",
+      "link": "/a/sponsor/134-experience-center-(main)-",
+      "display": true
+    },
+    {
+      "requiresAuth": true,
+      "showOnlyAtShowTime": true,
+      "pageRestriction": [
+        "SHOW",
+        "CUSTOM_PAGE"
+      ],
+      "title": "SYMPOSIUM",
+      "link": "/a/sponsor/96-ocp-future-technologies-symposium",
+      "display": true
+    },
+    {
       "title": "HELP",
       "link": "/help",
       "display": true,
@@ -109,7 +131,8 @@
       "display": true,
       "pageRestriction": [
         "ANY"
-      ]
+      ],
+      "showOnlyAtShowTime": false
     }
   ]
 }
