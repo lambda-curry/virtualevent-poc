@@ -5916,7 +5916,7 @@
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-oai.png",
           "name": "SERVER - Open Accelerator Infrastructure (OAI)",
-          "intro": "# Showcase OAI capabilities on different hardware platforms.\n\n### There sequence of the demos is as follows:\n\n* ### Showcase Wiwynn OAI server (based on already available OAI OAM/UBB spec) with immersion cooling solution live demonstration\n* ### Showcase Inspur OAI server (based on OAI OAM/UBB spec, work in progress)\n* ### Liquid cooling (based on OAI OAM, Zion platform, work in progress)\n* ### Molex High speed connector (based on OAI UBB spec, work in progress)\n* ### Intel PVC OAM (based on OAI OAM spec, to be confirmed)",
+          "intro": "# Showcase OAI capabilities on different hardware platforms.\n\n### There sequence of the demos is as follows:\n\n* ### Showcase Wiwynn OAI server (based on already available OAI OAM/UBB spec) with immersion cooling solution live demonstration\n* ### Showcase Inspur OAI server (based on OAI OAM/UBB spec, work in progress)\n* ### Liquid cooling (based on OAI OAM, Zion platform, work in progress)\n* ### Molex High speed connector (based on OAI UBB spec, work in progress)",
           "headerImage": "/img/ocp21glo_fnv_expc-header-oai_102121.png",
           "headerImageMobile": "/img/ocp21glo_fnv_expc-mobileheader-oai.png",
           "chatLink": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MmViMGYxNGYtYTgwYi00NTFiLThjNDktNDA3OTNlOWVjNzQz%40thread.v2/0?context=%7b%22Tid%22%3a%22da6e0628-fc83-4caf-9dd2-73061cbab167%22%2c%22Oid%22%3a%222bee0da6-f1d1-4006-8960-edaad6a10af5%22%7d",
