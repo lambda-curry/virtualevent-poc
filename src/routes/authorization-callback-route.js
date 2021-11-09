@@ -43,6 +43,19 @@ class AuthorizationCallbackRoute extends AbstractAuthorizationCallbackRoute {
   }
 
   render() {
+    // reimplements same render as defined in abstract class
+    // but modifies the return (if no errors) to improve UX
+    // re: https://github.com/OpenStackweb/openstack-uicore-foundation/blob/cf8337911dcbb9d71bef3624c45256039e6447a0/src/components/security/abstract-auth-callback-route.js#L139
+    let {id_token_is_valid, error, error_description} = this.state;
+
+    if (error != null) {
+        console.log(`AbstractAuthorizationCallbackRoute::render _redirect2Error error ${error}`)
+        return this._redirect2Error(error);
+    }
+
+    if (!id_token_is_valid) {
+        return this._redirect2Error("token_validation_error");
+    }
     return <HeroComponent title="Checking credentials..."/>;
   }
 }
