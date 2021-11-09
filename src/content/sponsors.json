@@ -5913,6 +5913,7 @@
         },
         {
           "marquee": "Showcase OAI capabilities on different hardware platforms.",
+          "featuredEventId": 1839,
           "sponsorColor": "#343895",
           "logo": "/img/ocp21glo_fnv_expc-lobbybutton-oai.png",
           "name": "SERVER - Open Accelerator Infrastructure (OAI)",
