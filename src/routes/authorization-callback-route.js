@@ -19,6 +19,8 @@ import { connect } from 'react-redux';
 import { AbstractAuthorizationCallbackRoute } from "openstack-uicore-foundation/lib/components";
 import { getUserProfile } from '../actions/user-actions'
 
+import HeroComponent from "../components/HeroComponent";
+
 import { getEnvVariable, IDP_BASE_URL, OAUTH2_CLIENT_ID } from '../utils/envVariables'
 
 class AuthorizationCallbackRoute extends AbstractAuthorizationCallbackRoute {
@@ -38,6 +40,10 @@ class AuthorizationCallbackRoute extends AbstractAuthorizationCallbackRoute {
         error.includes('consent_required')
     ) return <Redirect to={'/'} noThrow />;
     return <Redirect to={`/error?error=${error}`} noThrow/>;
+  }
+
+  render() {
+    return <HeroComponent title="Checking credentials..."/>;
   }
 }
 
