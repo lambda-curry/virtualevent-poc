@@ -13,7 +13,8 @@
 
 import React from 'react'
 import URI from "urijs"
-import { Redirect, navigate } from '@reach/router'
+import { navigate } from "gatsby"
+import { Redirect } from '@reach/router'
 import { connect } from 'react-redux';
 import { AbstractAuthorizationCallbackRoute } from "openstack-uicore-foundation/lib/components";
 import { getUserProfile } from '../actions/user-actions'
