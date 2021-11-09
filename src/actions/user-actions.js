@@ -86,8 +86,6 @@ export const getUserProfile = () => async (dispatch) => {
     expand: 'groups,summit_tickets,summit_tickets,summit_tickets.owner,summit_tickets.owner.extra_questions,summit_tickets.badge,summit_tickets.badge.features,summit_tickets.badge.type, summit_tickets.badge.type.access_levels,summit_tickets.badge.type.features,favorite_summit_events,feedback,schedule_summit_events,rsvp,rsvp.answers'
   };
 
-
-
   dispatch(startLoading());
   dispatch(createAction(START_LOADING_PROFILE)());
   return getRequest(
@@ -96,11 +94,9 @@ export const getUserProfile = () => async (dispatch) => {
     `${window.SUMMIT_API_BASE_URL}/api/v1/summits/${window.SUMMIT_ID}/members/me`,
     customErrorHandler
   )(params)(dispatch).then(() => {
-    dispatch(setAuthorization());
-    dispatch(setUserTicket());
-    dispatch(getIDPProfile());
-    dispatch(getScheduleSyncLink());
-    return dispatch(createAction(STOP_LOADING_PROFILE)());
+    return dispatch(getIDPProfile()).then(() => {
+      return dispatch(getScheduleSyncLink()).then(() => dispatch(createAction(STOP_LOADING_PROFILE)()))
+    });
   }).catch(() => dispatch(createAction(STOP_LOADING_PROFILE)()));
 }
 
@@ -149,18 +145,6 @@ export const requireExtraQuestions = () => (dispatch, getState) => {
     return true;
   }
   return false;
-}
-
-const setAuthorization = () => (dispatch, getState) => {
-  const { userState: { userProfile } } = getState();
-  const isAuthorized = isAuthorizedUser(userProfile.groups)
-  return dispatch(createAction(SET_AUTHORIZED_USER)(isAuthorized));
-}
-
-const setUserTicket = () => (dispatch, getState) => {
-  const { userState: { userProfile } } = getState();
-  const hasTicket = userProfile.summit_tickets?.length > 0;
-  return dispatch(createAction(SET_USER_TICKET)(hasTicket));
 }
 
 export const scanBadge = (sponsorId) => async (dispatch) => {
