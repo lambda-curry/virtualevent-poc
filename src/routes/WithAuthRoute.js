@@ -56,7 +56,8 @@ const WithAuthRoute = ({
         // if the user is not authz and we accessing a private route , get fresh data to recheck
         // authz condition ( new tickets / new groups ) after every render of the route
         if (!fetchedUserProfile && !userIsAuthz()) {
-            getUserProfile().then(_ => setFetchedUserProfile(true))
+            setFetchedUserProfile(true)
+            getUserProfile();
         }
     }, [fetchedUserProfile, isLoggedIn, hasTicket, isAuthorized, userProfile, getUserProfile, userIsAuthz]);
 
