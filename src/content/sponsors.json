@@ -306,12 +306,6 @@
               },
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/intel-hyve-at-ocp.pdf",
-                "name": " Intel & Hyve at OCP",
-                "order": 4
-              },
-              {
-                "class_name": "PresentationSlide",
                 "link": "/img/intel-remote-priority-flow-control-remote-pfc-.pdf",
                 "name": " Intel Remote Priority Flow Control (Remote PFC)",
                 "order": 13
