@@ -4482,53 +4482,52 @@
                 "class_name": "PresentationLink",
                 "link": "https://twitter.com/NVIDIANetworkng",
                 "name": "Twitter NVIDIA Networking",
-                "order": 1
+                "order": 4
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.linkedin.com/showcase/nvidianetworking/",
-                "order": 2,
+                "order": 5,
                 "name": "LinkedIn  "
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://www.facebook.com/NVIDIANetworking/",
-                "order": 3,
+                "order": 6,
                 "name": "Facebook"
               },
               {
                 "class_name": "PresentationLink",
                 "link": "https://twitter.com/NVIDIADC",
-                "order": 4,
+                "order": 7,
                 "name": "Twitter NVIDIA Data Center"
-              }
-            ],
-            "slides": [
-              {
-                "class_name": "PresentationSlide",
-                "link": "/img/nvidia_connectx-6-dx-en-card-datasheet-1570187_r4.pdf",
-                "name": "ConnectX-6 Dx",
-                "order": 5
               },
               {
-                "class_name": "PresentationSlide",
-                "link": "/img/nvidia_bluefield-2-dpu-datasheet-1609240_r4.pdf",
-                "name": "BlueField-2 DPU",
-                "order": 6
+                "class_name": "PresentationLink",
+                "name": "NVIDIA Quantum-2   ",
+                "order": 1,
+                "link": "https://www.nvidia.com/en-us/networking/quantum2/?ncid=so-othe-237406#cid=nbu07_so-othe_en-us"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "NVIDIA Introduces BlueField DPU as a Platform for Zero Trust Security with DOCA 1.2 blog",
+                "link": "https://developer.nvidia.com/blog/nvidia-introduces-bluefield-dpu-as-a-platform-for-zero-trust-security-with-doca-1-2/?ncid=so-othe-434078#cid=nbu04_so-othe_en-us",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "NVIDIA Converged Accelerator Developer Kit is available for registration",
+                "link": "https://developer.nvidia.com/converged-accelerator-developer-kit?ncid=so-othe-433221#cid=nbu02_so-othe_en-us",
+                "order": 3
               }
             ],
+            "slides": [],
             "videos": [
               {
                 "class_name": "PresentationVideo",
                 "name": "This is Enterprise Accelerated Computing ",
                 "order": 8,
                 "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/nvidia_1382327-VMW20-Lightning-Demo-Embedded.mp4"
-              },
-              {
-                "class_name": "PresentationVideo",
-                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/nvidia_1569691_EGXHero_50MBs.mp4",
-                "name": "VMWare Project Monterey",
-                "order": 9
               }
             ]
           },
