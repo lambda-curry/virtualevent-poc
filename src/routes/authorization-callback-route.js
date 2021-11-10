@@ -30,10 +30,7 @@ class AuthorizationCallbackRoute extends AbstractAuthorizationCallbackRoute {
   }
 
   _callback(backUrl) {
-    const baseUrl = 'https://2021ocpglobal.fnvirtual.app';
-    const decodedBackUrl = URI.decode(backUrl);
-    const redirectUrl = `${baseUrl}${decodedBackUrl}`
-    this.props.getUserProfile().then(() => window.location.replace(redirectUrl));
+    this.props.getUserProfile().then(() => navigate(URI.decode(backUrl)) );
   }
   
   _redirect2Error(error) {
