@@ -1,4 +1,4 @@
-import storage from "redux-persist/es/storage";
+import localforage from 'localforage';
 import {persistCombineReducers, persistStore} from "redux-persist";
 import {loggedUserReducer} from "openstack-uicore-foundation/lib/reducers";
 import eventReducer from "../reducers/event-reducer";
@@ -18,7 +18,7 @@ const clientId = process.env.GATSBY_OAUTH2_CLIENT_ID;
 const summitID = process.env.GATSBY_SUMMIT_ID;
 const config = {
     key: `root_${clientId}_${summitID}`,
-    storage,
+    storage: localforage,
 };
 
 const persistedReducers = persistCombineReducers(config, {
