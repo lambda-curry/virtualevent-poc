@@ -1,7 +1,7 @@
 import './src/utils/envVariables'
-import { browserWrapper } from "./src/state/ReduxWrapper"
+import ReduxWrapper from "./src/state/ReduxWrapper"
 import colors from './src/content/colors.json'
-export const wrapRootElement = browserWrapper;
+export const wrapRootElement = ReduxWrapper;
 
 export const onClientEntry = () => {
   // var set at document level
