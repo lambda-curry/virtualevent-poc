@@ -1,5 +1,6 @@
-import ReduxWrapper from "./src/state/ReduxWrapper"
-export const wrapRootElement = ReduxWrapper
+import { SSRWrapper } from "./src/state/ReduxWrapper"
+
+export const wrapRootElement = SSRWrapper
 
 import { JSDOM } from 'jsdom'
 import { Blob } from 'blob-polyfill';
