@@ -15,10 +15,19 @@
         "display": true
       }
     },
-    "background": "",
+    "background": "/img/sf21-mrkt-header-image.png",
     "images": [
       {
-        "image": "/img/sf21-mrkt-header-image.png"
+        "image": "/img/sf21-mrkt-space-1.png"
+      },
+      {
+        "image": "/img/sf21-mrkt-space-2.png"
+      },
+      {
+        "image": "/img/sf21-mrkt-space-3.png"
+      },
+      {
+        "image": "/img/sf21-mrkt-space-4.png"
       }
     ]
   },
@@ -32,9 +41,9 @@
       "title": "Join the conversation"
     },
     "image": {
-      "display": false,
+      "display": true,
       "title": "Image",
-      "src": "/img/yoco-sponsor-ads-large-wherehol-vert.png"
+      "src": ""
     }
   },
   "sponsors": [],
