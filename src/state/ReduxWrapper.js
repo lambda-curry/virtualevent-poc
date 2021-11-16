@@ -14,10 +14,19 @@ const onBeforeLift = () => {
     }
 };
 
-export default ({ element }) => (
+export const browserWrapper = ({ element }) => (
     <Provider store={store}>
         <PersistGate onBeforeLift={onBeforeLift} persistor={persistor}>
             {element}
         </PersistGate>
     </Provider>
 );
+
+
+export const SSRWrapper = ({ element }) => {
+    return (
+        <Provider store={store}>
+            {element}
+        </Provider>
+    );
+}
