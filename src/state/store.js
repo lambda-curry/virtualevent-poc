@@ -1,4 +1,5 @@
-import localforage from 'localforage';
+
+import storage from 'redux-persist/lib/storage' //
 import {persistCombineReducers, persistStore} from "redux-persist";
 import {loggedUserReducer} from "openstack-uicore-foundation/lib/reducers";
 import eventReducer from "../reducers/event-reducer";
@@ -16,21 +17,32 @@ import thunk from "redux-thunk";
 // get from process.env bc window is not set yet
 const clientId = process.env.GATSBY_OAUTH2_CLIENT_ID;
 const summitID = process.env.GATSBY_SUMMIT_ID;
+
 const config = {
     key: `root_${clientId}_${summitID}`,
-    storage: localforage,
+    storage: storage,
+    blacklist: [
+        // this will be not saved to persistent storage see
+        // https://github.com/rt2zz/redux-persist#blacklist--whitelist
+        'sponsorState',
+        'speakerState',
+        'eventState',
+        'summitState',
+        'scheduleState',
+        'myScheduleState',
+    ]
 };
 
 const persistedReducers = persistCombineReducers(config, {
     loggedUserState: loggedUserReducer,
-    eventState: eventReducer,
-    summitState: summitReducer,
+    settingState: settingReducer,
     userState: userReducer,
     scheduleState: scheduleReducer,
     myScheduleState: myScheduleReducer,
-    speakerState: speakerReducer,
     clockState: clockReducer,
-    settingState: settingReducer,
+    eventState: eventReducer,
+    summitState: summitReducer,
+    speakerState: speakerReducer,
     sponsorState: sponsorReducer
 });
 
@@ -48,7 +60,6 @@ const composeEnhancers = typeof window === 'object' && window.__REDUX_DEVTOOLS_E
 const store = createStore(persistedReducers, composeEnhancers(applyMiddleware(appendLoggedUser, thunk)));
 
 const onRehydrateComplete = () => {};
-
 
 export const persistor = persistStore(store, null, onRehydrateComplete);
 
