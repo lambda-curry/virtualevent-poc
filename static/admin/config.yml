@@ -202,7 +202,8 @@ collections:
               {label: "Image", name: "image", widget: object, fields: [
                 {label: "Display", name: "display", widget: boolean, required: false},
                 {label: "Title", name: "title", widget: string, required: false},
-                {label: "Image", name: "src", widget: image, required: false},
+                {label: "Desktop Image", name: "src", widget: image, required: false},
+                {label: "Mobile Image", name: "mobileSrc", widget: image, required: false}
               ]},
             ]}
           - {label: "Sponsors", name: "sponsors", widget: list, fields: [
@@ -241,10 +242,15 @@ collections:
     folder: "src/pages/custom-pages"
     create: true
     slug: "{{slug}}"
-    fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "custom-page"}
+    fields:      
+      - {label: "Page type", name: "templateKey", widget: select, default: "custom-page", options: [
+          { label: "Full Image Page", value: "custom-image-page" },
+          { label: "Custom Page", value: "custom-page" },
+        ]}
       - {label: Title, name: title, widget: string}
       - {label: "User Requirement", name: userRequirement, widget: select, options: ["NONE", "LOGGED_IN", "HAS_TICKET"], default: "NONE"}
+      - {label: "Image Page", name: imagePage, widget: image, required: false, hint: "Only visible if the **Page Type** is **Full Image Page**"}
+      - {label: "Mobile Image Page", name: mobileImagePage, widget: image, required: false, hint: "Only visible if the **Page Type** is **Full Image Page**"}
       - {label: "Body", name: body, widget: markdown}
   - name: "sponsors"
     label: "Sponsors Data"

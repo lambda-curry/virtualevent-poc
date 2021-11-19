@@ -1,5 +1,5 @@
-@import './colors.scss';
-@import './global-classes';
+@import "./colors.scss";
+@import "./global-classes";
 
 html,
 body {
@@ -28,7 +28,6 @@ button.link {
   }
 
   .swal-icon {
-
   }
 
   .swal-confirm {
@@ -56,14 +55,12 @@ header div.current-user {
   color: #fff;
 }
 
-
 button.link {
   cursor: pointer;
   text-decoration: none;
   border: none;
   background-color: transparent;
 }
-
 
 footer {
   color: #fff;
@@ -210,7 +207,6 @@ h2 {
     font-weight: bold;
   }
 
-
   &__speaker {
     &--name {
       text-transform: capitalize;
@@ -252,7 +248,6 @@ h2 {
     cursor: pointer;
     align-items: flex-end;
   }
-
 }
 
 .join-zoom-container {
@@ -421,6 +416,33 @@ h2 {
   background: rgba(0, 0, 0, 0.8) !important;
 }
 
+#marketing-columns {
+  flex-direction: column-reverse;
+  .ads-column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .ad-container {
+      flex: calc(100% / 6);
+      img {
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.image-page {
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+.mobile-image-page {
+  width: 100%;
+  margin-bottom: 3em;
+  display: none;
+}
+
 @media (max-width: 1430px) {
   .join-zoom-container {
     span {
@@ -450,6 +472,19 @@ h2 {
 
   #marketing-columns {
     margin-bottom: 4rem;
+    .ads-column {
+      .ad-container {
+        flex: calc(100% / 2);
+      }
+    }
+  }
+
+  .image-page {
+    display: none;
+  }
+
+  .mobile-image-page {
+    display: inline;
   }
 
   #marketing-slider {
