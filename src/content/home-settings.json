@@ -1,1 +1,16 @@
-{"centerColumn":{"speakers":{"showTodaySpeakers":false,"showFeatureSpeakers":false}},"homeHero":{"title":"YOCO Summit.  Live Now!","subTitle":"virtual · pacific time","image":"/img/hero-man-with-headphones.jpg","copy":"<h2><strong>YOCO Summit Live NOW!</strong></h2>\r\n<h2>from San Jose, CA</h2>"},"live_now_featured_event_id":null,"schedule_default_image":"https://fntech.sfo2.cdn.digitaloceanspaces.com/SamsungTechDay2021/Samsumg-FNv-Custom-SessionThumbnail.png"}
+{
+  "centerColumn": {
+    "speakers": {
+      "showTodaySpeakers": false,
+      "showFeatureSpeakers": false
+    }
+  },
+  "homeHero": {
+    "title": "Stars Fest",
+    "subTitle": "",
+    "image": "/img/sf21-header-right.png",
+    "copy": ""
+  },
+  "live_now_featured_event_id": null,
+  "schedule_default_image": "https://fntech.sfo2.cdn.digitaloceanspaces.com/SamsungTechDay2021/Samsumg-FNv-Custom-SessionThumbnail.png"
+}
