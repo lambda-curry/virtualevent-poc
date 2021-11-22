@@ -10,13 +10,44 @@
       ]
     },
     {
-      "title": "Schedule",
-      "link": "/a/schedule",
-      "display": true,
       "requiresAuth": false,
+      "showOnlyAtShowTime": false,
       "pageRestriction": [
         "ANY"
-      ]
+      ],
+      "title": "Programming",
+      "link": "/a/programming",
+      "display": true
+    },
+    {
+      "requiresAuth": false,
+      "showOnlyAtShowTime": false,
+      "pageRestriction": [
+        "ANY"
+      ],
+      "title": "Creator Competition",
+      "link": "/a/creator-competition",
+      "display": true
+    },
+    {
+      "requiresAuth": false,
+      "showOnlyAtShowTime": false,
+      "pageRestriction": [
+        "ANY"
+      ],
+      "title": "Stars Day",
+      "link": "/a/stars-day",
+      "display": true
+    },
+    {
+      "requiresAuth": false,
+      "showOnlyAtShowTime": false,
+      "pageRestriction": [
+        "ANY"
+      ],
+      "title": "Buy Stars",
+      "link": "http://fb.com/stars",
+      "display": true
     },
     {
       "title": "Sponsors ",
@@ -25,43 +56,6 @@
       "requiresAuth": false,
       "pageRestriction": [
         "ANY"
-      ]
-    },
-    {
-      "title": "About the event",
-      "link": "/about-event",
-      "display": true,
-      "requiresAuth": false,
-      "pageRestriction": [
-        "SHOW"
-      ]
-    },
-    {
-      "title": "Who we are",
-      "link": "/who-we-are",
-      "display": true,
-      "requiresAuth": false,
-      "pageRestriction": [
-        "ACTIVITY"
-      ]
-    },
-    {
-      "title": "Past events",
-      "link": "/past-events",
-      "display": true,
-      "requiresAuth": true,
-      "pageRestriction": [
-        "ACTIVITY",
-        "MARKETING"
-      ]
-    },
-    {
-      "title": "Contact",
-      "link": "/contact",
-      "display": true,
-      "requiresAuth": false,
-      "pageRestriction": [
-        "ACTIVITY"
       ]
     },
     {
