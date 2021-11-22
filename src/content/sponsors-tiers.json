@@ -68,9 +68,9 @@
       "expoHallSize": "small"
     }
   ],
-  "imageHeader": "/img/booth-crawl-1_adjusted-mobile.png",
+  "imageHeader": "/img/sf-topcreators-headerimage-expopage.png",
   "lobbyButton": {
-    "text": "View all",
-    "link": "/a/sponsors/"
+    "text": "",
+    "link": ""
   }
 }
