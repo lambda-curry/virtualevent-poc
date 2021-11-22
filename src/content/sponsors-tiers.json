@@ -5,67 +5,74 @@
       "sponsorPage": {
         "sponsorTemplate": "big-header",
         "widgets": {
-          "disqus": true,
-          "liveEvent": true,
-          "schedule": true,
-          "banner": true
+          "disqus": false,
+          "liveEvent": false,
+          "schedule": false,
+          "banner": false
         }
       },
-      "name": "Top-Tier Sponsors",
+      "name": "Week 1",
       "expoHallSize": "large",
       "eventTemplate": "small-images",
-      "widgetTitle": "Top-Tier Sponsors",
+      "widgetTitle": "",
       "lobby": {
-        "lobbyTemplate": "carousel",
+        "lobbyTemplate": "big-images",
         "display": true
       },
       "expoHallPage": {
-        "expoHallTemplate": "medium-images",
+        "expoHallTemplate": "big-images",
         "display": true
       },
       "id": "tier-cYGYq5-ae"
     },
     {
-      "id": "tier-DHcI3dWGk",
-      "name": "Middle-Tier Sponsors",
-      "widgetTitle": "Middle-Tier Sponsors",
       "badge": "",
-      "lobby": {
-        "lobbyTemplate": "small-images",
-        "display": true
-      },
       "sponsorPage": {
         "sponsorTemplate": "big-header",
         "widgets": {
-          "disqus": true,
-          "liveEvent": true,
-          "schedule": true,
-          "banner": true
+          "disqus": false,
+          "liveEvent": false,
+          "schedule": false,
+          "banner": false
         }
       },
+      "name": "Week 2 ",
+      "expoHallSize": "medium",
       "eventTemplate": "",
-      "expoHallSize": "medium"
-    },
-    {
-      "id": "tier-U_wEwGX8a",
-      "name": "Lower-Tier Sponsors",
-      "widgetTitle": "Lower-Tier Sponsors",
-      "badge": "",
+      "widgetTitle": "",
       "lobby": {
-        "lobbyTemplate": "small-images",
+        "lobbyTemplate": "big-images",
+        "display": false
+      },
+      "expoHallPage": {
+        "expoHallTemplate": "big-images",
         "display": true
       },
+      "id": "tier-DHcI3dWGk"
+    },
+    {
+      "badge": "",
       "sponsorPage": {
-        "sponsorTemplate": "small-header",
+        "sponsorTemplate": "big-header",
         "widgets": {
-          "disqus": true,
-          "liveEvent": true,
-          "schedule": true,
-          "banner": true
+          "disqus": false,
+          "liveEvent": false,
+          "schedule": false,
+          "banner": false
         }
       },
+      "name": "Week 3 ",
+      "expoHallSize": "small",
       "eventTemplate": "",
-      "expoHallSize": "small"
+      "widgetTitle": "",
+      "lobby": {
+        "lobbyTemplate": "big-images",
+        "display": true
+      },
+      "expoHallPage": {
+        "expoHallTemplate": "big-images"
+      },
+      "id": "tier-U_wEwGX8a"
     }
   ],
   "imageHeader": "/img/sf-topcreators-headerimage-expopage.png",
