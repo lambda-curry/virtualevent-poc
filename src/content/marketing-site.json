@@ -7,7 +7,7 @@
     "dateLayout": true,
     "buttons": {
       "registerButton": {
-        "text": "Stars Day Registration",
+        "text": "Register Now",
         "display": true
       },
       "loginButton": {
