@@ -34,7 +34,8 @@
     "image": {
       "display": true,
       "title": "",
-      "src": "/img/sf21-calendar.png"
+      "src": "/img/sf21-calendar.png",
+      "mobileSrc": "/img/sf21-calendar-mobile.png"
     }
   },
   "sponsors": [
