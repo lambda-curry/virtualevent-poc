@@ -1,9 +1,19 @@
 @import "./colors.scss";
 @import "./global-classes";
 
+@font-face {
+  font-family: FacebookSansDisplay_ExBd;
+  src: url("../../static/fonts/FacebookSansDisplay_ExBd.ttf");
+}
+
+@font-face {
+  font-family: FacebookSansDisplay_Rg;
+  src: url("../../static/fonts/FacebookSansDisplay_Rg.ttf");
+}
+
 html,
 body {
-  font-family: "Nunito Sans", sans-serif !important;
+  font-family: "FacebookSansDisplay_Rg", sans-serif !important;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -94,7 +104,14 @@ div.content {
 div.title {
   font-weight: 700 !important;
   color: #333333 !important;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "FacebookSansDisplay_ExBd", sans-serif !important;
+}
+
+div {
+  .title {
+    font-weight: 700 !important;
+    font-family: "FacebookSansDisplay_ExBd", sans-serif !important;
+  }
 }
 
 h2 {
@@ -279,7 +296,7 @@ h2 {
 
 .outerWrapper___lGus2 {
   .widget-title {
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "FacebookSansDisplay_ExBd", sans-serif !important;
     font-weight: 700;
     font-size: 30px;
     line-height: 33px;
@@ -289,7 +306,7 @@ h2 {
 }
 
 .widget-title {
-  font-family: "Open Sans", sans-serif;
+  font-family: "FacebookSansDisplay_ExBd", sans-serif !important;
   font-size: 18px !important;
 }
 
