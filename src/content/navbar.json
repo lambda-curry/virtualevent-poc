@@ -16,7 +16,7 @@
         "ANY"
       ],
       "title": "Programming",
-      "link": "/a/programming",
+      "link": "/programming",
       "display": true
     },
     {
@@ -26,7 +26,7 @@
         "ANY"
       ],
       "title": "Creator Competition",
-      "link": "/a/creator-competition",
+      "link": "/creator-competition",
       "display": true
     },
     {
@@ -36,7 +36,7 @@
         "ANY"
       ],
       "title": "Stars Day",
-      "link": "/a/stars-day",
+      "link": "/stars-day",
       "display": true
     },
     {
@@ -64,8 +64,7 @@
       "display": true,
       "requiresAuth": false,
       "pageRestriction": [
-        "ACTIVITY",
-        "MARKETING"
+        "ANY"
       ]
     },
     {
