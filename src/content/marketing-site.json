@@ -7,18 +7,18 @@
     "dateLayout": true,
     "buttons": {
       "registerButton": {
-        "text": "Register Now",
+        "text": "Stars Day Registration",
         "display": true
       },
       "loginButton": {
-        "text": "Log In",
+        "text": "Stars Day Log in",
         "display": true
       }
     },
-    "background": "",
+    "background": "/img/sf21-header-left.png",
     "images": [
       {
-        "image": "/img/sf21-mrkt-header-image.png"
+        "image": "/img/sf21-header-right.png"
       }
     ]
   },
@@ -34,7 +34,7 @@
     "image": {
       "display": true,
       "title": "",
-      "src": ""
+      "src": "/img/sf21-calendar.png"
     }
   },
   "sponsors": [
@@ -49,7 +49,7 @@
       "images": [
         {
           "image": "/img/sf21-mrkt-space-2.png",
-          "link": "fb.com/stars"
+          "link": "https://www.fb.com/stars"
         }
       ]
     },
