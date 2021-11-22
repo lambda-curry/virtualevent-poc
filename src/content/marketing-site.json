@@ -12,7 +12,7 @@
       },
       "loginButton": {
         "text": "Stars Day Log in",
-        "display": true
+        "display": false
       }
     },
     "background": "/img/sf21-header-left.png",
