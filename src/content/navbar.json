@@ -22,9 +22,9 @@
       "title": "Sponsors ",
       "link": "/a/sponsors/",
       "display": true,
-      "requiresAuth": true,
+      "requiresAuth": false,
       "pageRestriction": [
-        "ACTIVITY"
+        "ANY"
       ]
     },
     {

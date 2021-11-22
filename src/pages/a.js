@@ -1,4 +1,4 @@
-import React, {useEffect} from "react"
+import React, { useEffect } from "react"
 import { Router, Location } from "@reach/router"
 import { connect } from 'react-redux'
 import { syncData } from '../actions/base-actions';
@@ -30,8 +30,10 @@ const App = ({ isLoggedUser, user, summit_phase, lastBuild, syncData }) => {
       {({ location }) => (
         <Router basepath="/a" >
           <SchedulePage path="/schedule" location={location} />
+          <ExpoHallPage path="/sponsors/" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location} />
+          <SponsorPage path="/sponsor/:sponsorId" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location} />
           <WithAuthRoute path="/" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location}>
-            <MySchedulePage path="/my-schedule" location={location} summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user}/>
+            <MySchedulePage path="/my-schedule" location={location} summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} />
             <ExtraQuestionsPage path="/extra-questions" isLoggedIn={isLoggedUser} user={user} location={location} />
             <FullProfilePage path="/profile" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location} />
             <ShowOpenRoute path="/" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location}>
@@ -39,8 +41,6 @@ const App = ({ isLoggedUser, user, summit_phase, lastBuild, syncData }) => {
                 <EventPage path="/" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location} />
               </WithBadgeRoute>
               <HomePage path="/" isLoggedIn={isLoggedUser} user={user} location={location} />
-              <SponsorPage path="/sponsor/:sponsorId" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location} />
-              <ExpoHallPage path="/sponsors/" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location} />
             </ShowOpenRoute>
           </WithAuthRoute>
         </Router>
