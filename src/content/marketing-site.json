@@ -3,7 +3,7 @@
     "title": "Stars Fest",
     "subTitle": "by Facebook",
     "date": "December 10, 2021",
-    "time": "",
+    "time": "Collaboration and learning for Stars creators",
     "dateLayout": false,
     "buttons": {
       "registerButton": {
@@ -12,13 +12,15 @@
       },
       "loginButton": {
         "text": "Stars Day Log in",
-        "display": false
+        "display": true
       }
     },
     "background": "/img/sf21-header-left.png",
-    "images": [{
-      "image": "/img/sf21-header-right.png"
-    }]
+    "images": [
+      {
+        "image": "/img/sf21-header-right.png"
+      }
+    ]
   },
   "leftColumn": {
     "schedule": {
@@ -36,24 +38,37 @@
       "mobileSrc": "/img/sf21-calendar-mobile.png"
     }
   },
-  "sponsors": [{
-    "images": [{
-      "image": "/img/sf21-mrkt-space-1.png"
-    }]
-  }, {
-    "images": [{
-      "image": "/img/sf21-mrkt-space-2.png",
-      "link": "https://www.fb.com/stars"
-    }]
-  }, {
-    "images": [{
-      "image": "/img/sf21-mrkt-space-3.png"
-    }]
-  }, {
-    "images": [{
-      "image": "/img/sf21-mrkt-space-4.png"
-    }]
-  }],
+  "sponsors": [
+    {
+      "images": [
+        {
+          "image": "/img/sf21-mrkt-space-1.png"
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "image": "/img/sf21-mrkt-space-2.png",
+          "link": "https://www.fb.com/stars"
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "image": "/img/sf21-mrkt-space-3.png"
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "image": "/img/sf21-mrkt-space-4.png"
+        }
+      ]
+    }
+  ],
   "registration_in_person_disclaimer": null,
   "summit_delta_start_time": "900"
 }
