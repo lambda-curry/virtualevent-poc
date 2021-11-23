@@ -29,6 +29,10 @@ collections:
                 {label: "Show Help", name: showHelp, widget: boolean, required: false, default: false},
               ]}
             ]}
+          - {label: "Event Image", name: "eventImage", widget: object, required: false, hint: "This would be visible on every event page under the event description", fields: [
+              {label: "Desktop Image", name: desktop, widget: image},
+              {label: "Mobile Image", name: mobile, widget: image},
+            ]}
       - file: "src/content/ads.json"
         label: "Advertisement"
         name: "ads"

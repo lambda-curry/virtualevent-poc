@@ -5,12 +5,13 @@ import disqus_settings from '../content/disqus-settings.json';
 import home_settings from '../content/home-settings.json';
 
 import { START_LOADING, STOP_LOADING, LOGOUT_USER } from "openstack-uicore-foundation/lib/actions";
-import {RESET_STATE, SYNC_DATA} from "../actions/base-actions";
+import { RESET_STATE, SYNC_DATA } from "../actions/base-actions";
 
 const DEFAULT_STATE = {
   lastBuild: settings.lastBuild,
   favicon: settings.favicon,
   widgets: settings.widgets,
+  eventImage: settings.eventImage,
   colorSettings: colors,
   siteSettings: marketing_site,
   disqusSettings: disqus_settings,

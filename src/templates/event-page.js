@@ -57,20 +57,20 @@ export const EventPageTemplate = class extends React.Component {
     // compare current event phase with next one
     const currentPhase = eventsPhases.find((e) => parseInt(e.id) === parseInt(eventId))?.phase;
     const nextCurrentPhase = nextProps.eventsPhases.find(
-        (e) => parseInt(e.id) === parseInt(eventId)
+      (e) => parseInt(e.id) === parseInt(eventId)
     )?.phase;
     const finishing = (currentPhase === PHASES.DURING && nextCurrentPhase === PHASES.AFTER);
     return (currentPhase !== nextCurrentPhase && !finishing);
   }
 
   canRenderVideo = (currentPhase) => {
-    const {event} = this.props;
+    const { event } = this.props;
     return (currentPhase >= PHASES.DURING || event.streaming_type === 'VOD') && event.streaming_url;
   };
 
   render() {
 
-    const { event, user, loading, nowUtc, summit, eventsPhases, eventId, location } = this.props;
+    const { event, user, loading, nowUtc, summit, eventsPhases, eventId, location, eventImage } = this.props;
     // get current event phase
     const currentPhase = eventsPhases.find((e) => parseInt(e.id) === parseInt(eventId))?.phase;
     const firstHalf = currentPhase === PHASES.DURING ? nowUtc < ((event?.start_date + event?.end_date) / 2) : false;
@@ -86,112 +86,118 @@ export const EventPageTemplate = class extends React.Component {
     }
 
     return (
-          <React.Fragment>
-            {/* <EventHeroComponent /> */}
-            <section
-              className="section px-0 py-0"
+      <React.Fragment>
+        {/* <EventHeroComponent /> */}
+        <section
+          className="section px-0 py-0"
+          style={{
+            marginBottom:
+              event.class_name !== "Presentation" ||
+                currentPhase < PHASES.DURING ||
+                !event.streaming_url
+                ? "-3rem"
+                : "",
+          }}
+        >
+          <div className="columns is-gapless">
+            {this.canRenderVideo(currentPhase) ? (
+              <div className="column is-three-quarters px-0 py-0">
+                <VideoComponent
+                  url={event.streaming_url}
+                  title={event.title}
+                  namespace={summit.name}
+                  firstHalf={firstHalf}
+                  autoPlay={query.autostart === 'true'}
+                />
+                {event.meeting_url && <VideoBanner event={event} />}
+              </div>
+            ) : (
+              <div className="column is-three-quarters px-0 py-0 is-full-mobile">
+                <NoTalkComponent
+                  currentEventPhase={currentPhase}
+                  event={event}
+                  summit={summit}
+                />
+              </div>
+            )}
+            <div
+              className="column is-hidden-mobile"
               style={{
-                marginBottom:
-                  event.class_name !== "Presentation" ||
-                  currentPhase < PHASES.DURING  ||
-                  !event.streaming_url
-                    ? "-3rem"
-                    : "",
+                position: "relative",
+                borderBottom: "1px solid #d3d3d3",
               }}
             >
-              <div className="columns is-gapless">
-                {this.canRenderVideo(currentPhase) ? (
-                  <div className="column is-three-quarters px-0 py-0">
-                    <VideoComponent
-                      url={event.streaming_url}
-                      title={event.title}
-                      namespace={summit.name}
-                      firstHalf={firstHalf}
-                      autoPlay={query.autostart === 'true'}
-                    />
-                    {event.meeting_url && <VideoBanner event={event} />}
-                  </div>
-                ) : (
-                  <div className="column is-three-quarters px-0 py-0 is-full-mobile">
-                    <NoTalkComponent
-                      currentEventPhase={currentPhase}
-                      event={event}
-                      summit={summit}
-                    />
-                  </div>
-                )}
-                <div
-                  className="column is-hidden-mobile"
-                  style={{
-                    position: "relative",
-                    borderBottom: "1px solid #d3d3d3",
-                  }}
-                >
-                  <DisqusComponent
-                    hideMobile={true}
-                    disqusSSO={user.disqusSSO}
-                    event={event}
-                    summit={summit}
-                    title="Public Conversation"
+              <DisqusComponent
+                hideMobile={true}
+                disqusSSO={user.disqusSSO}
+                event={event}
+                summit={summit}
+                title="Public Conversation"
+              />
+            </div>
+          </div>
+        </section>
+        <section className="section px-0 pt-5 pb-0">
+          <div className="columns mx-0 my-0">
+            <div className="column is-three-quarters is-full-mobile">
+              <div className="px-5 py-5">
+                <TalkComponent
+                  currentEventPhase={currentPhase}
+                  event={event}
+                  summit={summit}
+                />
+                {eventImage &&
+                  <>
+                    <img className="image-page" src={eventImage.desktopImage} />
+                    <img className="mobile-image-page" src={eventImage.mobileImage} />
+                  </>
+                }
+              </div>
+              <div className="px-5 py-0">
+                <SponsorComponent page="event" />
+              </div>
+              <div className="is-hidden-tablet">
+                <DisqusComponent
+                  hideMobile={false}
+                  disqusSSO={user.disqusSSO}
+                  event={event}
+                  summit={summit}
+                  title="Public Conversation"
+                />
+                ∆
+              </div>
+              {event.etherpad_link && (
+                <div className="column is-three-quarters">
+                  <Etherpad
+                    className="talk__etherpad"
+                    etherpad_link={event.etherpad_link}
+                    userName={user.userProfile.first_name}
                   />
                 </div>
-              </div>
-            </section>
-              <section className="section px-0 pt-5 pb-0">
-                <div className="columns mx-0 my-0">
-                  <div className="column is-three-quarters is-full-mobile">
-                    <div className="px-5 py-5">
-                      <TalkComponent
-                        currentEventPhase={currentPhase}
-                        event={event}
-                        summit={summit}
-                      />
-                    </div>
-                    <div className="px-5 py-0">
-                      <SponsorComponent page="event" />
-                    </div>
-                    <div className="is-hidden-tablet">
-                      <DisqusComponent
-                        hideMobile={false}
-                        disqusSSO={user.disqusSSO}
-                        event={event}
-                        summit={summit}
-                        title="Public Conversation"
-                      />
-                      ∆
-                    </div>
-                    {event.etherpad_link && (
-                      <div className="column is-three-quarters">
-                        <Etherpad
-                          className="talk__etherpad"
-                          etherpad_link={event.etherpad_link}
-                          userName={user.userProfile.first_name}
-                        />
-                      </div>
-                    )}
-                    <UpcomingEventsComponent
-                      onEventClick={(ev) => this.onEventChange(ev)}
-                      onViewAllEventsClick={() => this.onViewAllEventsClick()}
-                      trackId={event.track ? event.track.id : null}
-                      eventCount={3}
-                      title={
-                        event.track
-                          ? `Up Next on ${event.track.name}`
-                          : "Up Next"
-                      }
-                    />
-                  </div>
-                  <div className="column px-0 py-0 is-one-quarter is-full-mobile">
-                    <DocumentsComponent event={event} />
-                    <AccessTracker />
-                    <AttendeesWidget user={user} event={event} />
-                    <AdvertiseComponent section="event" column="right" />
-                  </div>
-                </div>
-              </section>
-          </React.Fragment>
-        );
-    }
+              )}
+              <UpcomingEventsComponent
+                onEventClick={(ev) => this.onEventChange(ev)}
+                onViewAllEventsClick={() => this.onViewAllEventsClick()}
+                trackId={event.track ? event.track.id : null}
+                eventCount={3}
+                title={
+                  event.track
+                    ? `Up Next on ${event.track.name}`
+                    : "Up Next"
+                }
+              />
+            </div>
+            <div className="column px-0 py-0 is-one-quarter is-full-mobile">
+              <DocumentsComponent event={event} />
+              <AccessTracker />
+              <AttendeesWidget user={user} event={event} />
+              <AdvertiseComponent section="event" column="right" />
+            </div>
+          </div>
+        </section>
+      </React.Fragment>
+    );
+  }
 };
 
 const EventPage = ({
@@ -203,6 +209,7 @@ const EventPage = ({
   user,
   eventsPhases,
   nowUtc,
+  eventImage,
   getEventById,
   getDisqusSSO,
 }) => {
@@ -223,6 +230,7 @@ const EventPage = ({
         user={user}
         eventsPhases={eventsPhases}
         nowUtc={nowUtc}
+        eventImage={eventImage}
         location={location}
         getEventById={getEventById}
         getDisqusSSO={getDisqusSSO}
@@ -251,13 +259,14 @@ EventPageTemplate.propTypes = {
   getDisqusSSO: PropTypes.func,
 };
 
-const mapStateToProps = ({eventState, summitState, userState, clockState}) => ({
+const mapStateToProps = ({ eventState, summitState, userState, clockState, settingState }) => ({
   loading: eventState.loading,
   event: eventState.event,
   user: userState,
   summit: summitState.summit,
   eventsPhases: clockState.events_phases,
   nowUtc: clockState.nowUtc,
+  eventImage: settingState.eventImage
 });
 
 export default connect(mapStateToProps, {
