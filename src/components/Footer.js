@@ -124,7 +124,19 @@ const Footer = ({ summit, marketing }) => {
               })}
               <span className={styles.copyright}>
                 All Rights Reserved &copy; 2021
-          </span>
+              </span>
+              <span className={styles.socialNetworks} style={{marginLeft: 10}}>
+                {footerContent.social.networks.map((net, index) => (
+                  net.display &&
+                  <Link href={net.link} className={styles.link} key={index}>
+                    {net.icon === 'fa-facebook' ?
+                      <img style={{ width: 25, marginTop: '-5px' }} src="/img/f_logo_RGB-White_58.png" />
+                      :
+                      <i className={`fa icon is-large ${net.icon}`} />
+                    }
+                  </Link>
+                ))}
+              </span>
             </div>
           </React.Fragment>
         )}
