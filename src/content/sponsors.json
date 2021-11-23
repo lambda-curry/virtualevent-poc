@@ -10,10 +10,10 @@
       "sponsors": [
         {
           "marquee": "",
-          "externalLink": "",
+          "externalLink": "https://fb.com/stars",
           "sponsorColor": "",
-          "logo": "/img/logo-middle-tier-fntech.png",
-          "name": "FNTECH",
+          "logo": "/img/sf21-topcreators-headerimage-dec13.png",
+          "name": "DEC 13 TOP WEEKLY CREATORS",
           "intro": "",
           "headerVideo": "",
           "headerImage": "",
@@ -27,8 +27,8 @@
             "videos": []
           },
           "columnAds": [],
-          "id": 7,
-          "email": "info@fntech.com",
+          "id": 5,
+          "email": "",
           "usesSponsorPage": false
         }
       ]
@@ -43,9 +43,9 @@
       "sponsors": [
         {
           "advertiseImage": "",
-          "name": "Flightpath",
+          "name": "DEC 20 TOP WEEKLY CREATORS",
           "id": 4,
-          "logo": "/img/Logo-Top-Tier-Flightpath.png",
+          "logo": "/img/sf21-topcreators-headerimage-dec20.png",
           "externalLink": ""
         }
       ]
@@ -59,41 +59,24 @@
       ],
       "sponsors": [
         {
-          "marquee": "Travel + Technology. Book your next evolved escape with Treva. (150-characters max)",
-          "sponsorColor": " #e9ad55",
-          "logo": "/img/logo-middle-tier-treva_demo.png",
-          "name": "Treva",
-          "intro": "***Company Description (1000-character max):*** Travel + Technology = Another Tremendous Trip. Since its inception in 2004, Treva has integrated more than 20 new technologies into their travel services. Services like facial recognition for seamless online check-in, 360º VR room tours, housekeeping based on geofencing, linen fragrancing based on skin analysis, and one-touch room service ordered via mobile device only begin to scratch the surface. Each quarter, Treva adds more technical integrations to better streamlined core competencies. When a traveler books their next escape with Treva, they know they’re using technology to level up their adventure. Virtually connect with a Treva travel agent today!",
+          "marquee": "",
+          "sponsorColor": "",
+          "logo": "/img/sf21-topcreators-headerimage-dec27.png",
+          "name": "DEC 27 TOP WEEKLY CREATORS",
+          "intro": "",
           "headerImage": "",
           "headerImageMobile": "",
           "advertiseImage": "",
-          "sponsorId": 29,
-          "title": "Treva",
-          "companyId": 27,
+          "sponsorId": -1,
+          "title": "",
+          "companyId": "",
           "documents": {
-            "links": [
-              {
-                "class_name": "PresentationLink",
-                "name": "FNTECH Website",
-                "order": 1,
-                "link": "https://www.fntech.com"
-              },
-              {
-                "class_name": "PresentationLink",
-                "name": "FNTECH Instagram",
-                "link": "https://www.instagram.com/fntech/?hl=en",
-                "order": 2
-              }
-            ]
+            "links": []
           },
-          "columnAds": [
-            {
-              "image": "/img/yoco-sponsor-ads-medium-treva.png"
-            }
-          ],
+          "columnAds": [],
           "id": 29,
           "showLogoInEventPage": false,
-          "email": "sponsorservices@fntech.com",
+          "email": "",
           "usesSponsorPage": false
         }
       ]
