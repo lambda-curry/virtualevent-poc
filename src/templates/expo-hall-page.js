@@ -6,13 +6,15 @@ import Layout from '../components/Layout'
 import SponsorComponent from '../components/SponsorComponent'
 import AttendanceTrackerComponent from '../components/AttendanceTrackerComponent'
 
+import styles from '../styles/expo-hall.module.scss'
+
 const ExpoHallPage = ({ location, imageHeader }) => {
 
   return (
     <Layout location={location}>
       <AttendanceTrackerComponent />
         <section className="hero is-large sponsors-header" style={{ backgroundImage: `url(${imageHeader})` }}>
-          <div className="hero-body">
+          <div className={`hero-body ${styles.expoHallHero}`}>
             <div className="container">
             </div>
           </div>

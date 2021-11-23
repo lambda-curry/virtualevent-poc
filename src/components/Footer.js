@@ -123,7 +123,7 @@ const Footer = ({ summit, marketing }) => {
                 )
               })}
               <span className={styles.copyright}>
-                All Rights Reserved &copy; 2020
+                All Rights Reserved &copy; 2021
           </span>
             </div>
           </React.Fragment>
