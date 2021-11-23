@@ -4,7 +4,7 @@
     "subTitle": "by Facebook",
     "date": "December 10, 2021",
     "time": "",
-    "dateLayout": true,
+    "dateLayout": false,
     "buttons": {
       "registerButton": {
         "text": "Register Now",
