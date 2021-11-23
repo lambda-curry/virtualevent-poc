@@ -70,7 +70,8 @@
         "display": true
       },
       "expoHallPage": {
-        "expoHallTemplate": "big-images"
+        "expoHallTemplate": "big-images",
+        "display": true
       },
       "id": "tier-U_wEwGX8a"
     }
