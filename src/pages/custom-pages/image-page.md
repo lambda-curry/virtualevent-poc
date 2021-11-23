@@ -2,7 +2,7 @@
 templateKey: custom-image-page
 userRequirement: NONE
 title: Image Page
-imagePage: /img/YOCO-GoldSponsor-Page-Mock-960.jpg
+desktopImagePage: /img/YOCO-GoldSponsor-Page-Mock-960.jpg
 mobileImagePage: /img/YOCO-GoldSponsor-Page-Mock-960.jpg
 ---
 YOU DECIDE!

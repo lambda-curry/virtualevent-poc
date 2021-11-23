@@ -19,7 +19,7 @@ const CustomPagePreview = ({ entry, getAsset, widgetFor }) => {
       return (
         <CustomImagePageTemplate
           title={entry.getIn(['data', 'title'])}
-          imagePage={entry.getIn(['data', 'imagePage'])}
+          desktopImagePage={entry.getIn(['data', 'desktopImagePage'])}
           mobileImagePage={entry.getIn(['data', 'mobileImagePage'])}
           content={widgetFor('body')}
         />
