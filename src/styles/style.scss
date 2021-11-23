@@ -434,6 +434,7 @@ h2 {
 }
 
 #marketing-columns {
+  display: flex;
   flex-direction: column-reverse;
   .ads-column {
     display: flex;
