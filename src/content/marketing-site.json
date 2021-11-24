@@ -34,8 +34,8 @@
     "image": {
       "display": true,
       "title": "",
-      "src": "/img/sf21-calendar.png",
-      "mobileSrc": "/img/sf21-calendar-mobile.png"
+      "src": "/img/sf21-calendar-112421.png",
+      "mobileSrc": "/img/sf21-calendar-mobile-112421.png"
     }
   },
   "sponsors": [
@@ -64,7 +64,7 @@
     {
       "images": [
         {
-          "image": "/img/sf21-mrkt-space-4.png"
+          "image": "/img/sf21-mrkt-space-4-112421.png"
         }
       ]
     }
