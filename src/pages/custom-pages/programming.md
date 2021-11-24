@@ -2,6 +2,6 @@
 templateKey: custom-image-page
 title: Programming
 userRequirement: NONE
-desktopImagePage: /img/sf21-calendar.png
-mobileImagePage: /img/sf21-calendar-mobile.png
+desktopImagePage: /img/sf21-calendar-112421.png
+mobileImagePage: /img/sf21-calendar-mobile-112421.png
 ---
