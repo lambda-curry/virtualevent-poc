@@ -39,10 +39,33 @@ const TemplateWrapper = ({ children, location, marketing, summit, favicon }) => 
         <meta name="description" content={description} />
         {favicon &&
           <link
-              rel="icon"
-              type="image/png"
-              href={`${withPrefix('/')}${favicon.substring(1)}`}
-              sizes="32x32"
+            rel="icon"
+            type="image/png"
+            href={`${withPrefix('/')}${favicon.substring(1)}`}
+            sizes="32x32"
+          />
+        }
+        {favicon &&
+          <link
+            rel="icon"
+            type="image/png"
+            href={`${withPrefix('/')}${favicon.substring(1)}`}
+          />
+        }
+        {favicon &&
+          <link
+            rel="apple-touch-icon"
+            type="image/png"
+            href={`${withPrefix('/')}${favicon.substring(1)}`}
+            sizes="180x180"
+          />
+        }
+        {favicon &&
+          <link
+            rel="mask-icon"
+            type="image/png"
+            href={`${withPrefix('/')}${favicon.substring(1)}`}
+            color="#000000"
           />
         }
 
@@ -71,4 +94,4 @@ const mapStateToProps = ({ summitState, settingState }) => ({
   favicon: settingState.favicon
 });
 
-export default connect(mapStateToProps, { } )(TemplateWrapper);
+export default connect(mapStateToProps, {})(TemplateWrapper);
