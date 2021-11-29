@@ -37,21 +37,17 @@ const TemplateWrapper = ({ children, location, marketing, summit, favicon }) => 
         <html lang="en" />
         <title>{`${summit.name} - ${title}`}</title>
         <meta name="description" content={description} />
-        {favicon &&
-          <link
-            rel="icon"
-            type="image/png"
-            href={`${withPrefix('/')}${`img/sf21-favicon-32x32.png`}`}
-            sizes="32x32"
-          />
-        }
-        {favicon &&
-          <link
-            rel="apple-touch-icon"
-            href={`${withPrefix('/')}${`img/sf21-favicon-180x180.png`}`}
-            sizes="180x180"
-          />
-        }
+        <link
+          rel="icon"
+          type="image/png"
+          href={`${withPrefix('/')}${`img/sf21-favicon-32x32.png`}`}
+          sizes="32x32"
+        />
+        <link
+          rel="apple-touch-icon"
+          href={`${withPrefix('/')}${`img/sf21-favicon-180x180.png`}`}
+          sizes="180x180"
+        />
         {favicon &&
           <link
             rel="shortcut icon"
