@@ -47,13 +47,6 @@ const TemplateWrapper = ({ children, location, marketing, summit, favicon }) => 
         }
         {favicon &&
           <link
-            rel="icon"
-            type="image/png"
-            href={`${withPrefix('/')}${favicon.substring(1)}`}
-          />
-        }
-        {favicon &&
-          <link
             rel="apple-touch-icon"
             type="image/png"
             href={`${withPrefix('/')}${favicon.substring(1)}`}
@@ -62,10 +55,9 @@ const TemplateWrapper = ({ children, location, marketing, summit, favicon }) => 
         }
         {favicon &&
           <link
-            rel="mask-icon"
+            rel="shortcut icon"
             type="image/png"
             href={`${withPrefix('/')}${favicon.substring(1)}`}
-            color="#000000"
           />
         }
 
