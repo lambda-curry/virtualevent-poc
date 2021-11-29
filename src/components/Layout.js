@@ -41,14 +41,14 @@ const TemplateWrapper = ({ children, location, marketing, summit, favicon }) => 
           <link
             rel="icon"
             type="image/png"
-            href={`/img/sf21-favicon-32x32.png`}
+            href={`${withPrefix('/')}${`img/sf21-favicon-32x32.png`}`}
             sizes="32x32"
           />
         }
         {favicon &&
           <link
             rel="apple-touch-icon"
-            href={`/img/sf21-favicon-180x180.png`}
+            href={`${withPrefix('/')}${`img/sf21-favicon-180x180.png`}`}
             sizes="180x180"
           />
         }
