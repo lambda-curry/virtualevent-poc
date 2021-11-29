@@ -16,7 +16,7 @@
         "ANY"
       ],
       "title": "Programming",
-      "link": "/programming",
+      "link": "/a/sponsors/",
       "display": true
     },
     {
@@ -50,13 +50,13 @@
       "display": true
     },
     {
-      "title": "Top Weekly Creator",
-      "link": "/a/sponsors/",
-      "display": true,
       "requiresAuth": false,
+      "showOnlyAtShowTime": false,
       "pageRestriction": [
         "ANY"
-      ]
+      ],
+      "title": "Top Weekly Creator",
+      "link": "/top-weekly-creator"
     },
     {
       "title": "Help",
