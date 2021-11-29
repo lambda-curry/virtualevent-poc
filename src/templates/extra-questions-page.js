@@ -7,7 +7,7 @@ import ExtraQuestions from '../components/ExtraQuestions'
 import { saveExtraQuestions } from '../actions/user-actions'
 
 import styles from '../styles/extra-questions.module.scss'
-import {navigate} from "gatsby";
+import { navigate } from "gatsby";
 
 export const ExtraQuestionsPageTemplate = ({ user, summit, saveExtraQuestions }) => {
 
@@ -76,7 +76,7 @@ export const ExtraQuestionsPageTemplate = ({ user, summit, saveExtraQuestions })
 
     const getAnswer = (question) => answers.find(a => a.id === question.id).value;
 
-    if(!ticket){
+    if (!ticket) {
         navigate('/');
         return null;
     }
@@ -148,13 +148,15 @@ export const ExtraQuestionsPageTemplate = ({ user, summit, saveExtraQuestions })
                             return <ExtraQuestions key={question.id} question={question} handleChange={handleChange} getAnswer={getAnswer} />
                         })}
                     </div>
-                    <div className={`columns ${styles.disclaimer}`}>
-                        <div className="column is-12">
-                            <input type="checkbox" checked={disclaimer} onChange={toggleDisclaimer} />
-                            <b>{summit.registration_disclaimer_mandatory ? '*' : ''}</b>
-                            <span dangerouslySetInnerHTML={{ __html: summit.registration_disclaimer_content }} />
+                    {summit?.registration_disclaimer_content &&
+                        <div className={`columns ${styles.disclaimer}`}>
+                            <div className="column is-12">
+                                <input type="checkbox" checked={disclaimer} onChange={toggleDisclaimer} />
+                                <b>{summit.registration_disclaimer_mandatory ? '*' : ''}</b>
+                                <span dangerouslySetInnerHTML={{ __html: summit.registration_disclaimer_content }} />
+                            </div>
                         </div>
-                    </div>
+                    }
                     <button
                         className={`${styles.buttonSave} button is-large`}
                         disabled={
