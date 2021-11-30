@@ -9,7 +9,7 @@ import { withPrefix } from 'gatsby'
 
 import "../styles/bulma.scss"
 
-const TemplateWrapper = ({ children, location, marketing, summit, favicon }) => {
+const TemplateWrapper = ({ children, location, marketing, summit, favicons }) => {
   const { title, description } = useSiteMetadata();
   const [isFocus, setIsFocus] = useState(true);
 
@@ -30,19 +30,34 @@ const TemplateWrapper = ({ children, location, marketing, summit, favicon }) => 
       window.removeEventListener("blur", onBlur);
     };
   });
-
+  
   return (
     <div id="container">
       <Helmet>
         <html lang="en" />
         <title>{`${summit.name} - ${title}`}</title>
         <meta name="description" content={description} />
-        {favicon &&
+        {favicons?.favicon180 &&
           <link
-              rel="icon"
-              type="image/png"
-              href={`${withPrefix('/')}${favicon.substring(1)}`}
-              sizes="32x32"
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href={`${withPrefix('/')}${favicons.favicon180.substring(1)}`}
+          />
+        }
+        {favicons?.favicon32 &&
+          <link
+            rel="icon"
+            type="image/png"
+            href={`${withPrefix('/')}${favicons.favicon32.substring(1)}`}
+            sizes="32x32"
+          />
+        }
+        {favicons?.favicon16 &&
+          <link
+            rel="icon"
+            type="image/png"
+            href={`${withPrefix('/')}${favicons.favicon16.substring(1)}`}
+            sizes="16x16"
           />
         }
 
@@ -68,7 +83,7 @@ const TemplateWrapper = ({ children, location, marketing, summit, favicon }) => 
 
 const mapStateToProps = ({ summitState, settingState }) => ({
   summit: summitState.summit,
-  favicon: settingState.favicon
+  favicons: settingState.favicons
 });
 
-export default connect(mapStateToProps, { } )(TemplateWrapper);
+export default connect(mapStateToProps, {})(TemplateWrapper);
