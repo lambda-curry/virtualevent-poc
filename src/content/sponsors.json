@@ -10,9 +10,9 @@
       "sponsors": [
         {
           "marquee": "",
-          "externalLink": "https://fb.com/stars",
+          "externalLink": "",
           "sponsorColor": "",
-          "logo": "/img/sf21-topcreators-headerimage-dec13.png",
+          "logo": "/img/sf21-sponsor-dec13_113021.png",
           "name": "DEC 13 TOP WEEKLY CREATORS",
           "intro": "",
           "headerVideo": "",
@@ -43,9 +43,9 @@
       "sponsors": [
         {
           "advertiseImage": "",
-          "name": "DEC 20 TOP WEEKLY CREATORS",
+          "name": "DEC 14 TOP WEEKLY CREATORS",
           "id": 4,
-          "logo": "/img/sf21-topcreators-headerimage-dec20.png",
+          "logo": "/img/sf21-sponsor-dec14_113021.png",
           "externalLink": ""
         }
       ]
@@ -61,13 +61,13 @@
         {
           "marquee": "",
           "sponsorColor": "",
-          "logo": "/img/sf21-topcreators-headerimage-dec27.png",
-          "name": "DEC 27 TOP WEEKLY CREATORS",
+          "logo": "/img/sf21-sponsor-dec15_113021.png",
+          "name": "DEC 15 TOP WEEKLY CREATORS",
           "intro": "",
           "headerImage": "",
           "headerImageMobile": "",
           "advertiseImage": "",
-          "sponsorId": -1,
+          "sponsorId": "",
           "title": "",
           "companyId": "",
           "documents": {
