@@ -69,6 +69,18 @@ module.exports = {
       options: { prefixes: [`/auth/*`, `/a/*`] },
     },
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Stars Fest 2021`,
+        short_name: `Stars Fest 2021`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#6030bc`,
+        icon: `src/img/sf21-favicon.png`,
+        display: `standalone`,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,

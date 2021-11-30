@@ -45,7 +45,7 @@ const TemplateWrapper = ({ children, location, marketing, summit, favicon }) => 
         />
         <link
           rel="apple-touch-icon"
-          href={`${withPrefix('/')}${`img/sf21-favicon-180x180.png`}`}
+          href={`${withPrefix('/')}${`img/sf21-apple-touch-icon.png`}`}
           sizes="180x180"
         />
         {favicon &&
@@ -55,8 +55,15 @@ const TemplateWrapper = ({ children, location, marketing, summit, favicon }) => 
             href={`${withPrefix('/')}${favicon.substring(1)}`}
           />
         }
+        {favicon &&
+          <link 
+            rel="mask-icon" 
+            href={`${withPrefix('/')}${`img/sf21-safari-pinned-tab.svg`}`}
+            color="#6030bc">
+          </link>
+        }
 
-        <meta name="theme-color" content="#fff" />
+        <meta name="theme-color" content="#6030bc" />
 
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />
