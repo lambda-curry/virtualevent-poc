@@ -61,7 +61,7 @@
     {
       "title": "Help",
       "link": "/help",
-      "display": true,
+      "display": false,
       "requiresAuth": false,
       "pageRestriction": [
         "ANY"
