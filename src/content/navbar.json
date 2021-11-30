@@ -17,7 +17,7 @@
       ],
       "title": "Programming",
       "link": "/a/sponsors/",
-      "display": true
+      "display": false
     },
     {
       "requiresAuth": false,
@@ -27,7 +27,7 @@
       ],
       "title": "Creator Competition",
       "link": "/creator-competition",
-      "display": true
+      "display": false
     },
     {
       "requiresAuth": false,
@@ -46,7 +46,7 @@
         "ANY"
       ],
       "title": "Buy Stars",
-      "link": "http://fb.com/stars",
+      "link": "https://www.facebook.com/stars",
       "display": true
     },
     {
