@@ -99,7 +99,7 @@ export const MarketingPageTemplate = class extends React.Component {
             {siteSettings.sponsors.map((item, index) => {
               return (
                 <div className="ad-container" key={index}>
-                  {item.images[0].link ?
+                  {item.images[0]?.link ?
                     <Link to={item.images[0].link}>
                       <img alt="" src={item.images[0].image} />
                     </Link>
