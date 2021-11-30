@@ -1,6 +1,6 @@
 ---
-templateKey: custom-page
+templateKey: custom-image-page
 title: Creator Competition
 userRequirement: NONE
+desktopImagePage: /img/sf21-creator_comp-page-header.png
 ---
-This page will be used to explain the creator competition for Stars Fest.
