@@ -83,7 +83,7 @@
       },
       "expoHallPage": {
         "expoHallTemplate": "big-images",
-        "display": false
+        "display": true
       },
       "sponsorPage": {
         "sponsorTemplate": "small-header",
@@ -106,7 +106,7 @@
       },
       "expoHallPage": {
         "expoHallTemplate": "big-images",
-        "display": false
+        "display": true
       },
       "sponsorPage": {
         "sponsorTemplate": "small-header",
