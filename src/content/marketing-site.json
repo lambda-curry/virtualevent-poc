@@ -48,16 +48,24 @@
       ]
     },
     {
-      "images": []
-    },
-    {
-      "images": []
-    },
-    {
       "images": [
         {
           "image": "/img/sf21-mrkt-space-4-112421.png",
           "link": "https://www.facebook.com/stars"
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "image": "/img/sf21-mrkt-space-4_blank.png"
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "image": "/img/sf21-mrkt-space-4_blank.png"
         }
       ]
     }
