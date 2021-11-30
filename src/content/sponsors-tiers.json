@@ -11,7 +11,7 @@
           "banner": false
         }
       },
-      "name": "Week 1",
+      "name": "Day 1",
       "expoHallSize": "large",
       "eventTemplate": "small-images",
       "widgetTitle": "",
@@ -36,7 +36,7 @@
           "banner": false
         }
       },
-      "name": "Week 2 ",
+      "name": "Day 2",
       "expoHallSize": "medium",
       "eventTemplate": "",
       "widgetTitle": "",
@@ -61,7 +61,7 @@
           "banner": false
         }
       },
-      "name": "Week 3 ",
+      "name": "Day 3",
       "expoHallSize": "small",
       "eventTemplate": "",
       "widgetTitle": "",
@@ -74,6 +74,52 @@
         "display": true
       },
       "id": "tier-U_wEwGX8a"
+    },
+    {
+      "badge": "",
+      "lobby": {
+        "lobbyTemplate": "big-images",
+        "display": false
+      },
+      "expoHallPage": {
+        "expoHallTemplate": "big-images",
+        "display": false
+      },
+      "sponsorPage": {
+        "sponsorTemplate": "small-header",
+        "widgets": {
+          "disqus": false,
+          "liveEvent": false,
+          "schedule": false,
+          "banner": false
+        }
+      },
+      "eventTemplate": "big-images",
+      "id": "tier-YmCF3KhTU",
+      "name": "Day 4"
+    },
+    {
+      "badge": "",
+      "lobby": {
+        "lobbyTemplate": "big-images",
+        "display": false
+      },
+      "expoHallPage": {
+        "expoHallTemplate": "big-images",
+        "display": false
+      },
+      "sponsorPage": {
+        "sponsorTemplate": "small-header",
+        "widgets": {
+          "disqus": false,
+          "liveEvent": false,
+          "schedule": false,
+          "banner": false
+        }
+      },
+      "eventTemplate": "big-images",
+      "id": "tier-Ki3GMmOln",
+      "name": "Day 5"
     }
   ],
   "imageHeader": "/img/sf21-creatorprog-headerimage-expopage-pre120621.png",
