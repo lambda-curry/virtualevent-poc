@@ -76,7 +76,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#6030bc`,
-        icon: `src/img/sf21-favicon.png`,
+        icon: `src/img/favicon.png`,
         display: `standalone`,
       },
     },
