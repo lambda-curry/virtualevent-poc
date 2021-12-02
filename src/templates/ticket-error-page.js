@@ -58,7 +58,7 @@ export const TicketErrorPageTemplate = class extends React.Component {
 
         switch (error) {
             case 'no-access':
-                message = 'I’m sorry your badge does not allow to access to this event.';
+                message = 'I’m sorry your badge does not allow access to this event.';
                 break;
             case 'no-ticket':
                 message = 'I’m sorry you are not registered for this event.';
