@@ -37,6 +37,7 @@ export const SponsorPageTemplate = class extends React.Component {
 
   componentWillMount() {
     this.setSponsor();
+    this.props.getDisqusSSO();
   }
 
   componentDidUpdate(prevProps) {
@@ -126,6 +127,7 @@ export const SponsorPageTemplate = class extends React.Component {
                   {liveEvent &&
                   <LiveEventWidgetComponent
                       onEventClick={(ev) => this.onEventChange(ev)}
+                      onlyPresentations={true}
                       sponsorId={sponsor.companyId}
                       showSponsor={!!sponsor.companyId}
                       featuredEventId={sponsor.featuredEventId}

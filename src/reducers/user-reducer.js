@@ -18,6 +18,8 @@ import {
 } from '../actions/user-actions'
 import { RESET_STATE } from "../actions/base-actions";
 
+import { isAuthorizedUser } from '../utils/authorizedGroups';
+
 const DEFAULT_STATE = {
   loading: false,
   loadingIDP: false,
@@ -44,9 +46,11 @@ const userReducer = (state = DEFAULT_STATE, action) => {
     case STOP_LOADING_IDP_PROFILE:
       return { ...state, loadingIDP: false };
     case GET_USER_PROFILE:
-      return { ...state, userProfile: payload.response }
-    case SET_AUTHORIZED_USER:
-      return { ...state, isAuthorized: payload }
+      return { ...state,
+                userProfile: payload.response,
+                isAuthorized: isAuthorizedUser(payload.response.groups),
+                hasTicket: payload.response.summit_tickets?.length > 0
+             }
     case SET_USER_TICKET:
       return { ...state, hasTicket: payload }
     case SET_USER_ORDER: {
