@@ -103,7 +103,11 @@ const Footer = ({ summit, marketing }) => {
                         {footerContent.social.networks.map((net, index) => (
                           net.display &&
                           <Link to={net.link} className={styles.link} key={index}>
-                            <i className={`fa icon is-large ${net.icon}`}></i>
+                            {net.icon === 'fa-facebook' ?
+                              <img style={{ width: 25, marginTop: '-1px' }} src="/img/f_logo_RGB-White_58.png" />
+                              :
+                              <i className={`fa icon is-large ${net.icon}`} />
+                            }
                           </Link>
                         ))}
                       </div>
@@ -124,7 +128,7 @@ const Footer = ({ summit, marketing }) => {
               })}
               <span className={styles.copyright}>
                 All Rights Reserved &copy; 2020
-          </span>
+              </span>
             </div>
           </React.Fragment>
         )}

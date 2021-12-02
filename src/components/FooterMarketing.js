@@ -21,10 +21,14 @@ const FooterMarketing = () => (
       {footerContent.social.networks.map((net, index) => (
         net.display &&
         <Link href={net.link} className={styles.link} key={index}>
-          <i className={`fa icon is-large ${net.icon}`} />
+          {net.icon === 'fa-facebook' ?
+            <img style={{ width: 25, margin: '-10px 10px 0 0' }} src="/img/f_logo_RGB-White_58.png" />
+            :
+            <i className={`fa icon is-large ${net.icon}`} />
+          }
         </Link>
       ))}
-    </div>    
+    </div>
   </div>
 );
 
