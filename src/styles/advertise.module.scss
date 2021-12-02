@@ -69,11 +69,12 @@
 
 .first-sponsor-container img {
   padding-top: 0;
+  width: 100%;
 }
 
 @media (min-width: 1921px) {
   .sponsor-container {
-    width: 65%;    
+    width: 100%;    
     margin: 0 auto;
   }
 }
