@@ -141,7 +141,9 @@ export const ExtraQuestionsPageTemplate = ({ user, summit, saveExtraQuestions })
                     </div>
                     <h2>Additional Information</h2>
                     <span>
-                        These extra questions are required before enter the event.
+                        Please answer these additional questions. 
+                        <br/>
+                        * Required questions
                     </span>
                     <div>
                         {answers.length === extraQuestions.length && extraQuestions.map(question => {
