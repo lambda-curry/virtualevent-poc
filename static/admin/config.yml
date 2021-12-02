@@ -211,7 +211,7 @@ collections:
                 {label: "Image", name: "image", widget: image, required: false},
                 {label: "Link", name: "link", widget: string, required: false}
               ]}
-            ]}
+            ]}          
   - name: "virtualBooth"
     label: "Virtual Booth"
     files: 
