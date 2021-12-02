@@ -8,6 +8,7 @@ import Layout from "../components/Layout";
 import FullSchedule from "../components/FullSchedule";
 import ScheduleFilters from "../components/ScheduleFilters";
 import AttendanceTrackerComponent from "../components/AttendanceTrackerComponent";
+import AccessTracker from "../components/AttendeeToAttendeeWidgetComponent";
 import { PHASES } from "../utils/phasesUtils";
 import FilterButton from "../components/FilterButton";
 
@@ -78,6 +79,7 @@ const SchedulePage = ({
         </div>
       </div>
       <AttendanceTrackerComponent />
+      <AccessTracker />
     </Layout>
   );
 };

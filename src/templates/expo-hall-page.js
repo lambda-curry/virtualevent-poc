@@ -5,12 +5,14 @@ import { connect } from "react-redux";
 import Layout from '../components/Layout'
 import SponsorComponent from '../components/SponsorComponent'
 import AttendanceTrackerComponent from '../components/AttendanceTrackerComponent'
+import AccessTracker from '../components/AttendeeToAttendeeWidgetComponent'
 
 const ExpoHallPage = ({ location, imageHeader }) => {
 
   return (
     <Layout location={location}>
       <AttendanceTrackerComponent />
+      <AccessTracker />
         <section className="hero is-large sponsors-header" style={{ backgroundImage: `url(${imageHeader})` }}>
           <div className="hero-body">
             <div className="container">
