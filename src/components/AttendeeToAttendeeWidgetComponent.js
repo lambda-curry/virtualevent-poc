@@ -16,6 +16,7 @@ import {
   SUPABASE_URL,
   SUPABASE_KEY,
 } from "../utils/envVariables";
+import { PHASES } from "../utils/phasesUtils";
 
 import "attendee-to-attendee-widget/dist/index.css";
 
@@ -166,7 +167,7 @@ export const AttendeesWidget = ({ user, event }) => {
   );
 };
 
-const AccessTracker = ({ user, isLoggedUser }) => {
+const AccessTracker = ({ user, isLoggedUser, summitPhase }) => {
   const trackerRef = useRef();
   
   useEffect(() => {
@@ -174,6 +175,20 @@ const AccessTracker = ({ user, isLoggedUser }) => {
       trackerRef.current.signOut();
     }
   }, [isLoggedUser]);
+
+  const userCanByPassAuthz = () => {
+    return user.isAuthorized;
+  };
+
+  // if summit_phase wasn't initialized yet (eg: due to a delay in the reducer), 
+  // this render shouldn't continue
+  if (summitPhase === null) return null;
+
+  // if summit hasn't started yet ...
+  if (!userCanByPassAuthz() && summitPhase === PHASES.BEFORE) {
+    console.log('A2A tracker - summit has not started yet')
+    return null;
+  }
 
   if (!user || !user.userProfile || !user.idpProfile) {
     console.log('A2A tracker - cannot track user')
@@ -229,9 +244,10 @@ const AccessTracker = ({ user, isLoggedUser }) => {
   return <Tracker {...widgetProps} ref={trackerRef} />;
 };
 
-const mapStateToProps = ({ loggedUserState, userState }) => ({
+const mapStateToProps = ({ loggedUserState, userState, clockState }) => ({
   isLoggedUser: loggedUserState.isLoggedUser,
   user: userState,
+  summitPhase: clockState.summit_phase,
 });
 
 export default connect(mapStateToProps)(AccessTracker);
