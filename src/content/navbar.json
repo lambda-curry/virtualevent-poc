@@ -15,9 +15,19 @@
       "pageRestriction": [
         "ANY"
       ],
-      "title": "Programming",
-      "link": "/a/sponsors/",
-      "display": false
+      "title": "Stars Day",
+      "link": "/stars-day",
+      "display": true
+    },
+    {
+      "requiresAuth": false,
+      "showOnlyAtShowTime": false,
+      "pageRestriction": [
+        "ANY"
+      ],
+      "title": "Buy Stars",
+      "link": "https://www.facebook.com/stars",
+      "display": true
     },
     {
       "requiresAuth": false,
@@ -35,19 +45,9 @@
       "pageRestriction": [
         "ANY"
       ],
-      "title": "Stars Day",
-      "link": "/stars-day",
-      "display": true
-    },
-    {
-      "requiresAuth": false,
-      "showOnlyAtShowTime": false,
-      "pageRestriction": [
-        "ANY"
-      ],
-      "title": "Buy Stars",
-      "link": "https://www.facebook.com/stars",
-      "display": true
+      "title": "Programming",
+      "link": "/a/sponsors/",
+      "display": false
     },
     {
       "requiresAuth": false,
