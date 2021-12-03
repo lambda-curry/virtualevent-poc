@@ -263,11 +263,21 @@ exports.onPreBootstrap = async () => {
 };
 
 // makes Summit logo optional for graphql queries
+// explicit Frontmatter declaration for custom pages.
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
   const typeDefs = `
     type Summit implements Node {
       logo: String
+    }
+    type MarkdownRemark implements Node {
+      frontmatter: Frontmatter
+    }
+    type Frontmatter {            
+      title: String
+      userRequirement: String
+      desktopImagePage: File @fileByRelativePath
+      mobileImagePage: File @fileByRelativePath
     }
   `;
   createTypes(typeDefs)
