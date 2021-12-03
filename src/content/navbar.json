@@ -25,16 +25,6 @@
       "pageRestriction": [
         "ANY"
       ],
-      "title": "Buy Stars",
-      "link": "https://www.facebook.com/stars",
-      "display": true
-    },
-    {
-      "requiresAuth": false,
-      "showOnlyAtShowTime": false,
-      "pageRestriction": [
-        "ANY"
-      ],
       "title": "Creator Competition",
       "link": "/creator-competition",
       "display": true
@@ -48,6 +38,16 @@
       "title": "Programming",
       "link": "/a/sponsors/",
       "display": false
+    },
+    {
+      "requiresAuth": false,
+      "showOnlyAtShowTime": false,
+      "pageRestriction": [
+        "ANY"
+      ],
+      "title": "Buy Stars",
+      "link": "https://www.facebook.com/stars",
+      "display": true
     },
     {
       "requiresAuth": false,
