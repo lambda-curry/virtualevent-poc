@@ -85,6 +85,51 @@
           "id": 4,
           "logo": "/img/sf21-sponsor-dec14_113021.png",
           "externalLink": ""
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 14 Verosweethobby",
+          "id": 10,
+          "externalLink": "https://www.facebook.com/verosweethobby",
+          "logo": "/img/sf21-sponsor-dec14-9am.png",
+          "sponsorId": 10
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 14 John Nonny from The Pun Guys",
+          "id": 11,
+          "sponsorId": 11,
+          "logo": "/img/sf21-sponsor-dec14-11am.png"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 14 Adriana Meaury",
+          "id": 12,
+          "sponsorId": 12,
+          "logo": "/img/sf21-sponsor-dec14-2pm.png",
+          "externalLink": "https://www.facebook.com/adrianameauryfit"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 14 Roccibella",
+          "id": 13,
+          "sponsorId": 13,
+          "logo": "/img/sf21-sponsor-dec14-4pm.png",
+          "externalLink": "https://www.facebook.com/roccibella"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 14 Makeup by Paul & Jenn",
+          "id": 14,
+          "sponsorId": 14,
+          "featuredEventId": -1,
+          "logo": "/img/sf21-sponsor-dec14-5pm.png",
+          "externalLink": "https://www.facebook.com/makeupbypaulandjenn"
         }
       ]
     },
