@@ -161,6 +161,59 @@
           "showLogoInEventPage": false,
           "email": "",
           "usesSponsorPage": false
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 15 Erica Derrickson",
+          "id": 16,
+          "sponsorId": 16,
+          "logo": "/img/sf21-sponsor-dec15-9am-erica.png",
+          "externalLink": "https://www.facebook.com/withErica"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 15 Ali Spagnola",
+          "id": 17,
+          "sponsorId": 17,
+          "logo": "/img/sf21-sponsor-dec15-9am-ali.png",
+          "externalLink": "https://www.facebook.com/alispagnola"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 15 Idressitalian",
+          "id": 18,
+          "sponsorId": 18,
+          "logo": "/img/sf21-sponsor-dec15-12-30pm.png",
+          "externalLink": "https://www.facebook.com/Idressitalian"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 15 Yeri MUA",
+          "id": 19,
+          "sponsorId": 19,
+          "companyId": -1,
+          "logo": "/img/sf21-sponsor-dec15-1pm.png",
+          "externalLink": "https://www.facebook.com/yerimua"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": true,
+          "name": "Dec 15 Rellik the Clown",
+          "externalLink": "https://www.facebook.com/relliktheclown1",
+          "id": 20,
+          "logo": "/img/sf21-sponsor-dec15-4pm.png"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 15 Candylover89",
+          "id": 21,
+          "logo": "/img/sf21-sponsor-dec15-5pm.png",
+          "externalLink": "https://www.facebook.com/Candylover89Official"
         }
       ]
     },
