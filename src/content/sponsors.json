@@ -30,6 +30,44 @@
           "id": 5,
           "email": "",
           "usesSponsorPage": false
+        },
+        {
+          "externalLink": "https://www.facebook.com/FiddleAndDance",
+          "featuredEventId": "",
+          "logo": "/img/sf21-sponsor-dec13-9am.png",
+          "name": "Dec 13 Hillary Klug",
+          "advertiseImage": "",
+          "sponsorId": "",
+          "companyId": "",
+          "id": 6,
+          "showLogoInEventPage": false
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 13 GreenBay Packer Nation",
+          "id": 7,
+          "sponsorId": "",
+          "companyId": "",
+          "externalLink": "https://www.facebook.com/GreenBayPackerNation",
+          "logo": "/img/sf21-sponsor-dec13-10am.png"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 13 Lil Jacob Walker",
+          "id": 8,
+          "sponsorId": "",
+          "logo": "/img/sf21-sponsor-dec13-1pm.png",
+          "externalLink": "https://www.facebook.com/LILJACOBWALKER"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 13 La Fatshionista",
+          "id": 9,
+          "logo": "/img/sf21-sponsor-dec13-3pm.png",
+          "externalLink": "https://www.facebook.com/LaFatshionistaMX"
         }
       ]
     },
