@@ -30,6 +30,44 @@
           "id": 5,
           "email": "",
           "usesSponsorPage": false
+        },
+        {
+          "externalLink": "https://www.facebook.com/FiddleAndDance",
+          "featuredEventId": "",
+          "logo": "/img/sf21-sponsor-dec13-9am.png",
+          "name": "Dec 13 Hillary Klug",
+          "advertiseImage": "",
+          "sponsorId": "",
+          "companyId": "",
+          "id": 6,
+          "showLogoInEventPage": false
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 13 GreenBay Packer Nation",
+          "id": 7,
+          "sponsorId": "",
+          "companyId": "",
+          "externalLink": "https://www.facebook.com/GreenBayPackerNation",
+          "logo": "/img/sf21-sponsor-dec13-10am.png"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 13 Lil Jacob Walker",
+          "id": 8,
+          "sponsorId": "",
+          "logo": "/img/sf21-sponsor-dec13-1pm.png",
+          "externalLink": "https://www.facebook.com/LILJACOBWALKER"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 13 La Fatshionista",
+          "id": 9,
+          "logo": "/img/sf21-sponsor-dec13-3pm.png",
+          "externalLink": "https://www.facebook.com/LaFatshionistaMX"
         }
       ]
     },
@@ -47,6 +85,52 @@
           "id": 4,
           "logo": "/img/sf21-sponsor-dec14_113021.png",
           "externalLink": ""
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 14 Verosweethobby",
+          "id": 10,
+          "externalLink": "https://www.facebook.com/verosweethobby",
+          "logo": "/img/sf21-sponsor-dec14-9am.png",
+          "sponsorId": 10
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 14 John Nonny from The Pun Guys",
+          "id": 11,
+          "sponsorId": 11,
+          "logo": "/img/sf21-sponsor-dec14-11am.png",
+          "externalLink": "https://www.facebook.com/johnnonnyofficial"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 14 Adriana Meaury",
+          "id": 12,
+          "sponsorId": 12,
+          "logo": "/img/sf21-sponsor-dec14-2pm.png",
+          "externalLink": "https://www.facebook.com/adrianameauryfit"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 14 Roccibella",
+          "id": 13,
+          "sponsorId": 13,
+          "logo": "/img/sf21-sponsor-dec14-4pm.png",
+          "externalLink": "https://www.facebook.com/roccibella"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 14 Makeup by Paul & Jenn",
+          "id": 14,
+          "sponsorId": 14,
+          "featuredEventId": -1,
+          "logo": "/img/sf21-sponsor-dec14-5pm.png",
+          "externalLink": "https://www.facebook.com/makeupbypaulandjenn"
         }
       ]
     },
@@ -78,6 +162,59 @@
           "showLogoInEventPage": false,
           "email": "",
           "usesSponsorPage": false
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 15 Erica Derrickson",
+          "id": 16,
+          "sponsorId": 16,
+          "logo": "/img/sf21-sponsor-dec15-9am-erica.png",
+          "externalLink": "https://www.facebook.com/withErica"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 15 Ali Spagnola",
+          "id": 17,
+          "sponsorId": 17,
+          "logo": "/img/sf21-sponsor-dec15-9am-ali.png",
+          "externalLink": "https://www.facebook.com/alispagnola"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 15 Idressitalian",
+          "id": 18,
+          "sponsorId": 18,
+          "logo": "/img/sf21-sponsor-dec15-12-30pm.png",
+          "externalLink": "https://www.facebook.com/Idressitalian"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 15 Yeri MUA",
+          "id": 19,
+          "sponsorId": 19,
+          "companyId": -1,
+          "logo": "/img/sf21-sponsor-dec15-1pm.png",
+          "externalLink": "https://www.facebook.com/yerimua"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": true,
+          "name": "Dec 15 Rellik the Clown",
+          "externalLink": "https://www.facebook.com/relliktheclown1",
+          "id": 20,
+          "logo": "/img/sf21-sponsor-dec15-4pm.png"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 15 Candylover89",
+          "id": 21,
+          "logo": "/img/sf21-sponsor-dec15-5pm.png",
+          "externalLink": "https://www.facebook.com/Candylover89Official"
         }
       ]
     },
@@ -95,6 +232,15 @@
           "name": "DEC 16 TOP WEEKLY CREATORS",
           "id": 30,
           "logo": "/img/sf21-sponsor-dec16_113021.png"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 16 ARMRgarden",
+          "id": 22,
+          "sponsorId": -1,
+          "logo": "/img/sf21-sponsor-dec16-9am.png",
+          "externalLink": "https://www.facebook.com/armrgarden"
         }
       ]
     },
