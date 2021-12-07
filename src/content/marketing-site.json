@@ -50,15 +50,16 @@
     {
       "images": [
         {
-          "image": "/img/sf21-mrkt-space-4_120321.png",
-          "link": "https://www.facebook.com/stars"
+          "image": "/img/sf21-mrkt-space-2.png",
+          "link": "/a/programming"
         }
       ]
     },
     {
       "images": [
         {
-          "image": "/img/sf21-mrkt-space-4_blank.png"
+          "image": "/img/sf21-mrkt-space-4_120321.png",
+          "link": "https://www.facebook.com/stars"
         }
       ]
     },
