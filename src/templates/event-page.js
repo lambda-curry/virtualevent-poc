@@ -175,7 +175,7 @@ export const EventPageTemplate = class extends React.Component {
                   />
                 </div>
               )}
-              <UpcomingEventsComponent
+              {/* <UpcomingEventsComponent
                 onEventClick={(ev) => this.onEventChange(ev)}
                 onViewAllEventsClick={() => this.onViewAllEventsClick()}
                 trackId={event.track ? event.track.id : null}
@@ -185,12 +185,12 @@ export const EventPageTemplate = class extends React.Component {
                     ? `Up Next on ${event.track.name}`
                     : "Up Next"
                 }
-              />
+              /> */}
             </div>
             <div className="column px-0 py-0 is-one-quarter is-full-mobile">
               <DocumentsComponent event={event} />
               <AccessTracker />
-              <AttendeesWidget user={user} event={event} />
+              {/* <AttendeesWidget user={user} event={event} /> */}
               <AdvertiseComponent section="event" column="right" />
             </div>
           </div>

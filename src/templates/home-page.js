@@ -98,7 +98,7 @@ export const HomePageTemplate = class extends React.Component {
             <div className="column is-one-quarter pb-6">
               <h2><b>My Info</b></h2>
               <AccessTracker />
-              <AttendeesWidget user={user} />
+              {/* <AttendeesWidget user={user} /> */}
               <LiteScheduleComponent
                 onEventClick={(ev) => this.onEventChange(ev)}
                 onViewAllEventsClick={() => this.onViewAllMyEventsClick()}
