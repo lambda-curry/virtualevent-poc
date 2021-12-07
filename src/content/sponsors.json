@@ -232,6 +232,15 @@
           "name": "DEC 16 TOP WEEKLY CREATORS",
           "id": 30,
           "logo": "/img/sf21-sponsor-dec16_113021.png"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 16 ARMRgarden",
+          "id": 22,
+          "sponsorId": -1,
+          "logo": "/img/sf21-sponsor-dec16-9am.png",
+          "externalLink": "https://www.facebook.com/armrgarden"
         }
       ]
     },
