@@ -11,7 +11,7 @@
           "banner": false
         }
       },
-      "name": "Day 1",
+      "name": "DEC 13",
       "expoHallSize": "large",
       "eventTemplate": "small-images",
       "widgetTitle": "",
@@ -36,7 +36,7 @@
           "banner": false
         }
       },
-      "name": "Day 2",
+      "name": "DEC 14",
       "expoHallSize": "medium",
       "eventTemplate": "",
       "widgetTitle": "",
@@ -61,7 +61,7 @@
           "banner": false
         }
       },
-      "name": "Day 3",
+      "name": "DEC 15",
       "expoHallSize": "small",
       "eventTemplate": "",
       "widgetTitle": "",
@@ -94,9 +94,9 @@
           "banner": false
         }
       },
-      "eventTemplate": "big-images",
+      "eventTemplate": null,
       "id": "tier-YmCF3KhTU",
-      "name": "Day 4"
+      "name": "DEC 16"
     },
     {
       "badge": "",
@@ -117,9 +117,9 @@
           "banner": false
         }
       },
-      "eventTemplate": "big-images",
+      "eventTemplate": null,
       "id": "tier-Ki3GMmOln",
-      "name": "Day 5"
+      "name": "DEC 17"
     }
   ],
   "imageHeader": "/img/sf21-creatorprog-headerimage-expopage.png",
