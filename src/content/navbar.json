@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "requiresAuth": true,
+      "showOnlyAtShowTime": true,
+      "pageRestriction": [
+        "ANY"
+      ],
+      "title": "Home",
+      "link": "/a/event/2377"
+    },
+    {
       "requiresAuth": false,
       "showOnlyAtShowTime": false,
       "pageRestriction": [
@@ -66,7 +75,8 @@
       "pageRestriction": [
         "ACTIVITY",
         "MARKETING"
-      ]
+      ],
+      "showOnlyAtShowTime": false
     }
   ]
 }
