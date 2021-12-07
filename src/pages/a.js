@@ -16,7 +16,6 @@ import ExtraQuestionsPage from "../templates/extra-questions-page"
 import MySchedulePage from "../templates/my-schedule-page";
 import ShowOpenRoute from "../routes/ShowOpenRoute";
 import WithBadgeRoute from "../routes/WithBadgeRoute";
-import NotFoundPage from "./404";
 
 const App = ({ isLoggedUser, user, summit_phase, lastBuild, syncData }) => {
 
@@ -32,7 +31,7 @@ const App = ({ isLoggedUser, user, summit_phase, lastBuild, syncData }) => {
         <Router basepath="/a" >
           <SchedulePage path="/schedule" location={location} />
           <ExpoHallPage path="/programming/" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location} />
-          {/* <SponsorPage path="/sponsor/:sponsorId" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location} /> */}
+          <SponsorPage path="/sponsor/:sponsorId" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location} />
           <WithAuthRoute path="/" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location}>
             <MySchedulePage path="/my-schedule" location={location} summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} />
             <ExtraQuestionsPage path="/extra-questions" isLoggedIn={isLoggedUser} user={user} location={location} />
