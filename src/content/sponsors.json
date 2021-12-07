@@ -292,6 +292,58 @@
           "name": "DEC 17 TOP WEEKLY CREATORS",
           "id": 31,
           "logo": "/img/sf21-sponsor-dec17_113021.png"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 17 Pew Pew",
+          "id": 32,
+          "sponsorId": -1,
+          "logo": "/img/sf21-sponsor-dec17-4am.png",
+          "externalLink": "https://www.facebook.com/PewPewReal"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 17 Rexzilla",
+          "logo": "/img/sf21-sponsor-dec17-9am.png",
+          "externalLink": "https://www.facebook.com/profile.php?id=100052765274608",
+          "id": 33
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 17 Trixx TV",
+          "id": 34,
+          "sponsorId": -1,
+          "logo": "/img/sf21-sponsor-dec17-11am.png",
+          "externalLink": "https://www.facebook.com/trixxtv"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 17 Mystic Ignite",
+          "id": 35,
+          "sponsorId": -1,
+          "logo": "/img/sf21-sponsor-dec17-1pm.png",
+          "externalLink": "https://www.facebook.com/MysticIgnite99"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 17 MirreyTv",
+          "id": 35,
+          "sponsorId": -1,
+          "logo": "/img/sf21-sponsor-dec17-5pm.png",
+          "externalLink": "https://www.facebook.com/MirreyTv"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": false,
+          "name": "Dec 17 NatChats",
+          "id": 35,
+          "logo": "/img/sf21-sponsor-dec17-7pm.png",
+          "externalLink": "https://www.facebook.com/NatChats"
         }
       ]
     }
