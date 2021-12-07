@@ -1,15 +1,6 @@
 {
   "items": [
     {
-      "title": "Lobby",
-      "link": "/a/",
-      "display": true,
-      "requiresAuth": true,
-      "pageRestriction": [
-        "LOBBY"
-      ]
-    },
-    {
       "requiresAuth": false,
       "showOnlyAtShowTime": false,
       "pageRestriction": [
@@ -36,8 +27,8 @@
         "ANY"
       ],
       "title": "Programming",
-      "link": "/a/sponsors/",
-      "display": false
+      "link": "/a/programming",
+      "display": true
     },
     {
       "requiresAuth": false,
