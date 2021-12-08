@@ -37,16 +37,16 @@ export const AttendeesWidget = ({ user, event }) => {
 
   const { userProfile, idpProfile } = user || {};
   const { summit_tickets } = userProfile || {};
-  const { 
-    email, 
-    groups, 
+  const {
+    email,
+    groups,
     bio,
     given_name,
     family_name,
     picture,
     company,
     job_title,
-    sub, 
+    sub,
     github_user,
     linked_in_profile,
     twitter_name,
@@ -120,14 +120,14 @@ export const AttendeesWidget = ({ user, event }) => {
           .filter((v, i, a) => a.map((item) => item.id).indexOf(v.id) === i),
       bio: bio,
       hasPermission: (permission) => {
-        const isAdmin =  groups &&
-            groups.map((g) => g.slug).filter((g) => adminGroups.includes(g))
-                .length > 0;
+        const isAdmin = groups &&
+          groups.map((g) => g.slug).filter((g) => adminGroups.includes(g))
+            .length > 0;
         switch (permission) {
           case permissions.MANAGE_ROOMS:
             return isAdmin;
           case permissions.CHAT:
-            if(isAdmin) return true;
+            if (isAdmin) return true;
             const accessLevels = summit_tickets
               .flatMap((x) => x.badge?.type.access_levels)
               .filter(
@@ -157,7 +157,7 @@ export const AttendeesWidget = ({ user, event }) => {
   };
 
   return (
-    <div style={{ margin: "20px auto", position: "relative" }}>
+    <div style={{ margin: "20px auto", position: "relative", visibility: "hidden", overflow: "hidden", height: 0 }}>
       <AttendeeToAttendeeContainer
         {...widgetProps}
         ref={{ sdcRef, shcRef, sqacRef, ocrRef }}
@@ -168,7 +168,7 @@ export const AttendeesWidget = ({ user, event }) => {
 
 const AccessTracker = ({ user, isLoggedUser }) => {
   const trackerRef = useRef();
-  
+
   useEffect(() => {
     if (!isLoggedUser) {
       trackerRef.current.signOut();
