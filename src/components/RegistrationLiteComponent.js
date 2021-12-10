@@ -13,7 +13,7 @@ import RegistrationLiteWidget from 'summit-registration-lite/dist';
 import { FragmentParser } from "openstack-uicore-foundation/lib/components";
 
 import { doLogin, passwordlessStart } from 'openstack-uicore-foundation/lib/methods'
-import { getEnvVariable, SUMMIT_API_BASE_URL, OAUTH2_CLIENT_ID, REGISTRATION_BASE_URL } from '../utils/envVariables'
+import { getEnvVariable, SUMMIT_API_BASE_URL, OAUTH2_CLIENT_ID, REGISTRATION_BASE_URL, AUTHORIZED_DEFAULT_PATH } from '../utils/envVariables'
 
 import { getUserProfile, setPasswordlessLogin, setUserOrder, checkOrderData } from "../actions/user-actions";
 import { getThirdPartyProviders } from "../actions/base-actions";
@@ -117,7 +117,7 @@ const RegistrationLiteComponent = ({
             await getUserProfile();
             navigate('/a/extra-questions')
         },
-        goToEvent: () => navigate('/a/'),
+        goToEvent: () => navigate(getEnvVariable(AUTHORIZED_DEFAULT_PATH) || '/a/'),
         goToRegistration: () => navigate(`${getEnvVariable(REGISTRATION_BASE_URL)}/a/${summit.slug}`),
         onPurchaseComplete: (order) => {
             // we are informing that we did a purchase recently to widget
