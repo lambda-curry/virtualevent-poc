@@ -1,8 +1,8 @@
 {
   "heroBanner": {
-    "title": "Stars Day",
+    "title": "Stars Fest",
     "subTitle": "",
-    "date": "December 10, 2021",
+    "date": "",
     "time": "Register today to learn from top Stars creators!",
     "dateLayout": false,
     "buttons": {
@@ -11,7 +11,7 @@
         "display": true
       },
       "loginButton": {
-        "text": "Stars Day Log in",
+        "text": "Stars Day VOD",
         "display": true
       }
     },
