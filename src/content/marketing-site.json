@@ -57,15 +57,6 @@
       ]
     },
     {
-      "title": "Mid Left",
-      "images": [
-        {
-          "image": "/img/yoco-sponsor-ads-large-mobility-vert-new.png",
-          "link": ""
-        }
-      ]
-    },
-    {
       "title": "Bottom Right",
       "images": [
         {
@@ -75,10 +66,10 @@
       ]
     },
     {
-      "title": "Mid Right",
+      "title": "Mid Left",
       "images": [
         {
-          "image": "/img/yoco-sponsor-ads-large-apex-vert.png",
+          "image": "/img/yoco-sponsor-ads-large-mobility-vert-new.png",
           "link": ""
         }
       ]
