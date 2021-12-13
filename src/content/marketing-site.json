@@ -2,17 +2,17 @@
   "heroBanner": {
     "title": "Stars Fest",
     "subTitle": "",
-    "date": "",
-    "time": "Register today to learn from top Stars creators!",
+    "date": "December 2021",
+    "time": "A monthlong Stars content celebration!",
     "dateLayout": false,
     "buttons": {
       "registerButton": {
         "text": "Register Now",
-        "display": true
+        "display": false
       },
       "loginButton": {
         "text": "Stars Day VOD",
-        "display": true
+        "display": false
       }
     },
     "background": "/img/sf21-header-left.png",
