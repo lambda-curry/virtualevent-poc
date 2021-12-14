@@ -18,7 +18,7 @@
       ],
       "title": "Stars Day",
       "link": "/stars-day",
-      "display": true
+      "display": false
     },
     {
       "requiresAuth": false,
