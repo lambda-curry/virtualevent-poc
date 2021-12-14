@@ -276,6 +276,15 @@
           "id": 28,
           "logo": "/img/sf21-sponsor-dec16-6pm.png",
           "externalLink": "https://www.facebook.com/ChooxTv"
+        },
+        {
+          "advertiseImage": "",
+          "showLogoInEventPage": true,
+          "name": "Dec 16 Minks 7PM",
+          "id": 100,
+          "sponsorId": 100,
+          "externalLink": "https://www.facebook.com/xMinks",
+          "logo": "/img/sf21-sponsor-dec16-7pm.png"
         }
       ]
     },
