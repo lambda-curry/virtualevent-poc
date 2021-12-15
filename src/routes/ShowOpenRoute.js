@@ -59,6 +59,10 @@ const ShowOpenRoute = ({
     }
   }
 
+  console.log('Test cond 1', !shouldBypassCheck);
+  console.log('Test cond 2', !userCanByPassAuthz());
+  console.log('Test cond 3', summit_phase === PHASES.BEFORE);
+
   // if summit didnt started yet ...
   if (!shouldBypassCheck && !userCanByPassAuthz() && summit_phase === PHASES.BEFORE) {
     return <HeroComponent title="Its not yet show time!" redirectTo="/" />;
