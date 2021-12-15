@@ -1,8 +1,8 @@
 {
   "heroBanner": {
     "title": "OCP Global Summit",
-    "subTitle": "November 8–10, 2021",
-    "date": "Happening online and in-person",
+    "subTitle": "The 2021 event has concluded.",
+    "date": "Registrants can access content here via video on demand.",
     "time": "",
     "dateLayout": false,
     "buttons": {
@@ -42,7 +42,7 @@
       "title": "Top Left",
       "images": [
         {
-          "image": "/img/ocp21glo_fnv_marketingpage_space1.png",
+          "image": "/img/ocp21glo_fnv_marketingpage_space1_v3.png",
           "link": "https://ocpcareercenter.mysmartjobboard.com/"
         }
       ]
@@ -51,8 +51,8 @@
       "title": "Top Right",
       "images": [
         {
-          "image": "/img/ocp21glo_fnv_marketingpage_space2.png",
-          "link": "https://www.opencompute.org/summit/regional-summit"
+          "image": "/img/ocp21glo_fnv_marketingpage_space2_v3.png",
+          "link": "https://vimeo.com/645393483"
         }
       ]
     },
@@ -60,7 +60,7 @@
       "title": "Mid Left",
       "images": [
         {
-          "image": "/img/ocp21glo_fnv_marketingpage_space3.png",
+          "image": "/img/ocp21glo_fnv_marketingpage_space3_v3.png",
           "link": "https://www.opencompute.org/membership/how-to-join"
         }
       ]
@@ -69,24 +69,7 @@
       "title": "Top Left",
       "images": [
         {
-          "image": "/img/ocp21glo_fnv_marketingpage_space4.png",
-          "link": "https://www.opencompute.org/summit/regional-summit/sponsorship"
-        }
-      ]
-    },
-    {
-      "images": [
-        {
-          "image": "/img/ocp21glo_fnv_marketingpage_space5_v4.png",
-          "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/OCPGlobalSummitandSymposium2021/Videos/OCP%20FNvirtual%20Pre-Show%20Video.mp4"
-        }
-      ]
-    },
-    {
-      "title": "Top Left",
-      "images": [
-        {
-          "image": "/img/ocp21glo_fnv_marketingpage_space6_v2.png",
+          "image": "/img/ocp21glo_fnv_marketingpage_space4_v3.png",
           "link": ""
         }
       ]
