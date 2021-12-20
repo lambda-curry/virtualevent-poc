@@ -1,6 +1,6 @@
 backend:
   name: github
-  branch: prod-tier_1_default
+  branch: prod-techweek2022
   repo: fntechgit/virtualevent-poc
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
