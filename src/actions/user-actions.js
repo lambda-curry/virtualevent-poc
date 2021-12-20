@@ -47,7 +47,7 @@ export const getDisqusSSO = () => async (dispatch) => {
   return getRequest(
     null,
     createAction(GET_DISQUS_SSO),
-    `${window.IDP_BASE_URL}/api/v1/sso/disqus/fnvirtual-poc/profile?access_token=${accessToken}`,
+    `${window.IDP_BASE_URL}/api/v1/sso/disqus/techweek2022-yahoo/profile?access_token=${accessToken}`,
     customErrorHandler
   )({})(dispatch).then(() => {
   }).catch(e => {
