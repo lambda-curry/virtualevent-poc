@@ -87,8 +87,28 @@
       "pageRestriction": [
         "ANY"
       ],
+      "title": "HOME",
+      "link": "https://techweek2022.yahoo.fnvirtual.app/",
+      "display": true
+    },
+    {
+      "requiresAuth": false,
+      "showOnlyAtShowTime": false,
+      "pageRestriction": [
+        "ANY"
+      ],
       "title": "FAQS",
       "link": "/faqs/",
+      "display": true
+    },
+    {
+      "requiresAuth": false,
+      "showOnlyAtShowTime": false,
+      "pageRestriction": [
+        "ANY"
+      ],
+      "title": "SUPPORT",
+      "link": "/support/",
       "display": true
     }
   ]
