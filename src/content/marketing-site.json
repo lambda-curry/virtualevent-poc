@@ -1,1 +1,84 @@
-{"heroBanner":{"title":"TIER 1 - EVENT NAME HERE","subTitle":"","date":"Date Information","time":"Timezone","dateLayout":true,"buttons":{"registerButton":{"text":"Register now","display":true},"loginButton":{"text":"Log in","display":true}},"background":"","images":[{"image":"/img/tier1-default-header1.png"},{"image":"/img/tier1-default-header2.png"},{"image":"/img/tier1-default-header3.png"}]},"leftColumn":{"schedule":{"display":true,"title":"Full Event Schedule"},"disqus":{"display":false,"title":"Join the conversation"},"image":{"display":false,"title":"Image","src":""}},"sponsors":[{"title":"Top Left","images":[{"image":"/img/tier1-default-space3.png","link":""},{"image":"/img/tier1-default-space4.png"}]},{"title":"Top Right","images":[{"image":"/img/tier1-default-space1.png","link":""}]},{"title":"Mid Left","images":[{"image":"/img/tier1-default-space2.png"}]},{"images":[{"image":"/img/tier1-default-space4.png"}]}]}
+{
+  "heroBanner": {
+    "title": "TechWeek",
+    "subTitle": "",
+    "date": "March 7–10, 2022",
+    "time": "Timezone",
+    "dateLayout": true,
+    "buttons": {
+      "registerButton": {
+        "text": "Register now",
+        "display": true
+      },
+      "loginButton": {
+        "text": "Log in",
+        "display": true
+      }
+    },
+    "background": "",
+    "images": [
+      {
+        "image": "/img/ytw-fnv-header-r.png"
+      }
+    ]
+  },
+  "leftColumn": {
+    "schedule": {
+      "display": false,
+      "title": "Full Event Schedule"
+    },
+    "disqus": {
+      "display": false,
+      "title": "Join the conversation"
+    },
+    "image": {
+      "display": true,
+      "title": "Image",
+      "src": "/img/ytw-fnv-schedule-static.png"
+    }
+  },
+  "sponsors": [
+    {
+      "images": [
+        {
+          "image": "/img/ytw-fnv-ad-space-1.png"
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "image": "/img/ytw-fnv-ad-space-2.png"
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "image": "/img/ytw-fnv-ad-space-3.png"
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "image": "/img/ytw-fnv-ad-space-4.png"
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "image": "/img/ytw-fnv-ad-space-5.png"
+        }
+      ]
+    },
+    {
+      "images": [
+        {
+          "image": "/img/ytw-fnv-ad-space-6.png"
+        }
+      ]
+    }
+  ]
+}
