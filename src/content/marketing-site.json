@@ -18,7 +18,7 @@
     "background": "",
     "images": [
       {
-        "image": "/img/ytw-fnv-header-r.png"
+        "image": "/img/ytw-fnv-header-r-v2.png"
       }
     ]
   },
@@ -33,7 +33,7 @@
     },
     "image": {
       "display": true,
-      "title": "Image",
+      "title": "",
       "src": "/img/ytw-fnv-schedule-static.png"
     }
   },
