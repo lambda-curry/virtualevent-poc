@@ -24,7 +24,7 @@ If you are traveling internationally, you will need to be approved before bookin
 Conference Chair, Program Chair and Senior Program Committee Leader: Haley Thrapp\
 Event Lead: Rachel Brienzo
 
-If you have any questions for the planning team, please send an email to <a href = "mailto: techweek@yahooinc.com" style="color:#0f69ff"><b>techweek@yahooinc.com.</b></a><br><br><br><br>
+If you have any questions for the planning team, please send an email to <a href = "mailto: techweek@yahooinc.com" style="color:#0f69ff"><b>techweek@yahooinc.com</b></a>.<br><br><br><br>
 
 ### Attendance<br><br>
 
@@ -38,7 +38,7 @@ TechPulse invitations are extended to the poster and paper presenters that were 
 
 ###### How do I get an invitation to Research day?
 
-Research Day is an "invite only" event for our Research Scientists and Research Engineers as it's focused on community building within our distributed research community. However, if you feel you are part of the research community and did not receive an invitation, please contact Kim Capps at <a href = "mailto: kimcapps@yahooinc.com" style="color:#0f69ff"><b>kimcapps@yahooinc.com.</b></a><br><br>
+Research Day is an "invite only" event for our Research Scientists and Research Engineers as it's focused on community building within our distributed research community. However, if you feel you are part of the research community and did not receive an invitation, please contact Kim Capps at <a href = "mailto: kimcapps@yahooinc.com" style="color:#0f69ff"><b>kimcapps@yahooinc.com</b></a>.<br><br>
 
 ###### How do I get an invitation to PE-Con?
 
