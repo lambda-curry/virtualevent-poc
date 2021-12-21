@@ -48,7 +48,7 @@
     {
       "title": "Who we are",
       "link": "/who-we-are",
-      "display": true,
+      "display": false,
       "requiresAuth": false,
       "pageRestriction": [
         "ANY"
@@ -75,7 +75,7 @@
     {
       "title": "My Profile",
       "link": "/a/profile",
-      "display": true,
+      "display": false,
       "requiresAuth": true,
       "pageRestriction": [
         "ANY"
@@ -95,7 +95,7 @@
       "requiresAuth": false,
       "showOnlyAtShowTime": false,
       "pageRestriction": [
-        "ANY"
+        "MARKETING"
       ],
       "title": "FAQS",
       "link": "/faqs/",
