@@ -3,8 +3,8 @@
     "title": "TechWeek",
     "subTitle": "",
     "date": "March 7–10, 2022",
-    "time": "Timezone",
-    "dateLayout": true,
+    "time": "",
+    "dateLayout": false,
     "buttons": {
       "registerButton": {
         "text": "Register now",
