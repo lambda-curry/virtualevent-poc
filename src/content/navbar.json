@@ -75,7 +75,7 @@
     {
       "title": "My Profile",
       "link": "/a/profile",
-      "display": false,
+      "display": true,
       "requiresAuth": true,
       "pageRestriction": [
         "ANY"
