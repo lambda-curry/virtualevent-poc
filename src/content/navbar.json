@@ -102,16 +102,6 @@
       "display": true
     },
     {
-      "requiresAuth": false,
-      "showOnlyAtShowTime": false,
-      "pageRestriction": [
-        "ANY"
-      ],
-      "title": "SUPPORT",
-      "link": "/support/",
-      "display": true
-    },
-    {
       "requiresAuth": true,
       "showOnlyAtShowTime": false,
       "pageRestriction": [
@@ -119,6 +109,16 @@
       ],
       "title": "FAQS",
       "link": "/a/faqs-2/",
+      "display": true
+    },
+    {
+      "requiresAuth": false,
+      "showOnlyAtShowTime": false,
+      "pageRestriction": [
+        "ANY"
+      ],
+      "title": "SUPPORT",
+      "link": "/support/",
       "display": true
     }
   ]
