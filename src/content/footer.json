@@ -75,7 +75,8 @@
       },
       {
         "icon": "fa-youtube",
-        "link": "/footer-content/"
+        "link": "/footer-content/",
+        "display": true
       }
     ]
   },
