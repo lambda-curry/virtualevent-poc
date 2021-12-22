@@ -72,6 +72,4 @@ The attire for this event is casual; jeans and t-shirts are permitted.<br><br>
 
 ###### What is the anticipated weather for the event?
 
-Weather in March in San Jose, CA is an average high of 68 degrees and a low of 44 degrees.<br><br><br><br>
-
 Weather in March in San Jose, CA is an average high of 68 degrees and a low of 44 degrees.
