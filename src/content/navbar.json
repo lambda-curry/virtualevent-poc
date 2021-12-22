@@ -28,15 +28,6 @@
       ]
     },
     {
-      "title": "My Profile",
-      "link": "/a/profile",
-      "display": false,
-      "requiresAuth": true,
-      "pageRestriction": [
-        "ANY"
-      ]
-    },
-    {
       "requiresAuth": false,
       "showOnlyAtShowTime": false,
       "pageRestriction": [
@@ -50,8 +41,7 @@
       "requiresAuth": false,
       "showOnlyAtShowTime": false,
       "pageRestriction": [
-        "MARKETING",
-        "CUSTOM_PAGE"
+        "MARKETING"
       ],
       "title": "FAQS",
       "link": "/faqs/",
@@ -64,7 +54,7 @@
         "ANY"
       ],
       "title": "FAQS",
-      "link": "/a/faqs-2/",
+      "link": "/a/faqs-2",
       "display": true
     },
     {
