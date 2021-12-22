@@ -72,26 +72,21 @@
         "icon": "fa-linkedin",
         "link": "/footer-content/",
         "display": true
-      },
-      {
-        "link": "/footer-content/",
-        "icon": "TEST",
-        "display": true
       }
     ]
   },
   "legal": [
     {
       "title": "Privacy Policy",
-      "link": "/footer-content/"
+      "link": "/privacy-policy/"
     },
     {
-      "title": "Legals",
-      "link": "/footer-content/"
+      "title": "COOKIE POLICY",
+      "link": "/cookie-policy/"
     },
     {
-      "title": "Disclaimer",
-      "link": "/footer-content/"
+      "title": "CALIFORNIA PRIVACY RIGHTS STATEMENT",
+      "link": "/california-privacy-rights-statement/"
     }
   ]
 }
