@@ -72,6 +72,10 @@
         "icon": "fa-linkedin",
         "link": "/footer-content/",
         "display": true
+      },
+      {
+        "icon": "fa-youtube",
+        "link": "/footer-content/"
       }
     ]
   },
