@@ -20,7 +20,7 @@ const NoTalkComponent = ({ event, currentEventPhase, summit }) => {
               'Session is over. Recording will be available soon.'
               :
                  currentEventPhase < PHASES.DURING || !event.streaming_url ?
-                `This session will be available on ${epochToMomentTimeZone(start_date, time_zone_id).format('MMMM Do hh:mm A (z)')}`
+                `This session will be available on ${epochToMomentTimeZone(start_date, time_zone_id).format('MMMM D hh:mm A (z)')}`
                 :
                 ''
         }
