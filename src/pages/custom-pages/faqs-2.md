@@ -82,9 +82,9 @@ You will be instructed at a later date when you are allowed to book your flight.
 
 ###### If I have to travel to the conference, will my expenses be paid for?
 
-Travel funding will come from your individual cost center and budget. You must obtain manager approval to travel to the conference. This cost includes flight, ground transportation, airport transfers and any incidentals. Hotel room and tax will be covered by the TechWeek budget. For international attendees, please fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSeu0lI3FTxoHTM2b_vLLxU8vI9yw6FqeK4i-qqvFQ6CiWh-lA/viewform" target="_blank" style="color:#0f69ff"><b>form</b></a> before booking your flights.
+Travel funding will come from your individual cost center and budget. You must obtain manager approval to travel to the conference. This cost includes flight, ground transportation, airport transfers and any incidentals. Hotel room and tax will be covered by the TechWeek budget. <b>For international attendees</b>, please fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSeu0lI3FTxoHTM2b_vLLxU8vI9yw6FqeK4i-qqvFQ6CiWh-lA/viewform" target="_blank" style="color:#0f69ff"><b>form</b></a> before booking your flights.
 
-There will also be a $11.50 charge in addition to your flight amount shown as a separate charge in your Concur Expense. Please expense it using your airline confirmation receipt and add Air as the category.
+There will also be a $11.50 charge in addition to your flight amount shown as a separate charge in your Concur Expense. Please expense it using your airline confirmation receipt and add Air as the category.<br><br>
 
 ###### I'm not from the Bay Area, how long and where should I plan to stay in San Jose for TechWeek?
 
