@@ -50,7 +50,8 @@
       "requiresAuth": false,
       "showOnlyAtShowTime": false,
       "pageRestriction": [
-        "MARKETING"
+        "MARKETING",
+        "CUSTOM_PAGE"
       ],
       "title": "FAQS",
       "link": "/faqs/",
