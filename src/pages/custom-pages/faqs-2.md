@@ -94,7 +94,7 @@ Please refer to the agenda and plan your travel based on the events you are atte
 • If you are attending TechPulse, please arrive in the evening of Monday, March 7.\
 • If you are only attending Research Day or PE-Con on Thursday, March 10, please arrive in the evening of Wednesday, March 9.
 
-We have obtained a room block at the <a href="https://www.marriott.com/hotels/travel/sjcsj-san-jose-marriott" target="_blank" style="color:#0f69ff"><b>San Jose Marriott</b></a> in San Jose, CA. All attendees outside of the Bay Area should be staying at the Marriott. You may find a lower rate elsewhere but we are under contract with the hotel and if we do not meet our block it ends up being more expensive for the company. A link for hotel reservations for this block of rooms is available in the accommodations tab.
+We have obtained a room block at the <a href="https://www.marriott.com/hotels/travel/sjcsj-san-jose-marriott" target="_blank" style="color:#0f69ff"><b>San Jose Marriott</b></a> in San Jose, CA. All attendees outside of the Bay Area should be staying at the Marriott. You may find a lower rate elsewhere but we are under contract with the hotel and if we do not meet our block it ends up being more expensive for the company. A link for hotel reservations for this block of rooms is available in the <a href="techweek2022.yahoo.fnvirtual.app/a/accommodations" target="_blank" style="color:#0f69ff"><b>accommodations tab</b></a>. 
 
 ###### If I live in the SF/Bay Area where should I plan to stay for TechWeek?
 
