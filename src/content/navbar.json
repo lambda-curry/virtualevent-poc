@@ -110,6 +110,16 @@
       "title": "SUPPORT",
       "link": "/support/",
       "display": true
+    },
+    {
+      "requiresAuth": true,
+      "showOnlyAtShowTime": false,
+      "pageRestriction": [
+        "ANY"
+      ],
+      "title": "FAQS",
+      "link": "/a/faqs-2/",
+      "display": true
     }
   ]
 }
