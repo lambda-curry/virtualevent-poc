@@ -74,7 +74,11 @@ The attire for this event is casual; jeans and t-shirts are permitted.<br><br>
 
 Weather in March in San Jose, CA is an average high of 68 degrees and a low of 44 degrees.<br><br><br><br>
 
-### Travel
+### TRAVEL QUESTIONS<br><br>
+
+###### When can I book my flight?
+
+You will be instructed at a later date when you are allowed to book your flight. For now, if you are planning to travel in to San Jose for this event, you may book your hotel only.<br><br>
 
 ###### If I have to travel to the conference, will my expenses be paid for?
 
@@ -84,13 +88,13 @@ There will also be a $11.50 charge in addition to your flight amount shown as a 
 
 ###### I'm not from the Bay Area, how long and where should I plan to stay in San Jose for TechWeek?
 
-Please refer to the agenda and plan your travel based on the events you are attending. Please note that we have rooms reserved from March 6–10.
+Please refer to the agenda and plan your travel based on the events you are attending. Please note that we have rooms reserved from March 6 - March 10.
 
-If you are attending TechWomen Connect, please arrive by 12 PM on Monday, March 7.\
-If you are attending TechPulse, please arrive in the evening of Monday, March 7.\
-If you are only attending Research Day or PE-Con on Thursday, March 10, please arrive in the evening of Wednesday, March 9.
+• If you are attending TechWomen Connect, please arrive by 12 PM on Monday, March 7.\
+• If you are attending TechPulse, please arrive in the evening of Monday, March 7.\
+• If you are only attending Research Day or PE-Con on Thursday, March 10, please arrive in the evening of Wednesday, March 9.
 
-We have obtained a room block at the San Jose Marriott in San Jose, CA. All attendees outside of the Bay Area should be staying at the Marriott. You may find a lower rate elsewhere but we are under contract with the hotel and if we do not meet our block it ends up being more expensive for the company. A link for hotel reservations for this block of rooms is available in the accommodations tab.
+We have obtained a room block at the <a href="https://www.marriott.com/hotels/travel/sjcsj-san-jose-marriott" target="_blank" style="color:#0f69ff"><b>San Jose Marriott</b></a> in San Jose, CA. All attendees outside of the Bay Area should be staying at the Marriott. You may find a lower rate elsewhere but we are under contract with the hotel and if we do not meet our block it ends up being more expensive for the company. A link for hotel reservations for this block of rooms is available in the accommodations tab.
 
 ###### If I live in the SF/Bay Area where should I plan to stay for TechWeek?
 
