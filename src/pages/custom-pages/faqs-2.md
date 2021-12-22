@@ -1,9 +1,9 @@
 ---
 templateKey: custom-page
-title: FAQS 2
+title: FAQS
 userRequirement: NONE
 ---
-### General<br><br>
+### <br><br>General<br><br>
 
 ###### What is TechWeek?
 
@@ -107,8 +107,6 @@ If you are an International attendee that needs to receive an invitation letter 
 No. TechWeek is invite only and only Yahoo employees are allowed to attend (if invited).
 
 ###### For all COVID-19 questions, please see the <a href="https://drive.google.com/file/d/19sPW5CcsDzhVehgZHsVK6EgNtwpWUqpJ/view" target="_blank" style="color:#0f69ff"><b>company policy</b></a> and <a href="https://docs.google.com/document/d/1d_JuICnCiI-YBKV4fUGQqRckBM6FiwSuze7uSP6WPlI/edit" target="_blank" style="color:#0f69ff"><b>FAQ’s</b></a> for more information.<br><br><br><br>
-
-
 
 ### Virtual experience
 
