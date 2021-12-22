@@ -15,9 +15,9 @@ TechWeek 2022 will begin on Monday, March 7 and end on Thursday, March 10.<br><b
 
 ###### Where is TechWeek being held?
 
-TechWeek 2022 will be a hybrid event, taking place both virtually and in person. The in-person event will take place at the San Jose Convention Center (150 W San Carlos St, San Jose, CA 95113). We have obtained a room block at the San Jose Marriott and all attendees outside of the Bay Area should be staying at the Marriott. You may find a lower rate elsewhere but we are under contract with the hotel and if we do not meet our block it ends up being more expensive for the company. You can book your hotel reservation directly with the hotel by clicking <a href="https://www..." target="_blank" style="color:#0f69ff"><b>here</b></a>.
+TechWeek 2022 will be a hybrid event, taking place both virtually and in person. The in-person event will take place at the San Jose Convention Center (150 W San Carlos St, San Jose, CA 95113). We have obtained a room block at the San Jose Marriott and all attendees outside of the Bay Area should be staying at the Marriott. You may find a lower rate elsewhere but we are under contract with the hotel and if we do not meet our block it ends up being more expensive for the company. You can book your hotel reservation directly with the hotel by clicking <a href="https://www.marriott.com/hotels/travel/sjcsj-san-jose-marriott" target="_blank" style="color:#0f69ff"><b>here</b></a>.
 
-If you are traveling internationally, you will need to be approved before booking your travel arrangements via Concur. To obtain approval, please complete this <a href="https://www..." target="_blank" style="color:#0f69ff"><b>form</b></a>. Once approved, then you may go into Concur to book your flights.<br><br>
+If you are traveling internationally, you will need to be approved before booking your travel arrangements via Concur. To obtain approval, please complete this <a href="https://docs.google.com/forms/d/e/1FAIpQLSeu0lI3FTxoHTM2b_vLLxU8vI9yw6FqeK4i-qqvFQ6CiWh-lA/viewform" target="_blank" style="color:#0f69ff"><b>form</b></a>. Once approved, then you may go into Concur to book your flights.<br><br>
 
 ###### Who is on the planning team for TechWeek?
 
