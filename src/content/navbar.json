@@ -120,6 +120,16 @@
       "title": "SUPPORT",
       "link": "/support/",
       "display": true
+    },
+    {
+      "requiresAuth": true,
+      "showOnlyAtShowTime": false,
+      "pageRestriction": [
+        "ANY"
+      ],
+      "title": "ACCOMMODATIONS",
+      "link": "/a/accommodations",
+      "display": true
     }
   ]
 }
