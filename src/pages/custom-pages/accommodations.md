@@ -1,7 +1,7 @@
 ---
 templateKey: custom-page
 title: ACCOMMODATIONS
-userRequirement: LOGGED_IN
+userRequirement: NONE
 ---
 ###### <br><br>After registering for TechWeek, you can book your hotel but do NOT book your flights until instructed to do so.
 
