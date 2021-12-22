@@ -61,7 +61,7 @@
       "requiresAuth": true,
       "showOnlyAtShowTime": false,
       "pageRestriction": [
-        "ANY"
+        "LOBBY"
       ],
       "title": "FAQS",
       "link": "/a/faqs-2",
