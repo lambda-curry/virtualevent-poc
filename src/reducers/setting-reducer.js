@@ -9,7 +9,7 @@ import {RESET_STATE, SYNC_DATA} from "../actions/base-actions";
 
 const DEFAULT_STATE = {
   lastBuild: settings.lastBuild,
-  favicon: settings.favicon,
+  favicons: settings.favicons,
   widgets: settings.widgets,
   colorSettings: colors,
   siteSettings: marketing_site,
