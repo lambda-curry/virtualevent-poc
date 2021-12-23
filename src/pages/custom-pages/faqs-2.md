@@ -118,7 +118,7 @@ Yes, parking is available onsite at the San Jose Convention Center Parking Garag
 
 ###### Will there be shuttle service for local attendees?
 
-No, there will be no shuttle service from local offices. Please make your own arrangements and bill the expense to your own T&E cost center. Make sure you get manager approval before expensing ground transportation.<br><br>
+No, there will not be shuttle service from local offices. For special accommodations, please email <a href = "mailto: techweek@yahooinc.com" style="color:#0f69ff"><b>techweek@yahooinc.com</b></a>.<br><br>
 
 ###### How do I obtain a Visa?
 
@@ -128,7 +128,15 @@ If you are an International attendee that needs to receive an invitation letter 
 
 No. TechWeek is invite only and only Yahoo employees are allowed to attend (if invited).<br><br>
 
-###### For all COVID-19 questions, please see the <a href="https://drive.google.com/file/d/19sPW5CcsDzhVehgZHsVK6EgNtwpWUqpJ/view" target="_blank" style="color:#0f69ff"><b>company policy</b></a> and <a href="https://docs.google.com/document/d/1d_JuICnCiI-YBKV4fUGQqRckBM6FiwSuze7uSP6WPlI/edit" target="_blank" style="color:#0f69ff"><b>FAQ’s</b></a> for more information.<br><br><br><br>
+###### Can i change my ticket type from in-person to virtual?
+
+Yes. If you registered for the in-person event and want to now attend virtually, please email <a href = "mailto: techweek@yahooinc.com" style="color:#0f69ff"><b>techweek@yahooinc.com</b></a> to let us know. Please also cancel your hotel room reservation via <a href="https://book.passkey.com/go/yahoo2022techweek" target="_blank" style="color:#0f69ff"><b>this link</b></a> and flights via Concur.
+
+Please note: you cannot change your ticket type from virtual to in-person once you have registered.<br><br>
+
+###### For all COVID-19 questions, please see the <a href="https://drive.google.com/file/d/19sPW5CcsDzhVehgZHsVK6EgNtwpWUqpJ/view" target="_blank" style="color:#0f69ff"><b>company policy</b></a> and <a href="https://docs.google.com/document/d/1d_JuICnCiI-YBKV4fUGQqRckBM6FiwSuze7uSP6WPlI/edit" target="_blank" style="color:#0f69ff"><b>FAQ’s</b></a> for more information.<br><br>
+
+**San Jose City / SJCC requirements**<br><br><br><br>
 
 ### VIRTUAL EXPERIENCE<br><br>
 
