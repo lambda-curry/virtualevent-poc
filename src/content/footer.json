@@ -56,27 +56,27 @@
   },
   "social": {
     "title": "Follow Us",
-    "display": true,
+    "display": false,
     "networks": [
       {
         "icon": "fa-facebook",
         "link": "/footer-content/",
-        "display": true
+        "display": false
       },
       {
         "icon": "fa-twitter",
         "link": "/footer-content/",
-        "display": true
+        "display": false
       },
       {
         "icon": "fa-linkedin",
         "link": "/footer-content/",
-        "display": true
+        "display": false
       },
       {
         "icon": "fa-youtube",
         "link": "/footer-content/",
-        "display": true
+        "display": false
       }
     ]
   },
