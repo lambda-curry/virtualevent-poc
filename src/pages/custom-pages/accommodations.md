@@ -11,7 +11,7 @@ You will book your flight and hotel reservation based on the events you are pers
 
 We have a room block at the <a href="https://www.marriott.com/hotels/travel/sjcsj-san-jose-marriott" target="_blank" style="color:#0f69ff"><b>San Jose Marriott</b></a>. Please make your hotel accommodations <a href="https://book.passkey.com/go/yahoo2022techweek" target="_blank" style="color:#0f69ff"><b>by clicking here</b></a>. Your card will be charged for incidentals only as room and tax is being covered by the TechWeek event budget. Should you need reservation assistance or have to change your reservation, click “Manage Existing Reservation” on this <a href="https://book.passkey.com/gt/218351286?gtid=5df9986190e6fe5db360205d4f512bd0" target="_blank" style="color:#0f69ff"><b>link</b></a>. If the Marriott hotel room block does not have your preferred dates, please email <a href = "mailto: techweek@yahooinc.com" style="color:#0f69ff"><b>techweek@yahooinc.com</b></a>.<br><br>
 
-###### International attendees
+###### International Attendees
 
 Before booking your travel, please fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSeu0lI3FTxoHTM2b_vLLxU8vI9yw6FqeK4i-qqvFQ6CiWh-lA/viewform" target="_blank" style="color:#0f69ff"><b>form</b></a> to obtain approval. Once you do, you can book a hotel from our link above. Please note: international attendees will need to follow the company’s <a href="https://drive.google.com/file/d/19sPW5CcsDzhVehgZHsVK6EgNtwpWUqpJ/view" target="_blank" style="color:#0f69ff"><b>US COVID policy</b></a>.
 
