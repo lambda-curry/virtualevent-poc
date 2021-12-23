@@ -51,7 +51,8 @@
       "requiresAuth": false,
       "showOnlyAtShowTime": false,
       "pageRestriction": [
-        "MARKETING"
+        "MARKETING",
+        "CUSTOM_PAGE"
       ],
       "title": "FAQS",
       "link": "/faqs/",
@@ -61,7 +62,7 @@
       "requiresAuth": true,
       "showOnlyAtShowTime": false,
       "pageRestriction": [
-        "LOBBY"
+        "ANY"
       ],
       "title": "FAQS",
       "link": "/a/faqs-2",
