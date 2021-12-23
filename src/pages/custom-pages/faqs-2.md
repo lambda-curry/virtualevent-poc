@@ -94,60 +94,60 @@ Please refer to the agenda and plan your travel based on the events you are atte
 • If you are attending TechPulse, please arrive in the evening of Monday, March 7.\
 • If you are only attending Research Day or PE-Con on Thursday, March 10, please arrive in the evening of Wednesday, March 9.
 
-We have obtained a room block at the <a href="https://www.marriott.com/hotels/travel/sjcsj-san-jose-marriott" target="_blank" style="color:#0f69ff"><b>San Jose Marriott</b></a> in San Jose, CA. All attendees outside of the Bay Area should be staying at the Marriott. You may find a lower rate elsewhere but we are under contract with the hotel and if we do not meet our block it ends up being more expensive for the company. A link for hotel reservations for this block of rooms is available in the <a href="techweek2022.yahoo.fnvirtual.app/a/accommodations" target="_blank" style="color:#0f69ff"><b>accommodations tab</b></a>. 
+We have obtained a room block at the <a href="https://www.marriott.com/hotels/travel/sjcsj-san-jose-marriott" target="_blank" style="color:#0f69ff"><b>San Jose Marriott</b></a> in San Jose, CA. All attendees outside of the Bay Area should be staying at the Marriott. You may find a lower rate elsewhere but we are under contract with the hotel and if we do not meet our block it ends up being more expensive for the company. A link for hotel reservations for this block of rooms is available in the <a href="techweek2022.yahoo.fnvirtual.app/a/accommodations" target="_blank" style="color:#0f69ff"><b>accommodations tab</b></a>. <br><br>
 
 ###### If I live in the SF/Bay Area where should I plan to stay for TechWeek?
 
-The San Jose Marriott is only reserved for those traveling internationally and from the East Coast. If you live in the San Francisco/Bay Area, you should treat this as if it were a normal work day. If you have questions please feel free to reach out to <a href = "mailto: techweek@yahooinc.com" style="color:#0f69ff"><b>techweek@yahooinc.com</b></a>.
+The San Jose Marriott is only reserved for those traveling internationally and from the East Coast. If you live in the San Francisco/Bay Area, you should treat this as if it were a normal work day. If you have questions please feel free to reach out to <a href = "mailto: techweek@yahooinc.com" style="color:#0f69ff"><b>techweek@yahooinc.com</b></a>.<br><br>
 
 ###### What if I'm an international employee traveling to the event?
 
-International employees must be fully vaccinated to come to a U.S. office and/or company or client event, whether held at a Yahoo office or offsite.
+International employees must be fully vaccinated to come to a U.S. office and/or company or client event, whether held at a Yahoo office or offsite.<br><br>
 
 ###### Will ground transportation be provided to and from the airport?
 
-No, transportation will not be provided to or from the airports for this event. Please make your own arrangements and bill the expense to your own T&amp;E cost center.
+No, transportation will not be provided to or from the airports for this event. Please make your own arrangements and bill the expense to your own T&E cost center.<br><br>
 
 ###### What airport do you recommend for arrivals and departures?
 
-The nearest airport is Minetta San Jose International Airport (SJC) with San Francisco International Airport (SFO) being next.
+The nearest airport is Minetta San Jose International Airport (SJC) with San Francisco International Airport (SFO) being next.<br><br>
 
 ###### Is parking available at the San Jose Marriott and/or the San Jose Convention Center?
 
-Yes, parking is available onsite at the San Jose Convention Center Parking Garage. Convention Center parking is FREE and is located through Bunker Hill and Great America Parkway in between The Hyatt and Techmart.
+Yes, parking is available onsite at the San Jose Convention Center Parking Garage. Convention Center parking is FREE and is located through Bunker Hill and Great America Parkway in between The Hyatt and Techmart.<br><br>
 
 ###### Will there be shuttle service for local attendees?
 
-No, there will be no shuttle service from local offices. Please make your own arrangements and bill the expense to your own T&amp;E cost center. Make sure you get manager approval before expensing ground transportation.
+No, there will be no shuttle service from local offices. Please make your own arrangements and bill the expense to your own T&E cost center. Make sure you get manager approval before expensing ground transportation.<br><br>
 
 ###### How do I obtain a Visa?
 
-If you are an International attendee that needs to receive an invitation letter to secure a visa please reach out to Shibby at <a href = "mailto: techweek@yahooinc.com" style="color:#0f69ff"><b>shiboune@yahooinc.com</b></a>. Turn around time is up to 5 days.
+If you are an International attendee that needs to receive an invitation letter to secure a visa please reach out to Shibby at <a href = "mailto: techweek@yahooinc.com" style="color:#0f69ff"><b>shiboune@yahooinc.com</b></a>. Turn around time is up to 5 days.<br><br>
 
 ###### Can I bring a guest or family member to TechWeek 2022?
 
-No. TechWeek is invite only and only Yahoo employees are allowed to attend (if invited).
+No. TechWeek is invite only and only Yahoo employees are allowed to attend (if invited).<br><br>
 
 ###### For all COVID-19 questions, please see the <a href="https://drive.google.com/file/d/19sPW5CcsDzhVehgZHsVK6EgNtwpWUqpJ/view" target="_blank" style="color:#0f69ff"><b>company policy</b></a> and <a href="https://docs.google.com/document/d/1d_JuICnCiI-YBKV4fUGQqRckBM6FiwSuze7uSP6WPlI/edit" target="_blank" style="color:#0f69ff"><b>FAQ’s</b></a> for more information.<br><br><br><br>
 
-### Virtual experience
+### VIRTUAL EXPERIENCE<br><br>
 
 ###### Will the event be live? What happens if I’m in a different time zone?
 
-TechWeek will accommodate different time zones to accommodate attendees from all over the globe as much as possible but all sessions will be available to watch on demand.
+TechWeek will accommodate different time zones to accommodate attendees from all over the globe as much as possible but all sessions will be available to watch on demand.<br><br>
 
 ###### What do I have access to seeing?
 
-You have access to the events you were invited to attend.
+You have access to the events you were invited to attend.<br><br>
 
 ###### I’m attending in person, but want to watch back some sessions. Am I able to log into the event site to watch?
 
-Yes, you will have access to watch back events that you were invited to attend both in person and virtually.
+Yes, you will have access to watch back events that you were invited to attend both in person and virtually.<br><br>
 
 ###### Will there be swag this year?
 
-Yes! There will be swag sent to all virtual attendees that provide addresses on registration and given to all those attending in person.
+Yes! There will be swag sent to all virtual attendees that provide addresses on registration and given to all those attending in person.<br><br>
 
 ###### What if I have accessibility requirements?
 
-The virtual platform will have accessible features. When you register for the event, you can request a specific requirement.
+The virtual platform will have accessible features. When you register for the event, you can request a specific requirement.<br><br>
