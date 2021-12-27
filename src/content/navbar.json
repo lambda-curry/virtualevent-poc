@@ -44,7 +44,7 @@
         "ANY"
       ],
       "title": "ACCOMMODATIONS",
-      "link": "/a/accommodations",
+      "link": "/accommodations",
       "display": true
     },
     {
@@ -65,7 +65,7 @@
         "ANY"
       ],
       "title": "FAQS",
-      "link": "/a/faqs-2",
+      "link": "/faqs-2",
       "display": true
     },
     {
