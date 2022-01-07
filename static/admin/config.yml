@@ -22,7 +22,7 @@ collections:
         label: "General Settings"
         name: "generalSettings"
         fields:
-          - {label: "Favicons", name: favicons, widget: objcet, fields: [
+          - {label: "Favicons", name: favicons, widget: object, fields: [
               {label: "Favicon 180x180", name: favicon180, widget: image},
               {label: "Favicon 32x32", name: favicon32, widget: image},
               {label: "Favicon 16x16", name: favicon16, widget: image}
