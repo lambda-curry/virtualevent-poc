@@ -190,6 +190,10 @@ collections:
                 {label: "Image", name: "image", widget: image}
               ]},
             ]}
+          - {label: "Countdown", name: "countdown", widget: object, fields: [
+              {label: "Display", name: display, widget: boolean, required: false},
+              {label: "Title", name: "text", widget: string}
+            ]}
           - {label: "Widgets", name: "leftColumn", widget: object, fields: [
               {label: "Schedule", name: "schedule", widget: object, fields: [
                 {label: "Display", name: "display", widget: boolean, required: false},

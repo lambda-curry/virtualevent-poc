@@ -76,5 +76,6 @@
     }
   ],
   "registration_in_person_disclaimer": null,
-  "summit_delta_start_time": "900"
+  "summit_delta_start_time": "900",
+  "countdown":{"display": true,"text": "Event Kickoff"}
 }

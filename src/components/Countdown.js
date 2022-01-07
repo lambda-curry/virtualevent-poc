@@ -21,7 +21,7 @@ import styles from '../styles/countdown.module.scss'
 class Countdown extends React.Component {
 
   render() {
-    const { summit, now } = this.props;
+    const { summit, now, text } = this.props;
 
     if (!now || !summit.start_date || !summit.time_zone_id) return null;
 
@@ -40,7 +40,7 @@ class Countdown extends React.Component {
         <div className={styles.countdown}>
           <div className={`${styles.countdownColumns} columns is-gapless`}>
             <div className={`${styles.leftColumn} column is-6 is-black`}>
-              <div>Event Kickoff</div>
+              <div>{text}</div>
             </div>
             <div className={`${styles.rightColumn} column is-6 is-black`}>
               <div>
