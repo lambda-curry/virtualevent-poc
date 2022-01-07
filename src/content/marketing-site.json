@@ -80,5 +80,6 @@
         }
       ]
     }
-  ]
+  ],
+  "countdown":{"display": true,"text": "Event Kickoff"}
 }
