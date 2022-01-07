@@ -136,7 +136,8 @@ div.column:first-of-type {
         background-color: #fff;
         color: #6d6e71;
 
-        b, i {
+        b,
+        i {
           color: inherit;
         }
       }
@@ -159,7 +160,7 @@ div.column:first-of-type {
       background-color: $color_secondary_contrast;
       z-index: 3;
       min-height: 100%;
-      background-size: cover;
+      background-size: cover;      
     }
 
     h1 {
@@ -208,7 +209,7 @@ div.column:first-of-type {
 
       div:before {
         content: "";
-        margin-right: 1.4em;
+        margin-right: 1.5em;
       }
 
       div:after {
@@ -223,7 +224,7 @@ div.column:first-of-type {
       .single-image {
         height: 100%;
         background-size: cover;
-        min-height: 350px;        
+        min-height: 350px;
       }
 
       .image-slider {
