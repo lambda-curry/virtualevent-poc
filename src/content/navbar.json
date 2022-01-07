@@ -66,7 +66,7 @@
       ],
       "title": "FAQS",
       "link": "/faqs-2",
-      "display": true
+      "display": false
     },
     {
       "requiresAuth": false,
