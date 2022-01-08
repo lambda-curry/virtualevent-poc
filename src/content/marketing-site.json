@@ -23,7 +23,7 @@
     ]
   },
   "countdown": {
-    "display": true,
+    "display": false,
     "text": "Yoco starts in"
   },
   "leftColumn": {
