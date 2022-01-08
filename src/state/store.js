@@ -29,6 +29,7 @@ const config = {
         'summitState',
         'scheduleState',
         'myScheduleState',
+        'settingState',
     ]
 };
 
