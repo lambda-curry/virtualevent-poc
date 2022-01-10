@@ -107,12 +107,12 @@ const MarketingHeroComponent = ({ siteSettings, summit_phase, isLoggedUser, loca
           }}
         >
           <div className={`${styles.heroMarketingContainer} hero-body`}>
-            <div className="container">
+            <div className="container" style={{paddingLeft: '5px'}}>
               <h1 className="title">{siteSettings.heroBanner.title}</h1>
               <h2 className="subtitle">{siteSettings.heroBanner.subTitle}</h2>
               <div
                 className={styles.date}
-                style={{
+                style={{                  
                   backgroundColor: siteSettings.heroBanner.dateLayout
                     ? "var(--color_secondary)"
                     : "",
@@ -125,9 +125,9 @@ const MarketingHeroComponent = ({ siteSettings, summit_phase, isLoggedUser, loca
                 }}
               >
                 {siteSettings.heroBanner.dateLayout ?
-                <div style={{transform: "skew(25deg)"}}>{siteSettings.heroBanner.date}</div>
+                <div style={{transform: "skew(25deg)", fontWeight: 500}}>{siteSettings.heroBanner.date}</div>
                 :
-                <div style={{transform: "skew(0deg)"}}>
+                <div style={{transform: "skew(0deg)", fontWeight: 500}}>
                   <span>{siteSettings.heroBanner.date}</span>
                 </div>
                 }
