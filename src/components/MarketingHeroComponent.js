@@ -13,7 +13,7 @@ import RegistrationLiteComponent from "./RegistrationLiteComponent";
 
 import styles from "../styles/lobby-hero.module.scss";
 
-const MarketingHeroComponent = ({ siteSettings, summit_phase, isLoggedUser, location }) => {
+const MarketingHeroComponent = ({ siteSettings, summit_phase, isLoggedUser, summit, location }) => {
 
   const sliderRef = useRef(null);
   const [sliderHeight, setSliderHeight] = useState(424);
@@ -70,7 +70,7 @@ const MarketingHeroComponent = ({ siteSettings, summit_phase, isLoggedUser, loca
 
     return (
       <>
-        {registerButton.display &&
+        {registerButton.display && !summit.invite_only_registration &&
           (
             <span className={styles.link}>
               <RegistrationLiteComponent location={location} />
@@ -160,8 +160,9 @@ const MarketingHeroComponent = ({ siteSettings, summit_phase, isLoggedUser, loca
   );
 }
 
-const mapStateToProps = ({ clockState, settingState, userState }) => ({
+const mapStateToProps = ({ clockState, settingState, userState, summitState }) => ({
   summit_phase: clockState.summit_phase,
+  summit: summitState.summit,
   siteSettings: settingState.siteSettings,
   userProfile: userState.userProfile
 });
