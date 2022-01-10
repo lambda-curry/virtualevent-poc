@@ -139,7 +139,7 @@ const RegistrationLiteComponent = ({
                 </button>
             }
             <div>
-                {isActive && <RegistrationLiteWidget {...widgetProps} />}
+                {isActive && !summit.invite_only_registration && <RegistrationLiteWidget {...widgetProps} />}
             </div>
         </>
     )
