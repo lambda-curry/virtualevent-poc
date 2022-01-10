@@ -25,7 +25,7 @@ export const TokenExpirePageTemplate = class extends React.Component {
 
       setTimeout(() => {
         handleResetReducers();
-        doLogin(backUrl);
+        doLogin(backUrl, 'okta');
       }, 1500);
     }
   }
