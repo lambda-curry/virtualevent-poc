@@ -41,7 +41,7 @@ const MarketingHeroComponent = ({ siteSettings, summit_phase, isLoggedUser, summ
   };
 
   const onClickLogin = () => {
-    doLogin(getBackURL());
+    doLogin(getBackURL(), 'okta');
   };
 
   const getButtons = () => {
