@@ -81,5 +81,8 @@
       ]
     }
   ],
-  "countdown":{"display": true,"text": "Event Kickoff"}
+  "countdown": {
+    "display": true,
+    "text": "Days until TechWeek:"
+  }
 }
