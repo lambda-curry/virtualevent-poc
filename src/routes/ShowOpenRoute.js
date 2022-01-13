@@ -61,7 +61,7 @@ const ShowOpenRoute = ({
 
   // if summit didnt started yet ...
   if (!shouldBypassCheck && !userCanByPassAuthz() && summit_phase === PHASES.BEFORE) {
-    return <HeroComponent title="Its not yet show time!" redirectTo="/" />;
+    return <HeroComponent title="You are now logged in. Additional event info is now available on the website." redirectTo="/" />;
   }
 
   if (requireExtraQuestions()) {
