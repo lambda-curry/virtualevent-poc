@@ -25,12 +25,10 @@ export const TicketErrorPageTemplate = class extends React.Component {
             let targetUrl = null;
 
             switch (error) {
+                case 'no-ticket':
                 case 'no-access':
                     targetUrl = `/auth/logout`;
                     break
-                case 'no-ticket':
-                    targetUrl = `/#registration=1`;
-                    break;
                 case 'incomplete':
                     targetUrl = `/a/extra-questions`;
                     break;
@@ -79,6 +77,9 @@ export const TicketErrorPageTemplate = class extends React.Component {
         switch (error) {
             case 'no-access':
                 message = 'You will be logged out.';
+                break;
+            case 'no-ticket':
+                message = 'You will be logged out and redirected to the event site.';
                 break;
             default:
                 message = getEnvVariable(REGISTRATION_BASE_URL) ? 'You will be redirected to registration.' : '';
