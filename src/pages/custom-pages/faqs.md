@@ -62,4 +62,24 @@ Research Day is an "invite only" event for our Research Scientists and Research 
 
 ###### Why is attendance limited?
 
-TechWeek is an invite only event and attendees are hand-selected by leadership or were accepted to present at TechPulse.<br><br>
+TechWeek is an invite only event and attendees are hand-selected by leadership or were accepted to present at TechPulse.<br><br><br><br>
+
+### VIRTUAL EXPERIENCE QUESTIONS<br><br>
+
+###### Will the event be live? What happens if I’m in a different time zone?
+
+TechWeek will accommodate different time zones to accommodate attendees from all over the globe as much as possible but all sessions will be available to watch on demand.<br><br>
+
+###### What do I have access to seeing?
+
+You have access to the events you were invited to attend.<br><br>
+
+
+
+###### Will there be swag this year?
+
+Yes! There will be swag sent to all attendees that provide addresses on registration.<br><br>
+
+###### What if I have accessibility requirements?
+
+The virtual platform will have accessible features. When you register for the event, you can request a specific requirement.<br><br>
