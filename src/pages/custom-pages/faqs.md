@@ -46,7 +46,7 @@ If you have any questions for the planning team, please send an email to <a href
 
 ###### How do I get an invitation to TechWomen Connect?
 
-TechPulse invitees who identify as female will automatically be invited to attend TechWomen Connect. If you have not been invited and would like to be considered, <b>please complete <a href="https://forms.gle/XyXufznUSMVamVbM9" target="_blank" style="color:#0f69ff">this form</a> by February 4.</b><br><br>
+TechPulse invitees who identify as female will automatically be invited to attend TechWomen Connect. If you have not been invited and would like to be considered, <b>please complete <a href="https://forms.gle/XyXufznUSMVamVbM9" target="_blank" style="color:#0f69ff">this form</a> by February 18.</b><br><br>
 
 ###### How do I get an invitation to TechPulse?
 
@@ -73,8 +73,6 @@ TechWeek will accommodate different time zones to accommodate attendees from all
 ###### What do I have access to seeing?
 
 You have access to the events you were invited to attend.<br><br>
-
-
 
 ###### Will there be swag this year?
 
