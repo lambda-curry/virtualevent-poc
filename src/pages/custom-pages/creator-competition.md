@@ -5,7 +5,7 @@ userRequirement: NONE
 desktopImagePage: ""
 mobileImagePage: ""
 ---
-![](/img/sf21-creatorprog-page-image_011622.png)
+![](/img/sf21-creatorprog-page-image_011722.png)
 
 ###### <a href="https://www.facebook.com/legal/stars_streamer_terms" target="_blank">Stars Streamers Terms</a>
 
