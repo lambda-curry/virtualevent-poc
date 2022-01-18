@@ -3,7 +3,7 @@ templateKey: custom-page
 title: FAQS
 userRequirement: NONE
 ---
-### <br><br>GENERAL QUESTIONS<br><br>
+### <br><br>GENERAL QUESTIONS<br>
 
 ###### What is TechWeek?
 
@@ -38,9 +38,9 @@ Techweek 2022 will be a virtual event and will be held on the same platform that
 Conference Chair, Program Chair and Senior Program Committee Leader: Haley Thrapp\
 Event Lead: Rachel Brienzo
 
-If you have any questions for the planning team, please send an email to <a href = "mailto: techweek@yahooinc.com" style="color:#0f69ff"><b>techweek@yahooinc.com</b></a>.<br><br><br><br>
+If you have any questions for the planning team, please send an email to <a href = "mailto: techweek@yahooinc.com" style="color:#0f69ff"><b>techweek@yahooinc.com</b></a>.<br><br><br>
 
-### ATTENDANCE QUESTIONS<br><br>
+### ATTENDANCE QUESTIONS<br>
 
 ###### How do I get an invitation to TechWomen Connect?
 
@@ -60,9 +60,9 @@ Research Day is an "invite only" event for our Research Scientists and Research 
 
 ###### Why is attendance limited?
 
-TechWeek is an invite only event and attendees are hand-selected by leadership or were accepted to present at TechPulse.<br><br><br><br>
+TechWeek is an invite only event and attendees are hand-selected by leadership or were accepted to present at TechPulse.<br><br><br>
 
-### VIRTUAL EXPERIENCE QUESTIONS<br><br>
+### VIRTUAL EXPERIENCE QUESTIONS<br>
 
 ###### Will the event be live? What happens if I’m in a different time zone?
 
