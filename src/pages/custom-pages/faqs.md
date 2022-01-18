@@ -50,7 +50,7 @@ TechPulse invitees who identify as female will automatically be invited to atten
 
 ###### How do I get an invitation to TechPulse?
 
-TechPulse invitations are extended to all accepted poster and paper presenters. Discretionary invitations are given by leadership to allocate to their teams. <b>Please RSVP by February 13</b>. If you did not receive an invite to TechPulse and would like to attend, <b>please complete [](https://docs.google.com/forms/d/e/1FAIpQLSdiUIfMASm16rydGdxWodEVDwJEYiFrJ4LGCrFc1DAlLpVOxg/viewform)<a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUIfMASm16rydGdxWodEVDwJEYiFrJ4LGCrFc1DAlLpVOxg/viewform" target="_blank" style="color:#0f69ff">this form</a> by February 18.</b><br><br>
+TechPulse invitations are extended to all accepted poster and paper presenters. Discretionary invitations are given by leadership to allocate to their teams. If you did not receive an invite to TechPulse and would like to attend, <b>please complete [](https://docs.google.com/forms/d/e/1FAIpQLSdiUIfMASm16rydGdxWodEVDwJEYiFrJ4LGCrFc1DAlLpVOxg/viewform)<a href="https://docs.google.com/forms/d/e/1FAIpQLSdiUIfMASm16rydGdxWodEVDwJEYiFrJ4LGCrFc1DAlLpVOxg/viewform" target="_blank" style="color:#0f69ff">this form</a> by February 18.</b><br><br>
 
 ###### How do I get an invitation to PE-Con?
 
