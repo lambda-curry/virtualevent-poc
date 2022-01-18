@@ -9,7 +9,7 @@ userRequirement: NONE
 
 TechWeek is a multi-day celebration of our technical community at Yahoo. Built upon the success of our cornerstone event (TechPulse) and the overwhelming interest in sharing ideas and expanding knowledge, we want to bring you a week full of exciting opportunities. The week includes the following events which are invite only.<br><br>
 
-###### TechWeek Events Schedule.
+
 
 <body><b><p style="color: #7E1FFF">Monday, March 7 - TechWomen Connect</p></b></body>
 
