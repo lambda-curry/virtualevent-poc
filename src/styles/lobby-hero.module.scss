@@ -115,12 +115,15 @@ div.column:first-of-type {
         width: 2.5em;
         margin-right: auto;
         font-size: 1.8em;
+        flex: 1;
+        padding-left: 15px;
       }
 
       b {
         display: inline-block;
         width: 100%;
         text-align: center;
+        margin-left: -15px;
       }
 
       &:hover,

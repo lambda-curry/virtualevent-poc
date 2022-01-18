@@ -59,7 +59,8 @@ const MarketingHeroComponent = ({ siteSettings, summit_phase, isLoggedUser, summ
               </span>
             )}
           <Link className={styles.link} to={path}>
-            <button className={`${styles.button} button is-large`}>              
+            <button className={`${styles.button} button is-large`}>
+              <i className={`fa fa-2x fa-sign-in icon is-large`} />
               <b>Enter</b>
             </button>
           </Link>
@@ -76,7 +77,8 @@ const MarketingHeroComponent = ({ siteSettings, summit_phase, isLoggedUser, summ
             </span>
           )}
         {loginButton.display && !isLoggedUser && (
-          <button className={`${styles.button} button is-large`} onClick={() => onClickLogin()}>            
+          <button className={`${styles.button} button is-large`} onClick={() => onClickLogin()}>
+            <i className={`fa fa-2x fa-sign-in icon is-large`} />
             <b>{loginButton.text}</b>
           </button>
         )}
