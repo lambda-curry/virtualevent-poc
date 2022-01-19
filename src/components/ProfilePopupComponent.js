@@ -206,7 +206,6 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
                         type="text"
                         placeholder="First Name"
                         onChange={e => setFirstName(e.target.value)}
-                        readOnly={true}
                         value={firstName} />
                   </div>
                 </div>
