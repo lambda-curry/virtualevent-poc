@@ -45,7 +45,7 @@ const RegistrationLiteComponent = ({
         const fragmentParser = new FragmentParser();
         setIsActive(fragmentParser.getParam('registration'));
         getThirdPartyProviders();
-    }, [getThirdPartyProviders]);
+    }, []);
 
 
     const getBackURL = () => {
@@ -139,7 +139,7 @@ const RegistrationLiteComponent = ({
                 </button>
             }
             <div>
-                {isActive && <RegistrationLiteWidget {...widgetProps} />}
+                {isActive && !summit.invite_only_registration && <RegistrationLiteWidget {...widgetProps} />}
             </div>
         </>
     )
