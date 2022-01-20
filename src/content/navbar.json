@@ -38,16 +38,6 @@
       "display": true
     },
     {
-      "requiresAuth": true,
-      "showOnlyAtShowTime": false,
-      "pageRestriction": [
-        "ANY"
-      ],
-      "title": "ACCOMMODATIONS",
-      "link": "/accommodations",
-      "display": true
-    },
-    {
       "requiresAuth": false,
       "showOnlyAtShowTime": false,
       "pageRestriction": [
