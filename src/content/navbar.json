@@ -41,22 +41,11 @@
       "requiresAuth": false,
       "showOnlyAtShowTime": false,
       "pageRestriction": [
-        "MARKETING",
-        "CUSTOM_PAGE"
+        "ANY"
       ],
       "title": "FAQS",
       "link": "/faqs",
       "display": true
-    },
-    {
-      "requiresAuth": true,
-      "showOnlyAtShowTime": false,
-      "pageRestriction": [
-        "ANY"
-      ],
-      "title": "FAQS",
-      "link": "/faqs-2",
-      "display": false
     },
     {
       "requiresAuth": false,
