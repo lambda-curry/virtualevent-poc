@@ -6,28 +6,7 @@
   "social": {
     "title": "Follow Us",
     "display": false,
-    "networks": [
-      {
-        "icon": "fa-facebook",
-        "link": "/footer-content/",
-        "display": false
-      },
-      {
-        "icon": "fa-twitter",
-        "link": "/footer-content/",
-        "display": false
-      },
-      {
-        "icon": "fa-linkedin",
-        "link": "/footer-content/",
-        "display": false
-      },
-      {
-        "icon": "fa-youtube",
-        "link": "/footer-content/",
-        "display": false
-      }
-    ]
+    "networks": []
   },
   "legal": [
     {
