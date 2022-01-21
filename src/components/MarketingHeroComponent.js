@@ -101,8 +101,8 @@ const MarketingHeroComponent = ({ siteSettings, summit_phase, isLoggedUser, summ
         <div
           className={`${styles.leftColumn} column is-6 is-black`}
           style={{
-            backgroundImage: siteSettings.heroBanner.background
-              ? `url(${siteSettings.heroBanner.background})`
+            backgroundImage: siteSettings.heroBanner.background?.file
+              ? `url(${siteSettings.heroBanner.background.file})`
               : "",
           }}
         >
@@ -145,13 +145,13 @@ const MarketingHeroComponent = ({ siteSettings, summit_phase, isLoggedUser, summ
               {siteSettings.heroBanner.images.map((img, index) => {
                 return (
                   <div key={index}>
-                    <div className={styles.imageSlider} style={{ backgroundImage: `url(${img.image})`, height: sliderHeight, marginBottom: -6 }} />
+                    <div className={styles.imageSlider} style={{ backgroundImage: `url(${img.image.file})`, height: sliderHeight, marginBottom: -6 }} />
                   </div>
                 );
               })}
             </Slider>
             :
-            <div className={styles.singleImage} style={{ backgroundImage: `url(${siteSettings.heroBanner.images[0].image})`}} >              
+            <div className={styles.singleImage} style={{ backgroundImage: `url(${siteSettings.heroBanner.images[0].image.file})`}} >
             </div>
           }
         </div>
