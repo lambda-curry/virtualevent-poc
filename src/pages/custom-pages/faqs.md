@@ -56,11 +56,7 @@ Poster submitters are given registration priority for PE-Con. If you would like 
 
 ###### How do I get an invitation to Research day?
 
-Research Day is an "invite only" event for our Research Scientists and Research Engineers as it's focused on community-building within our distributed Research community.  However, if you feel you are part of the Research community and did not receive an invitation, <b>please complete [](https://docs.google.com/forms/d/e/1FAIpQLSdiUIfMASm16rydGdxWodEVDwJEYiFrJ4LGCrFc1DAlLpVOxg/viewform)<a href="https://forms.gle/LJT6VpAAKQzesy89A" target="_blank" style="color:#0f69ff">this form</a> by February 18.</b><br><br>
-
-###### Why is attendance limited?
-
-TechWeek is an invite only event and attendees are hand-selected by leadership or were accepted to present at TechPulse.<br><br><br>
+Research Day is an "invite only" event for our Research Scientists and Research Engineers as it's focused on community-building within our distributed Research community.  However, if you feel you are part of the Research community and did not receive an invitation, <b>please complete [](https://docs.google.com/forms/d/e/1FAIpQLSdiUIfMASm16rydGdxWodEVDwJEYiFrJ4LGCrFc1DAlLpVOxg/viewform)<a href="https://forms.gle/LJT6VpAAKQzesy89A" target="_blank" style="color:#0f69ff">this form</a> by February 18.</b><br><br><br>
 
 ### VIRTUAL EXPERIENCE QUESTIONS<br>
 
