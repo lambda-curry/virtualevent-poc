@@ -18,7 +18,8 @@ const DEFAULT_STATE = {
     allEvents: eventsData,
     allScheduleEvents: filterEventsByTags(eventsData),
     events: filterEventsByTags(eventsData),
-    view: 'calendar'
+    view: 'calendar',
+    timezone: 'show'
 };
 
 const scheduleReducer = (state = DEFAULT_STATE, action) => {
@@ -74,6 +75,10 @@ const scheduleReducer = (state = DEFAULT_STATE, action) => {
         case CHANGE_VIEW: {
             const {view} = payload;
             return {...state, view}
+        }
+        case CHANGE_TIMEZONE: {
+            const {timezone} = payload;
+            return {...state, timezone}
         }
         default:
             return state;
