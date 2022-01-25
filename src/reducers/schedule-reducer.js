@@ -4,7 +4,7 @@ import filtersData from '../content/filters.json';
 import {syncFilters} from "../utils/filterUtils";
 import {getFilteredEvents, filterEventsByTags} from '../utils/schedule';
 import {LOGOUT_USER} from "openstack-uicore-foundation/lib/actions";
-import {UPDATE_FILTER, UPDATE_FILTERS, CHANGE_VIEW} from '../actions/schedule-actions'
+import {UPDATE_FILTER, UPDATE_FILTERS, CHANGE_VIEW, CHANGE_TIMEZONE} from '../actions/schedule-actions'
 import {RESET_STATE, SYNC_DATA} from '../actions/base-actions';
 import {GET_EVENT_DATA} from '../actions/event-actions';
 
