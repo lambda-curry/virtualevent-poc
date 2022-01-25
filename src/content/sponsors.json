@@ -11,7 +11,7 @@
         {
           "logo": "/img/favicon.png",
           "name": "Red Hat ",
-          "intro": "Hey we are awesome. \n\n*",
+          "intro": "Hey we are awesome.",
           "advertiseImage": "",
           "sponsorId": 155,
           "title": "Red Hat ",
@@ -23,7 +23,7 @@
           },
           "columnAds": [],
           "id": 155,
-          "showLogoInEventPage": true,
+          "showLogoInEventPage": false,
           "usesSponsorPage": false
         }
       ]
