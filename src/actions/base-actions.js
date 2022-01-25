@@ -6,6 +6,8 @@ import {
 
 import { customErrorHandler } from '../utils/customErrorHandler';
 
+import Swal from "sweetalert2";
+
 export const RESET_STATE = 'RESET_STATE';
 export const SYNC_DATA = 'SYNC_DATA';
 export const GET_THIRD_PARTY_PROVIDERS = 'GET_THIRD_PARTY_PROVIDERS';
@@ -31,6 +33,7 @@ export const getThirdPartyProviders = () => (dispatch) => {
     return (payload)
   }).catch(e => {
     dispatch(stopLoading());
+    Swal.fire("Server Error", "Please refresh the page.", "warning");
     return (e);
   });
 }
