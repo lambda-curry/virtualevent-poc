@@ -24,7 +24,7 @@
           "columnAds": [],
           "id": 155,
           "showLogoInEventPage": false,
-          "usesSponsorPage": false
+          "usesSponsorPage": true
         }
       ]
     }
