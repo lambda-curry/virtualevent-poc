@@ -3,9 +3,9 @@
     {
       "id": "tier-cYGYq5-ae",
       "name": "Silver",
-      "badge": "/img/tier1-default-sessionbar-logo.png",
+      "badge": "",
       "lobby": {
-        "lobbyTemplate": "big-images",
+        "lobbyTemplate": "carousel",
         "display": true
       },
       "sponsorPage": {
