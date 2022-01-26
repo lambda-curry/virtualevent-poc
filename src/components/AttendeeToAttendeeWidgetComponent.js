@@ -172,7 +172,8 @@ const AccessTracker = ({ user, isLoggedUser, summitPhase }) => {
   
   useEffect(() => {
     if (!isLoggedUser) {
-      trackerRef.current?.signOut();
+      if(trackerRef.current)
+          trackerRef.current.signOut();
     }
   }, [isLoggedUser]);
 

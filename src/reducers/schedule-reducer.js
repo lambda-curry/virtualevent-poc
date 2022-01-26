@@ -4,7 +4,7 @@ import filtersData from '../content/filters.json';
 import {syncFilters} from "../utils/filterUtils";
 import {getFilteredEvents, filterEventsByTags} from '../utils/schedule';
 import {LOGOUT_USER} from "openstack-uicore-foundation/lib/actions";
-import {UPDATE_FILTER, UPDATE_FILTERS, CHANGE_VIEW} from '../actions/schedule-actions'
+import {UPDATE_FILTER, UPDATE_FILTERS, CHANGE_VIEW, CHANGE_TIMEZONE} from '../actions/schedule-actions'
 import {RESET_STATE, SYNC_DATA} from '../actions/base-actions';
 import {GET_EVENT_DATA} from '../actions/event-actions';
 
@@ -18,7 +18,8 @@ const DEFAULT_STATE = {
     allEvents: eventsData,
     allScheduleEvents: filterEventsByTags(eventsData),
     events: filterEventsByTags(eventsData),
-    view: 'calendar'
+    view: 'calendar',
+    timezone: 'show'
 };
 
 const scheduleReducer = (state = DEFAULT_STATE, action) => {
@@ -74,6 +75,10 @@ const scheduleReducer = (state = DEFAULT_STATE, action) => {
         case CHANGE_VIEW: {
             const {view} = payload;
             return {...state, view}
+        }
+        case CHANGE_TIMEZONE: {
+            const {timezone} = payload;
+            return {...state, timezone}
         }
         default:
             return state;
