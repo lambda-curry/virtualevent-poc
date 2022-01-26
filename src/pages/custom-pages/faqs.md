@@ -44,7 +44,7 @@ If you have any questions for the planning team, please send an email to <a href
 
 ###### How do I get an invitation to TechWomen Connect?
 
-TechPulse invitees who identify as female will automatically be invited to attend TechWomen Connect. If you have not been invited and would like to be considered, <b>please complete <a href="https://forms.gle/XyXufznUSMVamVbM9" target="_blank" style="color:#0f69ff">this form</a> by February 18.</b><br><br>
+All TechPulse invitees are automatically invited to attend TechWomen Connect. TechWomen Connect is for women in technology. If you have not been invited and would like to be considered, <b>please complete <a href="https://forms.gle/XyXufznUSMVamVbM9" target="_blank" style="color:#0f69ff">this form</a> by February 18.</b><br><br>
 
 ###### How do I get an invitation to TechPulse?
 
