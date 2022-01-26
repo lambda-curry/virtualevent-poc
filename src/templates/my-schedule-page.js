@@ -28,6 +28,7 @@ const MySchedulePage = ({
   allEvents,
   filters,
   view,
+  timezone,
   colorSource,
   colorSettings,
   updateFilter,
@@ -52,6 +53,7 @@ const MySchedulePage = ({
     events,
     filters,
     view,
+    timezone,
     colorSource,
   };
 
@@ -107,6 +109,7 @@ const mapStateToProps = ({
   allEvents: myScheduleState.allEvents,
   filters: myScheduleState.filters,
   view: myScheduleState.view,
+  timezone: myScheduleState.timezone,
   colorSource: myScheduleState.colorSource,
   colorSettings: settingState.colorSettings,
 });
