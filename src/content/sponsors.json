@@ -9,9 +9,13 @@
       ],
       "sponsors": [
         {
-          "logo": "/img/favicon.png",
+          "marquee": "Red Hat is the world’s leading provider of commercial open source software solutions.",
+          "externalLink": "",
+          "sponsorColor": "#000000",
+          "logo": "/img/logo_redhat_all-white_techpulse.png",
           "name": "Red Hat ",
-          "intro": "Hey we are awesome.",
+          "intro": "![We’re the world’s leading provider of enterprise open source  solutions, using a community-powered approach to deliver  high-performing Linux, cloud, container, and Kubernetes  technologies. We help you standardize across environments,  develop cloud-native applications, and integrate, automate,  secure, and manage complex environments with  award-winning support, training, and consulting services.](/img/logo_redhat_color_techpulse.png)",
+          "headerImageMobile": "https://fntech.sfo2.cdn.digitaloceanspaces.com/Yahoo_TechWeek_2022/Sponsor_Content/Red%20Hat%20Header%20Video%20Animated%20Logo%20No%20Sound.mp4",
           "advertiseImage": "",
           "sponsorId": 155,
           "title": "Red Hat ",
@@ -19,9 +23,45 @@
           "documents": {
             "videos": [],
             "slides": [],
-            "links": []
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "YouTube",
+                "order": 1,
+                "link": "https://www.youtube.com/channel/UCp6NUFV9mSEK6RxUiEVymVg"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Facebook",
+                "order": 2,
+                "link": "https://www.facebook.com/RedHatInc/"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Instagram",
+                "link": "https://www.instagram.com/redhatinc/?hl=en",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "LindedIn",
+                "order": 4,
+                "link": "https://www.linkedin.com/company/red-hat"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Twitter",
+                "order": 5,
+                "link": "https://twitter.com/RedHat"
+              }
+            ]
           },
-          "columnAds": [],
+          "columnAds": [
+            {
+              "link": "https://www.redhat.com/en",
+              "image": "/img/tech-pulse-red-hat-sponsor-ad-484x484.png"
+            }
+          ],
           "id": 155,
           "showLogoInEventPage": false,
           "usesSponsorPage": true
