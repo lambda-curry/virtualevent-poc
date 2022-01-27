@@ -145,13 +145,13 @@ const MarketingHeroComponent = ({ siteSettings, summit_phase, isLoggedUser, summ
               {siteSettings.heroBanner.images.map((img, index) => {
                 return (
                   <div key={index}>
-                    <div className={styles.imageSlider} style={{ backgroundImage: `url(${img.image.file})`, height: sliderHeight, marginBottom: -6 }} />
+                    <div className={styles.imageSlider} aria-label={img.alt} style={{ backgroundImage: `url(${img.file})`, height: sliderHeight, marginBottom: -6 }} />
                   </div>
                 );
               })}
             </Slider>
             :
-            <div className={styles.singleImage} style={{ backgroundImage: `url(${siteSettings.heroBanner.images[0].image.file})`}} >
+            <div className={styles.singleImage} aria-label={siteSettings.heroBanner.images[0].alt} style={{ backgroundImage: `url(${siteSettings.heroBanner.images[0].file})`}} >
             </div>
           }
         </div>

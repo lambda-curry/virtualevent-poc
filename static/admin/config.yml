@@ -203,10 +203,8 @@ collections:
                 {label: "Alt", name: "alt", widget: string, required: false},
               ]},
               {label: "Images", name: "images", widget: list, fields: [
-                {label: "Image", name: "image", widget: object, required: false, fields: [
-                  {label: "File", name: "file", widget: image, default: '', required: false},
-                  {label: "Alt", name: "alt", widget: string, required: false},
-                ]},
+                { label: "File", name: "file", widget: image, default: '', required: false },
+                { label: "Alt", name: "alt", widget: string, required: false },
               ]},
             ]}
           - {label: "Countdown", name: "countdown", widget: object, fields: [
