@@ -15,9 +15,7 @@
         "display": true
       }
     },
-    "background": {
-      "alt": "nada"
-    },
+    "background": "",
     "images": [
       {
         "image": "/img/flavor_wheel.jpg"
@@ -40,8 +38,7 @@
     "image": {
       "display": false,
       "title": "Image",
-      "src": "/img/yoco-sponsor-ads-large-wherehol-vert.png",
-      "alt": "sebas banner"
+      "src": "/img/yoco-sponsor-ads-large-wherehol-vert.png"
     }
   },
   "sponsors": [
