@@ -30,11 +30,9 @@ export const sortEvents = (events) => {
 export const filterEventsByTags = (events) => {
   const excludingTagsVar = getEnvVariable(SCHEDULE_EXCLUDING_TAGS);
   const excludingTags = excludingTagsVar?.split("|") || null;
+
   return excludingTags
-      ? events.filter(
-          (ev) =>
-              !ev.tags.map((t) => t.tag).some((tag) => excludingTags.includes(tag))
-      )
+      ? events.filter(ev => !ev.tags?.map(t => t.tag).some(tag => excludingTags.includes(tag)))
       : events;
 };
 
