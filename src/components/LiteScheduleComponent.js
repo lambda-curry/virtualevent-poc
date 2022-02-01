@@ -56,9 +56,9 @@ const LiteScheduleComponent = ({
     )
 };
 
-const mapStateToProps = ({userState, summitState, scheduleState, settingState}) => ({
+const mapStateToProps = ({userState, summitState, allSchedulesState, settingState}) => ({
     userProfile: userState.userProfile,
-    allScheduleEvents: scheduleState.allScheduleEvents,
+    allScheduleEvents: allSchedulesState.allScheduleEvents,
     summit: summitState.summit,
     colorSettings: settingState.colorSettings,
     homeSettings: settingState.homeSettings

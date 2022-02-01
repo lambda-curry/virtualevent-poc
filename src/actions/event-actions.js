@@ -22,7 +22,7 @@ export const getEventById = (eventId) => async (dispatch, getState) => {
     dispatch(startLoading());
 
     // check first the reducer
-    let {scheduleState: {allEvents}} = getState();
+    let {allSchedulesState: {allEvents}} = getState();
     const event = allEvents.find(ev => ev.id === parseInt(eventId));
 
     if (event) {
