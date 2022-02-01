@@ -4,6 +4,7 @@ import {loggedUserReducer} from "openstack-uicore-foundation/lib/reducers";
 import eventReducer from "../reducers/event-reducer";
 import summitReducer from "../reducers/summit-reducer";
 import userReducer from "../reducers/user-reducer";
+import allSchedulesReducer from "../reducers/all-schedules-reducer";
 import scheduleReducer from "../reducers/schedule-reducer";
 import myScheduleReducer from "../reducers/my-schedule-reducer";
 import clockReducer from "../reducers/clock-reducer";
@@ -27,8 +28,7 @@ const config = {
         'speakerState',
         'eventState',
         'summitState',
-        'scheduleState',
-        'myScheduleState',
+        'allSchedulesState',
         'settingState',
     ]
 };
@@ -37,8 +37,7 @@ const persistedReducers = persistCombineReducers(config, {
     loggedUserState: loggedUserReducer,
     settingState: settingReducer,
     userState: userReducer,
-    scheduleState: scheduleReducer,
-    myScheduleState: myScheduleReducer,
+    allSchedulesState: allSchedulesReducer,
     clockState: clockReducer,
     eventState: eventReducer,
     summitState: summitReducer,

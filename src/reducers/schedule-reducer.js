@@ -1,82 +1,66 @@
 import summitData from '../content/summit.json';
-import eventsData from '../content/events.json';
-import filtersData from '../content/filters.json';
 import {syncFilters} from "../utils/filterUtils";
-import {getFilteredEvents, filterEventsByTags} from '../utils/schedule';
+import {getFilteredEvents, preFilterEvents} from '../utils/schedule';
 import {LOGOUT_USER} from "openstack-uicore-foundation/lib/actions";
-import {UPDATE_FILTER, UPDATE_FILTERS, CHANGE_VIEW, CHANGE_TIMEZONE} from '../actions/schedule-actions'
-import {RESET_STATE, SYNC_DATA} from '../actions/base-actions';
-import {GET_EVENT_DATA} from '../actions/event-actions';
-
-const {color_source, ...filters} = filtersData;
+import {RESET_STATE} from '../actions/base-actions';
 
 const summitTimeZoneId = summitData.summit.time_zone_id;  // TODO use reducer data
 
-const DEFAULT_STATE = {
+/*const INITIAL_STATE = {
     filters: filters,
     colorSource: color_source,
-    allEvents: eventsData,
-    allScheduleEvents: filterEventsByTags(eventsData),
     events: filterEventsByTags(eventsData),
     view: 'calendar',
     timezone: 'show'
-};
+};*/
 
-const scheduleReducer = (state = DEFAULT_STATE, action) => {
+const INITIAL_STATE = {
+    events: [],
+    filters: [],
+}
+
+const scheduleReducer = (key) => (state = INITIAL_STATE, action) => {
     const {type, payload} = action;
 
     switch (type) {
         case RESET_STATE:
         case LOGOUT_USER:
-            return DEFAULT_STATE;
-        case SYNC_DATA: {
-            const {filters: currentFilters} = state;
-            // new filter could have new keys, or less keys that current one .... so its the source of truth
-            const newFilters = syncFilters({...filters}, currentFilters);
-            const allScheduleEvents = filterEventsByTags(eventsData);
-            const events = getFilteredEvents(allScheduleEvents, newFilters, summitTimeZoneId);
-            return {...state, allEvents: eventsData, filters: newFilters, colorSource: color_source, events, allScheduleEvents};
-        }
-        case GET_EVENT_DATA: {
-            const {allEvents} = state;
-            // check first if we have api response
-            const event = payload.response || payload.event;
-            const index = state.allEvents.findIndex((e) => e.id === event.id);
-            const updatedEvents = [...allEvents];
+            return INITIAL_STATE;
+        case `SYNC_DATA_${key}`: {
+            const {color_source, baseFilters, pre_filters, allEvents, filters } = state;
 
-            if (index >= 0) {
-                // update the event on reducer
-                updatedEvents[index] = {...event};
-            } else {
-                // add the event to reducer
-                updatedEvents.push(event);
-            }
-            return {...state, allEvents: updatedEvents};
+            console.log('ALL EVENTS SCHED', allEvents);
+
+            // new filter could have new keys, or less keys that current one .... so its the source of truth
+            const allFilteredEvents = preFilterEvents(allEvents, pre_filters, summitTimeZoneId);
+            const newFilters = syncFilters(baseFilters, filters);
+            const events = getFilteredEvents(allFilteredEvents, newFilters, summitTimeZoneId);
+            return {...state, allEvents: allFilteredEvents, filters: newFilters, colorSource: color_source, events};
         }
-        case UPDATE_FILTER: {
+        case `UPDATE_FILTER_${key}`: {
             const {type, values} = payload;
-            const {filters, allScheduleEvents} = state;
+            const {filters, allEvents} = state;
             filters[type].values = values;
 
             // update events
-            const events = getFilteredEvents(allScheduleEvents, filters, summitTimeZoneId);
+            const events = getFilteredEvents(allEvents, filters, summitTimeZoneId);
 
             return {...state, filters, events}
         }
-        case UPDATE_FILTERS: {
+        case `UPDATE_FILTERS_${key}`: {
             const {filters, view} = payload;
-            const {allScheduleEvents} = state;
+            const {allEvents} = state;
 
             // update events
-            const events = getFilteredEvents(allScheduleEvents, filters, summitTimeZoneId);
+            const events = getFilteredEvents(allEvents, filters, summitTimeZoneId);
 
             return {...state, filters, events, view}
         }
-        case CHANGE_VIEW: {
+        case `CHANGE_VIEW_${key}`: {
             const {view} = payload;
             return {...state, view}
         }
-        case CHANGE_TIMEZONE: {
+        case `CHANGE_TIMEZONE_${key}`: {
             const {timezone} = payload;
             return {...state, timezone}
         }
