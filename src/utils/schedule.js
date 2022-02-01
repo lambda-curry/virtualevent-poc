@@ -44,6 +44,8 @@ export const preFilterEvents = (events, filters, summitTimezone) => {
       valid = filters.track.values.includes(ev.track.id);
       if (!valid) return false;
     }
+
+    return true;
   });
 };
 
