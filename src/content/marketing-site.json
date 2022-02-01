@@ -15,11 +15,13 @@
         "display": true
       }
     },
-    "background": "",
+    "background": {
+      "alt": ""
+    },
     "images": [
       {
         "file": "/img/flavor_wheel.jpg",
-        "alt": "tet alt"
+        "alt": "flavor wheel alt"
       }
     ]
   },
