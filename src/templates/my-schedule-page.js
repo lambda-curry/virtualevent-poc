@@ -21,20 +21,17 @@ import styles from "../styles/full-schedule.module.scss";
 
 const MySchedulePage = ({
   summit,
+    schedules,
   summitPhase,
   isLoggedUser,
   location,
-  events,
-  allEvents,
-  filters,
-  view,
-  timezone,
-  colorSource,
   colorSettings,
   updateFilter,
   updateFiltersFromHash,
 }) => {
   const [showFilters, setShowfilters] = useState(false);
+  const scheduleState = schedules.find( s => s.key === 'mysched');
+  const {events, allEvents, filters, view, timezone, colorSource} = scheduleState || {};
 
   const filterProps = {
     summit,
@@ -69,7 +66,7 @@ const MySchedulePage = ({
     updateFiltersFromHash(filters, view, MY_SCHEDULE_UPDATE_FILTERS);
   });
 
-  if (!summit) return null;
+  if (!summit || !scheduleState) return null;
 
   return (
     <Layout location={location}>
@@ -95,23 +92,12 @@ MySchedulePage.propTypes = {
   isLoggedUser: PropTypes.bool,
 };
 
-const mapStateToProps = ({
-  summitState,
-  clockState,
-  loggedUserState,
-  myScheduleState,
-  settingState,
-}) => ({
+const mapStateToProps = ({summitState, clockState, loggedUserState, allSchedulesState, settingState }) => ({
   summit: summitState.summit,
   summitPhase: clockState.summit_phase,
   isLoggedUser: loggedUserState.isLoggedUser,
-  events: myScheduleState.events,
-  allEvents: myScheduleState.allEvents,
-  filters: myScheduleState.filters,
-  view: myScheduleState.view,
-  timezone: myScheduleState.timezone,
-  colorSource: myScheduleState.colorSource,
   colorSettings: settingState.colorSettings,
+  schedules: allSchedulesState.schedules,
 });
 
 export default connect(mapStateToProps, {

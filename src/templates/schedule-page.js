@@ -14,28 +14,15 @@ import FilterButton from "../components/FilterButton";
 
 import styles from "../styles/full-schedule.module.scss";
 
-
-const SchedulePage = ({
-  summit,
-  summitPhase,
-  isLoggedUser,
-  location,
-  events,
-  allScheduleEvents,
-  filters,
-  view,
-  timezone,
-  colorSource,
-  colorSettings,
-  updateFilter,
-  updateFiltersFromHash,
-}) => {
+const SchedulePage = ({summit, schedules, summitPhase, isLoggedUser, location, colorSettings, updateFilter, updateFiltersFromHash }) => {
   const [showFilters, setShowfilters] = useState(false);
+  const scheduleState = schedules.find( s => s.key === 'sched1');
+  const {events, allEvents, filters, view, timezone, colorSource} = scheduleState || {};
 
   const filterProps = {
     summit,
     events,
-    allEvents: allScheduleEvents,
+    allEvents,
     filters: pickBy(filters, (value) => value.enabled),
     triggerAction: (action, payload) => {
       updateFilter(payload);
@@ -65,7 +52,7 @@ const SchedulePage = ({
     updateFiltersFromHash(filters, view);
   });
 
-  if (!summit) return null;
+  if (!summit || !scheduleState) return null;
 
   return (
     <Layout location={location}>
@@ -91,22 +78,11 @@ SchedulePage.propTypes = {
   isLoggedUser: PropTypes.bool,
 };
 
-const mapStateToProps = ({
-  summitState,
-  clockState,
-  loggedUserState,
-  scheduleState,
-  settingState,
-}) => ({
+const mapStateToProps = ({ summitState, clockState, loggedUserState, allSchedulesState, settingState }) => ({
   summit: summitState.summit,
   summitPhase: clockState.summit_phase,
   isLoggedUser: loggedUserState.isLoggedUser,
-  events: scheduleState.events,
-  allScheduleEvents: scheduleState.allScheduleEvents,
-  filters: scheduleState.filters,
-  view: scheduleState.view,
-  timezone: scheduleState.timezone,
-  colorSource: scheduleState.colorSource,
+  schedules: allSchedulesState.schedules,
   colorSettings: settingState.colorSettings,
 });
 
