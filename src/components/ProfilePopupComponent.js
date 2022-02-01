@@ -202,10 +202,11 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
                   <div className='column is-one-quarter'>First Name</div>
                   <div className='column is-two-thirds'>
                     <input
-                        className={`${styles.input} ${styles.isMedium}`}
+                        className={`${styles.input} ${styles.isMedium} ${styles.readOnly}`}
                         type="text"
                         placeholder="First Name"
                         onChange={e => setFirstName(e.target.value)}
+                        readOnly={true}
                         value={firstName} />
                   </div>
                 </div>
@@ -213,7 +214,7 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
                   <div className='column is-one-quarter'>Last Name</div>
                   <div className='column is-two-thirds'>
                     <input
-                        className={`${styles.input} ${styles.isMedium}`}
+                        className={`${styles.input} ${styles.isMedium} ${styles.readOnly}`}
                         type="text"
                         placeholder="Last Name"
                         onChange={e => setLastName(e.target.value)}
@@ -225,7 +226,7 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
                   <div className='column is-one-quarter'>Company</div>
                   <div className='column is-two-thirds'>
                     <input
-                        className={`${styles.input} ${styles.isMedium}`}
+                        className={`${styles.input} ${styles.isMedium} ${styles.readOnly}`}
                         type="text"
                         readOnly={true}
                         placeholder="Company"
