@@ -92,7 +92,7 @@ const SSR_getSummit = async (baseUrl, summitId) => {
       `${baseUrl}/api/public/v1/summits/${summitId}`,
       { params }
   )
-      .then(({data}) => {return data.data})
+      .then(({data}) => data)
       .catch(e => console.log('ERROR: ', e));
 };
 
@@ -211,6 +211,22 @@ exports.sourceNodes = async ({
   const { createNode } = actions;
 
   const summit = await SSR_getSummit(process.env.GATSBY_SUMMIT_API_BASE_URL, process.env.GATSBY_SUMMIT_ID);
+
+  // DUMMY DATA
+  summit.schedules_settings = [
+    {
+      key: 'sched1',
+      filters: {
+        track: { label: 'Treackk', enabled: true }
+      },
+      pre_filters: {
+        track: { values: [35820] }
+      },
+      color_source: 'track'
+    }
+  ];
+
+
   const summitObject = { summit };
   fs.writeFileSync('src/content/summit.json', JSON.stringify(summitObject), 'utf8');
 

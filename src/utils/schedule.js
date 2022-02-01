@@ -36,6 +36,17 @@ export const filterEventsByTags = (events) => {
       : events;
 };
 
+export const preFilterEvents = (events, filters, summitTimezone) => {
+  return events.filter((ev) => {
+    let valid = true;
+
+    if (filters.track?.values.length > 0) {
+      valid = filters.track.values.includes(ev.track.id);
+      if (!valid) return false;
+    }
+  });
+};
+
 export const getFilteredEvents = (events, filters, summitTimezone) => {
   return events.filter((ev) => {
     let valid = true;
