@@ -6,8 +6,6 @@ import presentationsReducer from "../reducers/presentations-reducer";
 import summitReducer from "../reducers/summit-reducer";
 import userReducer from "../reducers/user-reducer";
 import allSchedulesReducer from "../reducers/all-schedules-reducer";
-import scheduleReducer from "../reducers/schedule-reducer";
-import myScheduleReducer from "../reducers/my-schedule-reducer";
 import clockReducer from "../reducers/clock-reducer";
 import speakerReducer from "../reducers/speaker-reducer";
 import settingReducer from "../reducers/setting-reducer";

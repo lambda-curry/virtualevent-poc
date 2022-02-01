@@ -22,7 +22,7 @@ const FooterMarketing = () => (
         net.display &&
         <Link href={net.link} className={styles.link} key={index}>
           {net.icon === 'fa-facebook' ?
-            <img style={{ width: 25, margin: '-10px 10px 0 0' }} src="/img/f_logo_RGB-White_58.png" />
+            <img alt="logo" style={{ width: 25, margin: '-10px 10px 0 0' }} src="/img/f_logo_RGB-White_58.png" />
             :
             <i className={`fa icon is-large ${net.icon}`} />
           }
