@@ -19,6 +19,16 @@
       ]
     },
     {
+      "requiresAuth": true,
+      "showOnlyAtShowTime": false,
+      "pageRestriction": [
+        "ANY"
+      ],
+      "title": "My Schedule",
+      "link": "/a/my-schedule",
+      "display": true
+    },
+    {
       "title": "Sponsors ",
       "link": "/a/sponsors/",
       "display": true,
