@@ -14717,6 +14717,11 @@ react-avatar-editor@11.0.9:
   dependencies:
     prop-types "^15.5.8"
 
+react-block-image@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-block-image/-/react-block-image-1.0.0.tgz#5c46d7a115fa7efa70d477a2580ec0c9b2106283"
+  integrity sha1-XEbXoRX6fvpw1HeiWA7AybIQYoM=
+
 react-bootstrap@^0.31.5:
   version "0.31.5"
   resolved "https://registry.yarnpkg.com/react-bootstrap/-/react-bootstrap-0.31.5.tgz#57040fa8b1274e1e074803c21a1b895fdabea05a"
