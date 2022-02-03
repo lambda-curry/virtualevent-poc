@@ -61,6 +61,12 @@
                 "link": "https://www.redhat.com/en/solutions/digital-transformation",
                 "order": 6,
                 "name": "Red Hat Digital Transformation"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Red Hat Edge Computing",
+                "link": "https://www.redhat.com/en/topics/edge-computing/approach",
+                "order": 7
               }
             ]
           },
