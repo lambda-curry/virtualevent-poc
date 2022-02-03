@@ -24,7 +24,20 @@
           "companyId": 135,
           "documents": {
             "videos": [],
-            "slides": [],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/Yahoo_TechWeek_2022/Sponsor_Content/1%20Gain%20data%20insights%20using%20AI%20on%20Red%20Hat%20OpenShift.pdf",
+                "name": "Gain data insights using AI on Red Hat OpenShift",
+                "order": 8
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/Yahoo_TechWeek_2022/Sponsor_Content/2%20Business%20Value%20of%20Red%20Hat%20OpenShift.pdf",
+                "name": "Business Value of Red Hat Open Shift",
+                "order": 9
+              }
+            ],
             "links": [
               {
                 "class_name": "PresentationLink",
