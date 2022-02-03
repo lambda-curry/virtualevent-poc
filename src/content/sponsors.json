@@ -55,6 +55,12 @@
                 "name": "Twitter",
                 "order": 5,
                 "link": "https://twitter.com/RedHat"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://www.redhat.com/en/solutions/digital-transformation",
+                "order": 6,
+                "name": "Red Hat Digital Transformation"
               }
             ]
           },
