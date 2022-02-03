@@ -27,31 +27,31 @@
             "slides": [
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/1-gain-data-insights-using-ai-on-red-hat-openshift.pdf",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/Yahoo_TechWeek_2022/Sponsor_Content/1%20Gain%20data%20insights%20using%20AI%20on%20Red%20Hat%20OpenShift.pdf",
                 "name": "Gain data insights using AI on Red Hat OpenShift",
                 "order": 8
               },
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/2-business-value-of-red-hat-openshift.pdf",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/Yahoo_TechWeek_2022/Sponsor_Content/2%20Business%20Value%20of%20Red%20Hat%20OpenShift.pdf",
                 "name": "Business Value of Red Hat Open Shift",
                 "order": 9
               },
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/3-business-value-of-red-hat-ansible-automation.pdf",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/Yahoo_TechWeek_2022/Sponsor_Content/3%20Business%20Value%20of%20Red%20Hat%20Ansible%20Automation.pdf",
                 "name": "Business Value of Red Hat Ansible Automation",
                 "order": 10
               },
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/4-red-hat-openshift-data-foundation.pdf",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/Yahoo_TechWeek_2022/Sponsor_Content/4%20Red%20Hat%20OpenShift%20Data%20Foundation.pdf",
                 "name": "Red Hat OpenShift Data Foundation",
                 "order": 11
               },
               {
                 "class_name": "PresentationSlide",
-                "link": "/img/5-devsecops-risk-reduction-for-better-business-outcomes.pdf",
+                "link": "https://fntech.sfo2.cdn.digitaloceanspaces.com/Yahoo_TechWeek_2022/Sponsor_Content/5%20DevSecOps-Risk%20Reduction%20for%20Better%20Business%20Outcomes.pdf",
                 "name": "DevSecOps-Risk Reduction for Better Business Outcomes",
                 "order": 12
               }
