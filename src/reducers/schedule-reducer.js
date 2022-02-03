@@ -1,43 +1,33 @@
 import summitData from '../content/summit.json';
-import {syncFilters} from "../utils/filterUtils";
-import {getFilteredEvents, preFilterEvents} from '../utils/schedule';
+import {getFilteredEvents, syncFilters} from '../utils/schedule';
 import {LOGOUT_USER} from "openstack-uicore-foundation/lib/actions";
 import {RESET_STATE} from '../actions/base-actions';
 
 const summitTimeZoneId = summitData.summit.time_zone_id;  // TODO use reducer data
 
-/*const INITIAL_STATE = {
-    filters: filters,
-    colorSource: color_source,
-    events: filterEventsByTags(eventsData),
-    view: 'calendar',
-    timezone: 'show'
-};*/
-
 const INITIAL_STATE = {
     events: [],
     filters: [],
-}
+    view: 'calendar',
+    timezone: 'show'
+};
 
-const scheduleReducer = (key) => (state = INITIAL_STATE, action) => {
+const scheduleReducer = (state = INITIAL_STATE, action) => {
     const {type, payload} = action;
 
     switch (type) {
         case RESET_STATE:
         case LOGOUT_USER:
             return INITIAL_STATE;
-        case `SYNC_DATA_${key}`: {
-            const {color_source, baseFilters, pre_filters, allEvents, filters } = state;
+        case `SCHED_SYNC_DATA`: {
+            const {color_source, pre_filters, allEvents, filters} = payload; // data from JSON
 
-            console.log('ALL EVENTS SCHED', allEvents);
-
-            // new filter could have new keys, or less keys that current one .... so its the source of truth
-            const allFilteredEvents = preFilterEvents(allEvents, pre_filters, summitTimeZoneId);
-            const newFilters = syncFilters(baseFilters, filters);
+            const allFilteredEvents = getFilteredEvents(allEvents, pre_filters, summitTimeZoneId);
+            const newFilters = syncFilters(filters, state.filters);
             const events = getFilteredEvents(allFilteredEvents, newFilters, summitTimeZoneId);
             return {...state, allEvents: allFilteredEvents, filters: newFilters, colorSource: color_source, events};
         }
-        case `UPDATE_FILTER_${key}`: {
+        case `SCHED_UPDATE_FILTER`: {
             const {type, values} = payload;
             const {filters, allEvents} = state;
             filters[type].values = values;
@@ -47,7 +37,7 @@ const scheduleReducer = (key) => (state = INITIAL_STATE, action) => {
 
             return {...state, filters, events}
         }
-        case `UPDATE_FILTERS_${key}`: {
+        case `SCHED_UPDATE_FILTERS`: {
             const {filters, view} = payload;
             const {allEvents} = state;
 
@@ -56,11 +46,11 @@ const scheduleReducer = (key) => (state = INITIAL_STATE, action) => {
 
             return {...state, filters, events, view}
         }
-        case `CHANGE_VIEW_${key}`: {
+        case `SCHED_CHANGE_VIEW`: {
             const {view} = payload;
             return {...state, view}
         }
-        case `CHANGE_TIMEZONE_${key}`: {
+        case `SCHED_CHANGE_TIMEZONE`: {
             const {timezone} = payload;
             return {...state, timezone}
         }

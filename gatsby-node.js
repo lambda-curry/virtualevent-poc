@@ -220,7 +220,18 @@ exports.sourceNodes = async ({
         track: { label: 'Treackk', enabled: true }
       },
       pre_filters: {
-        track: { values: [35820] }
+        //track: { values: [35823] }
+        venues: { values: [106]}
+      },
+      color_source: 'track'
+    },
+    {
+      key: 'mysched',
+      filters: {
+        track: { label: 'Track', enabled: true }
+      },
+      pre_filters: {
+        track: { values: [35820, 35821] }
       },
       color_source: 'track'
     }

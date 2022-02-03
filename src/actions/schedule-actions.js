@@ -13,11 +13,11 @@ export const MY_SCHEDULE_UPDATE_FILTERS     = 'MY_SCHEDULE_UPDATE_FILTERS';
 
 const fragmentParser = new FragmentParser();
 
-export const updateFilter = (filter, action = UPDATE_FILTER) => (dispatch) => {
-    dispatch(createAction(action)({...filter}))
+export const updateFilter = (key, filter, action = UPDATE_FILTER) => (dispatch) => {
+    dispatch(createAction(action)({...filter, key}))
 };
 
-export const updateFiltersFromHash = (filters, view, actionCallback = UPDATE_FILTERS) => (dispatch) => {
+export const updateFiltersFromHash = (key, filters, view, actionCallback = UPDATE_FILTERS) => (dispatch) => {
     const qsFilters = fragmentParser.getParams();
 
     // clear hash
@@ -53,7 +53,7 @@ export const updateFiltersFromHash = (filters, view, actionCallback = UPDATE_FIL
 
     // only update if filters have changed
     if (!isEqual(newFilters, filters) || view !== qsFilters.view) {
-        dispatch(createAction(actionCallback)({filters: newFilters, view: qsFilters.view}));
+        dispatch(createAction(actionCallback)({filters: newFilters, view: qsFilters.view, key}));
     }
 };
 
@@ -76,6 +76,6 @@ export const getShareLink = (filters, view) => {
     return '';
 };
 
-export const callAction = (action, payload) => (dispatch) => {
-    return dispatch(createAction(action)(payload));
+export const callAction = (key, action, payload) => (dispatch) => {
+    return dispatch(createAction(action)({...payload, key}));
 };
