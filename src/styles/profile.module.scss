@@ -103,6 +103,11 @@
 
         .input-row {
           align-items: center;
+          input[type=text] {
+            &.read-only {
+              cursor: not-allowed;
+            }
+          }
         }
       }
 
