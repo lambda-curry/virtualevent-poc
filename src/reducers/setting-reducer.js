@@ -8,7 +8,7 @@ import { START_LOADING, STOP_LOADING, LOGOUT_USER } from "openstack-uicore-found
 import {RESET_STATE, SYNC_DATA} from "../actions/base-actions";
 
 const DEFAULT_STATE = {
-  lastBuild: settings.lastBuild,
+  lastBuild: 0,
   favicons: settings.favicons,
   widgets: settings.widgets,
   colorSettings: colors,
@@ -22,9 +22,10 @@ const settingReducer = (state = DEFAULT_STATE, action) => {
 
   switch (type) {
     case RESET_STATE:
-    case SYNC_DATA:
     case LOGOUT_USER:
       return DEFAULT_STATE;
+    case SYNC_DATA:
+      return {...DEFAULT_STATE, lastBuild: settings.lastBuild};
     case START_LOADING:
       return { ...state, loading: true };
     case STOP_LOADING:

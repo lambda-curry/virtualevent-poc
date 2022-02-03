@@ -13,7 +13,6 @@ import FullProfilePage from "../templates/full-profile-page"
 import WithAuthRoute from '../routes/WithAuthRoute'
 import withSessionChecker from "../utils/withSessionChecker"
 import ExtraQuestionsPage from "../templates/extra-questions-page"
-import MySchedulePage from "../templates/my-schedule-page";
 import ShowOpenRoute from "../routes/ShowOpenRoute";
 import WithBadgeRoute from "../routes/WithBadgeRoute";
 
@@ -29,9 +28,9 @@ const App = ({ isLoggedUser, user, summit_phase, lastBuild, syncData }) => {
     <Location>
       {({ location }) => (
         <Router basepath="/a" >
-          <SchedulePage path="/schedule" location={location} />
+          <SchedulePage path="/schedule" location={location} schedKey="sched1" />
           <WithAuthRoute path="/" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location}>
-            <MySchedulePage path="/my-schedule" location={location} summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user}/>
+            <SchedulePage path="/my-schedule" location={location} summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} scheduleProps={{title: 'My Schedule'}} schedKey="mysched" />
             <ExtraQuestionsPage path="/extra-questions" isLoggedIn={isLoggedUser} user={user} location={location} />
             <FullProfilePage path="/profile" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location} />
             <ShowOpenRoute path="/" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location}>

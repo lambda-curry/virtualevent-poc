@@ -14,9 +14,16 @@ import FilterButton from "../components/FilterButton";
 
 import styles from "../styles/full-schedule.module.scss";
 
-const SchedulePage = ({summit, schedules, summitPhase, isLoggedUser, location, colorSettings, updateFilter, updateFiltersFromHash }) => {
+const SchedulePage = ({summit, schedules, summitPhase, isLoggedUser, location, colorSettings, updateFilter, updateFiltersFromHash, scheduleProps, schedKey }) => {
   const [showFilters, setShowfilters] = useState(false);
-  const scheduleState = schedules.find( s => s.key === 'sched1');
+  const scheduleState = schedules.find( s => s.key === schedKey);
+
+  useEffect(() => {
+    updateFiltersFromHash(schedKey, filters, view);
+  }, []);
+
+  if (!summit || schedules.length === 0 || !scheduleState) return null;
+
   const {events, allEvents, filters, view, timezone, colorSource} = scheduleState || {};
 
   const filterProps = {
@@ -25,41 +32,37 @@ const SchedulePage = ({summit, schedules, summitPhase, isLoggedUser, location, c
     allEvents,
     filters: pickBy(filters, (value) => value.enabled),
     triggerAction: (action, payload) => {
-      updateFilter(payload);
+      updateFilter(schedKey, payload);
     },
     marketingSettings: colorSettings,
     colorSource: colorSource,
   };
 
-  let scheduleProps = {
+  let schedProps = {
     summit,
     events,
     filters,
     view,
     timezone,
     colorSource,
+    schedKey,
+    ...scheduleProps
   };
 
   if (isLoggedUser && summitPhase !== PHASES.BEFORE) {
-    scheduleProps = {
-      ...scheduleProps,
+    schedProps = {
+      ...schedProps,
       onEventClick: (ev) => navigate(`/a/event/${ev.id}`, { state: { previousUrl: location.pathname }}),
       onStartChat: null,
     };
   }
-
-  useEffect(() => {
-    updateFiltersFromHash(filters, view);
-  });
-
-  if (!summit || !scheduleState) return null;
 
   return (
     <Layout location={location}>
       <div className="container">
         <div className={`${styles.wrapper} ${showFilters ? styles.showFilters : ""}`}>
           <div className={styles.scheduleWrapper}>
-            <FullSchedule {...scheduleProps} />
+            <FullSchedule {...schedProps} />
           </div>
           <div className={styles.filterWrapper}>
             <ScheduleFilters {...filterProps} />
@@ -74,6 +77,7 @@ const SchedulePage = ({summit, schedules, summitPhase, isLoggedUser, location, c
 };
 
 SchedulePage.propTypes = {
+  schedKey: PropTypes.string.isRequired,
   summitPhase: PropTypes.number,
   isLoggedUser: PropTypes.bool,
 };

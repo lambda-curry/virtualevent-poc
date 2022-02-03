@@ -36,19 +36,6 @@ export const filterEventsByTags = (events) => {
       : events;
 };
 
-export const preFilterEvents = (events, filters, summitTimezone) => {
-  return events.filter((ev) => {
-    let valid = true;
-
-    if (filters.track?.values.length > 0) {
-      valid = filters.track.values.includes(ev.track.id);
-      if (!valid) return false;
-    }
-
-    return true;
-  });
-};
-
 export const getFilteredEvents = (events, filters, summitTimezone) => {
   return events.filter((ev) => {
     let valid = true;
@@ -125,3 +112,21 @@ export const getFilteredEvents = (events, filters, summitTimezone) => {
     return true;
   });
 };
+
+export const syncFilters = (newFilters, currentFilters) => {
+  // new filters are the source of truth
+  Object.entries(newFilters).forEach(([key, value]) => {
+    value.values = [];
+    value.options = [];
+
+    if(currentFilters.hasOwnProperty(key)) {
+      // copy over values and options if they exists
+      const filter = currentFilters[key];
+      if(filter.hasOwnProperty("values"))
+        value.values = filter.values;
+      if(filter.hasOwnProperty("options"))
+        value.options = filter.options;
+    }
+  });
+  return newFilters;
+}

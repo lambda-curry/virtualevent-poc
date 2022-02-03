@@ -24,14 +24,21 @@ const allSchedulesReducer = (state = DEFAULT_STATE, action) => {
             return DEFAULT_STATE;
         case SYNC_DATA: {
             const {allScheduleEvents} = DEFAULT_STATE;
+            const {summit} = summitData;
 
-            const schedules = summitData.schedule_settings.map(sched => {
-                const {key, filters, ...rest} = sched;
-                const schedInitialState = {allEvents: allScheduleEvents, baseFilters: filters, ...rest};
-                const schedReducer = scheduleReducer(key);
-                const schedState = schedReducer(schedInitialState, `${action}_${key}`);
-                return {key, reducer: schedReducer, state: schedState};
-            });
+            const schedules = summit?.schedules_settings.map(sched => {
+                const {key} = sched;
+                const scheduleState = state.schedules.find(s => s.key === key);
+                const newData = {...sched, allEvents: allScheduleEvents};
+
+                const schedState = scheduleReducer(scheduleState, {type: `SCHED_${type}`, payload: newData});
+
+                return {
+                    key,
+                    ...schedState
+                };
+
+            }) || [];
 
             return {...DEFAULT_STATE, schedules};
         }
@@ -57,9 +64,15 @@ const allSchedulesReducer = (state = DEFAULT_STATE, action) => {
         case UPDATE_FILTER: {
             const {key} = payload;
             const {schedules} = state;
-            const schedule = schedules.find(s => s.key === key);
-            schedule.state = schedule.reducer(schedule.state, `${action}_${key}`);
-            return {...state, schedules};
+
+            const newSchedules = schedules.map(sched => {
+                if (sched.key === key) {
+                    return scheduleReducer(sched, {...action, type: `SCHED_${type}`});
+                }
+                return sched;
+            })
+
+            return {...state, schedules: newSchedules};
         }
         default:
             return state;
