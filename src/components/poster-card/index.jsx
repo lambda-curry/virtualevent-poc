@@ -1,27 +1,29 @@
-import React, {useState} from "react";
+import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 
 import VoteButton from './vote-button';
 import BlockImage from 'react-block-image';
 
-import styles from "./index.module.scss";
+import styles from './index.module.scss';
 
-const PosterCard = ({ title, order, track, imageURL, showDetail, isVoted, canVote, toggleVote }) => {
+const PosterCard = ({ poster, showDetail, canVote, toggleVote }) => {
   const [hover, setHover] = useState(false);
+  if (!poster) return null;
+  const {title, order, track, imageURL, isVoted} = poster;
   const handleClick = ev => {
       ev.preventDefault();
       ev.stopPropagation();
       if (showDetail) {
-        showDetail()
+        showDetail();
       }
   };
   return (
-    <section className={styles.card}>
+    <article className={styles.card}>
       <BlockImage
         src={imageURL}
-        className={`${styles.header} ${showDetail && hover ? styles.header__hover : ""}`}
-        onMouseEnter={() => { setHover(true) }} 
-        onMouseLeave={() => { setHover(false) }}
+        className={`${styles.header} ${showDetail && hover ? styles.header__hover : ''}`}
+        onMouseEnter={() => setHover(true)} 
+        onMouseLeave={() => setHover(false)}
         onClick={handleClick}
       >
         { showDetail && hover &&
@@ -40,20 +42,16 @@ const PosterCard = ({ title, order, track, imageURL, showDetail, isVoted, canVot
         <VoteButton
           isVoted={isVoted}
           canVote={canVote}
-          toggleVote={toggleVote}
+          toggleVote={() => toggleVote(poster)}
         />
       </div>
-    </section>
+    </article>
   );
 };
 
 PosterCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  order: PropTypes.string,
-  track: PropTypes.object,
-  imageURL: PropTypes.string,
+  poster: PropTypes.object.isRequired,
   showDetail: PropTypes.func,
-  isVoted: PropTypes.bool.isRequired,
   canVote: PropTypes.bool.isRequired,
   toggleVote: PropTypes.func.isRequired,
 };
