@@ -4,11 +4,9 @@ import PropTypes from 'prop-types';
 import styles from './vote-button.module.scss';
 
 const VoteButton = ({isVoted, canVote, toggleVote}) => {
-
   let buttonClass = null;
   let iconClass = null;
   let title = '';
-
   if (isVoted) {
     iconClass = 'fa-heart';
     buttonClass = styles.added;
@@ -18,7 +16,6 @@ const VoteButton = ({isVoted, canVote, toggleVote}) => {
     buttonClass = canVote ? styles.add : styles.disabled;
     title = canVote ? 'Vote for this poster!' : 'Maximun votes registered'
   }
-
   return (
     <button
       title={title}
