@@ -31,6 +31,7 @@ const App = ({ isLoggedUser, user, summit_phase, lastBuild, syncData }) => {
       {({ location }) => (
         <Router basepath="/a" >
           <SchedulePage path="/schedule" location={location} schedKey="sched1" />
+          <SchedulePage path="/schedule2" location={location} schedKey="sched2" />
           <WithAuthRoute path="/" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location}>
             <PostersPage path="/posters" trackGroupId={0} location={location} />
             <PostersPage path="/posters/:trackGroupId" location={location} />

@@ -60,14 +60,18 @@ export const updateFiltersFromHash = (key, filters, view, actionCallback = UPDAT
 export const getShareLink = (filters, view) => {
     const hashVars = [];
 
-    Object.entries(filters).forEach(([key, value]) => {
-        if(value.values.length > 0) {
-            const hashValue = Array.isArray(value.values) ? value.values.join(',') : value.values;
-            hashVars.push(`${key}=${hashValue}`)
-        }
-    });
+    if (filters) {
+        Object.entries(filters).forEach(([key, value]) => {
+            if (value.values.length > 0) {
+                const hashValue = Array.isArray(value.values) ? value.values.join(',') : value.values;
+                hashVars.push(`${key}=${hashValue}`)
+            }
+        });
+    }
 
-    hashVars.push(`view=${view}`);
+    if (view) {
+        hashVars.push(`view=${view}`);
+    }
 
     if (typeof window !== 'undefined') {
         return `${window.location}#${hashVars.join('&')}`;

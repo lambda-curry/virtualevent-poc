@@ -6,6 +6,7 @@ import {LOGOUT_USER} from "openstack-uicore-foundation/lib/actions";
 import {UPDATE_FILTER, UPDATE_FILTERS, CHANGE_VIEW, CHANGE_TIMEZONE} from '../actions/schedule-actions'
 import {RESET_STATE, SYNC_DATA} from '../actions/base-actions';
 import {GET_EVENT_DATA} from '../actions/event-actions';
+import {GET_USER_PROFILE} from "../actions/user-actions";
 
 const scheduleEvents = filterEventsByTags(eventsData);
 
@@ -22,6 +23,20 @@ const allSchedulesReducer = (state = DEFAULT_STATE, action) => {
         case RESET_STATE:
         case LOGOUT_USER:
             return DEFAULT_STATE;
+        case GET_USER_PROFILE: {
+            const {summit_tickets} = payload.response;
+            // filter events by access level
+            const {schedules} = state;
+
+            const newSchedules = schedules.map(sched => {
+                if (sched.only_events_with_attendee_access) {
+                    return scheduleReducer(sched, {payload: summit_tickets, type: `SCHED_${type}`});
+                }
+                return sched;
+            })
+
+            return {...state, schedules: newSchedules};
+        }
         case SYNC_DATA: {
             const {allScheduleEvents} = DEFAULT_STATE;
             const {summit} = summitData;
@@ -29,9 +44,9 @@ const allSchedulesReducer = (state = DEFAULT_STATE, action) => {
             const schedules = summit?.schedules_settings.map(sched => {
                 const {key} = sched;
                 const scheduleState = state.schedules.find(s => s.key === key);
-                const newData = {...sched, allEvents: allScheduleEvents};
+                const newData = {...sched, all_events: allScheduleEvents};
 
-                const schedState = scheduleReducer(scheduleState, {type: `SCHED_${type}`, payload: newData});
+                const schedState = scheduleReducer(scheduleState, {type: `SCHED_${type}`, payload: {...newData, ...payload}});
 
                 return {
                     key,

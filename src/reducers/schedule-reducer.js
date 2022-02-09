@@ -1,7 +1,5 @@
 import summitData from '../content/summit.json';
-import {getFilteredEvents, syncFilters} from '../utils/schedule';
-import {LOGOUT_USER} from "openstack-uicore-foundation/lib/actions";
-import {RESET_STATE} from '../actions/base-actions';
+import {filterEventsByAccessLevel, getFilteredEvents, preFilterEvents, syncFilters} from '../utils/schedule';
 
 const summitTimeZoneId = summitData.summit.time_zone_id;  // TODO use reducer data
 
@@ -16,15 +14,30 @@ const scheduleReducer = (state = INITIAL_STATE, action) => {
     const {type, payload} = action;
 
     switch (type) {
-        case RESET_STATE:
-        case LOGOUT_USER:
-            return INITIAL_STATE;
+        case `SCHED_GET_USER_PROFILE`: {
+            const {allEvents, events} = state;
+            const allFilteredEvents = filterEventsByAccessLevel(allEvents, payload);
+            const filteredEvents = filterEventsByAccessLevel(events, payload);
+            return {...state, events: filteredEvents, allEvents: allFilteredEvents};
+        }
         case `SCHED_SYNC_DATA`: {
-            const {color_source, pre_filters, allEvents, filters} = payload; // data from JSON
+            const {
+                color_source,
+                pre_filters,
+                all_events,
+                filters,
+                only_events_with_attendee_access,
+                is_my_schedule,
+                userProfile,
+                isLoggedUser
+            } = payload; // data from JSON
 
-            const allFilteredEvents = getFilteredEvents(allEvents, pre_filters, summitTimeZoneId);
+            const filterByAccessLevel = only_events_with_attendee_access && isLoggedUser;
+            const filterByMySchedule = is_my_schedule && isLoggedUser;
+            const allFilteredEvents = preFilterEvents(all_events, pre_filters, summitTimeZoneId, userProfile, filterByAccessLevel, filterByMySchedule);
             const newFilters = syncFilters(filters, state.filters);
             const events = getFilteredEvents(allFilteredEvents, newFilters, summitTimeZoneId);
+
             return {...state, allEvents: allFilteredEvents, filters: newFilters, colorSource: color_source, events};
         }
         case `SCHED_UPDATE_FILTER`: {

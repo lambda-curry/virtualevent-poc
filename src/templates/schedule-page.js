@@ -13,18 +13,23 @@ import { PHASES } from "../utils/phasesUtils";
 import FilterButton from "../components/FilterButton";
 
 import styles from "../styles/full-schedule.module.scss";
+import NotFoundPage from "../pages/404";
 
 const SchedulePage = ({summit, schedules, summitPhase, isLoggedUser, location, colorSettings, updateFilter, updateFiltersFromHash, scheduleProps, schedKey }) => {
   const [showFilters, setShowfilters] = useState(false);
   const scheduleState = schedules.find( s => s.key === schedKey);
+  const {events, allEvents, filters, view, timezone, colorSource} = scheduleState || {};
 
   useEffect(() => {
     updateFiltersFromHash(schedKey, filters, view);
-  }, []);
+  }, [schedKey, filters, view, updateFiltersFromHash]);
 
-  if (!summit || schedules.length === 0 || !scheduleState) return null;
+  if (!summit || schedules.length === 0) return null;
 
-  const {events, allEvents, filters, view, timezone, colorSource} = scheduleState || {};
+  // if we don't have a state, it probably means the schedule was disabled from admin.
+  if (!scheduleState) {
+    return <NotFoundPage />;
+  }
 
   const filterProps = {
     summit,

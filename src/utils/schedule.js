@@ -2,21 +2,21 @@ import moment from "moment-timezone";
 import { epochToMomentTimeZone } from "openstack-uicore-foundation/lib/methods";
 import { isString } from "lodash";
 import { getEnvVariable, SCHEDULE_EXCLUDING_TAGS } from "./envVariables";
+import {getUserAccessLevelIds} from './authorizedGroups';
 
 const groupByDay = (events) => {
   let groupedEvents = [];
-  events.forEach((e, index) => {
-    const day = moment.unix(e.start_date).format("MM/DD/YYYY");
-    groupedEvents[day] =
-      groupedEvents[day] && groupedEvents[day].length > 0
-        ? [e, ...groupedEvents[day]]
-        : [e];
+  events.forEach(ev => {
+    const day = moment.unix(ev.start_date).format("MM/DD/YYYY");
+    const currentValue = groupedEvents[day] || [];
+    groupedEvents[day] = [ev, ...currentValue];
   });
+
   return groupedEvents;
 };
 
 const sortSchedule = (events) => {
-  return events.map((day, index) => {
+  return events.map(day => {
     return day.sort((a, b) => a.id - b.id);
   });
 };
@@ -27,6 +27,21 @@ export const sortEvents = (events) => {
   return sortedEvents;
 };
 
+const userHasAccessToEvent = (event, userAccessLevels) => {
+  const trackAccessLevelIds = event?.track?.allowed_access_levels.map(aal => aal.id) || [];
+
+  if (trackAccessLevelIds.length > 0) {
+    return trackAccessLevelIds.some(tal => userAccessLevels.includes(tal));
+  }
+
+  return false;
+}
+
+export const filterEventsByAccessLevel = (events, summitTickets) => {
+  const userAccessLevels = getUserAccessLevelIds(summitTickets);
+  return events.filter(ev => userHasAccessToEvent(ev, userAccessLevels));
+};
+
 export const filterEventsByTags = (events) => {
   const excludingTagsVar = getEnvVariable(SCHEDULE_EXCLUDING_TAGS);
   const excludingTags = excludingTagsVar?.split("|") || null;
@@ -34,6 +49,26 @@ export const filterEventsByTags = (events) => {
   return excludingTags
       ? events.filter(ev => !ev.tags?.map(t => t.tag).some(tag => excludingTags.includes(tag)))
       : events;
+};
+
+const filterMyEvents = (myEvents, events) => {
+  const myEventsIds = myEvents?.map(ev => ev.id) || [];
+  return events.filter(ev =>  myEventsIds.includes(ev.id));
+};
+
+export const preFilterEvents = (events, filters, summitTimezone, userProfile, filterByAccessLevel, filterByMySchedule) => {
+  const {summit_tickets, schedule_summit_events} = userProfile;
+  let result = [...events];
+
+  if (filterByMySchedule) {
+    result = filterMyEvents(schedule_summit_events, result);
+  }
+
+  if (filterByAccessLevel) {
+    result = filterEventsByAccessLevel(result, summit_tickets);
+  }
+
+  return getFilteredEvents(result, filters, summitTimezone);
 };
 
 export const getFilteredEvents = (events, filters, summitTimezone) => {
