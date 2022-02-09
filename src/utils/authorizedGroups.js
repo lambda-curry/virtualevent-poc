@@ -23,7 +23,7 @@ export const userHasAccessLevel = (summitTickets, accessLevel) => {
     return false;
 };
 
-const getUserAccessLevelIds = (summit_tickets) => {
+export const getUserAccessLevelIds = (summit_tickets) => {
     return summit_tickets?.reduce((result, item) => {
         const newAccessLevels = item?.badge?.type?.access_levels?.map(al => al.id).filter(aln => !result.includes(aln)) || [];
         return [...result, ...newAccessLevels];

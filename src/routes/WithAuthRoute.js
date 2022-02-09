@@ -31,7 +31,7 @@ const WithAuthRoute = ({
     // we store this calculation to use it later
     const hasVirtualBadge = useMemo(() =>
         userProfile ? userHasAccessLevel(userProfile.summit_tickets, 'VIRTUAL') : false,
-        [userProfile, hasTicket]);
+        [userProfile]);
 
     const userIsReady = () => {
         // we have an user profile
