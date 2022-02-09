@@ -4,8 +4,8 @@
       "showAllEvents": false
     },
     "speakers": {
-      "showTodaySpeakers": true,
-      "showFeatureSpeakers": false
+      "showTodaySpeakers": false,
+      "showFeatureSpeakers": true
     }
   },
   "homeHero": {
