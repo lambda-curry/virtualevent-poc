@@ -18,7 +18,11 @@
         }
       },
       "eventTemplate": "",
-      "expoHallSize": "large"
+      "expoHallSize": "large",
+      "expoHallPage": {
+        "expoHallTemplate": "medium-images",
+        "display": true
+      }
     }
   ],
   "imageHeader": "",
