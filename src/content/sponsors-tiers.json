@@ -20,7 +20,7 @@
       "eventTemplate": "",
       "expoHallSize": "large",
       "expoHallPage": {
-        "expoHallTemplate": "medium-images",
+        "expoHallTemplate": "big-images",
         "display": true
       }
     }
