@@ -39,6 +39,10 @@ const userHasAccessToEvent = (event, userAccessLevels) => {
 
 export const filterEventsByAccessLevel = (events, summitTickets) => {
   const userAccessLevels = getUserAccessLevelIds(summitTickets);
+
+  // if user has no access levels we can't show any event.
+  if (userAccessLevels.length === 0) return [];
+
   return events.filter(ev => userHasAccessToEvent(ev, userAccessLevels));
 };
 
@@ -57,7 +61,7 @@ const filterMyEvents = (myEvents, events) => {
 };
 
 export const preFilterEvents = (events, filters, summitTimezone, userProfile, filterByAccessLevel, filterByMySchedule) => {
-  const {summit_tickets, schedule_summit_events} = userProfile;
+  const {summit_tickets = [], schedule_summit_events = []} = userProfile || {};
   let result = [...events];
 
   if (filterByMySchedule) {

@@ -202,10 +202,10 @@ exports.sourceNodes = async ({
       },
       pre_filters: {
         //track: { values: [35823] }
-        venues: { values: [106]}
+        //venues: { values: [106]}
       },
       color_source: 'track',
-      only_events_with_attendee_access: false,
+      only_events_with_attendee_access: true,
       is_my_schedule: false,
     },
     {
@@ -217,7 +217,7 @@ exports.sourceNodes = async ({
         track: { values: [35820, 35821] }
       },
       color_source: 'track',
-      only_events_with_attendee_access: true,
+      only_events_with_attendee_access: false,
       is_my_schedule: true,
     }
   ];
