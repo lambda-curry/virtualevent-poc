@@ -1,6 +1,6 @@
 backend:
   name: github
-  branch: main
+  branch: edwin-dev
   repo: fntechgit/virtualevent-poc
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
