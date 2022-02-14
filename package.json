@@ -99,7 +99,7 @@
     "videojs-mux": "^3.1.0",
     "videojs-youtube": "^2.6.1",
     "xmlhttprequest": "^1.8.0",
-    "localforage":"^1.10.0"
+    "@vimeo/player":"^2.16.3"
   },
   "keywords": [
     "gatsby"
