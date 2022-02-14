@@ -1,5 +1,37 @@
 {
-  "columns": [],
+  "columns": [
+    {
+      "items": [
+        {
+          "title": "SCHEDULE",
+          "link": "/a/schedule"
+        },
+        {
+          "title": "MY SCHEDULE",
+          "link": "/a/my-schedule"
+        },
+        {
+          "title": "TECHPULSE POSTERS",
+          "link": "/"
+        }
+      ],
+      "title": "VIRTUAL SITE"
+    },
+    {
+      "display": false,
+      "items": [
+        {
+          "title": "SPONSORS",
+          "link": "/a/sponsors"
+        },
+        {
+          "title": "FAQ",
+          "link": "/faqs"
+        }
+      ],
+      "title": "VIRTUAL SITE"
+    }
+  ],
   "logo": {
     "display": false
   },
