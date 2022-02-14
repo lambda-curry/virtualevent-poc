@@ -3,7 +3,7 @@ templateKey: custom-page
 title: FAQS
 userRequirement: NONE
 ---
-### <br><br>GENERAL QUESTIONS<br>
+### <br>GENERAL QUESTIONS<br>
 
 ###### What is TechWeek?
 
