@@ -3,6 +3,7 @@ import {
   getRequest,
   postRequest,
   putRequest,
+  deleteRequest,
   putFile,
   createAction,
   startLoading,
@@ -18,27 +19,30 @@ import { isAuthorizedUser } from '../utils/authorizedGroups';
 import { customErrorHandler, customBadgeHandler } from '../utils/customErrorHandler';
 import {getEnvVariable, SUMMIT_API_BASE_URL, SUMMIT_ID} from "../utils/envVariables";
 
-export const GET_DISQUS_SSO                   = 'GET_DISQUS_SSO';
-export const GET_ROCKETCHAT_SSO               = 'GET_ROCKETCHAT_SSO';
-export const GET_USER_PROFILE                 = 'GET_USER_PROFILE';
-export const START_LOADING_PROFILE            = 'START_LOADING_PROFILE';
-export const STOP_LOADING_PROFILE             = 'STOP_LOADING_PROFILE';
-export const UPDATE_PASSWORD                  = 'UPDATE_PASSWORD';
-export const SET_AUTHORIZED_USER              = 'SET_AUTHORIZED_USER';
-export const SET_USER_TICKET                  = 'SET_USER_TICKET';
-export const UPDATE_PROFILE_PIC               = 'UPDATE_PROFILE_PIC';
-export const UPDATE_EXTRA_QUESTIONS           = 'UPDATE_EXTRA_QUESTIONS';
-export const START_LOADING_IDP_PROFILE        = 'START_LOADING_IDP_PROFILE';
-export const STOP_LOADING_IDP_PROFILE         = 'STOP_LOADING_IDP_PROFILE';
-export const GET_IDP_PROFILE                  = 'GET_IDP_PROFILE';
-export const UPDATE_IDP_PROFILE               = 'UPDATE_IDP_PROFILE';
-export const SCAN_BADGE                       = 'SCAN_BADGE';
-export const SCAN_BADGE_SUCCESS               = 'SCAN_BADGE_SUCCESS';
-export const SCAN_BADGE_ERROR                 = 'SCAN_BADGE_ERROR';
-export const ADD_TO_SCHEDULE                  = 'ADD_TO_SCHEDULE';
-export const REMOVE_FROM_SCHEDULE             = 'REMOVE_FROM_SCHEDULE';
-export const SCHEDULE_SYNC_LINK_RECEIVED      = 'SCHEDULE_SYNC_LINK_RECEIVED';
-export const SET_USER_ORDER                   = 'SET_USER_ORDER';
+export const GET_DISQUS_SSO                    = 'GET_DISQUS_SSO';
+export const GET_ROCKETCHAT_SSO                = 'GET_ROCKETCHAT_SSO';
+export const GET_USER_PROFILE                  = 'GET_USER_PROFILE';
+export const START_LOADING_PROFILE             = 'START_LOADING_PROFILE';
+export const STOP_LOADING_PROFILE              = 'STOP_LOADING_PROFILE';
+export const UPDATE_PASSWORD                   = 'UPDATE_PASSWORD';
+export const SET_AUTHORIZED_USER               = 'SET_AUTHORIZED_USER';
+export const SET_USER_TICKET                   = 'SET_USER_TICKET';
+export const UPDATE_PROFILE_PIC                = 'UPDATE_PROFILE_PIC';
+export const UPDATE_EXTRA_QUESTIONS            = 'UPDATE_EXTRA_QUESTIONS';
+export const START_LOADING_IDP_PROFILE         = 'START_LOADING_IDP_PROFILE';
+export const STOP_LOADING_IDP_PROFILE          = 'STOP_LOADING_IDP_PROFILE';
+export const GET_IDP_PROFILE                   = 'GET_IDP_PROFILE';
+export const UPDATE_IDP_PROFILE                = 'UPDATE_IDP_PROFILE';
+export const SCAN_BADGE                        = 'SCAN_BADGE';
+export const SCAN_BADGE_SUCCESS                = 'SCAN_BADGE_SUCCESS';
+export const SCAN_BADGE_ERROR                  = 'SCAN_BADGE_ERROR';
+export const ADD_TO_SCHEDULE                   = 'ADD_TO_SCHEDULE';
+export const REMOVE_FROM_SCHEDULE              = 'REMOVE_FROM_SCHEDULE';
+export const SCHEDULE_SYNC_LINK_RECEIVED       = 'SCHEDULE_SYNC_LINK_RECEIVED';
+export const SET_USER_ORDER                    = 'SET_USER_ORDER';
+export const CAST_PRESENTATION_VOTE_RESPONSE   = 'CAST_PRESENTATION_VOTE_RESPONSE';
+export const UNCAST_PRESENTATION_VOTE_RESPONSE = 'UNCAST_PRESENTATION_VOTE_RESPONSE';
+export const TOGGLE_PRESENTATION_VOTE          = 'TOGGLE_PRESENTATION_VOTE';
 
 export const getDisqusSSO = () => async (dispatch) => {
 
@@ -83,7 +87,7 @@ export const getUserProfile = () => async (dispatch) => {
   if (!accessToken) return Promise.resolve();
   let params = {
     access_token: accessToken,
-    expand: 'groups,summit_tickets,summit_tickets,summit_tickets.owner,summit_tickets.owner.extra_questions,summit_tickets.badge,summit_tickets.badge.features,summit_tickets.badge.type, summit_tickets.badge.type.access_levels,summit_tickets.badge.type.features,favorite_summit_events,feedback,schedule_summit_events,rsvp,rsvp.answers'
+    expand: 'groups,summit_tickets,summit_tickets,summit_tickets.owner,summit_tickets.owner.presentation_votes,summit_tickets.owner.extra_questions,summit_tickets.badge,summit_tickets.badge.features,summit_tickets.badge.type, summit_tickets.badge.type.access_levels,summit_tickets.badge.type.features,favorite_summit_events,feedback,schedule_summit_events,rsvp,rsvp.answers'
   };
 
   dispatch(startLoading());
@@ -210,6 +214,56 @@ export const removeFromSchedule = (event) => async (dispatch, getState) => {
     console.log('ERROR: ', e);
     return e;
   });
+};
+
+export const castPresentationVote = (presentation) => async (dispatch, getState) => {
+
+  const accessToken = await getAccessToken();
+
+  if (!accessToken) return Promise.resolve();
+
+  const params = {
+    access_token: accessToken,
+  };
+
+  const errorHandler = (err, res) => (dispatch, state) => {
+    if (err.status === 412)
+      dispatch(createAction(TOGGLE_PRESENTATION_VOTE)({ presentation, isVoted: true }));
+  };
+
+  return postRequest(
+    null,
+    createAction(CAST_PRESENTATION_VOTE_RESPONSE),
+    `${getEnvVariable('SUMMIT_API_BASE_URL')}/api/v1/summits/${getEnvVariable(SUMMIT_ID)}/presentations/${presentation.id}/attendee-votes`,
+    {},
+    errorHandler,
+    { presentation }
+  )(params)(dispatch).catch(errorHandler);
+};
+
+export const uncastPresentationVote = (presentation) => async (dispatch, getState) => {
+
+  const accessToken = await getAccessToken();
+
+  if (!accessToken) return Promise.resolve();
+
+  const params = {
+    access_token: accessToken,
+  };
+
+  const errorHandler = (err, res) => (dispatch, state) => {
+    if (err.status === 412)
+      dispatch(createAction(TOGGLE_PRESENTATION_VOTE)({ presentation, isVoted: false }));
+  };
+
+  return deleteRequest(
+    null,
+    createAction(UNCAST_PRESENTATION_VOTE_RESPONSE)({ presentation }),
+    `${getEnvVariable('SUMMIT_API_BASE_URL')}/api/v1/summits/${getEnvVariable(SUMMIT_ID)}/presentations/${presentation.id}/attendee-votes`,
+    {},
+    errorHandler,
+    { presentation }
+  )(params)(dispatch).catch(errorHandler);
 };
 
 export const updateProfilePicture = (pic) => async (dispatch) => {
