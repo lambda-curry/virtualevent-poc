@@ -1,31 +1,34 @@
 {
   "items": [
     {
-      "title": "Lobby",
+      "title": "LOBBY",
       "link": "/a/",
       "display": false,
       "requiresAuth": true,
       "pageRestriction": [
         "ANY"
-      ]
+      ],
+      "showOnlyAtShowTime": true
     },
     {
-      "title": "Schedule",
+      "title": "SCHEDULE",
       "link": "/a/schedule",
-      "display": false,
-      "requiresAuth": false,
+      "display": true,
+      "requiresAuth": true,
       "pageRestriction": [
         "ANY"
-      ]
+      ],
+      "showOnlyAtShowTime": true
     },
     {
-      "title": "My Schedule",
+      "title": "MY SCHEDULE",
       "link": "/a/my-schedule",
-      "display": false,
-      "requiresAuth": false,
+      "display": true,
+      "requiresAuth": true,
       "pageRestriction": [
         "ANY"
-      ]
+      ],
+      "showOnlyAtShowTime": true
     },
     {
       "requiresAuth": false,
@@ -35,6 +38,16 @@
       ],
       "title": "HOME",
       "link": "/",
+      "display": true
+    },
+    {
+      "requiresAuth": true,
+      "showOnlyAtShowTime": true,
+      "pageRestriction": [
+        "ANY"
+      ],
+      "title": "SPONSORS",
+      "link": "/a/sponsors",
       "display": true
     },
     {
