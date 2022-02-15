@@ -81,7 +81,7 @@
     "redux": "^4.0.5",
     "redux-persist": "^6.0.0",
     "redux-thunk": "^2.3.0",
-    "schedule-filter-widget": "^1.2.0",
+    "schedule-filter-widget": "^1.2.1",
     "simple-chat-widget": "^1.0.31",
     "simple-oauth2": "^4.1.0",
     "slick-carousel": "^1.8.1",

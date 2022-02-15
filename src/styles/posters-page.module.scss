@@ -1,0 +1,49 @@
+@import './colors.scss';
+
+.wrapper {
+  display: flex;
+  position: relative;
+
+  @media (max-width: 991px) {
+    &.showFilters {
+      .postersWrapper {
+        display: none;
+      }
+
+      .filterWrapper {
+        display: block;
+      }
+    }
+  }
+
+  .postersWrapper {
+    width: 70%;
+
+    // make up space for button
+    @media (max-width: 991px) {
+      width: 100%;
+      margin-top: 50px;
+
+      :global(#event-info-popup) {
+        z-index: 3;
+        top: 72px !important;
+        height: calc(100vh - 72px);
+      }
+    }
+  }
+
+  .filterWrapper {
+    position: relative;
+    margin: 15px 0 0 30px;
+
+    @media (max-width: 991px) {
+      flex: unset;
+      display: none;
+      width: 100%;
+      z-index: 1;
+      background-color: white;
+      padding-top: 70px;
+      margin: 0;
+    }
+  }
+}

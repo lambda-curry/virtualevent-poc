@@ -5,6 +5,7 @@ import BlockImage from 'react-block-image';
 import VoteButton from './vote-button';
 
 import styles from './index.module.scss';
+import placeholder from '../../img/poster_fallback.png';
 
 const PosterCard = ({ poster, showDetail, canVote, isVoted, toggleVote }) => {
   const [hover, setHover] = useState(false);
@@ -22,6 +23,7 @@ const PosterCard = ({ poster, showDetail, canVote, isVoted, toggleVote }) => {
   return (
     <article className={styles.card}>
       <BlockImage
+        fallback={placeholder}
         src={posterImage.public_url}
         className={`${styles.header} ${showDetail && hover ? styles.header__hover : ''}`}
         onMouseEnter={() => setHover(true)} 
