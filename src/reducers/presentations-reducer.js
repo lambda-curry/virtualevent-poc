@@ -6,7 +6,7 @@ import {
 } from '../actions/presentation-actions';
 
 import FILTER_DEFAULT_STATE from '../content/posters_filters.json';
-import {isString, isNumber} from "lodash";
+import {isString} from "lodash";
 
 const DEFAULT_VOTEABLE_PRESENTATIONS_STATE = {
   // ssr collection to create filters content ( this is read only)
@@ -121,7 +121,7 @@ export const getFilteredVoteablePresentations = (events, filters) => {
       if (!valid) return false;
     }
 
-    if (filters.custom_order?.values && isNumber(filters.custom_order.values)) {
+    if (filters.custom_order?.values && parseInt(filters.custom_order.values) > 0) {
       valid = parseInt( ev.custom_order)  === parseInt(filters.custom_order.values)
       if (!valid) return false;
     }
