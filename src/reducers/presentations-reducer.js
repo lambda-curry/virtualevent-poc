@@ -2,25 +2,37 @@ import { combineReducers } from 'redux';
 import allVoteablePresentations from '../content/voteable_presentations.json';
 import {
   REQUEST_PRESENTATIONS_PAGE,
-  RECEIVE_PRESENTATIONS_PAGE, VOTEABLE_PRESENTATIONS_UPDATE_FILTER
+  RECEIVE_PRESENTATIONS_PAGE,
+  VOTEABLE_PRESENTATIONS_UPDATE_FILTER,
+  LOAD_INITIAL_DATASET,
 } from '../actions/presentation-actions';
-
+import {filterByTrackGroup} from '../utils/filterUtils';
+import {filterEventsByAccessLevels} from '../utils/authorizedGroups';
 import FILTER_DEFAULT_STATE from '../content/posters_filters.json';
 import {isString} from "lodash";
 
 const DEFAULT_VOTEABLE_PRESENTATIONS_STATE = {
   // ssr collection to create filters content ( this is read only)
-  originalPresentations    : [...allVoteablePresentations],
+  originalPresentations : [],
   // ssr collection to perform initial upload
-  allPresentations : [...allVoteablePresentations],
+  allPresentations : [],
   // current poster collection ( with filter applied, this will feed the poster grid)
-  filteredPresentations: [...allVoteablePresentations],
+  filteredPresentations: [],
   filters : {...FILTER_DEFAULT_STATE},
 };
 
 const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, action = {}) => {
   const { type, payload } = action;
   switch (type) {
+    case LOAD_INITIAL_DATASET:{
+      const currentUserProfile = payload;
+      // pre filter by user access levels
+      return {...state,
+        originalPresentations : filterEventsByAccessLevels(allVoteablePresentations, currentUserProfile),
+        allPresentations : filterEventsByAccessLevels(allVoteablePresentations, currentUserProfile),
+        filteredPresentations : filterEventsByAccessLevels(allVoteablePresentations, currentUserProfile),
+      };
+    }
     case RECEIVE_PRESENTATIONS_PAGE: {
       const {response: {data}} = payload;
       const {filters, allPresentations} = state;
@@ -76,7 +88,6 @@ const lastPage = (lastPage = null, action = {}) => {
   const { type, payload } = action;
   return type === RECEIVE_PRESENTATIONS_PAGE ? payload.response.last_page : lastPage;
 };
-
 
 const pagination = combineReducers({
   pages,

@@ -7,13 +7,13 @@ import PosterGrid from '../components/poster-grid';
 import {
     getVoteablePresentations,
     VOTEABLE_PRESENTATIONS_UPDATE_FILTER,
-    updateFilter
+    updateFilter,
+    loadInitialDataSet
 } from '../actions/presentation-actions';
 import {castPresentationVote, uncastPresentationVote} from '../actions/user-actions';
 import ScheduleFilters from "../components/ScheduleFilters";
 import styles from '../styles/posters-page.module.scss';
 import FilterButton from "../components/FilterButton";
-import {filterEventsByAccessLevels} from '../utils/authorizedGroups';
 
 const PostersPage = ({
                          location,
@@ -22,30 +22,20 @@ const PostersPage = ({
                          votes,
                          castPresentationVote,
                          uncastPresentationVote,
+                         loadInitialDataSet,
                          summit,
                          colorSettings,
                          filters,
-                         userProfile,
                          updateFilter,
                          allPosters
                      }) => {
     const [canVote, setCanVote] = useState(true);
     const [showFilters, setShowfilters] = useState(false);
-    // todo: get from url
-    const trackGroupId = 0;
-
-    const filterByTrackGroup = (originalEvents, currentTrackGroupId = 0) => {
-        if(currentTrackGroupId == 0)
-            return originalEvents;
-        return originalEvents.filter( (ev) => {
-            return ev?.track?.track_groups.includes(currentTrackGroupId);
-        });
-    }
 
     const filterProps = {
         summit,
-        events: filterByTrackGroup(filterEventsByAccessLevels(allPosters, userProfile), trackGroupId),
-        allEvents: filterByTrackGroup(filterEventsByAccessLevels(allPosters, userProfile), trackGroupId),
+        events: allPosters,
+        allEvents: allPosters,
         filters,
         triggerAction: (action, payload) => {
             updateFilter(payload, VOTEABLE_PRESENTATIONS_UPDATE_FILTER);
@@ -59,7 +49,7 @@ const PostersPage = ({
     };
 
     useEffect(() => {
-        getVoteablePresentations();
+        loadInitialDataSet().then(() => getVoteablePresentations())
     }, []);
 
     return (
@@ -68,7 +58,7 @@ const PostersPage = ({
                 {posters &&
                 <div className={`${styles.wrapper} ${showFilters ? styles.showFilters : ""}`}>
                     <div className={styles.postersWrapper}>
-                        <PosterGrid posters={filterByTrackGroup(filterEventsByAccessLevels(posters, userProfile), trackGroupId)} canVote={canVote} votes={votes} toggleVote={toggleVote}/>
+                        <PosterGrid posters={posters} canVote={canVote} votes={votes} toggleVote={toggleVote}/>
                     </div>
                     <div className={styles.filterWrapper}>
                         <ScheduleFilters {...filterProps} />
@@ -84,7 +74,6 @@ const PostersPage = ({
 PostersPage.propTypes = {};
 
 const mapStateToProps = ({presentationsState, userState, summitState, settingState}) => ({
-    userProfile: userState.userProfile,
     posters: presentationsState.voteablePresentations.filteredPresentations,
     allPosters: presentationsState.voteablePresentations.originalPresentations,
     filters: presentationsState.voteablePresentations.filters,
@@ -97,5 +86,6 @@ export default connect(mapStateToProps, {
     getVoteablePresentations,
     castPresentationVote,
     uncastPresentationVote,
-    updateFilter
+    updateFilter,
+    loadInitialDataSet,
 })(PostersPage);
