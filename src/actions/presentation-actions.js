@@ -13,6 +13,11 @@ import { getEnvVariable, SUMMIT_API_BASE_URL, SUMMIT_ID } from '../utils/envVari
 export const REQUEST_PRESENTATIONS_PAGE = 'REQUEST_PRESENTATIONS_PAGE';
 export const RECEIVE_PRESENTATIONS_PAGE = 'RECEIVE_PRESENTATIONS_PAGE';
 export const REQUEST_PRESENTATIONS_PAGE_ERROR = 'REQUEST_PRESENTATIONS_PAGE_ERROR';
+export const VOTEABLE_PRESENTATIONS_UPDATE_FILTER = 'VOTEABLE_PRESENTATIONS_UPDATE_FILTER';
+
+export const updateFilter = (filter, action = VOTEABLE_PRESENTATIONS_UPDATE_FILTER) => (dispatch) => {
+  dispatch(createAction(action)({...filter}));
+};
 
 export const getVoteablePresentations = (page = 1, perPage = 9) => async (dispatch, getState) => {
 
