@@ -33,7 +33,8 @@ const App = ({ isLoggedUser, user, summit_phase, lastBuild, syncData }) => {
         <Router basepath="/a" >
           <SchedulePage path="/schedule" location={location} />
           <WithAuthRoute path="/" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location}>
-            <PostersPage path="/posters/:trackGroupId" location={location} />
+            <PostersPage path="/posters" location={location} />
+            <PosterDetailPage path="/poster/:presentationId/" isLoggedIn={isLoggedUser} user={user} location={location} />
             <MySchedulePage path="/my-schedule" location={location} summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user}/>
             <ExtraQuestionsPage path="/extra-questions" isLoggedIn={isLoggedUser} user={user} location={location} />
             <FullProfilePage path="/profile" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location} />
@@ -44,7 +45,6 @@ const App = ({ isLoggedUser, user, summit_phase, lastBuild, syncData }) => {
               <HomePage path="/" isLoggedIn={isLoggedUser} user={user} location={location} />
               <SponsorPage path="/sponsor/:sponsorId" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location} />
               <ExpoHallPage path="/sponsors/" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location} />
-              <PosterDetailPage path="/poster/:presentationId/" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location} />
             </ShowOpenRoute>
           </WithAuthRoute>
         </Router>

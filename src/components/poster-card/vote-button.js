@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import styles from './vote-button.module.scss';
 
-const VoteButton = ({isVoted, canVote, toggleVote}) => {
+const VoteButton = ({ isVoted, canVote, toggleVote, style }) => {
   const [togglingVote, setTogglingVote] = useState(false);
   const [iconClass, setIconClass] = useState(isVoted ? 'fa-heart' : 'fa-heart-o');
   const [buttonClass, setButtonClass] = useState(isVoted ? styles.added : styles.add);
@@ -41,6 +41,7 @@ const VoteButton = ({isVoted, canVote, toggleVote}) => {
       className={`${styles.voteButton} ${buttonClass}`}
       onClick={handleClick}
       disabled={disabled || togglingVote}
+      style={style}
     >
       <i className={`fa ${iconClass}`} aria-hidden="true" />
     </button>

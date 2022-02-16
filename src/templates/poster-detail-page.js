@@ -1,46 +1,45 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { navigate } from "gatsby";
 import { connect } from "react-redux";
 import Layout from "../components/Layout";
 import DisqusComponent from "../components/DisqusComponent";
 import AdvertiseComponent from "../components/AdvertiseComponent";
 import Etherpad from "../components/Etherpad";
 import VideoComponent from "../components/VideoComponent";
-import TalkComponent from "../components/TalkComponent";
+import PosterDescription from "../components/PosterDescription";
 import DocumentsComponent from "../components/DocumentsComponent";
 import PosterLiveSession from "../components/PosterLiveSession";
 import PosterNavigation from "../components/PosterNavigation";
 import PosterButton from "../components/PosterButton";
 import HeroComponent from "../components/HeroComponent";
+import PosterGrid from "../components/poster-grid";
 import AccessTracker, { AttendeesWidget } from "../components/AttendeeToAttendeeWidgetComponent"
 import AttendanceTrackerComponent from "../components/AttendanceTrackerComponent";
 import { PHASES } from '../utils/phasesUtils';
-import { getPosterById } from "../actions/poster-actions";
+import { getPresentationById } from "../actions/presentation-actions";
+import { castPresentationVote, uncastPresentationVote } from '../actions/user-actions';
 import { getDisqusSSO } from "../actions/user-actions";
 import URI from "urijs"
 
 export const PosterDetailPageTemplate = class extends React.Component {
-    
+
+  constructor(props) {
+    super(props);
+
+    this.toggleVote = this.toggleVote.bind(this);
+  }
+
   componentDidMount() {
     const { presentationId } = this.props;
     this.props.getDisqusSSO();
-    this.props.getPosterById(presentationId);
+    this.props.getPresentationById(presentationId);
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
     const { presentationId, poster } = this.props;
     const { presentationId: prevPresentationId } = prevProps;
-    // event id could came as param at uri
-    if (presentationId !== prevPresentationId || (poster?.id !== parseInt(presentationId))) {
-      this.props.getPosterById(presentationId);
-    }
-  }
-
-  onEventChange(ev) {
-    const { presentationId } = this.props;
-    if (parseInt(presentationId) !== parseInt(ev.id)) {
-      navigate(`/a/event/${ev.id}`);
+    if (presentationId !== prevPresentationId || (poster?.id && poster.id !== parseInt(presentationId))) {
+      this.props.getPresentationById(presentationId);
     }
   }
 
@@ -48,24 +47,23 @@ export const PosterDetailPageTemplate = class extends React.Component {
     const { loading, presentationId, poster, eventsPhases } = this.props;
     if (loading !== nextProps.loading) return true;
     if (presentationId !== nextProps.presentationId) return true;
-    if (poster?.id !== nextProps.event?.id) return true;
+    if (poster?.id !== nextProps.poster?.id) return true;
     // compare current event phase with next one
     const currentPhase = eventsPhases.find((e) => parseInt(e.id) === parseInt(presentationId))?.phase;
     const nextCurrentPhase = nextProps.eventsPhases.find(
-        (e) => parseInt(e.id) === parseInt(presentationId)
+      (e) => parseInt(e.id) === parseInt(presentationId)
     )?.phase;
     const finishing = (currentPhase === PHASES.DURING && nextCurrentPhase === PHASES.AFTER);
     return (currentPhase !== nextCurrentPhase && !finishing);
   }
 
-  canRenderVideo = (currentPhase) => {
-    const {poster} = this.props;
-    return (currentPhase >= PHASES.DURING || poster.streaming_type === 'VOD') && poster.streaming_url;
+  toggleVote(presentation, isVoted) {
+    isVoted ? this.props.castPresentationVote(presentation) : this.props.uncastPresentationVote(presentation);
   };
 
   render() {
 
-    const { poster, event, user, loading, nowUtc, summit, eventsPhases, presentationId, location } = this.props;
+    const { poster, event, user, loading, nowUtc, summit, eventsPhases, presentationId, location, allPosters, votes, recommendedPosters } = this.props;
     // get current event phase
     const currentPhase = eventsPhases.find((e) => parseInt(e.id) === parseInt(presentationId))?.phase;
     const firstHalf = currentPhase === PHASES.DURING ? nowUtc < ((event?.start_date + event?.end_date) / 2) : false;
@@ -73,102 +71,101 @@ export const PosterDetailPageTemplate = class extends React.Component {
 
     // if event is loading or we are still calculating the current phase ...
     if (loading) {
-      return <HeroComponent title="Loading event" />;
-
+      return <HeroComponent title="Loading poster" />;
     }
 
     if (!poster) {
       return <HeroComponent title="Poster not found" />;
     }
 
-
     return (
-          <React.Fragment>
-            {/* <EventHeroComponent /> */}
-            <section
-              className="section px-0 py-0"
+      <React.Fragment>
+        {/* <EventHeroComponent /> */}
+        <section
+          className="section px-0 py-0"
+          style={{
+            marginBottom:
+              poster?.class_name !== "Presentation" ||
+                currentPhase < PHASES.DURING ||
+                !poster?.streaming_url
+                ? "-3rem"
+                : "",
+          }}
+        >
+          <div className="columns is-gapless">
+            <div className="column is-three-quarters px-0 py-0" style={{ position: 'relative' }}>
+              <VideoComponent
+                url={poster?.streaming_url}
+                title={poster?.title}
+                namespace={summit.name}
+                firstHalf={firstHalf}
+                autoPlay={query.autostart === 'true'}
+              />
+              <PosterButton poster={poster} />
+            </div>
+            <div
+              className="column is-hidden-mobile"
               style={{
-                marginBottom:
-                  poster?.class_name !== "Presentation" ||
-                  currentPhase < PHASES.DURING  ||
-                  !poster?.streaming_url
-                    ? "-3rem"
-                    : "",
+                position: "relative",
+                borderBottom: "1px solid #d3d3d3",
               }}
             >
-              <div className="columns is-gapless">
-                <div className="column is-three-quarters px-0 py-0" style={{position: 'relative'}}>
-                <VideoComponent
-                    url={poster?.streaming_url}
-                    title={poster?.title}
-                    namespace={summit.name}
-                    firstHalf={firstHalf}
-                    autoPlay={query.autostart === 'true'}
+              <DisqusComponent
+                hideMobile={true}
+                disqusSSO={user.disqusSSO}
+                event={poster}
+                summit={summit}
+                title="Public Conversation"
+              />
+            </div>
+          </div>
+        </section>
+        <section className="section px-0 pt-5 pb-0">
+          <div className="columns mx-0 my-0">
+            <div className="column is-three-quarters is-full-mobile">
+              <div className="px-5 py-0">
+                <PosterDescription
+                  poster={poster}
+                  isVoted={!!votes.find(v => v.presentation_id === poster.id)}
+                  toggleVote={this.toggleVote}
                 />
-                <PosterButton poster={poster} />
-                </div>
-                <div
-                  className="column is-hidden-mobile"
-                  style={{
-                    position: "relative",
-                    borderBottom: "1px solid #d3d3d3",
-                  }}
-                >
-                  <DisqusComponent
-                    hideMobile={true}
-                    disqusSSO={user.disqusSSO}
-                    event={poster}
-                    summit={summit}
-                    title="Public Conversation"
+              </div>
+              <div className="px-5 py-0">
+                <PosterNavigation allPosters={allPosters} poster={poster} />
+                <PosterGrid posters={recommendedPosters} canVote={true} votes={votes} toggleVote={this.toggleVote} />
+              </div>
+              <div className="is-hidden-tablet">
+                <DisqusComponent
+                  hideMobile={false}
+                  disqusSSO={user.disqusSSO}
+                  event={poster}
+                  summit={summit}
+                  title="Public Conversation"
+                />
+                ∆
+              </div>
+              {poster?.etherpad_link && (
+                <div className="column is-three-quarters">
+                  <Etherpad
+                    className="talk__etherpad"
+                    etherpad_link={poster?.etherpad_link}
+                    userName={user.userProfile.first_name}
                   />
                 </div>
-              </div>
-            </section>
-              <section className="section px-0 pt-5 pb-0">
-                <div className="columns mx-0 my-0">
-                  <div className="column is-three-quarters is-full-mobile">
-                    <div className="px-5 py-5">
-                      <TalkComponent
-                        currentEventPhase={currentPhase}
-                        event={poster}
-                        summit={summit}
-                      />
-                    </div>
-                    <div className="px-5 py-0">
-                      <PosterNavigation />
-                    </div>
-                    <div className="is-hidden-tablet">
-                      <DisqusComponent
-                        hideMobile={false}
-                        disqusSSO={user.disqusSSO}
-                        event={poster}
-                        summit={summit}
-                        title="Public Conversation"
-                      />
-                      ∆
-                    </div>
-                    {poster?.etherpad_link && (
-                      <div className="column is-three-quarters">
-                        <Etherpad
-                          className="talk__etherpad"
-                          etherpad_link={poster?.etherpad_link}
-                          userName={user.userProfile.first_name}
-                        />
-                      </div>
-                    )}
-                  </div>
-                  <div className="column px-0 py-0 is-one-quarter is-full-mobile">
-                  {!poster?.meeting_url && <PosterLiveSession poster={poster} />}
-                    <DocumentsComponent event={poster} />
-                    {/* <AccessTracker />
+              )}
+            </div>
+            <div className="column px-0 py-0 is-one-quarter is-full-mobile">
+              {!poster?.meeting_url && <PosterLiveSession poster={poster} />}
+              <DocumentsComponent event={poster} />
+              {/* <AccessTracker />
                     <AttendeesWidget user={user} event={poster} /> */}
-                    <AdvertiseComponent section="event" column="right" />
-                  </div>
-                </div>
-              </section>
-          </React.Fragment>
-        );
-    }
+              <AdvertiseComponent section="event" column="right" />
+            </div>
+          </div>
+        </section>
+      </React.Fragment>
+    );
+  }
 };
 
 const PosterDetailPage = ({
@@ -180,8 +177,13 @@ const PosterDetailPage = ({
   user,
   eventsPhases,
   nowUtc,
-  getPosterById,
+  getPresentationById,
+  castPresentationVote,
+  uncastPresentationVote,
   getDisqusSSO,
+  allPosters,
+  recommendedPosters,
+  votes
 }) => {
   return (
     <Layout location={location}>
@@ -201,8 +203,13 @@ const PosterDetailPage = ({
         eventsPhases={eventsPhases}
         nowUtc={nowUtc}
         location={location}
-        getPosterById={getPosterById}
+        getPresentationById={getPresentationById}
+        castPresentationVote={castPresentationVote}
+        uncastPresentationVote={uncastPresentationVote}
         getDisqusSSO={getDisqusSSO}
+        allPosters={allPosters}
+        recommendedPosters={recommendedPosters}
+        votes={votes}
       />
     </Layout>
   );
@@ -214,7 +221,9 @@ PosterDetailPage.propTypes = {
   presentationId: PropTypes.string,
   user: PropTypes.object,
   eventsPhases: PropTypes.array,
-  getPosterById: PropTypes.func,
+  getPresentationById: PropTypes.func,
+  castPresentationVote: PropTypes.func,
+  uncastPresentationVote: PropTypes.func,
   getDisqusSSO: PropTypes.func,
 };
 
@@ -224,20 +233,27 @@ PosterDetailPageTemplate.propTypes = {
   presentationId: PropTypes.string,
   user: PropTypes.object,
   eventsPhases: PropTypes.array,
-  getPosterById: PropTypes.func,
+  getPresentationById: PropTypes.func,
+  castPresentationVote: PropTypes.func,
+  uncastPresentationVote: PropTypes.func,
   getDisqusSSO: PropTypes.func,
 };
 
-const mapStateToProps = ({posterState, summitState, userState, clockState}) => ({
-  loading: posterState.loading,
-  poster: posterState.poster,
+const mapStateToProps = ({ summitState, userState, clockState, presentationsState }) => ({
+  loading: presentationsState.voteablePresentations.loading,
+  poster: presentationsState.voteablePresentations.detailedPresentation,
   user: userState,
   summit: summitState.summit,
   eventsPhases: clockState.events_phases,
   nowUtc: clockState.nowUtc,
+  allPosters: presentationsState.voteablePresentations.originalPresentations,
+  recommendedPosters: presentationsState.voteablePresentations.recommendedPresentations,
+  votes: userState.attendee.presentation_votes,
 });
 
 export default connect(mapStateToProps, {
-  getPosterById,
+  getPresentationById,
   getDisqusSSO,
+  castPresentationVote,
+  uncastPresentationVote,
 })(PosterDetailPage);
