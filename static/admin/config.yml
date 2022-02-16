@@ -1,6 +1,6 @@
 backend:
   name: github
-  branch: add-alt-to-images
+  branch: main
   repo: fntechgit/virtualevent-poc
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
