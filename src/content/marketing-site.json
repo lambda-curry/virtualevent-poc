@@ -15,10 +15,14 @@
         "display": true
       }
     },
-    "background": "",
+    "background": {
+      "alt": "",
+      "file": ""
+    },
     "images": [
       {
-        "image": "/img/ytw-fnv-header-r-v5.png"
+        "file": "/img/ytw-fnv-header-r-v5.png",
+        "alt" : ""
       }
     ]
   },
@@ -34,49 +38,62 @@
     "image": {
       "display": true,
       "title": "",
-      "src": "/img/ytw-fnv-schedule-static-v7a.png"
+      "src": "/img/ytw-fnv-schedule-static-v7a.png",
+      "alt" : ""
     }
   },
   "sponsors": [
     {
       "images": [
         {
-          "image": "/img/ytw-fnv-ad-space-1.png"
+          "image": "/img/ytw-fnv-ad-space-1.png",
+          "link" : "",
+          "alt" : ""
         }
       ]
     },
     {
       "images": [
         {
-          "image": "/img/ytw-fnv-ad-space-2.png"
+          "image": "/img/ytw-fnv-ad-space-2.png",
+          "link" : "",
+          "alt" : ""
         }
       ]
     },
     {
       "images": [
         {
-          "image": "/img/ytw-fnv-ad-space-3.png"
+          "image": "/img/ytw-fnv-ad-space-3.png",
+          "link" : "",
+          "alt" : ""
         }
       ]
     },
     {
       "images": [
         {
-          "image": "/img/ytw-fnv-ad-space-4.png"
+          "image": "/img/ytw-fnv-ad-space-4.png",
+          "link" : "",
+          "alt" : ""
         }
       ]
     },
     {
       "images": [
         {
-          "image": "/img/ytw-fnv-ad-space-5.png"
+          "image": "/img/ytw-fnv-ad-space-5.png",
+          "link" : "",
+          "alt" : ""
         }
       ]
     },
     {
       "images": [
         {
-          "image": "/img/ytw-fnv-ad-space-6.png"
+          "image": "/img/ytw-fnv-ad-space-6.png",
+          "link" : "",
+          "alt" : ""
         }
       ]
     }

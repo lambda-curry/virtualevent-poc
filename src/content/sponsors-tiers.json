@@ -25,7 +25,10 @@
       }
     }
   ],
-  "imageHeader": "/img/08-yahoo_techweek-2022_sponsor-header_centered-2x.jpg",
+  "imageHeader": {
+    "file" : "/img/08-yahoo_techweek-2022_sponsor-header_centered-2x.jpg",
+    "alt" : ""
+  },
   "lobbyButton": {
     "text": "",
     "link": ""

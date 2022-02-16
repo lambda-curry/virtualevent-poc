@@ -4,14 +4,20 @@
       "section": "lobby",
       "columnAds": [
         {
-          "image": "/img/ytw22-lobby-expohall-button.png",
+          "image": {
+            "file" : "/img/ytw22-lobby-expohall-button.png",
+            "alt"  : ""
+          },
           "button": {
             "link": "/a/sponsors"
           },
           "column": "left"
         },
         {
-          "image": "/img/ytw22-lobby-techpulseposterlink.png",
+          "image": {
+            "file" : "/img/ytw22-lobby-techpulseposterlink.png",
+            "alt" : ""
+          },
           "column": "right"
         }
       ]

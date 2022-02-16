@@ -11,7 +11,10 @@
   "homeHero": {
     "title": "TechWeek",
     "subTitle": "March 7–10, 2022",
-    "image": "/img/ytw22-lobby-header.png",
+    "image": {
+      "file" : "/img/ytw22-lobby-header.png",
+      "alt" : ""
+    },
     "copy": ""
   },
   "live_now_featured_event_id": 2385
