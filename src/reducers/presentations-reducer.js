@@ -21,29 +21,50 @@ const DEFAULT_VOTEABLE_PRESENTATIONS_STATE = {
   // initial value same as ssrPresentations but gets updated with fresh data
   allPresentations: [],
   // updatedPresentations filtered by applied filters from filters widget, used to feed the poster grid widget
-  filteredPresentations: []
+  filteredPresentations: [],
+  // stores user profile set in initial data set for future access level filtering
+  currentUserProfile: null,
+  currentTrackGroupId: 0,
 };
 
 const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, action = {}) => {
   const { type, payload } = action;
   switch (type) {
     case SET_INITIAL_DATASET: {
-      const { userProfile: currentUserProfile } = payload;
+      const { userProfile: currentUserProfile, currentTrackGroupId } = payload;
       // pre filter by user access levels
       let filteredEvents = filterEventsByAccessLevels(allVoteablePresentations, currentUserProfile);
+      // pre filter by track group
+      filteredEvents = filterByTrackGroup(filteredEvents, currentTrackGroupId);
+      // suffle
+      filteredEvents = filteredEvents.map((a) => [Math.random(),a]).sort((a,b) => a[0]-b[0]).map((a) => a[1]);
       return { ...state,
         ssrPresentations: filteredEvents,
         allPresentations: filteredEvents,
-        filteredPresentations: filteredEvents
+        filteredPresentations: filteredEvents,
+        currentUserProfile: currentUserProfile,
+        currentTrackGroupId: currentTrackGroupId
       };
     }
     case PRESENTATIONS_PAGE_RESPONSE: {
       const { response: { data } } = payload;
-      const { filters, allPresentations } = state;
-      // get the new data from api bc the temporal public urls and
-      // perform merge ...
-      const oldPresentations = allPresentations.filter(ev => !data.some(newEv => newEv.id === ev.id));
-      const updatedPresentations = [...oldPresentations, ...data];
+      const { filters, allPresentations, currentUserProfile, currentTrackGroupId } = state;
+      // get the new data from api bc the temporal public urls
+      const oldPresentations = [...allPresentations];
+      let newPresentations = [];
+      data.forEach(presentation => {
+        const index = allPresentations.findIndex((p) => p.id === presentation.id);
+        if (index !== -1) {
+          oldPresentations.splice(index, 1, presentation);
+        } else {
+          newPresentations.push(presentation);
+        }
+      });
+      // pre filter new presentations by user access levels
+      newPresentations = filterEventsByAccessLevels(newPresentations, currentUserProfile);
+      // pre filter by track group
+      newPresentations = filterByTrackGroup(newPresentations, currentTrackGroupId);
+      const updatedPresentations = [...oldPresentations, ...newPresentations];
       return { ...state,
         allPresentations: updatedPresentations,
         filteredPresentations: getFilteredVoteablePresentations(updatedPresentations, filters)

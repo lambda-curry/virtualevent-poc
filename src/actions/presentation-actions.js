@@ -17,9 +17,9 @@ export const PRESENTATIONS_PAGE_REQUEST = 'PRESENTATIONS_PAGE_REQUEST';
 export const PRESENTATIONS_PAGE_RESPONSE = 'PRESENTATIONS_PAGE_RESPONSE';
 export const VOTEABLE_PRESENTATIONS_UPDATE_FILTER = 'VOTEABLE_PRESENTATIONS_UPDATE_FILTER';
 
-export const setInitialDataSet = () => (dispatch, getState) => Promise.resolve().then(() => {
+export const setInitialDataSet = (currentTrackGroupId = 0) => (dispatch, getState) => Promise.resolve().then(() => {
   const { userState: { userProfile } } = getState();
-  return dispatch(createAction(SET_INITIAL_DATASET)({ userProfile }));
+  return dispatch(createAction(SET_INITIAL_DATASET)({ userProfile, currentTrackGroupId }));
 });
 
 export const updateFilter = (filter) => (dispatch) => {
@@ -38,7 +38,7 @@ export const getVoteablePresentations = (page = 1, perPage = 9) => async (dispat
 
   const params = {
     access_token: accessToken,
-    expand: 'track, media_uploads',
+    expand: 'track, media_uploads, speakers',
     filter: 'published==1',
     order: 'page_random',
     page: page,
