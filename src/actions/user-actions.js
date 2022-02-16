@@ -14,8 +14,6 @@ import {
 import Swal from 'sweetalert2';
 import axios from "axios";
 import { navigate } from 'gatsby-link';
-
-import { isAuthorizedUser } from '../utils/authorizedGroups';
 import { customErrorHandler, customBadgeHandler } from '../utils/customErrorHandler';
 import {getEnvVariable, SUMMIT_API_BASE_URL, SUMMIT_ID} from "../utils/envVariables";
 
