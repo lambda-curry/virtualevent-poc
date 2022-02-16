@@ -8,10 +8,9 @@ import ScheduleFilters from '../components/ScheduleFilters';
 import FilterButton from '../components/FilterButton';
 
 import {
+  setInitialDataSet,
   getVoteablePresentations,
-  VOTEABLE_PRESENTATIONS_UPDATE_FILTER,
-  updateFilter,
-  setInitialDataSet
+  updateFilter
 } from '../actions/presentation-actions';
 
 import {
@@ -24,6 +23,7 @@ import styles from '../styles/posters-page.module.scss';
 
 const PostersPage = ({
                       location,
+                      trackGroupName,
                       setInitialDataSet,
                       getVoteablePresentations,
                       posters,
@@ -31,17 +31,17 @@ const PostersPage = ({
                       castPresentationVote,
                       uncastPresentationVote,
                       summit,
-                      colorSettings,
+                      allPosters,
                       filters,
                       updateFilter,
-                      allPosters
+                      colorSettings
                     }) => {
 
   const [canVote, setCanVote] = useState(true);
   const [showFilters, setShowfilters] = useState(false);
 
   useEffect(() => {
-    setInitialDataSet().then(() => getVoteablePresentations())
+    setInitialDataSet()
   }, []);
 
   const toggleVote = (presentation, isVoted) => {
@@ -54,7 +54,7 @@ const PostersPage = ({
     allEvents: allPosters,
     filters,
     triggerAction: (action, payload) => {
-      updateFilter(payload, VOTEABLE_PRESENTATIONS_UPDATE_FILTER);
+      updateFilter(payload);
     },
     marketingSettings: colorSettings,
     colorSource: '',
@@ -83,7 +83,7 @@ PostersPage.propTypes = {};
 
 const mapStateToProps = ({presentationsState, userState, summitState, settingState}) => ({
   posters: presentationsState.voteablePresentations.filteredPresentations,
-  allPosters: presentationsState.voteablePresentations.originalPresentations,
+  allPosters: presentationsState.voteablePresentations.ssrPresentations,
   filters: presentationsState.voteablePresentations.filters,
   votes: userState.attendee.presentation_votes,
   summit: summitState.summit,

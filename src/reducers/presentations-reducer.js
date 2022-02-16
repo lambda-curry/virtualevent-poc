@@ -12,38 +12,38 @@ import { filterEventsByAccessLevels } from '../utils/authorizedGroups';
 import { filterByTrackGroup } from '../utils/filterUtils';
 
 import allVoteablePresentations from '../content/voteable_presentations.json';
-import FILTER_DEFAULT_STATE from '../content/posters_filters.json';
+import DEFAULT_FILTERS_STATE from '../content/posters_filters.json';
 
 const DEFAULT_VOTEABLE_PRESENTATIONS_STATE = {
-  // ssr collection to create filters content ( this is read only)
-  originalPresentations : [],
-  // ssr collection to perform initial upload
-  allPresentations : [],
-  // current poster collection ( with filter applied, this will feed the poster grid)
-  filteredPresentations: [],
-  filters : { ...FILTER_DEFAULT_STATE },
+  filters: { ...DEFAULT_FILTERS_STATE },
+  // collection used to create filters (read only)
+  ssrPresentations : [],
+  // initial value same as ssrPresentations but gets updated with fresh data
+  allPresentations: [],
+  // updatedPresentations filtered by applied filters from filters widget, used to feed the poster grid widget
+  filteredPresentations: []
 };
 
 const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, action = {}) => {
   const { type, payload } = action;
   switch (type) {
     case SET_INITIAL_DATASET: {
-      const { currentUserProfile } = payload;
+      const { userProfile: currentUserProfile } = payload;
       // pre filter by user access levels
       let filteredEvents = filterEventsByAccessLevels(allVoteablePresentations, currentUserProfile);
       return { ...state,
-        originalPresentations: filteredEvents,
-        allPresentations : filteredEvents,
-        filteredPresentations : filteredEvents,
+        ssrPresentations: filteredEvents,
+        allPresentations: filteredEvents,
+        filteredPresentations: filteredEvents
       };
     }
     case PRESENTATIONS_PAGE_RESPONSE: {
-      const {response: {data}} = payload;
-      const {filters, allPresentations} = state;
+      const { response: { data } } = payload;
+      const { filters, allPresentations } = state;
       // get the new data from api bc the temporal public urls and
       // perform merge ...
       const oldPresentations = allPresentations.filter(ev => !data.some(newEv => newEv.id === ev.id));
-      let updatedPresentations = [...oldPresentations, ...data];
+      const updatedPresentations = [...oldPresentations, ...data];
       return { ...state,
         allPresentations: updatedPresentations,
         filteredPresentations: getFilteredVoteablePresentations(updatedPresentations, filters)
@@ -52,10 +52,11 @@ const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, act
     case VOTEABLE_PRESENTATIONS_UPDATE_FILTER: {
       const { type, values } = payload;
       const { filters, allPresentations } = state;
+      // TODO: review, can we change state directly?
       filters[type].values = values;
       return { ...state,
         filters,
-        filteredPresentations : getFilteredVoteablePresentations(allPresentations, filters)
+        filteredPresentations: getFilteredVoteablePresentations(allPresentations, filters)
       };
     }
     default:
