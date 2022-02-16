@@ -15,7 +15,7 @@ const PosterLiveSession = ({ poster }) => {
                 Join the live session
             </span>
             <button onClick={() => goToLiveSession(poster.meeting_url)} className="poster-button button">
-                <i className={`fa fa-eye icon is-large`} />
+                <i className={`fa fa-sign-in icon is-large`} />
                 <b>Participate</b>
             </button>
         </div>

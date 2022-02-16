@@ -2,8 +2,10 @@ import { combineReducers } from 'redux';
 import allVoteablePresentations from '../content/voteable_presentations.json';
 import {
   REQUEST_PRESENTATIONS_PAGE,
-  RECEIVE_PRESENTATIONS_PAGE, VOTEABLE_PRESENTATIONS_UPDATE_FILTER
+  RECEIVE_PRESENTATIONS_PAGE, VOTEABLE_PRESENTATIONS_UPDATE_FILTER,
+  GET_PRESENTATION_DETAILS, GET_RECOMMENDED_PRESENTATIONS
 } from '../actions/presentation-actions';
+import { START_LOADING, STOP_LOADING } from "openstack-uicore-foundation/lib/actions";
 
 import FILTER_DEFAULT_STATE from '../content/posters_filters.json';
 import {isString} from "lodash";
@@ -16,6 +18,9 @@ const DEFAULT_VOTEABLE_PRESENTATIONS_STATE = {
   // current poster collection ( with filter applied, this will feed the poster grid)
   filteredPresentations: [...allVoteablePresentations],
   filters : {...FILTER_DEFAULT_STATE},
+  detailedPresentation: null,
+  recommendedPresentations: [],
+  loading: false
 };
 
 const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, action = {}) => {
@@ -36,6 +41,18 @@ const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, act
       filters[type].values = values;
       return {...state, filters, filteredPresentations : getFilteredVoteablePresentations(allPresentations, filters)};
     }
+    case GET_PRESENTATION_DETAILS: {
+      const presentation = payload.response || payload.poster;      
+      return { ...state, detailedPresentation: presentation };
+    }
+    case GET_RECOMMENDED_PRESENTATIONS: {
+      const recommended = [...payload.response.data.slice(0,-2)];
+      return { ...state, loading: false, recommendedPresentations: recommended };
+    }
+    case START_LOADING:
+      return { ...state, loading: true };
+    case STOP_LOADING:
+      return { ...state, loading: false };
     default:
       return state;
   }

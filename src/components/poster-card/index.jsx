@@ -6,6 +6,7 @@ import VoteButton from './vote-button';
 
 import styles from './index.module.scss';
 import placeholder from '../../img/poster_fallback.png';
+import { navigate } from 'gatsby';
 
 const PosterCard = ({ poster, showDetail, canVote, isVoted, toggleVote }) => {
   const [hover, setHover] = useState(false);
@@ -20,8 +21,11 @@ const PosterCard = ({ poster, showDetail, canVote, isVoted, toggleVote }) => {
         showDetail();
       }
   };
+  const goToPresentation = (id) => {
+    navigate(`/a/poster/${id}`);
+  }
   return (
-    <article className={styles.card}>
+    <article className={styles.card} onClick={() => goToPresentation(poster.id)}>
       <BlockImage
         fallback={placeholder}
         src={posterImage.public_url}

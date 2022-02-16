@@ -7,6 +7,17 @@
   .navigation-button {
     background-color: transparent;
     border: none;
+    display: flex;
+    align-items: center;
+    i {
+      margin-right: 10px;
+    }
+    &:last-of-type {
+      i {
+        margin-right: 0;
+        margin-left: 10px;
+      }
+    }
   }
 }
 
@@ -65,4 +76,26 @@
   padding: 5px 10px;
   border: none;
   border-radius: 5px;
+}
+
+.poster-description-container {
+  .poster-upper-text {
+    display: flex;
+    align-items: center;
+    .track {
+      padding: 2.5px 25px;
+      border-radius: 8px;
+      color: white;
+      font-size: 0.7em;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .order {
+      color: #979797;
+      font-size: 1.15em;
+      font-weight: 700;
+      margin-bottom: 0.5px;
+      margin-left: 10px;
+    }
+  }
 }
