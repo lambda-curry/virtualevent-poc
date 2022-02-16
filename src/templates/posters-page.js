@@ -41,7 +41,7 @@ const PostersPage = ({
   const [showFilters, setShowfilters] = useState(false);
 
   useEffect(() => {
-    setInitialDataSet()
+    setInitialDataSet().then(() => getVoteablePresentations())
   }, []);
 
   const toggleVote = (presentation, isVoted) => {

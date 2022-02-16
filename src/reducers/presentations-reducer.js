@@ -127,7 +127,9 @@ export const getFilteredVoteablePresentations = (events, filters) => {
     }
 
     if (filters.speakers?.values.length > 0) {
-      valid = ev.speakers?.some((s) => filters.speakers.values.includes(s));
+      valid = ev.speakers?.some((s) => {
+        return filters.speakers.values.some((v) => v === s.id);
+      });
       if (!valid) return false;
     }
 
