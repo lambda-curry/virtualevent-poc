@@ -11,7 +11,6 @@ import clockReducer from "../reducers/clock-reducer";
 import speakerReducer from "../reducers/speaker-reducer";
 import settingReducer from "../reducers/setting-reducer";
 import sponsorReducer from "../reducers/sponsor-reducer";
-import posterReducer from '../reducers/poster-reducer';
 import {applyMiddleware, compose, createStore} from "redux";
 import thunk from "redux-thunk";
 
@@ -33,7 +32,6 @@ const config = {
         'scheduleState',
         'myScheduleState',
         'settingState',
-        'posterState'
     ]
 };
 
@@ -49,7 +47,6 @@ const persistedReducers = persistCombineReducers(config, {
     summitState: summitReducer,
     speakerState: speakerReducer,
     sponsorState: sponsorReducer,
-    posterState: posterReducer
 });
 
 function appendLoggedUser({ getState }) {

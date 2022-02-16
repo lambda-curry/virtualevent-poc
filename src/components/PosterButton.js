@@ -24,10 +24,10 @@ const PosterButton = ({ poster }) => {
                     onZoomChange={handleZoomChange}
                     overlayBgColorStart="rgba(0, 0, 0, 0)"
                     overlayBgColorEnd="rgba(0, 0, 0, 0.8)"
-                    zoomMargin="100"                    
                 >
-                    {isZoomed && <img
+                    {<img
                         alt="that wanaka tree"
+                        style={{ display: isZoomed ? 'inherit' : 'none' }}
                         src={poster?.media_uploads.find(e => e.order === 1).public_url}
                     />}
                 </ControlledZoom>}

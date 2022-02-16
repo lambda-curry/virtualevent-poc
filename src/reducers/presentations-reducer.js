@@ -6,7 +6,11 @@ import {
   PRESENTATIONS_PAGE_REQUEST,
   PRESENTATIONS_PAGE_RESPONSE,
   VOTEABLE_PRESENTATIONS_UPDATE_FILTER,
+  REQUEST_PRESENTATIONS_PAGE,
+  RECEIVE_PRESENTATIONS_PAGE, VOTEABLE_PRESENTATIONS_UPDATE_FILTER,
+  GET_PRESENTATION_DETAILS, GET_RECOMMENDED_PRESENTATIONS
 } from '../actions/presentation-actions';
+import { START_LOADING, STOP_LOADING } from "openstack-uicore-foundation/lib/actions";
 
 import { filterEventsByAccessLevels } from '../utils/authorizedGroups';
 
@@ -15,14 +19,16 @@ import DEFAULT_FILTERS_STATE from '../content/posters_filters.json';
 
 const DEFAULT_VOTEABLE_PRESENTATIONS_STATE = {
   filters: { ...DEFAULT_FILTERS_STATE },
-  // collection used to create filters (read only)
-  ssrPresentations : [],
-  // initial value same as ssrPresentations but gets updated with fresh data
-  allPresentations: [],
-  // updatedPresentations filtered by applied filters from filters widget, used to feed the poster grid widget
-  filteredPresentations: [],
-  // stores user profile set in initial data set for future access level filtering
-  currentUserProfile: null,
+  // ssr collection to create filters content ( this is read only)
+  originalPresentations    : [...allVoteablePresentations],
+  // ssr collection to perform initial upload
+  allPresentations : [...allVoteablePresentations],
+  // current poster collection ( with filter applied, this will feed the poster grid)
+  filteredPresentations: [...allVoteablePresentations],
+  filters : {...FILTER_DEFAULT_STATE},
+  detailedPresentation: null,
+  recommendedPresentations: [],
+  loading: false
 };
 
 const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, action = {}) => {
@@ -73,6 +79,18 @@ const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, act
         filteredPresentations: getFilteredVoteablePresentations(allPresentations, filters)
       };
     }
+    case GET_PRESENTATION_DETAILS: {
+      const presentation = payload.response || payload.poster;      
+      return { ...state, detailedPresentation: presentation };
+    }
+    case GET_RECOMMENDED_PRESENTATIONS: {
+      const recommended = [...payload.response.data.slice(0,-2)];
+      return { ...state, loading: false, recommendedPresentations: recommended };
+    }
+    case START_LOADING:
+      return { ...state, loading: true };
+    case STOP_LOADING:
+      return { ...state, loading: false };
     default:
       return state;
   }

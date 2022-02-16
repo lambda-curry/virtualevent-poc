@@ -17,6 +17,10 @@ export const GET_VOTEABLE_PRESENTATIONS = 'GET_VOTEABLE_PRESENTATIONS';
 export const PRESENTATIONS_PAGE_REQUEST = 'PRESENTATIONS_PAGE_REQUEST';
 export const PRESENTATIONS_PAGE_RESPONSE = 'PRESENTATIONS_PAGE_RESPONSE';
 export const VOTEABLE_PRESENTATIONS_UPDATE_FILTER = 'VOTEABLE_PRESENTATIONS_UPDATE_FILTER';
+export const GET_PRESENTATION_DETAILS = 'GET_PRESENTATION_DETAILS';
+export const GET_PRESENTATION_DETAILS_ERROR = 'GET_PRESENTATION_DETAILS_ERROR';
+export const GET_RECOMMENDED_PRESENTATIONS = 'GET_RECOMMENDED_PRESENTATIONS';
+
 
 export const setInitialDataSet = () => (dispatch, getState) => Promise.resolve().then(() => {
   const { userState: { userProfile } } = getState();
@@ -91,3 +95,74 @@ export const getVoteablePresentations = (page = 1, perPage = 10) => async (dispa
     return (e);
   });
 };
+
+export const getPresentationById = (presentationId) => async (dispatch, getState) => {
+
+  dispatch(startLoading());
+
+  let accessToken;
+
+  try {
+      accessToken = await getAccessToken();
+  } catch (e) {
+      console.log('error: ', e)
+      dispatch(stopLoading());
+      return Promise.reject();    
+  }
+
+  let params = {
+      access_token: accessToken,
+      expand: 'speakers, media_uploads, track'
+  };
+
+  return getRequest(
+      null,
+      createAction(GET_PRESENTATION_DETAILS),
+      `${window.SUMMIT_API_BASE_URL}/api/v1/summits/${window.SUMMIT_ID}/presentations/voteable/${presentationId}`,
+      customErrorHandler
+  )(params)(dispatch).then((presentation) => {
+      dispatch(getRecommendedPresentations(presentation.response.track.id));
+  }).catch(e => {
+      dispatch(stopLoading());
+      dispatch(createAction(GET_PRESENTATION_DETAILS_ERROR)(e));
+      return (e);
+  });
+
+};
+
+export const getRecommendedPresentations = (trackId) => async (dispatch, getState) => {
+
+  dispatch(startLoading());
+
+  let accessToken;
+
+  try {
+      accessToken = await getAccessToken();
+  } catch (e) {
+      console.log('error: ', e)
+      dispatch(stopLoading());
+      return Promise.reject();    
+  }
+
+// order by random
+
+  let params = {
+      access_token: accessToken,
+      expand: 'speakers, media_uploads, track',
+      filter: `published==1,track_group_id==${trackId}`,
+      order: 'random',
+  };
+
+  return getRequest(
+      null,
+      createAction(GET_RECOMMENDED_PRESENTATIONS),
+      `${window.SUMMIT_API_BASE_URL}/api/v1/summits/${window.SUMMIT_ID}/presentations/voteable`,
+      customErrorHandler
+  )(params)(dispatch).then(() => {
+      dispatch(stopLoading());
+  }).catch(e => {
+      dispatch(stopLoading());
+      return (e);
+  });
+
+}; 

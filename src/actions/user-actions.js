@@ -216,6 +216,8 @@ export const removeFromSchedule = (event) => async (dispatch, getState) => {
 
 export const castPresentationVote = (presentation) => async (dispatch, getState) => {
 
+  console.log('vote', presentation)
+
   const accessToken = await getAccessToken();
 
   if (!accessToken) return Promise.resolve();
@@ -240,6 +242,8 @@ export const castPresentationVote = (presentation) => async (dispatch, getState)
 };
 
 export const uncastPresentationVote = (presentation) => async (dispatch, getState) => {
+
+  console.log('un vote', presentation)
 
   const accessToken = await getAccessToken();
 
