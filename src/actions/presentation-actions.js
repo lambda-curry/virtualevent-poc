@@ -18,12 +18,12 @@ export const PRESENTATIONS_PAGE_RESPONSE = 'PRESENTATIONS_PAGE_RESPONSE';
 export const VOTEABLE_PRESENTATIONS_UPDATE_FILTER = 'VOTEABLE_PRESENTATIONS_UPDATE_FILTER';
 
 export const setInitialDataSet = () => (dispatch, getState) => Promise.resolve().then(() => {
-  let { userState: { userProfile } } = getState();
-  return dispatch(createAction(SET_INITIAL_DATASET)({ ...userProfile }));
+  const { userState: { userProfile } } = getState();
+  return dispatch(createAction(SET_INITIAL_DATASET)({ userProfile }));
 });
 
-export const updateFilter = (filter, action = VOTEABLE_PRESENTATIONS_UPDATE_FILTER) => (dispatch) => {
-  dispatch(createAction(action)({...filter}));
+export const updateFilter = (filter) => (dispatch) => {
+  dispatch(createAction(VOTEABLE_PRESENTATIONS_UPDATE_FILTER)({ ...filter }));
 };
 
 export const getVoteablePresentations = (page = 1, perPage = 9) => async (dispatch, getState) => {

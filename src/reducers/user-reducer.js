@@ -50,10 +50,11 @@ const userReducer = (state = DEFAULT_STATE, action) => {
     case STOP_LOADING_IDP_PROFILE:
       return { ...state, loadingIDP: false };
     case GET_USER_PROFILE:
+      const { response: userProfile } = payload;
       return { ...state,
-                userProfile: payload.response,
-                isAuthorized: isAuthorizedUser(payload.response.groups),
-                hasTicket: payload.response.summit_tickets?.length > 0
+                userProfile: userProfile,
+                isAuthorized: isAuthorizedUser(userProfile.groups),
+                hasTicket: userProfile.summit_tickets?.length > 0
              }
     // is this action type used?
     case SET_USER_TICKET:
