@@ -1,85 +1,45 @@
 import React from 'react'
-
-import Link from '../components/Link'
+import Content from '../content/ads.json'
+import Ad from "./Ad";
 
 import styles from '../styles/advertise.module.scss'
 
-import Content from '../content/ads.json'
-
 const AdvertiseComponent = ({ section, column, id }) => {
+    const sectionAds = Content.ads.find(ad => ad.section === section)?.columnAds.filter(c => c.column === column) || [];
 
-  const sectionAds = Content.ads.find(ad => ad.section === section)?.columnAds.filter(c => c.column === column) || [];
+    if (sectionAds.length === 0) return null;
 
-  if (sectionAds.length > 0) {
     return (
-      sectionAds.map((ad, index) => {
-        return (
-          ad.id ?
-            ad.id === id ?
-              column === 'center' ?
-                null
-                :
-                <div className={`${styles.sponsorContainer} sponsor-container`} key={index}>
-                  {!ad.button?.link &&
-                    <img src={ad.image} alt="sponsor" />
-                  }
-                  {!ad.button?.text && ad.button?.link &&
-                    <Link to={ad.button.link}>
-                      <img src={ad.image} alt="sponsor" />
-                    </Link>
-                  }
-                  {ad.button?.text && ad.button?.link &&
-                    <Link className={styles.link} to={ad.button.link}>
-                      <button className={`${styles.button} button is-large`}>
-                        <b>{ad.button.text}</b>
-                      </button>
-                    </Link>
-                  }
-                </div>
-              :
-              null
-            :
-            column === 'center' ?
-              <div className={`${styles.sponsorContainerCenter}`} key={index}>
-                <div className={styles.containerText}>
-                  <span className={styles.adText} style={ad.image ? { textAlign: 'left' } : null}>
-                    <b>Upload your picture and participate with the #yocovirtualsummit</b>
-                  </span>
-                  <a className={styles.link} href={ad.button.link}>
-                    <button className={`${styles.button} button is-large`} style={ad.image ? { width: '100%' } : null}>
-                      <b>{ad.button.text}</b>
-                    </button>
-                  </a>
-                </div>
-                {ad.image && <div className={styles.containerImage} style={{ backgroundImage: `url(${ad.image})` }}></div>}
-              </div>
-              :              
-              <div className={`${index === 0 ? styles.firstSponsorContainer : styles.sponsorContainer} sponsor-container`} key={index}>
-                {!ad.button?.link &&
-                  <img src={ad.image} alt="sponsor" />
-                }
-                {!ad.button?.text && ad.button?.link &&
-                  <Link to={ad.button.link}>
-                    <img src={ad.image} alt="sponsor" />
-                  </Link>
-                }
-                {ad.button?.text && ad.button?.link &&
-                  <React.Fragment>
-                    <img src={ad.image} alt="sponsor" />
-                    <Link className={styles.link} to={ad.button.link}>
-                      <button className={`${styles.button} button is-large`}>
-                        <b>{ad.button.text}</b>
-                      </button>
-                    </Link>
-                  </React.Fragment>
-                }
-              </div>
-        )
-      })
-    )
-  } else {
-    return null;
-  }
+        sectionAds.map((ad, index) => {
+            const key = `ad-${index}`;
+
+            if (!ad.id && column === 'center') {
+                return (
+                    <div className={`${styles.sponsorContainerCenter}`} key={key}>
+                        <div className={styles.containerText}>
+                          <span className={styles.adText} style={ad.image ? { textAlign: 'left' } : null}>
+                              <b>Upload your picture and participate with the #yocovirtualsummit</b>
+                          </span>
+                            <a className={styles.link} href={ad.button.link}>
+                                <button className={`${styles.button} button is-large`} style={ad.image ? { width: '100%' } : null}>
+                                    <b>{ad.button.text}</b>
+                                </button>
+                            </a>
+                        </div>
+                        {ad.image && <div className={styles.containerImage} style={{ backgroundImage: `url(${ad.image})` }} />}
+                    </div>
+                )
+            }
+
+            if (ad.id !== id || column === 'center') return null;
+
+            const wrapperClass =`${index === 0 ? styles.firstSponsorContainer : styles.sponsorContainer} sponsor-container`;
+
+            return (
+                <Ad image={ad.image.file} alt={ad.image.alt} link={ad.button.link} text={ad.button.text} wrapperClass={wrapperClass} key={key} />
+            );
+        })
+    );
 }
 
 export default AdvertiseComponent;

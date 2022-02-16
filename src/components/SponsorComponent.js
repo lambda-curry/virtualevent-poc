@@ -31,15 +31,15 @@ const SponsorComponent = ({ page, sponsorsState, tiers, lobbyButton }) => {
                       return (
                         sponsor.externalLink ?
                           <Link to={sponsor.externalLink} key={`${s.tier.label}-${index}`}>
-                            <img src={sponsor.logo} alt={sponsor.name} />
+                            <img src={sponsor.logo.file} alt={sponsor.logo.alt} />
                           </Link>
                           :
                           sponsor.usesSponsorPage ?
                             <Link to={`/a/sponsor/${getSponsorURL(sponsor.id, sponsor.name)}`} key={`${s.tier.label}-${index}`}>
-                              <img src={sponsor.logo} alt={sponsor.name} />
+                              <img src={sponsor.logo.file} alt={sponsor.logo.alt} />
                             </Link>
                             :
-                            <img src={sponsor.logo} alt={sponsor.name} />
+                            <img src={sponsor.logo.file} alt={sponsor.logo.alt} />
                       )
                     })}
                   </div>
@@ -61,18 +61,18 @@ const SponsorComponent = ({ page, sponsorsState, tiers, lobbyButton }) => {
                         sponsor.externalLink ?
                           <div className={styles.imageBox} key={`${s.tier.label}-${index}`}>
                             <Link to={sponsor.externalLink}>
-                              <img src={sponsor.logo} alt={sponsor.name} />
+                              <img src={sponsor.logo.file} alt={sponsor.logo.alt} />
                             </Link>
                           </div>
                           : sponsor.usesSponsorPage ?
                             <div className={styles.imageBox} key={`${s.tier.label}-${index}`}>
                               <Link to={`/a/sponsor/${getSponsorURL(sponsor.id, sponsor.name)}`}>
-                                <img src={sponsor.logo} alt={sponsor.name} />
+                                <img src={sponsor.logo.file} alt={sponsor.logo.alt} />
                               </Link>
                             </div>
                             :
                             <div className={styles.imageBox} key={`${s.tier.label}-${index}`}>
-                              <img src={sponsor.logo} alt={sponsor.name} />
+                              <img src={sponsor.logo.file} alt={sponsor.logo.alt} />
                             </div>
                       )
                     })}
@@ -94,12 +94,12 @@ const SponsorComponent = ({ page, sponsorsState, tiers, lobbyButton }) => {
                         : sponsor.usesSponsorPage ?
                           <div className={styles.imageBox} key={`${s.tier.label}-${index}`}>
                             <Link to={`/a/sponsor/${getSponsorURL(sponsor.id, sponsor.name)}`}>
-                              <img src={sponsor.logo} alt={sponsor.name} />
+                              <img src={sponsor.logo.file} alt={sponsor.logo.alt} />
                             </Link>
                           </div>
                           :
                           <div className={styles.imageBox} key={`${s.tier.label}-${index}`}>
-                            <img src={sponsor.logo} alt={sponsor.name} />
+                            <img src={sponsor.logo.file} alt={sponsor.logo.alt} />
                           </div>
                     )
                   })}
@@ -118,7 +118,7 @@ const SponsorComponent = ({ page, sponsorsState, tiers, lobbyButton }) => {
                           key={`${s.tier.label}-${index}`}
                         >
                           <Link to={sponsor.externalLink}>
-                            <img src={sponsor.logo} alt={sponsor.name} />
+                            <img src={sponsor.logo.file} alt={sponsor.logo.alt} />
                           </Link>
                         </div>
                         : sponsor.usesSponsorPage ?
@@ -128,7 +128,7 @@ const SponsorComponent = ({ page, sponsorsState, tiers, lobbyButton }) => {
                             key={`${s.tier.label}-${index}`}
                           >
                             <Link to={`/a/sponsor/${getSponsorURL(sponsor.id, sponsor.name)}`}>
-                              <img src={sponsor.logo} alt={sponsor.name} />
+                              <img src={sponsor.logo.file} alt={sponsor.logo.alt} />
                             </Link>
                           </div>
                           :
@@ -137,7 +137,7 @@ const SponsorComponent = ({ page, sponsorsState, tiers, lobbyButton }) => {
                           ${tier.expoHallPage?.expoHallTemplate === 'big-images' ? styles.large : tier.expoHallPage?.expoHallTemplate === 'medium-images' ? styles.medium : styles.small}`}
                             key={`${s.tier.label}-${index}`}
                           >
-                            <img src={sponsor.logo} alt={sponsor.name} />
+                            <img src={sponsor.logo.file} alt={sponsor.logo.alt} />
                           </div>
                     )
                   })}
@@ -164,19 +164,20 @@ const SponsorComponent = ({ page, sponsorsState, tiers, lobbyButton }) => {
                     }
                     <Slider {...sliderSettings}>
                       {sponsors.map((sponsor, index) => {
+                        const img = sponsor.advertiseImage ? sponsor.advertiseImage : sponsor.logo;
                         return (
                           sponsor.externalLink ?
                             <Link to={sponsor.externalLink} key={`${s.tier.label}-${index}`}>
-                              <img src={sponsor.advertiseImage ? sponsor.advertiseImage : sponsor.logo} alt={sponsor.name} />
+                              <img src={img.file} alt={img.alt} />
                             </Link>
                             :
                             sponsor.usesSponsorPage ?
                               <Link to={`/a/sponsor/${getSponsorURL(sponsor.id, sponsor.name)}`} key={`${s.tier.label}-${index}`}>
-                                <img src={sponsor.advertiseImage ? sponsor.advertiseImage : sponsor.logo} alt={sponsor.name} />
+                                <img src={img.file} alt={img.alt} />
                               </Link>
                               :
                               <Link key={`${s.tier.label}-${index}`}>
-                                <img src={sponsor.advertiseImage ? sponsor.advertiseImage : sponsor.logo} alt={sponsor.name} />
+                                <img src={img.file} alt={img.alt} />
                               </Link>
                         )
                       })}

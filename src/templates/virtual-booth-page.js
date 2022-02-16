@@ -28,7 +28,7 @@ export const VirtualBoothPageTemplate = ({
           <br />
           <br />
           <Zoom>
-            <img src={!!columns.leftColumn.image.childImageSharp ? columns.leftColumn.image.childImageSharp.fluid.src : columns.leftColumn.image} alt="Middle Tier" />
+            <img src={!!columns.leftColumn.image.childImageSharp ? columns.leftColumn.image.childImageSharp.fluid.src : columns.leftColumn.image} alt={columns.leftColumn.alt} />
           </Zoom>          
         </div>
         <div className="column is-half">
@@ -38,7 +38,7 @@ export const VirtualBoothPageTemplate = ({
           <br />          
           <br />
           <Zoom>
-            <img src={!!columns.rightColumn.image.childImageSharp ? columns.rightColumn.image.childImageSharp.fluid.src : columns.rightColumn.image} alt="Middle Tier" />
+            <img src={!!columns.rightColumn.image.childImageSharp ? columns.rightColumn.image.childImageSharp.fluid.src : columns.rightColumn.image} alt={columns.leftColumn.alt} />
           </Zoom>          
         </div>
       </div>
@@ -101,7 +101,8 @@ export const virtualBoothPagePageQuery = graphql`
                   ...GatsbyImageSharpFluid
                 }
               }
-            }            
+            }      
+            alt      
           }
           rightColumn {
             title
@@ -113,6 +114,7 @@ export const virtualBoothPagePageQuery = graphql`
                 }
               }
             }
+            alt
           }
         }
         endText
