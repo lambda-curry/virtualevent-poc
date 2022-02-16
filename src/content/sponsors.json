@@ -24,10 +24,7 @@
             "file" : "https://fntech.sfo2.cdn.digitaloceanspaces.com/Yahoo_TechWeek_2022/Sponsor_Content/Red%20Hat%20Header%20Video%20Animated%20Logo%20No%20Sound.mp4",
             "alt" : ""
           },
-          "advertiseImage": {
-            "file": "",
-            "alt" : ""
-          },
+          "advertiseImage": "",
           "sponsorId": 155,
           "title": "",
           "companyId": 135,
