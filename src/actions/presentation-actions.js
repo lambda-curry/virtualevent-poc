@@ -9,17 +9,17 @@ import {
 import { customErrorHandler } from '../utils/customErrorHandler';
 
 import { getEnvVariable, SUMMIT_API_BASE_URL, SUMMIT_ID } from '../utils/envVariables';
-import {SET_USER_ORDER} from "./user-actions";
 
-export const LOAD_INITIAL_DATASET = 'VOTEABLE_PRESENTATIONS_LOAD_INITIAL_DATASET';
-export const REQUEST_PRESENTATIONS_PAGE = 'REQUEST_PRESENTATIONS_PAGE';
-export const RECEIVE_PRESENTATIONS_PAGE = 'RECEIVE_PRESENTATIONS_PAGE';
-export const REQUEST_PRESENTATIONS_PAGE_ERROR = 'REQUEST_PRESENTATIONS_PAGE_ERROR';
+import { SET_USER_ORDER } from "./user-actions";
+
+export const SET_INITIAL_DATASET = 'VOTEABLE_PRESENTATIONS_SET_INITIAL_DATASET';
+export const PRESENTATIONS_PAGE_REQUEST = 'PRESENTATIONS_PAGE_REQUEST';
+export const PRESENTATIONS_PAGE_RESPONSE = 'PRESENTATIONS_PAGE_RESPONSE';
 export const VOTEABLE_PRESENTATIONS_UPDATE_FILTER = 'VOTEABLE_PRESENTATIONS_UPDATE_FILTER';
 
-export const loadInitialDataSet = () => (dispatch, getState) => Promise.resolve().then(() => {
-  let {userState: {userProfile}} = getState();
-  return dispatch(createAction(LOAD_INITIAL_DATASET)({...userProfile}));
+export const setInitialDataSet = () => (dispatch, getState) => Promise.resolve().then(() => {
+  let { userState: { userProfile } } = getState();
+  return dispatch(createAction(SET_INITIAL_DATASET)({ ...userProfile }));
 });
 
 export const updateFilter = (filter, action = VOTEABLE_PRESENTATIONS_UPDATE_FILTER) => (dispatch) => {
@@ -46,8 +46,8 @@ export const getVoteablePresentations = (page = 1, perPage = 9) => async (dispat
   };
 
   return getRequest(
-    createAction(REQUEST_PRESENTATIONS_PAGE),
-    createAction(RECEIVE_PRESENTATIONS_PAGE),
+    createAction(PRESENTATIONS_PAGE_REQUEST),
+    createAction(PRESENTATIONS_PAGE_RESPONSE),
     `${getEnvVariable(SUMMIT_API_BASE_URL)}/api/v1/summits/${getEnvVariable(SUMMIT_ID)}/presentations/voteable`,
     customErrorHandler,
     { page }
@@ -64,7 +64,6 @@ export const getVoteablePresentations = (page = 1, perPage = 9) => async (dispat
     }
   }).catch(e => {
     dispatch(stopLoading());
-    dispatch(createAction(REQUEST_PRESENTATIONS_PAGE_ERROR)(e));
     return (e);
   });
 };
