@@ -20,9 +20,9 @@ const AdvertiseComponent = ({ section, column, id }) => {
                           <span className={styles.adText} style={ad.image ? { textAlign: 'left' } : null}>
                               <b>Upload your picture and participate with the #yocovirtualsummit</b>
                           </span>
-                            <a className={styles.link} href={ad.button.link}>
+                            <a className={styles.link} href={ad.button?.link}>
                                 <button className={`${styles.button} button is-large`} style={ad.image ? { width: '100%' } : null}>
-                                    <b>{ad.button.text}</b>
+                                    <b>{ad.button?.text}</b>
                                 </button>
                             </a>
                         </div>
@@ -36,7 +36,7 @@ const AdvertiseComponent = ({ section, column, id }) => {
             const wrapperClass =`${index === 0 ? styles.firstSponsorContainer : styles.sponsorContainer} sponsor-container`;
 
             return (
-                <Ad image={ad.image.file} alt={ad.image.alt} link={ad.button.link} text={ad.button.text} wrapperClass={wrapperClass} key={key} />
+                <Ad image={ad.image?.file} alt={ad.image?.alt} link={ad.button?.link} text={ad.button?.text} wrapperClass={wrapperClass} key={key} />
             );
         })
     );
