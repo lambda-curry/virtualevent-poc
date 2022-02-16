@@ -30,10 +30,11 @@ const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, act
     case SET_INITIAL_DATASET: {
       const { currentUserProfile } = payload;
       // pre filter by user access levels
-      return {...state,
-        originalPresentations : filterEventsByAccessLevels(allVoteablePresentations, currentUserProfile),
-        allPresentations : filterEventsByAccessLevels(allVoteablePresentations, currentUserProfile),
-        filteredPresentations : filterEventsByAccessLevels(allVoteablePresentations, currentUserProfile),
+      let filteredEvents = filterEventsByAccessLevels(allVoteablePresentations, currentUserProfile);
+      return { ...state,
+        originalPresentations: filteredEvents,
+        allPresentations : filteredEvents,
+        filteredPresentations : filteredEvents,
       };
     }
     case PRESENTATIONS_PAGE_RESPONSE: {
