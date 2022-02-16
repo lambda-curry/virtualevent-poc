@@ -68,7 +68,10 @@
       "expoHallSize": "small"
     }
   ],
-  "imageHeader": "/img/booth-crawl-1_adjusted-mobile.png",
+  "imageHeader": {
+    "file": "/img/booth-crawl-1_adjusted-mobile.png",
+    "alt": "header"
+  },
   "lobbyButton": {
     "text": "View all",
     "link": "/a/sponsors/"

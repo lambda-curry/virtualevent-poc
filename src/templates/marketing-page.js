@@ -91,7 +91,7 @@ export const MarketingPageTemplate = class extends React.Component {
               <React.Fragment>
                 <h2><b>{siteSettings.leftColumn.image.title}</b></h2>
                 <br />
-                <img alt="" src={siteSettings.leftColumn.image.src} />
+                <img alt={siteSettings.leftColumn.image.alt} src={siteSettings.leftColumn.image.src} />
               </React.Fragment>
             }
           </div>
@@ -106,10 +106,10 @@ export const MarketingPageTemplate = class extends React.Component {
                     <div className={'single'} key={index}>
                       {item.images[0].link ?
                         <Link to={item.images[0].link}>
-                          <img alt="" src={item.images[0].image} />
+                          <img alt={item.images[0].alt} src={item.images[0].image} />
                         </Link>
                         :
-                        <img alt="" src={item.images[0].image} />
+                        <img alt={item.images[0].alt} src={item.images[0].image} />
                       }
                     </div>
                   )
@@ -121,10 +121,10 @@ export const MarketingPageTemplate = class extends React.Component {
                           <div className={styles.imageSlider} key={indexSlide}>
                             {img.link ?
                               <Link to={img.link}>
-                                <img alt="" src={img.image} />
+                                <img alt={img.alt} src={img.image} />
                               </Link>
                               :
-                              <img alt="" src={img.image} />
+                              <img alt={img.alt} src={img.image} />
                             }
                           </div>
                         )
@@ -133,7 +133,7 @@ export const MarketingPageTemplate = class extends React.Component {
                   )
                 } else {
                   return (
-                    <div className={'single'} key={index}></div>
+                    <div className="single" key={index} />
                   )
                 }
               })}

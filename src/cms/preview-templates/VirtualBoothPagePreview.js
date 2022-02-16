@@ -15,12 +15,14 @@ const VirtualBoothPagePreview = ({ entry, getAsset, widgetFor }) => {
           leftColumn: {
             title: entry.getIn(['data', 'columns', 'leftColumn', 'title']),
             content: entry.getIn(['data', 'columns', 'leftColumn', 'content']),
-            image: entry.getIn(['data', 'columns', 'leftColumn', 'image'])
+            image: entry.getIn(['data', 'columns', 'leftColumn', 'image']),
+            alt: entry.getIn(['data', 'columns', 'leftColumn', 'alt'])
           },
           rightColumn: {
             title: entry.getIn(['data', 'columns', 'rightColumn', 'title']),
             content: entry.getIn(['data', 'columns', 'rightColumn', 'content']),
-            image: entry.getIn(['data', 'columns', 'rightColumn', 'image'])
+            image: entry.getIn(['data', 'columns', 'rightColumn', 'image']),
+            alt: entry.getIn(['data', 'columns', 'rightColumn', 'alt'])
           }
         }}
         endText={entry.getIn(['data', 'endText'])}

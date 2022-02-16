@@ -112,7 +112,7 @@ export const SponsorPageTemplate = class extends React.Component {
                   {sponsor.intro && <span dangerouslySetInnerHTML={{ __html: parsedIntro }} />}
                 </div>
                 <div className="column is-half px-0 py-0">
-                  <img alt="" src={sponsor.sideImage} className={styles.sideImage} />
+                  <img alt={sponsor.sideImage.alt} src={sponsor.sideImage.file} className={styles.sideImage} />
                 </div>
               </div>
               }
