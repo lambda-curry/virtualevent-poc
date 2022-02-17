@@ -31,6 +31,7 @@ export const getVoteablePresentations = (page = 1, perPage = 10) => async (dispa
   dispatch(startLoading());
 
   const accessToken = await getAccessToken();
+
   if (!accessToken) {
     dispatch(stopLoading());
     return Promise.resolve();
@@ -51,16 +52,16 @@ export const getVoteablePresentations = (page = 1, perPage = 10) => async (dispa
     `${getEnvVariable(SUMMIT_API_BASE_URL)}/api/v1/summits/${getEnvVariable(SUMMIT_ID)}/presentations/voteable`,
     customErrorHandler,
     { page }
-  )(params)(dispatch).then((result) => {
-    const { presentationsState: { pagination: { pages, lastPage } } } = getState();
-    const fetchedPages = Object.keys(pages).map(Number);
-    const allPages = Array.from({ length: lastPage }, (_, i) => i + 1);
-    const remainingPages = allPages.filter(x => !fetchedPages.includes(x));
-    if (remainingPages.length) {
-      const randomRemainingPageIndex = Math.floor(Math.random() * remainingPages.length);
-      dispatch(getVoteablePresentations(remainingPages[randomRemainingPageIndex], perPage));
-    } else {
-      dispatch(stopLoading());
+  )(params)(dispatch).then((payload) => {
+    const { response: { current_page } } = payload;
+    if (current_page === 1) {
+      const { presentationsState: { pagination: { pages, lastPage } } } = getState();
+      const allPages = Array.from({ length: lastPage - 1}, (_, i) => i + 2);
+      const dispatchCalls = allPages.map(p => dispatch(getVoteablePresentations(p, perPage)));
+      Promise.all([...dispatchCalls]).then(() => {
+        dispatch(stopLoading());
+      });
+      if (current_page === lastPage) dispatch(stopLoading());
     }
   }).catch(e => {
     dispatch(stopLoading());
