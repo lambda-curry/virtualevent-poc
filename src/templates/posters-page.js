@@ -9,7 +9,7 @@ import FilterButton from '../components/FilterButton';
 
 import {
   setInitialDataSet,
-  getVoteablePresentations,
+  getAllVoteablePresentations,
   updateFilter
 } from '../actions/presentation-actions';
 
@@ -27,7 +27,7 @@ const PostersPage = ({
                       location,
                       trackGroupId,
                       setInitialDataSet,
-                      getVoteablePresentations,
+                      getAllVoteablePresentations,
                       posters,
                       votes,
                       castPresentationVote,
@@ -45,7 +45,7 @@ const PostersPage = ({
   const [allPostersByTrackGroup, setAllPostersByTrackGroup] = useState(allPosters); 
 
   useEffect(() => {
-    setInitialDataSet().then(() => getVoteablePresentations());
+    setInitialDataSet().then(() => getAllVoteablePresentations());
   }, []);
 
   useEffect(() => {
@@ -104,7 +104,7 @@ const mapStateToProps = ({presentationsState, userState, summitState, settingSta
 
 export default connect(mapStateToProps, {
   setInitialDataSet,
-  getVoteablePresentations,
+  getAllVoteablePresentations,
   castPresentationVote,
   uncastPresentationVote,
   updateFilter,
