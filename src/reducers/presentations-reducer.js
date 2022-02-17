@@ -17,12 +17,14 @@ import DEFAULT_FILTERS_STATE from '../content/posters_filters.json';
 
 const DEFAULT_VOTEABLE_PRESENTATIONS_STATE = {
   filters: { ...DEFAULT_FILTERS_STATE },
-  // ssr collection to create filters content ( this is read only)
-  originalPresentations    : [...allVoteablePresentations],
-  // ssr collection to perform initial upload
-  allPresentations : [...allVoteablePresentations],
-  // current poster collection ( with filter applied, this will feed the poster grid)
-  filteredPresentations: [...allVoteablePresentations],
+  // collection used to create filters (read only)
+  ssrPresentations : [],
+  // initial value same as ssrPresentations but gets updated with fresh data
+  allPresentations: [],
+  // updatedPresentations filtered by applied filters from filters widget, used to feed the poster grid widget
+  filteredPresentations: [],
+  // stores user profile set in initial data set for future access level filtering
+  currentUserProfile: null,
   detailedPresentation: null,
   recommendedPresentations: [],
   loading: false
