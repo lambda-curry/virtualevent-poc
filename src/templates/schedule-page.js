@@ -40,7 +40,7 @@ const SchedulePage = ({summit, schedules, summitPhase, isLoggedUser, location, c
       updateFilter(schedKey, payload);
     },
     marketingSettings: colorSettings,
-    colorSource: colorSource,
+    colorSource,
   };
 
   let schedProps = {

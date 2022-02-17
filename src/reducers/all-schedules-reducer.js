@@ -41,10 +41,22 @@ const allSchedulesReducer = (state = DEFAULT_STATE, action) => {
             const {allScheduleEvents} = DEFAULT_STATE;
             const {summit} = summitData;
 
-            const schedules = summit?.schedules_settings.map(sched => {
+            const schedules = summit?.schedule_settings.map(sched => {
                 const {key} = sched;
                 const scheduleState = state.schedules.find(s => s.key === key);
-                const newData = {...sched, all_events: allScheduleEvents};
+
+                // translate filters and pre_filters
+                const newFilters = sched.filters.reduce((result, item) => {
+                    result[item.type.toLowerCase()] = {label: item.label, enabled: item.is_enabled, values: [], options: []};
+                    return result;
+                }, {});
+
+                const newPreFilters = sched.pre_filters.reduce((result, item) => {
+                    result[item.type.toLowerCase()] = {values: item.values};
+                    return result;
+                }, {});
+
+                const newData = {...sched, all_events: allScheduleEvents, filters: newFilters, pre_filters: newPreFilters};
 
                 const schedState = scheduleReducer(scheduleState, {type: `SCHED_${type}`, payload: {...newData, ...payload}});
 

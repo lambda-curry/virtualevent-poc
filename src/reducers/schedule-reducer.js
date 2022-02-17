@@ -7,7 +7,8 @@ const INITIAL_STATE = {
     events: [],
     filters: [],
     view: 'calendar',
-    timezone: 'show'
+    timezone: 'show',
+    colorSource: 'track'
 };
 
 const scheduleReducer = (state = INITIAL_STATE, action) => {
@@ -38,7 +39,7 @@ const scheduleReducer = (state = INITIAL_STATE, action) => {
             const newFilters = syncFilters(filters, state.filters);
             const events = getFilteredEvents(allFilteredEvents, newFilters, summitTimeZoneId);
 
-            return {...state, allEvents: allFilteredEvents, filters: newFilters, colorSource: color_source, events};
+            return {...state, allEvents: allFilteredEvents, filters: newFilters, colorSource: color_source.toLowerCase(), events};
         }
         case `SCHED_UPDATE_FILTER`: {
             const {type, values} = payload;
