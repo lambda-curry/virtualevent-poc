@@ -6,7 +6,6 @@ import VoteButton from './vote-button';
 
 import styles from './index.module.scss';
 import placeholder from '../../img/poster_fallback.png';
-import { navigate } from 'gatsby';
 
 const PosterCard = ({ poster, showDetail, canVote, isVoted, toggleVote }) => {
   const [hover, setHover] = useState(false);
@@ -21,25 +20,26 @@ const PosterCard = ({ poster, showDetail, canVote, isVoted, toggleVote }) => {
         showDetail();
       }
   };
-  const goToPresentation = (id) => {
-    navigate(`/a/poster/${id}`);
-  }
+
   return (
-    <article className={styles.card} onClick={() => goToPresentation(poster.id)}>
+    <article className={styles.card}>
       <BlockImage
         fallback={placeholder}
         src={posterImage.public_url}
-        className={`${styles.header} ${showDetail && hover ? styles.header__hover : ''}`}
-        onMouseEnter={() => setHover(true)} 
-        onMouseLeave={() => setHover(false)}
-        onClick={handleClick}
+        className={`${styles.header}`}
       >
-        { showDetail && hover &&
-        <button className={`${styles.button} button is-large`}>
-          <i className={'fa fa-2x fa-eye icon is-large'} />
-          <b>Detail</b>
-        </button>
-        }
+        <div className={`${styles.overlay} ${showDetail && hover ? styles.overlay__hover : ''}`} 
+          onMouseEnter={() => setHover(true)} 
+          onMouseLeave={() => setHover(false)}
+          onClick={handleClick}
+        >
+          { showDetail && hover &&
+          <button className={`${styles.button} button is-large`}>
+            <i className={'fa fa-2x fa-eye icon is-large'} />
+            <b>Detail</b>
+          </button>
+          }
+        </div>
       </BlockImage>
       <div className={styles.body}>
         <h2 className={styles.title}>{title}</h2>
