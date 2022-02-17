@@ -91,7 +91,7 @@ export const getPresentationById = (presentationId) => async (dispatch, getState
       `${window.SUMMIT_API_BASE_URL}/api/v1/summits/${window.SUMMIT_ID}/presentations/voteable/${presentationId}`,
       customErrorHandler
   )(params)(dispatch).then((presentation) => {
-      dispatch(getRecommendedPresentations(presentation.response.track.id));
+      dispatch(getRecommendedPresentations(presentation.response.track.track_groups));
   }).catch(e => {
       dispatch(stopLoading());
       dispatch(createAction(GET_PRESENTATION_DETAILS_ERROR)(e));
@@ -100,7 +100,7 @@ export const getPresentationById = (presentationId) => async (dispatch, getState
 
 };
 
-export const getRecommendedPresentations = (trackId) => async (dispatch, getState) => {
+export const getRecommendedPresentations = (trackGroups) => async (dispatch, getState) => {
 
   dispatch(startLoading());
 
@@ -116,10 +116,12 @@ export const getRecommendedPresentations = (trackId) => async (dispatch, getStat
 
 // order by random
 
+  const filter = [`track_group_id==${trackGroups.map((e, index) => `${e}${index+1===trackGroups.length?'':','}`)}`, 'published==1'];
+
   let params = {
       access_token: accessToken,
       expand: 'speakers, media_uploads, track',
-      filter: `track_group_id==${trackId},published==1`,
+      'filter[]': filter,
       order: 'random',
   };
 
