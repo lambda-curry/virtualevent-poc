@@ -14,10 +14,9 @@ import PosterNavigation from "../components/PosterNavigation";
 import PosterButton from "../components/PosterButton";
 import HeroComponent from "../components/HeroComponent";
 import PosterGrid from "../components/poster-grid";
-import AccessTracker, { AttendeesWidget } from "../components/AttendeeToAttendeeWidgetComponent"
 import AttendanceTrackerComponent from "../components/AttendanceTrackerComponent";
 import { PHASES } from '../utils/phasesUtils';
-import { getPresentationById } from "../actions/presentation-actions";
+import {getAllVoteablePresentations, getPresentationById, setInitialDataSet} from "../actions/presentation-actions";
 import { castPresentationVote, uncastPresentationVote } from '../actions/user-actions';
 import { getDisqusSSO } from "../actions/user-actions";
 import URI from "urijs"
@@ -26,15 +25,17 @@ export const PosterDetailPageTemplate = class extends React.Component {
 
   constructor(props) {
     super(props);
-
     this.toggleVote = this.toggleVote.bind(this);
     this.goToDetails = this.goToDetails.bind(this);
   }
 
   componentDidMount() {
-    const { presentationId } = this.props;
+    const { presentationId, allPosters, setInitialDataSet, getAllVoteablePresentations } = this.props;
     this.props.getDisqusSSO();
     this.props.getPresentationById(presentationId);
+    if(!allPosters.length){
+      setInitialDataSet().then(() => getAllVoteablePresentations());
+    }
   }
 
   componentDidUpdate(prevProps, prevState, snapshot) {
@@ -190,7 +191,9 @@ const PosterDetailPage = ({
   getDisqusSSO,
   allPosters,
   recommendedPosters,
-  votes
+  votes,
+  setInitialDataSet,
+  getAllVoteablePresentations,
 }) => {
   return (
     <Layout location={location}>
@@ -217,6 +220,8 @@ const PosterDetailPage = ({
         allPosters={allPosters}
         recommendedPosters={recommendedPosters}
         votes={votes}
+        setInitialDataSet={setInitialDataSet}
+        getAllVoteablePresentations={getAllVoteablePresentations}
       />
     </Layout>
   );
@@ -253,7 +258,7 @@ const mapStateToProps = ({ summitState, userState, clockState, presentationsStat
   summit: summitState.summit,
   eventsPhases: clockState.events_phases,
   nowUtc: clockState.nowUtc,
-  allPosters: presentationsState.voteablePresentations.originalPresentations,
+  allPosters: presentationsState.voteablePresentations.allPresentations,
   recommendedPosters: presentationsState.voteablePresentations.recommendedPresentations,
   votes: userState.attendee.presentation_votes,
 });
@@ -263,4 +268,6 @@ export default connect(mapStateToProps, {
   getDisqusSSO,
   castPresentationVote,
   uncastPresentationVote,
+  setInitialDataSet,
+  getAllVoteablePresentations,
 })(PosterDetailPage);
