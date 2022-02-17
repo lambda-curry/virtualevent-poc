@@ -6,8 +6,6 @@ import {
   PRESENTATIONS_PAGE_REQUEST,
   PRESENTATIONS_PAGE_RESPONSE,
   VOTEABLE_PRESENTATIONS_UPDATE_FILTER,
-  REQUEST_PRESENTATIONS_PAGE,
-  RECEIVE_PRESENTATIONS_PAGE, VOTEABLE_PRESENTATIONS_UPDATE_FILTER,
   GET_PRESENTATION_DETAILS, GET_RECOMMENDED_PRESENTATIONS
 } from '../actions/presentation-actions';
 import { START_LOADING, STOP_LOADING } from "openstack-uicore-foundation/lib/actions";
@@ -25,7 +23,6 @@ const DEFAULT_VOTEABLE_PRESENTATIONS_STATE = {
   allPresentations : [...allVoteablePresentations],
   // current poster collection ( with filter applied, this will feed the poster grid)
   filteredPresentations: [...allVoteablePresentations],
-  filters : {...FILTER_DEFAULT_STATE},
   detailedPresentation: null,
   recommendedPresentations: [],
   loading: false
