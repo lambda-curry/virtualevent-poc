@@ -18,8 +18,7 @@ const LobbyHeroComponent = ({homeSettings}) => (
           </div>
         </div>
       </div>
-      <div className={`${styles.midColumn} column is-1 is-info`} />
-      <div className={`${styles.rightColumn} column is-danger`} style={{ backgroundImage: `url(${homeSettings.homeHero.image})` }} />
+      <div className={`${styles.rightColumn} column is-danger`} style={{ backgroundImage: `url(${homeSettings.homeHero.image.file})` }} />
     </div>
   </section>
 );

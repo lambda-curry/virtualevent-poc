@@ -15,7 +15,7 @@ const LoginButton = class extends React.Component {
   }
 
   onClickLogin() {    
-    doLogin(this.getBackURL());
+    doLogin(this.getBackURL(), 'okta');
   }
 
   render() {

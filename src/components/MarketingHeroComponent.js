@@ -41,7 +41,7 @@ const MarketingHeroComponent = ({ siteSettings, summit_phase, isLoggedUser, summ
   };
 
   const onClickLogin = () => {
-    doLogin(getBackURL());
+    doLogin(getBackURL(), 'okta');
   };
 
   const getButtons = () => {
@@ -101,18 +101,18 @@ const MarketingHeroComponent = ({ siteSettings, summit_phase, isLoggedUser, summ
         <div
           className={`${styles.leftColumn} column is-6 is-black`}
           style={{
-            backgroundImage: siteSettings.heroBanner.background
-              ? `url(${siteSettings.heroBanner.background})`
+            backgroundImage: siteSettings.heroBanner.background?.file
+              ? `url(${siteSettings.heroBanner.background.file})`
               : "",
           }}
         >
           <div className={`${styles.heroMarketingContainer} hero-body`}>
-            <div className="container">
+            <div className="container" style={{paddingLeft: '5px'}}>
               <h1 className="title">{siteSettings.heroBanner.title}</h1>
               <h2 className="subtitle">{siteSettings.heroBanner.subTitle}</h2>
               <div
                 className={styles.date}
-                style={{
+                style={{                  
                   backgroundColor: siteSettings.heroBanner.dateLayout
                     ? "var(--color_secondary)"
                     : "",
@@ -125,9 +125,9 @@ const MarketingHeroComponent = ({ siteSettings, summit_phase, isLoggedUser, summ
                 }}
               >
                 {siteSettings.heroBanner.dateLayout ?
-                <div style={{transform: "skew(25deg)"}}>{siteSettings.heroBanner.date}</div>
+                <div style={{transform: "skew(25deg)", fontWeight: 500}}>{siteSettings.heroBanner.date}</div>
                 :
-                <div style={{transform: "skew(0deg)"}}>
+                <div style={{transform: "skew(0deg)", fontWeight: 500}}>
                   <span>{siteSettings.heroBanner.date}</span>
                 </div>
                 }
@@ -145,13 +145,13 @@ const MarketingHeroComponent = ({ siteSettings, summit_phase, isLoggedUser, summ
               {siteSettings.heroBanner.images.map((img, index) => {
                 return (
                   <div key={index}>
-                    <div className={styles.imageSlider} style={{ backgroundImage: `url(${img.image})`, height: sliderHeight, marginBottom: -6 }} />
+                    <div className={styles.imageSlider} aria-label={img.alt} style={{ backgroundImage: `url(${img.file})`, height: sliderHeight, marginBottom: -6 }} />
                   </div>
                 );
               })}
             </Slider>
             :
-            <div className={styles.singleImage} style={{ backgroundImage: `url(${siteSettings.heroBanner.images[0].image})`}} >              
+            <div className={styles.singleImage} aria-label={siteSettings.heroBanner.images[0].alt} style={{ backgroundImage: `url(${siteSettings.heroBanner.images[0].file})`}} >
             </div>
           }
         </div>

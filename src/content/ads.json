@@ -4,25 +4,19 @@
       "section": "lobby",
       "columnAds": [
         {
-          "image": "/img/yoco-sponsor-ads-medium-tilted.png",
+          "image": {
+            "file" : "/img/ytw22-lobby-expohall-button.png",
+            "alt"  : ""
+          },
           "button": {
-            "link": "/virtual-booth/"
+            "link": "/a/sponsors"
           },
           "column": "left"
         },
         {
-          "image": "/img/yoco-sponsor-ads-large-carbonclean-vert.png",
-          "button": {
-            "text": "",
-            "link": "/virtual-booth/"
-          },
-          "column": "right"
-        },
-        {
-          "image": "/img/ad_subscribe.png",
-          "button": {
-            "text": "",
-            "link": "/virtual-booth/"
+          "image": {
+            "file" : "/img/ytw22-lobby-techpulseposterlink.png",
+            "alt" : ""
           },
           "column": "right"
         }

@@ -101,11 +101,13 @@ div.column:first-of-type {
     }
 
     .button {
-      background-color: transparent;
+      background-color:#0F69FF;
       color: #fff;
       height: 5rem;
       width: 20rem;
       margin: 0 10px 10px 0;
+      border-width: 0px;
+      border-radius: 50px;
 
       i {
         color: #fff;
@@ -113,12 +115,15 @@ div.column:first-of-type {
         width: 2.5em;
         margin-right: auto;
         font-size: 1.8em;
+        flex: 1;
+        padding-left: 15px;
       }
 
       b {
         display: inline-block;
         width: 100%;
         text-align: center;
+        margin-left: -15px;
       }
 
       &:hover,
@@ -223,7 +228,7 @@ div.column:first-of-type {
       .single-image {
         height: 100%;
         background-size: cover;
-        min-height: 350px;        
+        min-height: 350px;
       }
 
       .image-slider {

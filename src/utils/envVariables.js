@@ -67,4 +67,3 @@ if (typeof window === 'object') {
     window.SCHEDULE_EXCLUDING_TAGS = processEnv[SCHEDULE_EXCLUDING_TAGS];
     window.LIVE_EVENT_THUMBNAIL_GIF_CAPTURE_STARTS = processEnv[LIVE_EVENT_THUMBNAIL_GIF_CAPTURE_STARTS];
 }
-

@@ -9,7 +9,7 @@
     "@types/googlemaps": "^3.39.9",
     "@types/markerclustererplus": "^2.1.33",
     "@types/react": "^16.9.42",
-    "attendee-to-attendee-widget": "^2.0.9",
+    "attendee-to-attendee-widget": "^2.0.10",
     "awesome-bootstrap-checkbox": "^1.0.1",
     "axios": "^0.19.2",
     "blob-polyfill": "^4.0.20200601",
@@ -24,7 +24,7 @@
     "dropzone": "^5.7.2",
     "font-awesome": "^4.7.0",
     "fs-extra": "^9.0.1",
-    "full-schedule-widget": "^1.1.31",
+    "full-schedule-widget": "^1.1.33",
     "gatsby": "^2.21.37",
     "gatsby-image": "^2.3.5",
     "gatsby-plugin-create-client-paths": "^2.3.1",
@@ -61,7 +61,6 @@
     "prop-types": "^15.6.0",
     "react": "^16.8.4",
     "react-avatar-editor": "11.0.9",
-    "react-block-image": "^1.0.0",
     "react-bootstrap": "^0.31.5",
     "react-datetime": "^2.16.3",
     "react-dnd": "^2.6.0",
@@ -99,7 +98,8 @@
     "video.js": "^7.8.2",
     "videojs-mux": "^3.1.0",
     "videojs-youtube": "^2.6.1",
-    "xmlhttprequest": "^1.8.0"
+    "xmlhttprequest": "^1.8.0",
+    "@vimeo/player":"^2.16.3"
   },
   "keywords": [
     "gatsby"

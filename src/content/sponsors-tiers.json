@@ -1,39 +1,13 @@
 {
   "tiers": [
     {
+      "id": "tier-cYGYq5-ae",
+      "name": "Silver",
       "badge": "",
-      "sponsorPage": {
-        "sponsorTemplate": "big-header",
-        "widgets": {
-          "disqus": true,
-          "liveEvent": true,
-          "schedule": true,
-          "banner": true
-        }
-      },
-      "name": "Top-Tier Sponsors",
-      "expoHallSize": "large",
-      "eventTemplate": "small-images",
-      "widgetTitle": "Top-Tier Sponsors",
       "lobby": {
         "lobbyTemplate": "carousel",
         "display": true
       },
-      "expoHallPage": {
-        "expoHallTemplate": "medium-images",
-        "display": true
-      },
-      "id": "tier-cYGYq5-ae"
-    },
-    {
-      "id": "tier-DHcI3dWGk",
-      "name": "Middle-Tier Sponsors",
-      "widgetTitle": "Middle-Tier Sponsors",
-      "badge": "",
-      "lobby": {
-        "lobbyTemplate": "small-images",
-        "display": true
-      },
       "sponsorPage": {
         "sponsorTemplate": "big-header",
         "widgets": {
@@ -44,33 +18,19 @@
         }
       },
       "eventTemplate": "",
-      "expoHallSize": "medium"
-    },
-    {
-      "id": "tier-U_wEwGX8a",
-      "name": "Lower-Tier Sponsors",
-      "widgetTitle": "Lower-Tier Sponsors",
-      "badge": "",
-      "lobby": {
-        "lobbyTemplate": "small-images",
+      "expoHallSize": "large",
+      "expoHallPage": {
+        "expoHallTemplate": "medium-images",
         "display": true
-      },
-      "sponsorPage": {
-        "sponsorTemplate": "small-header",
-        "widgets": {
-          "disqus": true,
-          "liveEvent": true,
-          "schedule": true,
-          "banner": true
-        }
-      },
-      "eventTemplate": "",
-      "expoHallSize": "small"
+      }
     }
   ],
-  "imageHeader": "/img/booth-crawl-1_adjusted-mobile.png",
+  "imageHeader": {
+    "file" : "/img/08-yahoo_techweek-2022_sponsor-header_centered-2x.jpg",
+    "alt" : ""
+  },
   "lobbyButton": {
-    "text": "View all",
-    "link": "/a/sponsors/"
+    "text": "",
+    "link": ""
   }
 }

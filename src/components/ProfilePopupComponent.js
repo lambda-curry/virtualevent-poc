@@ -14,6 +14,12 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [company, setCompany] = useState("");
+  const [bio, setBio] = useState('');
+  const [jobTitle, setJobTitle] = useState('');
+  const [github, setGithub] = useState('');
+  const [irc, setIRC] = useState('');
+  const [linkedin, setLinkedin] = useState('');
+  const [twitter, setTwitter] = useState('');
 
   const [image, setImage] = useState(null);
   const [newImage, setNewImage] = useState(false);
@@ -27,13 +33,37 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
     setFirstName(userProfile.given_name);
     setLastName(userProfile.family_name);
     setCompany(userProfile.company);
+    setBio(userProfile.bio);
+    setJobTitle(userProfile.job_title);
     setImage(userProfile.picture);
+    setGithub(userProfile.github_user);
+    setIRC(userProfile.irc);
+    setLinkedin(userProfile.linked_in_profile);
+    setTwitter(userProfile.twitter_name);
+
     return () => {
       setFirstName('');
       setLastName('');
       setCompany('');
+      setBio('');
+      setJobTitle('');
+      setGithub('');
+      setIRC('');
+      setLinkedin('');
+      setTwitter('');
     };
-  }, [userProfile.given_name, userProfile.family_name, userProfile.company, userProfile.picture]);
+  }, [
+              userProfile.given_name,
+              userProfile.family_name,
+              userProfile.company,
+              userProfile.picture,
+              userProfile.bio,
+              userProfile.job_title,
+              userProfile.github,
+              userProfile.irc,
+              userProfile.linkedin,
+              userProfile.twitter_name
+  ]);
 
   const handleNewImage = (e) => {
     setImage(e.target.files[0]);
@@ -80,11 +110,23 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
     }
     if (userProfile.given_name !== firstName ||
         userProfile.family_name !== lastName ||
-        userProfile.company !== company) {
+        userProfile.company !== company ||
+        userProfile.bio !== bio ||
+        userProfile.job_title !== jobTitle ||
+        userProfile.github_user !== github ||
+        userProfile.irc !== irc ||
+        userProfile.linked_in_profile !== linkedin ||
+        userProfile.twitter_name != twitter) {
       const newProfile = {
         first_name: firstName,
         last_name: lastName,
-        company: company
+        company: company,
+        bio: bio,
+        job_title: jobTitle,
+        github_user: github,
+        irc: irc,
+        linked_in_profile: linkedin,
+        twitter_name: twitter,
       };
       changeProfile(newProfile);
     }
@@ -160,10 +202,11 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
                   <div className='column is-one-quarter'>First Name</div>
                   <div className='column is-two-thirds'>
                     <input
-                        className={`${styles.input} ${styles.isMedium}`}
+                        className={`${styles.input} ${styles.isMedium} ${styles.readOnly}`}
                         type="text"
                         placeholder="First Name"
                         onChange={e => setFirstName(e.target.value)}
+                        readOnly={true}
                         value={firstName} />
                   </div>
                 </div>
@@ -171,10 +214,11 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
                   <div className='column is-one-quarter'>Last Name</div>
                   <div className='column is-two-thirds'>
                     <input
-                        className={`${styles.input} ${styles.isMedium}`}
+                        className={`${styles.input} ${styles.isMedium} ${styles.readOnly}`}
                         type="text"
                         placeholder="Last Name"
                         onChange={e => setLastName(e.target.value)}
+                        readOnly={true}
                         value={lastName} />
                   </div>
                 </div>
@@ -182,16 +226,84 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
                   <div className='column is-one-quarter'>Company</div>
                   <div className='column is-two-thirds'>
                     <input
-                        className={`${styles.input} ${styles.isMedium}`}
+                        className={`${styles.input} ${styles.isMedium} ${styles.readOnly}`}
                         type="text"
+                        readOnly={true}
                         placeholder="Company"
                         onChange={e => setCompany(e.target.value)}
                         value={company}
                     />
                   </div>
                 </div>
+                <div className={`columns is-mobile ${styles.inputRow}`}>
+                  <div className='column is-one-quarter'>Bio</div>
+                  <div className='column is-two-thirds'>
+                      <textarea
+                          className={`textarea ${styles.textarea}`}
+                          placeholder=''
+                          rows="6"
+                          onChange={e => setBio(e.target.value)}
+                          value={bio}
+                      >
+                      </textarea>
+                  </div>
+                </div>
+                <div className={`columns is-mobile ${styles.inputRow}`}>
+                  <div className='column is-one-quarter'>Job Title</div>
+                  <div className='column is-two-thirds'>
+                    <input
+                        className={`${styles.input} ${styles.isMedium}`}
+                        type="text"
+                        placeholder="Job Title"
+                        onChange={e => setJobTitle(e.target.value)}
+                        value={jobTitle} />
+                  </div>
+                </div>
+                <div className={`columns is-mobile ${styles.inputRow}`}>
+                  <div className='column is-one-quarter'>Github</div>
+                  <div className='column is-two-thirds'>
+                    <input
+                        className={`${styles.input} ${styles.isMedium}`}
+                        type="text"
+                        placeholder="Github"
+                        onChange={e => setGithub(e.target.value)}
+                         value={github} />
+                  </div>
+                </div>
+                <div className={`columns is-mobile ${styles.inputRow}`}>
+                  <div className='column is-one-quarter'>IRC</div>
+                  <div className='column is-two-thirds'>
+                    <input
+                        className={`${styles.input} ${styles.isMedium}`}
+                        type="text"
+                        placeholder="IRC"
+                        onChange={e => setIRC(e.target.value)}
+                        value={irc} />
+                  </div>
+                </div>
+                <div className={`columns is-mobile ${styles.inputRow}`}>
+                  <div className='column is-one-quarter'>LinkedIn</div>
+                  <div className='column is-two-thirds'>
+                    <input
+                        className={`${styles.input} ${styles.isMedium}`}
+                        type="text"
+                        placeholder="LinkedIn"
+                        onChange={e => setLinkedin(e.target.value)}
+                        value={linkedin} />
+                  </div>
+                </div>
+                <div className={`columns is-mobile ${styles.inputRow}`}>
+                  <div className='column is-one-quarter'>Twitter</div>
+                  <div className='column is-two-thirds'>
+                    <input
+                        className={`${styles.input} ${styles.isMedium}`}
+                        type="text"
+                        placeholder="Twitter"
+                        onChange={e => setTwitter(e.target.value)}
+                        value={twitter} />
+                  </div>
+                </div>
               </div>
-              <Link to="/a/profile"  className={styles.linkProfile}>Go to Full Profile</Link>
             </div>
             }
           </section>

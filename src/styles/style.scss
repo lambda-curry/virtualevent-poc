@@ -1,9 +1,54 @@
 @import './colors.scss';
 @import './global-classes';
 
+@font-face{
+  font-family:YahooSans;
+  src:url('https://www.yahoo.com/sy/os/fontserver/YahooSans/Regular.woff2') format('woff2'),
+  url('https://www.yahoo.com/sy/os/fontserver/YahooSans/Regular.woff') format('woff'),
+  url('https://www.yahoo.com/sy/os/fontserver/YahooSans/Regular.ttf') format('ttf');
+  font-weight:normal;
+  font-style:normal;
+  font-display:fallback
+}
+@font-face{
+  font-family:YahooSans;
+  src:url('https://www.yahoo.com/sy/os/fontserver/YahooSans/Medium.woff2') format('woff2'),
+  url('https://www.yahoo.com/sy/os/fontserver/YahooSans/Medium.woff') format('woff'),
+  url('https://www.yahoo.com/sy/os/fontserver/YahooSans/Medium.ttf') format('ttf');
+  font-weight:500;
+  font-style:normal;
+  font-display:fallback
+}
+@font-face{
+  font-family:YahooSans;
+  src:url('https://www.yahoo.com/sy/os/fontserver/YahooSans/Semibold.woff2') format('woff2'),
+  url('https://www.yahoo.com/sy/os/fontserver/YahooSans/Semibold.woff') format('woff'),
+  url('https://www.yahoo.com/sy/os/fontserver/YahooSans/Semibold.ttf') format('ttf');
+  font-weight:600;
+  font-style:normal;
+  font-display:fallback
+}
+@font-face{
+  font-family:YahooSans;
+  src:url('https://www.yahoo.com/sy/os/fontserver/YahooSans/Bold.woff2') format('woff2'),
+  url('https://www.yahoo.com/sy/os/fontserver/YahooSans/Bold.woff') format('woff'),
+  url('https://www.yahoo.com/sy/os/fontserver/YahooSans/Bold.ttf') format('ttf');
+  font-weight:700;font-style:normal;font-display:fallback
+}
+@font-face
+{
+  font-family:YahooSans;
+  src:url('https://www.yahoo.com/sy/os/fontserver/YahooSans/ExtraBold.woff2') format('woff2'),
+  url('https://www.yahoo.com/sy/os/fontserver/YahooSans/ExtraBold.woff') format('woff'),
+  url('https://www.yahoo.com/sy/os/fontserver/YahooSans/ExtraBold.ttf') format('ttf');
+  font-weight:800;
+  font-style:normal;
+  font-display:fallback
+}
+
 html,
 body {
-  font-family: "Nunito Sans", sans-serif !important;
+  font-family: YahooSans, helvetica, sans-serif !important;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -97,7 +142,7 @@ div.content {
 div.title {
   font-weight: 700 !important;
   color: #333333 !important;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: YahooSans, helvetica, sans-serif;
 }
 
 h2 {
@@ -284,7 +329,7 @@ h2 {
 
 .outerWrapper___lGus2 {
   .widget-title {
-    font-family: "Nunito Sans", sans-serif;
+    font-family: YahooSans, helvetica, sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 33px;
@@ -294,7 +339,7 @@ h2 {
 }
 
 .widget-title {
-  font-family: "Open Sans", sans-serif;
+  font-family: YahooSans, helvetica, sans-serif;
   font-size: 18px !important;
 }
 
