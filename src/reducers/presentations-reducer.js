@@ -9,7 +9,6 @@ import {
 } from '../actions/presentation-actions';
 
 import { filterEventsByAccessLevels } from '../utils/authorizedGroups';
-import { filterByTrackGroup } from '../utils/filterUtils';
 
 import allVoteablePresentations from '../content/voteable_presentations.json';
 import DEFAULT_FILTERS_STATE from '../content/posters_filters.json';
@@ -24,31 +23,27 @@ const DEFAULT_VOTEABLE_PRESENTATIONS_STATE = {
   filteredPresentations: [],
   // stores user profile set in initial data set for future access level filtering
   currentUserProfile: null,
-  currentTrackGroupId: 0,
 };
 
 const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, action = {}) => {
   const { type, payload } = action;
   switch (type) {
     case SET_INITIAL_DATASET: {
-      const { userProfile: currentUserProfile, currentTrackGroupId } = payload;
+      const { userProfile: currentUserProfile } = payload;
       // pre filter by user access levels
       let filteredEvents = filterEventsByAccessLevels(allVoteablePresentations, currentUserProfile);
-      // pre filter by track group
-      filteredEvents = filterByTrackGroup(filteredEvents, currentTrackGroupId);
       // suffle
       filteredEvents = filteredEvents.map((a) => [Math.random(),a]).sort((a,b) => a[0]-b[0]).map((a) => a[1]);
       return { ...state,
         ssrPresentations: filteredEvents,
         allPresentations: filteredEvents,
         filteredPresentations: filteredEvents,
-        currentUserProfile: currentUserProfile,
-        currentTrackGroupId: currentTrackGroupId
+        currentUserProfile: currentUserProfile
       };
     }
     case PRESENTATIONS_PAGE_RESPONSE: {
       const { response: { data } } = payload;
-      const { filters, allPresentations, currentUserProfile, currentTrackGroupId } = state;
+      const { filters, allPresentations, currentUserProfile } = state;
       // get the new data from api bc the temporal public urls
       const oldPresentations = [...allPresentations];
       let newPresentations = [];
@@ -62,8 +57,6 @@ const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, act
       });
       // pre filter new presentations by user access levels
       newPresentations = filterEventsByAccessLevels(newPresentations, currentUserProfile);
-      // pre filter by track group
-      newPresentations = filterByTrackGroup(newPresentations, currentTrackGroupId);
       const updatedPresentations = [...oldPresentations, ...newPresentations];
       return { ...state,
         allPresentations: updatedPresentations,

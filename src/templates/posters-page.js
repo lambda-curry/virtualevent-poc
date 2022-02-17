@@ -19,11 +19,13 @@ import {
 
 } from '../actions/user-actions';
 
+import { filterByTrackGroup } from '../utils/filterUtils';
+
 import styles from '../styles/posters-page.module.scss';
 
 const PostersPage = ({
                       location,
-                      trackGroupName,
+                      trackGroupId,
                       setInitialDataSet,
                       getVoteablePresentations,
                       posters,
@@ -39,10 +41,20 @@ const PostersPage = ({
 
   const [canVote, setCanVote] = useState(true);
   const [showFilters, setShowfilters] = useState(false);
+  const [postersByTrackGroup, setPostersByTrackGroup] = useState(posters);
+  const [allPostersByTrackGroup, setAllPostersByTrackGroup] = useState(allPosters); 
 
   useEffect(() => {
-    setInitialDataSet().then(() => getVoteablePresentations())
+    setInitialDataSet().then(() => getVoteablePresentations());
   }, []);
+
+  useEffect(() => {
+    setPostersByTrackGroup(filterByTrackGroup(posters, parseInt(trackGroupId)));
+  }, [posters]);
+
+  useEffect(() => {
+    setAllPostersByTrackGroup(filterByTrackGroup(allPosters, parseInt(trackGroupId)));
+  }, [allPosters]);
 
   const toggleVote = (presentation, isVoted) => {
     isVoted ? castPresentationVote(presentation) : uncastPresentationVote(presentation);
@@ -50,8 +62,8 @@ const PostersPage = ({
 
   const filterProps = {
     summit,
-    events: allPosters,
-    allEvents: allPosters,
+    events: allPostersByTrackGroup,
+    allEvents: allPostersByTrackGroup,
     filters,
     triggerAction: (action, payload) => {
       updateFilter(payload);
@@ -63,10 +75,10 @@ const PostersPage = ({
   return (
     <Layout location={location}>
       <div className="container">
-        {posters &&
+        {postersByTrackGroup &&
         <div className={`${styles.wrapper} ${showFilters ? styles.showFilters : ""}`}>
           <div className={styles.postersWrapper}>
-            <PosterGrid posters={posters} canVote={canVote} votes={votes} toggleVote={toggleVote}/>
+            <PosterGrid posters={postersByTrackGroup} canVote={canVote} votes={votes} toggleVote={toggleVote}/>
           </div>
           <div className={styles.filterWrapper}>
             <ScheduleFilters {...filterProps} />

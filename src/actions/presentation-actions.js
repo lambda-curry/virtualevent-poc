@@ -17,16 +17,16 @@ export const PRESENTATIONS_PAGE_REQUEST = 'PRESENTATIONS_PAGE_REQUEST';
 export const PRESENTATIONS_PAGE_RESPONSE = 'PRESENTATIONS_PAGE_RESPONSE';
 export const VOTEABLE_PRESENTATIONS_UPDATE_FILTER = 'VOTEABLE_PRESENTATIONS_UPDATE_FILTER';
 
-export const setInitialDataSet = (currentTrackGroupId = 0) => (dispatch, getState) => Promise.resolve().then(() => {
+export const setInitialDataSet = () => (dispatch, getState) => Promise.resolve().then(() => {
   const { userState: { userProfile } } = getState();
-  return dispatch(createAction(SET_INITIAL_DATASET)({ userProfile, currentTrackGroupId }));
+  return dispatch(createAction(SET_INITIAL_DATASET)({ userProfile }));
 });
 
 export const updateFilter = (filter) => (dispatch) => {
   dispatch(createAction(VOTEABLE_PRESENTATIONS_UPDATE_FILTER)({ ...filter }));
 };
 
-export const getVoteablePresentations = (page = 1, perPage = 9) => async (dispatch, getState) => {
+export const getVoteablePresentations = (page = 1, perPage = 10) => async (dispatch, getState) => {
 
   dispatch(startLoading());
 
