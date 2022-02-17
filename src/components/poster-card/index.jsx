@@ -31,6 +31,7 @@ const PosterCard = ({ poster, showDetail, canVote, isVoted, toggleVote }) => {
         <div className={`${styles.overlay} ${showDetail && hover ? styles.overlay__hover : ''}`} 
           onMouseEnter={() => setHover(true)} 
           onMouseLeave={() => setHover(false)}
+          onContextMenu={(e) => e.preventDefault()}
           onClick={handleClick}
         >
           { showDetail && hover &&
