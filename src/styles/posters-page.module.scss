@@ -1,49 +1,43 @@
-@import './colors.scss';
-
 .wrapper {
   display: flex;
   position: relative;
-
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px 20px 0 20px;
   @media (max-width: 991px) {
+    padding-top: 70px;
     &.showFilters {
       .postersWrapper {
         display: none;
       }
-
       .filterWrapper {
         display: block;
       }
     }
   }
-
   .postersWrapper {
-    width: 70%;
-
-    // make up space for button
+    flex: 75%;
     @media (max-width: 991px) {
-      width: 100%;
-      margin-top: 50px;
-
-      :global(#event-info-popup) {
-        z-index: 3;
-        top: 72px !important;
-        height: calc(100vh - 72px);
-      }
+      flex: 100%;
     }
   }
-
   .filterWrapper {
-    position: relative;
-    margin: 15px 0 0 30px;
-
+    flex: 25%;
+    margin-right: 20px;
     @media (max-width: 991px) {
-      flex: unset;
+      flex: 100%;
       display: none;
-      width: 100%;
       z-index: 1;
-      background-color: white;
-      padding-top: 70px;
       margin: 0;
+      background-color: white;
+    }
+  }
+  .filterWrapper + button {
+    @media (max-width: 991px) {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%
     }
   }
 }

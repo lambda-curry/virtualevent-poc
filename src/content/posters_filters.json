@@ -1,16 +1,11 @@
 {
-  "track": {
-    "label": "Tracks",
-    "values": [],
-    "enabled": true
-  },
-  "tags": {
-    "label": "Tags",
-    "values": [],
-    "enabled": true
-  },
   "speakers": {
     "label": "Authors",
+    "values": [],
+    "enabled": true
+  },
+  "track": {
+    "label": "Tracks",
     "values": [],
     "enabled": true
   },
@@ -21,6 +16,11 @@
   },
   "abstract": {
     "label": "Abstract",
+    "values": [],
+    "enabled": true
+  },
+  "tags": {
+    "label": "Tags",
     "values": [],
     "enabled": true
   }
