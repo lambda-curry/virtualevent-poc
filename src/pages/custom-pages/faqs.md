@@ -33,6 +33,10 @@ TechWeek 2022 will begin on Monday, March 7 and end on Thursday, March 10.<br><b
 
 Techweek 2022 will be a virtual event and will be held on the same platform that you register on.<br><br>
 
+###### When will the agenda of TechWeek be released?
+
+Check back on this site closer to TechWeek. We will also send you a see you next week email reminding you to check out the agenda so you'll be able to create your personalized TechWeek agenda!<br><br>
+
 ###### Who is on the planning team for TechWeek?
 
 Conference Chair, Program Chair and Senior Program Committee Leader: Haley Thrapp\
