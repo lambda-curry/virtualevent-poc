@@ -67,8 +67,8 @@ export const getAllVoteablePresentations = (page = 1, perPage = 10) => async (di
     dispatch(stopLoading());
     return (e);
   });
-
 }
+
 export const getVoteablePresentations = (page = 1, perPage = 10) => async (dispatch, getState) => {
 
   const accessToken = await getAccessToken();

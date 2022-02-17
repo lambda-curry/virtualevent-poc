@@ -8,6 +8,7 @@ import {
   VOTEABLE_PRESENTATIONS_UPDATE_FILTER,
   GET_PRESENTATION_DETAILS, GET_RECOMMENDED_PRESENTATIONS
 } from '../actions/presentation-actions';
+
 import { START_LOADING, STOP_LOADING } from "openstack-uicore-foundation/lib/actions";
 
 import { filterEventsByAccessLevels } from '../utils/authorizedGroups';
