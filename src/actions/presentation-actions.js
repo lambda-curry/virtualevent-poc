@@ -149,7 +149,7 @@ export const getRecommendedPresentations = (trackId) => async (dispatch, getStat
   let params = {
       access_token: accessToken,
       expand: 'speakers, media_uploads, track',
-      filter: `published==1,track_group_id==${trackId}`,
+      filter: `track_group_id==${trackId},published==1`,
       order: 'random',
   };
 

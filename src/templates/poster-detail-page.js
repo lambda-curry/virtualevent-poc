@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
+import { navigate } from "gatsby";
 import Layout from "../components/Layout";
 import DisqusComponent from "../components/DisqusComponent";
 import AdvertiseComponent from "../components/AdvertiseComponent";
@@ -27,6 +28,7 @@ export const PosterDetailPageTemplate = class extends React.Component {
     super(props);
 
     this.toggleVote = this.toggleVote.bind(this);
+    this.goToDetails = this.goToDetails.bind(this);
   }
 
   componentDidMount() {
@@ -60,6 +62,10 @@ export const PosterDetailPageTemplate = class extends React.Component {
   toggleVote(presentation, isVoted) {
     isVoted ? this.props.castPresentationVote(presentation) : this.props.uncastPresentationVote(presentation);
   };
+
+  goToDetails(id) {
+    navigate(`/a/poster/${id}`)
+  }
 
   render() {
 
@@ -132,7 +138,8 @@ export const PosterDetailPageTemplate = class extends React.Component {
               </div>
               <div className="px-5 py-0">
                 <PosterNavigation allPosters={allPosters} poster={poster} />
-                <PosterGrid posters={recommendedPosters} canVote={true} votes={votes} toggleVote={this.toggleVote} />
+                <div className="mt-5 mb-5 mx-0"><b>More like this</b></div>
+                <PosterGrid posters={recommendedPosters} canVote={true} votes={votes} toggleVote={this.toggleVote} showDetail={this.goToDetails}/>
               </div>
               <div className="is-hidden-tablet">
                 <DisqusComponent
