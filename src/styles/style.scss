@@ -54,6 +54,30 @@ body {
   height: 100%;
 }
 
+*:focus,
+.focus {
+  outline: 3px solid transparent !important;
+    box-shadow:  0 0 0 3px #fff, 0 0 0 6px #333 !important;
+}
+*:focus-visible {
+  outline: none !important;
+}
+
+/*
+  This will hide the focus indicator if the element receives focus via the mouse,
+  but it will still show up on keyboard focus.
+*/
+html:not([data-whatintent=keyboard]) *:focus,
+html:not([data-whatintent=keyboard]) .focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* overrides Bulma focus style */
+.button:focus {
+  color: $color_text_light !important;
+}
+
 label {
   font-weight: 300;
 }
