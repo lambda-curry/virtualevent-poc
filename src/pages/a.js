@@ -28,7 +28,7 @@ const App = ({ isLoggedUser, user, summit_phase, lastBuild, syncData }) => {
     <Location>
       {({ location }) => (
         <Router basepath="/a" >
-          <SchedulePage path="/schedule" location={location} schedKey="sched1" />
+          <SchedulePage path="/schedule" location={location} schedKey="schedule_0" />
           <SchedulePage path="/schedule2" location={location} schedKey="sched2" />
           <WithAuthRoute path="/" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location}>
             <SchedulePage path="/my-schedule" location={location} summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} scheduleProps={{title: 'My Schedule'}} schedKey="mysched" />

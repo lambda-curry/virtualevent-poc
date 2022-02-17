@@ -85,7 +85,7 @@ const SSR_getSpeakers = async (baseUrl, summitId, accessToken, filter = null, pa
 
 const SSR_getSummit = async (baseUrl, summitId) => {
   const params = {
-    expand: 'event_types,tracks,track_groups,presentation_levels,locations.rooms,locations.floors,order_extra_questions.values'
+    expand: 'event_types,tracks,track_groups,presentation_levels,locations.rooms,locations.floors,order_extra_questions.values,schedule_settings,schedule_settings.filters,schedule_settings.pre_filters'
   };
 
   return await axios.get(
@@ -194,7 +194,7 @@ exports.sourceNodes = async ({
   const summit = await SSR_getSummit(process.env.GATSBY_SUMMIT_API_BASE_URL, process.env.GATSBY_SUMMIT_ID);
 
   // DUMMY DATA
-  summit.schedules_settings = [
+  /*summit.schedules_settings = [
     {
       key: 'sched1',
       filters: {
@@ -220,7 +220,7 @@ exports.sourceNodes = async ({
       only_events_with_attendee_access: false,
       is_my_schedule: true,
     }
-  ];
+  ];*/
 
 
   const summitObject = { summit };
