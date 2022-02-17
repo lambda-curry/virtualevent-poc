@@ -22,7 +22,6 @@ import {
 import { filterByTrackGroup } from '../utils/filterUtils';
 
 import styles from '../styles/posters-page.module.scss';
-import {navigate} from "gatsby";
 
 const PostersPage = ({
                       location,
@@ -51,11 +50,11 @@ const PostersPage = ({
 
   useEffect(() => {
     setPostersByTrackGroup(filterByTrackGroup(posters, parseInt(trackGroupId)));
-  }, [posters]);
+  }, [posters, trackGroupId]);
 
   useEffect(() => {
     setAllPostersByTrackGroup(filterByTrackGroup(allPosters, parseInt(trackGroupId)));
-  }, [allPosters]);
+  }, [allPosters, trackGroupId]);
 
   const toggleVote = (presentation, isVoted) => {
     isVoted ? castPresentationVote(presentation) : uncastPresentationVote(presentation);
@@ -75,23 +74,21 @@ const PostersPage = ({
 
   return (
     <Layout location={location}>
-      <div className="container">
-        {postersByTrackGroup &&
-        <div className={`${styles.wrapper} ${showFilters ? styles.showFilters : ""}`}>
-          <div className={styles.postersWrapper}>
-            <PosterGrid
-                posters={postersByTrackGroup}
-                canVote={canVote} votes={votes} toggleVote={toggleVote}
-                showDetailPage={(posterId) =>  navigate(`/a/poster/${posterId}`)}
-            />
-          </div>
-          <div className={styles.filterWrapper}>
-            <ScheduleFilters {...filterProps} />
-          </div>
-          <FilterButton open={showFilters} onClick={() => setShowfilters(!showFilters)}/>
+      {postersByTrackGroup &&
+      <div className={`${styles.wrapper} ${showFilters ? styles.showFilters : ''}`}>
+        <div className={styles.postersWrapper}>
+          <PosterGrid
+              posters={postersByTrackGroup}
+              showDetailPage={(posterId) =>  navigate(`/a/poster/${posterId}`)}
+              canVote={canVote} votes={votes}
+              toggleVote={toggleVote}/>
         </div>
-        }
+        <div className={styles.filterWrapper}>
+          <ScheduleFilters {...filterProps} />
+        </div>
+        <FilterButton open={showFilters} onClick={() => setShowfilters(!showFilters)}/>
       </div>
+      }
     </Layout>
   );
 };
