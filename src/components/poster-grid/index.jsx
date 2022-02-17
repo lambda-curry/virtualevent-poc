@@ -11,7 +11,7 @@ const PosterGrid = ({posters, showDetail, canVote, toggleVote, votes}) => {
     <PosterCard
       key={`poster-${poster.id}`}
       poster={poster}
-      showDetail={showDetail}
+      showDetail={() => showDetail(poster.id)}
       canVote={canVote}
       isVoted={!!votes.find(v => v.presentation_id === poster.id)}
       toggleVote={toggleVote}
