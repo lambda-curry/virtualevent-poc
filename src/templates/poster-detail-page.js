@@ -51,10 +51,12 @@ export const PosterDetailPageTemplate = class extends React.Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    const { loading, presentationId, poster, eventsPhases } = this.props;
+    const { loading, presentationId, poster, eventsPhases, recommendedPosters, votes } = this.props;
     if (loading !== nextProps.loading) return true;
     if (presentationId !== nextProps.presentationId) return true;
     if (poster?.id !== nextProps.poster?.id) return true;
+    if (recommendedPosters?.length !== nextProps.recommendedPosters?.length) return true;
+    if (votes?.length !== nextProps.votes?.length) return true;
     // compare current event phase with next one
     const currentPhase = eventsPhases.find((e) => parseInt(e.id) === parseInt(presentationId))?.phase;
     const nextCurrentPhase = nextProps.eventsPhases.find(
@@ -201,8 +203,8 @@ export const PosterDetailPageTemplate = class extends React.Component {
             <div className="column px-0 py-0 is-one-quarter is-full-mobile">
               {poster?.meeting_url && <PosterLiveSession poster={poster} />}
               <DocumentsComponent event={poster} />
-              <AccessTracker />
-              <AttendeesWidget user={user} event={poster} />
+              {/* <AccessTracker /> */}
+              {/* <AttendeesWidget user={user} event={poster} /> */}
               <AdvertiseComponent section="event" column="right" />
             </div>
           </div>
