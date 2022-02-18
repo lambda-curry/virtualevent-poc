@@ -88,10 +88,11 @@ const PostersPage = ({
       <div className={`${styles.wrapper} ${showFilters ? styles.showFilters : ''}`}>
         <div className={styles.postersWrapper}>
           <PosterGrid
-              posters={postersByTrackGroup}
-              showDetailPage={(posterId) =>  navigate(`/a/poster/${posterId}`)}
-              canVote={canVote} votes={votes}
-              toggleVote={toggleVote}/>
+            posters={postersByTrackGroup}
+            showDetailPage={(posterId) => navigate(`/a/poster/${posterId}`)}
+            canVote={canVote} votes={votes}
+            toggleVote={toggleVote}
+          />
         </div>
         <div className={styles.filterWrapper}>
           <ScheduleFilters {...filterProps} />

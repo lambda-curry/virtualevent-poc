@@ -7,34 +7,32 @@ import VoteButton from './vote-button';
 import styles from './index.module.scss';
 import placeholder from '../../img/poster_fallback.png';
 
-const PosterCard = ({ poster, showDetail, canVote, isVoted, toggleVote, showDetailPage = null }) => {
+const PosterCard = ({ poster, showDetail, canVote, isVoted, toggleVote, showDetailPage }) => {
   const [hover, setHover] = useState(false);
   if (!poster) return null;
   const { title, custom_order, track, media_uploads } = poster;
   const posterImage = media_uploads.find(m => m.name === 'Poster');
   if (!posterImage) return null;
   const handleClick = ev => {
-      ev.preventDefault();
-      ev.stopPropagation();
-      if (showDetail) {
-        showDetail();
-      }
+    ev.preventDefault();
+    ev.stopPropagation();
+    if (showDetail) {
+      showDetail();
+    }
   };
-
   const handleTitleClick = ev => {
-      ev.preventDefault();
-      ev.stopPropagation();
-      if (showDetailPage) {
-          showDetailPage();
-      }
-  }
-
+    ev.preventDefault();
+    ev.stopPropagation();
+    if (showDetailPage) {
+      showDetailPage();
+    }
+  };
   return (
     <article className={styles.card}>
       <BlockImage
         fallback={placeholder}
         src={posterImage.public_url}
-        className={`${styles.header}`}
+        className={styles.header}
       >
         <div className={`${styles.overlay} ${showDetail && hover ? styles.overlay__hover : ''}`} 
           onMouseEnter={() => setHover(true)} 
