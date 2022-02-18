@@ -3,6 +3,7 @@ import colors from '../content/colors.json';
 import marketing_site from '../content/marketing-site.json';
 import disqus_settings from '../content/disqus-settings.json';
 import home_settings from '../content/home-settings.json';
+import poster_pages from '../content/poster-pages.json';
 
 import { START_LOADING, STOP_LOADING, LOGOUT_USER } from "openstack-uicore-foundation/lib/actions";
 import {RESET_STATE, SYNC_DATA} from "../actions/base-actions";
@@ -15,6 +16,7 @@ const DEFAULT_STATE = {
   siteSettings: marketing_site,
   disqusSettings: disqus_settings,
   homeSettings: home_settings,
+  posterPagesSettings: poster_pages,
 };
 
 const settingReducer = (state = DEFAULT_STATE, action) => {
