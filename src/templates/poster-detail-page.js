@@ -20,6 +20,7 @@ import {getAllVoteablePresentations, getPresentationById, setInitialDataSet} fro
 import { castPresentationVote, uncastPresentationVote } from '../actions/user-actions';
 import { getDisqusSSO } from "../actions/user-actions";
 import URI from "urijs"
+import PosterImage from "../components/PosterImage";
 
 export const PosterDetailPageTemplate = class extends React.Component {
 
@@ -34,6 +35,7 @@ export const PosterDetailPageTemplate = class extends React.Component {
     this.props.getDisqusSSO();
     this.props.getPresentationById(presentationId);
     if(!allPosters.length){
+      console.log('PosterDetailPageTemplate::componentDidMount loading all presentations')
       setInitialDataSet().then(() => getAllVoteablePresentations());
     }
   }
@@ -84,7 +86,7 @@ export const PosterDetailPageTemplate = class extends React.Component {
     if (!poster) {
       return <HeroComponent title="Poster not found" />;
     }
-
+    let mediaUpload = poster?.media_uploads.find((e) => e?.media_upload_type?.name === 'Poster');
     return (
       <React.Fragment>
         {/* <EventHeroComponent /> */}
@@ -101,14 +103,21 @@ export const PosterDetailPageTemplate = class extends React.Component {
         >
           <div className="columns is-gapless">
             <div className="column is-three-quarters px-0 py-0" style={{ position: 'relative' }}>
-              <VideoComponent
-                url={poster?.streaming_url}
-                title={poster?.title}
-                namespace={summit.name}
-                firstHalf={firstHalf}
-                autoPlay={query.autostart === 'true'}
-              />
-              <PosterButton poster={poster} />
+              {poster?.streaming_url &&
+                  <>
+                    <VideoComponent
+                        url={poster?.streaming_url}
+                        title={poster?.title}
+                        namespace={summit.name}
+                        firstHalf={firstHalf}
+                        autoPlay={query.autostart === 'true'}
+                    />
+                    <PosterButton mediaUpload={mediaUpload}/>
+                  </>
+              }
+              {!poster?.streaming_url &&
+                  <PosterImage mediaUpload={mediaUpload}/>
+              }
             </div>
             <div
               className="column is-hidden-mobile"

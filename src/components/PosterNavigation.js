@@ -16,13 +16,13 @@ const PosterNavigation = ({allPosters, poster}) => {
     const nextPoster = () => {
         const currentIndex = list.findIndex(e => e.id === poster.id);
         let nextIndex = (currentIndex < (list.length - 1)) ? currentIndex + 1 : 0;
-        navigate(`/a/poster/${allPosters[nextIndex].id}`);
+        navigate(`/a/poster/${list[nextIndex].id}`);
     }
 
     const prevPoster = () => {
         const currentIndex = list.findIndex(e => e.id === poster.id);
         let prevIndex = (currentIndex > 0) ? currentIndex - 1 : (list.length - 1);
-        navigate(`/a/poster/${allPosters[prevIndex].id}`);
+        navigate(`/a/poster/${list[prevIndex].id}`);
     }
 
     return (
