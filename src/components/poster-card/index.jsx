@@ -7,7 +7,7 @@ import VoteButton from './vote-button';
 import styles from './index.module.scss';
 import placeholder from '../../img/poster_fallback.png';
 
-const PosterCard = ({ poster, showDetail, canVote, isVoted, toggleVote }) => {
+const PosterCard = ({ poster, showDetail, canVote, isVoted, toggleVote, showDetailPage = null }) => {
   const [hover, setHover] = useState(false);
   if (!poster) return null;
   const { title, custom_order, track, media_uploads } = poster;
@@ -20,6 +20,14 @@ const PosterCard = ({ poster, showDetail, canVote, isVoted, toggleVote }) => {
         showDetail();
       }
   };
+
+  const handleTitleClick = ev => {
+      ev.preventDefault();
+      ev.stopPropagation();
+      if (showDetailPage) {
+          showDetailPage();
+      }
+  }
 
   return (
     <article className={styles.card}>
@@ -43,7 +51,7 @@ const PosterCard = ({ poster, showDetail, canVote, isVoted, toggleVote }) => {
         </div>
       </BlockImage>
       <div className={styles.body}>
-        <h2 className={styles.title}>{title}</h2>
+        <h2 className={styles.title} onClick={handleTitleClick}>{title}</h2>
         <span className={styles.order}>
           { custom_order ? `#${custom_order}` : <>&nbsp;</> }
         </span>

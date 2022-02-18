@@ -22,6 +22,7 @@ import {
 import { filterByTrackGroup } from '../utils/filterUtils';
 
 import styles from '../styles/posters-page.module.scss';
+import {navigate} from "gatsby";
 
 const PostersPage = ({
                       location,
@@ -78,7 +79,11 @@ const PostersPage = ({
         {postersByTrackGroup &&
         <div className={`${styles.wrapper} ${showFilters ? styles.showFilters : ""}`}>
           <div className={styles.postersWrapper}>
-            <PosterGrid posters={postersByTrackGroup} canVote={canVote} votes={votes} toggleVote={toggleVote}/>
+            <PosterGrid
+                posters={postersByTrackGroup}
+                canVote={canVote} votes={votes} toggleVote={toggleVote}
+                showDetailPage={(posterId) =>  navigate(`/a/poster/${posterId}`)}
+            />
           </div>
           <div className={styles.filterWrapper}>
             <ScheduleFilters {...filterProps} />
