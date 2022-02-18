@@ -45,7 +45,7 @@ export const getAllVoteablePresentations = (page = 1, perPage = 10) => async (di
   }
 
   const params = {
-    access_token: 'accessToken',
+    access_token: accessToken,
     filter: 'published==1',
     relations: 'none',
     fields: 'id',
