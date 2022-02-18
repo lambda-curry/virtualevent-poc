@@ -129,15 +129,15 @@
             "file": "/img/supermicro_color.png"
           },
           "name": "Supermicro",
-          "intro": "**Supermicro® (NASDAQ: SMCI), the leading innovator in high-performance, high-efficiency server technology is a premier provider of advanced Server Building Block Solutions® for Data Center, Cloud Computing, Enterprise IT, Hadoop/Big Data, HPC and Embedded Systems worldwide. Supermicro is committed to protecting the environment through its “We Keep IT Green®” initiative and provides customers with the most energy-efficient, environmentally-friendly solutions available on the market. Visit www.supermicro.com for details and follow Supermicro on Facebook and Twitter.**",
+          "intro": "![](/img/ytw22-fnv-sponsor-supermicro-descriptionlogo.png)\n\nSupermicro® (NASDAQ: SMCI), the leading innovator in high-performance, high-efficiency server technology is a premier provider of advanced Server Building Block Solutions® for Data Center, Cloud Computing, Enterprise IT, Hadoop/Big Data, HPC and Embedded Systems worldwide. Supermicro is committed to protecting the environment through its “We Keep IT Green®” initiative and provides customers with the most energy-efficient, environmentally-friendly solutions available on the market. Visit www.supermicro.com for details and follow Supermicro on Facebook and Twitter.",
           "headerImage": {
             "file": "/img/top_banner.jpg"
           },
           "headerImageMobile": {
-            "file": "https://drive.google.com/file/d/1LKke1GICdiDl7mxsqArpSxmgoIsFL32a/view?usp=sharing"
+            "file": "/img/ytw22-fnv-sponsor-supermicro-mobileheader.png"
           },
           "advertiseImage": {
-            "file": "/img/ad_spot.jpg"
+            "file": ""
           },
           "sponsorId": 156,
           "companyId": 136,
@@ -198,7 +198,7 @@
           },
           "columnAds": [
             {
-              "image": "/img/ad_spot.jpg",
+              "image": "/img/supermicro_space1.jpg",
               "link": "https://www.supermicro.com/en/products/ampere"
             }
           ],
