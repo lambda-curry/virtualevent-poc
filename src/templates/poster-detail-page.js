@@ -81,7 +81,7 @@ export const PosterDetailPageTemplate = class extends React.Component {
 
     // if event is loading or we are still calculating the current phase ...
     if (loading) {
-      return <HeroComponent title="Loading poster" />;
+      return <HeroComponent title="Loading Poster" />;
     }
 
     if (!poster) {
