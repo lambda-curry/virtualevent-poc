@@ -112,7 +112,7 @@ export const getPresentationById = (presentationId) => async (dispatch, getState
 
   let params = {
       access_token: accessToken,
-      expand: 'speakers, media_uploads, track'
+      expand: 'speakers,media_uploads,media_uploads.media_upload_type,track'
   };
 
   return getRequest(
