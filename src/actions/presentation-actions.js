@@ -79,7 +79,7 @@ export const getVoteablePresentations = (page = 1, perPage = 10) => async (dispa
 
   const params = {
     access_token: accessToken,
-    expand: 'track, media_uploads, speakers',
+    expand: 'track,media_uploads,speakers,tags',
     filter: 'published==1',
     page: page,
     per_page: perPage,
@@ -112,7 +112,7 @@ export const getPresentationById = (presentationId) => async (dispatch, getState
 
   let params = {
       access_token: accessToken,
-      expand: 'speakers,media_uploads,media_uploads.media_upload_type,track'
+      expand: 'speakers,media_uploads,media_uploads.media_upload_type,track,slides,videos,links'
   };
 
   return getRequest(

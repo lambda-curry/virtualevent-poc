@@ -113,6 +113,7 @@ export const PosterDetailPageTemplate = class extends React.Component {
     }
 
     let mediaUpload = poster?.media_uploads.find((e) => e?.media_upload_type?.name === 'Poster');
+
     return (
       <React.Fragment>
         {/* <EventHeroComponent /> */}
@@ -229,6 +230,8 @@ const PosterDetailPage = ({
   votes,
   setInitialDataSet,
   getAllVoteablePresentations,
+  hasTicket,
+  isAuthorized,
 }) => {
   return (
     <Layout location={location}>
@@ -257,6 +260,8 @@ const PosterDetailPage = ({
         votes={votes}
         setInitialDataSet={setInitialDataSet}
         getAllVoteablePresentations={getAllVoteablePresentations}
+        hasTicket={hasTicket}
+        isAuthorized={isAuthorized}
       />
     </Layout>
   );
