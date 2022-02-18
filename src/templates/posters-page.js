@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import Layout from '../components/Layout';
+import PageHeader from '../components/page-header';
 import PosterGrid from '../components/poster-grid';
 import ScheduleFilters from '../components/ScheduleFilters';
 import FilterButton from '../components/FilterButton';
@@ -36,17 +37,19 @@ const PostersPage = ({
                       allPosters,
                       filters,
                       updateFilter,
-                      colorSettings
+                      colorSettings,
+                      pagesSettings
                     }) => {
 
   const [canVote, setCanVote] = useState(true);
   const [showFilters, setShowfilters] = useState(false);
   const [postersByTrackGroup, setPostersByTrackGroup] = useState(posters);
-  const [allPostersByTrackGroup, setAllPostersByTrackGroup] = useState(allPosters); 
+  const [allPostersByTrackGroup, setAllPostersByTrackGroup] = useState(allPosters);
+  const [pageSettings, setPageSetting] = useState(pagesSettings.find(pps => pps.trackGroupId === parseInt(trackGroupId)));
 
   useEffect(() => {
     setInitialDataSet().then(() => getAllVoteablePresentations());
-  }, []);
+  }, [trackGroupId]);
 
   useEffect(() => {
     setPostersByTrackGroup(filterByTrackGroup(posters, parseInt(trackGroupId)));
@@ -74,7 +77,14 @@ const PostersPage = ({
 
   return (
     <Layout location={location}>
-      {postersByTrackGroup &&
+      { pageSettings &&
+      <PageHeader
+        title={pageSettings.title}
+        subtitle={pageSettings.subtitle}
+        backgroundImage={pageSettings.image}
+      />
+      }
+      { postersByTrackGroup &&
       <div className={`${styles.wrapper} ${showFilters ? styles.showFilters : ''}`}>
         <div className={styles.postersWrapper}>
           <PosterGrid posters={postersByTrackGroup} canVote={canVote} votes={votes} toggleVote={toggleVote}/>
@@ -98,6 +108,7 @@ const mapStateToProps = ({presentationsState, userState, summitState, settingSta
   votes: userState.attendee.presentation_votes,
   summit: summitState.summit,
   colorSettings: settingState.colorSettings,
+  pagesSettings: [...settingState.posterPagesSettings.posterPages],
 });
 
 export default connect(mapStateToProps, {
