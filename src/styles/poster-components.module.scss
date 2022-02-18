@@ -76,6 +76,7 @@
   padding: 5px 10px;
   border: none;
   border-radius: 5px;
+  border: 1px solid #d3d3d3;
 }
 
 .poster-description-container {
@@ -98,4 +99,12 @@
       margin-left: 10px;
     }
   }
+}
+
+.poster-image {
+  max-height: 540px;
+  margin-bottom: -2rem;
+  width: 100%;
+  object-fit: contain;
+  object-position: top;
 }

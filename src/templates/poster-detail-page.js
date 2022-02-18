@@ -15,14 +15,14 @@ import PosterButton from "../components/PosterButton";
 import HeroComponent from "../components/HeroComponent";
 import PosterGrid from "../components/poster-grid";
 import { PHASES } from '../utils/phasesUtils';
-import {getAllVoteablePresentations, getPresentationById, setInitialDataSet} from "../actions/presentation-actions";
+import { getAllVoteablePresentations, getPresentationById, setInitialDataSet } from "../actions/presentation-actions";
 import { castPresentationVote, uncastPresentationVote } from '../actions/user-actions';
 import { getDisqusSSO } from "../actions/user-actions";
 import URI from "urijs"
 import PosterImage from "../components/PosterImage";
 import AccessTracker, { AttendeesWidget } from "../components/AttendeeToAttendeeWidgetComponent"
 import AttendanceTrackerComponent from "../components/AttendanceTrackerComponent";
-import {isAuthorizedBadge} from "../utils/authorizedGroups";
+import { isAuthorizedBadge } from "../utils/authorizedGroups";
 
 export const PosterDetailPageTemplate = class extends React.Component {
 
@@ -36,7 +36,7 @@ export const PosterDetailPageTemplate = class extends React.Component {
     const { presentationId, allPosters, setInitialDataSet, getAllVoteablePresentations } = this.props;
     this.props.getDisqusSSO();
     this.props.getPresentationById(presentationId);
-    if(!allPosters.length){
+    if (!allPosters.length) {
       console.log('PosterDetailPageTemplate::componentDidMount loading all presentations')
       setInitialDataSet().then(() => getAllVoteablePresentations());
     }
@@ -111,7 +111,7 @@ export const PosterDetailPageTemplate = class extends React.Component {
     const userIsAuthz = hasTicket || isAuthorized;
 
     if (!userIsAuthz || !hasBadgeForEvent) {
-      return <HeroComponent title={"Sorry. You need a special badge to view this session."} redirectTo={location.state?.previousUrl || "/"}/>;
+      return <HeroComponent title={"Sorry. You need a special badge to view this session."} redirectTo={location.state?.previousUrl || "/"} />;
     }
 
     let mediaUpload = poster?.media_uploads.find((e) => e?.media_upload_type?.name === 'Poster');
@@ -123,29 +123,30 @@ export const PosterDetailPageTemplate = class extends React.Component {
           className="section px-0 py-0"
           style={{
             marginBottom:
-              poster?.class_name !== "Presentation" ||
-                currentPhase < PHASES.DURING ||
-                !poster?.streaming_url
-                ? "-3rem"
+              !poster?.streaming_url
+                ? "0"
                 : "",
           }}
         >
           <div className="columns is-gapless">
             <div className="column is-three-quarters px-0 py-0" style={{ position: 'relative' }}>
               {poster?.streaming_url &&
-                  <>
-                    <VideoComponent
-                        url={poster?.streaming_url}
-                        title={poster?.title}
-                        namespace={summit.name}
-                        firstHalf={firstHalf}
-                        autoPlay={query.autostart === 'true'}
-                    />
-                    <PosterButton mediaUpload={mediaUpload}/>
-                  </>
+                <>
+                  <VideoComponent
+                    url={poster?.streaming_url}
+                    title={poster?.title}
+                    namespace={summit.name}
+                    firstHalf={firstHalf}
+                    autoPlay={query.autostart === 'true'}
+                  />
+                  <PosterButton mediaUpload={mediaUpload} />
+                </>
               }
               {!poster?.streaming_url &&
-                  <PosterImage mediaUpload={mediaUpload}/>
+                <>
+                  <PosterImage mediaUpload={mediaUpload} />
+                  <PosterButton mediaUpload={mediaUpload} />
+                </>
               }
             </div>
             <div
@@ -178,7 +179,7 @@ export const PosterDetailPageTemplate = class extends React.Component {
               <div className="px-5 py-0">
                 <PosterNavigation allPosters={allPosters} poster={poster} />
                 <div className="mt-5 mb-5 mx-0"><b>More like this</b></div>
-                <PosterGrid posters={recommendedPosters} canVote={true} votes={votes} toggleVote={this.toggleVote} showDetail={this.goToDetails}/>
+                <PosterGrid posters={recommendedPosters} canVote={true} votes={votes} toggleVote={this.toggleVote} showDetail={this.goToDetails} />
               </div>
               <div className="is-hidden-tablet">
                 <DisqusComponent

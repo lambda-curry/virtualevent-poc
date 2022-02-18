@@ -1,14 +1,22 @@
-import React, {useState} from 'react';
+import React, {useState, useCallback} from 'react';
 import PropTypes from 'prop-types';
+import {Controlled as ControlledZoom} from 'react-medium-image-zoom'
 
 import BlockImage from 'react-block-image';
 import VoteButton from './vote-button';
+import PosterImage from '../PosterImage';
 
 import styles from './index.module.scss';
 import placeholder from '../../img/poster_fallback.png';
 
+import 'react-medium-image-zoom/dist/styles.css'
+
 const PosterCard = ({ poster, showDetail, canVote, isVoted, toggleVote, showDetailPage }) => {
   const [hover, setHover] = useState(false);
+  const [isZoomed, setIsZoomed] = useState(false)
+  const handleZoomChange = useCallback(shouldZoom => {
+      setIsZoomed(shouldZoom)
+  }, []);
   if (!poster) return null;
   const { title, custom_order, track, media_uploads } = poster;
   const posterImage = media_uploads.find(m => m.name === 'Poster');
@@ -16,9 +24,7 @@ const PosterCard = ({ poster, showDetail, canVote, isVoted, toggleVote, showDeta
   const handleClick = ev => {
     ev.preventDefault();
     ev.stopPropagation();
-    if (showDetail) {
-      showDetail();
-    }
+    setIsZoomed(!isZoomed);
   };
   const handleTitleClick = ev => {
     ev.preventDefault();
@@ -46,6 +52,14 @@ const PosterCard = ({ poster, showDetail, canVote, isVoted, toggleVote, showDeta
             <b>Detail</b>
           </button>
           }
+          <ControlledZoom
+                isZoomed={isZoomed}
+                onZoomChange={handleZoomChange}
+                overlayBgColorStart="rgba(0, 0, 0, 0)"
+                overlayBgColorEnd="rgba(0, 0, 0, 0.8)"
+            >
+                <PosterImage mediaUpload={posterImage} shouldShow={isZoomed}/>
+            </ControlledZoom>
         </div>
       </BlockImage>
       <div className={styles.body}>
