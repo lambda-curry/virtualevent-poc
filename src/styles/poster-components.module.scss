@@ -1,14 +1,16 @@
 .navigation-container {
   display: flex;
   justify-content: space-between;
-  border-top: 2px solid #d3d3d3;
-  border-bottom: 2px solid #d3d3d3;
-  text-transform: uppercase;
+  border-top: 1px solid #979797;
+  border-bottom: 1px solid #979797;
   .navigation-button {
     background-color: transparent;
     border: none;
     display: flex;
     align-items: center;
+    text-transform: uppercase;
+    color: #979797;
+    font-weight: 700;
     i {
       margin-right: 10px;
     }
@@ -51,11 +53,16 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: red;
   border-radius: 5px;
+  background: url('/img/bg_poster_session.png');
+  background-size: cover;
   span {
     text-align: center;
-    font-size: 18px;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    padding: 0 10%;
+    color: var(--color_primary);
   }
   button {
     text-align: center;
@@ -65,6 +72,8 @@
     font-size: 18px;
     align-items: baseline;
     text-transform: uppercase;
+    color: var(--color_primary);
+    border: 1px solid var(--color_primary);
   }
 }
 
