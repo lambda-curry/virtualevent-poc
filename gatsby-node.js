@@ -193,36 +193,6 @@ exports.sourceNodes = async ({
 
   const summit = await SSR_getSummit(process.env.GATSBY_SUMMIT_API_BASE_URL, process.env.GATSBY_SUMMIT_ID);
 
-  // DUMMY DATA
-  /*summit.schedules_settings = [
-    {
-      key: 'sched1',
-      filters: {
-        track: { label: 'Treackk', enabled: true }
-      },
-      pre_filters: {
-        //track: { values: [35823] }
-        //venues: { values: [106]}
-      },
-      color_source: 'track',
-      only_events_with_attendee_access: true,
-      is_my_schedule: false,
-    },
-    {
-      key: 'mysched',
-      filters: {
-        track: { label: 'Track', enabled: true }
-      },
-      pre_filters: {
-        track: { values: [35820, 35821] }
-      },
-      color_source: 'track',
-      only_events_with_attendee_access: false,
-      is_my_schedule: true,
-    }
-  ];*/
-
-
   const summitObject = { summit };
   fs.writeFileSync('src/content/summit.json', JSON.stringify(summitObject), 'utf8');
 
