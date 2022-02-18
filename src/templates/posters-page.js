@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-
+import { navigate } from "gatsby";
 import Layout from '../components/Layout';
 import PageHeader from '../components/page-header';
 import PosterGrid from '../components/poster-grid';

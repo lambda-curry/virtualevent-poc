@@ -14,13 +14,14 @@ import PosterNavigation from "../components/PosterNavigation";
 import PosterButton from "../components/PosterButton";
 import HeroComponent from "../components/HeroComponent";
 import PosterGrid from "../components/poster-grid";
-import AttendanceTrackerComponent from "../components/AttendanceTrackerComponent";
 import { PHASES } from '../utils/phasesUtils';
 import {getAllVoteablePresentations, getPresentationById, setInitialDataSet} from "../actions/presentation-actions";
 import { castPresentationVote, uncastPresentationVote } from '../actions/user-actions';
 import { getDisqusSSO } from "../actions/user-actions";
 import URI from "urijs"
 import PosterImage from "../components/PosterImage";
+import AccessTracker, { AttendeesWidget } from "../components/AttendeeToAttendeeWidgetComponent"
+import AttendanceTrackerComponent from "../components/AttendanceTrackerComponent";
 
 export const PosterDetailPageTemplate = class extends React.Component {
 
@@ -172,10 +173,10 @@ export const PosterDetailPageTemplate = class extends React.Component {
               )}
             </div>
             <div className="column px-0 py-0 is-one-quarter is-full-mobile">
-              {!poster?.meeting_url && <PosterLiveSession poster={poster} />}
+              {poster?.meeting_url && <PosterLiveSession poster={poster} />}
               <DocumentsComponent event={poster} />
-              {/* <AccessTracker />
-                    <AttendeesWidget user={user} event={poster} /> */}
+              <AccessTracker />
+              <AttendeesWidget user={user} event={poster} />
               <AdvertiseComponent section="event" column="right" />
             </div>
           </div>
