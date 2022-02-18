@@ -22,6 +22,7 @@ import URI from "urijs"
 import PosterImage from "../components/PosterImage";
 import AccessTracker, { AttendeesWidget } from "../components/AttendeeToAttendeeWidgetComponent"
 import AttendanceTrackerComponent from "../components/AttendanceTrackerComponent";
+import {isAuthorizedBadge} from "../utils/authorizedGroups";
 
 export const PosterDetailPageTemplate = class extends React.Component {
 
@@ -73,7 +74,22 @@ export const PosterDetailPageTemplate = class extends React.Component {
 
   render() {
 
-    const { poster, event, user, loading, nowUtc, summit, eventsPhases, presentationId, location, allPosters, votes, recommendedPosters } = this.props;
+    const {
+      poster,
+      event,
+      user,
+      loading,
+      nowUtc,
+      summit,
+      eventsPhases,
+      presentationId,
+      location,
+      allPosters,
+      votes,
+      recommendedPosters,
+      isAuthorized,
+      hasTicket,
+    } = this.props;
     // get current event phase
     const currentPhase = eventsPhases.find((e) => parseInt(e.id) === parseInt(presentationId))?.phase;
     const firstHalf = currentPhase === PHASES.DURING ? nowUtc < ((event?.start_date + event?.end_date) / 2) : false;
@@ -87,6 +103,15 @@ export const PosterDetailPageTemplate = class extends React.Component {
     if (!poster) {
       return <HeroComponent title="Poster not found" />;
     }
+
+    // authz ( todo : refactor WithBadgeRoute to be more generic)
+    const hasBadgeForEvent = isAuthorized || (poster.id && user && isAuthorizedBadge(poster, user.summit_tickets));
+    const userIsAuthz = hasTicket || isAuthorized;
+
+    if (!userIsAuthz || !hasBadgeForEvent) {
+      return <HeroComponent title={"Sorry. You need a special badge to view this session."} redirectTo={location.state?.previousUrl || "/"}/>;
+    }
+
     let mediaUpload = poster?.media_uploads.find((e) => e?.media_upload_type?.name === 'Poster');
     return (
       <React.Fragment>
@@ -265,6 +290,8 @@ const mapStateToProps = ({ summitState, userState, clockState, presentationsStat
   loading: presentationsState.voteablePresentations.loading,
   poster: presentationsState.voteablePresentations.detailedPresentation,
   user: userState,
+  hasTicket: userState.hasTicket,
+  isAuthorized: userState.isAuthorized,
   summit: summitState.summit,
   eventsPhases: clockState.events_phases,
   nowUtc: clockState.nowUtc,
