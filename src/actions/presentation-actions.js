@@ -35,15 +35,17 @@ export const getAllVoteablePresentations = (page = 1, perPage = 10) => async (di
 
   dispatch(startLoading());
 
-  const accessToken = await getAccessToken();
-
-  if (!accessToken) {
-    dispatch(stopLoading());
-    return Promise.resolve();
+  let accessToken;
+  try {
+      accessToken = await getAccessToken();
+  } catch (e) {
+      console.log('getAccessToken error: ', e);
+      dispatch(stopLoading());
+      return Promise.reject();    
   }
 
   const params = {
-    access_token: accessToken,
+    access_token: 'accessToken',
     filter: 'published==1',
     relations: 'none',
     fields: 'id',
@@ -67,14 +69,16 @@ export const getAllVoteablePresentations = (page = 1, perPage = 10) => async (di
     dispatch(stopLoading());
     return (e);
   });
-
 }
+
 export const getVoteablePresentations = (page = 1, perPage = 10) => async (dispatch, getState) => {
 
-  const accessToken = await getAccessToken();
-
-  if (!accessToken) {
-    return Promise.resolve();
+  let accessToken;
+  try {
+      accessToken = await getAccessToken();
+  } catch (e) {
+      console.log('getAccessToken error: ', e);
+      return Promise.reject();    
   }
 
   const params = {
@@ -101,16 +105,15 @@ export const getPresentationById = (presentationId) => async (dispatch, getState
   dispatch(startLoading());
 
   let accessToken;
-
   try {
       accessToken = await getAccessToken();
   } catch (e) {
-      console.log('error: ', e)
+      console.log('getAccessToken error: ', e);
       dispatch(stopLoading());
       return Promise.reject();    
   }
 
-  let params = {
+  const params = {
       access_token: accessToken,
       expand: 'speakers,media_uploads,media_uploads.media_upload_type,track,slides,videos,links'
   };
@@ -127,7 +130,6 @@ export const getPresentationById = (presentationId) => async (dispatch, getState
       dispatch(createAction(GET_PRESENTATION_DETAILS_ERROR)(e));
       return (e);
   });
-
 };
 
 export const getRecommendedPresentations = (trackGroups) => async (dispatch, getState) => {
@@ -135,11 +137,10 @@ export const getRecommendedPresentations = (trackGroups) => async (dispatch, get
   dispatch(startLoading());
 
   let accessToken;
-
   try {
       accessToken = await getAccessToken();
   } catch (e) {
-      console.log('error: ', e)
+      console.log('getAccessToken error: ', e);
       dispatch(stopLoading());
       return Promise.reject();    
   }
@@ -148,7 +149,7 @@ export const getRecommendedPresentations = (trackGroups) => async (dispatch, get
 
   const filter = [`track_group_id==${trackGroups.map((e, index) => `${e}${index+1===trackGroups.length?'':','}`)}`, 'published==1'];
 
-  let params = {
+  const params = {
       access_token: accessToken,
       expand: 'speakers, media_uploads, track',
       'filter[]': filter,
@@ -166,5 +167,4 @@ export const getRecommendedPresentations = (trackGroups) => async (dispatch, get
       dispatch(stopLoading());
       return (e);
   });
-
 }; 
