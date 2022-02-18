@@ -30,13 +30,12 @@ const App = ({ isLoggedUser, user, summit_phase, lastBuild, syncData }) => {
     <Location>
       {({ location }) => (
         <Router basepath="/a" >
-          <SchedulePage path="/schedule" location={location} schedKey="schedule_0" />
-          <SchedulePage path="/schedule2" location={location} schedKey="sched2" />
+          <SchedulePage path="/schedule" location={location} schedKey="schedule-main" />
           <WithAuthRoute path="/" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location}>
             <PostersPage path="/posters" trackGroupId={0} location={location} />
             <PostersPage path="/posters/:trackGroupId" location={location} />
             <PosterDetailPage path="/poster/:presentationId/" isLoggedIn={isLoggedUser} user={user} location={location} />
-            <SchedulePage path="/my-schedule" location={location} summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} scheduleProps={{title: 'My Schedule'}} schedKey="mysched" />
+            <SchedulePage path="/my-schedule" location={location} summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} scheduleProps={{title: 'My Schedule'}} schedKey="my-schedule-main" />
             <ExtraQuestionsPage path="/extra-questions" isLoggedIn={isLoggedUser} user={user} location={location} />
             <FullProfilePage path="/profile" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location} />
             <ShowOpenRoute path="/" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location}>
