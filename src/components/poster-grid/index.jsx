@@ -11,7 +11,7 @@ const PosterGrid = ({ posters, canVote, toggleVote, votes, showDetail = null, sh
     <PosterCard
       key={`poster-${poster.id}`}
       poster={poster}
-      showDetail={showDetail ? () => showDetail(poster.id) : null}
+      showDetail={showDetail}
       showDetailPage={showDetailPage ? () => showDetailPage(poster.id) : null}
       canVote={canVote}
       isVoted={!!votes.find(v => v.presentation_id === poster.id)}
@@ -26,7 +26,7 @@ const PosterGrid = ({ posters, canVote, toggleVote, votes, showDetail = null, sh
 };
 PosterGrid.propTypes = {
   posters: PropTypes.array.isRequired,
-  showDetail: PropTypes.func,
+  showDetail: PropTypes.bool,
   showDetailPage: PropTypes.func,
   canVote: PropTypes.bool.isRequired,
   toggleVote: PropTypes.func.isRequired,

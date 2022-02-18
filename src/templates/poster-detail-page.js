@@ -179,7 +179,7 @@ export const PosterDetailPageTemplate = class extends React.Component {
               <div className="px-5 py-0">
                 <PosterNavigation allPosters={allPosters} poster={poster} />
                 <div className="mt-5 mb-5 mx-0"><b>More like this</b></div>
-                <PosterGrid posters={recommendedPosters} canVote={true} votes={votes} toggleVote={this.toggleVote} showDetail={this.goToDetails} />
+                <PosterGrid posters={recommendedPosters} canVote={true} votes={votes} toggleVote={this.toggleVote} showDetailPage={this.goToDetails} showDetail={true}/>
               </div>
               <div className="is-hidden-tablet">
                 <DisqusComponent

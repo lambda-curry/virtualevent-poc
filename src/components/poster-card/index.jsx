@@ -83,7 +83,7 @@ const PosterCard = ({ poster, showDetail, canVote, isVoted, toggleVote, showDeta
 
 PosterCard.propTypes = {
   poster: PropTypes.object.isRequired,
-  showDetail: PropTypes.func,
+  showDetail: PropTypes.bool,
   canVote: PropTypes.bool.isRequired,
   isVoted: PropTypes.bool.isRequired,
   toggleVote: PropTypes.func.isRequired
