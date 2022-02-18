@@ -121,7 +121,7 @@
         {
           "marquee": "Better. Faster. Greener.",
           "sideImage": {
-            "file": ""
+            "file": null
           },
           "sponsorColor": "003A70",
           "logo": {
@@ -133,7 +133,7 @@
             "file": ""
           },
           "headerImageMobile": {
-            "file": ""
+            "file": "https://drive.google.com/file/d/1LKke1GICdiDl7mxsqArpSxmgoIsFL32a/view?usp=sharing"
           },
           "advertiseImage": {
             "file": ""
@@ -168,9 +168,16 @@
               }
             ]
           },
+          "columnAds": [
+            {
+              "image": "https://drive.google.com/file/d/1DYknOOFyovS0oZqFnxGar5Q7fr5mACaP/view?usp=sharing",
+              "link": "https://www.supermicro.com/en/products/ampere"
+            }
+          ],
           "id": 156,
-          "showLogoInEventPage": true,
-          "email": "Sherryf@supermicro.com"
+          "showLogoInEventPage": false,
+          "email": "Sherryf@supermicro.com",
+          "usesSponsorPage": true
         }
       ]
     }
