@@ -140,6 +140,34 @@
           },
           "sponsorId": 156,
           "companyId": 136,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "Facebook",
+                "order": 1,
+                "link": "https://www.facebook.com/Supermicro"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Instagram",
+                "order": 2,
+                "link": "https://www.instagram.com/supermicro_smci/"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "LinkedIn",
+                "link": "https://www.linkedin.com/company/supermicro/",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Twitter",
+                "order": 4,
+                "link": "https://twitter.com/Supermicro_SMCI"
+              }
+            ]
+          },
           "id": 156,
           "showLogoInEventPage": true,
           "email": "Sherryf@supermicro.com"
