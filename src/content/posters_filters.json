@@ -1,0 +1,27 @@
+{
+  "speakers": {
+    "label": "Authors",
+    "values": [],
+    "enabled": true
+  },
+  "track": {
+    "label": "Tracks",
+    "values": [],
+    "enabled": true
+  },
+  "custom_order": {
+    "label": "Poster #",
+    "values": [],
+    "enabled": true
+  },
+  "abstract": {
+    "label": "Abstract",
+    "values": [],
+    "enabled": true
+  },
+  "tags": {
+    "label": "Tags",
+    "values": [],
+    "enabled": true
+  }
+}
