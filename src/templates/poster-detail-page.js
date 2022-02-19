@@ -305,7 +305,7 @@ const mapStateToProps = ({ summitState, userState, clockState, presentationsStat
   nowUtc: clockState.nowUtc,
   allPosters: presentationsState.voteablePresentations.allPresentations,
   recommendedPosters: presentationsState.voteablePresentations.recommendedPresentations,
-  votes: userState.attendee.presentation_votes,
+  votes: userState.attendee?.presentation_votes ?? [],
 });
 
 export default connect(mapStateToProps, {
