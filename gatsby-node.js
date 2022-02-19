@@ -42,6 +42,20 @@ const SSR_getEvents = async (baseUrl, summitId, accessToken, page) => {
       });
 };
 
+const SSR_getVoteablePresentations = async (baseUrl, summitId, accessToken, page) => {
+  return await axios.get(
+      `${baseUrl}/api/v1/summits/${summitId}/presentations/voteable`,
+      {
+        params: {
+          access_token: accessToken,
+          per_page: 50,
+          page: page,
+          filter: 'published==1',
+          expand: 'slides, links, videos, media_uploads, type, track, track.allowed_access_levels, location, location.venue, location.floor, speakers, moderator, sponsors, current_attendance, groups, rsvp_template, tags',
+        }
+      });
+};
+
 exports.onPreBootstrap = async () => {
   const marketingData = await SSR_getMarketingSettings(process.env.GATSBY_MARKETING_API_BASE_URL, process.env.GATSBY_SUMMIT_ID);
   const colorSettings = fs.existsSync(colorsFilepath) ? JSON.parse(fs.readFileSync(colorsFilepath)) : {};
@@ -175,6 +189,28 @@ exports.onPreBootstrap = async () => {
   fs.writeFileSync('src/content/events.json', JSON.stringify(allEvents), 'utf8');
 
 
+  // Fetch Voteable Presentations
+  let voteable_presentations_page = 1;
+  let voteable_presentations_last_page = 0;
+
+  let allVoteablePresentations = await SSR_getVoteablePresentations(process.env.GATSBY_SUMMIT_API_BASE_URL, process.env.GATSBY_SUMMIT_ID, accessToken, voteable_presentations_page)
+      .then((response) => {
+        voteable_presentations_last_page = response.data.last_page;
+        return response.data.data;
+      })
+      .catch(e => console.log('ERROR: ', e));
+
+  while (voteable_presentations_last_page > 1 && voteable_presentations_page <= voteable_presentations_last_page) {
+    voteable_presentations_page++;
+    await SSR_getVoteablePresentations(process.env.GATSBY_SUMMIT_API_BASE_URL, process.env.GATSBY_SUMMIT_ID, accessToken, voteable_presentations_page)
+        .then((response) => {
+          allVoteablePresentations = [...allVoteablePresentations, ...response.data.data];
+          return response.data;
+        })
+        .catch(e => console.log('ERROR: ', e));
+  }
+
+  fs.writeFileSync('src/content/voteable_presentations.json', JSON.stringify(allVoteablePresentations), 'utf8');
   // Fetch Speakers
 
   // Get Featured Speakers

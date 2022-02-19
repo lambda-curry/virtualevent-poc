@@ -2,6 +2,7 @@ import storage from 'redux-persist/lib/storage' //
 import {persistCombineReducers, persistStore} from "redux-persist";
 import {loggedUserReducer} from "openstack-uicore-foundation/lib/reducers";
 import eventReducer from "../reducers/event-reducer";
+import presentationsReducer from "../reducers/presentations-reducer";
 import summitReducer from "../reducers/summit-reducer";
 import userReducer from "../reducers/user-reducer";
 import scheduleReducer from "../reducers/schedule-reducer";
@@ -26,6 +27,7 @@ const config = {
         'sponsorState',
         'speakerState',
         'eventState',
+        'presentationsState',
         'summitState',
         'scheduleState',
         'myScheduleState',
@@ -41,9 +43,10 @@ const persistedReducers = persistCombineReducers(config, {
     myScheduleState: myScheduleReducer,
     clockState: clockReducer,
     eventState: eventReducer,
+    presentationsState: presentationsReducer,
     summitState: summitReducer,
     speakerState: speakerReducer,
-    sponsorState: sponsorReducer
+    sponsorState: sponsorReducer,
 });
 
 function appendLoggedUser({ getState }) {

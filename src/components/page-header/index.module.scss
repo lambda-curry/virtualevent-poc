@@ -1,0 +1,32 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-height: 265px;
+  min-height: 265px;
+  background-color: var(--color_primary);
+  color: white;
+  .titles {
+    flex-basis: 50%;
+    margin-left: 20px;
+    margin-top: 35px;
+    h1 {
+      font-size: 4em;
+      font-weight: bold;
+      margin-top: 0px;
+    }
+    h2 {
+      margin-top: 0px;
+      font-size: 1.5em;
+      color: var(--color_text_light);
+    }
+    @media screen and (max-width: 420px) {
+      align-self: center;
+      margin-top: 0px;
+    }
+  }
+  img {
+    object-position: right center;
+    object-fit: cover;
+  }
+}

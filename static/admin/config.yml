@@ -148,6 +148,17 @@ collections:
               {label: "Title", name: "title", widget: string},
               {label: "Link", name: "link", widget: string},         
             ]}
+      - file: "src/content/poster-pages.json"
+        label: "Poster Pages"
+        name: "poster-pages"
+        fields:
+          - {label: "Poster Pages", name: "posterPages", widget: list, fields: [
+              {label: "Name", name: "name", widget: string, required: false},
+              {label: "Track Group Id", name: "trackGroupId", widget: number },
+              {label: "Title", name: "title", widget: string },
+              {label: "Subtitle", name: "subtitle", widget: string },
+              {label: "Background Image", name: "image", widget: image, required: false},
+            ]}
   - name: "home"
     label: "Lobby Site"
     editor:
