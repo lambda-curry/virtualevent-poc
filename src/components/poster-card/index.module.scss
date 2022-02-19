@@ -12,7 +12,6 @@
     box-shadow: 0 0 0 1px rgba(216, 216, 216, 1);
     background-blend-mode: darken;
     transition: 0.3s;
-    pointer-events: none;
     .overlay {
       z-index: 100;
       width: 100%;
@@ -27,6 +26,7 @@
       }
     }
     .button {
+      pointer-events: none;
       position: absolute;
       height: 4rem;
       width: 17rem;
