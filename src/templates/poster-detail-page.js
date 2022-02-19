@@ -202,7 +202,7 @@ export const PosterDetailPageTemplate = class extends React.Component {
               )}
             </div>
             <div className="column px-0 py-0 is-one-quarter is-full-mobile">
-              {!poster?.meeting_url && <PosterLiveSession poster={poster} />}
+              {poster?.meeting_url && <PosterLiveSession poster={poster} />}
               <DocumentsComponent event={poster} />
               <AccessTracker />
               <AttendeesWidget user={user} event={poster} />
