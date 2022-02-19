@@ -15,7 +15,6 @@ import {
   SCHEDULE_SYNC_LINK_RECEIVED,
   SET_USER_ORDER,
   CAST_PRESENTATION_VOTE_RESPONSE,
-  UNCAST_PRESENTATION_VOTE_RESPONSE,
   TOGGLE_PRESENTATION_VOTE,
 } from '../actions/user-actions';
 
@@ -98,27 +97,19 @@ const attendeeReducer = (state, action) => {
     case CAST_PRESENTATION_VOTE_RESPONSE: {
       const { attendee: { presentation_votes }} = state;
       const { response: vote } = payload;
-      return { ...state, attendee: { ...state.attendee, presentation_votes: [...presentation_votes, vote] } };
-    }
-    case UNCAST_PRESENTATION_VOTE_RESPONSE: {
-      const { attendee: { presentation_votes }} = state;
-      const { presentation } = payload;
-      const newVotes = [...presentation_votes.filter(vote => vote.presentation_id !== presentation.id)];
-      return { ...state, attendee: { ...state.attendee, presentation_votes: newVotes } };
+      // remove 'local vote' vote before adding real vote
+      const filteredVotes = presentation_votes.filter(v => v.presentation_id !== vote.presentation_id);
+      return { ...state, attendee: { ...state.attendee, presentation_votes: [...filteredVotes, vote] } };
     }
     case TOGGLE_PRESENTATION_VOTE: {
       const { attendee: { presentation_votes }} = state;
       const { presentation, isVoted } = payload;
       let newVotes;
       if (isVoted) {
-        // we had tried casting vote and vote already existed in api
-        // we add it as a local vote
         const localVote = { presentation_id: presentation.id };
         newVotes = [...presentation_votes, localVote];
       } else {
-        // we had tried uncasting vote and vote did not exist in api
-        // we remove local vote
-        newVotes = [...presentation_votes.filter(vote => vote.presentation_id !== presentation.id)];
+        newVotes = [...presentation_votes.filter(v => v.presentation_id !== presentation.id)];
       }
       return { ...state, attendee: { ...state.attendee, presentation_votes: newVotes } };
     }

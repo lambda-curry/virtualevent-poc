@@ -216,8 +216,6 @@ export const removeFromSchedule = (event) => async (dispatch, getState) => {
 
 export const castPresentationVote = (presentation) => async (dispatch, getState) => {
 
-  console.log('vote', presentation)
-
   const accessToken = await getAccessToken();
 
   if (!accessToken) return Promise.resolve();
@@ -226,25 +224,27 @@ export const castPresentationVote = (presentation) => async (dispatch, getState)
     access_token: accessToken,
   };
 
-  const errorHandler = (err, res) => (dispatch, state) => {
-    if (err.status === 412)
-      dispatch(createAction(TOGGLE_PRESENTATION_VOTE)({ presentation, isVoted: true }));
+  const errorHandler = (err) => (dispatch, state) => {
+    const { status, response: { text } } = err;
+    if (status === 412 && text.includes('Max. allowed votes')) {
+      dispatch(createAction(TOGGLE_PRESENTATION_VOTE)({ presentation, isVoted: false }));
+    } else {
+      console.log('castPresentationVote error code: ', status, text);
+    }
   };
 
   return postRequest(
-    null,
+    createAction(TOGGLE_PRESENTATION_VOTE),
     createAction(CAST_PRESENTATION_VOTE_RESPONSE),
     `${getEnvVariable('SUMMIT_API_BASE_URL')}/api/v1/summits/${getEnvVariable(SUMMIT_ID)}/presentations/${presentation.id}/attendee-votes`,
     {},
     errorHandler,
-    { presentation }
+    { presentation, isVoted: true }
   )(params)(dispatch).catch(errorHandler);
 };
 
 export const uncastPresentationVote = (presentation) => async (dispatch, getState) => {
 
-  console.log('un vote', presentation)
-
   const accessToken = await getAccessToken();
 
   if (!accessToken) return Promise.resolve();
@@ -253,18 +253,18 @@ export const uncastPresentationVote = (presentation) => async (dispatch, getStat
     access_token: accessToken,
   };
 
-  const errorHandler = (err, res) => (dispatch, state) => {
-    if (err.status === 412)
-      dispatch(createAction(TOGGLE_PRESENTATION_VOTE)({ presentation, isVoted: false }));
+  const errorHandler = (err) => (dispatch, state) => {
+    const { status, response: { text } } = err;
+    console.log('uncastPresentationVote error code: ', status, text);
   };
 
   return deleteRequest(
-    null,
-    createAction(UNCAST_PRESENTATION_VOTE_RESPONSE)({ presentation }),
+    createAction(TOGGLE_PRESENTATION_VOTE),
+    createAction(UNCAST_PRESENTATION_VOTE_RESPONSE), // response needs no handling
     `${getEnvVariable('SUMMIT_API_BASE_URL')}/api/v1/summits/${getEnvVariable(SUMMIT_ID)}/presentations/${presentation.id}/attendee-votes`,
     {},
     errorHandler,
-    { presentation }
+    { presentation, isVoted: false }
   )(params)(dispatch).catch(errorHandler);
 };
 

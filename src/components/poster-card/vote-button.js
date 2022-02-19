@@ -19,20 +19,24 @@ const VoteButton = ({ isVoted, canVote, toggleVote, style }) => {
     }
   };
 
+  const configureButton = (isVoted, togglingVote) => {
+    setIconClass(isVoted === togglingVote ? 'fa-heart-o' : 'fa-heart');
+    if (isVoted) {
+      setButtonClass(togglingVote ? styles.add : styles.added);
+      setTitle(togglingVote ? 'Removing vote' : 'Remove vote');
+    } else {
+      setButtonClass(togglingVote ? styles.added : canVote ? styles.add : styles.disabled);
+      setTitle(togglingVote ? 'Voting!' : canVote ? 'Vote for this poster!' : 'Maximun votes registered');
+    }
+  };
+
   useEffect(() => {
+    if (!togglingVote) configureButton(isVoted, togglingVote);
     setTogglingVote(false);
   }, [isVoted]);
 
   useEffect(() => {
-    if (isVoted) {
-      setIconClass(togglingVote ? 'fa-heart-o' : 'fa-heart');
-      setButtonClass(togglingVote ? styles.add : styles.added);
-      setTitle(togglingVote ? 'Removing vote' : 'Remove vote');
-    } else {
-      setIconClass(togglingVote ? 'fa-heart' : 'fa-heart-o');
-      setButtonClass(togglingVote ? styles.added : canVote ? styles.add : styles.disabled);
-      setTitle(togglingVote ? 'Voting!' : canVote ? 'Vote for this poster!' : 'Maximun votes registered');
-    }
+    configureButton(isVoted, togglingVote);
   }, [togglingVote]);
 
   return (
