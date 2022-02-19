@@ -95,14 +95,18 @@ const attendeeReducer = (state, action) => {
       return { ...state, attendee: ticket?.owner ?? null };
     }
     case CAST_PRESENTATION_VOTE_RESPONSE: {
-      const { attendee: { presentation_votes }} = state;
+      const { attendee} = state;
+      if(!attendee) return state;
+      let presentation_votes = attendee;
       const { response: vote } = payload;
       // remove 'local vote' vote before adding real vote
       const filteredVotes = presentation_votes.filter(v => v.presentation_id !== vote.presentation_id);
       return { ...state, attendee: { ...state.attendee, presentation_votes: [...filteredVotes, vote] } };
     }
     case TOGGLE_PRESENTATION_VOTE: {
-      const { attendee: { presentation_votes }} = state;
+      const { attendee} = state;
+      if(!attendee) return state;
+      let presentation_votes = attendee;
       const { presentation, isVoted } = payload;
       let newVotes;
       if (isVoted) {
