@@ -5,13 +5,12 @@ import PosterCard from '../poster-card';
 
 import styles from './index.module.scss';
 
-const PosterGrid = ({ posters, canVote, toggleVote, votes, showDetail = null, showDetailPage = null }) => {
+const PosterGrid = ({ posters, canVote, toggleVote, votes, showDetailPage = null }) => {
   if (!posters) return null;
   const cards = posters.map(poster => 
     <PosterCard
       key={`poster-${poster.id}`}
       poster={poster}
-      showDetail={showDetail}
       showDetailPage={showDetailPage ? () => showDetailPage(poster.id) : null}
       canVote={canVote}
       isVoted={!!votes.find(v => v.presentation_id === poster.id)}
@@ -26,7 +25,6 @@ const PosterGrid = ({ posters, canVote, toggleVote, votes, showDetail = null, sh
 };
 PosterGrid.propTypes = {
   posters: PropTypes.array.isRequired,
-  showDetail: PropTypes.bool,
   showDetailPage: PropTypes.func,
   canVote: PropTypes.bool.isRequired,
   toggleVote: PropTypes.func.isRequired,
