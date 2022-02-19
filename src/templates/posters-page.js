@@ -110,7 +110,7 @@ const mapStateToProps = ({presentationsState, userState, summitState, settingSta
   posters: presentationsState.voteablePresentations.filteredPresentations,
   allPosters: presentationsState.voteablePresentations.ssrPresentations,
   filters: presentationsState.voteablePresentations.filters,
-  votes: userState.attendee.presentation_votes,
+  votes: userState.attendee?.presentation_votes?? [],
   summit: summitState.summit,
   colorSettings: settingState.colorSettings,
   pagesSettings: [...settingState.posterPagesSettings.posterPages],
