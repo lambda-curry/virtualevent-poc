@@ -15,6 +15,7 @@ import {
   SCHEDULE_SYNC_LINK_RECEIVED,
   SET_USER_ORDER,
   CAST_PRESENTATION_VOTE_RESPONSE,
+  UNCAST_PRESENTATION_VOTE_RESPONSE,
   TOGGLE_PRESENTATION_VOTE,
 } from '../actions/user-actions';
 
@@ -100,6 +101,12 @@ const attendeeReducer = (state, action) => {
       // remove 'local vote' vote before adding real vote
       const filteredVotes = presentation_votes.filter(v => v.presentation_id !== vote.presentation_id);
       return { ...state, attendee: { ...state.attendee, presentation_votes: [...filteredVotes, vote] } };
+    }
+    case UNCAST_PRESENTATION_VOTE_RESPONSE: {
+      const { attendee: { presentation_votes }} = state;
+      const { presentation } = payload;
+      const newVotes = [...presentation_votes.filter(v => v.presentation_id !== presentation.id)];
+      return { ...state, attendee: { ...state.attendee, presentation_votes: newVotes } };
     }
     case TOGGLE_PRESENTATION_VOTE: {
       const { attendee: { presentation_votes }} = state;
