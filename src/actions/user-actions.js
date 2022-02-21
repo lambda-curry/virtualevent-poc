@@ -226,12 +226,17 @@ export const castPresentationVote = (presentation) => async (dispatch, getState)
 
   const errorHandler = (err) => (dispatch, state) => {
     const { status, response: { text } } = err;
-    if (status === 412 && text.includes('Max. allowed votes')) {
-      // need to revert button state
-      // first 'confirms' vote
-      dispatch(createAction(TOGGLE_PRESENTATION_VOTE)({ presentation, isVoted: true }));
-      // inmediately removes vote
-      dispatch(createAction(TOGGLE_PRESENTATION_VOTE)({ presentation, isVoted: false }));
+    if (status === 412) {
+      if (text.includes('already vote')) {
+        // 'confirm' as local vote
+        dispatch(createAction(TOGGLE_PRESENTATION_VOTE)({ presentation, isVoted: true }));
+      } else if (text.includes('Max. allowed votes')) {
+        // need to revert button state
+        // first 'confirm' as local vote
+        dispatch(createAction(TOGGLE_PRESENTATION_VOTE)({ presentation, isVoted: true }));
+        // inmediately remove vote
+        dispatch(createAction(TOGGLE_PRESENTATION_VOTE)({ presentation, isVoted: false }));
+      }
     } else {
       console.log('castPresentationVote error code: ', status, text);
     }
