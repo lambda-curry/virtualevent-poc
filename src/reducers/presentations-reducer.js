@@ -1,14 +1,18 @@
 import { combineReducers } from 'redux';
 import { isString } from 'lodash';
 
+import { START_LOADING, STOP_LOADING, LOGOUT_USER } from 'openstack-uicore-foundation/lib/actions';
+import { RESET_STATE, SYNC_DATA } from "../actions/base-actions";
+
 import {
   SET_INITIAL_DATASET,
   PRESENTATIONS_PAGE_REQUEST,
   PRESENTATIONS_PAGE_RESPONSE,
   VOTEABLE_PRESENTATIONS_UPDATE_FILTER,
-  GET_PRESENTATION_DETAILS, GET_RECOMMENDED_PRESENTATIONS
+  GET_PRESENTATION_DETAILS, GET_RECOMMENDED_PRESENTATIONS,
+  VOTING_PERIOD_ADD,
+  VOTING_PERIOD_PHASE_CHANGE
 } from '../actions/presentation-actions';
-import { START_LOADING, STOP_LOADING } from "openstack-uicore-foundation/lib/actions";
 
 import { filterEventsByAccessLevels } from '../utils/authorizedGroups';
 
@@ -30,7 +34,7 @@ const DEFAULT_VOTEABLE_PRESENTATIONS_STATE = {
   loading: false
 };
 
-const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, action = {}) => {
+const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, action) => {
   const { type, payload } = action;
   switch (type) {
     case SET_INITIAL_DATASET: {
@@ -38,7 +42,7 @@ const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, act
       // pre filter by user access levels
       let filteredEvents = filterEventsByAccessLevels(allVoteablePresentations, currentUserProfile);
       // suffle
-      filteredEvents = filteredEvents.map((a) => [Math.random(),a]).sort((a,b) => a[0]-b[0]).map((a) => a[1]);
+      //filteredEvents = filteredEvents.map((a) => [Math.random(),a]).sort((a,b) => a[0]-b[0]).map((a) => a[1]);
       return { ...state,
         ssrPresentations: filteredEvents,
         allPresentations: filteredEvents,
@@ -96,7 +100,44 @@ const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, act
   }
 };
 
-const pages = (pages = {}, action = {}) => {
+const votingPeriods = (state = {}, action) => {
+  const { type, payload } = action;
+  switch (type) {
+    case RESET_STATE:
+    case LOGOUT_USER:
+    case SYNC_DATA:
+      return {};
+    case VOTING_PERIOD_ADD: {
+      const { entity: { class_name: className, id: entityId }, votingPeriod } = payload;
+      return {
+        ...state,
+        [className]: {
+          ...state[className],
+          [entityId]: {
+            ...votingPeriod
+          }
+        }
+      };
+    }
+    case VOTING_PERIOD_PHASE_CHANGE: {
+      const { className, entityId, phase } = payload;
+      return {
+        ...state,
+        [className]: {
+          ...state[className],
+          [entityId]: {
+            ...state[className][entityId], 
+            phase
+          }
+        }
+      };
+    }
+    default:
+      return state;
+  }
+}
+
+const pages = (pages = {}, action) => {
   const { type, payload } = action;
   switch (type) {
     case PRESENTATIONS_PAGE_REQUEST:
@@ -122,12 +163,12 @@ const pages = (pages = {}, action = {}) => {
   }
 };
 
-const currentPage = (currentPage = 1, action = {}) => {
+const currentPage = (currentPage = 1, action) => {
   const { type, payload } = action;
   return type === PRESENTATIONS_PAGE_REQUEST ? payload.page : currentPage;
 };
 
-const lastPage = (lastPage = null, action = {}) => {
+const lastPage = (lastPage = null, action) => {
   const { type, payload } = action;
   return type === PRESENTATIONS_PAGE_RESPONSE ? payload.response.last_page : lastPage;
 };
@@ -140,6 +181,7 @@ const pagination = combineReducers({
 
 export default combineReducers({
   voteablePresentations,
+  votingPeriods,
   pagination,
 });
 

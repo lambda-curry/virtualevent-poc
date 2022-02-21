@@ -5,49 +5,50 @@ import styles from './vote-button.module.scss';
 
 const VoteButton = ({ isVoted, canVote, toggleVote, style }) => {
   const [togglingVote, setTogglingVote] = useState(false);
+  const [vote, setVote] = useState(isVoted);
   const [iconClass, setIconClass] = useState(isVoted ? 'fa-heart' : 'fa-heart-o');
   const [buttonClass, setButtonClass] = useState(isVoted ? styles.added : styles.add);
   const [title, setTitle] = useState(isVoted ? 'Remove vote' : canVote ? 'Vote for this poster!' : 'Maximun votes registered');
-  const [disabled, setDisabled] = useState(!(canVote || isVoted));
 
   const handleClick = ev => {
     ev.preventDefault();
     ev.stopPropagation();
     if (toggleVote) {
       toggleVote();
-      setTogglingVote(true);
+      setVote(!vote);
     }
   };
 
-  const configureButton = (isVoted, togglingVote) => {
-    setIconClass(isVoted === togglingVote ? 'fa-heart-o' : 'fa-heart');
-    if (isVoted) {
-      setButtonClass(togglingVote ? styles.add : styles.added);
-      setTitle(togglingVote ? 'Removing vote' : 'Remove vote');
+  const configureButton = () => {
+    if (vote !== isVoted) {
+      setTitle(vote ? 'Voting!' : 'Removing vote');
+      setIconClass(vote ? 'fa-heart' : 'fa-heart-o');
+      setButtonClass(vote ? styles.added : styles.add);
     } else {
-      setButtonClass(togglingVote ? styles.added : canVote ? styles.add : styles.disabled);
-      setTitle(togglingVote ? 'Voting!' : canVote ? 'Vote for this poster!' : 'Maximun votes registered');
+      setTitle(vote ? 'Remove vote' : canVote ? 'Vote for this poster!' : 'Maximun votes registered');
+      setIconClass(vote ? 'fa-heart' : 'fa-heart-o');
+      setButtonClass(vote ? styles.added : canVote ? styles.add : styles.disabled);
     }
   };
 
   useEffect(() => {
-    if (togglingVote) {
-      setTogglingVote(false);
-    } else {
-      configureButton(isVoted, togglingVote);
+    configureButton();
+  }, [vote, canVote]);
+
+  useEffect(() => {
+    if (isVoted !== vote) {
+      setVote(isVoted);
+    } else if (canVote) {
+      configureButton();
     }
   }, [isVoted]);
-
-  useEffect(() => {
-    configureButton(isVoted, togglingVote);
-  }, [togglingVote]);
 
   return (
     <button
       title={title}
       className={`${styles.voteButton} ${buttonClass}`}
       onClick={handleClick}
-      disabled={disabled || togglingVote}
+      disabled={!(canVote || isVoted) || (vote !== isVoted)}
       style={style}
     >
       <i className={`fa ${iconClass}`} aria-hidden="true" />

@@ -11,7 +11,7 @@ import placeholder from '../../img/poster_fallback.png';
 
 import 'react-medium-image-zoom/dist/styles.css'
 
-const PosterCard = ({ poster, showDetail, canVote, isVoted, toggleVote, showDetailPage }) => {
+const PosterCard = ({ poster, showDetail, showVoteButton, canVote, isVoted, toggleVote, showDetailPage }) => {
   const [hover, setHover] = useState(false);
   const [isZoomed, setIsZoomed] = useState(false)
   const handleZoomChange = useCallback(shouldZoom => {
@@ -71,11 +71,13 @@ const PosterCard = ({ poster, showDetail, canVote, isVoted, toggleVote, showDeta
         { track?.name && track?.color &&
         <span className={styles.track} style={{backgroundColor: track.color}}>{track.name}</span>
         }
+        { showVoteButton &&
         <VoteButton
           isVoted={isVoted}
           canVote={canVote}
           toggleVote={() => toggleVote(poster, !isVoted)}
         />
+        }
       </div>
     </article>
   );
@@ -83,6 +85,7 @@ const PosterCard = ({ poster, showDetail, canVote, isVoted, toggleVote, showDeta
 
 PosterCard.propTypes = {
   poster: PropTypes.object.isRequired,
+  showVoteButton: PropTypes.bool.isRequired,
   canVote: PropTypes.bool.isRequired,
   isVoted: PropTypes.bool.isRequired,
   toggleVote: PropTypes.func.isRequired

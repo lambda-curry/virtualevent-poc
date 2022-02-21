@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { navigate } from "gatsby";
@@ -28,25 +28,26 @@ import AttendanceTrackerComponent from "../components/AttendanceTrackerComponent
 const PostersPage = ({
                       location,
                       trackGroupId,
+                      pagesSettings,
                       setInitialDataSet,
                       getAllVoteablePresentations,
                       posters,
-                      votes,
+                      allPosters,
                       castPresentationVote,
                       uncastPresentationVote,
+                      votingPeriods,
+                      attendee,
+                      votes,
                       summit,
-                      allPosters,
                       filters,
                       updateFilter,
-                      colorSettings,
-                      pagesSettings
+                      colorSettings
                     }) => {
 
-  const [canVote, setCanVote] = useState(true);
   const [showFilters, setShowfilters] = useState(false);
   const [postersByTrackGroup, setPostersByTrackGroup] = useState(posters);
   const [allPostersByTrackGroup, setAllPostersByTrackGroup] = useState(allPosters);
-  const [pageSettings, setPageSetting] = useState(pagesSettings.find(pps => pps.trackGroupId === parseInt(trackGroupId)));
+  const [pageSettings] = useState(pagesSettings.find(pps => pps.trackGroupId === parseInt(trackGroupId)));
 
   useEffect(() => {
     setInitialDataSet().then(() => getAllVoteablePresentations());
@@ -92,7 +93,9 @@ const PostersPage = ({
           <PosterGrid
             posters={postersByTrackGroup}
             showDetailPage={(posterId) => navigate(`/a/poster/${posterId}`)}
-            canVote={canVote} votes={votes}
+            votingPeriods={votingPeriods}
+            vottingAllowed={!!attendee}
+            votes={votes}
             toggleVote={toggleVote}
           />
         </div>
@@ -108,14 +111,16 @@ const PostersPage = ({
 
 PostersPage.propTypes = {};
 
-const mapStateToProps = ({presentationsState, userState, summitState, settingState}) => ({
+const mapStateToProps = ({ settingState, presentationsState, userState, summitState }) => ({
+  pagesSettings: [...settingState.posterPagesSettings.posterPages],
   posters: presentationsState.voteablePresentations.filteredPresentations,
   allPosters: presentationsState.voteablePresentations.ssrPresentations,
-  filters: presentationsState.voteablePresentations.filters,
-  votes: userState.attendee?.presentation_votes?? [],
+  votingPeriods: presentationsState.votingPeriods,
+  attendee: userState.attendee,
+  votes: userState.attendee?.presentation_votes ?? [],
   summit: summitState.summit,
-  colorSettings: settingState.colorSettings,
-  pagesSettings: [...settingState.posterPagesSettings.posterPages],
+  filters: presentationsState.voteablePresentations.filters,
+  colorSettings: settingState.colorSettings
 });
 
 export default connect(mapStateToProps, {
