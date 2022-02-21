@@ -40,27 +40,27 @@ const PosterCard = ({ poster, showDetail, canVote, isVoted, toggleVote, showDeta
         src={posterImage.public_url}
         className={styles.header}
       >
-        <div className={`${styles.overlay} ${showDetail && hover ? styles.overlay__hover : ''}`} 
+        <div className={`${styles.overlay} ${hover ? styles.overlay__hover : ''}`}
           onMouseEnter={() => setHover(true)} 
-          onMouseLeave={() => setHover(false)}
+          onMouseOut={() => setHover(false)}
           onContextMenu={(e) => e.preventDefault()}
           onClick={handleClick}
         >
-          { showDetail && hover &&
+          { hover &&
           <button className={`${styles.button} button is-large`}>
             <i className={'fa fa-2x fa-eye icon is-large'} />
             <b>Detail</b>
           </button>
           }
           <ControlledZoom
-                isZoomed={isZoomed}
-                onZoomChange={handleZoomChange}
-                zoomMargin={50}
-                overlayBgColorStart="rgba(0, 0, 0, 0)"
-                overlayBgColorEnd="rgba(0, 0, 0, 0.8)"
-            >
-                <PosterImage mediaUpload={posterImage} shouldShow={isZoomed}/>
-            </ControlledZoom>
+            isZoomed={isZoomed}
+            onZoomChange={handleZoomChange}
+            zoomMargin={50}
+            overlayBgColorStart="rgba(0, 0, 0, 0)"
+            overlayBgColorEnd="rgba(0, 0, 0, 0.8)"
+          >
+            <PosterImage mediaUpload={posterImage} shouldShow={isZoomed}/>
+          </ControlledZoom>
         </div>
       </BlockImage>
       <div className={styles.body}>
@@ -83,7 +83,6 @@ const PosterCard = ({ poster, showDetail, canVote, isVoted, toggleVote, showDeta
 
 PosterCard.propTypes = {
   poster: PropTypes.object.isRequired,
-  showDetail: PropTypes.bool,
   canVote: PropTypes.bool.isRequired,
   isVoted: PropTypes.bool.isRequired,
   toggleVote: PropTypes.func.isRequired
