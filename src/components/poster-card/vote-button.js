@@ -31,8 +31,11 @@ const VoteButton = ({ isVoted, canVote, toggleVote, style }) => {
   };
 
   useEffect(() => {
-    if (!togglingVote) configureButton(isVoted, togglingVote);
-    setTogglingVote(false);
+    if (togglingVote) {
+      setTogglingVote(false);
+    } else {
+      configureButton(isVoted, togglingVote);
+    }
   }, [isVoted]);
 
   useEffect(() => {
