@@ -39,6 +39,7 @@ const PostersPage = ({
                       attendee,
                       votes,
                       summit,
+                      allBuildTimePosters,
                       filters,
                       updateFilter,
                       colorSettings
@@ -46,7 +47,7 @@ const PostersPage = ({
 
   const [showFilters, setShowfilters] = useState(false);
   const [postersByTrackGroup, setPostersByTrackGroup] = useState(posters);
-  const [allPostersByTrackGroup, setAllPostersByTrackGroup] = useState(allPosters);
+  const [allBuildTimePostersByTrackGroup, setAllBuildTimePostersByTrackGroup] = useState(allBuildTimePosters);
   const [pageSettings] = useState(pagesSettings.find(pps => pps.trackGroupId === parseInt(trackGroupId)));
 
   useEffect(() => {
@@ -58,8 +59,8 @@ const PostersPage = ({
   }, [posters, trackGroupId]);
 
   useEffect(() => {
-    setAllPostersByTrackGroup(filterByTrackGroup(allPosters, parseInt(trackGroupId)));
-  }, [allPosters, trackGroupId]);
+    setAllBuildTimePostersByTrackGroup(filterByTrackGroup(allBuildTimePosters, parseInt(trackGroupId)));
+  }, [allBuildTimePosters, trackGroupId]);
 
   const toggleVote = (presentation, isVoted) => {
     isVoted ? castPresentationVote(presentation) : uncastPresentationVote(presentation);
@@ -67,8 +68,8 @@ const PostersPage = ({
 
   const filterProps = {
     summit,
-    events: allPostersByTrackGroup,
-    allEvents: allPostersByTrackGroup,
+    events: allBuildTimePostersByTrackGroup,
+    allEvents: allBuildTimePostersByTrackGroup,
     filters,
     triggerAction: (action, payload) => {
       updateFilter(payload);
@@ -91,10 +92,11 @@ const PostersPage = ({
       <div className={`${styles.wrapper} ${showFilters ? styles.showFilters : ''}`}>
         <div className={styles.postersWrapper}>
           <PosterGrid
+            allPosters={allPosters}
             posters={postersByTrackGroup}
             showDetailPage={(posterId) => navigate(`/a/poster/${posterId}`)}
             votingPeriods={votingPeriods}
-            vottingAllowed={!!attendee}
+            votingAllowed={!!attendee}
             votes={votes}
             toggleVote={toggleVote}
           />
@@ -114,7 +116,8 @@ PostersPage.propTypes = {};
 const mapStateToProps = ({ settingState, presentationsState, userState, summitState }) => ({
   pagesSettings: [...settingState.posterPagesSettings.posterPages],
   posters: presentationsState.voteablePresentations.filteredPresentations,
-  allPosters: presentationsState.voteablePresentations.ssrPresentations,
+  allPosters: presentationsState.voteablePresentations.allPresentations,
+  allBuildTimePosters: presentationsState.voteablePresentations.ssrPresentations,
   votingPeriods: presentationsState.votingPeriods,
   attendee: userState.attendee,
   votes: userState.attendee?.presentation_votes ?? [],
