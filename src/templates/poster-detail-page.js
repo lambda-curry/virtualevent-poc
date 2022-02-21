@@ -91,6 +91,8 @@ export const PosterDetailPageTemplate = class extends React.Component {
       recommendedPosters,
       isAuthorized,
       hasTicket,
+      attendee,
+      votingPeriods,
     } = this.props;
     // get current event phase
     const currentPhase = eventsPhases.find((e) => parseInt(e.id) === parseInt(presentationId))?.phase;
@@ -171,7 +173,11 @@ export const PosterDetailPageTemplate = class extends React.Component {
             <div className="column is-three-quarters is-full-mobile">
               <div className="px-5 py-0">
                 <PosterDescription
+                  allPosters={allPosters}
                   poster={poster}
+                  votingAllowed={!!attendee}
+                  votingPeriods={votingPeriods}
+                  votes={votes}
                   isVoted={!!votes.find(v => v.presentation_id === poster.id)}
                   toggleVote={this.toggleVote}
                 />
@@ -179,7 +185,15 @@ export const PosterDetailPageTemplate = class extends React.Component {
               <div className="px-5 py-0">
                 <PosterNavigation allPosters={allPosters} poster={poster} />
                 <div className="mt-5 mb-5 mx-0"><b>More like this</b></div>
-                <PosterGrid posters={recommendedPosters} canVote={true} votes={votes} toggleVote={this.toggleVote} showDetailPage={this.goToDetails} showDetail={true}/>
+                <PosterGrid
+                  allPosters={allPosters}
+                  posters={recommendedPosters}
+                  votingAllowed={!!attendee}
+                  votingPeriods={votingPeriods}
+                  votes={votes}
+                  toggleVote={this.toggleVote}
+                  showDetailPage={this.goToDetails}
+                />
               </div>
               <div className="is-hidden-tablet">
                 <DisqusComponent
@@ -235,6 +249,8 @@ const PosterDetailPage = ({
   getAllVoteablePresentations,
   hasTicket,
   isAuthorized,
+  attendee,
+  votingPeriods,
 }) => {
   return (
     <Layout location={location}>
@@ -265,6 +281,8 @@ const PosterDetailPage = ({
         getAllVoteablePresentations={getAllVoteablePresentations}
         hasTicket={hasTicket}
         isAuthorized={isAuthorized}
+        attendee={attendee}
+        votingPeriods={votingPeriods}
       />
     </Layout>
   );
@@ -280,6 +298,8 @@ PosterDetailPage.propTypes = {
   castPresentationVote: PropTypes.func,
   uncastPresentationVote: PropTypes.func,
   getDisqusSSO: PropTypes.func,
+  attendee: PropTypes.object,
+  votingPeriods: PropTypes.object,
 };
 
 PosterDetailPageTemplate.propTypes = {
@@ -292,6 +312,8 @@ PosterDetailPageTemplate.propTypes = {
   castPresentationVote: PropTypes.func,
   uncastPresentationVote: PropTypes.func,
   getDisqusSSO: PropTypes.func,
+  attendee: PropTypes.object,
+  votingPeriods: PropTypes.object,
 };
 
 const mapStateToProps = ({ summitState, userState, clockState, presentationsState }) => ({
@@ -305,7 +327,9 @@ const mapStateToProps = ({ summitState, userState, clockState, presentationsStat
   nowUtc: clockState.nowUtc,
   allPosters: presentationsState.voteablePresentations.allPresentations,
   recommendedPosters: presentationsState.voteablePresentations.recommendedPresentations,
+  attendee: userState.attendee,
   votes: userState.attendee?.presentation_votes ?? [],
+  votingPeriods: presentationsState.votingPeriods,
 });
 
 export default connect(mapStateToProps, {

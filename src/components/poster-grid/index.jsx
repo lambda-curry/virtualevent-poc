@@ -13,13 +13,13 @@ import { PHASES } from '../../utils/phasesUtils';
 
 import styles from './index.module.scss';
 
-const PosterGrid = ({ posters, showDetailPage = null, votingAllowed, votingPeriods, votes, toggleVote }) => {
+const PosterGrid = ({ allPosters, posters, showDetailPage = null, votingAllowed, votingPeriods, votes, toggleVote }) => {
   const [votesPerTrackGroup, setVotesPerTrackGroup] = useState({});
   const [remainingVotes, setRemainingVotes] = useState({});
 
   useEffect(() => {
-    setVotesPerTrackGroup(calculateVotesPerTrackGroup(posters, votes));
-  }, [posters, votes]);
+    setVotesPerTrackGroup(calculateVotesPerTrackGroup(allPosters, votes));
+  }, [allPosters, votes]);
 
   useEffect(() => {
     if (TRACK_GROUP_CLASS_NAME in votingPeriods)
@@ -61,6 +61,7 @@ const PosterGrid = ({ posters, showDetailPage = null, votingAllowed, votingPerio
 };
 
 PosterGrid.propTypes = {
+  allPosters: PropTypes.array.isRequired,
   posters: PropTypes.array.isRequired,
   showDetailPage: PropTypes.func,
   votingAllowed: PropTypes.bool.isRequired,

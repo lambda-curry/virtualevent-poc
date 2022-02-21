@@ -1,11 +1,43 @@
-import React, { useState } from "react"
+import React, { useState, useEffect, useCallback } from "react"
 import VoteButton from "./poster-card/vote-button";
+
+import {
+  calculateRemaingVotes,
+  calculateVotesPerTrackGroup,
+  TRACK_GROUP_CLASS_NAME
+} from '../utils/voting-utils';
+
+import { PHASES } from '../utils/phasesUtils';
 
 import styles from '../styles/poster-components.module.scss'
 
-const PosterDescription = ({ poster: { speakers, title, description, custom_order, track }, poster, isVoted, toggleVote }) => {
+const PosterDescription = ({ poster: { speakers, title, description, custom_order, track }, allPosters, poster, votingPeriods, votes, isVoted, toggleVote, votingAllowed }) => {
+  
+  const [votesPerTrackGroup, setVotesPerTrackGroup] = useState({});
+  const [remainingVotes, setRemainingVotes] = useState({});
 
-  const [canVote, setCanVote] = useState(true);
+  useEffect(() => {
+    setVotesPerTrackGroup(calculateVotesPerTrackGroup(allPosters, votes));
+  }, [allPosters, votes]);
+
+  useEffect(() => {
+    if (votingPeriods && TRACK_GROUP_CLASS_NAME in votingPeriods)
+      setRemainingVotes(calculateRemaingVotes(votingPeriods[TRACK_GROUP_CLASS_NAME], votesPerTrackGroup));
+  }, [votingPeriods, votesPerTrackGroup]);
+
+  const canVote = useCallback((poster) => {
+    let result = false;
+    if (!(TRACK_GROUP_CLASS_NAME in votingPeriods)) return result;
+    if (poster && poster.track && poster.track.track_groups) {
+      poster.track.track_groups.forEach(trackGroupId => {
+        if (trackGroupId in votingPeriods[TRACK_GROUP_CLASS_NAME]) {
+          const votingPeriod = votingPeriods[TRACK_GROUP_CLASS_NAME][trackGroupId];
+          result = votingPeriod.phase === PHASES.DURING && remainingVotes[trackGroupId] > 0;
+        }
+      });
+    }
+    return result;
+  }, [remainingVotes]);
 
   const formatSpeakers = (speakers) => {
     let formatedSpeakers = '';
@@ -29,7 +61,14 @@ const PosterDescription = ({ poster: { speakers, title, description, custom_orde
           <span className={styles.order}>
             {custom_order ? `#${custom_order}` : <>&nbsp;</>}
           </span>
-          <VoteButton isVoted={isVoted} canVote={canVote} toggleVote={() => toggleVote(poster, !isVoted)} style={{ position: 'relative', marginLeft: 'auto' }} />
+          { votingAllowed &&
+          <VoteButton
+            isVoted={isVoted}
+            canVote={canVote(poster)}
+            toggleVote={() => toggleVote(poster, !isVoted)}
+            style={{ position: 'relative', marginLeft: 'auto' }}
+          />
+          }
         </div>
         <h1>
           <b>{title}</b>
