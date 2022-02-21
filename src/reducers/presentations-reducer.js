@@ -42,7 +42,7 @@ const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, act
       // pre filter by user access levels
       let filteredEvents = filterEventsByAccessLevels(allVoteablePresentations, currentUserProfile);
       // suffle
-      //filteredEvents = filteredEvents.map((a) => [Math.random(),a]).sort((a,b) => a[0]-b[0]).map((a) => a[1]);
+      filteredEvents = filteredEvents.map((a) => [Math.random(),a]).sort((a,b) => a[0]-b[0]).map((a) => a[1]);
       return { ...state,
         ssrPresentations: filteredEvents,
         allPresentations: filteredEvents,
