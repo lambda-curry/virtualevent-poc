@@ -227,6 +227,10 @@ export const castPresentationVote = (presentation) => async (dispatch, getState)
   const errorHandler = (err) => (dispatch, state) => {
     const { status, response: { text } } = err;
     if (status === 412 && text.includes('Max. allowed votes')) {
+      // need to revert button state
+      // first 'confirms' vote
+      dispatch(createAction(TOGGLE_PRESENTATION_VOTE)({ presentation, isVoted: true }));
+      // inmediately removes vote
       dispatch(createAction(TOGGLE_PRESENTATION_VOTE)({ presentation, isVoted: false }));
     } else {
       console.log('castPresentationVote error code: ', status, text);
@@ -234,12 +238,11 @@ export const castPresentationVote = (presentation) => async (dispatch, getState)
   };
 
   return postRequest(
-    createAction(TOGGLE_PRESENTATION_VOTE),
+    null,
     createAction(CAST_PRESENTATION_VOTE_RESPONSE),
     `${getEnvVariable('SUMMIT_API_BASE_URL')}/api/v1/summits/${getEnvVariable(SUMMIT_ID)}/presentations/${presentation.id}/attendee-votes`,
     {},
-    errorHandler,
-    { presentation, isVoted: true }
+    errorHandler
   )(params)(dispatch).catch(errorHandler);
 };
 
@@ -255,16 +258,21 @@ export const uncastPresentationVote = (presentation) => async (dispatch, getStat
 
   const errorHandler = (err) => (dispatch, state) => {
     const { status, response: { text } } = err;
-    console.log('uncastPresentationVote error code: ', status, text);
+    if (status === 412 && text.includes('Vote not found')) {
+      // tried removing a vote not longer present in api
+      // confirming removal
+      dispatch(createAction(TOGGLE_PRESENTATION_VOTE)({ presentation, isVoted: false }));
+    } else {
+      console.log('uncastPresentationVote error code: ', status, text);
+    }
   };
 
   return deleteRequest(
-    createAction(TOGGLE_PRESENTATION_VOTE),
-    createAction(UNCAST_PRESENTATION_VOTE_RESPONSE), // response needs no handling
+    null,
+    createAction(UNCAST_PRESENTATION_VOTE_RESPONSE)({ presentation }),
     `${getEnvVariable('SUMMIT_API_BASE_URL')}/api/v1/summits/${getEnvVariable(SUMMIT_ID)}/presentations/${presentation.id}/attendee-votes`,
     {},
-    errorHandler,
-    { presentation, isVoted: false }
+    errorHandler
   )(params)(dispatch).catch(errorHandler);
 };
 
