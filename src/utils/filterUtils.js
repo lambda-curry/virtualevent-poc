@@ -14,8 +14,11 @@ export const syncFilters = (newFilters, currentFilters) => {
 }
 
 export const filterByTrackGroup = (originalEvents, currentTrackGroupId = 0) => {
+    console.log(`filterByTrackGroup currentTrackGroupId ${currentTrackGroupId} originalEvents ${originalEvents.length}`);
     if (currentTrackGroupId === 0) return originalEvents;
-    return originalEvents.filter((ev) => {
+    let res =  originalEvents.filter((ev) => {
         return ev?.track?.track_groups.includes(currentTrackGroupId);
     });
+    console.log(`filterByTrackGroup currentTrackGroupId ${currentTrackGroupId} originalEvents ${originalEvents.length} filtered ${res.length}`);
+    return res;
 }
