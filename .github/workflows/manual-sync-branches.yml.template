@@ -1,0 +1,23 @@
+name: Manually Sync Branches 
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: Target Branch
+        default: ''
+        required: true
+
+jobs:
+  sync-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Merge main -> {{github.event.inputs.branch}}
+        uses: devmasx/merge-branch@v1.3.1
+        if: github.event.inputs.branch != ''
+        with:
+          type: now
+          from_branch: main
+          target_branch: ${{github.event.inputs.branch}}
+          github_token: ${{ github.token }}
