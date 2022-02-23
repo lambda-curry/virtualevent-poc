@@ -1,14 +1,14 @@
 {
   "items": [
     {
-      "title": "LOBBY",
-      "link": "/a/",
-      "display": false,
-      "requiresAuth": true,
+      "requiresAuth": false,
+      "showOnlyAtShowTime": false,
       "pageRestriction": [
         "ANY"
       ],
-      "showOnlyAtShowTime": true
+      "title": "HOME",
+      "link": "/",
+      "display": true
     },
     {
       "title": "SCHEDULE",
@@ -31,13 +31,23 @@
       "showOnlyAtShowTime": true
     },
     {
-      "requiresAuth": false,
-      "showOnlyAtShowTime": false,
+      "requiresAuth": true,
+      "showOnlyAtShowTime": true,
       "pageRestriction": [
         "ANY"
       ],
-      "title": "HOME",
-      "link": "/",
+      "title": "TECHPULSE POSTERS",
+      "link": "/a/posters/33",
+      "display": true
+    },
+    {
+      "requiresAuth": true,
+      "showOnlyAtShowTime": true,
+      "pageRestriction": [
+        "ANY"
+      ],
+      "title": "PE-CON POSTERS",
+      "link": "/a/posters/34",
       "display": true
     },
     {
