@@ -242,7 +242,7 @@ const PosterDetailPage = ({
         <AttendanceTrackerComponent
           key={`att-tracker-${poster.id}`}
           sourceId={poster.id}
-          sourceName="EVENT"
+          sourceName="POSTER"
         />
       )}
       <PosterDetailPageTemplate
