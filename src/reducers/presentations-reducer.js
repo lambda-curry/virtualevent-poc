@@ -83,7 +83,8 @@ const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, act
       return { ...state, detailedPresentation: presentation };
     }
     case GET_RECOMMENDED_PRESENTATIONS: {
-      const recommended = [...payload.response.data.slice(0,-2)];
+      let recommended = [...payload.response.data.filter(e => e.id !== state.detailedPresentation.id)];
+      recommended = [...recommended.slice(0, recommended.length === 5 ? -2 : -1)];
       return { ...state, loading: false, recommendedPresentations: recommended };
     }
     case START_LOADING:
