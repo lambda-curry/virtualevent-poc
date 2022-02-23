@@ -10,6 +10,7 @@ import styles from '../styles/profile.module.scss'
 const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfile, changePicture, changeProfile, fromFullProfile }) => {
 
   const editorRef = useRef(null);
+  const pictureIconRef = useRef(null)
 
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -64,6 +65,14 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
               userProfile.linkedin,
               userProfile.twitter_name
   ]);
+
+  useEffect(() => {
+    if (pictureIconRef) {
+      window.setTimeout(function () {
+        pictureIconRef.current.focus();
+      }, 0);
+    }
+  }, [pictureIconRef])
 
   const handleNewImage = (e) => {
     setImage(e.target.files[0]);
@@ -136,7 +145,7 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
       <div className={`${styles.modal} ${showProfile ? styles.isActive : ''}`}>
         <div className={`${styles.modalCard} ${styles.profilePopup}`}>
           <AjaxLoader relative={true} color={'#ffffff'} show={idpLoading} size={120} />
-          <header className={`${styles.modalCardHead}`}>
+          <header className={`${styles.modalCardHead}`} tabIndex='-1' ref={pictureIconRef}>
             <p className={`${styles.modalCardTitle}`}>Edit profile</p>
             <button className="link" onClick={() => closePopup()}>
               <i className={`${styles.closeIcon} fa fa-times icon`} />
