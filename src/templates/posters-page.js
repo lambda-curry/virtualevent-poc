@@ -23,6 +23,7 @@ import {
 import { filterByTrackGroup } from '../utils/filterUtils';
 
 import styles from '../styles/posters-page.module.scss';
+import AttendanceTrackerComponent from "../components/AttendanceTrackerComponent";
 
 const PostersPage = ({
                       location,
@@ -77,6 +78,7 @@ const PostersPage = ({
 
   return (
     <Layout location={location}>
+      <AttendanceTrackerComponent sourceName="POSTERS"/>
       { pageSettings &&
       <PageHeader
         title={pageSettings.title}
