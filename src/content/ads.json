@@ -5,20 +5,13 @@
       "columnAds": [
         {
           "image": {
-            "file" : "/img/ytw22-lobby-expohall-button.png",
-            "alt"  : ""
+            "file": "/img/ytw22-lobby-expohall-button.png",
+            "alt": ""
           },
           "button": {
             "link": "/a/sponsors"
           },
           "column": "left"
-        },
-        {
-          "image": {
-            "file" : "/img/ytw22-lobby-techpulseposterlink.png",
-            "alt" : ""
-          },
-          "column": "right"
         }
       ]
     }
