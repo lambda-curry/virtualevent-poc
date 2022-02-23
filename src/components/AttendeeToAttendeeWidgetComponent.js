@@ -5,6 +5,7 @@ import { getAccessToken } from "openstack-uicore-foundation/lib/methods";
 import {
   AttendeeToAttendeeContainer,
   permissions,
+  scopes,
   Tracker,
 } from "attendee-to-attendee-widget";
 import {
@@ -153,6 +154,7 @@ export const AttendeesWidget = ({ user, event }) => {
     },
     summitId: parseInt(getEnvVariable(SUMMIT_ID)),
     height: 400,
+    defaultScope: scopes.PAGE,  //Default attendees filter scope (scopes.PAGE | scopes.SHOW)
     ...chatProps,
     ...sbAuthProps,
   };
