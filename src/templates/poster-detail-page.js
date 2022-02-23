@@ -107,7 +107,7 @@ export const PosterDetailPageTemplate = class extends React.Component {
     }
 
     // authz ( todo : refactor WithBadgeRoute to be more generic)
-    const hasBadgeForEvent = isAuthorized || (poster.id && user && isAuthorizedBadge(poster, user.summit_tickets));
+    const hasBadgeForEvent = isAuthorized || (poster.id && user?.userProfile && isAuthorizedBadge(poster, user?.userProfile?.summit_tickets));
     const userIsAuthz = hasTicket || isAuthorized;
 
     if (!userIsAuthz || !hasBadgeForEvent) {
@@ -305,7 +305,7 @@ const mapStateToProps = ({ summitState, userState, clockState, presentationsStat
   nowUtc: clockState.nowUtc,
   allPosters: presentationsState.voteablePresentations.allPresentations,
   recommendedPosters: presentationsState.voteablePresentations.recommendedPresentations,
-  votes: userState.attendee.presentation_votes,
+  votes: userState.attendee?.presentation_votes ?? [],
 });
 
 export default connect(mapStateToProps, {
