@@ -50,7 +50,6 @@
     "jsdom": "^16.2.2",
     "lite-schedule-widget": "^1.0.14",
     "live-event-widget": "^2.0.15",
-    "localforage": "^1.10.0",
     "lodash": "^4.17.19",
     "markdown-it": "^12.0.0",
     "moment": "^2.27.0",
