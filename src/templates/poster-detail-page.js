@@ -45,7 +45,7 @@ export const PosterDetailPageTemplate = class extends React.Component {
   componentDidUpdate(prevProps, prevState, snapshot) {
     const { presentationId, poster } = this.props;
     const { presentationId: prevPresentationId } = prevProps;
-    if (presentationId !== prevPresentationId || (poster?.id && poster.id !== parseInt(presentationId))) {
+    if (presentationId !== prevPresentationId) {
       this.props.getPresentationById(presentationId);
     }
   }
