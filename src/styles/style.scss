@@ -76,7 +76,7 @@ html:not([data-whatintent=keyboard]) .focus {
 /*
  Show Skip to content link when focused
  */
-a[aria-label="Skip to content"]:focus {
+.skip-to-content:focus {
   width: auto;
   height: auto;
   padding: 0 5px;

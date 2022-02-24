@@ -73,7 +73,7 @@ const TemplateWrapper = ({ children, location, marketing, summit, favicons }) =>
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
       </Helmet>
-      <a aria-label="Skip to content" className="sr-only" href="#content-wrapper">Skip to content</a>
+      <a className="sr-only skip-to-content" href="#content-wrapper">Skip to content</a>
       <Header location={location} />
       <ClockComponent summit={summit} display={isFocus} />
       <div id="content-wrapper">{children}</div>
