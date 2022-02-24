@@ -27,6 +27,7 @@ import styles from '../styles/posters-page.module.scss';
 const PostersPage = ({
   location,
   trackGroupId,
+
   pagesSettings,
   setInitialDataSet,
   getAllVoteablePresentations,
@@ -40,7 +41,7 @@ const PostersPage = ({
   allBuildTimePosters,
   filters,
   updateFilter,
-  colorSettings
+  colorSettings,
 }) => {
 
   const [showFilters, setShowfilters] = useState(false);
@@ -85,7 +86,6 @@ const PostersPage = ({
       case 'my_votes': {
         let votedPosters = [...postersByTrackGroup];
         votedPosters = votedPosters.filter(poster => votes.some(e => e.presentation_id === poster.id));
-        console.log('voted', votedPosters)
         setPostersByTrackGroup(votedPosters);
         break;
       }
@@ -132,11 +132,13 @@ const PostersPage = ({
           <div className={styles.filterWrapper}>
             <ScheduleFilters {...filterProps} />
           </div>
+          <FilterButton open={showFilters} onClick={() => setShowfilters(!showFilters)} />
         </div>
       }
     </Layout>
   );
 };
+
 
 const mapStateToProps = ({ settingState, presentationsState, userState, summitState }) => ({
   pagesSettings: [...settingState.posterPagesSettings.posterPages],
