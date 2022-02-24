@@ -5,7 +5,9 @@ import Layout from '../components/Layout';
 import PageHeader from '../components/page-header';
 import PosterGrid from '../components/poster-grid';
 import ScheduleFilters from '../components/ScheduleFilters';
+import PosterHeaderFilter from '../components/poster-header-filter';
 import FilterButton from '../components/FilterButton';
+import AttendanceTrackerComponent from "../components/AttendanceTrackerComponent";
 
 import {
   setInitialDataSet,
@@ -21,26 +23,25 @@ import {
 import { filterByTrackGroup } from '../utils/filterUtils';
 
 import styles from '../styles/posters-page.module.scss';
-import AttendanceTrackerComponent from "../components/AttendanceTrackerComponent";
 
 const PostersPage = ({
-                      location,
-                      trackGroupId,
-                      pagesSettings,
-                      setInitialDataSet,
-                      getAllVoteablePresentations,
-                      posters,
-                      castPresentationVote,
-                      uncastPresentationVote,
-                      votingPeriods,
-                      attendee,
-                      votes,
-                      summit,
-                      allBuildTimePosters,
-                      filters,
-                      updateFilter,
-                      colorSettings
-                    }) => {
+                       location,
+                       trackGroupId,
+                       pagesSettings,
+                       setInitialDataSet,
+                       getAllVoteablePresentations,
+                       posters,
+                       castPresentationVote,
+                       uncastPresentationVote,
+                       votingPeriods,
+                       attendee,
+                       votes,
+                       summit,
+                       allBuildTimePosters,
+                       filters,
+                       updateFilter,
+                       colorSettings,
+}) => {
 
   const [showFilters, setShowfilters] = useState(false);
   const [postersByTrackGroup, setPostersByTrackGroup] = useState(posters);
@@ -63,6 +64,32 @@ const PostersPage = ({
     isVoted ? castPresentationVote(presentation) : uncastPresentationVote(presentation);
   };
 
+  const headerFilter = (value) => {
+    switch (value) {
+      case 'page_random': {
+        let randomPosters = [...postersByTrackGroup];
+        for (let i = randomPosters.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [randomPosters[i], randomPosters[j]] = [randomPosters[j], randomPosters[i]];
+        }
+        return setPostersByTrackGroup(randomPosters);
+      }
+      case 'custom_order': {
+        let sortedPosters = [...postersByTrackGroup];
+        sortedPosters = sortedPosters.sort((a, b) => a.custom_order - b.custom_order);
+        return setPostersByTrackGroup(sortedPosters);
+      }
+      case 'my_votes': {
+        let votedPosters = [...postersByTrackGroup];
+        votedPosters = votedPosters.filter(poster => votes.some(e => e.presentation_id === poster.id));
+        return setPostersByTrackGroup(votedPosters);
+      }
+      default:
+        setPostersByTrackGroup(filterByTrackGroup(posters, parseInt(trackGroupId)));
+        break;
+    }
+  }
+
   const filterProps = {
     summit,
     events: allBuildTimePostersByTrackGroup,
@@ -77,31 +104,32 @@ const PostersPage = ({
 
   return (
     <Layout location={location}>
-      <AttendanceTrackerComponent sourceName="POSTERS"/>
-      { pageSettings &&
-      <PageHeader
-        title={pageSettings.title}
-        subtitle={pageSettings.subtitle}
-        backgroundImage={pageSettings.image}
-      />
+      <AttendanceTrackerComponent sourceName="POSTERS" />
+      {pageSettings &&
+        <PageHeader
+          title={pageSettings.title}
+          subtitle={pageSettings.subtitle}
+          backgroundImage={pageSettings.image}
+        />
       }
-      { postersByTrackGroup &&
-      <div className={`${styles.wrapper} ${showFilters ? styles.showFilters : ''}`}>
-        <div className={styles.postersWrapper}>
-          <PosterGrid
-            posters={postersByTrackGroup}
-            showDetailPage={(posterId) => navigate(`/a/poster/${posterId}`)}
-            votingPeriods={votingPeriods}
-            votingAllowed={!!attendee}
-            votes={votes}
-            toggleVote={toggleVote}
-          />
+      {postersByTrackGroup &&
+        <div className={`${styles.wrapper} ${showFilters ? styles.showFilters : ''}`}>
+          <div className={styles.postersWrapper}>
+            <PosterHeaderFilter changeHeaderFilter={(value) => headerFilter(value)} />
+            <PosterGrid
+                posters={postersByTrackGroup}
+                showDetailPage={(posterId) => navigate(`/a/poster/${posterId}`)}
+                votingPeriods={votingPeriods}
+                votingAllowed={!!attendee}
+                votes={votes}
+                toggleVote={toggleVote}
+            />
+          </div>
+          <div className={styles.filterWrapper}>
+            <ScheduleFilters {...filterProps} />
+          </div>
+          <FilterButton open={showFilters} onClick={() => setShowfilters(!showFilters)}/>
         </div>
-        <div className={styles.filterWrapper}>
-          <ScheduleFilters {...filterProps} />
-        </div>
-        <FilterButton open={showFilters} onClick={() => setShowfilters(!showFilters)}/>
-      </div>
       }
     </Layout>
   );
