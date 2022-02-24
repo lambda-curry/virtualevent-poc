@@ -6,7 +6,7 @@ export const PHASES = {
   AFTER: 1,
 };
 
-export const isValidUTC = (timestamp) => (new Date(timestamp)).getTime() > 0;
+export const isValidUTC = (timestamp) => typeof timestamp === 'number';
 
 export const getSummitPhase = function (summit, now) {
   if (!summit) return null;
@@ -42,9 +42,7 @@ export const getVotingPeriodPhase = (votingPeriod, now) => {
   const isValidEndDate = isValidUTC(endDate);
 
   if ((!isValidStartDate && isValidEndDate && endDate > now) ||
-      (!isValidEndDate && isValidStartDate && startDate < now) ||
-      // if no valid start date and end date, seems you can still vote in api, resolving as DURING
-      (!isValidStartDate && !isValidEndDate))
+      (!isValidEndDate && isValidStartDate && startDate < now))
     return PHASES.DURING;
 
   return isValidStartDate && startDate < now && isValidEndDate && endDate > now ? PHASES.DURING :

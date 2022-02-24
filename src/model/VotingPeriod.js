@@ -9,10 +9,8 @@ export const VotingPeriod = (params, now) => {
     endDate: isValidEndDate ? params.endDate : null,
     attendeeVotes: (Number.isInteger(params.attendeeVotes) || params.attendeeVotes === Infinity) && params.attendeeVotes >= 0 ? params.attendeeVotes : null,
     maxAttendeeVotes: (Number.isInteger(params.maxAttendeeVotes) || params.maxAttendeeVotes === Infinity) && params.maxAttendeeVotes >= 0 ? params.maxAttendeeVotes === 0 ? Infinity : params.maxAttendeeVotes : null,
-    phase: // if no valid start date and end date, seems you can still vote in api
-           // removing valid dates check
-           //isValidStartDate && isValidEndDate && isValidUTC(now) ?
-           isValidUTC(now) ?
+    phase: // if no valid start date or end date, seems you can still vote in api
+           (isValidStartDate || isValidEndDate) && isValidUTC(now) ?
            getVotingPeriodPhase({ startDate: params.startDate, endDate: params.endDate }, now) :
            Number.isInteger(params.phase) && (params.phase === PHASES.BEFORE || params.phase === PHASES.DURING || params.phase === PHASES.AFTER) ? params.phase : null,
     get remainingVotes() {
