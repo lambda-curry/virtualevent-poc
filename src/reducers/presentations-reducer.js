@@ -1,17 +1,26 @@
 import { combineReducers } from 'redux';
 import { isString } from 'lodash';
 
+import { VotingPeriod } from '../model/VotingPeriod';
+
 import { START_LOADING, STOP_LOADING, LOGOUT_USER } from 'openstack-uicore-foundation/lib/actions';
 import { RESET_STATE, SYNC_DATA } from "../actions/base-actions";
+
+import {
+  CAST_PRESENTATION_VOTE_REQUEST,
+  UNCAST_PRESENTATION_VOTE_REQUEST,
+  TOGGLE_PRESENTATION_VOTE
+} from '../actions/user-actions';
 
 import {
   SET_INITIAL_DATASET,
   PRESENTATIONS_PAGE_REQUEST,
   PRESENTATIONS_PAGE_RESPONSE,
   VOTEABLE_PRESENTATIONS_UPDATE_FILTER,
-  GET_PRESENTATION_DETAILS, GET_RECOMMENDED_PRESENTATIONS,
+  GET_PRESENTATION_DETAILS,
+  GET_RECOMMENDED_PRESENTATIONS,
   VOTING_PERIOD_ADD,
-  VOTING_PERIOD_PHASE_CHANGE
+  VOTING_PERIOD_PHASE_CHANGE,
 } from '../actions/presentation-actions';
 
 import { filterEventsByAccessLevels } from '../utils/authorizedGroups';
@@ -108,28 +117,46 @@ const votingPeriods = (state = {}, action) => {
     case SYNC_DATA:
       return {};
     case VOTING_PERIOD_ADD: {
-      const { entity: { class_name: className, id: entityId }, votingPeriod } = payload;
+      const { trackGroupId, votingPeriod } = payload;
       return {
         ...state,
-        [className]: {
-          ...state[className],
-          [entityId]: {
-            ...votingPeriod
-          }
+        [trackGroupId]: {
+          ...votingPeriod
         }
       };
     }
     case VOTING_PERIOD_PHASE_CHANGE: {
-      const { className, entityId, phase } = payload;
+      const { trackGroupId, phase } = payload;
       return {
         ...state,
-        [className]: {
-          ...state[className],
-          [entityId]: {
-            ...state[className][entityId], 
-            phase
-          }
+        [trackGroupId]: {
+          ...state[trackGroupId], 
+          phase
         }
+      };
+    }
+    case CAST_PRESENTATION_VOTE_REQUEST:
+    case UNCAST_PRESENTATION_VOTE_REQUEST:
+    case TOGGLE_PRESENTATION_VOTE: {
+      const { presentation: { track: { track_groups: trackGroups } }, isVoted, reverting } = payload;
+      const updatedTrackGroupVotingPeriods = {};
+      trackGroups.forEach(trackGroupId => {
+        const votingPeriod = state[trackGroupId];
+        if (votingPeriod) {
+          const updatedVotedPeriod = VotingPeriod({ ...votingPeriod });
+          if (type === CAST_PRESENTATION_VOTE_REQUEST) {
+            updatedVotedPeriod.addVotes = 1;
+          } else if (type === UNCAST_PRESENTATION_VOTE_REQUEST ||
+                    // case below is when we are reverting a vote because a vote was casted above limit allowance
+                    (type === TOGGLE_PRESENTATION_VOTE && (isVoted !== reverting !== undefined) && (!isVoted && reverting))) {
+            updatedVotedPeriod.substractVotes = 1;
+          }
+          updatedTrackGroupVotingPeriods[trackGroupId] = { ...updatedVotedPeriod };
+        }
+      });
+      return {
+        ...state,
+        ...updatedTrackGroupVotingPeriods
       };
     }
     default:

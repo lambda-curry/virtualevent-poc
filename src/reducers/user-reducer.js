@@ -1,6 +1,6 @@
 import { reduceReducers } from '../utils/reducer-utils';
 
-import { LOGOUT_USER } from "openstack-uicore-foundation/lib/actions";
+import { LOGOUT_USER } from 'openstack-uicore-foundation/lib/actions';
 
 import {
   GET_DISQUS_SSO,
@@ -133,4 +133,4 @@ const attendeeReducer = (state, action) => {
   }
 };
 
-export default reduceReducers(attendeeReducer, userReducer);
+export default reduceReducers(userReducer, attendeeReducer);

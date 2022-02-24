@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { navigate } from "gatsby";
 import Layout from '../components/Layout';
@@ -17,7 +16,6 @@ import {
 import {
   castPresentationVote,
   uncastPresentationVote
-
 } from '../actions/user-actions';
 
 import { filterByTrackGroup } from '../utils/filterUtils';
@@ -32,7 +30,6 @@ const PostersPage = ({
                       setInitialDataSet,
                       getAllVoteablePresentations,
                       posters,
-                      allPosters,
                       castPresentationVote,
                       uncastPresentationVote,
                       votingPeriods,
@@ -92,7 +89,6 @@ const PostersPage = ({
       <div className={`${styles.wrapper} ${showFilters ? styles.showFilters : ''}`}>
         <div className={styles.postersWrapper}>
           <PosterGrid
-            allPosters={allPosters}
             posters={postersByTrackGroup}
             showDetailPage={(posterId) => navigate(`/a/poster/${posterId}`)}
             votingPeriods={votingPeriods}
@@ -111,12 +107,9 @@ const PostersPage = ({
   );
 };
 
-PostersPage.propTypes = {};
-
 const mapStateToProps = ({ settingState, presentationsState, userState, summitState }) => ({
   pagesSettings: [...settingState.posterPagesSettings.posterPages],
   posters: presentationsState.voteablePresentations.filteredPresentations,
-  allPosters: presentationsState.voteablePresentations.allPresentations,
   allBuildTimePosters: presentationsState.voteablePresentations.ssrPresentations,
   votingPeriods: presentationsState.votingPeriods,
   attendee: userState.attendee,
@@ -131,5 +124,5 @@ export default connect(mapStateToProps, {
   getAllVoteablePresentations,
   castPresentationVote,
   uncastPresentationVote,
-  updateFilter,
+  updateFilter
 })(PostersPage);

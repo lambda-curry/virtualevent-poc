@@ -1,6 +1,4 @@
-export const TRACK_GROUP_CLASS_NAME = 'PresentationCategoryGroup';
-
-export const calculateVotesPerTrackGroup = (presentations, votes) => {
+export const mapVotesPerTrackGroup = (votes, presentations) => {
   const votesPerTrackGroup = {};
   votes.forEach(v => {
     const presentation = presentations.find(p => p.id === v.presentation_id);
@@ -12,13 +10,4 @@ export const calculateVotesPerTrackGroup = (presentations, votes) => {
       });
   });
   return votesPerTrackGroup;
-};
-
-export const calculateRemaingVotes = (votingPeriod = {}, votesPerTrackGroup) => {
-  const remainingVotes = {};
-  Object.entries(votingPeriod).forEach(entry => {
-    const [trackGroupId, votingPeriod] = entry;
-    remainingVotes[trackGroupId] = votingPeriod.maxAttendeeVotes === 0 ? Infinity : votingPeriod.maxAttendeeVotes - (votesPerTrackGroup[trackGroupId] ?? 0);
-  });
-  return remainingVotes;
 };

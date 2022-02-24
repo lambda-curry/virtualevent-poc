@@ -11,33 +11,21 @@ import { PHASES } from '../utils/phasesUtils';
 
 import styles from '../styles/poster-components.module.scss'
 
-const PosterDescription = ({ poster: { speakers, title, description, custom_order, track }, allPosters, poster, votingPeriods, votes, isVoted, toggleVote, votingAllowed }) => {
-  
-  const [votesPerTrackGroup, setVotesPerTrackGroup] = useState({});
-  const [remainingVotes, setRemainingVotes] = useState({});
+const PosterDescription = ({ poster: { speakers, title, description, custom_order, track }, poster, votingPeriods, votes, isVoted, toggleVote, votingAllowed }) => {
 
-  useEffect(() => {
-    setVotesPerTrackGroup(calculateVotesPerTrackGroup(allPosters, votes));
-  }, [allPosters, votes]);
-
-  useEffect(() => {
-    if (votingPeriods && TRACK_GROUP_CLASS_NAME in votingPeriods)
-      setRemainingVotes(calculateRemaingVotes(votingPeriods[TRACK_GROUP_CLASS_NAME], votesPerTrackGroup));
-  }, [votingPeriods, votesPerTrackGroup]);
+  const isDuringVotingPhase = useCallback((poster) => {
+    const results = poster.track?.track_groups?.map(trackGroupId =>
+      votingPeriods[trackGroupId]?.phase === PHASES.DURING
+    );
+    return results && results.length ? results.every(r => !!r) : false;
+  }, [votingPeriods]);
 
   const canVote = useCallback((poster) => {
-    let result = false;
-    if (!(TRACK_GROUP_CLASS_NAME in votingPeriods)) return result;
-    if (poster && poster.track && poster.track.track_groups) {
-      poster.track.track_groups.forEach(trackGroupId => {
-        if (trackGroupId in votingPeriods[TRACK_GROUP_CLASS_NAME]) {
-          const votingPeriod = votingPeriods[TRACK_GROUP_CLASS_NAME][trackGroupId];
-          result = votingPeriod.phase === PHASES.DURING && remainingVotes[trackGroupId] > 0;
-        }
-      });
-    }
-    return result;
-  }, [remainingVotes]);
+    const results = poster.track?.track_groups?.map(trackGroupId =>
+      votingPeriods[trackGroupId]?.remainingVotes > 0
+    );
+    return results && results.length ? results.every(r => !!r) : false;
+  }, [votingPeriods]);
 
   const formatSpeakers = (speakers) => {
     let formatedSpeakers = '';
@@ -61,7 +49,7 @@ const PosterDescription = ({ poster: { speakers, title, description, custom_orde
           <span className={styles.order}>
             {custom_order ? `#${custom_order}` : <>&nbsp;</>}
           </span>
-          { votingAllowed &&
+          { votingAllowed && isDuringVotingPhase(poster) &&
           <VoteButton
             isVoted={isVoted}
             canVote={canVote(poster)}

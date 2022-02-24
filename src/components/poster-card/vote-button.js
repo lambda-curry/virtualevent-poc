@@ -38,7 +38,7 @@ const VoteButton = ({ isVoted, canVote, toggleVote, style }) => {
   useEffect(() => {
     if (isVoted !== vote) {
       setVote(isVoted);
-    } else if (canVote) {
+    } else {
       configureButton();
     }
   }, [isVoted]);

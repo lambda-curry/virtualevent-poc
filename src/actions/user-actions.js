@@ -38,7 +38,9 @@ export const ADD_TO_SCHEDULE                   = 'ADD_TO_SCHEDULE';
 export const REMOVE_FROM_SCHEDULE              = 'REMOVE_FROM_SCHEDULE';
 export const SCHEDULE_SYNC_LINK_RECEIVED       = 'SCHEDULE_SYNC_LINK_RECEIVED';
 export const SET_USER_ORDER                    = 'SET_USER_ORDER';
+export const CAST_PRESENTATION_VOTE_REQUEST   = 'CAST_PRESENTATION_VOTE_REQUEST';
 export const CAST_PRESENTATION_VOTE_RESPONSE   = 'CAST_PRESENTATION_VOTE_RESPONSE';
+export const UNCAST_PRESENTATION_VOTE_REQUEST = 'UNCAST_PRESENTATION_VOTE_REQUEST';
 export const UNCAST_PRESENTATION_VOTE_RESPONSE = 'UNCAST_PRESENTATION_VOTE_RESPONSE';
 export const TOGGLE_PRESENTATION_VOTE          = 'TOGGLE_PRESENTATION_VOTE';
 
@@ -235,7 +237,7 @@ export const castPresentationVote = (presentation) => async (dispatch, getState)
         // first 'confirm' as local vote
         dispatch(createAction(TOGGLE_PRESENTATION_VOTE)({ presentation, isVoted: true }));
         // inmediately remove vote
-        dispatch(createAction(TOGGLE_PRESENTATION_VOTE)({ presentation, isVoted: false }));
+        dispatch(createAction(TOGGLE_PRESENTATION_VOTE)({ presentation, isVoted: false, reverting: true }));
       }
     } else {
       console.log('castPresentationVote error code: ', status, text);
@@ -243,11 +245,12 @@ export const castPresentationVote = (presentation) => async (dispatch, getState)
   };
 
   return postRequest(
-    null,
+    createAction(CAST_PRESENTATION_VOTE_REQUEST),
     createAction(CAST_PRESENTATION_VOTE_RESPONSE),
     `${getEnvVariable('SUMMIT_API_BASE_URL')}/api/v1/summits/${getEnvVariable(SUMMIT_ID)}/presentations/${presentation.id}/attendee-votes`,
     {},
-    errorHandler
+    errorHandler,
+    { presentation }
   )(params)(dispatch).catch(errorHandler);
 };
 
@@ -273,11 +276,12 @@ export const uncastPresentationVote = (presentation) => async (dispatch, getStat
   };
 
   return deleteRequest(
-    null,
+    createAction(UNCAST_PRESENTATION_VOTE_REQUEST),
     createAction(UNCAST_PRESENTATION_VOTE_RESPONSE)({ presentation }),
     `${getEnvVariable('SUMMIT_API_BASE_URL')}/api/v1/summits/${getEnvVariable(SUMMIT_ID)}/presentations/${presentation.id}/attendee-votes`,
     {},
-    errorHandler
+    errorHandler,
+    { presentation }
   )(params)(dispatch).catch(errorHandler);
 };
 

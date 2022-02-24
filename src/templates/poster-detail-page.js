@@ -173,7 +173,6 @@ export const PosterDetailPageTemplate = class extends React.Component {
             <div className="column is-three-quarters is-full-mobile">
               <div className="px-5 py-0">
                 <PosterDescription
-                  allPosters={allPosters}
                   poster={poster}
                   votingAllowed={!!attendee}
                   votingPeriods={votingPeriods}
@@ -186,7 +185,6 @@ export const PosterDetailPageTemplate = class extends React.Component {
                 <PosterNavigation allPosters={allPosters} poster={poster} />
                 <div className="mt-5 mb-5 mx-0"><b>More like this</b></div>
                 <PosterGrid
-                  allPosters={allPosters}
                   posters={recommendedPosters}
                   votingAllowed={!!attendee}
                   votingPeriods={votingPeriods}
