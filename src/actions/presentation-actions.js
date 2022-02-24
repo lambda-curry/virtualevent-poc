@@ -191,12 +191,13 @@ export const updateVotingPeriodsPhase = () => (dispatch, getState) => {
 };
 
 export const createVotingPeriods = () => (dispatch, getState) => {
-  const { clockState: { nowUtc },
+
+   const { clockState: { nowUtc },
           summitState: { summit: { track_groups: trackGroups } },
-          userState: { attendee: { presentation_votes: presentationVotes } },
+          userState: { attendee },
           presentationsState: { voteablePresentations: { ssrPresentations: allBuildTimePresentations } } } = getState();
 
-  const votesPerTrackGroup = mapVotesPerTrackGroup(presentationVotes, allBuildTimePresentations);
+  const votesPerTrackGroup = mapVotesPerTrackGroup(attendee?.presentationVotes ?? [], allBuildTimePresentations);
 
   trackGroups.forEach(trackGroup => {
     const { max_attendee_votes: maxAttendeeVotes } = trackGroup;
