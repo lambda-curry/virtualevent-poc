@@ -25,23 +25,22 @@ import { filterByTrackGroup } from '../utils/filterUtils';
 import styles from '../styles/posters-page.module.scss';
 
 const PostersPage = ({
-  location,
-  trackGroupId,
-
-  pagesSettings,
-  setInitialDataSet,
-  getAllVoteablePresentations,
-  posters,
-  castPresentationVote,
-  uncastPresentationVote,
-  votingPeriods,
-  attendee,
-  votes,
-  summit,
-  allBuildTimePosters,
-  filters,
-  updateFilter,
-  colorSettings,
+                       location,
+                       trackGroupId,
+                       pagesSettings,
+                       setInitialDataSet,
+                       getAllVoteablePresentations,
+                       posters,
+                       castPresentationVote,
+                       uncastPresentationVote,
+                       votingPeriods,
+                       attendee,
+                       votes,
+                       summit,
+                       allBuildTimePosters,
+                       filters,
+                       updateFilter,
+                       colorSettings,
 }) => {
 
   const [showFilters, setShowfilters] = useState(false);
@@ -73,20 +72,17 @@ const PostersPage = ({
           const j = Math.floor(Math.random() * (i + 1));
           [randomPosters[i], randomPosters[j]] = [randomPosters[j], randomPosters[i]];
         }
-        setPostersByTrackGroup(randomPosters);
-        break;
+        return setPostersByTrackGroup(randomPosters);
       }
       case 'custom_order': {
         let sortedPosters = [...postersByTrackGroup];
         sortedPosters = sortedPosters.sort((a, b) => a.custom_order - b.custom_order);
-        setPostersByTrackGroup(sortedPosters);
-        break;
+        return setPostersByTrackGroup(sortedPosters);
       }
       case 'my_votes': {
         let votedPosters = [...postersByTrackGroup];
         votedPosters = votedPosters.filter(poster => votes.some(e => e.presentation_id === poster.id));
-        setPostersByTrackGroup(votedPosters);
-        break;
+        return setPostersByTrackGroup(votedPosters);
       }
       default:
         setPostersByTrackGroup(filterByTrackGroup(posters, parseInt(trackGroupId)));
@@ -121,24 +117,23 @@ const PostersPage = ({
           <div className={styles.postersWrapper}>
             <PosterHeaderFilter changeHeaderFilter={(value) => headerFilter(value)} />
             <PosterGrid
-              posters={postersByTrackGroup}
-              showDetailPage={(posterId) => navigate(`/a/poster/${posterId}`)}
-              votingPeriods={votingPeriods}
-              votingAllowed={!!attendee}
-              votes={votes}
-              toggleVote={toggleVote}
+                posters={postersByTrackGroup}
+                showDetailPage={(posterId) => navigate(`/a/poster/${posterId}`)}
+                votingPeriods={votingPeriods}
+                votingAllowed={!!attendee}
+                votes={votes}
+                toggleVote={toggleVote}
             />
           </div>
           <div className={styles.filterWrapper}>
             <ScheduleFilters {...filterProps} />
           </div>
-          <FilterButton open={showFilters} onClick={() => setShowfilters(!showFilters)} />
+          <FilterButton open={showFilters} onClick={() => setShowfilters(!showFilters)}/>
         </div>
       }
     </Layout>
   );
 };
-
 
 const mapStateToProps = ({ settingState, presentationsState, userState, summitState }) => ({
   pagesSettings: [...settingState.posterPagesSettings.posterPages],

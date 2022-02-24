@@ -25,10 +25,10 @@ const PosterHeaderFilter = ({ changeHeaderFilter }) => {
         <i className='fa fa-heart-o'/>
         My votes
       </button>
-      <button>
+      {/* <button>
         <i className='fa fa-share' />
         Share
-      </button>
+      </button> */}
       <div className={styles.dropdown}>
         <span onClick={() => setDropdownOpen(!dropdownOpen)}>
           Order by {dropdownOption.label}
