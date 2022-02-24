@@ -1,4 +1,6 @@
-import { LOGOUT_USER } from "openstack-uicore-foundation/lib/actions";
+import { reduceReducers } from '../utils/reducer-utils';
+
+import { LOGOUT_USER } from 'openstack-uicore-foundation/lib/actions';
 
 import {
   GET_DISQUS_SSO,
@@ -96,24 +98,26 @@ const attendeeReducer = (state, action) => {
       return { ...state, attendee: ticket?.owner ?? null };
     }
     case CAST_PRESENTATION_VOTE_RESPONSE: {
-      const { attendee} = state;
-      if(!attendee) return state;
-      let presentation_votes = attendee;
+      const { attendee } = state;
+      if (!attendee) return state;
+      const { presentation_votes } = attendee;
       const { response: vote } = payload;
       // remove 'local vote' vote before adding real vote
       const filteredVotes = presentation_votes.filter(v => v.presentation_id !== vote.presentation_id);
       return { ...state, attendee: { ...state.attendee, presentation_votes: [...filteredVotes, vote] } };
     }
     case UNCAST_PRESENTATION_VOTE_RESPONSE: {
-      const { attendee: { presentation_votes }} = state;
+      const { attendee } = state;
+      if (!attendee) return state;
+      const { presentation_votes } = attendee;
       const { presentation } = payload;
       const newVotes = [...presentation_votes.filter(v => v.presentation_id !== presentation.id)];
       return { ...state, attendee: { ...state.attendee, presentation_votes: newVotes } };
     }
     case TOGGLE_PRESENTATION_VOTE: {
-      const { attendee} = state;
-      if(!attendee) return state;
-      let presentation_votes = attendee;
+      const { attendee } = state;
+      if (!attendee) return state;
+      const { presentation_votes } = attendee;
       const { presentation, isVoted } = payload;
       let newVotes;
       if (isVoted) {
@@ -129,7 +133,4 @@ const attendeeReducer = (state, action) => {
   }
 };
 
-const reduceReducers = (...reducers) => (state, action) =>
-    reducers.reduce((acc, r) => r(acc, action), state);
-
-export default reduceReducers(attendeeReducer, userReducer);
+export default reduceReducers(userReducer, attendeeReducer);

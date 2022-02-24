@@ -8,9 +8,12 @@ import {
 
 import { customErrorHandler } from '../utils/customErrorHandler';
 
-import { getEnvVariable, SUMMIT_API_BASE_URL, SUMMIT_ID } from '../utils/envVariables';
+import { VotingPeriod } from '../model/VotingPeriod';
 
-import { SET_USER_ORDER } from "./user-actions";
+import { PHASES, getSummitPhase, getEventPhase, getVotingPeriodPhase } from '../utils/phasesUtils';
+import { mapVotesPerTrackGroup } from '../utils/voting-utils';
+
+import { getEnvVariable, SUMMIT_API_BASE_URL, SUMMIT_ID } from '../utils/envVariables';
 
 export const SET_INITIAL_DATASET = 'VOTEABLE_PRESENTATIONS_SET_INITIAL_DATASET';
 export const GET_VOTEABLE_PRESENTATIONS = 'GET_VOTEABLE_PRESENTATIONS';
@@ -20,11 +23,13 @@ export const VOTEABLE_PRESENTATIONS_UPDATE_FILTER = 'VOTEABLE_PRESENTATIONS_UPDA
 export const GET_PRESENTATION_DETAILS = 'GET_PRESENTATION_DETAILS';
 export const GET_PRESENTATION_DETAILS_ERROR = 'GET_PRESENTATION_DETAILS_ERROR';
 export const GET_RECOMMENDED_PRESENTATIONS = 'GET_RECOMMENDED_PRESENTATIONS';
-
+export const VOTING_PERIOD_ADD = 'VOTING_PERIOD_ADD';
+export const VOTING_PERIOD_PHASE_CHANGE = 'VOTING_PERIOD_PHASE_CHANGE';
 
 export const setInitialDataSet = () => (dispatch, getState) => Promise.resolve().then(() => {
   const { userState: { userProfile } } = getState();
-  return dispatch(createAction(SET_INITIAL_DATASET)({ userProfile }));
+  dispatch(createAction(SET_INITIAL_DATASET)({ userProfile }));
+  return dispatch(createVotingPeriods());
 });
 
 export const updateFilter = (filter) => (dispatch) => {
@@ -167,4 +172,37 @@ export const getRecommendedPresentations = (trackGroups) => async (dispatch, get
       dispatch(stopLoading());
       return (e);
   });
-}; 
+};
+
+export const updateVotingPeriodsPhase = () => (dispatch, getState) => {
+  const { clockState: { nowUtc },
+          userState: { attendee },
+          presentationsState: { voteablePresentations: { allPresentations }, votingPeriods } } = getState();
+
+  if (Object.keys(votingPeriods).length) {
+    Object.entries(votingPeriods).forEach(entry => {
+      const [trackGroupId, votingPeriod] = entry;
+      const newPhase = getVotingPeriodPhase(votingPeriod, nowUtc);
+      if (newPhase !== votingPeriod.phase) {
+        dispatch(createAction(VOTING_PERIOD_PHASE_CHANGE)({ trackGroupId, phase: newPhase }));
+      }
+    });
+  }
+};
+
+export const createVotingPeriods = () => (dispatch, getState) => {
+  const { clockState: { nowUtc },
+          summitState: { summit: { track_groups: trackGroups } },
+          userState: { attendee: { presentation_votes: presentationVotes } },
+          presentationsState: { voteablePresentations: { ssrPresentations: allBuildTimePresentations } } } = getState();
+
+  const votesPerTrackGroup = mapVotesPerTrackGroup(presentationVotes, allBuildTimePresentations);
+
+  trackGroups.forEach(trackGroup => {
+    const { max_attendee_votes: maxAttendeeVotes } = trackGroup;
+    const { begin_attendee_voting_period_date: startDate, end_attendee_voting_period_date: endDate } = trackGroup;
+    const votingPeriod = VotingPeriod({ startDate, endDate, maxAttendeeVotes }, nowUtc);
+    if (votesPerTrackGroup[trackGroup.id]) votingPeriod.addVotes = votesPerTrackGroup[trackGroup.id];
+    dispatch(createAction(VOTING_PERIOD_ADD)({ trackGroupId: trackGroup.id, votingPeriod }));
+  });
+};
