@@ -48,11 +48,8 @@ const PosterHeaderFilter = ({ changeHeaderFilter }) => {
   );
 };
 
-// PosterHeaderFilter.propTypes = {
-//   poster: PropTypes.object.isRequired,
-//   canVote: PropTypes.bool.isRequired,
-//   isVoted: PropTypes.bool.isRequired,
-//   toggleVote: PropTypes.func.isRequired
-// };
+PosterHeaderFilter.propTypes = {
+  changeHeaderFilter: PropTypes.func.isRequired
+};
 
 export default PosterHeaderFilter;
