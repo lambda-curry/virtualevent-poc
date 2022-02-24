@@ -2,6 +2,8 @@ import { createAction } from 'openstack-uicore-foundation/lib/methods';
 
 import { PHASES, getSummitPhase, getEventPhase } from '../utils/phasesUtils';
 
+import { updateVotingPeriodsPhase } from '../actions/presentation-actions';
+
 export const SUMMIT_PHASE_AFTER = 'SUMMIT_PHASE_AFTER';
 export const SUMMIT_PHASE_DURING = 'SUMMIT_PHASE_DURING';
 export const SUMMIT_PHASE_BEFORE = 'SUMMIT_PHASE_BEFORE';
@@ -16,6 +18,7 @@ export const updateClock = (timestamp) => (dispatch) => {
   dispatch(createAction(UPDATE_CLOCK)({ timestamp }));
   dispatch(updateSummitPhase());
   dispatch(updateEventsPhase());
+  dispatch(updateVotingPeriodsPhase());
 };
 
 export const updateSummitPhase = () => (dispatch, getState) => {

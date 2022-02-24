@@ -59,10 +59,10 @@ const clockReducer = (state = DEFAULT_STATE, action) => {
     case EVENT_PHASE_BEFORE: {
       let eventsPhases = [...new Set(state.events_phases.filter(s => s.id !== payload.id))];
       return { ...state, events_phases: [...eventsPhases, payload] };
-    }    
+    }
     default:
       return state;
   }
 };
 
-export default clockReducer
+export default clockReducer;

@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from 'react';
-import PropTypes from 'prop-types';
+import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import { navigate } from "gatsby";
 import Layout from '../components/Layout';
@@ -17,7 +16,6 @@ import {
 import {
   castPresentationVote,
   uncastPresentationVote
-
 } from '../actions/user-actions';
 
 import { filterByTrackGroup } from '../utils/filterUtils';
@@ -28,25 +26,26 @@ import AttendanceTrackerComponent from "../components/AttendanceTrackerComponent
 const PostersPage = ({
                       location,
                       trackGroupId,
+                      pagesSettings,
                       setInitialDataSet,
                       getAllVoteablePresentations,
                       posters,
-                      votes,
                       castPresentationVote,
                       uncastPresentationVote,
+                      votingPeriods,
+                      attendee,
+                      votes,
                       summit,
-                      allPosters,
+                      allBuildTimePosters,
                       filters,
                       updateFilter,
-                      colorSettings,
-                      pagesSettings
+                      colorSettings
                     }) => {
 
-  const [canVote, setCanVote] = useState(true);
   const [showFilters, setShowfilters] = useState(false);
   const [postersByTrackGroup, setPostersByTrackGroup] = useState(posters);
-  const [allPostersByTrackGroup, setAllPostersByTrackGroup] = useState(allPosters);
-  const [pageSettings, setPageSetting] = useState(pagesSettings.find(pps => pps.trackGroupId === parseInt(trackGroupId)));
+  const [allBuildTimePostersByTrackGroup, setAllBuildTimePostersByTrackGroup] = useState(allBuildTimePosters);
+  const [pageSettings] = useState(pagesSettings.find(pps => pps.trackGroupId === parseInt(trackGroupId)));
 
   useEffect(() => {
     setInitialDataSet().then(() => getAllVoteablePresentations());
@@ -57,8 +56,8 @@ const PostersPage = ({
   }, [posters, trackGroupId]);
 
   useEffect(() => {
-    setAllPostersByTrackGroup(filterByTrackGroup(allPosters, parseInt(trackGroupId)));
-  }, [allPosters, trackGroupId]);
+    setAllBuildTimePostersByTrackGroup(filterByTrackGroup(allBuildTimePosters, parseInt(trackGroupId)));
+  }, [allBuildTimePosters, trackGroupId]);
 
   const toggleVote = (presentation, isVoted) => {
     isVoted ? castPresentationVote(presentation) : uncastPresentationVote(presentation);
@@ -66,8 +65,8 @@ const PostersPage = ({
 
   const filterProps = {
     summit,
-    events: allPostersByTrackGroup,
-    allEvents: allPostersByTrackGroup,
+    events: allBuildTimePostersByTrackGroup,
+    allEvents: allBuildTimePostersByTrackGroup,
     filters,
     triggerAction: (action, payload) => {
       updateFilter(payload);
@@ -92,7 +91,9 @@ const PostersPage = ({
           <PosterGrid
             posters={postersByTrackGroup}
             showDetailPage={(posterId) => navigate(`/a/poster/${posterId}`)}
-            canVote={canVote} votes={votes}
+            votingPeriods={votingPeriods}
+            votingAllowed={!!attendee}
+            votes={votes}
             toggleVote={toggleVote}
           />
         </div>
@@ -106,16 +107,16 @@ const PostersPage = ({
   );
 };
 
-PostersPage.propTypes = {};
-
-const mapStateToProps = ({presentationsState, userState, summitState, settingState}) => ({
-  posters: presentationsState.voteablePresentations.filteredPresentations,
-  allPosters: presentationsState.voteablePresentations.ssrPresentations,
-  filters: presentationsState.voteablePresentations.filters,
-  votes: userState.attendee?.presentation_votes?? [],
-  summit: summitState.summit,
-  colorSettings: settingState.colorSettings,
+const mapStateToProps = ({ settingState, presentationsState, userState, summitState }) => ({
   pagesSettings: [...settingState.posterPagesSettings.posterPages],
+  posters: presentationsState.voteablePresentations.filteredPresentations,
+  allBuildTimePosters: presentationsState.voteablePresentations.ssrPresentations,
+  votingPeriods: presentationsState.votingPeriods,
+  attendee: userState.attendee,
+  votes: userState.attendee?.presentation_votes ?? [],
+  summit: summitState.summit,
+  filters: presentationsState.voteablePresentations.filters,
+  colorSettings: settingState.colorSettings
 });
 
 export default connect(mapStateToProps, {
@@ -123,5 +124,5 @@ export default connect(mapStateToProps, {
   getAllVoteablePresentations,
   castPresentationVote,
   uncastPresentationVote,
-  updateFilter,
+  updateFilter
 })(PostersPage);
