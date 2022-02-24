@@ -17,6 +17,7 @@ const scheduleReducer = (state = INITIAL_STATE, action) => {
     switch (type) {
         case `SCHED_GET_USER_PROFILE`: {
             const {allEvents, events} = state;
+            // payload is userProfile
             const allFilteredEvents = filterEventsByAccessLevel(allEvents, payload);
             const filteredEvents = filterEventsByAccessLevel(events, payload);
             return {...state, events: filteredEvents, allEvents: allFilteredEvents};

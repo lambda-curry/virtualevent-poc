@@ -2,7 +2,7 @@ import moment from "moment-timezone";
 import { epochToMomentTimeZone } from "openstack-uicore-foundation/lib/methods";
 import { isString } from "lodash";
 import { getEnvVariable, SCHEDULE_EXCLUDING_TAGS } from "./envVariables";
-import {getUserAccessLevelIds} from './authorizedGroups';
+import {getUserAccessLevelIds, isAuthorizedUser} from './authorizedGroups';
 
 const groupByDay = (events) => {
   let groupedEvents = [];
@@ -33,12 +33,14 @@ const userHasAccessToEvent = (event, userAccessLevels) => {
   if (trackAccessLevelIds.length > 0) {
     return trackAccessLevelIds.some(tal => userAccessLevels.includes(tal));
   }
-
-  return false;
+  // if the event has not access level set , then is open for everyone
+  return true;
 }
 
-export const filterEventsByAccessLevel = (events, summitTickets) => {
-  const userAccessLevels = getUserAccessLevelIds(summitTickets);
+export const filterEventsByAccessLevel = (events, userProfile) => {
+  // if user is on auth groups... dont filter
+  if(isAuthorizedUser(userProfile?.groups ?? [])) return events;
+  const userAccessLevels = getUserAccessLevelIds(userProfile?.summit_tickets ?? []);
 
   // if user has no access levels we can't show any event.
   if (userAccessLevels.length === 0) return [];
@@ -61,7 +63,7 @@ const filterMyEvents = (myEvents, events) => {
 };
 
 export const preFilterEvents = (events, filters, summitTimezone, userProfile, filterByAccessLevel, filterByMySchedule) => {
-  const {summit_tickets = [], schedule_summit_events = []} = userProfile || {};
+  const {schedule_summit_events = []} = userProfile || {};
   let result = [...events];
 
   if (filterByMySchedule) {
@@ -69,16 +71,16 @@ export const preFilterEvents = (events, filters, summitTimezone, userProfile, fi
   }
 
   if (filterByAccessLevel) {
-    result = filterEventsByAccessLevel(result, summit_tickets);
+    result = filterEventsByAccessLevel(result, userProfile);
   }
 
   return getFilteredEvents(result, filters, summitTimezone);
 };
 
 export const getFilteredEvents = (events, filters, summitTimezone) => {
+
   return events.filter((ev) => {
     let valid = true;
-
     if (filters.date?.values.length > 0) {
       const dateString = epochToMomentTimeZone(
         ev.start_date,
@@ -89,19 +91,20 @@ export const getFilteredEvents = (events, filters, summitTimezone) => {
     }
 
     if (filters.level?.values.length > 0) {
-      valid = filters.level.values.includes(ev.level.toLowerCase());
+      valid = filters.level.values.some(l => l.toString().toLowerCase() === ev.level.toLowerCase());
       if (!valid) return false;
     }
 
     if (filters.track?.values.length > 0) {
-      valid = filters.track.values.includes(ev.track.id);
+      valid = filters.track.values.some( id => parseInt(id) === ev.track.id);
       if (!valid) return false;
     }
 
     if (filters.speakers?.values.length > 0) {
+      const filteredSpeakers = filters.speakers.values.map( id => parseInt(id));
       valid =
-        ev.speakers?.some((s) => filters.speakers.values.includes(s.id)) ||
-        filters.speakers.values.includes(ev.moderator?.id);
+        ev.speakers?.some((s) => filteredSpeakers.includes(s.id)) ||
+          filteredSpeakers.includes(ev.moderator?.id);
       if (!valid) return false;
     }
 
@@ -111,24 +114,25 @@ export const getFilteredEvents = (events, filters, summitTimezone) => {
     }
 
     if (filters.venues?.values.length > 0) {
-      valid = filters.venues.values.includes(ev.location?.id);
+      valid = filters.venues.values.some( id => parseInt(id) === ev.location?.id);
       if (!valid) return false;
     }
 
     if (filters.track_groups?.values.length > 0) {
+      const filteredTrackGroups = filters.track_groups.values.map(id => parseInt(id));
       valid = ev.track?.track_groups.some((tg) =>
-        filters.track_groups.values.includes(tg)
+          filteredTrackGroups.includes(tg)
       );
       if (!valid) return false;
     }
 
     if (filters.event_types?.values.length > 0) {
-      valid = filters.event_types.values.includes(ev.type.id);
+      valid = filters.event_types.values.some(id => parseInt(id) === ev.type.id);
       if (!valid) return false;
     }
 
     if (filters.company?.values.length > 0) {
-      const lowerCaseCompanies = filters.company.values;
+      const lowerCaseCompanies = filters.company.values.map(c => c.toLowerCase());
       valid =
         ev.speakers?.some((s) =>
           lowerCaseCompanies.includes(s.company?.toLowerCase())
@@ -137,7 +141,6 @@ export const getFilteredEvents = (events, filters, summitTimezone) => {
         ev.sponsors?.some((s) =>
           lowerCaseCompanies.includes(s.name.toLowerCase())
         );
-
       if (!valid) return false;
     }
 

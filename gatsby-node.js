@@ -85,7 +85,8 @@ const SSR_getSpeakers = async (baseUrl, summitId, accessToken, filter = null, pa
 
 const SSR_getSummit = async (baseUrl, summitId) => {
   const params = {
-    expand: 'event_types,tracks,track_groups,presentation_levels,locations.rooms,locations.floors,order_extra_questions.values,schedule_settings,schedule_settings.filters,schedule_settings.pre_filters'
+    expand: 'event_types,tracks,track_groups,presentation_levels,locations.rooms,locations.floors,order_extra_questions.values,schedule_settings,schedule_settings.filters,schedule_settings.pre_filters',
+    t: Date.now()
   };
 
   return await axios.get(

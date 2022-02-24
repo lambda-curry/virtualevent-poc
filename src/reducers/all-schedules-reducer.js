@@ -24,13 +24,13 @@ const allSchedulesReducer = (state = DEFAULT_STATE, action) => {
         case LOGOUT_USER:
             return DEFAULT_STATE;
         case GET_USER_PROFILE: {
-            const {summit_tickets} = payload.response;
+            const userProfile = payload.response;
             // filter events by access level
             const {schedules} = state;
 
             const newSchedules = schedules.map(sched => {
                 if (sched.only_events_with_attendee_access) {
-                    return scheduleReducer(sched, {payload: summit_tickets, type: `SCHED_${type}`});
+                    return scheduleReducer(sched, {payload: userProfile, type: `SCHED_${type}`});
                 }
                 return sched;
             })
