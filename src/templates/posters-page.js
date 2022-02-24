@@ -66,7 +66,6 @@ const PostersPage = ({
   };
 
   const headerFilter = (value) => {
-    console.log('value: ', value)
     switch (value) {
       case 'page_random': {
         let randomPosters = [...postersByTrackGroup];
@@ -90,6 +89,7 @@ const PostersPage = ({
         break;
       }
       default:
+        setPostersByTrackGroup(filterByTrackGroup(posters, parseInt(trackGroupId)));
         break;
     }
   }
