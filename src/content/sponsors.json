@@ -9,6 +9,81 @@
       ],
       "sponsors": [
         {
+          "marquee": "Innovate faster, optimize performance, and grow revenue in the post-identifier era with unmatched cloud capabilities and partner opportunities.",
+          "sideImage": {
+            "file": ""
+          },
+          "sponsorColor": "#ff9900",
+          "logo": {
+            "file": "/img/aws_logo_rgb.png"
+          },
+          "name": "AWS",
+          "intro": "#### **For over 15 years, AWS has been the world’s most comprehensive and broadly adopted cloud platform. AWS offers over 200 fully featured services for compute, storage, databases, networking, analytics, robotics, machine learning and artificial intelligence (AI), Internet of Things (IoT), security, hybrid, virtual and augmented reality (VR and AR), media, and application development, deployment, and management from 81 Availability Zones (AZs) within 25 geographic regions. Millions of customers—including the fastest-growing startups, largest enterprises, and leading government agencies—trust AWS to power their infrastructure, become more agile, and lower costs. To learn more about AWS, visit aws.amazon.com**",
+          "headerImage": {
+            "file": ""
+          },
+          "headerImageMobile": {
+            "file": ""
+          },
+          "advertiseImage": {
+            "file": ""
+          },
+          "sponsorId": 157,
+          "companyId": 137,
+          "documents": {
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/me.-magazine-issue-4-fast-to-the-future-white-paper-.pdf",
+                "name": "Fast to the future (white paper)",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/machine-learning-for-media-and-entertainment-e-book-.pdf",
+                "name": "Machine Learning for Media and Entertainment (E-Book)",
+                "order": 2
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/documents/",
+                "name": "How four leading businesses optimized real-time advertising performance (E-Book)",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/aws-media-personalization-ebook-.pdf",
+                "name": "AWS Media Personalization (E-Book)",
+                "order": 4
+              }
+            ],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "LinkedIn",
+                "order": 5,
+                "link": "https://www.linkedin.com/company/amazon-web-services/mycompany/"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Running AdTech Workloads on AWS with Aerospike at Petabyte Scale (Blog)",
+                "order": 5,
+                "link": "https://aws.amazon.com/blogs/industries/running-ad-tech-workloads-on-aws-with-aerospike-at-petabyte-scale/"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Advertising & Marketing Technology on AWS (E-book)",
+                "order": 6,
+                "link": "https://aws.amazon.com/advertising-marketing/"
+              }
+            ],
+            "videos": []
+          },
+          "id": 157,
+          "showLogoInEventPage": false,
+          "email": "palmju@amazon.com"
+        },
+        {
           "marquee": "Red Hat is the world’s leading provider of commercial open source software solutions.",
           "externalLink": "",
           "featuredEventId": 2477,
@@ -206,81 +281,6 @@
           "showLogoInEventPage": false,
           "email": "Sherryf@supermicro.com",
           "usesSponsorPage": true
-        },
-        {
-          "marquee": "Innovate faster, optimize performance, and grow revenue in the post-identifier era with unmatched cloud capabilities and partner opportunities.",
-          "sideImage": {
-            "file": ""
-          },
-          "sponsorColor": "#ff9900",
-          "logo": {
-            "file": "/img/aws_logo_rgb.png"
-          },
-          "name": "AWS",
-          "intro": "#### **For over 15 years, AWS has been the world’s most comprehensive and broadly adopted cloud platform. AWS offers over 200 fully featured services for compute, storage, databases, networking, analytics, robotics, machine learning and artificial intelligence (AI), Internet of Things (IoT), security, hybrid, virtual and augmented reality (VR and AR), media, and application development, deployment, and management from 81 Availability Zones (AZs) within 25 geographic regions. Millions of customers—including the fastest-growing startups, largest enterprises, and leading government agencies—trust AWS to power their infrastructure, become more agile, and lower costs. To learn more about AWS, visit aws.amazon.com**",
-          "headerImage": {
-            "file": ""
-          },
-          "headerImageMobile": {
-            "file": ""
-          },
-          "advertiseImage": {
-            "file": ""
-          },
-          "sponsorId": 157,
-          "companyId": 137,
-          "documents": {
-            "slides": [
-              {
-                "class_name": "PresentationSlide",
-                "link": "/img/me.-magazine-issue-4-fast-to-the-future-white-paper-.pdf",
-                "name": "Fast to the future (white paper)",
-                "order": 1
-              },
-              {
-                "class_name": "PresentationSlide",
-                "link": "/img/machine-learning-for-media-and-entertainment-e-book-.pdf",
-                "name": "Machine Learning for Media and Entertainment (E-Book)",
-                "order": 2
-              },
-              {
-                "class_name": "PresentationSlide",
-                "link": "/documents/",
-                "name": "How four leading businesses optimized real-time advertising performance (E-Book)",
-                "order": 3
-              },
-              {
-                "class_name": "PresentationSlide",
-                "link": "/img/aws-media-personalization-ebook-.pdf",
-                "name": "AWS Media Personalization (E-Book)",
-                "order": 4
-              }
-            ],
-            "links": [
-              {
-                "class_name": "PresentationLink",
-                "name": "LinkedIn",
-                "order": 5,
-                "link": "https://www.linkedin.com/company/amazon-web-services/mycompany/"
-              },
-              {
-                "class_name": "PresentationLink",
-                "name": "Running AdTech Workloads on AWS with Aerospike at Petabyte Scale (Blog)",
-                "order": 5,
-                "link": "https://aws.amazon.com/blogs/industries/running-ad-tech-workloads-on-aws-with-aerospike-at-petabyte-scale/"
-              },
-              {
-                "class_name": "PresentationLink",
-                "name": "Advertising & Marketing Technology on AWS (E-book)",
-                "order": 6,
-                "link": "https://aws.amazon.com/advertising-marketing/"
-              }
-            ],
-            "videos": []
-          },
-          "id": 157,
-          "showLogoInEventPage": false,
-          "email": "palmju@amazon.com"
         }
       ]
     }
