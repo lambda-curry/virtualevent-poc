@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { connect } from 'react-redux';
 import { navigate } from "gatsby";
 import Layout from '../components/Layout';
@@ -23,6 +23,7 @@ import {
 import { filterByTrackGroup, randomSort } from '../utils/filterUtils';
 
 import styles from '../styles/posters-page.module.scss';
+import NotificationHub from '../components/notification-hub';
 
 const PostersPage = ({
   location,
@@ -49,6 +50,12 @@ const PostersPage = ({
   const [showFilters, setShowFilters] = useState(false);
   const [filteredPosters, setFilteredPosters] = useState(posters);
   const [allBuildTimePostersByTrackGroup, setAllBuildTimePostersByTrackGroup] = useState(allBuildTimePosters);
+
+  const notificationRef = useRef(null)
+
+  const addNotification = (notification) => {
+    return notificationRef.current?.('notifaction: ', notification);
+  }
 
   useEffect(() => {
     setInitialDataSet().then(() => getAllVoteablePresentations());
@@ -131,6 +138,10 @@ const PostersPage = ({
           <ScheduleFilters {...filterProps} />
         </div>
         <FilterButton open={showFilters} onClick={() => setShowFilters(!showFilters)} />
+        <NotificationHub children={(add) => {
+            notificationRef.current = add
+          }} />
+        <button onClick={addNotification}>Add notification</button>
       </div>
     </Layout>
   );
