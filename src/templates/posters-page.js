@@ -74,9 +74,30 @@ const PostersPage = ({
         }
         return setPostersByTrackGroup(randomPosters);
       }
-      case 'custom_order': {
+      case 'custom_order_asc': {
         let sortedPosters = [...postersByTrackGroup];
-        sortedPosters = sortedPosters.sort((a, b) => a.custom_order - b.custom_order);
+        sortedPosters = sortedPosters.sort((a, b) => {
+          if (a.custom_order < b.custom_order) {
+            return -1;
+          }
+          if (a.custom_order > b.custom_order) {
+            return 1;
+          }
+          return 0;
+        });
+        return setPostersByTrackGroup(sortedPosters);
+      }
+      case 'custom_order_desc': {
+        let sortedPosters = [...postersByTrackGroup];
+        sortedPosters = sortedPosters.sort((a, b) => {
+          if (a.custom_order > b.custom_order) {
+            return -1;
+          }
+          if (a.custom_order < b.custom_order) {
+            return 1;
+          }
+          return 0;
+        });
         return setPostersByTrackGroup(sortedPosters);
       }
       case 'my_votes': {
