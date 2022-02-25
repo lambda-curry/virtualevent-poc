@@ -242,6 +242,18 @@
                 "link": "/img/machine-learning-for-media-and-entertainment-e-book-.pdf",
                 "name": "Machine Learning for Media and Entertainment (E-Book)",
                 "order": 2
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/documents/",
+                "name": "How four leading businesses optimized real-time advertising performance (E-Book)",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/aws-media-personalization-ebook-.pdf",
+                "name": "AWS Media Personalization (E-Book)",
+                "order": 4
               }
             ],
             "links": [
