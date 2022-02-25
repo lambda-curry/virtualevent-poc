@@ -197,7 +197,7 @@ export const createVotingPeriods = () => (dispatch, getState) => {
           userState: { attendee },
           presentationsState: { voteablePresentations: { ssrPresentations: allBuildTimePresentations } } } = getState();
 
-  const votesPerTrackGroup = mapVotesPerTrackGroup(attendee?.presentationVotes ?? [], allBuildTimePresentations);
+  const votesPerTrackGroup = mapVotesPerTrackGroup(attendee?.presentation_votes ?? [], allBuildTimePresentations);
 
   trackGroups.forEach(trackGroup => {
     const { max_attendee_votes: maxAttendeeVotes } = trackGroup;
