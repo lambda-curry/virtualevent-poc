@@ -47,7 +47,6 @@ const NotificationHub = ({
                 return (
                     <animated.div className={styles.message} style={style}>
                         <div className={styles.content} ref={(ref) => ref && refMap.set(item, ref)}>
-                            <animated.div className={styles.life} style={{ right: life }} />
                             <p>{item.msg}</p>
                             <button
                                 className={styles.button}

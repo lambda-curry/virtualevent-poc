@@ -32,6 +32,7 @@ const PostersPage = ({
   setInitialDataSet,
   getAllVoteablePresentations,
   posters,
+  allPosters,
   castPresentationVote,
   uncastPresentationVote,
   votingPeriods,
@@ -44,17 +45,20 @@ const PostersPage = ({
   colorSettings,
 }) => {
 
+  const [notifiedMaximunAllowedVotesOnLoad, setNotifiedMaximunAllowedVotesOnLoad] = useState(false);
   const [pageSettings] = useState(pagesSettings.find(ps => ps.trackGroupId === parseInt(trackGroupId)));
   const [pageTrackGroups, setPageTrackGroups] = useState([]);
   const [appliedPageFilter, setAppliedPageFilter] = useState(null);
   const [showFilters, setShowFilters] = useState(false);
   const [filteredPosters, setFilteredPosters] = useState(posters);
   const [allBuildTimePostersByTrackGroup, setAllBuildTimePostersByTrackGroup] = useState(allBuildTimePosters);
+  const [trackGroupsInPage, setTrackGroupsInPage] = useState([]);
+  const [trackGroupsOfLastVotedPoster, setTrackGroupsOfLastVotedPoster] = useState([]);
 
-  const notificationRef = useRef(null)
+  const notificationRef = useRef(null);
 
   const addNotification = (notification) => {
-    return notificationRef.current?.('notifaction: ', notification);
+    return notificationRef.current?.(notification);
   }
 
   useEffect(() => {
@@ -93,6 +97,40 @@ const PostersPage = ({
   useEffect(() => {
     setAllBuildTimePostersByTrackGroup(filterByTrackGroup(allBuildTimePosters, parseInt(trackGroupId)));
   }, [allBuildTimePosters, trackGroupId]);
+
+  useEffect(() => {
+    const postersByTrackGroupTrackGroupIds = [...new Set(filteredPosters.map(p => p.track?.track_groups ?? []).flat())];
+    setTrackGroupsInPage(postersByTrackGroupTrackGroupIds);
+  }, [filteredPosters]);
+
+  useEffect(() => {
+    if (!notifiedMaximunAllowedVotesOnLoad &&
+        trackGroupsInPage.length &&
+        trackGroupsInPage.map(tg => votingPeriods[tg]).every(vp => vp !== undefined)) {
+        trackGroupsInPage.forEach(tg => {
+        if (votingPeriods[tg].remainingVotes === 0) {
+          addNotification(`Maximun allowed votes for track group ${tg} reached.`);
+          setNotifiedMaximunAllowedVotesOnLoad(true);
+        }
+      });
+    }
+    if (trackGroupsOfLastVotedPoster.length &&
+        trackGroupsInPage.length &&
+        trackGroupsInPage.map(tg => votingPeriods[tg]).every(vp => vp !== undefined)) {
+        trackGroupsOfLastVotedPoster.forEach(tg => {
+        if (votingPeriods[tg].remainingVotes === 0) {
+          addNotification(`Maximun allowed votes for track group ${tg} reached.`);
+          setTrackGroupsOfLastVotedPoster([]);
+        }
+      });
+    }
+  }, [trackGroupsInPage, votingPeriods]);
+
+  useEffect(() => {
+    const lastVote = votes.slice(-1).pop();
+    const poster = allPosters.find(p => p.id === lastVote?.presentation_id);
+    if (poster) setTrackGroupsOfLastVotedPoster(poster.track?.track_groups);
+  }, [votes]);
 
   const toggleVote = (presentation, isVoted) => {
     isVoted ? castPresentationVote(presentation) : uncastPresentationVote(presentation);
@@ -151,6 +189,7 @@ const mapStateToProps = ({ settingState, presentationsState, userState, summitSt
   pagesSettings: [...settingState.posterPagesSettings.posterPages],
   posters: presentationsState.voteablePresentations.filteredPresentations,
   allBuildTimePosters: presentationsState.voteablePresentations.ssrPresentations,
+  allPosters: presentationsState.voteablePresentations.allPresentations,
   votingPeriods: presentationsState.votingPeriods,
   attendee: userState.attendee,
   votes: userState.attendee?.presentation_votes ?? [],
