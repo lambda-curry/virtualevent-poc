@@ -83,15 +83,10 @@ const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, act
     case VOTEABLE_PRESENTATIONS_UPDATE_FILTER: {
       const { type, values } = payload;
       const { filters, allPresentations } = state;
-      return {
-        ...state,
-        filters: {
-          ...filters,
-          [type]: {
-            ...filters[type],
-            values: values
-          }
-        },
+      // TODO: review, can we change state directly?
+      filters[type].values = values;
+      return { ...state,
+        filters,
         filteredPresentations: getFilteredVoteablePresentations(allPresentations, filters)
       };
     }
