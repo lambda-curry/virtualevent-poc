@@ -20,7 +20,7 @@ import {
   uncastPresentationVote
 } from '../actions/user-actions';
 
-import { filterByTrackGroup } from '../utils/filterUtils';
+import { filterByTrackGroup, randomSort } from '../utils/filterUtils';
 
 import styles from '../styles/posters-page.module.scss';
 
@@ -67,12 +67,7 @@ const PostersPage = ({
   const headerFilter = (value) => {
     switch (value) {
       case 'page_random': {
-        let randomPosters = [...postersByTrackGroup];
-        for (let i = randomPosters.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-          [randomPosters[i], randomPosters[j]] = [randomPosters[j], randomPosters[i]];
-        }
-        return setPostersByTrackGroup(randomPosters);
+        return setPostersByTrackGroup(randomSort(postersByTrackGroup));
       }
       case 'custom_order_asc': {
         let sortedPosters = [...postersByTrackGroup];
