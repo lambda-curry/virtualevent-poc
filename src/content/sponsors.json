@@ -206,6 +206,50 @@
           "showLogoInEventPage": false,
           "email": "Sherryf@supermicro.com",
           "usesSponsorPage": true
+        },
+        {
+          "marquee": "Innovate faster, optimize performance, and grow revenue in the post-identifier era with unmatched cloud capabilities and partner opportunities.",
+          "sideImage": {
+            "file": ""
+          },
+          "sponsorColor": "#ff9900",
+          "logo": {
+            "file": "/img/aws_logo_rgb.png"
+          },
+          "name": "AWS",
+          "intro": "#### **For over 15 years, AWS has been the world’s most comprehensive and broadly adopted cloud platform. AWS offers over 200 fully featured services for compute, storage, databases, networking, analytics, robotics, machine learning and artificial intelligence (AI), Internet of Things (IoT), security, hybrid, virtual and augmented reality (VR and AR), media, and application development, deployment, and management from 81 Availability Zones (AZs) within 25 geographic regions. Millions of customers—including the fastest-growing startups, largest enterprises, and leading government agencies—trust AWS to power their infrastructure, become more agile, and lower costs. To learn more about AWS, visit aws.amazon.com**",
+          "headerImage": {
+            "file": ""
+          },
+          "headerImageMobile": {
+            "file": ""
+          },
+          "advertiseImage": {
+            "file": ""
+          },
+          "sponsorId": 157,
+          "companyId": 137,
+          "documents": {
+            "slides": [],
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "LinkedIn",
+                "order": 5,
+                "link": "https://www.linkedin.com/company/amazon-web-services/mycompany/"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Running AdTech Workloads on AWS with Aerospike at Petabyte Scale (Blog)",
+                "order": 5,
+                "link": "https://aws.amazon.com/blogs/industries/running-ad-tech-workloads-on-aws-with-aerospike-at-petabyte-scale/"
+              }
+            ],
+            "videos": []
+          },
+          "id": 157,
+          "showLogoInEventPage": true,
+          "email": "palmju@amazon.com"
         }
       ]
     }
