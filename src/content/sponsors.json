@@ -268,6 +268,12 @@
                 "name": "Running AdTech Workloads on AWS with Aerospike at Petabyte Scale (Blog)",
                 "order": 5,
                 "link": "https://aws.amazon.com/blogs/industries/running-ad-tech-workloads-on-aws-with-aerospike-at-petabyte-scale/"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Advertising & Marketing Technology on AWS (E-book)",
+                "order": 6,
+                "link": "https://aws.amazon.com/advertising-marketing/"
               }
             ],
             "videos": []
