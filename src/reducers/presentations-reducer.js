@@ -24,7 +24,7 @@ import {
 } from '../actions/presentation-actions';
 
 import { filterEventsByAccessLevels } from '../utils/authorizedGroups';
-
+import { randomSort } from '../utils/filterUtils';
 import allVoteablePresentations from '../content/voteable_presentations.json';
 import DEFAULT_FILTERS_STATE from '../content/posters_filters.json';
 
@@ -49,9 +49,7 @@ const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, act
     case SET_INITIAL_DATASET: {
       const { userProfile: currentUserProfile } = payload;
       // pre filter by user access levels
-      let filteredEvents = filterEventsByAccessLevels(allVoteablePresentations, currentUserProfile);
-      // suffle
-      filteredEvents = filteredEvents.map((a) => [Math.random(),a]).sort((a,b) => a[0]-b[0]).map((a) => a[1]);
+      let filteredEvents = randomSort(filterEventsByAccessLevels(allVoteablePresentations, currentUserProfile));
       return { ...state,
         ssrPresentations: filteredEvents,
         allPresentations: filteredEvents,
@@ -68,7 +66,8 @@ const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, act
       data.forEach(presentation => {
         const index = allPresentations.findIndex((p) => p.id === presentation.id);
         if (index !== -1) {
-          oldPresentations.splice(index, 1, presentation);
+          // replace presentation on index
+          oldPresentations.splice(index, 1, {...oldPresentations[index], ...presentation});
         } else {
           newPresentations.push(presentation);
         }
