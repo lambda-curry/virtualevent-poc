@@ -73,11 +73,6 @@ html:not([data-whatintent=keyboard]) .focus {
   box-shadow: none !important;
 }
 
-/* overrides Bulma focus style */
-.button:focus {
-  color: $color_text_light !important;
-}
-
 label {
   font-weight: 300;
 }
