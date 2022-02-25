@@ -230,7 +230,20 @@
           "sponsorId": 157,
           "companyId": 137,
           "documents": {
-            "slides": [],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/me.-magazine-issue-4-fast-to-the-future-white-paper-.pdf",
+                "name": "Fast to the future (white paper)",
+                "order": 1
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/machine-learning-for-media-and-entertainment-e-book-.pdf",
+                "name": "Machine Learning for Media and Entertainment (E-Book)",
+                "order": 2
+              }
+            ],
             "links": [
               {
                 "class_name": "PresentationLink",
