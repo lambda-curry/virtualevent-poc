@@ -21,6 +21,7 @@ import {
 } from '../actions/user-actions';
 
 import { filterByTrackGroup, randomSort } from '../utils/filterUtils';
+import { PHASES } from '../utils/phasesUtils';
 
 import styles from '../styles/posters-page.module.scss';
 import NotificationHub from '../components/notification-hub';
@@ -45,19 +46,19 @@ const PostersPage = ({
   colorSettings,
 }) => {
 
-  const [notifiedMaximunAllowedVotesOnLoad, setNotifiedMaximunAllowedVotesOnLoad] = useState(false);
   const [pageSettings] = useState(pagesSettings.find(ps => ps.trackGroupId === parseInt(trackGroupId)));
   const [pageTrackGroups, setPageTrackGroups] = useState([]);
-  const [appliedPageFilter, setAppliedPageFilter] = useState(null);
   const [showFilters, setShowFilters] = useState(false);
   const [filteredPosters, setFilteredPosters] = useState(posters);
   const [allBuildTimePostersByTrackGroup, setAllBuildTimePostersByTrackGroup] = useState(allBuildTimePosters);
-  const [trackGroupsInPage, setTrackGroupsInPage] = useState([]);
-  const [trackGroupsOfLastVotedPoster, setTrackGroupsOfLastVotedPoster] = useState([]);
+  const [votedPosterTrackGroups, setVotedPosterTrackGroups] = useState([]);
+  const [previousVotingPeriods, setPreviousVotingPeriods] = useState(votingPeriods);
+  const [notifiedMaximunAllowedVotesOnLoad, setNotifiedMaximunAllowedVotesOnLoad] = useState(false);
+  const [notifiedVotingPeriodsOnLoad, setNotifiedVotingPeriodsOnLoad] = useState(false);
 
   const notificationRef = useRef(null);
 
-  const addNotification = (notification) => {
+  const pushNotification = (notification) => {
     return notificationRef.current?.(notification);
   }
 
@@ -99,40 +100,66 @@ const PostersPage = ({
   }, [allBuildTimePosters, trackGroupId]);
 
   useEffect(() => {
-    const postersByTrackGroupTrackGroupIds = [...new Set(filteredPosters.map(p => p.track?.track_groups ?? []).flat())];
-    setTrackGroupsInPage(postersByTrackGroupTrackGroupIds);
+    const pageTrackGroups = [...new Set(filteredPosters.map(p => p.track?.track_groups ?? []).flat())];
+    setPageTrackGroups(pageTrackGroups);
   }, [filteredPosters]);
 
   useEffect(() => {
+    if (!notifiedVotingPeriodsOnLoad &&
+        pageTrackGroups.length &&
+        pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined)) {
+        pageTrackGroups.forEach(tg => {
+        if (votingPeriods[tg].phase === PHASES.BEFORE) {
+          const startDate = new Date(votingPeriods[tg].startDate * 1000).toLocaleDateString('en-US');
+          const startTime = new Date(votingPeriods[tg].startDate * 1000).toLocaleTimeString('en-US');
+          pushNotification(`Voting has not begun. ${votingPeriods[tg].name} will allow for votes starting on ${startDate} ${startTime}`);
+          setNotifiedVotingPeriodsOnLoad(true);
+        } else if (votingPeriods[tg].phase === PHASES.AFTER) {
+          const endDate = new Date(votingPeriods[tg].endDate * 1000).toLocaleDateString('en-US');
+          const endTime = new Date(votingPeriods[tg].endDate * 1000).toLocaleTimeString('en-US');
+          pushNotification(`Voting has ended. ${votingPeriods[tg].name} does not allow for votes after ${endDate} ${endTime}`);
+          setNotifiedVotingPeriodsOnLoad(true);
+        }
+      });
+    }
     if (!notifiedMaximunAllowedVotesOnLoad &&
-        trackGroupsInPage.length &&
-        trackGroupsInPage.map(tg => votingPeriods[tg]).every(vp => vp !== undefined)) {
-        trackGroupsInPage.forEach(tg => {
-        if (votingPeriods[tg].remainingVotes === 0) {
-          addNotification(`Maximun allowed votes for track group ${tg} reached.`);
+        pageTrackGroups.length &&
+        pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined)) {
+        pageTrackGroups.forEach(tg => {
+        if (votingPeriods[tg].phase === PHASES.DURING && votingPeriods[tg].remainingVotes === 0) {
+          pushNotification(`You've reached your maximum votes. ${votingPeriods[tg].name} only allows for ${votingPeriods[tg].maxAttendeeVotes} votes per attendee`);
           setNotifiedMaximunAllowedVotesOnLoad(true);
         }
       });
     }
-    if (trackGroupsOfLastVotedPoster.length &&
-        trackGroupsInPage.length &&
-        trackGroupsInPage.map(tg => votingPeriods[tg]).every(vp => vp !== undefined)) {
-        trackGroupsOfLastVotedPoster.forEach(tg => {
-        if (votingPeriods[tg].remainingVotes === 0) {
-          addNotification(`Maximun allowed votes for track group ${tg} reached.`);
-          setTrackGroupsOfLastVotedPoster([]);
+    if (votedPosterTrackGroups.length &&
+        pageTrackGroups.length &&
+        pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined)) {
+        votedPosterTrackGroups.forEach(tg => {
+        if (votingPeriods[tg].phase === PHASES.DURING && votingPeriods[tg].remainingVotes === 0) {
+          pushNotification(`You've reached your maximum votes. ${votingPeriods[tg].name} only allows for ${votingPeriods[tg].maxAttendeeVotes} votes per attendee`);
+          setVotedPosterTrackGroups([]);
         }
       });
     }
-  }, [trackGroupsInPage, votingPeriods]);
-
-  useEffect(() => {
-    const lastVote = votes.slice(-1).pop();
-    const poster = allPosters.find(p => p.id === lastVote?.presentation_id);
-    if (poster) setTrackGroupsOfLastVotedPoster(poster.track?.track_groups);
-  }, [votes]);
+    if (pageTrackGroups.length &&
+        pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined) &&
+        pageTrackGroups.map(tg => previousVotingPeriods[tg]).every(vp => vp !== undefined)) {
+        pageTrackGroups.forEach(tg => {
+        if (previousVotingPeriods[tg].phase === PHASES.BEFORE && votingPeriods[tg].phase === PHASES.DURING) {
+          pushNotification(`Voting has now begun! You are allowed ${votingPeriods[tg].maxAttendeeVotes} votes in ${votingPeriods[tg].name}`);
+        } else if (previousVotingPeriods[tg].phase === PHASES.DURING && votingPeriods[tg].phase === PHASES.AFTER) {
+          const endDate = new Date(votingPeriods[tg].endDate * 1000).toLocaleDateString('en-US');
+          const endTime = new Date(votingPeriods[tg].endDate * 1000).toLocaleTimeString('en-US');
+          pushNotification(`Voting has ended. ${votingPeriods[tg].name} does not allow for votes after ${endDate} ${endTime}`);
+        }
+      });
+    }
+    setPreviousVotingPeriods(votingPeriods);
+  }, [pageTrackGroups, votingPeriods]);
 
   const toggleVote = (presentation, isVoted) => {
+    setVotedPosterTrackGroups(presentation.track?.track_groups);
     isVoted ? castPresentationVote(presentation) : uncastPresentationVote(presentation);
   };
 
@@ -152,11 +179,11 @@ const PostersPage = ({
     <Layout location={location}>
       <AttendanceTrackerComponent sourceName="POSTERS" />
       {pageSettings &&
-        <PageHeader
-          title={pageSettings.title}
-          subtitle={pageSettings.subtitle}
-          backgroundImage={pageSettings.image}
-        />
+      <PageHeader
+        title={pageSettings.title}
+        subtitle={pageSettings.subtitle}
+        backgroundImage={pageSettings.image}
+      />
       }
       <div className={`${styles.wrapper} ${showFilters ? styles.showFilters : ''}`}>
         <div className={styles.postersWrapper}>
@@ -176,10 +203,7 @@ const PostersPage = ({
           <ScheduleFilters {...filterProps} />
         </div>
         <FilterButton open={showFilters} onClick={() => setShowFilters(!showFilters)} />
-        <NotificationHub children={(add) => {
-            notificationRef.current = add
-          }} />
-        <button onClick={addNotification}>Add notification</button>
+        <NotificationHub children={(add) => { notificationRef.current = add }} />
       </div>
     </Layout>
   );
