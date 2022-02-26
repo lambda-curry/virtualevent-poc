@@ -43,16 +43,12 @@ export const isAuthorizedBadge = (event, summit_tickets) => {
 };
 
 export const filterEventsByAccessLevels = (originalEvents , user) => {
-    console.log(`filterEventsByAccessLevels originalEvents ${originalEvents.length} user ${user.email}`);
     if (isAuthorizedUser(user.groups)) {
-        console.log(`filterEventsByAccessLevels originalEvents ${originalEvents.length} user ${user.email} is Auth`);
         return originalEvents;
     }
     let summitTickets = user.summit_tickets;
-    let res =  originalEvents.filter((ev) => {
+    let res = originalEvents.filter((ev) => {
         return isAuthorizedBadge(ev, summitTickets);
     });
-
-    console.log(`filterEventsByAccessLevels originalEvents ${originalEvents.length} user ${user.email} filtered ${res.length}`);
     return res;
 }

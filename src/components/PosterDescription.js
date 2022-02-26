@@ -1,15 +1,9 @@
-import React, { useState, useEffect, useCallback } from "react"
-import VoteButton from "./poster-card/vote-button";
-
-import {
-  calculateRemaingVotes,
-  calculateVotesPerTrackGroup,
-  TRACK_GROUP_CLASS_NAME
-} from '../utils/voting-utils';
+import React, { useCallback } from 'react';
+import VoteButton from './poster-card/vote-button';
 
 import { PHASES } from '../utils/phasesUtils';
 
-import styles from '../styles/poster-components.module.scss'
+import styles from '../styles/poster-components.module.scss';
 
 const PosterDescription = ({ poster: { speakers, title, description, custom_order, track }, poster, votingPeriods, votes, isVoted, toggleVote, votingAllowed }) => {
 

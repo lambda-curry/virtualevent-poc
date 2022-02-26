@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react'
-import { connect } from 'react-redux'
-import { Helmet } from 'react-helmet'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
-import ClockComponent from '../components/ClockComponent'
-import useSiteMetadata from './SiteMetadata'
-import { withPrefix } from 'gatsby'
+import React, { useEffect, useState } from 'react';
+import { connect } from 'react-redux';
+import { Helmet } from 'react-helmet';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
+import ClockComponent from '../components/ClockComponent';
+import useSiteMetadata from './SiteMetadata';
+import { withPrefix } from 'gatsby';
 
-import "../styles/bulma.scss"
+import '../styles/bulma.scss';
 
 const TemplateWrapper = ({ children, location, marketing, summit, favicons }) => {
   const { title, description } = useSiteMetadata();
@@ -30,7 +30,7 @@ const TemplateWrapper = ({ children, location, marketing, summit, favicons }) =>
       window.removeEventListener("blur", onBlur);
     };
   });
-  
+
   return (
     <div id="container">
       <Helmet>
