@@ -32,10 +32,14 @@ export const getEventById = (eventId) => async (dispatch, getState) => {
     }
 
     // if does not exists get it from api
-    const accessToken = await getAccessToken();
-    if (!accessToken) {
+
+    let accessToken;
+    try {
+        accessToken = await getAccessToken();
+    } catch (e) {
+        console.log('getAccessToken error: ', e);
         dispatch(stopLoading());
-        return Promise.resolve();
+        return Promise.reject();
     }
     let params = {
         access_token: accessToken,
