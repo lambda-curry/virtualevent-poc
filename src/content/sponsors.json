@@ -107,7 +107,8 @@
           },
           "id": 157,
           "showLogoInEventPage": false,
-          "email": "palmju@amazon.com"
+          "email": "palmju@amazon.com",
+          "usesSponsorPage": true
         },
         {
           "sideImage": {
