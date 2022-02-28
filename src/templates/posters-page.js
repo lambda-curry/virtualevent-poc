@@ -52,9 +52,9 @@ const PostersPage = ({
   const [appliedPageFilter, setAppliedPageFilter] = useState(null);
   const [filteredPosters, setFilteredPosters] = useState(posters);
   const [pageTrackGroups, setPageTrackGroups] = useState([]);
-  const [previousVotingPeriods, setPreviousVotingPeriods] = useState(votingPeriods);
   const [notifiedMaximunAllowedVotesOnLoad, setNotifiedMaximunAllowedVotesOnLoad] = useState(false);
   const [notifiedVotingPeriodsOnLoad, setNotifiedVotingPeriodsOnLoad] = useState(false);
+  const [previousVotingPeriods, setPreviousVotingPeriods] = useState(votingPeriods);
   const [votedPosterTrackGroups, setVotedPosterTrackGroups] = useState([]);
 
   const notificationRef = useRef(null);
