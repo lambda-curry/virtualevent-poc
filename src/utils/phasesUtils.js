@@ -15,22 +15,22 @@ export const getSummitPhase = function (summit, now) {
 
   const deltaSummit = MarketingSite.summit_delta_start_time ? MarketingSite.summit_delta_start_time : 0;
 
-  return start_date - deltaSummit < now && end_date > now ? PHASES.DURING
+  return start_date - deltaSummit <= now && end_date > now ? PHASES.DURING
       :
       start_date - deltaSummit > now ? PHASES.BEFORE
         :
-        end_date < now ? PHASES.AFTER : null;
+        end_date <= now ? PHASES.AFTER : null;
 
 };
 
 export const getEventPhase = function (event, now) {
   const { start_date, end_date } = event;
 
-  return start_date < now && end_date > now ? PHASES.DURING
+  return start_date <= now && end_date > now ? PHASES.DURING
       :
       start_date > now ? PHASES.BEFORE
         :
-        end_date < now ? PHASES.AFTER : null;
+        end_date <= now ? PHASES.AFTER : null;
 };
 
 export const getVotingPeriodPhase = (votingPeriod, now) => {
@@ -41,13 +41,13 @@ export const getVotingPeriodPhase = (votingPeriod, now) => {
   const isValidStartDate = isValidUTC(startDate);
   const isValidEndDate = isValidUTC(endDate);
 
-  if (!isValidStartDate && isValidEndDate && endDate > now ||
-      !isValidEndDate && isValidStartDate && startDate < now ||
+  if ((!isValidStartDate && isValidEndDate && endDate > now) ||
+      (!isValidEndDate && isValidStartDate && startDate < now) ||
       // can vote if no start date end date set; no restrictions
-      !isValidStartDate && !isValidEndDate)
+      (!isValidStartDate && !isValidEndDate))
     return PHASES.DURING;
 
-  return isValidStartDate && startDate < now && isValidEndDate && endDate > now ? PHASES.DURING :
+  return isValidStartDate && startDate <= now && isValidEndDate && endDate > now ? PHASES.DURING :
          isValidStartDate && startDate > now ? PHASES.BEFORE :
-         isValidEndDate && endDate < now ? PHASES.AFTER : null;
+         isValidEndDate && endDate <= now ? PHASES.AFTER : null;
 };

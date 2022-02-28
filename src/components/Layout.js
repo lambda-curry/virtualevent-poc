@@ -74,7 +74,7 @@ const TemplateWrapper = ({ children, location, marketing, summit, favicons }) =>
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
       </Helmet>
       <Header location={location} />
-      <ClockComponent summit={summit} display={isFocus} />
+      <ClockComponent active={isFocus} summit={summit} />
       <div id="content-wrapper">{children}</div>
       <Footer marketing={marketing} />
     </div>

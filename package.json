@@ -6,6 +6,7 @@
   "dependencies": {
     "@ncwidgets/file-relation": "^0.8.0",
     "@ncwidgets/id": "^0.8.1",
+    "@react-spring/web": "^9.4.3",
     "@types/googlemaps": "^3.39.9",
     "@types/markerclustererplus": "^2.1.33",
     "@types/react": "^16.9.42",
@@ -58,7 +59,7 @@
     "netlify-cms-lib-widgets": "^1.3.0",
     "node-sass": "^4.14.1",
     "node-sass-utils": "^1.1.3",
-    "openstack-uicore-foundation": "^3.0.46",
+    "openstack-uicore-foundation": "^3.0.54",
     "prop-types": "^15.6.0",
     "react": "^16.8.4",
     "react-avatar-editor": "11.0.9",
