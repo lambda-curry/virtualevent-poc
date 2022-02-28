@@ -294,6 +294,12 @@
                 "name": "Supermicro Solution for Red Hat® OpenStack®",
                 "order": 5,
                 "link": "https://www.supermicro.com/en/solutions/red-hat-openstack"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Supermicro Solution for Red Hat® OpenShift® Container Platform",
+                "order": 6,
+                "link": "https://www.supermicro.com/en/solutions/red-hat-openshift"
               }
             ],
             "videos": [],
