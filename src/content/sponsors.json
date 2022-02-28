@@ -96,6 +96,12 @@
                 "name": "Salesforce CDP Unifies Consumer Data at Exabyte Scale on AWS",
                 "order": 10,
                 "link": "https://aws.amazon.com/solutions/case-studies/salesforce/?did=cr_card&trk=cr_card"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "FreeWheel, A Comcast Company Uses Amazon SageMaker for Digital Video and TV Ad Inventory Prediction",
+                "order": 11,
+                "link": "https://aws.amazon.com/solutions/case-studies/freewheel/"
               }
             ]
           },
