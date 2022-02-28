@@ -41,13 +41,13 @@ export const getVotingPeriodPhase = (votingPeriod, now) => {
   const isValidStartDate = isValidUTC(startDate);
   const isValidEndDate = isValidUTC(endDate);
 
-  if (!isValidStartDate && isValidEndDate && endDate > now ||
-      !isValidEndDate && isValidStartDate && startDate < now ||
+  if ((!isValidStartDate && isValidEndDate && endDate > now) ||
+      (!isValidEndDate && isValidStartDate && startDate < now) ||
       // can vote if no start date end date set; no restrictions
-      !isValidStartDate && !isValidEndDate)
+      (!isValidStartDate && !isValidEndDate))
     return PHASES.DURING;
 
-  return isValidStartDate && startDate < now && isValidEndDate && endDate > now ? PHASES.DURING :
+  return isValidStartDate && startDate <= now && isValidEndDate && endDate > now ? PHASES.DURING :
          isValidStartDate && startDate > now ? PHASES.BEFORE :
-         isValidEndDate && endDate < now ? PHASES.AFTER : null;
+         isValidEndDate && endDate <= now ? PHASES.AFTER : null;
 };
