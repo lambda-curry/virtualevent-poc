@@ -47,8 +47,7 @@ export const filterEventsByAccessLevels = (originalEvents , user) => {
         return originalEvents;
     }
     let summitTickets = user.summit_tickets;
-    let res = originalEvents.filter((ev) => {
+    return originalEvents.filter((ev) => {
         return isAuthorizedBadge(ev, summitTickets);
     });
-    return res;
 }
