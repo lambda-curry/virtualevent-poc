@@ -30,7 +30,7 @@ const DocumentsComponent = ({ event }) => {
   return (
     <div>
       <div className={`${styles.docsContainer}`} style={{ marginTop: "1em" }}>
-        <div className={`navbar-brand ${styles.title}`}>Media/Links</div>
+        <div className={`navbar-brand ${styles.title}`}>Additional Resources</div>
         <hr />
         {sortedMaterials.map((material, index) => {
           let faIcon = "fa-link";

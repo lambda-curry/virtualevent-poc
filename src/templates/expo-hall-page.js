@@ -7,18 +7,25 @@ import SponsorComponent from '../components/SponsorComponent'
 import AttendanceTrackerComponent from '../components/AttendanceTrackerComponent'
 import AccessTracker from '../components/AttendeeToAttendeeWidgetComponent'
 
-const ExpoHallPage = ({ location, imageHeader }) => {
+import styles from '../styles/expo-hero.module.scss'
 
+const ExpoHallPage = ({ location, imageHeader }) => {
   return (
     <Layout location={location}>
       <AttendanceTrackerComponent />
       <AccessTracker />
         <section className="hero is-large sponsors-header" style={{ backgroundImage: `url(${imageHeader.file})` }}>
           <div className="hero-body">
-            <div className="container">
+            <div className={styles.heroContainer}>
+              <h1 className={styles.title}>
+                Sponsors
+              </h1>
+              <h2 className={styles.subtitle}>
+                See the schedule to join live sessions and meet representatives from the sponsor companies.
+              </h2>
             </div>
           </div>
-        </section>      
+        </section>
       <section className="section px-6 py-6">
         <SponsorComponent />
       </section>

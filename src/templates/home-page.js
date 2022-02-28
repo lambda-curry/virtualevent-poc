@@ -54,12 +54,12 @@ export const HomePageTemplate = class extends React.Component {
         <div className="px-5 py-5 mb-6">
           <div className="columns">
             <div className="column is-one-quarter">
-              <h2><b>Community</b></h2>
+              <h2><b>Sponsors</b></h2>
               <SponsorComponent page='lobby'/>
               <AdvertiseComponent section='lobby' column="left" />
             </div>
             <div className="column is-half">
-              <h2><b>Today</b></h2>
+              <h2><b>Today's Sessions</b></h2>
               <LiveEventWidgetComponent
                 onlyPresentations={true}
                 featuredEventId={homeSettings.live_now_featured_event_id}
