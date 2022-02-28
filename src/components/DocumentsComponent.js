@@ -10,6 +10,7 @@ import styles from "../styles/documents.module.scss";
  * @constructor
  */
 const DocumentsComponent = ({ event }) => {
+
   const getMaterials = (event) => {
     const allMaterials = [
       ...(event.links || []),
@@ -24,7 +25,6 @@ const DocumentsComponent = ({ event }) => {
   };
 
   const sortedMaterials = getMaterials(event);
-
   if (sortedMaterials.length === 0) return null;
 
   return (

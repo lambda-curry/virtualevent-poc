@@ -1,0 +1,18 @@
+{
+  "posterPages": [
+    {
+      "trackGroupId": 33,
+      "title": "TechPulse posters",
+      "image": "/img/yahoo_techweek-2022_lobby_poster-gallery_techpulse.png",
+      "name": "TechPulse posters",
+      "subtitle": "See the schedule to join the live sessions and meet the authors."
+    },
+    {
+      "name": "PE-Con posters",
+      "trackGroupId": 34,
+      "title": "PE-Con posters",
+      "subtitle": "See the schedule to join the live sessions and meet the authors.",
+      "image": "/img/yahoo_techweek-2022_lobby_poster-gallery_pecon.png"
+    }
+  ]
+}

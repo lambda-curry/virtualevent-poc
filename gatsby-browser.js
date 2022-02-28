@@ -1,4 +1,5 @@
 import './src/utils/envVariables'
+import 'what-input'
 import ReduxWrapper from "./src/state/ReduxWrapper"
 import colors from './src/content/colors.json'
 export const wrapRootElement = ReduxWrapper;

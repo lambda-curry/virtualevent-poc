@@ -4,6 +4,11 @@
   display: flex;
   position: relative;
 
+  ul{
+    list-style: disc;
+    margin: 15px;
+  }
+
   @media (max-width: 991px) {
     &.showFilters {
       .scheduleWrapper {
@@ -33,6 +38,7 @@
   }
 
   .filterWrapper {
+    width: 30%;
     position: relative;
     margin: 15px 0 0 30px;
 

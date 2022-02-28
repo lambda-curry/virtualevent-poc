@@ -6,6 +6,7 @@ import settings from '../content/settings';
 
 import HomePage from "../templates/home-page"
 import EventPage from "../templates/event-page"
+import PostersPage from "../templates/posters-page";
 import SchedulePage from "../templates/schedule-page";
 import SponsorPage from "../templates/sponsor-page"
 import ExpoHallPage from "../templates/expo-hall-page"
@@ -16,6 +17,7 @@ import ExtraQuestionsPage from "../templates/extra-questions-page"
 import MySchedulePage from "../templates/my-schedule-page";
 import ShowOpenRoute from "../routes/ShowOpenRoute";
 import WithBadgeRoute from "../routes/WithBadgeRoute";
+import PosterDetailPage from "../templates/poster-detail-page";
 
 const App = ({ isLoggedUser, user, summit_phase, lastBuild, syncData }) => {
 
@@ -31,6 +33,9 @@ const App = ({ isLoggedUser, user, summit_phase, lastBuild, syncData }) => {
         <Router basepath="/a" >
           <SchedulePage path="/schedule" location={location} />
           <WithAuthRoute path="/" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location}>
+            <PostersPage path="/posters" trackGroupId={0} location={location} />
+            <PostersPage path="/posters/:trackGroupId" location={location} />
+            <PosterDetailPage path="/poster/:presentationId/" isLoggedIn={isLoggedUser} user={user} location={location} />
             <MySchedulePage path="/my-schedule" location={location} summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user}/>
             <ExtraQuestionsPage path="/extra-questions" isLoggedIn={isLoggedUser} user={user} location={location} />
             <ShowOpenRoute path="/" summit_phase={summit_phase} isLoggedIn={isLoggedUser} user={user} location={location}>

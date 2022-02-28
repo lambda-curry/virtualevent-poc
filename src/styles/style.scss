@@ -54,6 +54,49 @@ body {
   height: 100%;
 }
 
+*:focus,
+.focus {
+  outline: 3px solid transparent !important;
+    box-shadow:  0 0 0 3px #fff, 0 0 0 6px #333 !important;
+}
+*:focus-visible {
+  outline: none !important;
+}
+
+/*
+  This will hide the focus indicator if the element receives focus via the mouse,
+  but it will still show up on keyboard focus.
+*/
+html:not([data-whatintent=keyboard]) *:focus,
+html:not([data-whatintent=keyboard]) .focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/*
+ Show Skip to content link when focused
+ */
+.skip-to-content:focus {
+  width: auto;
+  height: auto;
+  padding: 0 5px;
+  margin: 0;
+  overflow: hidden;
+  clip: auto;
+  white-space: nowrap;
+  border: 0;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  background-color: white;
+  z-index: 999;
+}
+
+/* overrides Bulma focus style */
+.button:focus {
+  color: $color_text_light !important;
+}
+
 label {
   font-weight: 300;
 }

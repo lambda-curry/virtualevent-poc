@@ -6,10 +6,12 @@
   "dependencies": {
     "@ncwidgets/file-relation": "^0.8.0",
     "@ncwidgets/id": "^0.8.1",
+    "@react-spring/web": "^9.4.3",
     "@types/googlemaps": "^3.39.9",
     "@types/markerclustererplus": "^2.1.33",
     "@types/react": "^16.9.42",
-    "attendee-to-attendee-widget": "^2.0.10",
+    "@vimeo/player": "^2.16.3",
+    "attendee-to-attendee-widget": "^2.0.11",
     "awesome-bootstrap-checkbox": "^1.0.1",
     "axios": "^0.19.2",
     "blob-polyfill": "^4.0.20200601",
@@ -70,7 +72,6 @@
     "react-helmet": "^6.0.0",
     "react-iframe-comm": "^1.2.2",
     "react-masonry-css": "^1.0.14",
-    "react-medium-image-zoom": "^4.3.1",
     "react-redux": "^7.2.0",
     "react-rte": "^0.16.3",
     "react-select": "^2.4.4",
@@ -80,7 +81,7 @@
     "redux": "^4.0.5",
     "redux-persist": "^6.0.0",
     "redux-thunk": "^2.3.0",
-    "schedule-filter-widget": "^1.2.0",
+    "schedule-filter-widget": "^1.2.6",
     "simple-chat-widget": "^1.0.31",
     "simple-oauth2": "^4.1.0",
     "slick-carousel": "^1.8.1",
@@ -98,8 +99,10 @@
     "video.js": "^7.8.2",
     "videojs-mux": "^3.1.0",
     "videojs-youtube": "^2.6.1",
+    "what-input": "^5.2.10",
     "xmlhttprequest": "^1.8.0",
-    "@vimeo/player":"^2.16.3"
+    "react-block-image": "^1.0.0",
+    "react-medium-image-zoom": "^4.3.5"
   },
   "keywords": [
     "gatsby"

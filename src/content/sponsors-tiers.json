@@ -5,7 +5,7 @@
       "name": "Silver",
       "badge": "",
       "lobby": {
-        "lobbyTemplate": "carousel",
+        "lobbyTemplate": "big-images",
         "display": true
       },
       "sponsorPage": {
@@ -26,8 +26,8 @@
     }
   ],
   "imageHeader": {
-    "file" : "/img/08-yahoo_techweek-2022_sponsor-header_centered-2x.jpg",
-    "alt" : ""
+    "file": "/img/08-yahoo_techweek-2022_sponsor-header_centered-2x.jpg",
+    "alt": ""
   },
   "lobbyButton": {
     "text": "",

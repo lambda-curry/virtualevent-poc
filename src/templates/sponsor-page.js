@@ -105,7 +105,7 @@ export const SponsorPageTemplate = class extends React.Component {
             <AccessTracker />
             <SponsorHeader sponsor={sponsor} tier={tier} scanBadge={() => this.onBadgeScan()} />
             <section className={`section px-0 ${tier.sponsorPage.sponsorTemplate === 'big-header' ? 'pt-5' : 'pt-0'} pb-0`}>
-              {sponsor.sideImage &&
+              {sponsor.sideImage && sponsor?.sideImage?.file &&
               <div className="columns mx-0 mt-0 mb-6">
                 <div className={`column is-half px-5 py-0 ${styles.introHalf}`}>
                   {sponsor.title && <h1>{sponsor.title}</h1>}
@@ -118,7 +118,7 @@ export const SponsorPageTemplate = class extends React.Component {
               }
               <div className="columns mx-0 my-0">
                 <div className="column is-three-quarters px-5 py-0">
-                  {!sponsor.sideImage &&
+                  {!sponsor?.sideImage?.file &&
                   <div className={styles.sponsorIntro}>
                     {sponsor.title && <h1>{sponsor.title}</h1>}
                     {sponsor.intro && <span dangerouslySetInnerHTML={{ __html: parsedIntro }} />}

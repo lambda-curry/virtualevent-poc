@@ -13,7 +13,6 @@ export const customErrorHandler = (err, res) => (dispatch, state) => {
       expiredToken(err);
       break;
     case 412:
-      debugger;
       for (let [key, value] of Object.entries(err.response.body.errors)) {
         if (isNaN(key)) {
           msg += key + ': ';
