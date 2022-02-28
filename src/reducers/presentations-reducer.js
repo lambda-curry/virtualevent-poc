@@ -37,7 +37,6 @@ const DEFAULT_VOTEABLE_PRESENTATIONS_STATE = {
   // updatedPresentations filtered by applied filters from filters widget, used to feed the poster grid widget
   filteredPresentations: [],
   // stores user profile set in initial data set for future access level filtering
-  currentUserProfile: null,
   detailedPresentation: null,
   recommendedPresentations: [],
   loading: false
@@ -47,19 +46,19 @@ const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, act
   const { type, payload } = action;
   switch (type) {
     case SET_INITIAL_DATASET: {
-      const { userProfile: currentUserProfile } = payload;
+      const { userProfile: currentUserProfile } = action;
       // pre filter by user access levels
       const filteredEvents = randomSort(filterEventsByAccessLevels(allVoteablePresentations, currentUserProfile));
       return { ...state,
         ssrPresentations: filteredEvents,
         allPresentations: filteredEvents,
         filteredPresentations: filteredEvents,
-        currentUserProfile: currentUserProfile
       };
     }
     case PRESENTATIONS_PAGE_RESPONSE: {
+      const { userProfile: currentUserProfile } = action;
+      const { filters, allPresentations } = state;
       const { response: { data } } = payload;
-      const { filters, allPresentations, currentUserProfile } = state;
       // get the new data from api bc the temporal public urls
       const oldPresentations = [...allPresentations];
       let newPresentations = [];

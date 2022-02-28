@@ -26,9 +26,9 @@ export const GET_RECOMMENDED_PRESENTATIONS = 'GET_RECOMMENDED_PRESENTATIONS';
 export const VOTING_PERIOD_ADD = 'VOTING_PERIOD_ADD';
 export const VOTING_PERIOD_PHASE_CHANGE = 'VOTING_PERIOD_PHASE_CHANGE';
 
-export const setInitialDataSet = () => (dispatch, getState) => Promise.resolve().then(() => {
-  const { userState: { userProfile } } = getState();
-  dispatch(createAction(SET_INITIAL_DATASET)({ userProfile }));
+export const setInitialDataset = () => (dispatch) => Promise.resolve().then(() => {
+  return dispatch(createAction(SET_INITIAL_DATASET)());
+}).then(() => {
   return dispatch(createVotingPeriods());
 });
 

@@ -15,7 +15,7 @@ import PosterButton from "../components/PosterButton";
 import HeroComponent from "../components/HeroComponent";
 import PosterGrid from "../components/poster-grid";
 import { PHASES } from '../utils/phasesUtils';
-import { getAllVoteablePresentations, getPresentationById, setInitialDataSet } from "../actions/presentation-actions";
+import { getAllVoteablePresentations, getPresentationById, setInitialDataset } from "../actions/presentation-actions";
 import { castPresentationVote, uncastPresentationVote } from '../actions/user-actions';
 import { getDisqusSSO } from "../actions/user-actions";
 import URI from "urijs"
@@ -33,12 +33,12 @@ export const PosterDetailPageTemplate = class extends React.Component {
   }
 
   componentDidMount() {
-    const { presentationId, allPosters, setInitialDataSet, getAllVoteablePresentations } = this.props;
+    const { presentationId, allPosters, setInitialDataset, getAllVoteablePresentations } = this.props;
     this.props.getDisqusSSO();
     this.props.getPresentationById(presentationId);
     if (!allPosters.length) {
       console.log('PosterDetailPageTemplate::componentDidMount loading all presentations')
-      setInitialDataSet().then(() => getAllVoteablePresentations());
+      setInitialDataset().then(() => getAllVoteablePresentations());
     }
   }
 
@@ -243,7 +243,7 @@ const PosterDetailPage = ({
   allPosters,
   recommendedPosters,
   votes,
-  setInitialDataSet,
+  setInitialDataset,
   getAllVoteablePresentations,
   hasTicket,
   isAuthorized,
@@ -275,7 +275,7 @@ const PosterDetailPage = ({
         allPosters={allPosters}
         recommendedPosters={recommendedPosters}
         votes={votes}
-        setInitialDataSet={setInitialDataSet}
+        setInitialDataset={setInitialDataset}
         getAllVoteablePresentations={getAllVoteablePresentations}
         hasTicket={hasTicket}
         isAuthorized={isAuthorized}
@@ -335,6 +335,6 @@ export default connect(mapStateToProps, {
   getDisqusSSO,
   castPresentationVote,
   uncastPresentationVote,
-  setInitialDataSet,
+  setInitialDataset,
   getAllVoteablePresentations,
 })(PosterDetailPage);

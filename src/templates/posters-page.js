@@ -10,7 +10,7 @@ import FilterButton from '../components/FilterButton';
 import AttendanceTrackerComponent from '../components/AttendanceTrackerComponent';
 
 import {
-  setInitialDataSet,
+  setInitialDataset,
   getAllVoteablePresentations,
   updateFilter
 } from '../actions/presentation-actions';
@@ -51,7 +51,7 @@ const PostersPage = ({
   const [allBuildTimePostersByTrackGroup, setAllBuildTimePostersByTrackGroup] = useState(allBuildTimePosters);
 
   useEffect(() => {
-    setInitialDataSet().then(() => getAllVoteablePresentations());
+    setInitialDataset().then(() => getAllVoteablePresentations());
   }, [trackGroupId]);
 
   useEffect(() => {
@@ -149,7 +149,7 @@ const mapStateToProps = ({ settingState, presentationsState, userState, summitSt
 });
 
 export default connect(mapStateToProps, {
-  setInitialDataSet,
+  setInitialDataset,
   getAllVoteablePresentations,
   castPresentationVote,
   uncastPresentationVote,
