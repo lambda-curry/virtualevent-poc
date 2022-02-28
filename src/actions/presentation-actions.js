@@ -72,6 +72,7 @@ export const getAllVoteablePresentations = (page = 1, perPage = 10) => async (di
       dispatch(stopLoading());
     });
   }).catch(e => {
+     console.log('ERROR: ', e);
     dispatch(stopLoading());
     clearAccessToken();
     return (e);
@@ -103,6 +104,7 @@ export const getVoteablePresentations = (page = 1, perPage = 10) => async (dispa
     customErrorHandler,
     { page }
   )(params)(dispatch).catch(e => {
+    console.log('ERROR: ', e);
     clearAccessToken();
     return (e);
   });
@@ -134,6 +136,7 @@ export const getPresentationById = (presentationId) => async (dispatch, getState
   )(params)(dispatch).then((presentation) => {
       dispatch(getRecommendedPresentations(presentation.response.track.track_groups));
   }).catch(e => {
+      console.log('ERROR: ', e);
       dispatch(stopLoading());
       dispatch(createAction(GET_PRESENTATION_DETAILS_ERROR)(e));
       clearAccessToken();
@@ -173,6 +176,7 @@ export const getRecommendedPresentations = (trackGroups) => async (dispatch, get
   )(params)(dispatch).then(() => {
       dispatch(stopLoading());
   }).catch(e => {
+      console.log('ERROR: ', e);
       dispatch(stopLoading());
       clearAccessToken();
       return (e);

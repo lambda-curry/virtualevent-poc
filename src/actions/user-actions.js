@@ -316,6 +316,11 @@ export const castPresentationVote = (presentation) => async (dispatch, getState)
   )(params)(dispatch).catch((e) => {
     console.log('ERROR: ', e);
     clearAccessToken();
+    // need to revert button state
+    // first 'confirm' as local vote
+    dispatch(createAction(TOGGLE_PRESENTATION_VOTE)({ presentation, isVoted: true }));
+    // inmediately remove vote
+    dispatch(createAction(TOGGLE_PRESENTATION_VOTE)({ presentation, isVoted: false, reverting: true }));
     return e;
   });
 };
