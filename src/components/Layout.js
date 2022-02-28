@@ -30,7 +30,7 @@ const TemplateWrapper = ({ children, location, marketing, summit, favicons }) =>
       window.removeEventListener("blur", onBlur);
     };
   });
-  
+
   return (
     <div id="container">
       <Helmet>
@@ -75,7 +75,7 @@ const TemplateWrapper = ({ children, location, marketing, summit, favicons }) =>
       </Helmet>
       <a className="sr-only skip-to-content" href="#content-wrapper">Skip to content</a>
       <Header location={location} />
-      <ClockComponent summit={summit} display={isFocus} />
+      <ClockComponent active={isFocus} summit={summit} />
       <div id="content-wrapper">{children}</div>
       <Footer marketing={marketing} />
     </div>
