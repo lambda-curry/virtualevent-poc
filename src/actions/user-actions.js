@@ -8,7 +8,8 @@ import {
   createAction,
   startLoading,
   stopLoading,
-  passwordlessLogin
+  passwordlessLogin,
+  clearAccessToken,
 } from 'openstack-uicore-foundation/lib/methods';
 
 import Swal from 'sweetalert2';
@@ -46,7 +47,14 @@ export const TOGGLE_PRESENTATION_VOTE          = 'TOGGLE_PRESENTATION_VOTE';
 
 export const getDisqusSSO = () => async (dispatch) => {
 
-  const accessToken = await getAccessToken();
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    dispatch(stopLoading());
+    return Promise.reject();
+  }
 
   return getRequest(
     null,
@@ -55,13 +63,22 @@ export const getDisqusSSO = () => async (dispatch) => {
     customErrorHandler
   )({})(dispatch).then(() => {
   }).catch(e => {
+    console.log('ERROR: ', e);
+    clearAccessToken();
     return (e);
   });
 }
 
 export const getRocketChatSSO = () => async (dispatch) => {
 
-  const accessToken = await getAccessToken();
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    dispatch(stopLoading());
+    return Promise.reject();
+  }
 
   return getRequest(
     null,
@@ -70,21 +87,23 @@ export const getRocketChatSSO = () => async (dispatch) => {
     customErrorHandler
   )({})(dispatch).then(() => {
   }).catch(e => {
+    console.log('ERROR: ', e);
+    clearAccessToken();
     return (e);
   });
 }
 
 export const getUserProfile = () => async (dispatch) => {
 
-  let accessToken = null;
+  let accessToken;
   try {
-     accessToken = await getAccessToken();
-  }
-  catch (e){
-    return Promise.resolve();
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    dispatch(stopLoading());
+    return Promise.reject();
   }
 
-  if (!accessToken) return Promise.resolve();
   let params = {
     access_token: accessToken,
     expand: 'groups,summit_tickets,summit_tickets,summit_tickets.owner,summit_tickets.owner.presentation_votes,summit_tickets.owner.extra_questions,summit_tickets.badge,summit_tickets.badge.features,summit_tickets.badge.type, summit_tickets.badge.type.access_levels,summit_tickets.badge.type.features,favorite_summit_events,feedback,schedule_summit_events,rsvp,rsvp.answers'
@@ -101,20 +120,31 @@ export const getUserProfile = () => async (dispatch) => {
     return dispatch(getIDPProfile()).then(() => {
       return dispatch(getScheduleSyncLink()).then(() => dispatch(createAction(STOP_LOADING_PROFILE)()))
     });
-  }).catch(() => dispatch(createAction(STOP_LOADING_PROFILE)()));
+  }).catch((e) => {
+      console.log('ERROR: ', e);
+      dispatch(createAction(STOP_LOADING_PROFILE)());
+      clearAccessToken();
+      return (e);
+  });
 }
 
 export const getIDPProfile = () => async (dispatch) => {
 
-  const accessToken = await getAccessToken();
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    dispatch(stopLoading());
+    return Promise.reject();
+  }
 
-  if (!accessToken) return Promise.resolve();
+  dispatch(createAction(START_LOADING_IDP_PROFILE)());
 
   let params = {
     access_token: accessToken,
+    expand: 'groups,summit_tickets,summit_tickets,summit_tickets.owner,summit_tickets.owner.presentation_votes,summit_tickets.owner.extra_questions,summit_tickets.badge,summit_tickets.badge.features,summit_tickets.badge.type, summit_tickets.badge.type.access_levels,summit_tickets.badge.type.features,favorite_summit_events,feedback,schedule_summit_events,rsvp,rsvp.answers'
   };
-
-  dispatch(createAction(START_LOADING_IDP_PROFILE)());
 
   return getRequest(
       null,
@@ -123,7 +153,12 @@ export const getIDPProfile = () => async (dispatch) => {
       customErrorHandler
   )(params)(dispatch)
       .then(() => dispatch(createAction(STOP_LOADING_IDP_PROFILE)()))
-      .catch(() => dispatch(createAction(STOP_LOADING_IDP_PROFILE)()));
+      .catch((e) => {
+        console.log('ERROR: ', e);
+        dispatch(createAction(STOP_LOADING_IDP_PROFILE)())
+        clearAccessToken();
+        return (e);
+      });
 }
 
 export const requireExtraQuestions = () => (dispatch, getState) => {
@@ -153,9 +188,14 @@ export const requireExtraQuestions = () => (dispatch, getState) => {
 
 export const scanBadge = (sponsorId) => async (dispatch) => {
 
-  const accessToken = await getAccessToken();
-
-  if (!accessToken) return Promise.resolve();
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    dispatch(stopLoading());
+    return Promise.reject();
+  }
 
   let params = {
     access_token: accessToken,
@@ -175,15 +215,22 @@ export const scanBadge = (sponsorId) => async (dispatch) => {
       return (payload)
     })
     .catch(e => {
+      console.log('ERROR: ', e);
       dispatch(createAction(SCAN_BADGE_ERROR)(e));
+      clearAccessToken();
       return (e);
     });
 }
 
 export const addToSchedule = (event) => async (dispatch, getState) => {
-  const accessToken = await getAccessToken();
 
-  if (!accessToken) return Promise.reject();
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    return Promise.reject();
+  }
 
   const url = `${getEnvVariable(SUMMIT_API_BASE_URL)}/api/v1/summits/${getEnvVariable(SUMMIT_ID)}/members/me/schedule/${event.id}`;
 
@@ -194,14 +241,20 @@ export const addToSchedule = (event) => async (dispatch, getState) => {
     return event;
   }).catch(e => {
     console.log('ERROR: ', e);
+    clearAccessToken();
     return e;
   });
 };
 
 export const removeFromSchedule = (event) => async (dispatch, getState) => {
-  const accessToken = await getAccessToken();
 
-  if (!accessToken) return Promise.reject();
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    return Promise.reject();
+  }
 
   const url = `${getEnvVariable(SUMMIT_API_BASE_URL)}/api/v1/summits/${getEnvVariable(SUMMIT_ID)}/members/me/schedule/${event.id}`;
 
@@ -212,15 +265,21 @@ export const removeFromSchedule = (event) => async (dispatch, getState) => {
     return event;
   }).catch(e => {
     console.log('ERROR: ', e);
+    clearAccessToken();
     return e;
   });
 };
 
 export const castPresentationVote = (presentation) => async (dispatch, getState) => {
 
-  const accessToken = await getAccessToken();
-
-  if (!accessToken) return Promise.resolve();
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    dispatch(stopLoading());
+    return Promise.reject();
+  }
 
   const params = {
     access_token: accessToken,
@@ -254,14 +313,23 @@ export const castPresentationVote = (presentation) => async (dispatch, getState)
     {},
     errorHandler,
     { presentation }
-  )(params)(dispatch).catch(errorHandler);
+  )(params)(dispatch).catch((e) => {
+    console.log('ERROR: ', e);
+    clearAccessToken();
+    return e;
+  });
 };
 
 export const uncastPresentationVote = (presentation) => async (dispatch, getState) => {
 
-  const accessToken = await getAccessToken();
-
-  if (!accessToken) return Promise.resolve();
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    dispatch(stopLoading());
+    return Promise.reject();
+  }
 
   const params = {
     access_token: accessToken,
@@ -285,14 +353,23 @@ export const uncastPresentationVote = (presentation) => async (dispatch, getStat
     {},
     errorHandler,
     { presentation }
-  )(params)(dispatch).catch(errorHandler);
+  )(params)(dispatch).catch((e) => {
+    console.log('ERROR: ', e);
+    clearAccessToken();
+    return e;
+  });
 };
 
 export const updateProfilePicture = (pic) => async (dispatch) => {
 
-  const accessToken = await getAccessToken();
-
-  if (!accessToken) return Promise.resolve();
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    dispatch(stopLoading());
+    return Promise.reject();
+  }
 
   let params = {
     access_token: accessToken,
@@ -309,14 +386,24 @@ export const updateProfilePicture = (pic) => async (dispatch) => {
     customErrorHandler,
   )(params)(dispatch)
     .then(() => dispatch(getIDPProfile()))
-    .catch(() => dispatch(createAction(STOP_LOADING_IDP_PROFILE)()));
+    .catch((e) => {
+      console.log('ERROR: ', e);
+      dispatch(createAction(STOP_LOADING_IDP_PROFILE)())
+      clearAccessToken();
+      return e;
+    });
 }
 
 export const updateProfile = (profile) => async (dispatch) => {
 
-  const accessToken = await getAccessToken();
-
-  if (!accessToken) return Promise.resolve();
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    dispatch(stopLoading());
+    return Promise.reject();
+  }
 
   let params = {
     access_token: accessToken,
@@ -332,15 +419,24 @@ export const updateProfile = (profile) => async (dispatch) => {
     customErrorHandler
   )(params)(dispatch)
     .then(() => dispatch(getIDPProfile()))
-    .catch(() => dispatch(createAction(STOP_LOADING_IDP_PROFILE)()));
+    .catch((e) => {
+      console.log('ERROR: ', e);
+      dispatch(createAction(STOP_LOADING_IDP_PROFILE)());
+      clearAccessToken();
+      return e;
+    });
 }
 
 export const updatePassword = (password) => async (dispatch) => {
 
-  const accessToken = await getAccessToken();
-
-  if (!accessToken) return Promise.resolve();
-
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    dispatch(stopLoading());
+    return Promise.reject();
+  }
   let params = {
     access_token: accessToken,
   };
@@ -359,7 +455,12 @@ export const updatePassword = (password) => async (dispatch) => {
       let msg = 'Password Updated';
       Swal.fire("Success", msg, "success");
     })
-    .catch(() => dispatch(createAction(STOP_LOADING_IDP_PROFILE)()));
+    .catch((e) => {
+      console.log('ERROR: ', e);
+      dispatch(createAction(STOP_LOADING_IDP_PROFILE)())
+      clearAccessToken();
+      return e;
+    });
 }
 
 export const saveExtraQuestions = (extra_questions, owner, disclaimer) => async (dispatch, getState) => {
@@ -379,7 +480,14 @@ export const saveExtraQuestions = (extra_questions, owner, disclaimer) => async 
     extra_questions: extraQuestionsAnswers
   };
 
-  const accessToken = await getAccessToken();
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    dispatch(stopLoading());
+    return Promise.reject();
+  }
 
   dispatch(startLoading());
 
@@ -402,7 +510,8 @@ export const saveExtraQuestions = (extra_questions, owner, disclaimer) => async 
   ).catch(e => {
     dispatch(stopLoading());
     Swal.fire('Error', "Error saving your questions. Please retry.", "warning");
-    return (e);
+    clearAccessToken();
+    return e;
   });
 };
 
@@ -416,9 +525,15 @@ export const setPasswordlessLogin = (params) => (dispatch, getState) => {
 }
 
 export const getScheduleSyncLink = () => async (dispatch) => {
-  const accessToken = await getAccessToken();
 
-  if (!accessToken) return Promise.resolve();
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    dispatch(stopLoading());
+    return Promise.reject();
+  }
 
   let params = {
     access_token: accessToken,
@@ -430,7 +545,11 @@ export const getScheduleSyncLink = () => async (dispatch) => {
       `${window.SUMMIT_API_BASE_URL}/api/v1/summits/${window.SUMMIT_ID}/members/me/schedule/shareable-link`,
       null,
       customErrorHandler,
-  )(params)(dispatch);
+  )(params)(dispatch).catch((e) => {
+    console.log('ERROR: ', e);
+    clearAccessToken();
+    return e;
+  });
 };
 
 export const setUserOrder = (order) => (dispatch) => Promise.resolve().then(() => {
@@ -458,7 +577,15 @@ export const checkOrderData = (order) => (dispatch, getState) => {
  * @returns {function(*=, *): *}
  */
 export const doVirtualCheckIn = (attendee) =>  async (dispatch, getState) => {
-  const accessToken = await getAccessToken();
+
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    dispatch(stopLoading());
+    return Promise.reject();
+  }
 
   let params = {
     access_token: accessToken,
@@ -470,5 +597,9 @@ export const doVirtualCheckIn = (attendee) =>  async (dispatch, getState) => {
       `${window.API_BASE_URL}/api/v1/summits/${attendee.summit_id}/attendees/${attendee.id}/virtual-check-in`,
       {},
       customErrorHandler
-  )(params)(dispatch);
+  )(params)(dispatch).catch((e) => {
+    console.log('ERROR: ', e);
+    clearAccessToken();
+    return e;
+  });
 };

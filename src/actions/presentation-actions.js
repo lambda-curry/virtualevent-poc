@@ -4,6 +4,7 @@ import {
   createAction,
   stopLoading,
   startLoading,
+  clearAccessToken,
 } from 'openstack-uicore-foundation/lib/methods';
 
 import { customErrorHandler } from '../utils/customErrorHandler';
@@ -72,6 +73,7 @@ export const getAllVoteablePresentations = (page = 1, perPage = 10) => async (di
     });
   }).catch(e => {
     dispatch(stopLoading());
+    clearAccessToken();
     return (e);
   });
 }
@@ -101,6 +103,7 @@ export const getVoteablePresentations = (page = 1, perPage = 10) => async (dispa
     customErrorHandler,
     { page }
   )(params)(dispatch).catch(e => {
+    clearAccessToken();
     return (e);
   });
 };
@@ -133,6 +136,7 @@ export const getPresentationById = (presentationId) => async (dispatch, getState
   }).catch(e => {
       dispatch(stopLoading());
       dispatch(createAction(GET_PRESENTATION_DETAILS_ERROR)(e));
+      clearAccessToken();
       return (e);
   });
 };
@@ -170,6 +174,7 @@ export const getRecommendedPresentations = (trackGroups) => async (dispatch, get
       dispatch(stopLoading());
   }).catch(e => {
       dispatch(stopLoading());
+      clearAccessToken();
       return (e);
   });
 };
