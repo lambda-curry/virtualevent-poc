@@ -296,25 +296,25 @@
                 "class_name": "PresentationSlide",
                 "link": "https://www.supermicro.com/solutions/Solution-Brief_SMCI_NVIDIA_AI_Enterprise.pdf",
                 "name": "Delivering AI to Enterprises, with Supermicro Systems, NVIDIA AI Enterprise, and VMware",
-                "order": 5
+                "order": 7
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "https://www.supermicro.com/solutions/Solution-Brief_NVIDIA_HGX_A100_VCS.pdf",
                 "name": "Maximizing AI Development & Delivery with Virtualized NVIDIA A100 GPUs",
-                "order": 6
+                "order": 8
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "https://www.supermicro.com/solutions/Solution-Brief_SMCI_NVIDIA_Cloudera_Spark.pdf",
                 "name": "Supermicro, Cloudera, & NVIDIA Accelerate Enterprise Data Analytics",
-                "order": 7
+                "order": 9
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "https://www.supermicro.com/products/brief/product-brief-Twin-Family-Multi-node.pdf",
                 "name": "Construct Optimized IT Solutions With The Supermicro X12 Twin Family Of Multi-Node Servers",
-                "order": 8
+                "order": 10
               }
             ]
           },
