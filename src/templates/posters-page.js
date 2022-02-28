@@ -49,6 +49,7 @@ const PostersPage = ({
   const [pageSettings] = useState(pagesSettings.find(ps => ps.trackGroupId === parseInt(trackGroupId)));
   const [pageTrackGroups, setPageTrackGroups] = useState([]);
   const [showFilters, setShowFilters] = useState(false);
+  const [appliedPageFilter, setAppliedPageFilter] = useState(null);
   const [filteredPosters, setFilteredPosters] = useState(posters);
   const [allBuildTimePostersByTrackGroup, setAllBuildTimePostersByTrackGroup] = useState(allBuildTimePosters);
   const [votedPosterTrackGroups, setVotedPosterTrackGroups] = useState([]);
