@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react'
-import { connect } from 'react-redux'
-import { Helmet } from 'react-helmet'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
-import ClockComponent from '../components/ClockComponent'
-import useSiteMetadata from './SiteMetadata'
-import { withPrefix } from 'gatsby'
+import React, { useEffect, useState } from 'react';
+import { connect } from 'react-redux';
+import { Helmet } from 'react-helmet';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
+import ClockComponent from '../components/ClockComponent';
+import useSiteMetadata from './SiteMetadata';
+import { withPrefix } from 'gatsby';
 
-import "../styles/bulma.scss"
+import '../styles/bulma.scss';
 
 const TemplateWrapper = ({ children, location, marketing, summit, favicons }) => {
   const { title, description } = useSiteMetadata();
@@ -30,7 +30,7 @@ const TemplateWrapper = ({ children, location, marketing, summit, favicons }) =>
       window.removeEventListener("blur", onBlur);
     };
   });
-  
+
   return (
     <div id="container">
       <Helmet>
@@ -74,7 +74,7 @@ const TemplateWrapper = ({ children, location, marketing, summit, favicons }) =>
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
       </Helmet>
       <Header location={location} />
-      <ClockComponent summit={summit} display={isFocus} />
+      <ClockComponent active={isFocus} summit={summit} />
       <div id="content-wrapper">{children}</div>
       <Footer marketing={marketing} />
     </div>
