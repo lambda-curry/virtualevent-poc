@@ -18,8 +18,6 @@ export const filterByTrackGroup = (originalEvents, currentTrackGroupId = 0) => {
     return originalEvents.filter((ev) => {
         return ev?.track?.track_groups.includes(currentTrackGroupId);
     });
-    console.log(`filterByTrackGroup currentTrackGroupId ${currentTrackGroupId} originalEvents ${originalEvents.length} filtered ${res.length}`);
-    return res;
 }
 
 export const randomSort = (array) => {
