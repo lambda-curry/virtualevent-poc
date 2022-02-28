@@ -4,6 +4,7 @@ import {
     createAction,
     stopLoading,
     startLoading,
+    clearAccessToken,
 } from 'openstack-uicore-foundation/lib/methods';
 
 import {customErrorHandler} from '../utils/customErrorHandler';
@@ -41,6 +42,7 @@ export const getEventById = (eventId) => async (dispatch, getState) => {
         dispatch(stopLoading());
         return Promise.reject();
     }
+
     let params = {
         access_token: accessToken,
         expand: 'track,location,location.venue,location.floor,speakers,slides,links,videos,media_uploads'
@@ -56,6 +58,8 @@ export const getEventById = (eventId) => async (dispatch, getState) => {
     }).catch(e => {
         dispatch(stopLoading());
         dispatch(createAction(GET_EVENT_DATA_ERROR)(e));
+        console.log('ERROR: ', e);
+        clearAccessToken();
         return (e);
     });
 
