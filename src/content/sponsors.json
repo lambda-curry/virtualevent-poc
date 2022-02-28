@@ -288,6 +288,12 @@
                 "name": "Twitter",
                 "order": 4,
                 "link": "https://twitter.com/Supermicro_SMCI"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Supermicro Solution for Red Hat® OpenStack®",
+                "order": 5,
+                "link": "https://www.supermicro.com/en/solutions/red-hat-openstack"
               }
             ],
             "videos": [],
