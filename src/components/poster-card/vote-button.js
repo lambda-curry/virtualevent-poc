@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import styles from './vote-button.module.scss';
 
 const VoteButton = ({ isVoted, canVote, toggleVote, style }) => {
-  const [togglingVote, setTogglingVote] = useState(false);
   const [vote, setVote] = useState(isVoted);
   const [iconClass, setIconClass] = useState(isVoted ? 'fa-heart' : 'fa-heart-o');
   const [buttonClass, setButtonClass] = useState(isVoted ? styles.added : styles.add);
