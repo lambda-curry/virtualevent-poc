@@ -67,9 +67,14 @@
   width: 100%;
 }
 
-.first-sponsor-container img {
-  padding-top: 0;
-  width: 100%;
+.first-sponsor-container {
+  a {
+    display: block;
+  }
+  img {
+    padding-top: 0;
+    width: 100%;
+  }
 }
 
 @media (min-width: 1921px) {
