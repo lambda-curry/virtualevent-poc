@@ -49,7 +49,7 @@ const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, act
     case SET_INITIAL_DATASET: {
       const { userProfile: currentUserProfile } = payload;
       // pre filter by user access levels
-      let filteredEvents = randomSort(filterEventsByAccessLevels(allVoteablePresentations, currentUserProfile));
+      const filteredEvents = randomSort(filterEventsByAccessLevels(allVoteablePresentations, currentUserProfile));
       return { ...state,
         ssrPresentations: filteredEvents,
         allPresentations: filteredEvents,
