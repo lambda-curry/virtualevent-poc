@@ -6,7 +6,7 @@ import styles from './index.module.scss';
 
 const NotificationHub = ({
     config = { tension: 125, friction: 20, precision: 0.1 },
-    timeout = 5000,
+    timeout = 8000,
     children,
 }) => {
 
