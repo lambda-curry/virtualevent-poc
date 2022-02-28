@@ -1,17 +1,30 @@
 import { combineReducers } from 'redux';
 import { isString } from 'lodash';
 
+import { VotingPeriod } from '../model/VotingPeriod';
+
+import { START_LOADING, STOP_LOADING, LOGOUT_USER } from 'openstack-uicore-foundation/lib/actions';
+import { RESET_STATE, SYNC_DATA } from "../actions/base-actions";
+
+import {
+  CAST_PRESENTATION_VOTE_REQUEST,
+  UNCAST_PRESENTATION_VOTE_REQUEST,
+  TOGGLE_PRESENTATION_VOTE
+} from '../actions/user-actions';
+
 import {
   SET_INITIAL_DATASET,
   PRESENTATIONS_PAGE_REQUEST,
   PRESENTATIONS_PAGE_RESPONSE,
   VOTEABLE_PRESENTATIONS_UPDATE_FILTER,
-  GET_PRESENTATION_DETAILS, GET_RECOMMENDED_PRESENTATIONS
+  GET_PRESENTATION_DETAILS,
+  GET_RECOMMENDED_PRESENTATIONS,
+  VOTING_PERIOD_ADD,
+  VOTING_PERIOD_PHASE_CHANGE,
 } from '../actions/presentation-actions';
-import { START_LOADING, STOP_LOADING } from "openstack-uicore-foundation/lib/actions";
 
 import { filterEventsByAccessLevels } from '../utils/authorizedGroups';
-
+import { randomSort } from '../utils/filterUtils';
 import allVoteablePresentations from '../content/voteable_presentations.json';
 import DEFAULT_FILTERS_STATE from '../content/posters_filters.json';
 
@@ -30,15 +43,13 @@ const DEFAULT_VOTEABLE_PRESENTATIONS_STATE = {
   loading: false
 };
 
-const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, action = {}) => {
+const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, action) => {
   const { type, payload } = action;
   switch (type) {
     case SET_INITIAL_DATASET: {
       const { userProfile: currentUserProfile } = payload;
       // pre filter by user access levels
-      let filteredEvents = filterEventsByAccessLevels(allVoteablePresentations, currentUserProfile);
-      // suffle
-      filteredEvents = filteredEvents.map((a) => [Math.random(),a]).sort((a,b) => a[0]-b[0]).map((a) => a[1]);
+      const filteredEvents = randomSort(filterEventsByAccessLevels(allVoteablePresentations, currentUserProfile));
       return { ...state,
         ssrPresentations: filteredEvents,
         allPresentations: filteredEvents,
@@ -55,7 +66,8 @@ const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, act
       data.forEach(presentation => {
         const index = allPresentations.findIndex((p) => p.id === presentation.id);
         if (index !== -1) {
-          oldPresentations.splice(index, 1, presentation);
+          // replace presentation on index
+          oldPresentations.splice(index, 1, {...oldPresentations[index], ...presentation});
         } else {
           newPresentations.push(presentation);
         }
@@ -83,7 +95,8 @@ const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, act
       return { ...state, detailedPresentation: presentation };
     }
     case GET_RECOMMENDED_PRESENTATIONS: {
-      const recommended = [...payload.response.data.slice(0,-2)];
+      let recommended = [...payload.response.data.filter(e => e.id !== state.detailedPresentation.id)];
+      recommended = [...recommended.slice(0, recommended.length === 5 ? -2 : -1)];
       return { ...state, loading: false, recommendedPresentations: recommended };
     }
     case START_LOADING:
@@ -95,7 +108,62 @@ const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, act
   }
 };
 
-const pages = (pages = {}, action = {}) => {
+const votingPeriods = (state = {}, action) => {
+  const { type, payload } = action;
+  switch (type) {
+    case RESET_STATE:
+    case LOGOUT_USER:
+    case SYNC_DATA:
+      return {};
+    case VOTING_PERIOD_ADD: {
+      const { trackGroupId, votingPeriod } = payload;
+      return {
+        ...state,
+        [trackGroupId]: {
+          ...votingPeriod
+        }
+      };
+    }
+    case VOTING_PERIOD_PHASE_CHANGE: {
+      const { trackGroupId, phase } = payload;
+      return {
+        ...state,
+        [trackGroupId]: {
+          ...state[trackGroupId], 
+          phase
+        }
+      };
+    }
+    case CAST_PRESENTATION_VOTE_REQUEST:
+    case UNCAST_PRESENTATION_VOTE_REQUEST:
+    case TOGGLE_PRESENTATION_VOTE: {
+      const { presentation: { track: { track_groups: trackGroups } }, isVoted, reverting } = payload;
+      const updatedTrackGroupVotingPeriods = {};
+      trackGroups.forEach(trackGroupId => {
+        const votingPeriod = state[trackGroupId];
+        if (votingPeriod) {
+          const updatedVotedPeriod = VotingPeriod({ ...votingPeriod });
+          if (type === CAST_PRESENTATION_VOTE_REQUEST) {
+            updatedVotedPeriod.addVotes = 1;
+          } else if (type === UNCAST_PRESENTATION_VOTE_REQUEST ||
+                    // case below is when we are reverting a vote because a vote was casted above limit allowance
+                    (type === TOGGLE_PRESENTATION_VOTE && (isVoted !== reverting !== undefined) && (!isVoted && reverting))) {
+            updatedVotedPeriod.substractVotes = 1;
+          }
+          updatedTrackGroupVotingPeriods[trackGroupId] = { ...updatedVotedPeriod };
+        }
+      });
+      return {
+        ...state,
+        ...updatedTrackGroupVotingPeriods
+      };
+    }
+    default:
+      return state;
+  }
+}
+
+const pages = (pages = {}, action) => {
   const { type, payload } = action;
   switch (type) {
     case PRESENTATIONS_PAGE_REQUEST:
@@ -121,12 +189,12 @@ const pages = (pages = {}, action = {}) => {
   }
 };
 
-const currentPage = (currentPage = 1, action = {}) => {
+const currentPage = (currentPage = 1, action) => {
   const { type, payload } = action;
   return type === PRESENTATIONS_PAGE_REQUEST ? payload.page : currentPage;
 };
 
-const lastPage = (lastPage = null, action = {}) => {
+const lastPage = (lastPage = null, action) => {
   const { type, payload } = action;
   return type === PRESENTATIONS_PAGE_RESPONSE ? payload.response.last_page : lastPage;
 };
@@ -139,6 +207,7 @@ const pagination = combineReducers({
 
 export default combineReducers({
   voteablePresentations,
+  votingPeriods,
   pagination,
 });
 

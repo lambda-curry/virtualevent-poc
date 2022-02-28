@@ -1,11 +1,31 @@
-import React, { useState } from "react"
+import React, { useState, useEffect, useCallback } from "react"
 import VoteButton from "./poster-card/vote-button";
+
+import {
+  calculateRemaingVotes,
+  calculateVotesPerTrackGroup,
+  TRACK_GROUP_CLASS_NAME
+} from '../utils/voting-utils';
+
+import { PHASES } from '../utils/phasesUtils';
 
 import styles from '../styles/poster-components.module.scss'
 
-const PosterDescription = ({ poster: { speakers, title, description, custom_order, track }, poster, isVoted, toggleVote }) => {
+const PosterDescription = ({ poster: { speakers, title, description, custom_order, track }, poster, votingPeriods, votes, isVoted, toggleVote, votingAllowed }) => {
 
-  const [canVote, setCanVote] = useState(true);
+  const isDuringVotingPhase = useCallback((poster) => {
+    const results = poster.track?.track_groups?.map(trackGroupId =>
+      votingPeriods[trackGroupId]?.phase === PHASES.DURING
+    );
+    return results && results.length ? results.every(r => !!r) : false;
+  }, [votingPeriods]);
+
+  const canVote = useCallback((poster) => {
+    const results = poster.track?.track_groups?.map(trackGroupId =>
+      votingPeriods[trackGroupId]?.remainingVotes > 0
+    );
+    return results && results.length ? results.every(r => !!r) : false;
+  }, [votingPeriods]);
 
   const formatSpeakers = (speakers) => {
     let formatedSpeakers = '';
@@ -29,7 +49,14 @@ const PosterDescription = ({ poster: { speakers, title, description, custom_orde
           <span className={styles.order}>
             {custom_order ? `#${custom_order}` : <>&nbsp;</>}
           </span>
-          <VoteButton isVoted={isVoted} canVote={canVote} toggleVote={() => toggleVote(poster, !isVoted)} style={{ position: 'relative', marginLeft: 'auto' }} />
+          { votingAllowed && isDuringVotingPhase(poster) &&
+          <VoteButton
+            isVoted={isVoted}
+            canVote={canVote(poster)}
+            toggleVote={() => toggleVote(poster, !isVoted)}
+            style={{ position: 'relative', marginLeft: 'auto' }}
+          />
+          }
         </div>
         <h1>
           <b>{title}</b>

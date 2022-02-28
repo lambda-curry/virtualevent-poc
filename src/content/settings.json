@@ -1,1 +1,15 @@
-{"favicon":"/img/ytw-fnv-favicon.png","widgets":{"chat":{"showQA":false,"showHelp":false}},"lastBuild":1645044871358}
+{
+  "favicon": "/img/ytw-fnv-favicon.png",
+  "widgets": {
+    "chat": {
+      "showQA": false,
+      "showHelp": false
+    }
+  },
+  "lastBuild": 1645044871358,
+  "favicons": {
+    "favicon180": "/img/ytw22-favicon-180x180.png",
+    "favicon32": "/img/ytw22-favicon-32x32.png",
+    "favicon16": "/img/ytw22-favicon-16x16.png"
+  }
+}
