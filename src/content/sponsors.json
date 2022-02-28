@@ -84,6 +84,12 @@
                 "name": "Trade Desk Case Study",
                 "order": 8,
                 "link": "https://aws.amazon.com/solutions/case-studies/the-trade-desk-case-study/?did=cr_card&trk=cr_card__;!!Op6eflyXZCqGR5I!RcvLk5i7th9XrWX-m1ji70buWs4rstfkwE2n6H350WK7eb8vuq6_x0WSyqyOF-t96Fz8Vw$"
+              },
+              {
+                "class_name": "PresentationVideo",
+                "name": "Integral Ad Science Case Study",
+                "order": 9,
+                "link": "https://aws.amazon.com/solutions/case-studies/integral-ad-science/?did=cr_card&trk=cr_card"
               }
             ]
           },
