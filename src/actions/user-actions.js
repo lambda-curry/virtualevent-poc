@@ -8,7 +8,8 @@ import {
   createAction,
   startLoading,
   stopLoading,
-  passwordlessLogin
+  passwordlessLogin,
+  clearAccessToken,
 } from 'openstack-uicore-foundation/lib/methods';
 
 import Swal from 'sweetalert2';
@@ -76,12 +77,14 @@ export const getRocketChatSSO = () => async (dispatch) => {
 
 export const getUserProfile = () => async (dispatch) => {
 
-  let accessToken = null;
+
+  let accessToken;
   try {
-     accessToken = await getAccessToken();
-  }
-  catch (e){
-    return Promise.resolve();
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    dispatch(stopLoading());
+    return Promise.reject();
   }
 
   if (!accessToken) return Promise.resolve();
@@ -106,15 +109,21 @@ export const getUserProfile = () => async (dispatch) => {
 
 export const getIDPProfile = () => async (dispatch) => {
 
-  const accessToken = await getAccessToken();
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    dispatch(stopLoading());
+    return Promise.reject();
+  }
 
-  if (!accessToken) return Promise.resolve();
+  dispatch(createAction(START_LOADING_IDP_PROFILE)());
 
   let params = {
     access_token: accessToken,
+    expand: 'groups,summit_tickets,summit_tickets,summit_tickets.owner,summit_tickets.owner.presentation_votes,summit_tickets.owner.extra_questions,summit_tickets.badge,summit_tickets.badge.features,summit_tickets.badge.type, summit_tickets.badge.type.access_levels,summit_tickets.badge.type.features,favorite_summit_events,feedback,schedule_summit_events,rsvp,rsvp.answers'
   };
-
-  dispatch(createAction(START_LOADING_IDP_PROFILE)());
 
   return getRequest(
       null,
@@ -153,9 +162,14 @@ export const requireExtraQuestions = () => (dispatch, getState) => {
 
 export const scanBadge = (sponsorId) => async (dispatch) => {
 
-  const accessToken = await getAccessToken();
-
-  if (!accessToken) return Promise.resolve();
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    dispatch(stopLoading());
+    return Promise.reject();
+  }
 
   let params = {
     access_token: accessToken,
@@ -181,9 +195,14 @@ export const scanBadge = (sponsorId) => async (dispatch) => {
 }
 
 export const addToSchedule = (event) => async (dispatch, getState) => {
-  const accessToken = await getAccessToken();
 
-  if (!accessToken) return Promise.reject();
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    return Promise.reject();
+  }
 
   const url = `${getEnvVariable(SUMMIT_API_BASE_URL)}/api/v1/summits/${getEnvVariable(SUMMIT_ID)}/members/me/schedule/${event.id}`;
 
@@ -194,14 +213,21 @@ export const addToSchedule = (event) => async (dispatch, getState) => {
     return event;
   }).catch(e => {
     console.log('ERROR: ', e);
+    debugger;
+    clearAccessToken();
     return e;
   });
 };
 
 export const removeFromSchedule = (event) => async (dispatch, getState) => {
-  const accessToken = await getAccessToken();
 
-  if (!accessToken) return Promise.reject();
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    return Promise.reject();
+  }
 
   const url = `${getEnvVariable(SUMMIT_API_BASE_URL)}/api/v1/summits/${getEnvVariable(SUMMIT_ID)}/members/me/schedule/${event.id}`;
 
@@ -212,15 +238,21 @@ export const removeFromSchedule = (event) => async (dispatch, getState) => {
     return event;
   }).catch(e => {
     console.log('ERROR: ', e);
+    clearAccessToken();
     return e;
   });
 };
 
 export const castPresentationVote = (presentation) => async (dispatch, getState) => {
 
-  const accessToken = await getAccessToken();
-
-  if (!accessToken) return Promise.resolve();
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    dispatch(stopLoading());
+    return Promise.reject();
+  }
 
   const params = {
     access_token: accessToken,
@@ -259,9 +291,14 @@ export const castPresentationVote = (presentation) => async (dispatch, getState)
 
 export const uncastPresentationVote = (presentation) => async (dispatch, getState) => {
 
-  const accessToken = await getAccessToken();
-
-  if (!accessToken) return Promise.resolve();
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    dispatch(stopLoading());
+    return Promise.reject();
+  }
 
   const params = {
     access_token: accessToken,
@@ -290,9 +327,14 @@ export const uncastPresentationVote = (presentation) => async (dispatch, getStat
 
 export const updateProfilePicture = (pic) => async (dispatch) => {
 
-  const accessToken = await getAccessToken();
-
-  if (!accessToken) return Promise.resolve();
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    dispatch(stopLoading());
+    return Promise.reject();
+  }
 
   let params = {
     access_token: accessToken,
@@ -314,9 +356,14 @@ export const updateProfilePicture = (pic) => async (dispatch) => {
 
 export const updateProfile = (profile) => async (dispatch) => {
 
-  const accessToken = await getAccessToken();
-
-  if (!accessToken) return Promise.resolve();
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    dispatch(stopLoading());
+    return Promise.reject();
+  }
 
   let params = {
     access_token: accessToken,
@@ -337,10 +384,14 @@ export const updateProfile = (profile) => async (dispatch) => {
 
 export const updatePassword = (password) => async (dispatch) => {
 
-  const accessToken = await getAccessToken();
-
-  if (!accessToken) return Promise.resolve();
-
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    dispatch(stopLoading());
+    return Promise.reject();
+  }
   let params = {
     access_token: accessToken,
   };
@@ -379,7 +430,15 @@ export const saveExtraQuestions = (extra_questions, owner, disclaimer) => async 
     extra_questions: extraQuestionsAnswers
   };
 
-  const accessToken = await getAccessToken();
+
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    dispatch(stopLoading());
+    return Promise.reject();
+  }
 
   dispatch(startLoading());
 
@@ -416,9 +475,15 @@ export const setPasswordlessLogin = (params) => (dispatch, getState) => {
 }
 
 export const getScheduleSyncLink = () => async (dispatch) => {
-  const accessToken = await getAccessToken();
 
-  if (!accessToken) return Promise.resolve();
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    dispatch(stopLoading());
+    return Promise.reject();
+  }
 
   let params = {
     access_token: accessToken,
@@ -458,7 +523,15 @@ export const checkOrderData = (order) => (dispatch, getState) => {
  * @returns {function(*=, *): *}
  */
 export const doVirtualCheckIn = (attendee) =>  async (dispatch, getState) => {
-  const accessToken = await getAccessToken();
+
+  let accessToken;
+  try {
+    accessToken = await getAccessToken();
+  } catch (e) {
+    console.log('getAccessToken error: ', e);
+    dispatch(stopLoading());
+    return Promise.reject();
+  }
 
   let params = {
     access_token: accessToken,
