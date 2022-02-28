@@ -73,6 +73,25 @@ html:not([data-whatintent=keyboard]) .focus {
   box-shadow: none !important;
 }
 
+/*
+ Show Skip to content link when focused
+ */
+.skip-to-content:focus {
+  width: auto;
+  height: auto;
+  padding: 0 5px;
+  margin: 0;
+  overflow: hidden;
+  clip: auto;
+  white-space: nowrap;
+  border: 0;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  background-color: white;
+  z-index: 999;
+}
+
 /* overrides Bulma focus style */
 .button:focus {
   color: $color_text_light !important;
