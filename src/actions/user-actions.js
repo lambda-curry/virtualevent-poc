@@ -232,7 +232,10 @@ export const castPresentationVote = (presentation) => async (dispatch, getState)
       if (text.includes('already vote')) {
         // 'confirm' as local vote
         dispatch(createAction(TOGGLE_PRESENTATION_VOTE)({ presentation, isVoted: true }));
-      } else if (text.includes('Max. allowed votes')) {
+      } else if (text.includes('Max. allowed votes') ||
+                 text.includes('Member is not an attendee') ||
+                 // Voting Period for track group is closed
+                 text.includes('is closed')) {
         // need to revert button state
         // first 'confirm' as local vote
         dispatch(createAction(TOGGLE_PRESENTATION_VOTE)({ presentation, isVoted: true }));
