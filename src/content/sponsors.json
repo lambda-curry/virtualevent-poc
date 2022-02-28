@@ -13,6 +13,7 @@
           "sideImage": {
             "file": ""
           },
+          "featuredEventId": 2825,
           "sponsorColor": "#ff9900",
           "logo": {
             "file": "/img/yahoo_techweek_2022_sponsor-logos_framed_aws-2x.png"
@@ -67,17 +68,24 @@
               {
                 "class_name": "PresentationLink",
                 "name": "Running AdTech Workloads on AWS with Aerospike at Petabyte Scale (Blog)",
-                "order": 5,
+                "order": 6,
                 "link": "https://aws.amazon.com/blogs/industries/running-ad-tech-workloads-on-aws-with-aerospike-at-petabyte-scale/"
               },
               {
                 "class_name": "PresentationLink",
                 "name": "Advertising & Marketing Technology on AWS (E-book)",
-                "order": 6,
+                "order": 7,
                 "link": "https://aws.amazon.com/advertising-marketing/"
               }
             ],
-            "videos": []
+            "videos": [
+              {
+                "class_name": "PresentationVideo",
+                "name": "Trade Desk Case Study",
+                "order": 8,
+                "link": "https://aws.amazon.com/solutions/case-studies/the-trade-desk-case-study/?did=cr_card&trk=cr_card__;!!Op6eflyXZCqGR5I!RcvLk5i7th9XrWX-m1ji70buWs4rstfkwE2n6H350WK7eb8vuq6_x0WSyqyOF-t96Fz8Vw$"
+              }
+            ]
           },
           "id": 157,
           "showLogoInEventPage": false,
