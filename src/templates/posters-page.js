@@ -47,15 +47,15 @@ const PostersPage = ({
 }) => {
 
   const [pageSettings] = useState(pagesSettings.find(ps => ps.trackGroupId === parseInt(trackGroupId)));
-  const [pageTrackGroups, setPageTrackGroups] = useState([]);
+  const [allBuildTimePostersByTrackGroup, setAllBuildTimePostersByTrackGroup] = useState(allBuildTimePosters);
   const [showFilters, setShowFilters] = useState(false);
   const [appliedPageFilter, setAppliedPageFilter] = useState(null);
   const [filteredPosters, setFilteredPosters] = useState(posters);
-  const [allBuildTimePostersByTrackGroup, setAllBuildTimePostersByTrackGroup] = useState(allBuildTimePosters);
-  const [votedPosterTrackGroups, setVotedPosterTrackGroups] = useState([]);
+  const [pageTrackGroups, setPageTrackGroups] = useState([]);
   const [previousVotingPeriods, setPreviousVotingPeriods] = useState(votingPeriods);
   const [notifiedMaximunAllowedVotesOnLoad, setNotifiedMaximunAllowedVotesOnLoad] = useState(false);
   const [notifiedVotingPeriodsOnLoad, setNotifiedVotingPeriodsOnLoad] = useState(false);
+  const [votedPosterTrackGroups, setVotedPosterTrackGroups] = useState([]);
 
   const notificationRef = useRef(null);
 
@@ -66,6 +66,10 @@ const PostersPage = ({
   useEffect(() => {
     setInitialDataSet().then(() => getAllVoteablePresentations());
   }, [trackGroupId]);
+
+  useEffect(() => {
+    setAllBuildTimePostersByTrackGroup(filterByTrackGroup(allBuildTimePosters, parseInt(trackGroupId)));
+  }, [allBuildTimePosters, trackGroupId]);
 
   useEffect(() => {
     let filteredPosters = filterByTrackGroup(posters, parseInt(trackGroupId));
@@ -95,10 +99,6 @@ const PostersPage = ({
     }
     setFilteredPosters(filteredPosters);
   }, [appliedPageFilter, posters, trackGroupId]);
-
-  useEffect(() => {
-    setAllBuildTimePostersByTrackGroup(filterByTrackGroup(allBuildTimePosters, parseInt(trackGroupId)));
-  }, [allBuildTimePosters, trackGroupId]);
 
   useEffect(() => {
     const pageTrackGroups = [...new Set(filteredPosters.map(p => p.track?.track_groups ?? []).flat())];
