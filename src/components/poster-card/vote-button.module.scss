@@ -1,11 +1,9 @@
 .voteButton {
-  color: white;
-  font-size: 24px;
-  position: absolute;
-  height: 40px;
+  display: flex;
+  justify-content: space-around;
   width: 40px;
-  bottom: 0;
-  right: 0;
+  height: 40px;
+  color: white;
   border-radius: 20px;
   border-color: transparent;
   &.add {
@@ -18,6 +16,8 @@
     background-color: #DFDFDF;
   }
   i {
-    margin-top: 5px;
+    align-self: center;
+    margin-top: 2px;
+    font-size: 24px;
   }
 }

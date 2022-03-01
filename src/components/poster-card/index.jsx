@@ -63,13 +63,15 @@ const PosterCard = ({ poster, showDetail, showVoteButton, canVote, isVoted, togg
           </ControlledZoom>
         </div>
       </BlockImage>
-      <div className={styles.body}>
-        <h2 className={styles.title} onClick={handleTitleClick}>{title}</h2>
-        <span className={styles.order}>
-          { custom_order ? `#${custom_order}` : <>&nbsp;</> }
-        </span>
+      <h2 className={styles.title} onClick={handleTitleClick}>{title}</h2>
+      <span className={styles.order}>
+        { custom_order ? `#${custom_order}` : <>&nbsp;</> }
+      </span>
+      <div className={styles.footer}>
         { track?.name && track?.color &&
-        <span className={styles.track} style={{backgroundColor: track.color}}>{track.name}</span>
+        <div className={styles.track}>
+          <span style={{backgroundColor: track.color}}>{track.name}</span>
+        </div>
         }
         { showVoteButton &&
         <VoteButton
