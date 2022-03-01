@@ -28,10 +28,10 @@ const SpeakersWidgetComponent = ({now, colorSettings, allEvents, speakers, ...pr
     )
 }
 
-const mapStateToProps = ({ clockState, summitState, scheduleState, speakerState, settingState }) => ({
+const mapStateToProps = ({ clockState, allSchedulesState, speakerState, settingState }) => ({
     now: clockState.nowUtc,
     colorSettings: settingState.colorSettings,
-    allEvents: scheduleState.allEvents,
+    allEvents: allSchedulesState.allEvents,
     speakers: speakerState.speakers
 });
 

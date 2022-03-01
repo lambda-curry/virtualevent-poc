@@ -29,9 +29,9 @@ const LiveEventWidgetComponent = ({allEvents, summit, colorSettings, homeSetting
     )
 };
 
-const mapStateToProps = ({ summitState, scheduleState, settingState }) => ({
+const mapStateToProps = ({ summitState, allSchedulesState, settingState }) => ({
     summit: summitState.summit,
-    allEvents: scheduleState.allEvents,
+    allEvents: allSchedulesState.allEvents,
     colorSettings: settingState.colorSettings,
     homeSettings: settingState.homeSettings,
 });
