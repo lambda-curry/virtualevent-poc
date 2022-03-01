@@ -86,6 +86,7 @@
     "simple-oauth2": "^4.1.0",
     "slick-carousel": "^1.8.1",
     "speakers-widget": "^2.0.4",
+    "smoothscroll-polyfill": "^0.4.4",
     "stream-chat": "^2.7.2",
     "stream-chat-react": "3.1.7",
     "summit-registration-lite": "^1.0.77",
