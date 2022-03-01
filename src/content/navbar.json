@@ -1,13 +1,13 @@
 {
   "items": [
     {
-      "requiresAuth": false,
+      "requiresAuth": true,
       "showOnlyAtShowTime": false,
       "pageRestriction": [
         "ANY"
       ],
       "title": "HOME",
-      "link": "/",
+      "link": "/a",
       "display": true
     },
     {
@@ -18,7 +18,7 @@
       "pageRestriction": [
         "ANY"
       ],
-      "showOnlyAtShowTime": true
+      "showOnlyAtShowTime": false
     },
     {
       "title": "MY SCHEDULE",
@@ -28,7 +28,7 @@
       "pageRestriction": [
         "ANY"
       ],
-      "showOnlyAtShowTime": true
+      "showOnlyAtShowTime": false
     },
     {
       "requiresAuth": true,
