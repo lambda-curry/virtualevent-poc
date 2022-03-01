@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { connect } from 'react-redux';
 import { navigate } from "gatsby";
 import Layout from '../components/Layout';
@@ -8,6 +8,7 @@ import ScheduleFilters from '../components/ScheduleFilters';
 import PosterHeaderFilter from '../components/poster-header-filter';
 import FilterButton from '../components/FilterButton';
 import AttendanceTrackerComponent from '../components/AttendanceTrackerComponent';
+import NotificationHub from '../components/notification-hub';
 
 import {
   setInitialDataSet,
@@ -24,7 +25,11 @@ import { filterByTrackGroup, randomSort } from '../utils/filterUtils';
 import { PHASES } from '../utils/phasesUtils';
 
 import styles from '../styles/posters-page.module.scss';
-import NotificationHub from '../components/notification-hub';
+
+const SCROLL_DIRECTION = {
+  UP: 'scrolling up',
+  DOWN: 'scrolling down'
+};
 
 const PostersPage = ({
   location,
@@ -56,12 +61,55 @@ const PostersPage = ({
   const [notifiedVotingPeriodsOnLoad, setNotifiedVotingPeriodsOnLoad] = useState(false);
   const [previousVotingPeriods, setPreviousVotingPeriods] = useState(votingPeriods);
   const [votedPosterTrackGroups, setVotedPosterTrackGroups] = useState([]);
+  const [scrollDirection, setScrollDirection] = useState(null);
+  const [mustScrollFiltersDown, setMustScrollFiltersDown] = useState(false);
 
   const notificationRef = useRef(null);
+  const filtersWrapperRef = useRef(null);
 
   const pushNotification = (notification) => {
     return notificationRef.current?.(notification);
   }
+
+  useEffect(() => {
+    if (scrollDirection === SCROLL_DIRECTION.UP) {
+      filtersWrapperRef.current.scroll({ top: 0, behavior: 'smooth' });
+    }
+
+    const threshold = 100;
+    let lastScrollY = window.pageYOffset;
+    let ticking = false;
+    const updateScrollDir = () => {
+      const scrollY = window.pageYOffset;
+
+      if (Math.abs(scrollY - lastScrollY) < threshold) {
+        ticking = false;
+        return;
+      }
+      let scrollDirection = scrollY > lastScrollY ? SCROLL_DIRECTION.DOWN : SCROLL_DIRECTION.UP;
+      setScrollDirection(scrollDirection);
+      if (Math.abs(document.body.scrollHeight - document.body.clientHeight - scrollY) < threshold) {
+        setMustScrollFiltersDown(true);
+      }
+      lastScrollY = scrollY > 0 ? scrollY : 0;
+      ticking = false;
+    };
+    const onScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateScrollDir);
+        ticking = true;
+      }
+    };
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [scrollDirection]);
+
+  useEffect(() => {
+    if (mustScrollFiltersDown) {
+      filtersWrapperRef.current.scroll({ top: filtersWrapperRef.current.scrollHeight, behavior: 'smooth' });
+      setMustScrollFiltersDown(false);
+    }
+  }, [mustScrollFiltersDown]);
 
   useEffect(() => {
     setInitialDataSet().then(() => getAllVoteablePresentations());
@@ -200,7 +248,7 @@ const PostersPage = ({
           />
           }
         </div>
-        <div className={styles.filterWrapper}>
+        <div ref={filtersWrapperRef} className={styles.filterWrapper}>
           <ScheduleFilters {...filterProps} />
         </div>
         <FilterButton open={showFilters} onClick={() => setShowFilters(!showFilters)} />

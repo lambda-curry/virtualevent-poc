@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
-import Footer from '../components/Footer';
+import { withPrefix } from 'gatsby';
+import useSiteMetadata from './SiteMetadata';
 import Header from '../components/Header';
 import ClockComponent from '../components/ClockComponent';
-import useSiteMetadata from './SiteMetadata';
-import { withPrefix } from 'gatsby';
+import Footer from '../components/Footer';
 
 import '../styles/bulma.scss';
+
+import smoothscroll from 'smoothscroll-polyfill';
+smoothscroll.polyfill();
 
 const TemplateWrapper = ({ children, location, marketing, summit, favicons }) => {
   const { title, description } = useSiteMetadata();
