@@ -51,14 +51,14 @@
       "display": false
     },
     {
-      "requiresAuth": false,
+      "requiresAuth": true,
       "showOnlyAtShowTime": false,
       "pageRestriction": [
         "ANY"
       ],
       "title": "SPONSORS",
       "link": "/a/sponsors",
-      "display": false
+      "display": true
     },
     {
       "requiresAuth": false,
