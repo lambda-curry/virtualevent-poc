@@ -11,7 +11,7 @@ import {
   passwordlessLogin,
   clearAccessToken,
 } from 'openstack-uicore-foundation/lib/methods';
-import {syncData} from "./base-actions";
+
 import Swal from 'sweetalert2';
 import axios from "axios";
 import { navigate } from 'gatsby-link';
@@ -238,8 +238,6 @@ export const addToSchedule = (event) => async (dispatch, getState) => {
       url, { access_token: accessToken }
   ).then(() => {
     dispatch(createAction(ADD_TO_SCHEDULE)(event));
-    // to resynch all event data
-    dispatch(syncData());
     return event;
   }).catch(e => {
     console.log('ERROR: ', e);
@@ -264,8 +262,6 @@ export const removeFromSchedule = (event) => async (dispatch, getState) => {
       url, { data: { access_token: accessToken } }
   ).then(() => {
     dispatch(createAction(REMOVE_FROM_SCHEDULE)(event));
-    // to resynch all event data
-    dispatch(syncData());
     return event;
   }).catch(e => {
     console.log('ERROR: ', e);
