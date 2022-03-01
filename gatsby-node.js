@@ -49,8 +49,8 @@ const SSR_getEvents = async (baseUrl, summitId, accessToken, page = 1, results =
           expand: 'slides, links, videos, media_uploads, type, track, track.allowed_access_levels, location, location.venue, location.floor, speakers, moderator, sponsors, current_attendance, groups, rsvp_template, tags',
         }
       }).then(({data}) => {
-        if (data.page < data.last_page) {
-          return SSR_getEvents(baseUrl, summitId, accessToken, data.page + 1, data.data);
+        if (data.current_page < data.last_page) {
+          return SSR_getEvents(baseUrl, summitId, accessToken, data.current_page + 1, data.data);
         }
 
         return [...results, ...data.data];
@@ -74,8 +74,8 @@ const SSR_getSpeakers = async (baseUrl, summitId, accessToken, filter = null, pa
       { params}
   )
       .then(({data}) => {
-        if (data.page < data.last_page) {
-          return SSR_getSpeakers(baseUrl, summitId, accessToken, filter,data.page + 1, data.data);
+        if (data.current_page < data.last_page) {
+          return SSR_getSpeakers(baseUrl, summitId, accessToken, filter,data.current_page + 1, data.data);
         }
 
         return [...results, ...data.data];
@@ -109,8 +109,8 @@ const SSR_getVoteablePresentations = async (baseUrl, summitId, accessToken, page
           expand: 'slides, links, videos, media_uploads, type, track, track.allowed_access_levels, location, location.venue, location.floor, speakers, moderator, sponsors, current_attendance, groups, rsvp_template, tags',
         }
       }).then(({data}) => {
-          if (data.page < data.last_page) {
-            return SSR_getVoteablePresentations(baseUrl, summitId, accessToken, data.page + 1, data.data);
+          if (data.current_page < data.last_page) {
+            return SSR_getVoteablePresentations(baseUrl, summitId, accessToken, data.current_page + 1, data.data);
           }
           return [...results, ...data.data];
       })
