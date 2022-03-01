@@ -10,6 +10,7 @@ import Footer from '../components/Footer';
 import '../styles/bulma.scss';
 
 import smoothscroll from 'smoothscroll-polyfill';
+// smooth scroll polyfill needed for Safari
 smoothscroll.polyfill();
 
 const TemplateWrapper = ({ children, location, marketing, summit, favicons }) => {
