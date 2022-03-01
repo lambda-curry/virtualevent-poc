@@ -1,11 +1,8 @@
 .voteButton {
-  color: white;
-  font-size: 24px;
-  position: absolute;
-  height: 40px;
   width: 40px;
-  bottom: 0;
-  right: 0;
+  height: 40px;
+  font-size: 24px;
+  color: white;
   border-radius: 20px;
   border-color: transparent;
   &.add {
