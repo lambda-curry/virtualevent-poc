@@ -19,6 +19,7 @@ const FullSchedule = ({
   callAction,
   filters,
   view,
+    schedKey,
   ...rest
 }) => {
   const componentProps = {
@@ -44,7 +45,7 @@ const FullSchedule = ({
           return removeFromSchedule(payload.event);
         }
         default:
-          return callAction(action, payload);
+          return callAction(schedKey, action, payload);
       }
     },
     ...rest,

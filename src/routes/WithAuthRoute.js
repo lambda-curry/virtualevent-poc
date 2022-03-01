@@ -31,19 +31,17 @@ const WithAuthRoute = ({
     // we store this calculation to use it later
     const hasVirtualBadge = useMemo(() =>
         userProfile ? userHasAccessLevel(userProfile.summit_tickets, 'VIRTUAL') : false,
-        [userProfile, hasTicket]);
+        [userProfile]);
 
     const userIsReady = () => {
         // we have an user profile
         return !!userProfile;
     };
 
-    const userIsAuthz = () => {
-        return isAuthorized || (hasTicket && hasVirtualBadge);
-    };
+    const userIsAuthz = isAuthorized || (hasTicket && hasVirtualBadge);
 
     const checkingCredentials = () => {
-        return !userIsAuthz() && !fetchedUserProfile;
+        return !userIsAuthz && !fetchedUserProfile;
     };
 
     useEffect(() => {
@@ -55,7 +53,7 @@ const WithAuthRoute = ({
         }
         // if the user is not authz and we accessing a private route , get fresh data to recheck
         // authz condition ( new tickets / new groups ) after every render of the route
-        if (!fetchedUserProfile && !userIsAuthz()) {
+        if (!fetchedUserProfile && !userIsAuthz) {
             setFetchedUserProfile(true)
             getUserProfile();
         }
@@ -73,7 +71,7 @@ const WithAuthRoute = ({
     }
 
     // has no ticket -> redirect
-    if (!userIsAuthz()) {
+    if (!userIsAuthz) {
         const options = {state: {error: hasTicket && !hasVirtualBadge ? 'no-access' : 'no-ticket'}};
         return <HeroComponent title="Checking credentials..." redirectTo="/authz/ticket" options={options}/>;
     }

@@ -37,7 +37,7 @@ const ShowOpenRoute = ({
       if(attendee)
         doVirtualCheckIn(attendee);
     }
-  },[summit_phase, hasTicket, userProfile]);
+  },[summit_phase, hasTicket, userProfile, doVirtualCheckIn]);
 
   const userCanByPassAuthz = () => {
     return isAuthorized;

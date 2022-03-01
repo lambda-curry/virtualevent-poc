@@ -16,8 +16,12 @@ export const resetState = () => (dispatch) => {
   dispatch(createAction(RESET_STATE)({}));
 };
 
-export const syncData = () => (dispatch) => {
-  dispatch(createAction(SYNC_DATA)({}));
+export const syncData = () => (dispatch, getState) => {
+  const {userState, loggedUserState} = getState();
+  const {isLoggedUser} = loggedUserState;
+  const {userProfile} = userState;
+
+  dispatch(createAction(SYNC_DATA)({isLoggedUser, userProfile }));
 };
 
 export const getThirdPartyProviders = () => (dispatch) => {

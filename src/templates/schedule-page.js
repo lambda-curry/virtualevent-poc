@@ -13,66 +13,61 @@ import { PHASES } from "../utils/phasesUtils";
 import FilterButton from "../components/FilterButton";
 
 import styles from "../styles/full-schedule.module.scss";
+import NotFoundPage from "../pages/404";
 
-
-const SchedulePage = ({
-  summit,
-  summitPhase,
-  isLoggedUser,
-  location,
-  events,
-  allScheduleEvents,
-  filters,
-  view,
-  timezone,
-  colorSource,
-  colorSettings,
-  updateFilter,
-  updateFiltersFromHash,
-}) => {
+const SchedulePage = ({summit, schedules, summitPhase, isLoggedUser, location, colorSettings, updateFilter, updateFiltersFromHash, scheduleProps, schedKey }) => {
   const [showFilters, setShowfilters] = useState(false);
+  const scheduleState = schedules.find( s => s.key === schedKey);
+  const {events, allEvents, filters, view, timezone, colorSource} = scheduleState || {};
+
+  useEffect(() => {
+    updateFiltersFromHash(schedKey, filters, view);
+  }, [schedKey, filters, view, updateFiltersFromHash]);
+
+  if (!summit || schedules.length === 0) return null;
+
+  // if we don't have a state, it probably means the schedule was disabled from admin.
+  if (!scheduleState) {
+    return <NotFoundPage />;
+  }
 
   const filterProps = {
     summit,
     events,
-    allEvents: allScheduleEvents,
+    allEvents,
     filters: pickBy(filters, (value) => value.enabled),
     triggerAction: (action, payload) => {
-      updateFilter(payload);
+      updateFilter(schedKey, payload);
     },
     marketingSettings: colorSettings,
-    colorSource: colorSource,
+    colorSource,
   };
 
-  let scheduleProps = {
+  let schedProps = {
     summit,
     events,
     filters,
     view,
     timezone,
     colorSource,
+    schedKey,
+    ...scheduleProps
   };
 
   if (isLoggedUser && summitPhase !== PHASES.BEFORE) {
-    scheduleProps = {
-      ...scheduleProps,
+    schedProps = {
+      ...schedProps,
       onEventClick: (ev) => navigate(`/a/event/${ev.id}`, { state: { previousUrl: location.pathname }}),
       onStartChat: null,
     };
   }
-
-  useEffect(() => {
-    updateFiltersFromHash(filters, view);
-  });
-
-  if (!summit) return null;
 
   return (
     <Layout location={location}>
       <div className="container">
         <div className={`${styles.wrapper} ${showFilters ? styles.showFilters : ""}`}>
           <div className={styles.scheduleWrapper}>
-            <FullSchedule {...scheduleProps} />
+            <FullSchedule {...schedProps} />
           </div>
           <div className={styles.filterWrapper}>
             <ScheduleFilters {...filterProps} />
@@ -87,26 +82,16 @@ const SchedulePage = ({
 };
 
 SchedulePage.propTypes = {
+  schedKey: PropTypes.string.isRequired,
   summitPhase: PropTypes.number,
   isLoggedUser: PropTypes.bool,
 };
 
-const mapStateToProps = ({
-  summitState,
-  clockState,
-  loggedUserState,
-  scheduleState,
-  settingState,
-}) => ({
+const mapStateToProps = ({ summitState, clockState, loggedUserState, allSchedulesState, settingState }) => ({
   summit: summitState.summit,
   summitPhase: clockState.summit_phase,
   isLoggedUser: loggedUserState.isLoggedUser,
-  events: scheduleState.events,
-  allScheduleEvents: scheduleState.allScheduleEvents,
-  filters: scheduleState.filters,
-  view: scheduleState.view,
-  timezone: scheduleState.timezone,
-  colorSource: scheduleState.colorSource,
+  schedules: allSchedulesState.schedules,
   colorSettings: settingState.colorSettings,
 });
 

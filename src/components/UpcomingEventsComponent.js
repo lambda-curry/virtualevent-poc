@@ -59,12 +59,12 @@ const UpcomingEventsComponent = ({
     );
 };
 
-const mapStateToProps = ({ userState, summitState, scheduleState, settingState }) => ({
+const mapStateToProps = ({ userState, summitState, allSchedulesState, settingState }) => ({
     userProfile: userState.userProfile,
     colorSettings: settingState.colorSettings,
     homeSettings: settingState.homeSettings,
     summit: summitState.summit,
-    allEvents: scheduleState.allEvents,
+    allEvents: allSchedulesState.allEvents,
 });
 
 export default connect(mapStateToProps, {
