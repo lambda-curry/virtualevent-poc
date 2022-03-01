@@ -75,7 +75,7 @@ const PostersPage = ({
     if (scrollDirection === SCROLL_DIRECTION.UP) {
       filtersWrapperRef.current.scroll({ top: 0, behavior: 'smooth' });
     }
-    const threshold = 100;
+    const threshold = 420;
     let lastScrollY = window.pageYOffset;
     let ticking = false;
     const updateScrollDirection = () => {
