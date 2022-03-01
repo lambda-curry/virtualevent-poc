@@ -1,7 +1,7 @@
 {
   "items": [
     {
-      "requiresAuth": true,
+      "requiresAuth": false,
       "showOnlyAtShowTime": false,
       "pageRestriction": [
         "ANY"
@@ -14,7 +14,7 @@
       "title": "SCHEDULE",
       "link": "/a/schedule",
       "display": true,
-      "requiresAuth": true,
+      "requiresAuth": false,
       "pageRestriction": [
         "ANY"
       ],
@@ -24,7 +24,7 @@
       "title": "MY SCHEDULE",
       "link": "/a/my-schedule",
       "display": true,
-      "requiresAuth": true,
+      "requiresAuth": false,
       "pageRestriction": [
         "ANY"
       ],
