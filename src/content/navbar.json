@@ -31,34 +31,34 @@
       "showOnlyAtShowTime": false
     },
     {
-      "requiresAuth": true,
-      "showOnlyAtShowTime": true,
+      "requiresAuth": false,
+      "showOnlyAtShowTime": false,
       "pageRestriction": [
         "ANY"
       ],
       "title": "TECHPULSE POSTERS",
       "link": "/a/posters/33",
-      "display": true
+      "display": false
     },
     {
-      "requiresAuth": true,
-      "showOnlyAtShowTime": true,
+      "requiresAuth": false,
+      "showOnlyAtShowTime": false,
       "pageRestriction": [
         "ANY"
       ],
       "title": "PE-CON POSTERS",
       "link": "/a/posters/34",
-      "display": true
+      "display": false
     },
     {
-      "requiresAuth": true,
-      "showOnlyAtShowTime": true,
+      "requiresAuth": false,
+      "showOnlyAtShowTime": false,
       "pageRestriction": [
         "ANY"
       ],
       "title": "SPONSORS",
       "link": "/a/sponsors",
-      "display": true
+      "display": false
     },
     {
       "requiresAuth": false,
