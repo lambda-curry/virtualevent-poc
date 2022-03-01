@@ -11,7 +11,7 @@ import AttendanceTrackerComponent from "../components/AttendanceTrackerComponent
 import AccessTracker from "../components/AttendeeToAttendeeWidgetComponent";
 import { PHASES } from "../utils/phasesUtils";
 import FilterButton from "../components/FilterButton";
-
+import {syncData} from "../actions/base-actions";
 import styles from "../styles/full-schedule.module.scss";
 import NotFoundPage from "../pages/404";
 
@@ -20,7 +20,7 @@ const SCROLL_DIRECTION = {
   DOWN: 'scrolling down'
 };
 
-const SchedulePage = ({summit, schedules, summitPhase, isLoggedUser, location, colorSettings, updateFilter, updateFiltersFromHash, scheduleProps, schedKey }) => {
+const SchedulePage = ({summit, schedules, summitPhase, isLoggedUser, location, colorSettings, updateFilter, updateFiltersFromHash, scheduleProps, schedKey, syncData }) => {
   const [showFilters, setShowfilters] = useState(false);
   const [scrollDirection, setScrollDirection] = useState(null);
   const [mustScrollFiltersDown, setMustScrollFiltersDown] = useState(false);
@@ -70,6 +70,10 @@ const SchedulePage = ({summit, schedules, summitPhase, isLoggedUser, location, c
       setMustScrollFiltersDown(false);
     }
   }, [mustScrollFiltersDown]);
+
+  useEffect(() =>{
+    syncData();
+  }, [])
 
   if (!summit || schedules.length === 0) return null;
 
@@ -145,4 +149,5 @@ const mapStateToProps = ({ summitState, clockState, loggedUserState, allSchedule
 export default connect(mapStateToProps, {
   updateFiltersFromHash,
   updateFilter,
+  syncData,
 })(SchedulePage);
