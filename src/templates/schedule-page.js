@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState, useRef } from "react";
 import PropTypes from "prop-types";
 import { pickBy } from "lodash";
 import { navigate } from "gatsby";
@@ -15,14 +15,61 @@ import FilterButton from "../components/FilterButton";
 import styles from "../styles/full-schedule.module.scss";
 import NotFoundPage from "../pages/404";
 
+const SCROLL_DIRECTION = {
+  UP: 'scrolling up',
+  DOWN: 'scrolling down'
+};
+
 const SchedulePage = ({summit, schedules, summitPhase, isLoggedUser, location, colorSettings, updateFilter, updateFiltersFromHash, scheduleProps, schedKey }) => {
   const [showFilters, setShowfilters] = useState(false);
+  const [scrollDirection, setScrollDirection] = useState(null);
+  const [mustScrollFiltersDown, setMustScrollFiltersDown] = useState(false);
+
+  const filtersWrapperRef = useRef(null);
+
   const scheduleState = schedules.find( s => s.key === schedKey);
-  const {events, allEvents, filters, view, timezone, colorSource} = scheduleState || {};
+  const { events, allEvents, filters, view, timezone, colorSource } = scheduleState || {};
 
   useEffect(() => {
     updateFiltersFromHash(schedKey, filters, view);
   }, [schedKey, filters, view, updateFiltersFromHash]);
+
+  useEffect(() => {
+    if (scrollDirection === SCROLL_DIRECTION.UP) {
+      filtersWrapperRef.current.scroll({ top: 0, behavior: 'smooth' });
+    }
+    const threshold = 420;
+    let lastScrollY = window.pageYOffset;
+    let ticking = false;
+    const updateScrollDirection = () => {
+      const scrollY = window.pageYOffset;
+      if (Math.abs(scrollY - lastScrollY) < threshold) {
+        ticking = false;
+        return;
+      }
+      setScrollDirection(scrollY > lastScrollY ? SCROLL_DIRECTION.DOWN : SCROLL_DIRECTION.UP);
+      if (Math.abs(document.body.scrollHeight - document.body.clientHeight - scrollY) < threshold) {
+        setMustScrollFiltersDown(true);
+      }
+      lastScrollY = scrollY > 0 ? scrollY : 0;
+      ticking = false;
+    };
+    const onScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateScrollDirection);
+        ticking = true;
+      }
+    };
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, [scrollDirection]);
+
+  useEffect(() => {
+    if (mustScrollFiltersDown) {
+      filtersWrapperRef.current.scroll({ top: filtersWrapperRef.current.scrollHeight, behavior: 'smooth' });
+      setMustScrollFiltersDown(false);
+    }
+  }, [mustScrollFiltersDown]);
 
   if (!summit || schedules.length === 0) return null;
 
@@ -69,7 +116,7 @@ const SchedulePage = ({summit, schedules, summitPhase, isLoggedUser, location, c
           <div className={styles.scheduleWrapper}>
             <FullSchedule {...schedProps} />
           </div>
-          <div className={styles.filterWrapper}>
+          <div ref={filtersWrapperRef} className={styles.filterWrapper}>
             <ScheduleFilters {...filterProps} />
           </div>
           <FilterButton open={showFilters} onClick={() => setShowfilters(!showFilters)} />
