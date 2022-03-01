@@ -24,6 +24,19 @@
   .filterWrapper {
     flex: 25%;
     margin-right: 20px;
+    @media (min-width: 991px) {
+      position: sticky;
+      top: 20px;
+      height: calc(100vh - 20px) !important;
+      overflow-y: scroll;
+      scroll-behavior: smooth;
+      // hide scrollbars
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
     @media (max-width: 991px) {
       flex: 100%;
       display: none;
