@@ -26,6 +26,7 @@ export const GET_PRESENTATION_DETAILS_ERROR = 'GET_PRESENTATION_DETAILS_ERROR';
 export const GET_RECOMMENDED_PRESENTATIONS = 'GET_RECOMMENDED_PRESENTATIONS';
 export const VOTING_PERIOD_ADD = 'VOTING_PERIOD_ADD';
 export const VOTING_PERIOD_PHASE_CHANGE = 'VOTING_PERIOD_PHASE_CHANGE';
+const PresentationsDefaultPageSize = 30;
 
 export const setInitialDataSet = () => (dispatch, getState) => Promise.resolve().then(() => {
   const { userState: { userProfile } } = getState();
@@ -37,7 +38,7 @@ export const updateFilter = (filter) => (dispatch) => {
   dispatch(createAction(VOTEABLE_PRESENTATIONS_UPDATE_FILTER)({ ...filter }));
 };
 
-export const getAllVoteablePresentations = (page = 1, perPage = 10) => async (dispatch) => {
+export const getAllVoteablePresentations = (page = 1, perPage = PresentationsDefaultPageSize) => async (dispatch) => {
 
   dispatch(startLoading());
 
@@ -79,7 +80,7 @@ export const getAllVoteablePresentations = (page = 1, perPage = 10) => async (di
   });
 }
 
-export const getVoteablePresentations = (page = 1, perPage = 10) => async (dispatch, getState) => {
+export const getVoteablePresentations = (page = 1, perPage = PresentationsDefaultPageSize) => async (dispatch, getState) => {
 
   let accessToken;
   try {
