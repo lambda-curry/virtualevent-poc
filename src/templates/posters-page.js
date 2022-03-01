@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { connect } from 'react-redux';
 import { navigate } from "gatsby";
 import Layout from '../components/Layout';
@@ -75,13 +75,11 @@ const PostersPage = ({
     if (scrollDirection === SCROLL_DIRECTION.UP) {
       filtersWrapperRef.current.scroll({ top: 0, behavior: 'smooth' });
     }
-
     const threshold = 100;
     let lastScrollY = window.pageYOffset;
     let ticking = false;
-    const updateScrollDir = () => {
+    const updateScrollDirection = () => {
       const scrollY = window.pageYOffset;
-
       if (Math.abs(scrollY - lastScrollY) < threshold) {
         ticking = false;
         return;
@@ -96,7 +94,7 @@ const PostersPage = ({
     };
     const onScroll = () => {
       if (!ticking) {
-        window.requestAnimationFrame(updateScrollDir);
+        window.requestAnimationFrame(updateScrollDirection);
         ticking = true;
       }
     };
