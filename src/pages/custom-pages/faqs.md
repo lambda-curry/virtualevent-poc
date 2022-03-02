@@ -53,7 +53,7 @@ Please note: you must be logged in to view the schedule, so anyone you share thi
 
 ###### Is it possible to sync My Schedule to a calendar?
 
-Of course! Sessions on the agenda must be added to “My Schedule” in order to import them into your calendar. You can do this by clicking on “My Schedule” in the top navigation bar. Choose “Calendar Sync” at the top of the page. A special link will be created that you may copy and paste into your browser. An .ics file will be created and can be saved to your computer then uploaded to your calendar. For Google Calendar, go to Settings, Settings, then click “Import & export” from the menu on the left. Click “Select file from your computer” and select the .ics file. Choose which calendar to add the imported events to. Click Import. <br><br>
+Of course! Sessions on the agenda must be added to “My Schedule” in order to import them into your calendar. You can do this by clicking on “My Schedule” in the top navigation bar. Choose “Calendar Sync” at the top of the page. A special link will be created that you may copy and paste. Use the link below to add your saved sessions (found in My Schedule) to your Google calendar. To add the link, go into your Google Calendar and click the "+" on the left hand side (under Other Calendars) and click From URL. Copy and paste the link there. If you make changes later, just use the Calendar Sync button to ensure your updates are reflected on your personal calendar.<br><br>
 
 ###### How do I attend a session I’ve added to “My Schedule”?  
 
