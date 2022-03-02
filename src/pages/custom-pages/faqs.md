@@ -17,7 +17,7 @@ You will only see the events on the platform that you registered for (from the o
 
 ###### How do I customize my attendee profile with my photo and bio? 
 
-TVisit the event website and log in to your profile. Once you are logged in to the event, click the circular image on the top right of the navigation bar. Use this to quickly update your profile photo and name shown on the virtual website. To update additional information, choose “Go to Full Profile.” Use this to update information such as your job title, bio, social links, etc. Please note: due to the Okta integration, you will not be able to edit your first and last name.<br><br>
+Visit the event website and log in to your profile. Once you are logged in to the event, click the circular image on the top right of the navigation bar. Use this to quickly update your profile photo and name shown on the virtual website. To update additional information, choose “Go to Full Profile.” Use this to update information such as your job title, bio, social links, etc. Please note: due to the Okta integration, you will not be able to edit your first and last name.<br><br>
 
 **How is the information in my attendee profile shared?**
 
@@ -31,15 +31,11 @@ Visit the event website and log in to your profile. From the top navigation bar,
 
 Due to the Okta integration, you will not be able to edit your first and last name. If there is an error in your name, just drop an email to <a href = "mailto: techweek@yahooinc.com" target="_blank" style="color:#0f69ff"><b>techweek@yahooinc.com</b></a>.<br><br><br>
 
-
-
-
-
 ### <p style="color: #7E1FFF">SCHEDULE</p>
 
 **How do I add a session to my agenda or “My Schedule”?**
 
-ALog into the virtual event and click on “Schedule” in the top navigation bar. Find the session/event you wish to add to your schedule and click the “+”  symbol in the right-bottom corner. You may view sessions or events you have added to your personal schedule by clicking “My Schedule” in the navigation bar.  <br><br>
+Log into the virtual event and click on “Schedule” in the top navigation bar. Find the session/event you wish to add to your schedule and click the “+”  symbol in the right-bottom corner. You may view sessions or events you have added to your personal schedule by clicking “My Schedule” in the navigation bar.  <br><br>
 
 ###### How do I REMOVE a session to my agenda or “My Schedule”?
 
@@ -85,21 +81,13 @@ On each poster page, we created the public chat option in the upper right hand c
 
 Yep. You’ll be able to see and chat via Chat Connect with anyone who’s viewing the same poster page as you. Click the filter button (next to the search bar) and click “In this room”. That way, you’ll be able to see all attendees who are currently viewing that poster page.<br><br>
 
-
-
 ###### Why can’t I access the poster rooms?
 
 There are poster rooms and sessions for TechPulse and PE-Con specifically. If you weren’t invited to those events, you’ll be able to view the poster rooms after TechWeek ends. If you didn’t register for those events but were invited, please reach out to <a href = "mailto: techweek@yahooinc.com" target="_blank" style="color:#0f69ff"><b>techweek@yahooinc.com</b></a>.<br><br>
 
-
-
 ###### Are the posters accessible?
 
 All video-on-demand in the poster rooms have closed captions. For screen reader-friendly poster images, click on the Additional Resources link within each poster page to see the Google Deck version of the poster. All poster sessions are on Google Meets with our company accessibility features.<br><br><br>
-
-
-
-
 
 ### <p style="color: #7E1FFF">PLATFORM</p>
 
@@ -111,21 +99,15 @@ The platform is designed for you to watch one session at a time. All sessions wi
 
 On Schedule and My Schedule, the default timezone is Pacific Time (PT) but you can change it to your local computer timezone by clicking the timezone button.<br><br>
 
-
-
 ###### What is the difference between a ”Connect Chat” and a “Public Conversation”? 
 
 Connect Chat is a 1:1 discussion between you and another attendee. To find a specific attendee for a 1:1 conversation, type their name in the search box. Clicking on their name will cause a new pop-up chat window to appear. If they have allowed this feature, you may also email the attendee. 
 
 A Public Conversation is shared with all attendees. In the Public Conversation chat box, your comments and any replies to your comments will be seen by all attendees. <br><br>
 
-
-
 ###### Why am I being asked to allow the Virtual Event platform to access my information after I log in for the first time? 
 
 In accordance with General Data Protection Regulation (GDPR) guidelines, the website is providing details on how it may use your information. This is standard industry practice. You will only need to accept this set of permissions once. <br><br> 
-
-
 
 ###### What internet browsers do you suggest for your platform?
 
@@ -137,31 +119,21 @@ The virtual platform works best in Chrome, Safari, Brave, and Firefox. To get a 
 
 There are two ways to find sponsors on the virtual platform environment. From the Home page, click on the sponsor’s logo to visit their virtual booth or click “Check out the sponsors button”. Or click Sponsors from the navigation bar. You may then click on any sponsor logo to visit that sponsor’s virtual booth. <br><br>
 
-
-
 ###### What does the “Scan your badge” button do on the sponsor pages? 
 
 By clicking this link, you’re giving the sponsor your attendee profile contact information. The sponsor may use this info to share valuable information or announcements later. Please note: you agreed to the terms and conditions of the sponsors by registering for the event. <br><br>
-
-
 
 ###### What does “Contact Us!” do on the sponsor page? 
 
 Give this button a click to generate a new, blank email message so that you can easily connect with the sponsor and ask any questions you may have.  <br><br>
 
-
-
 ###### In the Sponsor’s virtual booth, are the Public Conversation comments visible to everyone? 
 
 Yes, the comments/conversations made in a sponsor’s virtual booth are visible to all attendees who visit that particular sponsor’s page. We will be sharing relevant comments or questions with the sponsor, but the sponsor will not be chatting on the platform. To talk with the sponsor company, you can email them via the Contact Us button or join the live sponsor sessions to meet the sponsor via Google Meet.<br><br>
 
-
-
 ###### How do I chat with the representatives from the sponsor company?
 
 Check out the schedule to see when each sponsor will be available for a live session. Click on the link to chat with representatives of the sponsor companies. If the sponsor representative is not available during a live session, you can use the “Contact Us” button on the sponsor page.<br><br><br>
-
-
 
 ### <p style="color: #7E1FFF">TROUBLESHOOTING</p>
 
@@ -169,13 +141,9 @@ Check out the schedule to see when each sponsor will be available for a live ses
 
 Not to worry. First, log out of the website and log back in using Okta. The log out button can be found on the top right of the page, next to your profile photo. You may also need to clear your cache or disable third-party cookie blockers, privacy shields, and/or ad blocking plugins. If you are still having trouble, please email <a href = "mailto: techweek@yahooinc.com" target="_blank" style="color:#0f69ff"><b>techweek@yahooinc.com</b></a>[](<>) and provide the following info: the browser and browser version you are using and the event page you’re having trouble with.<br><br>
 
-
-
 ###### I’m already logged in, but things don’t seem to be working. What should I do? 
 
 We’re here for you. Get some real-time support through the Help feature on the private chat on the lobby page. If you’re still having trouble with the platform, please email <a href = "mailto: support@fntech.com" target="_blank" style="color:#0f69ff"><b>support@fntech.com</b></a>[](<>)[](<>) for further assistance.<br><br>
-
-
 
 ###### One or more elements of the event page aren’t loading for me. What should I do?
 
@@ -184,8 +152,6 @@ First, don’t panic. Next, log out of the website and log back in using Okta. T
 ###### It appears that some information is not showing correctly on my page. How can I fix this? 
 
 The event platform uses dynamic data which adjusts in size and position on the page depending on the size/shape of viewable space. Try adjusting your window size by hovering over the edge or corner of the window and dragging your mouse to the desired position. This should adjust the image and/or text accordingly. <br><br>
-
-
 
 ###### How do I increase or decrease the text in the virtual platform? 
 
@@ -196,8 +162,6 @@ You can point to the text size you desire (Largest, Larger, Medium (default), Sm
 ###### Will the event be live? What happens if I’m in a different time zone?
 
 TechWeek will accommodate different time zones to cater to attendees from all over the globe as much as possible, but all sessions will be available to watch on demand. <br><br>
-
-
 
 ###### What do I have access to seeing?
 
@@ -241,19 +205,13 @@ This annual internal research brings together over 100+ research scientists and 
 
 PE-Con is dedicated to fostering the Production Engineering, SRE and Infrastructure Engineering community through collaboration, technology and communications.<br><br>
 
-
-
 ###### When is TechWeek?
 
 TechWeek 2022 will begin on Monday, March 7 and end on Thursday, March 10. <br><br>
 
-
-
 ###### Where is TechWeek being held?
 
 TechWeek 2022 will be a virtual event and will be held on the same platform that you register on.<br><br>
-
-
 
 ###### Who is on the planning team for TechWeek?
 
