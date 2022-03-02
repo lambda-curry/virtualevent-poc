@@ -129,7 +129,7 @@
           },
           "sponsorId": 0,
           "id": 0,
-          "showLogoInEventPage": true
+          "showLogoInEventPage": false
         },
         {
           "marquee": "Red Hat is the world’s leading provider of commercial open source software solutions.",
