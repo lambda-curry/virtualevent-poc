@@ -6,7 +6,7 @@
 }
 
 .title {
-  font-size: 108px;
+  font-size: 102px;
   color: $color_primary_contrast;
   font-weight: bold;
   text-align: center;
@@ -24,10 +24,26 @@
   .hero-container {
     height: 200px;
   }
+
+  .title {
+    font-size: 80px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 400px) {
   .hero-container {
     height: 220px;
+  }
+
+  .title {
+    font-size: 60px;
+  }
+
+  .subtitle {
+    font-size: 20px;
   }
 }
