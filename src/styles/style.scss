@@ -227,11 +227,13 @@ h2 {
       div {
         padding-left: 5px;
       }
+      span {
+        font-weight: 600;
+      }
     }
   }
 
   &__description {
-    font-weight: bold;
     margin-top: 1rem;
   }
 

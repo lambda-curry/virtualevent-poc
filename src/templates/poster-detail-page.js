@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { navigate } from "gatsby";
@@ -52,6 +52,12 @@ export const PosterDetailPageTemplate = ({
 
   const notificationRef = useRef(null);
 
+  const [pageTrackGroups, setPageTrackGroups] = useState([]);
+  const [notifiedVotingPeriodsOnLoad, setNotifiedVotingPeriodsOnLoad] = useState(false);
+  const [notifiedMaximunAllowedVotesOnLoad, setNotifiedMaximunAllowedVotesOnLoad] = useState(false);
+  const [previousVotingPeriods, setPreviousVotingPeriods] = useState(votingPeriods);
+  const [votedPosterTrackGroups, setVotedPosterTrackGroups] = useState([]);
+
   useEffect(() => {
     getDisqusSSO();
     getPresentationById(presentationId);
@@ -62,26 +68,15 @@ export const PosterDetailPageTemplate = ({
   }, [])
 
   useEffect(() => {
-    getPresentationById(presentationId);
-  }, [presentationId])
+    setPageTrackGroups(poster?.track?.track_groups ?? []);
+  }, [poster]);
 
-  // shouldComponentUpdate(nextProps, nextState) {
-  //   const { loading, presentationId, poster, eventsPhases, recommendedPosters, votes } = this.props;
-  //   if (loading !== nextProps.loading) return true;
-  //   if (presentationId !== nextProps.presentationId) return true;
-  //   if (poster?.id !== nextProps.poster?.id) return true;
-  //   if (recommendedPosters?.length !== nextProps.recommendedPosters?.length) return true;
-  //   if (votes?.length !== nextProps.votes?.length) return true;
-  //   // compare current event phase with next one
-  //   const currentPhase = eventsPhases.find((e) => parseInt(e.id) === parseInt(presentationId))?.phase;
-  //   const nextCurrentPhase = nextProps.eventsPhases.find(
-  //     (e) => parseInt(e.id) === parseInt(presentationId)
-  //   )?.phase;
-  //   const finishing = (currentPhase === PHASES.DURING && nextCurrentPhase === PHASES.AFTER);
-  //   return (currentPhase !== nextCurrentPhase && !finishing);
-  // }
+  useEffect(() => {
+    getPresentationById(presentationId);
+  }, [presentationId]);
 
   const toggleVote = (presentation, isVoted) => {
+    setVotedPosterTrackGroups(presentation.track?.track_groups);
     isVoted ? castPresentationVote(presentation) : uncastPresentationVote(presentation);
   };
 
@@ -93,13 +88,68 @@ export const PosterDetailPageTemplate = ({
     return notificationRef.current?.(notification);
   }
 
+  useEffect(() => {
+    console.log('voting periods: ', votingPeriods)
+    if (!notifiedVotingPeriodsOnLoad &&
+      pageTrackGroups.length &&
+      pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined)) {
+      pageTrackGroups.forEach(tg => {
+        if (votingPeriods[tg].phase === PHASES.BEFORE) {
+          const startDate = new Date(votingPeriods[tg].startDate * 1000).toLocaleDateString('en-US');
+          const startTime = new Date(votingPeriods[tg].startDate * 1000).toLocaleTimeString('en-US');
+          pushNotification(`Voting has not begun. ${votingPeriods[tg].name} will allow for votes starting on ${startDate} ${startTime}`);
+          setNotifiedVotingPeriodsOnLoad(true);
+        } else if (votingPeriods[tg].phase === PHASES.AFTER) {
+          const endDate = new Date(votingPeriods[tg].endDate * 1000).toLocaleDateString('en-US');
+          const endTime = new Date(votingPeriods[tg].endDate * 1000).toLocaleTimeString('en-US');
+          pushNotification(`Voting has ended. ${votingPeriods[tg].name} does not allow for votes after ${endDate} ${endTime}`);
+          setNotifiedVotingPeriodsOnLoad(true);
+        }
+      });
+    }
+    if (!notifiedMaximunAllowedVotesOnLoad &&
+      pageTrackGroups.length &&
+      pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined)) {
+      pageTrackGroups.forEach(tg => {
+        if (votingPeriods[tg].phase === PHASES.DURING && votingPeriods[tg].remainingVotes === 0) {
+          pushNotification(`You've reached your maximum votes. ${votingPeriods[tg].name} only allows for ${votingPeriods[tg].maxAttendeeVotes} votes per attendee`);
+          setNotifiedMaximunAllowedVotesOnLoad(true);
+        }
+      });
+    }
+    if (votedPosterTrackGroups.length &&
+      pageTrackGroups.length &&
+      pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined)) {
+      votedPosterTrackGroups.forEach(tg => {
+        if (votingPeriods[tg].phase === PHASES.DURING && votingPeriods[tg].remainingVotes === 0) {
+          pushNotification(`You've reached your maximum votes. ${votingPeriods[tg].name} only allows for ${votingPeriods[tg].maxAttendeeVotes} votes per attendee`);
+          setVotedPosterTrackGroups([]);
+        }
+      });
+    }
+    if (pageTrackGroups.length &&
+      pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined) &&
+      pageTrackGroups.map(tg => previousVotingPeriods[tg]).every(vp => vp !== undefined)) {
+      pageTrackGroups.forEach(tg => {
+        if (previousVotingPeriods[tg].phase === PHASES.BEFORE && votingPeriods[tg].phase === PHASES.DURING) {
+          pushNotification(`Voting has now begun! You are allowed ${votingPeriods[tg].maxAttendeeVotes} votes in ${votingPeriods[tg].name}`);
+        } else if (previousVotingPeriods[tg].phase === PHASES.DURING && votingPeriods[tg].phase === PHASES.AFTER) {
+          const endDate = new Date(votingPeriods[tg].endDate * 1000).toLocaleDateString('en-US');
+          const endTime = new Date(votingPeriods[tg].endDate * 1000).toLocaleTimeString('en-US');
+          pushNotification(`Voting has ended. ${votingPeriods[tg].name} does not allow for votes after ${endDate} ${endTime}`);
+        }
+      });
+    }
+    setPreviousVotingPeriods(votingPeriods);
+  }, [pageTrackGroups, votingPeriods]);
+
   const currentPhase = eventsPhases.find((e) => parseInt(e.id) === parseInt(presentationId))?.phase;
   const firstHalf = currentPhase === PHASES.DURING ? nowUtc < ((event?.start_date + event?.end_date) / 2) : false;
   const query = URI.parseQuery(location.search);
 
   // if event is loading or we are still calculating the current phase ...
   if (loading) {
-    return <HeroComponent title="Loading Poster" />;
+    return <HeroComponent title="Loading poster" />;
   }
 
   if (!poster) {
@@ -270,6 +320,7 @@ const PosterDetailPage = ({
         uncastPresentationVote={uncastPresentationVote}
         getDisqusSSO={getDisqusSSO}
         allPosters={allPosters}
+    
         recommendedPosters={recommendedPosters}
         votes={votes}
         setInitialDataSet={setInitialDataSet}
