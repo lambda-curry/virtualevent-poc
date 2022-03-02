@@ -12,11 +12,13 @@ const PosterLiveSession = ({ poster }) => {
     return (
         <div className={styles.posterJoinContainer}>
             <span>
-                Join the live session
+                Join the sessions
+            </span>
+            <span className={styles.date}>
+                Tuesday
             </span>
             <button onClick={() => goToLiveSession(poster.meeting_url)} className="poster-button button">
-                <i className={`fa fa-sign-in icon is-large`} />
-                <b>Participate</b>
+                <b>Chat with poster authors</b>
             </button>
         </div>
     )
