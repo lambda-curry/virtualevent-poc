@@ -88,7 +88,13 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
     const firstFocusable = focusable[0];
     const lastFocusable = focusable[focusable.length - 1];
     const KEYCODE_TAB = 9;
+    const KEYCODE_ESC = 27;
     const isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
+    const isEscPressed = (e.key === 'Escape' || e.keyCode === KEYCODE_ESC);
+
+    if (isEscPressed){
+      closePopup()
+    }
 
     if (!isTabPressed) {
       return;
