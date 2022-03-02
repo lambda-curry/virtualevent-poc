@@ -1,0 +1,60 @@
+@import "../../styles/colors.scss";
+@import "../../styles/global-classes";
+
+.modal {
+  color: var(--color_text_dark);
+
+  :global(.modal-content) {
+    padding: 9px; // 15 + 9 = 24
+
+    .text {
+      @extend %text-med;
+    }
+
+    .linkWrapper {
+      margin-top: 20px;
+
+      .link {
+        color: #1daaa2;
+        word-break: break-word;
+      }
+    }
+
+    :global(.modal-header) {
+      border: none;
+
+      :global(.modal-title) {
+        @extend %title-med;
+      }
+
+      :global(.close) {
+        color: var(--color_text_dark);
+        opacity: 1;
+      }
+    }
+
+    :global(.modal-footer) {
+      border: none;
+      margin-top: 20px;
+
+      button {
+        border: none;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 4px;
+
+        &.copy {
+          width: 100px;
+
+          @extend %button-small-primary;
+        }
+
+        &.dismiss {
+          margin-right: 10px;
+
+          @extend %button-small-secondary;
+        }
+      }
+    }
+  }
+}

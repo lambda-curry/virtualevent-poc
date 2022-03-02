@@ -234,7 +234,7 @@ const PostersPage = ({
       }
       <div className={`${styles.wrapper} ${showFilters ? styles.showFilters : ''}`}>
         <div className={styles.postersWrapper}>
-          <PosterHeaderFilter changeHeaderFilter={(value) => setAppliedPageFilter(value)} />
+          <PosterHeaderFilter changeHeaderFilter={(value) => setAppliedPageFilter(value)} pageFilters={filters} />
           {filteredPosters &&
           <PosterGrid
             posters={filteredPosters}
