@@ -33,7 +33,7 @@ export const EventPageTemplate = class extends React.Component {
     const { eventId, event } = this.props;
     const { eventId: prevEventId } = prevProps;
     // event id could came as param at uri
-    if (eventId !== prevEventId || (event?.id !== eventId)) {
+    if (parseInt(eventId) !== parseInt(prevEventId) || parseInt(event?.id) !== parseInt(eventId) ) {
       this.props.getEventById(eventId);
     }
   }

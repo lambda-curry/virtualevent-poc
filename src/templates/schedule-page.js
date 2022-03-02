@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { pickBy } from "lodash";
 import { navigate } from "gatsby";
 import { connect } from "react-redux";
-import { updateFiltersFromHash, updateFilter } from "../actions/schedule-actions";
+import { updateFiltersFromHash, updateFilter, reloadScheduleData } from "../actions/schedule-actions";
 import Layout from "../components/Layout";
 import FullSchedule from "../components/FullSchedule";
 import ScheduleFilters from "../components/ScheduleFilters";
@@ -11,7 +11,6 @@ import AttendanceTrackerComponent from "../components/AttendanceTrackerComponent
 import AccessTracker from "../components/AttendeeToAttendeeWidgetComponent";
 import { PHASES } from "../utils/phasesUtils";
 import FilterButton from "../components/FilterButton";
-import {syncData} from "../actions/base-actions";
 import styles from "../styles/full-schedule.module.scss";
 import NotFoundPage from "../pages/404";
 
@@ -20,15 +19,19 @@ const SCROLL_DIRECTION = {
   DOWN: 'scrolling down'
 };
 
-const SchedulePage = ({summit, schedules, summitPhase, isLoggedUser, location, colorSettings, updateFilter, updateFiltersFromHash, scheduleProps, schedKey, syncData }) => {
+const SchedulePage = ({summit, schedules, summitPhase, isLoggedUser, location, colorSettings, updateFilter, updateFiltersFromHash, scheduleProps, schedKey, reloadScheduleData }) => {
+
   const [showFilters, setShowfilters] = useState(false);
   const [scrollDirection, setScrollDirection] = useState(null);
   const [mustScrollFiltersDown, setMustScrollFiltersDown] = useState(false);
 
   const filtersWrapperRef = useRef(null);
 
-  const scheduleState = schedules.find( s => s.key === schedKey);
-  const { events, allEvents, filters, view, timezone, colorSource } = scheduleState || {};
+  useEffect(() => {
+    if(schedules.length > 0) return;
+    // reload schedule data due we dont have the data on the reducer loaded
+    reloadScheduleData();
+  }, [schedules])
 
   useEffect(() => {
     updateFiltersFromHash(schedKey, filters, view);
@@ -71,11 +74,10 @@ const SchedulePage = ({summit, schedules, summitPhase, isLoggedUser, location, c
     }
   }, [mustScrollFiltersDown]);
 
-  useEffect(() =>{
-    syncData();
-  }, [])
+  if (!summit || schedules.length === 0 ) return null;
 
-  if (!summit || schedules.length === 0) return null;
+  const scheduleState = schedules.find( s => s.key === schedKey);
+  const { events, allEvents, filters, view, timezone, colorSource } = scheduleState || {};
 
   // if we don't have a state, it probably means the schedule was disabled from admin.
   if (!scheduleState) {
@@ -149,5 +151,5 @@ const mapStateToProps = ({ summitState, clockState, loggedUserState, allSchedule
 export default connect(mapStateToProps, {
   updateFiltersFromHash,
   updateFilter,
-  syncData,
+  reloadScheduleData,
 })(SchedulePage);
