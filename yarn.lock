@@ -7758,10 +7758,10 @@ fstream@^1.0.0, fstream@^1.0.12:
     mkdirp ">=0.5 0"
     rimraf "2"
 
-full-schedule-widget@^1.1.34:
-  version "1.1.34"
-  resolved "https://registry.yarnpkg.com/full-schedule-widget/-/full-schedule-widget-1.1.34.tgz#d3aac727bff22a0f7d5c32d9fd69b4c44d0e0f82"
-  integrity sha512-XWsBUpfMC7yoPoftX+O4CDJCFUaySeBMyd1rpzpCnWkX8ZFRhyZ4QoLJQ9lM5RSnAEtqAsvYtoeXL7CcTd14uw==
+full-schedule-widget@^1.1.35:
+  version "1.1.35"
+  resolved "https://registry.yarnpkg.com/full-schedule-widget/-/full-schedule-widget-1.1.35.tgz#11ca74eb55f89ccd8441e63fb26ebed5984bf674"
+  integrity sha512-eH8Hi0ipUu69T5FwtZduYvCw78fqPtLtBERejqXl3oMtgF4k/e/tXMdLmVJ64uaUdTXBxGLqPobjGczzYFcnSQ==
   dependencies:
     pure-react-carousel "^1.27.4"
 
