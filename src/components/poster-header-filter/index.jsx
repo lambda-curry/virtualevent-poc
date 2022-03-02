@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 import styles from './index.module.scss';
-import {getShareLink} from "../../actions/schedule-actions";
+import {getShareLink} from "../../actions/presentation-actions";
 import ShareModal from './share-modal';
 
 const DROPDOWN_OPTIONS = [

@@ -13,7 +13,8 @@ import NotificationHub from '../components/notification-hub';
 import {
   setInitialDataSet,
   getAllVoteablePresentations,
-  updateFilter
+  updateFilter,
+  updateFiltersFromHash
 } from '../actions/presentation-actions';
 
 import {
@@ -48,6 +49,7 @@ const PostersPage = ({
   allBuildTimePosters,
   filters,
   updateFilter,
+  updateFiltersFromHash,
   colorSettings,
 }) => {
 
@@ -150,6 +152,10 @@ const PostersPage = ({
     const pageTrackGroups = [...new Set(filteredPosters.map(p => p.track?.track_groups ?? []).flat())];
     setPageTrackGroups(pageTrackGroups);
   }, [filteredPosters]);
+
+  useEffect(() => {
+    updateFiltersFromHash(filters);
+  }, [filters, updateFiltersFromHash]);
 
   useEffect(() => {
     if (!notifiedVotingPeriodsOnLoad &&
@@ -274,5 +280,6 @@ export default connect(mapStateToProps, {
   getAllVoteablePresentations,
   castPresentationVote,
   uncastPresentationVote,
-  updateFilter
+  updateFilter,
+  updateFiltersFromHash
 })(PostersPage);

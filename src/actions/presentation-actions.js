@@ -7,6 +7,10 @@ import {
   clearAccessToken,
 } from 'openstack-uicore-foundation/lib/methods';
 
+import { FragmentParser } from "openstack-uicore-foundation/lib/components";
+
+import { pickBy, isEqual, isEmpty } from "lodash";
+
 import { customErrorHandler } from '../utils/customErrorHandler';
 
 import { VotingPeriod } from '../model/VotingPeriod';
@@ -28,6 +32,8 @@ export const VOTING_PERIOD_ADD = 'VOTING_PERIOD_ADD';
 export const VOTING_PERIOD_PHASE_CHANGE = 'VOTING_PERIOD_PHASE_CHANGE';
 const PresentationsDefaultPageSize = 30;
 
+const fragmentParser = new FragmentParser();
+
 export const setInitialDataSet = () => (dispatch, getState) => Promise.resolve().then(() => {
   const { userState: { userProfile } } = getState();
   dispatch(createAction(SET_INITIAL_DATASET)({ userProfile }));
@@ -36,6 +42,63 @@ export const setInitialDataSet = () => (dispatch, getState) => Promise.resolve()
 
 export const updateFilter = (filter) => (dispatch) => {
   dispatch(createAction(VOTEABLE_PRESENTATIONS_UPDATE_FILTER)({ ...filter }));
+};
+
+export const updateFiltersFromHash = (filters, actionCallback = VOTEABLE_PRESENTATIONS_UPDATE_FILTER) => (dispatch) => {
+  const qsFilters = fragmentParser.getParams();
+
+  // clear hash
+  fragmentParser.clearParams();
+
+  if (typeof window !== 'undefined') {
+    window.history.replaceState(null, null, ' ');
+  }
+
+  // escape if no hash
+  if (isEmpty(qsFilters)) return null;
+
+  const newFilters = {};
+
+  const normalizedFilters = pickBy(qsFilters);
+
+  // populate state filters with hash values
+  Object.keys(filters).forEach(key => {
+    newFilters[key] = { ...filters[key] }; // copy label and rest of props
+
+    if (key === 'title') {
+      newFilters[key].values = normalizedFilters[key] ? decodeURIComponent(normalizedFilters[key]) : '';
+    } else {
+      const newValues = normalizedFilters[key] ? normalizedFilters[key].split(',') : [];
+      newFilters[key].values = newValues.map(val => {
+        if (isNaN(val)) return decodeURIComponent(val);
+        return parseInt(val);
+      })
+    }
+  });
+
+  // only update if filters have changed
+  if (!isEqual(newFilters, filters)) {
+    dispatch(createAction(actionCallback)({ ...newFilters }));
+  }
+};
+
+export const getShareLink = (filters, view) => {
+  const hashVars = [];
+
+  if (filters) {
+    Object.entries(filters).forEach(([key, value]) => {
+      if (value.values.length > 0) {
+        const hashValue = Array.isArray(value.values) ? value.values.join(',') : value.values;
+        hashVars.push(`${key}=${hashValue}`)
+      }
+    });
+  }
+
+  if (typeof window !== 'undefined') {
+    return `${window.location}#${hashVars.join('&')}`;
+  }
+
+  return '';
 };
 
 export const getAllVoteablePresentations = (page = 1, perPage = PresentationsDefaultPageSize) => async (dispatch) => {
