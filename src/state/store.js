@@ -5,8 +5,7 @@ import eventReducer from "../reducers/event-reducer";
 import presentationsReducer from "../reducers/presentations-reducer";
 import summitReducer from "../reducers/summit-reducer";
 import userReducer from "../reducers/user-reducer";
-import scheduleReducer from "../reducers/schedule-reducer";
-import myScheduleReducer from "../reducers/my-schedule-reducer";
+import allSchedulesReducer from "../reducers/all-schedules-reducer";
 import clockReducer from "../reducers/clock-reducer";
 import speakerReducer from "../reducers/speaker-reducer";
 import settingReducer from "../reducers/setting-reducer";
@@ -29,8 +28,7 @@ const config = {
         'eventState',
         'presentationsState',
         'summitState',
-        'scheduleState',
-        'myScheduleState',
+        'allSchedulesState',
         'settingState',
     ]
 };
@@ -39,8 +37,7 @@ const persistedReducers = persistCombineReducers(config, {
     loggedUserState: loggedUserReducer,
     settingState: settingReducer,
     userState: userReducer,
-    scheduleState: scheduleReducer,
-    myScheduleState: myScheduleReducer,
+    allSchedulesState: allSchedulesReducer,
     clockState: clockReducer,
     eventState: eventReducer,
     presentationsState: presentationsReducer,

@@ -9,16 +9,13 @@
         {
           "title": "MY SCHEDULE",
           "link": "/a/my-schedule"
-        },
-        {
-          "title": "TECHPULSE POSTERS",
-          "link": "/"
         }
       ],
-      "title": "VIRTUAL SITE"
+      "title": "VIRTUAL SITE",
+      "display": true
     },
     {
-      "display": false,
+      "display": true,
       "items": [
         {
           "title": "SPONSORS",

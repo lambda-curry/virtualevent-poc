@@ -4,6 +4,7 @@ import {
   createAction,
   stopLoading,
   startLoading,
+  clearAccessToken,
 } from 'openstack-uicore-foundation/lib/methods';
 
 import { customErrorHandler } from '../utils/customErrorHandler';
@@ -25,6 +26,7 @@ export const GET_PRESENTATION_DETAILS_ERROR = 'GET_PRESENTATION_DETAILS_ERROR';
 export const GET_RECOMMENDED_PRESENTATIONS = 'GET_RECOMMENDED_PRESENTATIONS';
 export const VOTING_PERIOD_ADD = 'VOTING_PERIOD_ADD';
 export const VOTING_PERIOD_PHASE_CHANGE = 'VOTING_PERIOD_PHASE_CHANGE';
+const PresentationsDefaultPageSize = 30;
 
 export const setInitialDataSet = () => (dispatch, getState) => Promise.resolve().then(() => {
   const { userState: { userProfile } } = getState();
@@ -36,7 +38,7 @@ export const updateFilter = (filter) => (dispatch) => {
   dispatch(createAction(VOTEABLE_PRESENTATIONS_UPDATE_FILTER)({ ...filter }));
 };
 
-export const getAllVoteablePresentations = (page = 1, perPage = 10) => async (dispatch) => {
+export const getAllVoteablePresentations = (page = 1, perPage = PresentationsDefaultPageSize) => async (dispatch) => {
 
   dispatch(startLoading());
 
@@ -71,12 +73,14 @@ export const getAllVoteablePresentations = (page = 1, perPage = 10) => async (di
       dispatch(stopLoading());
     });
   }).catch(e => {
+     console.log('ERROR: ', e);
     dispatch(stopLoading());
+    clearAccessToken();
     return (e);
   });
 }
 
-export const getVoteablePresentations = (page = 1, perPage = 10) => async (dispatch, getState) => {
+export const getVoteablePresentations = (page = 1, perPage = PresentationsDefaultPageSize) => async (dispatch, getState) => {
 
   let accessToken;
   try {
@@ -101,6 +105,8 @@ export const getVoteablePresentations = (page = 1, perPage = 10) => async (dispa
     customErrorHandler,
     { page }
   )(params)(dispatch).catch(e => {
+    console.log('ERROR: ', e);
+    clearAccessToken();
     return (e);
   });
 };
@@ -131,8 +137,10 @@ export const getPresentationById = (presentationId) => async (dispatch, getState
   )(params)(dispatch).then((presentation) => {
       dispatch(getRecommendedPresentations(presentation.response.track.track_groups));
   }).catch(e => {
+      console.log('ERROR: ', e);
       dispatch(stopLoading());
       dispatch(createAction(GET_PRESENTATION_DETAILS_ERROR)(e));
+      clearAccessToken();
       return (e);
   });
 };
@@ -169,7 +177,9 @@ export const getRecommendedPresentations = (trackGroups) => async (dispatch, get
   )(params)(dispatch).then(() => {
       dispatch(stopLoading());
   }).catch(e => {
+      console.log('ERROR: ', e);
       dispatch(stopLoading());
+      clearAccessToken();
       return (e);
   });
 };

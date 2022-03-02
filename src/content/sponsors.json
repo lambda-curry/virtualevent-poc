@@ -13,7 +13,7 @@
           "sideImage": {
             "file": ""
           },
-          "featuredEventId": 2825,
+          "featuredEventId": 2844,
           "sponsorColor": "#ff9900",
           "logo": {
             "file": "/img/yahoo_techweek_2022_sponsor-logos_framed_aws-2x.png"
@@ -21,10 +21,10 @@
           "name": "AWS",
           "intro": "#### **For over 15 years, AWS has been the world’s most comprehensive and broadly adopted cloud platform. AWS offers over 200 fully featured services for compute, storage, databases, networking, analytics, robotics, machine learning and artificial intelligence (AI), Internet of Things (IoT), security, hybrid, virtual and augmented reality (VR and AR), media, and application development, deployment, and management from 81 Availability Zones (AZs) within 25 geographic regions. Millions of customers—including the fastest-growing startups, largest enterprises, and leading government agencies—trust AWS to power their infrastructure, become more agile, and lower costs. To learn more about AWS, visit aws.amazon.com**",
           "headerImage": {
-            "file": ""
+            "file": "/img/yahoo_techweek_2022_sponsor-header_aws-2x.png"
           },
           "headerImageMobile": {
-            "file": ""
+            "file": "/img/ytw22-fnv-sponsor-aws-mobileheader.png"
           },
           "advertiseImage": {
             "file": ""
@@ -36,79 +36,48 @@
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/me.-magazine-issue-4-fast-to-the-future-white-paper-.pdf",
-                "name": "Fast to the future (white paper)",
-                "order": 1
-              },
-              {
-                "class_name": "PresentationSlide",
-                "link": "/img/machine-learning-for-media-and-entertainment-e-book-.pdf",
-                "name": "Machine Learning for Media and Entertainment (E-Book)",
+                "name": "me. Magazine Issue #4: Fast to the future (White Paper) ",
                 "order": 2
               },
               {
                 "class_name": "PresentationSlide",
-                "link": "/documents/",
-                "name": "How four leading businesses optimized real-time advertising performance (E-Book)",
+                "link": "/img/machine-learning-for-media-and-entertainment-e-book-.pdf",
+                "name": "Machine Learning for Media and Entertainment (e-book)",
                 "order": 3
               },
               {
                 "class_name": "PresentationSlide",
+                "link": "/documents/",
+                "name": "How four leading businesses optimized real-time advertising performance (e-book)",
+                "order": 5
+              },
+              {
+                "class_name": "PresentationSlide",
                 "link": "/img/aws-media-personalization-ebook-.pdf",
-                "name": "AWS Media Personalization (E-Book)",
+                "name": "AWS Media Personalization (e-book)",
                 "order": 4
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/aerospike-white-paper.pdf",
+                "name": "Aerospike (White Paper)",
+                "order": 1
               }
             ],
             "links": [
               {
                 "class_name": "PresentationLink",
                 "name": "LinkedIn",
-                "order": 5,
-                "link": "https://www.linkedin.com/company/amazon-web-services/mycompany/"
-              },
-              {
-                "class_name": "PresentationLink",
-                "name": "Running AdTech Workloads on AWS with Aerospike at Petabyte Scale (Blog)",
                 "order": 6,
-                "link": "https://aws.amazon.com/blogs/industries/running-ad-tech-workloads-on-aws-with-aerospike-at-petabyte-scale/"
-              },
-              {
-                "class_name": "PresentationLink",
-                "name": "Advertising & Marketing Technology on AWS (E-book)",
-                "order": 7,
-                "link": "https://aws.amazon.com/advertising-marketing/"
+                "link": "https://www.linkedin.com/company/amazon-web-services/mycompany/"
               }
             ],
-            "videos": [
-              {
-                "class_name": "PresentationVideo",
-                "name": "Trade Desk Case Study",
-                "order": 8,
-                "link": "https://aws.amazon.com/solutions/case-studies/the-trade-desk-case-study/?did=cr_card&trk=cr_card__;!!Op6eflyXZCqGR5I!RcvLk5i7th9XrWX-m1ji70buWs4rstfkwE2n6H350WK7eb8vuq6_x0WSyqyOF-t96Fz8Vw$"
-              },
-              {
-                "class_name": "PresentationVideo",
-                "name": "Integral Ad Science Case Study",
-                "order": 9,
-                "link": "https://aws.amazon.com/solutions/case-studies/integral-ad-science/?did=cr_card&trk=cr_card"
-              },
-              {
-                "class_name": "PresentationVideo",
-                "name": "Salesforce CDP Unifies Consumer Data at Exabyte Scale on AWS",
-                "order": 10,
-                "link": "https://aws.amazon.com/solutions/case-studies/salesforce/?did=cr_card&trk=cr_card"
-              },
-              {
-                "class_name": "PresentationVideo",
-                "name": "FreeWheel, A Comcast Company Uses Amazon SageMaker for Digital Video and TV Ad Inventory Prediction",
-                "order": 11,
-                "link": "https://aws.amazon.com/solutions/case-studies/freewheel/"
-              }
-            ]
+            "videos": []
           },
           "id": 157,
           "showLogoInEventPage": false,
           "email": "palmju@amazon.com",
-          "usesSponsorPage": true
+          "usesSponsorPage": false
         },
         {
           "sideImage": {
@@ -129,7 +98,7 @@
           },
           "sponsorId": 0,
           "id": 0,
-          "showLogoInEventPage": true
+          "showLogoInEventPage": false
         },
         {
           "marquee": "Red Hat is the world’s leading provider of commercial open source software solutions.",
@@ -242,7 +211,7 @@
           "usesSponsorPage": true
         },
         {
-          "marquee": "Better. Faster. Greener.",
+          "marquee": "Accelerate Your Business with Supermicro AI Solutions. Systems designed to work seamlessly with NVIDIA hardware and software solutions.",
           "sideImage": {
             "file": null
           },

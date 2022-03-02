@@ -10,6 +10,8 @@ import styles from '../styles/profile.module.scss'
 const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfile, changePicture, changeProfile, fromFullProfile }) => {
 
   const editorRef = useRef(null);
+  const modalHeaderRef = useRef(null)
+  const modalRef = useRef(null)
 
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -64,6 +66,47 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
               userProfile.linkedin,
               userProfile.twitter_name
   ]);
+
+  useEffect(() => {
+    if (modalHeaderRef) {
+      window.setTimeout(function () {
+        modalHeaderRef.current.focus();
+      }, 0);
+    }
+  }, [modalHeaderRef])
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleUserKeyPress);
+
+    return () => {
+      window.removeEventListener('keydown', handleUserKeyPress);
+    };
+  }, []);
+
+  const handleUserKeyPress = (e) => {
+    const focusable = modalRef.current.querySelectorAll('button, input, a, textarea, select, [tabindex]:not([tabindex="-1"])');
+    const firstFocusable = focusable[0];
+    const lastFocusable = focusable[focusable.length - 1];
+    const KEYCODE_TAB = 9;
+    const isTabPressed = (e.key === 'Tab' || e.keyCode === KEYCODE_TAB);
+
+    if (!isTabPressed) {
+      return;
+    }
+
+    if ( e.shiftKey ) /* shift + tab */ {
+      if (document.activeElement === firstFocusable) {
+        lastFocusable.focus();
+        e.preventDefault();
+      }
+    } else /* tab */ {
+      if (document.activeElement === lastFocusable) {
+        firstFocusable.focus();
+        e.preventDefault();
+      }
+    }
+  }
+
 
   const handleNewImage = (e) => {
     setImage(e.target.files[0]);
@@ -133,11 +176,11 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
   };
 
   return (
-      <div className={`${styles.modal} ${showProfile ? styles.isActive : ''}`}>
+      <div className={`${styles.modal} ${showProfile ? styles.isActive : ''}`} ref={modalRef}>
         <div className={`${styles.modalCard} ${styles.profilePopup}`}>
           <AjaxLoader relative={true} color={'#ffffff'} show={idpLoading} size={120} />
           <header className={`${styles.modalCardHead}`}>
-            <p className={`${styles.modalCardTitle}`}>Edit profile</p>
+            <p className={`${styles.modalCardTitle}`} tabIndex='-1' ref={modalHeaderRef}>Edit profile</p>
             <button className="link" onClick={() => closePopup()}>
               <i className={`${styles.closeIcon} fa fa-times icon`} />
             </button>

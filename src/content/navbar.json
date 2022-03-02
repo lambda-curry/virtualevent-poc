@@ -7,52 +7,52 @@
         "ANY"
       ],
       "title": "HOME",
-      "link": "/",
+      "link": "/a",
       "display": true
     },
     {
       "title": "SCHEDULE",
       "link": "/a/schedule",
       "display": true,
-      "requiresAuth": true,
+      "requiresAuth": false,
       "pageRestriction": [
         "ANY"
       ],
-      "showOnlyAtShowTime": true
+      "showOnlyAtShowTime": false
     },
     {
       "title": "MY SCHEDULE",
       "link": "/a/my-schedule",
       "display": true,
-      "requiresAuth": true,
+      "requiresAuth": false,
       "pageRestriction": [
         "ANY"
       ],
-      "showOnlyAtShowTime": true
+      "showOnlyAtShowTime": false
     },
     {
-      "requiresAuth": true,
-      "showOnlyAtShowTime": true,
+      "requiresAuth": false,
+      "showOnlyAtShowTime": false,
       "pageRestriction": [
         "ANY"
       ],
       "title": "TECHPULSE POSTERS",
       "link": "/a/posters/33",
-      "display": true
+      "display": false
     },
     {
-      "requiresAuth": true,
-      "showOnlyAtShowTime": true,
+      "requiresAuth": false,
+      "showOnlyAtShowTime": false,
       "pageRestriction": [
         "ANY"
       ],
       "title": "PE-CON POSTERS",
       "link": "/a/posters/34",
-      "display": true
+      "display": false
     },
     {
       "requiresAuth": true,
-      "showOnlyAtShowTime": true,
+      "showOnlyAtShowTime": false,
       "pageRestriction": [
         "ANY"
       ],
