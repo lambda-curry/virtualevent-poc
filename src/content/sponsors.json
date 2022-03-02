@@ -37,25 +37,31 @@
                 "class_name": "PresentationSlide",
                 "link": "/img/me.-magazine-issue-4-fast-to-the-future-white-paper-.pdf",
                 "name": "me. Magazine Issue #4: Fast to the future (White Paper) ",
-                "order": 1
+                "order": 2
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/machine-learning-for-media-and-entertainment-e-book-.pdf",
                 "name": "Machine Learning for Media and Entertainment (E-Book)",
-                "order": 2
+                "order": 3
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/documents/",
                 "name": "How four leading businesses optimized real-time advertising performance (E-Book)",
-                "order": 3
+                "order": 5
               },
               {
                 "class_name": "PresentationSlide",
                 "link": "/img/aws-media-personalization-ebook-.pdf",
                 "name": "AWS Media Personalization (E-Book)",
                 "order": 4
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/aerospike-white-paper.pdf",
+                "name": "Aerospike (White Paper)",
+                "order": 1
               }
             ],
             "links": [
