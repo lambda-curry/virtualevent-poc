@@ -26,7 +26,7 @@ const FullSchedule = ({
     title: "Schedule",
     summit,
     modalSyncText: 'Use this link below to add your saved sessions (found in <b>My Schedule</b>) to your Google calendar.'+
-     'To add the link, go into your Google Calendar and click the "+" on the left hand side (under Other Calendars).'+
+     ' To add the link, go into your Google Calendar and click the "+" on the left hand side (under Other Calendars) and click From URL.'+
      ' Copy and paste the link there. If you make changes later, just use the <b>Calendar Sync</b> button to ensure your'+
      ' updates are reflected on your personal calendar.',
     marketingSettings: colorSettings,
