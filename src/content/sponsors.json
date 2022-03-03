@@ -80,25 +80,36 @@
           "usesSponsorPage": false
         },
         {
+          "marquee": "We create world-changing technology that improves the life of every person on the planet.",
           "sideImage": {
             "file": ""
           },
+          "sponsorColor": "#0071C5",
           "logo": {
             "file": "/img/yahoo_techweek_2022_sponsor-logos_framed_intel-2x.png"
           },
           "name": "Intel",
+          "intro": "#### At Intel, \n\n#### Our customers’ success is our obsession. We promise to deliver the technology leadership and reliable, top-quality products they need and expect.\n\n#### Our silicon and software are essential for moving, storing, and processing data faster and more securely than ever before. Advancing these technologies allows us to help our customers solve their greatest challenges.\n\n#### We are inspired to:\n\n#### ·         Drive innovation that makes the world safer, builds healthy and vibrant communities, and increases productivity.\n\n#### ·         Harness our reach around the globe to better society, business, and the planet.\n\n#### ·         Push ourselves and our industry peers to be more responsible, inclusive, and sustainable.\n\n#### We have big ambitions, and a growing sense of urgency to work with others and address world challenges no one can tackle alone.",
           "headerImage": {
             "file": ""
           },
           "headerImageMobile": {
             "file": ""
           },
+          "socialNetworks": [
+            {
+              "icon": "Facebook",
+              "link": "https://urldefense.com/v3/__https://www.facebook.com/Intel/__;!!Op6eflyXZCqGR5I!VRrvC-p2P2AGzth63iKXGW-N8FsbCz2bUAJerp0hiisM38sjrJaMdqnXpGgNt1t6nise5g$"
+            }
+          ],
           "advertiseImage": {
             "file": ""
           },
-          "sponsorId": 0,
-          "id": 0,
-          "showLogoInEventPage": false
+          "sponsorId": 158,
+          "companyId": 137,
+          "id": 158,
+          "showLogoInEventPage": false,
+          "email": "ali.alavi@intel.com"
         },
         {
           "marquee": "Red Hat is the world’s leading provider of commercial open source software solutions.",
