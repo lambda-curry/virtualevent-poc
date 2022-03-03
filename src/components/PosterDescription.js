@@ -56,30 +56,23 @@ const PosterDescription = ({ poster: { speakers, title, description, custom_orde
           <b>{title}</b>
         </h1>
         <div className="talk__speaker">
-          {speakers && speakers?.length === 0 ?
-            null
-            :
-            speakers?.length < 10 ?
-              <div className="columns is-multiline is-mobile">
-                {speakers.map((s, index) => {
-                  return (
-                    <div className="column is-one-third-desktop is-half-mobile talk__speaker-container" key={index}>
-                      <img alt="" src={s.pic} />
-                      <div>
-                        {`${s.first_name} ${s.last_name}`}
-                        <br />
-                        {s.title && <b dangerouslySetInnerHTML={{ __html: s.title }} />}
-                        {s.company && <><b> - </b><b dangerouslySetInnerHTML={{ __html: s.company }} /></>}
-                      </div>
+          {speakers?.length > 0 &&
+            <div className="columns is-multiline is-mobile">
+              {speakers.map((s, index) => {
+                return (
+                  <div className="column is-one-third-desktop is-half-mobile talk__speaker-container" key={index}>
+                    <img alt="" src={s.pic} />
+                    <div>
+                      {`${s.first_name} ${s.last_name}`}
+                      <br />
+                      {s.title && <b dangerouslySetInnerHTML={{ __html: s.title }} />}
+                      {s.company && <><b> - </b><b dangerouslySetInnerHTML={{ __html: s.company }} /></>}
                     </div>
-                  )
-                })
-                }
-              </div>
-              :
-              <span className="talk__speaker--name">
-                {formatSpeakers(speakers)}
-              </span>
+                  </div>
+                )
+              })
+              }
+            </div>
           }
           <br />
           <div className="talk__description" dangerouslySetInnerHTML={{ __html: description }} />
