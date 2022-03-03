@@ -174,26 +174,6 @@ const PostersPage = ({
         }
       });
     }
-    if (!notifiedMaximunAllowedVotesOnLoad &&
-        pageTrackGroups.length &&
-        pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined)) {
-        pageTrackGroups.forEach(tg => {
-        if (votingPeriods[tg].phase === PHASES.DURING && votingPeriods[tg].remainingVotes === 0) {
-          pushNotification(`You've reached your maximum votes. ${votingPeriods[tg].name} only allows for ${votingPeriods[tg].maxAttendeeVotes} votes per attendee`);
-          setNotifiedMaximunAllowedVotesOnLoad(true);
-        }
-      });
-    }
-    if (votedPosterTrackGroups.length &&
-        pageTrackGroups.length &&
-        pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined)) {
-        votedPosterTrackGroups.forEach(tg => {
-        if (votingPeriods[tg].phase === PHASES.DURING && votingPeriods[tg].remainingVotes === 0) {
-          pushNotification(`You've reached your maximum votes. ${votingPeriods[tg].name} only allows for ${votingPeriods[tg].maxAttendeeVotes} votes per attendee`);
-          setVotedPosterTrackGroups([]);
-        }
-      });
-    }
     if (pageTrackGroups.length &&
         pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined) &&
         pageTrackGroups.map(tg => previousVotingPeriods[tg]).every(vp => vp !== undefined)) {
@@ -204,6 +184,26 @@ const PostersPage = ({
           const endDate = new Date(votingPeriods[tg].endDate * 1000).toLocaleDateString('en-US');
           const endTime = new Date(votingPeriods[tg].endDate * 1000).toLocaleTimeString('en-US');
           pushNotification(`Voting has ended. ${votingPeriods[tg].name} does not allow for votes after ${endDate} ${endTime}`);
+        }
+      });
+    }
+    if (!notifiedMaximunAllowedVotesOnLoad &&
+        pageTrackGroups.length &&
+        pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined)) {
+        pageTrackGroups.forEach(tg => {
+        if (votingPeriods[tg].phase === PHASES.DURING && votingPeriods[tg].remainingVotes === 0) {
+          pushNotification(`You've reached your maximum votes. ${votingPeriods[tg].name} only allows for ${votingPeriods[tg].maxAttendeeVotes} votes per attendee`);
+          setNotifiedMaximunAllowedVotesOnLoad(true);
+        }
+      });
+    } else if (votedPosterTrackGroups &&
+        votedPosterTrackGroups.length &&
+        pageTrackGroups.length &&
+        pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined)) {
+        votedPosterTrackGroups.forEach(tg => {
+        if (votingPeriods[tg].phase === PHASES.DURING && votingPeriods[tg].remainingVotes === 0) {
+          pushNotification(`You've reached your maximum votes. ${votingPeriods[tg].name} only allows for ${votingPeriods[tg].maxAttendeeVotes} votes per attendee`);
+          setVotedPosterTrackGroups([]);
         }
       });
     }
