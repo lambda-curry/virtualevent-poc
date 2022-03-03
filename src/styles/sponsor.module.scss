@@ -24,6 +24,9 @@
     display: block;
     margin-bottom: 1rem;
   }
+  & > img {
+    margin-bottom: 1rem;
+  }
 }
 
 .small-image-container {
