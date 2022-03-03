@@ -33,7 +33,7 @@ const VideoComponent = class extends React.Component {
                 return (
                     <VimeoPlayer
                         video={url}
-                        autoplay
+                        autoplay={autoPlay}
                         className={styles.vimeoPlayer}
                     />
                 )

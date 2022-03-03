@@ -68,8 +68,8 @@ const PosterDescription = ({ poster: { speakers, title, description, custom_orde
                       <div>
                         {`${s.first_name} ${s.last_name}`}
                         <br />
-                        {s.title && <b dangerouslySetInnerHTML={{ __html: s.title }} />}
-                        {s.company && <><b> - </b><b dangerouslySetInnerHTML={{ __html: s.company }} /></>}
+                        {s.title && <span dangerouslySetInnerHTML={{ __html: s.title }} />}
+                        {s.company && <><span> - </span><span dangerouslySetInnerHTML={{ __html: s.company }} /></>}
                       </div>
                     </div>
                   )
