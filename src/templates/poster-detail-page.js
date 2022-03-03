@@ -173,7 +173,7 @@ export const PosterDetailPage = ({
                   url={poster.streaming_url}
                   title={poster.title}
                   namespace={summit.name}
-                  autoPlay={false}
+                  autoPlay={true}
                 />
                 <PosterButton mediaUpload={mediaUpload} />
               </>
