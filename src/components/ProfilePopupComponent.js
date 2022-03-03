@@ -203,9 +203,11 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
                     rotate={parseFloat(rotate)}
                 />
                 <div className={styles.imageUpload}>
-                  <label htmlFor="file-input">
-                    <i className={`${styles.pictureIcon} fa fa-2x fa-camera icon is-large`} />
-                  </label>
+                  <button className='is-paddingless link'>
+                    <label htmlFor="file-input">
+                      <i className={`${styles.pictureIcon} fa fa-2x fa-camera icon is-large`} />
+                    </label>
+                  </button>
                   <input name="newImage" id="file-input" type="file" accept=".jpg,.jpeg,.png" onChange={handleNewImage} />
                 </div>
                 <div>
