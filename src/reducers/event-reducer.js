@@ -20,8 +20,10 @@ const eventReducer = (state = DEFAULT_STATE, action) => {
     case STOP_LOADING:
       return { ...state, loading: false };
     case GET_EVENT_DATA:
-      const event = payload.response || payload.event;      
-      return { ...state, loading: false, event: event };
+      const event = payload?.response ?? payload.event;
+      // check if we need to update the current event or do we need to just use the new one
+      const updatedEvent = event.id  === state?.event?.id ? {...state, ...event} : event;
+      return { ...state, loading: false, event: updatedEvent };
     case GET_EVENT_DATA_ERROR: {
       return { ...state, loading: false, event: null }
     }

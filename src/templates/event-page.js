@@ -24,11 +24,12 @@ import URI from "urijs"
 export const EventPageTemplate = class extends React.Component {
 
   componentDidMount() {
-    const { eventId } = this.props;
+    const { eventId,event } = this.props;
     this.props.getDisqusSSO();
-    this.props.getEventById(eventId);
+    if(parseInt(event?.id) !== parseInt(eventId))
+      this.props.getEventById(eventId);
   }
-
+  
   componentDidUpdate(prevProps, prevState, snapshot) {
     const { eventId, event } = this.props;
     const { eventId: prevEventId } = prevProps;
