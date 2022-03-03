@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { connect } from 'react-redux';
 import { navigate } from "gatsby";
 import Layout from '../components/Layout';
@@ -67,9 +67,14 @@ const PostersPage = ({
   const notificationRef = useRef(null);
   const filtersWrapperRef = useRef(null);
 
-  const pushNotification = (notification) => {
+  const pushNotification = useCallback((notification) => {
     return notificationRef.current?.(notification);
-  }
+  }, [notificationRef]);
+
+  const toggleVote = useCallback((presentation, isVoted) => {
+    setVotedPosterTrackGroups(presentation.track?.track_groups);
+    isVoted ? castPresentationVote(presentation) : uncastPresentationVote(presentation);
+  }, []);
 
   useEffect(() => {
     if (scrollDirection === SCROLL_DIRECTION.UP) {
@@ -169,26 +174,6 @@ const PostersPage = ({
         }
       });
     }
-    if (!notifiedMaximunAllowedVotesOnLoad &&
-        pageTrackGroups.length &&
-        pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined)) {
-        pageTrackGroups.forEach(tg => {
-        if (votingPeriods[tg].phase === PHASES.DURING && votingPeriods[tg].remainingVotes === 0) {
-          pushNotification(`You've reached your maximum votes. ${votingPeriods[tg].name} only allows for ${votingPeriods[tg].maxAttendeeVotes} votes per attendee`);
-          setNotifiedMaximunAllowedVotesOnLoad(true);
-        }
-      });
-    }
-    if (votedPosterTrackGroups.length &&
-        pageTrackGroups.length &&
-        pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined)) {
-        votedPosterTrackGroups.forEach(tg => {
-        if (votingPeriods[tg].phase === PHASES.DURING && votingPeriods[tg].remainingVotes === 0) {
-          pushNotification(`You've reached your maximum votes. ${votingPeriods[tg].name} only allows for ${votingPeriods[tg].maxAttendeeVotes} votes per attendee`);
-          setVotedPosterTrackGroups([]);
-        }
-      });
-    }
     if (pageTrackGroups.length &&
         pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined) &&
         pageTrackGroups.map(tg => previousVotingPeriods[tg]).every(vp => vp !== undefined)) {
@@ -202,13 +187,28 @@ const PostersPage = ({
         }
       });
     }
+    if (!notifiedMaximunAllowedVotesOnLoad &&
+        pageTrackGroups.length &&
+        pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined)) {
+        pageTrackGroups.forEach(tg => {
+        if (votingPeriods[tg].phase === PHASES.DURING && votingPeriods[tg].remainingVotes === 0) {
+          pushNotification(`You've reached your maximum votes. ${votingPeriods[tg].name} only allows for ${votingPeriods[tg].maxAttendeeVotes} votes per attendee`);
+          setNotifiedMaximunAllowedVotesOnLoad(true);
+        }
+      });
+    } else if (votedPosterTrackGroups &&
+        votedPosterTrackGroups.length &&
+        pageTrackGroups.length &&
+        pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined)) {
+        votedPosterTrackGroups.forEach(tg => {
+        if (votingPeriods[tg].phase === PHASES.DURING && votingPeriods[tg].remainingVotes === 0) {
+          pushNotification(`You've reached your maximum votes. ${votingPeriods[tg].name} only allows for ${votingPeriods[tg].maxAttendeeVotes} votes per attendee`);
+          setVotedPosterTrackGroups([]);
+        }
+      });
+    }
     setPreviousVotingPeriods(votingPeriods);
   }, [pageTrackGroups, votingPeriods]);
-
-  const toggleVote = (presentation, isVoted) => {
-    setVotedPosterTrackGroups(presentation.track?.track_groups);
-    isVoted ? castPresentationVote(presentation) : uncastPresentationVote(presentation);
-  };
 
   const filterProps = {
     summit,
