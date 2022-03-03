@@ -35,7 +35,6 @@ export const PosterDetailPage = ({
   setInitialDataSet,
   getAllVoteablePresentations,
   getPresentationById,
-  poster,
   loading,
   summit,
   user,
@@ -48,7 +47,8 @@ export const PosterDetailPage = ({
   castPresentationVote,
   uncastPresentationVote
 }) => {
-  
+
+  const [poster, setPoster] = useState(null);
   const [userCanViewPoster, setUserCanViewPoster] = useState(null);
   const [posterTrackGroups, setPosterTrackGroups] = useState([]);
   const [notifiedVotingPeriodsOnLoad, setNotifiedVotingPeriodsOnLoad] = useState(false);
@@ -71,6 +71,17 @@ export const PosterDetailPage = ({
     getDisqusSSO();
     if (!allPosters.length) setInitialDataSet().then(() => getAllVoteablePresentations());
   }, []);
+
+  useEffect(() => {
+    const fetchPresentation = async () => {
+      let presentation;
+      try {
+        presentation = await getPresentationById(presentationId);
+        setPoster(presentation);
+      } catch (e) {}
+    }
+    fetchPresentation();
+  }, [presentationId]);
 
   useEffect(() => {
     if (poster) {
@@ -258,7 +269,6 @@ const PosterDetailPageTemplate = ({
   setInitialDataSet,
   getAllVoteablePresentations,
   getPresentationById,
-  poster,
   loading,
   summit,
   user,
@@ -280,7 +290,6 @@ const PosterDetailPageTemplate = ({
         setInitialDataSet={setInitialDataSet}
         getAllVoteablePresentations={getAllVoteablePresentations}
         getPresentationById={getPresentationById}
-        poster={poster}
         loading={loading}
         summit={summit}
         user={user}
@@ -322,7 +331,6 @@ PosterDetailPageTemplate.propTypes = posterDetailPageTemplatePropTypes;
 
 const mapStateToProps = ({ userState, summitState, presentationsState }) => ({
   loading: presentationsState.voteablePresentations.loading,
-  poster: presentationsState.voteablePresentations.detailedPresentation,
   summit: summitState.summit,
   user: userState,
   isAuthorized: userState.isAuthorized,
