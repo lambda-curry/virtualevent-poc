@@ -102,6 +102,46 @@
           },
           "sponsorId": 158,
           "companyId": 137,
+          "documents": {
+            "links": [
+              {
+                "class_name": "PresentationLink",
+                "name": "Facebook",
+                "order": 1,
+                "link": "https://urldefense.com/v3/__https://www.facebook.com/Intel/__;!!Op6eflyXZCqGR5I!VRrvC-p2P2AGzth63iKXGW-N8FsbCz2bUAJerp0hiisM38sjrJaMdqnXpGgNt1t6nise5g$"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "Instagram",
+                "order": 2,
+                "link": "https://urldefense.com/v3/__https://www.instagram.com/intel/__;!!Op6eflyXZCqGR5I!VRrvC-p2P2AGzth63iKXGW-N8FsbCz2bUAJerp0hiisM38sjrJaMdqnXpGgNt1sU11B3UQ$"
+              },
+              {
+                "class_name": "PresentationLink",
+                "name": "LinkedIn",
+                "link": "https://urldefense.com/v3/__https://www.linkedin.com/company/intel-corporation__;!!Op6eflyXZCqGR5I!VRrvC-p2P2AGzth63iKXGW-N8FsbCz2bUAJerp0hiisM38sjrJaMdqnXpGgNt1tHutdaBw$",
+                "order": 3
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://urldefense.com/v3/__https://twitter.com/intel?ref_src=twsrc*5Egoogle*7Ctwcamp*5Eserp*7Ctwgr*5Eauthor__;JSUlJSU!!Op6eflyXZCqGR5I!VRrvC-p2P2AGzth63iKXGW-N8FsbCz2bUAJerp0hiisM38sjrJaMdqnXpGgNt1tKA_wwxA$",
+                "name": "Twitter",
+                "order": 4
+              },
+              {
+                "class_name": "PresentationLink",
+                "order": 5,
+                "link": "https://urldefense.com/v3/__https://www.intel.com/content/www/us/en/developer/overview.html__;!!Op6eflyXZCqGR5I!VRrvC-p2P2AGzth63iKXGW-N8FsbCz2bUAJerp0hiisM38sjrJaMdqnXpGgNt1v7Y6AfvA$",
+                "name": "Intel Developer Zone"
+              },
+              {
+                "class_name": "PresentationLink",
+                "link": "https://urldefense.com/v3/__https://www.intel.com/content/www/us/en/data-center/overview.html__;!!Op6eflyXZCqGR5I!VRrvC-p2P2AGzth63iKXGW-N8FsbCz2bUAJerp0hiisM38sjrJaMdqnXpGgNt1tTVgjz7Q$",
+                "order": 6,
+                "name": "Intel Data Center Solutions"
+              }
+            ]
+          },
           "id": 158,
           "showLogoInEventPage": false,
           "email": "ali.alavi@intel.com"
