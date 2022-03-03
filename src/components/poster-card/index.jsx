@@ -11,7 +11,7 @@ import placeholder from '../../img/poster_fallback.png';
 
 import 'react-medium-image-zoom/dist/styles.css'
 
-const PosterCard = ({ poster, showDetail, showVoteButton, canVote, isVoted, toggleVote, showDetailPage }) => {
+const PosterCard = ({ poster, posterClick, showVoteButton, canVote, isVoted, toggleVote, showDetailPage }) => {
   const [hover, setHover] = useState(false);
   const [isZoomed, setIsZoomed] = useState(false)
   const handleZoomChange = useCallback(shouldZoom => {
@@ -24,7 +24,7 @@ const PosterCard = ({ poster, showDetail, showVoteButton, canVote, isVoted, togg
   const handleClick = ev => {
     ev.preventDefault();
     ev.stopPropagation();
-    setIsZoomed(!isZoomed);
+    posterClick();
   };
   const handleTitleClick = ev => {
     ev.preventDefault();

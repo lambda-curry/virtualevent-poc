@@ -25,6 +25,7 @@ import { filterByTrackGroup, randomSort } from '../utils/filterUtils';
 import { PHASES } from '../utils/phasesUtils';
 
 import styles from '../styles/posters-page.module.scss';
+import PosterZoom from '../components/poster-zoom';
 
 const SCROLL_DIRECTION = {
   UP: 'scrolling up',
@@ -63,6 +64,8 @@ const PostersPage = ({
   const [votedPosterTrackGroups, setVotedPosterTrackGroups] = useState([]);
   const [scrollDirection, setScrollDirection] = useState(null);
   const [mustScrollFiltersDown, setMustScrollFiltersDown] = useState(false);
+  const [selectedPoster, setSelectedPoster] = useState(null);
+  const [showPosterDetails, setShowPosterDetails] = useState(false);
 
   const notificationRef = useRef(null);
   const filtersWrapperRef = useRef(null);
@@ -136,7 +139,7 @@ const PostersPage = ({
         });
         break;
       case 'custom_order_desc':
-        filteredPosters = filteredPosters.sort((a, b) => { 
+        filteredPosters = filteredPosters.sort((a, b) => {
           if (a.custom_order < b.custom_order) return 1;
           if (a.custom_order > b.custom_order) return -1;
           return 0;
@@ -158,9 +161,9 @@ const PostersPage = ({
 
   useEffect(() => {
     if (!notifiedVotingPeriodsOnLoad &&
-        pageTrackGroups.length &&
-        pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined)) {
-        pageTrackGroups.forEach(tg => {
+      pageTrackGroups.length &&
+      pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined)) {
+      pageTrackGroups.forEach(tg => {
         if (votingPeriods[tg].phase === PHASES.BEFORE) {
           const startDate = new Date(votingPeriods[tg].startDate * 1000).toLocaleDateString('en-US');
           const startTime = new Date(votingPeriods[tg].startDate * 1000).toLocaleTimeString('en-US');
@@ -175,9 +178,9 @@ const PostersPage = ({
       });
     }
     if (pageTrackGroups.length &&
-        pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined) &&
-        pageTrackGroups.map(tg => previousVotingPeriods[tg]).every(vp => vp !== undefined)) {
-        pageTrackGroups.forEach(tg => {
+      pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined) &&
+      pageTrackGroups.map(tg => previousVotingPeriods[tg]).every(vp => vp !== undefined)) {
+      pageTrackGroups.forEach(tg => {
         if (previousVotingPeriods[tg].phase === PHASES.BEFORE && votingPeriods[tg].phase === PHASES.DURING) {
           pushNotification(`Voting has now begun! You are allowed ${votingPeriods[tg].maxAttendeeVotes} votes in ${votingPeriods[tg].name}`);
         } else if (previousVotingPeriods[tg].phase === PHASES.DURING && votingPeriods[tg].phase === PHASES.AFTER) {
@@ -188,19 +191,19 @@ const PostersPage = ({
       });
     }
     if (!notifiedMaximunAllowedVotesOnLoad &&
-        pageTrackGroups.length &&
-        pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined)) {
-        pageTrackGroups.forEach(tg => {
+      pageTrackGroups.length &&
+      pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined)) {
+      pageTrackGroups.forEach(tg => {
         if (votingPeriods[tg].phase === PHASES.DURING && votingPeriods[tg].remainingVotes === 0) {
           pushNotification(`You've reached your maximum votes. ${votingPeriods[tg].name} only allows for ${votingPeriods[tg].maxAttendeeVotes} votes per attendee`);
           setNotifiedMaximunAllowedVotesOnLoad(true);
         }
       });
     } else if (votedPosterTrackGroups &&
-        votedPosterTrackGroups.length &&
-        pageTrackGroups.length &&
-        pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined)) {
-        votedPosterTrackGroups.forEach(tg => {
+      votedPosterTrackGroups.length &&
+      pageTrackGroups.length &&
+      pageTrackGroups.map(tg => votingPeriods[tg]).every(vp => vp !== undefined)) {
+      votedPosterTrackGroups.forEach(tg => {
         if (votingPeriods[tg].phase === PHASES.DURING && votingPeriods[tg].remainingVotes === 0) {
           pushNotification(`You've reached your maximum votes. ${votingPeriods[tg].name} only allows for ${votingPeriods[tg].maxAttendeeVotes} votes per attendee`);
           setVotedPosterTrackGroups([]);
@@ -209,6 +212,26 @@ const PostersPage = ({
     }
     setPreviousVotingPeriods(votingPeriods);
   }, [pageTrackGroups, votingPeriods]);
+
+  const openPosterDetails = (poster) => {
+    setSelectedPoster(poster);
+    setShowPosterDetails(true);
+  }
+
+  const goToPresentation = () => {
+    navigate(`/a/poster/${selectedPoster.id}`);
+  }
+
+  const navigatePosterZoom = (next) => {
+    const posterIndex = filteredPosters.findIndex(poster => poster.id === selectedPoster.id);
+    if (next) {
+      console.log('next', posterIndex, filteredPosters.length, posterIndex === filteredPosters.length);
+      posterIndex === filteredPosters.length - 1 ? setSelectedPoster(filteredPosters[0]) : setSelectedPoster(filteredPosters[posterIndex + 1]);
+    } else {
+      console.log('prev', posterIndex === 0);
+      posterIndex === 0 ? setSelectedPoster(filteredPosters[filteredPosters.length - 1]) : setSelectedPoster(filteredPosters[posterIndex - 1]);
+    }
+  }
 
   const filterProps = {
     summit,
@@ -226,24 +249,25 @@ const PostersPage = ({
     <Layout location={location}>
       <AttendanceTrackerComponent sourceName="POSTERS" />
       {pageSettings &&
-      <PageHeader
-        title={pageSettings.title}
-        subtitle={pageSettings.subtitle}
-        backgroundImage={pageSettings.image}
-      />
+        <PageHeader
+          title={pageSettings.title}
+          subtitle={pageSettings.subtitle}
+          backgroundImage={pageSettings.image}
+        />
       }
       <div className={`${styles.wrapper} ${showFilters ? styles.showFilters : ''}`}>
         <div className={styles.postersWrapper}>
           <PosterHeaderFilter changeHeaderFilter={(value) => setAppliedPageFilter(value)} />
           {filteredPosters &&
-          <PosterGrid
-            posters={filteredPosters}
-            showDetailPage={(posterId) => navigate(`/a/poster/${posterId}`)}
-            votingPeriods={votingPeriods}
-            votingAllowed={!!attendee}
-            votes={votes}
-            toggleVote={toggleVote}
-          />
+            <PosterGrid
+              posters={filteredPosters}
+              showDetailPage={(posterId) => navigate(`/a/poster/${posterId}`)}
+              votingPeriods={votingPeriods}
+              votingAllowed={!!attendee}
+              selectPoster={(poster) => openPosterDetails(poster)}
+              votes={votes}
+              toggleVote={toggleVote}
+            />
           }
         </div>
         <div ref={filtersWrapperRef} className={styles.filterWrapper}>
@@ -251,6 +275,13 @@ const PostersPage = ({
         </div>
         <FilterButton open={showFilters} onClick={() => setShowFilters(!showFilters)} />
         <NotificationHub children={(add) => { notificationRef.current = add }} />
+        {showPosterDetails &&
+          <PosterZoom
+            poster={selectedPoster}
+            closePosterDetail={() => setShowPosterDetails(false)}
+            goToPresentation={goToPresentation}
+            onPosterNavigation={(next) => navigatePosterZoom(next)} />
+        }
       </div>
     </Layout>
   );

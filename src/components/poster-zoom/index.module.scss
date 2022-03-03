@@ -1,0 +1,119 @@
+.background {
+  width: 100%;
+  height: 100%;
+  background: rgba($color: #000000, $alpha: 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999999999;
+  .poster-zoom-wrapper {
+    margin: 10vh 20vw;
+    padding: 20px 15px;
+    background-color: #fff;
+    height: 85%;
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.04),
+      0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12),
+      0px 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    .zoom-title {
+      height: 50px;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      .profile {
+        display: flex;
+        img {
+          height: 50px;
+          width: 50px;
+        }
+        .profile-data {
+          margin-left: 10px;
+          h1 {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 28px;
+            display: inline;
+            color: var(--color_text_dark);
+          }
+          span {
+            &:first-of-type {
+              font-weight: bold;
+              font-size: 22px;
+              line-height: 18px;
+              color: #979797;
+            }
+            font-size: 14px;
+            line-height: 18px;
+          }
+        }
+      }
+      button {
+        align-self: flex-end;
+        border: 1px solid #979797;
+        background: none;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #979797;
+        i {
+          margin-right: 10px;
+        }
+      }
+      .close-button {
+        position: absolute;
+        right: -25px;
+        bottom: 70px;
+        border: none;
+        color: #fff;
+      }
+    }
+    .zoom-wrapper {
+      height: 87%;
+      border: 1px solid #d8d8d8;
+      box-sizing: border-box;
+      border-radius: 8px;
+    }
+    .zoom-footer {
+      font-size: 11px;
+      margin-top: 15px;
+      line-height: 15px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #979797;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      .button-wrapper {
+        display: flex;
+        align-items: baseline;
+        &:first-of-type {
+          i {
+            margin-right: 5px;
+          }
+        }
+        &:nth-of-type(2) {
+          i {
+            margin-left: 10px;
+          }
+        }
+      }
+      button {
+        background: none;
+        border: none;
+        text-transform: uppercase;
+        &.vote {
+          position: absolute;
+          bottom: 75px;
+          right: 30px;
+        }
+      }
+    }
+  }
+}

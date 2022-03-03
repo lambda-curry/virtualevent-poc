@@ -7,7 +7,7 @@ import { PHASES } from '../../utils/phasesUtils';
 
 import styles from './index.module.scss';
 
-const PosterGrid = ({ posters, showDetailPage = null, votingAllowed, votingPeriods, votes, toggleVote }) => {
+const PosterGrid = ({ posters, selectPoster, showDetailPage = null, votingAllowed, votingPeriods, votes, toggleVote }) => {
 
   const isDuringVotingPhase = useCallback((poster) => {
     const results = poster.track?.track_groups?.map(trackGroupId =>
@@ -29,6 +29,7 @@ const PosterGrid = ({ posters, showDetailPage = null, votingAllowed, votingPerio
     <PosterCard
       key={`poster-${poster.id}`}
       poster={poster}
+      posterClick={() => selectPoster(poster)}
       showDetailPage={showDetailPage ? () => showDetailPage(poster.id) : null}
       showVoteButton={votingAllowed && isDuringVotingPhase(poster)}
       canVote={canVote(poster)}
