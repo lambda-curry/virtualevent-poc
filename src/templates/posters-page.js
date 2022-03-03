@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { connect } from 'react-redux';
 import { navigate } from "gatsby";
 import Layout from '../components/Layout';
@@ -67,9 +67,14 @@ const PostersPage = ({
   const notificationRef = useRef(null);
   const filtersWrapperRef = useRef(null);
 
-  const pushNotification = (notification) => {
+  const pushNotification = useCallback((notification) => {
     return notificationRef.current?.(notification);
-  }
+  }, [notificationRef]);
+
+  const toggleVote = useCallback((presentation, isVoted) => {
+    setVotedPosterTrackGroups(presentation.track?.track_groups);
+    isVoted ? castPresentationVote(presentation) : uncastPresentationVote(presentation);
+  }, []);
 
   useEffect(() => {
     if (scrollDirection === SCROLL_DIRECTION.UP) {
@@ -204,11 +209,6 @@ const PostersPage = ({
     }
     setPreviousVotingPeriods(votingPeriods);
   }, [pageTrackGroups, votingPeriods]);
-
-  const toggleVote = (presentation, isVoted) => {
-    setVotedPosterTrackGroups(presentation.track?.track_groups);
-    isVoted ? castPresentationVote(presentation) : uncastPresentationVote(presentation);
-  };
 
   const filterProps = {
     summit,

@@ -1,13 +1,11 @@
-import React from "react"
-import { navigate } from "gatsby"
+import React, { useEffect } from 'react';
+import { navigate } from 'gatsby';
 
 const HeroComponent = ({ title, subtitle, event, redirectTo, options = {} }) => {
 
-  if (redirectTo) {
-    setTimeout(() => {
-      navigate(`${redirectTo}`, options)
-    }, 3000);
-  }
+  useEffect(() => {
+    if (redirectTo) setTimeout(() => navigate(redirectTo, options), 3000);
+  }, [redirectTo]);
 
   return (
     <section className={`hero is-fullheight ${event ? 'talk__break' : ''}`}>
@@ -19,6 +17,6 @@ const HeroComponent = ({ title, subtitle, event, redirectTo, options = {} }) => 
       </div>
     </section>
   )
-}
+};
 
 export default HeroComponent;
