@@ -235,7 +235,6 @@ export const PosterDetailPage = ({
                 summit={summit}
                 title="Public Conversation"
               />
-              ∆
             </div>
             {poster.etherpad_link && (
               <div className="column is-three-quarters">
