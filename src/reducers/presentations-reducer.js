@@ -17,6 +17,7 @@ import {
   PRESENTATIONS_PAGE_REQUEST,
   PRESENTATIONS_PAGE_RESPONSE,
   VOTEABLE_PRESENTATIONS_UPDATE_FILTER,
+  VOTEABLE_PRESENTATIONS_UPDATE_FILTERS,
   GET_PRESENTATION_DETAILS,
   GET_RECOMMENDED_PRESENTATIONS,
   VOTING_PERIOD_ADD,
@@ -89,6 +90,14 @@ const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, act
         filters,
         filteredPresentations: getFilteredVoteablePresentations(allPresentations, filters)
       };
+    }
+    case VOTEABLE_PRESENTATIONS_UPDATE_FILTERS: {      
+        const {filters} = payload;
+        const {allPresentations} = state;
+        return { ...state,
+          filters,
+          filteredPresentations: getFilteredVoteablePresentations(allPresentations, filters)
+        };
     }
     case GET_PRESENTATION_DETAILS: {
       const presentation = payload.response || payload.poster;      

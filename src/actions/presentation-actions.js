@@ -25,6 +25,7 @@ export const GET_VOTEABLE_PRESENTATIONS = 'GET_VOTEABLE_PRESENTATIONS';
 export const PRESENTATIONS_PAGE_REQUEST = 'PRESENTATIONS_PAGE_REQUEST';
 export const PRESENTATIONS_PAGE_RESPONSE = 'PRESENTATIONS_PAGE_RESPONSE';
 export const VOTEABLE_PRESENTATIONS_UPDATE_FILTER = 'VOTEABLE_PRESENTATIONS_UPDATE_FILTER';
+export const VOTEABLE_PRESENTATIONS_UPDATE_FILTERS = 'VOTEABLE_PRESENTATIONS_UPDATE_FILTERS';
 export const GET_PRESENTATION_DETAILS = 'GET_PRESENTATION_DETAILS';
 export const GET_PRESENTATION_DETAILS_ERROR = 'GET_PRESENTATION_DETAILS_ERROR';
 export const GET_RECOMMENDED_PRESENTATIONS = 'GET_RECOMMENDED_PRESENTATIONS';
@@ -44,7 +45,7 @@ export const updateFilter = (filter) => (dispatch) => {
   dispatch(createAction(VOTEABLE_PRESENTATIONS_UPDATE_FILTER)({ ...filter }));
 };
 
-export const updateFiltersFromHash = (filters, actionCallback = VOTEABLE_PRESENTATIONS_UPDATE_FILTER) => (dispatch) => {
+export const updateFiltersFromHash = (filters, actionCallback = VOTEABLE_PRESENTATIONS_UPDATE_FILTERS) => (dispatch) => {
   const qsFilters = fragmentParser.getParams();
 
   // clear hash
@@ -78,7 +79,7 @@ export const updateFiltersFromHash = (filters, actionCallback = VOTEABLE_PRESENT
 
   // only update if filters have changed
   if (!isEqual(newFilters, filters)) {
-    dispatch(createAction(actionCallback)({ ...newFilters }));
+    dispatch(createAction(actionCallback)({ filters: newFilters }));
   }
 };
 
