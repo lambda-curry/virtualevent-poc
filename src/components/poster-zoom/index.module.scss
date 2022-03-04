@@ -99,7 +99,7 @@
         align-items: baseline;
         &:first-of-type {
           i {
-            margin-right: 5px;
+            margin-right: 10px;
           }
         }
         &:nth-of-type(2) {
@@ -107,15 +107,10 @@
             margin-left: 10px;
           }
         }
-      }
-      button {
-        background: none;
-        border: none;
-        text-transform: uppercase;
-        &.vote {
-          position: absolute;
-          bottom: 75px;
-          right: 30px;
+        button {
+          background: none;
+          border: none;
+          text-transform: uppercase;
         }
       }
     }

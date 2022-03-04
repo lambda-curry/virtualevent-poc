@@ -78,6 +78,20 @@ const PostersPage = ({
     setVotedPosterTrackGroups(presentation.track?.track_groups);
     isVoted ? castPresentationVote(presentation) : uncastPresentationVote(presentation);
   }, []);
+  
+  const isDuringVotingPhase = useCallback((poster) => {
+    const results = poster.track?.track_groups?.map(trackGroupId =>
+      votingPeriods[trackGroupId]?.phase === PHASES.DURING
+    );
+    return results && results.length ? results.every(r => !!r) : false;
+  }, [votingPeriods]);
+
+  const canVote = useCallback((poster) => {
+    const results = poster.track?.track_groups?.map(trackGroupId =>
+      votingPeriods[trackGroupId]?.remainingVotes > 0
+    );
+    return results && results.length ? results.every(r => !!r) : false;
+  }, [votingPeriods]);
 
   useEffect(() => {
     if (scrollDirection === SCROLL_DIRECTION.UP) {
@@ -281,7 +295,12 @@ const PostersPage = ({
         poster={selectedPoster}
         closePosterDetail={() => setShowPosterDetails(false)}
         goToPresentation={goToPresentation}
-        onPosterNavigation={(next) => navigatePosterZoom(next)} />
+        onPosterNavigation={(next) => navigatePosterZoom(next)}
+        showVoteButton={!!attendee && isDuringVotingPhase(selectedPoster)}
+        canVote={canVote(selectedPoster)}
+        isVoted={!!votes.find(v => v.presentation_id === selectedPoster.id)}
+        toggleVote={toggleVote}
+      />
       }
     </Layout>
   );

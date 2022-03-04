@@ -1,11 +1,12 @@
 import { navigate } from 'gatsby';
 import React, { useEffect } from 'react';
 
-import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
+import VoteButton from '../poster-card/vote-button';
+import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 
 import styles from './index.module.scss';
 
-const PosterZoom = ({ poster, closePosterDetail, goToPresentation, onPosterNavigation }) => {
+const PosterZoom = ({ poster, closePosterDetail, goToPresentation, onPosterNavigation, showVoteButton, canVote, isVoted, toggleVote }) => {
 
   useEffect(() => {
     window.addEventListener("keydown", detectKey, { passive: true });
@@ -22,8 +23,8 @@ const PosterZoom = ({ poster, closePosterDetail, goToPresentation, onPosterNavig
   if (!posterImage) return null;
 
   const detectKey = (e) => {
-    if (e.code === 'ArrowLeft') onPosterNavigation(false)
-    if (e.code === 'ArrowRight') onPosterNavigation(true)
+    if (e.code === 'ArrowLeft') onPosterNavigation(false);
+    if (e.code === 'ArrowRight') onPosterNavigation(true);
   };
 
   const onBackgroundClick = (e) => {
@@ -68,8 +69,8 @@ const PosterZoom = ({ poster, closePosterDetail, goToPresentation, onPosterNavig
         </TransformWrapper>
         <div className={styles.zoomFooter}>
           <div className={styles.buttonWrapper}>
-            <i className={`fa fa-chevron-left`} />
             <button onClick={() => onPosterNavigation(false)}>
+              <i className={`fa fa-chevron-left`} />
               Previous Poster
             </button>
           </div>
@@ -79,7 +80,14 @@ const PosterZoom = ({ poster, closePosterDetail, goToPresentation, onPosterNavig
               <i className={`fa fa-chevron-right`} />
             </button>
           </div>
-          <button className={styles.vote}>Vote</button>
+          { showVoteButton &&
+          <VoteButton
+            style={{ position: 'absolute', bottom: '75px', right: '30px' }}
+            isVoted={isVoted}
+            canVote={canVote}
+            toggleVote={() => toggleVote(poster, !isVoted)}
+          />
+          }
         </div>
       </div>
     </div>
