@@ -1,8 +1,8 @@
 .navigation-container {
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid #979797;
-  border-bottom: 1px solid #979797;
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
   .navigation-button {
     background-color: transparent;
     border: none;
@@ -10,14 +10,15 @@
     align-items: center;
     text-transform: uppercase;
     color: #979797;
-    font-weight: 700;
     i {
-      margin-right: 10px;
+      display: flex;
+      margin-right: 5px;
+      font-size: 1.2em;
     }
     &:last-of-type {
       i {
         margin-right: 0;
-        margin-left: 10px;
+        margin-left: 5px;
       }
     }
   }
