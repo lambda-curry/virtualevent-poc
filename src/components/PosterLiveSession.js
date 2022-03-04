@@ -6,7 +6,11 @@ import styles from '../styles/poster-components.module.scss'
 const PosterLiveSession = ({ poster }) => {
 
     const goToLiveSession = (url) => {
-        navigate(url);
+        const internal = /^\/(?!\/)/.test(url);
+        if (!internal) {
+            const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+            if (newWindow) newWindow.opener = null;
+        } else navigate(url);
     }
 
     return (
