@@ -14,7 +14,7 @@
       "title": "SCHEDULE",
       "link": "/a/schedule",
       "display": true,
-      "requiresAuth": false,
+      "requiresAuth": true,
       "pageRestriction": [
         "ANY"
       ],
@@ -24,7 +24,7 @@
       "title": "MY SCHEDULE",
       "link": "/a/my-schedule",
       "display": true,
-      "requiresAuth": false,
+      "requiresAuth": true,
       "pageRestriction": [
         "ANY"
       ],
