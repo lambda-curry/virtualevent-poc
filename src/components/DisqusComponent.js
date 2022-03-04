@@ -130,16 +130,16 @@ const DisqusComponent = class extends React.Component {
     }
 
     return (
-      <div className={className ? className : style ? '' : page === 'marketing-site' ? 'disqus-container-marketing' : 'disqus-container'} style={style}>
-        <span className="disqus-header" style={{ paddingLeft: className !== 'disqus-container-home' ? '0px' : ''}}>
+      <section aria-labelledby={title ? 'disqus-title' : ''} className={className ? className : style ? '' : page === 'marketing-site' ? 'disqus-container-marketing' : 'disqus-container'} style={style}>
+        <div className="disqus-header" style={{ paddingLeft: className !== 'disqus-container-home' ? '0px' : ''}}>
           {skipTo && <a className="sr-only skip-to-next" href={skipTo}>Skip to next section</a>}
-          {title && <h2 className="title">{title}</h2>}
-        </span>
+          {title && <h2 id="disqus-title" className="title">{title}</h2>}
+        </div>
         <DiscussionEmbed
           shortname='techweek2022-yahoo'
           config={disqusConfig}
         />
-      </div>
+      </section>
     )
   }
 
