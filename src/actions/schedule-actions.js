@@ -8,13 +8,34 @@ export const UPDATE_FILTERS     = 'UPDATE_FILTERS';
 export const CHANGE_VIEW        = 'CHANGE_VIEW';
 export const CHANGE_TIMEZONE    = 'CHANGE_TIMEZONE';
 
-export const MY_SCHEDULE_UPDATE_FILTER      = 'MY_SCHEDULE_UPDATE_FILTER';
-export const MY_SCHEDULE_UPDATE_FILTERS     = 'MY_SCHEDULE_UPDATE_FILTERS';
+export const MY_SCHEDULE_UPDATE_FILTER = 'MY_SCHEDULE_UPDATE_FILTER';
+export const MY_SCHEDULE_UPDATE_FILTERS = 'MY_SCHEDULE_UPDATE_FILTERS';
+/**
+ * This action is defined to just reinitialize the allScheduleReducer state
+ * (allSchedulesReducer.state.schedules) without trigerring the side effects of
+ * SYNC_DATA that reloads all the reducers to its initial state
+ * @type {string}
+ */
+export const RELOAD_SCHED_DATA = 'RELOAD_SCHED_DATA';
+/**
+ * this action is defined to reload the user schedules after the schedule data is
+ * initialized (allSchedulesReducer.state.schedules.length > 0 )
+ * @type {string}
+ */
+export const RELOAD_USER_PROFILE = 'RELOAD_USER_PROFILE';
 
 const fragmentParser = new FragmentParser();
 
 export const updateFilter = (key, filter, action = UPDATE_FILTER) => (dispatch) => {
     dispatch(createAction(action)({...filter, key}))
+};
+
+export const reloadScheduleData = () => (dispatch, getState) => {
+    const {userState, loggedUserState} = getState();
+    const {isLoggedUser} = loggedUserState;
+    const {userProfile} = userState;
+    dispatch(createAction(RELOAD_SCHED_DATA)({isLoggedUser, userProfile }));
+    dispatch(createAction(RELOAD_USER_PROFILE)({isLoggedUser, userProfile }));
 };
 
 export const updateFiltersFromHash = (key, filters, view, actionCallback = UPDATE_FILTERS) => (dispatch) => {

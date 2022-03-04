@@ -46,6 +46,8 @@ const DEFAULT_VOTEABLE_PRESENTATIONS_STATE = {
 const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, action) => {
   const { type, payload } = action;
   switch (type) {
+    case SYNC_DATA:
+      return DEFAULT_VOTEABLE_PRESENTATIONS_STATE;
     case SET_INITIAL_DATASET: {
       const { userProfile: currentUserProfile } = payload;
       // pre filter by user access levels
@@ -166,6 +168,8 @@ const votingPeriods = (state = {}, action) => {
 const pages = (pages = {}, action) => {
   const { type, payload } = action;
   switch (type) {
+    case SYNC_DATA:
+      return {};
     case PRESENTATIONS_PAGE_REQUEST:
       const { page } = payload;
       return {
