@@ -176,6 +176,12 @@
               }
             ]
           },
+          "columnAds": [
+            {
+              "image": "/img/logo-classicblue-484px.png",
+              "link": "https://urldefense.com/v3/__https://www.intel.com/__;!!Op6eflyXZCqGR5I!VRrvC-p2P2AGzth63iKXGW-N8FsbCz2bUAJerp0hiisM38sjrJaMdqnXpGgNt1srPv9T9Q$"
+            }
+          ],
           "id": 158,
           "showLogoInEventPage": false,
           "email": "ali.alavi@intel.com"
