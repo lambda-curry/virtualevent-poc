@@ -14,22 +14,6 @@
           "column": "left"
         }
       ]
-    },
-    {
-      "section": "poster",
-      "columnAds": [
-        {
-          "image": {
-            "file": "",
-            "alt": ""
-          },
-          "column": "right",
-          "button": {
-            "text": "Check out the schedule",
-            "link": "https://docs.google.com/spreadsheets/d/1rBePjUwLb5NMQvxRk6uIerQwEXwal_4BfzNw3RA982Y/edit#gid=1623548298"
-          }
-        }
-      ]
     }
   ]
 }
