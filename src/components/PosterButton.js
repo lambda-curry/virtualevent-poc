@@ -24,10 +24,8 @@ const PosterButton = ({mediaUpload}) => {
             <ControlledZoom
                 isZoomed={isZoomed}
                 onZoomChange={handleZoomChange}
-                zoomMargin={-130}
                 overlayBgColorStart="rgba(0, 0, 0, 0)"
                 overlayBgColorEnd="rgba(0, 0, 0, 0.8)"
-                wrapStyle={{ transform: 'translateY(-10px)' }}
             >
                 <PosterImage mediaUpload={mediaUpload} shouldShow={isZoomed}/>
             </ControlledZoom>

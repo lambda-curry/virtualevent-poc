@@ -55,10 +55,8 @@ const PosterCard = ({ poster, showDetail, showVoteButton, canVote, isVoted, togg
           <ControlledZoom
             isZoomed={isZoomed}
             onZoomChange={handleZoomChange}
-            zoomMargin={30}
             overlayBgColorStart="rgba(0, 0, 0, 0)"
             overlayBgColorEnd="rgba(0, 0, 0, 0.8)"
-            wrapStyle={{ transform: 'translateY(-10px)' }}
           >
             <PosterImage mediaUpload={posterImage} shouldShow={isZoomed}/>
           </ControlledZoom>
