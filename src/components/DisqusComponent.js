@@ -114,7 +114,7 @@ const DisqusComponent = class extends React.Component {
 
   render() {
 
-    const { title, style, className, disqusSSO, page, hideMobile = null } = this.props;
+    const { title, style, className, disqusSSO, page, hideMobile = null, skipTo } = this.props;
     const { isMobile } = this.state || null;
 
     let disqusConfig = {
@@ -131,7 +131,10 @@ const DisqusComponent = class extends React.Component {
 
     return (
       <div className={className ? className : style ? '' : page === 'marketing-site' ? 'disqus-container-marketing' : 'disqus-container'} style={style}>
-        {title && <span className="navbar-brand title" style={{ paddingLeft: className !== 'disqus-container-home' ? '0px' : ''}}>{title}</span>}
+        <span className="disqus-header" style={{ paddingLeft: className !== 'disqus-container-home' ? '0px' : ''}}>
+          {skipTo && <a className="sr-only skip-to-next" href={skipTo}>Skip to next section</a>}
+          {title && <h2 className="title">{title}</h2>}
+        </span>
         <DiscussionEmbed
           shortname='techweek2022-yahoo'
           config={disqusConfig}
