@@ -154,6 +154,24 @@
                 "link": "/img/intel-semiconductor-paper-investor-meeting.pdf",
                 "name": "Semiconductors Run the World",
                 "order": 8
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/intel-moores-law-investor-meeting-paper-final.pdf",
+                "order": 9,
+                "name": "Moore's Law - Now and in the Future"
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/intel-cesg-salesforce-case-study-forintelwebteamonly.pdf",
+                "order": 10,
+                "name": "Collaborating to Optimize Hardware for Real-World Workloads"
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/intel-ai-investor-meeting-paper.pdf",
+                "order": 11,
+                "name": "Leading in AI: A holistic approach that is uniquely Intel"
               }
             ]
           },
