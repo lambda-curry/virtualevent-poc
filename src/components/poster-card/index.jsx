@@ -63,8 +63,7 @@ const PosterCard = ({ poster, showDetail, showVoteButton, canVote, isVoted, togg
           </ControlledZoom>
         </div>
       </BlockImage>
-      <h2 className={styles.title}>
-        <a href={'/a/poster/' + poster.id} style={{ color: '#4A4A4A' }} onClick={handleTitleClick}>{title}</a></h2>
+      =        <a href={'#;'} className={styles.title} onClick={handleTitleClick}>{title}</a>
       <span className={styles.order}>
         {custom_order ? `#${custom_order}` : <>&nbsp;</>}
       </span>
