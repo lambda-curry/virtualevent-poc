@@ -84,6 +84,7 @@
           "sideImage": {
             "file": ""
           },
+          "externalLink": "https://urldefense.com/v3/__https://www.intel.com/__;!!Op6eflyXZCqGR5I!VRrvC-p2P2AGzth63iKXGW-N8FsbCz2bUAJerp0hiisM38sjrJaMdqnXpGgNt1srPv9T9Q$",
           "sponsorColor": "#0071C5",
           "logo": {
             "file": "/img/yahoo_techweek_2022_sponsor-logos_framed_intel-2x.png"
@@ -98,7 +99,7 @@
           },
           "socialNetworks": [],
           "advertiseImage": {
-            "file": ""
+            "file": "/img/logo-classicblue-484px.png"
           },
           "sponsorId": 158,
           "companyId": 138,
@@ -139,6 +140,20 @@
                 "link": "https://urldefense.com/v3/__https://www.intel.com/content/www/us/en/data-center/overview.html__;!!Op6eflyXZCqGR5I!VRrvC-p2P2AGzth63iKXGW-N8FsbCz2bUAJerp0hiisM38sjrJaMdqnXpGgNt1tTVgjz7Q$",
                 "order": 6,
                 "name": "Intel Data Center Solutions"
+              }
+            ],
+            "slides": [
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/intel-software-paper-investor-meeting.pdf",
+                "order": 7,
+                "name": "Intel's Software Advantage, Decoded"
+              },
+              {
+                "class_name": "PresentationSlide",
+                "link": "/img/intel-semiconductor-paper-investor-meeting.pdf",
+                "name": "Semiconductors Run the World",
+                "order": 8
               }
             ]
           },
