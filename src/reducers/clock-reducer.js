@@ -10,13 +10,18 @@ import {
   EVENT_PHASE_BEFORE,
   EVENT_PHASE_ADD
 } from '../actions/clock-actions';
-
+import summitData from '../content/summit.json';
 import {RESET_STATE, SYNC_DATA} from "../actions/base-actions";
 
+import { getSummitPhase } from '../utils/phasesUtils';
+
+const localNowUtc = Date.now();
+const {summit} = summitData;
+// calculate on initial state the nowUtc ( local ) and the summit phase using the json data
 const DEFAULT_STATE = {
   loading: false,
-  nowUtc: null,
-  summit_phase: null,
+  nowUtc: localNowUtc,
+  summit_phase:  getSummitPhase(summit, localNowUtc),
   events_phases: [],
 };
 
