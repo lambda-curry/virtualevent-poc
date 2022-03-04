@@ -29,18 +29,18 @@ const PosterNavigation = ({allPosters, poster}) => {
         <div className={`columns mx-0 my-0 py-5 ${styles.navigationContainer}`}>
             {list.length > 0 &&
             <button className={styles.navigationButton} onClick={() => prevPoster()}>
-                <i className={`fa fa-2x fa-chevron-left icon is-large`}/>
+                <i className={`fa fa-chevron-left icon is-medium`}/>
                 Previous Poster
             </button>
             }
             <button className={styles.navigationButton} onClick={() => viewAll()}>
-                <i className={`fa fa-2x fa-th-large icon is-large`}/>
+                <i className={`fa fa-th-large icon is-medium`}/>
                 View All
             </button>
             {list.length > 0 &&
             <button className={styles.navigationButton} onClick={() => nextPoster()}>
                 Next Poster
-                <i className={`fa fa-2x fa-chevron-right icon is-large`}/>
+                <i className={`fa fa-chevron-right icon is-medium`}/>
             </button>
             }
         </div>
