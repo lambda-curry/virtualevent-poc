@@ -24,7 +24,11 @@ const PosterZoom = ({ poster, closePosterDetail, goToPresentation, onPosterNavig
   const detectKey = (e) => {
     if (e.code === 'ArrowLeft') onPosterNavigation(false)
     if (e.code === 'ArrowRight') onPosterNavigation(true)
-  }
+  };
+
+  const onBackgroundClick = (e) => {
+    if (e.target === e.currentTarget) closePosterDetail();
+  };
 
   const formatSpeakers = (speakers) => {
     let formatedSpeakers = '';
@@ -36,10 +40,10 @@ const PosterZoom = ({ poster, closePosterDetail, goToPresentation, onPosterNavig
       });
     }
     return formatedSpeakers;
-  }
+  };
 
   return (
-    <div className={styles.background}>
+    <div className={styles.background} onClick={onBackgroundClick} >
       <div className={styles.posterZoomWrapper}>
         <div className={styles.zoomTitle}>
           <div className={styles.profile}>
@@ -56,17 +60,12 @@ const PosterZoom = ({ poster, closePosterDetail, goToPresentation, onPosterNavig
             <i className='fa fa-book' />
             View presentation
           </button>
-          <button className={styles.closeButton} onClick={() => closePosterDetail()} aria-label="close">
-            <i className='fa fa-2x fa-close is-large' />
-          </button>
         </div>
-
         <TransformWrapper >
           <TransformComponent wrapperClass={styles.zoomWrapper}>
-            <img src={posterImage.public_url} alt="test" />
+            <img src={posterImage.public_url} alt={title} />
           </TransformComponent>
         </TransformWrapper>
-
         <div className={styles.zoomFooter}>
           <div className={styles.buttonWrapper}>
             <i className={`fa fa-chevron-left`} />

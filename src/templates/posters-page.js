@@ -275,14 +275,14 @@ const PostersPage = ({
         </div>
         <FilterButton open={showFilters} onClick={() => setShowFilters(!showFilters)} />
         <NotificationHub children={(add) => { notificationRef.current = add }} />
-        {showPosterDetails &&
-          <PosterZoom
-            poster={selectedPoster}
-            closePosterDetail={() => setShowPosterDetails(false)}
-            goToPresentation={goToPresentation}
-            onPosterNavigation={(next) => navigatePosterZoom(next)} />
-        }
       </div>
+      {showPosterDetails &&
+      <PosterZoom
+        poster={selectedPoster}
+        closePosterDetail={() => setShowPosterDetails(false)}
+        goToPresentation={goToPresentation}
+        onPosterNavigation={(next) => navigatePosterZoom(next)} />
+      }
     </Layout>
   );
 };
