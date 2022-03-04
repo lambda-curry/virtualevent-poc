@@ -8,7 +8,7 @@ const WithBadgeRoute = ({ children, location, eventId, event, loading, userProfi
   // if user is Authorized then bypass the badge checking
   const hasBadgeForEvent = isAuthorized || (eventId && userProfile && isAuthorizedBadge(event, userProfile.summit_tickets));
   const userIsAuthz = hasTicket || isAuthorized;
-  const needsToLoadEvent = eventId && eventId !== `${event?.id}`;
+  const needsToLoadEvent = parseInt(eventId) && parseInt(eventId) !== parseInt(event?.id);
 
   const getTitle = () => {
     if (!userIsAuthz)
@@ -20,10 +20,10 @@ const WithBadgeRoute = ({ children, location, eventId, event, loading, userProfi
   };
 
   useEffect(() => {
-    if (eventId) {
+    if (event === null || parseInt(eventId) !== parseInt(event.id)) {
       getEventById(eventId);
     }
-  }, [eventId, getEventById]);
+  }, [eventId, getEventById, event]);
 
   if (loading || needsToLoadEvent) {
     return <HeroComponent title="Loading event" />;

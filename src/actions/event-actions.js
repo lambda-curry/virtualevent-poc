@@ -22,17 +22,15 @@ export const getEventById = (eventId) => async (dispatch, getState) => {
 
     dispatch(startLoading());
 
-    // check first the reducer
+    // if we have it on the reducer , provide that first
     let {allSchedulesState: {allEvents}} = getState();
     const event = allEvents.find(ev => ev.id === parseInt(eventId));
 
     if (event) {
         dispatch(createAction(GET_EVENT_DATA)({event}));
-        dispatch(stopLoading());
-        return Promise.resolve();
     }
 
-    // if does not exists get it from api
+    // then refresh from api
 
     let accessToken;
     try {
