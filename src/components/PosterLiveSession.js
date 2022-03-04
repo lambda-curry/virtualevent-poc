@@ -14,11 +14,8 @@ const PosterLiveSession = ({ poster }) => {
             <span>
                 Join the sessions
             </span>
-            <span className={styles.date}>
-                Tuesday
-            </span>
             <button onClick={() => goToLiveSession(poster.meeting_url)} className="poster-button button">
-                <b>Chat with poster authors</b>
+                <b>Check out the schedule</b>
             </button>
         </div>
     )

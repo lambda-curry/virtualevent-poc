@@ -54,15 +54,15 @@
   justify-content: space-evenly;
   align-items: center;
   border-radius: 5px;
-  background-color: var(--color_primary);
+  background-color: #39007D;
   padding: 2em 0;
   span {
     text-align: center;
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 34px;
+    line-height: 34px;
     font-weight: 700;
     padding: 0 10%;
-    color: var(--color_text_light);
+    color: #ffffff;
     &.date {
       font-size: 24px;
       margin: 15px 0;
@@ -76,11 +76,11 @@
     font-size: 14px;
     align-items: center;
     text-transform: uppercase;
-    background-color: var(--color_secondary);
-    color: var(--color_text_light);
-    border: 1px solid var(--color_secondary);
+    background-color: #0F69FF;
+    color: #ffffff;
+    border: 1px solid #0F69FF;
     &:hover{
-      color: var(--color_text_light);
+      color: #ffffff;
     }
   }
 }
