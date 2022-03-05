@@ -73,14 +73,10 @@ export const PosterDetailPage = ({
   }, []);
 
   useEffect(() => {
-    const fetchPresentation = async () => {
-      let presentation;
-      try {
-        presentation = await getPresentationById(presentationId);
-        setPoster(presentation);
-      } catch (e) {}
-    }
-    fetchPresentation();
+    getPresentationById(presentationId).then((p) => setPoster(p)).catch((e) => {
+        // lete user know the error ?
+        console.log(e);
+    })
   }, [presentationId]);
 
   useEffect(() => {

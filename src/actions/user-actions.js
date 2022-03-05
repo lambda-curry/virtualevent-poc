@@ -53,7 +53,7 @@ export const getDisqusSSO = () => async (dispatch) => {
   } catch (e) {
     console.log('getAccessToken error: ', e);
     dispatch(stopLoading());
-    return Promise.reject();
+    return Promise.reject(e);
   }
 
   return getRequest(
@@ -77,7 +77,7 @@ export const getRocketChatSSO = () => async (dispatch) => {
   } catch (e) {
     console.log('getAccessToken error: ', e);
     dispatch(stopLoading());
-    return Promise.reject();
+    return Promise.reject(e);
   }
 
   return getRequest(
@@ -101,7 +101,7 @@ export const getUserProfile = () => async (dispatch) => {
   } catch (e) {
     console.log('getAccessToken error: ', e);
     dispatch(stopLoading());
-    return Promise.reject();
+    return Promise.reject(e);
   }
 
   let params = {
@@ -136,7 +136,7 @@ export const getIDPProfile = () => async (dispatch) => {
   } catch (e) {
     console.log('getAccessToken error: ', e);
     dispatch(stopLoading());
-    return Promise.reject();
+    return Promise.reject(e);
   }
 
   dispatch(createAction(START_LOADING_IDP_PROFILE)());
@@ -194,7 +194,7 @@ export const scanBadge = (sponsorId) => async (dispatch) => {
   } catch (e) {
     console.log('getAccessToken error: ', e);
     dispatch(stopLoading());
-    return Promise.reject();
+    return Promise.reject(e);
   }
 
   let params = {
@@ -229,7 +229,7 @@ export const addToSchedule = (event) => async (dispatch, getState) => {
     accessToken = await getAccessToken();
   } catch (e) {
     console.log('getAccessToken error: ', e);
-    return Promise.reject();
+    return Promise.reject(e);
   }
 
   const url = `${getEnvVariable(SUMMIT_API_BASE_URL)}/api/v1/summits/${getEnvVariable(SUMMIT_ID)}/members/me/schedule/${event.id}`;
@@ -253,7 +253,7 @@ export const removeFromSchedule = (event) => async (dispatch, getState) => {
     accessToken = await getAccessToken();
   } catch (e) {
     console.log('getAccessToken error: ', e);
-    return Promise.reject();
+    return Promise.reject(e);
   }
 
   const url = `${getEnvVariable(SUMMIT_API_BASE_URL)}/api/v1/summits/${getEnvVariable(SUMMIT_ID)}/members/me/schedule/${event.id}`;
@@ -278,7 +278,7 @@ export const castPresentationVote = (presentation) => async (dispatch, getState)
   } catch (e) {
     console.log('getAccessToken error: ', e);
     dispatch(stopLoading());
-    return Promise.reject();
+    return Promise.reject(e);
   }
 
   const params = {
@@ -333,7 +333,7 @@ export const uncastPresentationVote = (presentation) => async (dispatch, getStat
   } catch (e) {
     console.log('getAccessToken error: ', e);
     dispatch(stopLoading());
-    return Promise.reject();
+    return Promise.reject(e);
   }
 
   const params = {
@@ -373,7 +373,7 @@ export const updateProfilePicture = (pic) => async (dispatch) => {
   } catch (e) {
     console.log('getAccessToken error: ', e);
     dispatch(stopLoading());
-    return Promise.reject();
+    return Promise.reject(e);
   }
 
   let params = {
@@ -407,7 +407,7 @@ export const updateProfile = (profile) => async (dispatch) => {
   } catch (e) {
     console.log('getAccessToken error: ', e);
     dispatch(stopLoading());
-    return Promise.reject();
+    return Promise.reject(e);
   }
 
   let params = {
@@ -440,7 +440,7 @@ export const updatePassword = (password) => async (dispatch) => {
   } catch (e) {
     console.log('getAccessToken error: ', e);
     dispatch(stopLoading());
-    return Promise.reject();
+    return Promise.reject(e);
   }
   let params = {
     access_token: accessToken,
@@ -491,7 +491,7 @@ export const saveExtraQuestions = (extra_questions, owner, disclaimer) => async 
   } catch (e) {
     console.log('getAccessToken error: ', e);
     dispatch(stopLoading());
-    return Promise.reject();
+    return Promise.reject(e);
   }
 
   dispatch(startLoading());
@@ -537,7 +537,7 @@ export const getScheduleSyncLink = () => async (dispatch) => {
   } catch (e) {
     console.log('getAccessToken error: ', e);
     dispatch(stopLoading());
-    return Promise.reject();
+    return Promise.reject(e);
   }
 
   let params = {
@@ -589,7 +589,7 @@ export const doVirtualCheckIn = (attendee) =>  async (dispatch, getState) => {
   } catch (e) {
     console.log('getAccessToken error: ', e);
     dispatch(stopLoading());
-    return Promise.reject();
+    return Promise.reject(e);
   }
 
   let params = {

@@ -48,7 +48,7 @@ export const getAllVoteablePresentations = (page = 1, perPage = PresentationsDef
   } catch (e) {
       console.log('getAccessToken error: ', e);
       dispatch(stopLoading());
-      return Promise.reject();    
+      return Promise.reject(e);
   }
 
   const params = {
@@ -87,7 +87,7 @@ export const getVoteablePresentations = (page = 1, perPage = PresentationsDefaul
       accessToken = await getAccessToken();
   } catch (e) {
       console.log('getAccessToken error: ', e);
-      return Promise.reject();    
+      return Promise.reject(e);
   }
 
   const params = {
@@ -121,7 +121,7 @@ export const getPresentationById = (presentationId) => async (dispatch) => {
   } catch (e) {
     console.log('getAccessToken error: ', e);
     dispatch(stopLoading());
-    return Promise.reject();    
+    return Promise.reject(e);
   }
 
   const params = {
@@ -157,7 +157,7 @@ export const getRecommendedPresentations = (trackGroups) => async (dispatch) => 
   } catch (e) {
     console.log('getAccessToken error: ', e);
     dispatch(stopLoading());
-    return Promise.reject();    
+    return Promise.reject(e);
   }
 
 // order by random
