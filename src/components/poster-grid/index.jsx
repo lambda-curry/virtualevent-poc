@@ -37,7 +37,7 @@ const PosterGrid = ({ posters, showDetailPage = null, votingAllowed, votingPerio
     />
   );
   return (
-    <div className={styles.posters} style={{gridTemplateColumns: posters.length === 3 ? '1fr 1fr 1fr' : ''}}>
+    <div className={styles.posters}>
       { cards }
     </div>
   )
