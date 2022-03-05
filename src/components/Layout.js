@@ -80,7 +80,7 @@ const TemplateWrapper = ({ children, location, marketing, summit, favicons }) =>
       <a className="sr-only skip-to-content" href="#content-wrapper">Skip to content</a>
       <Header location={location} />
       <ClockComponent active={isFocus} summit={summit} />
-      <div id="content-wrapper">{children}</div>
+      <main id="content-wrapper">{children}</main>
       <Footer marketing={marketing} />
     </div>
   )
