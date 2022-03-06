@@ -8,6 +8,7 @@ import ScheduleFilters from '../components/ScheduleFilters';
 import PosterHeaderFilter from '../components/poster-header-filter';
 import FilterButton from '../components/FilterButton';
 import AttendanceTrackerComponent from '../components/AttendanceTrackerComponent';
+import { PageScrollInspector, SCROLL_DIRECTION } from  '../components/PageScrollInspector';
 import NotificationHub from '../components/notification-hub';
 
 import {
@@ -25,11 +26,6 @@ import { filterByTrackGroup, randomSort } from '../utils/filterUtils';
 import { PHASES } from '../utils/phasesUtils';
 
 import styles from '../styles/posters-page.module.scss';
-
-const SCROLL_DIRECTION = {
-  UP: 'scrolling up',
-  DOWN: 'scrolling down'
-};
 
 const PostersPage = ({
   location,
@@ -61,8 +57,6 @@ const PostersPage = ({
   const [notifiedVotingPeriodsOnLoad, setNotifiedVotingPeriodsOnLoad] = useState(false);
   const [previousVotingPeriods, setPreviousVotingPeriods] = useState(votingPeriods);
   const [votedPosterTrackGroups, setVotedPosterTrackGroups] = useState([]);
-  const [scrollDirection, setScrollDirection] = useState(null);
-  const [mustScrollFiltersDown, setMustScrollFiltersDown] = useState(false);
 
   const notificationRef = useRef(null);
   const filtersWrapperRef = useRef(null);
@@ -74,45 +68,17 @@ const PostersPage = ({
   const toggleVote = useCallback((presentation, isVoted) => {
     setVotedPosterTrackGroups(presentation.track?.track_groups);
     isVoted ? castPresentationVote(presentation) : uncastPresentationVote(presentation);
-  }, []);
+  });
 
-  useEffect(() => {
-    if (scrollDirection === SCROLL_DIRECTION.UP) {
+  const onScrollDirectionChange = useCallback(direction => {
+    if (direction === SCROLL_DIRECTION.UP)
       filtersWrapperRef.current.scroll({ top: 0, behavior: 'smooth' });
-    }
-    const threshold = 420;
-    let lastScrollY = window.pageYOffset;
-    let ticking = false;
-    const updateScrollDirection = () => {
-      const scrollY = window.pageYOffset;
-      if (Math.abs(scrollY - lastScrollY) < threshold) {
-        ticking = false;
-        return;
-      }
-      let scrollDirection = scrollY > lastScrollY ? SCROLL_DIRECTION.DOWN : SCROLL_DIRECTION.UP;
-      setScrollDirection(scrollDirection);
-      if (Math.abs(document.body.scrollHeight - document.body.clientHeight - scrollY) < threshold) {
-        setMustScrollFiltersDown(true);
-      }
-      lastScrollY = scrollY > 0 ? scrollY : 0;
-      ticking = false;
-    };
-    const onScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(updateScrollDirection);
-        ticking = true;
-      }
-    };
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
-  }, [scrollDirection]);
+  }, [filtersWrapperRef]);
 
-  useEffect(() => {
-    if (mustScrollFiltersDown) {
+  const onPageBottomReached = useCallback(pageBottomReached => {
+    if (pageBottomReached)
       filtersWrapperRef.current.scroll({ top: filtersWrapperRef.current.scrollHeight, behavior: 'smooth' });
-      setMustScrollFiltersDown(false);
-    }
-  }, [mustScrollFiltersDown]);
+  }, [filtersWrapperRef]);
 
   useEffect(() => {
     setInitialDataSet().then(() => getAllVoteablePresentations());
@@ -252,6 +218,7 @@ const PostersPage = ({
         <FilterButton open={showFilters} onClick={() => setShowFilters(!showFilters)} />
         <NotificationHub children={(add) => { notificationRef.current = add }} />
       </div>
+      <PageScrollInspector scrollDirectionChanged={onScrollDirectionChange} bottomReached={onPageBottomReached} />
     </Layout>
   );
 };
