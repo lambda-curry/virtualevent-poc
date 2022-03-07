@@ -12,6 +12,7 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
   const editorRef = useRef(null);
   const modalHeaderRef = useRef(null)
   const modalRef = useRef(null)
+  const fileInput = useRef(null)
 
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -202,13 +203,11 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
                     borderRadius={5}
                     rotate={parseFloat(rotate)}
                 />
-                <div className={styles.imageUpload}>
-                  <button className='is-paddingless link'>
-                    <label htmlFor="file-input">
+                <div className={styles.imageUpload} tabIndex="0" onKeyPress={() => {fileInput.current.click()}}>
+                    <label htmlFor="file-input" >
                       <i className={`${styles.pictureIcon} fa fa-2x fa-camera icon is-large`} />
                     </label>
-                  </button>
-                  <input name="newImage" id="file-input" type="file" accept=".jpg,.jpeg,.png" onChange={handleNewImage} />
+                  <input ref={fileInput} name="newImage" id="file-input" type="file" accept=".jpg,.jpeg,.png" onChange={handleNewImage} />
                 </div>
                 <div>
                   <div className={`columns ${styles.inputRow}`}>
