@@ -121,7 +121,7 @@ export const getPresentationById = (presentationId) => async (dispatch) => {
   } catch (e) {
     console.log('getAccessToken error: ', e);
     dispatch(stopLoading());
-    return Promise.reject();    
+    return Promise.reject(e);    
   }
 
   const params = {
@@ -131,7 +131,7 @@ export const getPresentationById = (presentationId) => async (dispatch) => {
 
   return getRequest(
     null,
-    createAction(GET_PRESENTATION_DETAILS), // response needs no handling
+    createAction(GET_PRESENTATION_DETAILS),
     `${window.SUMMIT_API_BASE_URL}/api/v1/summits/${window.SUMMIT_ID}/presentations/voteable/${presentationId}`,
     customErrorHandler
   )(params)(dispatch).then((payload) => {
@@ -143,7 +143,7 @@ export const getPresentationById = (presentationId) => async (dispatch) => {
     dispatch(stopLoading());
     dispatch(createAction(GET_PRESENTATION_DETAILS_ERROR)(e));
     clearAccessToken();
-    return (e);
+    return Promise.reject(e);
   });
 };
 
