@@ -76,20 +76,13 @@ export const PosterDetailPage = ({
   }, []);
 
   useEffect(() => {
-    const fetchPresentation = async () => {
-      let presentation;
-      try {
-        presentation = await getPresentationById(presentationId);
-        setPosterState({
+    getPresentationById(presentationId).then(presentation => {
+      setPosterState({
           poster: presentation,
           posterTrackGroups: presentation.track?.track_groups ?? [],
           posterViewable: isAuthorized || isAuthorizedBadge(presentation, user.userProfile.summit_tickets)
         });
-      } catch (e) {
-        console.log(e);
-      }
-    }
-    fetchPresentation();
+    }).catch(e => console.log(e));
   }, [presentationId]);
 
   useEffect(() => {
