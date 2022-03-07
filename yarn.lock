@@ -16504,9 +16504,9 @@ saxes@^5.0.1:
     xmlchars "^2.2.0"
 
 schedule-filter-widget@^1.2.6:
-  version "1.2.7"
-  resolved "https://registry.yarnpkg.com/schedule-filter-widget/-/schedule-filter-widget-1.2.7.tgz#7a439a0fe333348291438a7000adbf96adcad146"
-  integrity sha512-O0C6Hgsr46wdBUsOPO2/P+jARD05gf+0Zt92DBiT5asuBXCsBjta2R6hO0JgcM2MVwsLgYYKEoBwPL53lo+85Q==
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/schedule-filter-widget/-/schedule-filter-widget-1.2.6.tgz#4024df16dfff5c1ebcdd4b622c192807e0c54ba6"
+  integrity sha512-cSE/zk3Qh3T3jwRL9JNfn7nZHeq8ytL89b/D1Vu8ca8/gl3WnZA7jBwbI6PZlH4od1o3YXUEezrQm1JM5zkAdA==
   dependencies:
     dropzone "^5.9.2"
     react-spring "^9.1.2"
