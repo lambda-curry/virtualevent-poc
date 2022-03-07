@@ -63,7 +63,7 @@ const PosterCard = ({ poster, showDetail, showVoteButton, canVote, isVoted, togg
           </ControlledZoom>
         </div>
       </BlockImage>
-      =        <a href={'#;'} className={styles.title} onClick={handleTitleClick}>{title}</a>
+      <a href="#;" className={styles.title} onClick={handleTitleClick}>{title}</a>
       <span className={styles.order}>
         {custom_order ? `#${custom_order}` : <>&nbsp;</>}
       </span>
