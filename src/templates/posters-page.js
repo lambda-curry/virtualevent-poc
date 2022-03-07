@@ -220,7 +220,7 @@ const PostersPage = ({
       updateFilter(payload);
     },
     marketingSettings: colorSettings,
-    colorSource: '',
+    colorSource: 'track',
   };
 
   return (
