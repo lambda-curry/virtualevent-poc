@@ -20,12 +20,12 @@ const SCROLL_DIRECTION = {
 };
 
 const SchedulePage = ({summit, schedules, summitPhase, isLoggedUser, location, colorSettings, updateFilter, updateFiltersFromHash, scheduleProps, schedKey, reloadScheduleData }) => {
-
   const [showFilters, setShowfilters] = useState(false);
   const [scrollDirection, setScrollDirection] = useState(null);
   const [mustScrollFiltersDown, setMustScrollFiltersDown] = useState(false);
-
   const filtersWrapperRef = useRef(null);
+  const scheduleState = schedules.find( s => s.key === schedKey);
+  const { events, allEvents, filters, view, timezone, colorSource } = scheduleState || {};
 
   useEffect(() => {
     if(schedules.length > 0) return;
@@ -34,7 +34,9 @@ const SchedulePage = ({summit, schedules, summitPhase, isLoggedUser, location, c
   }, [schedules])
 
   useEffect(() => {
-    updateFiltersFromHash(schedKey, filters, view);
+    if (scheduleState) {
+      updateFiltersFromHash(schedKey, filters, view);
+    }
   }, [schedKey, filters, view, updateFiltersFromHash]);
 
   useEffect(() => {
@@ -75,9 +77,6 @@ const SchedulePage = ({summit, schedules, summitPhase, isLoggedUser, location, c
   }, [mustScrollFiltersDown]);
 
   if (!summit || schedules.length === 0 ) return null;
-
-  const scheduleState = schedules.find( s => s.key === schedKey);
-  const { events, allEvents, filters, view, timezone, colorSource } = scheduleState || {};
 
   // if we don't have a state, it probably means the schedule was disabled from admin.
   if (!scheduleState) {
