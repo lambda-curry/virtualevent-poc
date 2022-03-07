@@ -49,7 +49,9 @@ export const PosterDetailPage = ({
 }) => {
 
   const [{ poster, posterTrackGroups, posterViewable }, setPosterState] = useState({
-    posterTrackGroups: []
+    poster: null,
+    posterTrackGroups: [],
+    posterViewable: false
   });
 
   const [notifiedVotingPeriodsOnLoad, setNotifiedVotingPeriodsOnLoad] = useState(false);
@@ -76,10 +78,10 @@ export const PosterDetailPage = ({
   useEffect(() => {
     getPresentationById(presentationId).then(presentation => {
       setPosterState({
-          poster: presentation,
-          posterTrackGroups: presentation.track?.track_groups ?? [],
-          posterViewable: isAuthorized || isAuthorizedBadge(presentation, user.userProfile.summit_tickets)
-        });
+        poster: presentation,
+        posterTrackGroups: presentation.track?.track_groups ?? [],
+        posterViewable: isAuthorized || isAuthorizedBadge(presentation, user.userProfile.summit_tickets)
+      });
     }).catch(e => console.log(e));
   }, [presentationId]);
 
