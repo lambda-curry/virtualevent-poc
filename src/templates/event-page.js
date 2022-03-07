@@ -108,7 +108,7 @@ export const EventPageTemplate = class extends React.Component {
                       title={event.title}
                       namespace={summit.name}
                       firstHalf={firstHalf}
-                      autoPlay={query.autostart === 'true'}
+                      autoPlay={true}
                     />
                     {event.meeting_url && <VideoBanner event={event} />}
                   </div>
