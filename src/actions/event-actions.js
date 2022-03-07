@@ -43,7 +43,7 @@ export const getEventById = (eventId) => async (dispatch, getState) => {
 
     let params = {
         access_token: accessToken,
-        expand: 'track,location,location.venue,location.floor,speakers,slides,links,videos,media_uploads'
+        expand: 'slides, links, videos, media_uploads, type, track, track.allowed_access_levels, location, location.venue, location.floor, speakers, moderator, sponsors, current_attendance, groups, rsvp_template, tags'
     };
 
     return getRequest(
