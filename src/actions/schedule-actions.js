@@ -84,7 +84,7 @@ export const getShareLink = (filters, view) => {
     if (filters) {
         Object.entries(filters).forEach(([key, value]) => {
             if (value.values.length > 0) {
-                const hashValue = Array.isArray(value.values) ? value.values.join(',') : value.values;
+                const hashValue = Array.isArray(value.values) ? value.values.join(',') : encodeURIComponent(value.values);
                 hashVars.push(`${key}=${hashValue}`)
             }
         });
