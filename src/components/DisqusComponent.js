@@ -113,9 +113,10 @@ const DisqusComponent = class extends React.Component {
   }
 
   render() {
-
-    const { title, style, className, disqusSSO, page, hideMobile = null } = this.props;
+    const { title, style, className, disqusSSO, page, hideMobile = null, skipTo } = this.props;
     const { isMobile } = this.state || null;
+    const sectionClass = className ? className : style ? '' : page === 'marketing-site' ? 'disqus-container-marketing' : 'disqus-container';
+    const paddingLeft = className !== 'disqus-container-home' ? '0px' : '15px';
 
     let disqusConfig = {
       url: window.location.href,
@@ -130,13 +131,16 @@ const DisqusComponent = class extends React.Component {
     }
 
     return (
-      <div className={className ? className : style ? '' : page === 'marketing-site' ? 'disqus-container-marketing' : 'disqus-container'} style={style}>
-        {title && <span className="navbar-brand title" style={{ paddingLeft: className !== 'disqus-container-home' ? '0px' : ''}}>{title}</span>}
+      <section aria-labelledby={title ? 'disqus-title' : ''} className={sectionClass} style={style}>
+        <div className="disqus-header" style={{ paddingLeft }}>
+          {skipTo && <a className="sr-only skip-to-next" href={skipTo}>Skip to next section</a>}
+          {title && <h2 id="disqus-title" className="title">{title}</h2>}
+        </div>
         <DiscussionEmbed
           shortname='techweek2022-yahoo'
           config={disqusConfig}
         />
-      </div>
+      </section>
     )
   }
 
