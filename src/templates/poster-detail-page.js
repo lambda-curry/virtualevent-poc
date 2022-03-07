@@ -49,9 +49,7 @@ export const PosterDetailPage = ({
 }) => {
 
   const [{ poster, posterTrackGroups, posterViewable }, setPosterState] = useState({
-    poster: null,
-    posterTrackGroups: [],
-    posterViewable: null
+    posterTrackGroups: []
   });
 
   const [notifiedVotingPeriodsOnLoad, setNotifiedVotingPeriodsOnLoad] = useState(false);
