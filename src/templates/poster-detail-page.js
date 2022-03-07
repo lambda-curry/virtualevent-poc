@@ -48,9 +48,12 @@ export const PosterDetailPage = ({
                                      uncastPresentationVote
                                  }) => {
 
-    const [poster, setPoster] = useState(null);
-    const [userCanViewPoster, setUserCanViewPoster] = useState(null);
-    const [posterTrackGroups, setPosterTrackGroups] = useState([]);
+    const [{ poster, posterTrackGroups, posterViewable }, setPosterState] = useState({
+        poster: null,
+        posterTrackGroups: [],
+        posterViewable: false
+    });
+
     const [notifiedVotingPeriodsOnLoad, setNotifiedVotingPeriodsOnLoad] = useState(false);
     const [notifiedMaximunAllowedVotesOnLoad, setNotifiedMaximunAllowedVotesOnLoad] = useState(false);
     const [previousVotingPeriods, setPreviousVotingPeriods] = useState(votingPeriods);
@@ -73,22 +76,14 @@ export const PosterDetailPage = ({
     }, []);
 
     useEffect(() => {
-        const fetchPresentation = async () => {
-            let presentation;
-            try {
-                presentation = await getPresentationById(presentationId);
-                setPoster(presentation);
-            } catch (e) {}
-        }
-        fetchPresentation();
+        getPresentationById(presentationId).then(presentation => {
+            setPosterState({
+                poster: presentation,
+                posterTrackGroups: presentation.track?.track_groups ?? [],
+                posterViewable: isAuthorized || isAuthorizedBadge(presentation, user.userProfile.summit_tickets)
+            });
+        }).catch(e => console.log(e));
     }, [presentationId]);
-
-    useEffect(() => {
-        if (poster) {
-            setUserCanViewPoster(isAuthorized || isAuthorizedBadge(poster, user.userProfile.summit_tickets));
-            setPosterTrackGroups(poster.track?.track_groups ?? []);
-        }
-    }, [poster]);
 
     useEffect(() => {
         if (!notifiedVotingPeriodsOnLoad &&
@@ -144,11 +139,11 @@ export const PosterDetailPage = ({
         setPreviousVotingPeriods(votingPeriods);
     }, [posterTrackGroups, votingPeriods]);
 
-    if (loading || userCanViewPoster === null) return <HeroComponent title="Loading poster" />;
+    if (loading) return <HeroComponent title="Loading poster" />;
 
     if (!poster) return <HeroComponent title="Poster not found" />;
 
-    if (!userCanViewPoster) {
+    if (!posterViewable) {
         return <HeroComponent title={"Sorry. You need a special badge to view this poster."} redirectTo={location.state?.previousUrl || '/a/'} />;
     }
 
