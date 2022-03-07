@@ -83,7 +83,7 @@ export const PosterDetailPage = ({
         setPosterState({
           poster: presentation,
           posterTrackGroups: presentation.track?.track_groups ?? [],
-          posterViewable: isAuthorizedBadge(presentation, user.userProfile.summit_tickets)
+          posterViewable: isAuthorized || isAuthorizedBadge(presentation, user.userProfile.summit_tickets)
         });
       } catch (e) {
         console.log(e);
