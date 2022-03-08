@@ -116,7 +116,6 @@ const DisqusComponent = class extends React.Component {
     const { title, style, className, disqusSSO, page, hideMobile = null, skipTo } = this.props;
     const { isMobile } = this.state || null;
     const sectionClass = className ? className : style ? '' : page === 'marketing-site' ? 'disqus-container-marketing' : 'disqus-container';
-    const paddingLeft = className !== 'disqus-container-home' ? '0px' : '15px';
 
     let disqusConfig = {
       url: window.location.href,
@@ -132,7 +131,7 @@ const DisqusComponent = class extends React.Component {
 
     return (
       <section aria-labelledby={title ? 'disqus-title' : ''} className={sectionClass} style={style}>
-        <div className="disqus-header" style={{ paddingLeft }}>
+        <div className="disqus-header">
           {skipTo && <a className="sr-only skip-to-next" href={skipTo}>Skip to next section</a>}
           {title && <h2 id="disqus-title" className="title">{title}</h2>}
         </div>
