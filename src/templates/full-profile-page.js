@@ -18,7 +18,7 @@ import { updateProfilePicture, updateProfile, getIDPProfile, updatePassword } fr
 
 import styles from '../styles/full-profile.module.scss'
 
-export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, updateProfilePicture, updatePassword}) => {
+export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, updateProfilePicture, updatePassword }) => {
 
     const [showProfile, setShowProfile] = useState(false);
     const [personalProfile, setPersonalProfile] = useState({
@@ -229,9 +229,9 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                     <div className="column is-3">
                         <button className="link" onClick={() => handleTogglePopup(!showProfile)}>
                             <div className={styles.profilePicture}>
-                                <img alt="profile pic" src={image}/>
+                                <img alt="profile pic" src={image} />
                                 <div className={styles.imageUpload}>
-                                    <i className={`${styles.pictureIcon} fa fa-2x fa-pencil icon is-large`}/>
+                                    <i className={`${styles.pictureIcon} fa fa-2x fa-pencil icon is-large`} />
                                 </div>
                             </div>
                         </button>
@@ -426,7 +426,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                             <label className={styles.checkbox}>
                                 <input type="checkbox" checked={showEmail} onChange={e => setShowEmail(e.target.checked)} />
                                 Show email on public profile
-                                </label>
+                            </label>
                             <br />
                             <label className={styles.checkbox}>
                                 <input type="checkbox" checked={allowChatWithMe} onChange={e => setAllowChatWithMe(e.target.checked)} />
@@ -571,7 +571,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                         </div>
                     </div>
                     <div className="column is-3">
-                        <div className={styles.header}>My Schedule</div>
+                        <h1 className={styles.header}>My Schedule</h1>
                         <LiteScheduleComponent
                             onEventClick={(ev) => onEventChange(ev)}
                             onViewAllEventsClick={() => onViewAllEventsClick()}
