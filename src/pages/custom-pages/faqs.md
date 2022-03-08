@@ -25,7 +25,7 @@ The info you provide in your profile will be shared with the event host and may 
 
 **How can I limit what is shown in my public attendee profile?**
 
-Visit the event website and log in to your profile. From the top navigation bar, click on the image on the right. This will bring up your profile. Click “Go to Full Profile” to choose what information you would like to share. This includes: Show full name on public profile; Show email on public profile; Allow people to chat with me?<br><br>
+Visit the event website and log in to your profile. From the top navigation bar, click on the image on the right. This will bring up your profile. You can choose what information to share.<br><br>
 
 ###### How do I change my name on my public attendee profile?
 
