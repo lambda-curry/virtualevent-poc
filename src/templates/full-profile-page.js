@@ -442,11 +442,11 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                             </div>
                         </div>
                         <div className={styles.formContainer}>
-                            <span className={styles.header} id="bioLabel">Bio</span>
+                            <span className={styles.header}>Bio</span>
                             <div className={styles.form}>
                                 <div className={`columns is-mobile ${styles.inputRow}`}>
                                     <div className={`column is-full ${styles.inputField}`}>
-                                        <b>Bio</b>
+                                        <b id="bioLabel">Bio</b>
                                         <textarea
                                             aria-labelledby='bioLabel'
                                             className={`textarea ${styles.textarea}`}
@@ -460,9 +460,10 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                                 </div>
                                 <div className={`columns is-mobile ${styles.inputRow}`}>
                                     <div className={`column is-full ${styles.inputField}`}>
-                                        <b>Statement of Interest</b>
+                                        <b id="sOILabel">Statement of Interest</b>
                                         <textarea
                                             className={`textarea ${styles.textarea}`}
+                                            aria-labelledby="sOILabel"
                                             placeholder=''
                                             rows="6"
                                             onChange={e => setStatementOfInterest(e.target.value)}
