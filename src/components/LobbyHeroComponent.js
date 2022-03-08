@@ -4,7 +4,7 @@ import {connect} from "react-redux";
 import styles from '../styles/lobby-hero.module.scss'
 
 const LobbyHeroComponent = ({homeSettings}) => (
-  <section className="hero">
+  <div className="hero">
     <div className={`${styles.heroColumns} columns`}>
       <div className={`${styles.leftColumn} column is-black`}>
         <div className={`${styles.heroContainer} hero-body`}>
@@ -12,15 +12,15 @@ const LobbyHeroComponent = ({homeSettings}) => (
             <h1 className="title">
               {homeSettings.homeHero.title}
             </h1>
-            <h2 className="subtitle">
+            <p className="subtitle" role="doc-subtitle">
               {homeSettings.homeHero.subTitle}
-            </h2>
+            </p>
           </div>
         </div>
       </div>
       <div className={`${styles.rightColumn} column is-danger`} style={{ backgroundImage: `url(${homeSettings.homeHero.image.file})` }} />
     </div>
-  </section>
+  </div>
 );
 
 

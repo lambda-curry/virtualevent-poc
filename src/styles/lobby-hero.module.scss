@@ -39,13 +39,15 @@ div.column:first-of-type {
     font-weight: bold;
   }
 
-  h2 {
+  h2,
+  p[role="doc-subtitle"] {
     font-size: 4rem;
     font-weight: normal;
   }
 
   h1,
-  h2 {
+  h2,
+  p[role="doc-subtitle"] {
     color: white;
   }
 
