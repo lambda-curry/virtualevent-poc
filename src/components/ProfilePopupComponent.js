@@ -211,16 +211,17 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
                 </div>
                 <div>
                   <div className={`columns ${styles.inputRow}`}>
-                    <div className='column is-one-quarter'>Zoom:</div>
-                    <div className='column is-two-thirds'>
-                      <input
-                          name="scale"
-                          type="range"
-                          max="2"
-                          onChange={(e) => handleScale(e)}
-                          step="0.01"
-                          defaultValue="1"
-                      />
+                  <span id="zoomLabel" className='column is-one-quarter'>Zoom:</span>
+                  <div className='column is-two-thirds'>
+                    <input
+                      name="scale"
+                      type="range"
+                      aria-labelledby='zoomLabel'
+                      max="2"
+                      onChange={(e) => handleScale(e)}
+                      step="0.01"
+                      defaultValue="1"
+                    />
                     </div>
                   </div>
                   <div className={`columns ${styles.inputRow}`}>
