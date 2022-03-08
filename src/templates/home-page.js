@@ -54,18 +54,22 @@ export const HomePageTemplate = class extends React.Component {
         <div className="px-5 py-5 mb-6">
           <div className="columns">
             <div className="column is-one-quarter">
-              <h2><b>Sponsors</b></h2>
-              <SponsorComponent page='lobby'/>
-              <AdvertiseComponent section='lobby' column="left" />
+              <section className="home-section" aria-labelledby="sponsors-title">
+                <h2 id="sponsors-title">Sponsors</h2>
+                <SponsorComponent page='lobby'/>
+                <AdvertiseComponent section='lobby' column="left" />
+              </section>
             </div>
             <div className="column is-half">
-              <h2><b>Today's Sessions</b></h2>
-              <LiveEventWidgetComponent
-                onlyPresentations={true}
-                featuredEventId={homeSettings.live_now_featured_event_id}
-                onEventClick={(ev) => this.onEventChange(ev)}
-                style={{marginBottom: '15px'}}
-              />
+              <section className="home-section" aria-labelledby="events-title">
+                <h2 id="events-title">Today's Sessions</h2>
+                <LiveEventWidgetComponent
+                  onlyPresentations={true}
+                  featuredEventId={homeSettings.live_now_featured_event_id}
+                  onEventClick={(ev) => this.onEventChange(ev)}
+                  style={{marginBottom: '15px'}}
+                />
+              </section>
               <DisqusComponent
                 page="lobby"
                 disqusSSO={user.disqusSSO}
@@ -97,18 +101,22 @@ export const HomePageTemplate = class extends React.Component {
               <AdvertiseComponent section='lobby' column="center" />
             </div>
             <div className="column is-one-quarter pb-6">
-              <h2><b>My Info</b></h2>
-              <AccessTracker />
-              <AttendeesWidget user={user} />
-              <LiteScheduleComponent
-                onEventClick={(ev) => this.onEventChange(ev)}
-                onViewAllEventsClick={() => this.onViewAllMyEventsClick()}
-                title='My Schedule'
-                yourSchedule={true}
-                showNav={true}
-                eventCount={10}
-              />
-              <AdvertiseComponent section='lobby' column="right" />
+              <section className="home-section" aria-labelledby="info-title">
+                <h2 id="info-title">My Info</h2>
+                <AccessTracker />
+                <AttendeesWidget user={user} />
+                <LiteScheduleComponent
+                  onEventClick={(ev) => this.onEventChange(ev)}
+                  onViewAllEventsClick={() => this.onViewAllMyEventsClick()}
+                  title='My Schedule'
+                  yourSchedule={true}
+                  showNav={true}
+                  eventCount={10}
+                />
+              </section>
+              <section aria-label="Other sponsors">
+                <AdvertiseComponent section='lobby' column="right" />
+              </section>
             </div>
           </div>
         </div>
