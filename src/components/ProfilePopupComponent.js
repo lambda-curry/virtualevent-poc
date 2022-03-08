@@ -181,7 +181,7 @@ const ProfilePopupComponent = ({ userProfile, idpLoading, closePopup, showProfil
         <div className={`${styles.modalCard} ${styles.profilePopup}`}>
           <AjaxLoader relative={true} color={'#ffffff'} show={idpLoading} size={120} />
           <header className={`${styles.modalCardHead}`}>
-            <p className={`${styles.modalCardTitle}`} tabIndex='-1' ref={modalHeaderRef}>Edit profile</p>
+            <h2 className={`${styles.modalCardTitle}`} tabIndex='-1' ref={modalHeaderRef}>Edit profile</h2>
             <button className="link" onClick={() => closePopup()}>
               <i className={`${styles.closeIcon} fa fa-times icon`} />
             </button>
