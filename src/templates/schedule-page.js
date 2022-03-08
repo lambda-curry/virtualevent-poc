@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { pickBy } from "lodash";
 import { navigate } from "gatsby";
 import { connect } from "react-redux";
-import { updateFiltersFromHash, updateFilter, reloadScheduleData } from "../actions/schedule-actions";
+import { updateFiltersFromHash, deepLinkToEvent, updateFilter, reloadScheduleData } from "../actions/schedule-actions";
 import Layout from "../components/Layout";
 import FullSchedule from "../components/FullSchedule";
 import ScheduleFilters from "../components/ScheduleFilters";
@@ -38,6 +38,13 @@ const SchedulePage = ({summit, schedules, summitPhase, isLoggedUser, location, c
       updateFiltersFromHash(schedKey, filters, view);
     }
   }, [schedKey, filters, view, updateFiltersFromHash]);
+
+  useEffect(() => {
+    const eventsRendered = document?.getElementsByClassName('event-wrapper');
+    if (eventsRendered && eventsRendered.length > 0) {
+      deepLinkToEvent();
+    }
+  }, [events, deepLinkToEvent]);
 
   useEffect(() => {
     if (scrollDirection === SCROLL_DIRECTION.UP) {
