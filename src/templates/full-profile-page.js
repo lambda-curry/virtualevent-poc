@@ -571,7 +571,7 @@ export const FullProfilePageTemplate = ({ user, getIDPProfile, updateProfile, up
                         </div>
                     </div>
                     <div className="column is-3">
-                        <div className={styles.header}>My Schedule</div>
+                        <h2 className={styles.header}>My Schedule</h2>
                         <LiteScheduleComponent
                             onEventClick={(ev) => onEventChange(ev)}
                             onViewAllEventsClick={() => onViewAllEventsClick()}
