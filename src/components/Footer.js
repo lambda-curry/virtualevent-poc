@@ -85,11 +85,15 @@ const Footer = ({ summit, marketing }) => {
                             <h4>
                               {col.title}
                             </h4>
-                            {col.items.map((item, index) => (
-                              <Link to={item.link} className={styles.link} key={index}>
-                                <h5>{item.title}</h5>
-                              </Link>
-                            ))}
+                            <ul>
+                              {col.items.map((item, index) => (
+                                <li>
+                                  <Link to={item.link} className={styles.link} key={index}>
+                                    <h5>{item.title}</h5>
+                                  </Link>
+                                </li>
+                              ))}
+                            </ul>
                           </div>
                         )
                       })}
