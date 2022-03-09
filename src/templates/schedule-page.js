@@ -27,9 +27,8 @@ const SchedulePage = ({summit, scheduleState, summitPhase, isLoggedUser, locatio
   const { key, events, allEvents, filters, view, timezone, colorSource } = scheduleState || {};
 
   useEffect(() => {
-    if (scheduleState) {
-      const lastEvent = events && events[events.length - 1];
-      deepLinkToEvent(lastEvent);
+    if (scheduleState && !!events?.length) {
+      deepLinkToEvent();
     }
   }, [key, events]);
 

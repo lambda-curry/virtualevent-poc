@@ -9,7 +9,6 @@ import {
 } from "../actions/schedule-actions";
 
 // This HOC makes sure the schedules array in allSchedulesState is populated before render.
-// It requires connection with reducer in order to have access to schedules and reloadScheduleData
 
 const componentWrapper = (WrappedComponent) => ({schedules, ...props}) => {
   const [loaded, setLoaded] = useState(false);
@@ -24,9 +23,8 @@ const componentWrapper = (WrappedComponent) => ({schedules, ...props}) => {
 
   useEffect(() => {
     if (schedules.length > 0) {
-      updateFiltersFromHash(schedKey, filters, view).then(() => {
-        setLoaded(true);
-      });
+      updateFiltersFromHash(schedKey, filters, view);
+      setLoaded(true);
     }
   }, [key]);
 
