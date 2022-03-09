@@ -45,9 +45,6 @@ export const deepLinkToEvent = (lastEvent) => {
     const lastEventEl = lastEvent && document?.getElementById(`event-${lastEvent.id}`);
     if (!lastEventEl || !windowExists) return null;
 
-    // reset scroll
-    window.scrollTo(0,0);
-
     const eventHash = fragmentParser.getParam("event");
 
     if (eventHash) {
@@ -55,6 +52,12 @@ export const deepLinkToEvent = (lastEvent) => {
         const eventEl = document.getElementById(eventId);
 
         if (eventEl) {
+            // avoid scroll cache
+            window.history.scrollRestoration = "manual";
+
+            // remove event from fragment
+            fragmentParser.deleteParam("event");
+
             setTimeout(() => {
                 eventEl.scrollIntoView({ behavior: "smooth", block: "center" });
             }, 800);
@@ -76,8 +79,9 @@ export const updateFiltersFromHash = (key, filters, view, actionCallback = UPDAT
     const newFilters = {};
 
     // clear hash that match filters
-    fragmentParser.deleteParams(filterKeys);
+    fragmentParser.deleteParams([...filterKeys, 'view']);
 
+    // reset url hash
     if (windowExists) {
         window.history.replaceState(null, null, ' ');
     }
@@ -106,11 +110,9 @@ export const updateFiltersFromHash = (key, filters, view, actionCallback = UPDAT
     // only update if filters have changed
     if (!isEqual(newFilters, filters) || view !== qsFilters.view) {
         await dispatch(createAction(actionCallback)({filters: newFilters, view: qsFilters.view, key}));
-        return Promise.resolve();
-    } else {
-        return Promise.resolve();
     }
 
+    return Promise.resolve();
 };
 
 export const getShareLink = (filters, view) => {
