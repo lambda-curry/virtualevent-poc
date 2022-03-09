@@ -8,8 +8,6 @@ export const UPDATE_FILTERS = "UPDATE_FILTERS";
 export const CHANGE_VIEW = "CHANGE_VIEW";
 export const CHANGE_TIMEZONE = "CHANGE_TIMEZONE";
 
-export const MY_SCHEDULE_UPDATE_FILTER = "MY_SCHEDULE_UPDATE_FILTER";
-export const MY_SCHEDULE_UPDATE_FILTERS = "MY_SCHEDULE_UPDATE_FILTERS";
 /**
  * This action is defined to just reinitialize the allScheduleReducer state
  * (allSchedulesReducer.state.schedules) without trigerring the side effects of
@@ -41,71 +39,78 @@ export const reloadScheduleData = () => (dispatch, getState) => {
 };
 
 export const deepLinkToEvent = () => {
-  const windowExists = typeof window !== "undefined";
-  const eventHash = fragmentParser.getParam("event");
+    if (typeof window === "undefined") return null;
 
-  if (eventHash && windowExists) {
-    const eventId = eventHash === "live" ? "live-line" : `event-${eventHash}`;
-    const eventEl = document.getElementById(eventId);
-    if (eventEl) {
-      eventEl.scrollIntoView({ behavior: "smooth", block: "center" });
+    const eventHash = fragmentParser.getParam("event");
+
+    if (eventHash) {
+        // when event=live we scroll to live line
+        const eventId = eventHash === "live" ? "live-line" : `event-${eventHash}`;
+        const eventEl = document.getElementById(eventId);
+
+        if (eventEl) {
+            // avoid scroll cache
+            window.history.scrollRestoration = "manual";
+
+            // remove event from fragment
+            fragmentParser.deleteParam("event");
+
+            // scroll to event
+            setTimeout(() => {
+                eventEl.scrollIntoView({ behavior: "smooth", block: "center" });
+            }, 800);
+
+            // expand info if list view
+            setTimeout(() => {
+                const openInfoBtns = eventEl.getElementsByClassName("open-info-btn");
+                if (openInfoBtns.length > 0) {
+                    openInfoBtns[0].click();
+                }
+            }, 1200);
+        }
     }
-  }
 };
 
-export const updateFiltersFromHash =
-  (key, filters, view, actionCallback = UPDATE_FILTERS) =>
-  (dispatch) => {
+export const updateFiltersFromHash = (key, filters, view, actionCallback = UPDATE_FILTERS) => async (dispatch) => {
     const qsFilters = fragmentParser.getParams();
     const windowExists = typeof window !== "undefined";
     const filterKeys = Object.keys(filters);
     const newFilters = {};
 
     // clear hash that match filters
-    fragmentParser.deleteParams(filterKeys);
+    fragmentParser.deleteParams([...filterKeys, 'view']);
 
+    // reset url hash
     if (windowExists) {
-      window.history.replaceState(null, null, " ");
+        window.history.replaceState(null, null, ' ');
     }
 
-    // escape if no hash
-    if (isEmpty(qsFilters)) return null;
+    // escape if no filter hash
+    if (isEmpty(qsFilters)) return;
 
     // remove any query vars that are not filters
-    const normalizedFilters = pickBy(qsFilters, (value, key) =>
-      filterKeys.includes(key)
-    );
+    const normalizedFilters =  pickBy(qsFilters, (value, key) => filterKeys.includes(key));
 
     // populate state filters with hash values
-    Object.keys(filters).forEach((key) => {
-      newFilters[key] = { ...filters[key] }; // copy label and rest of props
+    Object.keys(filters).forEach(key => {
+        newFilters[key] = {...filters[key]}; // copy label and rest of props
 
-      if (key === "title") {
-        newFilters[key].values = normalizedFilters[key]
-          ? decodeURIComponent(normalizedFilters[key])
-          : "";
-      } else {
-        const newValues = normalizedFilters[key]
-          ? normalizedFilters[key].split(",")
-          : [];
-        newFilters[key].values = newValues.map((val) => {
-          if (isNaN(val)) return decodeURIComponent(val);
-          return parseInt(val);
-        });
-      }
+        if (key === 'title') {
+            newFilters[key].values = normalizedFilters[key] ? decodeURIComponent(normalizedFilters[key]) : '';
+        } else {
+            const newValues = normalizedFilters[key] ? normalizedFilters[key].split(',') : [];
+            newFilters[key].values = newValues.map(val => {
+                if (isNaN(val)) return decodeURIComponent(val);
+                return parseInt(val);
+            })
+        }
     });
 
     // only update if filters have changed
     if (!isEqual(newFilters, filters) || view !== qsFilters.view) {
-      dispatch(
-        createAction(actionCallback)({
-          filters: newFilters,
-          view: qsFilters.view,
-          key,
-        })
-      );
+        dispatch(createAction(actionCallback)({filters: newFilters, view: qsFilters.view, key}));
     }
-  };
+};
 
 export const getShareLink = (filters, view) => {
   const hashVars = [];

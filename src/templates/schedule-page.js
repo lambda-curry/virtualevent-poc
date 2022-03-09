@@ -2,8 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import PropTypes from "prop-types";
 import { pickBy } from "lodash";
 import { navigate } from "gatsby";
-import { connect } from "react-redux";
-import { updateFiltersFromHash, deepLinkToEvent, updateFilter, reloadScheduleData } from "../actions/schedule-actions";
+import { deepLinkToEvent } from "../actions/schedule-actions";
 import Layout from "../components/Layout";
 import FullSchedule from "../components/FullSchedule";
 import ScheduleFilters from "../components/ScheduleFilters";
@@ -13,38 +12,25 @@ import { PHASES } from "../utils/phasesUtils";
 import FilterButton from "../components/FilterButton";
 import styles from "../styles/full-schedule.module.scss";
 import NotFoundPage from "../pages/404";
+import withScheduleData from '../utils/withScheduleData'
 
 const SCROLL_DIRECTION = {
   UP: 'scrolling up',
   DOWN: 'scrolling down'
 };
 
-const SchedulePage = ({summit, schedules, summitPhase, isLoggedUser, location, colorSettings, updateFilter, updateFiltersFromHash, scheduleProps, schedKey, reloadScheduleData }) => {
+const SchedulePage = ({summit, scheduleState, summitPhase, isLoggedUser, location, colorSettings, updateFilter, scheduleProps, schedKey }) => {
   const [showFilters, setShowfilters] = useState(false);
   const [scrollDirection, setScrollDirection] = useState(null);
   const [mustScrollFiltersDown, setMustScrollFiltersDown] = useState(false);
   const filtersWrapperRef = useRef(null);
-  const scheduleState = schedules.find( s => s.key === schedKey);
-  const { events, allEvents, filters, view, timezone, colorSource } = scheduleState || {};
+  const { key, events, allEvents, filters, view, timezone, colorSource } = scheduleState || {};
 
   useEffect(() => {
-    if(schedules.length > 0) return;
-    // reload schedule data due we dont have the data on the reducer loaded
-    reloadScheduleData();
-  }, [schedules])
-
-  useEffect(() => {
-    if (scheduleState) {
-      updateFiltersFromHash(schedKey, filters, view);
-    }
-  }, [schedKey, filters, view, updateFiltersFromHash]);
-
-  useEffect(() => {
-    const eventsRendered = document?.getElementsByClassName('event-wrapper');
-    if (eventsRendered && eventsRendered.length > 0) {
+    if (scheduleState && !!events?.length) {
       deepLinkToEvent();
     }
-  }, [events, deepLinkToEvent]);
+  }, [key, events]);
 
   useEffect(() => {
     if (scrollDirection === SCROLL_DIRECTION.UP) {
@@ -83,7 +69,7 @@ const SchedulePage = ({summit, schedules, summitPhase, isLoggedUser, location, c
     }
   }, [mustScrollFiltersDown]);
 
-  if (!summit || schedules.length === 0 ) return null;
+  if (!summit ) return null;
 
   // if we don't have a state, it probably means the schedule was disabled from admin.
   if (!scheduleState) {
@@ -146,16 +132,4 @@ SchedulePage.propTypes = {
   isLoggedUser: PropTypes.bool,
 };
 
-const mapStateToProps = ({ summitState, clockState, loggedUserState, allSchedulesState, settingState }) => ({
-  summit: summitState.summit,
-  summitPhase: clockState.summit_phase,
-  isLoggedUser: loggedUserState.isLoggedUser,
-  schedules: allSchedulesState.schedules,
-  colorSettings: settingState.colorSettings,
-});
-
-export default connect(mapStateToProps, {
-  updateFiltersFromHash,
-  updateFilter,
-  reloadScheduleData,
-})(SchedulePage);
+export default withScheduleData(SchedulePage);
