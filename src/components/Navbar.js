@@ -46,10 +46,10 @@ const Navbar = ({
 
   const isCustomPage = (path) => {
     return !isMarketingPage(path) &&
-           !isShowPage(path) &&
-           !isProfilePage(path) &&
-           !isMySchedulePage(path) &&
-           !isExtraQuestionsPage(path);
+      !isShowPage(path) &&
+      !isProfilePage(path) &&
+      !isMySchedulePage(path) &&
+      !isExtraQuestionsPage(path);
   }
 
   const isMySchedulePage = (path) => {
@@ -65,7 +65,7 @@ const Navbar = ({
   }
 
   const isMarketingPage = (path) => {
-      return path === '/';
+    return path === '/';
   }
 
   const isLobbyPage = (path) => {
@@ -86,9 +86,9 @@ const Navbar = ({
 
   const isShowPage = (path) => {
     return isLobbyPage(path) || // lobby
-        isActivityPage(path) || // activity
-        isSponsorPage(path) || // expo hall or sponsor page
-        isSchedulePage(path);// schedule
+      isActivityPage(path) || // activity
+      isSponsorPage(path) || // expo hall or sponsor page
+      isSchedulePage(path);// schedule
   }
 
   // we assume that all pages under /a/* requires auth except /a/schedule
@@ -96,21 +96,21 @@ const Navbar = ({
   const showItem = (item) => {
     // check if we have location defined, if so use the path name , else if window is defined use the window.location
     // as a fallback
-    const currentPath = location ? location.pathname: (typeof window !== "undefined" ? window.location.pathname: "");
+    const currentPath = location ? location.pathname : (typeof window !== "undefined" ? window.location.pathname : "");
     const passPageRestriction = !item.pageRestriction ||
-        item.link === currentPath || // if we are on the same page then show it
-        item.pageRestriction.includes(PAGE_RESTRICTION_ANY) ||
-        (item.pageRestriction.includes(PAGE_RESTRICTION_ACTIVITY) && isActivityPage(currentPath)) ||
-        (item.pageRestriction.includes(PAGE_RESTRICTION_MARKETING) && isMarketingPage(currentPath)) ||
-        (item.pageRestriction.includes(PAGE_RESTRICTION_LOBBY) && isLobbyPage(currentPath)) ||
-        (item.pageRestriction.includes(PAGE_RESTRICTION_SHOW) && isShowPage(currentPath)) ||
-        (item.pageRestriction.includes(PAGE_RESTRICTION_CUSTOM_PAGE) && isCustomPage(currentPath))
-    ;
+      item.link === currentPath || // if we are on the same page then show it
+      item.pageRestriction.includes(PAGE_RESTRICTION_ANY) ||
+      (item.pageRestriction.includes(PAGE_RESTRICTION_ACTIVITY) && isActivityPage(currentPath)) ||
+      (item.pageRestriction.includes(PAGE_RESTRICTION_MARKETING) && isMarketingPage(currentPath)) ||
+      (item.pageRestriction.includes(PAGE_RESTRICTION_LOBBY) && isLobbyPage(currentPath)) ||
+      (item.pageRestriction.includes(PAGE_RESTRICTION_SHOW) && isShowPage(currentPath)) ||
+      (item.pageRestriction.includes(PAGE_RESTRICTION_CUSTOM_PAGE) && isCustomPage(currentPath))
+      ;
 
     return item.display &&
-           (!item.requiresAuth || isLoggedUser) &&
-           (!item.showOnlyAtShowTime || summit_phase >= PHASES.DURING) &&
-           passPageRestriction;
+      (!item.requiresAuth || isLoggedUser) &&
+      (!item.showOnlyAtShowTime || summit_phase >= PHASES.DURING) &&
+      passPageRestriction;
   };
 
   const defaultPath = getEnvVariable(AUTHORIZED_DEFAULT_PATH)
@@ -152,13 +152,15 @@ const Navbar = ({
         >
           <div className={styles.navbarStart} />
           <div className={styles.navbarEnd}>
-            {Content.items.filter(showItem).map((item, index) => (
-              <div className={styles.navbarItem} key={index}>
-                <Link to={item.link} className={styles.link}>
-                  <span>{item.title}</span>
-                </Link>
-              </div>
-            ))}
+            <ul className={styles.navbarList}>
+              {Content.items.filter(showItem).map((item, index) => (
+                <li className={styles.navbarItem} key={index}>
+                  <Link to={item.link} className={styles.link}>
+                    <span>{item.title}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
             {isLoggedUser && (
               <div className={styles.navbarItem}>
                 <button className="link" onClick={() => handleTogglePopup()}>
@@ -184,7 +186,7 @@ const Navbar = ({
           </div>
         </div>
       </nav>
-    </React.Fragment>
+    </React.Fragment >
   );
 };
 

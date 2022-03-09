@@ -17,7 +17,6 @@
       max-height: 4rem;
     }
   }
-
   .navbar-mobile {
     display: none;
   }
@@ -25,7 +24,11 @@
   .navbar-end {
     padding-right: 15px;
   }
-
+  .navbar-list {
+    margin-bottom: 0px;
+    align-items: stretch;
+    display: flex;
+  }
   .user-icon {
     color: $color_text_light;
     padding-left: 10px;
@@ -127,6 +130,11 @@
         flex-direction: row;
         display: flex;
         align-items: center;
+      }
+      .navbar-list{
+          flex-direction: row;
+          display: flex;
+          align-items: center;
       }
     }
 
