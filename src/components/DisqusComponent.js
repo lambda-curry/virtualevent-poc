@@ -133,8 +133,8 @@ const DisqusComponent = class extends React.Component {
     return (
       <section aria-labelledby={title ? 'disqus-title' : ''} className={sectionClass} style={style}>
         <div className="disqus-header" style={{ paddingLeft }}>
-          {skipTo && <a className="sr-only skip-to-next" href={skipTo}>Skip to next section</a>}
           {title && <h2 id="disqus-title" className="title">{title}</h2>}
+          {skipTo && <a className="sr-only skip-to-next" href={skipTo}>Skip to next section</a>}
         </div>
         <DiscussionEmbed
           shortname='techweek2022-yahoo'
