@@ -52,9 +52,9 @@ const UpcomingEventsComponent = ({
                     href="https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/1.0.2/awesome-bootstrap-checkbox.min.css"
                 />
             </Helmet>
-            <div id="upcoming-events" className={className || wrapperClass} style={{ height: 500 }}>
+            <section aria-label="Up Next" id="upcoming-events" className={className || wrapperClass} style={{ height: 500 }}>
                 <UpcomingEvents {...componentProps} {...rest} />
-            </div>
+            </section>
         </>
     );
 };
