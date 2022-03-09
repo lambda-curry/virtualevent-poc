@@ -20,9 +20,9 @@ const ExpoHallPage = ({ location, imageHeader }) => {
               <h1 className={styles.title}>
                 Sponsors
               </h1>
-              <h2 className={styles.subtitle}>
+              <span className={styles.subtitle}>
                 See the schedule to join live sessions and meet representatives from the sponsor companies.
-              </h2>
+              </span>
             </div>
           </div>
         </section>
