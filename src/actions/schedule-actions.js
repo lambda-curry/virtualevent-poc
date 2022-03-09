@@ -40,22 +40,36 @@ export const reloadScheduleData = () => (dispatch, getState) => {
   dispatch(createAction(RELOAD_USER_PROFILE)({ isLoggedUser, userProfile }));
 };
 
-export const deepLinkToEvent = () => {
-  const windowExists = typeof window !== "undefined";
-  const eventHash = fragmentParser.getParam("event");
+export const deepLinkToEvent = (lastEvent) => {
+    const windowExists = typeof window !== "undefined";
+    const lastEventEl = lastEvent && document?.getElementById(`event-${lastEvent.id}`);
+    if (!lastEventEl || !windowExists) return null;
 
-  if (eventHash && windowExists) {
-    const eventId = eventHash === "live" ? "live-line" : `event-${eventHash}`;
-    const eventEl = document.getElementById(eventId);
-    if (eventEl) {
-      eventEl.scrollIntoView({ behavior: "smooth", block: "center" });
+    // reset scroll
+    window.scrollTo(0,0);
+
+    const eventHash = fragmentParser.getParam("event");
+
+    if (eventHash) {
+        const eventId = eventHash === "live" ? "live-line" : `event-${eventHash}`;
+        const eventEl = document.getElementById(eventId);
+
+        if (eventEl) {
+            setTimeout(() => {
+                eventEl.scrollIntoView({ behavior: "smooth", block: "center" });
+            }, 800);
+
+            setTimeout(() => {
+                const openInfoBtns = eventEl.getElementsByClassName("open-info-btn");
+                if (openInfoBtns.length > 0) {
+                    openInfoBtns[0].click();
+                }
+            }, 1200);
+        }
     }
-  }
 };
 
-export const updateFiltersFromHash =
-  (key, filters, view, actionCallback = UPDATE_FILTERS) =>
-  (dispatch) => {
+export const updateFiltersFromHash = (key, filters, view, actionCallback = UPDATE_FILTERS) => async (dispatch) => {
     const qsFilters = fragmentParser.getParams();
     const windowExists = typeof window !== "undefined";
     const filterKeys = Object.keys(filters);
@@ -65,47 +79,39 @@ export const updateFiltersFromHash =
     fragmentParser.deleteParams(filterKeys);
 
     if (windowExists) {
-      window.history.replaceState(null, null, " ");
+        window.history.replaceState(null, null, ' ');
     }
 
     // escape if no hash
-    if (isEmpty(qsFilters)) return null;
+    if (isEmpty(qsFilters)) return Promise.resolve();
 
     // remove any query vars that are not filters
-    const normalizedFilters = pickBy(qsFilters, (value, key) =>
-      filterKeys.includes(key)
-    );
+    const normalizedFilters =  pickBy(qsFilters, (value, key) => filterKeys.includes(key));
 
     // populate state filters with hash values
-    Object.keys(filters).forEach((key) => {
-      newFilters[key] = { ...filters[key] }; // copy label and rest of props
+    Object.keys(filters).forEach(key => {
+        newFilters[key] = {...filters[key]}; // copy label and rest of props
 
-      if (key === "title") {
-        newFilters[key].values = normalizedFilters[key]
-          ? decodeURIComponent(normalizedFilters[key])
-          : "";
-      } else {
-        const newValues = normalizedFilters[key]
-          ? normalizedFilters[key].split(",")
-          : [];
-        newFilters[key].values = newValues.map((val) => {
-          if (isNaN(val)) return decodeURIComponent(val);
-          return parseInt(val);
-        });
-      }
+        if (key === 'title') {
+            newFilters[key].values = normalizedFilters[key] ? decodeURIComponent(normalizedFilters[key]) : '';
+        } else {
+            const newValues = normalizedFilters[key] ? normalizedFilters[key].split(',') : [];
+            newFilters[key].values = newValues.map(val => {
+                if (isNaN(val)) return decodeURIComponent(val);
+                return parseInt(val);
+            })
+        }
     });
 
     // only update if filters have changed
     if (!isEqual(newFilters, filters) || view !== qsFilters.view) {
-      dispatch(
-        createAction(actionCallback)({
-          filters: newFilters,
-          view: qsFilters.view,
-          key,
-        })
-      );
+        await dispatch(createAction(actionCallback)({filters: newFilters, view: qsFilters.view, key}));
+        return Promise.resolve();
+    } else {
+        return Promise.resolve();
     }
-  };
+
+};
 
 export const getShareLink = (filters, view) => {
   const hashVars = [];

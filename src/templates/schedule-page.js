@@ -25,7 +25,7 @@ const SchedulePage = ({summit, schedules, summitPhase, isLoggedUser, location, c
   const [mustScrollFiltersDown, setMustScrollFiltersDown] = useState(false);
   const filtersWrapperRef = useRef(null);
   const scheduleState = schedules.find( s => s.key === schedKey);
-  const { events, allEvents, filters, view, timezone, colorSource } = scheduleState || {};
+  const { key, events, allEvents, filters, view, timezone, colorSource } = scheduleState || {};
 
   useEffect(() => {
     if(schedules.length > 0) return;
@@ -35,9 +35,12 @@ const SchedulePage = ({summit, schedules, summitPhase, isLoggedUser, location, c
 
   useEffect(() => {
     if (scheduleState) {
-      updateFiltersFromHash(schedKey, filters, view);
+      updateFiltersFromHash(schedKey, filters, view).then(() => {
+        const lastEvent = events && events[events.length - 1];
+        deepLinkToEvent(lastEvent);
+      });
     }
-  }, [schedKey, filters, view, updateFiltersFromHash]);
+  }, [key, updateFiltersFromHash]);
 
   useEffect(() => {
     const eventsRendered = document?.getElementsByClassName('event-wrapper');
