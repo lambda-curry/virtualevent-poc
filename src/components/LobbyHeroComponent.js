@@ -12,7 +12,7 @@ const LobbyHeroComponent = ({homeSettings}) => (
             <h1 className="title">
               {homeSettings.homeHero.title}
             </h1>
-            <p className="subtitle" role="doc-subtitle">
+            <p className={`${styles.subtitle} subtitle`}>
               {homeSettings.homeHero.subTitle}
             </p>
           </div>
