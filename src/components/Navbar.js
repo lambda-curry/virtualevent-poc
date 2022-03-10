@@ -142,9 +142,10 @@ const Navbar = ({
           </button>
         </div>
 
-        <div
+        <nav
           id="navbarBasicExample"
           className={`${styles.navbarMenu} ${navBarActiveClass}`}
+          aria-label="Main"
         >
           <div className={styles.navbarStart} />
           <div className={styles.navbarEnd}>
@@ -178,7 +179,7 @@ const Navbar = ({
             )}
             <LogoutButton styles={styles} isLoggedUser={isLoggedUser} />
           </div>
-        </div>
+        </nav>
       </header>
     </React.Fragment>
   );
