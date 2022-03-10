@@ -24,8 +24,8 @@ export const VOTEABLE_PRESENTATIONS_UPDATE_FILTER = 'VOTEABLE_PRESENTATIONS_UPDA
 export const GET_PRESENTATION_DETAILS = 'GET_PRESENTATION_DETAILS';
 export const GET_PRESENTATION_DETAILS_ERROR = 'GET_PRESENTATION_DETAILS_ERROR';
 export const GET_RECOMMENDED_PRESENTATIONS = 'GET_RECOMMENDED_PRESENTATIONS';
-export const VOTING_PERIOD_ADD = 'VOTING_PERIOD_ADD';
-export const VOTING_PERIOD_PHASE_CHANGE = 'VOTING_PERIOD_PHASE_CHANGE';
+export const VOTING_PERIODS_CREATE = 'VOTING_PERIODS_CREATE';
+export const VOTING_PERIODS_PHASE_CHANGE = 'VOTING_PERIODS_PHASE_CHANGE';
 const PresentationsDefaultPageSize = 30;
 
 export const setInitialDataSet = () => (dispatch, getState) => Promise.resolve().then(() => {
@@ -189,13 +189,16 @@ export const getRecommendedPresentations = (trackGroups) => async (dispatch) => 
 export const updateVotingPeriodsPhase = () => (dispatch, getState) => {
   const { clockState: { nowUtc }, presentationsState: { votingPeriods } } = getState();
   if (Object.keys(votingPeriods).length) {
+    const phaseChanges = [];
     Object.entries(votingPeriods).forEach(entry => {
       const [trackGroupId, votingPeriod] = entry;
       const newPhase = getVotingPeriodPhase(votingPeriod, nowUtc);
       if (newPhase !== votingPeriod.phase) {
-        dispatch(createAction(VOTING_PERIOD_PHASE_CHANGE)({ trackGroupId, phase: newPhase }));
+        phaseChanges.push({ trackGroupId, phase: newPhase });
       }
     });
+    if (phaseChanges.length)
+      dispatch(createAction(VOTING_PERIODS_PHASE_CHANGE)(phaseChanges));
   }
 };
 
@@ -207,12 +210,15 @@ export const createVotingPeriods = () => (dispatch, getState) => {
 
   const votesPerTrackGroup = mapVotesPerTrackGroup(attendee?.presentation_votes ?? [], allBuildTimePresentations);
 
+  var votingPeriods = [];
   trackGroups.forEach(trackGroup => {
     const { name, begin_attendee_voting_period_date: startDate,
             end_attendee_voting_period_date: endDate,
             max_attendee_votes: maxAttendeeVotes } = trackGroup;
     const votingPeriod = VotingPeriod({ name, startDate, endDate, maxAttendeeVotes }, nowUtc);
     if (votesPerTrackGroup[trackGroup.id]) votingPeriod.addVotes = votesPerTrackGroup[trackGroup.id];
-    dispatch(createAction(VOTING_PERIOD_ADD)({ trackGroupId: trackGroup.id, votingPeriod }));
+    votingPeriods.push({ trackGroupId: trackGroup.id, votingPeriod });
   });
+  if (votingPeriods.length)
+    dispatch(createAction(VOTING_PERIODS_CREATE)(votingPeriods));
 };
