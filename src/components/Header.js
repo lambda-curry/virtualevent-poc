@@ -14,18 +14,16 @@ const Header = ({ isLoggedUser, location, idpProfile, idpLoading, summit}) => (
         }
       `}
     render={data => (
-      <header>
-        <Navbar isLoggedUser={isLoggedUser} idpProfile={idpProfile} idpLoading={idpLoading} location={location}
-          logo={
-            summit && summit.logo ?
-              summit.logo
+      <Navbar isLoggedUser={isLoggedUser} idpProfile={idpProfile} idpLoading={idpLoading} location={location}
+        logo={
+          summit && summit.logo ?
+            summit.logo
+            :
+            data.summit && data.summit.logo ?
+              data.summit.logo
               :
-              data.summit && data.summit.logo ?
-                data.summit.logo
-                :
-                null
-          } />          
-      </header>
+              null
+        } />
     )}
   />
 )

@@ -120,11 +120,7 @@ const Navbar = ({
 
   return (
     <React.Fragment>
-      <nav
-        className={`${styles.navbar}`}
-        role="navigation"
-        aria-label="main navigation"
-      >
+      <header className={`${styles.navbar}`}>
         <div className={styles.navbarBrand}>
           <Link
             to={isLoggedUser ? defaultPath : "/"}
@@ -183,7 +179,7 @@ const Navbar = ({
             <LogoutButton styles={styles} isLoggedUser={isLoggedUser} />
           </div>
         </div>
-      </nav>
+      </header>
     </React.Fragment>
   );
 };
