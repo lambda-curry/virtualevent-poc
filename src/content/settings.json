@@ -1,2 +1,15 @@
-{"favicon":"/img/favicon.png","widgets":{"chat":{"showQA":false,"showHelp":false}},"lastBuild":1632408679112}
-
+{
+  "favicon": "/img/favicon.png",
+  "widgets": {
+    "chat": {
+      "showQA": false,
+      "showHelp": false
+    }
+  },
+  "lastBuild": 1632408679112,
+  "favicons": {
+    "favicon180": "/img/owg22-fnv-favicon-180.png",
+    "favicon32": "/img/owg22-fnv-favicon-32.png",
+    "favicon16": "/img/owg22-fnv-favicon-16.png"
+  }
+}
