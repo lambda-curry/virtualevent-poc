@@ -4,14 +4,14 @@
       "showAllEvents": false
     },
     "speakers": {
-      "showTodaySpeakers": true,
-      "showFeatureSpeakers": false
+      "showTodaySpeakers": false,
+      "showFeatureSpeakers": true
     }
   },
   "homeHero": {
-    "title": "Lobby HERO Text",
-    "subTitle": "Lobby Subtitle Text",
+    "title": "Osso Winter Games",
+    "subTitle": "Event tag line here!",
     "image": "/img/tier1-default-lobby-header1.png",
-    "copy": "<h2><strong>Lobby HERO Text</strong></h2>\n<h2>Lobby Subtitle Text</h2>"
+    "copy": "<h2><strong>Osso Winter Games</strong></h2>\n<h2>Event tag line here!</h2>"
   }
 }
