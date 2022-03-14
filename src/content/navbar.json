@@ -8,7 +8,7 @@
       "pageRestriction": [
         "ANY"
       ],
-      "showOnlyAtShowTime": true
+      "showOnlyAtShowTime": false
     },
     {
       "title": "SCHEDULE",
