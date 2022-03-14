@@ -15,8 +15,14 @@
         "display": true
       }
     },
-    "background": "",
-    "images": []
+    "background": {
+      "file": "/img/owg22-fnv-marketing_header_left.png"
+    },
+    "images": [
+      {
+        "file": "/img/owg22-fnv-marketing_header_right.png"
+      }
+    ]
   },
   "leftColumn": {
     "schedule": {
