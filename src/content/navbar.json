@@ -38,15 +38,6 @@
       "pageRestriction": [
         "ANY"
       ]
-    },
-    {
-      "title": "My Profile",
-      "link": "/a/profile",
-      "display": true,
-      "requiresAuth": true,
-      "pageRestriction": [
-        "ANY"
-      ]
     }
   ]
 }
