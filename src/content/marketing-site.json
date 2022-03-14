@@ -1,39 +1,26 @@
 {
   "heroBanner": {
-    "title": "TIER 1 - EVENT NAME HERE",
-    "subTitle": "",
-    "date": "Date Information",
-    "time": "Timezone",
-    "dateLayout": true,
+    "title": "OSSO WINTER GAMES",
+    "subTitle": "Park City, Utah",
+    "date": "April 7 - 15, 2022",
+    "time": "",
+    "dateLayout": false,
     "buttons": {
       "registerButton": {
         "text": "Register now",
-        "display": true
+        "display": false
       },
       "loginButton": {
-        "text": "Log in",
+        "text": "Log-in",
         "display": true
       }
     },
     "background": "",
-    "images": [
-      {
-        "file": "/img/tier1-default-header1.png",
-        "alt": ""
-      },
-      {
-        "file": "/img/tier1-default-header2.png",
-        "alt": ""
-      },
-      {
-        "file": "/img/tier1-default-header3.png",
-        "alt": ""
-      }
-    ]
+    "images": []
   },
   "leftColumn": {
     "schedule": {
-      "display": true,
+      "display": false,
       "title": "Full Event Schedule"
     },
     "disqus": {
@@ -89,5 +76,8 @@
       ]
     }
   ],
-  "countdown":{"display": true,"text": "Event Kickoff"}
+  "countdown": {
+    "display": true,
+    "text": "COUNTDOWN TO EVENT"
+  }
 }
