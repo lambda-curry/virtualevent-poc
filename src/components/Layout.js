@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
 import { withPrefix } from 'gatsby';
 import useSiteMetadata from './SiteMetadata';
-import Header from '../components/Header';
+import Navbar from '../components/Navbar';
 import ClockComponent from '../components/ClockComponent';
 import Footer from '../components/Footer';
 
@@ -78,7 +78,7 @@ const TemplateWrapper = ({ children, location, marketing, summit, favicons }) =>
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
       </Helmet>
       <a className="sr-only skip-to-content" href="#content-wrapper">Skip to content</a>
-      <Header location={location} />
+      <Navbar location={location} />
       <ClockComponent active={isFocus} summit={summit} />
       <main id="content-wrapper">{children}</main>
       <Footer marketing={marketing} />

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
+import { StaticQuery, graphql } from "gatsby"
 import LogoutButton from "./LogoutButton";
 import Link from "./Link";
 import ProfilePopupComponent from "./ProfilePopupComponent";
@@ -119,73 +120,94 @@ const Navbar = ({
   const navBarActiveClass = active ? styles.isActive : "";
 
   return (
-    <React.Fragment>
-      <header className={`${styles.navbar}`}>
-        <div className={styles.navbarBrand}>
-          <Link
-            to={isLoggedUser ? defaultPath : "/"}
-            className={styles.navbarItem}
-          >
-            {logo && <img src={logo} alt={summit.name} />}
-          </Link>
-
-          <button
-            className={`link ${styles.navbarBurger} ${styles.burger} ${navBarActiveClass}`}
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-            onClick={() => toggleHamburger()}
-          >
-            <span aria-hidden="true" />
-            <span aria-hidden="true" />
-            <span aria-hidden="true" />
-          </button>
-        </div>
-
-        <nav
-          id="navbarBasicExample"
-          className={`${styles.navbarMenu} ${navBarActiveClass}`}
-          aria-label="Main"
-        >
-          <div className={styles.navbarStart} />
-          <div className={styles.navbarEnd}>
-            {Content.items.filter(showItem).map((item, index) => (
-              <div className={styles.navbarItem} key={index}>
-                <Link to={item.link} className={styles.link}>
-                  <span>{item.title}</span>
-                </Link>
-              </div>
-            ))}
-            {isLoggedUser && (
-              <div className={styles.navbarItem}>
-                <button className="link" onClick={() => handleTogglePopup()}>
-                  <img
-                    alt="profile pic"
-                    className={styles.profilePic}
-                    src={idpProfile?.picture}
-                  />
-                </button>
-                {showProfile && (
-                  <ProfilePopupComponent
-                    userProfile={idpProfile}
-                    showProfile={showProfile}
-                    idpLoading={idpLoading}
-                    changePicture={updateProfilePicture}
-                    changeProfile={updateProfile}
-                    closePopup={() => handleTogglePopup()}
-                  />
+    <StaticQuery
+      query={graphql`
+          query HeaderQuery {
+            summit {
+              logo
+            }
+          }
+        `}
+      render={data => {
+        const logo = summit && summit.logo ?
+          summit.logo
+          :
+          data.summit && data.summit.logo ?
+            data.summit.logo
+            :
+            null;
+        return (
+          <header className={`${styles.navbar}`}>
+            <div className={styles.navbarBrand}>
+              <Link
+                to={isLoggedUser ? defaultPath : "/"}
+                className={styles.navbarItem}
+              >
+                {logo && <img src={logo} alt={summit.name} />}
+              </Link>
+    
+              <button
+                className={`link ${styles.navbarBurger} ${styles.burger} ${navBarActiveClass}`}
+                aria-label="menu"
+                aria-expanded="false"
+                data-target="navbarBasicExample"
+                onClick={() => toggleHamburger()}
+              >
+                <span aria-hidden="true" />
+                <span aria-hidden="true" />
+                <span aria-hidden="true" />
+              </button>
+            </div>
+    
+            <nav
+              id="navbarBasicExample"
+              className={`${styles.navbarMenu} ${navBarActiveClass}`}
+              aria-label="Main"
+            >
+              <div className={styles.navbarStart} />
+              <div className={styles.navbarEnd}>
+                {Content.items.filter(showItem).map((item, index) => (
+                  <div className={styles.navbarItem} key={index}>
+                    <Link to={item.link} className={styles.link}>
+                      <span>{item.title}</span>
+                    </Link>
+                  </div>
+                ))}
+                {isLoggedUser && (
+                  <div className={styles.navbarItem}>
+                    <button className="link" onClick={() => handleTogglePopup()}>
+                      <img
+                        alt="profile pic"
+                        className={styles.profilePic}
+                        src={idpProfile?.picture}
+                      />
+                    </button>
+                    {showProfile && (
+                      <ProfilePopupComponent
+                        userProfile={idpProfile}
+                        showProfile={showProfile}
+                        idpLoading={idpLoading}
+                        changePicture={updateProfilePicture}
+                        changeProfile={updateProfile}
+                        closePopup={() => handleTogglePopup()}
+                      />
+                    )}
+                  </div>
                 )}
+                <LogoutButton styles={styles} isLoggedUser={isLoggedUser} />
               </div>
-            )}
-            <LogoutButton styles={styles} isLoggedUser={isLoggedUser} />
-          </div>
-        </nav>
-      </header>
-    </React.Fragment>
+            </nav>
+          </header>
+        )
+      }}
+    />
   );
 };
 
-const mapStateToProps = ({ summitState, clockState }) => ({
+const mapStateToProps = ({ loggedUserState, summitState, userState, clockState }) => ({
+  isLoggedUser: loggedUserState.isLoggedUser,
+  idpProfile: userState.idpProfile,
+  idpLoading: userState.loadingIDP,
   summit: summitState.summit,
   summit_phase: clockState.summit_phase,
 });
