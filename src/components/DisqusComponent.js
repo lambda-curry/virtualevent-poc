@@ -1,5 +1,5 @@
-import React from 'react'
-import {connect} from "react-redux";
+import React from 'react';
+import { connect } from 'react-redux';
 import { DiscussionEmbed } from 'disqus-react';
 import { getEnvVariable, DISQUS_SHORTNAME } from '../utils/envVariables';
 
@@ -17,11 +17,11 @@ const DisqusComponent = class extends React.Component {
   }
 
   componentWillUnmount() {
-    window.removeEventListener("resize", this.onResize);
+    window.removeEventListener('resize', this.onResize);
   }
 
   componentDidMount() {
-    window.addEventListener("resize", this.onResize);
+    window.addEventListener('resize', this.onResize);
     if (window.innerWidth <= 768) {
       this.setState({ isMobile: true })
     } else {
