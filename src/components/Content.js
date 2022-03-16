@@ -12,7 +12,6 @@ export const HTMLContent = ({ content, className }) => {
       'break-around-tags': []
     }
     cleaner.clean(content, options, cleaned => {
-      console.log(cleaned)
       setCleanHTML(cleaned)
     })
   }, [content])
