@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from "react-redux";
 import { DiscussionEmbed } from 'disqus-react';
-
+import { getEnvVariable, DISQUS_SHORTNAME } from '../utils/envVariables';
 
 const DisqusComponent = class extends React.Component {
 
@@ -85,9 +85,9 @@ const DisqusComponent = class extends React.Component {
   getTitle() {
     const { summit, page, sponsor, event, disqusSettings } = this.props;
     let suffix = '';
-    let threadsBy = disqusSettings.disqus_threads_by ? disqusSettings.disqus_threads_by : disqusSettings.threads_by;
+    const threadsBy = disqusSettings.disqus_threads_by ? disqusSettings.disqus_threads_by : disqusSettings.threads_by;
     if (event) {
-      let trackExcludes = disqusSettings.disqus_exclude_tracks ? disqusSettings.disqus_exclude_tracks : [];
+      const trackExcludes = disqusSettings.disqus_exclude_tracks ? disqusSettings.disqus_exclude_tracks : [];
       if (event.track && event.track.id && (threadsBy === 'track' || trackExcludes.includes(event.track.id))) {
         suffix += ' - ';
         suffix += event.track.name;
@@ -133,7 +133,7 @@ const DisqusComponent = class extends React.Component {
       <div className={className ? className : style ? '' : page === 'marketing-site' ? 'disqus-container-marketing' : 'disqus-container'} style={style}>
         {title && <span className="navbar-brand title" style={{ paddingLeft: className !== 'disqus-container-home' ? '0px' : ''}}>{title}</span>}
         <DiscussionEmbed
-          shortname='fnvirtual-poc'
+          shortname={getEnvVariable(DISQUS_SHORTNAME)}
           config={disqusConfig}
         />
       </div>
