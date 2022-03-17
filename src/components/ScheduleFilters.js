@@ -7,7 +7,10 @@ import styles from "../styles/full-schedule.module.scss";
 
 const ScheduleFilters = ({ className, filters, ...rest }) => {
   const enabledFilters = pickBy(filters, (value) => value.enabled);
-
+  const { allEvents } = rest;
+  /* if we dont have events .. does not render , bc on first
+     render does the initial widget loading call to initialize */
+  if(!allEvents.length) return null;
   return (
     <>
       <Helmet>
