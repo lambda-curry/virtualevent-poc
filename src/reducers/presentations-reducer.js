@@ -91,7 +91,7 @@ const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, act
           ...filters,
           [filterType]: {
             ...filters[filterType],
-            values: values
+            values
           }
         },
         filteredPresentations: getFilteredVoteablePresentations(allPresentations, filters)
