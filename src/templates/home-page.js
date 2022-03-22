@@ -14,6 +14,7 @@ import DisqusComponent from '../components/DisqusComponent'
 import LiveEventWidgetComponent from '../components/LiveEventWidgetComponent'
 import SpeakersWidgetComponent from '../components/SpeakersWidgetComponent'
 import SponsorComponent from '../components/SponsorComponent'
+import Link from '../components/Link'
 import AccessTracker, {
   AttendeesWidget,
 } from "../components/AttendeeToAttendeeWidgetComponent"
@@ -35,10 +36,6 @@ export const HomePageTemplate = class extends React.Component {
 
   onEventChange(ev) {
     navigate(`/a/event/${ev.id}`);
-  }
-
-  onViewAllEventsClick() {
-    navigate('/a/schedule')
   }
 
   onViewAllMyEventsClick() {
@@ -75,8 +72,7 @@ export const HomePageTemplate = class extends React.Component {
               />
               <UpcomingEventsComponent
                 onEventClick={(ev) => this.onEventChange(ev)}
-                onViewAllEventsClick={() => this.onViewAllEventsClick()}
-                viewAll="/a/schedule"
+                allEventsLink={<Link to="/a/schedule">View all events</Link>}
                 title="Up Next"
                 eventCount={4}
                 />
