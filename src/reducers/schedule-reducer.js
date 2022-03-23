@@ -47,20 +47,22 @@ const scheduleReducer = (state = INITIAL_STATE, action) => {
             return {...state, allEvents: allFilteredEvents, filters: newFilters, colorSource: color_source.toLowerCase(), events, is_my_schedule, only_events_with_attendee_access};
         }
         case `SCHED_UPDATE_FILTER`: {
+           
             const { type : filterType, values } = payload;
             const { filters, allEvents } = state;
-
-            // update events
-            const events = getFilteredEvents(allEvents, filters, summitTimeZoneId);
+            // update the filters with new values
+            const newFilters = {
+            ...filters,
+                    [filterType]: {
+                ...filters[filterType],
+                        values
+                }
+            };
 
             return {...state,
-                filters: {
-                    ...filters,
-                    [filterType]: {
-                        ...filters[filterType],
-                        values
-                    }
-                }, events}
+                filters : newFilters ,
+                // refilter events
+                events: getFilteredEvents(allEvents, newFilters, summitTimeZoneId)}
         }
         case `SCHED_UPDATE_FILTERS`: {
             const {filters, view} = payload;

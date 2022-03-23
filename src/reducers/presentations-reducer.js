@@ -85,16 +85,20 @@ const voteablePresentations = (state = DEFAULT_VOTEABLE_PRESENTATIONS_STATE, act
     case VOTEABLE_PRESENTATIONS_UPDATE_FILTER: {
       const { type: filterType, values } = payload;
       const { filters, allPresentations } = state;
+      // update filters with new values
+      const newFilters =  {
+        ...filters,
+        [filterType]: {
+          ...filters[filterType],
+          values
+        }
+      };
+      
       return {
-        ...state,
-        filters: {
-          ...filters,
-          [filterType]: {
-            ...filters[filterType],
-            values
-          }
-        },
-        filteredPresentations: getFilteredVoteablePresentations(allPresentations, filters)
+        ...state ,
+        filters : newFilters ,
+        // refilter events
+        filteredPresentations : getFilteredVoteablePresentations(allPresentations, newFilters)
       };
     }
     case GET_PRESENTATION_DETAILS: {
