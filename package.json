@@ -18,6 +18,7 @@
     "browser-tabs-lock": "^1.2.11",
     "bulma": "^0.9.0",
     "canvas": "^2.6.1",
+    "clean-html": "^1.5.0",
     "codemirror": "^5.55.0",
     "core-js": "^2.6.11",
     "cross-env": "^7.0.3",
