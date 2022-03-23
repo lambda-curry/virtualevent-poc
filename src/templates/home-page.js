@@ -72,7 +72,7 @@ export const HomePageTemplate = class extends React.Component {
               />
               <UpcomingEventsComponent
                 onEventClick={(ev) => this.onEventChange(ev)}
-                allEventsLink={<Link to="/a/schedule">View all events</Link>}
+                allEventsLink={<Link to="/a/schedule">View all <span className="sr-only">events</span></Link>}
                 title="Up Next"
                 eventCount={4}
                 />
