@@ -1,8 +1,8 @@
 {
   "heroBanner": {
     "title": "Osso Winter Games",
-    "subTitle": "Park City, Utah",
-    "date": "April 11-14 2022",
+    "subTitle": "St. Regis Deer Valley",
+    "date": "April 11-14, 2022",
     "time": "",
     "dateLayout": false,
     "buttons": {
@@ -80,6 +80,6 @@
   ],
   "countdown": {
     "display": true,
-    "text": "COUNTDOWN TO EVENT"
+    "text": "EVENT COUNTDOWN"
   }
 }
