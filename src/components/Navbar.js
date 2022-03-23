@@ -20,7 +20,6 @@ const PAGE_RESTRICTION_CUSTOM_PAGE = 'CUSTOM_PAGE';
 const Navbar = ({
   isLoggedUser,
   idpProfile,
-  logo,
   idpLoading,
   summit,
   updateProfilePicture,
