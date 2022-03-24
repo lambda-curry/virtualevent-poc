@@ -92,7 +92,23 @@ module.exports = {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
-        enableIdentityWidget: false
+        enableIdentityWidget: false,
+
+        /**
+         * Fixes Module not found: Error: Can't resolve 'path' bug
+         * @see https://github.com/postcss/postcss/issues/1509#issuecomment-772097567
+         * @see https://github.com/gatsbyjs/gatsby/issues/31475
+         * @see https://github.com/gatsbyjs/gatsby/issues/31179#issuecomment-844588682
+         */
+        customizeWebpackConfig: (config) => {
+          config.resolve = {
+            ...config.resolve,
+            fallback: {
+              ...config.resolve.fallback,
+              path: require.resolve("path-browserify")
+            }
+          };
+        }
       },
     },
     // {
