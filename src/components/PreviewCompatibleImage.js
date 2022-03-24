@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Img from 'gatsby-image'
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const PreviewCompatibleImage = ({ imageInfo }) => {
   const imageStyle = { borderRadius: '5px' }
@@ -8,7 +8,11 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
 
   if (!!image && !!image.childImageSharp) {
     return (
-      <Img style={imageStyle} fluid={image.childImageSharp.fluid} alt={alt} />
+      /**
+       * See the migration guide for the `gatsby-plugin-image` plugin.
+       * @see https://www.gatsbyjs.com/docs/reference/release-notes/image-migration-guide/#component-changes
+       * */
+      <GatsbyImage style={imageStyle} image={image.childImageSharp.gatsbyImageData} alt={alt} />
     )
   }
 

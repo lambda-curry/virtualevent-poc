@@ -3,10 +3,10 @@ import { Router } from "@reach/router"
 import { connect } from 'react-redux'
 
 import { onUserAuth, doLogout, getUserInfo } from "openstack-uicore-foundation/lib/methods";
-import TokenExpirePage from "../templates/token-expire-page"
+import TokenExpirePage from "../../templates/token-expire-page"
 
-import AuthorizationCallbackRoute from "../routes/authorization-callback-route"
-import LogOutCallbackRoute from "../routes/logout-callback-route"
+import AuthorizationCallbackRoute from "../../routes/authorization-callback-route"
+import LogOutCallbackRoute from "../../routes/logout-callback-route"
 
 const Auth = class extends React.Component {
 

@@ -5,7 +5,22 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
+    {
+      /**
+       * Gatsby v4 uses ES Modules for importing cssModules by default.
+       * Disabling this to avoid needing to update in all files.
+       * @see https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v2-to-v3/#css-modules-are-imported-as-es-modules
+       */
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        cssLoaderOptions: {
+          esModule: false,
+          modules: {
+            namedExport: false,
+          },
+        },
+      },
+    },
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
@@ -53,6 +68,7 @@ module.exports = {
             resolve: 'gatsby-remark-relative-images',
             options: {
               name: 'uploads',
+              staticFolderName: 'static',
             },
           },
           {
@@ -64,10 +80,14 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-create-client-paths`,
-      options: { prefixes: [`/auth/*`, `/a/*`] },
-    },
+    /**
+     * This plugin has been deprecated.
+     * @see https://www.gatsbyjs.com/plugins/gatsby-plugin-create-client-paths/
+     */
+    // {
+    //   resolve: `gatsby-plugin-create-client-paths`,
+    //   options: { prefixes: [`/auth/*`, `/a/*`] },
+    // },
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {

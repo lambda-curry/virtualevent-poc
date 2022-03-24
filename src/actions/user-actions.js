@@ -14,36 +14,36 @@ import {
 
 import Swal from 'sweetalert2';
 import axios from "axios";
-import { navigate } from 'gatsby-link';
+import { navigate } from 'gatsby';
 import { customErrorHandler, customBadgeHandler } from '../utils/customErrorHandler';
-import {getEnvVariable, SUMMIT_API_BASE_URL, SUMMIT_ID} from "../utils/envVariables";
+import { getEnvVariable, SUMMIT_API_BASE_URL, SUMMIT_ID } from "../utils/envVariables";
 
-export const GET_DISQUS_SSO                    = 'GET_DISQUS_SSO';
-export const GET_ROCKETCHAT_SSO                = 'GET_ROCKETCHAT_SSO';
-export const GET_USER_PROFILE                  = 'GET_USER_PROFILE';
-export const START_LOADING_PROFILE             = 'START_LOADING_PROFILE';
-export const STOP_LOADING_PROFILE              = 'STOP_LOADING_PROFILE';
-export const UPDATE_PASSWORD                   = 'UPDATE_PASSWORD';
-export const SET_AUTHORIZED_USER               = 'SET_AUTHORIZED_USER';
-export const SET_USER_TICKET                   = 'SET_USER_TICKET';
-export const UPDATE_PROFILE_PIC                = 'UPDATE_PROFILE_PIC';
-export const UPDATE_EXTRA_QUESTIONS            = 'UPDATE_EXTRA_QUESTIONS';
-export const START_LOADING_IDP_PROFILE         = 'START_LOADING_IDP_PROFILE';
-export const STOP_LOADING_IDP_PROFILE          = 'STOP_LOADING_IDP_PROFILE';
-export const GET_IDP_PROFILE                   = 'GET_IDP_PROFILE';
-export const UPDATE_IDP_PROFILE                = 'UPDATE_IDP_PROFILE';
-export const SCAN_BADGE                        = 'SCAN_BADGE';
-export const SCAN_BADGE_SUCCESS                = 'SCAN_BADGE_SUCCESS';
-export const SCAN_BADGE_ERROR                  = 'SCAN_BADGE_ERROR';
-export const ADD_TO_SCHEDULE                   = 'ADD_TO_SCHEDULE';
-export const REMOVE_FROM_SCHEDULE              = 'REMOVE_FROM_SCHEDULE';
-export const SCHEDULE_SYNC_LINK_RECEIVED       = 'SCHEDULE_SYNC_LINK_RECEIVED';
-export const SET_USER_ORDER                    = 'SET_USER_ORDER';
-export const CAST_PRESENTATION_VOTE_REQUEST   = 'CAST_PRESENTATION_VOTE_REQUEST';
-export const CAST_PRESENTATION_VOTE_RESPONSE   = 'CAST_PRESENTATION_VOTE_RESPONSE';
+export const GET_DISQUS_SSO = 'GET_DISQUS_SSO';
+export const GET_ROCKETCHAT_SSO = 'GET_ROCKETCHAT_SSO';
+export const GET_USER_PROFILE = 'GET_USER_PROFILE';
+export const START_LOADING_PROFILE = 'START_LOADING_PROFILE';
+export const STOP_LOADING_PROFILE = 'STOP_LOADING_PROFILE';
+export const UPDATE_PASSWORD = 'UPDATE_PASSWORD';
+export const SET_AUTHORIZED_USER = 'SET_AUTHORIZED_USER';
+export const SET_USER_TICKET = 'SET_USER_TICKET';
+export const UPDATE_PROFILE_PIC = 'UPDATE_PROFILE_PIC';
+export const UPDATE_EXTRA_QUESTIONS = 'UPDATE_EXTRA_QUESTIONS';
+export const START_LOADING_IDP_PROFILE = 'START_LOADING_IDP_PROFILE';
+export const STOP_LOADING_IDP_PROFILE = 'STOP_LOADING_IDP_PROFILE';
+export const GET_IDP_PROFILE = 'GET_IDP_PROFILE';
+export const UPDATE_IDP_PROFILE = 'UPDATE_IDP_PROFILE';
+export const SCAN_BADGE = 'SCAN_BADGE';
+export const SCAN_BADGE_SUCCESS = 'SCAN_BADGE_SUCCESS';
+export const SCAN_BADGE_ERROR = 'SCAN_BADGE_ERROR';
+export const ADD_TO_SCHEDULE = 'ADD_TO_SCHEDULE';
+export const REMOVE_FROM_SCHEDULE = 'REMOVE_FROM_SCHEDULE';
+export const SCHEDULE_SYNC_LINK_RECEIVED = 'SCHEDULE_SYNC_LINK_RECEIVED';
+export const SET_USER_ORDER = 'SET_USER_ORDER';
+export const CAST_PRESENTATION_VOTE_REQUEST = 'CAST_PRESENTATION_VOTE_REQUEST';
+export const CAST_PRESENTATION_VOTE_RESPONSE = 'CAST_PRESENTATION_VOTE_RESPONSE';
 export const UNCAST_PRESENTATION_VOTE_REQUEST = 'UNCAST_PRESENTATION_VOTE_REQUEST';
 export const UNCAST_PRESENTATION_VOTE_RESPONSE = 'UNCAST_PRESENTATION_VOTE_RESPONSE';
-export const TOGGLE_PRESENTATION_VOTE          = 'TOGGLE_PRESENTATION_VOTE';
+export const TOGGLE_PRESENTATION_VOTE = 'TOGGLE_PRESENTATION_VOTE';
 
 export const getDisqusSSO = () => async (dispatch) => {
 
@@ -121,10 +121,10 @@ export const getUserProfile = () => async (dispatch) => {
       return dispatch(getScheduleSyncLink()).then(() => dispatch(createAction(STOP_LOADING_PROFILE)()))
     });
   }).catch((e) => {
-      console.log('ERROR: ', e);
-      dispatch(createAction(STOP_LOADING_PROFILE)());
-      clearAccessToken();
-      return (e);
+    console.log('ERROR: ', e);
+    dispatch(createAction(STOP_LOADING_PROFILE)());
+    clearAccessToken();
+    return (e);
   });
 }
 
@@ -147,28 +147,28 @@ export const getIDPProfile = () => async (dispatch) => {
   };
 
   return getRequest(
-      null,
-      createAction(GET_IDP_PROFILE),
-      `${window.IDP_BASE_URL}/api/v1/users/me`,
-      customErrorHandler
+    null,
+    createAction(GET_IDP_PROFILE),
+    `${window.IDP_BASE_URL}/api/v1/users/me`,
+    customErrorHandler
   )(params)(dispatch)
-      .then(() => dispatch(createAction(STOP_LOADING_IDP_PROFILE)()))
-      .catch((e) => {
-        console.log('ERROR: ', e);
-        dispatch(createAction(STOP_LOADING_IDP_PROFILE)())
-        clearAccessToken();
-        return (e);
-      });
+    .then(() => dispatch(createAction(STOP_LOADING_IDP_PROFILE)()))
+    .catch((e) => {
+      console.log('ERROR: ', e);
+      dispatch(createAction(STOP_LOADING_IDP_PROFILE)())
+      clearAccessToken();
+      return (e);
+    });
 }
 
 export const requireExtraQuestions = () => (dispatch, getState) => {
 
-  const { summitState : { summit }} = getState();
+  const { summitState: { summit } } = getState();
   const { userState: { userProfile } } = getState();
 
   const owner = userProfile?.summit_tickets[0]?.owner || null;
   // if user does not have an attendee then we dont require extra questions
-  if(!owner) return false;
+  if (!owner) return false;
   if (!owner.first_name || !owner.last_name || !owner.company || !owner.email) return true;
   const disclaimer = summit.registration_disclaimer_mandatory ? owner.disclaimer_accepted : true;
   if (!disclaimer) return true;
@@ -235,7 +235,7 @@ export const addToSchedule = (event) => async (dispatch, getState) => {
   const url = `${getEnvVariable(SUMMIT_API_BASE_URL)}/api/v1/summits/${getEnvVariable(SUMMIT_ID)}/members/me/schedule/${event.id}`;
 
   return axios.post(
-      url, { access_token: accessToken }
+    url, { access_token: accessToken }
   ).then(() => {
     dispatch(createAction(ADD_TO_SCHEDULE)(event));
     return event;
@@ -259,7 +259,7 @@ export const removeFromSchedule = (event) => async (dispatch, getState) => {
   const url = `${getEnvVariable(SUMMIT_API_BASE_URL)}/api/v1/summits/${getEnvVariable(SUMMIT_ID)}/members/me/schedule/${event.id}`;
 
   return axios.delete(
-      url, { data: { access_token: accessToken } }
+    url, { data: { access_token: accessToken } }
   ).then(() => {
     dispatch(createAction(REMOVE_FROM_SCHEDULE)(event));
     return event;
@@ -292,9 +292,9 @@ export const castPresentationVote = (presentation) => async (dispatch, getState)
         // 'confirm' as local vote
         dispatch(createAction(TOGGLE_PRESENTATION_VOTE)({ presentation, isVoted: true }));
       } else if (text.includes('Max. allowed votes') ||
-                 text.includes('Member is not an attendee') ||
-                 // Voting Period for track group is closed
-                 text.includes('is closed')) {
+        text.includes('Member is not an attendee') ||
+        // Voting Period for track group is closed
+        text.includes('is closed')) {
         // need to revert button state
         // first 'confirm' as local vote
         dispatch(createAction(TOGGLE_PRESENTATION_VOTE)({ presentation, isVoted: true }));
@@ -520,9 +520,9 @@ export const saveExtraQuestions = (extra_questions, owner, disclaimer) => async 
   });
 };
 
-export const setPasswordlessLogin = (params) => (dispatch, getState) => {  
+export const setPasswordlessLogin = (params) => (dispatch, getState) => {
   return dispatch(passwordlessLogin(params))
-    .then((res) => {      
+    .then((res) => {
       dispatch(getUserProfile());
     }, (err) => {
       return Promise.resolve(err)
@@ -545,11 +545,11 @@ export const getScheduleSyncLink = () => async (dispatch) => {
   };
 
   return postRequest(
-      null,
-      createAction(SCHEDULE_SYNC_LINK_RECEIVED),
-      `${window.SUMMIT_API_BASE_URL}/api/v1/summits/${window.SUMMIT_ID}/members/me/schedule/shareable-link`,
-      null,
-      customErrorHandler,
+    null,
+    createAction(SCHEDULE_SYNC_LINK_RECEIVED),
+    `${window.SUMMIT_API_BASE_URL}/api/v1/summits/${window.SUMMIT_ID}/members/me/schedule/shareable-link`,
+    null,
+    customErrorHandler,
   )(params)(dispatch).catch((e) => {
     console.log('ERROR: ', e);
     clearAccessToken();
@@ -567,12 +567,12 @@ export const checkOrderData = (order) => (dispatch, getState) => {
   const { owner_company, owner_first_name, owner_last_name } = order;
 
   if (owner_company !== company || owner_first_name !== given_name || owner_last_name !== family_name) {
-      const newProfile = {
-          first_name: owner_first_name,
-          last_name: owner_last_name,
-          company: owner_company
-      };
-      dispatch(updateProfile(newProfile));
+    const newProfile = {
+      first_name: owner_first_name,
+      last_name: owner_last_name,
+      company: owner_company
+    };
+    dispatch(updateProfile(newProfile));
   }
 }
 
@@ -581,7 +581,7 @@ export const checkOrderData = (order) => (dispatch, getState) => {
  * @param attendee
  * @returns {function(*=, *): *}
  */
-export const doVirtualCheckIn = (attendee) =>  async (dispatch, getState) => {
+export const doVirtualCheckIn = (attendee) => async (dispatch, getState) => {
 
   let accessToken;
   try {
@@ -597,11 +597,11 @@ export const doVirtualCheckIn = (attendee) =>  async (dispatch, getState) => {
   };
 
   return putRequest(
-      null,
-      createAction(UPDATE_EXTRA_QUESTIONS),
-      `${window.API_BASE_URL}/api/v1/summits/${attendee.summit_id}/attendees/${attendee.id}/virtual-check-in`,
-      {},
-      customErrorHandler
+    null,
+    createAction(UPDATE_EXTRA_QUESTIONS),
+    `${window.API_BASE_URL}/api/v1/summits/${attendee.summit_id}/attendees/${attendee.id}/virtual-check-in`,
+    {},
+    customErrorHandler
   )(params)(dispatch).catch((e) => {
     console.log('ERROR: ', e);
     clearAccessToken();
