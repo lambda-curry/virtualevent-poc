@@ -5,7 +5,7 @@
  * @see https://github.com/vercel/next.js/discussions/15687#discussioncomment-45319
  */
 
-import createWebStorage from "redux-persist/lib/storage/createWebStorage";
+import createWebStorage from 'redux-persist/lib/storage/createWebStorage';
 
 const createNoopStorage = () => {
   return {
@@ -21,6 +21,6 @@ const createNoopStorage = () => {
   };
 };
 
-const storage = typeof window !== "undefined" ? createWebStorage("local") : createNoopStorage();
+const storage = typeof window !== 'undefined' ? createWebStorage('local') : createNoopStorage();
 
 export default storage;
