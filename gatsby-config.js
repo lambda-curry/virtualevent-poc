@@ -68,7 +68,6 @@ module.exports = {
             resolve: 'gatsby-remark-relative-images',
             options: {
               name: 'uploads',
-              staticFolderName: 'static',
             },
           },
           {
