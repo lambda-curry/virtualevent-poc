@@ -15,7 +15,7 @@ import { connect } from 'react-redux';
 import { navigate } from "gatsby"
 import URI from "urijs"
 
-import { doLogout, initLogOut } from 'openstack-uicore-foundation/lib/methods'
+import { doLogout, initLogOut } from 'openstack-uicore-foundation/lib/security/methods'
 
 export class LogOutCallbackRoute extends React.Component {
 

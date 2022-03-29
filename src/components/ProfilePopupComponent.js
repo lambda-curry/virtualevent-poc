@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
 import AvatarEditor from 'react-avatar-editor'
-import { AjaxLoader } from "openstack-uicore-foundation/lib/components";
+import AjaxLoader from "openstack-uicore-foundation/lib/components/ajaxloader";
 import { create_UUID } from '../utils/uuidGenerator'
 import Link from "./Link";
 

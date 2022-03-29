@@ -1,7 +1,7 @@
 import React from 'react'
 import URI from "urijs"
 
-import { doLogin } from 'openstack-uicore-foundation/lib/methods'
+import { doLogin } from 'openstack-uicore-foundation/lib/security/methods'
 
 import { getEnvVariable, AUTHORIZED_DEFAULT_PATH } from '../utils/envVariables'
 

@@ -1,6 +1,6 @@
 import React from "react"
 import HeroComponent from './HeroComponent'
-import { epochToMomentTimeZone } from "openstack-uicore-foundation/lib/methods";
+import { epochToMomentTimeZone } from "openstack-uicore-foundation/lib/utils/methods";
 import { PHASES } from '../utils/phasesUtils';
 
 const NoTalkComponent = ({ event, currentEventPhase, summit }) => {

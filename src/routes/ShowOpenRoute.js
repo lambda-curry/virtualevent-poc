@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { PHASES } from "../utils/phasesUtils";
 import { requireExtraQuestions, doVirtualCheckIn } from "../actions/user-actions";
 import HeroComponent from "../components/HeroComponent";
-import { FragmentParser } from "openstack-uicore-foundation/lib/components";
+import  FragmentParser from "openstack-uicore-foundation/lib/utils/fragment-parser";
 import moment from "moment-timezone";
 
 /**

@@ -1,6 +1,6 @@
 import summit from '../content/summit.json';
 
-import { START_LOADING, STOP_LOADING, LOGOUT_USER } from "openstack-uicore-foundation/lib/actions";
+import { START_LOADING, STOP_LOADING, LOGOUT_USER } from "openstack-uicore-foundation/lib/utils/actions";
 import {RESET_STATE, GET_THIRD_PARTY_PROVIDERS, SYNC_DATA} from "../actions/base-actions";
 
 const DEFAULT_STATE = {

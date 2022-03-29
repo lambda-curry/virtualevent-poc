@@ -1,4 +1,4 @@
-import { createAction } from 'openstack-uicore-foundation/lib/methods';
+import { createAction } from 'openstack-uicore-foundation/lib/utils/actions';
 
 import { PHASES, getSummitPhase, getEventPhase } from '../utils/phasesUtils';
 

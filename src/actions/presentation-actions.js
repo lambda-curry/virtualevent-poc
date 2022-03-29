@@ -1,11 +1,14 @@
 import {
-  getAccessToken,
   getRequest,
   createAction,
   stopLoading,
   startLoading,
+} from 'openstack-uicore-foundation/lib/utils/actions';
+
+import {
+  getAccessToken,
   clearAccessToken,
-} from 'openstack-uicore-foundation/lib/methods';
+} from 'openstack-uicore-foundation/lib/security/methods';
 
 import { customErrorHandler } from '../utils/customErrorHandler';
 

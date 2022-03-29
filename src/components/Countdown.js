@@ -14,7 +14,7 @@
 import React from 'react';
 import { connect } from "react-redux";
 import moment from "moment-timezone";
-import { epochToMomentTimeZone } from "openstack-uicore-foundation/lib/methods";
+import { epochToMomentTimeZone } from "openstack-uicore-foundation/lib/utils/methods";
 
 import styles from '../styles/countdown.module.scss'
 

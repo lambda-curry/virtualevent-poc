@@ -1,5 +1,5 @@
-import { createAction } from "openstack-uicore-foundation/lib/methods";
-import { FragmentParser } from "openstack-uicore-foundation/lib/components";
+import { createAction } from "openstack-uicore-foundation/lib/utils/actions";
+import FragmentParser from "openstack-uicore-foundation/lib/utils/fragment-parser";
 
 import { pickBy, isEqual, isEmpty } from "lodash";
 
