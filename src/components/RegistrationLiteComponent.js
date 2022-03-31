@@ -2,23 +2,15 @@ import React, { useEffect, useState } from "react"
 import { navigate } from "gatsby"
 import { connect } from "react-redux";
 import URI from "urijs"
-
-import {
-    getAccessToken
-} from 'openstack-uicore-foundation/lib/methods';
-
 // these two libraries are client-side only
-import RegistrationLiteWidget from 'summit-registration-lite/dist';
-
-import { FragmentParser } from "openstack-uicore-foundation/lib/components";
-
-import { doLogin, passwordlessStart } from 'openstack-uicore-foundation/lib/methods'
+//import RegistrationLiteWidget from 'summit-registration-lite/dist';
+import FragmentParser from "openstack-uicore-foundation/lib/utils/fragment-parser";
+import { doLogin, passwordlessStart, getAccessToken } from 'openstack-uicore-foundation/lib/security/methods'
 import { getEnvVariable, SUMMIT_API_BASE_URL, OAUTH2_CLIENT_ID, REGISTRATION_BASE_URL } from '../utils/envVariables'
-
 import { getUserProfile, setPasswordlessLogin, setUserOrder, checkOrderData } from "../actions/user-actions";
 import { getThirdPartyProviders } from "../actions/base-actions";
 
-import 'summit-registration-lite/dist/index.css';
+//import 'summit-registration-lite/dist/index.css';
 import styles from '../styles/lobby-hero.module.scss'
 
 const RegistrationLiteComponent = ({
@@ -139,7 +131,6 @@ const RegistrationLiteComponent = ({
                 </button>
             }
             <div>
-                {isActive && !summit.invite_only_registration && <RegistrationLiteWidget {...widgetProps} />}
             </div>
         </>
     )

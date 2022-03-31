@@ -16,11 +16,9 @@ import URI from "urijs"
 import { navigate } from "gatsby"
 import { Redirect } from '@reach/router'
 import { connect } from 'react-redux';
-import { AbstractAuthorizationCallbackRoute } from "openstack-uicore-foundation/lib/components";
+import AbstractAuthorizationCallbackRoute from "openstack-uicore-foundation/lib/security/abstract-auth-callback-route";
 import { getUserProfile } from '../actions/user-actions'
-
 import HeroComponent from "../components/HeroComponent";
-
 import { getEnvVariable, IDP_BASE_URL, OAUTH2_CLIENT_ID } from '../utils/envVariables'
 
 class AuthorizationCallbackRoute extends AbstractAuthorizationCallbackRoute {

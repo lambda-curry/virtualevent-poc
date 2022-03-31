@@ -1,5 +1,5 @@
 import React from "react"
-import { epochToMomentTimeZone } from "openstack-uicore-foundation/lib/methods";
+import { epochToMomentTimeZone } from "openstack-uicore-foundation/lib/utils/methods";
 
 const TalkComponent = class extends React.Component {
 

@@ -3,8 +3,6 @@ import {Helmet} from 'react-helmet'
 import {connect} from "react-redux";
 
 // these two libraries are client-side only
-import LiteSchedule from 'lite-schedule-widget/dist';
-import 'lite-schedule-widget/dist/index.css';
 
 import {addToSchedule, removeFromSchedule} from '../actions/user-actions';
 
@@ -50,7 +48,7 @@ const LiteScheduleComponent = ({
                       href="https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/1.0.2/awesome-bootstrap-checkbox.min.css"/>
             </Helmet>
             <div className={className || wrapperClass}>
-                <LiteSchedule {...componentProps} {...rest} />
+
             </div>
         </>
     )

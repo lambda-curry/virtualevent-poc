@@ -1,5 +1,5 @@
 import moment from "moment-timezone";
-import { epochToMomentTimeZone } from "openstack-uicore-foundation/lib/methods";
+import { epochToMomentTimeZone } from "openstack-uicore-foundation/lib/utils/methods";
 import { isString } from "lodash";
 import { getEnvVariable, SCHEDULE_EXCLUDING_TAGS } from "./envVariables";
 import {getUserAccessLevelIds, isAuthorizedUser} from './authorizedGroups';

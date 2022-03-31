@@ -2,7 +2,10 @@ import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { navigate } from 'gatsby'
 import { connect } from 'react-redux'
-import { AjaxLoader, CountryInput, LanguageInput, DateTimePicker } from 'openstack-uicore-foundation/lib/components'
+import AjaxLoader from 'openstack-uicore-foundation/lib/components/ajaxloader'
+import CountryInput from 'openstack-uicore-foundation/lib/components/inputs/country-input'
+import LanguageInput from 'openstack-uicore-foundation/lib/components/inputs/language-input'
+import DateTimePicker from 'openstack-uicore-foundation/lib/components/inputs/datetimepicker'
 import moment from "moment-timezone";
 
 import Swal from 'sweetalert2';

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { connect } from "react-redux";
-import { FragmentParser } from "openstack-uicore-foundation/lib/components";
-import { getAccessToken } from "openstack-uicore-foundation/lib/methods";
+import FragmentParser from "openstack-uicore-foundation/lib/utils/fragment-parser";
+import { getAccessToken } from "openstack-uicore-foundation/lib/security/methods";
 import {
   AttendeeToAttendeeContainer,
   permissions,

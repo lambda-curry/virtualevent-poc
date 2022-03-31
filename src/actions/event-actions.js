@@ -1,15 +1,18 @@
 import {
-    getAccessToken,
     getRequest,
     createAction,
     stopLoading,
     startLoading,
+} from 'openstack-uicore-foundation/lib/utils/actions';
+
+import {
+    getAccessToken,
     clearAccessToken,
-} from 'openstack-uicore-foundation/lib/methods';
+} from 'openstack-uicore-foundation/lib/security/methods';
 
 import {customErrorHandler} from '../utils/customErrorHandler';
 
-import {LOGOUT_USER} from "openstack-uicore-foundation/lib/actions";
+import {LOGOUT_USER} from "openstack-uicore-foundation/lib/utils/actions";
 
 export const GET_EVENT_DATA = 'GET_EVENT_DATA';
 export const GET_EVENT_DATA_ERROR = 'GET_EVENT_DATA_ERROR';

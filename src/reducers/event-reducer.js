@@ -1,4 +1,4 @@
-import { START_LOADING, STOP_LOADING, LOGOUT_USER } from "openstack-uicore-foundation/lib/actions";
+import { START_LOADING, STOP_LOADING, LOGOUT_USER } from "openstack-uicore-foundation/lib/utils/actions";
 import { GET_EVENT_DATA, GET_EVENT_DATA_ERROR } from '../actions/event-actions'
 import {RESET_STATE, SYNC_DATA} from "../actions/base-actions";
 

@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 
 import URI from "urijs";
 import { handleResetReducers } from '../actions/event-actions'
-import { doLogin } from 'openstack-uicore-foundation/lib/methods'
+import { doLogin } from 'openstack-uicore-foundation/lib/security/methods'
 
 import { getEnvVariable, AUTHORIZED_DEFAULT_PATH } from '../utils/envVariables'
 

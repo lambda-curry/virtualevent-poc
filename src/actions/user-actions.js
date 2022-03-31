@@ -1,5 +1,4 @@
 import {
-  getAccessToken,
   getRequest,
   postRequest,
   putRequest,
@@ -8,9 +7,13 @@ import {
   createAction,
   startLoading,
   stopLoading,
-  passwordlessLogin,
+} from 'openstack-uicore-foundation/lib/utils/actions';
+
+import {
+  getAccessToken,
   clearAccessToken,
-} from 'openstack-uicore-foundation/lib/methods';
+  passwordlessLogin
+} from 'openstack-uicore-foundation/lib/security/methods';
 
 import Swal from 'sweetalert2';
 import axios from "axios";

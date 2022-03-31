@@ -1,6 +1,6 @@
 import storage from './reduxPersistStorage';
 import { persistCombineReducers, persistStore } from "redux-persist";
-import { loggedUserReducer } from "openstack-uicore-foundation/lib/reducers";
+import { loggedUserReducer } from "openstack-uicore-foundation/lib/security/reducers";
 import eventReducer from "../reducers/event-reducer";
 import presentationsReducer from "../reducers/presentations-reducer";
 import summitReducer from "../reducers/summit-reducer";

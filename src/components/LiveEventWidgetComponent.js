@@ -3,8 +3,6 @@ import {connect} from "react-redux";
 import { Helmet } from 'react-helmet'
 
 // these two libraries are client-side only
-import LiveEventWidget from 'live-event-widget/dist/index.js';
-import 'live-event-widget/dist/index.css';
 
 const LiveEventWidgetComponent = ({allEvents, summit, colorSettings, homeSettings, className = 'live-event-container', ...rest}) => {
 
@@ -23,7 +21,7 @@ const LiveEventWidgetComponent = ({allEvents, summit, colorSettings, homeSetting
                 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/1.0.2/awesome-bootstrap-checkbox.min.css" />
             </Helmet>
             <div className={className}>
-                <LiveEventWidget {...widgetProps} />
+
             </div>
         </>
     )

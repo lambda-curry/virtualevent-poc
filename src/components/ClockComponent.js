@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Clock } from 'openstack-uicore-foundation/lib/components';
+import Clock from 'openstack-uicore-foundation/lib/components/clock';
 import { updateClock } from '../actions/clock-actions';
 
 const ClockComponent = ({
