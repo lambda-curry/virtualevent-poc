@@ -1,22 +1,21 @@
-import React, {useEffect} from "react"
-import { Router, Location } from "@reach/router"
-import { connect } from 'react-redux'
+import React, {useEffect} from 'react';
+import { Router, Location } from '@reach/router';
+import { connect } from 'react-redux';
 import { syncData } from '../actions/base-actions';
 import settings from '../content/settings';
 
-import HomePage from "../templates/home-page"
-import EventPage from "../templates/event-page"
-import PostersPage from "../templates/posters-page";
-import SchedulePage from "../templates/schedule-page";
-import SponsorPage from "../templates/sponsor-page"
-import ExpoHallPage from "../templates/expo-hall-page"
-import FullProfilePage from "../templates/full-profile-page"
-import WithAuthRoute from '../routes/WithAuthRoute'
-import withSessionChecker from "../utils/withSessionChecker"
-import ExtraQuestionsPage from "../templates/extra-questions-page"
-import ShowOpenRoute from "../routes/ShowOpenRoute";
-import WithBadgeRoute from "../routes/WithBadgeRoute";
-import PosterDetailPage from "../templates/poster-detail-page";
+import HomePage from '../templates/home-page';
+import EventPage from '../templates/event-page';
+import PostersPage from '../templates/posters-page';
+import SchedulePage from '../templates/schedule-page';
+import SponsorPage from '../templates/sponsor-page';
+import ExpoHallPage from '../templates/expo-hall-page';
+import FullProfilePage from '../templates/full-profile-page';
+import WithAuthRoute from '../routes/WithAuthRoute';
+import ExtraQuestionsPage from '../templates/extra-questions-page';
+import ShowOpenRoute from '../routes/ShowOpenRoute';
+import WithBadgeRoute from '../routes/WithBadgeRoute';
+import PosterDetailPage from '../templates/poster-detail-page';
 
 const App = ({ isLoggedUser, user, summit_phase, lastBuild, syncData }) => {
 
@@ -60,4 +59,4 @@ const mapStateToProps = ({ loggedUserState, userState, clockState, settingState 
   lastBuild: settingState.lastBuild
 });
 
-export default connect(mapStateToProps, { syncData })(withSessionChecker(App))
+export default connect(mapStateToProps, { syncData })(App)

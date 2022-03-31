@@ -41,6 +41,8 @@
 
       .link {
         color: $color_text_light;
+        padding: 6px;
+        margin: -6px;
 
         &:hover {
           color: $color_text_light;
