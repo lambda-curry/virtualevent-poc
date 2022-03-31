@@ -1,9 +1,25 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
+import cleaner from 'clean-html'
 
-export const HTMLContent = ({ content, className }) => (
-  <div className={className} dangerouslySetInnerHTML={{ __html: content }} />
-)
+export const HTMLContent = ({ content, className }) => {
+  const [cleanHTML, setCleanHTML] = useState(content);
+  
+  useEffect(() => {
+    const options = {
+      'remove-empty-tags': ['a', 'p'],
+      'indent': '',
+      'break-around-tags': []
+    }
+    cleaner.clean(content, options, cleaned => {
+      setCleanHTML(cleaned)
+    })
+  }, [content])
+  
+  return (
+    <div className={className} dangerouslySetInnerHTML={{ __html: cleanHTML }} />
+  )
+}
 
 const Content = ({ content, className }) => (
   <div className={className}>{content}</div>

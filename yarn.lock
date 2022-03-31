@@ -5032,6 +5032,14 @@ clean-css@^5.2.2:
   dependencies:
     source-map "~0.6.0"
 
+clean-html@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/clean-html/-/clean-html-1.5.0.tgz#7ae4e0c000e31ed9c8bb2903b98840eef1778e31"
+  integrity sha512-eDu0vN44ZBvoEU0oRIKwWPIccGWXtdnUNmKJuTukZ1de00Uoqavb5pfIMKiC7/r+knQ5RbvAjGuVZiN3JwJL4Q==
+  dependencies:
+    htmlparser2 "^3.8.2"
+    minimist "^1.1.1"
+
 cli-boxes@^2.2.0, cli-boxes@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/cli-boxes/-/cli-boxes-2.2.1.tgz#ddd5035d25094fce220e9cab40a45840a440318f"
@@ -7810,10 +7818,10 @@ fsevents@~2.3.2:
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.2.tgz#8a526f78b8fdf4623b709e0b975c52c24c02fd1a"
   integrity sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==
 
-full-schedule-widget@^1.1.40:
-  version "1.1.40"
-  resolved "https://registry.yarnpkg.com/full-schedule-widget/-/full-schedule-widget-1.1.40.tgz#2644cf3b34afaadc50eb9c63d7a83dd3d266acb7"
-  integrity sha512-jr0zjQ6+EbOPByaB98cV3CZDvYjeWVUI4X8znd4rNxWXPj4jY5dQVN8bSZnR6wkjvYzV7jDjJ/t3wunF0LKZ1w==
+full-schedule-widget@^1.1.42:
+  version "1.1.42"
+  resolved "https://registry.yarnpkg.com/full-schedule-widget/-/full-schedule-widget-1.1.42.tgz#9b1ee1c6934cab572d4bdde34283f24066ae3503"
+  integrity sha512-SqeYqZpLYpCx24ZN4RPSMA6LYT4/GRyJJ9X4NZw6JH9lXUfJsRBJAnReamE4s6EMw6YN5scVwkGF9axSbMQSQg==
   dependencies:
     pure-react-carousel "^1.27.4"
 
@@ -9247,7 +9255,7 @@ html-webpack-tags-plugin@^3.0.2:
     minimatch "^3.0.4"
     slash "^3.0.0"
 
-htmlparser2@3.10.1, htmlparser2@^3.9.1:
+htmlparser2@3.10.1, htmlparser2@^3.8.2, htmlparser2@^3.9.1:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-3.10.1.tgz#bd679dc3f59897b6a34bb10749c855bb53a9392f"
   integrity sha512-IgieNijUMbkDovyoKObU1DUhm1iwNYE/fuifEoEHfd1oZKZDaONBSkal7Y01shxsM49R4XaMdGez3WnF9UfiCQ==
@@ -11561,15 +11569,15 @@ minimatch@^3.1.2:
   dependencies:
     brace-expansion "^1.1.7"
 
+minimist@^1.1.1, minimist@^1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
+  integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
+
 minimist@^1.2.0, minimist@^1.2.3, minimist@^1.2.5:
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
-
-minimist@^1.2.6:
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.6.tgz#8637a5b759ea0d6e98702cfb3a9283323c93af44"
-  integrity sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==
 
 minipass@^3.0.0:
   version "3.1.3"
@@ -15597,10 +15605,10 @@ saxes@^5.0.1:
   dependencies:
     xmlchars "^2.2.0"
 
-schedule-filter-widget@^1.2.6:
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/schedule-filter-widget/-/schedule-filter-widget-1.2.6.tgz#4024df16dfff5c1ebcdd4b622c192807e0c54ba6"
-  integrity sha512-cSE/zk3Qh3T3jwRL9JNfn7nZHeq8ytL89b/D1Vu8ca8/gl3WnZA7jBwbI6PZlH4od1o3YXUEezrQm1JM5zkAdA==
+schedule-filter-widget@^1.2.9:
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/schedule-filter-widget/-/schedule-filter-widget-1.2.9.tgz#1fe6cca856337cae161c1d643ece9dc3d4657420"
+  integrity sha512-VNBvkeW1+jyqnT29bRy0Av/McltSiz+VQfAkt2QA50mV9s8/1oCIZN9lB4vDomzelXitJJTHEj2FKYBmK4UtFA==
   dependencies:
     dropzone "^5.9.2"
     react-spring "^9.1.2"
@@ -18243,7 +18251,7 @@ websocket@^1.0.34:
     utf-8-validate "^5.0.2"
     yaeti "^0.0.6"
 
-what-input@^5.1.4:
+what-input@^5.1.4, what-input@^5.2.10:
   version "5.2.10"
   resolved "https://registry.yarnpkg.com/what-input/-/what-input-5.2.10.tgz#f79f5b65cf95d75e55e6d580bb0a6b98174cad4e"
   integrity sha512-7AQoIMGq7uU8esmKniOtZG3A+pzlwgeyFpkS3f/yzRbxknSL68tvn5gjE6bZ4OMFxCPjpaBd2udUTqlZ0HwrXQ==

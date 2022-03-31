@@ -15,7 +15,7 @@ export const CustomPageTemplate = ({
 
   return (
     <div className="content">
-      <h2>{title}</h2>
+      <h1>{title}</h1>
       <PageContent content={content} />
     </div>
   )

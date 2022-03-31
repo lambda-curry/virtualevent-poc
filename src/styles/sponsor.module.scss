@@ -21,9 +21,10 @@
   a {
     width: 100%;
     text-align: center;
+    display: block;
+    margin-bottom: 1rem;
   }
-
-  img {
+  & > img {
     margin-bottom: 1rem;
   }
 }
